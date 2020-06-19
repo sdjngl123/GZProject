@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListUserMenu" IsWeb="true">
+    <Label Name="Lock">
+      <LocalizedLabel LanguageRef="zhs">锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lock</LocalizedLabel>
+    </Label>
+    <Label Name="UnLock">
+      <LocalizedLabel LanguageRef="zhs">解锁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unlock</LocalizedLabel>
+    </Label>
+    <Label Name="AuthSet_All">
+      <LocalizedLabel LanguageRef="zhs">认证设置（全局）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthSet_All</LocalizedLabel>
+    </Label>
+    <Label Name="AuthSet_Select">
+      <LocalizedLabel LanguageRef="zhs">认证设置（选中项）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthSet_Select</LocalizedLabel>
+    </Label>
+    <Label Name="LoginLimit_All">
+      <LocalizedLabel LanguageRef="zhs">登录限制（全局）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoginLimit_All</LocalizedLabel>
+    </Label>
+    <Label Name="LoginLimit_Select">
+      <LocalizedLabel LanguageRef="zhs">登录限制（选中项）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoginLimit_Select</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

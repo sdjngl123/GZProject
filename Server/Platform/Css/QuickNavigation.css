@@ -1,0 +1,65 @@
+.HomePage_Collection
+{
+    position:absolute;
+    width:100px;
+    height:0px;
+    background-color:#fff;
+    border:1px solid #ddd;
+    z-index:999999;
+    display:none;
+}
+.HomePage_Collection .QuickNavigation
+{
+    margin:0;    
+}
+.HomePage_Collection li
+{
+    cursor: pointer;
+    padding: 0 0 0 15px;
+    height:28px;
+    line-height:28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position:relative;
+    border-bottom:1px solid #eee;
+    font-size:12px;
+}
+.HomePage_Collection li .collect-trash
+{
+    position:absolute;
+    right:0px;
+    top:6px;
+    display:none;
+}
+.HomePage_Collection .HomePage_Collection_c
+{
+    width:100%;
+    height:100%;
+    overflow:auto;    
+}
+.HomePage_Collection .collection-p
+{
+    text-align: center;
+    height: 37px;
+    padding-top: 20px; 
+    position:relative;
+}
+.HomePage_Collection .collection-p .p_delete
+{
+    position: absolute;
+    left: 134px;
+    top: 4px;
+    display:none;
+}
+.HomePage_Collection .collection-p img
+{
+    width:20px;
+    height:20px;   
+}
+.HomePage_Collection .collection-t
+{
+    text-align: center;
+    padding-top: 10px;
+    font-size:12px;
+}

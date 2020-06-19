@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWATTACHINFOModel" IsWeb="true">
+    <Label Name="WORKFLOWATTACHINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">流程附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWATTACHINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">流程附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDHeader">
+      <LocalizedLabel LanguageRef="zhs">工作流ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow ID</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDCaption">
+      <LocalizedLabel LanguageRef="zhs">工作流ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow ID</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">附件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attachment type</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">附件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attachment type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object ID</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object ID</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTINITSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象初始状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object initial state</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTINITSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">对象初始状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object initial state</LocalizedLabel>
+    </Label>
+    <Label Name="INITSTAGESTATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象初始阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object initial stage state</LocalizedLabel>
+    </Label>
+    <Label Name="INITSTAGESTATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象初始阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object initial stage state</LocalizedLabel>
+    </Label>
+    <Label Name="WHETHERORNOTAUDITHeader">
+      <LocalizedLabel LanguageRef="zhs">是否审批</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to review</LocalizedLabel>
+    </Label>
+    <Label Name="WHETHERORNOTAUDITCaption">
+      <LocalizedLabel LanguageRef="zhs">是否审批</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to review</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHORDERHeader">
+      <LocalizedLabel LanguageRef="zhs">附件顺序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AttachOrder</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHORDERCaption">
+      <LocalizedLabel LanguageRef="zhs">附件顺序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AttachOrder</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

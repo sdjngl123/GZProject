@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="Excel_Export_MaxRows" Value="5000" ToClient="false" Description="通用列表控件导出功能可以导出最大行数，超出的部分进行截断并且进行提示，导出行数越多，运行越慢，建议值为5000" />
+  <AppSet Key="ExcelExportDefaultType" Value="xlsx" ToClient="false" Description="导出到excel时默认的excel文件格式，可选值为xlsx（excel2007），xls（excel2003）,设置项命名规则:导出类型+&quot;ExportDefaultType&quot;" />
+  <AppSet Key="WordExportDefaultType" Value="docx" ToClient="false" Description="导出到Word时默认的Word文件格式，可选值为docx（Word2007），doc（Word2003），设置项命名规则:导出类型+&quot;ExportDefaultType&quot;" />
+  <AppSet Key="ProjectExportDefaultType" Value="xml" ToClient="false" Description="导出到Project时默认的Project文件格式，可选值为xml（目前仅支持导出到xml），设置项命名规则:导出类型+&quot;ExportDefaultType&quot;" />
+  <AppSet Key="Excel_Import_Filter" Value="xls,xlsx" ToClient="true" Description="导入Excel文件时,选择文件的后缀名过滤选项，设置项命名规则:导入类型+&quot;_Import_Filter&quot;" />
+  <AppSet Key="Project_Import_Filter" Value="mpp" ToClient="true" Description="导入Project文件时,选择文件的后缀名过滤选项,设置项命名规则:导入类型+&quot;_Import_Filter&quot;" />
+  <AppSet Key="Excel_ExportPlugin_xlsx" Value="xlsx2007" ToClient="false" Description="导出Excel2007格式时，采用的Excel插件，要与ExcelExportDefaultType值对应使用,设置项命名规则:导出类型+&quot;_ExportPlugin_&quot;+导出文件的后缀名" />
+  <AppSet Key="Excel_ImportPlugin_xlsx" Value="xlsx2007" ToClient="false" Description="导入Excel2007格式时，采用的Excel插件，要与ExcelExportDefaultType值对应使用,设置项命名规则:导入类型+&quot;_ImportPlugin_&quot;+导入文件的后缀名" />
+  <AppSet Key="Project_ExportPlugin_xml" Value="mpp2007" ToClient="false" Description="导出Project格式时，采用的Project插件，要与ProjectExportDefaultType值对应使用,设置项命名规则:导出类型+&quot;_ExportPlugin_&quot;+导出文件的后缀名" />
+  <AppSet Key="Project_ImportPlugin_mpp" Value="mpp2007" ToClient="false" Description="导入Project格式时，采用的Project插件，要与ProjectExportDefaultType值对应使用,设置项命名规则:导入类型+&quot;_ImportPlugin_&quot;+导入文件的后缀名" />
+  <AppSet Key="Word_ExportPlugin_docx" Value="docx2007" ToClient="false" Description="导出Word格式时，采用的Word插件，要与WordExportDefaultType值对应使用,设置项命名规则:导出类型+&quot;_ExportPlugin_&quot;+导出文件的后缀名" />
+  <AppSet Key="dbdataExportDefaultType" Value="dbdata" ToClient="false" Description="导出Word格式时，采用的Word插件，要与WordExportDefaultType值对应使用,设置项命名规则:导出类型+&quot;_ExportPlugin_&quot;+导出文件的后缀名" />
+</root>

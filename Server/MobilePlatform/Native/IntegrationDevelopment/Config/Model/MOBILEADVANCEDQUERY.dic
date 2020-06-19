@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEADVANCEDQUERYModel" IsWeb="true">
+    <Label Name="MOBILEADVANCEDQUERYHeader">
+      <LocalizedLabel LanguageRef="zhs">高级查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEADVANCEDQUERY</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEADVANCEDQUERYCaption">
+      <LocalizedLabel LanguageRef="zhs">高级查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEADVANCEDQUERY</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlType</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlType</LocalizedLabel>
+    </Label>
+    <Label Name="FILTERSTRINGHeader">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterString</LocalizedLabel>
+    </Label>
+    <Label Name="FILTERSTRINGCaption">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterString</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">条件标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONDITIONTitle</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">条件标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONDITIONTitle</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDHeader">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEPAGEDEVID</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDCaption">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEPAGEDEVID</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="INFONAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">关联字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoName</LocalizedLabel>
+    </Label>
+    <Label Name="INFONAMECaption">
+      <LocalizedLabel LanguageRef="zhs">关联字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoName</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

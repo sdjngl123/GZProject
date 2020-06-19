@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <DeveloperCtrl Name="HForm" ModuleAssembly="Hoteam.InforCenter.Developer.Interface.Forms"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.Forms.HForm" TypeName="HForm" Description="DeveloperControl.HForm">
+    <Property Name="Width" Setting="true" Type="TextBox"  DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="Height" Setting="true" Type="TextBox"  DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.HeightDes" ReadOnly="false"/>
+    <Property Name="title" Setting="true" Type="TextBox" DefaultVal="" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="TemplatePage" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TemplatePageDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="BaseFlowPanel" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+          ModuleClass="Hoteam.InforCenter.Developer.Contorls.BaseFlowPanel" TypeName="BaseFlowPanel" Description="DeveloperControl.BaseFlowPanel">
+    <Property Name="layoutType" Setting="true" Type="ComboBox" DefaultVal="vertical" Category="DeveloperControl.LayoutCategory" Description="DeveloperControl.LayoutDes" ReadOnly="false">
+      <Val Key="horizontal" Value="horizontal"/>
+      <Val Key="vertical" Value="vertical"/>
+    </Property>
+    <Property Name="Model" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.ModelCategory" Description="DeveloperControl.ModelDes" ReadOnly="false"/>
+    <Property Name="ChildModel" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.ModelCategory" Description="DeveloperControl.ChildModelDes" ReadOnly="false"/>
+    <Property Name="CustomOnCreate" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.EventCategory"
+              Description="DeveloperControl.CustomOnCreateDes" ReadOnly="false"/>
+    <Property Name="CustomOnGetDataFromPage" Setting="true" Type="BoolValue" DefaultVal=""  Category="DeveloperControl.EventCategory"
+              Description="DeveloperControl.CustomOnGetDataFromPageDes" ReadOnly="false"/>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnGetDataFromPage" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnGetDataFromPageDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="LayoutContainer" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.LayoutContainer" ImagePath="" ToolboxTab="Container" ToolboxItem="true"
+                 Description="DeveloperControl.LayoutContainer" TypeName="LayoutContainer">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size"  DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="layoutType" Setting="true" Type="ComboBox" DefaultVal="horizontal" Category="DeveloperControl.LayoutCategory" Description="DeveloperControl.LayoutDes" ReadOnly="false">
+      <Val Key="horizontal" Value="horizontal"/>
+      <Val Key="vertical" Value="vertical"/>
+    </Property>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HLabel" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.HLabel" ImagePath="Base/Image/PageControl/HLabel.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HLabel" TypeName="Label">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="textId" Setting="true" Type="TextBox" DefaultVal="" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="wrap" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.WrapDes" ReadOnly="false"/>
+    <Property Name="position" Setting="true" Type="ComboBox" DefaultVal="right" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PositionDes" ReadOnly="false">
+      <Val Key="right" Value="right"/>
+      <Val Key="left" Value="left"/>
+    </Property>
+    <Property Name="suffix" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SuffixDes" ReadOnly="false"/>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Property Name="color" Setting="true" Type="Button" DefaultVal="Black" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ColorDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HTextBox" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTextBox" ImagePath="Base/Image/PageControl/HTextBox.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HTextBox" TypeName="TextBox" MinHeight="26">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="bgText" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.BgTextDes" ReadOnly="false"/>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="true" Type="TextBox" DefaultVal=""  Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="type" Setting="true" Type="ComboBox" DefaultVal="text" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TextTypeDes" ReadOnly="false">
+      <Val Key="text" Value="text"/>
+      <Val Key="textarea" Value="textarea"/>
+      <Val Key="password" Value="password"/>
+    </Property>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate"  Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnFocusout" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnFocusoutDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HButton" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.HButton" ImagePath="Base/Image/PageControl/HButton.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HButton" TypeName="Button" MinHeight="26">
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" DefaultVal="" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnClick"  Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HTextValue" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+           ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTextValue" ImagePath="Base/Image/PageControl/HTextValue.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HTextValue" TypeName="TextValue" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="bgText" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.BgTextDes" ReadOnly="false"/>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnFocusout" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnFocusoutDes" ReadOnly="false"/>
+    <Event Name="OnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HSpace" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+           ModuleClass="Hoteam.InforCenter.Developer.Contorls.HSpace" ImagePath="Base/Image/PageControl/HSpace.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HSpace" TypeName="Space">
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="visible" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.VisibleDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HDateTime" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+           ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDateTime" ImagePath="Base/Image/PageControl/HDateTime.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HDateTime" TypeName="DateTime" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="type" Setting="true"  Type="ComboBox" DefaultVal="datetime" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DateTypeDes" ReadOnly="false">
+      <Val Key="datetime" Value="datetime"/>
+      <Val Key="date" Value="date"/>
+      <Val Key="time" Value="time"/>
+    </Property>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HDropDown" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+         ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDropDown" ImagePath="Base/Image/PageControl/HDropDown.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HDropDown" TypeName="DropDown" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Property Name="ItemData" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.ItemDataDes" ReadOnly="false"/>
+    <Property Name="DataSourceField" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.DataSourceFieldDes" ReadOnly="false"/>
+    <Property Name="CustomOnload" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.EventCategory" Description="DeveloperControl.CustomOnloadDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnChange" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnChangeDes" ReadOnly="false"/>
+    <Event Name="OnLoad" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.DropDownOnLoadDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HDropDownItem" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+      ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDropDownItem" Description="DeveloperControl.HDropDownItem" ToolboxTab="" ToolboxItem="false" TypeName="HDropDownItem">
+    <Property Name="textId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.LanguageDes" ReadOnly="false"/>
+    <Property Name="selected" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SelectedDes" ReadOnly="false"/>
+    <Property Name="value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HCheckBox" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+        ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCheckBox" ImagePath="Base/Image/PageControl/HCheckBox.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HCheckBox" TypeName="CheckBox">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="Checked" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SelectedDes" ReadOnly="false"/>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" DefaultVal="" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+    <Property Name="position" Setting="true" Type="ComboBox" DefaultVal="right" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PositionDes" ReadOnly="false">
+      <Val Key="right" Value="right"/>
+      <Val Key="left" Value="left"/>
+    </Property>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="PageContainer" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+       ModuleClass="Hoteam.InforCenter.Developer.Contorls.PageContainer" ImagePath="Base/Image/PageControl/PageContainer.png" ToolboxTab="Container" ToolboxItem="true"
+                 Description="DeveloperControl.PageContainer" TypeName="PageContainer">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="pageName" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageNameDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>  
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HMenu" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+      ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMenu" ImagePath="" ToolboxTab="" ToolboxItem="false" TypeName="Empty">
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HMenuItem" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+      ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMenuItem" Description="DeveloperControl.HMenuItem" ToolboxTab="" ToolboxItem="false" TypeName="HMenuItem">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" DefaultVal="" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="icon" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IconDes" ReadOnly="false"/>
+    <Property Name="value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HMenuList" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+     ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMenuList" ImagePath="Base/Image/PageControl/HMenuList.png" Description="DeveloperControl.HMenuList" ToolboxTab="Common" ToolboxItem="true" TypeName="Menu">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HView" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+    ModuleClass="Hoteam.InforCenter.Developer.Contorls.HView" ToolboxTab="" ToolboxItem="false" TypeName="Empty">
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HCheckboxPad" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+        ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCheckboxPad" ImagePath="Base/Image/PageControl/HCheckboxPad.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HCheckboxPad" TypeName="CheckboxPad">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="ColNum" Setting="true" Type="IntValue" DefaultVal="1" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ColNumDes" ReadOnly="false"/>
+    <Property Name="ChangeMode" Setting="true" Type="ComboBox" DefaultVal="2" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ChangeModeDes" ReadOnly="false">
+      <Val Key="2" Value="二态"/>
+      <Val Key="3" Value="三态"/>
+    </Property>
+    <Property Name="DefaultCheckState" Setting="true" Type="ComboBox" DefaultVal="0" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DefaultCheckStateDes" ReadOnly="false">
+      <Val Key="0" Value="未选中"/>
+      <Val Key="1" Value="选中"/>
+      <Val Key="2" Value="不确定"/>
+    </Property>
+    <Property Name="Field" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.DataCategory" Description="DeveloperControl.FieldDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HDrag" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+     ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDrag" ImagePath="Base/Image/PageControl/HDrag.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HDrag" TypeName="drag">
+    <Property Name="type" Setting="true"  Type="TextBox" DefaultVal="drag" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TypeDes" ReadOnly="true"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="resizable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ResizableDes" ReadOnly="false"/>
+    <Property Name="closable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ClosableDes" ReadOnly="false"/>
+    <Property Name="direction" Setting="true" Type="ComboBox" DefaultVal="pre" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DirectionDes" ReadOnly="false">
+      <Val Key="pre" Value="pre"/>
+      <Val Key="next" Value="next"/>
+    </Property>
+    <Property Name="openStateTooltipId" Setting="true"  Type="ComboBox" DefaultVal="LayoutContainer.Hidden"  Category="DeveloperControl.CustomCategory" Description="DeveloperControl.OpenStateTooltipIdDes" ReadOnly="false">
+      <Val Key="LayoutContainer.Show" Value="LayoutContainer.Show"/>
+      <Val Key="LayoutContainer.Hidden" Value="LayoutContainer.Hidden"/>
+    </Property>
+    <Property Name="closeStateTooltipId" Setting="true"  Type="ComboBox" DefaultVal="LayoutContainer.Show"  Category="DeveloperControl.CustomCategory" Description="DeveloperControl.CloseStateTooltipIdDes" ReadOnly="false">
+      <Val Key="LayoutContainer.Show" Value="LayoutContainer.Show"/>
+      <Val Key="LayoutContainer.Hidden" Value="LayoutContainer.Hidden"/>
+    </Property>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HGrid" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+     ModuleClass="Hoteam.InforCenter.Developer.Contorls.HGrid" ImagePath="Base/Image/PageControl/HGrid.png" ToolboxTab="Data" ToolboxItem="true"
+                 Description="DeveloperControl.HGrid" TypeName="Grid">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="autoLoadData" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.AutoLoadDataDes" ReadOnly="false"/>
+    <Property Name="multiselect" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.MultiselectDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnLoadRows" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadRowsDes" ReadOnly="false"/>
+    <Event Name="OnColImageClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnColImageClickDes" ReadOnly="false"/>
+    <Event Name="OnColLinkClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnColLinkClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HGridColumn" ModuleAssembly="" ModuleClass="" ToolboxTab="Data" ToolboxItem="false" TypeName="HGridColumn" Description="">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="sortable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SortableDes" ReadOnly="false"/>
+    <Property Name="resizable" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ResizableDes" ReadOnly="false"/>
+    <Property Name="colType" Setting="true" Type="ComboBox" DefaultVal="text" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ColTypeDes" ReadOnly="false">
+      <Val Key="text" Value="text"/>
+      <Val Key="hidden" Value="hidden"/>
+      <Val Key="link" Value="link"/>
+      <Val Key="image" Value="image"/>
+    </Property>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HTabs" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+    ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTabs" ImagePath="Base/Image/PageControl/HTabs.png" ToolboxTab="Container" ToolboxItem="true"
+                 Description="DeveloperControl.HTabs" TypeName="Tabs">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="showSwitchBar" Setting="true"  Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowSwitchBarDes" ReadOnly="false"/>
+    <Property Name="showMenu" Setting="true"  Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowMenuDes" ReadOnly="false"/>
+    <Property Name="titleType" Setting="true"  Type="ComboBox" DefaultVal="capsule" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TitleTypeDes" ReadOnly="false">
+      <Val Key="standard" Value="标准"/>
+      <Val Key="capsule" Value="胶囊"/>
+      <Val Key="capsule sample" Value="简单胶囊"/>
+    </Property>
+    <Property Name="hasBorder" Setting="true"  Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.HasBorderDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HTabPageItem" ModuleAssembly="" ModuleClass="" Description="DeveloperControl.TabItem" ToolboxTab="Container" ToolboxItem="false" TypeName="HTabPageItem">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="pageName" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageNameDes" ReadOnly="false"/>
+    <Property Name="tabId" Setting="true" Type="TextBox" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TabIdDes" ReadOnly="false"/>
+    <Property Name="showClosed" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowClosed" ReadOnly="false"/>
+    <Property Name="pageParas" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageParasDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HTree" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTree" ImagePath="Base/Image/PageControl/HTree.png" ToolboxTab="Data" ToolboxItem="true"
+                 TypeName="Tree" Description="DeveloperControl.HTree">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+    <Property Name="isThirdState" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IsThirdStateDes" ReadOnly="false"/>
+    <Property Name="isRelevance" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IsRelevanceDes" ReadOnly="false"/>
+    <Property Name="showCheck" Setting="true" Type="BoolValue" DefaultVal=""  Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowCheckDes" ReadOnly="false"/>
+    <Property Name="showIcon" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowIconDes" ReadOnly="false"/>
+    <Property Name="async" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.AsyncDes" ReadOnly="false"/>
+    <Property Name="defaultState" Setting="true" Type="ComboBox" DefaultVal="0" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DefaultStateDes" ReadOnly="false">
+      <Val Key="0" Value="取消"/>
+      <Val Key="1" Value="选中"/>
+      <Val Key="2" Value="不确定"/>
+    </Property>
+    <Property Name="setRightMenuPara" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SetRightMenuParaDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+    <Event Name="OnExpand" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnExpandDes" ReadOnly="false"/>
+    <Event Name="OnBeforeExpand" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnBeforeExpandDes" ReadOnly="false"/>
+    <Event Name="OnExpandLoad" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnExpandLoadDes" ReadOnly="false"/>
+    <Event Name="OnNodeDblClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnNodeDblClickDes" ReadOnly="false"/>
+    <Event Name="OnBeforeCheckClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnBeforeCheckClickDes" ReadOnly="false"/>
+    <Event Name="OnCheckClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCheckClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HEditButton" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HEditButton" ImagePath="Base/Image/PageControl/HEditButton.png" ToolboxTab="Common" Description="DeveloperControl.HEditButton"
+                 ToolboxItem="true" TypeName="EditButton" MinHeight="26">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="type" Setting="true" Type="ComboBox" DefaultVal="text" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TypeDes" ReadOnly="false">
+      <Val Key="text" Value="text"/>
+    </Property>
+    <Property Name="regex" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property><Event Name="OnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HEditGrid" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+    ModuleClass="Hoteam.InforCenter.Developer.Contorls.HEditGrid" ImagePath="Base/Image/PageControl/HEditGrid.png" ToolboxTab="Data" ToolboxItem="true" TypeName="EditGrid"
+                 Description="DeveloperControl.HEditGrid">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="id" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IdDes" ReadOnly="false"/>
+    <Property Name="showPageBar" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowPageBarDes" ReadOnly="false"/>
+    <Property Name="autoLoadData" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.AutoLoadDataDes" ReadOnly="false"/>
+    <Property Name="multiselect" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.MultiselectDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>    
+    <Event Name="OnBeforeEdit" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnBeforeEditDes" ReadOnly="false"/>
+    <Event Name="OnLoadRows" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadRowsDes" ReadOnly="false"/>
+    <Event Name="OnColImageClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnColImageClickDes" ReadOnly="false"/>
+    <Event Name="OnAfterEdit" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnAfterEditDes" ReadOnly="false"/>
+    <Event Name="OnRowDblClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnRowDblClickDes" ReadOnly="false"/>
+    <Event Name="OnRowClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnRowClickDes" ReadOnly="false"/>
+    <Event Name="OnColLinkClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnColLinkClickDes" ReadOnly="false"/>
+    <Event Name="OnLoadSuccess" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadSuccessDes" ReadOnly="false"/>
+    <Event Name="OnSort" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnSortDes" ReadOnly="false"/>
+    <Event Name="OnLoadMore" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadMoreDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HEditGridColumn" ModuleAssembly="" ModuleClass="" ToolboxTab="Data" ToolboxItem="false" TypeName="HEditGridColumn" Description="">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="sortable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SortableDes" ReadOnly="false"/>
+    <Property Name="resizable" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ResizableDes" ReadOnly="false"/>
+    <Property Name="colType" Setting="true" Type="ComboBox" DefaultVal="text" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ColTypeDes" ReadOnly="false">
+      <Val Key="text" Value="text"/>
+      <Val Key="hidden" Value="hidden"/>
+      <Val Key="link" Value="link"/>
+      <Val Key="image" Value="image"/>
+      <Val Key="number" Value="number"/>
+      <Val Key="dropdown" Value="dropdown"/>
+      <Val Key="textValue" Value="textValue"/>
+      <Val Key="checkbox" Value="checkbox"/>
+      <Val Key="checkboxThirdState" Value="checkboxThirdState"/>
+      <Val Key="date" Value="date"/>
+      <Val Key="time" Value="time"/>
+      <Val Key="datetime" Value="datetime"/>
+    </Property>
+    <Property Name="editable" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.EditableDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="true" Type="TextBox" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regexTitleId" Setting="true" Type="TextBox" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="databind" Setting="true" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.DatabindDes" ReadOnly="false"/>
+    <Property Name="eventbind" Setting="true" Type="Button" Category="DeveloperControl.EventCategory" Description="DeveloperControl.EventbindDes" ReadOnly="false"/>
+    <!--<Property Name="icon" Setting="true" Type="Button" Category="事件" Description="图标" ReadOnly="false"/>-->
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HEditTreeGrid" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HEditTreeGrid" ImagePath="Base/Image/PageControl/HEditTreeGrid.png" ToolboxTab="Data" ToolboxItem="true" TypeName="EditTreeGrid" Description="DeveloperControl.HEditTreeGrid">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="id" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IdDes" ReadOnly="false"/>
+    <Property Name="multiselect" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.MultiselectDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property><Event Name="OnBeforeEdit" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnBeforeEditDes" ReadOnly="false"/>
+    <Event Name="OnLoadRows" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadRowsDes" ReadOnly="false"/>
+    <Event Name="OnColImageClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnColImageClickDes" ReadOnly="false"/>
+    <Event Name="OnAfterEdit" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnAfterEditDes" ReadOnly="false"/>
+    <Event Name="OnRowDblClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnRowDblClickDes" ReadOnly="false"/>
+    <Event Name="OnRowClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnRowClickDes" ReadOnly="false"/>
+    <Event Name="OnColLinkClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnColLinkClickDes" ReadOnly="false"/>
+    <Event Name="OnOpenRow" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnOpenRowDes" ReadOnly="false"/>
+    <Event Name="OnCheckboxClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCheckboxClickDes" ReadOnly="false"/>
+    <Event Name="OnTreeNodeImageClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnTreeNodeImageClickDes" ReadOnly="false"/>
+    <Event Name="OnLoadSuccess" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadSuccessDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HEditTreeGridColumn" ModuleAssembly="" ModuleClass="" ToolboxTab="Data" ToolboxItem="false" TypeName="HEditTreeGridColumn">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="sortable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SortableDes" ReadOnly="false"/>
+    <Property Name="resizable" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ResizableDes" ReadOnly="false"/>
+    <Property Name="colType" Setting="true" Type="ComboBox" DefaultVal="text" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ColTypeDes" ReadOnly="false">
+      <Val Key="text" Value="text"/>
+      <Val Key="hidden" Value="hidden"/>
+      <Val Key="link" Value="link"/>
+      <Val Key="image" Value="image"/>
+      <Val Key="number" Value="number"/>
+      <Val Key="dropdown" Value="dropdown"/>
+      <Val Key="textValue" Value="textValue"/>
+      <Val Key="checkbox" Value="checkbox"/>
+      <Val Key="checkboxThirdState" Value="checkboxThirdState"/>
+      <Val Key="date" Value="date"/>
+      <Val Key="time" Value="time"/>
+      <Val Key="datetime" Value="datetime"/>
+      <Val Key="tree" Value="tree"/>
+    </Property>
+    <Property Name="editable" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.EditableDes" ReadOnly="false"/>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HAutoCompleteCombox" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HAutoCompleteCombox" ImagePath="Base/Image/PageControl/HAutoCompleteCombox.png" ToolboxTab="Common" ToolboxItem="true" TypeName="AutoCompleteCombox" Description="DeveloperControl.AutoCompleteCombox">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="id" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IdDes" ReadOnly="false"/>
+    <Property Name="ItemData" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ItemDataDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+    <Event Name="OnChange" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnChangeDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HImage" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HImage" ImagePath="Base/Image/PageControl/HImage.png" ToolboxTab="Common" ToolboxItem="true" TypeName="Image" Description="DeveloperControl.Image">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="type" Setting="true" Type="ComboBox" DefaultVal="image" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TypeDes" ReadOnly="false">
+      <Val Key="image" Value="image"/>
+      <Val Key="icon" Value="icon"/>
+    </Property>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Property Name="border" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.HasBorderDes" ReadOnly="false"/>
+    <Property Name="src" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IconDes" ReadOnly="false"/>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HRadioList" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HRadioList" ImagePath="Base/Image/PageControl/HRadioList.png" ToolboxTab="Common" ToolboxItem="true" TypeName="RadioList" Description="DeveloperControl.HRadioList">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="position" Setting="true" Type="ComboBox" DefaultVal="horizontal" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.LayoutDes" ReadOnly="false">
+      <Val Key="horizontal" Value="horizontal"/>
+      <Val Key="vertical" Value="vertical"/>
+    </Property>
+    <Property Name="id" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IdDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnChange" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnChangeDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HRadioListItem" ModuleAssembly="" ModuleClass="" ToolboxTab="Common" ToolboxItem="false" TypeName="HRadioListItem" Description="">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="Value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+    <Property Name="disabled" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DisabledDes" ReadOnly="false"/>
+    <Property Name="Checked" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SelectedDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HMultiSelectDropDown" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMultiSelectDropDown" ImagePath="Base/Image/PageControl/HMultiSelectDropDown.png" ToolboxTab="Common" ToolboxItem="true"
+                 TypeName="MultiSelectDropDown" Description="DeveloperControl.HMultiSelectDropDown" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="regex" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnChange" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnChangeDes" ReadOnly="false"/>
+    <Event Name="OnLoad" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadRowsDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HBreadcrumbNavigation" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HBreadcrumbNavigation" ImagePath="Base/Image/PageControl/HBreadcrumbNavigation.png" ToolboxTab="Common" ToolboxItem="true"
+               TypeName="BreadcrumbNavigation" Description="DeveloperControl.HBreadcrumbNavigation" MinHeight="20">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Event Name="NodeOnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.NodeOnClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HCalendar" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCalendar" ImagePath="Base/Image/PageControl/HCalendar.png" ToolboxTab="Common" ToolboxItem="true"
+               TypeName="Calendar" Description="DeveloperControl.HCalendar" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Event Name="OnLoad" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnLoadRowsDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HColorPicker" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HColorPicker" ImagePath="Base/Image/PageControl/HColorPicker.png" ToolboxTab="Common" ToolboxItem="true"
+               TypeName="ColorPicker" Description="DeveloperControl.HColorPicker" MinHeight="20">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HCustomerContainer" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCustomerContainer" ImagePath="Base/Image/PageControl/HCustomerContainer.png" ToolboxTab="Container" ToolboxItem="true"
+              TypeName="CustomerContainer" Description="DeveloperControl.HCustomerContainer" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size"  DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="templateName" Setting="true"  Type="Button" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TemplateNameDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HDropSearch" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDropSearch" ImagePath="Base/Image/PageControl/HDropSearch.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="DropSearch" Description="DeveloperControl.HDropSearch" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="id" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IdDes" ReadOnly="false"/>
+    <Property Name="regex" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegexDes" ReadOnly="false"/>
+    <Property Name="regextipId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.RegextipIdDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnChange" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnChangeDes" ReadOnly="false"/>
+    <Event Name="OnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+    <Event Name="OnFocusout" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnFocusoutDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HtGantt" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HtGantt" ImagePath="Base/Image/PageControl/HtGantt.png" ToolboxTab="Data" ToolboxItem="true"
+              TypeName="HtGantt" Description="DeveloperControl.HtGantt" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="id" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IdDes" ReadOnly="false"/>
+    <Property Name="isTracking" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="" ReadOnly="false"/>
+    <Event Name="OnRowClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnRowClickDes" ReadOnly="false"/>
+    <Event Name="OnRowDblClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnRowDblClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HSearch" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HSearch" ImagePath="Base/Image/PageControl/HSearch.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="Search" Description="DeveloperControl.HSearch" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="true"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnClick" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnClickDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HHtmlEdit" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HHtmlEdit" ImagePath="Base/Image/PageControl/HHtmlEdit.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="HtmlEdit" Description="DeveloperControl.HHtmlEdit" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="true"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HIframe" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HIframe" ImagePath="Base/Image/PageControl/HIframe.png" ToolboxTab="Container" ToolboxItem="true"
+              TypeName="Iframe" Description="DeveloperControl.HIframe" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Event Name="OnCreate" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnCreateDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HVerticalTabs" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HVerticalTabs" ImagePath="Base/Image/PageControl/HVerticalTabs.png" ToolboxTab="Container" ToolboxItem="true"
+                Description="DeveloperControl.HVerticalTabs" TypeName="VerticalTabs">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="hideTitle" Setting="true"  Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.HideTitleDes" ReadOnly="false"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HVerticalItem" ModuleAssembly="" ModuleClass="" ToolboxTab="Container" ToolboxItem="false" TypeName="HVerticalItem" Description="DeveloperControl.TabItem">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="pageName" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageNameDes" ReadOnly="false"/>
+    <Property Name="tabId" Setting="true" Type="TextBox" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TabIdDes" ReadOnly="false"/>
+    <Property Name="delayLoadPage" Setting="true" Type="BoolValue" DefaultVal="true" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DelayLoadPageDes" ReadOnly="false"/>
+    <Property Name="pageParas" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageParasDes" ReadOnly="false"/>
+    <Property Name="showLine" Setting="true" Type="BoolValue" DefaultVal="true" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowLineDes" ReadOnly="false"/>
+    <Property Name="hideFoldBtn" Setting="true" Type="BoolValue" DefaultVal="true" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.HideFoldBtnDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HSideTabs" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HSideTabs" ImagePath="Base/Image/PageControl/HSideTabs.png" ToolboxTab="Container" ToolboxItem="true"
+                Description="DeveloperControl.HSideTabs" TypeName="SideTabs">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+    <Property Name="ctrlSize" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.CtrlSizeDes" ReadOnly="false"/>
+    <Property Name="sizeType" Setting="false" Type="ComboBox" DefaultVal="px" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeTypeDes" ReadOnly="false">
+      <Val Key="px" Value="px"/>
+      <Val Key="%" Value="%"/>
+    </Property>
+    <Event Name="OnShow" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnShowDes" ReadOnly="false"/>
+    <Event Name="OnHide" Type="JsButton" Category="DeveloperControl.EventCategory" Description="DeveloperControl.OnHideDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrl Name="HRightMenu" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HRightMenu" ImagePath="Base/Image/PageControl/HRightMenu.png" ToolboxTab="Common" ToolboxItem="true"
+               Description="DeveloperControl.HRightMenu" TypeName="RightMenu">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="true"/>
+  </DeveloperCtrl>
+</root>

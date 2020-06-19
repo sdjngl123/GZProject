@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ModelInfoTypePage" IsWeb="true">
+    <Label Name="ModelInfoTypePage">
+      <LocalizedLabel LanguageRef="zhs">建模信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Model Info</LocalizedLabel>
+    </Label>
+   
+  </Context>
+</DictionarySerializer>

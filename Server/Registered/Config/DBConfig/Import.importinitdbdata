@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Description="">
+  <!--该配置文件用于新建公司时进行的数据初始化，ColumnName代表要替换的列名，value代表要替换的值，value可取
+  [ID],[COMPANYCODE],[COMPANYID],[CURDATETIME](当前时间)[ADMINUSERID](管理员ID),[ADMINGROUPID](管理员组ID),
+  Type代表转换类型，Replace是直接替换，Append是追加（如用户Code需要添加公司CODE等），FK用在主外键中外键列，RootOrFK代表一级节点的父对象为虚节点的外键-->
+  <ImportInitDBDataConfig ObjectType="ENTITY">
+    <ColumnInfo ColumnName = "EID" Value = "[ID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "CREATEUID" Value = "[ADMINUSERID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "CREATETIME" Value = "[CURDATETIME]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "UPDATEUID" Value = "[ADMINUSERID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "UPDATETIME" Value = "[CURDATETIME]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "OWNUID" Value = "[ADMINUSERID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "OWNGID" Value = "[ADMINGROUPID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "ECOMPANYID" Value = "[COMPANYID]" Type="Replace"/>
+  </ImportInitDBDataConfig>
+
+  <ImportInitDBDataConfig ObjectType="LINK">
+    <ColumnInfo ColumnName = "LID" Value = "[ID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "PEID" Value = "" Type = "FK"/>
+    <ColumnInfo ColumnName = "CEID" Value = "" Type = "FK"/>
+    <ColumnInfo ColumnName = "LCOMPANYID" Value = "[COMPANYID]" Type="Replace"/>
+  </ImportInitDBDataConfig>
+
+  <!--组织结构-->
+  <!--公司不用于导入，但是ORGANIZE表的列需要替换公司ID-->
+  <ImportInitDBDataConfig ObjectType="COMPANY" Extend="ENTITY" >
+    <!--公司的EID-->
+    <ColumnInfo ColumnName = "EID" Value = "[COMPANYID]" Type = "Replace"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="GROUPINFO" Extend="ENTITY">
+    <ColumnInfo ColumnName = "EID" Value = "[ADMINGROUPID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "ENAME" Value = "（[COMPANYNAME]）" Type = "Append"/>
+    <ColumnInfo ColumnName = "PARENTGROUPEID" Value = "" Type = "FK"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="USERINFO" Extend="ENTITY">
+    <ColumnInfo ColumnName = "EID" Value = "[ADMINUSERID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "ENAME" Value = "（[COMPANYNAME]）" Type = "Append"/>
+    <!--需要在ecode中增加@符号-->
+    <ColumnInfo ColumnName = "ECODE" Value = "" Type = "Customer" PluginName="RegisteredUserCodeRepalceData"/>
+    <ColumnInfo ColumnName = "PASSWORD" Value = "" Type = "Password"/>
+    <ColumnInfo ColumnName = "PERSONEID" Value = "" Type = "FK"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="ROLEINFO" Extend="ENTITY">
+    <ColumnInfo ColumnName = "EID" Value = "[ADMINROLEID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "ENAME" Value = "（[COMPANYNAME]）" Type = "Append"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="PERSON" Extend="ENTITY">
+    <ColumnInfo ColumnName = "ENAME" Value = "（[COMPANYNAME]）" Type = "Append"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="ORGANIZE" Extend="LINK" >
+    <ColumnInfo ColumnName = "GROUPID" Value = "" Type = "FK"/>
+  </ImportInitDBDataConfig>
+  <!--规则定义-->
+  <ImportInitDBDataConfig ObjectType="ACTIONRULE" Extend="ENTITY" CacheName="ActionRulePermission">
+    <!--由于父级节点为根节点数据较为复杂，通过插件获取，其余节点通过FK类型获取-->
+    <ColumnInfo ColumnName = "PEID" Value = "" Type = "RootOrFK" PluginName="CommonRootRepaleData" RootObjectType="ACTIONRULEROOT">
+    </ColumnInfo>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="ACTIONRULECONDITION" Extend="ENTITY" CacheName="ActionRulePermission"> 
+    <ColumnInfo ColumnName = "ACTIONRULEID" Value = "" Type = "FK"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="ACTIONRULEPERMISSION" Extend="ENTITY" CacheName="ActionRulePermission">
+    <ColumnInfo ColumnName = "ACTIONRULEID" Value = "" Type = "FK"/>
+    <ColumnInfo ColumnName = "PERMISSIONACTORVALUE" Value = "" Type = "JSON"/>
+  </ImportInitDBDataConfig>
+  
+  <!--流程模板-->
+  <ImportInitDBDataConfig ObjectType="WORKFLOWCLASSIFY" Extend="ENTITY" CacheName="WORKFLOWTEMPLATE">
+    <ColumnInfo ColumnName = "PEID" Value = "" Type = "RootOrFK" PluginName="CommonRootRepaleData" RootObjectType="WORKFLOWCLASSIFYROOT"/>
+    <ColumnInfo ColumnName = "ENAME" Value = "（[COMPANYNAME]）" Type = "Append"/>
+  </ImportInitDBDataConfig>
+  <ImportInitDBDataConfig ObjectType="WORKFLOWTEMPLATE" Extend="ENTITY" CacheName="WORKFLOWTEMPLATE">
+    <ColumnInfo ColumnName = "FLOWADMINISTRATOR" Value = "[ADMINUSERID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "WORKFLOWTEMPLATEINFO" Value = "" Type = "Customer" PluginName="WorkflowTemplateInfoRepalceData"/>
+    <ColumnInfo ColumnName = "PEID" Value = "" Type = "FK" />
+    <!--XMLNNAME根据WORKFLOWTEMPLATEINFO生成，必须放到WORKFLOWTEMPLATEINFO后面-->
+    <ColumnInfo ColumnName = "XMLNAME" Value = "" Type = "Customer" PluginName="XmlNameRepalceData"/>
+    <ColumnInfo ColumnName = "EUID" Value = "[ID]" Type = "Replace"/>
+    <ColumnInfo ColumnName = "ELASTINSERT" Value = "" Type = "Customer" PluginName="LastInsertRepalceData"/>
+  </ImportInitDBDataConfig>
+
+  <!--模块授权-->
+  <ImportInitDBDataConfig ObjectType="MODULEPERMISSION" Extend="ENTITY" CacheName="ModulePermission">
+  </ImportInitDBDataConfig>
+  
+</root>

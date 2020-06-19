@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="EnumerationCategory">
+      <LocalizedLabel LanguageRef="zhs">值列表分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list classification</LocalizedLabel>
+    </Label>
+    <Label Name="Enumeration">
+      <LocalizedLabel LanguageRef="zhs">值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list</LocalizedLabel>
+    </Label>
+    <Label Name="EnumerationItem">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

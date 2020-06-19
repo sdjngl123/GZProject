@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeManagement Name="WorkFlowManagement" MenuName="" TreeViewName="WorkFlowMangementTreeView" ShowTreeQuery="false" IsHiddenTabs="false" TreeChildDataService="" TreeRootDataService="" TreeAllDataService="" TreeQueryDataService="" PageLinksName="" IsLoadAllData="false">
+    <ObjectType Name="WORKFLOWLIST" MenuName="" PageLinksName="WorkFlowListPageLink" />
+    <ObjectType Name="CREATEUID" MenuName="" PageLinksName="StartWrokFlowListPageLink" />
+    <ObjectType Name="FLOWADMINISTRATOR" MenuName="" PageLinksName="ResponsibleWrokFlowListPageLink" />
+    <ObjectType Name="RUN" MenuName="" PageLinksName="RunWrokFlowListPageLink" />
+    <ObjectType Name="COMPLETE" MenuName="" PageLinksName="CompleteWrokFlowListPageLink" />
+    <ObjectType Name="STOP" MenuName="" PageLinksName="StopWrokFlowListPageLink" />
+    <ObjectType Name="SUSPEND" MenuName="" PageLinksName="SuspendWrokFlowListPageLink" />
+  </TreeManagement>
+  <TreeManagement Name="MyFlowTask" MenuName="" TreeViewName="MyWorkFlowTreeView" ShowTreeQuery="false" IsHiddenTabs="false" TreeChildDataService="Hoteam.InforCenter.WorkflowService.GetMyWorkFlowTaskTreeData" TreeRootDataService="" TreeAllDataService="" TreeQueryDataService="" PageLinksName="" IsLoadAllData="false" TreeCountDataService="Hoteam.InforCenter.WorkflowService.GetMyWorkFlowTreeCountData">
+    <ObjectType Name="TASKLIST" MenuName="" PageLinksName="WorkFlowTaskPageLink" />
+    <ObjectType Name="MYFLOWTASK" MenuName="WorkFlowTreeNodeRefreshMenu" PageLinksName="MyWorkFlowTaskPageLink" />
+    <ObjectType Name="DEPOSITTASK" MenuName="WorkFlowTreeNodeRefreshMenu" PageLinksName="DePositWorkFlowTaskPageLink" />
+    <ObjectType Name="DELIVERYTASK" MenuName="WorkFlowTreeNodeRefreshMenu" PageLinksName="DeliveryWorkFlowTaskPageLink" />
+    <ObjectType Name="WORKFLOWTASKINFO" MenuName="MyWorkFlowTaskMenu" PageLinksName="WorkFlowAuditPageLink" />
+    <ObjectType Name="AUDITEDTASK" MenuName="WorkFlowTreeNodeRefreshMenu" PageLinksName="AuditedTaskPageLink" />
+    <ObjectType Name="MYCREATEWOEKFLOW" MenuName="WorkFlowTreeNodeRefreshMenu" PageLinksName="MyCreateWorkFlowPageLink" />
+  </TreeManagement>
+</root>

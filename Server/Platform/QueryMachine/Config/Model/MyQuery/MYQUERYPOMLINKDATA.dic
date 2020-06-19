@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MYQUERYPOMLINKDATAModel" IsWeb="true">
+    <Label Name="MYQUERYPOMLINKDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义查询POM管理关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query POM management relationship</LocalizedLabel>
+    </Label>
+    <Label Name="MYQUERYPOMLINKDATACaption">
+      <LocalizedLabel LanguageRef="zhs">自定义查询POM管理关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query POM management relationship</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="ObjectInfoTree">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Model</LocalizedLabel>
+    </Label>
+    <Label Name="ModelInfoTypePage">
+      <LocalizedLabel LanguageRef="zhs">建模信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Model Info</LocalizedLabel>
+    </Label>
+    <Label Name="InheritInfo">
+      <LocalizedLabel LanguageRef="zhs">继承属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InheritInfo</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendInfo">
+      <LocalizedLabel LanguageRef="zhs">扩展属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendInfo</LocalizedLabel>
+    </Label>
+    <Label Name="BaseInfo">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BaseInfo</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKeyInfo">
+      <LocalizedLabel LanguageRef="zhs">外键信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ForeignKeyInfo</LocalizedLabel>
+    </Label>
+    <Label Name="FormDesignPageLink">
+      <LocalizedLabel LanguageRef="zhs">设计表单信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormDesignInfo</LocalizedLabel>
+    </Label>
+    <Label Name="AllModeLink">
+      <LocalizedLabel LanguageRef="zhs">建模信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Model Info</LocalizedLabel>
+    </Label>
+    <Label Name="ThemDesign">
+      <LocalizedLabel LanguageRef="zhs">主题设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Them Design</LocalizedLabel>
+    </Label>
+    <Label Name="WebObjTypeLink">
+      <LocalizedLabel LanguageRef="zhs">表单列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WebObjTypeLink</LocalizedLabel>
+    </Label>
+    <Label Name="RootFormLink">
+      <LocalizedLabel LanguageRef="zhs">分类列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RootFormLink</LocalizedLabel>
+    </Label>
+    <Label Name="ClassifyNodeLink">
+      <LocalizedLabel LanguageRef="zhs">分类列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassifyNodeLink</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

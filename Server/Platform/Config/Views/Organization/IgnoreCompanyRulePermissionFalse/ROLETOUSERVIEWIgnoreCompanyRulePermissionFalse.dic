@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ROLETOUSERVIEWIgnoreCompanyRulePermissionFalseView" IsWeb="true">
+    <Label Name="ROLETOUSERVIEWIgnoreCompanyRulePermissionFalseHeader">
+      <LocalizedLabel LanguageRef="zhs">角色与用户关系视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Roles and user relationship view</LocalizedLabel>
+    </Label>
+    <Label Name="ROLETOUSERVIEWIgnoreCompanyRulePermissionFalseCaption">
+      <LocalizedLabel LanguageRef="zhs">角色与用户关系视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Roles and user relationship view</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">用户帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User account </LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">用户帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User account </LocalizedLabel>
+    </Label>
+    <Label Name="GROUPEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group name</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

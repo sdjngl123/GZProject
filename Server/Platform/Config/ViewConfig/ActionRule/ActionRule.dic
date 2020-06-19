@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="ObjectRoot">
+      <LocalizedLabel LanguageRef="zhs">对象操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="CreateRoot">
+      <LocalizedLabel LanguageRef="zhs">新建对象权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New object permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="SubscribeRoot">
+      <LocalizedLabel LanguageRef="zhs">对象操作订阅规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object action subscribe rule</LocalizedLabel>
+    </Label>
+    <Label Name="LinkRoot">
+      <LocalizedLabel LanguageRef="zhs">关系对象操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship object action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="CreateRoot">
+      <LocalizedLabel LanguageRef="zhs">新建操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEACTIONRULEROOT">
+      <LocalizedLabel LanguageRef="zhs">新建操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="Entity">
+      <LocalizedLabel LanguageRef="zhs">对象操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="Link">
+      <LocalizedLabel LanguageRef="zhs">关系对象操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship object action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermission">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowPermission">
+      <LocalizedLabel LanguageRef="zhs">流程授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process authorization</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleBusinessModel">
+      <LocalizedLabel LanguageRef="zhs">规则授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule authorization</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEACTIONRULEMESSAGEROOT">
+      <LocalizedLabel LanguageRef="zhs">新建操作权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New action permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleMessageBusinessModel">
+      <LocalizedLabel LanguageRef="zhs">规则授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule authorization</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

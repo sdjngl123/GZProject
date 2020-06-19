@@ -1,0 +1,4 @@
+﻿<PageControl ControlID="[INFONAME]_Label" ParentID="[PARENTID]" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="[PAGENAME].[INFONAME]Header" />
+</PageControl>

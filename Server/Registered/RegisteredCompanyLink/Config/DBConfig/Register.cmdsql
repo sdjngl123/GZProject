@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  
+  <Command Name="GetCompanyFriendLinkForLoopCheck">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID,APPLIEDCOMPANYID,ACCEPTCOMPANYID FROM COMPANYLINK
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="UpdateReceiveCompanyExtendData">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE [TABLENAME] set [VALUE] WHERE EID = '[EID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetCompanyObjectByModelDataName">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select ENAME MODELNAME,ECOMPANYID COMPANYID from MODELDATA WHERE MODELDATA.ENAME in ([MODELDATANAME]) order by COMPANYID
+
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+</root>

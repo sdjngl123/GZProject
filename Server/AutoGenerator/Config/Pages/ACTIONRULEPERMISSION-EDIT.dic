@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="ACTIONRULEPERMISSION-EDIT" IsWeb="true">
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERRegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正整数（1-999999999）&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter positive integer (1-999999999)&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑规则权限授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditThe authorization of rule authority</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

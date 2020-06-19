@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="DateTimeRangeSelect">
+  <Settings Key="title" Value="DateTimeRangeSelect.Title"/>
+  <Settings Key="height" Value="170"/>
+  <Settings Key="width" Value="600"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="Hoteam_InforCenter_TimeRange_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 10px 10px 10px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Range_Container"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Type_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Range_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="RangeLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="RangeValue"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="StartTime"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="EndTime"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RangeLabel" ParentID="Range_Container" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="DateTimeRangeSelect.TimeRange" />
+    </PageControl>
+    <PageControl ControlID="RangeValue" ParentID="Range_Container" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="Hoteam_InforCenter_RangeValue_OnChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="StartTime" ParentID="Range_Container" TypeName="DateTime" >
+      <Settings Key="type" Value="date"/>
+      <Settings Key="regex" Value="[^(\s*)]" />
+    </PageControl>
+    <PageControl ControlID="EndTime" ParentID="Range_Container" TypeName="DateTime" >
+      <Settings Key="type" Value="date"/>
+      <Settings Key="regex" Value="[^(\s*)]" />
+    </PageControl>
+    <PageControl ControlID="Type_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="TypeLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="TypeValue"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TypeLabel" ParentID="Type_Container" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="DateTimeRangeSelect.Type" />
+    </PageControl>
+    <!--<PageControl ControlID="TypeValue" ParentID="Type_Container" TypeName="AutoCompleteCombox" >
+
+    </PageControl>-->
+    <PageControl ControlID="TypeValue" ParentID="Type_Container" TypeName="MultiSelectDropDown" >
+
+    </PageControl>
+    
+    <PageControl ControlID="Btn_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40%"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="120"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20%"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="120"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="40%"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="Hoteam_InforCenter_TimeRange_OnSelect(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

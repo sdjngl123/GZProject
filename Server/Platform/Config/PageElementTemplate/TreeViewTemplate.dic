@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="CommonTreeViewTemplate">
+      <LocalizedLabel LanguageRef="zhs">通用树视图配置模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common tree view configuration template</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

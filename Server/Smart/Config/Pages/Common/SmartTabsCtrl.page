@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SmartTabsCtrl">
+    <PageControls>
+        <PageControl ControlID="Tabs_Container" ParentID="" TypeName="LayoutContainer">
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="Tabs"/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="Tabs" ParentID="Tabs_Container" TypeName="Tabs">
+            <Settings Key="showClosed" Value="false" />
+            <Settings Key="theme" Value="DimensionTabs" />
+        </PageControl>
+    </PageControls>
+</root>

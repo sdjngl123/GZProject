@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SendWorkflowMessage" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">发送流程消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send process message</LocalizedLabel>
+    </Label>
+    <Label Name="BeforeExec">
+      <LocalizedLabel LanguageRef="zhs">前序执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pre-sequence execution</LocalizedLabel>
+    </Label>
+    <Label Name="SendType">
+      <LocalizedLabel LanguageRef="zhs">发送方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sending mode</LocalizedLabel>
+    </Label>
+    <Label Name="UserType">
+      <LocalizedLabel LanguageRef="zhs">用户类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

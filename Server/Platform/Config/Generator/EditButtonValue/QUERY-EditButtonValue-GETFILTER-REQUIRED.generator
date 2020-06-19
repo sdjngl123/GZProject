@@ -1,0 +1,8 @@
+﻿{
+var c = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+var value = c.GetText();
+
+	[FILTERSTRING] += InforCenter_Platform_Object_GetQueryFilter('[ANDOR]','[QUERYCOLUMN]','[QUERYOPERATOR]',value,[UNQUOTED]);
+	if(c.Check() == false) bCheck = false;	
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateQuery" IsWeb="true">
+    <Label Name="NAMELIKEHeader">
+      <LocalizedLabel LanguageRef="zhs">模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">template name</LocalizedLabel>
+    </Label>
+    <Label Name="NAMELIKERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 100 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="STATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

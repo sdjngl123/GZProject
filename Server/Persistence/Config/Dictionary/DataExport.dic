@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DataExport" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数据导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Export</LocalizedLabel>
+    </Label>
+    <Label Name="Select">
+      <LocalizedLabel LanguageRef="zhs">选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select</LocalizedLabel>
+    </Label>
+    <Label Name="TableName">
+      <LocalizedLabel LanguageRef="zhs">表名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Table Name</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendCol">
+      <LocalizedLabel LanguageRef="zhs">是否增量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extend</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="ExportFinish">
+      <LocalizedLabel LanguageRef="zhs">导出完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export Completed</LocalizedLabel>
+    </Label>
+    <Label Name="IsInitData">
+      <LocalizedLabel LanguageRef="zhs">用户初始数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User Initial Data</LocalizedLabel>
+    </Label>
+    <Label Name="XMLPERSISTENCEFormName">
+      <LocalizedLabel LanguageRef="zhs">选择类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeName">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="CheckAll">
+      <LocalizedLabel LanguageRef="zhs">全选/全空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Full selection/Full null</LocalizedLabel>
+    </Label>
+    <Label Name="XMLPERSISTENCENull">
+      <LocalizedLabel LanguageRef="zhs">XMLPERSISTENCE没有选择任何类型，若要导出该表，请点击XMLPERSISTENCE单元格，在弹出的对话框中选择相应的类型再导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">XMLPERSISTENCE does not select any type. If the table is exported, please click the XMLPERSISTENCE cell to select the corresponding type to re-export in the pop-up dialog box</LocalizedLabel>
+    </Label>
+    <Label Name="NULL">
+      <LocalizedLabel LanguageRef="zhs">没有任何选中项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No selected item(s)</LocalizedLabel>
+    </Label>
+    <Label Name="FilePath">
+      <LocalizedLabel LanguageRef="zhs">文件路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File path</LocalizedLabel>
+    </Label>
+    <Label Name="ExportInfo">
+      <LocalizedLabel LanguageRef="zhs">导出信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export Information</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

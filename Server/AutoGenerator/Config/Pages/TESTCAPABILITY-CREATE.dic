@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTCAPABILITY-CREATE" IsWeb="true">
+    <Label Name="ABILITYORDERHeader">
+      <LocalizedLabel LanguageRef="zhs">能力排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABILITYORDER</LocalizedLabel>
+    </Label>
+    <Label Name="ABILITYORDERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验项目名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPROJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">上级试验项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestPROJECT</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDCODE</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDCODERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDNAME</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDNAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ORGHeader">
+      <LocalizedLabel LanguageRef="zhs">试验组织</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ORG</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">联系人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONTACTPERSON</LocalizedLabel>
+    </Label>
+    <Label Name="LOCATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">试验地点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LOCATION</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEDULETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">排程类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEDULETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEDULETYPERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="CYCLEHeader">
+      <LocalizedLabel LanguageRef="zhs">周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CYCLE</LocalizedLabel>
+    </Label>
+    <Label Name="CYCLERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="WORKHOURSHeader">
+      <LocalizedLabel LanguageRef="zhs">工时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WORKHOURS</LocalizedLabel>
+    </Label>
+    <Label Name="WORKHOURSRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ACTUALCOSTHeader">
+      <LocalizedLabel LanguageRef="zhs">实际费用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ACTUALCOST</LocalizedLabel>
+    </Label>
+    <Label Name="ACTUALCOSTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="VIRTUALCOSTHeader">
+      <LocalizedLabel LanguageRef="zhs">虚拟费用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VIRTUALCOST</LocalizedLabel>
+    </Label>
+    <Label Name="VIRTUALCOSTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="WORKMODEHeader">
+      <LocalizedLabel LanguageRef="zhs">工作模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WorkMode</LocalizedLabel>
+    </Label>
+    <Label Name="WORKMODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="CARRYINGCAPACITYHeader">
+      <LocalizedLabel LanguageRef="zhs">同时承载量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CarryingCapacity</LocalizedLabel>
+    </Label>
+    <Label Name="CARRYINGCAPACITYRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ISPARALLELHeader">
+      <LocalizedLabel LanguageRef="zhs">是否试验可并行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsParallel</LocalizedLabel>
+    </Label>
+    <Label Name="ISSHAREHeader">
+      <LocalizedLabel LanguageRef="zhs">是否可共用样车</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsShare</LocalizedLabel>
+    </Label>
+    <Label Name="ISUPLOADTESTDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">是否上传试验数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsUploadTestData</LocalizedLabel>
+    </Label>
+    <Label Name="ISUPLOADVTSDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">是否上传VTS数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsUploadVTSData</LocalizedLabel>
+    </Label>
+    <Label Name="ISCNASHeader">
+      <LocalizedLabel LanguageRef="zhs">是否通过CNAS </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsCNAS</LocalizedLabel>
+    </Label>
+    <Label Name="TESTCAPABILITYHeader">
+      <LocalizedLabel LanguageRef="zhs">新建试验能力</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewTestCapability</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

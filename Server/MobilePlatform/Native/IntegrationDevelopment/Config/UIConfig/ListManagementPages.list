@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListManagement Name="LoopPlayManagement" MenuName="LoopPlayListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="LoopPlayListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+   
+  </ListManagement>
+  <ListManagement Name="FuncButtonManagement" MenuName="FuncButtonListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="FuncButtonListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+
+  <ListManagement Name="MainConfigManagement" MenuName="MainConfigListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="PageMainConfigListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  
+  <ListManagement Name="MobilePageListItemList" MenuName="MobilePageListItemListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePageListItemListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  <ListManagement Name="MobilePageFilterManagement" MenuName="MobilePageFilterListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePageFilterListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  <ListManagement Name="MobilePageOrderManagement" MenuName="MobilePageOrderListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePageOrderListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  <ListManagement Name="MobilePageAdvancedQueryManagement" MenuName="MobilePageAdvancedQueryMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePageAdvancedQueryView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  <ListManagement Name="MobilePageTabManagement" MenuName="MobilePageTabListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePageTabListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  <ListManagement Name="MobilePagePropertyTabManagement" MenuName="MobilePagePropertyTabMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePagePropertyTabListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  <ListManagement Name="MobilePageNavManagement" MenuName="MobilePageNavMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="MobilePageNavListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+
+</root>

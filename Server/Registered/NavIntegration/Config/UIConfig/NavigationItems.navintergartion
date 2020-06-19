@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NavigationItem Name="IntergationGroup" IsAddCustom="true" IsHidden="false" Order="999">
+    <PageName></PageName>
+    <Image>p_testobjectmanagement</Image>
+    <NavigationItem Name="EItemIntergation" IsAddCustom="true" IsHidden="false" IsIntegration="true" Order="003">
+      <PageName>ListManagement</PageName>
+      <Image>p_partsmanagement</Image>
+      <Para Name="ItemName" Value="ItemManagement" />
+      <Para Name="ObjectType" Value="Items" />
+      <Para Name="UseBy" Value="Form" />
+    </NavigationItem>
+  </NavigationItem>
+
+</root>

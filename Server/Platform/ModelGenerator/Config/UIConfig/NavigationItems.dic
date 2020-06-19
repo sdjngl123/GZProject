@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="ModelMangement">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelMangement</LocalizedLabel>
+    </Label>
+    <Label Name="CustomFormManagement">
+      <LocalizedLabel LanguageRef="zhs">表单管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CustomFormManagement</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

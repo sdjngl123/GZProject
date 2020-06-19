@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ServiceItem ServiceName="TestPlanService" ServiceAssembly="Hoteam.GACTT.TestPlan.Service.dll"
+				 ServiceClass="Hoteam.GACTT.TestPlan.Service.TestPlanService"
+				 ContractAssembly="Hoteam.GACTT.TestPlan.Service.dll"
+				 ContractClass="Hoteam.GACTT.TestPlan.Service.ITestPlanService" />
+</root>

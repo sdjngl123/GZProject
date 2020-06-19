@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CreateActionRuleList" IsWeb="true">
+    <Label Name="BusinessModelName">
+      <LocalizedLabel LanguageRef="zhs">业务模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business model name</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessModelCode">
+      <LocalizedLabel LanguageRef="zhs">业务模型编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business model number</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessModel">
+      <LocalizedLabel LanguageRef="zhs">业务模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business model</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

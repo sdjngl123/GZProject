@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--流程管理（运行）-->
+  <MenuItem Name="WorkFlowManagementRunMenu">
+    <WebAction Name="ChangeWfResponsibility"  ModuleName="Platform" LabelName="MenuItems.ChangeWfResponsibility" Image="p_changeprocessresponsibility" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="SINGLE" />
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true">
+        <Para Name="ItemName" Value="GroupToRoleToUser" />
+        <Para Name="LoadAndSelectType" Value="SingleLevel_SingleSelect" />
+        <Para Name="Size" Value="400*500" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.UpdataWorkflowAdmin" IsWCFService="true">
+        <Para Name="FlowID" Value="[List_EID]" ParentPara="para"/>
+        <Para Name="FlowAdminID" Value="[ReturnValue_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="ChangeAcResponsibility"  ModuleName="Platform" LabelName="MenuItems.ChangeAcResponsibility" Image="p_changemandateholders" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <WebMethod PageName="FlowTaskActor" IsPopup="true" >
+        <Para Name="FlowID" Value="[List_EID]" />
+        <!--<Para Name="IsCheckActor" Value="false" />-->
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="Stop" ModuleName="Platform"  LabelName="MenuItems.Stop" Image="p_stop" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.StopWorkflow" IsWCFService="true">
+        <Para Name="FlowID" Value="[List_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="Suspend" ModuleName="Platform"  LabelName="MenuItems.Suspend" Image="p_suspend" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.SuspendWorkflow" IsWCFService="true">
+        <Para Name="FlowID" Value="[List_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem >
+  <!--流程管理（完成）-->
+  <MenuItem Name="WorkFlowManagementCompleteMenu">
+    <WebAction Name="WorkflowDelete" ModuleName="Platform"  LabelName="MenuItems.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.DeleteWorkflow" IsWCFService="true">
+        <Para Name="FlowID" Value="[List_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem >
+  <!--流程管理（停止）-->
+  <MenuItem Name="WorkFlowManagementStopMenu">
+    <WebAction Name="WorkflowDelete" ModuleName="Platform"  LabelName="MenuItems.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.DeleteWorkflow" IsWCFService="true">
+        <Para Name="FlowID" Value="[List_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem >
+  <!--流程管理（暂停）-->
+  <MenuItem Name="WorkFlowManagementSuspendMenu">
+    <WebAction Name="Resume" ModuleName="Platform"  LabelName="MenuItems.Resume" Image="p_recovery" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.ResumeWorkflow" IsWCFService="true">
+        <Para Name="FlowID" Value="[List_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem >
+
+  <!--流程树刷新按钮-->
+  <MenuItem Name="WorkFlowTreeNodeRefreshMenu">
+    <WebAction Name="Refresh" ModuleName="Platform"  LabelName="MenuItems.Refresh" Image="p_resume" ParentWebAtionName=""  RefreshType="RefreshCurrentStructAndRootCountAndTab">
+    </WebAction>
+  </MenuItem >
+
+  <!--我的流程-->
+  <MenuItem Name="MyWorkFlowTaskMenu">
+    <WebAction Name="DeliveryWorkflow" ModuleName="Platform"  LabelName="MenuItems.DeliveryWorkflow" Image="p_changeprocessresponsibility" ParentWebAtionName=""  RefreshType="RefreshRootStructAndTab">
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[Tree_Current_value1]" SelectMode="SINGLE" />
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true">
+        <Para Name="ItemName" Value="GroupToRoleToUser" />
+        <Para Name="LoadAndSelectType" Value="SingleLevel_SingleSelect" />
+        <Para Name="Size" Value="600*500" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.UpdataTaskAgentUser" IsWCFService="true">
+        <Para Name="TaskID" Value="[Tree_Current_value1]" ParentPara="para"/>
+        <Para Name="AgentUserID" Value="[ReturnValue_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="ChangeAcResponsibility" ModuleName="Platform"  LabelName="MenuItems.ChangeAcResponsibility" Image="p_changemandateholders" ParentWebAtionName="" RefreshType="">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[Tree_Current_value1]" SelectMode="SINGLE" />
+      <WebMethod PageName="FlowTaskActor" IsPopup="true" >
+        <Para Name="FlowID" Value="[Tree_Current_value1]" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem >
+  <!--评审流程任务-->
+  <MenuItem Name="AuditTaskMenu">
+    <WebAction Name="CommitTask" ModuleName="Platform"  LabelName="MenuItems.CommitTask" Image="p_commit" ParentWebAtionName=""  RefreshType="RefreshParentStructAndRootCountAndTab">
+      <JSMethod Name="InforCenter_Platform_WorkFlowAudit_OnOK" >
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="AssistAudit" ModuleName="Platform"  LabelName="MenuItems.AssistAudit" Image="p_personal_settings" ParentWebAtionName=""  RefreshType="RefreshParentStructAndRootCountAndTab">
+      <JSMethod Name="InforCenter_Platform_WorkFlowAudit_AssistAudit" >
+        <Para Name="ObjectID" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem >
+  <MenuItem Name="OnlyAuditTaskMenu">
+    <WebAction Name="CommitTask" ModuleName="Platform"  LabelName="MenuItems.CommitTask" Image="p_commit" ParentWebAtionName=""  RefreshType="RefreshParentStructAndRootCountAndTab">
+      <JSMethod Name="InforCenter_Platform_WorkFlowAudit_OnOK" >
+      </JSMethod>
+    </WebAction>
+  </MenuItem >
+  <!--已评审流程任务-->
+  <MenuItem Name="AuditedTaskMenu">
+    <WebAction Name="RollbackTask" ModuleName="Platform"  LabelName="MenuItems.RollbackTask" Image="p_withdraw" ParentWebAtionName=""  RefreshType="RefreshRootStructAndTab">
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.WorkflowService.RollbackTask" IsWCFService="true">
+        <Para Name="TaskID" Value="[List_EID]" ParentPara="para"/>
+        <!--IsMark是否带有痕迹撤回，true是 ，false 否-->
+        <Para Name="IsMark" Value="false" ParentPara="para"/>
+      </BusinessMethod>
+      <JSMethod Name="InforCenter_Platform_WorkFlowAudit_RollBackSuccess" >
+      </JSMethod>
+    </WebAction>
+  </MenuItem >
+  <MenuItem Name="StartWorkflowObjectListMenu">
+    <WebAction Name="PasteWorkflowObject"  ModuleName="Platform" LabelName="MenuItems.PasteWorkflowObject" Image="p_paste" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="" SelectMode="NULL" SelectType=""/>
+      <!--<JSMethod Name="InforCenter_Platform_ClipBoard_Paste" SelectID="">
+        <Para Name="LinkTypeName" Value="EFOLDERTOEITEM" />
+      </JSMethod>-->
+      <!--<WebMessageAndLogger SendMessage="true" WriteLogger="true"  SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>-->
+    </WebAction>
+    <WebAction Name="RemoveWorkflowObject" ModuleName="Platform" LabelName="MenuItems.RemoveWorkflowObject" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO"  SelectID="" SelectMode="NULL" />
+      <!--<JSMethod Name="InforCenter_Platform_ObjectPermission_DeleteRow" SelectID="">
+        <Para Name="gridID" Value="[LISTID]" />
+      </JSMethod>-->
+    </WebAction>
+  </MenuItem >
+  <MenuItem Name="CreateWorkFlowMenu">
+    <WebAction Name="SendBackFlow"  ModuleName="Platform" LabelName="MenuItems.RollbackTask" Image="p_withdraw" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="" SelectMode="NULL" SelectType=""/>
+      <JSMethod Name="InforCenter_Workflow_StartWorkflow_SendBack" SelectID="">
+        <Para Name="FlowID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMessageAndLogger SendMessage="true" WriteLogger="true"  SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem >
+</root>

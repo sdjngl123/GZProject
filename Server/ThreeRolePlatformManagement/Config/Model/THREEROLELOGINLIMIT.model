@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="THREEROLELOGINLIMIT" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="THREEROLELOGINLIMIT" SplitValidateUnique="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="USERID" Type="DefaultObjectValue" DataType="STRING100" Column="USERID" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="LIMITTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="LIMITTYPE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="SETTINGMODE" Type="DefaultObjectValue" DataType="STRING100" Column="SETTINGMODE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="LIMITDATA" Type="DefaultObjectValue" DataType="TEXT" Column="LIMITDATA" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="LIMITORDER" Type="DefaultObjectValue" DataType="INT" Column="LIMITORDER" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+  </EntityType>
+</root>

@@ -1,0 +1,55 @@
+﻿<div data-role="content" class="ui-content login" style="" id="MobileLogin">
+  <div class="login-container">
+    <div class="login-header">
+      <!--<img class="login-header-logo" src="MobileBase/Image/logo.svg"></img>-->
+      <svg class="icon login-header-logo">
+        <use xlink:href="{ImagesBaseUrl}icon-logo"></use>
+      </svg>
+      <p class="login-header-title-zh">用户登录</p>
+      <p class="login-header-title-en">THE USER LOGIN</p>
+    </div>
+    <div class="login-content">
+      <label >
+        [UserName]
+      </label>
+      <input type="text" id="username" placeholder="[PleaseInputUserName]" onblur="Hoteam_Mobile_MobileLogin_OnBlurUserName(this);" data-clear-btn="true" data-corners="true" />
+
+      <div id="usernametip" style="color:red"></div>
+      <label for="userpassword">
+        [PassWord]
+      </label>
+      <input type="password" id="userpassword" placeholder="[PleaseInputPassWord]" data-clear-btn="true" onblur="HMUI.CheckInputValue(199, 'true', this,'密码','false');" />
+      <div id="userpasswordtip" style="color:red"></div>
+      <div class="login-inline-container">
+        <div class="login-changeOrangize-container">
+          <label>
+            [Orangize]
+          </label>
+          <select  id="changeOrangize" onchange="Hoteam_Mobile_MobileLogin_OnChangeOrangize();" data-native-menu="false">
+
+          </select>
+        </div>
+        <div class="login-changeRole-container">
+          <label>
+            [Role]
+          </label>
+          <select  id="changeRole" onchange="HMUI.MobileCommon.ResetWebViewFrame();" data-native-menu="false">
+
+          </select>
+        </div>
+        <div id="orangizetip" style="color:red"></div>
+        <div id="roletip" style="color:red"></div>
+      </div>
+
+      <div id="logintip" style="color:red"></div>
+
+      <div class="border-dashed"></div>
+      <div>
+        <button class="ui-btn ui-corner-all" id="btnLogin" enabled="true" onmousedown="Hoteam_Mobile_MobileLogin_OnLogin();">
+          [Login]
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

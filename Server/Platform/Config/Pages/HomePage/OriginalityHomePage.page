@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OriginalityHomePage">
+  
+  <!--整体布局-->
+  <PageControls>
+    <PageControl ControlID="OriginalityHomePage_VLayout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      
+      <!--top-->
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="ClassicHomePage_Top"/>
+      </Settings>
+      
+
+      <!--body-->
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OriginalityHomePage_HLayout"/>
+      </Settings>
+      
+
+      
+      <!--bottom-->
+      <Settings Key="item5" >
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="ClassicHomePage_Bottom"/>
+      </Settings>
+    </PageControl>
+    
+    <!--body布局-->
+    <PageControl ControlID="OriginalityHomePage_HLayout" ParentID="OriginalityHomePage_VLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="OriginalityHomePage_Navigation"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HomePage_Content"/>
+      </Settings>
+    </PageControl>
+    
+    <!--body: navigation-->
+    <PageControl ControlID="OriginalityHomePage_Navigation" ParentID="OriginalityHomePage_HLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="OriginalityHomePageNavigation"/>
+    </PageControl>
+    
+    <!--body: content-->
+    <PageControl ControlID="HomePage_Content" ParentID="OriginalityHomePage_HLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="HomePageContents"/>
+    </PageControl>
+    
+    <!--top-->
+    <PageControl ControlID="ClassicHomePage_Top" ParentID="OriginalityHomePage_VLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ClassicHomePageTop"/>
+    </PageControl>
+    
+    <!--bottom-->
+    <PageControl ControlID="ClassicHomePage_Bottom" ParentID="OriginalityHomePage_VLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ClassicHomePageBottom"/>
+    </PageControl>
+    
+  </PageControls>
+</root>

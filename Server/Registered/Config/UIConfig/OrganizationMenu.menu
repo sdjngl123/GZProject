@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <MenuItem Name="TreeCompanyMenu" Type="Button" Issplit="false" IsTemplate="false">
+
+    <WebAction Name="SetLocalFileServiceAddress" MultiMenu="false" ModuleName="Registered" LabelName="TreeCompanyMenu.SetLocalFileServiceAddress" Image="p_browse" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Registered_SetLocalFileServiceAddress_Check" SelectID="[Tree_Current_value1]">
+       
+      </JSMethod>
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="SetLocalFileServiceAddressPage" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="GroupGuide" />
+      </WebMethod>
+
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+
+    </WebAction>
+
+  </MenuItem>
+</root>

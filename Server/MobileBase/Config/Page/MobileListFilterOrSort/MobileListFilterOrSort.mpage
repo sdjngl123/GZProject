@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileListFilterOrSort"
+         JsFile ="~/MobileBase/Config/Page/MobileListFilterOrSort/MobileListFilterOrSort.js" 
+         LayoutFile="~/MobileBase/Config/Page/MobileListFilterOrSort/MobileListFilterOrSort.mlayout" 
+         DictionaryContent="">
+      <PageHandler HandlerName ="OnCreate" Script="Hoteam_InforCenter_MobileListFilterOrSort_Init(pageEvent);"/>
+  </MPage>
+</root>

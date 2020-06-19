@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYModel" IsWeb="true">
+    <Label Name="COMPANYHeader">
+      <LocalizedLabel LanguageRef="zhs">公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYCaption">
+      <LocalizedLabel LanguageRef="zhs">公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTHeader">
+      <LocalizedLabel LanguageRef="zhs">详细描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTCaption">
+      <LocalizedLabel LanguageRef="zhs">详细描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed description</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">公司编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">公司编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company No.</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMUSERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">子公司管理员ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SystemUserID</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMUSERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">子公司管理员ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SystemUserID</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">注册邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisterEmail</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREMAILCaption">
+      <LocalizedLabel LanguageRef="zhs">注册邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisterEmail</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREDPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">注册人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisteredPerson</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREDPERSONCaption">
+      <LocalizedLabel LanguageRef="zhs">注册人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisteredPerson</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">单位类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyType</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">单位类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyType</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASECONNECTHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataBaseConnect</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASECONNECTCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataBaseConnect</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">企业编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyCode</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYCODECaption">
+      <LocalizedLabel LanguageRef="zhs">企业编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyCode</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">注册密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDCaption">
+      <LocalizedLabel LanguageRef="zhs">注册密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="PHONECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">手机号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PhoneCode</LocalizedLabel>
+    </Label>
+    <Label Name="PHONECODECaption">
+      <LocalizedLabel LanguageRef="zhs">手机号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PhoneCode</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">databaseInfo</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">注册时生成的数据库连接信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">databaseInfo</LocalizedLabel>
+    </Label>
+    <Label Name="AUDITSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">审核状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditState</LocalizedLabel>
+    </Label>
+    <Label Name="AUDITSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">审核状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditState</LocalizedLabel>
+    </Label>
+    <Label Name="DBUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库用户名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DBUID</LocalizedLabel>
+    </Label>
+    <Label Name="DBUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库用户名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DBUID</LocalizedLabel>
+    </Label>
+    <Label Name="DBPASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DBPASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="DBPASSWORDCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DBPASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="ISROOTCOMPANYHeader">
+      <LocalizedLabel LanguageRef="zhs">是否为根企业</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsRootCompany</LocalizedLabel>
+    </Label>
+    <Label Name="ISROOTCOMPANYCaption">
+      <LocalizedLabel LanguageRef="zhs">是否为根企业</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsRootCompany</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASETEMPLATENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">连接串模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATABASETEMPLATENAME</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASETEMPLATENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">连接串模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATABASETEMPLATENAME</LocalizedLabel>
+    </Label>
+    <Label Name="LOCALSOFTWAREADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">本地程序地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LocalSoftwareAddress</LocalizedLabel>
+    </Label>
+    <Label Name="LOCALSOFTWAREADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">本地程序地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LocalSoftwareAddress</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYACCOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">企业账号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMPANYACCOUNT</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYACCOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">企业账号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMPANYACCOUNT</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

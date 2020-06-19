@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PermissionToOwnGroup">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_PermissionToOwnGroup_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_PermissionToOwnGroup_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="PermissionToOwnGroup_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="OwnGroup_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="ExtendToParent_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="ExtendToChildren_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 容器-->
+    <PageControl ControlID="OwnGroup_Container" ParentID="PermissionToOwnGroup_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OwnGroupLabel"/>
+      </Settings>
+    </PageControl>
+    <!-- 扩展到上级容器-->
+    <PageControl ControlID="ExtendToParent_Container" ParentID="PermissionToGroup_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ExtendToParentValue"/>
+      </Settings>
+    </PageControl>
+    <!-- 扩展到下级容器-->
+    <PageControl ControlID="ExtendToChildren_Container" ParentID="PermissionToGroup_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ExtendToChildrenValue"/>
+      </Settings>
+    </PageControl>
+    
+    <!-- 控件-->
+    <PageControl ControlID="OwnGroupLabel" ParentID="OwnGroup_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="PermissionToOwnGroup.PermissionToOwnGroupLabel" />
+    </PageControl>
+
+    <!-- 扩展到上级控件-->
+    <PageControl ControlID="ExtendToParentLabel" ParentID="ExtendToParent_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="Rule.ExtendToParent" />
+    </PageControl>
+    <PageControl ControlID="ExtendToParentValue" ParentID="ExtendToParent_Container" TypeName="CheckBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="Rule.ExtendToParent" />
+    </PageControl>
+
+    <!-- 扩展到下级控件-->
+    <PageControl ControlID="ExtendToChildrenLabel" ParentID="ExtendToChildren_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="Rule.ExtendToChildren" />
+    </PageControl>
+    <PageControl ControlID="ExtendToChildrenValue" ParentID="ExtendToChildren_Container" TypeName="CheckBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="Rule.ExtendToChildren" />
+    </PageControl>
+    
+  </PageControls>
+</root>

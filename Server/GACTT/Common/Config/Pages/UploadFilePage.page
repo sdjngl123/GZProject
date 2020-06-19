@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="UploadFilePage">
+  <Settings Key="height" Value="315"/>
+  <Settings Key="width" Value="600"/>
+  <Settings Key="title" Value="UploadFile.Title"/>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="UploadFileFileCtrl"/>
+      </Settings>
+      <!--<Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>-->
+      <Settings Key="item3">
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="Confirm_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="UploadFileFileCtrl" ParentID="Top_Container" TypeName="CustomerContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_UploadFile_OnCreate(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="65"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AuthorizePermission"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="AuthorizePermission" ParentID="R-2" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="PLMFOLDER-CREATE.ParentPermissionExtend" />
+      <Settings Key="checked" Value="true" />
+    </PageControl>
+
+    <PageControl ControlID="Confirm_Btn" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="Confirm_btnCancel"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Confirm_btnCancel" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_UploadFile_CancelOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

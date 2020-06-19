@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListManagement Name="DraftsList" MenuName="DraftsMenu" ListRightMenuName="" ListViewName="DraftsInternalMailListView" SearchFields="MCONTENT;MTITLE;RECIVERTEXT" SideTabWidth="500"
+                  QueryPageName="" ListTitleDataService=""  AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true" DefaultPageLinksName="MailContentPageLinks" >
+    <ObjectType Name="INTERNALMAIL" MenuName="" PageLinksName="MailContentPageLinks"></ObjectType>
+  </ListManagement>
+  <ListManagement Name="DustbinList" MenuName="DustbinMenu" ListRightMenuName="" ListViewName="DustbinInternalMailListView"  SearchFields="MCONTENT;MTITLE;RECIVERTEXT" SideTabWidth="500"
+                QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true" DefaultPageLinksName="MailContentPageLinks" >
+    <ObjectType Name="INTERNALMAIL" MenuName="" PageLinksName="MailContentPageLinks"></ObjectType>
+  </ListManagement>
+  <ListManagement Name="SystemMailList" MenuName="SystemMailMenu" ListRightMenuName="" ListViewName="SystemInternalMailListView"  SearchFields="MCONTENT;MTITLE;RECIVERTEXT" SideTabWidth="500"
+              QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true" DefaultPageLinksName="MailContentPageLinks" >
+    <ObjectType Name="INTERNALMAIL" MenuName="" PageLinksName="MailContentPageLinks"></ObjectType>
+  </ListManagement>
+
+  <ListManagement Name="ReciveInternalMailList" MenuName="ReciveInternalMailMenu" ListRightMenuName="" ListViewName="ReciveInternalMailListView" DefaultPageLinksName="MailContentPageLinks" SideTabWidth="500"
+                   SearchFields="MCONTENT;MTITLE;SENDUSERTEXT" QueryPageName="" ListTitleDataService="" OnePageDataService="InforCenter.PLM.InternalMailService.GetInternalMailListData" AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true" >
+    <ObjectType Name="INTERNALMAIL" MenuName="" PageLinksName="MailContentPageLinks"></ObjectType>
+  </ListManagement>
+  <ListManagement Name="SendInternalMailList" MenuName="SendInternalMailMenu" ListRightMenuName="" ListViewName="SendInternalMailListView" DefaultPageLinksName="MailContentPageLinks" SideTabWidth="500"
+                SearchFields="MCONTENT;MTITLE;RECIVERTEXT"  QueryPageName="" ListTitleDataService="" OnePageDataService="InforCenter.PLM.InternalMailService.GetInternalMailListData" AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true" >
+    <ObjectType Name="INTERNALMAIL" MenuName="" PageLinksName="MailContentPageLinks"></ObjectType>
+  </ListManagement>
+
+</root>

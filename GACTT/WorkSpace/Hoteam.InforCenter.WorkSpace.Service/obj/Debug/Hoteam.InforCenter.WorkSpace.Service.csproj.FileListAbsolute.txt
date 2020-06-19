@@ -1,0 +1,6 @@
+E:\广汽试验\Source\Server\GACTT\WorkSpace\Bin\Hoteam.InforCenter.WorkSpace.Service.dll
+E:\广汽试验\Source\Server\GACTT\WorkSpace\Bin\Hoteam.InforCenter.WorkSpace.Service.pdb
+E:\广汽试验\Source\GACTT\WorkSpace\Hoteam.InforCenter.WorkSpace.Service\obj\Debug\Hoteam.InforCenter.WorkSpace.Service.csprojAssemblyReference.cache
+E:\广汽试验\Source\GACTT\WorkSpace\Hoteam.InforCenter.WorkSpace.Service\obj\Debug\Hoteam.InforCenter.WorkSpace.Service.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\WorkSpace\Hoteam.InforCenter.WorkSpace.Service\obj\Debug\Hoteam.InforCenter.WorkSpace.Service.dll
+E:\广汽试验\Source\GACTT\WorkSpace\Hoteam.InforCenter.WorkSpace.Service\obj\Debug\Hoteam.InforCenter.WorkSpace.Service.pdb

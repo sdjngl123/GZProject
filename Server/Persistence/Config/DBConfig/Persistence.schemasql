@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="CREATEEXECPARA">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if (exists(select * from sysobjects where id= object_id(N'execpara'))) drop procedure execpara
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="execpara">
+        create  PROCEDURE execpara (@para  text) AS BEGIN exec(@para) END
+      </CommandItem>   
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="EXECPARA">
+        CREATE OR REPLACE PROCEDURE EXECPARA(
+        para  in long
+        )
+        as
+        begin
+        execute immediate para;
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="EXECPARA2">
+        CREATE OR REPLACE PROCEDURE EXECPARA2(
+        para  in long,
+        result out sys_refcursor
+        )
+        as
+        begin
+        -- execute immediate para using result; 会出现绑定变量不存在的错误，改为如下(只能是查询语句)：
+        open result for para;
+        end;
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS execpara;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="execpara">
+        CREATE PROCEDURE execpara( in para text)
+        BEGIN
+        set @temp = para;
+        PREPARE stmt from @temp;
+        EXECUTE stmt;
+        DEALLOCATE PREPARE stmt;
+        END;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="CREATEUTCTIMEFUN">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if (exists(select * from sysobjects where id= object_id(N'utcinttime'))) drop function utcinttime
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="utcinttime">
+        create  function utcinttime()
+        returns bigint
+        AS
+        BEGIN
+        return  CAST(10000000 AS BIGINT)*datediff(s,'2000-01-01 00:00:00' ,getutcdate()) + 630822816000000000
+        END
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="UTCINTTIME">
+        create or replace function UTCINTTIME
+        RETURN NUMBER
+        as
+        begin
+        return ( extract(day from (sys_extract_utc(systimestamp)- to_date('2000-01-01 00:00:00' ,'yyyy-mm-dd hh24:mi:ss')) ) *24*60*60
+        +extract(hour from (sys_extract_utc(systimestamp)- to_date('2000-01-01 00:00:00' ,'yyyy-mm-dd hh24:mi:ss')) ) *60*60
+        +extract(minute from (sys_extract_utc(systimestamp)- to_date('2000-01-01 00:00:00' ,'yyyy-mm-dd hh24:mi:ss')) ) *60
+        +extract(second from (sys_extract_utc(systimestamp)- to_date('2000-01-01 00:00:00' ,'yyyy-mm-dd hh24:mi:ss')) )
+        )*10000000 + 630822816000000000;
+        end;
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop function if EXISTS utcinttime;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="utcinttime">
+        create  function utcinttime()
+        returns bigint
+        BEGIN
+        RETURN TIMESTAMPDIFF(SECOND,"2000-01-01 00:00:00",UTC_TIMESTAMP())*10000000+630822816000000000;
+        END
+      </CommandItem>
+    </DatabaseType>
+  </Command> 
+  
+  <Command Name="CREATELOOPCHECKPRO">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if (exists(select * from sysobjects where id= object_id(N'LOOPCHECK'))) drop procedure LOOPCHECK
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false"  DBObject="LOOPCHECK">
+        create  PROCEDURE LOOPCHECK (@LINKTABLE nvarchar(100),@OBJEID nvarchar(100),@INSERTEID nvarchar(100),@COMPANYID nvarchar(100))
+        AS
+
+        BEGIN
+
+        declare @lev int;
+        declare @count int;
+        declare @sql varchar(1000);
+
+        if(@OBJEID = @INSERTEID)
+        begin
+        select 1 as RESULT;
+        return ;
+        end
+
+        if object_id('tempdb..#LINKLOOPTABLE') is Not null drop table #LINKLOOP;
+        Create Table #LINKLOOP(LEVELID int, CEID nvarchar(100),PEID nvarchar(100),LCOMPANYID nvarchar(100));
+
+        set @count=0;
+        set @lev=0;
+        insert into #LINKLOOP(LEVELID,CEID,PEID,LCOMPANYID) values(0,NULL,@OBJEID,@COMPANYID);
+        while(1=1)
+        begin
+        set @sql = 'insert into #LINKLOOP(LEVELID,CEID,PEID,LCOMPANYID) select ' +cast(@lev+1 as varchar(10)) + ' as LEVELID,A.CEID,A.PEID,A.LCOMPANYID from ' + @LINKTABLE +' A,#LINKLOOP B where A.CEID = B.PEID AND A.LCOMPANYID = B.LCOMPANYID and B.LEVELID =' + cast(@lev as varchar(10));
+        exec(@sql);
+
+        if(@@rowcount=0)
+        begin
+        break;
+        end ;
+
+        set @count= (select count(1) from #LINKLOOP where PEID = @INSERTEID)
+        if(@count>0)
+        begin
+        break;
+        end
+        set @lev=@lev+1;
+        end
+
+        select @count as RESULT;
+
+        END
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select count(1) from user_tables where TABLE_NAME = N'LINKBOMTABLE'
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" ExecFor="1">
+        drop table LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        CREATE GLOBAL TEMPORARY TABLE LINKBOMTABLE (LEVELID int, QUERYID varchar2(100), LINKID varchar2(100), TOTALQTY float, LPATH varchar2(4000))  ON COMMIT PRESERVE ROWS
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select count(1) from user_tables where TABLE_NAME = N'ORGANIZELINKBOMTABLE'
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" ExecFor="1">
+        drop table ORGANIZELINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        CREATE GLOBAL TEMPORARY TABLE ORGANIZELINKBOMTABLE (LEVELID int, QUERYID varchar2(100), LINKID varchar2(100), TOTALQTY float, LPATH varchar2(4000),TMPGROUPID varchar2(100),PID varchar2(100))  ON COMMIT PRESERVE ROWS
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select count(1) from user_tables where TABLE_NAME = N'LINKLOOP'
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" ExecFor="1">
+        drop table LINKLOOP
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        CREATE GLOBAL TEMPORARY TABLE LINKLOOP (LEVELID int, PEID varchar2(100), CEID varchar2(100),LCOMPANYID varchar2(100))  ON COMMIT PRESERVE ROWS
+      </CommandItem>
+      
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="LOOPCHECK">
+        CREATE OR REPLACE PROCEDURE LOOPCHECK( LINKTABLE in NVARCHAR2,OBJEID in NVARCHAR2,INSERTEID in NVARCHAR2,COMPANYID in NVARCHAR2, result out sys_refcursor)
+        as
+        tmplev int:=0;
+        tmpcount int:=0;
+        tmpsql VARCHAR(1000);
+        begin
+
+
+        if OBJEID = INSERTEID then
+        begin
+        open result for select 1 as RESULT from dual;
+        return ;
+        end;
+        end if;
+        delete from LINKLOOP;
+        insert into LINKLOOP(LEVELID,CEID,PEID,LCOMPANYID) values(0,NULL,OBJEID,COMPANYID);
+        while(1=1) loop
+
+        tmpsql := 'insert into LINKLOOP(LEVELID,CEID,PEID,LCOMPANYID) select '|| To_char(tmplev+1) || ' as LEVELID,A.CEID,A.PEID,A.LCOMPANYID from '|| LINKTABLE ||' A,LINKLOOP B where A.CEID = B.PEID AND A.LCOMPANYID = B.LCOMPANYID and B.LEVELID =' || To_char(tmplev);
+        execute immediate tmpsql;
+
+        if sql%rowcount=0 then
+        exit;
+        end if;
+
+        select count(1) into tmpcount from LINKLOOP where PEID = INSERTEID;
+        if tmpcount>0  then
+        exit;
+        end if;
+        tmplev:=tmplev+1;
+        end loop;
+
+        open result  for select tmpcount as RESULT from dual;
+        end;
+
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS LOOPCHECK;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false"  DBObject="LOOPCHECK">
+        create  PROCEDURE LOOPCHECK (LINKTABLE varchar(100),OBJEID varchar(100),INSERTEID varchar(100),COMPANYID varchar(100))
+        BEGIN
+        declare lev int;
+        -- declare @count int;
+        declare temptableName VARCHAR(50);
+        if (OBJEID = INSERTEID) THEN
+        select 1 as RESULT;
+        END if;
+        -- DROP TEMPORARY TABLE if EXISTS LINKLOOP;
+        -- CREATE TEMPORARY TABLE LINKLOOP(LEVELID int, PEID varchar(100), CEID varchar(100),LCOMPANYID varchar(100));
+        -- mysql 创建的临时表只能查找一次，所以先用物理表代替
+        set temptableName = CONCAT('LINKLOOP',REPLACE(UUID(),'-',''));
+
+        SET @temp = CONCAT('DROP TABLE if EXISTS ',temptableName,';');
+        PREPARE createtablesql from @temp;
+        EXECUTE createtablesql;
+        DEALLOCATE PREPARE createtablesql;
+
+        SET @temp = CONCAT('CREATE TABLE ',temptableName,'(LEVELID int, PEID varchar(100), CEID varchar(100),LCOMPANYID varchar(100))ENGINE=MEMORY; ');
+        PREPARE createtablesql1 from @temp;
+        EXECUTE createtablesql1;
+        DEALLOCATE PREPARE createtablesql1;
+
+        if (ISNULL(COMPANYID)=TRUE)
+        THEN
+        set COMPANYID = '';
+        end if;
+        SET @temp = CONCAT('insert into ',temptableName,'(LEVELID,CEID,PEID,LCOMPANYID) values(0,NULL,\'',OBJEID,'\',\'',COMPANYID,'\')');
+        PREPARE createtablesql2 from @temp;
+        EXECUTE createtablesql2;
+        DEALLOCATE PREPARE createtablesql2;
+
+
+        set @count=0;
+        set lev=0;
+        outer_laber: BEGIN
+        WHILE (1=1) DO
+        set @temp = CONCAT('insert into ',temptableName,'(LEVELID,CEID,PEID,LCOMPANYID) select ' ,concat(lev+1,'') , ' as LEVELID,A.CEID,A.PEID,A.LCOMPANYID from ' , LINKTABLE ,' A,',temptableName,' B where A.CEID = B.PEID AND A.LCOMPANYID = B.LCOMPANYID and B.LEVELID =' , concat(lev ,''));
+        PREPARE stmt from @temp;
+        EXECUTE stmt;
+
+        if (ROW_COUNT()&lt;=0)
+        THEN
+        LEAVE outer_laber; -- 跳出循环
+        DEALLOCATE PREPARE stmt;
+        end IF;
+        DEALLOCATE PREPARE stmt;  -- 放到ROW_COUNT()函数后面
+
+        set @temp = CONCAT('select count(1) into @count from ',temptableName,' where PEID = \'',INSERTEID,'\'');
+        PREPARE execcountsql from @temp;
+        EXECUTE execcountsql;
+        DEALLOCATE PREPARE execcountsql;
+        if (@count>0) THEN
+        LEAVE outer_laber;
+        end if;
+        set lev = lev+1;
+        end WHILE;
+        END outer_laber;
+        select @count as RESULT;
+
+        SET @temp = CONCAT('DROP TABLE ',temptableName);
+        PREPARE droptablesql from @temp;
+        EXECUTE droptablesql;
+        DEALLOCATE PREPARE droptablesql;
+
+        END
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

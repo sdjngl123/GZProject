@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 显示值与数据库值的转换-->
+  <PluginItem Name="DefaultObjectValue_DisplayValueToDBValue" Type="DisplayValueToDBValue" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.DefaultObjectValue" />
+  <PluginItem Name="SubDataModelValue_DisplayValueToDBValue" Type="DisplayValueToDBValue" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SubDataModelValue" />
+</root>

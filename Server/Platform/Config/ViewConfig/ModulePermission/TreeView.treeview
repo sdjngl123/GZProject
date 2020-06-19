@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebTreeView Name="ModulePermissionTreeView" TextField="" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField=""  Filter="" View="" StateField="" ShowStartNode="false"  IsTemplate="false" FilterFlag="Tree_Current_Tag_PEID">
+    <Schema Name="GROUPS" ObjectType="ORGANIZATION" TextField="" TextDicField="TEXTDIC" IconClose="" IconOpen="" IconCloseField="ICON" IconOpenField="ICON" NodeTypeField="NODETYPE" EntityFilter="" Filter="NODETYPE='GROUPS'" View="ORGANIZATIONVIEW" QueryID="[Tree_Current_value1]"  StateField="STATEID" Key="1" SuperKey="-1" ParentObjectType="" Loop="false" IsExistNode="true" />
+    <Schema Name="COMPANYTOGROUP" ObjectType="COMPANY" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="ORGANIZEVIEW" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="11" SuperKey="1" ParentObjectType="ORGANIZATION" Loop="false" IsExistNode="true" />
+    <Schema Name="COMPANYTOGROUPINFO" ObjectType="GROUPINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="ORGANIZEVIEW" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="12" SuperKey="11" ParentObjectType="COMPANY" Loop="false" IsExistNode="true" />
+    <Schema Name="GROUPINFOTOGROUP" ObjectType="GROUPINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="GROUPID='[Tree_Parent_value1]'" View="GROUPTREELISTVIEW" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="13" SuperKey="12" ParentObjectType="GROUPINFO" Loop="true" IsExistNode="true" />
+    <Schema Name="GROUPINFOTOROLE" ObjectType="ROLEINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="GROUPID='[Tree_Parent_value1]'" View="ROLESTREELISTVIEW" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="14" SuperKey="13" ParentObjectType="GROUPINFO" Loop="true" IsExistNode="true" />
+    <Schema Name="ROLETOUSER" ObjectType="USERINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="GROUPID='[Tree_Parent_value1]' AND CETYPE=N'USERINFO'" View="USERSTREELISTVIEW" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="15" SuperKey="15" ParentObjectType="ROLEINFO" Loop="true" IsExistNode="true" />
+    <Schema Name="ROLES" ObjectType="ORGANIZATION" TextField="" IconClose="Platform/Image/Model/p_roleobject.png" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="" QueryID="" StateField="" Key="2" SuperKey="-1" ParentObjectType="" Loop="false" IsExistNode="true" >
+      <NodeValue Value1="ORGANIZATION_ROLES" />
+    </Schema>
+    <Schema Name="ROLESTOROLE" ObjectType="ROLEINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="ROLEVIEW" QueryID="" StateField="" Key="21" SuperKey="2" ParentObjectType="ORGANIZATION" Loop="false" IsExistNode="false" />
+    <Schema Name="ALLUSER" ObjectType="" TextField="" IconClose="Platform/Image/Model/p_userobject.png" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="" QueryID="" StateField="" Key="3" SuperKey="-1" ParentObjectType="" Loop="false" IsExistNode="false" >
+      <NodeValue Value1="ALLUSER_Organization" Value3="ALLUSER"/>
+    </Schema>
+    <QueryView TextField="ENAME" TextDicField="ENAME" QueryField="ENAME;ECODE" IconCloseField="ICON" IconOpenField="ICON" Filter="" View="ORGANIZEVIEWDEEP" StateField="STATEID" />
+  </WebTreeView>
+</root>

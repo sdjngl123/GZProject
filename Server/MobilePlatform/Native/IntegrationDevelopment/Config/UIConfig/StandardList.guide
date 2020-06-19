@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Guide Name="NewPropertyTabGuide"  InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_SaveForm" ShowNav="true" CancelJS="">
+    <Page Name="MOBILEPAGEPROPERTYTAB-CREATE" InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_GetBaseInfo" AllowFinish="false"  PageTitleDic="IntegrationDevelopment.TabInfo"/>
+    <Page Name="PropertyFormPage" InitJS="InforCenter_MobilePlatform_StandardList_CreateFormInit" SaveJS="InforCenter_MobilePlatform_StandardList_GetFormInfo"  Reload="true"  AllowFinish="true" PageTitleDic="IntegrationDevelopment.DataConfig"/>
+  </Guide>
+  <Guide Name="EditPropertyTabGuide"  InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_SaveForm" ShowNav="true" CancelJS="">
+    <Page Name="MOBILEPAGEPROPERTYTAB-EDIT" InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_GetBaseInfo" AllowFinish="false"  PageTitleDic="IntegrationDevelopment.TabInfo"/>
+    <Page Name="PropertyFormPage" InitJS="InforCenter_MobilePlatform_StandardList_EditFormInit" SaveJS="InforCenter_MobilePlatform_StandardList_GetFormInfo"  Reload="true"  AllowFinish="true" PageTitleDic="IntegrationDevelopment.DataConfig"/>
+  </Guide>
+
+  <Guide Name="NewListTabGuide"  InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_SaveForm" ShowNav="true" CancelJS="">
+    <Page Name="MOBILEPAGETAB-CREATE" InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_GetBaseInfo" AllowFinish="false"  PageTitleDic="IntegrationDevelopment.TabInfo"/>
+    <Page Name="PropertyFormPage" InitJS="InforCenter_MobilePlatform_StandardList_CreateFormInit" SaveJS="InforCenter_MobilePlatform_StandardList_GetFormInfo"  Reload="true"  AllowFinish="true" PageTitleDic="IntegrationDevelopment.DataConfig"/>
+  </Guide>
+  <Guide Name="EditListTabGuide"  InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_SaveForm" ShowNav="true" CancelJS="">
+    <Page Name="MOBILEPAGETAB-EDIT" InitJS="" SaveJS="InforCenter_MobilePlatform_StandardList_GetBaseInfo" AllowFinish="false"  PageTitleDic="IntegrationDevelopment.TabInfo"/>
+    <Page Name="PropertyFormPage" InitJS="InforCenter_MobilePlatform_StandardList_EditFormInit" SaveJS="InforCenter_MobilePlatform_StandardList_GetFormInfo"  Reload="true"  AllowFinish="true" PageTitleDic="IntegrationDevelopment.DataConfig"/>
+  </Guide>
+</root>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginItem Name="WorkflowInfo" Type="ObjectType" Assembly="Hoteam.InforCenter.Workflow.Engine" Class="Hoteam.InforCenter.Workflow.Engine.Object.WorkflowInfo" />
+  <PluginItem Name="WorkflowTask" Type="ObjectType" Assembly="Hoteam.InforCenter.Workflow.Engine" Class="Hoteam.InforCenter.Workflow.Engine.Object.WorkflowTask" />
+  <PluginItem Name="WorkflowAttach" Type="ObjectType" Assembly="Hoteam.InforCenter.Workflow.Engine" Class="Hoteam.InforCenter.Workflow.Engine.Object.WorkflowAttach" />
+  <PluginItem Name="WorkflowActor" Type="ObjectType" Assembly="Hoteam.InforCenter.Workflow.Engine" Class="Hoteam.InforCenter.Workflow.Engine.Object.WorkflowActor" />
+  <PluginItem Name="WorkflowEngineUtility" Type="Business" Assembly="Hoteam.InforCenter.Workflow.Engine" Class="Hoteam.InforCenter.Workflow.Engine.FlowEngine.EngineUtilty" />
+
+  <!--新建公司时流程模板导入初始数据-->
+  <PluginItem Name="WorkflowTemplateInfoRepalceData" Type="ImportInitRootData" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ImportInitData.WorkflowTemplateInfoReplaceData" />
+  <PluginItem Name="XmlNameRepalceData" Type="ImportInitRootData" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ImportInitData.XmlNameRepalceData" />
+  <PluginItem Name="LastInsertRepalceData" Type="ImportInitRootData" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ImportInitData.LastInsertRepalceData" />
+
+  <!--流程条件模型属性扩展插件-->
+  <PluginItem Name="MultiGroupValueConditionPlugin" Type="Business" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ConditionPlugin.MultiGroupValueCondition" />
+  <PluginItem Name="MultiEnumValueConditionPlugin" Type="Business" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ConditionPlugin.MultiEnumValueCondition" />
+  <PluginItem Name="SingleGroupValueConditionPlugin" Type="Business" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ConditionPlugin.SingleGroupValueCondition" />
+  <PluginItem Name="EnumValueConditionPlugin" Type="Business" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.ConditionPlugin.EnumValueCondition" />
+  
+</root>

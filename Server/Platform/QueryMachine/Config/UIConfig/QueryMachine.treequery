@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeQuery Name="QueryMachineAddPOMTreeQuery" TreeViewName="" AllowReturnEmptyValue="false"
+    LoadAndSelectType="SingleLevel_SingleSelect" ReturnValueType=""
+ TreeRootDataService="InforCenter.Platform.QueryMachineService.GetQueryMachineAddPOMTreeRootNode"
+ TreeChildDataService="InforCenter.Platform.QueryMachineService.GetQueryMachineAddPOMTreeChildNode"
+ TreeQueryDataService="" TreeAllDataService="" CommitJS="InforCenter_Platform_QueryMachineAddPOM_TreeQueryCommit"
+             SelectControl="Tree">
+  </TreeQuery>
+
+  <TreeQuery Name="QueryMachineShowViewTreeQuery" TreeViewName="" AllowReturnEmptyValue="false" ShowTreeQuery="false"
+    LoadAndSelectType="SingleLevel_MultiSelect" ReturnValueType="COLNAME"
+             ListAllDataService="InforCenter.Platform.QueryMachineService.GetQueryMachineShowViewTreeRootNode"
+ TreeRootDataService=""
+ TreeChildDataService=""
+ TreeQueryDataService="" TreeAllDataService="" CommitJS="InforCenter_Platform_QueryMachine_TreeQueryCommit"
+             SelectedListInitJS="QueryMachine_TreeSelectedListInit"
+             SelectControl="List">
+  </TreeQuery>
+
+  <TreeQuery Name="QueryMachineLinkModelTreeQuery" TreeViewName="" AllowReturnEmptyValue="false" ShowTreeQuery="false"
+       DropSearch="false"  TreeChildDataService="" SelectControl="List"
+  LoadAndSelectType="SingleLevel_MultiSelect" ReturnValueType="COLNAME"
+   ListAllDataService="InforCenter.Platform.QueryMachineService.GetQueryMachineLinkModelTreeRootNode"
+ TreeQueryDataService="" TreeAllDataService="" CommitJS="InforCenter_Platform_QueryMachine_TreeQueryCommit"
+             SelectedListInitJS="QueryMachine_TreeSelectedListInit">
+  </TreeQuery>
+
+
+  <TreeQuery Name="QueryMachineRootModelTreeQuery" TreeViewName="" AllowReturnEmptyValue="false"
+  LoadAndSelectType="SingleLevel_SingleSelect" ReturnValueType=""
+ TreeRootDataService="InforCenter.Platform.QueryMachineService.GetQueryMachinRootModelTreeRootNode"
+ TreeChildDataService=""
+ TreeQueryDataService="" TreeAllDataService="" CommitJS="InforCenter_Platform_QueryMachineRootPOM_TreeQueryCommit"
+              SelectedListInitJS="QueryMachine_TreeSelectedListInit"
+             SelectControl="Tree">
+  </TreeQuery>
+</root>

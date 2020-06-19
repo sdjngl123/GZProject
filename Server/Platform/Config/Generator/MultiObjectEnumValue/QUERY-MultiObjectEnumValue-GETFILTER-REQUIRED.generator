@@ -1,0 +1,42 @@
+﻿{
+var c = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+
+	var enumFilter='';
+	if(c.GetSelectedLength() == 1)
+	{
+		enumFilter = InforCenter_Platform_Object_GetQueryFilter('[ANDOR]','[QUERYCOLUMN]','[QUERYOPERATOR]',value);
+	}
+	else if((c.GetSelectedLength() &gt; 1))
+	{
+		var arr = value.split(';');
+		var andor = '[ANDOR]';
+		var column = '[QUERYCOLUMN]';
+		var op = '[QUERYOPERATOR]';
+		op = op.toUpperCase();
+
+		if(op == '=' || op == 'LIKE')
+		{
+			for(var i = 0;i &lt;arr.length;i++)
+			{
+				enumFilter += 'OR  ' + column + ' = N\'' + arr[i] + '\' ';
+			}
+		}
+		else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+		{
+			for(var i = 0;i &lt;arr.length;i++)
+			{
+			enumFilter += 'AND ' + column + ' &lt;&gt; N\'' + arr[i] + '\' ';
+			}
+		}
+
+		if(enumFilter.length &gt; 0)
+		{
+			enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+		}
+	}
+	[FILTERSTRING] += enumFilter;
+	if(c.Check() == false) bCheck = false;	
+	}
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateCreate" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">新建流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Process template</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">template name</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template type</LocalizedLabel>
+    </Label>
+    <Label Name="NameRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null! &lt;/br&gt; maximum length is 100</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行新建流程模板操作,模板名称是‘[TemplateName]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes a new process template operation with the template name '[templateName]'.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="AUTHORIZEPERMISSIONLOG-EDIT" IsWeb="true">
+    <Label Name="LOGCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHORIZEPERMISSIONLOGHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑授权日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditAuthorization log</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FormVerSelect" IsWeb="true">
+    <Label Name="VERSIONLISTHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ver</LocalizedLabel>
+    </Label>
+    <Label Name="VERSIONLISTRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="FORMBUILDERVERHeader">
+      <LocalizedLabel LanguageRef="zhs">选择表单版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select form version</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

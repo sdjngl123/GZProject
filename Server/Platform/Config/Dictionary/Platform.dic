@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Common" IsWeb="true">
+    <Label Name="ObjectNotExist">
+      <LocalizedLabel LanguageRef="zhs">此对象不存在，可能已经被删除，请尝试刷新或关闭当前页!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This object does not exist and may have been deleted. Please try refreshing or closing the current page!</LocalizedLabel>
+    </Label>
+    <Label Name="Copyright">
+      <LocalizedLabel LanguageRef="zhs">版权所有&amp;nbsp;©&amp;nbsp;2012-2018&amp;nbsp;&amp;nbsp;华天软件&amp;nbsp;&amp;nbsp;保留所有权利</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copyright&amp;nbsp; ©&amp;nbsp; 2012-2018&amp;nbsp; &amp;nbsp; Huatian software&amp;nbsp; &amp;nbsp; All rights reserved.</LocalizedLabel>
+    </Label>
+    <Label Name="AddressAndPhone">
+      <LocalizedLabel LanguageRef="zhs">公司地址：山东省济南市高新区新泺大街2117号铭盛大厦15层  联系电话：0531-88879070</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company address: the 15th Floor, Mingsheng Building, No. 2117 Xintong Street, Hi-tech Zone, Jinan City, Shandong Province Tel: 0531-88879070.</LocalizedLabel>
+    </Label>
+    <Label Name="StartWorkflow">
+      <LocalizedLabel LanguageRef="zhs">发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiate process </LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermission">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectMessage">
+      <LocalizedLabel LanguageRef="zhs">消息订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subscription</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="Cut">
+      <LocalizedLabel LanguageRef="zhs">剪切</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAdd">
+      <LocalizedLabel LanguageRef="zhs">复制新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy and add</LocalizedLabel>
+    </Label>
+    <Label Name="Upload">
+      <LocalizedLabel LanguageRef="zhs">上传</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Platform" IsWeb="true">
+    <Label Name="Img">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ObjectInfoAlreadyExists">
+      <LocalizedLabel LanguageRef="zhs">[InfoName]存在重复，请重新输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[InfoName] is duplicated, please enter again!</LocalizedLabel>
+    </Label>
+    <Label Name="SelectionTypeError">
+      <LocalizedLabel LanguageRef="zhs">该操作不允许操作[Type]！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The operation is not allowed [Type]!</LocalizedLabel>
+    </Label>
+    <Label Name="Prompt">
+      <LocalizedLabel LanguageRef="zhs">提示框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prompt box</LocalizedLabel>
+    </Label>
+    <Label Name="Confirm">
+      <LocalizedLabel LanguageRef="zhs">提示框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prompt box</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseInputQueryContent">
+      <LocalizedLabel LanguageRef="zhs">请输入查询内容！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the query content!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseSelectQueryStartNode">
+      <LocalizedLabel LanguageRef="zhs">请选择查询起始节点！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select query start node!</LocalizedLabel>
+    </Label>
+    <Label Name="WasTheLastOne">
+      <LocalizedLabel LanguageRef="zhs">已经是最后一个！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It's the last one!</LocalizedLabel>
+    </Label>
+    <Label Name="IsRootUnableQuery">
+      <LocalizedLabel LanguageRef="zhs">已经是根节点，无法向上查询！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This is already the root node, it cannot be queried up!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseSelectStartNode">
+      <LocalizedLabel LanguageRef="zhs">请选择一个起始节点！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a starting node!</LocalizedLabel>
+    </Label>
+    <Label Name="WasTheFirstOne">
+      <LocalizedLabel LanguageRef="zhs">已经是第一个！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It's the first one!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseCheckOutTheNextoperation">
+      <LocalizedLabel LanguageRef="zhs">请先查询再执行下一个操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please query first and then execute the next operation!</LocalizedLabel>
+    </Label>
+    <Label Name="DidNotFindTheQueryContent">
+      <LocalizedLabel LanguageRef="zhs">没有找到查询内容！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No query content is found!</LocalizedLabel>
+    </Label>
+    <Label Name="WebActionConfirm">
+      <LocalizedLabel LanguageRef="zhs">您确认要执行[ACTION]操作吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to perform the [ACTION] operation?</LocalizedLabel>
+    </Label>
+    <Label Name="WebActionComplete">
+      <LocalizedLabel LanguageRef="zhs">您已经执行了[ACTION]操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have already performed the [ACTION] operation!</LocalizedLabel>
+    </Label>
+    <Label Name="EmptySelectionException">
+      <LocalizedLabel LanguageRef="zhs">请至少选择一个对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select at least one object.</LocalizedLabel>
+    </Label>
+    <Label Name="NotSingleSelectionException">
+      <LocalizedLabel LanguageRef="zhs">请选择一个对象进行操作。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select an object for operation.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubObjAndReferenceNotDelete">
+      <LocalizedLabel LanguageRef="zhs">对象存在下级和引用，不允许删除。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object has subordinates and reference, which is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistReferenceNotDelete">
+      <LocalizedLabel LanguageRef="zhs">对象存在引用，不允许删除。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object has reference, which is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="TheSameOfTypeExtent">
+      <LocalizedLabel LanguageRef="zhs">存在相同文件后缀的文件类型，请调整后再保存。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There are file types with the same file suffix, please save after adjust.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistReferenceNotUpdate">
+      <LocalizedLabel LanguageRef="zhs">对象存在引用，不允许更改。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object has a reference, which is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubObjNotDelete">
+      <LocalizedLabel LanguageRef="zhs">对象存在下级或引用关系，不允许删除。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object has a subordinate or reference relationship, which is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="CANNOTPASTE">
+      <LocalizedLabel LanguageRef="zhs">[ENAME]/[ECODE]不能复制粘贴或添加关系。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ENAME]/[ECODE]unable to copy and paste or add relationships.</LocalizedLabel>
+    </Label>
+    <Label Name="LOOPCHECKERROR">
+      <LocalizedLabel LanguageRef="zhs">[ENAME]/[ECODE]存在环结构，不能复制粘贴或添加关系！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ENAME]/[ECODE], there is a ring structure, it is unable to copy and paste or add relationships!</LocalizedLabel>
+    </Label>
+    <Label Name="EXISTLINK">
+      <LocalizedLabel LanguageRef="zhs">[ENAME]/[ECODE]已存在，不能复制粘贴或添加关系！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ENAME]/[ECODE] already exist, it is unable to copy and paste or add relationships!</LocalizedLabel>
+    </Label>
+    <Label Name="ADDSUCCEED">
+      <LocalizedLabel LanguageRef="zhs">[ENAME]/[ECODE]添加关系成功!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ENAME]/[ECODE] add relationship succeeded!</LocalizedLabel>
+    </Label>
+    <Label Name="NoAddPermission">
+      <LocalizedLabel LanguageRef="zhs">[ENAME]/[ECODE],您没有新增[OBJECTTYPE]的关系权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ENAME]/[ECODE],You do not have the ability to add a relationship [OBJECTTYPE]!</LocalizedLabel>
+    </Label>
+    <Label Name="ALLADDSUCCEED">
+      <LocalizedLabel LanguageRef="zhs">共计[SumCount]个对象，添加关系全部成功！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The total number of objects [SumCount], and the relationships are all succeeded added !</LocalizedLabel>
+    </Label>
+    <Label Name="PARTADDSUCCEED">
+      <LocalizedLabel LanguageRef="zhs">共计[SumCount]个对象，添加关系成功[SucceedCount]个，失败[FailCount]个，具体原因如下：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The total number of objects [SumCount], the number of the relationships that are succeeded added  [SucceedCount], the number of the relationships that are not succeeded added  [FailCount], for the following reasons:</LocalizedLabel>
+    </Label>
+    <Label Name="NotSelectObject">
+      <LocalizedLabel LanguageRef="zhs">进行该操作前，至少需要选择一个对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">At least one object needs to be selected before this operation.</LocalizedLabel>
+    </Label>
+    <Label Name="NotOneSelectObject">
+      <LocalizedLabel LanguageRef="zhs">进行该操作前，需要选择一个对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An object needs to be selected before this operation.</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyOneAllow">
+      <LocalizedLabel LanguageRef="zhs">进行该操作前，您只能选择一个对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You can only select an object before this operation.</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyReturnAllow">
+      <LocalizedLabel LanguageRef="zhs">只允许返回[ObjectType]类型信息。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only allowed to return [ObjectType] type information.</LocalizedLabel>
+    </Label>
+    <Label Name="NoFitableValue">
+      <LocalizedLabel LanguageRef="zhs">没有符合类型的返回值。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is no return value that matches the type.</LocalizedLabel>
+    </Label>
+    <Label Name="ClickChooseContent">
+      <LocalizedLabel LanguageRef="zhs">请点击选取内容。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please click to select the content.</LocalizedLabel>
+    </Label>
+    <Label Name="WorkAgentMessage">
+      <LocalizedLabel LanguageRef="zhs">结束时间必须大于当前时间！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The end time must be greater than the current time!</LocalizedLabel>
+    </Label>
+    <Label Name="QRCodeExpire">
+      <LocalizedLabel LanguageRef="zhs">二维码已经失效，请刷新页面扫一扫！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QR Code expired, please scan again!</LocalizedLabel>
+    </Label>
+    <Label Name="RequiredFlag">
+      <LocalizedLabel LanguageRef="zhs">*</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">*</LocalizedLabel>
+    </Label>
+    <Label Name="NotExistEID">
+      <LocalizedLabel LanguageRef="zhs">当前节点在控制台[VIEWNAME]视图中未配置EID。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current node does not have an EID configured in the console popup [VIEWNAME].</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectNotExist">
+      <LocalizedLabel LanguageRef="zhs">此对象不存在，可能已经被删除，请尝试刷新或关闭当前页!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This object does not exist and may have been deleted. Please try refreshing or closing the current page!</LocalizedLabel>
+    </Label>
+    <Label Name="SomeObjectNotExist">
+      <LocalizedLabel LanguageRef="zhs">成功:[SUCCESS],失败[FAIELD],请尝试刷新.详情：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Success: [SUCCESS] Fail [FAIELD]. Please try refreshing. Details:</LocalizedLabel>
+    </Label>
+    <Label Name="AlreadyDelete">
+      <LocalizedLabel LanguageRef="zhs">（可能被删除）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">(may be deleted)</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Viewer</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">导航隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hidden</LocalizedLabel>
+    </Label>
+    <Label Name="NoPermissionExpandCurrentTreeNode">
+      <LocalizedLabel LanguageRef="zhs">您没有当前树节点的展开权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You do not have the expansion permission for the current tree node!</LocalizedLabel>
+    </Label>
+    <Label Name="InputQueryCondition">
+      <LocalizedLabel LanguageRef="zhs">请输入查询内容！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the query content!</LocalizedLabel>
+    </Label>
+    <Label Name="DorpdownIsnotInOption">
+      <LocalizedLabel LanguageRef="zhs">输入的值不在属性“[ColText]”下拉值列表中！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The value you enter is not in the attribute “[ColText]” drop-down list!</LocalizedLabel>
+    </Label>
+    <Label Name="Or">
+      <LocalizedLabel LanguageRef="zhs">或</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Or</LocalizedLabel>
+    </Label>
+    <Label Name="NoData">
+      <LocalizedLabel LanguageRef="zhs">暂无数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No data available</LocalizedLabel>
+    </Label>
+    <Label Name="ModulePermissionSave">
+      <LocalizedLabel LanguageRef="zhs">[UserID]更新了功能权限，权限明细为:[Detail]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserID] the functional permissions have been updated.detail:[Detail]</LocalizedLabel>
+    </Label>
+    <Label Name="ModulePermissionDetail">
+      <LocalizedLabel LanguageRef="zhs">授权类型：{0}，授权对象：{1}，授权最终结果为：允许功能：{2}，禁止功能：{3}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionType：{0}，PermissionObject{1}，Detail：Allow：{2}，Deny：{3}"</LocalizedLabel>
+    </Label>
+    <Label Name="None">
+      <LocalizedLabel LanguageRef="zhs">无</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">None</LocalizedLabel>
+    </Label>
+    <Label Name="FileExtentExist">
+      <LocalizedLabel LanguageRef="zhs">后缀名([extent])已经存在！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The suffix name ([extent]) isalready exists!</LocalizedLabel>
+    </Label>
+    <Label Name="AlreadyMoveToTop">
+      <LocalizedLabel LanguageRef="zhs">已到达顶部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Arrive at top</LocalizedLabel>
+    </Label>
+    <Label Name="AlreadyMoveToBottom">
+      <LocalizedLabel LanguageRef="zhs">已到达底部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Arrive at bottom</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowAttachObjectNotExist">
+      <LocalizedLabel LanguageRef="zhs">流程附件不存在，不允许提交流程!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process attachment does not exist, submission process is not allowed!</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNotExist">
+      <LocalizedLabel LanguageRef="zhs">对象类型[ObjectType]不存在，可能已经被删除！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">"ObjectFactory:Type [ObjectType] not exist !</LocalizedLabel>
+    </Label>
+    <Label Name="RootFolder">
+      <LocalizedLabel LanguageRef="zhs">根目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RootFolder</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="Position">
+      <LocalizedLabel LanguageRef="zhs">位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Position</LocalizedLabel>
+    </Label>
+
+    <Label Name="ErrorDateInfo">
+      <LocalizedLabel LanguageRef="zhs">出现应用程序未处理的异常：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Error Date Info</LocalizedLabel>
+    </Label>
+    <Label Name="ErrorMsg">
+      <LocalizedLabel LanguageRef="zhs">异常类型：{0}\r\n异常消息：{1}\r\n异常信息：{2}\r\n输出类型：{3}\r\n</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Error Type:{0}\r\nMsgTip：{1}\r\nMsg：{2}\r\nOutType：{3}\r\n</LocalizedLabel>
+    </Label>
+    <Label Name="ErrorType">
+      <LocalizedLabel LanguageRef="zhs">应用程序线程错误:{0}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Error Type {0}</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Export" IsWeb="true">
+    <Label Name="NoExportDataContent">
+      <LocalizedLabel LanguageRef="zhs">无导出数据。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No export data.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

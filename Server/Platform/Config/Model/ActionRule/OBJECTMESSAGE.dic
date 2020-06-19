@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="OBJECTMESSAGEModel" IsWeb="true">
+    <Label Name="OBJECTMESSAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象规则订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object rule subscription</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTMESSAGECaption">
+      <LocalizedLabel LanguageRef="zhs">对象规则订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object rule subscription</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive object</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTORVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">接收对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive object</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive operation</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">接收操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive operation</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象EUID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectEUID</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象EUID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectEUID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

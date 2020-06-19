@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebTreeView Name="MobilePageDevTreeView" ObjectType="MOBILEPAGEDEVROOT" TextDicField="ENAME" NodeTypeField="" View="MOBILEPAGEDEVROOTVIEW" StateField="STATEID" ShowStartNode="true" IsTemplate="false" IsMainConfig="false">
+    <Schema Name="MobilePageDevView" TextField="ENAME" NodeTypeField="PAGENAME" View="MOBILEPAGEDEVVIEW" StateField="STATEID" Key="1" SuperKey="-1" ParentObjectType="MOBILEPAGEDEVROOT" Loop="false" IsExistNode="true" ShowChildCount="false" />
+    <QueryView StateField="STATEID" />
+  </WebTreeView>
+  <WebTreeView Name="ExportTreeView" ObjectType="MOBILEPAGEDEVROOT" TextDicField="ENAME" NodeTypeField="" View="MOBILEPAGEDEVROOTVIEW" StateField="STATEID" ShowStartNode="true" IsTemplate="false" IsMainConfig="false"  FilterFlag="ParaData">
+    <Schema Name="MobilePageDevView" TextField="ENAME" NodeTypeField="PAGENAME" View="MOBILEPAGEDEVVIEW" StateField="STATEID" Key="1" SuperKey="-1" ParentObjectType="MOBILEPAGEDEVROOT" Loop="false" IsExistNode="true" ShowChildCount="false" FilterFlag="ParaData" />
+    <QueryView StateField="STATEID" />
+  </WebTreeView>
+</root>

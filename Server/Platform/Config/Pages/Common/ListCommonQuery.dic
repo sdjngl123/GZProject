@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListCommonQuery" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象查询页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object query page</LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand the query criteria</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide the query criteria</LocalizedLabel>
+    </Label>
+    <Label Name="QueryList">
+      <LocalizedLabel LanguageRef="zhs">查询结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query result</LocalizedLabel>
+    </Label>
+    <Label Name="SelectList">
+      <LocalizedLabel LanguageRef="zhs">已选列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Selected list</LocalizedLabel>
+    </Label>
+    <Label Name="QueryListTitle">
+      <LocalizedLabel LanguageRef="zhs">已加载{0}条,共{1}条</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Loaded {0}, a total of {1}</LocalizedLabel>
+    </Label>
+    <Label Name="SelectListTitle">
+      <LocalizedLabel LanguageRef="zhs">共{0}条</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">a total of {0}</LocalizedLabel>
+    </Label>
+    <Label Name="RoleListSearch">
+      <LocalizedLabel LanguageRef="zhs">角色列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role list query</LocalizedLabel>
+    </Label>
+    <Label Name="SingleGroupTreeListQuery">
+      <LocalizedLabel LanguageRef="zhs">组列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group list query</LocalizedLabel>
+    </Label>
+    <Label Name="SingleRoleListSearch">
+      <LocalizedLabel LanguageRef="zhs">角色列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role list query</LocalizedLabel>
+    </Label>
+    <Label Name="SingleUserTreeListQuery">
+      <LocalizedLabel LanguageRef="zhs">用户列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Userlist query</LocalizedLabel>
+    </Label>
+    <Label Name="NoAddSelectRowInfo">
+      <LocalizedLabel LanguageRef="zhs">请在查询结果中，选择需要添加的记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the record that you want to add in the query result</LocalizedLabel>
+    </Label>
+    <Label Name="NoAddRowInfo">
+      <LocalizedLabel LanguageRef="zhs">查询结果中，没有可以选择的记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No records can be selected in query result</LocalizedLabel>
+    </Label>
+    <Label Name="NoRemoveSelectRowInfo">
+      <LocalizedLabel LanguageRef="zhs">请在已选列表中，选择需要移除的记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the record that you want to remove in the selected list</LocalizedLabel>
+    </Label>
+    <Label Name="NoRemoveRowInfo">
+      <LocalizedLabel LanguageRef="zhs">已选列表中，没有需要移除的记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No records needed to be removed from the selected list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

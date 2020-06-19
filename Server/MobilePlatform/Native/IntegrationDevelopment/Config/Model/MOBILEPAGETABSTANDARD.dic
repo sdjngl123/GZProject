@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGETABSTANDARDModel" IsWeb="true">
+    <Label Name="MOBILEPAGETABSTANDARDHeader">
+      <LocalizedLabel LanguageRef="zhs">标准列表Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEPAGETABSTANDARD</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGETABSTANDARDCaption">
+      <LocalizedLabel LanguageRef="zhs">标准列表Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEPAGETABSTANDARD</LocalizedLabel>
+    </Label>
+    <Label Name="TABHeader">
+      <LocalizedLabel LanguageRef="zhs">标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab</LocalizedLabel>
+    </Label>
+    <Label Name="TABCaption">
+      <LocalizedLabel LanguageRef="zhs">标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDHeader">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDCaption">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="TITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="TITLECaption">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="FILTERSTRINGHeader">
+      <LocalizedLabel LanguageRef="zhs">条件字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterString</LocalizedLabel>
+    </Label>
+    <Label Name="FILTERSTRINGCaption">
+      <LocalizedLabel LanguageRef="zhs">条件字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterString</LocalizedLabel>
+    </Label>
+    <Label Name="ISSELECTEDHeader">
+      <LocalizedLabel LanguageRef="zhs">是否选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsSelected</LocalizedLabel>
+    </Label>
+    <Label Name="ISSELECTEDCaption">
+      <LocalizedLabel LanguageRef="zhs">是否选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsSelected</LocalizedLabel>
+    </Label>
+    <Label Name="ISALLSELECTHeader">
+      <LocalizedLabel LanguageRef="zhs">是否全选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsAllSelect</LocalizedLabel>
+    </Label>
+    <Label Name="ISALLSELECTCaption">
+      <LocalizedLabel LanguageRef="zhs">是否全选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsAllSelect</LocalizedLabel>
+    </Label>
+    <Label Name="ASSEMBLYHeader">
+      <LocalizedLabel LanguageRef="zhs">程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assembly</LocalizedLabel>
+    </Label>
+    <Label Name="ASSEMBLYCaption">
+      <LocalizedLabel LanguageRef="zhs">程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assembly</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassName</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassName</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="LISTITEMOBJECTMANAGERHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项负责人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListItemObjectManager</LocalizedLabel>
+    </Label>
+    <Label Name="LISTITEMOBJECTMANAGERCaption">
+      <LocalizedLabel LanguageRef="zhs">列表项负责人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListItemObjectManager</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMSUBTITLETWOHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项副标题2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ItemSubTitleTwo</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMSUBTITLETWOCaption">
+      <LocalizedLabel LanguageRef="zhs">列表项副标题2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ItemSubTitleTwo</LocalizedLabel>
+    </Label>
+    <Label Name="LISTITEMSTATEICONHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项状态图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LISTITEMSTATEICON</LocalizedLabel>
+    </Label>
+    <Label Name="LISTITEMSTATEICONCaption">
+      <LocalizedLabel LanguageRef="zhs">列表项状态图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LISTITEMSTATEICON</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Itemtitle</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">列表项标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Itemtitle</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMSUBTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项副标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ITEMSUBTITLE</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMSUBTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">列表项副标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ITEMSUBTITLE</LocalizedLabel>
+    </Label>
+    <Label Name="LISTITEMSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">listItemState</LocalizedLabel>
+    </Label>
+    <Label Name="LISTITEMSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">列表项对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">listItemState</LocalizedLabel>
+    </Label>
+    <Label Name="LISTPAGECOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">列表每页行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListPageCount</LocalizedLabel>
+    </Label>
+    <Label Name="LISTPAGECOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">列表每页行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListPageCount</LocalizedLabel>
+    </Label>
+    <Label Name="SQLCOMMANDNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">Sql语句名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQLCommandName</LocalizedLabel>
+    </Label>
+    <Label Name="SQLCOMMANDNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">Sql语句名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQLCommandName</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTOBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">结果对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RESULTOBJECTTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTOBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">结果对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RESULTOBJECTTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">数据源类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATASOURCETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">数据源类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATASOURCETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTORDERBYHeader">
+      <LocalizedLabel LanguageRef="zhs">返回对象排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RESULTORDERBY</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTORDERBYCaption">
+      <LocalizedLabel LanguageRef="zhs">返回对象排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RESULTORDERBY</LocalizedLabel>
+    </Label>
+    <Label Name="TABASSEMBLYHeader">
+      <LocalizedLabel LanguageRef="zhs">Tab程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TABASSEMBLY</LocalizedLabel>
+    </Label>
+    <Label Name="TABASSEMBLYCaption">
+      <LocalizedLabel LanguageRef="zhs">Tab程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TABASSEMBLY</LocalizedLabel>
+    </Label>
+    <Label Name="TABCLASSNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">Tab类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TabCLASSNAME</LocalizedLabel>
+    </Label>
+    <Label Name="TABCLASSNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">Tab类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TabCLASSNAME</LocalizedLabel>
+    </Label>
+    <Label Name="PROPERTYCOLUMNHeader">
+      <LocalizedLabel LanguageRef="zhs">属性页显示字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyColumn</LocalizedLabel>
+    </Label>
+    <Label Name="PROPERTYCOLUMNCaption">
+      <LocalizedLabel LanguageRef="zhs">属性页显示字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyColumn</LocalizedLabel>
+    </Label>
+    <Label Name="PROPERTYASSEMBLYHeader">
+      <LocalizedLabel LanguageRef="zhs">属性程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyASSEMBLY</LocalizedLabel>
+    </Label>
+    <Label Name="PROPERTYASSEMBLYCaption">
+      <LocalizedLabel LanguageRef="zhs">属性程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyASSEMBLY</LocalizedLabel>
+    </Label>
+    <Label Name="PROPERTYCLASSNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">属性类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyCLASSNAME</LocalizedLabel>
+    </Label>
+    <Label Name="PROPERTYCLASSNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">属性类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyCLASSNAME</LocalizedLabel>
+    </Label>
+    <Label Name="ISROOTQUERYHeader">
+      <LocalizedLabel LanguageRef="zhs">是否根节点查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISROOTQuery</LocalizedLabel>
+    </Label>
+    <Label Name="ISROOTQUERYCaption">
+      <LocalizedLabel LanguageRef="zhs">是否根节点查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISROOTQuery</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

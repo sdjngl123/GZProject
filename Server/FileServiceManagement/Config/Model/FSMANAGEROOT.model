@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityType Name="FSMANAGEROOT" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="true" TableName="FSMANAGEROOT" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" GeneratePageType="Create Edit" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" CreateList="false" CreateTree="true" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false" />
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Description="所有人禁止组织新建、公司列表查看" IsSysData="true">
+  <Table Name="MODULEPERMISSION">
+    <Column Name="EID" />
+    <Column Name="CREATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="PERMISSIONTYPEVALUE" />
+    <Column Name="PERMISSIONVALUE" />
+    <Row>
+      <Cell ColName="EID">MODULEPERMISSION_320dcc9d5d374e6592e2c4ac5b237f2d</Cell>
+      <Cell ColName="CREATETIME">636288815220000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PERMISSIONTYPEVALUE">{"OrgID":"ALLUSER_Organization","OrgType":"ALLUSER"}</Cell>
+      <Cell ColName="PERMISSIONVALUE">{"Allow":"[{\"Type\":\"Navigation\",\"Name\":\"AddModel\",\"Path\":\"AddModel\",\"NavigationID\":\"AddModel\"}]","Deny":"[{\"Type\":\"Menu\",\"Name\":\"CreateCompany\",\"Path\":\"CreateCompany;GROUPS;Organize;Organization\",\"NavigationID\":\"Organization\"},{\"Type\":\"Tabs\",\"Name\":\"CompanyList\",\"Path\":\"CompanyList;Organization\",\"NavigationID\":\"Organization\"},{\"Type\":\"Menu\",\"Name\":\"CreateCompany\",\"Path\":\"CreateCompany;CompanyList;Organization\",\"NavigationID\":\"Organization\"},{\"Type\":\"Menu\",\"Name\":\"EditCompany\",\"Path\":\"EditCompany;CompanyList;Organization\",\"NavigationID\":\"Organization\"},{\"Type\":\"Menu\",\"Name\":\"DeleteCompany\",\"Path\":\"DeleteCompany;CompanyList;Organization\",\"NavigationID\":\"Organization\"},{\"Type\":\"Menu\",\"Name\":\"Refresh\",\"Path\":\"Refresh;CompanyList;Organization\",\"NavigationID\":\"Organization\"}]"}</Cell>
+    </Row>
+  </Table>
+  <TableSchema Name="MODULEPERMISSION" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERMISSIONTYPEVALUE" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERMISSIONVALUE" DataType="TEXT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_MODULEPERMISSION_VALUE" Unique="false">
+      <Field Name="PERMISSIONTYPEVALUE" Order="ASC" />
+    </Index>
+  </TableSchema>
+</root>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ReportDesigner" IsWeb="false">
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name:</LocalizedLabel>
+    </Label>
+    <Label Name="ReportName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ReportType">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="OK">
+      <LocalizedLabel LanguageRef="zhs">确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OK</LocalizedLabel>
+    </Label>
+    <Label Name="Cancle">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+    <Label Name="Entername">
+      <LocalizedLabel LanguageRef="zhs">请输入名称！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please input a name!</LocalizedLabel>
+    </Label>
+    <Label Name="NameExit">
+      <LocalizedLabel LanguageRef="zhs">名称已经存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name already exists</LocalizedLabel>
+    </Label>
+    <Label Name="CreateSingleReport">
+      <LocalizedLabel LanguageRef="zhs">新建模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New template</LocalizedLabel>
+    </Label>
+    <Label Name="CreateAllReport">
+      <LocalizedLabel LanguageRef="zhs">新建模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New template</LocalizedLabel>
+    </Label>
+    <Label Name="OpenOrNew">
+      <LocalizedLabel LanguageRef="zhs">新建或打开模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New or Open template</LocalizedLabel>
+    </Label>
+    <Label Name="Toolkit">
+      <LocalizedLabel LanguageRef="zhs">工具箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tool box</LocalizedLabel>
+    </Label>
+    <Label Name="AutoCreateComponents">
+      <LocalizedLabel LanguageRef="zhs">你确认要自动创建？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to create automatically?</LocalizedLabel>
+    </Label>
+    <Label Name="Components">
+      <LocalizedLabel LanguageRef="zhs">控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control</LocalizedLabel>
+    </Label>
+    <Label Name="TemplatesList">
+      <LocalizedLabel LanguageRef="zhs">模板列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template List</LocalizedLabel>
+    </Label>
+    <Label Name="ContentWindow">
+      <LocalizedLabel LanguageRef="zhs">绘制区域</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Draw Region</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyWindow">
+      <LocalizedLabel LanguageRef="zhs">属性栏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute bar</LocalizedLabel>
+    </Label>
+    <Label Name="SuccessfullySaved">
+      <LocalizedLabel LanguageRef="zhs">保存成功!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save successfully!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseSelectObjectType">
+      <LocalizedLabel LanguageRef="zhs">请选择表单模板对应对象类型!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the form template to correspond to the object type!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseSelectUsedByType">
+      <LocalizedLabel LanguageRef="zhs">请选择表单模板使用类型!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the form template usage type!</LocalizedLabel>
+    </Label>
+    <Label Name="AutoCreateComponent">
+      <LocalizedLabel LanguageRef="zhs">自动生成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic Generation</LocalizedLabel>
+    </Label>
+    <Label Name="AlignObjectsLeft">
+      <LocalizedLabel LanguageRef="zhs">左对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Left</LocalizedLabel>
+    </Label>
+    <Label Name="AlignObjectsCenteredHorizontal">
+      <LocalizedLabel LanguageRef="zhs">剧中对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align in the center</LocalizedLabel>
+    </Label>
+    <Label Name="AlignObjectsRight">
+      <LocalizedLabel LanguageRef="zhs">右对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Right</LocalizedLabel>
+    </Label>
+    <Label Name="AlignObjectsTop">
+      <LocalizedLabel LanguageRef="zhs">顶端对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Top</LocalizedLabel>
+    </Label>
+    <Label Name="AlignObjectsCenteredVertical">
+      <LocalizedLabel LanguageRef="zhs">中间对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Center Align</LocalizedLabel>
+    </Label>
+    <Label Name="AlignObjectsBottom">
+      <LocalizedLabel LanguageRef="zhs">顶端对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Top</LocalizedLabel>
+    </Label>
+    <Label Name="Open">
+      <LocalizedLabel LanguageRef="zhs">打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteTemplate">
+      <LocalizedLabel LanguageRef="zhs">删除该模板？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Will you delete this template?</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="Label">
+      <LocalizedLabel LanguageRef="zhs">标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label</LocalizedLabel>
+    </Label>
+    <Label Name="ValueLabel">
+      <LocalizedLabel LanguageRef="zhs">数据字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Field</LocalizedLabel>
+    </Label>
+    <Label Name="TextBox">
+      <LocalizedLabel LanguageRef="zhs">文本框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text Box</LocalizedLabel>
+    </Label>
+    <Label Name="DateTime">
+      <LocalizedLabel LanguageRef="zhs">时间控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time Control</LocalizedLabel>
+    </Label>
+    <Label Name="DropDownList">
+      <LocalizedLabel LanguageRef="zhs">下拉列表框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Drop-down List Box</LocalizedLabel>
+    </Label>
+    <Label Name="CheckBox">
+      <LocalizedLabel LanguageRef="zhs">复选框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check Box</LocalizedLabel>
+    </Label>
+    <Label Name="DirectoryTreeSelector">
+      <LocalizedLabel LanguageRef="zhs">选人员控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Selected Person Control</LocalizedLabel>
+    </Label>
+    <Label Name="LifecycleState">
+      <LocalizedLabel LanguageRef="zhs">生命周期状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lifecycle state</LocalizedLabel>
+    </Label>
+    <Label Name="InfoObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="Pointer">
+      <LocalizedLabel LanguageRef="zhs">指针</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pointer</LocalizedLabel>
+    </Label>
+    <Label Name="LayoutTable">
+      <LocalizedLabel LanguageRef="zhs">布局控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Layout Controls</LocalizedLabel>
+    </Label>
+    <Label Name="AbsoluteLocation">
+      <LocalizedLabel LanguageRef="zhs">绝对定位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Absolute Positioning</LocalizedLabel>
+    </Label>
+    <Label Name="Chart">
+      <LocalizedLabel LanguageRef="zhs">图表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Charting</LocalizedLabel>
+    </Label>
+    <Label Name="DataRepeat">
+      <LocalizedLabel LanguageRef="zhs">数据循环器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Circulator</LocalizedLabel>
+    </Label>
+    <Label Name="DataSelect">
+      <LocalizedLabel LanguageRef="zhs">数据选择器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Selector</LocalizedLabel>
+    </Label>
+    <Label Name="DBLabel">
+      <LocalizedLabel LanguageRef="zhs">数据库文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Text</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalBoxLayout">
+      <LocalizedLabel LanguageRef="zhs">垂直盒子布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical box layout</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalBoxLayout">
+      <LocalizedLabel LanguageRef="zhs">水平盒子布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal box layout</LocalizedLabel>
+    </Label>
+    <Label Name="Image">
+      <LocalizedLabel LanguageRef="zhs">静态图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Static Picture</LocalizedLabel>
+    </Label>
+    <Label Name="Expression">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="tabTemplateProperty">
+      <LocalizedLabel LanguageRef="zhs">模板属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template properties</LocalizedLabel>
+    </Label>
+    <Label Name="tabComponentProterty">
+      <LocalizedLabel LanguageRef="zhs">控件属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Properties</LocalizedLabel>
+    </Label>
+    <Label Name="DataGrid">
+      <LocalizedLabel LanguageRef="zhs">数据表格</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Table</LocalizedLabel>
+    </Label>
+    <Label Name="EditList">
+      <LocalizedLabel LanguageRef="zhs">编辑项目名单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit Project List</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseSettingDataSource">
+      <LocalizedLabel LanguageRef="zhs">请先设置数据源!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please set up the data source first!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseSelectDataTable">
+      <LocalizedLabel LanguageRef="zhs">请先选择数据表!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the data sheet first!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

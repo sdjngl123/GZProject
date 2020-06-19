@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <DictionarySerializer version="1.0">
+    <Context Name="WorkflowObjectList">
+      <Label Name="Img">
+        <LocalizedLabel LanguageRef="en"> </LocalizedLabel>
+        <LocalizedLabel LanguageRef="zhs"> </LocalizedLabel>
+      </Label>
+    </Context>
+  </DictionarySerializer>
+
+

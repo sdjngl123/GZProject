@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="WorkFlowTempateRootPage">
+      <LocalizedLabel LanguageRef="zhs">下级分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate group</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowTempatePage">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="WorkflowClassifyManagement" IsWeb="true">
+    <Label Name="ExistSubClassifyError">
+      <LocalizedLabel LanguageRef="zhs">存在下级分类，不允许删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is a subordinate classification, which is not allowed to be deleted</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubTemplateError">
+      <LocalizedLabel LanguageRef="zhs">存在下级模板，不允许删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is a subordinate template, which is not allowed to be deleted</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

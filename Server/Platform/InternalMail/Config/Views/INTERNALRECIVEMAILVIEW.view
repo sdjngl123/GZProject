@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="INTERNALRECIVEMAILVIEW" ObjectTypeName="INTERNALMAIL" OrderByString="CREATETIME DESC" AsCommonQuery="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SENDUSER" Width="200" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <!--<ViewColumn Name="COPYTOUSER" Width="200" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />-->
+    <ViewColumn Name="MTITLE" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="RECIVETIME" Width="160" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="IMPORTANT" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="MSTATEICON" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

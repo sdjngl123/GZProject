@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AuditRegisterUser" IsWeb="true">
+    <Label Name="IsNotUnaudit">
+      <LocalizedLabel LanguageRef="zhs">只有审核状态为“未审核”时才允许执行该操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNotUnaudit</LocalizedLabel>
+    </Label>
+    <Label Name="AuditPassSuccess">
+      <LocalizedLabel LanguageRef="zhs">设置成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNotUnaudit</LocalizedLabel>
+    </Label>
+    <Label Name="IsNotAuditedUnPass">
+      <LocalizedLabel LanguageRef="zhs">只有审核状态为“审核不通过”时才允许执行该操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNotAuditedUnPass</LocalizedLabel>
+    </Label>
+    <Label Name="IsNotExistTheUser">
+      <LocalizedLabel LanguageRef="zhs">不存在此用户！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNotExistTheUser</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentUserIsNotRegistered">
+      <LocalizedLabel LanguageRef="zhs">当前用户未注册！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CurrentUserIsNotRegistered</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentUserIsNotAudit">
+      <LocalizedLabel LanguageRef="zhs">当前用户未审核通过！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CurrentUserIsNotAudit</LocalizedLabel>
+    </Label>
+    <Label Name="RegisterAuditPassTitle">
+      <LocalizedLabel LanguageRef="zhs">审核通过通知</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">the notice of audit-passed</LocalizedLabel>
+    </Label>
+    <Label Name="RegisterAuditPassContent">
+      <LocalizedLabel LanguageRef="zhs">[EMAIL] 您注册的[SYSTEMNAME]系统已审核通过  企业名称：【[COMPANYNAME]】，企业编号：【[COMPANYCODE]】，管理员账号：【[ADMINUSER]】，管理员初始密码：【[ADMINPASSWORD]】，请登录系统查看！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[EMAIL] 您注册的[SYSTEMNAME]系统已审核通过  企业名称：【[COMPANYNAME]】，企业编号：【[COMPANYCODE]】，管理员账号：【[ADMINUSER]】，管理员初始密码：【[ADMINPASSWORD]】，请登录系统查看！</LocalizedLabel>
+    </Label>
+    <Label Name="RegisterAuditFailTitle">
+      <LocalizedLabel LanguageRef="zhs">审核失败通知</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">the notice of audit-failed</LocalizedLabel>
+    </Label>
+    <Label Name="RegisterAuditFailContent">
+      <LocalizedLabel LanguageRef="zhs">[EMAIL] 您注册的[SYSTEMNAME]系统审核失败，请联系管理员！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[EMAIL] 您注册的[SYSTEMNAME]系统审核失败，请联系管理员！</LocalizedLabel>
+    </Label>
+    <Label Name="VaultMaxCountOverflow">
+      <LocalizedLabel LanguageRef="zhs">没有发现匹配的文档柜信息或者超过文档柜最大注册数量！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">not find matched companyVault info Or companyVault max count overflow</LocalizedLabel>
+    </Label>
+    <Label Name="NoVaultCompanyTemplate">
+      <LocalizedLabel LanguageRef="zhs">没有发现文档柜模板！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NoVaultCompanyTemplate</LocalizedLabel>
+    </Label>
+    <Label Name="NoSetLocalFileService">
+      <LocalizedLabel LanguageRef="zhs">设置本地文件服务地址，将会覆盖注册时分配的文件服务地址，确定要执行吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">设置本地文件服务地址，将会覆盖注册时分配的文件服务地址，确定要执行吗？</LocalizedLabel>
+    </Label>
+    <Label Name="SystemCompanyCannotAddLocalFileService">
+      <LocalizedLabel LanguageRef="zhs">运营商企业不能设置本地文件服务！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SystemCompanyCannotAddLocalFileService</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedPassCannotAudit">
+      <LocalizedLabel LanguageRef="zhs">已经通过评审 不需要再次审核！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedPassCannotAudit</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedUnPassCannotAudit">
+      <LocalizedLabel LanguageRef="zhs">已设置评审不通过 不允许执行评审通过操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedUnPassCannotAudit</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedPassCannotAuditUnPass">
+      <LocalizedLabel LanguageRef="zhs">已经通过评审 不能设置为不通过！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedPassCannotAuditUnPass</LocalizedLabel>
+    </Label>
+    <Label Name="CreateRegisteredDatabaseError">
+      <LocalizedLabel LanguageRef="zhs">创建数据库失败，详细信息请联系管理员查看日志！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateRegisteredDatabaseError</LocalizedLabel>
+    </Label>
+    
+
+  </Context>
+</DictionarySerializer>

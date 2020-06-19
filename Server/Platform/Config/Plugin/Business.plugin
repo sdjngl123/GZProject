@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 对象类型-->
+  <PluginItem Name="DataSetTypeUtil" Type="Business" Assembly="Hoteam.InforCenter.DataSetType.Business" Class="Hoteam.InforCenter.DataSetType.Business.DataSetTypeUtility" />
+  <PluginItem Name="EnumerationUtil" Type="Business" Assembly="Hoteam.InforCenter.Enumeration.Business" Class="Hoteam.InforCenter.Enumeration.Business.EnumerationUtil" />
+</root>

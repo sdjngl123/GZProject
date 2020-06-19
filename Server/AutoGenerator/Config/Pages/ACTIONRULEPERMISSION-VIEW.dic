@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="ACTIONRULEPERMISSION-VIEW" IsWeb="true">
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览规则权限授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseThe authorization of rule authority</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

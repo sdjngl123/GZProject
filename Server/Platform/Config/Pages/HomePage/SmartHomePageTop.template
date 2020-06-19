@@ -1,0 +1,15 @@
+﻿<div class="titleArea">
+    <div class="left">
+        <div class="HomePage_SystemLabel" id="HomePage_SystemLabel"></div>
+    </div>
+    <div class="SmartHomePage_UserContainer">
+        <span id="SmartHomePage_User" style="font-size:12px;"></span>
+        <span class="basesprite b-white-angle-down" style="margin-bottom:-2px;"></span>
+    </div>
+    <div class="SmartHomePage_Message" id="SmartHomePage_Message">
+        消息
+        <div id="SmartHomePage_Message_Num" class="SmartHomePage_Message_Num"></div>
+    </div>
+  <div class="SmartHomePage_Message" id="SmartHomePage_AgentUser">
+  </div>
+</div>

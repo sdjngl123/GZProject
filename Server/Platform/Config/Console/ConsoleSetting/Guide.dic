@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Guide" IsWeb="false">
+    <Label Name="GuideName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="GuideNameDescription">
+      <LocalizedLabel LanguageRef="zhs">向导页的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CommitJs">
+      <LocalizedLabel LanguageRef="zhs">完成按钮Js函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveJs</LocalizedLabel>
+    </Label>
+    <Label Name="CommitDescription">
+      <LocalizedLabel LanguageRef="zhs">完成按钮执行的JS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The format in which the header content is displayed,For example：[ECODE]/[ENAME]</LocalizedLabel>
+    </Label>
+    <Label Name="CancelJS">
+      <LocalizedLabel LanguageRef="zhs">取消按钮Js函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Template</LocalizedLabel>
+    </Label>
+    <Label Name="CancelJSDescription">
+      <LocalizedLabel LanguageRef="zhs">取消按钮执行的Js函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title format template</LocalizedLabel>
+    </Label>
+    <Label Name="LoadingJS">
+      <LocalizedLabel LanguageRef="zhs">向导页加载的JS函数名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TitleTemplateJs</LocalizedLabel>
+    </Label>
+    <Label Name="LoadingJSDescription">
+      <LocalizedLabel LanguageRef="zhs">向导加载时处理的JS，在向导加载之后，向导第一步页面加载之前执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PreJS">
+      <LocalizedLabel LanguageRef="zhs">上一步JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Load JS</LocalizedLabel>
+    </Label>
+    <Label Name="PreJSDescription">
+      <LocalizedLabel LanguageRef="zhs">当点击上一步按钮时执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowNav">
+      <LocalizedLabel LanguageRef="zhs">显示导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ShowNav</LocalizedLabel>
+    </Label>
+    <Label Name="ShowNavDescription">
+      <LocalizedLabel LanguageRef="zhs">显示页面进度的导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <!--Page类参数-->
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SaveJS">
+      <LocalizedLabel LanguageRef="zhs">保存JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveJS</LocalizedLabel>
+    </Label>
+    <Label Name="SaveJSDescription">
+      <LocalizedLabel LanguageRef="zhs">点击下一步按钮触发的JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether to hide</LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="Up">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Up</LocalizedLabel>
+    </Label>
+    <Label Name="Down">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Down</LocalizedLabel>
+    </Label>
+    <Label Name="InitJS">
+      <LocalizedLabel LanguageRef="zhs">页面加载之后的Js函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="InitJSDescription">
+      <LocalizedLabel LanguageRef="zhs">页面加载之后执行的JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="BeforeInitJS">
+      <LocalizedLabel LanguageRef="zhs">页面加载之前的Js函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="BeforeInitJSDescription">
+      <LocalizedLabel LanguageRef="zhs">页面加载之前执行的JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageTitleDic">
+      <LocalizedLabel LanguageRef="zhs">页面标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageTitleDicDescription">
+      <LocalizedLabel LanguageRef="zhs">页面标题的多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Reload">
+      <LocalizedLabel LanguageRef="zhs">重新加载页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ReloadDescription">
+      <LocalizedLabel LanguageRef="zhs">点击上一步，再点击下一步时，是否重新加载该页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="AddPage">
+      <LocalizedLabel LanguageRef="zhs">添加页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="AddPageDescription">
+      <LocalizedLabel LanguageRef="zhs">添加页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ParaList">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ParaListDescription">
+      <LocalizedLabel LanguageRef="zhs">参数集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="AllowFinish">
+      <LocalizedLabel LanguageRef="zhs">启用完成按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="AllowFinishDescription">
+      <LocalizedLabel LanguageRef="zhs">当前页是否可以执行完成按钮的函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

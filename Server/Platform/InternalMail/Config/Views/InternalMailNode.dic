@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="InternalMailNodeView" IsWeb="true">
+    <Label Name="InternalMailNodeHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail tree node</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailNodeCaption">
+      <LocalizedLabel LanguageRef="zhs">邮件树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail tree node</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

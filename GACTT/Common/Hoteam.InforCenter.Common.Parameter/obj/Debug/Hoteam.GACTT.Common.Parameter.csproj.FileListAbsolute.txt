@@ -1,0 +1,6 @@
+E:\广汽试验\Source\Server\GACTT\Common\Bin\Hoteam.GACTT.Common.Parameter.dll
+E:\广汽试验\Source\Server\GACTT\Common\Bin\Hoteam.GACTT.Common.Parameter.pdb
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.Parameter\obj\Debug\Hoteam.GACTT.Common.Parameter.csprojAssemblyReference.cache
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.Parameter\obj\Debug\Hoteam.GACTT.Common.Parameter.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.Parameter\obj\Debug\Hoteam.GACTT.Common.Parameter.dll
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.Parameter\obj\Debug\Hoteam.GACTT.Common.Parameter.pdb

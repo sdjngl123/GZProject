@@ -1,0 +1,18 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="CheckboxPad" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="
+                 ctrlEvent.objectType = '[OBJTYPE]';
+                 ctrlEvent.infoType = '[INFONAME]';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetCheckBoxPad(o,'[INFONAME]','[OBJTYPE]');
+                          }
+                 }"/>
+  </PageHandlers>
+  <Settings Key="ChangeMode" Value="2" />
+  <Settings Key="DefaultCheckState" Value="2" />
+</PageControl>

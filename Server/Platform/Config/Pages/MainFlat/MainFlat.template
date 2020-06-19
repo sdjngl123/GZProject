@@ -1,0 +1,38 @@
+﻿<div >
+  <div  id="MainFlat_Frame" class="Home_Page_ShortCut_Container">
+    <div style="border-bottom: 1px solid #cccccc;">
+      <table border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:160px;">
+        <tr height="30" >
+          <td width="5">
+            <div class="MainFlat_Left"></div>
+          </td>
+          <td >
+            <div class="MainFlat_Center"  id="MainFlat_Center">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                <tr height="30px">
+                  <td width="30">
+                    <div class="MainFlat_Image " ></div>
+                  </td>
+                  <td width="100%">
+                    <span class="MainFlat_Title_Img"></span>
+                    <span class="MainFlat_Title" id="MainFlat_Title"></span>
+                  </td>
+                  <td width="50px">
+                    <span class="MainFlat_Title" id="MainFlat_More"></span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td width="5">
+            <div class="MainFlat_Right"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <div class="MainFlat_Border"  id="Flat">
+      </div>
+    </div>
+  </div>
+</div>

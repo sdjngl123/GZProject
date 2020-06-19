@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FORMDATA-VIEW" IsWeb="true">
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="FORMDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览设计表单类型信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseFORMDATA</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="StartWorkflow">
+  <Settings Key="title" Value="StartWorkflow.Title"/>
+  <Settings Key="icon" Value="~/platform/image/navigation/chart.png"/>
+  <Settings Key="height" Value="600"/>
+  <Settings Key="width" Value="900"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_StartWorkflow_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="MainContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 10px 0px 10px"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TopContainer"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+    <!--按钮之外的部分-->
+    <PageControl ControlID="TopContainer" ParentID="MainContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="BaseInfoContainer"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="394"/>
+        <Settings Key="childid" Value="WorkFlowInfoContainer"/>
+      </Settings>
+    </PageControl>
+
+    <!--流程信息-->
+    <PageControl ControlID="WorkFlowInfoContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TabsCtrlPage" ParentID="WorkFlowInfoContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="VerticalTabsCtrl"/>
+    </PageControl>
+    <!--流程基本信息-->
+    <PageControl ControlID="BaseInfoContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="BaseInfoContainer2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="BaseInfoContainer3"/>
+      </Settings>
+    </PageControl>
+    <!--流程名称、流程管理员-->
+    <PageControl ControlID="BaseInfoContainer2" ParentID="BaseInfoContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="FlowName_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="FlowName_Value"/>
+      </Settings>
+      <Settings Key="item21" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="FlowName_Label_FieldFlag"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="FlowAdmin_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="FlowAdmin_Value"/>
+      </Settings>
+      <Settings Key="item41" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <!--模版分类、流程模版-->
+    <PageControl ControlID="BaseInfoContainer3" ParentID="BaseInfoContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="Classify_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="Classify_Value"/>
+      </Settings>
+      <Settings Key="item21" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="Template_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="Template_Value"/>
+      </Settings>
+      <Settings Key="item41" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="FlowName_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+
+    <!--模版分类-->
+    <PageControl ControlID="Classify_Label" ParentID="BaseInfoContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StartWorkflow.Classify" />
+    </PageControl>
+    <PageControl ControlID="Classify_Value" ParentID="BaseInfoContainer" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_StartWorkflow_OnTemplateClassifyChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--流程名称-->
+    <PageControl ControlID="FlowName_Label" ParentID="BaseInfoContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StartWorkflow.FlowName" />
+    </PageControl>
+    <PageControl ControlID="FlowName_Value" ParentID="BaseInfoContainer" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,180})?$" />
+      <Settings Key="regextipId" Value="StartWorkflow.FlowNameFlagHead" />
+    </PageControl>
+    <PageControl ControlID="FlowName_Label_FieldFlag" ParentID="BaseInfoContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <!--流程模版-->
+    <PageControl ControlID="Template_Label" ParentID="BaseInfoContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StartWorkflow.Template" />
+    </PageControl>
+    <PageControl ControlID="Template_Value" ParentID="BaseInfoContainer" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_StartWorkflow_OnTemplateChange(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="StartWorkflow.FlowNameFlagHead" />
+    </PageControl>
+    <!--流程管理员-->
+    <PageControl ControlID="FlowAdmin_Label" ParentID="BaseInfoContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StartWorkflow.FlowAdmin" />
+    </PageControl>
+    <PageControl ControlID="FlowAdmin_Value" ParentID="BaseInfoContainer" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_StartWorkflow_SetFlowAdmin(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--任务执行人(已去掉)-->
+    <PageControl ControlID="NodeActor_Label" ParentID="BaseInfoContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StartWorkflow.NodeActor" />
+    </PageControl>
+    <PageControl ControlID="NodeActor_Value" ParentID="BaseInfoContainer" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_StartWorkflow_SetFlowActor(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="WorkFlowContainer" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PluginContainer" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+
+    <PageControl ControlID="Btn_Container" ParentID="MainContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="40%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_StartWorkflow_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+
+  </PageControls>
+</root>
+

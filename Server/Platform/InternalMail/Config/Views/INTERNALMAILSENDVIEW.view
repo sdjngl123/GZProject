@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="INTERNALMAILSENDVIEW" ObjectTypeName="INTERNALMAIL" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="Left" OrderByString="CREATETIME DESC" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="RECIVER" Width="200" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="MTITLE" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SENDTIME" Width="160" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="IMPORTANT" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="MSTATEICON" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="MCONTENT" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="SENDUSER" AndOrFlag="AND" InfoName="SENDUSER" Operation="=" Required="false" />
+    <ViewCondition Name="RECIVER" AndOrFlag="AND" InfoName="RECIVER" Operation="=" Required="false" />
+    <ViewCondition Name="MTITLE" AndOrFlag="AND" InfoName="MTITLE" Operation="LIKE" Required="false" />
+    <ViewCondition Name="MCONTENT" AndOrFlag="AND" InfoName="MCONTENT" Operation="LIKE" Required="false" />
+    <ViewCondition Name="SENDTIME" AndOrFlag="AND" InfoName="SENDTIME" Operation="&gt;=" Required="false" />
+    <ViewCondition Name="SENDTIME" AndOrFlag="AND" InfoName="SENDTIME" Operation="&lt;=" Required="false" />
+    <ViewCondition Name="IMPORTANT" AndOrFlag="AND" InfoName="IMPORTANT" Operation="=" Required="false" />
+    <ViewCondition Name="MSTATE" AndOrFlag="AND" InfoName="MSTATE" Operation="=" Required="false" />
+  </ObjectView>
+</root>

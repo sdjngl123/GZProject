@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Context Name="NavigationItems" IsWeb="true">
+		<Label Name="PMSPROJECTNav">
+			<LocalizedLabel LanguageRef="zhs">项目管理</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">PMSPROJECTNav</LocalizedLabel>
+		</Label>
+		<Label Name="WorkSpace">
+			<LocalizedLabel LanguageRef="zhs">工作区</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">WorkSpace</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

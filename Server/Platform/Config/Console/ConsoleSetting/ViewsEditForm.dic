@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ViewsEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">视图信息编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View information edit window</LocalizedLabel>
+    </Label>
+    <Label Name="NewObject">
+      <LocalizedLabel LanguageRef="zhs">新建视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New view</LocalizedLabel>
+    </Label>
+    <Label Name="NotNull">
+      <LocalizedLabel LanguageRef="zhs">不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null, please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="BaseProperty">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="ViewColumnInfo">
+      <LocalizedLabel LanguageRef="zhs">列信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column information</LocalizedLabel>
+    </Label>
+    <Label Name="ViewConditonInfo">
+      <LocalizedLabel LanguageRef="zhs">条件信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition information</LocalizedLabel>
+    </Label>
+    <Label Name="ViewName">
+      <LocalizedLabel LanguageRef="zhs">视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">视图的标识，在需要引用该视图时使用的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The identity of the view, the name is used when the view needs to be referenced</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">视图类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">标识该视图是对象视图（ObjectQuery）还是关系视图（EntityLinkQuery）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifies whether the view is an object view (ObjectQuery) or a relational view (EntityLinkQuery)</LocalizedLabel>
+    </Label>
+    <Label Name="NewObject">
+      <LocalizedLabel LanguageRef="zhs">新建视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New view</LocalizedLabel>
+    </Label>
+    <Label Name="ViewColumnList">
+      <LocalizedLabel LanguageRef="zhs">视图列信息列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View column information list</LocalizedLabel>
+    </Label>
+    <Label Name="ViewConditonList">
+      <LocalizedLabel LanguageRef="zhs">视图查询条件列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View query criteria list</LocalizedLabel>
+    </Label>
+    <Label Name="labLanguage">
+      <LocalizedLabel LanguageRef="zhs">本地化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Localization</LocalizedLabel>
+    </Label>
+
+    <Label Name="UnionAllName">
+      <LocalizedLabel LanguageRef="zhs">并联组名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Union all name</LocalizedLabel>
+    </Label>
+    <Label Name="UnionAllNameDescription">
+      <LocalizedLabel LanguageRef="zhs">视图查询所使用的并联分组组名。如果是对象视图，可选值为所有对象；如果是关系视图，可选值为关系对象；如果是并联视图，可选值为并联分组组名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View query the name of the union group name. If it is an object view, the optional value is all objects, if it is a relational view, the optional values are relational objects, if it is a union view,thr optional value is union all group name</LocalizedLabel>
+    </Label>
+    
+    <Label Name="ObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">视图查询所关联的对象类型。如果是对象视图，可选值为所有对象，如果是关系视图，可选值为关系对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View query the type of the object associated. If it is an object view, the optional value is all objects, if it is a relational view, the optional values are relational objects</LocalizedLabel>
+    </Label>
+    <Label Name="QueryVersionType">
+      <LocalizedLabel LanguageRef="zhs">查询版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query version</LocalizedLabel>
+    </Label>
+    <Label Name="QueryVersionTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">查询版本：全部版本--查询全部版本；最新版本--最新生成的版本；最终版本--生命周期的最终状态版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query version: all versions--query all versions; latest version-latest generated version; final version-final state version of lifecycle</LocalizedLabel>
+    </Label>
+    <Label Name="SumDistinct">
+      <LocalizedLabel LanguageRef="zhs">汇总去重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Summary de-duplication</LocalizedLabel>
+    </Label>
+    <Label Name="SumDistinctDescription">
+      <LocalizedLabel LanguageRef="zhs">获取全部数据时，去除重复实体对象；分页数据不支持去重复。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When all data is acquired, duplicate entity objects are removed; paging data does not support deduplication.</LocalizedLabel>
+    </Label>
+    <Label Name="AllVersion">
+      <LocalizedLabel LanguageRef="zhs">全部版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All versions</LocalizedLabel>
+    </Label>
+    <Label Name="LastVersion">
+      <LocalizedLabel LanguageRef="zhs">最新版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Latest Version</LocalizedLabel>
+    </Label>
+    <Label Name="LastFinalStateVersion">
+      <LocalizedLabel LanguageRef="zhs">最终版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final version</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentVersion">
+      <LocalizedLabel LanguageRef="zhs">当前版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Current Version</LocalizedLabel>
+    </Label>
+    <Label Name="OrderByString">
+      <LocalizedLabel LanguageRef="zhs">排序字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort string</LocalizedLabel>
+    </Label>
+    <Label Name="OrderByStringDescription">
+      <LocalizedLabel LanguageRef="zhs">视图展现的数据的排序方式，列名在前，排序方式在后，多列用逗号分隔，如：MSTATE DESC,CREATETIME DESC</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The sort of data displayed by the view. Column names are in front, sort modes in the back, and columns are always separated by commas, such as: MSTATE DESC, CREATETIME DESC</LocalizedLabel>
+    </Label>
+    <Label Name="FixedFilter">
+      <LocalizedLabel LanguageRef="zhs">条件字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional string</LocalizedLabel>
+    </Label>
+    <Label Name="FixedFilterDescription">
+      <LocalizedLabel LanguageRef="zhs">在对象视图（单表查询）中，该条件就是对象表(实体对象表或关系对象表)的条件；在关系视图（关系表和实体表联合查询）中，该条件为关系表的查询条件，可替换条件为当前用户ID（[CURUSERID]）和当前组ID（[CURGROUPID]） 如：MTO='[CURUSERID]'</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In the object view (single table query), the condition is the condition of the object table (entity object table or relational object table); in the relational view (relational table and entity table combined query), the condition is the query condition of the relational table, and the replaceable condition is the current user ID ([CURUSERID]) and current group ID ([CURGROUPID]) such as: MTO='[CURUSERID]'</LocalizedLabel>
+    </Label>
+    <Label Name="AsCommonQuery">
+      <LocalizedLabel LanguageRef="zhs">是否通用查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whetehr it is a universal query</LocalizedLabel>
+    </Label>
+    <Label Name="AsCommonQueryDescription">
+      <LocalizedLabel LanguageRef="zhs">是否通用查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whetehr it is a universal query</LocalizedLabel>
+    </Label>
+    <Label Name="SearchChild">
+      <LocalizedLabel LanguageRef="zhs">正向查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Forward query</LocalizedLabel>
+    </Label>
+    <Label Name="SearchChildDescription">
+      <LocalizedLabel LanguageRef="zhs">值为true代表正向查询，查找关系表及其CEID属性对应的实体表；值为false代表反向查询，查找关系表及其PEID属性对应的实体表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If the value is true, it represents the forward query, find the relational table and the entity table corresponding to its CEID attribute; if the value is false,it represents the reverse query, find the relational tableand the entity table corresponding to the PEID attribute</LocalizedLabel>
+    </Label>
+    <Label Name="ContainSelf">
+      <LocalizedLabel LanguageRef="zhs">结果包括起始对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The results include the starting object</LocalizedLabel>
+    </Label>
+    <Label Name="ContainSelfDescription">
+      <LocalizedLabel LanguageRef="zhs">true：返回结果包括起始对象，false返回结果不包括起始对象，默认false。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">True: The return result includes the starting object, false: the return result does not include the starting object, the default is false.</LocalizedLabel>
+    </Label>
+    <Label Name="SearchMode">
+      <LocalizedLabel LanguageRef="zhs">查询模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query mode</LocalizedLabel>
+    </Label>
+    <Label Name="SearchModeDescription">
+      <LocalizedLabel LanguageRef="zhs">用于指定关系查询的查询模式。例如，在查询产品的下级零件时，是查询结构树上的全部节点，还是只查询叶节点，还是查询除叶节点外的其他节点。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is used to specify the query mode of the relationship query. For example, when a child part of a product is queried, the entire node in the query structure tree is queried, or only the leaf node is queried, or the other node espect the leaf node is queried.</LocalizedLabel>
+    </Label>
+    <Label Name="All">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyLeafs">
+      <LocalizedLabel LanguageRef="zhs">仅叶子实体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Leaf entities only</LocalizedLabel>
+    </Label>
+    <Label Name="WithoutLeafs">
+      <LocalizedLabel LanguageRef="zhs">除叶子实体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Except leaf entities</LocalizedLabel>
+    </Label>
+    <Label Name="FixedEntityFilter">
+      <LocalizedLabel LanguageRef="zhs">关联查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated query criteria</LocalizedLabel>
+    </Label>
+    <Label Name="FixedEntityFilterDescription">
+      <LocalizedLabel LanguageRef="zhs">只用在关系视图（关系表和实体表联合查询）中，该条件是实体对象表的查询条件，可替换条件为当前用户ID（[CURUSERID]）和当前组ID（[CURGROUPID]） 如：MTO='[CURUSERID]'</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only used in the relational view (relational table and entity table federation query), this condition is the query condition for the entity object table, and the replaceable condition is the current user ID ([CURUSERID]) and the current group ID ([CURGROUPID]), such as: MTO='[CURUSERID]'</LocalizedLabel>
+    </Label>
+    <Label Name="DeepSearch">
+      <LocalizedLabel LanguageRef="zhs">深度查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Depth query</LocalizedLabel>
+    </Label>
+    <Label Name="DeepSearchDescription">
+      <LocalizedLabel LanguageRef="zhs">值为true代表深度查询，会查询出所有下级数据，值为false代表单层查询，只查询出单层下级数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If the value is true, it represents depth query, all subordinate data is queried, if the value is false, it represents a single-layer query, and only single-layer subordinate data is queried.</LocalizedLabel>
+    </Label>
+    <Label Name="QueryResultRelated">
+      <LocalizedLabel LanguageRef="zhs">结果关联查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result Association Query</LocalizedLabel>
+    </Label>
+    <Label Name="ISRelatedQurey">
+      <LocalizedLabel LanguageRef="zhs">是否关联查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to associate query</LocalizedLabel>
+    </Label>
+    <Label Name="ISRelatedQureyDescription">
+      <LocalizedLabel LanguageRef="zhs">是否关联查询，在关系对象模型上设置结果关联查询设置，通过此属性进行控制当前视图是否支持关联查询。默认不执行关联查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to associate query, setting the result associated query setting on the relational object model, and controlling whether the current view supports the associated query through this attribute. No association query is performed by default</LocalizedLabel>
+    </Label>
+    <Label Name="ISLinkPrentRelated">
+      <LocalizedLabel LanguageRef="zhs">是否向上查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to query up </LocalizedLabel>
+    </Label>
+    <Label Name="ISLinkPrentRelatedDescription">
+      <LocalizedLabel LanguageRef="zhs">是否向上查询,true对应向上查询，false向下查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to query up, true corresponds to up query, false corresponds to down query</LocalizedLabel>
+    </Label>
+    <Label Name="ISLinkRelatedQureyChild">
+      <LocalizedLabel LanguageRef="zhs">是否查子对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to check the child object</LocalizedLabel>
+    </Label>
+    <Label Name="ISLinkRelatedQureyChildDescription">
+      <LocalizedLabel LanguageRef="zhs">是否查子对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to check the child object.</LocalizedLabel>
+    </Label>
+    <Label Name="ISEntityRelated">
+      <LocalizedLabel LanguageRef="zhs">是否是实体对象模型关联查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether it is the entity object model associated query</LocalizedLabel>
+    </Label>
+    <Label Name="ISEntityRelatedDescription">
+      <LocalizedLabel LanguageRef="zhs">是否是实体对象模型关联查询，true：结果关联实体对象，false：结果关联关系对象，默认关联关系对象模型。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether it is the entity object model associated query, true: the result is associated with the entity object, false: the result is associated with the relationship object, the default isassociatedrelational object model.</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnName">
+      <LocalizedLabel LanguageRef="zhs">列名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Name</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnNameDescription">
+      <LocalizedLabel LanguageRef="zhs">视图中需要展示的列名称。一般情况下，针对对象视图，必须有EID属性；针对关系视图，必须有LID和EID属性；且不需要在列表中显示（宽度设为0）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The column name that needs to be displayed in the view. In general, there must be EID attributes for object view; there must be LID and EID attributes for a relational view; and you do not nee to display in the list (the width is set to 0)</LocalizedLabel>
+    </Label>
+    <Label Name="Width">
+      <LocalizedLabel LanguageRef="zhs">宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width</LocalizedLabel>
+    </Label>
+    <Label Name="WidthDescription">
+      <LocalizedLabel LanguageRef="zhs">该列在列表中的宽度，可选值为整型，0代表隐藏，-1代表自适应宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The width of the column in the list, replaceable values are integer, 0 represents hidden, -1 represents adaptive width</LocalizedLabel>
+    </Label>
+    <Label Name="Resizable">
+      <LocalizedLabel LanguageRef="zhs">宽度可拖动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width can beddragged</LocalizedLabel>
+    </Label>
+    <Label Name="ResizableDescription">
+      <LocalizedLabel LanguageRef="zhs">该列是否可以调整宽度，如果值为true，可以拖动表头边框改变列的宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the column can adjust the width, if the value is true, you can drag the table head border to change the width of the column</LocalizedLabel>
+    </Label>
+    <Label Name="Sortable">
+      <LocalizedLabel LanguageRef="zhs">可排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sortable</LocalizedLabel>
+    </Label>
+    <Label Name="SortableDescription">
+      <LocalizedLabel LanguageRef="zhs">如果值为true，可以点击表头更改顺序（正序和倒序）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If the value is true, you can click the header to change order (positive sequence and reverse sequence)</LocalizedLabel>
+    </Label>
+    <Label Name="InfoFormat">
+      <LocalizedLabel LanguageRef="zhs">属性格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute format</LocalizedLabel>
+    </Label>
+    <Label Name="InfoFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">该属性在视图中的显示格式，
+针对日期类型可以使用日期的格式化参数，如yyyy-MM-dd；
+其他类型，则只能使用{0}来代表属性值，如 发起人：{0}，结果为：发起人：张三
+如果没有显示格式的要求可不填写</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The display format of this attribute in the view,
+The format parameters of the date can be used for the date type, such as yyyy-MM-dd;
+For other types, you can only use {0} to represent the attribute value, such as the initiator: {0}, with the result: initiator: Zhang San
+If there is no requirement to display the format, it may not be filled</LocalizedLabel>
+    </Label>
+    <Label Name="ShowFormat">
+      <LocalizedLabel LanguageRef="zhs">展示格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display format</LocalizedLabel>
+    </Label>
+    <Label Name="ShowMode">
+      <LocalizedLabel LanguageRef="zhs">显示模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="ShowFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">在视图中的显示格式可以进行多列组合展示，最终展示结果为属性格式和展示格式合并的效果，用法如下
+如果在发送内容列中添加发送人和发送时间，则
+1. 首先在属性格式中填写格式，如：发送内容：{0}
+2. 点击展示格式，在弹出的对话框中添加发送人和发送时间两列，并填写对应列的格式，如：发送者格式为：发送者：{0}，发送时间格式为：发送时间：yyyy-MM 
+3. 在弹出的对话框的展示格式文本框中填写格式，如:{0} {1}/{2}。{0}会替换发送内容，{1}替换发送者，{2}替换发送时间
+最终结果为：发送内容：TestInformation 发送者：张三/发送时间：2014-10
+
+注意事项：
+如果没有显示格式的要求可不填写，不填写默认为{0}
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The display format in the view can be displayed in multiple columns, and the final result is the result of the combination of attribute format and display format. The usage is as follows
+If the sender and the sending time are added in the sending content column,
+1. First fill in the format in the attribute format, such as sending content: {0}
+2. Click the display format, add the sender and sending time two columns in the pop-up dialog box, and fill in the format of the corresponding column, such as: the sender format is: sender: {0}, the sending time format is: sending time: yyyy-MM
+3. Fill in the format in the display format text box of the pop-up dialog, such as: {0} {1}/{2}. {0} replace the sending content, {1} replace the sender, {2} replace the sending time
+The final result is: sending content: TestInformation sendor: Zhang San / sending time: 2014-10
+Notes:
+If the format is not required to be filled in, it may not be filled, when it is not filled, the default is: {0}</LocalizedLabel>
+    </Label>
+    <Label Name="ReturnDBValue">
+      <LocalizedLabel LanguageRef="zhs">返回数据库值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return database value</LocalizedLabel>
+    </Label>
+    <Label Name="ReturnDBValueDescription">
+      <LocalizedLabel LanguageRef="zhs">配置此属性，则在列表中可以查询到数据库值，但是无法显示。列名称：原列名+$DBValue，如：ENAME$DBValue</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If this attribute is configured, the database value can be queried in the list, but cannot be displayed. Column name: original column name+$DBValue, e. g. ENAME$DBValue</LocalizedLabel>
+    </Label>
+    <Label Name="ConditionName">
+      <LocalizedLabel LanguageRef="zhs">条件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition name</LocalizedLabel>
+    </Label>
+    <Label Name="ConditionNameDescription">
+      <LocalizedLabel LanguageRef="zhs">前台列表查询页面中查询条件的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of query criteria in the foreground list query page</LocalizedLabel>
+    </Label>
+    <Label Name="AndOrFlag">
+      <LocalizedLabel LanguageRef="zhs">条件关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional relation</LocalizedLabel>
+    </Label>
+    <Label Name="AndOrFlagDescription">
+      <LocalizedLabel LanguageRef="zhs">表明查询条件之间是与（AND）的关系还是或（OR）的关系,AND或OR放在条件之前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Indicates whether the query condition is a (AND) relationship or (OR) relationship, AND or OR is placed before the condition</LocalizedLabel>
+    </Label>
+    <Label Name="InfoName">
+      <LocalizedLabel LanguageRef="zhs">属性字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute field</LocalizedLabel>
+    </Label>
+    <Label Name="InfoNameDescription">
+      <LocalizedLabel LanguageRef="zhs">条件关联的属性字段，表明哪一个属性字段用于查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The attribute field that is associated with the condition indicatesg which attribute field is used for queries</LocalizedLabel>
+    </Label>
+    <Label Name="Operation">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OperationDescription">
+      <LocalizedLabel LanguageRef="zhs">执行的操作，
+有大于（&gt;）,
+大于等于（&gt;=）,
+小于（&lt;）,
+小于等于（&lt;=）,
+等于（=）,
+模糊（LIKE,NOT LIKE,S-LIKE:在一个文本框中写多个条件，以空格为OR条件，加号为AND条件，最终组合起来，如：在名称列中输入 “a+b c”，最终的条件为(ENAME LIKE '%a%' AND ENAME LIKE '%b%') OR ENAME LIKE '%c%' ）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The operations performed,
+Greater than (&gt;),
+Greater than or equal to (&gt;=),
+Less than (&lt;),
+Less than or equal to (&lt;=),
+Equal to (=),
+Ambiguous (LIKE, NOT LIKE, S-LIKE: write multiple conditions in a text box, with spaces as OR conditions, plus sign as AND condition, and eventually put together, e. g: enter a+b c in the name column, the final condition is (ENAME LIKE'%a%' AND ENAME LIKE'%b%') OR ENAME LIKE'%c%')</LocalizedLabel>
+    </Label>
+    <Label Name="Validation">
+      <LocalizedLabel LanguageRef="zhs">正则表达式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular expression</LocalizedLabel>
+    </Label>
+    <Label Name="ValidationDescription">
+      <LocalizedLabel LanguageRef="zhs">对输入的条件进行正则表达式验证，验证通过才会执行查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular expression verification is performed on the input conditions, and the query is executed after verification</LocalizedLabel>
+    </Label>
+    <Label Name="ViewNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">视图名称不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View name cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="ViewNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">当前路径下存在相同的视图文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The same view file exists in the current path</LocalizedLabel>
+    </Label>
+    <Label Name="AddListColumns">
+      <LocalizedLabel LanguageRef="zhs">组合展示列明细</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Combined display column details</LocalizedLabel>
+    </Label>
+    <Label Name="Required">
+      <LocalizedLabel LanguageRef="zhs">必填</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Required</LocalizedLabel>
+    </Label>
+    <Label Name="RequiredDescription">
+      <LocalizedLabel LanguageRef="zhs">该项是否是查询条件的必填项，如果为true，在查询时必填</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether this item is required for query criteria, and is required to fill when query if it is true</LocalizedLabel>
+    </Label>
+    <Label Name="TextAlign">
+      <LocalizedLabel LanguageRef="zhs">对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Alignment method</LocalizedLabel>
+    </Label>
+    <Label Name="Img">
+      <LocalizedLabel LanguageRef="zhs">缩略图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Thumbnail</LocalizedLabel>
+    </Label>
+    <Label Name="List">
+      <LocalizedLabel LanguageRef="zhs">列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List</LocalizedLabel>
+    </Label>
+    <Label Name="ShowModeDescription">
+      <LocalizedLabel LanguageRef="zhs">在缩略图模式下显示的列，需要特殊标注，选择(img)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Columns that are displayed in thumbnail mode, special labels are required, and select(img)</LocalizedLabel>
+    </Label>
+    <Label Name="TextAlignDescription">
+      <LocalizedLabel LanguageRef="zhs">在列表单元格的对齐方式，可选项为左对齐（left），右对齐（right）,居中对齐（center），不填默认为右对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The alignment method of the list cells, the options are left alignment, right alignment, center alignment, and the default is right alignment when it is not filled</LocalizedLabel>
+    </Label>
+    <Label Name="Left">
+      <LocalizedLabel LanguageRef="zhs">左对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Left</LocalizedLabel>
+    </Label>
+    <Label Name="Center">
+      <LocalizedLabel LanguageRef="zhs">居中对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Center alignment</LocalizedLabel>
+    </Label>
+    <Label Name="Right">
+      <LocalizedLabel LanguageRef="zhs">右对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Right</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">列名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column name</LocalizedLabel>
+    </Label>
+    <Label Name="Merge">
+      <LocalizedLabel LanguageRef="zhs">合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Combine</LocalizedLabel>
+    </Label>
+    <Label Name="CancelMerge">
+      <LocalizedLabel LanguageRef="zhs">取消合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel the combine</LocalizedLabel>
+    </Label>
+    <Label Name="Frozen">
+      <LocalizedLabel LanguageRef="zhs">冻结</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Blocked</LocalizedLabel>
+    </Label>
+    <Label Name="FrozenDescription">
+      <LocalizedLabel LanguageRef="zhs">该项用来标记是否冻结该列，如果为true，则冻结列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This item is used to mark whether to frozen this column, and if it is true, the column is frozen</LocalizedLabel>
+    </Label>
+    <Label Name="RowSpan">
+      <LocalizedLabel LanguageRef="zhs">合并行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Combine row</LocalizedLabel>
+    </Label>
+    <Label Name="RowSpanDescription">
+      <LocalizedLabel LanguageRef="zhs">该列是否合并行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the column is a combine row</LocalizedLabel>
+    </Label>
+    <Label Name="BackgroundColor">
+      <LocalizedLabel LanguageRef="zhs">背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Background color</LocalizedLabel>
+    </Label>
+    <Label Name="BackgroundColorDescription">
+      <LocalizedLabel LanguageRef="zhs">设置该列的背景颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the background color of this column</LocalizedLabel>
+    </Label>
+    <Label Name="SelectColumnNode">
+      <LocalizedLabel LanguageRef="zhs">请选择至少一个列节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select at least one column node</LocalizedLabel>
+    </Label>
+    <Label Name="ParentNodeName">
+      <LocalizedLabel LanguageRef="zhs">合并节点名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The combine node name</LocalizedLabel>
+    </Label>
+    <Label Name="ParentNodeNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">合并节点名称不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The combine node name is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="MergeNodeTypeDiff">
+      <LocalizedLabel LanguageRef="zhs">合并节点类型不一致</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The combine node type is not consistent</LocalizedLabel>
+    </Label>
+    <Label Name="ParentNodeMaintain">
+      <LocalizedLabel LanguageRef="zhs">父节点维护</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent node maintenance</LocalizedLabel>
+    </Label>
+    <Label Name="SelectCancelNode">
+      <LocalizedLabel LanguageRef="zhs">请选择取消合并的节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the node that need to cacel the combine</LocalizedLabel>
+    </Label>
+    <Label Name="NoSelect">
+      <LocalizedLabel LanguageRef="zhs">当前节点没有选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Current node is not selected</LocalizedLabel>
+    </Label>
+    <Label Name="ContainChild">
+      <LocalizedLabel LanguageRef="zhs">选中节点包含子节点，不能合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The selected node contains child nodes and cannot be combined</LocalizedLabel>
+    </Label>
+    <Label Name="ViewAssembly">
+      <LocalizedLabel LanguageRef="zhs">数据组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The data component</LocalizedLabel>
+    </Label>
+    <Label Name="ViewAssemblyDescription">
+      <LocalizedLabel LanguageRef="zhs">获取行数据时反射此组件(如：Hoteam.InforCenter.Example.Object.dll)，默认不填调用平台默认方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This component is reflected when the row data is got (for example: Hoteam. InforCenter. Example. Object. dll), when the defaultis not filled, call the platform default method</LocalizedLabel>
+    </Label>
+    <Label Name="ViewClass">
+      <LocalizedLabel LanguageRef="zhs">调用类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Call class</LocalizedLabel>
+    </Label>
+    <Label Name="ViewClassDescription">
+      <LocalizedLabel LanguageRef="zhs">获取行数据时调用此类，如：Hoteam.InforCenter.Example.Object.EObjectClass，该类必须实现接口IListRowDataFormart</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This class is called when the row data is got, such as: Hoteam. InforCenter. Example. Object. EObjectClass, which class must implement the interface IListRowDataFormart</LocalizedLabel>
+    </Label>
+    <Label Name="InterfaceMsg">
+      <LocalizedLabel LanguageRef="zhs">未实现接口IListRowDataFormart</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unimplemented interface IListRowDataFormart</LocalizedLabel>
+    </Label>
+    <Label Name="FieldType">
+      <LocalizedLabel LanguageRef="zhs">显示格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Format Type</LocalizedLabel>
+    </Label>
+    <Label Name="FieldTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">显示格式，如果字段为datetime类型，在查询时只显示时分秒可选择date；为空则按照字段类型处理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type of format, if the field is the datetime type, only the second and minutecan be displayed at the time of the query, you can select date; if the field is blank, it is processed according to the field type</LocalizedLabel>
+    </Label>
+    <Label Name="OptionType">
+      <LocalizedLabel LanguageRef="zhs">处理类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Option Type</LocalizedLabel>
+    </Label>
+    <Label Name="OptionTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">处理类型，默认按照模型设置的处理类型展示；否则按照当前选择的处理类型。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type of option, if the field is blank, it is processed the model type,otherwise according to the option type. </LocalizedLabel>
+    </Label>
+    <Label Name="CustomSQLCommand">
+      <LocalizedLabel LanguageRef="zhs">自定义SQLCommand</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Customize SQLCommand</LocalizedLabel>
+    </Label>
+    <Label Name="ExecObjectLimitSQLCommand">
+      <LocalizedLabel LanguageRef="zhs">分页数据SQLCommand</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paging data SQLCommand</LocalizedLabel>
+    </Label>
+    <Label Name="ExecObjectLimitSQLCommandDescription">
+      <LocalizedLabel LanguageRef="zhs">此配置是分页SQLCommand。自定义SQLCommand，建议参考系统自动生存模板（业务服务控制台中获取），根据业务需要保留原模版替换参数。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This configuration is paging SQLCommand. Customize SQLCommand, it is recommended to refer to the system automatic survival template (acquired in the business service console), and keep the original template replacement parameter according to the business needs.</LocalizedLabel>
+    </Label>
+    <Label Name="ExecObjectSQLCommand">
+      <LocalizedLabel LanguageRef="zhs">全部数据SQLCommand</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All data SQLCommand</LocalizedLabel>
+    </Label>
+    <Label Name="ExecObjectSQLCommandDescription">
+      <LocalizedLabel LanguageRef="zhs">此配置是全部数据SQLCommand。自定义SQLCommand，建议参考系统自动生存模板（业务服务控制台中获取），根据业务需要保留原模版替换参数。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This configuration is all data SQLCommand. Customize SQLCommand, it is recommended to refer to the system automatic survival template (obtained in the business service console), and keep the original template replacement parameter according to the business needs.</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTemplete">
+      <LocalizedLabel LanguageRef="zhs">页面模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page template</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTempleteDescription">
+      <LocalizedLabel LanguageRef="zhs">自动生成页面时，查询视图根据这个配置去选择布局模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When a page is generated automatically, the query view selects the layout template according to this configuration</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTextAlign">
+      <LocalizedLabel LanguageRef="zhs">对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Alignment method</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTextAlignDescription">
+      <LocalizedLabel LanguageRef="zhs">查询页面标签文字的对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The alignment method of the label text in query page</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCustomColumn">
+      <LocalizedLabel LanguageRef="zhs">创建自定义列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create custom columns</LocalizedLabel>
+    </Label>
+    <Label Name="NewCustomColumn">
+      <LocalizedLabel LanguageRef="zhs">新建自定义列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create new custom column</LocalizedLabel>
+    </Label>
+    <Label Name="NewCustomColumn">
+      <LocalizedLabel LanguageRef="zhs">新建自定义列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create new custom column</LocalizedLabel>
+    </Label>
+    <Label Name="IgnoreCompanyRulePermission">
+      <LocalizedLabel LanguageRef="zhs">忽略集团权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore the group permissions</LocalizedLabel>
+    </Label>
+    <Label Name="IgnoreCompanyRulePermissionDescription">
+      <LocalizedLabel LanguageRef="zhs">在查询时，SQL中不添加集团权限相关的条件(如果为关系视图，条件只添加到实体上)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When querying, the group permission-related condition is not added to the SQL (if it is a relational view, the condition is added to the entity only)</LocalizedLabel>
+    </Label>
+    <Label Name="IgnoreCompanyID">
+      <LocalizedLabel LanguageRef="zhs">忽略公司ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore the company ID</LocalizedLabel>
+    </Label>
+    <Label Name="IgnoreCompanyIDDescription">
+      <LocalizedLabel LanguageRef="zhs">在查询时，SQL中不添加公司ID(如果为关系视图，条件只添加到实体上)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When querying, the company ID is not added to the SQL (if it is a relational view, the condition is added to the entity only)</LocalizedLabel>
+    </Label>
+    <Label Name="MaxQueryColumn">
+      <LocalizedLabel LanguageRef="zhs">展示列数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query column count.</LocalizedLabel>
+    </Label>
+    <Label Name="MaxQueryColumnDescription">
+      <LocalizedLabel LanguageRef="zhs">>对于页面模板为左右布局时，单行展示的最大列数目;此属性进档页面模板为左右布局时有效！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The single row display max column count when the query page is from left to right.</LocalizedLabel>
+    </Label>
+    <Label Name="IgnoreObjType">
+      <LocalizedLabel LanguageRef="zhs">模型过滤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore Object Type</LocalizedLabel>
+    </Label>
+    <Label Name="IgnoreObjTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">主外键查询时，过滤掉选择的模型，不再对过滤模型及其子模型关联查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore Object Type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="[PAGENAME]">
+  <Settings Key="height" Value="[PAGEHEIGHT]"/>
+  <Settings Key="width" Value="[PAGEWIDTH]"/>
+  <Settings Key="title" Value="[PAGENAME].[OBJTYPE]Header"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);[CREATESCRIPT]  var functionName = 'InforCenter_[OBJTYPE]_CopyPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID,ObjectType:'[OBJTYPE]'};[SAVESCRIPT];if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_[OBJTYPE]_CopyPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  [INFOSOURCESCRIPT]"></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      [INFOLAYOUT]
+    </PageControl>
+    [INFOCONTENT]
+  </PageControls>
+</root>

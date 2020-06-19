@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListCommonQuery" IsWeb="true">
+    <Label Name="ListCommonQuery">
+      <LocalizedLabel LanguageRef="zhs">公司查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company query</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

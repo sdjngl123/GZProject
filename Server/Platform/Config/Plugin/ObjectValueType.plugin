@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 字段类型-->
+  <PluginItem Name="DefaultObjectValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.DefaultObjectValue" />
+  <PluginItem Name="MutilLanuageValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MutilLanuageValue" />
+  <PluginItem Name="LanuageSelValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.LanuageSelValue" />
+  <PluginItem Name="VersionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.VersionValue" />
+  <PluginItem Name="MinorVersionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MinorVersionValue" />
+  <PluginItem Name="MajorMinorVersionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MajorMinorVersionValue" />
+  <PluginItem Name="DescriptionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.DescriptionValue" />
+  <PluginItem Name="DateTimeValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.DateTimeValue" />
+
+  <PluginItem Name="DateTimeEditValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.DateTimeValue" />
+  
+  <PluginItem Name="DateValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.DateValue" />
+  <PluginItem Name="TimeValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.TimeValue" />
+  <PluginItem Name="StateValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.StateValue" />
+  <PluginItem Name="ObjectIDValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ObjectIDValue" />
+  <PluginItem Name="PassWordValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.PassWordValue" />
+  <PluginItem Name="SingleUserValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleUserValue" />
+  <PluginItem Name="SingleUserAutoComboxValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleUserValue" />
+  <PluginItem Name="MultiUserValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiUserValue" />
+  <PluginItem Name="SingleRoleValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleRoleValue" />
+  <PluginItem Name="SingleRoleAutoComboxValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleRoleValue" />
+  <PluginItem Name="MultiRoleValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiRoleValue" />
+  <PluginItem Name="SingleGroupValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleGroupValue" />
+  <PluginItem Name="SingleGroupAutoComboxValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleGroupValue" />
+  <PluginItem Name="MultiGroupValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiGroupValue" />
+  <PluginItem Name="ParentGroupValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ParentGroupValue" />
+  <PluginItem Name="EnumValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.EnumValue" />
+  <PluginItem Name="MultiEnumValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiEnumValue" />
+  <PluginItem Name="MultiLovListValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiLovListValue" />
+  <PluginItem Name="ObjectEnumValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ObjectEnumValue" />
+  <PluginItem Name="MultiObjectEnumValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiObjectEnumValue" />
+  <PluginItem Name="MultiInfoTypeValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiInfoTypeValue" />
+  <PluginItem Name="SingleInfoTypeValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SingleInfoTypeValue" />
+  <PluginItem Name="FlowTemplateValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.FlowTemplateValue" />
+  <PluginItem Name="ActionRuleConditionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ActionRuleConditionValue" />
+  <PluginItem Name="PermissionActorValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.PermissionActorValue" />
+  <PluginItem Name="PermissionActionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.PermissionActionValue" />
+  <PluginItem Name="MessageActionValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MessageActionValue" />
+  <PluginItem Name="FileUploadValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.FileUploadValue" />
+  <PluginItem Name="HtmlEditValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.HtmlEditValue" />
+  <PluginItem Name="TextBoxIDSValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.TextBoxIDSValue" />
+  <PluginItem Name="TextValueIDSValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.TextValueIDSValue" />
+  <PluginItem Name="ImageUploadValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ImageUploadValue" />
+  <PluginItem Name="ImageUploadBase64Value" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ImageUploadBase64Value" />
+  <PluginItem Name="CustomFormImageUploadValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.CustomFormImageUploadValue" />
+  <PluginItem Name="ImageUploadHttpValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ImageUploadHttpValue" />
+  <PluginItem Name="FileSizeValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.FileSizeValue" />
+  <PluginItem Name="ImageValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ImageValue" />
+  <PluginItem Name="BoolValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.BoolValue" />
+  <PluginItem Name="SubDataModelValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.SubDataModelValue" />
+  <PluginItem Name="LinkChildDataModelValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.LinkChildDataModelValue" />
+  <PluginItem Name="UnionDataModelValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.UnionDataModelValue" />
+  <PluginItem Name="LovListValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.LovListValue" />
+  <PluginItem Name="LovValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.LovValue" />
+  <PluginItem Name="LovListRadio" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.LovListRadio" />
+  <PluginItem Name="EnumRadioValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.EnumRadioValue" />
+  <PluginItem Name="WorkflowTemplateTypeValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.WorkflowTemplateTypeValue" />
+  <PluginItem Name="ExhaustionLovListValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.AutoCompleteCombox.ExhaustionLovListValue" />
+  <PluginItem Name="ExhaustionObjectEnumValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ExhaustionObjectEnumValue" />
+  <PluginItem Name="ObjectTypeListValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ObjectTypeListValue" />
+  <PluginItem Name="AllObjectTypeListValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.AllObjectTypeListValue" />
+  <PluginItem Name="CompanyValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.CompanyValue" />
+  <PluginItem Name="MultiUserValueIgnoreCompany" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.MultiUserValueIgnoreCompany" />
+  <PluginItem Name="EditButtonValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.EditButtonValue" />
+  <PluginItem Name="ColorValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.ColorValue" />
+  <PluginItem Name="VaultValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.VaultValue" />
+  <PluginItem Name="BatchUploadFileValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectValue" Class="Hoteam.InforCenter.Common.ObjectValue.BatchUploadFileValue" />
+  <PluginItem Name="CheckBoxListValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.DefaultObjectValue" />
+</root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ServiceItem ServiceName="GACProjectService" ServiceAssembly="Hoteam.InforCenter.GACProject.Service.dll"
+				 ServiceClass="Hoteam.InforCenter.GACProject.Service.GACProjectService"
+				 ContractAssembly="Hoteam.InforCenter.GACProject.Service.dll"
+				 ContractClass="Hoteam.InforCenter.GACProject.Service.IGACProjectService" />
+</root>

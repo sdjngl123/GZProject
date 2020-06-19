@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FlowTaskActor">
+  <Settings Key="title" Value="FlowTaskActor.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_FlowTaskActor_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 10px 0 10px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ActorEditGrid"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="resizable" Value="true"/>
+        <Settings Key="childid" Value="BtnContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ActorEditGrid" ParentID="TopContainer" TypeName="EditGrid">
+      <PageHandlers>
+        <!--<PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectPermission_EditGridOnCreate(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_ObjectPermission_EditGridOnLoadRows(ctrlEvent);"/>-->
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnLoadRows" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="name" Value="FlowNodeID" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="colType" Value="hidden" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="name" Value="IsValidateNull" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="colType" Value="hidden" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="name" Value="IsValidateCustomNull" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="colType" Value="hidden" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="FlowTaskActor.FlowNode" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="100" />
+        <Settings Key="name" Value="FlowNode" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="text" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="FlowTaskActor.DefaultActor" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="DefaultActor" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="textValue" />
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="textId" Value="FlowTaskActor.UpdateActor" />
+        <Settings Key="icon" Value="~/Platform/Image/Organization/user_add.png" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="UpdateActor" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="textValue" />
+        <Settings Key="databind" Value="InforCenter_Platform_FlowTaskActor_SetOrganization(ctrlEvent);" />
+      </Settings>
+
+    </PageControl>
+    <!-- 按钮容器-->
+    <PageControl ControlID="BtnContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FlowTaskActor_Save(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

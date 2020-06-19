@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="MOBILEPAGEORDERVIEW" ObjectTypeName="MOBILEPAGEORDER" OrderByString="CREATETIME DESC" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="100" Resizable="false" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ORDERITEM" Width="100" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ORDERTYPE" Width="100" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="70" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATEUID" Width="70" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

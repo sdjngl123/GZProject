@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuthTypeCombin" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">认证方式组合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleAuthTypeCombin</LocalizedLabel>
+    </Label>
+    <Label Name="AuthTypeIsNull">
+      <LocalizedLabel LanguageRef="zhs">请选择一种认证方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthTypeIsNull</LocalizedLabel>
+    </Label>
+    <Label Name="AuthTypeIsNotSingle">
+      <LocalizedLabel LanguageRef="zhs">认证策略选择组合认证或多选认证时，认证方式应当选择多个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthTypeIsNotSingle</LocalizedLabel>
+    </Label>
+    <Label Name="AuthTypeIsSingle">
+      <LocalizedLabel LanguageRef="zhs">认证策略选择单一认证时，认证方式只能选择一个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthTypeIsNotSingle</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

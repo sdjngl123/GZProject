@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Smart/Ctrls/SmartAccordion/SmartAccordion.js" group="smart"/>
+  
+  <JSFile FileName ="~/Smart/Ctrls/Suspension/Suspension.js" group="smart" />
+  <JSFile FileName ="~/Smart/Ctrls/BreadcrumbNavigation/BreadcrumbNavigation.js" group="smart"/>
+  <JSFile FileName ="~/Smart/Ctrls/SmartGrid/SmartGrid.js" group="smart"/>
+  <JSFile FileName ="~/Smart/Ctrls/SmartGrid/SmartGrid.base.js" group="smart"/>
+  
+   <CssFile FileName ="~/Smart/Ctrls/SmartGrid/SmartGrid.css" group="smart"/>
+   <CssFile FileName ="~/Smart/Ctrls/Ctrls.css" group="smart"/>
+
+    <JSFile FileName ="~/Smart/Js/HomePage/SmartHomePage.js" group="smart"/>
+    <JSFile FileName ="~/Platform/Js/Common/VerticalTabsCtrl.js" group="Platform"/>
+    <!--Smart 模式-->
+    <JSFile FileName ="~/Smart/Js/Common/SmartManagement.js" group="smart"/>
+    <JSFile FileName ="~/Smart/Js/Common/SmartListCommonQuery.js" group="smart"/>
+    <JSFile FileName ="~/Smart/Js/Common/SmartViewObject.js" group="smart"/>
+    
+    <CssFile FileName ="~/Smart/Css/SmartHomePage.css" group="smart"/>
+</root>

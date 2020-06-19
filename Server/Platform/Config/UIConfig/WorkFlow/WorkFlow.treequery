@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--加载和选择方式
+   单层—多选：SingleLevel_MultiSelect
+   单层—单选：SingleLevel_SingleSelect
+   多层—级联：MultiLevel_Relevance-->
+  <TreeQuery Name="ChangeTaskActor" TreeViewName="" AllowReturnEmptyValue="true"
+    LoadAndSelectType="SingleLevel_MultiSelect" ReturnValueType="USERINFO"
+ TreeRootDataService="InforCenter.Workflow.WorkflowService.GetChangeTaskActorRootNode"
+ TreeChildDataService="" ShowTreeQuery="true"
+ TreeAllDataService="InforCenter.Workflow.WorkflowService.GetChangeTaskActorAllNode" CommitJS=""
+ DropSearchChangeService="InforCenter.Workflow.WorkflowService.GetTaskActorNodes"
+             TreeQueryDataService=""
+             SelectControl="Tree" >
+  </TreeQuery>
+
+  <TreeQuery Name="AssistAuditGroupToRoleToUser" TreeViewName="OrganisizeTreeView" AllQuery="true" ShowTreeQuery="true" 
+             DropSearch="false" SelectControl="ListTree" TreeChildDataService="" TreeRootDataService="" 
+             TreeAllDataService="" ListAllDataService="InforCenter.Organization.OrganizationDataService.GetUserSelectList" 
+             TreeQueryDataService="InforCenter.Organization.OrganizationDataService.GetTreeQueryData" 
+             DropSearchChangeService="InforCenter.Organization.OrganizationDataService.GetUserSelectList" 
+             CommitJS="InforCenter_Platform_Organization_CheckAssistUser" 
+             LoadAndSelectType="SingleLevel_SingleSelect" AllowReturnEmptyValue="false" ReturnValueType="USERINFO" />
+  
+</root>

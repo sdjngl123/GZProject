@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="QueryMachine">
+  <Settings Key="height" Value="100"/>
+  <Settings Key="width" Value="177"/>
+  <Settings Key="title" Value="QueryMachine.QUERYMACHINEBASEINFOHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_QueryMachine_PageLoadData(pageEvent)"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script=""/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_QUERYMACHINEBASEINFO_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 0"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item22" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-22"/>
+      </Settings>
+      <Settings Key="item21" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-11"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="POMAttributeMenuContainer"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="200"/>
+        <Settings Key="childid" Value="POMAttributeTreeContainer"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="QueryRoleMenuContainer"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="250"/>
+        <Settings Key="childid" Value="QueryRoleContainer"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="QueryRoleSaveBtnContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ENAME"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="DESCRIPTION"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ENAME_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ENAME_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.ENAMEHeader" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="QueryMachine.ENAMERegex" />
+    </PageControl>
+    <PageControl ControlID="DESCRIPTION" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DESCRIPTION_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DESCRIPTION_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DESCRIPTION_Label" ParentID="DESCRIPTION" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.DESCRIPTIONHeader" />
+    </PageControl>
+    <PageControl ControlID="DESCRIPTION_Value" ParentID="DESCRIPTION" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="QueryMachine.DESCRIPTIONRegex" />
+    </PageControl>
+
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ROOTPOM"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="DataLinkModel"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ROOTPOM" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ROOTPOM_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ROOTPOM_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ROOTPOM_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ROOTPOM_Label" ParentID="ROOTPOM" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.ROOTModelHeader" />
+    </PageControl>
+    <PageControl ControlID="ROOTPOM_Label_FieldFlag" ParentID="ROOTPOM" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="ROOTPOM_Value" ParentID="ROOTPOM" TypeName="TextValue" >
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="QueryMachine.ROOTPOMRegex" />
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_RootPomCtrlLink(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="DataLinkModel" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DataLinkModel_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DataLinkModel_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="DataLinkModel_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <!--数据相关模型-->
+    <PageControl ControlID="DataLinkModel_Label" ParentID="DataLinkModel" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.DataLinkModelHeader" />
+    </PageControl>
+    <PageControl ControlID="DataLinkModel_Label_FieldFlag" ParentID="DataLinkModel" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="DataLinkModel_Value" ParentID="DataLinkModel" TypeName="TextValue" >
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,1000})?$" />
+      <Settings Key="regextipId" Value="QueryMachine.DataLinkModelRegex" />
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_DataModelCtrlLink(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+    <!--关键字段-->
+    <PageControl ControlID="R-22" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="FIELDKEY"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="SHOWVIEW"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FIELDKEY" ParentID="R-22" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="FIELDKEY_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FIELDKEY_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="FIELDKEY_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FIELDKEY_Label" ParentID="FIELDKEY" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.FIELDKEYHeader" />
+    </PageControl>
+
+    <PageControl ControlID="FIELDKEY_Value" ParentID="FIELDKEY" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="QueryMachine.FIELDKEYRegex" />
+    </PageControl>
+    <PageControl ControlID="FIELDKEY_Label_FieldFlag" ParentID="FIELDKEY" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+
+    <!--组织权限和表格形式-->
+    <PageControl ControlID="R-11" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ORGANIZATIONROLE"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ORGANIZATIONROLE" ParentID="R-11" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ORGANIZATIONROLE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ORGANIZATIONROLE_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ORGANIZATIONROLE_Label" ParentID="ORGANIZATIONROLE" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.ORGANIZATIONROLEHeader" />
+    </PageControl>
+    <PageControl ControlID="ORGANIZATIONROLE_Value" ParentID="ORGANIZATIONROLE" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_OrganizationValueOnClick(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="SHOWVIEW" ParentID="R-11" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="SHOWVIEW_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SHOWVIEW_Value"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <!--表格形式-->
+    <PageControl ControlID="SHOWVIEW_Label" ParentID="SHOWVIEW" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachine.SHOWVIEWHeader" />
+    </PageControl>
+    <PageControl ControlID="SHOWVIEW_Label_FieldFlag" ParentID="SHOWVIEW" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="SHOWVIEW_Value" ParentID="SHOWVIEW" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_ShouViewCtrlLink(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+
+    <!--按钮-->
+    <PageControl ControlID="POMAttributeMenuContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="POMTree_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="POMAttributeMenu"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID = "POMAttributeMenu" ParentID = "POMAttributeMenuContainer" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="QueryMachine.AddPOM"/>
+        <Settings Key="value" Value="AddPOM"/>
+        <Settings Key="icon" Value="p_add_model"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_POMAttributeMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="QueryMachine.RemovePOM"/>
+        <Settings Key="value" Value="RemovePOM"/>
+        <Settings Key="icon" Value="p_remove_model"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_POMAttributeMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="textId" Value="QueryMachine.AddLink"/>
+        <Settings Key="value" Value="AddLink"/>
+        <Settings Key="icon" Value="p_set_association"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_POMAttributeMenuClick(ctrlEvent)"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="POMTree_Label" ParentID="POMAttributeMenuContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="QueryMachine.POMTree" />
+    </PageControl>
+
+    <PageControl ControlID="POMAttributeTreeContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="POMAttributeTree"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="POMAttributeTree" ParentID="POMAttributeTreeContainer" TypeName="Tree">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnNodeDblClick" Script="InforCenter_Platform_QueryMachine_POMTreeOnDbClick(ctrlEvent);"/>
+        <Settings Key="showCheck" Value="false"/>
+      </PageHandlers>
+    </PageControl>
+
+    <!--查询规则（按钮）-->
+    <PageControl ControlID="QueryRoleMenuContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="QueryRole_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryRoleMenu"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID = "QueryRoleMenu" ParentID = "QueryRoleMenuContainer" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="QueryMachine.Up"/>
+        <Settings Key="value" Value="Up"/>
+        <Settings Key="icon" Value="p_moveup"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryRoleMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="QueryMachine.Down"/>
+        <Settings Key="value" Value="Down"/>
+        <Settings Key="icon" Value="p_movedown"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryRoleMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="textId" Value="QueryMachine.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_remove"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryRoleMenuClick(ctrlEvent)"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="QueryRole_Label" ParentID="QueryRoleMenuContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="QueryMachine.QueryRole" />
+    </PageControl>
+
+    <!--查询规则（列表）-->
+    <PageControl ControlID="QueryRoleContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryRoleGrid"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="QueryRoleGrid" ParentID="QueryRoleContainer" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnColImageClick" Script="InforCenter_WorkFlow_List_GridColImage(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="showPageBar" Value="false" />
+      <Settings Key="autoLoadData" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="QueryMachine.ObjectTypeName" />
+        <Settings Key="name" Value="OBJECTTYPENAME" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="colType" Value="hidden" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="textId" Value="QueryMachine.ODERNUMBER" />
+        <Settings Key="name" Value="ODERNUMBER" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="colType" Value="hidden" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item11" >
+        <Settings Key="textId" Value="QueryMachine.ObjectTypeName" />
+        <Settings Key="name" Value="COLTYPE" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="colType" Value="hidden" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="QueryMachine.OperateType" />
+        <Settings Key="name" Value="OPERATETYPE" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="databind" Value="InforCenter_Platform_QueryMachine_GetOperateTypeDownColData(ctrlEvent);" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="QueryMachine.Attribute" />
+        <Settings Key="name" Value="COLNAME" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="QueryMachine.ColName" />
+        <Settings Key="name" Value="COLTEXT" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+        <Settings Key="regexTitleId" Value="QueryMachine.QueryRuleResultRegex" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="QueryMachine.Condition" />
+        <Settings Key="name" Value="CONDITION" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="databind" Value="InforCenter_Platform_QueryMachine_GetConditionDownColData(ctrlEvent);" />
+        <Settings Key="eventbind" >
+          <Settings Key="change" Value="InforCenter_InforCenter_QueryMachine_OperateTypeDownChange(ctrlEvent);" />
+        </Settings>
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="true" />
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="textId" Value="QueryMachine.ResultValue" />
+        <Settings Key="name" Value="RESULTVALUE" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="true" />
+
+        <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+        <Settings Key="regexTitleId" Value="QueryMachine.QueryRuleResultRegex" />
+      </Settings>
+    </PageControl>
+
+    <!--保存、修改、删除按钮-->
+    <PageControl ControlID="QueryRoleSaveBtnContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCreate"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="8"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnSave"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="8"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnDelete"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnCreate" ParentID="QueryRoleSaveBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_BtnCreate(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="QueryMachine.btnCreate" />
+    </PageControl>
+    <PageControl ControlID="btnSave" ParentID="QueryRoleSaveBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_BtnUpdateSave(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="QueryMachine.btnSave" />
+    </PageControl>
+    <PageControl ControlID="btnDelete" ParentID="QueryRoleSaveBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_BtnDeleteSave(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="QueryMachine.btnDelete" />
+    </PageControl>
+  </PageControls>
+</root>

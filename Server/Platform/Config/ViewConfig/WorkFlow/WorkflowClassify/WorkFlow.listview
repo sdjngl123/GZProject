@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--流程列表-->
+  <WebListView Name="WorkFolwClassifyListView" View="WORKFLOWCLASSIFYVIEW" QueryID="" EntityFilter="" Filter="PEID = '[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="false"  IsAllExporting="false"
+ IsSelectPrinting="false" IsAllPrinting="false" DetailsIcon="" DetailsPageSize="580*330" >    
+  </WebListView>
+  
+</root>

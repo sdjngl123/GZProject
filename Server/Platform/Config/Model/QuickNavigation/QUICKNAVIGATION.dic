@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="QUICKNAVIGATIONModel" IsWeb="true">
+    <Label Name="QUICKNAVIGATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">快速导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fast navigation</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKNAVIGATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">快速导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fast navigation</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户标识符ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User identifier ID</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户标识符ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User identifier ID</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">快捷导航类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fastnavigation type</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">快捷导航类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fastnavigation type</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKROWHeader">
+      <LocalizedLabel LanguageRef="zhs">行号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line No.</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKROWCaption">
+      <LocalizedLabel LanguageRef="zhs">行号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line No.</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKCOLUMNHeader">
+      <LocalizedLabel LanguageRef="zhs">列号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column No.</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKCOLUMNCaption">
+      <LocalizedLabel LanguageRef="zhs">列号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column No.</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Content</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Content</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKTEXTHeader">
+      <LocalizedLabel LanguageRef="zhs">文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKTEXTCaption">
+      <LocalizedLabel LanguageRef="zhs">文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKIMAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="QUICKIMAGECaption">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

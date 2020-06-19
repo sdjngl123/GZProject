@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PropertyPageTemplate">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_PropertyPageTemplate_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!--流程属性页展示流程图-->
+    <PageControl ControlID="TemplateContainer" ParentID="" TypeName="PageContainer">
+      
+    </PageControl>
+  </PageControls>
+</root>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYRULEBASEINFOModel" IsWeb="true">
+    <Label Name="QUERYRULEBASEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">查询构建规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query build rule</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYRULEBASEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">查询构建规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query build rule</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">查询基础信息ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query underlying information ID</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">查询基础信息ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query underlying information ID</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">操作类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation type</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">操作类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation type</LocalizedLabel>
+    </Label>
+    <Label Name="COLNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">字段Name</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field name</LocalizedLabel>
+    </Label>
+    <Label Name="COLNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">字段Name</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field name</LocalizedLabel>
+    </Label>
+    <Label Name="COLTEXTHeader">
+      <LocalizedLabel LanguageRef="zhs">字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field Name</LocalizedLabel>
+    </Label>
+    <Label Name="COLTEXTCaption">
+      <LocalizedLabel LanguageRef="zhs">字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field Name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONHeader">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONCaption">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="COLTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">字段处理类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field processing type</LocalizedLabel>
+    </Label>
+    <Label Name="COLTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">字段处理类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field processing type</LocalizedLabel>
+    </Label>
+    <Label Name="ODERNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="ODERNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYROLEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义sql查询对应id</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom sql query corresponding id</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYROLEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">自定义sql查询对应id</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom sql query corresponding id</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYREPLACEPARAHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义sql查询替换符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom sql query substitution</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

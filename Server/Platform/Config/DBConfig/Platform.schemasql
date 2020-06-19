@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="CREATEENUMERATIONS">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'ENUMERATIONS'))) DROP VIEW ENUMERATIONS
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ENUMERATIONS">
+        CREATE VIEW ENUMERATIONS
+        AS
+        SELECT 'ENUMERATIONS_ENUMERATIONS' EID, '634938753390000000' CREATETIME,'' ECOMPANYID
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="ENUMERATIONS">
+        CREATE OR REPLACE VIEW ENUMERATIONS
+        as
+        SELECT 'ENUMERATIONS_ENUMERATIONS' EID, '634938753390000000' CREATETIME ,'' ECOMPANYID FROM DUAL
+
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DROP VIEW IF EXISTS ENUMERATIONS
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ENUMERATIONS">
+        CREATE VIEW ENUMERATIONS
+        AS
+        SELECT 'ENUMERATIONS_ENUMERATIONS' EID, '634938753390000000' CREATETIME,'' ECOMPANYID
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="CREATEORGANIZATION">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'ORGANIZATION'))) DROP VIEW ORGANIZATION
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ORGANIZATION">
+        CREATE VIEW ORGANIZATION
+        AS
+        SELECT 'ORGANIZATION_GROUPS' EID,'~/Platform/Image/Model/p_organizationobject.png' ICON,'WebTreeViews.Groups' TEXTDIC,'GROUPS' NODETYPE,  CREATETIME, CREATEUID, ECOMPANYID,SERIALNUMBER FROM COMPANY
+        UNION ALL
+        SELECT 'ORGANIZATION_ROLES' EID,'~/Platform/Image/Model/p_roleobject.png' ICON,'WebTreeViews.Roles' TEXTDIC,'ROLES' NODETYPE, CREATETIME,CREATEUID,  ECOMPANYID,SERIALNUMBER FROM COMPANY
+        UNION ALL
+        SELECT 'ORGANIZATION_USERS' EID,'~/Platform/Image/Model/p_userobject.png' ICON,'WebTreeViews.Users' TEXTDIC,'USERS' NODETYPE, CREATETIME,CREATEUID,  ECOMPANYID,SERIALNUMBER FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="ORGANIZATION">
+        CREATE OR REPLACE VIEW ORGANIZATION
+        as
+        SELECT N'ORGANIZATION_GROUPS' EID,'~/Platform/Image/Model/p_organizationobject.png' ICON,'WebTreeViews.Groups' TEXTDIC,'GROUPS' NODETYPE,  CREATETIME, CREATEUID, ECOMPANYID,SERIALNUMBER FROM COMPANY
+        UNION ALL
+        SELECT N'ORGANIZATION_ROLES' EID,'~/Platform/Image/Model/p_roleobject.png' ICON,'WebTreeViews.Roles' TEXTDIC,'ROLES' NODETYPE, CREATETIME, CREATEUID, ECOMPANYID,SERIALNUMBER FROM COMPANY
+        UNION ALL
+        SELECT N'ORGANIZATION_USERS' EID,'~/Platform/Image/Model/p_userobject.png' ICON,'WebTreeViews.Users' TEXTDIC,'USERS' NODETYPE, CREATETIME,CREATEUID,  ECOMPANYID,SERIALNUMBER FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DROP VIEW IF EXISTS ORGANIZATION
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ORGANIZATION">
+        CREATE VIEW ORGANIZATION
+        AS
+        SELECT 'ORGANIZATION_GROUPS' EID,'~/Platform/Image/Model/p_organizationobject.png' ICON,'WebTreeViews.Groups' TEXTDIC,'GROUPS' NODETYPE, CREATETIME,  ECOMPANYID FROM COMPANY
+        UNION ALL
+        SELECT 'ORGANIZATION_ROLES' EID,'~/Platform/Image/Model/p_roleobject.png' ICON,'WebTreeViews.Roles' TEXTDIC,'ROLES' NODETYPE, CREATETIME,  ECOMPANYID FROM COMPANY
+        UNION ALL
+        SELECT 'ORGANIZATION_USERS' EID,'~/Platform/Image/Model/p_userobject.png' ICON,'WebTreeViews.Users' TEXTDIC,'USERS' NODETYPE, CREATETIME,  ECOMPANYID FROM COMPANY
+
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="CREATACTIONRULEROOT">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'ACTIONRULEROOT'))) DROP VIEW ACTIONRULEROOT
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ACTIONRULEROOT">
+        CREATE VIEW ACTIONRULEROOT
+        AS
+        SELECT 'ACTIONRULEROOT_'+REPLACE(EID,'_','')+'OBJECTROOT' EID, 'WebTreeViews.ObjectRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Entity' USEBY,'ACTIONRULEROOT' NODETYPE FROM COMPANY
+        UNION ALL
+        SELECT 'ACTIONRULEROOT_'+REPLACE(EID,'_','')+'LINKROOT' EID,'WebTreeViews.LinkRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Link' USEBY,'ACTIONRULEROOT' NODETYPE FROM COMPANY
+        UNION ALL
+        SELECT 'ACTIONRULEROOT_'+REPLACE(EID,'_','')+'CREATEROOT' EID,'WebTreeViews.CreateRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Create' USEBY,'CREATEACTIONRULEROOT' NODETYPE FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="ACTIONRULEROOT">
+        CREATE OR REPLACE VIEW ACTIONRULEROOT
+        as
+        SELECT 'ACTIONRULEROOT_'||REPLACE(EID,'_','')||'OBJECTROOT' EID, 'WebTreeViews.ObjectRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Entity' USEBY,'ACTIONRULEROOT' NODETYPE FROM COMPANY
+        UNION ALL
+        SELECT 'ACTIONRULEROOT_'||REPLACE(EID,'_','')||'LINKROOT' EID,'WebTreeViews.LinkRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Link' USEBY,'ACTIONRULEROOT' NODETYPE FROM COMPANY
+        UNION ALL
+        SELECT 'ACTIONRULEROOT_'||REPLACE(EID,'_','')||'CREATEROOT' EID,'WebTreeViews.CreateRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Create' USEBY,'CREATEACTIONRULEROOT' NODETYPE FROM COMPANY
+
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DROP VIEW IF EXISTS ACTIONRULEROOT
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ACTIONRULEROOT">
+        CREATE VIEW ACTIONRULEROOT
+        AS
+        SELECT CONCAT('ACTIONRULEROOT_',REPLACE(EID,'_',''),'OBJECTROOT') EID, 'WebTreeViews.ObjectRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Entity' USEBY,'ACTIONRULEROOT' NODETYPE FROM COMPANY
+        UNION ALL
+        SELECT CONCAT('ACTIONRULEROOT_',REPLACE(EID,'_',''),'LINKROOT') EID,'WebTreeViews.LinkRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Link' USEBY,'ACTIONRULEROOT' NODETYPE FROM COMPANY
+        UNION ALL
+        SELECT CONCAT('ACTIONRULEROOT_',REPLACE(EID,'_',''),'CREATEROOT') EID,'WebTreeViews.CreateRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'Create' USEBY,'CREATEACTIONRULEROOT' NODETYPE FROM COMPANY
+
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="CREATACTIONRULEMESSAGEROOT">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'ACTIONRULEMESSAGEROOT'))) DROP VIEW ACTIONRULEMESSAGEROOT
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ACTIONRULEMESSAGEROOT">
+        CREATE VIEW ACTIONRULEMESSAGEROOT
+        AS
+        SELECT 'ACTIONRULEMESSAGEROOT_'+REPLACE(EID,'_','')+'OBJECTROOT' EID, 'WebTreeViews.SubscribeRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'ActionRuleMessage' USEBY,'ACTIONRULEMESSAGEROOT' NODETYPE FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="ACTIONRULEMESSAGEROOT">
+        CREATE OR REPLACE VIEW ACTIONRULEMESSAGEROOT
+        as
+        SELECT 'ACTIONRULEMESSAGEROOT_'||REPLACE(EID,'_','')||'OBJECTROOT' EID, 'WebTreeViews.SubscribeRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'ActionRuleMessage' USEBY,'ACTIONRULEMESSAGEROOT' NODETYPE FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DROP VIEW IF EXISTS ACTIONRULEMESSAGEROOT
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ACTIONRULEMESSAGEROOT">
+        CREATE VIEW ACTIONRULEMESSAGEROOT
+        AS
+        SELECT CONCAT('ACTIONRULEMESSAGEROOT_',REPLACE(EID,'_',''),'OBJECTROOT') EID, 'WebTreeViews.SubscribeRoot' TEXTDIC, CREATEUID, CREATETIME, UPDATEUID, UPDATETIME,  ECOMPANYID,'ActionRuleMessage' USEBY,'ACTIONRULEMESSAGEROOT' NODETYPE FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="CREATEGROUPROLE">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'GROUPROLE'))) DROP VIEW GROUPROLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="GROUPROLE">
+        CREATE VIEW GROUPROLE
+        AS
+        SELECT DISTINCT  'GROUPROLE_'+ PEID +'|'+CEID  EID,ENAME,CREATETIME,PEID GROUPEID,CEID ROLEEID ,R.ECOMPANYID
+        from ORGANIZE UR JOIN ROLEINFO R ON UR.CEID=R.EID WHERE CETYPE='ROLEINFO'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="GROUPROLE">
+        CREATE OR REPLACE VIEW GROUPROLE
+        AS
+        SELECT DISTINCT 'GROUPROLE_'||PEID||'|'||CEID  EID,ENAME,CREATETIME,PEID GROUPEID,CEID ROLEEID ,R.ECOMPANYID
+        from ORGANIZE UR JOIN ROLEINFO R ON UR.CEID=R.EID WHERE CETYPE='ROLEINFO'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DROP VIEW IF EXISTS GROUPROLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="GROUPROLE">
+        CREATE VIEW GROUPROLE
+        AS
+        SELECT DISTINCT  CONCAT('GROUPROLE_',UR.PEID,'|',UR.CEID)  EID,R.ENAME ENAME,R.CREATETIME CREATETIME,UR.PEID GROUPEID,UR.CEID ROLEEID ,R.ECOMPANYID ECOMPANYID
+        from ORGANIZE UR JOIN ROLEINFO R ON UR.CEID=R.EID WHERE CETYPE='ROLEINFO'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="WorkflowClassifyRoot">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'WORKFLOWCLASSIFYROOT'))) DROP VIEW WORKFLOWCLASSIFYROOT
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="WORKFLOWCLASSIFYROOT">
+        CREATE VIEW WORKFLOWCLASSIFYROOT
+        AS
+        SELECT 'WORKFLOWCLASSIFYROOT_'+REPLACE(EID,'_','')+'WORKFLOWCLASSIFYROOT' EID, CREATETIME, ECOMPANYID FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="WORKFLOWCLASSIFYROOT">
+        CREATE OR REPLACE VIEW WORKFLOWCLASSIFYROOT
+        as
+        SELECT 'WORKFLOWCLASSIFYROOT_'||REPLACE(EID,'_','')||'WORKFLOWCLASSIFYROOT' EID, CREATETIME, ECOMPANYID FROM COMPANY
+
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DROP VIEW IF EXISTS WORKFLOWCLASSIFYROOT
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="WORKFLOWCLASSIFYROOT">
+        CREATE VIEW WORKFLOWCLASSIFYROOT
+        AS
+        SELECT CONCAT('WORKFLOWCLASSIFYROOT_',REPLACE(EID,'_',''),'WORKFLOWCLASSIFYROOT') EID,CREATETIME, ECOMPANYID FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

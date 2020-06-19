@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="ModelListViewInfoMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Up" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.Up" Image="p_moveup" RefreshType="RefreshEditList" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RowMove" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="Mode" Value="up" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Down" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.Down" Image="p_movedown" RefreshType="RefreshEditList" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RowMove" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="Mode" Value="down" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveEditGrid" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Save" Image="p_save" RefreshType="RefreshEditList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelListViewInfo_SaveClick" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <!--<Para Name="ObjType" Value="[Tree_Current_Value3]" />-->
+        <Para Name="TreeID" Value="[TreeID]" />
+        <Para Name="ObjectID" Value="[Tree_Current_Value1]" />
+        <Para Name="ModelName" Value="[Tree_Current_Tag_ModelName]" />
+        <Para Name="ViewName" Value="[Tree_Current_Tag_ViewName]" />
+        <Para Name="ViewType" Value="[Tree_Current_Tag_ViewType]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="ModelListViewConditionMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Add" MultiMenu="false" ModuleName="Platform" LabelName="Common.Add" Image="p_add" RefreshType="" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelListViewCondition_AddColumn" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="TreeID" Value="[TreeID]" />
+        <Para Name="ObjectID" Value="[Tree_Current_Value1]" />
+        <Para Name="ModelName" Value="[Tree_Current_Tag_ModelName]" />
+        <Para Name="ViewName" Value="[Tree_Current_Tag_ViewName]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Remove" MultiMenu="false" ModuleName="Platform" LabelName="Common.Remove" Image="p_remove" RefreshType="" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelListViewCondition_RemoveColumn" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="TreeID" Value="[TreeID]" />
+        <Para Name="ObjectID" Value="[Tree_Current_Value1]" />
+        <Para Name="ModelName" Value="[Tree_Current_Tag_ModelName]" />
+        <Para Name="ViewName" Value="[Tree_Current_Tag_ViewName]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Up" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.Up" Image="p_moveup" RefreshType="RefreshEditList" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RowMove" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="Mode" Value="up" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Down" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.Down" Image="p_movedown" RefreshType="RefreshEditList" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RowMove" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="Mode" Value="down" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveEditGrid" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Save" Image="p_save" RefreshType="RefreshEditList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelListViewCondition_SaveClick" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="TreeID" Value="[TreeID]" />
+        <Para Name="ObjectID" Value="[Tree_Current_Value1]" />
+        <Para Name="ModelName" Value="[Tree_Current_Tag_ModelName]" />
+        <Para Name="ViewName" Value="[Tree_Current_Tag_ViewName]" />
+        <Para Name="ViewType" Value="[Tree_Current_Tag_ViewType]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+</root>

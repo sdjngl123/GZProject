@@ -1,0 +1,1 @@
+﻿pageEvent.o.GetControl('[INFONAME]_Value').SetText(data.[INFONAME]_DisplayValue);

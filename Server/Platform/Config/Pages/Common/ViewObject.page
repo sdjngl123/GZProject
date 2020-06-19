@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ViewObject" IsCache="true">
+  <Settings Key="height" Value="460"/>
+  <Settings Key="width" Value="650"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ViewObject_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="ViewObject.Title"/>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="6px 6px 6px 6px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <!--四层-->
+    <PageControl ControlID="TabsCtrlPage" ParentID="Top_Container" TypeName="PageContainer">
+
+    </PageControl>
+    
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), {});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+  </PageControls>
+</root>

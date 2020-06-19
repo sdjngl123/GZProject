@@ -1,0 +1,17 @@
+﻿<div style="overflow-y:auto;height:100%;padding:5px 0px;border-bottom:1px solid #ccc;width:100%;position: static;margin:0;" class="hoteam-grid-dialog">
+
+	<div id="homePageSetting_con" style="min-height: 60px;height:auto;">
+    <ul id="homePageSetting_con-tree" class="ztree hoteam-grid-tree" style="height:auto;"></ul>
+	</div>
+	<div class="homePage-setting-row">
+		<span>列数目</span>
+		<div class="homePage-setting-cols input-group">
+			<input type="text" id="homePage_colsNum" class="form-control input-sm readonly" autocomplete="off" readonly />
+			<div class="input-group-btn">
+                <div  class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" style="height:26px;padding:10px 8px;">
+                    <span class="caret"></span>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>

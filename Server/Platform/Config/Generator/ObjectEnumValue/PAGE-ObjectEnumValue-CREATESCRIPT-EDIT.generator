@@ -1,0 +1,7 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+InforCenter_Platform_Object_SetObjectEnumList(o,'[INFONAME]','[OBJTYPE]',[REQUIRE]);
+o.SetSelectedByValue(data.[INFONAME]);
+}
+}

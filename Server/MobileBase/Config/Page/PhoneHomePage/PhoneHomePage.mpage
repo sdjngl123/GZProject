@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="PhoneHomePage"
+         JsFile ="~/MobileBase/Config/Page/PhoneHomePage/PhoneHomePage.js" 
+         LayoutFile="~/MobileBase/Config/Page/PhoneHomePage/PhoneHomePage.mlayout" 
+         DictionaryContent="MPhoneHomePage">
+      <PageHandler HandlerName ="OnCreate" Script="Hoteam_MobileBase_PhoneHomePage_Init(pageEvent);"/>
+  </MPage>
+</root>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="INTERNALMAILSENDVIEWView" IsWeb="true">
+    <Label Name="INTERNALMAILSENDVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">内部邮件视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Internal mail view</LocalizedLabel>
+    </Label>
+    <Label Name="INTERNALMAILSENDVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">内部邮件视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Internal mail view</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="SENDUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+    <Label Name="SENDUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Received time</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">接收时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Received time</LocalizedLabel>
+    </Label>
+    <Label Name="MAILSIZEHeader">
+      <LocalizedLabel LanguageRef="zhs">大小</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Size</LocalizedLabel>
+    </Label>
+    <Label Name="MAILSIZECaption">
+      <LocalizedLabel LanguageRef="zhs">大小</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Size</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTCaption">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERCaption">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERCaption">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTCaption">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATEICONHeader">
+      <LocalizedLabel LanguageRef="zhs">状态图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State Icon</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATEICONCaption">
+      <LocalizedLabel LanguageRef="zhs">状态图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State Icon</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="INTERNALMAILSENDVIEWCondition" IsWeb="true">
+    <Label Name="SENDUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+    <Label Name="SENDUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERCaption">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIME">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTCaption">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTCaption">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="SENDTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERCaption">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="SENDUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+    <Label Name="SENDUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

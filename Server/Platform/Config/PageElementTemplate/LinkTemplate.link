@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PageLinks Name="PropertyPageLinkTemplate" ObjectType="[OBJECTTYPE]" IsTemplate="true" TemplateDescription="表明该tab页用于属性页的模板">
+    <PageLink Name="UsersListTemplate" PageName="TabListPage" IsTemplate="true" TemplateDescription="不带查询的列表页面模板">
+      <Para Name="ListViewName" Value="ROLETOUSERLISTVIEW" />
+      <Para Name="OnePageDataService" Value="InforCenter.Organization.OrganizationDataService.GetRoleToUserGridData" />
+    </PageLink>
+    <PageLink Name="RolePropertyTemplate" PageName="ObjectProperty" IsTemplate="false" />
+  </PageLinks>
+  <PageLinks Name="CommonPageLinkTemplate" IsTemplate="true" TemplateDescription="通用Tab页配置">
+    <PageLink Name="SubFolderTemplate" PageName="ListManagement" IsTemplate="true" TemplateDescription="通用列表Tab页配置">
+      <Para Name="ItemName" Value="EOwnSpaceFloder" />
+    </PageLink>
+  </PageLinks>
+</root>

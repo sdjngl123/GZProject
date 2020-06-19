@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowParameterSetting" IsCache="true">
+  <Settings Key="title" Value="WorkflowParameterSetting.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowParameterSetting_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_WorkflowParameterSetting_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_WorkflowParameterSetting_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="WorkflowParameterSetting_LayoutC" ParentID="" TypeName="LayoutContainer">
+        <Settings Key="type" Value="horizontal"/>
+        <Settings Key="item1" >
+            <Settings Key="size" Value="10"/>
+        </Settings>
+        <Settings Key="item2">
+            <Settings Key="size" Value="100%"/>
+            <Settings Key="childid" Value="WorkflowParameterSetting_Layout"/>
+        </Settings>
+        <Settings Key="item3">
+            <Settings Key="size" Value="10"/>
+        </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkflowParameterSetting_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="32"/>
+        <Settings Key="childid" Value="WorkflowParameterSettingMenu"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkflowParameterSettingEditGrid"/>
+      </Settings>
+    </PageControl>
+    <!--菜单-->
+    <PageControl ControlID="WorkflowParameterSettingMenu" ParentID="WorkflowParameterSetting_Layout" TypeName="Menu">
+     
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="Common.Create"/>
+        <Settings Key="value" Value="Create"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_Platform_WorkflowParameterSetting_CreateMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="Common.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_Platform_WorkflowParameterSetting_DeleteMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="WorkflowParameterSetting.MoveUp"/>
+        <Settings Key="value" Value="MoveUp"/>
+        <Settings Key="icon" Value="p_moveup"/>
+        <Settings Key="js" Value="InforCenter_Platform_WorkflowParameterSetting_MoveUpMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="WorkflowParameterSetting.MoveDown"/>
+        <Settings Key="value" Value="MoveDown"/>
+        <Settings Key="icon" Value="p_movedown"/>
+        <Settings Key="js" Value="InforCenter_Platform_WorkflowParameterSetting_moveDownMenu(ctrlEvent);"/>
+      </Settings>
+      <!--<Settings Key="item5" >
+        <Settings Key="textId" Value="WorkflowParameterSetting.Copy"/>
+        <Settings Key="value" Value="Copy"/>
+        <Settings Key="icon" Value="~/Platform/Image/Common/copy.png"/>
+        <Settings Key="js" Value="InforCenter_Platform_WorkflowParameterSetting_CopyMenu(ctrlEvent);"/>
+      </Settings>-->
+
+    </PageControl>
+    <PageControl ControlID="WorkflowParameterSettingEditGrid" ParentID="WorkflowParameterSetting_Layout" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="WorkflowParameterSetting.ParaName" />
+        <Settings Key="name" Value="ParaName" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="regex" Value="^([A-Za-z]{1,50}?)$" />
+        <Settings Key="regexTitleId" Value="WorkflowParameterSetting.ParaNameRegex" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="WorkflowParameterSetting.ParaValue" />
+        <Settings Key="name" Value="ParaValue" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="regex" Value="^[0-9]{1,8}$" />
+        <Settings Key="regexTitleId" Value="WorkflowParameterSetting.ParaValueRegex" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

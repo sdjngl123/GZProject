@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MobilePageButtonTypePage" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">执行脚本参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="AssemblyRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="Assembly">
+      <LocalizedLabel LanguageRef="zhs">程序集</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assembly</LocalizedLabel>
+    </Label>
+    <Label Name="ClassRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="Class">
+      <LocalizedLabel LanguageRef="zhs">类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Class</LocalizedLabel>
+    </Label>
+    <Label Name="Action">
+      <LocalizedLabel LanguageRef="zhs">Action</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action</LocalizedLabel>
+    </Label>
+    <Label Name="Action">
+      <LocalizedLabel LanguageRef="zhs">Action</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action</LocalizedLabel>
+    </Label>
+    <Label Name="ParaList">
+      <LocalizedLabel LanguageRef="zhs">参数列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ParaList</LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageName</LocalizedLabel>
+    </Label>
+    <Label Name="PageType">
+      <LocalizedLabel LanguageRef="zhs">页面类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageType</LocalizedLabel>
+    </Label>
+    <Label Name="ParaName">
+      <LocalizedLabel LanguageRef="zhs">参数名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ParaName</LocalizedLabel>
+    </Label>
+    <Label Name="ParaValue">
+      <LocalizedLabel LanguageRef="zhs">参数值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ParaValue</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

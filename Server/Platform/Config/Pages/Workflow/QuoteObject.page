@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="QuoteObject">
+  <Settings Key="height" Value="400"/>
+  <Settings Key="width" Value="800"/>
+  <Settings Key="title" Value="QuoteObject.ChildObjectTitle"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_InforCenter_StartWorkflow_QuoteChildPageOnLoad(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="StaticMenuExample_Menu"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID = "StaticMenuExample_Menu" ParentID = "StaticMenuExample_Container" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnColImageClick" Script="InforCenter_WorkFlow_List_GridColImage(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="QuoteObject.Paste"/>
+        <Settings Key="value" Value="Paste"/>
+        <Settings Key="icon" Value="p_paste"/>
+        <Settings Key="js" Value="InforCenter_WorkFlow_FlowQuoteObject_MenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="textId" Value="QuoteObject.Remove"/>
+        <Settings Key="value" Value="Remove"/>
+        <Settings Key="icon" Value="p_remove"/>
+        <Settings Key="js" Value="InforCenter_WorkFlow_FlowQuoteObject_MenuClick(ctrlEvent)"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectList"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ObjectList" ParentID="R-3" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnLoadRows" Script=""/>
+      </PageHandlers>
+      <Settings Key="showPageBar" Value="false" />
+      <Settings Key="autoLoadData" Value="true" /> 
+      <Settings Key="item0" >
+        <Settings Key="textId" Value="QuoteObject.Img" />
+        <Settings Key="name" Value="IMGICONTYPE" />
+        <Settings Key="colType" Value="image" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="QuoteObject.Img" />
+        <Settings Key="name" Value="EID" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="colType" Value="hidden" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="QuoteObject.Name" />
+        <Settings Key="name" Value="ENAME" />
+        <!--<Settings Key="jsmethod" Value="InforCenter_Platform_ListManagement_ColumnLinkOnClick" />-->
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="QuoteObject.ItemCode" />
+        <Settings Key="name" Value="ECODE" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="QuoteObject.Version" />
+        <Settings Key="name" Value="VERSION" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="QuoteObject.ObjectType" />
+        <Settings Key="name" Value="OBJECTTYPE" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="textId" Value="QuoteObject.ObjectState" />
+        <Settings Key="name" Value="OBJECTSTATE" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

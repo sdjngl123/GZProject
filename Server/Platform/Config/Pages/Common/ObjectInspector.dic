@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectInspector" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Viewer</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name:</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

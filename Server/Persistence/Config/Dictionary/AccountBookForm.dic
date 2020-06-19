@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AccountBookForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">帐套管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccountBook</LocalizedLabel>
+    </Label>
+    <Label Name="Database">
+      <LocalizedLabel LanguageRef="zhs">数据库类型：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database:</LocalizedLabel>
+    </Label>
+    <Label Name="AccountList">
+      <LocalizedLabel LanguageRef="zhs">帐套列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccountList</LocalizedLabel>
+    </Label>
+    <Label Name="ConnectString">
+      <LocalizedLabel LanguageRef="zhs">连接字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Connection String</LocalizedLabel>
+    </Label>
+    <Label Name="Timeout">
+      <LocalizedLabel LanguageRef="zhs">超时时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time out</LocalizedLabel>
+    </Label>
+    <Label Name="Enable">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="NoConnect">
+      <LocalizedLabel LanguageRef="zhs">"[TYPE]"下没有合适的连接，不能创建帐套。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NoConnect</LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="CreateAccount">
+      <LocalizedLabel LanguageRef="zhs">新建帐套</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateAccount</LocalizedLabel>
+    </Label>
+    <Label Name="UserName">
+      <LocalizedLabel LanguageRef="zhs">用户名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserName</LocalizedLabel>
+    </Label>
+    <Label Name="Password">
+      <LocalizedLabel LanguageRef="zhs">密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password</LocalizedLabel>
+    </Label>
+    <Label Name="InitData">
+      <LocalizedLabel LanguageRef="zhs">初始数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InitData</LocalizedLabel>
+    </Label>
+    <Label Name="ShowConnectStr">
+      <LocalizedLabel LanguageRef="zhs">查看连接串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ShowConnectStr</LocalizedLabel>
+    </Label>
+    <Label Name="UserNameISNull">
+      <LocalizedLabel LanguageRef="zhs">用户名为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserNameISNull</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordISNull">
+      <LocalizedLabel LanguageRef="zhs">密码为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PasswordISNull</LocalizedLabel>
+    </Label>
+    <Label Name="CancelInfo">
+      <LocalizedLabel LanguageRef="zhs">正在创建帐套，如果取消将会导致不确定问题，确定要取消吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CancelInfo</LocalizedLabel>
+    </Label>
+    <Label Name="Progress">
+      <LocalizedLabel LanguageRef="zhs">进度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Progress</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateSchemaSuccess">
+      <LocalizedLabel LanguageRef="zhs">数据库结构更新成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UpdateSchemaSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="AllSuccess">
+      <LocalizedLabel LanguageRef="zhs">创建成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="ExportDataTableSuccess">
+      <LocalizedLabel LanguageRef="zhs">导出数据成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="ImportDataTableuccess">
+      <LocalizedLabel LanguageRef="zhs">导入数据成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="Canceling">
+      <LocalizedLabel LanguageRef="zhs">正在取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Canceling</LocalizedLabel>
+    </Label>
+    <Label Name="CreateError">
+      <LocalizedLabel LanguageRef="zhs">创建出错</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateError</LocalizedLabel>
+    </Label>
+    <Label Name="AccountBookName">
+      <LocalizedLabel LanguageRef="zhs">帐套名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="AccountBookNameIsNull">
+      <LocalizedLabel LanguageRef="zhs">帐套名称为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name is null</LocalizedLabel>
+    </Label>
+    <Label Name="AccountBookNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">帐套名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccountBookName is Repeat</LocalizedLabel>
+    </Label>
+    <Label Name="Start">
+      <LocalizedLabel LanguageRef="zhs">正在更新结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseName">
+      <LocalizedLabel LanguageRef="zhs">数据库名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DatabaseName</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseNameIsNull">
+      <LocalizedLabel LanguageRef="zhs">数据库名称为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DatabaseName Is Null</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

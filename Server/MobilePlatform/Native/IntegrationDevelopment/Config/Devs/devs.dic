@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MobilePageDevelopment" IsWeb="true">
+    <Label Name="Login">
+      <LocalizedLabel LanguageRef="zhs">登录页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login</LocalizedLabel>
+    </Label>
+    <Label Name="Home">
+      <LocalizedLabel LanguageRef="zhs">Home</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HomePage</LocalizedLabel>
+    </Label>
+    <Label Name="Property">
+      <LocalizedLabel LanguageRef="zhs">属性页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Property</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyTab">
+      <LocalizedLabel LanguageRef="zhs">属性Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyTab</LocalizedLabel>
+    </Label>
+    <Label Name="MasterPropertyTab">
+      <LocalizedLabel LanguageRef="zhs">主从属性Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterPropertyTab</LocalizedLabel>
+    </Label>
+    <Label Name="MainNav">
+      <LocalizedLabel LanguageRef="zhs">导航页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainNav</LocalizedLabel>
+    </Label>
+    <Label Name="Mine">
+      <LocalizedLabel LanguageRef="zhs">我的</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mine</LocalizedLabel>
+    </Label>
+    <Label Name="SingleList">
+      <LocalizedLabel LanguageRef="zhs">单列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleList</LocalizedLabel>
+    </Label>
+    <Label Name="GroupList">
+      <LocalizedLabel LanguageRef="zhs">分组列表页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">GroupList</LocalizedLabel>
+    </Label>
+    <Label Name="StandardList">
+      <LocalizedLabel LanguageRef="zhs">标准列表页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StandardList</LocalizedLabel>
+    </Label>
+    <Label Name="MultiConditionList">
+      <LocalizedLabel LanguageRef="zhs">多条件列表页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiConditionList</LocalizedLabel>
+    </Label>
+    <Label Name="WebView">
+      <LocalizedLabel LanguageRef="zhs">Web页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WebView</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalProgress">
+      <LocalizedLabel LanguageRef="zhs">纵向进度页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VerticalProgress</LocalizedLabel>
+    </Label>
+    <Label Name="Desk">
+      <LocalizedLabel LanguageRef="zhs">工作台</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Desk</LocalizedLabel>
+    </Label>
+    <Label Name="Contacts">
+      <LocalizedLabel LanguageRef="zhs">通讯录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contacts</LocalizedLabel>
+    </Label>
+    <Label Name="Audit">
+      <LocalizedLabel LanguageRef="zhs">流程评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Audit</LocalizedLabel>
+    </Label>
+    <Label Name="Select">
+      <LocalizedLabel LanguageRef="zhs">导航查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select</LocalizedLabel>
+    </Label>
+    <Label Name="Select">
+      <LocalizedLabel LanguageRef="zhs">导航查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

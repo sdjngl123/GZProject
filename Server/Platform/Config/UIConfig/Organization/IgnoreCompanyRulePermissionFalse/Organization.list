@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="UserListMangementIgnoreCompanyRulePermissionFalse" MenuName="ListUserMenu" ListRightMenuName=""  ListViewName="USERSLISTVIEWIgnoreCompanyRulePermissionFalse"  QueryPageName="USERVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true">
+  </ListManagement>
+  <ListManagement Name="RoleListMangementIgnoreCompanyRulePermissionFalse" MenuName="ListRoleMenu" ListRightMenuName="" ListViewName="ROLESLISTVIEWIgnoreCompanyRulePermissionFalse"  QueryPageName="ROLEVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true">
+  </ListManagement>
+  <ListManagement Name="GroupListMangementIgnoreCompanyRulePermissionFalse" MenuName="ListGroupMenu" ListRightMenuName="" ListViewName="GROUPSINFOVIEWIgnoreCompanyRulePermissionFalse"  QueryPageName="GROUPINFOVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true">
+  </ListManagement>
+  
+  <ListManagement Name="CompanySelectMangement" MenuName="" ListRightMenuName="" ListViewName="COMPANYListView" QueryPageName="COMPANYVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" />
+  <ListManagement Name="PersonListMangementIgnoreCompanyRulePermissionFalse" MenuName="ListPersonMenu" ListRightMenuName="" ListViewName="PERSONListViewIgnoreCompanyRulePermissionFalse" QueryPageName="PERSONVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" />
+  
+</root>

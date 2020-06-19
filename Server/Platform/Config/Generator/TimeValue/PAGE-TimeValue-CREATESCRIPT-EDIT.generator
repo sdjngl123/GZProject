@@ -1,0 +1,7 @@
+﻿
+{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+o.SetDateTime(InforCenter_Platform_Object_IntToTimeFormat(data.[INFONAME]));
+}
+}

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="ReportExample" BaseBar="SettingBar">
+    <Item Name ="ReportExampleEdit" IsCommonItem="true" ImagePath="~/Platform/Image/Console/pagemanage.png"  ItemAssembly="TestDevReport" ItemClass="TestDevReport.TestReportCmd"></Item>
+    <Item Name ="TestRibbonCmd" IsCommonItem="true" ImagePath="~/Platform/Image/Console/pagemanage.png"  ItemAssembly="TestDevReport" ItemClass="TestDevReport.TestRibbonCmd"></Item>
+    <Item Name ="TestTiReportCmd" IsCommonItem="true" ImagePath="~/Platform/Image/Console/pagemanage.png"  ItemAssembly="TestStReport" ItemClass="TestStReport.TestReportCmd"></Item>
+  </ToolBar>
+</root>

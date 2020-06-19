@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SetLocalAddressPage">
+  <Settings Key="title" Value="SetLocalAddressPage.Title"/>
+  <Settings Key="height" Value="180"/>
+  <Settings Key="width" Value="510"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_NavIntegration_SetLocalAddressPage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+
+      <Settings Key="item2">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LocalAddress"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LocalAddress" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="LocalAddress_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LocalAddress_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <!--<Settings Key="childid" Value="LocalAddress_Label_FieldFlag"/>-->
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LocalAddress_Label" ParentID="LocalAddress" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SetLocalAddressPage.LocalAddress" />
+    </PageControl>
+    <!--<PageControl ControlID="LocalAddress_Label_FieldFlag" ParentID="LocalAddress" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>-->
+    <PageControl ControlID="LocalAddress_Value" ParentID="LocalAddress" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="SetLocalAddressPage.LocalAddressRegex" />
+    </PageControl>
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_NavIntegration_SetLocalAddressPage_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

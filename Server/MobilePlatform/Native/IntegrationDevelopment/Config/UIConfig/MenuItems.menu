@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="LoopPlayListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateLoopPlay" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="LOOPPLAYIMAGE" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="LOOPPLAYIMAGE" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+        <Para Name="Size" Value="550*340" />
+      </WebMethod>
+      
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+        
+    </WebAction>
+
+    <WebAction Name="EditLoopPlay" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+        <Para Name="Size" Value="550*340" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+       
+    </WebAction>
+    <WebAction Name="DeleteLoopPlay" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+    
+  </MenuItem>
+
+  <MenuItem Name="FuncButtonListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateFuncButton" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="FUNCBUTTON" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="FUNCBUTTON" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+
+    </WebAction>
+
+    <WebAction Name="EditFuncButton" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+
+    </WebAction>
+    <WebAction Name="DeleteFuncButton" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+
+  </MenuItem>
+
+  <MenuItem Name="MainConfigListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateMainConfig" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="PAGEMAINCONFIG" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="PAGEMAINCONFIG" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+
+    </WebAction>
+
+    <WebAction Name="EditMainConfig" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+
+    </WebAction>
+    <WebAction Name="DeleteMainConfig" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="MobilePageDevRootMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateMobilePageDev" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="LOOPPLAYIMAGE" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEPAGEDEV" />
+        <!--<Para Name="Size" Value="550*340" />-->
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="ExportDevelopmentData" ModuleName="IntegrationDevelopment" LabelName="MenuItems.ExportDevelopmentData" Image="p_export" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <WebMethod PageName="ExportDevelopmentData" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="ExportDevelopmentTree" />
+        <Para Name="Title" Value="MenuItems.ExportDevelopmentData" />
+        <Para Name="Size" Value="500*560" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="MobilePageDevMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="EditMobilePageDev" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_new" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+
+    <WebAction Name="DeleteMobilePageDev" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="StandardListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="EditMobilePageDev" ModuleName="IntegrationDevelopment" LabelName="MenuItems.EditMobilePageDev" Image="p_new" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+
+    <WebAction Name="DeleteMobilePageDev" ModuleName="IntegrationDevelopment" LabelName="MenuItems.DeleteMobilePageDev" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="MobilePageListItemListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Create" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="MOBILEPAGELISTITEM" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEPAGELISTITEM" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+        <Para Name="SaveService" Value="Hoteam.Mobile.MobilePageDevService.SaveMobilePageListItem" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Edit" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+        <Para Name="SaveService" Value="Hoteam.Mobile.MobilePageDevService.SaveMobilePageListItem" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="MobilePageFilterListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Create" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="MOBILEPAGEFILTER" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEPAGEFILTER" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Edit" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="MobilePageOrderListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Create" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="MOBILEPAGEORDER" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEPAGEORDER" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Edit" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="MobilePageAdvancedQueryMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Create" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="MOBILEADVANCEDQUERY" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEADVANCEDQUERY" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Edit" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="MobilePagePropertyTabMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <!--<WebAction Name="Create" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="MOBILEPAGEPROPERTYTAB" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEPAGEPROPERTYTAB" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>-->
+    <WebAction Name="CreatePropertyTab" MultiMenu="false" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName=""
+                CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker  Action="CREATE" ActionType="MOBILEPAGEPROPERTYTAB" />
+      <WebMethod Name="newWebMethod1"  PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="NewPropertyTabGuide" />
+        <Para Name="Title" Value="MenuItems.CreatePropertyTab" />
+        <Para Name="Size" Value="450*600" />
+        <Para Name="ObjectType" Value="MOBILEPAGEPROPERTYTAB" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create">
+      </WebMessageAndLogger>
+    </WebAction>
+    <!--<WebAction Name="Edit" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>-->
+    <WebAction Name="EditPropertyTab" MultiMenu="false" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_new" ParentWebAtionName=""
+             CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker  SelectID="[List_EID]" SelectMode="SINGLE"  Action="AUTO" ActionType="MOBILEPAGEPROPERTYTAB" />
+      <WebMethod Name="newWebMethod1"  PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="EditPropertyTabGuide" />
+        <Para Name="Title" Value="MenuItems.EditPropertyTab" />
+        <Para Name="Size" Value="450*600" />
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create">
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="MobilePageNavMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Create" ModuleName="IntegrationDevelopment" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="MOBILEPAGENAV" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MOBILEPAGENAV" />
+        <Para Name="MOBILEPAGEDEVID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Edit" ModuleName="IntegrationDevelopment" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"/>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="IntegrationDevelopment" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="MobilePageDev" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+</root>

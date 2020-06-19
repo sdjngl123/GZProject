@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AddCompanyFriend" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">添加企业关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AddCompanyFriend</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DescriptionRegex">
+      <LocalizedLabel LanguageRef="zhs">最大长度200！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">max length Is 200</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyFriend">
+      <LocalizedLabel LanguageRef="zhs">添加企业关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyFriend</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyFriendRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyFriend</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

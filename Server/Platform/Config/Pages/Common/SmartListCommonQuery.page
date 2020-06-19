@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SmartListCommonQuery" IsCache="true">
+  <Settings Key="height" Value="600"/>
+  <Settings Key="width" Value="800"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SmartListCommonQuery_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_SmartListCommonQuery_OnQuery(pageEvent);"/>
+    <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_ListCommonQuery_OnRowDblClick(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="ListCommonQuery.Title"/>
+  <PageControls>
+    <PageControl ControlID="ListCommonQuery_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewFilterPageContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="ListViewFilterPageContainer" ParentID="ListCommonQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPageMainContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="direction" Value="next" />
+        <Settings Key="closeStateTooltipId" Value="ListCommonQuery.Show"/>
+        <Settings Key="openStateTooltipId" Value="ListCommonQuery.Hidden"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="200"></Settings>
+        <Settings Key="childid" Value="ViewFilterPageContainer"></Settings>
+      </Settings>
+    </PageControl>
+    
+    
+    <PageControl ControlID="ViewFilterPageContainer" ParentID="ListViewFilterPageContainer" TypeName="PageContainer">
+    </PageControl>
+
+    <PageControl ControlID="ListViewPageMainContainer" ParentID="ListViewFilterPageContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="60%"/>
+        <Settings Key="childid" Value="ListViewPageContainer"/>
+      </Settings>
+    
+      <Settings Key="item2">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="ListViewPageBtnContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="40%"></Settings>
+        <Settings Key="childid" Value="SelectedListViewPageContainer"></Settings>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="30"></Settings>
+        <Settings Key="childid" Value="SingleSelectContainer"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SingleSelectContainer" ParentID="ListViewPageMainContainer" TypeName="SelectedTip">
+    </PageControl>
+    <PageControl ControlID="ListViewPageContainer" ParentID="ListViewPageMainContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="SmartListViewCtrl"/>
+    </PageControl>
+    <PageControl ControlID="SelectedListViewPageContainer" ParentID="ListViewPageMainContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="SmartListViewCtrl"/>
+    </PageControl>
+
+    <PageControl ControlID="ListViewPageBtnContainer" ParentID="ListViewPageMainContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnAddOne"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnAddAll"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnRemoveOne"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnRemoveAll"/>
+      </Settings>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnAddOne" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_SelectedOne(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Add" />
+      <Settings Key="iconClass" Value="ui-icon-arrow-1-s" />
+    </PageControl>
+    <PageControl ControlID="btnAddAll" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_SelectedAll(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.AddAll" />
+      <Settings Key="iconClass" Value="ui-icon-arrowstop-1-s" />
+    </PageControl>
+    <PageControl ControlID="btnRemoveOne" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_RemoveOne(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Remove" />
+      <Settings Key="iconClass" Value="ui-icon-arrow-1-n" />
+    </PageControl>
+    <PageControl ControlID="btnRemoveAll" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_RemoveAll(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.RemoveAll" />
+      <Settings Key="iconClass" Value="ui-icon-arrowstop-1-n" />
+    </PageControl>
+    
+    
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

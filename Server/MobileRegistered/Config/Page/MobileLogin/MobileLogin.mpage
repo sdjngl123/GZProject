@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileLogin"
+         JsFile ="~/MobileRegistered/Config/Page/MobileLogin/MobileLogin.js" 
+         LayoutFile="~/MobileRegistered/Config/Page/MobileLogin/MobileLogin.mlayout" 
+         DictionaryContent="License">
+      <PageHandler HandlerName ="OnCreate" Script="Hoteam_Mobile_MobileLogin_Init(pageEvent);"/>
+  </MPage>
+</root>

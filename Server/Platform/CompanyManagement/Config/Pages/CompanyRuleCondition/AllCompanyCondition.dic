@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AllCompanyCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">所有公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All companies</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionToAllUserLabel">
+      <LocalizedLabel LanguageRef="zhs">条件为所有公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition is all companies</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

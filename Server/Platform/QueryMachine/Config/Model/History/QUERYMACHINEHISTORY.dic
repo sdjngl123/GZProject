@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYMACHINEHISTORYModel" IsWeb="true">
+    <Label Name="QUERYMACHINEHISTORYHeader">
+      <LocalizedLabel LanguageRef="zhs">查询构建器历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query builder history</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEHISTORYCaption">
+      <LocalizedLabel LanguageRef="zhs">查询构建器历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query builder history</LocalizedLabel>
+    </Label>
+    <Label Name="BASEQUERYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">来源查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Source query ID</LocalizedLabel>
+    </Label>
+    <Label Name="BASEQUERYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">来源查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Source query ID</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYROLESHeader">
+      <LocalizedLabel LanguageRef="zhs">查询条件集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query condition collection</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYROLESCaption">
+      <LocalizedLabel LanguageRef="zhs">查询条件集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query condition collection</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

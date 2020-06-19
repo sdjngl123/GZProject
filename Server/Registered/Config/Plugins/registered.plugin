@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <PluginItem Name="RegisteredUserCodeRepalceData" Type="ImportInitRootData" Assembly="Hoteam.InforCenter.Registered.Object" Class="Hoteam.InforCenter.Registered.Object.Plugins.RegisteredUserCodeRepalceData" />
+
+  <PluginItem Name="UserRegistrationUtil" Type="Business" Assembly="Hoteam.InforCenter.Registered.OrganizationDataService" Class="Hoteam.InforCenter.Registered.OrganizationDataService.Business.UserRegistrationUtil" />
+  
+</root>

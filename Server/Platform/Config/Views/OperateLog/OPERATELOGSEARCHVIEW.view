@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="OPERATELOGSEARCHVIEW" ObjectTypeName="OPERATELOG" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="Right" OrderByString="CREATETIME DESC" FixedFilter="" AsCommonQuery="true" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OBJID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="USERID" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OBJNAME" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OBJCODE" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OBJTYPE" Width="80" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OPERATE" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="DESCRIPTION" Width="-1" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="140" Resizable="true" Sortable="false" ShowMode="" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="IP" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="DATETIMEGE" AndOrFlag="AND" InfoName="CREATETIME" Operation="&gt;=" Validation="Date" Required="true" FieldType="date" />
+    <ViewCondition Name="DATETIMELE" AndOrFlag="AND" InfoName="CREATETIME" Operation="&lt;=" Validation="Date" Required="true" FieldType="date" />
+    <ViewCondition Name="USERID" AndOrFlag="AND" InfoName="USERID" Operation="=" Validation="String100" Required="false" />
+    <ViewCondition Name="OperateLogType" AndOrFlag="AND" InfoName="OPERATE" Operation="=" Validation="String100" Required="false" />
+    <ViewCondition Name="OBJTYPE" AndOrFlag="AND" InfoName="OBJTYPE" Operation="=" Required="false" />
+    <ViewCondition Name="IP" AndOrFlag="AND" InfoName="IP" Operation="=" Validation="" Required="false" />
+  </ObjectView>
+</root>

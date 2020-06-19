@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PMSPROJECTView-QUERY" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

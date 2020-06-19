@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="CompanyAuditStateAuditedPass">
+      <LocalizedLabel LanguageRef="zhs">审核通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedPass </LocalizedLabel>
+    </Label>
+    <Label Name="CompanyAuditStateAuditedUnPass">
+      <LocalizedLabel LanguageRef="zhs">审核不通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedUnPass</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyAuditStateUnaudited">
+      <LocalizedLabel LanguageRef="zhs">未审核</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unaudited</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

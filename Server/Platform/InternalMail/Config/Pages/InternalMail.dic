@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="InternalMail" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">新邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New mail</LocalizedLabel>
+    </Label>
+    <Label Name="Read">
+      <LocalizedLabel LanguageRef="zhs">标记已读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The mark is read</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailManage">
+      <LocalizedLabel LanguageRef="zhs">邮件管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail management</LocalizedLabel>
+    </Label>
+    <Label Name="Content">
+      <LocalizedLabel LanguageRef="zhs">有新的站内邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There are new inbound mail</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

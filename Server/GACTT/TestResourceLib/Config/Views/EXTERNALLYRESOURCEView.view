@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="EXTERNALLYRESOURCEView" ObjectTypeName="EXTERNALLYRESOURCE" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECOMPANYID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="MASTERID" ObjectTypeName="EXTERNALLYRESOURCE" Width="-1" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="TYPE" ObjectTypeName="EXTERNALLYRESOURCE" Width="-1" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" ObjectTypeName="EXTERNALLYRESOURCE" Width="-1" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" ObjectTypeName="EXTERNALLYRESOURCE" Width="-1" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SALESUNIT" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UNIT" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="REMARK" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

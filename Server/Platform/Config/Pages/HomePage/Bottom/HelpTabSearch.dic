@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="HelpTabSearch" IsWeb="true">
+    <Label Name="SearchTitle">
+      <LocalizedLabel LanguageRef="zhs">标题搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title search</LocalizedLabel>
+    </Label>
+    <Label Name="SearchFullText">
+      <LocalizedLabel LanguageRef="zhs">全文搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Full-text search</LocalizedLabel>
+    </Label>
+    <Label Name="EmptyKeywordsAlert">
+      <LocalizedLabel LanguageRef="zhs">请输入搜索内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the search content</LocalizedLabel>
+    </Label>
+    <Label Name="NoResultAlert">
+      <LocalizedLabel LanguageRef="zhs">没有搜索结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No search results</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

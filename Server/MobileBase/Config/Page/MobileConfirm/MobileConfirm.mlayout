@@ -1,0 +1,13 @@
+﻿<div data-role="header" data-theme="a" role="banner" class="ui-header ui-page-theme-a" id="MobileConfirmHeader">
+  <h1 class="ui-title confirmtitle" role="heading" aria-level="1"></h1>
+</div>
+<div role="main" class="ui-content confirmcontent" style="max-height:300px">
+
+</div>
+<div align="center" id="MobileConfirmBtns">
+  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline alert" data-rel="back" style="display:none" onclick="Hoteam_InforCenter_Confirm_OkClick();return false;">[OK]</a>
+  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ok" data-rel="back" style="display:none" onclick="Hoteam_InforCenter_Confirm_OkClick();return false;">[OK]</a>
+  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline cancel" data-rel="back" style="display:none">[Cancel]</a>
+  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline yes" data-rel="back" style="display:none" onclick="Hoteam_InforCenter_Confirm_YesClick();">[Yes]</a>
+  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline no" data-rel="back" style="display:none">[NO]</a>
+</div>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListManagement Name="AccessRecordList" MenuName="AccessRecordMenu" ListRightMenuName="" ListViewName="" SearchFields="" 
+                  QueryPageName="OPERATELOGSEARCHVIEW-QUERY" ListTitleDataService="Hoteam.InforCenter.AccessRecordService.GetAccessRecordGridTitle"
+                  OnePageDataService="Hoteam.InforCenter.AccessRecordService.GetAccessRecordGridData"
+                  AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true"  >
+  </ListManagement>
+</root>

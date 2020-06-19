@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWQUOTEATTACHModel" IsWeb="true">
+    <Label Name="WORKFLOWQUOTEATTACHHeader">
+      <LocalizedLabel LanguageRef="zhs">流程引用附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Reference Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWQUOTEATTACHCaption">
+      <LocalizedLabel LanguageRef="zhs">流程引用附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Reference Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHIDHeader">
+      <LocalizedLabel LanguageRef="zhs">附件ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attachment ID</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHIDCaption">
+      <LocalizedLabel LanguageRef="zhs">附件ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attachment ID</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程id</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process ID</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDCaption">
+      <LocalizedLabel LanguageRef="zhs">流程id</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process ID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

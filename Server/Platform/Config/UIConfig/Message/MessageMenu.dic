@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="Cut">
+      <LocalizedLabel LanguageRef="zhs">剪切</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="MakeRead">
+      <LocalizedLabel LanguageRef="zhs">标记已读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The mark is read</LocalizedLabel>
+    </Label>
+    <Label Name="MakeAllRead">
+      <LocalizedLabel LanguageRef="zhs">全部标记已读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All tags have been read</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteMessage">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteAllMessage">
+      <LocalizedLabel LanguageRef="zhs">删除所有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete all</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

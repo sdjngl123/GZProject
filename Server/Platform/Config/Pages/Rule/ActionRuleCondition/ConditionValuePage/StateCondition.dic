@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="StateCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object state</LocalizedLabel>
+    </Label>
+    <Label Name="State">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

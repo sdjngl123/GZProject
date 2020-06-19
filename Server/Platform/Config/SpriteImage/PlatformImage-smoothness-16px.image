@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ImageConfig Name="p_home" Description="home">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_task" Description="任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_mailbox" Description="邮箱">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_technologicalprocess" Description="流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_defaultview" Description="默认视图">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_customview" Description="自定义视图">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_classificationview" Description="分类视图">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_accountsetup" Description="账户设置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_moresettings" Description="更多设置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_securitysettings" Description="安全设置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_news" Description="消息">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_usermanagement" Description="用户管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_rolemanagement" Description="角色管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_orgmanagement" Description="组织管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_trainingschedule" Description="培训日程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_traininglist" Description="培训列表">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_trainingneeds" Description="培训需求">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_email_management" Description="邮件管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_recent_visit" Description="最近访问">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_favorites" Description="收藏夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_business_rules" Description="业务规则">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-640" YPosition="0" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-640" YPosition="-16" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_personaspace" Description="个人空间">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_publicspace" Description="公共空间">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_partsmanagement" Description="零组件管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_testobjectmanagement" Description="测试对象管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_reportsample" Description="报表示例">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_bpm" Description="流程管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_processtemplate" Description="流程模版">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_onlineusers" Description="在线用户">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_operationlog" Description="操作日志">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_organizationstructure" Description="组织结构">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_moduleauthorization" Description="模块授权">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_ruledefinition" Description="规则定义">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_enumerationdictionary" Description="枚举字典">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_messagemanagement" Description="消息管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_collection" Description="收藏">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_advanced_query" Description="高级查询">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_query_build" Description="查询构建">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_coding_management" Description="编码管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_process_design" Description="流程设计">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-640" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-640" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_system_management" Description="系统管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-672" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-672" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_rule_permissions" Description="规则权限">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-704" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-704" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_list_of_values" Description="值列表">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-736" YPosition="-32" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-736" YPosition="-48" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_upload" Description="上传">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_download" Description="下载">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_newfolder" Description="新建文件夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_newprocess" Description="新建流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_newstarscome" Description="新建分类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new" Description="新建（通用）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_addobjects" Description="添加对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_paste" Description="粘贴">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_browse" Description="浏览">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_view" Description="查看">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_searchfor" Description="搜索">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_shareit" Description="分享">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_sharecancel" Description="取消分享">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_collect" Description="收藏">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_unfavorite" Description="取消收藏">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove" Description="移除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_release" Description="发布">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_sendmessage" Description="发送消息">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_supportwhat" Description="支持一下">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_cancelsupport" Description="取消支持">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-64" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-80" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_add" Description="添加">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_arrow_up" Description="箭头_向上">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_arrow_down" Description="箭头_向下">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_audittask" Description="审计任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_inquire" Description="查询">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_send" Description="发送">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_authorize" Description="授权">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_clear" Description="清除（橡皮擦）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_copy" Description="复制">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_copynew" Description="新副本">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_cut" Description="剪切">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete" Description="删除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_edit" Description="编辑">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_editproperty" Description="编辑属性">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_exit" Description="退出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_export" Description="导出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_import" Description="导入">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_lock" Description="锁">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_movetop" Description="移至顶部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_movebottom" Description="移至底部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-96" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-112" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_moveup" Description="上移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_movedown" Description="下移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_moveleft" Description="左移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_moveright" Description="右移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_movesuperior" Description="移至上级">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_reset" Description="重置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_resume" Description="刷新">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_save" Description="保存">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_saveas" Description="另存为">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_startworkflow" Description="启动工作流">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_stop" Description="停止">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_suspend" Description="暂停">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_zoomin" Description="放大">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_zoomout" Description="缩小">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_creatuser" Description="创建角色">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_allowall" Description="全部允许">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_more" Description="更多">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_objectauthorization" Description="对象授权">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_messagesubscription" Description="消息订阅">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_deleteall" Description="全部删除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-128" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-144" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_allbanned" Description="全部禁止">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_prohibit" Description="禁止">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_move" Description="移动">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_ignore" Description="忽略">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_start" Description="开始">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_complete" Description="完成">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_return" Description="退回">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_withdraw" Description="撤回">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_processreview" Description="流程评审">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_changeprocessresponsibility" Description="更改流程责任人">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_agent" Description="代理人">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_abandoned" Description="废弃">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_recovery" Description="恢复">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_transfer" Description="移交">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_host" Description="托管">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_changemandateholders" Description="更改任务执行人">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_run" Description="运行">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_rename" Description="重命名">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_markread" Description="标记已读">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_markallread" Description="全部标记已读">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-160" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-176" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_tasklist" Description="任务列表">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_angleright" Description="向右单箭头-减少">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_angledoubleright" Description="向右双箭头-减少全部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_angleleft" Description="向左单箭头-增加">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_angledoubleleft" Description="向左双箭头增加全部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_onwork" Description="在职">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_offwork" Description="离职">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_check" Description="校验">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_quitworkflow" Description="取消流程状态">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_check_the_authorized_log" Description="查看授权日志">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_quitrelease" Description="取消发布状态">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_quitabandoned" Description="取消废弃">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_main_components" Description="主零组件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_version_of_the_component" Description="版本零组件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_allexportlist" Description="全部导出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_exportlist" Description="导出当前页">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_allprintlist" Description="全部打印">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_printlist" Description="打印当前页">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-192" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-208" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_day" Description="按天显示">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_weekly_show" Description="按周显示">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_shown_month" Description="按月显示">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_show_all_history" Description="显示所有历史记录">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove_selected" Description="清除选中">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove_all" Description="清除全部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_custom_clearance" Description="自定义清除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-224" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-240" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_create_folder" Description="创建文件夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_cad_documents" Description="新建CAD文档">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_general_document" Description="新建一般图档">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_multiple_document" Description="新建多个图文档">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_parts" Description="新建零件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_multiple_parts" Description="新建多个零组件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_problem_report" Description="新建问题报告">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_change_request" Description="新建变更申请">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_change_notification" Description="新建变更通知">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_email" Description="新建邮件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_common_tasks" Description="普通任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_change_task" Description="变更任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_project_tasks" Description="项目任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_add_existing" Description="添加已有">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_open_the_location_object" Description="打开位置对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_double_window" Description="双窗口">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete_the_bom" Description="删除bom">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_turn_to_the_life_cycle" Description="转生命周期">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_modify_the_bom_for" Description="修改bom对比">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_create_categories" Description="创建大类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_create_code_segment" Description="创建码段">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-640" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-640" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_edit_the_code_segment" Description="编辑码段">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-672" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-672" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete_the_code_segment" Description="删除码段">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-704" YPosition="-256" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-704" YPosition="-272" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_create_a_file_template" Description="创建文件模版">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete_the_file_template" Description="删除文件模版">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_batch_create_document_template" Description="批量创建文件模版">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_paste_reference" Description="粘贴（引用）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_paste_copy" Description="粘贴（复制）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_paste_folder_structure" Description="粘贴（文件夹结构）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_reply" Description="答复">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_all_the_reply" Description="全部答复">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_forwarding" Description="转发">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_mark_unread" Description="标记未读">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete_all" Description="删除全部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_set_the_important_mark" Description="设置重要标记">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_rules_of_group_permissions" Description="集团规则权限">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_i_checked_out" Description="我的检出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_personal_settings" Description="个人设置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_system_settings" Description="系统设置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_coding_management_mode_switch" Description="编码管理的模式切换">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_coding_management_product_code" Description="编码管理的产品编码">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_coding_management_application" Description="编码管理的应用">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_coding_management_application_code" Description="编码管理的申请编码">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_coding_management_recycling_code" Description="编码管理的回收编码">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-640" YPosition="-288" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-640" YPosition="-304" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_template_classification" Description="新建模板分类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_edit_template_classification" Description="编辑模板分类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete_template_classification" Description="删除模板分类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_template_classification_root_node" Description="模板分类根节点">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_template_classification" Description="模板分类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_process_template" Description="新建流程模板">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_edit_process_template" Description="编辑流程模板">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete_process_template" Description="删除流程模板">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_save_as_template" Description="模板另存为">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_common_process" Description="新建普通流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_phase_transfer_process" Description="新建转阶段流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_edit_process_accessories" Description="编辑流程附件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_lowe_node_entry_process" Description="下级节点进入流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_care_of_process" Description="转交流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_change_object_state" Description="更改对象状态">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_set_travel_agent" Description="设置出差代理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_modify_process" Description="修改流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_flow_task_box" Description="流程任务箱">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_my_process_task" Description="我的流程任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_hosted_process_task" Description="托管流程任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_care_of_process_tasks" Description="转交流程任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-640" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-640" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_process_task_has_been_reviewed" Description="已评审流程任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-672" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-672" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_i_initiated_the_process" Description="我发起的流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-704" YPosition="-320" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-704" YPosition="-336" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_process_object" Description="流程对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_query_tree_root_node" Description="查询构建树根节点">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_query_object_node" Description="查询构建对象节点">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_select_objects" Description="选择对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_add_associated_object" Description="添加关联对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-128" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-128" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove_object" Description="移除对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-160" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-160" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_set_association" Description="设置关联">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-352" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_add_rule" Description="增加规则">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-224" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-224" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove_rule" Description="移除规则">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-256" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-256" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_new_view" Description="新建视图">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-288" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-288" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_organization_authority" Description="组织权限">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-320" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_newly_build" Description="新建">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-352" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-352" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_search_object" Description="查找对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-384" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-384" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_export_query_results" Description="导出查询结果">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-416" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-416" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_empty" Description="清空">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-448" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_close" Description="关闭">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-480" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-480" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_save_query" Description="保存查询">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-512" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-512" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_query_history" Description="查询历史记录">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-544" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-544" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_query_construction" Description="查询构建">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-576" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_add_model" Description="添加模型">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-608" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-608" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove_model" Description="移除模型">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-640" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-640" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_integrity_check" Description="完整性检查">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-672" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-672" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_collection_folder" Description="收藏文件夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-704" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-704" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_set_association" Description="设置关联">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-352" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-192" YPosition="-368" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_batch_authorization" Description="批量授权">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="0" YPosition="-384" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="0" YPosition="-400" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_company_management" Description="公司管理">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-32" YPosition="-384" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-32" YPosition="-400" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_switch" Description="切换">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-384" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-64" YPosition="-400" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="p_commit" Description="流程提交">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Default" Type="Sprite_16" XPosition="-96" YPosition="-384" Height="16" Width="16" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-smoothness-16px.png" Theme="smoothness" Status="Obvious" Type="Sprite_16" XPosition="-96" YPosition="-400" Height="16" Width="16" />
+  </ImageConfig>
+</root>

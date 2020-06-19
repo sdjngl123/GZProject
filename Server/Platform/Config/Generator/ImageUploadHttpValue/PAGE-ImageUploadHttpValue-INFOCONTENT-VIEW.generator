@@ -1,0 +1,6 @@
+﻿    <PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="Image" >
+      <Settings Key="type" Value="image"/>
+      <Settings Key="fixedType" Value="height" />
+      <Settings Key="border" Value="false" />
+      <Settings Key="bold" Value="true" />
+    </PageControl>

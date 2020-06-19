@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TabManagement" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TabManagement_LoadPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!--一层-->
+    <PageControl ControlID="TabManagement_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <!--四层-->
+    <PageControl ControlID="TabsCtrlPage" ParentID="TabManagement_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

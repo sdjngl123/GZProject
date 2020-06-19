@@ -1,0 +1,19 @@
+﻿.fc-toolbar h2 {
+    margin: 0;
+    font-size: 1.5em;
+    /* font-weight: 500; */
+    font-weight: bolder;
+}
+
+.Calendar {
+    height: 100%;
+    overflow: auto;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.fc-license-message
+{
+    display:none;
+}

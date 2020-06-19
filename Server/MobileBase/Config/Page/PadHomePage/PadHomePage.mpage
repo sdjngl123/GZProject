@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="PadHomePage"
+         JsFile ="~/MobileBase/Config/Page/PadHomePage/PadHomePage.js" 
+         LayoutFile="~/MobileBase/Config/Page/PadHomePage/PadHomePage.mlayout" 
+         DictionaryContent="MPadHomePage">
+      <PageHandler HandlerName ="OnCreate" Script="Hoteam_MobileBase_PadHomePage_Init(pageEvent);"/>
+  </MPage>
+</root>

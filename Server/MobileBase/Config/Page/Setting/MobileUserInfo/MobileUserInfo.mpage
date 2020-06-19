@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileUserInfo"
+         JsFile ="~/MobileBase/Config/Page/Setting/MobileUserInfo/MobileUserInfo.js" 
+         LayoutFile="~/MobileBase/Config/Page/Setting/MobileUserInfo/MobileUserInfo.mlayout" 
+         DictionaryContent="MobileUserInfo">
+      <PageHandler HandlerName ="OnCreate" Script="Hoteam_Mobile_MobileUserInfo_Init(pageEvent);"/>
+  </MPage>
+</root>

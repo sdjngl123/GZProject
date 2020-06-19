@@ -1,0 +1,233 @@
+.titleAreaTextPosition {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+/*.ClassicHomePage_MainPageMenu
+{
+    margin:0 15px;
+    margin-bottom:-3px;
+    cursor:pointer;
+}*/
+.ClassicHomePage_MainPageMenu {
+    float: right;
+    height: 34px;
+}
+
+    .ClassicHomePage_MainPageMenu .basesprite {
+        margin: 10px;
+        cursor: pointer;
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=70)";
+        opacity: 0.7;
+    }
+
+        .ClassicHomePage_MainPageMenu .basesprite:hover {
+            opacity: 1;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+        }
+
+.ClassicHomePage_Line {
+    float: right;
+    height: 14px;
+    margin-top: 12px;
+    width: 1px;
+    background: #fff;
+}
+
+.classicHomePage_input_c {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 7px;
+    padding-right: 28px;
+    position: relative;
+}
+
+.classicHomePage_input {
+    color: #fff;
+    border: none;
+    height: 20px;
+    padding: 0 6px;
+}
+
+.classicHomePage_input_split {
+    position: absolute;
+    top: 4px;
+    right: 26px;
+    height: 12px;
+    width: 1px;
+    background: #ccc;
+}
+
+.classicHomePage_input_placeholder {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    color: white;
+}
+
+span.classicHomePage_input_img {
+    position: absolute;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    margin: 0px !important;
+}
+
+.ClassicHomePage_MainPageMenu_Text {
+    color: #fff;
+    height: 100%;
+    line-height: 36px;
+    padding: 0 6px;
+}
+
+.ClassicHomePage_MainPageWelcome {
+    height: 100%;
+    line-height: 38px;
+    margin-right: 15px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.PersonalSettingNote {
+    font-size: 11px;
+}
+
+    .PersonalSettingNote > .hoteam-label {
+        font-size: 11px;
+        width: 99%;
+    }
+
+.ClassicHomePage_Top, .ClassicHomePageTop_Layout, .ClassicHomePageBottom_Layout {
+    overflow: hidden;
+}
+
+.classicHomePage_setting_ul {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 0 6px;
+    background: #fcfcfc;
+    z-index: 99999;
+    display: none;
+    width: 90px;
+}
+
+    .classicHomePage_setting_ul li {
+        padding: 3px 3px;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+        .classicHomePage_setting_ul li .basesprite {
+            position: relative;
+            top: 3px;
+            margin-right: 5px;
+        }
+
+.classicHomePage_setting_li_hover {
+    background: #fff;
+}
+
+.classicHomePage_setting_ul li a 
+{
+    color: #333;
+    text-decoration: none;
+}
+
+#homePage_collection, #homePage_history {
+    position: absolute;
+    width: 300px;
+    right: -300px;
+    z-index: 100;
+    transition: right 500ms;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+}
+
+.homePage-setting-item {
+    display: inline-block;
+    width: 146px;
+    height: 28px;
+    margin: 0 5px;
+}
+
+    .homePage-setting-item span {
+        display: inline-block;
+        width: 84px;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: right;
+        margin-right: 8px;
+    }
+
+    .homePage-setting-item input {
+        width: 14px;
+        height: 14px;
+        float: left;
+        position: relative;
+        top: -2px;
+    }
+
+.homePage-setting-row {
+    margin-top: 1em;
+    line-height: 2em;
+}
+
+    .homePage-setting-row > span {
+        display: inline-block;
+        width: 60px;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: right;
+        margin-right: 8px;
+    }
+
+.homePage-setting-cols {
+    display: inline-block;
+    width: 186px;
+}
+
+    .homePage-setting-cols input {
+        width: 160px !important;
+        background: #fff !important;
+    }
+
+.HomePage-SearchTypeUI {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    width: 174px;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 999;
+}
+
+    .HomePage-SearchTypeUI li {
+        position: relative;
+        padding: 4px 20px 4px 10px;
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 26px;
+    }
+
+        .HomePage-SearchTypeUI li:hover {
+            background-color: rgb(238, 238, 238);
+        }
+
+        .HomePage-SearchTypeUI li span {
+            position: absolute;
+            right: 8px;
+            top: 4px;
+            display: none;
+        }

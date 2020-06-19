@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Platform/QueryMachine/Js/QueryMachine.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/AddLink.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/EditGridTextValueClick.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/QueryMachineQuery.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/AddNewView.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/QueryHistory.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/MyQueryMachine.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/CustomQuery.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/QueryMachine/Js/QueryMachineDataBind.js" group="Platform"/>
+
+  <CssFile FileName ="~/Platform/QueryMachine/css/QueryMachine.css" group="Platform"/>
+  <CssFile FileName ="~/Platform/QueryMachine/css/QueryHistory.css" group="Platform"/>
+</root>

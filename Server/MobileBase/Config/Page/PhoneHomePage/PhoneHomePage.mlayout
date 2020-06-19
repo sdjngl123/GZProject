@@ -1,0 +1,39 @@
+﻿<div id="SlideNav" data-role="panel" data-inset="false" data-position="left" data-display="overlay" data-theme="a" >
+ <ul data-role="listview" id="slidenavlistview">
+  </ul>
+</div>
+<div id="header" data-theme="a" style="text-align:center;top: 0;position: absolute;width: 100%;z-index: 999;" class="ui-page-theme-a">
+  <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+    <a style="display:none" class="headernavbtn" onclick="$('#SlideNav' ).panel( 'open' );">
+      <img class="icon" src="MobileBase/Image/icon-nav.svg" />
+    </a>
+    <h1 class="mobilelisttitle" style="display:inline;cursor:pointer;padding: 0;margin:0" onclick="HMUI.MobileList.ShowHistory(event)"></h1>
+    <a  style="display:none"  role="button" onclick="HMUI.MobileList.GetPreviousOpenPath();" class="headerbackbtn">
+      <img class="icon" src="MobileBase/Image/icon-return.svg" />
+    </a>
+  </div>
+</div>
+<div class="ui-page-container  ui-page-theme-a">
+  <div data-role="page" id="SlidePageOne" data-theme="a" style="overflow-x:auto"></div>
+  <div data-role="page" id="SlidePageTwo" data-theme="a" style="overflow-x:auto"></div>
+</div>
+<div id="footer" style="position:absolute;width:100%;bottom:0;overflow:hidden" class="ui-footer ui-bar-a">
+  <div class="ui-navbar" role="navigation">
+    <ul class="ui-grid-b footernav">
+    </ul>
+  </div>
+  <div style="float:right;" class="btnrefresh">
+    <a style="float:right" class="ui-link ui-alt-icon ui-btn ui-btn-inline " onclick="HMUI.MobileList.RefreshCurrentPage();" >
+      <img class="icon" src="MobileBase/Image/icon-refresh.svg" />
+    </a>
+  </div>
+</div>
+<div data-role="popup" id="popupMobileArrowPage" data-transition="pop" data-arrow="true" data-theme="a" data-history="false" >
+  <div id="popupMobileContent"></div>
+</div>
+<div data-role="popup" id="popupMobilePage" data-transition="pop" data-theme="a" data-overlay-theme="a" data-history="false" >
+
+</div>
+
+
+

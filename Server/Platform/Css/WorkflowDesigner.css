@@ -1,0 +1,36 @@
+.WorkflowExtendTitle_Label
+{ 
+    font-size:20px;
+    color:Red;
+}
+.WorkflowExtendTitle_Label
+{
+    font-size:20px;
+    color:Red;
+}
+.RadioList .hoteamRadio
+{
+    height:38px;
+    font-size:12px;    
+    margin-right:10px;
+}
+
+#WebDesignerSelectImageTemplate
+{
+    padding:10px;
+}
+.WebDesignerSelectImage
+{
+    width:16px; 
+    height:16px;
+    background-color:#FFFFFF;
+    border: 1px solid #E6E6E6;  
+    overflow:hidden; 
+    margin:5px 5px;
+    float:left;
+    cursor:pointer;
+}
+.workflow-editor .svg-container-top
+{
+    background:url(../platform/image/Workflow/grid.png) repeat;
+}

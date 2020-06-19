@@ -1,0 +1,11 @@
+﻿{
+var c = pageEvent.o.GetControl('[FILTERNAME]_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+[QueyData].push({ANDOR:'[ANDOR]',QUERYCOLUMN:'[QUERYCOLUMN]',QUERYOPERATOR:'[QUERYOPERATOR]',VALUE:value,UNQUOTED:[UNQUOTED]});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DictionarySerializer version="1.0">
+  <Context Name="FileOnlineView">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="en">DocumentOnlineView</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">在线浏览文档</LocalizedLabel>
+    </Label>
+    <Label Name="FileDownloadFailed">
+      <LocalizedLabel LanguageRef="en">File not exist！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">无法执行操作，服务器上的文件可能已被删除，请联系管理员帮助解决问题！</LocalizedLabel>
+    </Label>
+    <Label Name="NoView">
+      <LocalizedLabel LanguageRef="en">no view for this file</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">当前文件不支持预览功能</LocalizedLabel>
+    </Label>
+    <Label Name="NoFileInfo">
+      <LocalizedLabel LanguageRef="en">NoFileInfo</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">该对象不存在可以浏览的文档</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

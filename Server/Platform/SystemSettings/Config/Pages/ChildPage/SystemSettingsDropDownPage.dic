@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SystemSettingsDropDownPage" IsWeb="true">
+    <Label Name="ENUMERATIONNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">枚举名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerate name</LocalizedLabel>
+    </Label>
+    <Label Name="SETVALUETYPERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt;maximum length is 100 &lt;/br&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="VALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="VALUERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度1000&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 1000 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMSETTINGSHeader">
+      <LocalizedLabel LanguageRef="zhs">新建系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New system settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

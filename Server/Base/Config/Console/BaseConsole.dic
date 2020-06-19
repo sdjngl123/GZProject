@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Console" IsWeb="false">
+    <Label Name="LoginFormTitle">
+      <LocalizedLabel LanguageRef="zhs">InforCenter 控制台 登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InforCenter console login</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordLabel">
+      <LocalizedLabel LanguageRef="zhs">密  码：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password:</LocalizedLabel>
+    </Label>
+    <Label Name="RoleLabel">
+      <LocalizedLabel LanguageRef="zhs">角  色：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role:</LocalizedLabel>
+    </Label>
+    <Label Name="HomePage">
+      <LocalizedLabel LanguageRef="zhs">首页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home </LocalizedLabel>
+    </Label>
+    <Label Name="LanguageLabel">
+      <LocalizedLabel LanguageRef="zhs">语  言：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language:</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordWrong">
+      <LocalizedLabel LanguageRef="zhs">密码不正确，请重新输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Incorrect password, Please enter again!</LocalizedLabel>
+    </Label>
+    <Label Name="MainFormTitle">
+      <LocalizedLabel LanguageRef="zhs">ICP Studio</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ICP Studio</LocalizedLabel>
+    </Label>
+    <Label Name="CommonModuleHeader">
+      <LocalizedLabel LanguageRef="zhs">常用功能</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common function</LocalizedLabel>
+    </Label>
+    <Label Name="CommonModuleCaption">
+      <LocalizedLabel LanguageRef="zhs">常用的模块和操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common module and operation</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleListHeader">
+      <LocalizedLabel LanguageRef="zhs">模块列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module list</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleListCaption">
+      <LocalizedLabel LanguageRef="zhs">模块列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module list</LocalizedLabel>
+    </Label>
+    <Label Name="OperateListHeader">
+      <LocalizedLabel LanguageRef="zhs">操作列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation list</LocalizedLabel>
+    </Label>
+    <Label Name="OperateListCaption">
+      <LocalizedLabel LanguageRef="zhs">操作列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation list</LocalizedLabel>
+    </Label>
+    <Label Name="CommonModuleGroup">
+      <LocalizedLabel LanguageRef="zhs">常用的模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common module</LocalizedLabel>
+    </Label>
+    <Label Name="CommonOperationGroup">
+      <LocalizedLabel LanguageRef="zhs">常用的操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common operation</LocalizedLabel>
+    </Label>
+    <Label Name="MsgBoxFormTitle">
+      <LocalizedLabel LanguageRef="zhs">信息提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Information tips</LocalizedLabel>
+    </Label>
+    <Label Name="PromptFormTitle">
+      <LocalizedLabel LanguageRef="zhs">操作提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation reminder</LocalizedLabel>
+    </Label>
+    <Label Name="CreateObjectTitle">
+      <LocalizedLabel LanguageRef="zhs">请输入对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please input the object name</LocalizedLabel>
+    </Label>
+    <Label Name="ModifyObjectTitle">
+      <LocalizedLabel LanguageRef="zhs">请输入对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please input the object name</LocalizedLabel>
+    </Label>
+    <Label Name="NameCanNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">名称不可为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteObjectTitle">
+      <LocalizedLabel LanguageRef="zhs">即将删除对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object to be deleted</LocalizedLabel>
+    </Label>
+    <Label Name="NotAllowCreateConfigRepeat">
+      <LocalizedLabel LanguageRef="zhs">对象名称重复，不允许创建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The repeated object name is not allowed to be created</LocalizedLabel>
+    </Label>
+    <Label Name="NotAllowCreateConfigOnTopNode">
+      <LocalizedLabel LanguageRef="zhs">不允许在顶级节点下创建配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do not allow the configuration item to be created at the top node</LocalizedLabel>
+    </Label>
+    <Label Name="NotAllowPaste">
+      <LocalizedLabel LanguageRef="zhs">粘贴板里面的数据不允许粘贴到当前模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do not allow the data inside the pasteboard to be pasted in the current module</LocalizedLabel>
+    </Label>
+    <Label Name="NotHasPasteData">
+      <LocalizedLabel LanguageRef="zhs">粘贴板里面没有需要粘贴的数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is no data to be pasted inside the pasteboard</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleRootNode">
+      <LocalizedLabel LanguageRef="zhs">主目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home directory</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleRootNode">
+      <LocalizedLabel LanguageRef="zhs">主目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home directory</LocalizedLabel>
+    </Label>
+    <Label Name="Language">
+      <LocalizedLabel LanguageRef="zhs">语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language</LocalizedLabel>
+    </Label>
+    <Label Name="SelectImageFormTitle">
+      <LocalizedLabel LanguageRef="zhs">选择图像</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select the image</LocalizedLabel>
+    </Label>
+    <Label Name="IconListFormTitle">
+      <LocalizedLabel LanguageRef="zhs">选择图像</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select the image</LocalizedLabel>
+    </Label>
+    <Label Name="OpenDifferentModuleItemError">
+      <LocalizedLabel LanguageRef="zhs">请先关闭当前模块的所有窗口，再打开其他模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please close all the windows of the current module and open the other modules</LocalizedLabel>
+    </Label>
+    <Label Name="BaseInfo">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="Localization">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-language</LocalizedLabel>
+    </Label>
+    <Label Name="Header_">
+      <LocalizedLabel LanguageRef="zhs">标题_</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title_</LocalizedLabel>
+    </Label>
+    <Label Name="Caption_">
+      <LocalizedLabel LanguageRef="zhs">说明_</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description_</LocalizedLabel>
+    </Label>
+    <Label Name="HeaderDescription">
+      <LocalizedLabel LanguageRef="zhs">应用于[language]语言环境下的标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The title applied to the [language] environment</LocalizedLabel>
+    </Label>
+    <Label Name="CaptionDescription">
+      <LocalizedLabel LanguageRef="zhs">应用于[language]语言环境下的详细说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The detailed description applied to the [language] environment</LocalizedLabel>
+    </Label>
+    <Label Name="TextDescription">
+      <LocalizedLabel LanguageRef="zhs">应用于[language]语言环境下的文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The text applied to the [language] environment </LocalizedLabel>
+    </Label>
+    <Label Name="SolutionView">
+      <LocalizedLabel LanguageRef="zhs">解决方案视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Solution view</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleView">
+      <LocalizedLabel LanguageRef="zhs">模块视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module view</LocalizedLabel>
+    </Label>
+    <Label Name="ModelTreeView">
+      <LocalizedLabel LanguageRef="zhs">模型树视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Tree view</LocalizedLabel>
+    </Label>
+    <Label Name="ModelPolicy">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Policy</LocalizedLabel>
+    </Label>
+    <Label Name="ModelFlow">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Flow</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendType">
+      <LocalizedLabel LanguageRef="zhs">派生的对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendType</LocalizedLabel>
+    </Label>
+    <Label Name="ObjType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjType</LocalizedLabel>
+    </Label>
+    
+    <Label Name="NotAllowCreateFolderOnThisPath">
+      <LocalizedLabel LanguageRef="zhs">不允许在当前节点创建文件夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do not allow  create folder on this path</LocalizedLabel>
+    </Label>
+    <Label Name="StartTitle">
+      <LocalizedLabel LanguageRef="zhs">开始</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+    </Label>
+    <Label Name="LatelyTitle">
+      <LocalizedLabel LanguageRef="zhs">最近</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lately</LocalizedLabel>
+    </Label>
+    <Label Name="NewItemsTitle">
+      <LocalizedLabel LanguageRef="zhs">新建项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Items</LocalizedLabel>
+    </Label>
+    <Label Name="CreateExtentModelTitle">
+      <LocalizedLabel LanguageRef="zhs">新建领域模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New ExtentModel</LocalizedLabel>
+    </Label>
+    <Label Name="NewComponentsTitle">
+      <LocalizedLabel LanguageRef="zhs">组件信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Components</LocalizedLabel>
+    </Label>
+    <Label Name="GroupFolderTitle">
+      <LocalizedLabel LanguageRef="zhs">组件文件夹:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">GroupFolder:</LocalizedLabel>
+    </Label>
+    <Label Name="JournalismTitle">
+      <LocalizedLabel LanguageRef="zhs">新闻</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Journalism</LocalizedLabel>
+    </Label>
+    <Label Name="HelpTitle">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="NotCreateComponentFolder">
+      <LocalizedLabel LanguageRef="zhs">不允许创建组件内置文件夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component built-in folders are not allowed to be created</LocalizedLabel>
+    </Label>
+    <Label Name="NotPasteFolder">
+      <LocalizedLabel LanguageRef="zhs">不允许粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not Paste</LocalizedLabel>
+    </Label>
+    <Label Name="AuthorityNotEnough">
+      <LocalizedLabel LanguageRef="zhs">权限不足</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authority Not Enough</LocalizedLabel>
+    </Label>
+    <Label Name="SaveContentInfo">
+      <LocalizedLabel LanguageRef="zhs">成功[success]个，失败[error]个，失败的有 [errorContent] 请确认。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Success [success],Faild [error],faild file [errorContent] please check.</LocalizedLabel>
+    </Label>
+    <Label Name="OpenFilePositionInfo">
+      <LocalizedLabel LanguageRef="zhs">打开的文件不在有效范围内。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">open file position error.</LocalizedLabel>
+    </Label>
+    <Label Name="EditFolderDenyInfo">
+      <LocalizedLabel LanguageRef="zhs">该组件下的([FILENAME])文件已被打开,不能编辑。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">apps file ([FILENAME]) opend, edit deny</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteFolderDenyInfo">
+      <LocalizedLabel LanguageRef="zhs">请关闭([FILENAME])文件再进行其他操作。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">please close([FILENAME]) file.</LocalizedLabel>
+    </Label>
+    <Label Name="RenameFailed">
+      <LocalizedLabel LanguageRef="zhs">重命名失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">rename failed</LocalizedLabel>
+    </Label>
+    
+    <Label Name="SaveMsg">
+      <LocalizedLabel LanguageRef="zhs">保存成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">success</LocalizedLabel>
+    </Label>
+    <Label Name="Cancel">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+    <Label Name="CloseAllTab">
+      <LocalizedLabel LanguageRef="zhs">关闭所有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Close All Tab</LocalizedLabel>
+    </Label>
+    
+    <Label Name="UnableLocationFile">
+      <LocalizedLabel LanguageRef="zhs">无法定位文件位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unable Location File</LocalizedLabel>
+    </Label>
+    <Label Name="UnEditFile">
+      <LocalizedLabel LanguageRef="zhs">文件类型不支持编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unable Edit File</LocalizedLabel>
+    </Label>
+    <Label Name="Folder">
+      <LocalizedLabel LanguageRef="zhs">文件夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Folder</LocalizedLabel>
+    </Label>
+    <Label Name="FolderNameRegMsg">
+      <LocalizedLabel LanguageRef="zhs">名称必须由字母和下划线组成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name </LocalizedLabel>
+    </Label>
+    <Label Name="SupportSingleLevelInfo">
+      <LocalizedLabel LanguageRef="zhs">当前只支持单层级类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support Single Level Type</LocalizedLabel>
+    </Label>
+    <Label Name="TreeObjectTypeExistInfo">
+      <LocalizedLabel LanguageRef="zhs">添加的类型已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Type Exist</LocalizedLabel>
+    </Label>
+
+    <Label Name="ZipModifyFileCheck">
+      <LocalizedLabel LanguageRef="zhs">开始时间和保存路径不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Time  and  Save  Path  can not be Empty</LocalizedLabel>
+    </Label>
+    <Label Name="ZipModifyFileSucess">
+      <LocalizedLabel LanguageRef="zhs">打包成功,存放路径：{0}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Zip Modify File Sucess,the path is {0}</LocalizedLabel>
+    </Label>
+    <Label Name="ZipNoModifyFile">
+      <LocalizedLabel LanguageRef="zhs">没有获取到最近修改的文件，请修改开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Zip No Modify File</LocalizedLabel>
+    </Label>
+    <Label Name="ZipModifyCopyding">
+      <LocalizedLabel LanguageRef="zhs">提示信息：正在复制...{0}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">copying...{0}</LocalizedLabel>
+    </Label>
+    <Label Name="ZipModifyZiping">
+      <LocalizedLabel LanguageRef="zhs">提示信息：正在压缩</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ziping</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

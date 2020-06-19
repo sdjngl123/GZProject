@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--常用功能-->
+  <NavigationItem Name="CommmonModules" IsAddCustom="true" ShowMode="Fixed"  Order="001">
+    <PageName />
+    <Image>p_customview</Image>
+    <NavigationItem Name="AdvancedQuery" IsAddCustom="true" Order="098">
+      <PageName>QueryMachineQuery</PageName>
+      <Para Name="MenuName" Value="QueryMachineQueryMenu" />
+      <Image>p_advanced_query</Image>
+    </NavigationItem>
+  </NavigationItem>
+
+  <NavigationItem Name="HiddenModules" IsTemplate="true" IsAddCustom="true" IsHidden="true"  Order="999">
+    <PageName />
+    <Image>p_customview</Image>
+    <NavigationItem Name="SampleQuery"  IsTemplate="true"  IsHidden="true" IsAddCustom="true" Order="099">
+      <PageName>ListManagement</PageName>
+      <Para Name="ItemName" Value="SampleQueryMachineQueryList" />
+      <Image>p_advanced_query</Image>
+    </NavigationItem>
+  </NavigationItem>
+
+  <NavigationItem Name="SystemManagement" IsAddCustom="true" IsHidden="false" Order="020">
+    <Image>p_system_management</Image>
+    <NavigationItem Name="QueryStructure" IsAddCustom="true" Order="100">
+      <PageName>TreeManagement</PageName>
+      <Image>p_query_build</Image>
+      <Para Name="ItemName" Value="QueryMachineTreeManagement" />
+    </NavigationItem>
+  </NavigationItem>
+
+</root>

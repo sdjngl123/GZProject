@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="WORKFLOWINFO" Extend="ENTITY" LogicClass="WorkflowInfo" IconPath="Platform/Image/Model/processobject.png" Abstract="false" TableName="WORKFLOWINFO" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" Order="2302" IsBusinessModel="true" IsMainConfig="false" PolicyName="WorkflowLife" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" ModelGroups="ActionRuleConditionObjectType;SampleQuery;AdvanceQuery;HiddenInActionRuleMessage">
+    <Index Name="FLOW_CREATEOR_INDEX" TableIndex="FLOW_CREATEOR_INDEX" Unique="False">
+      <IndexInfo Name="CREATEUID" Order="ASC" />
+      <IndexInfo Name="STATEID" Order="ASC" />
+      <IndexInfo Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+    </Index>
+    <Index Name="FLOW_ADMIN_INDEX" TableIndex="FLOW_ADMIN_INDEX" Unique="False">
+      <IndexInfo Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <IndexInfo Name="STATEID" Order="ASC" />
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+      <IndexInfo Name="FLOWADMINISTRATOR" Order="ASC" />
+      <IndexInfo Name="CREATEUID" Order="ASC" />
+    </Index>
+    <Index Name="FLOW_LAUNCH_INDEX" TableIndex="FLOW_LAUNCH_INDEX" Unique="False">
+      <IndexInfo Name="CREATEUID" Order="ASC" />
+      <IndexInfo Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <IndexInfo Name="STATEID" Order="ASC" />
+    </Index>
+    <Index Name="FLOW_CHARGE_INDEX" TableIndex="FLOW_CHARGE_INDEX" Unique="False">
+      <IndexInfo Name="FLOWADMINISTRATOR" Order="ASC" />
+      <IndexInfo Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <IndexInfo Name="STATEID" Order="ASC" />
+    </Index>
+    <InfoType Name="FLOWADMINISTRATOR" Type="SingleUserValue" DataType="STRING100" Column="FLOWADMINISTRATOR" Show="View" Width="100" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="FLOWPARAMETERS" Type="DefaultObjectValue" DataType="TEXT" Column="FLOWPARAMETERS" Show="" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="FLOWTEMPLATE" Type="FlowTemplateValue" DataType="STRING100" Column="FLOWTEMPLATE" Show="View" Width="100" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ISCOMMONMANGEMENT" Type="DefaultObjectValue" DataType="BOOL" Column="ISCOMMONMANGEMENT" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TEMPLATETYPE" Type="WorkflowTemplateTypeValue" DataType="STRING100" Column="TEMPLATETYPE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="EXECLINES" Type="DefaultObjectValue" DataType="STRING2000" Column="EXECLINES" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="EID" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="1" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="String180" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="Create Null" Show="Create Edit" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EUID" Type="DefaultObjectValue" Edit="" Show="" Sequence="120" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+  </EntityType>
+</root>

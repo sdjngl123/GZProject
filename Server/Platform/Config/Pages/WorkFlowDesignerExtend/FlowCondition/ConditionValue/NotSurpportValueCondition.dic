@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NotSurpportValueCondition" IsWeb="true">
+    <Label Name="ObjectOwnGroupName">
+      <LocalizedLabel LanguageRef="zhs">当前属性字段暂不支持</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not support!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

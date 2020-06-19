@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LifeCircle Name="UserLife" InitState="Incumbent">
+    <State Name="StartNode" CenterX="452" CenterY="82" />
+    <State Name="EndNode" CenterX="460" CenterY="548" />
+    <State Name="Incumbent" CenterX="451" CenterY="242" />
+    <State Name="Dimission" CenterX="455" CenterY="390" />
+    <Line ID="LINEe330d51de8d44fe59d790afd2a5d9256" StartNodeID="StartNode" StartX="452" StartY="104" EndNodeID="Incumbent" EndX="452" EndY="220" DisplayType="0" FirstLength="0" />
+    <Line ID="LINEa35e1438815f477c822f11c6e10968f0" StartNodeID="Incumbent" StartX="451" StartY="264" EndNodeID="Dimission" EndX="450" EndY="367" DisplayType="2" FirstLength="-65" />
+    <Line ID="LINEd9431350ee8b486f881f348c16e644b6" StartNodeID="Dimission" StartX="454" StartY="388" EndNodeID="EndNode" EndX="449" EndY="522" DisplayType="0" FirstLength="0" />
+    <Line ID="LINEdce0d2caf3ca4e7f8c36b3c4a5427b01" StartNodeID="Dimission" StartX="450" StartY="411" EndNodeID="Incumbent" EndX="451" EndY="264" DisplayType="2" FirstLength="69" />
+  </LifeCircle>
+</root>

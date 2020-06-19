@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DocumentType Name="word-2003" Extension="doc" Icon="~/Platform/Image/Document/doc.png"  />
+  <DocumentType Name="word-2007" Extension="docx" Icon="~/Platform/Image/Document/doc.png"  />
+  <DocumentType Name="ppt-2003" Extension="ppt" Icon="~/Platform/Image/Document/ppt.png"  />
+  <DocumentType Name="ppt-2007" Extension="pptx" Icon="~/Platform/Image/Document/ppt.png"  />
+  <DocumentType Name="excel-2003" Extension="xls" Icon="~/Platform/Image/Document/xls.png"  />
+  <DocumentType Name="excel-2007" Extension="xlsx" Icon="~/Platform/Image/Document/xls.png"  />
+  <DocumentType Name="project-2003" Extension="mpp" Icon="~/Platform/Image/Document/xls.png"  />
+  <DocumentType Name="Text" Extension="txt" Icon="~/Platform/Image/Document/txt.png"  />
+  <DocumentType Name="pdf" Extension="pdf" Icon="~/Platform/Image/Document/pdf.png"  />
+  <DocumentType Name="jpg" Extension="jpg" Icon="~/Platform/Image/Document/jpg.png"  />
+  <DocumentType Name="gif" Extension="gif" Icon="~/Platform/Image/Document/gif.png"  />
+  <DocumentType Name="bmp" Extension="bmp" Icon="~/Platform/Image/Document/bmp.png"  />
+  <DocumentType Name="avi" Extension="avi" Icon="~/Platform/Image/Document/avi.png"  />
+</root>

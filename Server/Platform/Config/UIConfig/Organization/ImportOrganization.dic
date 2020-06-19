@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ImportOrganization" IsWeb="true">
+    <Label Name="ImportECODERegex">
+      <LocalizedLabel LanguageRef="zhs">登录名称为“[USERCODE]”的导入数据不符合规则\n登录名称，只能输入数字、字母和下划线且输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the login name “[USERCODE]” does not comply with the rules\n only numbers, letters, and underscores with the maximum length of 100 can be entered for login name</LocalizedLabel>
+    </Label>
+    <Label Name="ImportENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">用户名称为“[USERNAME]”的导入数据不符合规则\n用户名称输入不能为空且最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the user name “[USERNAME]” does not match rule, the maximum length of the  inputuser name is 100</LocalizedLabel>
+    </Label>
+    <Label Name="ImportCompanyCodeRegex">
+      <LocalizedLabel LanguageRef="zhs">公司编号为“[CODE]”的导入数据不符合规则\n只能输入数字、字母和下划线且输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the company code “[CODE]” does not comply with the rules\n only numbers, letters, and underscores with the maximum length of 100 can be entered</LocalizedLabel>
+    </Label>
+    <Label Name="ImportCompanyNameRegex">
+      <LocalizedLabel LanguageRef="zhs">公司名称为“[NAME]”的导入数据不符合规则\n公司名称输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data of the company name “[NAME]” does not comply with the rules \n the maximum length of the entered company name is 100</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPersonNameRegex">
+      <LocalizedLabel LanguageRef="zhs">人员名称为“[USERNAME]”的导入数据不符合规则\n人员名称输入不能为空且最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the name of the person “[USERNAME]” does not match the encoding rule, the maximum length of the input person name is 100</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPersonNameExist">
+      <LocalizedLabel LanguageRef="zhs">人员名称为\n“[USERNAME]”\n的导入数据已存在当前公司下</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The person name is\n “[USERNAME]” \n import data is already under the current company</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPersonNameOtherExist">
+      <LocalizedLabel LanguageRef="zhs">人员名称为\n“[USERNAME]”\n的导入数据已存在其他公司下</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The person name is \n “[USERNAME]”\n import data is already under other companies</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPersonNameXlsExist">
+      <LocalizedLabel LanguageRef="zhs">人员名称为\n“[USERNAME]”\n的导入数据在Excel中存在重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The person name is \n “[USERNAME]”\n is duplicated in Excel</LocalizedLabel>
+    </Label>
+    <Label Name="ImportGroupCodeRegex">
+      <LocalizedLabel LanguageRef="zhs">组编号为“[USERCODE]”的导入数据不符合编码规则\n只能输入数字、字母和下划线且输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the group number “[USERCODE]” does not comply with the encoding rule\n only numbers, letters, and underscores with the maximum length of 100 can be entered</LocalizedLabel>
+    </Label>
+    <Label Name="ImportGroupNameRegex">
+      <LocalizedLabel LanguageRef="zhs">组名称为“[USERNAME]”的导入数据不符合规则\n组名称输入不能为空且最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the group's named as “[USERNAME]” does not match the rule, the maximum length of the input group name is 100</LocalizedLabel>
+    </Label>
+    <Label Name="ImportParentGroupNotExist">
+      <LocalizedLabel LanguageRef="zhs">父组路径为“[GROUPPATH]”的导入数据不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data of the parent group path  “[GROUPPATH]” does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="ImportGroupXlsExist">
+      <LocalizedLabel LanguageRef="zhs">组路径为\n“[GROUPPATH]”\n的组信息在Excel中存在重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group information for the group path\n “[GROUPPATH]” \n is duplicated in Excel</LocalizedLabel>
+    </Label>
+    <Label Name="ImportGroupExist">
+      <LocalizedLabel LanguageRef="zhs">组路径为\n“[GROUPPATH]”\n的组信息在系统中已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group information for the group path\n “[GROUPPATH]” \n already exists in the system</LocalizedLabel>
+    </Label>
+    <Label Name="ImportGroupNotExist">
+      <LocalizedLabel LanguageRef="zhs">组路径为\n“[GROUPPATH]”\n的组不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group whose path is \n“[GROUPPATH]”\n does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleCodeRegex">
+      <LocalizedLabel LanguageRef="zhs">角色编号为“[USERCODE]”的导入数据不符合规则\n只能输入数字、字母和下划线且输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the role number “[USERCODE]” does not comply with the rules\n only numbers, letters, and underscores with the maximum length of  100 can be entered</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleNameRegex">
+      <LocalizedLabel LanguageRef="zhs">角色名称为“[USERNAME]”的导入数据不符合规则\n角色名称输入不能为空且最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the role name “[USERNAME]” does not match the rule, the maximum length of the input role name is 100</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleNameExist">
+      <LocalizedLabel LanguageRef="zhs">角色名称为\n“[USERNAME]”\n的导入数据已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the role name  \n“[USERNAME]” \n already exists</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleNameXlsExist">
+      <LocalizedLabel LanguageRef="zhs">角色名称为\n“[USERNAME]”\n的导入数据在Excel中存在重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the role name \n “[USERNAME]” \n is duplicated in Excel</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleNotExist">
+      <LocalizedLabel LanguageRef="zhs">角色名为\n“[ROLENAME]”\n的角色不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The role for the role name \n “[ROLENAME]” \n does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleGroupNotExist">
+      <LocalizedLabel LanguageRef="zhs">角色名为\n“[ROLENAME]”\n的组路径不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The group path for the role name \n “[ROLENAME]” \n does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleGroupEmpty">
+      <LocalizedLabel LanguageRef="zhs">角色名为\n“[ROLENAME]”\n的组路径不可为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The group path for the role name \n“[ROLENAME]” \n cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="ImportRoleGroupPathExist">
+      <LocalizedLabel LanguageRef="zhs">角色名为\n“[ROLENAME]”\n导入数据，在组路径\n“[GROUPPATH]”\n下已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the role name \n “[ROLENAME]”\n already exists under the group path \n“[GROUPPATH]”\n</LocalizedLabel>
+    </Label>
+    <Label Name="ImportUserNameOrCodeXlsExist">
+      <LocalizedLabel LanguageRef="zhs">用户帐号或名称为\n“[USERNAME]”\n的导入数据在Excel中存在重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the user account or name \n “[USERNAME]”\n is duplicated in Excel</LocalizedLabel>
+    </Label>
+    <Label Name="ImportUserParentRoleEmpty">
+      <LocalizedLabel LanguageRef="zhs">用户为\n“[USERNAME]”\n的组角色路径不可为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The group role path for the user \n“[USERNAME]” \n cannot be null;</LocalizedLabel>
+    </Label>
+    <Label Name="ImportUserOtherExist">
+      <LocalizedLabel LanguageRef="zhs">用户账号或名称为\n“[USERCODE]”\n的导入数据已存在与其他公司下</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User account or import data \n "[USERCODE]" \n already exists under other companies</LocalizedLabel>
+    </Label>
+    <Label Name="ImportUserExist">
+      <LocalizedLabel LanguageRef="zhs">用户账号或名称为\n“[USERNAME]”\n的导入数据已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for user account or \n "[USERNAME]" \n already exists</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPersonNameNotExist">
+      <LocalizedLabel LanguageRef="zhs">用户信息关联的人员名称为\n“[USERNAME]”\n的导入数据无法找到</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for \n "[USERNAME]" \n could not be found for the person whose user information is associated with</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPersonNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">用户信息名称\n“[USERNAME]”\n关联的人员名称不可为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User information name\n "[USERNAME]" \n the associated person name can not be null</LocalizedLabel>
+    </Label>
+    <Label Name="ImportUserNameRegex">
+      <LocalizedLabel LanguageRef="zhs">用户名称为“[USERNAME]”的导入数据不符合规则\n用户名称输入不能为空且最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the user named as “[USERNAME]” does not match rule, the maximum length of the input user name is 100</LocalizedLabel>
+    </Label>
+    <Label Name="ImportUserCodeRegex">
+      <LocalizedLabel LanguageRef="zhs">用户帐号为“[USERCODE]”的导入数据不符合规则\n用户帐号只能输入数字、点、字母和下划线且输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data for the user account “[USERCODE]” is not in accordance with the encoding rule. \n only  numbers, letters, and underscores with the maximum length of 100 can be entered for user account</LocalizedLabel>
+    </Label>
+    <Label Name="Suc">
+      <LocalizedLabel LanguageRef="zhs">导入成功!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import succeeded!</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">导入失败!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import failed!</LocalizedLabel>
+    </Label>
+    <Label Name="EcodeError">
+      <LocalizedLabel LanguageRef="zhs">编号:[EcodeError] 重复，请检查！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.: [EcodeError] repeats, please check!</LocalizedLabel>
+    </Label>
+    <Label Name="PEcodeError">
+      <LocalizedLabel LanguageRef="zhs">父编号:[PEcodeError] 不正确，请检查！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent number: [PEcodeError] is incorrect, please check!</LocalizedLabel>
+    </Label>
+    <Label Name="PEcodeError">
+      <LocalizedLabel LanguageRef="zhs">父编号:[PEcodeError] 不正确，请检查！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent number: [PEcodeError] is incorrect, please check!</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateError">
+      <LocalizedLabel LanguageRef="zhs">导入模板不正确，请使用正确模板重新导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import template is incorrect. Please import again by using the correct template</LocalizedLabel>
+    </Label>
+    <Label Name="ImportOrganization">
+      <LocalizedLabel LanguageRef="zhs">导入组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="ImportOrganizationGroup">
+      <LocalizedLabel LanguageRef="zhs">导入组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import group</LocalizedLabel>
+    </Label>
+    <Label Name="ImportOrganizationRole">
+      <LocalizedLabel LanguageRef="zhs">导入角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import role</LocalizedLabel>
+    </Label>
+    <Label Name="ImportOrganizationUser">
+      <LocalizedLabel LanguageRef="zhs">导入用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import user</LocalizedLabel>
+    </Label>
+    <Label Name="ImportOrganizationPerson">
+      <LocalizedLabel LanguageRef="zhs">导入人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import person</LocalizedLabel>
+    </Label>
+    <Label Name="DownloadTemplate">
+      <LocalizedLabel LanguageRef="zhs">下载导入模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download import template</LocalizedLabel>
+    </Label>
+    <Label Name="NULLTemplate">
+      <LocalizedLabel LanguageRef="zhs">没有模板可以下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No templates can be downloaded</LocalizedLabel>
+    </Label>
+    <Label Name="NoImportData">
+      <LocalizedLabel LanguageRef="zhs">没有可以导入的数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No data can be imported!</LocalizedLabel>
+    </Label>
+    <Label Name="ImportParentGroupRoleNotExist">
+      <LocalizedLabel LanguageRef="zhs">用户信息关联的组角色路径“[GROUPROLEPATH]”不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The import data of the parent group role path  “[GROUPROLEPATH]” does not exist</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

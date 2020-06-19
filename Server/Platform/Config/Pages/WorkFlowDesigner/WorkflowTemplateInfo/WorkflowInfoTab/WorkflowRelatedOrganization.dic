@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowRelatedOrganization" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">相关组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Related organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="None">
+      <LocalizedLabel LanguageRef="zhs">请设置相关组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please set the relevant organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="NoneResult">
+      <LocalizedLabel LanguageRef="zhs">选中的行没有设置结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The selected row does not have a set result</LocalizedLabel>
+    </Label>
+    <Label Name="ResultSame">
+      <LocalizedLabel LanguageRef="zhs">选中的行与其他行设置的结果相同</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The selected row has the same result set by the other rows</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

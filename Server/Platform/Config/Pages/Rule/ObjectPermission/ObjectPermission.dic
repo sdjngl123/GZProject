@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectPermission" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="SerialNumber">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionActorValue">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionActorType">
+      <LocalizedLabel LanguageRef="zhs">授权类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Type</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionMode">
+      <LocalizedLabel LanguageRef="zhs">授权模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization mode</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionActionValue">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionList">
+      <LocalizedLabel LanguageRef="zhs">授权列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization list</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionExpireValue">
+      <LocalizedLabel LanguageRef="zhs">截止有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deadline</LocalizedLabel>
+    </Label>
+    <Label Name="AuthorizeChildren">
+      <LocalizedLabel LanguageRef="zhs">多级授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-level authorization</LocalizedLabel>
+    </Label>
+    <Label Name="ModeDeleteError">
+      <LocalizedLabel LanguageRef="zhs">只有手动设置的对象授权才允许删除！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only manually set object authorization is allowed to be deleted!</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleName">
+      <LocalizedLabel LanguageRef="zhs">规则名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Name</LocalizedLabel>
+    </Label>
+    <Label Name="EnableObjectPermission">
+      <LocalizedLabel LanguageRef="zhs">没有启用对象授权规则，无法进行对象授权。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnableObjectPermission</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

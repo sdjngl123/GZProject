@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="LOADGROUPINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM GROUPINFO
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="LOADGROUPTOUSER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM ORGANIZE WHERE GROUPID IS NOT NULL
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="LOADUSERINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT U.EID,P.ENAME,P.ECODE,U.STATEID,U.CREATEUID,U.CREATETIME,U.UPDATEUID,U.UPDATETIME,U.ICON,U.ECOMPANYID,U.PASSWORD,U.LANGUAGE,U.TIMEZONE,
+        U.THEME, U.HOMEPAGEMODE, U.AGENTID, U.WENCHATUSER, U.AGENTSTARTDATETIME, U.AGENTENDDATETIME, U.PERSONEID,P.GENDER,P.BIRTHDAY,P.ACADEMICRECORD,
+        P.PHONE,P.EMAIL,P.ADDRESS,P.ZIPCODE
+        FROM USERINFO U INNER JOIN PERSON P ON U.PERSONEID=P.EID
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="LOADROLEINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM ROLEINFO
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="LOADUSERTOROLE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM ORGANIZE WHERE GROUPID IS NOT NULL
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

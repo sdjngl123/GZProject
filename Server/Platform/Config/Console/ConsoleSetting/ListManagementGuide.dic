@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListManagementGuide" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">列表配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleInfo">
+      <LocalizedLabel LanguageRef="zhs">模块信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module Information</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessObject">
+      <LocalizedLabel LanguageRef="zhs">业务对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Objects</LocalizedLabel>
+    </Label>
+    <Label Name="DataView">
+      <LocalizedLabel LanguageRef="zhs">数据视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data View</LocalizedLabel>
+    </Label>
+    <Label Name="ListMenu">
+      <LocalizedLabel LanguageRef="zhs">列表菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Menu</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPage">
+      <LocalizedLabel LanguageRef="zhs">查询页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page</LocalizedLabel>
+    </Label>
+    <Label Name="labLanguage">
+      <LocalizedLabel LanguageRef="zhs">本地化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Localization</LocalizedLabel>
+    </Label>
+    <Label Name="BaseProperty">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="AppInfoManag">
+      <LocalizedLabel LanguageRef="zhs">系统组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System components</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleName">
+      <LocalizedLabel LanguageRef="zhs">模块名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module Name</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleImage">
+      <LocalizedLabel LanguageRef="zhs">模块图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ParentNav">
+      <LocalizedLabel LanguageRef="zhs">父级导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent Navigation</LocalizedLabel>
+    </Label>
+    <Label Name="SelectEntity">
+      <LocalizedLabel LanguageRef="zhs">选择已有（使用已经存在业务模型）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Existing (using already exists business model)</LocalizedLabel>
+    </Label>
+    <Label Name="CopyEntity">
+      <LocalizedLabel LanguageRef="zhs">复制已有（复制已经存在业务模型）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy already exists (replication already exists business model)</LocalizedLabel>
+    </Label>
+    <Label Name="CustomEntity">
+      <LocalizedLabel LanguageRef="zhs">自定义(继承Entity全新业务模型)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom (inherited Entity New Business Model)</LocalizedLabel>
+    </Label>
+    <Label Name="EntityName">
+      <LocalizedLabel LanguageRef="zhs">模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Name</LocalizedLabel>
+    </Label>
+    <Label Name="OldEntityName">
+      <LocalizedLabel LanguageRef="zhs">原模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of the original model</LocalizedLabel>
+    </Label>
+    <Label Name="NewEntityName">
+      <LocalizedLabel LanguageRef="zhs">新模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Model Name</LocalizedLabel>
+    </Label>
+    <Label Name="Fields">
+      <LocalizedLabel LanguageRef="zhs">模型字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Field</LocalizedLabel>
+    </Label>
+    <Label Name="AddModel">
+      <LocalizedLabel LanguageRef="zhs">新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="FieldName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="FieldCode">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ConditonList">
+      <LocalizedLabel LanguageRef="zhs">条件列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition List</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItemList">
+      <LocalizedLabel LanguageRef="zhs">菜单列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu List</LocalizedLabel>
+    </Label>
+    <Label Name="RightMenu">
+      <LocalizedLabel LanguageRef="zhs">右键菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right-click Menu</LocalizedLabel>
+    </Label>
+    <Label Name="Check">
+      <LocalizedLabel LanguageRef="zhs">选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select</LocalizedLabel>
+    </Label>
+    <Label Name="MenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu name</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="SelectParentNavigation">
+      <LocalizedLabel LanguageRef="zhs">选择父级导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Parent Navigation</LocalizedLabel>
+    </Label>
+    <Label Name="SelectAppInfo">
+      <LocalizedLabel LanguageRef="zhs">选择组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Components</LocalizedLabel>
+    </Label>
+    <Label Name="NotAllowEmpty">
+      <LocalizedLabel LanguageRef="zhs">不允许为空!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!</LocalizedLabel>
+    </Label>
+    <Label Name="ListManagementComplete">
+      <LocalizedLabel LanguageRef="zhs">列表管理模块生成完毕!生成新建、编辑、查询等页面，请点击“常用功能”中“自动生成页面”按钮；更新数据库结构表，请单击“常用功能”中“更新数据库结构”按钮；如果需要调整细节请到各个项管理页面维护。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The list management module has been generated! To generate new, edit, query and other pages, please click the “Auto Generate Page” button in the “Common Features”. To update the database structure table, please click “Update Database Structure” button in “Common Features”. Buttons; if details need to be adjusted, please go to each item management page for maintenance.</LocalizedLabel>
+    </Label>
+    <Label Name="MenuMaintain">
+      <LocalizedLabel LanguageRef="zhs">菜单维护</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Maintenance</LocalizedLabel>
+    </Label>
+    <Label Name="UseDataView">
+      <LocalizedLabel LanguageRef="zhs">使用数据视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Using Data View</LocalizedLabel>
+    </Label>
+    <Label Name="UseWcf">
+      <LocalizedLabel LanguageRef="zhs">WCF</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF</LocalizedLabel>
+    </Label>
+    <Label Name="TitleService">
+      <LocalizedLabel LanguageRef="zhs">表头方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Header Method</LocalizedLabel>
+    </Label>
+    <Label Name="OnPageService">
+      <LocalizedLabel LanguageRef="zhs">每页数据方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data method per page</LocalizedLabel>
+    </Label>
+    <Label Name="SelectService">
+      <LocalizedLabel LanguageRef="zhs">选择服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Service</LocalizedLabel>
+    </Label>
+    <Label Name="UseDataService">
+      <LocalizedLabel LanguageRef="zhs">使用数据视图做表头（则不需要获取表头方法）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Adata view can be used to make a header (you do not need to get a header method)</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceArea">
+      <LocalizedLabel LanguageRef="zhs">配置服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configuration Services</LocalizedLabel>
+    </Label>
+    <Label Name="ListService">
+      <LocalizedLabel LanguageRef="zhs">列表服务配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Service Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="WcfAlert">
+      <LocalizedLabel LanguageRef="zhs">服务名称、服务组件、服务类、契约组件、契约类不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Service name, service component, service class, contract component, contract class cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="SelectServiceAlert">
+      <LocalizedLabel LanguageRef="zhs">请选择服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a service</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageAlert">
+      <LocalizedLabel LanguageRef="zhs">请输入每页数据的服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the service for each page of data</LocalizedLabel>
+    </Label>
+    <Label Name="TitleServiceAlert">
+      <LocalizedLabel LanguageRef="zhs">请输入表头服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please input a header service</LocalizedLabel>
+    </Label>
+    <Label Name="FolderConfigAlert">
+      <LocalizedLabel LanguageRef="zhs">您的本模块的配置文件不在同一个文件夹中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Your configuration file for this module is not in the same folder</LocalizedLabel>
+    </Label>
+    <Label Name="CreateModelAlert">
+      <LocalizedLabel LanguageRef="zhs">您没有创建模型！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You do not create a model!</LocalizedLabel>
+    </Label>
+    <Label Name="MaintainListAlert">
+      <LocalizedLabel LanguageRef="zhs">请维护列表菜单！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please maintain the list menu!</LocalizedLabel>
+    </Label>
+    <Label Name="TempleteEditMessage">
+      <LocalizedLabel LanguageRef="zhs">您不能修改列表模板向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You cannot modify the list template wizard</LocalizedLabel>
+    </Label>
+    <Label Name="SelectListManage">
+      <LocalizedLabel LanguageRef="zhs">选择列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select list</LocalizedLabel>
+    </Label>
+    <Label Name="SelectListMessage">
+      <LocalizedLabel LanguageRef="zhs">请选择列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a list</LocalizedLabel>
+    </Label>
+    <Label Name="ListManageName">
+      <LocalizedLabel LanguageRef="zhs">列表名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List name</LocalizedLabel>
+    </Label>
+    <Label Name="LabTitleService">
+      <LocalizedLabel LanguageRef="zhs">获取列表表头的方法名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gets the method name of the list header</LocalizedLabel>
+    </Label>
+    <Label Name="LabOnePageService">
+      <LocalizedLabel LanguageRef="zhs">获取每页数据的方法名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gets the method name for each page of data</LocalizedLabel>
+    </Label>
+    <Label Name="LinkTypeAlert">
+      <LocalizedLabel LanguageRef="zhs">不能选择关系模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The relationship model cannot be selected</LocalizedLabel>
+    </Label>
+    <Label Name="EntityTypeLinkAlert">
+      <LocalizedLabel LanguageRef="zhs">暂不支持在Link向导中选择已有模型，您可以直接右键【创建标签页】实现</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Selecting an existing model in the Link wizard is not support at the moment, please right-click to [create a label page] for implementation</LocalizedLabel>
+    </Label>
+    <Label Name="Yes">
+      <LocalizedLabel LanguageRef="zhs">是</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Yes</LocalizedLabel>
+    </Label>
+    <Label Name="NO">
+      <LocalizedLabel LanguageRef="zhs">否</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No</LocalizedLabel>
+    </Label>
+    <Label Name="OrderByStringEmpty">
+      <LocalizedLabel LanguageRef="zhs">排序字符串不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The collation string is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">模块已存在，请换个模块名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module already exists, please change module name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">菜单名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate Menu Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewName">
+      <LocalizedLabel LanguageRef="zhs">视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">视图名称已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View name already exists</LocalizedLabel>
+    </Label>
+    <Label Name="ModelNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">模型已存在,如果您确认用这个模型可以通过选择已有模型，否则可以修改模型名称。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The model already exists and you can modify the model name if you confirm that the model can be selected by selecting an existing model.</LocalizedLabel>
+    </Label>
+    <Label Name="InputViewName">
+      <LocalizedLabel LanguageRef="zhs">输入视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enter a view name</LocalizedLabel>
+    </Label>
+    <Label Name="ModifyModelName">
+      <LocalizedLabel LanguageRef="zhs">您不能修改【选择已有】模型，您可以修改模型名称，并创建一个新的模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You cannot modify the schema to [select an existing] model, you can modify the model name, and create a new model</LocalizedLabel>
+    </Label>
+    <Label Name="EntityNameNull">
+      <LocalizedLabel LanguageRef="zhs">模型名称不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model name cannot be null</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

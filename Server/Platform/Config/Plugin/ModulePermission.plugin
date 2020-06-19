@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginItem Name="CustomPage" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.UI" Class="Hoteam.InforCenter.Common.UI.ModulePermission.Business.CustomPageBusiness" />
+  <PluginItem Name="ListManagement" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.UI" Class="Hoteam.InforCenter.Common.UI.ModulePermission.Business.ListManagementBusiness" />
+  <PluginItem Name="EditListManagement" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.UI" Class="Hoteam.InforCenter.Common.UI.ModulePermission.Business.EditListManagementBusiness" />
+  <PluginItem Name="TabManagement" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.UI" Class="Hoteam.InforCenter.Common.UI.ModulePermission.Business.TabManagementBusiness" />
+  <PluginItem Name="TreeManagement" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.UI" Class="Hoteam.InforCenter.Common.UI.ModulePermission.Business.TreeManagementBusiness" />
+  <PluginItem Name="VerticalTabManagement" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.UI" Class="Hoteam.InforCenter.Common.UI.ModulePermission.Business.VerticalTabManagementBusiness" />
+</root>

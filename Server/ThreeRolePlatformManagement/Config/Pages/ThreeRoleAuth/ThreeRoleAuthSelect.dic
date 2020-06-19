@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuthSelect" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">登陆身份认证策略</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Policy</LocalizedLabel>
+    </Label>
+    <Label Name="SelectIsNull">
+      <LocalizedLabel LanguageRef="zhs">请选择一种身份认证策略</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SelectIsNull</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

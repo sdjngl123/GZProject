@@ -1,0 +1,66 @@
+﻿<div data-role="content" style="overflow-y:auto;overflow-x:hidden;" class="divcontent ">
+  <ul class="ui-nodisc-icon ui-alt-icon pagelistview ui-listview ui-listview-inset ui-corner-all ui-shadow" data-role="listview" data-inset="true" >
+    <li class="ui-li-has-thumb">
+
+      <a href="#" class="ui-nodisc-icon ui-alt-icon ui-btn ui-btn-icon-right" onclick="HMUI_Mobile_SystemSettingsList_ShowMobileSystemSettings();">
+
+        <svg class="icon">
+          <use xlink:href="{ImagesBaseUrl}icon-user_settings"></use>
+        </svg>
+
+        <h2 style="width:286px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;padding-top: 9px;"> 参数设置</h2>
+
+        <p style="width:286px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;"></p>
+
+        <div class="ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
+          <div class="ui-controlgroup-controls ">
+            <span class="ui-btn ui-corner-all ui-btn-icon-notext ui-first-child ui-last-child" offlinedisable="false" >
+              <svg class="icon">
+                <use xlink:href="{ImagesBaseUrl}icon-detailinfo"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="ui-li-has-thumb">
+      <a href="#" class="ui-nodisc-icon ui-alt-icon ui-btn ui-btn-icon-right" onclick="HMUI_Mobile_SystemSettingsList_ShowMobileUserInfo();">
+
+        <svg class="icon">
+          <use xlink:href="{ImagesBaseUrl}icon-system_settings"></use>
+        </svg>
+
+        <h2 style="width:286px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;padding-top: 9px;">用户设置</h2>
+
+        <p style="width:286px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;"></p>
+
+        <div class="ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
+          <div class="ui-controlgroup-controls ">
+            <span class="ui-btn ui-corner-all ui-btn-icon-notext ui-first-child ui-last-child" offlinedisable="false" >
+              <svg class="icon">
+                <use xlink:href="{ImagesBaseUrl}icon-detailinfo"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="ui-li-has-thumb">
+      <a href="#" class="ui-nodisc-icon ui-alt-icon ui-btn" onclick="HMUI_Mobile_SystemSettingsList_Loginout();">
+        <svg class="icon">
+          <use xlink:href="{ImagesBaseUrl}icon-exit_current_account"></use>
+        </svg>
+        <h2 style="width:286px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;padding-top: 9px;"> 退出当前帐号</h2>
+        <p style="width:286px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;"></p>
+      </a>
+    </li>
+
+  </ul>
+
+
+</div>
+
+
+

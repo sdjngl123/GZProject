@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleAuthDomain">
+  <Settings Key="title" Value="ThreeRoleAuthDomain.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthDomain_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthDomain_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthDomain_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="DomainPath"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DomainPath" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DomainPath_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DomainPath_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DomainPath_Label" ParentID="DomainPath" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleAuthDomain.DomainPath" />
+    </PageControl>   
+    <PageControl ControlID="DomainPath_Value" ParentID="DomainPath" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="bgText" Value="ThreeRoleAuthDomain.DomainPatheg"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="ThreeRoleAuthDomain.DomainPathRegex" />
+    </PageControl>
+  </PageControls>
+</root>

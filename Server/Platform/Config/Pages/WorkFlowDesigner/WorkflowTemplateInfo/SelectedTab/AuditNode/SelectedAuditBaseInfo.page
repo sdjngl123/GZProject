@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedAuditBaseInfo" IsCache="true">
+  <Settings Key="title" Value="SelectedAuditBaseInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedAuditBaseInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_SelectedAuditBaseInfo_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_SelectedAuditBaseInfo_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item10" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-10"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-8"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-7"/>
+      </Settings>
+      <Settings Key="item17" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-17"/>
+      </Settings>
+      
+
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-11"/>
+      </Settings>
+      <Settings Key="item12" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-12"/>
+      </Settings>
+      <Settings Key="item13" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-13"/>
+      </Settings>
+      <Settings Key="item14" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-14"/>
+      </Settings>
+      <Settings Key="item15" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-15"/>
+      </Settings>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="childid" Value="R-9"/>
+      </Settings>
+
+    </PageControl>
+    <!--R1-->
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ShowText_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ShowText_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ShowText_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.ShowText" />
+    </PageControl>
+    <PageControl ControlID="ShowText_Value" ParentID="R-1" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="Validation.String100" />
+    </PageControl>
+
+    <!--R2-->
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="NodeImage_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeImage_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeImage_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.NodeImage" />
+    </PageControl>
+    <PageControl ControlID="NodeImage_Value" ParentID="R-2" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedAuditBaseInfo_SelectedImageOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--R3-->
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="NodeIdentification_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeIdentification_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeIdentification_Label" ParentID="R-3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.NodeIdentification" />
+    </PageControl>
+    <PageControl ControlID="NodeIdentification_Value" ParentID="R-3" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="Validation.String100" />
+    </PageControl>
+    <!--R4-->
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ShowOrder_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ShowOrder_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ShowOrder_Label" ParentID="R-4" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.ShowOrder" />
+    </PageControl>
+    <PageControl ControlID="ShowOrder_Value" ParentID="R-4" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,20})?$" />
+      <Settings Key="regextipId" Value="Validation.String20" />
+    </PageControl>
+    <!--R5-->
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="TaskType_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TaskType_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TaskType_Label" ParentID="R-5" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.TaskType" />
+    </PageControl>
+    <PageControl ControlID="TaskType_Value" ParentID="R-5" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedAuditBaseInfo_TaskTypeOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="R-10" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ObjectPermission_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectPermission_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ObjectPermission_Label" ParentID="R-10" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.ObjectPermission" />
+    </PageControl>
+    <PageControl ControlID="ObjectPermission_Value" ParentID="R-10" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedAuditBaseInfo_ObjectPermission(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--R6-->
+    <PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="EffectTime_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="EffectDay_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="EffectDay_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="EffectHour_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="EffectHour_Label"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="EffectMinute_Value"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="EffectMinute_Label"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="EffectTime_Label" ParentID="R-6" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.EffectTime" />
+    </PageControl>
+    <PageControl ControlID="EffectDay_Value" ParentID="R-6" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[0-9]{1,8}$" />
+      <Settings Key="regextipId" Value="SelectedAuditBaseInfo.DayRegex" />
+    </PageControl>
+    <PageControl ControlID="EffectDay_Label" ParentID="R-6" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.EffectDay" />
+    </PageControl>
+    <PageControl ControlID="EffectHour_Value" ParentID="R-6" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[0-9]{1,8}$" />
+      <Settings Key="regextipId" Value="SelectedAuditBaseInfo.DayRegex" />
+    </PageControl>
+    <PageControl ControlID="EffectHour_Label" ParentID="R-6" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.EffectHour" />
+    </PageControl>
+    <PageControl ControlID="EffectMinute_Value" ParentID="R-6" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[0-9]{1,8}$" />
+      <Settings Key="regextipId" Value="SelectedAuditBaseInfo.DayRegex" />
+    </PageControl>
+    <PageControl ControlID="EffectMinute_Label" ParentID="R-6" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.EffectMinute" />
+    </PageControl>
+    <!--R7-->
+    <PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="RemindTime_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="RemindDay_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="RemindDay_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="RemindHour_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="RemindHour_Label"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="RemindMinute_Value"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="RemindMinute_Label"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RemindTime_Label" ParentID="R-7" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.RemindTime" />
+    </PageControl>
+    <PageControl ControlID="RemindDay_Value" ParentID="R-7" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[0-9]{1,8}$" />
+      <Settings Key="regextipId" Value="SelectedAuditBaseInfo.DayRegex" />
+    </PageControl>
+    <PageControl ControlID="RemindDay_Label" ParentID="R-7" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.RemindDay" />
+    </PageControl>
+    <PageControl ControlID="RemindHour_Value" ParentID="R-7" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[0-9]{1,8}$" />
+      <Settings Key="regextipId" Value="SelectedAuditBaseInfo.DayRegex" />
+    </PageControl>
+    <PageControl ControlID="RemindHour_Label" ParentID="R-7" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.RemindHour" />
+    </PageControl>
+    <PageControl ControlID="RemindMinute_Value" ParentID="R-7" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[0-9]{1,8}$" />
+      <Settings Key="regextipId" Value="SelectedAuditBaseInfo.DayRegex" />
+    </PageControl>
+    <PageControl ControlID="RemindMinute_Label" ParentID="R-7" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.RemindMinute" />
+    </PageControl>
+    
+    <!--R8忽略执行人-->
+    <PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <!--去掉忽略执行人-->
+
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value="HideOpinion_Value"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value="HideAttachList_Value"/>
+      </Settings>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value="AssistAudit_Value"/>
+      </Settings>
+      <Settings Key="item10" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value="Ignore_Value"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Ignore_Value" ParentID="R-8" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.Ignore" />
+    </PageControl>
+    <PageControl ControlID="HideOpinion_Value" ParentID="R-8" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.HideOpinion" />
+    </PageControl>
+    <PageControl ControlID="HideAttachList_Value" ParentID="R-8" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.HideAttachList" />
+    </PageControl>
+    <PageControl ControlID="AssistAudit_Value" ParentID="R-8" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.AssistAudit" />
+    </PageControl>
+    <!--R17默认执行结果-->
+    <PageControl ControlID="R-17" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="AcquiesceResult_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AcquiesceResultValue"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AcquiesceResult_Label" ParentID="R-17" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedAuditBaseInfo.AcquiesceResultLabel" />
+    </PageControl>
+    <PageControl ControlID="AcquiesceResultValue" ParentID="R-17" TypeName="TextValue">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedAuditBaseInfo_AcquiesceResultOnClick(ctrlEvent)"/>
+        <PageHandler HandlerName ="OnFocus" Script=""/>
+      </PageHandlers>
+    </PageControl>
+    
+    
+    <PageControl ControlID="R-9" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ChangeNodeActor_LabelC"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ChangeNodeActor_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ChangeNodeActor_LabelC" ParentID="R-9" TypeName="LayoutContainer" >
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="ChangeNodeActor_Label"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ChangeNodeActor_Label" ParentID="ChangeNodeActor_LabelC" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.ChangeNodeActor" />
+    </PageControl>    
+    <PageControl ControlID="ChangeNodeActor_Value" ParentID="R-9" TypeName="EditGrid">
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="SelectedAuditBaseInfo.Node" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="Node" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="text" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="SelectedAuditBaseInfo.AllowChange" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="60" />
+        <Settings Key="name" Value="AllowChange" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="checkbox" />
+      </Settings>
+      <!--<Settings Key="item3" >
+        <Settings Key="textId" Value="SelectedAuditBaseInfo.ValidateNull" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="60" />
+        <Settings Key="name" Value="ValidateNull" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="checkbox" />
+      </Settings>-->
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="SelectedAuditBaseInfo.AllocateNull" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="110" />
+        <Settings Key="name" Value="AllocateNull" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="checkbox" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="ID" />
+        <Settings Key="colType" Value="hidden" />
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="R-11" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeExtend_Value1"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeExtend_Value1" ParentID="R-11" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+    
+    <PageControl ControlID="R-12" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeExtend_Value2"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeExtend_Value2" ParentID="R-12" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <PageControl ControlID="R-13" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeExtend_Value3"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeExtend_Value3" ParentID="R-13" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <PageControl ControlID="R-14" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeExtend_Value4"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeExtend_Value4" ParentID="R-14" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <PageControl ControlID="R-15" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeExtend_Value5"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeExtend_Value5" ParentID="R-15" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+  </PageControls>
+</root>

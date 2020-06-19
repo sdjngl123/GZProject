@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="NavIntegrationService"
+     ServiceAssembly="Hoteam.InforCenter.NavIntegration.Service.dll"
+     ServiceClass="Hoteam.InforCenter.NavIntegration.Service.NavIntegrationService"
+     ContractAssembly="Hoteam.InforCenter.NavIntegration.Service.dll"
+     ContractClass="Hoteam.InforCenter.NavIntegration.Service.INavIntegrationService"/>
+</root>

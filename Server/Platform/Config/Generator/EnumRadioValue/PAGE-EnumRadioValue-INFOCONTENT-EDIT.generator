@@ -1,0 +1,5 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="RadioList" >
+  <Settings Key="position" Value="horizontal" />
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <NavigationItem Name="Guide_ListManagement_ReplaceKey"  IsHidden="true" IsTemplate="true" Order="003">
+    <PageName>ListManagement</PageName>
+    <Para Name="ItemName" Value="Guide_ListManagement_ReplaceKey"/>
+    <Image>[Image]</Image>
+  </NavigationItem>
+</root>

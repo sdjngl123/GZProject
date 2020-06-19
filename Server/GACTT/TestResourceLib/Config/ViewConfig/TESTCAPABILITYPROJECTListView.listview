@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebListView Name="TESTCAPABILITYPROJECTListView" View="TESTCAPABILITYPROJECTView" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" AllowOverstriking="false" IsSelectExporting="true" IsAllExporting="true" IsFrontExporting="false" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsPageUseObjectInspector="false" IsShowSearch="true" ShowPaging="true" ShowPageBar="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" ZebraList="true" HoverLight="true" Border="false" IsSelectCheckbox="true" />
+</root>

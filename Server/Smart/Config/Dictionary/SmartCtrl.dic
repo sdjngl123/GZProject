@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SmartGrid" IsWeb="true">
+    <Label Name="PageText">
+      <LocalizedLabel LanguageRef="zhs">{0}页 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> Total of {0} Page</LocalizedLabel>
+    </Label>
+    <Label Name="RecordText">
+      <LocalizedLabel LanguageRef="zhs">共计{0}条 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Total of {0} Record </LocalizedLabel>
+    </Label>
+    <Label Name="Home">
+      <LocalizedLabel LanguageRef="zhs">首页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home </LocalizedLabel>
+    </Label>
+    <Label Name="End">
+      <LocalizedLabel LanguageRef="zhs">尾页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tail page</LocalizedLabel>
+    </Label>
+    <Label Name="Prev">
+      <LocalizedLabel LanguageRef="zhs">上一页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page up</LocalizedLabel>
+    </Label>
+    <Label Name="Next">
+      <LocalizedLabel LanguageRef="zhs">下一页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page down</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Search" IsWeb="true">
+    <Label Name="SearchFile">
+      <LocalizedLabel LanguageRef="zhs">搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search</LocalizedLabel>
+    </Label>
+    <Label Name="SearchBtn">
+      <LocalizedLabel LanguageRef="zhs">搜 索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search</LocalizedLabel>
+    </Label>
+    <Label Name="InputCharError">
+      <LocalizedLabel LanguageRef="zhs">您输入查询的内容过长，请重新输入。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The contents of your entered is too long. Please enter again.</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Suspension" IsWeb="true">
+    <Label Name="more">
+      <LocalizedLabel LanguageRef="zhs">更多</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">More</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="BreadcrumbNavigation" IsWeb="true">
+    <Label Name="AllFile">
+      <LocalizedLabel LanguageRef="zhs">全部文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All files</LocalizedLabel>
+    </Label>
+    <Label Name="Back">
+      <LocalizedLabel LanguageRef="zhs">返回上级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return to the higher level</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectPermissionDetail">  
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectPermissionDetail_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_ObjectPermissionDetail_OnQuery(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="GridContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="5px 10px 0px 10px"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PermissionDetailGrid"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="PermissionDetailGrid" ParentID="GridContainer" TypeName="EditGrid" >
+      <Settings Key="multiselect" Value="false"/>
+      <Settings Key="isLayoutSave" Value="false"/>
+      <Settings Key="isColumnSetting" Value="false"/>
+    </PageControl>
+  </PageControls>
+</root>
+

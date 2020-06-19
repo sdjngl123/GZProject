@@ -1,0 +1,4 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="FileUpload" >
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

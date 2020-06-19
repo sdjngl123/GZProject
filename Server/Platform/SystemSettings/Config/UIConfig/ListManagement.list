@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListManagement Name="SystemSettingsList" MenuName="SystemMenu" ListRightMenuName="SystemMenu" ListViewName="SystemSettingsListView" QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" />
+  <ListManagement Name="PersonalSettingsList" MenuName="PersonalMenu" ListRightMenuName="PersonalMenu" ListViewName="PersonalSettingsListView" QueryPageName="" ListTitleDataService="" OnePageDataService="Hoteam.InforCenter.SystemSettingsService.GetPersonalSettingGridData" AllPageDataService="" HideViewFilterPage="true" />
+  <ListManagement Name="SystemSettingsNullList" MenuName="" ListRightMenuName="" ListViewName="SystemSettingsNullListView" QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" />
+</root>

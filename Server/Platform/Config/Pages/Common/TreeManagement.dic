@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeManagement" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">树管理页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree management page</LocalizedLabel>
+    </Label>
+    <Label Name="Query">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="Next">
+      <LocalizedLabel LanguageRef="zhs">下一个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Next</LocalizedLabel>
+    </Label>
+    <Label Name="Previous">
+      <LocalizedLabel LanguageRef="zhs">上一个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Previous</LocalizedLabel>
+    </Label>
+    <Label Name="ExpandAll">
+      <LocalizedLabel LanguageRef="zhs">全部展开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extend all</LocalizedLabel>
+    </Label>
+    <Label Name="CollapseAll">
+      <LocalizedLabel LanguageRef="zhs">全部折叠</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collapse All</LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand tree</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide tree</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

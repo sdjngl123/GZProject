@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ClassicHomePage" IsWeb="true">
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand navigation</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide navigation</LocalizedLabel>
+    </Label>
+    <Label Name="Search">
+      <LocalizedLabel LanguageRef="zhs">全局搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Global search</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

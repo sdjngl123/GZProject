@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebListView Name="SendInternalMailListView" View="INTERNALMAILSENDVIEW" AllowCheckBox="true" AllowIconType="true" QueryID="[Tree_Current_value1]"
+               Filter=" MType = 'Normal' and SENDUSER='[CURUSERID]' " DetailsIconField="MSTATEICON"
+               AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsPageUseObjectInspector="true" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="ReciveInternalMailListView" View="INTERNALRECIVEMAILVIEW" AllowCheckBox="true" AllowIconType="true" QueryID="[Tree_Current_value1]"
+                Filter=" MType = 'Normal' and (ACTUALRECIVER LIKE '[CURUSERID]') "  DetailsPageJSMethod="InforCenter_Platform_InternalMail_ShowDetailPage"
+               DetailsIconField="MSTATEICON" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsPageUseObjectInspector="true" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="DraftsInternalMailListView" View="INTERNALMAILVIEW" AllowCheckBox="true" AllowIconType="true"
+                Filter=" MType = 'Drafts' and (CREATEUID='[CURUSERID]' ) " DetailsIconField="MSTATEICON"
+               AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsPageUseObjectInspector="true" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="DustbinInternalMailListView" View="INTERNALMAILVIEW" AllowCheckBox="true" AllowIconType="true"
+                Filter=" MType = 'DUSTBIN' and (ACTUALRECIVER LIKE '[CURUSERID]') " DetailsIconField="MSTATEICON"
+               AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsPageUseObjectInspector="true" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="SystemInternalMailListView" View="INTERNALMAILVIEW" AllowCheckBox="true" AllowIconType="true"
+                Filter=" MType = 'System' and (ACTUALRECIVER LIKE '[CURUSERID]') " DetailsIconField="MSTATEICON"
+               AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsPageUseObjectInspector="true" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+</root>

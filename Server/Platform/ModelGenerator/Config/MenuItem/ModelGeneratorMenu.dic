@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ModelHeadMenu" IsWeb="true" >
+    <Label Name="ExportForm">
+      <LocalizedLabel LanguageRef="zhs">导出表单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExportForm</LocalizedLabel>
+    </Label>
+    <Label Name="ThemDesign">
+      <LocalizedLabel LanguageRef="zhs">表单主题设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThemDesign</LocalizedLabel>
+    </Label>
+    <Label Name="ImportThem">
+      <LocalizedLabel LanguageRef="zhs">导入主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ImportThem</LocalizedLabel>
+    </Label>
+    <Label Name="CopyModel">
+      <LocalizedLabel LanguageRef="zhs">复制模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CopyModel</LocalizedLabel>
+    </Label>
+    <Label Name="SetAboutModel">
+      <LocalizedLabel LanguageRef="zhs">设置关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetAboutModel</LocalizedLabel>
+    </Label>
+    <Label Name="PrintForm">
+      <LocalizedLabel LanguageRef="zhs">打印表单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PrintForm</LocalizedLabel>
+    </Label> 
+  </Context>
+</DictionarySerializer>

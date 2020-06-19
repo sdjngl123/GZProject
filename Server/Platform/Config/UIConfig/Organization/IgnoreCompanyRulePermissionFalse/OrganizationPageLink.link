@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="OrganizationIgnoreCompanyRulePermissionFalse" IsTemplate="false">
+    <PageLink Name="Organize" PageName="TreeManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="OrganisizeIgnoreCompanyRulePermissionFalse" />
+    </PageLink>
+    <PageLink Name="GroupList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="GroupListMangementIgnoreCompanyRulePermissionFalse" />
+    </PageLink>
+    <PageLink Name="RoleList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="RoleListMangementIgnoreCompanyRulePermissionFalse" />
+    </PageLink>
+    <PageLink Name="UserList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="UserListMangementIgnoreCompanyRulePermissionFalse" />
+    </PageLink>
+    <PageLink Name="PersonList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="PersonListMangementIgnoreCompanyRulePermissionFalse" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="OrganizeGroupsPageLinkIgnoreCompanyRulePermissionFalse" IsTemplate="false">
+    <PageLink Name="CompanyList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="CompanyTreeListViewIgnoreCompanyRulePermissionFalse" />
+      <Para Name="MenuName" Value="OrganizeCompanyMenu" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CompanyTreePageLinkIgnoreCompanyRulePermissionFalse" IsTemplate="false">
+    <PageLink Name="CompanyInfo" PageName="ObjectProperty" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="GroupList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="GROUPTREELISTVIEWIgnoreCompanyRulePermissionFalse" />
+      <Para Name="MenuName" Value="OrganizeGroupMenu" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="GroupsTreePageLinkIgnoreCompanyRulePermissionFalse" IsTemplate="false">
+    <PageLink Name="GroupInfo" PageName="ObjectProperty" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="GroupList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="GROUPTREELISTVIEWIgnoreCompanyRulePermissionFalse" />
+      <Para Name="MenuName" Value="OrganizeGroupMenu" />
+    </PageLink>
+    <PageLink Name="RoleList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="ROLESTREELISTVIEWIgnoreCompanyRulePermissionFalse" />
+      <Para Name="MenuName" Value="OrganizeRoleMenu" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="RolesTreePageLinkIgnoreCompanyRulePermissionFalse" IsTemplate="false">
+    <PageLink Name="RoleInfo" PageName="ObjectProperty" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="UserList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="USERSTREELISTVIEWIgnoreCompanyRulePermissionFalse" />
+      <Para Name="MenuName" Value="OrganizeUserMenu" />
+    </PageLink>
+  </PageLinks>
+
+
+  <PageLinks Name="UserTreePageLinkIgnoreCompanyRulePermissionFalse" IsTemplate="false">
+    <PageLink Name="UserProperty" PageName="ObjectProperty" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  
+</root>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/resetpassword.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/resetpassword.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //为了防止进入下一步之后按后退键后，input中已经有值了，但是提示信息还在所以进行以下判断
+            if ($("#username").val()) {
+                $("#username").next().hide();
+            }
+            if ($("#verNum").val()) {
+                $("#verNum").next().hide();
+            }
+            //获取校验图片
+            getCheckImg();
+            $(".reset-password-placeholder").click(function () {
+                $(this).prev().click().focus();
+            });
+            $(".reset-password-input").on({
+                "focus": function () {
+                    $(this).next().hide();
+                    $(this).addClass("reset-password-input-focus");
+                },
+                "blur": function () {
+                    $(this).removeClass("reset-password-input-focus");
+                    regexCheck($(this).parent());
+                    if (!$(this).val()) {//如果有值
+                        $(this).next().show();
+                    }
+                }
+            });
+
+//            $(".reset-password-verimg").click(function () {
+//                getCheckImg();
+//            });
+        })
+        function getCheckImg() {
+//            $.ajax({
+//                type: "get",
+//                url: "../CodeGif.aspx",
+//                dataType: "text",
+//                success: function (data) {
+//                    $(".reset-password-verimg").attr("src", "../CodeGif.aspx");
+//                }
+            //            });
+
+            document.getElementById("verid").setAttribute("src", "../CodeGif.aspx?n="+Math.random());
+        }
+        function nextStep() {
+            if (!regexCheck($("body"))) {
+                return;
+            }
+            $(window.parent.document).find("#usercode").val($("#username").val());
+            //调用ajax
+            var para = { CheckCode: $("#verNum").val(), UserName: $("#username").val() }
+            $.ajax({
+                type: "get",
+                url: "../CheckChangeUser.aspx",
+                data: para,
+                dataType: "json",
+                success: function (data) {
+                    //验证账号是否存在及验证码是否正确
+                    if (data && data.Key == "ValidateCode") {
+                        $("#verNum").nextAll(".reset-password-error").show().html(data.Value);
+                    } else if (data && data.Key == "RegisterEmail") {
+                        $("#username").nextAll(".reset-password-error").show().html(data.Value);
+                    } else {
+                        $($(window.parent.document).find("iframe")[0]).attr("src", "html/secondstep.html");
+                    }
+                },
+                error: function (err) {
+                    alert(err.responseText);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="step-img" style="background: url(../image/onestep.png) no-repeat;">
+    </div>
+    <div class="step-img-title">
+        <span class="one-sp" style="color: #0097ff;">填写账户名</span><span class="second-sp">验证身份</span>
+        <span class="third-sp">设置新密码</span><span class="four-sp">完成</span>
+    </div>
+    <div class="input-c">
+        <input id="username" type="text" class="reset-password-input" regex="^(\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)$|^(1[0-9]{10})$|^(((\+86)|(86))?1[0-9]{10})$"
+            required="required" />
+        <span class="reset-password-placeholder">手机号/邮箱</span> <span class="reset-password-error">
+        </span>
+    </div>
+    <div class="input-c">
+        <input id="verNum" type="text" class="reset-password-input" style="width: 210px;"
+            required="required" />
+        <span id="verImg" class="reset-password-placeholder">校验码</span>
+       
+        <img class="reset-password-verimg" src="" alt="校验码" title="看不清，点击刷新" id="verid" onclick="javascript:getCheckImg();"/>
+        
+        <span class="reset-password-error"></span>
+    </div>
+    <div class="next-btn" onclick="nextStep()">
+        下一步</div>
+</body>
+</html>

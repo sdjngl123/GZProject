@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CreateFileForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">新建项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create File</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="FileType">
+      <LocalizedLabel LanguageRef="zhs">分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FileType</LocalizedLabel>
+    </Label>
+    <Label Name="Extension">
+      <LocalizedLabel LanguageRef="zhs">扩展名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extension</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAs">
+      <LocalizedLabel LanguageRef="zhs">另存为</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveAs</LocalizedLabel>
+    </Label>
+    <Label Name="NameNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">名称不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name Not Empty</LocalizedLabel>
+    </Label>
+    <Label Name="FileTypeNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">分类不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File Type Not Empty</LocalizedLabel>
+    </Label>
+    <Label Name="AppPathNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">所属组件不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">App Path Not Empty</LocalizedLabel>
+    </Label>
+    <Label Name="AppConfigPathNotExist">
+      <LocalizedLabel LanguageRef="zhs">组件路径请选择到组件Config文件夹下</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">App Path Must be On App Config Folder</LocalizedLabel>
+    </Label>
+    <Label Name="SelectInfo">
+      <LocalizedLabel LanguageRef="zhs">请选择需要操作的节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please Select Node</LocalizedLabel>
+    </Label>
+    <Label Name="ExtensionNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">扩展名不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extension Not Empty</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FilterListViewCtrl" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="ListView_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item3" >
+          <Settings Key="size" Value="10"/>
+          <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListView-C"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="RightMenu_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu_Container" ParentID="ListView_Container" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RightMenu"/>
+      </Settings>
+    </PageControl>
+      
+    <PageControl ControlID="ListView-C" ParentID="ListView_Container" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="0px 4px 0px 4px"/>
+         <Settings Key="type" Value="horizontal"/>
+         <Settings Key="item2" >
+            <Settings Key="size" Value="100%"/>
+            <Settings Key="childid" Value="ListView"/>
+         </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu"></PageControl>
+    <PageControl ControlID="ListView" ParentID="ListView_Container" TypeName="FilterEditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_FilterListViewCtrl_GridData(ctrlEvent);"/>
+        <!--<PageHandler HandlerName ="OnColImageClick" Script="InforCenter_Platform_ListViewCtrl_GridColImage(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_ListViewCtrl_OnRowDblClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnRowClick" Script="InforCenter_Platform_ListViewCtrl_OnRowClick(ctrlEvent);"/>-->
+
+      </PageHandlers>
+
+      <Settings Key="addButton" >
+        <!--<Settings Key="printList" >
+          <Settings Key="js" Value="InforCenter_Platform_ListViewCtrl_GridPrint_Current(ctrlEvent);" />
+          <Settings Key="iconClass" Value="p_printList" />
+          <Settings Key="textId" Value="ListViewCtrl.PrintText" />
+        </Settings>
+        <Settings Key="allPrintList" >
+          <Settings Key="js" Value="InforCenter_Platform_ListViewCtrl_GridPrint_All(ctrlEvent);" />
+          <Settings Key="iconClass" Value="p_allPrintList" />
+          <Settings Key="textId" Value="ListViewCtrl.AllPrintText" />
+        </Settings>-->
+        <Settings Key="exportList" >
+          <Settings Key="js" Value="InforCenter_Platform_ListViewCtrl_GridExport_Current(ctrlEvent);" />
+          <Settings Key="iconClass" Value="p_exportList" />
+          <Settings Key="textId" Value="ListViewCtrl.CurrentExport" />
+        </Settings>
+        <Settings Key="allExportList" >
+          <Settings Key="js" Value="InforCenter_Platform_ListViewCtrl_GridExport_All(ctrlEvent);" />
+          <Settings Key="iconClass" Value="p_allExportList" />
+          <Settings Key="textId" Value="ListViewCtrl.AllExport" />
+        </Settings>
+      </Settings>
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="rowrejection" Value="true" />
+      <Settings Key="showExportAndPrintButton" Value="true" />
+      <Settings Key="topLine" Value="true" />
+      <Settings Key="leftLine" Value="true" />
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="CREATECUSTORMFORMROOT">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'CUSTORMFORM'))) DROP VIEW CUSTORMFORM
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="CUSTORMFORM">
+        CREATE VIEW CUSTORMFORM
+        AS
+        SELECT REPLACE(EID,'COMPANY','CUSTORMFORM') EID, 'ModelGenerator.FormManagement' ENAME,'634938753390000000' CREATETIME,'USERINFO_System' CREATEUID,'USERINFO_System' UPDATEUID,'634938753390000000' UPDATETIME,EID ECOMPANYID FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true" DBObject="CUSTORMFORM">
+        CREATE OR REPLACE VIEW CUSTORMFORM
+        AS
+        SELECT REPLACE(EID,'COMPANY','CUSTORMFORM') EID, 'ModelGenerator.FormManagement' ENAME,'634938753390000000' CREATETIME,'USERINFO_System' CREATEUID,'USERINFO_System' UPDATEUID,'634938753390000000' UPDATETIME,EID ECOMPANYID FROM COMPANY
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

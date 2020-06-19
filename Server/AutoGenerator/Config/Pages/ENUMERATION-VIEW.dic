@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="ENUMERATION-VIEW" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMERATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseValue list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

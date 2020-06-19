@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="CapabilityBatchEdit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">批量修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BatchEdit</LocalizedLabel>
+    </Label>
+    <Label Name="SelectField">
+      <LocalizedLabel LanguageRef="zhs">选择字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Selected Field</LocalizedLabel>
+    </Label>
+    <Label Name="Value">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,4 @@
+﻿<Settings Key="item[ORDER]" Value="">
+  <Settings Key="size" Value="[SIZE]"/>
+  <Settings Key="childid" Value="[INFONAME]_Content"/>
+</Settings>

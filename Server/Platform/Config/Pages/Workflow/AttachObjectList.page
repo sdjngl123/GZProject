@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AttachObjectList">
+  <Settings Key="title" Value="AttachObjectList.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_AttachObjectList_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_AttachObjectList_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="AttachObjectList_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectListViewPageContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ObjectListViewPageContainer" ParentID="AttachObjectList_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ListViewCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

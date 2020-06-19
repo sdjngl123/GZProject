@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationManageEditForm" IsWeb="false">
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">导航配置项名称，查找多语言设置时也以此名称为Label名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Navigation configuration item name is also named Label name when searching for multilingual settings</LocalizedLabel>
+    </Label>
+    <Label Name="Order">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="OrderDescription">
+      <LocalizedLabel LanguageRef="zhs">导航栏排序号，在导航显示时会根据此序号进行排序，按照字母顺序排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Navigation bar sort numbers will be sorted by this sequence number when navigation displays, and in alphabetical order</LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">代表要跳转的页面名称，如果是多级嵌套，只要在最后一级配置。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It represents the name of the page to jump, if it is multi-level nesting, it can be configured at the last level.</LocalizedLabel>
+    </Label>
+    <Label Name="ParaList">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter</LocalizedLabel>
+    </Label>
+    <Label Name="ParaListDescription">
+      <LocalizedLabel LanguageRef="zhs">传到页面中的参数，只可以填写固定参数，不可以使用替换参数,弹出框中，第一列代表参数名称，第二列代表参数值，第三列代表参数组成的数组的名称（数组名称相同的的会组成一个数组），第四列代表该参数会在哪一个父级参数下面（第三列、第四列没有的可不写）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the parameters passing into the page, only the fixed parameters can be filled in, and the replacement parameters can not be used. In the pop-up box, the first column represents the parameter name, the second column represents the parameter value, and the third column represents the name of the array of the parameters (an array with the same array name), and the fourth column generation Table This parameter will be under which parent parameter (third column, fourth column does not have to write)</LocalizedLabel>
+    </Label>
+    <Label Name="Image">
+      <LocalizedLabel LanguageRef="zhs">导航栏图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Navigation Bar Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ImageDescription">
+      <LocalizedLabel LanguageRef="zhs">代表一个功能配置项的图标，此项内容将在导航栏中显示。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An icon representing a feature configuration, this item will appear in the navigation bar.</LocalizedLabel>
+    </Label>
+    <Label Name="IsHidden">
+      <LocalizedLabel LanguageRef="zhs">是否隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsHiddenDescription">
+      <LocalizedLabel LanguageRef="zhs">通过设置此属性控制导航项显示或隐藏。如平台的模块在二次开发时不需要显示，可将平台的该项复制出来，并修改此属性以达到隐藏功能</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">By setting this attribute, the navigation item can be controlled to show or hide. If the platform module does not need to be displayed in the secondary development, the platform can be copied out, and modify this attribute to achieve the hidden function</LocalizedLabel>
+    </Label>
+    <Label Name="IsAddCustom">
+      <LocalizedLabel LanguageRef="zhs">是否允许添加常用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to add a favorite</LocalizedLabel>
+    </Label>
+    <Label Name="IsAddCustomDescription">
+      <LocalizedLabel LanguageRef="zhs">是否允许添加常用，默认false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to add commonly used, default false</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

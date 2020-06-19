@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <MenuItem Name="LifeCycleMenu" Issplit="false">
+    <WebAction Name="CreateLifeCycle" ModuleName="Platform" LabelName="Create" Image="p_add" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker Action="CREATE" ActionType="LIFECYCLE" />
+      <WebMethod PageName="CreateLifeCycle" IsPopup="true" >
+        <Para Name="ObjectType" Value="LIFECYCLE" />
+      </WebMethod>
+      <JSMethod Name="InforCenter_Platform_InitGlobalLifeCycleTemplate" SelectID="">
+        <Para Name="TemplateDisplayName" Value="[ReturnValue_ENAME]" />
+        <Para Name="TemplateType" Value="[ReturnValue_TYPE]" />
+      </JSMethod>
+      <WebMethod  PageName="LifeCycleEdit" IsPopup="true" MinWindow="true" MaxWindow="true" IsSideSlip="false" IsModal="true" IsLoopExec="true">
+        <Para Name="ObjectType" Value="LIFECYCLE" />
+        <Para Name="LifeCycleName" Value="[ReturnValue_ENAME]" />
+        <Para Name="IsCreate" Value="true" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="false">
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="EditLifeCycle" ModuleName="Platform" LabelName="Edit" Image="p_edit"  RefreshType="UPDATELIST">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_InitGlobalLifeCycleTemplate" SelectID="[List_EID]">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMethod PageName="LifeCycleEdit" IsPopup="true"  MinWindow="true" MaxWindow="true"  Order="1" SelectID="[List_EID]">
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="DeleteLifeCycle" ModuleName="Platform" LabelName="Delete" Image="p_delete"  RefreshType="UPDATELIST">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+        <Para Name="ValidateParentLink" Value="CODEKINDTORULE" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="StartOrStop" ModuleName="Platform" LabelName="StartOrStop" Image="p_start"  RefreshType="UPDATELIST">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <BusinessMethod Name="InforCenter.LifeCycle.LifeCycleService.SetLifeCycleEnabled" IsWCFService="true">
+        <Para Name="LifeCycleObjectID" Value="[List_EID]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+
+</root>

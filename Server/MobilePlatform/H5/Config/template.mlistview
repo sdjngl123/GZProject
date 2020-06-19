@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MListView Name="test" ParentObjectType="DatasetObject" Condition="" SwitchType="Sub" ViewName="" QueryID="">
+    <MObjectType Name="APQPSectionObject"  GroupName="MlistView.DataSetCount"/>
+    <MFilter Name=""  Filter="" EntityFilter="" DatabaseType=""/>
+  </MListView>
+</root>

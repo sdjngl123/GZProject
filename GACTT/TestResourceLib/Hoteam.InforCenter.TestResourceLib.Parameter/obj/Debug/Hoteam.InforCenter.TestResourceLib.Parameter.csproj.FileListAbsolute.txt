@@ -1,0 +1,6 @@
+E:\广汽试验\Source\Server\GACTT\TestResourceLib\Bin\Hoteam.InforCenter.TestResourceLib.Parameter.dll
+E:\广汽试验\Source\Server\GACTT\TestResourceLib\Bin\Hoteam.InforCenter.TestResourceLib.Parameter.pdb
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Parameter\obj\Debug\Hoteam.InforCenter.TestResourceLib.Parameter.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Parameter\obj\Debug\Hoteam.InforCenter.TestResourceLib.Parameter.dll
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Parameter\obj\Debug\Hoteam.InforCenter.TestResourceLib.Parameter.pdb
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Parameter\obj\Debug\Hoteam.InforCenter.TestResourceLib.Parameter.csprojAssemblyReference.cache

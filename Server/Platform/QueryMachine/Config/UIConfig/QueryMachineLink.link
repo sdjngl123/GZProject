@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="QueryMachine">
+    <PageLink Name="QueryMachine" PageName="QueryMachine">
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CustomQuery">
+    <PageLink Name="CustomQuery" PageName="CustomQuery">
+    </PageLink>
+  </PageLinks>
+
+</root>

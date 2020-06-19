@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="DesktopHomePage">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="DesktopHomePageOnCreate(pageEvent)"></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Desktop_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DesktopContainer"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="RightMenu_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DesktopContainer" ParentID="" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="DesktopHomePage"/>
+    </PageControl>
+    <PageControl ControlID="RightMenu_Container" ParentID="Desktop_Layout" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RightMenu"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu"></PageControl>
+  </PageControls>
+</root>

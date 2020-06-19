@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <WebListView Name="DataSetTypeListView" View="DATASETTYPEVIEW" QueryID="" EntityFilter="" Filter="" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true" DetailsPageSize="600*320"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIconField="ICON"  AutoLoadData="true">
+  </WebListView>
+</root>

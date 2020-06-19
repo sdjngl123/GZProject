@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <ToolBar Name="SaveBar" BaseBar="" UseType="*" >
+    <Item Name="Save" ImagePath="~/Base/Image/Console/save.png" IsRightMenu="false" KeyCode="Ctrl+S" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.SaveCmd">
+    </Item>
+    <Item Name="SaveAll" ImagePath="~/Base/Image/Console/saveall.png" IsRightMenu="false" KeyCode="Ctrl+Shift+S" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.SaveAllCmd">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="SolutionTree" BaseBar=""  UseType="SolutionTree">
+    <Item Name="CreateNew" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name ="CreateFolder" ImagePath="~/Base/Image/Console/CreateFolder.png" IsRightMenu="true" KeyCode="Ctrl+O" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateFolderCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="CreateFile" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="true" KeyCode="Ctrl+N" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateFileCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Add" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="true" KeyCode="Ctrl+Shift+A" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.AddCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Eidt" ImagePath="~/Base/Image/Console/edit.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="Copy" ImagePath="~/Base/Image/Console/copy.png" IsRightMenu="true" KeyCode="Ctrl+Shift+C" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CopyCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Cut" ImagePath="~/Base/Image/Console/cut.png" IsRightMenu="true" KeyCode="Ctrl+Shift+X" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CutCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Paste" ImagePath="~/Base/Image/Console/paste.png" IsRightMenu="true" KeyCode="Ctrl+Shift+V" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.PasteCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Rename" ImagePath="~/Base/Image/Console/Rename.png" IsRightMenu="true" KeyCode="Ctrl+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RenameFolderCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Delete" ImagePath="~/Base/Image/Console/delete.png" IsRightMenu="true" KeyCode="Ctrl+D" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.DeleteFolderCmd">
+    </Item>
+    <Item Name="Refresh" ImagePath="~/Base/Image/Console/Refresh.png" IsRightMenu="true" KeyCode="Ctrl+Shift+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RefreshFolderCmd">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd">
+    </Item>
+    <Item Name="LocationNode" ImagePath="~/Base/Image/Console/ModuleView.png" KeyCode="Ctrl+Y" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocationNodeCmd" >
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+    <Item Name="ZipModifyFile" ImagePath="~/Base/Image/Console/ZipModifyFile.png" IsRightMenu="true" KeyCode="Ctrl+Shift+Z" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.ZipFileCmd">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="ModuleTreeFileBar" BaseBar=""  UseType="ModuleTree">
+    <Item Name="Delete" ImagePath="~/Base/Image/Console/delete.png" IsRightMenu="true" KeyCode="Ctrl+D" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.DeleteFolderCmd">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd">
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+  </ToolBar>
+
+
+  <ToolBar Name="ModelTreeFileBar" BaseBar="" UseType="ModelTree">
+    <Item Name="Copy" ImagePath="~/Base/Image/Console/copy.png" IsRightMenu="true" KeyCode="Ctrl+Shift+C" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CopyCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Cut" ImagePath="~/Base/Image/Console/cut.png" IsRightMenu="true" KeyCode="Ctrl+Shift+X" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CutCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Rename" ImagePath="~/Base/Image/Console/Rename.png" IsRightMenu="true" KeyCode="Ctrl+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RenameFolderCmd" Parent="Eidt">
+    </Item>
+    <Item Name="SaveAs" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="true" KeyCode="Shift+L" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.SaveAsCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Delete" ImagePath="~/Base/Image/Console/delete.png" IsRightMenu="true" KeyCode="Ctrl+D" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.DeleteFolderCmd">
+    </Item>
+    <Item Name="CreateExtendModel" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="true" KeyCode="Ctrl+Q" ItemAssembly="Hoteam.InforCenter.Common.DeveloperControl" ItemClass="Hoteam.InforCenter.Common.DeveloperControl.Command.CreateExtendModelCmd">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd">
+    </Item>
+    <Item Name="LocationNode" ImagePath="~/Base/Image/Console/ModuleView.png" KeyCode="Ctrl+Y" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocationNodeCmd" >
+    </Item>
+    <Item Name="UpdateOneDataTable" ImagePath="~/Base/Image/Console/UpdateOneDataTable.png" IsRightMenu="true" KeyCode="Ctrl+Shift+U" ItemAssembly="Hoteam.InforCenter.Common.DeveloperControl" ItemClass="Hoteam.InforCenter.Common.DeveloperControl.Command.UpdateOneDataTableCmd">
+    </Item>
+    <Item Name="GeneratorOnePage" ImagePath="~/Base/Image/Console/GeneratorOnePage.png" IsRightMenu="true" KeyCode="Ctrl+Shift+G" ItemAssembly="Hoteam.InforCenter.Common.DeveloperControl" ItemClass="Hoteam.InforCenter.Common.DeveloperControl.Command.GeneratorOnePageCmd">
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="RootFolderBar" BaseBar="" UseType="RootFolder">
+    <Item Name="CreateNew" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="CreateGroupFolder" ImagePath="~/Base/Image/Console/CreateGroupFolder.png"  IsRightMenu="true" KeyCode="Ctrl+W" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateGroupFolderCmd" Parent="CreateNew">
+    </Item>
+    <Item Name ="CreateFolder" ImagePath="~/Base/Image/Console/CreateFolder.png" IsRightMenu="true" KeyCode="Ctrl+O" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateFolderCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Add" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="true" KeyCode="Ctrl+Shift+A" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.AddCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Eidt" ImagePath="~/Base/Image/Console/edit.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="Paste" ImagePath="~/Base/Image/Console/paste.png" IsRightMenu="true" KeyCode="Ctrl+Shift+V" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.PasteCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Refresh" ImagePath="~/Base/Image/Console/Refresh.png" IsRightMenu="true" KeyCode="Ctrl+Shift+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RefreshFolderCmd" Parent="Eidt">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd" Parent="">
+    </Item>
+    <Item Name="LocationNode" ImagePath="~/Base/Image/Console/ModuleView.png" KeyCode="Ctrl+Y" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocationNodeCmd" >
+    </Item>
+    <Item Name="TreeCollapse" ImagePath="~/Base/Image/Console/wrap.png" IsRightMenu="true" KeyCode="Ctrl+T" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.TreeCollapseCmd" Parent="">
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd" Parent="">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+    <Item Name="ZipModifyFile" ImagePath="~/Base/Image/Console/ZipModifyFile.png" IsRightMenu="true" KeyCode="Ctrl+Shift+Z" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.ZipFileCmd">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="AppInfoBar" BaseBar=""  UseType="GroupFolder">
+    <Item Name="CreateNew" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="CreateGroupFolder" ImagePath="~/Base/Image/Console/CreateGroupFolder.png"  IsRightMenu="true" KeyCode="Ctrl+W" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateGroupFolderCmd" Parent="CreateNew">
+    </Item>
+    <Item Name ="CreateFolder" ImagePath="~/Base/Image/Console/CreateFolder.png" IsRightMenu="true" KeyCode="Ctrl+O" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateFolderCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Eidt" ImagePath="~/Base/Image/Console/edit.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="EditGroupFolder" ImagePath="~/Base/Image/Console/edit.png" IsRightMenu="true" KeyCode="Ctrl+E" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.EditGroupFolderCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Copy" ImagePath="~/Base/Image/Console/copy.png" IsRightMenu="true" KeyCode="Ctrl+Shift+C" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CopyCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Cut" ImagePath="~/Base/Image/Console/cut.png" IsRightMenu="true" KeyCode="Ctrl+Shift+X" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CutCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Paste" ImagePath="~/Base/Image/Console/paste.png" IsRightMenu="true" KeyCode="Ctrl+Shift+V" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.PasteCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Rename" ImagePath="~/Base/Image/Console/Rename.png" IsRightMenu="true" KeyCode="Ctrl+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RenameFolderCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Delete" ImagePath="~/Base/Image/Console/delete.png" IsRightMenu="true" KeyCode="Ctrl+D" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.DeleteFolderCmd">
+    </Item>
+    <Item Name="Refresh" ImagePath="~/Base/Image/Console/Refresh.png" IsRightMenu="true" KeyCode="Ctrl+Shift+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RefreshFolderCmd">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd">
+    </Item>
+    <Item Name="LocationNode" ImagePath="~/Base/Image/Console/ModuleView.png" KeyCode="Ctrl+Y" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocationNodeCmd" >
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+    <Item Name="ZipModifyFile" ImagePath="~/Base/Image/Console/ZipModifyFile.png" IsRightMenu="true" KeyCode="Ctrl+Shif+Z" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.ZipFileCmd">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="ConfigBar" BaseBar="" UseType="ConfigFolder">
+    <Item Name="CreateNew" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name ="CreateFolder" ImagePath="~/Base/Image/Console/CreateFolder.png" IsRightMenu="true" KeyCode="Ctrl+O" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateFolderCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="CreateFile" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="true" KeyCode="Ctrl+N" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CreateFileCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Add" ImagePath="~/Base/Image/Console/create.png" IsRightMenu="true" KeyCode="Ctrl+Shift+A" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.AddCmd" Parent="CreateNew">
+    </Item>
+    <Item Name="Eidt" ImagePath="~/Base/Image/Console/edit.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="Copy" ImagePath="~/Base/Image/Console/copy.png" IsRightMenu="true" KeyCode="Ctrl+Shift+C" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CopyCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Paste" ImagePath="~/Base/Image/Console/paste.png" IsRightMenu="true" KeyCode="Ctrl+Shift+V" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.PasteCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Refresh" ImagePath="~/Base/Image/Console/Refresh.png" IsRightMenu="true" KeyCode="Ctrl+Shift+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RefreshFolderCmd">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd">
+    </Item>
+    <Item Name="LocationNode" ImagePath="~/Base/Image/Console/ModuleView.png" KeyCode="Ctrl+Y" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocationNodeCmd" >
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+    <Item Name="ZipModifyFile" ImagePath="~/Base/Image/Console/ZipModifyFile.png" IsRightMenu="true" KeyCode="Ctrl+Shift+Z" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.ZipFileCmd">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="TreeFileBar" BaseBar="" UseType="TreeFile" Order="1">
+    <Item Name="SaveAs" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="true" KeyCode="Shift+L" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.SaveAsCmd" Parent="">
+    </Item>
+    <Item Name="Eidt" ImagePath="~/Base/Image/Console/edit.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="Copy" ImagePath="~/Base/Image/Console/copy.png" IsRightMenu="true" KeyCode="Ctrl+Shift+C" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CopyCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Cut" ImagePath="~/Base/Image/Console/cut.png" IsRightMenu="true" KeyCode="Ctrl+Shift+X" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.CutCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Rename" ImagePath="~/Base/Image/Console/Rename.png" IsRightMenu="true" KeyCode="Ctrl+R" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.RenameFolderCmd" Parent="Eidt">
+    </Item>
+    <Item Name="Delete" ImagePath="~/Base/Image/Console/delete.png" IsRightMenu="true" KeyCode="Ctrl+D" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.DeleteFolderCmd">
+    </Item>
+    <Item Name="Location" ImagePath="~/Base/Image/Console/tree_selfolder.png" IsRightMenu="false" KeyCode="Ctrl+Shift+L" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="LocalFolder" ImagePath="~/Base/Image/Console/tree_folder.png" IsRightMenu="true" KeyCode="Ctrl+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocalFolderCmd" Parent="Location">
+    </Item>
+    <Item Name="LocationNode" ImagePath="~/Base/Image/Console/ModuleView.png" KeyCode="Ctrl+Y" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LocationNodeCmd" Parent="Location">
+    </Item>
+    <Item Name="HomePage" ImagePath="~/Base/Image/Console/HomePage.png" KeyCode="Ctrl+H" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.HomePageCmd">
+    </Item>
+    <Item Name="StartService" ImagePath="~/Base/Image/Console/IndexList.png" IsRightMenu="false" KeyCode="Ctrl+J" ItemAssembly="" ItemClass="" Parent="">
+    </Item>
+    <Item Name="BusinessService" ImagePath="~/Base/Image/Console/BusinessService.png" KeyCode="Ctrl+B" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.BusinessServiceCmd" Parent="StartService">
+    </Item>
+    <Item Name="IISExpress" ImagePath="~/Base/Image/Console/IISExpress.png" KeyCode="Ctrl+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISExpressCmd" Parent="StartService">
+    </Item>
+    <Item Name="IIS" ImagePath="~/Base/Image/Console/IIS.png" KeyCode="Ctrl+Shift+I" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.IISCmd" Parent="StartService">
+    </Item>
+  </ToolBar>
+  
+  <ToolBar Name="ViewFileBar" BaseBar="" UseType="SolutionTree;RootFolder;GroupFolder;ConfigFolder;.model;.view" Order="3">
+    <Item Name="GeneratorOnePage" ImagePath="~/Base/Image/Console/GeneratorOnePage.png" IsRightMenu="true" KeyCode="Ctrl+Shift+G" ItemAssembly="Hoteam.InforCenter.Common.DeveloperControl" ItemClass="Hoteam.InforCenter.Common.DeveloperControl.Command.GeneratorOnePageCmd">
+    </Item>
+  </ToolBar>
+  
+  <ToolBar Name="ModelFileBar" BaseBar="" UseType="SolutionTree;RootFolder;GroupFolder;ConfigFolder;.model" Order="2">
+    <Item Name="UpdateOneDataTable" ImagePath="~/Base/Image/Console/UpdateOneDataTable.png" IsRightMenu="true" KeyCode="Ctrl+Shift+U" ItemAssembly="Hoteam.InforCenter.Common.DeveloperControl" ItemClass="Hoteam.InforCenter.Common.DeveloperControl.Command.UpdateOneDataTableCmd">
+    </Item>
+  </ToolBar>
+
+
+  <ToolBar Name="HelpBar" BaseBar="" UseType="*" Order="8">
+    <Item Name="Help" ImagePath="~/Base/Image/Console/help.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass="" Parent="" >
+    </Item>
+    <Item Name="KuaiJie" ImagePath="~/Base/Image/Console/KuaiJie.png" IsRightMenu="false" KeyCode="Ctrl+K" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.KuaiJieCmd"  Parent="Help">
+    </Item>
+    <Item Name="SkinChange" ImagePath="~/Base/Image/Console/KuaiJie.png" IsRightMenu="false" KeyCode="" ItemAssembly="" ItemClass=""  Parent="Help">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="LinkRightBar" BaseBar="" Order="0">
+    <Item Name="OpenByWebBrowser" ImagePath="~/Base/Image/Console/KuaiJie.png" IsRightMenu="true" KeyCode="Shift+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LinkOpenCmd"  Parent="">
+    </Item>
+  </ToolBar>
+
+  <ToolBar Name="LinkManageBar" BaseBar=""  UseType="*" Order="9">
+    <Item Name="LinkManage" ImagePath="~/Base/Image/Console/link.png" IsRightMenu="false" KeyCode="Shift+P" ItemAssembly="Hoteam.InforCenter.Developer.Interface" ItemClass="Hoteam.InforCenter.Developer.Interface.Command.LinkManageCmd"  Parent="">
+    </Item>
+  </ToolBar>
+</root> 

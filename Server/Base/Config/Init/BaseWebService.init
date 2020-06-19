@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WebService">
+  <Package Assembly ="Hoteam.InforCenter.LCrypt.CryptControl"/>
+  <!--新界面相关配置项-->
+  <Package Assembly ="Hoteam.InforCenter.UI.Base"/>
+</root >

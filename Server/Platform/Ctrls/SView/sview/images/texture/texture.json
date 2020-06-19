@@ -1,0 +1,29 @@
+﻿{
+  "list": [
+    {
+      "name": "纹理图1",
+      "url": "./images/texture/ELETUSK.JPG"
+    },
+    {
+      "name": "纹理图2",
+      "url": "./images/texture/ELPHSKIN.JPG"
+    },
+    {
+      "name": "纹理图3",
+      "url": "./images/texture/0.jpg"
+    },
+    {
+      "name": "纹理图4",
+      "url": "./images/texture/2.jpg"
+    },
+    {
+      "name": "纹理图5",
+      "url": "./images/texture/5.jpg"
+    },
+    {
+      "name": "纹理图6",
+      "url": "./images/texture/ELPHSKIN.JPG"
+    }
+  ]
+
+}

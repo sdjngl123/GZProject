@@ -1,0 +1,6 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+InforCenter_Platform_Object_SingleUserAutoComboxValueOnCreate(o,'[INFONAME]','[OBJTYPE]',[REQUIRE],data.[INFONAME]);
+}
+}

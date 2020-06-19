@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="DATASETTYPE-EDIT">
+  <Settings Key="height" Value="190"/>
+  <Settings Key="width" Value="337"/>
+  <Settings Key="title" Value="DATASETTYPE-EDIT.DATASETTYPEHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME);
+	}
+}
+
+{
+	var o = pageEvent.o.GetControl('ICON_Value');
+	if(o.id!=''){
+		var src = data.ICON;
+		if(HoteamUI.Common.IsNullOrEmpty(src)){
+			if('ICON' == 'ICON'){
+				src =  '~/Base/Image/Entity.gif?time='+new Date().getTime();	
+			}else{
+				src = '~/Platform/Image/Common/nopic16.png';
+			}
+		}
+		o.SetSrc(src);
+	}
+}{
+	var c = pageEvent.o.GetControl('FILEEXTENT_Value');
+	if(c.id!=''){
+		c.SetText(data.FILEEXTENT);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.FILEEXTENT, 'FILEEXTENT',false);{
+var o = pageEvent.o.GetControl('VIEWTOOL_Value');
+if(o.id!=''){
+
+o.SetSelectedByValue(data.VIEWTOOL);
+}
+}{
+	var c = pageEvent.o.GetControl('DOWNFILTER_Value');
+	if(c.id!=''){
+		c.SetText(data.DOWNFILTER);
+	}
+}
+  var functionName = 'InforCenter_DATASETTYPE_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ICON_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ICON = c.GetSrc();
+}}{
+var c = pageEvent.o.GetControl('FILEEXTENT_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.FILEEXTENT = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('VIEWTOOL_Value');
+if(c.Check() == false) bCheck = false;
+data.VIEWTOOL = c.GetSelectedValue();
+}{
+var c = pageEvent.o.GetControl('DOWNFILTER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.DOWNFILTER = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_DATASETTYPE_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="DATASETTYPE-EDIT.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='DATASETTYPE';ctrlEvent.infoName='ENAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,200})?$" />
+  <Settings Key="regextipId" Value="DATASETTYPE-EDIT.ENAMERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FILEEXTENT"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FILEEXTENT" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="FILEEXTENT_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FILEEXTENT_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="FILEEXTENT_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FILEEXTENT_Label" ParentID="FILEEXTENT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="DATASETTYPE-EDIT.FILEEXTENTHeader" />
+</PageControl><PageControl ControlID="FILEEXTENT_Label_FieldFlag" ParentID="FILEEXTENT" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="FILEEXTENT_Value" ParentID="FILEEXTENT" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='DATASETTYPE';ctrlEvent.infoName='FILEEXTENT';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,20})?$" />
+  <Settings Key="regextipId" Value="DATASETTYPE-EDIT.FILEEXTENTRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="VIEWTOOL"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="VIEWTOOL" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="VIEWTOOL_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="VIEWTOOL_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="VIEWTOOL_Label" ParentID="VIEWTOOL" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="DATASETTYPE-EDIT.VIEWTOOLHeader" />
+</PageControl><PageControl ControlID="VIEWTOOL_Value" ParentID="VIEWTOOL" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='DATASETTYPE';ctrlEvent.infoName='VIEWTOOL';InforCenter_Platform_GenerateScript_EnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = 'DATASETTYPE';
+                 ctrlEvent.infoType = 'VIEWTOOL';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'VIEWTOOL','DATASETTYPE',true);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="DATASETTYPE-EDIT.VIEWTOOLRegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ICON"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ICON" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ICON_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ICON_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ICON_Label" ParentID="ICON" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="DATASETTYPE-EDIT.ICONHeader" />
+</PageControl><PageControl ControlID="ICON_Value" ParentID="ICON" TypeName="Image" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedImage_OnClick(ctrlEvent);"/>    
+  </PageHandlers>
+  <Settings Key="src" Value=""/>
+  <Settings Key="type" Value="icon"/>
+  <Settings Key="fixedType" Value="height" />
+  <Settings Key="position" Value="left" />
+  <Settings Key="preview" Value="false"/>
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DOWNFILTER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DOWNFILTER" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="DOWNFILTER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DOWNFILTER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DOWNFILTER_Label" ParentID="DOWNFILTER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="DATASETTYPE-EDIT.DOWNFILTERHeader" />
+</PageControl><PageControl ControlID="DOWNFILTER_Value" ParentID="DOWNFILTER" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='DATASETTYPE';ctrlEvent.infoName='DOWNFILTER';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="DATASETTYPE-EDIT.DOWNFILTERRegex" />
+</PageControl>
+  </PageControls>
+</root>

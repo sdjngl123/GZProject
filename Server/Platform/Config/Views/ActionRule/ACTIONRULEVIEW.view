@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="ACTIONRULEVIEW" ObjectTypeName="ACTIONRULE" OrderByString="SERIALNUMBER ASC" FixedFilter="" AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="false" Sortable="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="-1" Resizable="false" Sortable="false" />
+  </ObjectView>
+</root>

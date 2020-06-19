@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Login" IsWeb="true">
+    <Label Name="Welcome">
+      <LocalizedLabel LanguageRef="zhs">用户登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User login</LocalizedLabel>
+    </Label>
+    <Label Name="UserName">
+      <LocalizedLabel LanguageRef="zhs">用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User</LocalizedLabel>
+    </Label>
+    <Label Name="Password">
+      <LocalizedLabel LanguageRef="zhs">密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password</LocalizedLabel>
+    </Label>
+    <Label Name="Group">
+      <LocalizedLabel LanguageRef="zhs">组织</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization</LocalizedLabel>
+    </Label>
+    <Label Name="Language">
+      <LocalizedLabel LanguageRef="zhs">语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language</LocalizedLabel>
+    </Label>
+    <Label Name="Themes">
+      <LocalizedLabel LanguageRef="zhs">主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subject</LocalizedLabel>
+    </Label>
+    <Label Name="Connection">
+      <LocalizedLabel LanguageRef="zhs">连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Connect</LocalizedLabel>
+    </Label>
+    <Label Name="LoginText">
+      <LocalizedLabel LanguageRef="zhs">登&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</LocalizedLabel>
+    </Label>
+    <Label Name="LoginWaitingText">
+      <LocalizedLabel LanguageRef="zhs">正&amp;nbsp;在&amp;nbsp;登&amp;nbsp;录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Loading &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</LocalizedLabel>
+    </Label>
+    <Label Name="AutoLogin">
+      <LocalizedLabel LanguageRef="zhs">自动登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic login</LocalizedLabel>
+    </Label>
+    <Label Name="AdvancedSetting">
+      <LocalizedLabel LanguageRef="zhs">高级设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Advanced settings</LocalizedLabel>
+    </Label>
+    <Label Name="PageInitFailed">
+      <LocalizedLabel LanguageRef="zhs">页面初始化失败，请联系管理员！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The page initialization failed, please contact theadministrator!</LocalizedLabel>
+    </Label>
+    <Label Name="UserNameIsEmpty">
+      <LocalizedLabel LanguageRef="zhs">请输入用户名！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the user name!</LocalizedLabel>
+    </Label>
+    <Label Name="UserNameIsWrong">
+      <LocalizedLabel LanguageRef="zhs">用户名不存在或密码错误！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The user name does not exist or the password is wrong!</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordIsEmpty">
+      <LocalizedLabel LanguageRef="zhs">请输入用户密码！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the user password!</LocalizedLabel>
+    </Label>
+    <Label Name="GroupIsEmpty">
+      <LocalizedLabel LanguageRef="zhs">请选择登录组！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the login group!</LocalizedLabel>
+    </Label>
+    <Label Name="LanguageIsEmpty">
+      <LocalizedLabel LanguageRef="zhs">请选择登录语言！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the login language!</LocalizedLabel>
+    </Label>
+    <Label Name="ThemeIsEmpty">
+      <LocalizedLabel LanguageRef="zhs">请选择登录主题！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the login theme!</LocalizedLabel>
+    </Label>
+    <Label Name="ConnectIsEmpty">
+      <LocalizedLabel LanguageRef="zhs">请选择登录连接！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the login connection!</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordIsWrong">
+      <LocalizedLabel LanguageRef="zhs">用户名不存在或密码错误！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The user name does not exist or the password is wrong!</LocalizedLabel>
+    </Label>
+    <Label Name="AutoLoginInfoError">
+      <LocalizedLabel LanguageRef="zhs">自动登录信息已失效，请重新登录！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The automatic login information has failed. Please log in again!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasLogin">
+      <LocalizedLabel LanguageRef="zhs">当前用户已经登录！是否继续登录？继续登录将强制之前登录用户下线！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user has logged in! Do you want to continue logging in? If countine to login in, the previous login user will be forced to offline!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasLogin_AutoLogin">
+      <LocalizedLabel LanguageRef="zhs">自动登录失败！当前用户已经登录！是否继续登录？继续登录将强制之前登录用户下线！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic logon failed! The current user is already logged in! Do you want to continue logging in? If you countine to login in, the previous login user will be forced to offline!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasNotLogin">
+      <LocalizedLabel LanguageRef="zhs">您尚未登录或操作超时，请登录后再执行相应操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have not logged in or the operation have timed out. Please perform the corresponding operation again after login in!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasNotLoginDetail">
+      <LocalizedLabel LanguageRef="zhs">您尚未登录或操作超时，请登录后再执行相应操作！点击“确定”则返回登录页面！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have not logged in or the operation have timed out. Please perform the corresponding operation again after login in! Click “OK” to return to the login page!</LocalizedLabel>
+    </Label>
+    <Label Name="ShowPluginList">
+      <LocalizedLabel LanguageRef="zhs">附件下载&gt;&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attachment download&gt;&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="QRCodeLogin">
+      <LocalizedLabel LanguageRef="zhs">扫码登陆</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QRCodeLogin</LocalizedLabel>
+    </Label>
+    <Label Name="ScanQRCode">
+      <LocalizedLabel LanguageRef="zhs">扫一扫登陆</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ScanQRCode</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

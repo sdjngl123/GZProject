@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="REPORTOBJECTModel" IsWeb="true">
+    <Label Name="REPORTOBJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">报表对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">REPORTOBJECT</LocalizedLabel>
+    </Label>
+    <Label Name="REPORTOBJECTCaption">
+      <LocalizedLabel LanguageRef="zhs">报表对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">REPORTOBJECT</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassifyID</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassifyID</LocalizedLabel>
+    </Label>
+    <Label Name="REPORTPATHHeader">
+      <LocalizedLabel LanguageRef="zhs">报表路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ReportPath</LocalizedLabel>
+    </Label>
+    <Label Name="REPORTPATHCaption">
+      <LocalizedLabel LanguageRef="zhs">报表路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ReportPath</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

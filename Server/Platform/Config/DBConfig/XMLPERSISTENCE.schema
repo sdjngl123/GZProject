@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="XMLPERSISTENCE" Extend="" IsAbstract="false">
+    <Column Name="XMLID" Extend="" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="XMLTYPE" Extend="" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="XMLNAME" Extend="" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="XMLINFO" Extend="" DataType="TEXT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SORDER" Extend="" DataType="INT" Required="false" DefaultValue="0" PrimaryKeyOrder="0" />
+  </Table>
+</root>

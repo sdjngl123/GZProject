@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleLoginPage" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">账号登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateError">
+      <LocalizedLabel LanguageRef="zhs">验证失败，不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ValidateError</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

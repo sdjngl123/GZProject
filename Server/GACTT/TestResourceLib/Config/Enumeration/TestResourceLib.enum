@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Enumeration Name="ResourceType">
+		<EnumerationItem Name="OUT" />
+		<EnumerationItem Name="INNER" />
+	</Enumeration>
+	<Enumeration Name="KnowledgeType">
+		<EnumerationItem Name="TMS" />
+		<EnumerationItem Name="KMS" />
+	</Enumeration>
+	<Enumeration Name="SecretLevel">
+		<EnumerationItem Name="NO" />
+		<EnumerationItem Name="Normal" />
+		<EnumerationItem Name="YES" />
+	</Enumeration>
+	<Enumeration Name="TestDomain">
+		<EnumerationItem Name="DLX" />
+		<EnumerationItem Name="NYXHL" />
+		<EnumerationItem Name="ZDX" />
+		<EnumerationItem Name="CZWDX" />
+		<EnumerationItem Name="PSX" />
+		<EnumerationItem Name="NVH" />
+		<EnumerationItem Name="TGX" />
+		<EnumerationItem Name="NJ" />
+		<EnumerationItem Name="ZDAQ" />
+		<EnumerationItem Name="BDAQ" />
+		<EnumerationItem Name="HBX" />
+		<EnumerationItem Name="DZDQ" />
+		<EnumerationItem Name="HJSY" />
+		<EnumerationItem Name="FD" />
+		<EnumerationItem Name="ZCZG" />
+		<EnumerationItem Name="XNY" />
+		<EnumerationItem Name="XTJLBJ" />
+		<EnumerationItem Name="Other" />
+	</Enumeration>
+	<Enumeration Name="DepartmentType">
+		<EnumerationItem Name="BM" />
+		<EnumerationItem Name="KS" />
+	</Enumeration>
+	<Enumeration Name="WorkMode">
+		<EnumerationItem Name="8" />
+		<EnumerationItem Name="16" />
+		<EnumerationItem Name="24" />
+	</Enumeration>
+
+	<Enumeration Name="BatchEditField">
+		<EnumerationItem Name="ORG" />
+		<EnumerationItem Name="LOCATION" />
+		<EnumerationItem Name="CONTACTPERSON" />
+	</Enumeration>
+</root>

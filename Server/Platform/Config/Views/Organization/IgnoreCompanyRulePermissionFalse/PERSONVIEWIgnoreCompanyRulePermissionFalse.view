@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="PERSONVIEWIgnoreCompanyRulePermissionFalse" ObjectTypeName="PERSON" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="right" OrderByString="CREATETIME DESC" FixedFilter="" AsCommonQuery="true" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="80" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="GENDER" Width="40" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="BIRTHDAY" Width="80" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ACADEMICRECORD" Width="60" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="PHONE" Width="100" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OFFICENUMBER" Width="100" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="EMAIL" Width="120" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="FAXNUMBER" Width="100" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ZIPCODE" Width="55" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ADDRESS" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="70" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATEUID" Width="70" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAME" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+  </ObjectView>
+</root>

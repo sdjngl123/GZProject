@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityType Name="AUTHORIZEPERMISSIONLOG" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="AUTHORIZEPERMISSIONLOG" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="LOGCONTENT" Type="DefaultObjectValue" DataType="STRING1000" Column="LOGCONTENT" Show="Create Edit View" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OBJECTID" Type="DefaultObjectValue" DataType="STRING100" Column="OBJECTID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

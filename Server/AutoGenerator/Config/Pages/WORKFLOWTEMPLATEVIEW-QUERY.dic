@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="WORKFLOWTEMPLATEVIEW-QUERY" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="ISRUNHeader">
+      <LocalizedLabel LanguageRef="zhs">是否启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is Enabled</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

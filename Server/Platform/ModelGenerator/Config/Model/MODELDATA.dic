@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MODELDATAModel" IsWeb="true">
+    <Label Name="MODELDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">业务模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELDATA</LocalizedLabel>
+    </Label>
+    <Label Name="MODELDATACaption">
+      <LocalizedLabel LanguageRef="zhs">业务模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELDATA</LocalizedLabel>
+    </Label>
+    <Label Name="MODELHeader">
+      <LocalizedLabel LanguageRef="zhs">模型数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="MODELCaption">
+      <LocalizedLabel LanguageRef="zhs">模型数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEMADATAHeader">
+      <LocalizedLabel LanguageRef="zhs">结构数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEMADATA</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEMADATACaption">
+      <LocalizedLabel LanguageRef="zhs">结构数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEMADATA</LocalizedLabel>
+    </Label>
+    <Label Name="DICDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DicData</LocalizedLabel>
+    </Label>
+    <Label Name="DICDATACaption">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DicData</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="ELASTINSERTHeader">
+      <LocalizedLabel LanguageRef="zhs">最后修改插入的EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the inserted EID in the end </LocalizedLabel>
+    </Label>
+    <Label Name="ELASTINSERTCaption">
+      <LocalizedLabel LanguageRef="zhs">最后修改插入的EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the inserted EID in the end </LocalizedLabel>
+    </Label>
+    <Label Name="ELASTFINALSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">最终状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final state</LocalizedLabel>
+    </Label>
+    <Label Name="ELASTFINALSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">最终状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final state</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CHECKOUTUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">检出人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOutUser</LocalizedLabel>
+    </Label>
+    <Label Name="CHECKOUTUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">检出人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOutUser</LocalizedLabel>
+    </Label>
+    <Label Name="CHECKOUTDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">检出日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOutDate</LocalizedLabel>
+    </Label>
+    <Label Name="CHECKOUTDATECaption">
+      <LocalizedLabel LanguageRef="zhs">检出日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOutDate</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="FOREIGNKEYDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">外键数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ForeignKeyData</LocalizedLabel>
+    </Label>
+    <Label Name="FOREIGNKEYDATACaption">
+      <LocalizedLabel LanguageRef="zhs">外键数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ForeignKeyData</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="MULTILANGHeader">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiLang</LocalizedLabel>
+    </Label>
+    <Label Name="MULTILANGCaption">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiLang</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYEXTENDTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">下级企业扩展类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyExtendType</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYEXTENDTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">下级企业扩展类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyExtendType</LocalizedLabel>
+    </Label>
+    <Label Name="FROMTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">源模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FROMTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="FROMTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">源模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FROMTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ABOUTMODELHeader">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABOUTMODEL</LocalizedLabel>
+    </Label>
+    <Label Name="ABOUTMODELCaption">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABOUTMODEL</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TESTEXTORG-EDIT">
+  <Settings Key="height" Value="256"/>
+  <Settings Key="width" Value="455"/>
+  <Settings Key="title" Value="TESTEXTORG-EDIT.TESTEXTORGHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('ECODE_Value');
+	if(c.id!=''){
+		c.SetText(data.ECODE);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.ECODE, 'ECODE',false);{
+	var c = pageEvent.o.GetControl('UNIT_Value');
+	if(c.id!=''){
+		c.SetText(data.UNIT);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('EXPIRATIONDATE_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.EXPIRATIONDATE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('CONTACTPERSON_Value');
+	if(c.id!=''){
+		c.SetText(data.CONTACTPERSON);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('CONTACTDETAILS_Value');
+	if(c.id!=''){
+		c.SetText(data.CONTACTDETAILS);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('EMAIL_Value');
+	if(c.id!=''){
+		c.SetText(data.EMAIL);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('INTERFACEPERSON_Value');
+	if(c.id!=''){
+		c.SetText(data.INTERFACEPERSON);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('REMARK_Value');
+	if(c.id!=''){
+		c.SetText(data.REMARK);
+	}
+}
+  var functionName = 'InforCenter_TESTEXTORG_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+var c = pageEvent.o.GetControl('ECODE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ECODE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('UNIT_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.UNIT = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('EXPIRATIONDATE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.EXPIRATIONDATE = c.GetTicksByDateTime();
+}
+}{
+var c = pageEvent.o.GetControl('CONTACTPERSON_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CONTACTPERSON = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('CONTACTDETAILS_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CONTACTDETAILS = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('EMAIL_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.EMAIL = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('INTERFACEPERSON_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.INTERFACEPERSON = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('REMARK_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.REMARK = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_TESTEXTORG_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="100"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ECODE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="UNIT"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ECODE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ECODE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ECODE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE_Label" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.ECODEHeader" />
+</PageControl><PageControl ControlID="ECODE_Label_FieldFlag" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ECODE_Value" ParentID="ECODE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='ECODE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.ECODERegex" />
+</PageControl><PageControl ControlID="UNIT" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="UNIT_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UNIT_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UNIT_Label" ParentID="UNIT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.UNITHeader" />
+</PageControl><PageControl ControlID="UNIT_Value" ParentID="UNIT" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='UNIT';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.UNITRegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="EXPIRATIONDATE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CONTACTPERSON"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="EXPIRATIONDATE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="EXPIRATIONDATE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="EXPIRATIONDATE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="EXPIRATIONDATE_Label" ParentID="EXPIRATIONDATE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.EXPIRATIONDATEHeader" />
+</PageControl><PageControl ControlID="EXPIRATIONDATE_Value" ParentID="EXPIRATIONDATE" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='EXPIRATIONDATE';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="CONTACTPERSON" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CONTACTPERSON_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CONTACTPERSON_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CONTACTPERSON_Label" ParentID="CONTACTPERSON" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.CONTACTPERSONHeader" />
+</PageControl><PageControl ControlID="CONTACTPERSON_Value" ParentID="CONTACTPERSON" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='CONTACTPERSON';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.CONTACTPERSONRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CONTACTDETAILS"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="EMAIL"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CONTACTDETAILS" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CONTACTDETAILS_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CONTACTDETAILS_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CONTACTDETAILS_Label" ParentID="CONTACTDETAILS" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.CONTACTDETAILSHeader" />
+</PageControl><PageControl ControlID="CONTACTDETAILS_Value" ParentID="CONTACTDETAILS" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='CONTACTDETAILS';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.CONTACTDETAILSRegex" />
+</PageControl><PageControl ControlID="EMAIL" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="EMAIL_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="EMAIL_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="EMAIL_Label" ParentID="EMAIL" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.EMAILHeader" />
+</PageControl><PageControl ControlID="EMAIL_Value" ParentID="EMAIL" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='EMAIL';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.EMAILRegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="INTERFACEPERSON"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="INTERFACEPERSON" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="INTERFACEPERSON_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="INTERFACEPERSON_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="INTERFACEPERSON_Label" ParentID="INTERFACEPERSON" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.INTERFACEPERSONHeader" />
+</PageControl><PageControl ControlID="INTERFACEPERSON_Value" ParentID="INTERFACEPERSON" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTEXTORG';ctrlEvent.infoName='INTERFACEPERSON';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.INTERFACEPERSONRegex" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="REMARK_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK_Label" ParentID="REMARK" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTEXTORG-EDIT.REMARKHeader" />
+</PageControl><PageControl ControlID="REMARK_Value" ParentID="REMARK" TypeName="TextBox" >
+  <Settings Key="type" Value="textarea"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="TESTEXTORG-EDIT.REMARKRegex" />
+</PageControl>
+  </PageControls>
+</root>

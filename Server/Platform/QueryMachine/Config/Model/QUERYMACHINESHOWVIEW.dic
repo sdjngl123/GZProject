@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYMACHINESHOWVIEWModel" IsWeb="true">
+    <Label Name="QUERYMACHINESHOWVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">查询构建器表格形式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query builder table form</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINESHOWVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">查询构建器表格形式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query builder table form</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对应对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Corresponding object type name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对应对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Corresponding object type name</LocalizedLabel>
+    </Label>
+    <Label Name="COLNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">列名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Name</LocalizedLabel>
+    </Label>
+    <Label Name="COLNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">列名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Name</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对应查询构建器ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Corresponding query builder ID</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对应查询构建器ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Corresponding query builder ID</LocalizedLabel>
+    </Label>
+    <Label Name="COLTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">列头显示多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column header display multi-language</LocalizedLabel>
+    </Label>
+    <Label Name="COLTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">列头显示多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column header display multi-language</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

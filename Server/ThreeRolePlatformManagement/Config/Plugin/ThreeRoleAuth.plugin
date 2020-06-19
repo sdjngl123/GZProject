@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<PluginItem Name="AOPActionExample" Type="AOPActionType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.AOP.AOPActionExample" />-->
+  <PluginItem Name="SingleAuth" Type="ThreeRoleAuth" Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend" Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthExtend.SingleAuth" />
+  <!--实体对象规则权限条件类型-->
+  <PluginItem Name="CombinAuth" Type="ThreeRoleAuth" Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend" Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthExtend.CombinAuth" />
+  <PluginItem Name="MultiAuth" Type="ThreeRoleAuth" Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend" Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthExtend.MultiAuth" />
+
+  <PluginItem Name="Char" Type="PasswordCombin" Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend" Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.PasswordCombinExtend.CharValidate" />
+  <PluginItem Name="CharNum" Type="PasswordCombin" Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend" Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.PasswordCombinExtend.CharNumValidate" />
+  <PluginItem Name="CharNumSpecial" Type="PasswordCombin" Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend" Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.PasswordCombinExtend.CharNumSpecialValidate" />
+  
+</root>

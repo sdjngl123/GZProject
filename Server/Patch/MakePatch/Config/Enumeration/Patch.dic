@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="PatchTypeRegular">
+      <LocalizedLabel LanguageRef="zhs">正式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular</LocalizedLabel>
+    </Label>
+    <Label Name="PatchTypeTemp">
+      <LocalizedLabel LanguageRef="zhs">临时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Temporary</LocalizedLabel>
+    </Label>
+    <Label Name="PatchCategoryBugRepair">
+      <LocalizedLabel LanguageRef="zhs">Bug修复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bug fix</LocalizedLabel>
+    </Label>
+    <Label Name="PatchCategoryVersionUpdate">
+      <LocalizedLabel LanguageRef="zhs">版本升级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version Update</LocalizedLabel>
+    </Label>
+    <Label Name="PatchImportanceCommon">
+      <LocalizedLabel LanguageRef="zhs">一般</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General</LocalizedLabel>
+    </Label>
+    <Label Name="PatchImportanceImportance">
+      <LocalizedLabel LanguageRef="zhs">重要</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Important</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

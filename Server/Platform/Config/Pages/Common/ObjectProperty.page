@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectProperty" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectProperty_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="PageContainer">
+    </PageControl>
+  </PageControls>
+</root>

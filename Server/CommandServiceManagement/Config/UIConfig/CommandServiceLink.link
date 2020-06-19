@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="CommandServiceManagement" HideTitle="false" IsTemplate="false">
+    <PageLink Name="ConversionStatistics" PageName="TreeManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" Order="010" IsTemplate="false">
+      <Para Name="ItemName" Value="ConversionStatisticsTreeManagement" />
+    </PageLink>
+    <PageLink Name="ConnectionStatus" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" Order="030" IsTemplate="false">
+      
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CommandServiceStatusLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="ConversionStatus" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" Order="010" IsTemplate="false">
+      <Para Name="ItemName" Value="CommandServiceConversionStatusList" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CommandServiceLogLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="ServiceLog" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" Order="010" IsTemplate="false">
+      <Para Name="ItemName" Value="CommandServiceServiceLogList" />
+    </PageLink>
+    <PageLink Name="ProgramLog" PageName="TreeManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" Order="010" IsTemplate="false">
+      <Para Name="ItemName" Value="ConversionCountInfoTreeManagement" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="ConversionCountInfoTreeManagementLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="ConversionCountProgramLog" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" Order="010" IsTemplate="false">
+      <Para Name="ItemName" Value="CommandServiceServiceLogList" />
+    </PageLink>
+  </PageLinks>
+</root>

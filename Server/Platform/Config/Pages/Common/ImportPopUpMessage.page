@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ImportPopUpMessage" IsCache="true">
+  <Settings Key="height" Value="300"/>
+  <Settings Key="width" Value="400"/>
+  <Settings Key="title" Value="Message.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ImportPopUpMessage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Message_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Message_LayoutContainerH"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Btn_LayoutContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Message_LayoutContainerH" ParentID="Message_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TextMessage_Layout"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="TextMessage_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Text_Box"/>
+      </Settings>-->
+      <!--<Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Btn_LayoutContainer"/>
+      </Settings>-->
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value="Message_Label"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="75%"/>
+        <Settings Key="childid" Value="Text_Box"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--垂直-->
+    <PageControl ControlID="Message_Label" ParentID="Message_LayoutContainer" TypeName="CustomerContainer" >
+    </PageControl>
+    <PageControl ControlID="Text_Box" ParentID="TextMessage_Layout" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>
+
+    <PageControl ControlID="Btn_LayoutContainer" ParentID="TextMessage_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="Btn_Skip"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="Btn_Update"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="Btn_Cancel"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--Btn-->
+    <PageControl ControlID="Btn_Skip" ParentID="Btn_LayoutContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(),{ confirm: 'Skip' });"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CommonImport.ImportPopUpMessageBtn_Skip" />
+    </PageControl>
+    <PageControl ControlID="Btn_Update" ParentID="Btn_LayoutContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(),{ confirm: 'Update' });"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CommonImport.ImportPopUpMessageBtn_Update" />
+    </PageControl>
+    <PageControl ControlID="Btn_Cancel" ParentID="Btn_LayoutContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(),{ confirm: 'Cancel'});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CommonImport.ImportPopUpMessageTitle_Cancel" />
+    </PageControl>
+  </PageControls>
+
+</root>

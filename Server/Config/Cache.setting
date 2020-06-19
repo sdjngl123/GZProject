@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="EnableCacheCheck" Value="true" ToClient="false" Description="是否开启缓存定期更新机制，开启后会定期检查数据库中的数据是否发生了变化，并更新相应的缓存信息" />
+  <AppSet Key="CacheCheckTime" Value="600000" ToClient="false" Description="开启了缓存定期更新机制后，缓存更新的频率，单位毫秒" />
+  <AppSet Key="EnableCacheNotify" Value="false" ToClient="false" Description="检测到缓存发生更改后，是否直接通知局域网内其他业务服务器，同步进行更新，如果存在多个业务服务器时推荐使用" />
+  <AppSet Key="CacheListenPort" Value="8889" ToClient="false" Description="业务服务器之间相互发送缓存更新消息使用的监听端口，采用UDP协议，发送范围255.255.255.255" />
+  <AppSet Key="CacheNotifyWait" Value="500" ToClient="false" Description="向其他服务器发送缓存更新后，本服务器等待时间，确保其他服务器完成更新，单位毫秒" />
+  <AppSet Key="EnablePartialRefersh" Value="true" ToClient="false" Description="是否启用局部更新" />
+  <AppSet Key="UseRedis" Value="false" ToClient="false" Description="是否启用Redis缓存" />
+
+  
+</root>

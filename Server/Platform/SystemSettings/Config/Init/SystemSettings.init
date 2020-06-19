@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="BusinessService">
+  <Package Assembly ="Hoteam.InforCenter.SystemSettings.Config.dll"/>
+  <Package Assembly ="Hoteam.InforCenter.SystemSettings.Business.dll"/>
+</root >

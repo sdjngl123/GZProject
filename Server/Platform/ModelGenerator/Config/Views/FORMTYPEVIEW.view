@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="FORMTYPEVIEW" ObjectTypeName="FORMDATA" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" ObjectTypeName="FORMDATA" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" ObjectTypeName="FORMDATA" Width="-1" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" ObjectTypeName="FORMDATA" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="TYPE" ObjectTypeName="FORMDATA" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" ObjectTypeName="FORMDATA" Width="70" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" ObjectTypeName="FORMDATA" Width="130" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

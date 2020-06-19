@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--查询页面Tab显示-->
+  <PageLinks Name="QueryMachineQueryPageLink">
+    <PageLink Name="QueryRole"   PageName="QueryMachineQueryRole" IsShowLine="true" IsDelayLoadPage="false" >
+    </PageLink>
+    <PageLink Name="MyQueryRole"   PageName="MyQueryMachine" IsShowLine="true" IsDelayLoadPage="false">
+    </PageLink>
+    <PageLink Name="QueryRoleHistory"   PageName="QueryMachineQueryHistory" IsShowLine="true" IsDelayLoadPage="false">
+    </PageLink>
+  </PageLinks>
+</root>

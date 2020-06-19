@@ -1,0 +1,21 @@
+﻿var todo='view';
+var imageCtrl=pageEvent.o.GetControl('[INFONAME]_Value');
+var fileStr=data.[INFONAME];
+if(fileStr){
+	 var fileInformation = JSON.parse(fileStr);
+	 if (fileInformation ){
+		var url = InforCenter_Platform_GetFileUrl(fileInformation.VaultName,fileInformation.Path);
+		var src=url + '?time='+new Date().getTime();
+		if(imageCtrl!=undefined){
+			imageCtrl.SetSrc(src);			
+			imageCtrl.SetValue(fileInformation);
+		}
+	}
+}else{
+	if(imageCtrl != undefined){
+		var path = (location.origin?location.origin:(location.protocol +'//'+location.host)) + '/Platform/Image/Common/nopic200.png';
+		imageCtrl.SetSrc(path);			
+	}
+}
+
+

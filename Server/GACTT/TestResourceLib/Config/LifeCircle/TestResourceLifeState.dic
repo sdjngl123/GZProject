@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="LifeCircleState" IsWeb="true">
+    <Label Name="StartHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+    </Label>
+    <Label Name="StartCaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+    </Label>
+    <Label Name="StopHeader">
+      <LocalizedLabel LanguageRef="zhs">停用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="StopCaption">
+      <LocalizedLabel LanguageRef="zhs">停用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="SaveHeader">
+      <LocalizedLabel LanguageRef="zhs">已保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="SaveCaption">
+      <LocalizedLabel LanguageRef="zhs">已保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

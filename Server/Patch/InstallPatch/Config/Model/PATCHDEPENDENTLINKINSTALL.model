@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LinkType Name="PATCHDEPENDENCELINKINSTALL" Extend="LINK" LogicClass="LinkObject" IconPath="~/Base/Image/Entity.gif" Abstract="false" TableName="PATCHDEPENDENCELINKINSTALL" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="PDLI_PEID_INDEX" TableIndex="PDLI_PEID_INDEX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="PDLI_CEID_INDEX" TableIndex="PDLI_CEID_INDEX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <InfoType Name="ECODE" Type="DefaultObjectValue" DataType="STRING100" Column="ECODE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ENAME" Type="DefaultObjectValue" DataType="STRING100" Column="ENAME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <LinkedTypes ParentType="PATCHINSTALL" ChildType="PATCHINSTALL" IsHidden="false" />
+  </LinkType>
+</root>

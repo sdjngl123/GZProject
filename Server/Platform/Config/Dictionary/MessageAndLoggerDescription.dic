@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MessageAndLoggerDescription" IsWeb="true">
+    <Label Name="Common">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行[ActionName]操作,对象是‘[ObjectCaption]’,对象类型是‘[ObjectType]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] execute [ActionName] operation, the object name is '[ObjectCaption]'.</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateStruct">
+      <LocalizedLabel LanguageRef="zhs">[UserName]更新[ObjectCaption]结构,执行[ActionName]操作，对象名称是‘[ChildObjectName]’，对象类型是‘[ObjectType]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] update the [ObjectCaption] structure, execute the [ActionName] operation, and the object name is '[ChildObjectName]' and the object type is '[ObjectType]'.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

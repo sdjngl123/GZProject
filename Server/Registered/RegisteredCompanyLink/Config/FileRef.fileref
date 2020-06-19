@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Registered/RegisteredCompanyLink/Js/CompanyFriend.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/RegisteredCompanyLink/Js/AuditExtend.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/RegisteredCompanyLink/Js/Generator.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/RegisteredCompanyLink/Js/Object.js"  group="Registered"/>
+</root>

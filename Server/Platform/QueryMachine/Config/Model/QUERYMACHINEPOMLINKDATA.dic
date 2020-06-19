@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYMACHINEPOMLINKDATAModel" IsWeb="true">
+    <Label Name="QUERYMACHINEPOMLINKDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">POM关联关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">POM association relationship</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEPOMLINKDATACaption">
+      <LocalizedLabel LanguageRef="zhs">POM关联关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">POM association relationship</LocalizedLabel>
+    </Label>
+    <Label Name="ACOLNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">A对象字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A object field name</LocalizedLabel>
+    </Label>
+    <Label Name="ACOLNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">A对象字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A object field name</LocalizedLabel>
+    </Label>
+    <Label Name="ATYPENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">A对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A object type name</LocalizedLabel>
+    </Label>
+    <Label Name="ATYPENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">A对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A object name</LocalizedLabel>
+    </Label>
+    <Label Name="BCOLNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">B对象字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">B object field name</LocalizedLabel>
+    </Label>
+    <Label Name="BCOLNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">B对象字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">B object field name</LocalizedLabel>
+    </Label>
+    <Label Name="BTYPENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">B对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">B object type name</LocalizedLabel>
+    </Label>
+    <Label Name="BTYPENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">B对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">B object type name</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对应查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Corresponding query ID</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对应查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Corresponding query ID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

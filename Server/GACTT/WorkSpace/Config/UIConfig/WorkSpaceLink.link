@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<PageLinks Name="ProjectTaskLinks" HideTitle="false" IsTemplate="false">
+		<PageLink Name="Property" PageName="ObjectProperty">
+		</PageLink>
+		<PageLink Name="ProjectStage" PageName="ListManagement">
+			<Para Name="ItemName" Value="PROJECTSTAGEList"/>
+		</PageLink>
+		<PageLink Name="ProjectMember" PageName="ListManagement">
+			<Para Name="ItemName" Value="PROJECTMEMBERList"/>
+		</PageLink>
+	</PageLinks>
+
+	<PageLinks Name="MYPROJECTTaskLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="AllProject" PageName="ListManagement">
+			<Para Name="ItemName" Value="MyProjectList"/>
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="RPROJECTTaskLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="RProject" PageName="ListManagement">
+			<Para Name="ItemName" Value="ResponseProjectList"/>
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="PPROJECTTaskLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="PProject" PageName="ListManagement">
+			<Para Name="ItemName" Value="ParticProjectList"/>
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="CPROJECTTaskLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="CProject" PageName="ListManagement">
+			<Para Name="ItemName" Value="CompleteProjectList"/>
+		</PageLink>
+	</PageLinks>
+
+</root>

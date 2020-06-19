@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/ThreeRoleAuthTabs.js" group="ThreeRolePlatformManagement"/>
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/ThreeRoleLoginLimit.js" group="ThreeRolePlatformManagement"/>
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/Login.js" group="ThreeRolePlatformManagement"/>
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/LoginPage.js" group="ThreeRolePlatformManagement"/>
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/ModifyPassword.js" group="ThreeRolePlatformManagement"/>
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/UserLock.js" group="ThreeRolePlatformManagement"/>
+  <JSFile FileName ="~/ThreeRolePlatformManagement/Js/ModulePermission.js" group="ThreeRolePlatformManagement"/>
+
+  
+  <!--<CssFile FileName ="~/Platform/Ctrls/HTFileUpload/htFileUpload/ht-file-upload.css" />-->
+</root>

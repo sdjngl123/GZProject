@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LifeCircle Name="CommonLife" InitState="INDESIGN">
+    <State Name="StartNode" CenterX="376" CenterY="55" />
+    <State Name="EndNode" CenterX="376" CenterY="523" />
+    <State Name="INDESIGN" CenterX="376" CenterY="148" />
+    <State Name="INWORKFLOW" CenterX="376" CenterY="237" />
+    <State Name="PUBLISHED" CenterX="376" CenterY="326" />
+    <State Name="ABANDONED" CenterX="376" CenterY="421" />
+    <Line ID="LINE78ed87abea6548749aac2c6e70c9f556" StartNodeID="StartNode" StartX="194" StartY="59" EndNodeID="INDESIGN" EndX="188" EndY="128" IsStraightLine="false" />
+    <Line ID="LINEb37ad9351cf34afab1a4ed44ed9311e4" StartNodeID="INDESIGN" StartX="200" StartY="151" EndNodeID="INWORKFLOW" EndX="199" EndY="235" IsStraightLine="false" />
+    <Line ID="LINEeac77463536a416f9164032f5acd38dd" StartNodeID="INWORKFLOW" StartX="200" StartY="243" EndNodeID="PUBLISHED" EndX="337" EndY="294" IsStraightLine="false" />
+    <Line ID="LINE7de1fe0469e84ea8b5bb9829a345780e" StartNodeID="PUBLISHED" StartX="185" StartY="311" EndNodeID="ABANDONED" EndX="195" EndY="394" IsStraightLine="false" />
+    <Line ID="LINEaa5c4bb364e64c4b8a726cb6f2230a69" StartNodeID="ABANDONED" StartX="192" StartY="388" EndNodeID="EndNode" EndX="198" EndY="470" IsStraightLine="false" />
+  </LifeCircle>
+</root>

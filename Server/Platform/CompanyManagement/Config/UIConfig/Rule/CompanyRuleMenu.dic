@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeCompanyRuleRootMenu" IsWeb="true">
+    <Label Name="CreateActionRule">
+      <LocalizedLabel LanguageRef="zhs">新建规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New rule</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeCompanyRuleMenu" IsWeb="true">
+    <Label Name="CreateActionRule">
+      <LocalizedLabel LanguageRef="zhs">新建规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New rule</LocalizedLabel>
+    </Label>
+    <Label Name="EditActionRule">
+      <LocalizedLabel LanguageRef="zhs">编辑规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit rule</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRule">
+      <LocalizedLabel LanguageRef="zhs">删除规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete rule</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="CompanyRuleConditionMenu" IsWeb="true">
+    <Label Name="CreateActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">新建条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New condition</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">编辑条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit condition</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="CompanyRulePermissionMenu" IsWeb="true">
+    <Label Name="CreateActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">新建授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New authorization</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="CompanyRuleObjectMenu" IsWeb="true" />
+  <Context Name="CompanyRuleCreatePermissionMenu" IsWeb="true">
+    <Label Name="CreateActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">新建授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New authorization</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

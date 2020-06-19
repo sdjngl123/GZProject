@@ -1,0 +1,8 @@
+﻿<div style="height:100%;width:100%;position:relative;background-color:#f5f5f5;">
+  <div class="tree-operate-container">
+    <div class="tree-operate tree-operate-right" id="treeviewSelectOne"></div>
+    <div class="tree-operate tree-operate-doubleright" id="treeviewSelectAll"></div>
+    <div class="tree-operate tree-operate-left" id="treeviewRemoveOne"></div>
+    <div class="tree-operate tree-operate-doubleleft" id="treeviewRemoveAll"></div>
+  </div>
+</div>

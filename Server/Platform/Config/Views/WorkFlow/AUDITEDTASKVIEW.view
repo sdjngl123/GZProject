@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="AUDITEDTASKVIEW" ObjectTypeName="WORKFLOWTASKINFO" OrderByString="CREATETIME DESC" FixedFilter="STATEID='COMPLETE' AND (TASKACTORID='[CURUSERID]' OR AGENTUSERID='[CURUSERID]') AND ISCOMMONMANGEMENT=1 " AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" />
+    <ViewColumn Name="WORKFLOWID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="WORKFLOWNAME" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="FLOWTEMPLATE" Width="80" Resizable="true" Sortable="true" />
+    <ViewColumn Name="TASKACTORID" Width="80" Resizable="true" Sortable="true" />
+    <ViewColumn Name="AGENTUSERID" Width="80" Resizable="true" Sortable="true" />
+    <ViewColumn Name="COMPLETEUSER" Width="80" Resizable="true" Sortable="true" />
+    <ViewColumn Name="TASKRESULT" Width="80" Resizable="true" Sortable="true" />
+    <ViewColumn Name="TASKOPINION" Width="80" Resizable="true" Sortable="true" />
+    <ViewColumn Name="PLANNEDENDDATE" Width="140" Resizable="false" Sortable="false" />
+    <ViewColumn Name="COMPLETETIME" Width="140" Resizable="false" Sortable="false" />
+    <ViewColumn Name="STATEID" Width="0" Resizable="true" Sortable="true" />
+    <ViewCondition Name="TaskName" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    <ViewCondition Name="FlowTemplete" AndOrFlag="AND" InfoName="FLOWTEMPLATE" Operation="LIKE" Required="false" />
+    <ViewCondition Name="TaskActor" AndOrFlag="AND" InfoName="TASKACTORID" Operation="=" Required="false" />
+    <ViewCondition Name="AgentUser" AndOrFlag="AND" InfoName="AGENTUSERID" Operation="=" Required="false" />
+    <ViewCondition Name="CompleteUser" AndOrFlag="AND" InfoName="COMPLETEUSER" Operation="=" Required="false" />
+  </ObjectView>
+</root>

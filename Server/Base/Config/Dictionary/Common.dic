@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Common" IsWeb="true">
+    <Label Name="SystemTitle">
+      <LocalizedLabel LanguageRef="zhs">InforCenter</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InforCenter</LocalizedLabel>
+    </Label>
+    <Label Name="DialogTitle">
+      <LocalizedLabel LanguageRef="zhs">InforCenter 对话框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InforCenter dialog</LocalizedLabel>
+    </Label>
+    <Label Name="OK">
+      <LocalizedLabel LanguageRef="zhs">确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OK</LocalizedLabel>
+    </Label>
+    <Label Name="Add">
+      <LocalizedLabel LanguageRef="zhs">添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="AddAll">
+      <LocalizedLabel LanguageRef="zhs">添加全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add all</LocalizedLabel>
+    </Label>
+    <Label Name="Remove">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveAll">
+      <LocalizedLabel LanguageRef="zhs">移除全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove all</LocalizedLabel>
+    </Label>
+    <Label Name="Cancel">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+    <Label Name="Yes">
+      <LocalizedLabel LanguageRef="zhs">是</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Yes</LocalizedLabel>
+    </Label>
+    <Label Name="No">
+      <LocalizedLabel LanguageRef="zhs">否</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No</LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="Refresh">
+      <LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh</LocalizedLabel>
+    </Label>
+    <Label Name="Modify">
+      <LocalizedLabel LanguageRef="zhs">修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify </LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="View">
+      <LocalizedLabel LanguageRef="zhs">浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browse</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="Exit">
+      <LocalizedLabel LanguageRef="zhs">退出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exit</LocalizedLabel>
+    </Label>
+    <Label Name="Close">
+      <LocalizedLabel LanguageRef="zhs">关闭</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Shut down</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="Header">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="Caption">
+      <LocalizedLabel LanguageRef="zhs">说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="Query">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="Reset">
+      <LocalizedLabel LanguageRef="zhs">重置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reset</LocalizedLabel>
+    </Label>
+    <Label Name="Ellipsis">
+      <LocalizedLabel LanguageRef="zhs">...</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">...</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="Cut">
+      <LocalizedLabel LanguageRef="zhs">剪切</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAdd">
+      <LocalizedLabel LanguageRef="zhs">复制新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy and add</LocalizedLabel>
+    </Label>
+    <Label Name="Upload">
+      <LocalizedLabel LanguageRef="zhs">上传</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload</LocalizedLabel>
+    </Label>
+    <Label Name="PreviousStep">
+      <LocalizedLabel LanguageRef="zhs">上一步</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Last step</LocalizedLabel>
+    </Label>
+    <Label Name="NextStep">
+      <LocalizedLabel LanguageRef="zhs">下一步</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Next step</LocalizedLabel>
+    </Label>
+    <Label Name="Finish">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermission">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectMessage">
+      <LocalizedLabel LanguageRef="zhs">消息订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subscription</LocalizedLabel>
+    </Label>
+    <Label Name="OtherGroup">
+      <LocalizedLabel LanguageRef="zhs">其它分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other groups</LocalizedLabel>
+    </Label>
+    <Label Name="LabelSuffix">
+      <LocalizedLabel LanguageRef="zhs">：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">：</LocalizedLabel>
+    </Label>
+    <Label Name="Test">
+      <LocalizedLabel LanguageRef="zhs">测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Test</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

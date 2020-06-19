@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="InfoDataSourcesEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数据源管理编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Source Management Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="SelectObjectType">
+      <LocalizedLabel LanguageRef="zhs">选择对象模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Object Model</LocalizedLabel>
+    </Label>
+    <Label Name="SelectInfoType">
+      <LocalizedLabel LanguageRef="zhs">选择模型属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Model Property</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">需要配置字段数据源的字段所在对象模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the object model where the field of the field data source needs to be configured</LocalizedLabel>
+    </Label>
+    <Label Name="InfoTypeName">
+      <LocalizedLabel LanguageRef="zhs">模型字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Field Name</LocalizedLabel>
+    </Label>
+    <Label Name="InfoTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">需要配置字段数据源的字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field name of field data source needs to be configured</LocalizedLabel>
+    </Label>
+    <Label Name="Script">
+      <LocalizedLabel LanguageRef="zhs">脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Script</LocalizedLabel>
+    </Label>
+    <Label Name="ScriptDescription">
+      <LocalizedLabel LanguageRef="zhs">此脚本在点击前台页面对应文本框时执行。只要维护此脚本则不在调整PageName配置的页面。脚本可替换参数：[FLAGNAME]（标记名称）、[OBJECTTYPE]（对象类型）、[PID]（页面ID）、[INFONAME]（字段名称）、[VALUE]（初始值）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This script is executed when clicking on the foreground page corresponding text box. The PageName configuration page is not adjusted as long as the script is maintained. The script can be replaced by the following parameters: [FLAGNAME] mark (tag name), caption name TTYPE suffix (object type), caption PID controller (page ID), caption [INFONAME] suffix (field name), and [VALUE] (initial value)</LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">需要跳转的页面名称（.page页面），在配置Script脚本后该属性失效，将只执行脚本，不再弹出页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the page that needs to jump (. page) If the attribute fails after the script script is configured, only the script will be executed and the page will no longer pop up</LocalizedLabel>
+    </Label>
+    <Label Name="ParaList">
+      <LocalizedLabel LanguageRef="zhs">参数列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List of Parameters</LocalizedLabel>
+    </Label>
+    <Label Name="ParaListDescription">
+      <LocalizedLabel LanguageRef="zhs">需要传人页面的参数列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A list of parameters that require a person's page</LocalizedLabel>
+    </Label>
+    <Label Name="ShowWhenQuery">
+      <LocalizedLabel LanguageRef="zhs">是否在查询中显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to to display in query or not</LocalizedLabel>
+    </Label>
+    <Label Name="ShowWhenQueryDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在查询中显示，true在查询页面中出现，false在对象新建、编辑页面出现</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is true in the query, true appears in the query page, false appears in the object, and the edit page appears</LocalizedLabel>
+    </Label>
+    <Label Name="SourceText">
+      <LocalizedLabel LanguageRef="zhs">文本字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text Field</LocalizedLabel>
+    </Label>
+    <Label Name="SourceTextDescription">
+      <LocalizedLabel LanguageRef="zhs">InfoDataSource返回值必须为对象，该配置项表明显示值为返回对象的哪一个属性，如返回一个实体对象，显示值是对象名称，则此处应填写ENAME</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoSphere return value must be an object that indicates which attribute of the return object is displayed, such as return to an entity object, whose display value is the object name, and ENAME should be filled here</LocalizedLabel>
+    </Label>
+    <Label Name="SourceValue">
+      <LocalizedLabel LanguageRef="zhs">值字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value Field</LocalizedLabel>
+    </Label>
+    <Label Name="SourceValueDescription">
+      <LocalizedLabel LanguageRef="zhs">InfoDataSource返回值，该配置项表明value为返回对象的哪一个属性，如返回一个实体对象，value值是对象ID，则此处应填写EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoSphere returns a value that indicates which attribute of the value is the return object, such as the return of an entity object, and the value value is the object ID, and should be filled in here</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

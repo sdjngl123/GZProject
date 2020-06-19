@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectValueType" IsWeb="true">
+    <Label Name="FBFileUploadValue">
+      <LocalizedLabel LanguageRef="zhs">表单设计器文件上传(FBFileUploadValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FBFileUploadValue</LocalizedLabel>
+    </Label>
+    <Label Name="MenuValue">
+      <LocalizedLabel LanguageRef="zhs">菜单类型(MenuValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MenuValue</LocalizedLabel>
+    </Label>
+    <Label Name="CheckBoxListValue">
+      <LocalizedLabel LanguageRef="zhs">选择列表类型(CheckBoxListValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckBoxListValue</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

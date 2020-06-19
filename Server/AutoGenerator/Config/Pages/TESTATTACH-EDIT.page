@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TESTATTACH-EDIT">
+  <Settings Key="height" Value="324"/>
+  <Settings Key="width" Value="576"/>
+  <Settings Key="title" Value="TESTATTACH-EDIT.TESTATTACHHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('MASTERID_Value');
+	if(c.id!=''){
+		c.SetText(data.MASTERID);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('PATH_Value');
+	if(c.id!=''){
+		c.SetText(data.PATH);
+	}
+}
+{
+var o = pageEvent.o.GetControl('UPLOADUSER_Value');
+if(o.id!=''){
+o.SetValue(data.UPLOADUSER);
+o.SetText(data.UPLOADUSER_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('UPLOADTIME_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.UPLOADTIME);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('REMARK_Value');
+	if(c.id!=''){
+		c.SetText(data.REMARK);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('FILEINFO_Value');
+	if(c.id!=''){
+		c.SetText(data.FILEINFO);
+	}
+}
+  var functionName = 'InforCenter_TESTATTACH_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('MASTERID_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.MASTERID = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('PATH_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.PATH = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('UPLOADUSER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.UPLOADUSER = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('UPLOADTIME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.UPLOADTIME = c.GetTicksByDateTime();
+}}{
+var c = pageEvent.o.GetControl('REMARK_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.REMARK = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('FILEINFO_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.FILEINFO = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_TESTATTACH_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="100"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-7"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTATTACH';ctrlEvent.infoName='ENAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,200})?$" />
+  <Settings Key="regextipId" Value="TESTATTACH-EDIT.ENAMERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MASTERID"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MASTERID" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="MASTERID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MASTERID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MASTERID_Label" ParentID="MASTERID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.MASTERIDHeader" />
+</PageControl><PageControl ControlID="MASTERID_Value" ParentID="MASTERID" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTATTACH';ctrlEvent.infoName='MASTERID';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTATTACH-EDIT.MASTERIDRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PATH"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PATH" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="PATH_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PATH_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PATH_Label" ParentID="PATH" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.PATHHeader" />
+</PageControl><PageControl ControlID="PATH_Value" ParentID="PATH" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTATTACH';ctrlEvent.infoName='PATH';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="TESTATTACH-EDIT.PATHRegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UPLOADUSER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPLOADUSER" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="UPLOADUSER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UPLOADUSER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPLOADUSER_Label" ParentID="UPLOADUSER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.UPLOADUSERHeader" />
+</PageControl><PageControl ControlID="UPLOADUSER_Value" ParentID="UPLOADUSER" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="ctrlEvent.objectType='TESTATTACH';ctrlEvent.infoName='UPLOADUSER';InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UPLOADTIME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPLOADTIME" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="UPLOADTIME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UPLOADTIME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPLOADTIME_Label" ParentID="UPLOADTIME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.UPLOADTIMEHeader" />
+</PageControl><PageControl ControlID="UPLOADTIME_Value" ParentID="UPLOADTIME" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTATTACH';ctrlEvent.infoName='UPLOADTIME';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="datetime"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK" ParentID="R-6" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="REMARK_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK_Label" ParentID="REMARK" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.REMARKHeader" />
+</PageControl><PageControl ControlID="REMARK_Value" ParentID="REMARK" TypeName="TextBox" >
+  <Settings Key="type" Value="textarea"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="TESTATTACH-EDIT.REMARKRegex" />
+</PageControl><PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FILEINFO"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FILEINFO" ParentID="R-7" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="FILEINFO_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FILEINFO_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FILEINFO_Label" ParentID="FILEINFO" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTATTACH-EDIT.FILEINFOHeader" />
+</PageControl><PageControl ControlID="FILEINFO_Value" ParentID="FILEINFO" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTATTACH';ctrlEvent.infoName='FILEINFO';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="TESTATTACH-EDIT.FILEINFORegex" />
+</PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="MODELDATA-COPY" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;请输入字母（最长100位）&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;Please enter letter (up to 100 bits)&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MULTILANGHeader">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiLang</LocalizedLabel>
+    </Label>
+    <Label Name="MULTILANGRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MODELDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">复制业务模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CopyMODELDATA</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

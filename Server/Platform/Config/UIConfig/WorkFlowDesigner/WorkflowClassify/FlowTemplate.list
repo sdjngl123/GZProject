@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement 
+    Name="WorkFlowClassifyRootManagerment" 
+    MenuName="WorkFlowTempateClassifyListMenu" 
+    ListRightMenuName="" 
+    ListViewName="WorkFolwClassifyListView"  
+    QueryPageName=""
+    ListTitleDataService=""
+    OnePageDataService=""
+    AllPageDataService="">
+  </ListManagement>
+</root>

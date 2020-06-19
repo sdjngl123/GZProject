@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="EXTERNALRESOURCEROOTLINK" Extend="LINK" IsAbstract="false" IsMainConfig="false">
+    <Column Name="LID" Extend="LID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="PEID" Extend="PEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="PETYPE" Extend="PETYPE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="CEID" Extend="CEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="CETYPE" Extend="CETYPE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="LSEQUENCE" Extend="LSEQUENCE" DataType="INT" Required="true" DefaultValue="0" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="LQUALITY" Extend="LQUALITY" DataType="FLOAT10_5" Required="true" DefaultValue="1" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="LSTATION" Extend="LSTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="LCREATEUID" Extend="LCREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="LCREATETIME" Extend="LCREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="LOWNUID" Extend="LOWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="LOWNGID" Extend="LOWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="LCOMPANYID" Extend="LCOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="PEUID" Extend="PEUID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CEUID" Extend="CEUID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Index Name="EXTERNALRESOURCEROOTLINK_PEID_INDEX" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="EXTERNALRESOURCEROOTLINK_CEID_INDEX" Unique="false">
+      <Field Name="CEID" Order="ASC" />
+    </Index>
+  </Table>
+</root>

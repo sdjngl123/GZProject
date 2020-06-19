@@ -1,0 +1,21 @@
+﻿{
+	var c = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(c.id!=''){
+		var json = data.[INFONAME];
+		if(json){
+			var data = JSON.parse(json);
+			var option = {};
+			option.data = data;
+			option.readOnly = true;
+			option.onDownload = function(item) {
+                if (HoteamUI.Common.IsNullOrEmpty(item) == false) {
+                    var pagePara = {};
+                    pagePara.data = item;
+                    HoteamUI.UIManager.Popup('FileDownloadPage', pagePara, {}, {});
+                }
+            };
+
+			c.Init(option);
+		}
+	}
+}

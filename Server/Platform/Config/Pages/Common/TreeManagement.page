@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TreeManagement" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TreeManagement_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_TreeManagement_OnNodeChange(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeDblClick" Script="InforCenter_Platform_TreeManagement_OnNodeDblClick(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TreeManagement_ContainerP" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeManagement_Container"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+    <!--一层-->
+    <PageControl ControlID="TreeManagement_Container" ParentID="TreeManagement_ContainerP" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item5">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item0">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="210"/>
+        <Settings Key="childid" Value="Left_Container"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="3"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="closeStateTooltipId" Value="TreeManagement.Show"/>
+        <Settings Key="openStateTooltipId" Value="TreeManagement.Hidden"/>
+      </Settings>
+
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Right_Container"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Left_Container" ParentID="TreeManagement_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="MenuCtrlPage"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="TreeQuery"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="9%"/>
+        <Settings Key="childid" Value="TreeViewPage"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="260"/>
+        <Settings Key="childid" Value="CustomPageContainer"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="CustomPageContainer" ParentID="Left_Container" TypeName="PageContainer">
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="MenuCtrlPage" ParentID="Left_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="TreeQuery" ParentID="Left_Container" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="TreeViewCtrl_Query"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TreeManagement_QueryInit(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="TreeViewPage" ParentID="Left_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TreeViewCtrl"/>
+
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="Right_Container" ParentID="TreeManagement_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+
+    <!--四层-->
+    <PageControl ControlID="TabsCtrlPage" ParentID="Right_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

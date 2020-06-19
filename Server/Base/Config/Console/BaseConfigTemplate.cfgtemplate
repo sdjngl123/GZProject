@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ConfigFileTemplate Name ="&lt;AppSet&gt;&lt;/AppSet&gt;" Type="SettingConfigTemplate" Description="系统设置配置文件AppSet标签模板">
+    <![CDATA[
+    <AppSet Key="LoginPage" Value="Login" ToClient="true" Description="系统默认登陆页" />
+      ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;ActiveX&gt;&lt;/ActiveX&gt;" Type="ActiveXTemplate" Description="ActiveX标签模板">
+    <![CDATA[
+    <ActiveX Name="HoteamsoftOffice" ClassId="clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404" Url="~/Platform/Ctrls/Office/OfficeControl.cab" Version="5,0,2,4" AutoDownLoad="false" ShowInList="false" />
+      ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;App&gt;&lt;/App&gt;" Type="AppInfoTemplate" Description="系统组件注册标签模板">
+    <![CDATA[
+   <App Path="Platform" Version="7.3.2_D"/>
+      ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Package&gt;&lt;/Package&gt;" Type="PackageTemplate" Description="系统初始化标签模板">
+    <![CDATA[
+  	<Package Assembly ="Hoteam.InforCenter.Common.Plugin"/>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Language&gt;&lt;/Language&gt;" Type="LanguageTemplate" Description="语种标签模板">
+    <![CDATA[
+   <Language Name="zhs">简体中文</Language>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Context&gt;&lt;/Context&gt;" Type="DictionaryTemplate" Description="多语言分组标签模板">
+    <![CDATA[
+    <Context Name="ConsoleModule">
+      <Label Name="LoginFormTitle">
+        <LocalizedLabel LanguageRef="en">InforCenter Console Login</LocalizedLabel>
+        <LocalizedLabel LanguageRef="zhs">InforCenter 控制台 登录</LocalizedLabel>
+      </Label>
+    </Context>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Label(Language)&gt;&lt;/Label(Language)&gt;" Type="DictionaryTemplate" Description="多语言标签模板">
+    <![CDATA[
+    <Label Name="LoginFormTitle">
+      <LocalizedLabel LanguageRef="en">InforCenter Console Login</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">InforCenter 控制台 登录</LocalizedLabel>
+    </Label>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;LocalizedLabel&gt;&lt;/LocalizedLabel&gt;" Type="DictionaryTemplate" Description="多语言项标签模板">
+    <![CDATA[
+    <LocalizedLabel LanguageRef="zhs">InforCenter 控制台 登录</LocalizedLabel>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ServiceItem&gt;&lt;/ServiceItem&gt;" Type="ServiceItemTemplate" Description="业务服务标签模板">
+    <![CDATA[
+  <ServiceItem
+     ServiceName="WebActionService"
+     ServiceAssembly="Hoteam.InforCenter.Common.DataService.dll"
+     ServiceClass="Hoteam.InforCenter.Common.DataService.WebAction.Service.WebActionService"
+     ContractAssembly="Hoteam.InforCenter.Common.DataService.dll"
+     ContractClass="Hoteam.InforCenter.Common.DataService.WebAction.Service.IWebActionService"/>
+  ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;TimerInfo&gt;&lt;/TimerInfo&gt;" Type="TimerServiceTemplate" Description="定时服务标签模板">
+    <![CDATA[
+    <TimerInfo Call="InforCenter.Example.ExampleService.GetCodeStandardization" IntervalSecond="6" ElapsedType="0"/>
+       ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;ControlType&gt;&lt;/ControlType&gt;" Type="JsControlTemplate" Description="前台控件标签模板">
+    <![CDATA[
+   <ControlType TypeName="Button" OperateFun="HoteamUI.Control.OButton"></ControlType>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;JSFile&gt;&lt;/JSFile&gt;" Type="FileRefTemplate" Description="JS文件引用标签模板">
+    <![CDATA[
+    <JSFile FileName ="~/Base/Ctrls/Button/Button.js"  group="ctrl"/>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;CssFile&gt;&lt;/CssFile&gt;" Type="FileRefTemplate" Description="CSS文件引用标签模板">
+    <![CDATA[
+   <CssFile FileName ="~/Base/Css/BasePage.css" />
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Filter&gt;&lt;/Filter&gt;" Type="FilterTemplate" Description="前台调用中转标签模板">
+    <![CDATA[
+    <Filter Rule="InforCenter.Organization.OrganizationDataService.GetLoginInfo" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+       ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Page&gt;&lt;/Page&gt;" Type="PageConfigTemplate" Description="页面框架标签模板">
+    <![CDATA[
+      <Settings Key="title" Value="多语言标签"/>
+      <Settings Key="height" Value="数值或百分比"/>
+      <Settings Key="width" Value="数值或百分比"/>
+      <Settings Key="modal" Value="false"/>
+      <Settings Key="draggable" Value="false"/>
+      <Settings Key="display" Value="left/right/up/down"/>
+      <Settings Key="minWindow" Value="false"/>
+      <Settings Key="autoClosedTime" Value="10"/>
+      <Settings Key="resizable" Value="false"/>
+      <Settings Key="position" Value="center/left/right/top/bottom/或组合使用x,y"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(pageEvent);"/>
+        <PageHandler HandlerName ="OnClose" Script=""/>
+      </PageHandlers>
+      <PageControls>
+      </PageControls>
+      ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;LayoutContainer&gt;&lt;/LayoutContainer&gt;" Type="PageConfigTemplate" Description="LayoutContainer控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="LayoutContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="horizontal/vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="数值或百分比"/>
+        <Settings Key="childid" Value="子控件id"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="数值"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+        <Settings Key="closeStateTooltipId" Value="多语言标签"/>
+        <Settings Key="openStateTooltipId" Value="多语言标签"/>
+        <Settings Key="direction" Value="pre/next"/>
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;PageContainer&gt;&lt;/PageContainer&gt;" Type="PageConfigTemplate" Description="PageContainer控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="pageName" Value="页面名称"/>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;CustomerContainer&gt;&lt;/CustomerContainer&gt;" Type="PageConfigTemplate" Description="CustomerContainer控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="CustomerContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="templateName" Value="模板页面名称"/>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Tabs&gt;&lt;/Tabs&gt;" Type="PageConfigTemplate" Description="Tabs控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="Tabs">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="delayLoadPage" Value="false"/>
+      <Settings Key="showTitle" Value="false"/>
+      <Settings Key="showClosed" Value="false"/>
+      <Settings Key="selectedTab" Value="数值索引"/>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="多语言标签"/>
+        <Settings Key="tabId" Value="多语言标签"/>
+        <Settings Key="pageName" Value="页面名称"/>
+        <Settings Key="pageParas" Value="字符串"/>
+      </Settings>
+      <Settings Key="item2" >
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Accordion&gt;&lt;/Accordion&gt;" Type="PageConfigTemplate" Description="Accordion导航控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="Accordion">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Menu&gt;&lt;/Menu&gt;" Type="PageConfigTemplate" Description="Menu菜单航控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="多语言标签"/>
+        <Settings Key="value" Value="字符串"/>
+        <Settings Key="js" Value=""/>
+        <Settings Key="icon" Value="图片路径"/>
+        <Settings Key="children" >
+          <Settings Key="item1">
+          </Settings>
+          <Settings Key="item2">
+          </Settings>
+        </Settings>
+      </Settings>
+      <Settings Key="item2">
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;RightMenu&gt;&lt;/RightMenu&gt;" Type="PageConfigTemplate" Description="RightMenu菜单航控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="" ParentID="" TypeName="RightMenu">
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;Grid&gt;&lt;/Grid&gt;" Type="PageConfigTemplate" Description="Grid表格控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="Grid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnLoadRows" Script="Js(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnColImageClick" Script="Js(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnColLinkClick" Script="Js(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="rowList" Value="20,50,100" />
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="autoLoadData" Value="false" />
+      <Settings Key="addButton" >
+        <Settings Key="按钮名称1" >
+          <Settings Key="js" Value="执行的脚本" />
+          <Settings Key="iconClass" Value="class名称" />
+          <Settings Key="textId" Value="多语言标签" />
+        </Settings>
+        <Settings Key="按钮名称2" >
+        </Settings>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="多语言标签" />
+        <Settings Key="name" Value="列标识字符串" />
+        <Settings Key="width" Value="数值" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item2" >
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;EditGrid&gt;&lt;/EditGrid&gt;" Type="PageConfigTemplate" Description="EditGrid编辑表格控件标签模板">
+    <![CDATA[
+    
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Example_EditGridExample_GridData(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="多语言标签" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="数值" />
+        <Settings Key="name" Value="字符串" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="colType" Value="text/number/hidden/checkbox/checkboxThirdState/datetime/date/time" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="colType" Value="dropdown/textValue" />
+        <Settings Key="databind" Value="js脚本" />
+        <Settings Key="eventbind" >
+          <Settings Key="事件名" Value="js脚本" />
+        </Settings>
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;EditTreeGrid&gt;&lt;/EditTreeGrid&gt;" Type="PageConfigTemplate" Description="EditTreeGrid树控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="" ParentID="" TypeName="EditTreeGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnLoadRows" Script="JS(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnColImageClick" Script="JS(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnColLinkClick" Script="JS(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnOpenRow" Script="JS(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnLoadDropDownDatas" Script="JS(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="EditTreeGridExample.HiddenCol" />
+        <Settings Key="name" Value="" />
+        <Settings Key="colType" Value="hidden/image/text/link/number/datetime/date/time/dropdown/textvalue/checkbox/checkboxthirdstate" />
+        <Settings Key="resizable" Value="true"/>
+        <Settings Key="editMethod" Value="" />
+        <Settings Key="width" Value="50"/>
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;HtmlEdit&gt;&lt;/HtmlEdit&gt;" Type="PageConfigTemplate" Description="HtmlEdit树控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="" ParentID="" TypeName="HtmlEdit" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="JS(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="menu" Value="none"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;Iframe&gt;&lt;/Iframe&gt;" Type="PageConfigTemplate" Description="Iframe树控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="" ParentID="" TypeName="Iframe">
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Image&gt;&lt;/Image&gt;" Type="PageConfigTemplate" Description="Image树控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="" ParentID="" TypeName="Image" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="JS(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="src" Value="~/Example/Image/Author.ico" />
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;Tree&gt;&lt;/Tree&gt;" Type="PageConfigTemplate" Description="Tree树控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="TreeExample_Tree" ParentID="TreeExample_LayoutContainerLeft" TypeName="Tree">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnExpandLoad" Script="Js(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnExpand" Script="Js(ctrlEvent)"/>
+        <PageHandler HandlerName ="OnClick" Script="Js(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="showCheck" Value="true"/>
+      <Settings Key="isRelevance" Value="false"/>
+      <Settings Key="defaultState" Value="0/1/2"/>
+      <Settings Key="isThirdState" Value="true"/>
+      <Settings Key="showIcon" Value="false"/>
+      <Settings Key="showLine" Value="false"/>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TextBox&gt;&lt;/TextBox&gt;" Type="PageConfigTemplate" Description="TextBox文本框控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="TextBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="type" Value="text/password/textarea"/>
+      <Settings Key="disabled" Value="true"/>
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="bgText" Value="多语言标签"/>
+      <Settings Key="regex" Value="正则表达式" />
+      <Settings Key="regextipId" Value="验证提示多语言标签" />
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DateTime&gt;&lt;/DateTime&gt;" Type="PageConfigTemplate" Description="DateTime时间控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="DateTime" >
+      <Settings Key="disabled" Value="true"/>
+      <Settings Key="type" Value="datetime/date/time"/>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TextValue&gt;&lt;/TextValue&gt;" Type="PageConfigTemplate" Description="TextValue文本选择控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="TextValue">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+        <PageHandler HandlerName ="OnFocus" Script=""/>
+      </PageHandlers>
+      <Settings Key="value" Value="字符串" />
+      <Settings Key="textId" Value="多语言标签" />
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Label&gt;&lt;/Label&gt;" Type="PageConfigTemplate" Description="Label文本控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="Label" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left/center/right"/>
+      <Settings Key="textId" Value="多语言标签" />
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Button&gt;&lt;/Button&gt;" Type="PageConfigTemplate" Description="Button按钮控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="textId" Value="多语言标签" />
+      <Settings Key="iconClass" Value="jqueryui中的图片名称" />
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;CheckBox&gt;&lt;/CheckBox&gt;" Type="PageConfigTemplate" Description="CheckBox多选控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="CheckBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="checked" Value="true" />
+      <Settings Key="position" Value="left/center/right" />
+      <Settings Key="textId" Value="多语言标签" />
+      <Settings Key="disabled" Value="true" />
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;CheckboxPad&gt;&lt;/CheckboxPad&gt;" Type="PageConfigTemplate" Description="CheckboxPad多选控件标签模板">
+    <![CDATA[
+  <PageControl ControlID="CheckboxPadExample_CheckboxPad" ParentID="" TypeName="CheckboxPad">
+    <PageHandlers>
+      <PageHandler HandlerName ="OnCreate" Script="JS(ctrlEvent);"/>
+    </PageHandlers>
+    <Settings Key="ColNum" Value="4" />
+    <Settings Key="ChangeMode" Value="3" />
+    <Settings Key="DefaultCheckState" Value="2" />
+  </PageControl>
+  ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;RadioList&gt;&lt;/RadioList&gt;" Type="PageConfigTemplate" Description="RadioList单选控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="RadioList" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="position" Value="horizontal/vertical" />
+      <Settings Key="item1">
+        <Settings Key="checked" Value="true" />
+        <Settings Key="disabled" Value="true" />
+        <Settings Key="textId" Value="多语言标签" />
+        <Settings Key="value" Value="字符串" />
+      </Settings>
+      <Settings Key="item2" >
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DropDown&gt;&lt;/DropDown&gt;" Type="PageConfigTemplate" Description="DropDown下拉列表控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="控件id" ParentID="父容器id" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="多语言标签"/>
+        <Settings Key="value" Value="字符串"/>
+        <Settings Key="selected" Value="true"/>
+      </Settings>
+      <Settings Key="item2" >
+      </Settings>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;MultiSelectDropDown&gt;&lt;/MultiSelectDropDown&gt;" Type="PageConfigTemplate" Description="MultiSelectDropDown下拉列表控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="" ParentID="" TypeName="MultiSelectDropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnLoad" Script="JS(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Group&gt;&lt;/Group&gt;" Type="ConsoleModuleTemplate" Description="控制台导航分组Group标签模板">
+    <![CDATA[
+   <Group Name ="SystemManage" >
+    <Module Name ="Setting" IsCommonModule="true" FileExt="setting" RelatedExt="setting" ImagePath="~/Base/Image/Console/setting.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Console.Interface" ModuleClass="Hoteam.InforCenter.Console.Interface.ConsoleSetting.ConsoleSettingModule"></Module>    
+  </Group>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Module&gt;&lt;/Module&gt;" Type="ConsoleModuleTemplate" Description="控制台导航项Module标签模板">
+    <![CDATA[
+  <Module Name ="Setting" IsCommonModule="true" FileExt="setting" RelatedExt="setting" ImagePath="~/Base/Image/Console/setting.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Console.Interface" ModuleClass="Hoteam.InforCenter.Console.Interface.ConsoleSetting.ConsoleSettingModule"></Module>    
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ToolBar&gt;&lt;/ToolBar&gt;" Type="ConsoleToolBarTemplate" Description="控制台工具栏分组ToolBar标签模板">
+    <![CDATA[
+<ToolBar Name ="SettingBar" BaseBar="">
+    <Item Name ="OpenFolder" IsCommonItem="true" ImagePath="~/Base/Image/Console/tree_selfolder.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.OpenItemFolderCmd"></Item>
+  </ToolBar>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Item&gt;&lt;/Item&gt;" Type="ConsoleToolBarTemplate" Description="控制台工具栏项Item标签模板">
+    <![CDATA[
+ <Item Name ="OpenFolder" IsCommonItem="true" ImagePath="~/Base/Image/Console/tree_selfolder.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.OpenItemFolderCmd"></Item>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ConfigFileTemplate&gt;&lt;/ConfigFileTemplate&gt;" Type="ConfigFileTemplateTemplate" Description="配置文件模板标签模板">
+    <![CDATA[
+   <ConfigFileTemplate Name ="&lt;AppSet&gt;&lt;/AppSet&gt;" Type="SettingConfigTemplate" Description="系统设置配置文件AppSet标签模板">
+    <AppSet Key="LoginPage" Value="Login" ToClient="true" Description="系统默认登陆页" />
+  </ConfigFileTemplate>
+    ]]>
+  </ConfigFileTemplate>
+
+</root>

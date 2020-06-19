@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OrganizationCreate" IsWeb="true">
+    <Label Name="Info">
+      <LocalizedLabel LanguageRef="zhs">如何添加公司？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">How to add a company?</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

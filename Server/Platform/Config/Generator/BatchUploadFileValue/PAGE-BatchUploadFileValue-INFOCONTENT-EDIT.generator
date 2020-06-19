@@ -1,0 +1,3 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="HTFileUpload" >
+  <Settings Key="readOnly" Value="false"/>
+</PageControl>

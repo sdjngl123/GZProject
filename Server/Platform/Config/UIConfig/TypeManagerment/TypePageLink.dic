@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="GroupsList">
+      <LocalizedLabel LanguageRef="zhs">组列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group list</LocalizedLabel>
+    </Label>
+    <Label Name="GroupProperty">
+      <LocalizedLabel LanguageRef="zhs">组属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group attribute</LocalizedLabel>
+    </Label>
+    <Label Name="RolesList">
+      <LocalizedLabel LanguageRef="zhs">角色列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role list</LocalizedLabel>
+    </Label>
+    <Label Name="UsersList">
+      <LocalizedLabel LanguageRef="zhs">用户列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User list</LocalizedLabel>
+    </Label>
+    <Label Name="UserProperty">
+      <LocalizedLabel LanguageRef="zhs">用户属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User attribute</LocalizedLabel>
+    </Label>
+    <Label Name="UserToRoleList">
+      <LocalizedLabel LanguageRef="zhs">角色列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role list</LocalizedLabel>
+    </Label>
+    <Label Name="RoleProperty">
+      <LocalizedLabel LanguageRef="zhs">角色属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role attribute</LocalizedLabel>
+    </Label>
+    <Label Name="DataSetTypeListLink">
+      <LocalizedLabel LanguageRef="zhs">文件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

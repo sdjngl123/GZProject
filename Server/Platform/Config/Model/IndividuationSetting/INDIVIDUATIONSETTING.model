@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="INDIVIDUATIONSETTING" Extend="ENTITY" LogicClass="SystemSettingsObject" IconPath="~/Base/Image/Entity.gif" Abstract="false" TableName="INDIVIDUATIONSETTING" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <InfoType Name="SETTINGKEY" Type="DefaultObjectValue" DataType="STRING1000" Column="SETTINGKEY" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PARENTKEY" Type="DefaultObjectValue" DataType="STRING100" Column="PARENTKEY" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="SETTINGTYPE" Type="EnumValue" DataType="STRING50" Column="SETTINGTYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="SetValueType" />
+    <InfoType Name="SETTINGVALUE" Type="DefaultObjectValue" DataType="TEXT" Column="SETTINGVALUE" Edit="Create Edit" Show="Create Edit View" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="REMARK" Type="DefaultObjectValue" DataType="STRING200" Column="REMARK" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MODULEID" Type="DefaultObjectValue" DataType="STRING100" Column="MODULEID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OWNER" Type="DefaultObjectValue" DataType="STRING100" Column="OWNER" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="USINGUSERSET" Type="BoolValue" DataType="BOOL" Column="USINGUSERSET" PrimaryKeyOrder="0" DefaultValue="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="USETYPE" Type="EnumValue" DataType="STRING50" Column="USETYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="SettingsType" />
+    <InfoType Name="TOCLIENT" Type="BoolValue" DataType="BOOL" Column="TOCLIENT" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ISCOMPANY" Type="DefaultObjectValue" DataType="BOOL" Column="ISCOMPANY" PrimaryKeyOrder="0" DefaultValue="1" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

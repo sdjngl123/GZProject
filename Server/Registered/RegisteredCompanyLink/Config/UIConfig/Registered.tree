@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="ModelTree" MenuName="ModelHeadMenu" PageLinksName=""
+                TreeViewName="" ShowTreeQuery="false"
+                TreeChildDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetModelTreeChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetModelTreeRootData">
+    <ObjectType Name="ROOTMODEL" MenuName="RootModelMenu" PageLinksName="RootModelLink" />
+    <ObjectType Name="BASEMODEL" MenuName="ModelMenu" PageLinksName="ModelLink" />
+    <ObjectType Name="MODEL" MenuName="ModelMenu" PageLinksName="ModelLink" />
+    <ObjectType Name="WEBMODEL" MenuName="WebModelMenu" PageLinksName="ModelLink" />
+  </TreeManagement>
+</root>

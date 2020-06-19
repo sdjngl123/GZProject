@@ -1,0 +1,12 @@
+.topology-diagram {
+    position:relative;
+    overflow:auto;
+}
+
+.topology-diagram .node {
+    cursor: pointer;
+}
+
+.topology-diagram tspan::selection {
+    background: #f4f4f4;
+}

@@ -1,0 +1,50 @@
+﻿{
+var c = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+if(c.id!=''){
+var p = {};
+p.InfoName = '[QUERYCOLUMN]';
+p.ObjType = '[OBJTYPE]';
+var isPrompt = HoteamUI.DataService.Call('InforCenter.Enumeration.EnumerationService.IsPromptLovList',{para:p});
+var value = c.GetSelectedValue();
+if(isPrompt)
+{
+value = c.GetSelectedText()
+}
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	var enumFilter='';	
+	var andor = '[ANDOR]';
+	var column = '[QUERYCOLUMN]';
+	var op = '[QUERYOPERATOR]';
+	op = op.toUpperCase();
+	var arr = value.split(';');
+		
+	if(op == '=' || op == 'LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' = N\'' + arr[i] + '\' ' + 
+						' OR '+ column + ' LIKE N\'' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+	else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' &lt;&gt; N\'' + arr[i] + '\' ' + 
+							' AND '+ column + ' NOT LIKE N\'' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+
+	if(enumFilter.length &gt; 0)
+	{
+		enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+	}
+	[FILTERSTRING] += enumFilter;
+	if(c.Check() == false) bCheck = false;	
+}
+}}

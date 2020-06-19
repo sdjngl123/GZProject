@@ -1,0 +1,55 @@
+﻿<div class="divcontent contentsearch ui-filterable-inline">
+  <div class=" ui-grid-a">
+    <div id="listsearch"  class="ui-block-a ui-block-6">
+      <div id="search_bar">
+        <input id="searchtext" type="text" class="searchinput ui-btn-inline search-mobilelist" placeholder="请输入查询内容" onkeyup="return HMUI_InforCenter_MobileList_KeyDown(event);" />
+        <a id="search_btn" class="ui-link ui-btn ui-btn-inline" onclick="HMUI_InforCenter_MobileList_Search();">
+          <svg class="icon">
+            <use xlink:href="{ImagesBaseUrl}icon-search"></use>
+          </svg>
+        </a>
+      </div>    
+    </div>
+    <div id="listsearch-btns" class="ui-block-b ui-block-4 text-right">
+      <a id="listfilter" class="ui-link ui-btn ui-btn-inline" onclick="HMUI_InforCenter_MobileList_FilterOnClick(this);">
+        <svg class="icon">
+          <use xlink:href="{ImagesBaseUrl}icon-filter"></use>
+        </svg>
+      </a>
+      <a id="listsort"  class="ui-link ui-btn ui-btn-inline" onclick="HMUI_InforCenter_MobileList_SortOnClick(this);">
+        <svg class="icon">
+          <use xlink:href="{ImagesBaseUrl}icon-sort"></use>
+        </svg>
+      </a>
+      <a id="listQRcode" class="ui-link ui-btn ui-btn-inline" onclick="HMUI_InforCenter_MobileList_QRCodeOnClick(this)" style="opacity: 1;">
+        <svg class="icon">
+          <use xlink:href="{ImagesBaseUrl}icon-qrcode"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+<div style="clear:both"></div>
+<div class="pagelistview-conatiner">
+  <div class="scroller">
+    <div class="pagelistview-content">
+      <div class="pullDown">
+        <span class="pullDownLabel-container">
+          <span class="pullDownIcon"></span>
+          <span class="pullDownLabel">重新加载</span>
+        </span>
+      </div>
+      <ul class="pagelistview" data-role="listview" data-inset="true" onclick="HMUI.MobileList.ListViewItemClick(event)">
+      </ul>
+      <div class="pullUp">
+        <span class="pullUpLabel-container">
+          <span class="pullUpIcon"></span>
+          <span class="pullUpLabel">加载下一页</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

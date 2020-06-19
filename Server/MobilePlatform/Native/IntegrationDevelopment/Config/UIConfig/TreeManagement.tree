@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="MobilePageDevelopmentTree" MenuName="" PageLinksName=""
+             TreeViewName="MobilePageDevTreeView" ShowTreeQuery="false"
+            TreeChildDataService="" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="MOBILEPAGEDEVROOT" MenuName="MobilePageDevRootMenu" PageLinksName="" />
+    <ObjectType Name="LoginPage" MenuName="MobilePageDevMenu" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="HomePage" MenuName="MobilePageDevMenu" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="Desk" MenuName="MobilePageDevMenu" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="ListPage" MenuName="MobilePageDevMenu" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="NavPage" MenuName="MobilePageDevMenu" PageLinksName="MobileNavDevelopmentLinks" />
+    <ObjectType Name="Login" MenuName="MobilePageDevMenu" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="Home" MenuName="MobilePageDevMenu" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="StandardList" MenuName="StandardListMenu" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="MultiConditionList" MenuName="StandardListMenu" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="GroupList" MenuName="StandardListMenu" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="MainNav" MenuName="MobilePageDevMenu" PageLinksName="MobileNavDevelopmentLinks" />
+    <ObjectType Name="Contacts" MenuName="MobilePageDevMenu" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="Select" MenuName="MobilePageDevMenu" PageLinksName="MobileListPageDevelopmentLinks" />
+  </TreeManagement>
+
+  <TreeManagement Name="ExportDevelopmentTree" MenuName="" PageLinksName=""
+           TreeViewName="ExportTreeView" ShowTreeQuery="false"
+          TreeChildDataService="Hoteam.InforCenter.MobilePageDevService.GetDevelopmentChildData" TreeQueryDataService=""
+              TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="MOBILEPAGEDEVROOT" MenuName="" PageLinksName="" />
+    <ObjectType Name="LoginPage" MenuName="" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="HomePage" MenuName="" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="Desk" MenuName="" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="ListPage" MenuName="" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="NavPage" MenuName="" PageLinksName="MobileNavDevelopmentLinks" />
+    <ObjectType Name="Login" MenuName="" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="Home" MenuName="" PageLinksName="MobilePageDevelopmentTreeLinks" />
+    <ObjectType Name="StandardList" MenuName="" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="MultiConditionList" MenuName="" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="GroupList" MenuName="" PageLinksName="MobileListPageDevelopmentLinks" />
+    <ObjectType Name="MainNav" MenuName="" PageLinksName="MobileNavDevelopmentLinks" />
+    <ObjectType Name="Select" MenuName="" PageLinksName="MobileListPageDevelopmentLinks" />
+  </TreeManagement>
+</root>

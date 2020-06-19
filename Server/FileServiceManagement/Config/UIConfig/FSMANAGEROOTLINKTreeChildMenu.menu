@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MenuItem Name="FSMANAGEROOTLINKTreeChildMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="FSManagement" LabelName="Common.Refresh" Image="p_resume" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+    <WebAction Name="CreateEITEM" MultiMenu="false" ModuleName="FSManagement" LabelName="EITEMModel.EITEMHeader" Image="p_add" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+      <ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="EITEM" />
+        <Para Name="LinkTypeName" Value="FSMANAGEROOTLINK" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+      </WebMethod>
+      <WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+    </WebAction>
+    <WebAction Name="Edit" MultiMenu="false" ModuleName="FSManagement" LabelName="Common.Edit" Image="p_edit" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Delete" MultiMenu="false" ModuleName="FSManagement" LabelName="Common.Delete" Image="p_delete" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+</root>

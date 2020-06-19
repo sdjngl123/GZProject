@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/MobilePlatform/Js/MobilePlatform.js" />
+
+  <CssFile FileName ="~/MobilePlatform/Config/privacypolicy.css" />
+</root>

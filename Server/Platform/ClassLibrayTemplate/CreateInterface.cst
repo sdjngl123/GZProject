@@ -1,0 +1,21 @@
+<%-- 
+Name:
+Author: 
+Description: 生成接口的模板
+--%>
+<%@ CodeTemplate Language="C#" TargetLanguage="C#" Src="" Inherits="" Debug="False" Description="Template description here." %>
+<%@ Property Name="NameSpace" Type="System.String" Default="" Optional="True" Category="" Description="" %>
+<%@ Property Name="ClassName" Type="System.String" Default="" Optional="True" Category="" Description="" %>
+#region 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+#endregion
+
+namespace <%=NameSpace%>
+{
+    public interface <%=ClassName%>
+    {
+	}
+}

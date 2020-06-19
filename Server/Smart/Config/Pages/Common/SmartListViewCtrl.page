@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SmartListViewCtrl">
+    <PageControls>
+        <PageControl ControlID="ListView_Container" ParentID="" TypeName="LayoutContainer">
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="ListView"/>
+            </Settings>
+            <Settings Key="item2" >
+                <Settings Key="size" Value="0"/>
+                <Settings Key="childid" Value="RightMenu_Container"/>
+            </Settings>
+            <Settings Key="item3" >
+                <Settings Key="size" Value="0"/>
+                <Settings Key="childid" Value="Suspension_Container"/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="RightMenu_Container" ParentID="ListView_Container" TypeName="LayoutContainer">
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="RightMenu"/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="Suspension_Container" ParentID="ListView_Container" TypeName="LayoutContainer">
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="Suspension"/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu"></PageControl>
+        <PageControl ControlID="Suspension" ParentID="Suspension_Container" TypeName="Suspension"></PageControl>
+        <PageControl ControlID="ListView" ParentID="ListView_Container" TypeName="SmartGrid">
+            <PageHandlers>
+                <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_ListViewCtrl_GridData(ctrlEvent);"/>
+                <PageHandler HandlerName ="OnColImageClick" Script="InforCenter_Platform_ListViewCtrl_GridColImage(ctrlEvent);"/>
+                <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_ListViewCtrl_OnRowDblClick(ctrlEvent);"/>
+                <PageHandler HandlerName ="OnRowClick" Script="InforCenter_Platform_ListViewCtrl_OnRowClick(ctrlEvent);"/>
+                <!-- <PageHandler HandlerName ="OnExportClick" Script="InforCenter_Platform_ListViewCtrl_GridExport(ctrlEvent);"/>
+            <PageHandler HandlerName ="OnPrintClick" Script="InforCenter_Platform_ListViewCtrl_GridPrint(ctrlEvent);"/>
+
+            <PageHandler HandlerName ="OnColLinkClick" Script="InforCenter_Platform_ListViewCtrl_GridColLink(ctrlEvent);"/>-->
+            </PageHandlers>
+            <Settings Key="multiselect" Value="true" />
+            <Settings Key="rowrejection" Value="true" />
+            <Settings Key="topLine" Value="false" />
+            <Settings Key="leftLine" Value="false" />
+            <Settings Key="titleButton">
+                <Settings Key="refreshBtn" Value="true" />
+                <Settings Key="treeOperationBtn" Value="true" />
+                <Settings Key="modelConvertBtn" Value="true" />
+            </Settings>
+            <Settings Key="showPageBar" Value="true" />
+        </PageControl>
+    </PageControls>
+</root>

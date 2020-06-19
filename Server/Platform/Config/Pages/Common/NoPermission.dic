@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NoPermission" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">无权限浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No browsing permission</LocalizedLabel>
+    </Label>
+    <Label Name="NoPermissionBrowse">
+      <LocalizedLabel LanguageRef="zhs">您没有该页面浏览权限，如有需要请联系管理人员。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You do not have the browsing permission of this page, please contact the manager if necessary.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

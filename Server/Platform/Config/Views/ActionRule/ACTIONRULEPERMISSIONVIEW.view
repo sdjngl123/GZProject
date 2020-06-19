@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="ACTIONRULEPERMISSIONVIEW" ObjectTypeName="ACTIONRULEPERMISSION" OrderByString="SERIALNUMBER ASC" FixedFilter="" AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" />
+    <ViewColumn Name="PERMISSIONACTORVALUE" Width="250" Resizable="true" Sortable="false" />
+    <ViewColumn Name="PERMISSIONACTIONVALUE" Width="-1" Resizable="true" Sortable="false" />
+  </ObjectView>
+</root>

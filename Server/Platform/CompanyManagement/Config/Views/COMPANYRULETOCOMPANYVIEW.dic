@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYRULETOCOMPANYVIEWView" IsWeb="true">
+    <Label Name="COMPANYRULETOCOMPANYVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">规则到规则视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rules to rule view</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYRULETOCOMPANYVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">规则到规则视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rules to rule view</LocalizedLabel>
+    </Label>
+    <Label Name="USEBYHeader">
+      <LocalizedLabel LanguageRef="zhs">条件类型应用场景</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional type application scenario</LocalizedLabel>
+    </Label>
+    <Label Name="USEBYCaption">
+      <LocalizedLabel LanguageRef="zhs">该条件是用在实体对象 关系对象 对象授权还是流程权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This condition is used in relationship object authorization or process permissions</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

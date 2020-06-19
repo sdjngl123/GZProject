@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="EditWebListColumnType" IsWeb="false">
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">视图列名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">在可编辑列表中可以进行编辑的列名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsEdit">
+      <LocalizedLabel LanguageRef="zhs">可编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="IsEditDescription">
+      <LocalizedLabel LanguageRef="zhs">该列是否可以进行编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CheckJS">
+      <LocalizedLabel LanguageRef="zhs">离开单元格事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CheckJSDescription">
+      <LocalizedLabel LanguageRef="zhs">鼠标焦点离开单元格后触发的JS事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ClickJS">
+      <LocalizedLabel LanguageRef="zhs">单元格点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClickJS</LocalizedLabel>
+    </Label>
+    <Label Name="ClickJSDescription">
+      <LocalizedLabel LanguageRef="zhs">单元格点击时触发的JS事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="NonEditShowValue">
+      <LocalizedLabel LanguageRef="zhs">显示Value值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NonEditShowValue</LocalizedLabel>
+    </Label>
+    <Label Name="NonEditShowValueDescription">
+      <LocalizedLabel LanguageRef="zhs">如果单元格不能编辑时，某些情况（如保存）需要显示value值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

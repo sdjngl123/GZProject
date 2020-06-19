@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYMODULEPERMISSIONModel" IsWeb="true">
+    <Label Name="COMPANYMODULEPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">公司模块授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMPANYMODULEPERMISSION</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYMODULEPERMISSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">公司模块授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMPANYMODULEPERMISSION</LocalizedLabel>
+    </Label>
+    <Label Name="ALLOWMODULEHeader">
+      <LocalizedLabel LanguageRef="zhs">允许模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ALLOWMODULE</LocalizedLabel>
+    </Label>
+    <Label Name="ALLOWMODULECaption">
+      <LocalizedLabel LanguageRef="zhs">允许模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ALLOWMODULE</LocalizedLabel>
+    </Label>
+    <Label Name="DENYMODULEHeader">
+      <LocalizedLabel LanguageRef="zhs">禁止模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DENYMODULE</LocalizedLabel>
+    </Label>
+    <Label Name="DENYMODULECaption">
+      <LocalizedLabel LanguageRef="zhs">禁止模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DENYMODULE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

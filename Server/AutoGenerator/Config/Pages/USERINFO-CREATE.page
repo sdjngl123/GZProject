@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="USERINFO-CREATE">
+  <Settings Key="height" Value="424"/>
+  <Settings Key="width" Value="753"/>
+  <Settings Key="title" Value="USERINFO-CREATE.USERINFOHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('USERINFO',para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.ENAME, 'ENAME',false);{
+	var c = pageEvent.o.GetControl('ECODE_Value');
+	if(c.id!=''){
+		c.SetText(data.ECODE);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.ECODE, 'ECODE',false);
+{
+var o = pageEvent.o.GetControl('PERSONEID_Value');
+if(o.id!=''){
+o.SetValue(data.PERSONEID);
+o.SetText(data.PERSONEID_DisplayValue);
+}
+}InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.PERSONEID, 'PERSONEID',true);{
+var o = pageEvent.o.GetControl('PASSWORD_Value');
+if(o.id!=''){
+o.SetText(data.PASSWORD_DisplayValue);
+}
+}{
+var o = pageEvent.o.GetControl('LANGUAGE_Value');
+if(o.id!=''){
+o.SetSelectedByValue(data.LANGUAGE);
+}}{
+var o = pageEvent.o.GetControl('TIMEZONE_Value');
+if(o.id!=''){
+
+o.SetSelectedByValue(data.TIMEZONE);
+}
+}{
+var o = pageEvent.o.GetControl('THEME_Value');
+if(o.id!=''){
+
+o.SetSelectedByValue(data.THEME);
+}
+}{
+var o = pageEvent.o.GetControl('HOMEPAGEMODE_Value');
+if(o.id!=''){
+
+o.SetSelectedByValue(data.HOMEPAGEMODE);
+}
+}{
+	var c = pageEvent.o.GetControl('WENCHATUSER_Value');
+	if(c.id!=''){
+		c.SetText(data.WENCHATUSER);
+	}
+}
+var todo='edit-SIGNATURE';
+
+var imageCtrl=pageEvent.o.GetControl('SIGNATURE_Value_Image');
+var fileStr = data.SIGNATURE;
+if (fileStr) {
+	var fileInformation = JSON.parse(fileStr);
+	if (fileInformation) {
+		var url = InforCenter_Platform_GetFileUrl(fileInformation.VaultName, fileInformation.Path);
+		var src = url + '?time=' + new Date().getTime();
+		if (imageCtrl != undefined) {
+			imageCtrl.SetSrc(src);
+			imageCtrl.SetValue(fileStr);
+		}
+	} else {
+		if (imageCtrl != undefined) {
+			imageCtrl.SetSrc('');
+			imageCtrl.SetValue('');
+		}
+	}
+} else {
+	if (imageCtrl != undefined) {
+
+		if(imageCtrl.id==''){
+			return;
+		}else{
+			imageCtrl.SetSrc('');
+			imageCtrl.SetValue('');
+		}
+
+
+
+	}
+}{
+	var c = pageEvent.o.GetControl('QYWEIXINID_Value');
+	if(c.id!=''){
+		c.SetText(data.QYWEIXINID);
+	}
+}
+ var functionName = 'InforCenter_USERINFO_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'USERINFO'};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ECODE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ECODE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('PERSONEID_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.PERSONEID = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('PASSWORD_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.PASSWORD = c.GetText();
+}
+}{
+var c = pageEvent.o.GetControl('LANGUAGE_Value');
+if(c.Check() == false) bCheck = false;
+data.LANGUAGE = c.GetSelectedValue();
+}{
+var c = pageEvent.o.GetControl('TIMEZONE_Value');
+if(c.Check() == false) bCheck = false;
+data.TIMEZONE = c.GetSelectedValue();
+}{
+var c = pageEvent.o.GetControl('THEME_Value');
+if(c.Check() == false) bCheck = false;
+data.THEME = c.GetSelectedValue();
+}{
+var c = pageEvent.o.GetControl('HOMEPAGEMODE_Value');
+if(c.Check() == false) bCheck = false;
+data.HOMEPAGEMODE = c.GetSelectedValue();
+}{
+var c = pageEvent.o.GetControl('WENCHATUSER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.WENCHATUSER = c.GetText().trim();
+}
+}{
+	var todo='save-SIGNATURE';
+	var c = pageEvent.o.GetControl('SIGNATURE_Value_Image');
+	debugger;
+	if(c.id!=''){
+	if(c.Check() == false) bCheck = false;
+	var imageValue=c.GetValue();
+	if(imageValue){
+	data.SIGNATURE = imageValue;
+	}
+	else{
+		data.SIGNATURE='';
+	}
+	}
+}{
+var c = pageEvent.o.GetControl('QYWEIXINID_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.QYWEIXINID = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_USERINFO_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  {
+     var ctrl=pageEvent.o.GetControl('PERSONEID_Value');
+     if(ctrl.id!='' &amp;&amp; pageEvent.FlagName =='PERSONEID'){
+		 var text='';
+		 var value='';
+		 for (var i = 0; i &lt;  data.length; i++) {
+		   var d=data[i];
+		   value+=';'+ d[pageEvent.SourceValue];
+		   text+=';'+d[pageEvent.SourceText];
+		 }
+		 if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+			text = text.substring(1);
+			value = value.substring(1);
+		 }
+		 ctrl.SetText(text);
+		 ctrl.SetValue(value);
+     }
+     
+     if(pageEvent.FieldInitList){
+     	for(var i=0;i&lt;pageEvent.FieldInitList.length;i++){
+     		var fieldInit=pageEvent.FieldInitList[i];
+     		ctrl=pageEvent.o.GetControl(fieldInit.TargetField+'_Value');
+     		if(ctrl.id!=''){
+     			var text='';
+     			for (var j = 0; j &lt;  data.length; j++) {
+     				var d=data[j];
+     			    text+=';'+d[fieldInit.SourceField];
+     			}
+     			if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+     				text = text.substring(1);
+     			}
+     			ctrl.SetText(text);
+     		}
+     	}		
+     }
+}"></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="200"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-7"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="PERSONEID"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERSONEID" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="PERSONEID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PERSONEID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="PERSONEID_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERSONEID_Label" ParentID="PERSONEID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.PERSONEIDHeader" />
+</PageControl><PageControl ControlID="PERSONEID_Label_FieldFlag" ParentID="PERSONEID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="PERSONEID_Value" ParentID="PERSONEID" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_ExecInfoDataSource('PERSONEID','USERINFO','PERSONEID',ctrlEvent.o.ContainerID(),ctrlEvent.o.GetValue())"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.PERSONEIDRegex" />
+</PageControl><PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='ENAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.ENAMERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ECODE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="PASSWORD"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ECODE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ECODE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ECODE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE_Label" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.ECODEHeader" />
+</PageControl><PageControl ControlID="ECODE_Label_FieldFlag" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ECODE_Value" ParentID="ECODE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='ECODE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([A-Za-z0-9_]{1,100})$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.ECODERegex" />
+</PageControl><PageControl ControlID="PASSWORD" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="PASSWORD_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PASSWORD_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PASSWORD_Label" ParentID="PASSWORD" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.PASSWORDHeader" />
+</PageControl><PageControl ControlID="PASSWORD_Value" ParentID="PASSWORD" TypeName="TextBox" >
+  <Settings Key="type" Value="password"/>
+  <Settings Key="regex" Value="^[\S]{6,20}$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.PASSWORDRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="LANGUAGE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="TIMEZONE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="LANGUAGE" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="LANGUAGE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="LANGUAGE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="LANGUAGE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="LANGUAGE_Label" ParentID="LANGUAGE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.LANGUAGEHeader" />
+</PageControl><PageControl ControlID="LANGUAGE_Label_FieldFlag" ParentID="LANGUAGE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="LANGUAGE_Value" ParentID="LANGUAGE" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+     InforCenter_Platform_Object_SetLanguageSelList(o);
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.LANGUAGERegex" />
+</PageControl><PageControl ControlID="TIMEZONE" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TIMEZONE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TIMEZONE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="TIMEZONE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TIMEZONE_Label" ParentID="TIMEZONE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.TIMEZONEHeader" />
+</PageControl><PageControl ControlID="TIMEZONE_Label_FieldFlag" ParentID="TIMEZONE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="TIMEZONE_Value" ParentID="TIMEZONE" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='TIMEZONE';InforCenter_Platform_GenerateScript_EnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = 'USERINFO';
+                 ctrlEvent.infoType = 'TIMEZONE';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'TIMEZONE','USERINFO',false);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.TIMEZONERegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="THEME"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="HOMEPAGEMODE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="THEME" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="THEME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="THEME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="THEME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="THEME_Label" ParentID="THEME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.THEMEHeader" />
+</PageControl><PageControl ControlID="THEME_Label_FieldFlag" ParentID="THEME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="THEME_Value" ParentID="THEME" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='THEME';InforCenter_Platform_GenerateScript_EnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = 'USERINFO';
+                 ctrlEvent.infoType = 'THEME';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'THEME','USERINFO',false);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.THEMERegex" />
+</PageControl><PageControl ControlID="HOMEPAGEMODE" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="HOMEPAGEMODE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="HOMEPAGEMODE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="HOMEPAGEMODE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="HOMEPAGEMODE_Label" ParentID="HOMEPAGEMODE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.HOMEPAGEMODEHeader" />
+</PageControl><PageControl ControlID="HOMEPAGEMODE_Label_FieldFlag" ParentID="HOMEPAGEMODE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="HOMEPAGEMODE_Value" ParentID="HOMEPAGEMODE" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='HOMEPAGEMODE';InforCenter_Platform_GenerateScript_EnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = 'USERINFO';
+                 ctrlEvent.infoType = 'HOMEPAGEMODE';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'HOMEPAGEMODE','USERINFO',false);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.HOMEPAGEMODERegex" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="WENCHATUSER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="WENCHATUSER" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="WENCHATUSER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="WENCHATUSER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="WENCHATUSER_Label" ParentID="WENCHATUSER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.WENCHATUSERHeader" />
+</PageControl><PageControl ControlID="WENCHATUSER_Value" ParentID="WENCHATUSER" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='WENCHATUSER';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.WENCHATUSERRegex" />
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SIGNATURE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SIGNATURE" ParentID="R-6" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SIGNATURE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SIGNATURE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SIGNATURE_Label" ParentID="SIGNATURE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.SIGNATUREHeader" />
+</PageControl><PageControl ControlID="SIGNATURE_Value" ParentID="SIGNATURE" TypeName="LayoutContainer">
+  <PageHandlers>
+  </PageHandlers>
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2">
+    <Settings Key="childid" Value="SIGNATURE_Value_Image"/>
+  </Settings>
+  <Settings Key="item3">
+    <Settings Key="size" Value="40"/>
+    <Settings Key="childid" Value="SIGNATURE_Value_Operate"/>
+  </Settings>
+</PageControl>
+
+<PageControl ControlID="SIGNATURE_Value_Operate" ParentID="SIGNATURE_Value" TypeName="LayoutContainer">
+  <PageHandlers>
+  </PageHandlers>
+  <Settings Key="type" Value="vertical"/>
+  <Settings Key="item4">
+    <Settings Key="size" Value="4"/>
+  </Settings>
+  <Settings Key="item3">
+    <Settings Key="size" Value="30"/>
+    <Settings Key="childid" Value=""/>
+  </Settings>
+  <Settings Key="item1">
+    <Settings Key="size" Value="30"/>
+    <Settings Key="childid" Value="SIGNATURE_Value_UploadBtn"/>
+  </Settings>
+  <Settings Key="item2">
+    <Settings Key="size" Value="30"/>
+    <Settings Key="childid" Value="SIGNATURE_Value_DeleteBtn"/>
+  </Settings>
+  <Settings Key="item8" Value="">
+    <Settings Key="size" Value="0"/>
+    <Settings Key="childid" Value="SIGNATURE_FileUpLoadCtrl"/>
+  </Settings>
+</PageControl>
+
+
+<PageControl ControlID="SIGNATURE_Value_Image" ParentID="SIGNATURE_Value" TypeName="Image" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+  </PageHandlers>
+  <Settings Key="fixedType" Value="height" />
+  <Settings Key="border" Value="true" />
+</PageControl>
+
+<PageControl ControlID="SIGNATURE_Value_UploadBtn" ParentID="SIGNATURE_Value_Operate" TypeName="Button" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="Hoteam_InferCenter_ImageUpload_OnClick(ctrlEvent,'');"/>
+  </PageHandlers>
+  <Settings Key="iconClass" Value="p_arrow_up" />
+  <!--<Settings Key="textId" Value="Common.Upload" />-->
+</PageControl>
+
+<PageControl ControlID="SIGNATURE_Value_DeleteBtn" ParentID="SIGNATURE_Value_Operate" TypeName="Button" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="    
+    var imageName = 'SIGNATURE_Value_Image';
+    var imageCtrl = ctrlEvent.o.OtherControl(imageName);
+    imageCtrl.SetSrc('');
+    imageCtrl.SetValue(null);
+    "/>
+  </PageHandlers>
+  <Settings Key="iconClass" Value="p_delete" />
+  <!--<Settings Key="textId" Value="Common.Delete" />-->
+</PageControl>
+<PageControl ControlID="SIGNATURE_FileUpLoadCtrl" ParentID="SIGNATURE_Value_Operate" TypeName="Filetransfer">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnUploadSuccess" Script="Hoteam_InferCenter_ImageUpload_OnUploadSuccess(ctrlEvent,'SIGNATURE');"/>
+  </PageHandlers>
+</PageControl><PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="QYWEIXINID"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="QYWEIXINID" ParentID="R-7" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="QYWEIXINID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="QYWEIXINID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="QYWEIXINID_Label" ParentID="QYWEIXINID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="USERINFO-CREATE.QYWEIXINIDHeader" />
+</PageControl><PageControl ControlID="QYWEIXINID_Value" ParentID="QYWEIXINID" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='USERINFO';ctrlEvent.infoName='QYWEIXINID';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="USERINFO-CREATE.QYWEIXINIDRegex" />
+</PageControl>  
+  </PageControls>
+</root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowTemplateInfo" IsCache="true">
+  <Settings Key="title" Value="WorkflowTemplateInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowTemplateInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnSelectChanged" Script="InforCenter_Platform_WorkflowTemplateInfo_OnSelectChanged(pageEvent);"/>
+    <PageHandler HandlerName ="OnSelectTemplate" Script="InforCenter_Platform_WorkflowTemplateInfo_OnSelectTemplate(pageEvent);"/>
+  </PageHandlers>
+    <PageControls>
+      <PageControl ControlID="WorkflowInfo_Layout" ParentID="" TypeName="LayoutContainer">
+        <Settings Key="type" Value="vertical"/>
+        <Settings Key="item1" >
+          <Settings Key="size" Value="100%"/>
+          <Settings Key="childid" Value="WorkflowInfoTabs"/>
+        </Settings>
+      </PageControl>
+      <PageControl ControlID="WorkflowInfoTabs" ParentID="WorkflowInfo_Layout" TypeName="Tabs">
+        <PageHandlers>
+          <PageHandler HandlerName ="OnBeforeToggle" Script="InforCenter_Platform_WorkflowTemplateInfo_OnBeforeToggle(ctrlEvent);"/>
+        </PageHandlers>
+        <Settings Key="showClosed" Value="false"/>
+      </PageControl>
+     
+    </PageControls>
+</root>

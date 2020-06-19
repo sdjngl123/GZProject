@@ -1,0 +1,7 @@
+﻿{
+var c = pageEvent.o.GetControl('[INFONAME]_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.[INFONAME] = c.GetSelectData();
+}
+}

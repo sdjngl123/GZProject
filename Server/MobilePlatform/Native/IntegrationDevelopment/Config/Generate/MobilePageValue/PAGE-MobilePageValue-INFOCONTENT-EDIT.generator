@@ -1,0 +1,7 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script=""/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

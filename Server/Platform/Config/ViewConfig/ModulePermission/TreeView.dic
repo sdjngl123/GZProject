@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="ROLES">
+      <LocalizedLabel LanguageRef="zhs">角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role</LocalizedLabel>
+    </Label>
+    <Label Name="ALLUSER">
+      <LocalizedLabel LanguageRef="zhs">所有人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

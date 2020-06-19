@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConsoleToolbar" IsWeb="false">
+    <Label Name="OpenFolderHeader">
+      <LocalizedLabel LanguageRef="zhs">所在文件夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Folder </LocalizedLabel>
+    </Label>
+    <Label Name="OpenFolderCaption">
+      <LocalizedLabel LanguageRef="zhs">所在文件夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Folder </LocalizedLabel>
+    </Label>
+    <Label Name="OpenTreeNodeHeader">
+      <LocalizedLabel LanguageRef="zhs">所在树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Tree Node </LocalizedLabel>
+    </Label>
+    <Label Name="OpenTreeNodeCaption">
+      <LocalizedLabel LanguageRef="zhs">所在树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Tree Node </LocalizedLabel>
+    </Label>
+    <Label Name="OpenTreeNode">
+      <LocalizedLabel LanguageRef="zhs">所在树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Tree Node </LocalizedLabel>
+    </Label>
+    <Label Name="OpenFolder">
+      <LocalizedLabel LanguageRef="zhs">所在文件夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Folder </LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">创建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="Modify">
+      <LocalizedLabel LanguageRef="zhs">修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify </LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除(D)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="Open">
+      <LocalizedLabel LanguageRef="zhs">打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制(C)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Cut">
+      <LocalizedLabel LanguageRef="zhs">剪切(X)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴(V)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="HomePage">
+      <LocalizedLabel LanguageRef="zhs">首页(H)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HomePage(H)</LocalizedLabel>
+    </Label>
+    <Label Name="KuaiJie">
+      <LocalizedLabel LanguageRef="zhs">快捷键说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fast Key</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAs">
+      <LocalizedLabel LanguageRef="zhs">另存为</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save as</LocalizedLabel>
+    </Label>
+    <Label Name="TreeCollapse">
+      <LocalizedLabel LanguageRef="zhs">全部折叠(T)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CollapseAll(T)</LocalizedLabel>
+    </Label>
+    <Label Name="IISExpress">
+      <LocalizedLabel LanguageRef="zhs">IISExpress(I)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IISExpress(I)</LocalizedLabel>
+    </Label>
+    <Label Name="IIS">
+      <LocalizedLabel LanguageRef="zhs">IIS(N)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IIS(N)</LocalizedLabel>
+    </Label>
+    <Label Name="*-">
+      <LocalizedLabel LanguageRef="zhs">所在树节点(Y)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LocationNode(Y)</LocalizedLabel>
+    </Label>
+    <Label Name="Help">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存(S)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAll">
+      <LocalizedLabel LanguageRef="zhs">保存全部(Ctrl+Shift+S)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save All</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateOneDataTable">
+      <LocalizedLabel LanguageRef="zhs">更新单模型数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    <Label Name="ZipModifyFile">
+      <LocalizedLabel LanguageRef="zhs">最新修改文件打包</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ZipModifyFile</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorOnePage">
+      <LocalizedLabel LanguageRef="zhs">自动生成指定页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically Generate Page</LocalizedLabel>
+    </Label>
+    <Label Name="CreateNew">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="Eidt">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Eidt</LocalizedLabel>
+    </Label>
+    <Label Name="StartService">
+      <LocalizedLabel LanguageRef="zhs">启动服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StartService</LocalizedLabel>
+    </Label>
+    <Label Name="Location">
+      <LocalizedLabel LanguageRef="zhs">所在位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Location</LocalizedLabel>
+    </Label>
+    <Label Name="LocalFolder">
+      <LocalizedLabel LanguageRef="zhs">所在文件夹(P)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Location(P)</LocalizedLabel>
+    </Label>
+    <Label Name="Refresh">
+      <LocalizedLabel LanguageRef="zhs">刷新(F)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh(F)</LocalizedLabel>
+    </Label>
+    <Label Name="CreateHeader">
+      <LocalizedLabel LanguageRef="zhs">创建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCaption">
+      <LocalizedLabel LanguageRef="zhs">创建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="ModifyHeader">
+      <LocalizedLabel LanguageRef="zhs">修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify </LocalizedLabel>
+    </Label>
+    <Label Name="ModifyCaption">
+      <LocalizedLabel LanguageRef="zhs">修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify </LocalizedLabel>
+    </Label>
+    <Label Name="DeleteHeader">
+      <LocalizedLabel LanguageRef="zhs">删除(D)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteCaption">
+      <LocalizedLabel LanguageRef="zhs">删除(D)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="OpenHeader">
+      <LocalizedLabel LanguageRef="zhs">打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open</LocalizedLabel>
+    </Label>
+    <Label Name="OpenCaption">
+      <LocalizedLabel LanguageRef="zhs">打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open</LocalizedLabel>
+    </Label>
+    <Label Name="CopyHeader">
+      <LocalizedLabel LanguageRef="zhs">复制(C)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="CopyCaption">
+      <LocalizedLabel LanguageRef="zhs">复制(C)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="CutHeader">
+      <LocalizedLabel LanguageRef="zhs">剪切(X)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="CutCaption">
+      <LocalizedLabel LanguageRef="zhs">剪切(X)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="PasteHeader">
+      <LocalizedLabel LanguageRef="zhs">粘贴(V)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="PasteCaption">
+      <LocalizedLabel LanguageRef="zhs">粘贴(V)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="ViewModeHeader">
+      <LocalizedLabel LanguageRef="zhs">视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View</LocalizedLabel>
+    </Label>
+    <Label Name="ViewModeCaption">
+      <LocalizedLabel LanguageRef="zhs">视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View</LocalizedLabel>
+    </Label>
+    <Label Name="ImportImageConfigHeader">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import</LocalizedLabel>
+    </Label>
+    <Label Name="ImportImageConfigCaption">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import</LocalizedLabel>
+    </Label>
+    <Label Name="CreateFileHeader">
+      <LocalizedLabel LanguageRef="zhs">新建项(M)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFile</LocalizedLabel>
+    </Label>
+    <Label Name="CreateFileCaption">
+      <LocalizedLabel LanguageRef="zhs">新建项(M)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFile</LocalizedLabel>
+    </Label>
+    <Label Name="CreateFolderHeader">
+      <LocalizedLabel LanguageRef="zhs">新建文件夹(O)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFolder</LocalizedLabel>
+    </Label>
+    <Label Name="CreateFolderCaption">
+      <LocalizedLabel LanguageRef="zhs">新建文件夹(O)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFolder</LocalizedLabel>
+    </Label>
+    <Label Name="CreateGroupFolderHeader">
+      <LocalizedLabel LanguageRef="zhs">新建组件(W)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFolder</LocalizedLabel>
+    </Label>
+    <Label Name="CreateGroupFolderCaption">
+      <LocalizedLabel LanguageRef="zhs">新建组件(W)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFolder</LocalizedLabel>
+    </Label>
+    <Label Name="EditGroupFolderHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑组件(E)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditFolder</LocalizedLabel>
+    </Label>
+    <Label Name="EditGroupFolderCaption">
+      <LocalizedLabel LanguageRef="zhs">编辑组件(E)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditFolder</LocalizedLabel>
+    </Label>
+    <Label Name="RenameHeader">
+      <LocalizedLabel LanguageRef="zhs">重命名(R)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rename</LocalizedLabel>
+    </Label>
+    <Label Name="RenameCaption">
+      <LocalizedLabel LanguageRef="zhs">重命名(R)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rename</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshHeader">
+      <LocalizedLabel LanguageRef="zhs">刷新(F)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh(F)</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshCaption">
+      <LocalizedLabel LanguageRef="zhs">刷新(F)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh(F)</LocalizedLabel>
+    </Label>
+    <Label Name="CheckInHeader">
+      <LocalizedLabel LanguageRef="zhs">签入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckIn</LocalizedLabel>
+    </Label>
+    <Label Name="CheckInCaption">
+      <LocalizedLabel LanguageRef="zhs">签入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckIn</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOutHeader">
+      <LocalizedLabel LanguageRef="zhs">签出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOutCaption">
+      <LocalizedLabel LanguageRef="zhs">签出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="CancelCheckOutHeader">
+      <LocalizedLabel LanguageRef="zhs">撤销签出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CancelCheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="CancelCheckOutCaption">
+      <LocalizedLabel LanguageRef="zhs">撤销签出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CancelCheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="AddHeader">
+      <LocalizedLabel LanguageRef="zhs">添加已有(A)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="AddCaption">
+      <LocalizedLabel LanguageRef="zhs">添加已有(A)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="QuoteViewHeader">
+      <LocalizedLabel LanguageRef="zhs">引用关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Quote</LocalizedLabel>
+    </Label>
+    <Label Name="QuoteViewCaption">
+      <LocalizedLabel LanguageRef="zhs">引用关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Quote</LocalizedLabel>
+    </Label>
+    <Label Name="LocalFolderHeader">
+      <LocalizedLabel LanguageRef="zhs">所在文件夹(P)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Location(P)</LocalizedLabel>
+    </Label>
+    <Label Name="LocalFolderCaption">
+      <LocalizedLabel LanguageRef="zhs">所在文件夹(P)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Location(P)</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageHeader">
+      <LocalizedLabel LanguageRef="zhs">首页(T)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HomePage(H)</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageCaption">
+      <LocalizedLabel LanguageRef="zhs">首页(T)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HomePage(H)</LocalizedLabel>
+    </Label>
+    <Label Name="SaveHeader">
+      <LocalizedLabel LanguageRef="zhs">保存(S)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="SaveCaption">
+      <LocalizedLabel LanguageRef="zhs">保存(S)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAllHeader">
+      <LocalizedLabel LanguageRef="zhs">保存全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save All</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAllCaption">
+      <LocalizedLabel LanguageRef="zhs">保存全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save All</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessServiceHeader">
+      <LocalizedLabel LanguageRef="zhs">业务服务(B)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BusinessService(B)</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessServiceCaption">
+      <LocalizedLabel LanguageRef="zhs">业务服务(B)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BusinessService(B)</LocalizedLabel>
+    </Label>
+    <Label Name="CreateExtendModelHeader">
+      <LocalizedLabel LanguageRef="zhs">新建领域模型(Q)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateExtendModel(Q)</LocalizedLabel>
+    </Label>
+    <Label Name="CreateExtendModelCaption">
+      <LocalizedLabel LanguageRef="zhs">新建领域模型(Q)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateExtendModel(Q)</LocalizedLabel>
+    </Label>
+    <Label Name="TreeCollapseHeader">
+      <LocalizedLabel LanguageRef="zhs">全部折叠(T)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CollapseAll(T)</LocalizedLabel>
+    </Label>
+    <Label Name="TreeCollapseCaption">
+      <LocalizedLabel LanguageRef="zhs">全部折叠(T)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CollapseAll(T)</LocalizedLabel>
+    </Label>
+    <Label Name="IISExpressHeader">
+      <LocalizedLabel LanguageRef="zhs">IISExpress(I)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IISExpress(I)</LocalizedLabel>
+    </Label>
+    <Label Name="IISExpressCaption">
+      <LocalizedLabel LanguageRef="zhs">IISExpress(I)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IISExpress(I)</LocalizedLabel>
+    </Label>
+    <Label Name="IISHeader">
+      <LocalizedLabel LanguageRef="zhs">IIS(N)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IIS(N)</LocalizedLabel>
+    </Label>
+    <Label Name="IISCaption">
+      <LocalizedLabel LanguageRef="zhs">IIS(N)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IIS(N)</LocalizedLabel>
+    </Label>
+    <Label Name="LocationNodeHeader">
+      <LocalizedLabel LanguageRef="zhs">所在树节点(Y)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LocationNode(Y)</LocalizedLabel>
+    </Label>
+    <Label Name="LocationNodeCaption">
+      <LocalizedLabel LanguageRef="zhs">所在树节点(Y)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LocationNode(Y)</LocalizedLabel>
+    </Label>
+    <Label Name="HelpHeader">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="HelpCaption">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="KuaiJieHeader">
+      <LocalizedLabel LanguageRef="zhs">快捷键说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="KuaiJieCaption">
+      <LocalizedLabel LanguageRef="zhs">快捷键说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="SkinChangeHeader">
+      <LocalizedLabel LanguageRef="zhs">更换皮肤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="SkinChangeCaption">
+      <LocalizedLabel LanguageRef="zhs">更换皮肤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="SaveAsHeader">
+      <LocalizedLabel LanguageRef="zhs">另存为(L)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="SaveAsCaption">
+      <LocalizedLabel LanguageRef="zhs">另存为(L)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="SkinChange">
+      <LocalizedLabel LanguageRef="zhs">更换皮肤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Skin Change</LocalizedLabel>
+    </Label>
+    <Label Name="SelectNodeInfo">
+      <LocalizedLabel LanguageRef="zhs">请选中某一树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select one tree node</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateDatabaseHeader">
+      <LocalizedLabel LanguageRef="zhs">更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateDatabaseCaption">
+      <LocalizedLabel LanguageRef="zhs">根据配置信息更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database structure is updated based on configuration information</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorHeader">
+      <LocalizedLabel LanguageRef="zhs">自动生成页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically Generate Page</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorCaption">
+      <LocalizedLabel LanguageRef="zhs">根据配置信息自动生成默认的页面信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default page information is automatically generated based on configuration information</LocalizedLabel>
+    </Label>
+    <Label Name="ImportHeader">
+      <LocalizedLabel LanguageRef="zhs">导入数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import Data</LocalizedLabel>
+    </Label>
+    <Label Name="ImportCaption">
+      <LocalizedLabel LanguageRef="zhs">导入数据库初始化数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import Database Initialization Data</LocalizedLabel>
+    </Label>
+    <Label Name="ExportHeader">
+      <LocalizedLabel LanguageRef="zhs">导出数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export Data</LocalizedLabel>
+    </Label>
+    <Label Name="ExportCaption">
+      <LocalizedLabel LanguageRef="zhs">导出数据库初始化数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export Database Initialization Data</LocalizedLabel>
+    </Label>
+    <Label Name="ClearHeader">
+      <LocalizedLabel LanguageRef="zhs">清理数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clean up Data</LocalizedLabel>
+    </Label>
+    <Label Name="ClearCaption">
+      <LocalizedLabel LanguageRef="zhs">清理数据库表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clean up the database table</LocalizedLabel>
+    </Label>
+    <Label Name="inheritHeader">
+      <LocalizedLabel LanguageRef="zhs">继承树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inheritance Tree</LocalizedLabel>
+    </Label>
+    <Label Name="inheritCaption">
+      <LocalizedLabel LanguageRef="zhs">继承树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inheritance Tree</LocalizedLabel>
+    </Label>
+    <Label Name="ListManageGuideHeader">
+      <LocalizedLabel LanguageRef="zhs">列表配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="ListManageGuideCaption">
+      <LocalizedLabel LanguageRef="zhs">列表管理模块配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Management Module Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManageGuideHeader">
+      <LocalizedLabel LanguageRef="zhs">树配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManageGuideCaption">
+      <LocalizedLabel LanguageRef="zhs">树配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="MakePatchHeader">
+      <LocalizedLabel LanguageRef="zhs">制作补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Make Patche</LocalizedLabel>
+    </Label>
+    <Label Name="MakePatchCaption">
+      <LocalizedLabel LanguageRef="zhs">制作补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Make Patche</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseCaption">
+      <LocalizedLabel LanguageRef="zhs">配置数据库连接字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database structure is updated based on configuration information</LocalizedLabel>
+    </Label>
+    <Label Name="AccountBookHeader">
+      <LocalizedLabel LanguageRef="zhs">帐套管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccountBook</LocalizedLabel>
+    </Label>
+    <Label Name="AccountBookCaption">
+      <LocalizedLabel LanguageRef="zhs">帐套管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccountBook</LocalizedLabel>
+    </Label>
+    <Label Name="HistoryToolsGuideHeader">
+      <LocalizedLabel LanguageRef="zhs">历史数据迁移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">History trans wizard</LocalizedLabel>
+    </Label>
+    <Label Name="HistoryToolsGuideCaption">
+      <LocalizedLabel LanguageRef="zhs">历史数据迁移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">History trans wizard</LocalizedLabel>
+    </Label>
+    <Label Name="InitBigDataHeader">
+      <LocalizedLabel LanguageRef="zhs">初始化大数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initialize Big Data</LocalizedLabel>
+    </Label>
+    <Label Name="InitBigDataCaption">
+      <LocalizedLabel LanguageRef="zhs">初始化大数据，供性能测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initialize large data is for performance testing</LocalizedLabel>
+    </Label>
+    <Label Name="SQLQueryAnalyzerHeader">
+      <LocalizedLabel LanguageRef="zhs">SQL查询分析器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL Query Analyzer</LocalizedLabel>
+    </Label>
+    <Label Name="SQLQueryAnalyzerCaption">
+      <LocalizedLabel LanguageRef="zhs">SQL查询分析器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL Query Analyzer</LocalizedLabel>
+    </Label>
+    <Label Name="ExportDictHeader">
+      <LocalizedLabel LanguageRef="zhs">导出数据字典</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export data dict</LocalizedLabel>
+    </Label>
+    <Label Name="ExportDictCaption">
+      <LocalizedLabel LanguageRef="zhs">导出数据字典</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export data dict</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleFileHistoryHeader">
+      <LocalizedLabel LanguageRef="zhs">文件修改历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConsoleFileHistory</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleFileHistoryCaption">
+      <LocalizedLabel LanguageRef="zhs">文件修改历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConsoleFileHistory</LocalizedLabel>
+    </Label>
+    <Label Name="ReportExampleEditHeader">
+      <LocalizedLabel LanguageRef="zhs">Dev报表设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export data dict</LocalizedLabel>
+    </Label>
+    <Label Name="TestRibbonCmdHeader">
+      <LocalizedLabel LanguageRef="zhs">Dev Ribbon风格报表设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ribbon</LocalizedLabel>
+    </Label>
+    <Label Name="TestTiReportCmdHeader">
+      <LocalizedLabel LanguageRef="zhs">StiReport</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StiReport</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateAllCompanyDatabaseHeader">
+      <LocalizedLabel LanguageRef="zhs">更新公司数据库表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">更新公司数据库表结构</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateAllCompanyDatabaseCaption">
+      <LocalizedLabel LanguageRef="zhs">更新公司数据库表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">更新公司数据库表结构</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateOneDataTableHeader">
+      <LocalizedLabel LanguageRef="zhs">更新单模型数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateOneDataTableCaption">
+      <LocalizedLabel LanguageRef="zhs">更新单模型数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+
+    <Label Name="ZipModifyFileHeader">
+      <LocalizedLabel LanguageRef="zhs">最近修改文件打包</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    <Label Name="ZipModifyFileCaption">
+      <LocalizedLabel LanguageRef="zhs">最近修改文件打包</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    
+    <Label Name="GeneratorOnePageHeader">
+      <LocalizedLabel LanguageRef="zhs">自动生成指定页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically Generate Page</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorOnePageCaption">
+      <LocalizedLabel LanguageRef="zhs">自动生成指定页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default page information is automatically generated based on configuration information</LocalizedLabel>
+    </Label>
+    <Label Name="CreateNewHeader">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="CreateNewCaption">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="EidtHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Eidt</LocalizedLabel>
+    </Label>
+    <Label Name="EidtCaption">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Eidt</LocalizedLabel>
+    </Label>
+    <Label Name="StartServiceHeader">
+      <LocalizedLabel LanguageRef="zhs">启动服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StartService</LocalizedLabel>
+    </Label>
+    <Label Name="StartServiceCaption">
+      <LocalizedLabel LanguageRef="zhs">启动服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StartService</LocalizedLabel>
+    </Label>
+    <Label Name="LocationHeader">
+      <LocalizedLabel LanguageRef="zhs">所在位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Location</LocalizedLabel>
+    </Label>
+    <Label Name="LocationCaption">
+      <LocalizedLabel LanguageRef="zhs">所在位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Location</LocalizedLabel>
+    </Label>
+
+    <Label Name="OpenByWebBrowserHeader">
+      <LocalizedLabel LanguageRef="zhs">在浏览器中打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open By WebBrowser</LocalizedLabel>
+    </Label>
+    <Label Name="OpenByWebBrowserCaption">
+      <LocalizedLabel LanguageRef="zhs">在浏览器中打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open By WebBrowse</LocalizedLabel>
+    </Label>
+    <Label Name="LinkManageHeader">
+      <LocalizedLabel LanguageRef="zhs">超链接管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Link Manage</LocalizedLabel>
+    </Label>
+    <Label Name="LinkManageCaption">
+      <LocalizedLabel LanguageRef="zhs">超链接管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Link Manage</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

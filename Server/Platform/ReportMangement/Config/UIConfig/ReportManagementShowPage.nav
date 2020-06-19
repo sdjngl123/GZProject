@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NavigationItem Name="ReportManagement" IsAddCustom="true" IsHidden="false" Order="100">
+    <Image>p_system_management</Image> 
+    <NavigationItem Name="ReportShow" Order="600" IsAddCustom="true" IsHidden="false">
+      <Image>p_business_rules</Image>
+      <PageName>TreeManagement</PageName>
+      <Para Name="ItemName" Value="ReportManagementShowTree" />
+    </NavigationItem>
+    <NavigationItem Name="ReportDesign" Order="601" IsAddCustom="true" IsHidden="false" >
+      <Image>p_business_rules</Image>
+      <PageName>ReportManagementDesign</PageName>
+    </NavigationItem>
+  </NavigationItem>
+</root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ORGANIZEModel" IsWeb="true">
+    <Label Name="ORGANIZEHeader">
+      <LocalizedLabel LanguageRef="zhs">组织结构关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure relation</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZECaption">
+      <LocalizedLabel LanguageRef="zhs">组织结构关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure relation</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPIDHeader">
+      <LocalizedLabel LanguageRef="zhs">组ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group ID</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPIDCaption">
+      <LocalizedLabel LanguageRef="zhs">组ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group ID</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZEHeader">
+      <LocalizedLabel LanguageRef="zhs">组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZECaption">
+      <LocalizedLabel LanguageRef="zhs">组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SYSTEMSETTINGSVIEWView" IsWeb="true">
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="MODULEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">模块ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module ID</LocalizedLabel>
+    </Label>
+    <Label Name="MODULEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">模块ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module ID</LocalizedLabel>
+    </Label>
+    <Label Name="OWNERHeader">
+      <LocalizedLabel LanguageRef="zhs">拥有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNERCaption">
+      <LocalizedLabel LanguageRef="zhs">拥有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKCaption">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="SETTINGTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">值类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value type</LocalizedLabel>
+    </Label>
+    <Label Name="SETTINGTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">值类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value type</LocalizedLabel>
+    </Label>
+    <Label Name="USINGUSERSETHeader">
+      <LocalizedLabel LanguageRef="zhs">应用个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Apply personal setting</LocalizedLabel>
+    </Label>
+    <Label Name="USINGUSERSETCaption">
+      <LocalizedLabel LanguageRef="zhs">应用个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Apply personal setting</LocalizedLabel>
+    </Label>
+    <Label Name="SETTINGVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">配置数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configuration data</LocalizedLabel>
+    </Label>
+    <Label Name="SETTINGVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">配置数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configuration data</LocalizedLabel>
+    </Label>
+    <Label Name="USETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">应用类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application type</LocalizedLabel>
+    </Label>
+    <Label Name="USETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">应用类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application type</LocalizedLabel>
+    </Label>
+    <Label Name="ISCOMPANYHeader">
+      <LocalizedLabel LanguageRef="zhs">是否集团设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsCompany</LocalizedLabel>
+    </Label>
+    <Label Name="ISCOMPANYCaption">
+      <LocalizedLabel LanguageRef="zhs">是否集团设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsCompany</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

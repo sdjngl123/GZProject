@@ -1,0 +1,81 @@
+.ztree * {padding:0; margin:0; font-size:12px;}
+.ztree {margin:0; padding:8px; color:#333}
+.ztree li
+{
+    list-style:none; 
+    line-height:24px; 
+    text-align:left; 
+    white-space:nowrap; 
+    outline:0;
+}
+
+.ztree li a 
+{
+    padding:1px 3px 0 0;
+    margin:0;
+    cursor:pointer;
+    height:24px;
+    line-height:24px;
+    color:#333;
+    background-color: transparent;
+	text-decoration:none;
+	vertical-align:top;
+	display: inline-block;
+	min-width:100%;
+}
+.ztree li a:hover
+{
+    text-decoration: none;
+}
+.ztree li a.curSelectedNode 
+{
+    border:0;
+}
+.ztree li span {line-height: 24px;margin-left:5px;}
+.ztree li span.button.chk {margin:0px 6px 6px 0px; cursor: auto}
+.ztree li span.button.switch {margin: -6px 6px 0 0;}
+.ztree li span.button.noline_docu{ background:none;}
+
+.ztree li span.button.ico_open{margin-right:0px;margin-top: -5px;}
+.ztree li span.button.ico_close{margin-right:0px;margin-top: -5px;} 
+.ztree li span.button.ico_docu{margin-right:0px;margin-top: -5px;}
+
+.ztree li span.button.nodeimg
+{
+    position:relative;
+    top:-5px;
+    margin-left:5px;
+}
+.ztree li a.tree-lineThrough span {
+    text-decoration:line-through;
+}
+
+
+/*强制调整*/
+.ztree li span.button.chk.checkbox_true_part[third-state-checkbox_true_full] {
+    background-position: -80px -128px;
+}
+
+.ztree li span.button.chk.checkbox_true_part_focus[third-state-checkbox_true_full] {
+    background-position: -96px -128px;
+}
+
+.ztree li span.button.chk.checkbox_false_part[third-state-checkbox_false_full] {
+    background-position: 0px -128px;
+}
+
+.ztree li span.button.chk.checkbox_false_part_focus[third-state-checkbox_false_full] {
+    background-position: -16px -128px;
+}
+
+    .ztree li span.button.chk.checkbox_true_part_disable {
+        background-position: -224px -128px;
+    }
+
+    .ztree li span.button.chk.checkbox_false_part_disable {
+        background-position: -208px -128px;
+    }
+
+
+
+

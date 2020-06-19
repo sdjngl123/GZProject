@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModulePermissionPluginItem Name="GetUserModulePermission" Sort="10" Assembly="Hoteam.InforCenter.ModulePermission.Business" Class="Hoteam.InforCenter.ModulePermission.Business.Plugins.UserModulePermission" />
+  <ModulePermissionPluginItem Name="GetRoleModulePermission" Sort="20" Assembly="Hoteam.InforCenter.ModulePermission.Business" Class="Hoteam.InforCenter.ModulePermission.Business.Plugins.RoleModulePermission" />
+  <ModulePermissionPluginItem Name="GetGroupRoleModulePermission" Sort="30" Assembly="Hoteam.InforCenter.ModulePermission.Business" Class="Hoteam.InforCenter.ModulePermission.Business.Plugins.GroupRoleModulePermission" />
+  <ModulePermissionPluginItem Name="GetGroupModulePermission" Sort="40" Assembly="Hoteam.InforCenter.ModulePermission.Business" Class="Hoteam.InforCenter.ModulePermission.Business.Plugins.GroupModulePermission" />
+  <ModulePermissionPluginItem Name="GetAllUserModulePermission" Sort="50" Assembly="Hoteam.InforCenter.ModulePermission.Business" Class="Hoteam.InforCenter.ModulePermission.Business.Plugins.AllUserModulePermission" />
+  <ModulePermissionPluginItem Name="GetCompanyModulePermission" Sort="60" Assembly="Hoteam.InforCenter.ModulePermission.Business" Class="Hoteam.InforCenter.ModulePermission.Business.Plugins.CompanyModulePermission" />
+</root>

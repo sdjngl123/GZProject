@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="ListCompanyMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateCompany" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" TemplateDescription="" IsMainConfig="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="COMPANY" SelectType="" />
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="COMPANY" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="EditCompany" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" TemplateDescription="" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="DeleteCompany" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" IsHidden="false" IsTemplate="false" TemplateDescription="" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_ComanyGroupUserDeleteCheck" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_EID]" />
+        <Para Name="EName" Value="[List_ENAME]" />
+        <Para Name="DenyText" Value="OrganizationCommon.CompanyExistReference" />
+      </JSMethod>
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    
+    <WebAction Name="LookAtOrganization" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.LookAtOrganization" Image="p_organizationstructure" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" IsHidden="false" IsTemplate="false" TemplateDescription="" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="LookAtOrganization" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <!--<Para Name="TreeRootDataService" Value="Hoteam.InforCenter.CompanyRuleService.GetOrganizationTreeRootData" />
+        <Para Name="TreeChildDataService" Value="Hoteam.InforCenter.CompanyRuleService.GetOrganizationTreeChildData" />-->
+        <Para Name="TreeViewName" Value="ShowOrganisizeTreeView" />
+        <Para Name="Size" Value="360*480" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="SetSystemPassword" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.SetSystemPassword" Image="p_securitysettings" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" IsHidden="false" IsTemplate="false" TemplateDescription="" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="SetSystemPassword" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+  </MenuItem>
+ </root>

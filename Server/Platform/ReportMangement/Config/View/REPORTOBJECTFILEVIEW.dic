@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="REPORTOBJECTFILEVIEWView" IsWeb="true">
+    <Label Name="REPORTOBJECTFILEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="REPORTOBJECTFILEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="FileNameHeader">
+      <LocalizedLabel LanguageRef="zhs">文件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FileName</LocalizedLabel>
+    </Label>
+    <Label Name="FileNameCaption">
+      <LocalizedLabel LanguageRef="zhs">文件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FileName</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="REPORTOBJECTFILEVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PMSPROJECT-VIEW" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="DIRECTORHeader">
+      <LocalizedLabel LanguageRef="zhs">总监</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DIRECTOR</LocalizedLabel>
+    </Label>
+    <Label Name="MANAGERHeader">
+      <LocalizedLabel LanguageRef="zhs">试验经理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MANAGER</LocalizedLabel>
+    </Label>
+    <Label Name="STARTDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">启动日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STARTDATE</LocalizedLabel>
+    </Label>
+    <Label Name="SOPDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">SOP日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="DISTANCESOPHeader">
+      <LocalizedLabel LanguageRef="zhs">距离SOP月</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DISTANCESOP</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">REMARK</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="PMSPROJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览策划项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowsePMSPROJECT</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

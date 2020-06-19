@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityLinkView Name="GROUPTREELISTVIEWIgnoreCompanyRulePermissionFalse" ObjectTypeName="ORGANIZE" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="Left" OrderByString="LSEQUENCE ASC" FixedFilter=" CETYPE=N'GROUPINFO'" DeepSearch="false" SearchChild="true" SumDistinct="false" ContainSelf="false" SearchMode="All" ISRelatedQurey="false" ISLinkPrentRelated="false" ISLinkRelatedQureyChild="false" ISEntityRelated="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="VAULTINFO" Width="100" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="PARENTGROUPEID" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="70" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATEUID" Width="70" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="LSEQUENCE" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="GROUPID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="PEID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="LID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </EntityLinkView>
+</root>

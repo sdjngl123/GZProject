@@ -1,0 +1,8 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='[OBJTYPE]';ctrlEvent.infoName='[INFONAME]';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

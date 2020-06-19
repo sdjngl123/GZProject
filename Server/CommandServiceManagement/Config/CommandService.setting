@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="CommandService_NameServerAddress" Value="10.0.81.105:9000" ToClient="false" Description="转换服务NameServer地址" />
+  <AppSet Key="CommandService_TimeoutMillis" Value="10000" ToClient="false" Description="向NameServer发送超时时间 单位毫秒" />
+  
+</root>

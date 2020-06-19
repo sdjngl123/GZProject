@@ -1,0 +1,350 @@
+﻿*html .clearFix
+{
+    zoom: 1;
+}
+* + html .clearFix
+{
+    zoom: 1;
+}
+
+.clearFix:after
+{
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+#main
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.quickNav
+{
+    display: none;
+    z-index: 9999;
+    position: absolute;
+}
+.start {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#topNav
+{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+
+#bottomNav
+{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+}
+#leftNav
+{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70px;
+}
+
+#leftNav .start
+{
+    height: 40px;
+    padding-top: 20px;
+}
+#leftNav .common
+{
+    position: absolute;
+    height: 60px;
+    bottom: 10px;
+    width: 60px;
+    padding: 0 5px 0 5px;
+}
+#leftNav .common p
+{
+    line-height: 25px;
+    text-align: center;
+}
+#leftNav .taskbar
+{
+    width: 70px;
+    overflow: auto;
+}
+#leftNav .taskbar div
+{
+    height: 30px;
+    margin: 5px 0 0 0;
+    text-align: center;
+    background: url(../platform/image/Desktop/taskbar-left.png);
+    moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+#leftNav .taskbar div:hover
+{
+    background: url(../platform/image/Desktop/taskbar-left.png) 0px -30px;
+}
+#leftNav .taskbar div.activate
+{
+    background: url(../platform/image/Desktop/taskbar-left.png) 0px -60px;
+}
+#leftNav .taskbar div img
+{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+#leftNav .taskbar div p
+{
+    display: none;
+}
+#rightNav
+{
+    height: 50%;
+    width: 50px;
+    padding: 10px;
+    right: 0;
+    top: 0;
+}
+#StartMenu
+{
+    width: 400px;
+    height: 500px;
+    display: none;
+    position: fixed;
+    border: 1px solid #666666;
+    padding: 5px;
+    moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    z-index: 99999;
+}
+#StartMenu .content
+{
+    width: 250px;
+    height: 488px;
+    border: 1px solid #666666;
+    padding: 5px;
+    moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    overflow: auto;
+    float: left;
+}
+#StartMenu .content .firstmenu
+{
+    height: 30px;
+    line-height: 30px;
+}
+#StartMenu .content .menuitem
+{
+    cursor: pointer;
+}
+#StartMenu .content .menuitem a
+{
+    float: left;
+}
+#StartMenu .content .menuitem img
+{
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#taskbartip
+{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #666666;
+    moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    z-index: 9998;
+}
+#taskbartip div
+{
+    border: 1px solid #666666;
+    moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+    height: 120px;
+}
+#taskbartip div p
+{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #ccc;
+}
+#taskbartip div img
+{
+    width: 80px;
+    height: 80px;
+}
+#StartMenu .content .firstmenu span.ui-icon
+{
+    margin: 5px 5px 0 0;
+    float: left;
+}
+#StartMenu .content .secondmenu
+{
+    display: none;
+}
+#StartMenu .content .secondmenu li
+{
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    padding: 0 0 0 40px;
+}
+#StartMenu .content .secondmenu li a
+{
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+    width: 150px;
+}
+#StartMenu .leftcontent
+{
+    width: 130px;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+#StartMenu .leftcontent ul
+{
+    margin-top: 30px;
+}
+#StartMenu .leftcontent ul li
+{
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    overflow: hidden;
+    color:#fff;
+    font-weight:bold;
+}
+#StartMenu .leftcontent ul li a
+{
+    font-weight:bold;
+}
+#StartMenu .leftcontent ul li.line
+{
+    height: 1px;
+    margin: 0 10px 0 0;
+    background-color: #fff;
+    padding: 0px;
+    opacity: 0.1;
+}
+#StartMenu .leftcontent ul li a:link, #StartMenu .leftcontent ul li a:hover, #StartMenu .leftcontent ul li a:visited
+{
+    color: #EBEBEB;
+}
+#StartMenu .leftcontent #logout
+{
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: center;
+    moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#desktop
+{
+    position: fixed;
+}
+#desktop div.appcontent
+{
+    border-style: none;
+    border-width: 1px;
+    position: absolute;
+}
+#desktop div.appcontent .removeapp
+{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    display: none;
+    right: 15px;
+    top: 8px;
+    background: url(../platform/image/classichomepage/exit.png);
+}
+#desktop div.appcontent .app
+{
+    border-style: none;
+    border-width: 1px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    text-align: center;
+ 
+}
+#desktop div.appcontent .app .imgdiv
+{
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    margin:0 auto;
+}
+
+#desktop div.appcontent .app p
+{
+    line-height: 20px;
+    color: White;
+    text-align:center;
+    text-shadow: 2px 2px 2px black;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding-top: 65px;
+}
+
+.Platform_Desktop_Plug
+{
+    position: absolute;
+    moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.Platform_Desktop_Plug .title
+{
+    line-height: 25px;
+    font-weight: bold;
+    padding-left: 5px;
+    position: relative;
+}
+.Platform_Desktop_Plug .title span.close
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

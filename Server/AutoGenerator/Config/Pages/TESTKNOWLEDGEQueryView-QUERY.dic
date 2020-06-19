@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTKNOWLEDGEQueryView-QUERY" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="SOURCEHeader">
+      <LocalizedLabel LanguageRef="zhs">来源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOURCE</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FlowActorExtend" IsWeb="false">
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">执行人类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="InitDataJSMethod">
+      <LocalizedLabel LanguageRef="zhs">数据初始化JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InitDataJSMethod</LocalizedLabel>
+    </Label>
+    <Label Name="InitDataJSMethodDescription">
+      <LocalizedLabel LanguageRef="zhs">执行数据初始化的js脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SetDataJSMethod">
+      <LocalizedLabel LanguageRef="zhs">设置数据JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CommonManagement</LocalizedLabel>
+    </Label>
+    <Label Name="SetDataJSMethodDescription">
+      <LocalizedLabel LanguageRef="zhs">通用管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Assembly">
+      <LocalizedLabel LanguageRef="zhs">程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CommonManagement</LocalizedLabel>
+    </Label>
+    <Label Name="AssemblyDescription">
+      <LocalizedLabel LanguageRef="zhs">扩展名为.dll的文件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Class">
+      <LocalizedLabel LanguageRef="zhs">类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Class</LocalizedLabel>
+    </Label>
+    <Label Name="ClassDescription">
+      <LocalizedLabel LanguageRef="zhs">对应类的全名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TemplateType">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TemplateTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="INTERNALMAILSENDVIEW-QUERY">
+  <Settings Key="height" Value="358"/>
+  <Settings Key="width" Value="201"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="{
+	var o = pageEvent.o.GetControl('IMPORTANT_Value');
+	if(o.id!=''){
+		InforCenter_Platform_Object_SetEnumList(o,'IMPORTANT','INTERNALMAIL',false);
+	}
+}{
+				 var ctrl = pageEvent.o.GetControl('MSTATE_Value');
+				 pageEvent.objectType = 'INTERNALMAIL';
+                 pageEvent.infoType = 'MSTATE';
+				 pageEvent.IsQueryPage = true;
+				 pageEvent.Ctrl = ctrl;
+                 var functionName = 'InforCenter_' + pageEvent.objectType + '_' + pageEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, pageEvent);
+                 }else{
+                      var o = ctrl;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'MSTATE','INTERNALMAIL',true);
+                          }
+                 }
+}"/>
+    <PageHandler HandlerName ="GetQueryData" Script="var bCheck=true;var QueyData =[];{
+var c = pageEvent.o.GetControl('SENDUSER_Value');
+if(c.id!=''){
+var value = c.GetValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'SENDUSER',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('RECIVER_Value');
+if(c.id!=''){
+var value = c.GetValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'RECIVER',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('MTITLE_Value');
+if(c.id!=''){
+var value = c.GetText();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'MTITLE',QUERYOPERATOR:'LIKE',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+	var c = pageEvent.o.GetControl('MCONTENT_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			QueyData.push({ANDOR:'AND',QUERYCOLUMN:'MCONTENT',QUERYOPERATOR:'LIKE',VALUE:value,UNQUOTED:false});
+			if(c.Check() == false) bCheck = false;	
+		}
+	}
+}{
+	var c = pageEvent.o.GetControl('SENDTIME_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+	{
+		if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&gt;=' == '&lt;' || '&gt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+		}
+
+		QueyData.push({ANDOR:'AND',QUERYCOLUMN:'SENDTIME',QUERYOPERATOR:'&gt;=',VALUE:value,UNQUOTED:true});
+		if(c.Check() == false) bCheck = false;	
+	}
+}}{
+	var c = pageEvent.o.GetControl('SENDTIME_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+	{
+		if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&lt;=' == '&lt;' || '&lt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+		}
+
+		QueyData.push({ANDOR:'AND',QUERYCOLUMN:'SENDTIME',QUERYOPERATOR:'&lt;=',VALUE:value,UNQUOTED:true});
+		if(c.Check() == false) bCheck = false;	
+	}
+}}{
+var c = pageEvent.o.GetControl('IMPORTANT_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'IMPORTANT',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('MSTATE_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'MSTATE',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+};if(bCheck){return QueyData;}"/>
+    <PageHandler HandlerName="OnReset" Script="var ctrlEvent={};ctrlEvent.o=pageEvent.o.GetControl('btnReset');{
+var o = ctrlEvent.o.OtherControl('SENDUSER_Value');
+if(o.id!=''){
+o.SetText('');
+o.SetValue('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('RECIVER_Value');
+if(o.id!=''){
+o.SetText('');
+o.SetValue('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('MTITLE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+}{
+	var c = ctrlEvent.o.OtherControl('MCONTENT_Value');
+	if(c.id!=''){
+		c.SetText('');
+	}
+}
+
+{
+var o = ctrlEvent.o.OtherControl('SENDTIME_Value');
+if(o.id!=''){
+o.Clear();
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('SENDTIME_Value');
+if(o.id!=''){
+o.Clear();
+}
+}{
+	var o = ctrlEvent.o.OtherControl('IMPORTANT_Value');
+	if(o.id!=''){
+		o.ClearSelectData();
+	}
+}{
+	var o =ctrlEvent.o.OtherControl('MSTATE_Value');
+	if(o.id!=''){
+		o.ClearSelectData();
+	}
+};"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-7"/>
+</Settings><Settings Key="item8" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-8"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="SENDUSER_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="SENDUSER_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SENDUSER_Label" ParentID="R-1" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.SENDUSERHeader" />
+</PageControl>
+
+<PageControl ControlID="SENDUSER_Value" ParentID="R-1" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="RECIVER_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="RECIVER_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="RECIVER_Label" ParentID="R-2" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.RECIVERHeader" />
+</PageControl>
+
+<PageControl ControlID="RECIVER_Value" ParentID="R-2" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="MTITLE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="MTITLE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MTITLE_Label" ParentID="R-3" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.MTITLEHeader" />
+</PageControl>
+
+<PageControl ControlID="MTITLE_Value" ParentID="R-3" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="MCONTENT_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="MCONTENT_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MCONTENT_Label" ParentID="R-4" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.MCONTENTHeader" />
+</PageControl>
+
+<PageControl ControlID="MCONTENT_Value" ParentID="R-4" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="SENDTIME_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="SENDTIME_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SENDTIME_Label" ParentID="R-5" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.SENDTIMEHeader" />
+</PageControl>
+
+<PageControl ControlID="SENDTIME_Value" ParentID="R-5" TypeName="DateTime" >
+  <Settings Key="type" Value="datetime"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="SENDTIME_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="SENDTIME_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SENDTIME_Label" ParentID="R-6" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.SENDTIMEHeader" />
+</PageControl>
+
+<PageControl ControlID="SENDTIME_Value" ParentID="R-6" TypeName="DateTime" >
+  <Settings Key="type" Value="datetime"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="IMPORTANT_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="IMPORTANT_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="IMPORTANT_Label" ParentID="R-7" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.IMPORTANTHeader" />
+</PageControl>
+
+<PageControl ControlID="IMPORTANT_Value" ParentID="R-7" TypeName="DropDown" >
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="MSTATE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="MSTATE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MSTATE_Label" ParentID="R-8" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="INTERNALMAILSENDVIEW-QUERY.MSTATEHeader" />
+</PageControl>
+
+<PageControl ControlID="MSTATE_Value" ParentID="R-8" TypeName="DropDown" >
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnQuery"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnReset"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="var bCheck=true;var FilterString ='';var EntityFilterString =''; {
+var c = ctrlEvent.o.OtherControl('SENDUSER_Value');
+if(c.id!=''){
+var value = c.GetValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','SENDUSER','=',value,false);
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+	var c = ctrlEvent.o.OtherControl('RECIVER_Value');
+	if(c.id!=''){
+		var value = c.GetValue();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			var arr = value.split(';');
+			var enumFilter='';
+			if(arr.length == 1)
+			{
+				enumFilter = InforCenter_Platform_Object_GetQueryFilter('AND','RECIVER','=',value,false);
+			}
+			else if(arr.length &gt; 1)
+			{
+				var andor = 'AND';
+				var column = 'RECIVER';
+				var op = '=';
+				op = op.toUpperCase();
+
+				if(op == '=' || op == 'LIKE')
+				{
+					for(var i = 0;i &lt;arr.length;i++)
+					{
+						enumFilter += 'OR  ' + column + ' = N\'' + arr[i] + '\' ';
+					}
+				}
+				else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+				{
+					for(var i = 0;i &lt;arr.length;i++)
+					{
+					enumFilter += 'AND ' + column + ' &lt;&gt; N\'' + arr[i] + '\' ';
+					}
+				}
+
+				if(enumFilter.length &gt; 0)
+				{
+					enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+				}
+			}
+			FilterString += enumFilter;
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+}{
+	var c = ctrlEvent.o.OtherControl('MTITLE_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','MTITLE','LIKE',value,false);
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+}{
+	var c = ctrlEvent.o.OtherControl('MCONTENT_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','MCONTENT','LIKE',value,false);
+		}
+		if(c.Check() == false) bCheck = false;	
+	}
+}{
+	var c = ctrlEvent.o.OtherControl('SENDTIME_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+	{
+		if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&gt;=' == '&lt;' || '&gt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+		}
+
+		FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','SENDTIME','&gt;=',value,true);
+		if(c.Check() == false) bCheck = false;	
+	}
+}}{
+	var c = ctrlEvent.o.OtherControl('SENDTIME_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+	{
+		if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&lt;=' == '&lt;' || '&lt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+		}
+
+		FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','SENDTIME','&lt;=',value,true);
+		if(c.Check() == false) bCheck = false;	
+	}
+}}{
+var c = ctrlEvent.o.OtherControl('IMPORTANT_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	var enumFilter='';	
+	var andor = 'AND';
+	var column = 'IMPORTANT';
+	var op = '=';
+	op = op.toUpperCase();
+	var arr = value.split(';');
+		
+	if(op == '=' || op == 'LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' = N\'' + arr[i] + '\' ' + 
+						' OR '+ column + ' LIKE N\'' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+	else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' &lt;&gt; N\'' + arr[i] + '\' ' + 
+							' AND '+ column + ' NOT LIKE N\'' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+
+	if(enumFilter.length &gt; 0)
+	{
+		enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+	}
+	FilterString += enumFilter;
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = ctrlEvent.o.OtherControl('MSTATE_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	var enumFilter='';	
+	var andor = 'AND';
+	var column = 'MSTATE';
+	var op = '=';
+	op = op.toUpperCase();
+	var arr = value.split(';');
+		
+	if(op == '=' || op == 'LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' = N\'' + arr[i] + '\' ' + 
+						' OR '+ column + ' LIKE N\'' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+	else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' &lt;&gt; N\'' + arr[i] + '\' ' + 
+							' AND '+ column + ' NOT LIKE N\'' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+
+	if(enumFilter.length &gt; 0)
+	{
+		enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+	}
+	FilterString += enumFilter;
+	if(c.Check() == false) bCheck = false;	
+}
+}
+};if(bCheck){var QueryData = HoteamUI.Page.FirePageEvent(ctrlEvent.o.ContainerID(), 'GetQueryData');if (!QueryData){QueryData=[];};FilterString = FilterString.substring(4);EntityFilterString = EntityFilterString.substring(4); HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:FilterString,EntityFilterString:EntityFilterString,ButtonType:'Query',QueryData:QueryData});}"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="{
+var o = ctrlEvent.o.OtherControl('SENDUSER_Value');
+if(o.id!=''){
+o.SetText('');
+o.SetValue('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('RECIVER_Value');
+if(o.id!=''){
+o.SetText('');
+o.SetValue('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('MTITLE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+}{
+	var c = ctrlEvent.o.OtherControl('MCONTENT_Value');
+	if(c.id!=''){
+		c.SetText('');
+	}
+}
+
+{
+var o = ctrlEvent.o.OtherControl('SENDTIME_Value');
+if(o.id!=''){
+o.Clear();
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('SENDTIME_Value');
+if(o.id!=''){
+o.Clear();
+}
+}{
+	var o = ctrlEvent.o.OtherControl('IMPORTANT_Value');
+	if(o.id!=''){
+		o.ClearSelectData();
+	}
+}{
+	var o =ctrlEvent.o.OtherControl('MSTATE_Value');
+	if(o.id!=''){
+		o.ClearSelectData();
+	}
+};HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:'1=1',EntityFilterString:'1=1',ButtonType:'Reset',QueryData:[]});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="PATCHOBJECTPERMISSIONOBJECTGRIDVIED" ObjectTypeName="ENTITY" OrderByString="CREATETIME DESC" AsCommonQuery="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="180" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="EVERSION" Width="60" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="STATEID" Width="60" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="90" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="OWNUID" Width="90" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+  </ObjectView>
+</root>

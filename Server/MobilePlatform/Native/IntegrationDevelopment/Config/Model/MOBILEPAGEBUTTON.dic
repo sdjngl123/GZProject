@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGEBUTTONModel" IsWeb="true">
+    <Label Name="MOBILEPAGEBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageButton</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEBUTTONCaption">
+      <LocalizedLabel LanguageRef="zhs">菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageButton</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="TITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="TITLECaption">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONITEMTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">按钮类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonItemType</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONITEMTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">按钮类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonItemType</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ICONCaption">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="BACKGROUNDCOLORHeader">
+      <LocalizedLabel LanguageRef="zhs">背景颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BackgroundColor</LocalizedLabel>
+    </Label>
+    <Label Name="BACKGROUNDCOLORCaption">
+      <LocalizedLabel LanguageRef="zhs">背景颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BackgroundColor</LocalizedLabel>
+    </Label>
+    <Label Name="URLHeader">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="URLCaption">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONITEMTYPEEXTENDHeader">
+      <LocalizedLabel LanguageRef="zhs">按钮类型扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonItemTypeExtend</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONITEMTYPEEXTENDCaption">
+      <LocalizedLabel LanguageRef="zhs">按钮类型扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonItemTypeExtend</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

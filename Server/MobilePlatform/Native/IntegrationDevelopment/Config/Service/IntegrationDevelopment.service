@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+    <ServiceItem ServiceName="MobilePageDevService" 
+                 ServiceAssembly="Hoteam.InforCenter.MobilePageDev.Service.dll"
+                 ServiceClass="Hoteam.InforCenter.MobilePageDev.Service.MobilePageDevService" 
+                 ContractAssembly="Hoteam.InforCenter.MobilePageDev.Service.dll" 
+                 ContractClass="Hoteam.InforCenter.MobilePageDev.Service.IMobilePageDevService"/>  
+</root>

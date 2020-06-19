@@ -1,0 +1,28 @@
+﻿<div data-role="content" class="ui-content userinfo-page" >
+
+  <label for="useroldpassword">
+    旧密码：
+  </label>
+  <div class="ui-inline">
+    <input type="password" id="useroldpassword" placeholder="请输入旧密码" data-clear-btn="true" onblur="Hoteam_Mobile_MobileUserInfo_CheckInputValueOnblur(50, 'true', this,'旧密码','false');" />
+    <span id="useroldpasswordtip" style="color:red;"></span>
+  </div>
+
+  <label for="usernewpassword">
+    新密码：
+  </label>
+  <div class="ui-inline">
+    <input type="password" id="usernewpassword" placeholder="请输入新密码" data-clear-btn="true" onblur="Hoteam_Mobile_MobileUserInfo_CheckInputValueOnblur(50, 'true', this,'新密码','false');" />
+    <span id="usernewpasswordtip" style="color:red"></span>
+  </div>
+  <label for="userrenewpassword">
+    确认密码：
+  </label>
+  <div class="ui-inline">
+    <input type="password" id="userrenewpassword" placeholder="请输入确认密码" data-clear-btn="true" onblur="Hoteam_Mobile_MobileUserInfo_UpdatePasswordOnblur(50, 'true', this,'确认密码','false');" />
+    <span id="userrenewpasswordtip" style="color:red"></span>
+  </div>
+  <button class="ui-btn ui-corner-all userinfo-page-ok" onclick="Hoteam_Mobile_MobileUserInfo_UpdatePassword();" >
+    确定
+  </button>
+</div>

@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="GETPARENTORGANIZE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        WITH TB AS (
+        SELECT * FROM dbo.ORGANIZE WHERE CEID=[CEID] AND PEID=[PEID] [GROUPID]
+        UNION ALL
+        SELECT O.* FROM dbo.ORGANIZE O INNER JOIN TB ON O.CEID = TB.PEID
+        )
+        SELECT * FROM TB
+      </CommandItem>
+    </DatabaseType>
+
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        WITH TB(lid,
+        peid,
+        petype,
+        ceid,
+        cetype,
+        lsequence,
+        lquality,
+        lcompanyid,
+        peuid,
+        ceuid,
+        versioneid,
+        groupid  ) AS (
+        SELECT lid,
+        peid,
+        petype,
+        ceid,
+        cetype,
+        lsequence,
+        lquality,
+        lcompanyid,
+        peuid,
+        ceuid,
+        versioneid,
+        groupid  FROM ORGANIZE WHERE  CEID=[CEID] AND PEID=[PEID] [GROUPID]
+
+        UNION ALL
+
+        SELECT a.lid,
+        a.peid,
+        a.petype,
+        a.ceid,
+        a.cetype,
+        a.lsequence,
+        a.lquality,
+        a.lcompanyid,
+        a.peuid,
+        a.ceuid,
+        a.versioneid,
+        a.groupid FROM ORGANIZE a INNER JOIN TB   ON a.CEID = tb.PEID
+
+        )
+        SELECT * FROM TB;
+
+
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETCHILDORGANIZE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        WITH TB AS (
+        SELECT * FROM dbo.ORGANIZE WHERE CEID=[CEID] AND PEID=[PEID] [GROUPID]
+        UNION ALL
+        SELECT O.* FROM dbo.ORGANIZE O INNER JOIN TB ON O.PEID = TB.CEID
+        )
+        SELECT * FROM TB
+      </CommandItem>
+    </DatabaseType>
+
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        WITH TB(lid,
+        peid,
+        petype,
+        ceid,
+        cetype,
+        lsequence,
+        lquality,
+        lcompanyid,
+        peuid,
+        ceuid,
+        versioneid,
+        groupid  ) AS (
+        SELECT lid,
+        peid,
+        petype,
+        ceid,
+        cetype,
+        lsequence,
+        lquality,
+        lcompanyid,
+        peuid,
+        ceuid,
+        versioneid,
+        groupid  FROM ORGANIZE WHERE  CEID=[CEID] AND PEID=[PEID] [GROUPID]
+
+        UNION ALL
+
+        SELECT a.lid,
+        a.peid,
+        a.petype,
+        a.ceid,
+        a.cetype,
+        a.lsequence,
+        a.lquality,
+        a.lcompanyid,
+        a.peuid,
+        a.ceuid,
+        a.versioneid,
+        a.groupid FROM ORGANIZE a INNER JOIN TB ON a.PEID = TB.CEID
+
+        )
+        SELECT * FROM TB;
+
+
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="ORGANIZEQUERYENTITYLINK">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max),GROUPID nvarchar(100),PID nvarchar(100))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY,
+        cast(N'' as nvarchar(4000)) as LPATH,cast(N'' as nvarchar(100)) as GROUPID,cast(N'[Tree_Current_Tag_PEID]' as nvarchar(100)) as PID
+        union all
+        select  B.LEVELID+1 as LEVELID,CEID as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH +str(A.LSEQUENCE,4) +right(A.LID,4) as LPATH,A.GROUPID,A.PEID
+        from ORGANIZE A,LINKBOM B  where A.PEID=B.QUERYID AND (A.GROUPID IS NULL OR A.GROUPID = B.PID)
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID &gt; [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        ALTER TABLE #LINKBOMTABLE DROP COLUMN GROUPID
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true" IsCount="false">
+
+        select LEVELID,TOTALQTY,LPATH,[GROUPINFO.FIELDS] from #LINKBOMTABLE A,ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[COMPANY.FIELDS] from #LINKBOMTABLE A,ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[ROLEINFO.FIELDS] from #LINKBOMTABLE A,ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[USERINFO.FIELDS] from #LINKBOMTABLE A,ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        [ORDERBY]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        delete from ORGANIZELINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false" IsCount="false">
+        declare
+        lev int:=0;
+        begin
+
+        --execute immediate 'ALTER TABLE ORGANIZELINKBOMTABLE ADD GROUPID varchar2(100)';
+        insert into ORGANIZELINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH,TMPGROUPID,PID) values(0,[QUERYID],N'',1,N'',N'',N'[Tree_Current_Tag_PEID]');
+        --insert into ORGANIZELINKBOMTABLE(LEVELID, QUERYID, LINKID, TOTALQTY, LPATH,TMPGROUPID,PID) select 1 as LEVELID,CEID as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH,N'' as TMPGROUPID,N'[Tree_Current_Tag_PEID]' as PID from ORGANIZE A  where A.PEID =  [QUERYID] ;
+
+        while(sql%rowcount&gt;0) loop
+        begin
+        lev:=lev+1;
+
+        insert into ORGANIZELINKBOMTABLE(LEVELID, QUERYID, LINKID, TOTALQTY, LPATH,TMPGROUPID,PID) select  B.LEVELID+1 as LEVELID,CEID as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH,A.GROUPID,A.PEID
+        from ORGANIZE A,ORGANIZELINKBOMTABLE B  where A.PEID=B.QUERYID AND (A.GROUPID IS NULL OR A.GROUPID = B.PID)  AND B.LEVELID = lev-1;
+
+        end;
+        end loop;
+
+        --execute immediate 'ALTER TABLE ORGANIZELINKBOMTABLE  DROP COLUMN GROUPID';
+
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true" IsCount="false">
+
+        select LEVELID,TOTALQTY,LPATH,[GROUPINFO.FIELDS] from ORGANIZELINKBOMTABLE A, ORGANIZE,GROUPINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[COMPANY.FIELDS] from ORGANIZELINKBOMTABLE A, ORGANIZE,COMPANY
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[ROLEINFO.FIELDS] from ORGANIZELINKBOMTABLE A, ORGANIZE,ROLEINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[USERINFO.FIELDS] from ORGANIZELINKBOMTABLE A, ORGANIZE,USERINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        [ORDERBY]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EA;
+        create TABLE [CURUSERID]_EA (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640),GROUPID varchar(100),PID varchar(100)))ENGINE=MEMORY;
+
+        insert into [CURUSERID]_EA select 1 as LEVELID,CEID as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(A.LSEQUENCE,4,'0'), substr(A.LID,length(A.LID)-3,4)) as LPATH,N'' as GROUPID,N'[Tree_Current_Tag_PEID]' as PID from ORGANIZE A  where  A.PEID =  [QUERYID] ;
+
+
+        while ROW_COUNT()&gt;0 DO
+        set lev = lev+1;
+
+        insert into [CURUSERID]_EA select  B.LEVELID+1 as LEVELID,CEID as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH,A.GROUPID,A.PEID
+        from ORGANIZE A,[CURUSERID]_EA B  where A.PEID=B.QUERYID AND (A.GROUPID IS NULL OR A.GROUPID = B.PID)  AND B.LEVELID = lev ;
+
+        end while;
+        ALTER TABLE [CURUSERID]_EA  DROP COLUMN GROUPID;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true" IsCount="false">
+        CALL [CURUSERID]QUERYENTITYLINK_EA();
+
+        select LEVELID,TOTALQTY,LPATH,[GROUPINFO.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[COMPANY.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[ROLEINFO.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select LEVELID,TOTALQTY,LPATH,[USERINFO.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        [ORDERBY];
+        drop table [CURUSERID]_EA;
+        drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="UserTransferOwnership">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE [TABLENAME] SET [FIELDS] where [OWNUIDFIELD]=[OWNUID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="ORGANIZE_LIMIT_EA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+
+        select  B.LEVELID+1 as LEVELID,CEID as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH +str(A.LSEQUENCE,4) +right(A.LID,4) as LPATH
+        from ORGANIZE A,LINKBOM B  where A.PEID=B.QUERYID
+
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID &gt; [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="true">
+        select count(1) from (
+
+        select distinct A.QUERYID from #LINKBOMTABLE A, ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from #LINKBOMTABLE A, ORGANIZE ,COMPANY
+        where  A.LINKID = ORGANIZE.LID  and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from #LINKBOMTABLE A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from #LINKBOMTABLE A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        ) A
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true" IsCount="false">
+        select * from (select *,row_number() over([ORDERBY]) AS IDX from (
+
+        select distinct [GROUPINFO.FIELDS] from #LINKBOMTABLE A, ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct [COMPANY.FIELDS] from #LINKBOMTABLE A, ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select distinct [ROLEINFO.FIELDS] from #LINKBOMTABLE A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct [USERINFO.FIELDS] from #LINKBOMTABLE A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        delete  from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false" IsCount="false">
+        declare
+        lev int:=0;
+        begin
+
+        insert into LINKBOMTABLE select 1 as LEVELID,CEID as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from ORGANIZE A  where  A.PEID =  [QUERYID];
+
+        while(sql%rowcount&gt;0) loop
+        begin
+        lev:=lev+1;
+
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID,CEID as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from ORGANIZE A,LINKBOMTABLE B  where A.PEID=B.QUERYID  and B.LEVELID = lev;
+
+        end;
+        end loop;
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="true">
+        select count(1) from (
+
+        select distinct A.QUERYID from LINKBOMTABLE A, ORGANIZE ,GROUPINFO
+        where  A.LINKID = ORGANIZE.LID  and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from LINKBOMTABLE A, ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from LINKBOMTABLE A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from LINKBOMTABLE A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        ) A
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true" IsCount="false">
+        select * from (select A.*,row_number() over([ORDERBY]) AS IDX from (
+
+        select distinct [GROUPINFO.FIELDS] from LINKBOMTABLE A, ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct [COMPANY.FIELDS] from LINKBOMTABLE A, ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select distinct [ROLEINFO.FIELDS] from LINKBOMTABLE A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct [USERINFO.FIELDS] from LINKBOMTABLE A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EA;
+        create TABLE [CURUSERID]_EA (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+
+        insert into [CURUSERID]_EA select 1 as LEVELID,CEID as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(A.LSEQUENCE,4,'0'), substr(A.LID,length(A.LID)-3,4)) as LPATH from ORGANIZE A where  A.PEID =  [QUERYID];
+
+        while ROW_COUNT()&gt;0 DO
+        set lev = lev+1;
+
+        insert into [CURUSERID]_EA select  B.LEVELID+1 as LEVELID,CEID as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from ORGANIZE A,[CURUSERID]_EA B  where A.PEID=B.QUERYID  and B.LEVELID = lev;
+
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="true">
+        CALL [CURUSERID]QUERYENTITYLINK_EA();
+        select count(1) from (
+
+        select distinct A.QUERYID from [CURUSERID]_EA A, ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from [CURUSERID]_EA A, ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from [CURUSERID]_EA A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct A.QUERYID from [CURUSERID]_EA A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        ) A;
+
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true" IsCount="false">
+        SET @number = 0;
+        select * from (select A.*,@number:=@number+1 IDX from (
+
+        select distinct [GROUPINFO.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,GROUPINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=GROUPINFO.EID [FILTER] [GROUPINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct [COMPANY.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,COMPANY
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=COMPANY.EID [FILTER] [COMPANY.ENTITYFILTER]
+        UNION ALL
+        select distinct [ROLEINFO.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,ROLEINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=ROLEINFO.EID [FILTER] [ROLEINFO.ENTITYFILTER]
+        UNION ALL
+        select distinct [USERINFO.FIELDS] from [CURUSERID]_EA A, ORGANIZE ,USERINFO
+        where A.LINKID = ORGANIZE.LID  and A.QUERYID=USERINFO.EID [FILTER] [USERINFO.ENTITYFILTER]
+
+        ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+        drop table [CURUSERID]_EA;
+        drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SETCOMPANYSYSTEMUSER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE COMPANY SET SYSTEMUSERID=(SELECT EID FROM USERINFO WHERE ECOMPANYID = '[ECOMPANYID]') WHERE ECOMPANYID = '[ECOMPANYID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

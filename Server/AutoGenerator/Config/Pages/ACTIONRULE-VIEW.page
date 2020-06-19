@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ACTIONRULE-VIEW">
+  <Settings Key="height" Value="98"/>
+  <Settings Key="width" Value="174"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME_DisplayValue);
+	}
+}
+{
+var o = pageEvent.o.GetControl('CREATEUID_Value');
+if(o.id!=''){
+o.SetText(data.CREATEUID_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('CREATETIME_Value');
+	if(c.id!=''){
+		c.SetText(data.CREATETIME_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('SERIALNUMBER_Value');
+	if(c.id!=''){
+		c.SetText(data.SERIALNUMBER_DisplayValue);
+	}
+}
+"/>
+  </PageHandlers>
+  <Settings Key="title" Value="ACTIONRULE-VIEW.ACTIONRULEHeader"/>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0px 20px"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="ACTIONRULE-VIEW.ENAMEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SERIALNUMBER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SERIALNUMBER" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SERIALNUMBER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SERIALNUMBER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SERIALNUMBER_Label" ParentID="SERIALNUMBER" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="ACTIONRULE-VIEW.SERIALNUMBERHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="SERIALNUMBER_Value" ParentID="SERIALNUMBER" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CREATEUID"/><Settings Key="maxSize" Value="300"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CREATETIME"/><Settings Key="maxSize" Value="300"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATEUID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID_Label" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="ACTIONRULE-VIEW.CREATEUIDHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl><PageControl ControlID="CREATEUID_Value" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+</PageControl><PageControl ControlID="CREATETIME" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATETIME_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME_Label" ParentID="CREATETIME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="ACTIONRULE-VIEW.CREATETIMEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="CREATETIME_Value" ParentID="CREATETIME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+  </PageControls>
+</root>

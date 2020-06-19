@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <WebTreeView Name="WorkflowClassifyTreeView" ShowStartNode="true" ObjectType ="WORKFLOWCLASSIFYROOT" View="WORKFLOWCLASSIFYROOTVIEW">
+    <Schema Key="2" View="WORKFLOWCLASSIFYVIEW" TextField="ENAME" ObjectType ="WORKFLOWCLASSIFY" Filter="PEID = '[Tree_Current_value1]'" Loop="false" IsExistNode="false"
+       ParentObjectType="WORKFLOWCLASSIFYROOT">
+    </Schema>
+    <Schema Key="3" View="WORKFLOWCLASSIFYVIEW" TextField="ENAME" ObjectType ="WORKFLOWCLASSIFY" Filter="PEID = '[Tree_Current_value1]'" Loop="true" IsExistNode="false"
+      ParentObjectType="WORKFLOWCLASSIFY">
+    </Schema>
+  </WebTreeView>
+
+  <WebTreeView Name="WorkflowClassifyToTemplateTreeView" ShowStartNode="true" ObjectType ="WORKFLOWCLASSIFYROOT" View="WORKFLOWCLASSIFYROOTVIEW">
+    <Schema Key="2" View="WORKFLOWCLASSIFYVIEW" TextField="ENAME" ObjectType ="WORKFLOWCLASSIFY" Filter="PEID = '[Tree_Current_value1]'" Loop="false" IsExistNode="true"
+       ParentObjectType="WORKFLOWCLASSIFYROOT">
+    </Schema>
+    <Schema Key="3" View="WORKFLOWCLASSIFYVIEW" TextField="ENAME" ObjectType ="WORKFLOWCLASSIFY" Filter="PEID = '[Tree_Current_value1]'" Loop="true" IsExistNode="true"
+      ParentObjectType="WORKFLOWCLASSIFY">
+    </Schema>
+    <Schema Key="4" View="WORKFLOWTEMPLATEVIEW" TextField="ENAME" ObjectType ="WORKFLOWTEMPLATE" Filter="PEID = '[Tree_Current_value1]'" Loop="true" IsExistNode="true"
+  ParentObjectType="WORKFLOWCLASSIFY">
+    </Schema>
+  </WebTreeView>
+
+</root>

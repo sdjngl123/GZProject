@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SystemSettingsBoolPage" IsWeb="true">
+    <Label Name="TextTrue">
+      <LocalizedLabel LanguageRef="zhs">True</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">True</LocalizedLabel>
+    </Label>
+    <Label Name="TextFlase">
+      <LocalizedLabel LanguageRef="zhs">False</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">False</LocalizedLabel>
+    </Label>
+    <Label Name="VALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMSETTINGSHeader">
+      <LocalizedLabel LanguageRef="zhs">新建系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New system settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

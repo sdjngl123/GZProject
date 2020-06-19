@@ -1,0 +1,7 @@
+﻿<div id ="ViewOnlineContainer" style="padding:0px 10px;height:100%">
+
+  <div  id="errorContainer" style="position: absolute;top: 50%; left: 50%;margin-top: -120px; margin-left: -160px;height: 100%;width: 300px;">
+    <div style=" height: 32px;width: 32px;background: url(Registered/CommonUploadAndView/Image/status.png);float: left;background-position: 80px 0;"></div>
+    <div id="ViewOnlineErrorContent" style=" margin: 7px 0px 0 35px;"></div>
+  </div>
+</div>

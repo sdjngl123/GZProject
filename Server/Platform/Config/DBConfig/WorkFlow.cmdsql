@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="INSERTMPLATEVERSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        INSERT INTO CACHEINFO
+        (EID,ENAME,ECODE,STATEID,EVERSION,EUID,CREATEUID,CREATETIME,UPDATEUID,UPDATETIME,OWNUID,OWNGID,ESTATION,ICON)
+        VALUES
+        (
+        [EID],
+        N'WORKFLOWTEMPLATE',
+        NULL,
+        N'NULLSTATE',
+        [VERSION],
+        [EID],
+        [OWNUID],
+        utcinttime(),
+        [OWNUID],
+        utcinttime(),
+        [OWNUID],
+        [OWNGID],
+        NULL,
+        NULL
+        )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETTEMPLATEVERSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT MAX(EVERSION) EVERSION FROM  CACHEINFO WHERE  ENAME= N'WORKFLOWTEMPLATE'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="UPDATEMPLATEVERSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE CACHEINFO SET EVERSION=[VERSION] WHERE  ENAME= N'WORKFLOWTEMPLATE'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetMyTaskWorkFlowCount">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select count(EID) from WORKFLOWTASKINFO where
+        STATEID='RUN'
+        AND
+        TASKACTORID='[CURUSERID]'
+        and
+        (
+        (AGENTUSERID IS NULL OR AGENTUSERID='')
+        or
+        CREATETIME  &lt;AGENTSTARTDATETIME
+        or
+        (CREATETIME &gt; AGENTENDDATETIME  and AGENTENDDATETIME!=0)
+        )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetDepostTaskWorkFlowCount">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select count(EID) from WORKFLOWTASKINFO where
+        STATEID='RUN'
+        AND AGENTUSERID='[CURUSERID]'
+        and
+        (
+        (
+        AGENTENDDATETIME=0
+        and
+        CREATETIME  &gt;=AGENTSTARTDATETIME
+        )
+        or
+        (
+        CREATETIME &gt;=AGENTSTARTDATETIME
+        and   CREATETIME &lt;=AGENTENDDATETIME
+        )
+        )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetDeliveryTaskWorkFlowCount">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select count(EID) from WORKFLOWTASKINFO where
+        STATEID='RUN'
+        AND TASKACTORID='[CURUSERID]'
+        AND (AGENTUSERID IS NOT NULL AND AGENTUSERID!=' ')
+        and
+        (
+        (
+        AGENTENDDATETIME=0
+        and  CREATETIME  &gt;=AGENTSTARTDATETIME
+        )
+        or
+        (
+        CREATETIME  &gt;=AGENTSTARTDATETIME
+        and
+        CREATETIME  &lt;=AGENTENDDATETIME
+        )
+        )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetAgentUser">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select EID,ENAME from USERINFO
+        where EID=(
+        select AGENTID from USERINFO
+        where EID='USERINFO_System'
+        and
+        AGENTID IS not NULL
+        and
+        (
+        (
+        AGENTSTARTDATETIME=0
+        and
+        AGENTENDDATETIME=0
+        )
+        or
+        (
+        (
+        [CURDATATIME]&gt;=AGENTSTARTDATETIME
+        and
+        AGENTENDDATETIME=0
+        )
+        or
+        (
+        [CURDATATIME]&gt;=AGENTSTARTDATETIME
+        and
+        [CURDATATIME] &lt;=AGENTENDDATETIME
+        )
+        )
+        )
+        )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  <Command Name="CHECKTEMPLATEISUSING">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(EID) FROM WORKFLOWINFO  WHERE FLOWTEMPLATE=[FLOWTEMPLATE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--删除流程中设置的对象权限-->
+  <Command Name="DELETEWORKFLOWOBJECTPERMISSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DELETE FROM OBJECTPERMISSION where USEOBJECTID=[TASKUID] AND OBJECTPERMISSIONMODE=[OBJECTPERMISSIONMODE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="DELETEWORKFLOWAGENTOBJECTPERMISSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DELETE FROM OBJECTPERMISSION where USEOBJECTID IN([TASKID]) 
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETWORKFLOWOBJECTPERMISSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM OBJECTPERMISSION WHERE USEOBJECTID =[TaskUID] OR USEOBJECTID IN ([TaskID])
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--改状态时，副本表一起修改-->
+  <Command Name="GETVICEOBJECTIDBYCHANGESTAGE">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TOP 1 EID FROM [VICETABLE] WHERE MASTERID$=[MASTERID] ORDER BY CREATETIME DESC
+      </CommandItem>
+    </DatabaseType>
+
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID FROM (
+        SELECT EID FROM [VICETABLE] WHERE MASTERID$=[MASTERID] ORDER BY CREATETIME DESC
+        ) WHERE  ROWNUM = 1
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID FROM [VICETABLE] WHERE MASTERID$=[MASTERID] ORDER BY CREATETIME DESC LIMIT 1;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+
+
+  <Command Name="STOPCURRENTTASK">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWTASKINFO SET STATEID='STOP' WHERE (TASKUID='[TASKUID]' OR PREVIOUSTASKUID='[TASKUID]') AND STATEID!='COMPLETE' AND WORKFLOWID='[WORKFLOWID]'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWTASKINFO SET STATEID='STOP' WHERE (TASKUID='[TASKUID]' OR PREVIOUSTASKUID='[TASKUID]') AND STATEID!='COMPLETE' AND WORKFLOWID='[WORKFLOWID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="DeleteObjectPermissionByWorkflowTask">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE FROM OBJECTPERMISSION WHERE USEOBJECTID = '[TASKEUID]' OR USEOBJECTID = '[TASKID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="UpdateFlowInfoExecLines">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWINFO SET EXECLINES=[EXECLINES] WHERE EID = [WORKFLOWID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="UpdateFlowInfoParameters">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWINFO SET FLOWPARAMETERS=[FLOWPARAMETERS] WHERE EID = [WORKFLOWID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="UpdateFlowTaskActorInfo">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWACTORINFO SET ACTORINFO=[ACTORINFO] WHERE EID = [TASKID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeActionRuleRootMenu" IsWeb="true">
+    <Label Name="CreateActionRule">
+      <LocalizedLabel LanguageRef="zhs">新建规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New rule</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeActionRuleMenu" IsWeb="true">
+    <Label Name="CreateActionRule">
+      <LocalizedLabel LanguageRef="zhs">新建规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New rule</LocalizedLabel>
+    </Label>
+    <Label Name="EditActionRule">
+      <LocalizedLabel LanguageRef="zhs">编辑规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit rule</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRule">
+      <LocalizedLabel LanguageRef="zhs">删除规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete rule</LocalizedLabel>
+    </Label>
+    <Label Name="CreateActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">新建条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New condition</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MoveUp</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MoveDown</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeObjectPermissionRuleMenu" IsWeb="true">
+    <Label Name="DeleteActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">编辑条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit condition</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">删除订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DeleteActionRuleMessage</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ActionRuleConditionMenu" IsWeb="true">
+    <Label Name="CreateActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">新建条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New condition</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">删除条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete condition</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MoveUp</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MoveDown</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ActionRulePermissionMenu" IsWeb="true">
+    <Label Name="CreateActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">新建条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New condition</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">编辑条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit condition</LocalizedLabel>
+    </Label>
+    <Label Name="CreateActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">新建授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New authorization</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ActionRuleCreatePermissionMenu" IsWeb="true">
+    <Label Name="DeleteActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+    <Label Name="CreateActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">新建授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New authorization</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">删除订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete subscription</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ActionRuleMessageMenu" IsWeb="true">
+    <Label Name="CreateActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">新建订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New subscription</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">删除订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete subscription</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ActionRuleCreateMessageMenu" IsWeb="true">
+    <Label Name="DeleteActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">删除订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete subscription</LocalizedLabel>
+    </Label>
+    <Label Name="CreateActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">新建授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New authorization</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+    <Label Name="DeletePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ObjectPermissionMenu" IsWeb="true">
+    <Label Name="CreatePermission">
+      <LocalizedLabel LanguageRef="zhs">新建授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New authorization</LocalizedLabel>
+    </Label>
+    <Label Name="DeletePermission">
+      <LocalizedLabel LanguageRef="zhs">删除授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete authorization</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ObjectMessageMenu" IsWeb="true">
+    <Label Name="CreateObjectMessage">
+      <LocalizedLabel LanguageRef="zhs">新建订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New subscription</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteObjectMessage">
+      <LocalizedLabel LanguageRef="zhs">删除订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete subscription</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

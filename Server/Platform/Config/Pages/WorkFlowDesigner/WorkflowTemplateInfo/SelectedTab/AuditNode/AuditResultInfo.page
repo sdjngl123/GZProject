@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AuditResultInfo" IsCache="true">
+  <Settings Key="title" Value="AuditResultInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_AuditResultInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_AuditResultInfo_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_AuditResultInfo_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="AuditResultInfo_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="AuditResultInfoMenu"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AuditResultInfoEditGrid"/>
+      </Settings>
+    </PageControl>
+    <!--菜单-->
+    <PageControl ControlID="AuditResultInfoMenu" ParentID="AuditResultInfo_Layout" TypeName="Menu">
+
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="Common.Create"/>
+        <Settings Key="value" Value="Create"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_Platform_AuditResultInfo_CreateMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="Common.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_Platform_AuditResultInfo_DeleteMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="AuditResultInfo.MoveUp"/>
+        <Settings Key="value" Value="MoveUp"/>
+        <Settings Key="icon" Value="p_moveup"/>
+        <Settings Key="js" Value="InforCenter_Platform_AuditResultInfo_MoveUpMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="AuditResultInfo.MoveDown"/>
+        <Settings Key="value" Value="MoveDown"/>
+        <Settings Key="icon" Value="p_movedown"/>
+        <Settings Key="js" Value="InforCenter_Platform_AuditResultInfo_moveDownMenu(ctrlEvent);"/>
+      </Settings>
+      <!--<Settings Key="item5" >
+        <Settings Key="textId" Value="AuditResultInfo.Copy"/>
+        <Settings Key="value" Value="Copy"/>
+        <Settings Key="icon" Value="~/Platform/Image/Common/copy.png"/>
+        <Settings Key="js" Value="InforCenter_Platform_AuditResultInfo_CopyMenu(ctrlEvent);"/>
+      </Settings>-->
+
+    </PageControl>
+    <PageControl ControlID="AuditResultInfoEditGrid" ParentID="AuditResultInfo_Layout" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="AuditResultInfo.ResultName" />
+        <Settings Key="name" Value="ResultName" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="regex" Value="^([\s\S]{0,50})?$" />
+        <Settings Key="regexTitleId" Value="Validation.String50" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="AuditResultInfo.ParameterName" />
+        <Settings Key="name" Value="ParameterName" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="databind" Value="InforCenter_Platform_AuditResultInfo_BindingParaDropdown(ctrlEvent);" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="AuditResultInfo.ParaValue" />
+        <Settings Key="name" Value="ParaValue" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="regex" Value="^[0-9]{1,8}$" />
+        <Settings Key="regexTitleId" Value="AuditResultInfo.ParaValueRegex" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CommonImport" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import figure document</LocalizedLabel>
+    </Label>
+    <Label Name="FileUpLoadCtrl">
+      <LocalizedLabel LanguageRef="zhs">文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File</LocalizedLabel>
+    </Label>
+    <Label Name="FileUpLoadTip">
+      <LocalizedLabel LanguageRef="zhs">提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prompt</LocalizedLabel>
+    </Label>
+    <Label Name="ImportFile_Label">
+      <LocalizedLabel LanguageRef="zhs">选择文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select file</LocalizedLabel>
+    </Label>
+    <Label Name="Upload">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload</LocalizedLabel>
+    </Label>
+    <Label Name="DataCheck">
+      <LocalizedLabel LanguageRef="zhs">数据分析</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data analysis</LocalizedLabel>
+    </Label>
+    <Label Name="DownTemplete">
+      <LocalizedLabel LanguageRef="zhs">下载模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Down Templete</LocalizedLabel>
+    </Label>
+    <Label Name="FileUpLoadError">
+      <LocalizedLabel LanguageRef="zhs">导入文件失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload file failed</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPopUpMessageTitle">
+      <LocalizedLabel LanguageRef="zhs">导入校验信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload file failed</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPopUpMessageBtn_Skip">
+      <LocalizedLabel LanguageRef="zhs">跳过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Skip</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPopUpMessageBtn_Update">
+      <LocalizedLabel LanguageRef="zhs">更新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update</LocalizedLabel>
+    </Label>
+    <Label Name="ImportPopUpMessageTitle_Cancel">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PluginDownLoad" IsCache="true">
+  <Settings Key="title" Value="PluginDownLoad.Title"/>
+  <PageControls>
+    <PageControl ControlID="PluginDownLoad_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 10px"/>
+      <Settings Key="item1">
+        <Settings Key="childid" Value="PluginDownLoadCtrl"/>
+        <Settings Key="size" Value="100%"></Settings>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="childid" Value="PluginButtonContainer"/>
+        <Settings Key="size" Value="50"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PluginDownLoadCtrl" ParentID="PluginDownLoad_Container" TypeName="CustomerContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Login_ShowPlugDownLoadList(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="templateName" Value="PluginDownLoad"/>
+    </PageControl>
+    <PageControl ControlID="PluginButtonContainer" ParentID="PluginDownLoad_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50%"></Settings>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="childid" Value="PluginButtonCtrl"/>
+        <Settings Key="size" Value="100"></Settings>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="50%"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PluginButtonCtrl" ParentID="PluginButtonContainer" TypeName="Button">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Login_ClosePluginDownLoad(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="PluginDownLoad.Close" />
+    </PageControl>
+  </PageControls>
+</root>

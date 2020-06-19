@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="REPORTOBJECTVIEWView" IsWeb="true">
+    <Label Name="REPORTOBJECTVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="REPORTOBJECTVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassifyID</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassifyID</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="REPORTOBJECTVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

@@ -1,0 +1,11 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='[OBJTYPE]';ctrlEvent.infoName='[INFONAME]';ctrlEvent.unionName='[EXTENDPROPERTY1]';InforCenter_Platform_GenerateScript_UnionDataModelValue(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                var o = ctrlEvent.o;
+             InforCenter_Platform_Object_SetUnionDataModels(o,'[INFONAME]','[OBJTYPE]','[EXTENDPROPERTY1]',[REQUIRE]);
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

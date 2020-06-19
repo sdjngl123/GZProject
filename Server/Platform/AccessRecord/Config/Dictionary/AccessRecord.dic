@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AccessRecord" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">最近访问</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recent access</LocalizedLabel>
+    </Label>
+    <Label Name="All">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+    <Label Name="Today">
+      <LocalizedLabel LanguageRef="zhs">今天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Today</LocalizedLabel>
+    </Label>
+    <Label Name="ECODE">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ENAME">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="Creator">
+      <LocalizedLabel LanguageRef="zhs">创建者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Creator</LocalizedLabel>
+    </Label>
+    <Label Name="Owner">
+      <LocalizedLabel LanguageRef="zhs">所有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTime">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateTime">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="VisitTime">
+      <LocalizedLabel LanguageRef="zhs">访问时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Access Time</LocalizedLabel>
+    </Label>
+    <Label Name="SelectTimeRangeInfo">
+      <LocalizedLabel LanguageRef="zhs">请选择有效的时间范围！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a valid time range!</LocalizedLabel>
+    </Label>
+    <Label Name="SelectDataTypeInfo">
+      <LocalizedLabel LanguageRef="zhs">请选择有效的数据类型！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a valid data type!</LocalizedLabel>
+    </Label>
+    <Label Name="ClearEmpty">
+      <LocalizedLabel LanguageRef="zhs">没有可清除的记录！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There are no records that can be cleared!</LocalizedLabel>
+    </Label>
+    <Label Name="NeerDay">
+      <LocalizedLabel LanguageRef="zhs">近[number]天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Latest [number] days</LocalizedLabel>
+    </Label>
+    <Label Name="NearWeek">
+      <LocalizedLabel LanguageRef="zhs">近[number]周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Latest [number] Weeks</LocalizedLabel>
+    </Label>
+    <Label Name="NearMonth">
+      <LocalizedLabel LanguageRef="zhs">近[number]月</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Latest [number] Month</LocalizedLabel>
+    </Label>
+    <Label Name="NoDataDelete">
+      <LocalizedLabel LanguageRef="zhs">没有可清除的记录！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There are no records that can be cleared!</LocalizedLabel>
+    </Label>
+    <Label Name="NoObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">没有该类型的对象查看器！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There are no object inspector of this type!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectValueType" IsWeb="true">
+    <Label Name="DefaultObjectValue">
+      <LocalizedLabel LanguageRef="zhs">文本类型(DefaultObjectValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DefaultObjectValue</LocalizedLabel>
+    </Label>
+    <Label Name="MutilLanuageValue">
+      <LocalizedLabel LanguageRef="zhs">多选语言类型(MutilLanuageValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MutilLanuageValue</LocalizedLabel>
+    </Label>
+    <Label Name="LanuageSelValue">
+      <LocalizedLabel LanguageRef="zhs">单选语言类型(LanuageSelValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LanuageSelValue</LocalizedLabel>
+    </Label>
+    <Label Name="VersionValue">
+      <LocalizedLabel LanguageRef="zhs">版本类型(VersionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VersionValue</LocalizedLabel>
+    </Label>
+    <Label Name="MinorVersionValue">
+      <LocalizedLabel LanguageRef="zhs">小版本类型(MinorVersionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MinorVersionValue</LocalizedLabel>
+    </Label>
+    <Label Name="MajorMinorVersionValue">
+      <LocalizedLabel LanguageRef="zhs">大版本类型(MajorMinorVersionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MajorMinorVersionValue</LocalizedLabel>
+    </Label>
+    <Label Name="DescriptionValue">
+      <LocalizedLabel LanguageRef="zhs">多行文本类型(DescriptionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DescriptionValue</LocalizedLabel>
+    </Label>
+    <Label Name="DateTimeValue">
+      <LocalizedLabel LanguageRef="zhs">日期时间类型(DateTimeValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DateTimeValue</LocalizedLabel>
+    </Label>
+	<Label Name="DateTimeEditValue">
+      <LocalizedLabel LanguageRef="zhs">可编辑日期时间类型(DateTimeEditValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DateTimeEditValue</LocalizedLabel>
+    </Label>
+    <Label Name="DateValue">
+      <LocalizedLabel LanguageRef="zhs">日期类型(DateValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DateValue</LocalizedLabel>
+    </Label>
+    <Label Name="TimeValue">
+      <LocalizedLabel LanguageRef="zhs">时间类型(TimeValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TimeValue</LocalizedLabel>
+    </Label>
+    <Label Name="StateValue">
+      <LocalizedLabel LanguageRef="zhs">状态类型(StateValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StateValue</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIDValue">
+      <LocalizedLabel LanguageRef="zhs">对象标识类型(ObjectIDValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectIDValue</LocalizedLabel>
+    </Label>
+    <Label Name="PassWordValue">
+      <LocalizedLabel LanguageRef="zhs">密码类型(PassWordValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PassWordValue</LocalizedLabel>
+    </Label>
+    <Label Name="SingleUserValue">
+      <LocalizedLabel LanguageRef="zhs">单选用户类型(SingleUserValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleUserValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiUserValue">
+      <LocalizedLabel LanguageRef="zhs">多选用户类型(MultiUserValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiUserValue</LocalizedLabel>
+    </Label>
+    <Label Name="SingleRoleValue">
+      <LocalizedLabel LanguageRef="zhs">单选角色类型(SingleRoleValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleRoleValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiRoleValue">
+      <LocalizedLabel LanguageRef="zhs">多选角色类型(MultiRoleValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiRoleValue</LocalizedLabel>
+    </Label>
+    <Label Name="SingleGroupValue">
+      <LocalizedLabel LanguageRef="zhs">单选组类型(SingleGroupValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleGroupValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiGroupValue">
+      <LocalizedLabel LanguageRef="zhs">多选组类型(MultiGroupValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiGroupValue</LocalizedLabel>
+    </Label>
+    <Label Name="ParentGroupValue">
+      <LocalizedLabel LanguageRef="zhs">父级组类型(ParentGroupValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ParentGroupValue</LocalizedLabel>
+    </Label>
+    <Label Name="VaultValue">
+      <LocalizedLabel LanguageRef="zhs">文档柜类型(VaultValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultValue</LocalizedLabel>
+    </Label>
+    <Label Name="EnumValue">
+      <LocalizedLabel LanguageRef="zhs">枚举类型(EnumValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnumValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiEnumValue">
+      <LocalizedLabel LanguageRef="zhs">多选枚举类型(MultiEnumValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiEnumValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiLovListValue">
+      <LocalizedLabel LanguageRef="zhs">默认处理类型(MultiLovListValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiLovListValue</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectEnumValue">
+      <LocalizedLabel LanguageRef="zhs">对象缓存枚举类型(ObjectEnumValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectEnumValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiObjectEnumValue">
+      <LocalizedLabel LanguageRef="zhs">多选对象缓存枚举类型(MultiObjectEnumValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiObjectEnumValue</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTemplateValue">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型(FlowTemplateValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FlowTemplateValue</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleConditionValue">
+      <LocalizedLabel LanguageRef="zhs">规则权限条件类型(ActionRuleConditionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ActionRuleConditionValue</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionActorValue">
+      <LocalizedLabel LanguageRef="zhs">权限执行者类型(PermissionActorValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionActorValue</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionActionValue">
+      <LocalizedLabel LanguageRef="zhs">权限动作类型(PermissionActionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionActionValue</LocalizedLabel>
+    </Label>
+    <Label Name="MessageActionValue">
+      <LocalizedLabel LanguageRef="zhs">消息订阅动作类型(MessageActionValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MessageActionValue</LocalizedLabel>
+    </Label>
+    <Label Name="FileUploadValue">
+      <LocalizedLabel LanguageRef="zhs">文档控件类型(FileUploadValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FileUploadValue</LocalizedLabel>
+    </Label>
+    <Label Name="HtmlEditValue">
+      <LocalizedLabel LanguageRef="zhs">富文本类型(HtmlEditValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HtmlEditValue</LocalizedLabel>
+    </Label>
+    <Label Name="TextBoxIDSValue">
+      <LocalizedLabel LanguageRef="zhs">可输入、点击文本类型(TextBoxIDSValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TextBoxIDSValue</LocalizedLabel>
+    </Label>
+    <Label Name="TextValueIDSValue">
+      <LocalizedLabel LanguageRef="zhs">可点击文本类型(TextValueIDSValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TextValueIDSValue</LocalizedLabel>
+    </Label>
+    <Label Name="ImageUploadValue">
+      <LocalizedLabel LanguageRef="zhs">图片上传类型(ImageUploadValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ImageUploadValue</LocalizedLabel>
+    </Label>
+    <Label Name="ImageUploadBase64Value">
+      <LocalizedLabel LanguageRef="zhs">普通图片上传类型(ImageUploadBase64Value)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ImageUploadBase64Value</LocalizedLabel>
+    </Label>
+        <Label Name="CustomFormImageUploadValue">
+      <LocalizedLabel LanguageRef="zhs">表单图片上传类型(CustomFormImageUploadValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CustomFormImageUploadValue</LocalizedLabel>
+    </Label>
+    <Label Name="FileSizeValue">
+      <LocalizedLabel LanguageRef="zhs">文件大小类型(FileSizeValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FileSizeValue</LocalizedLabel>
+    </Label>
+    <Label Name="ImageValue">
+      <LocalizedLabel LanguageRef="zhs">图片类型(ImageValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ImageValue</LocalizedLabel>
+    </Label>
+    <Label Name="BoolValue">
+      <LocalizedLabel LanguageRef="zhs">布尔类型(BoolValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BoolValue</LocalizedLabel>
+    </Label>
+    <Label Name="SubDataModelValue">
+      <LocalizedLabel LanguageRef="zhs">扩展模型类型(SubDataModelValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SubDataModelValue</LocalizedLabel>
+    </Label>
+    <Label Name="LovListValue">
+      <LocalizedLabel LanguageRef="zhs">值列表值类型(LovListValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LovListValue</LocalizedLabel>
+    </Label>
+    <Label Name="LovValue">
+      <LocalizedLabel LanguageRef="zhs">值列表类型(LovValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LovValue</LocalizedLabel>
+    </Label>
+    <Label Name="LovListRadio">
+      <LocalizedLabel LanguageRef="zhs">值列表radio类型(LovListRadio)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LovListRadio</LocalizedLabel>
+    </Label>
+    <Label Name="EnumRadioValue">
+      <LocalizedLabel LanguageRef="zhs">枚举radio类型(EnumRadioValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnumRadioValue</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowTemplateTypeValue">
+      <LocalizedLabel LanguageRef="zhs">流程模板类别类型(WorkflowTemplateTypeValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WorkflowTemplateTypeValue</LocalizedLabel>
+    </Label>
+    <Label Name="ExhaustionLovListValue">
+      <LocalizedLabel LanguageRef="zhs">默认处理类型(ExhaustionLovListValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExhaustionLovListValue</LocalizedLabel>
+    </Label>
+    <Label Name="ExhaustionObjectEnumValue">
+      <LocalizedLabel LanguageRef="zhs">对象枚举类型(ExhaustionObjectEnumValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExhaustionObjectEnumValue</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeListValue">
+      <LocalizedLabel LanguageRef="zhs">对象类型(ObjectTypeListValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectTypeListValue</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyValue">
+      <LocalizedLabel LanguageRef="zhs">公司类型(CompanyValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyValue</LocalizedLabel>
+    </Label>
+    <Label Name="MultiUserValueIgnoreCompany">
+      <LocalizedLabel LanguageRef="zhs">多选用户类型(忽略集团权限)(MultiUserValueIgnoreCompany)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiUserValueIgnoreCompany</LocalizedLabel>
+    </Label>
+    <Label Name="EditButtonValue">
+      <LocalizedLabel LanguageRef="zhs">编辑按钮类型(EditButtonValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditButtonValue</LocalizedLabel>
+    </Label>
+    <Label Name="ColorValue">
+      <LocalizedLabel LanguageRef="zhs">颜色类型(ColorValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ColorValue</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageValue">
+      <LocalizedLabel LanguageRef="zhs">移动端页面类型(MobilePageValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageValue</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageImageValue">
+      <LocalizedLabel LanguageRef="zhs">移动端页面图片类型(MobilePageImageValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageImageValue</LocalizedLabel>
+    </Label>
+     <Label Name="BatchUploadFileValue">
+      <LocalizedLabel LanguageRef="zhs">文件批量上传类型(BatchUploadFileValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BatchUploadFileValue</LocalizedLabel>
+    </Label>
+    <Label Name="ImageUploadHttpValue">
+      <LocalizedLabel LanguageRef="zhs">Http方式文件上传类型(ImageUploadHttpValue)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ImageUploadHttpValue</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

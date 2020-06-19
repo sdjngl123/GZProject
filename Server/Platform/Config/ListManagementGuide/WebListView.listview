@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebListView Name="Guide_ListManagement_ReplaceKeyListView" View="Guide_ListManagement_ReplaceKeyVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" IsSelectExporting="false" IsAllExporting="false" IsSelectPrinting="false" IsAllPrinting="false"  DetailsIcon="" QueryID="" />
+</root>

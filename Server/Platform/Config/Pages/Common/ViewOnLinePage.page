@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ViewOnLinePage" IsCache="true">
+  <Settings Key="title" Value="ViewOnLinePage.Title"/>
+  <PageControls>
+    <PageControl ControlID="ButtonExample_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="viewonline_ctrl" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="viewonline_ctrl" ParentID="ViewOnLineExample_Layout" TypeName="Filetransfer" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreateComplete" Script="InforCenter_Platform_ViewOnLineCtrl_OnCreateComplete(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>
+

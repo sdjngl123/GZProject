@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MailMainBody" IsWeb="true">
+    <Label Name="MainBody">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="ReciveTime">
+      <LocalizedLabel LanguageRef="zhs">接收时间：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive time:</LocalizedLabel>
+    </Label>
+    <Label Name="SendUser">
+      <LocalizedLabel LanguageRef="zhs">发件人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sender:</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">邮件主题：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail subject:</LocalizedLabel>
+    </Label>
+    <Label Name="ReciveUser">
+      <LocalizedLabel LanguageRef="zhs">接收人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recipient:</LocalizedLabel>
+    </Label>
+    <Label Name="CopyToUser">
+      <LocalizedLabel LanguageRef="zhs">抄送人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Carbon copy recipient:</LocalizedLabel>
+    </Label>
+    <Label Name="Important">
+      <LocalizedLabel LanguageRef="zhs">重要性：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance:</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

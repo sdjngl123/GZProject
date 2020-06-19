@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AgentSetting" IsCache="true">
+  <Settings Key="title" Value="AgentSetting.Title"/>
+  <Settings Key="height" Value="210"/>
+  <Settings Key="width" Value="326"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_AgentSetting_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="AgentSetting_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AgentSetting_ContentLayout"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="AgentSetting_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AgentSetting_ContentLayout" ParentID="AgentSetting_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="3"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="Agent"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="StartTime"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="EndTime"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Agent" ParentID="AgentSetting_ContentLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="Agent_Lbl"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Agent_Txt"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Agent_Lbl" ParentID="Agent" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="AgentSetting.Agent" />
+    </PageControl>
+    <PageControl ControlID="Agent_Txt" ParentID="Agent" TypeName="TextValue">
+      <Settings Key="regex" Value="[^(\s*)]" />
+      <Settings Key="regextipId" Value="AgentSetting.AgentNull" />
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_AgentSetting_AgentOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="StartTime" ParentID="AgentSetting_ContentLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="StartTime_Lbl"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="StartTime_Txt"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="StartTime_Lbl" ParentID="StartTime" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="AgentSetting.StartTime" />
+    </PageControl>
+    <PageControl ControlID="StartTime_Txt" ParentID="StartTime" TypeName="DateTime">
+      <Settings Key="type" Value="datetime"/>
+    </PageControl>
+    
+    <PageControl ControlID="EndTime" ParentID="AgentSetting_ContentLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="EndTime_Lbl"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="EndTime_Txt"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="EndTime_Lbl" ParentID="EndTime" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="AgentSetting.EndTime" />
+    </PageControl>
+    <PageControl ControlID="EndTime_Txt" ParentID="EndTime" TypeName="DateTime">
+      <Settings Key="type" Value="datetime"/>
+    </PageControl>
+    <PageControl ControlID="AgentSetting_Btn" ParentID="AgentSetting_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="AgentSetting_btnOK"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="AgentSetting_btnCancel"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--关闭按钮-->
+    <PageControl ControlID="AgentSetting_btnOK" ParentID="AgentSetting_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_AgentSetting_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="AgentSetting_btnCancel" ParentID="AgentSetting_LayoutContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(),null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

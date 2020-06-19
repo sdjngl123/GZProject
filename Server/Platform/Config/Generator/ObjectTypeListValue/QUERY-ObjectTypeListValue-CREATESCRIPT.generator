@@ -1,0 +1,6 @@
+﻿{
+var o = pageEvent.o.GetControl('[FILTERNAME]_Value');
+if(o.id!=''){
+InforCenter_Platform_Object_ObjectTypeListValue(o,'[INFONAME]','[OBJTYPE]',![REQUIRE]);
+}
+}

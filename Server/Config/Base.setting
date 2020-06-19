@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="LogLevel" Value="Debug" ToClient="false" Description="开发日志输出等级，可选项为Debug,JsDebug,Info,Warn,Error,Fatal；JsDebug用于JS调试,该模型下js文件不会进行分组处理;Debug主要用于输出调试信息，开发时建议选项,Info用于输出系统启动加载信息,部署是建议选项，Warn输出警告信息,但不影响系统正常运行,Error输出可跟踪到的数据或逻辑错误信息,一般在前台应有对应的错误提示，Fatal是影响系统持续运行的重大错误" />
+  <AppSet Key="DataDirectory" Value="C:\InforCenterData" ToClient="false" Description="用于存放系统开发日志（用于开发分析）,报表输出，文件转换等其他临时文件的路径，此目录下的文件可以删除" />
+  <AppSet Key="DefaultLanguage" Value="zhs" ToClient="true" Description="默认语言,平台提供中文和英文两种,可选值为:zhs,en，系统中记录操作日志等类似的基础功能，会采用默认语言" />
+  <AppSet Key="CreateInstanceType" Value="LambdaExpression" ToClient="true" Description="使用何种方式创建对象，可选值Activator，LambdaExpression，默认Activator" />
+  <AppSet Key="ObjectAllColumnInstance" Value="false" ToClient="true" Description="对象实例化时，是否对所有的列都进行实例化，true为所有的列都实例化，false为只实例化SQL查询出的列" />
+  <AppSet Key="SerializerType" Value="Default" ToClient="false" Description="服务类型，Default、Newtonsoft" />
+</root>

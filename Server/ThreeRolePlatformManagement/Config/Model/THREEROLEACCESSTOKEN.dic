@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="THREEROLEACCESSTOKENModel" IsWeb="true">
+    <Label Name="THREEROLEACCESSTOKENHeader">
+      <LocalizedLabel LanguageRef="zhs">三员登录AccessToken</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleAccessToken</LocalizedLabel>
+    </Label>
+    <Label Name="THREEROLEACCESSTOKENCaption">
+      <LocalizedLabel LanguageRef="zhs">三员登录AccessToken</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleAccessToken</LocalizedLabel>
+    </Label>
+    <Label Name="ACCESSTOKENHeader">
+      <LocalizedLabel LanguageRef="zhs">AccessToken</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccessToken</LocalizedLabel>
+    </Label>
+    <Label Name="ACCESSTOKENCaption">
+      <LocalizedLabel LanguageRef="zhs">AccessToken</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccessToken</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

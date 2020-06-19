@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="EnumEdit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">枚举编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate edit Windows</LocalizedLabel>
+    </Label>
+    <Label Name="CreaateEnum">
+      <LocalizedLabel LanguageRef="zhs">新建枚举</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New enumerate</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteEnum">
+      <LocalizedLabel LanguageRef="zhs">删除枚举</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete enumerate</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">枚举名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerate name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">枚举名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerate name</LocalizedLabel>
+    </Label>
+    <Label Name="EnumItem">
+      <LocalizedLabel LanguageRef="zhs">枚举值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate values</LocalizedLabel>
+    </Label>
+    <Label Name="EnumItemDescription">
+      <LocalizedLabel LanguageRef="zhs">枚举值,点击右侧按钮打开编辑枚举值页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerateerate value, click the right button to open the Edit enumerate value page</LocalizedLabel>
+    </Label>
+    <Label Name="EnumNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">枚举名重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate enumerate name</LocalizedLabel>
+    </Label>
+    <Label Name="EnumNameNull">
+      <LocalizedLabel LanguageRef="zhs">枚举名为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The enumerate name is null</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="EnumItemEdit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">枚举值编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate values edit window</LocalizedLabel>
+    </Label>
+    <Label Name="EnumItemNameDescription">
+      <LocalizedLabel LanguageRef="zhs">枚举值名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate value name</LocalizedLabel>
+    </Label>
+    <Label Name="EnumItemName">
+      <LocalizedLabel LanguageRef="zhs">枚举值名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate value name</LocalizedLabel>
+    </Label>
+    <Label Name="CreaateEnumItem">
+      <LocalizedLabel LanguageRef="zhs">新建枚举值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New enumerate value</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteEnumItem">
+      <LocalizedLabel LanguageRef="zhs">删除枚举值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete enumerate value</LocalizedLabel>
+    </Label>
+    <Label Name="EnumItemNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">枚举项重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate item duplicate</LocalizedLabel>
+    </Label>
+    <Label Name="EnumItemNameNull">
+      <LocalizedLabel LanguageRef="zhs">枚举项为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate items are null</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

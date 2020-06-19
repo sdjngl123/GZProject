@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateSavePrompt" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流程保存提示对话框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process save the prompt dialog box</LocalizedLabel>
+    </Label>
+    <Label Name="OK">
+      <LocalizedLabel LanguageRef="zhs">确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OK</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAs">
+      <LocalizedLabel LanguageRef="zhs">另存为</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save As</LocalizedLabel>
+    </Label>
+    <Label Name="Text">
+      <LocalizedLabel LanguageRef="zhs">该流程模板已经被使用，请选择修订或另存为。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The process template has already been used, please select a revision or save as.</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">删除失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete failed!</LocalizedLabel>
+    </Label>
+    <Label Name="Emend">
+      <LocalizedLabel LanguageRef="zhs">修订</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

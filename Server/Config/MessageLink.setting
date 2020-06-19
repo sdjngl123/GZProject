@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="WorkFlowInstantMessageLink" Value="InforCenter_Platform_InternalMail_OpenModule({ PageName: &quot;TreeManagement&quot;, ItemName: &quot;MyFlowTask&quot;, PageText: &quot;NavigationItems.MyFlowTask&quot; });" ToClient="false" Description="系统内部消息中流程审批消息对应的连接地址" />
+  <AppSet Key="RuleInstantMessageLink" Value="InforCenter_Platform_InternalMail_OpenObject({ObjID:&quot;[OBJID]&quot;});" ToClient="false" Description="系统内部消息中操作订阅消息对应的连接地址，[OBJID]为可替换参数，表示对象ID" />
+</root>

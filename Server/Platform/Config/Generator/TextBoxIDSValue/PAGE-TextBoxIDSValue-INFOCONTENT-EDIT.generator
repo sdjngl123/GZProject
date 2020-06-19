@@ -1,0 +1,10 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="TextBox" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_ExecInfoDataSource([INFODATASOURCEPARA],ctrlEvent.o.ContainerID(),'')"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="readOnly" Value="true"/>
+  <Settings Key="bgText" Value="Platform.ClickChooseContent"/>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

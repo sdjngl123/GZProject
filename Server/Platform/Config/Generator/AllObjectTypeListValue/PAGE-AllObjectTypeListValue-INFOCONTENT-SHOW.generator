@@ -1,0 +1,4 @@
+﻿    <PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="TextValue" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>

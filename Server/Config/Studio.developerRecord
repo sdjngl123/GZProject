@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeveloperRecordFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeveloperRecord FilePath="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Config\Studio.developerRecord">
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Config\Apps.database" Order="2" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Config\Apps.app" Order="4" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\PageConfig1.page" Order="6" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\PageConfig2.page" Order="11" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\PageConfig11.page" Order="30" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\UIConfig\testMenu.menu" Order="31" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\A1.page" Order="33" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\A1.dic" Order="34" />
+  </DeveloperRecord>
+</DeveloperRecordFile>

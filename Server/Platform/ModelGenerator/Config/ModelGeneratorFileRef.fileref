@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Platform/ModelGenerator/Js/ModelGenerator.js" group="Platform" type="PC,H5"/>
+  <JSFile FileName ="~/Platform/ModelGenerator/Js/ModelGeneratorPage.js" group="Platform" type="PC,H5"/>
+  <JSFile FileName ="~/Platform/ModelGenerator/Js/CustomFormPlugin.js" group="Platform" type="PC,H5"/>
+  <JSFile FileName ="~/Platform/ModelGenerator/Js/FormType.js" group="Platform" type="PC,H5"/>
+  <JSFile FileName ="~/Platform/ModelGenerator/Js/ThemDesign.js" group="Platform" type="PC,H5"/>
+</root>

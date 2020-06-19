@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Guide Name="StartWorkflowGuide" SaveJS="InforCenter_InforCenter_StartWorkflow_SaveNewWorkflow" ShowNav="true" >
+    <Page Name="StartWorkflow"  InitJS="" SaveJS="InforCenter_InforCenter_StartWorkflow_CheckWorkflowBaseInfor" AllowFinish="false"  PageTitleDic="Workflow.StartWorkflow"/>
+    <Page Name="WorkflowAccessory" Reload="true"   InitJS="InforCenter_InforCenter_StartWorkflow_AccessoryPageInit" SaveJS="InforCenter_InforCenter_StartWorkflow_AccessorySave" AllowFinish="true" PageTitleDic="Workflow.Accessory"/>
+    <Page Name="WorkflowInform" InitJS="InforCenter_InforCenter_StartWorkflow_WorkflowInformInit" SaveJS="InforCenter_InforCenter_StartWorkflow_OnWorkflowExtendSettingCheck" AllowFinish="true" PageTitleDic="Workflow.WorkflowInform"/>
+  </Guide>
+</root>

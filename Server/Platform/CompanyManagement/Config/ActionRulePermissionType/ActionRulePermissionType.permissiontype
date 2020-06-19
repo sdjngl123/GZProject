@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 授权类型-->
+  <!--Group:用在关系对象还是用在实体对象；
+  JSMethod:设置授权对象的JS方法
+  IsPopup:如果值为true，代表授权对象单元格点击事件需要弹框，授权对象值在callback中赋值，如果值为false，授权对象值通过JSMethod方法返回
+  JSMethod和IsPopup需要配合使用-->
+  
+  <ActionRulePermissionTypePlugin
+    Name="PermissionToOwnCompany"
+    Assembly="Hoteam.InforCenter.CompanyRule.Business"
+    Class="Hoteam.InforCenter.CompanyRule.Business.PermissionType.PermissionToOwnCompany"
+    Group="Company"
+    JSMethod="InforCenter_Platform_CompanyRulePermission_PermissionToOwnCompanyActorValueOnClick"
+    IsPopup="true"
+    Order="60"/>
+</root>

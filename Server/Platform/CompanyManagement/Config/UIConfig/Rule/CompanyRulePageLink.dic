@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="CompanyRuleList">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">规则条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Condition</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyRulePermission">
+      <LocalizedLabel LanguageRef="zhs">操作权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action permissions</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyObjectList">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCompanyRuleRootPageLink">
+      <LocalizedLabel LanguageRef="zhs">业务模型列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business model list</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCompanyRulePageLink">
+      <LocalizedLabel LanguageRef="zhs">操作权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action permissions</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

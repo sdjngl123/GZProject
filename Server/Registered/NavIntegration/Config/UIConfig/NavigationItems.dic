@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="IntergationGroup">
+      <LocalizedLabel LanguageRef="zhs">集成组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IntergationGroup</LocalizedLabel>
+    </Label>
+    <Label Name="EItemIntergation">
+      <LocalizedLabel LanguageRef="zhs">零组件管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EItemManagement</LocalizedLabel>
+    </Label>   
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleExceptionLock" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">异常锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExceptionLock</LocalizedLabel>
+    </Label>
+    <Label Name="IsEnable">
+      <LocalizedLabel LanguageRef="zhs">是否启用异常登录锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">is Enable Exception lock</LocalizedLabel>
+    </Label>
+    <Label Name="IsEnableValue">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="CountTop">
+      <LocalizedLabel LanguageRef="zhs">异常登录次数上限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Count Top</LocalizedLabel>
+    </Label>
+    <Label Name="CountTopRegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正整数（1-999999999）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter positive integer (1-999999999)</LocalizedLabel>
+    </Label>
+    <Label Name="Minute">
+      <LocalizedLabel LanguageRef="zhs">分钟</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">minute</LocalizedLabel>
+    </Label>
+    
+    <Label Name="LockTime">
+      <LocalizedLabel LanguageRef="zhs">异常登录锁定时间(分钟)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lock time</LocalizedLabel>
+    </Label>
+    <Label Name="LockTimeRegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正整数（1-999999999）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter positive integer (1-999999999)</LocalizedLabel>
+    </Label>
+    <Label Name="AccountLock">
+      <LocalizedLabel LanguageRef="zhs">账号已经锁定，锁定时间[Minute]分钟</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccountLock lock time is [Minute] minutes</LocalizedLabel>
+    </Label>
+    <Label Name="UnLockCount">
+      <LocalizedLabel LanguageRef="zhs">还有[Count]次机会</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">还有[Count]次机会</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

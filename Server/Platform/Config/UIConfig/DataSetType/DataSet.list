@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="DataSetTypeList" MenuName="DataSetTypeListMenu" ListRightMenuName="" ListViewName="DataSetTypeListView"  QueryPageName="DATASETTYPEVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>  
+</root>

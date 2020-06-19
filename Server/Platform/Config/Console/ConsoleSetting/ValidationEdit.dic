@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ValidationEdit" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">正则表达式编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular expression editing window</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">验证配置项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify configuration item name</LocalizedLabel>
+    </Label>
+    <Label Name="TheValue">
+      <LocalizedLabel LanguageRef="zhs">正则表达式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular expression</LocalizedLabel>
+    </Label>
+    <Label Name="TheValueDescription">
+      <LocalizedLabel LanguageRef="zhs">正则表达式。例如：^[1-9][0-9]{0,8}$</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular expression. For example: ^[1-9] [0-9] {0,8} $</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

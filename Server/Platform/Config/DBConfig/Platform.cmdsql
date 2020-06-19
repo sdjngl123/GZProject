@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="ENTITYSELECTLATEST">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT [FIELDS] FROM [TABLENAME] WHERE EUID=[EUID] ORDER BY EVERSION DESC
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="ENTITYUPDATELATEST">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE [TABLENAME] SET
+        [LASTSTRING]
+        WHERE EUID=[EUID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="CHECKTASKISROLLBACK">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(*) FROM WORKFLOWTASKINFO WHERE PREVIOUSTASKUID='[TASKUID]' AND STATEID='COMPLETE'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(*) FROM WORKFLOWTASKINFO WHERE PREVIOUSTASKUID='[TASKUID]' AND STATEID='COMPLETE'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="STOPCURRENTTASK">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWTASKINFO SET STATEID='STOP' WHERE (TASKUID='[TASKUID]' OR PREVIOUSTASKUID='[TASKUID]') AND STATEID!='COMPLETE' AND WORKFLOWID='[WORKFLOWID]'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE WORKFLOWTASKINFO SET STATEID='STOP' WHERE (TASKUID='[TASKUID]' OR PREVIOUSTASKUID='[TASKUID]') AND STATEID!='COMPLETE' AND WORKFLOWID='[WORKFLOWID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="DELETEROLLBACKTASK">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE WORKFLOWTASKINFO WHERE PREVIOUSTASKUID='[TASKUID]' OR TASKUID='[TASKUID]' AND WORKFLOWID='[WORKFLOWID]'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE WORKFLOWTASKINFO WHERE PREVIOUSTASKUID='[TASKUID]' OR TASKUID='[TASKUID]' AND WORKFLOWID='[WORKFLOWID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="DELETEROLLBACKTASKPERMISSION">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE OBJECTPERMISSION WHERE USEOBJECTID = '[TASKUID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+
+  <Command Name="LOCKWORKFLOWTABLE">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        SELECT EID FROM WORKFLOWINFO WITH(HOLDLOCK)
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        LOCK TABLE WORKFLOWINFO IN EXCLUSIVE MODE
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        SELECT EID from WORKFLOWINFO limit 1 for update;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETHAVEMESSAGEUSERLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT A.MTO,A.CREATETIME FROM ( SELECT MTO,CREATETIME,ROW_NUMBER() OVER (PARTITION BY MTO ORDER BY CREATETIME DESC) ROWID FROM INSTANTMESSAGE WHERE MSTATE='Unread') A WHERE A.ROWID=1
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT A.MTO,A.CREATETIME FROM ( SELECT MTO,CREATETIME,ROW_NUMBER() OVER (PARTITION BY MTO ORDER BY CREATETIME DESC) OROWID FROM INSTANTMESSAGE WHERE MSTATE='Unread') A WHERE A.OROWID=1
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select C.MTO,C.CREATETIME from (
+        select *,@rownum:=@rownum+1 total,
+        if(@mto=a.mto,@num:=@num+1,@num:=1) as num,@mto:=a.mto from
+        (
+        select MTO,CREATETIME from INSTANTMESSAGE WHERE MSTATE='Unread' order by MTO asc, CREATETIME desc
+        ) a,(select @rownum:=0, @mto:=null,@num:=0) b
+        ) c where num =1;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETIISMESSAGESTATISTICSLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select
+        a.MTITLE TITLE,
+        a.MCONTENT CONTENT,
+        a.CREATETIME,
+        a.MTO,
+        t.num NUM
+        from
+        (select
+        m.MTITLE,
+        m.MCONTENT,
+        m.CREATETIME,
+        m.MTO,
+        row_number() over (partition by m.MTO order by M.CREATETIME desc) as group_index from INSTANTMESSAGE m) a
+        left join (select COUNT(EID) as num,MTO from INSTANTMESSAGE WHERE  MSTATE = 'Unread'  Group by MTO ) t on a.MTO = t.MTO
+        where
+        a.group_index = 1
+
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select
+        a.MTITLE TITLE,
+        a.MCONTENT CONTENT,
+        a.CREATETIME,
+        b.ENAME NAME,
+        t.num NUM
+        from
+        (select
+
+        m.MTITLE,
+        m.MCONTENT,
+        m.CREATETIME,
+        m.MTO,
+        row_number() over (partition by m.MTO order by M.CREATETIME desc) as group_index from INSTANTMESSAGE m) a
+        left join (select COUNT(EID) as num,MTO from INSTANTMESSAGE WHERE  MSTATE = 'Unread'  Group by MTO ) t on a.MTO = t.MTO
+        left join USERINFO b on a.MTO = b.EID
+        where
+        a.group_index = 1
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="SETTINGAGENTUSER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE WORKFLOWTASKINFO SET AGENTUSERID=[AGENTUSERID] , AGENTSTARTDATETIME=[AGENTSTARTDATETIME] ,AGENTENDDATETIME=[AGENTENDDATETIME]  WHERE TASKACTORID=[CREATEUID] AND STATEID='RUN'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE WORKFLOWTASKINFO SET AGENTUSERID=[AGENTUSERID] , AGENTSTARTDATETIME=[AGENTSTARTDATETIME] ,AGENTENDDATETIME=[AGENTENDDATETIME]  WHERE TASKACTORID=[CREATEUID] AND STATEID='RUN'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="SETTINGAGENTUSERENDNew">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE
+        WORKFLOWTASKINFO SET AGENTUSERID=[AGENTUSERID] ,
+        AGENTSTARTDATETIME=[AGENTSTARTDATETIME] ,
+        AGENTENDDATETIME=[AGENTENDDATETIME]
+        WHERE
+        TASKACTORID=[CREATEUID]
+        and CREATETIME>=[AGENTSTARTDATETIME]
+        AND STATEID='RUN'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE
+        WORKFLOWTASKINFO SET AGENTUSERID=[AGENTUSERID] ,
+        AGENTSTARTDATETIME=[AGENTSTARTDATETIME] ,
+        AGENTENDDATETIME=[AGENTENDDATETIME]
+        WHERE
+        TASKACTORID=[CREATEUID]
+        and CREATETIME>=[AGENTSTARTDATETIME]
+        AND STATEID='RUN'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="CancelWorkAgent">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE
+        WORKFLOWTASKINFO SET AGENTUSERID=null ,
+        AGENTSTARTDATETIME=0 ,
+        AGENTENDDATETIME=0
+        where
+        STATEID='RUN'
+        and AGENTUSERID is not null
+        and AGENTUSERID=[OLDAGENTUSERID]
+        and TASKACTORID=[CREATEUID]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE
+        WORKFLOWTASKINFO SET AGENTUSERID=null ,
+        AGENTSTARTDATETIME=0 ,
+        AGENTENDDATETIME=0
+        where
+        STATEID='RUN'
+        and AGENTUSERID is not null
+        and AGENTUSERID=[OLDAGENTUSERID]
+        and TASKACTORID=[CREATEUID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--<Command Name="GetAgentUserList">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID,AGENTID,AGENTSTARTDATETIME,AGENTENDDATETIME,ECOMPANYID FROM USERINFO WHERE AGENTID IS NOT NULL OR AGENTID =''
+      </CommandItem>
+    </DatabaseType>
+  </Command>-->
+
+  <Command Name="DeleteAgentObjectPermission">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DELETE FROM OBJECTPERMISSION WHERE USEOBJECTID IN (
+        SELECT EID FROM WORKFLOWTASKINFO WHERE (STATEID='RUN' OR STATEID='SUSPEND') AND TASKACTORID=[USERID] )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetAgentObjectPermissionForDelete">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID FROM OBJECTPERMISSION WHERE USEOBJECTID IN (
+        SELECT EID FROM WORKFLOWTASKINFO WHERE (STATEID='RUN' OR STATEID='SUSPEND') AND TASKACTORID=[USERID] )
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetAgentObjectPermission">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT W.EID  TASKID,W.TASKUID, O.* FROM
+        (SELECT EID ,TASKUID FROM WORKFLOWTASKINFO WHERE (STATEID='RUN' OR STATEID='SUSPEND') AND TASKACTORID=[USERID] ) W
+        LEFT JOIN OBJECTPERMISSION O ON W.EID= O.USEOBJECTID
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETLASTGROUPLSEQUENCESQL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT MAX(LSEQUENCE) FROM ORGANIZE WHERE  PEID=[MOVETOID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETNAVIGATIONMAXSORTID">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT MAX(QUICKSORT) FROM QUICKNAVIGATION WHERE USERID=[USERID]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT MAX(QUICKSORT) FROM QUICKNAVIGATION WHERE USERID=[USERID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETUSERINFOBYUSERCODE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM USERINFO WHERE ECODE=[USERCODE]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM USERINFO WHERE ECODE=[USERCODE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETMAXSERIALNUMBER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT MAX(SERIALNUMBER) AS MAXSERIALNUMBER FROM [TABLENAME] WHERE [PEIDCOL] = [PEID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="EmptySqlTemplate">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        [StrSql]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="PreLoadedIntoBuffer">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        SELECT * FROM [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="UPDATESYSTEMUSERINFO">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE USERINFO SET ECODE=[USERNAME],PASSWORD=[PASSWORD] WHERE EID='USERINFO_System'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE USERINFO SET ECODE=[USERNAME],PASSWORD=[PASSWORD] WHERE EID='USERINFO_System'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE USERINFO SET ECODE=[USERNAME],PASSWORD=[PASSWORD] WHERE EID='USERINFO_System'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+
+ 
+  <Command Name="CUSTOMSQL">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        [SQLSTR]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        [SQLSTR]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        [SQLSTR]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYLINKLASTSEQUENCE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT Max( LSEQUENCE) FROM [TABLENAME] WHERE 1=1 [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  <Command Name="GetDatabaseLongTypeDateTime">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT dbo.utcinttime()
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT utcinttime() FROM DUAL
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

@@ -1,0 +1,38 @@
+﻿{
+	var ctrl=pageEvent.o.GetControl('[INFONAME]_Value');
+	if(ctrl.id!=''  &amp;&amp; pageEvent.FlagName =='[INFONAME]'){
+		var text='';
+		var value='';
+		for (var i = 0; i &lt;  data.length; i++) {
+		  var d=data[i];
+		  value+=';'+ d[pageEvent.SourceValue];
+		  text+=';'+d[pageEvent.SourceText];
+		}
+		if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+		   text = text.substring(1);
+		   value = value.substring(1);
+		}
+		var obj = {};
+		obj.text = text;
+		obj.value = value;
+		ctrl.SetTag(obj);
+	}
+
+	if(pageEvent.FieldInitList){
+		for(var i=0;i&lt;pageEvent.FieldInitList.length;i++){
+			var fieldInit=pageEvent.FieldInitList[i];
+			ctrl=pageEvent.o.GetControl(fieldInit.TargetField+'_Value');
+			if(ctrl.id!=''){
+				var text='';
+				for (var j = 0; j &lt;  data.length; j++) {
+					var d=data[j];
+					text+=';'+d[fieldInit.SourceField];
+				}
+				if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+					text = text.substring(1);
+				}
+				ctrl.SetText(text);
+			}
+		}		
+	}
+}

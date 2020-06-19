@@ -1,0 +1,12 @@
+﻿<div class="import">
+  <ul>
+    <li class="title  importFileUpLoad"  style="width:36px">文件</li>
+    <li>
+      <input type="file" style="width:260px" />
+    </li>
+  </ul>
+  <ul class="importFileTip-container">
+    <li class="title importFileTip">注释</li>
+    <li style="color:red"></li>
+  </ul>
+</div>

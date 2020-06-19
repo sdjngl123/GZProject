@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <DeveloperCtrlTemplate Name="HForm" ModuleAssembly="Hoteam.InforCenter.Developer.Interface.Forms"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.Forms.HForm" TypeName="HForm" Description="DeveloperControl.HForm">
+    <Property Name="Width" Setting="true" Type="TextBox"  DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="Height" Setting="true" Type="TextBox"  DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.HeightDes" ReadOnly="false"/>
+    <Property Name="title" Setting="true" Type="TextBox" DefaultVal="" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="TemplatePage" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TemplatePageDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="BaseFlowPanel" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+          ModuleClass="Hoteam.InforCenter.Developer.Contorls.BaseFlowPanel" TypeName="BaseFlowPanel" Description="DeveloperControl.BaseFlowPanel">
+    
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="LayoutContainer" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.LayoutContainer" ImagePath="" ToolboxTab="Layout" ToolboxItem="true"
+                 Description="DeveloperControl.LayoutContainer" TypeName="LayoutContainer">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size"  DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+   
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HLabel" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.HLabel" ImagePath="Base/Image/PageControl/HLabel.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HLabel" TypeName="Label">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+   
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HTextBox" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTextBox" ImagePath="Base/Image/PageControl/HTextBox.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HTextBox" TypeName="TextBox" MinHeight="26">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+   
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HButton" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+            ModuleClass="Hoteam.InforCenter.Developer.Contorls.HButton" ImagePath="Base/Image/PageControl/HButton.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HButton" TypeName="Button" MinHeight="26">
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HTextValue" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+           ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTextValue" ImagePath="Base/Image/PageControl/HTextValue.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HTextValue" TypeName="TextValue" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+   
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HSpace" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+           ModuleClass="Hoteam.InforCenter.Developer.Contorls.HSpace" ImagePath="Base/Image/PageControl/HSpace.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HSpace" TypeName="Space">
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HDateTime" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+           ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDateTime" ImagePath="Base/Image/PageControl/HDateTime.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HDateTime" TypeName="DateTime" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HDropDown" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+         ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDropDown" ImagePath="Base/Image/PageControl/HDropDown.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HDropDown" TypeName="DropDown" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HDropDownItem" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+      ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDropDownItem" Description="DeveloperControl.HDropDownItem" ToolboxTab="" ToolboxItem="false" TypeName="HDropDownItem">
+    <Property Name="textId" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.LanguageDes" ReadOnly="false"/>
+    <Property Name="selected" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.SelectedDes" ReadOnly="false"/>
+    <Property Name="value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HCheckBox" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+        ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCheckBox" ImagePath="Base/Image/PageControl/HCheckBox.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HCheckBox" TypeName="CheckBox">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="PageContainer" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+       ModuleClass="Hoteam.InforCenter.Developer.Contorls.PageContainer" ImagePath="Base/Image/PageControl/PageContainer.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.PageContainer" TypeName="PageContainer">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HMenu" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+      ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMenu" ImagePath="" ToolboxTab="" ToolboxItem="false" TypeName="Empty">
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HMenuItem" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+      ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMenuItem" Description="DeveloperControl.HMenuItem" ToolboxTab="" ToolboxItem="false" TypeName="HMenuItem">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" DefaultVal="" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="icon" Setting="true" Type="Button" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.IconDes" ReadOnly="false"/>
+    <Property Name="value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HMenuList" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+     ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMenuList" Description="DeveloperControl.HMenuList" TypeName="Menu">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HView" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+    ModuleClass="Hoteam.InforCenter.Developer.Contorls.HView" ToolboxTab="" ToolboxItem="false" TypeName="Empty">
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HCheckboxPad" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+        ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCheckboxPad" ImagePath="Base/Image/PageControl/HCheckboxPad.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HCheckboxPad" TypeName="CheckboxPad">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HDrag" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+     ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDrag" ImagePath="Base/Image/PageControl/HDrag.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HDrag" TypeName="drag">
+    <Property Name="type" Setting="true"  Type="TextBox" DefaultVal="drag" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TypeDes" ReadOnly="true"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+    <Property Name="resizable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ResizableDes" ReadOnly="false"/>
+    <Property Name="closable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ClosableDes" ReadOnly="false"/>
+    <Property Name="direction" Setting="true" Type="ComboBox" DefaultVal="pre" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.DirectionDes" ReadOnly="false">
+      <Val Key="pre" Value="pre"/>
+      <Val Key="next" Value="next"/>
+    </Property>
+    <Property Name="openStateTooltipId" Setting="true"  Type="ComboBox" DefaultVal="LayoutContainer.Hidden"  Category="DeveloperControl.CustomCategory" Description="DeveloperControl.OpenStateTooltipIdDes" ReadOnly="false">
+      <Val Key="LayoutContainer.Show" Value="LayoutContainer.Show"/>
+      <Val Key="LayoutContainer.Hidden" Value="LayoutContainer.Hidden"/>
+    </Property>
+    <Property Name="closeStateTooltipId" Setting="true"  Type="ComboBox" DefaultVal="LayoutContainer.Show"  Category="DeveloperControl.CustomCategory" Description="DeveloperControl.CloseStateTooltipIdDes" ReadOnly="false">
+      <Val Key="LayoutContainer.Show" Value="LayoutContainer.Show"/>
+      <Val Key="LayoutContainer.Hidden" Value="LayoutContainer.Hidden"/>
+    </Property>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HGrid" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+     ModuleClass="Hoteam.InforCenter.Developer.Contorls.HGrid" ImagePath="Base/Image/PageControl/HGrid.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HGrid" TypeName="Grid">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HGridColumn" ModuleAssembly="" ModuleClass="" ToolboxTab="Common" ToolboxItem="false" TypeName="HGridColumn" Description="">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="sortable" Setting="true" Type="BoolValue" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="排序" ReadOnly="false"/>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HTabs" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+    ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTabs" ImagePath="Base/Image/PageControl/HTabs.png" ToolboxTab="Common" ToolboxItem="true"
+                 Description="DeveloperControl.HTabs" TypeName="Tabs">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HTabPageItem" ModuleAssembly="" ModuleClass="" Description="DeveloperControl.TabItem" ToolboxTab="Common" ToolboxItem="false" TypeName="HTabPageItem">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="pageName" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageNameDes" ReadOnly="false"/>
+    <Property Name="tabId" Setting="true" Type="TextBox" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.TabIdDes" ReadOnly="false"/>
+    <Property Name="showClosed" Setting="true" Type="BoolValue" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ShowClosed" ReadOnly="false"/>
+    <Property Name="pageParas" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageParasDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HTree" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HTree" ImagePath="Base/Image/PageControl/HTree.png" ToolboxTab="Common" ToolboxItem="true"
+                 TypeName="Tree" Description="DeveloperControl.HTree">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HEditButton" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HEditButton" ImagePath="Base/Image/PageControl/HEditButton.png" ToolboxTab="Common" Description="DeveloperControl.HEditButton"
+                 ToolboxItem="true" TypeName="EditButton" MinHeight="26">
+    <Property Name="Name" Setting="false" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HEditGrid" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+    ModuleClass="Hoteam.InforCenter.Developer.Contorls.HEditGrid" ImagePath="Base/Image/PageControl/HEditGrid.png" ToolboxTab="Common" ToolboxItem="true" TypeName="EditGrid"
+                 Description="DeveloperControl.HEditGrid">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HEditGridColumn" ModuleAssembly="" ModuleClass="" ToolboxTab="Common" ToolboxItem="false" TypeName="HEditGridColumn" Description="">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HEditTreeGrid" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HEditTreeGrid" ImagePath="Base/Image/PageControl/HEditTreeGrid.png" ToolboxTab="Common" ToolboxItem="true" TypeName="EditTreeGrid" Description="DeveloperControl.HEditTreeGrid">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HEditTreeGridColumn" ModuleAssembly="" ModuleClass="" ToolboxTab="Common" ToolboxItem="false" TypeName="HEditTreeGridColumn">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HAutoCompleteCombox" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HAutoCompleteCombox" ImagePath="Base/Image/PageControl/HAutoCompleteCombox.png" ToolboxTab="Common" ToolboxItem="true" TypeName="AutoCompleteCombox" Description="DeveloperControl.AutoCompleteCombox">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HImage" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HImage" ImagePath="Base/Image/PageControl/HImage.png" ToolboxTab="Common" ToolboxItem="true" TypeName="Image" Description="DeveloperControl.Image">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HRadioList" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HRadioList" ImagePath="Base/Image/PageControl/HRadioList.png" ToolboxTab="Common" ToolboxItem="true" TypeName="RadioList" Description="DeveloperControl.HRadioList">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrl Name="HRadioListItem" ModuleAssembly="" ModuleClass="" ToolboxTab="Common" ToolboxItem="false" TypeName="HRadioListItem" Description="">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="Value" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.ValueDes" ReadOnly="false"/>
+  </DeveloperCtrl>
+
+  <DeveloperCtrlTemplate Name="HMultiSelectDropDown" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HMultiSelectDropDown" ImagePath="Base/Image/PageControl/HMultiSelectDropDown.png" ToolboxTab="Common" ToolboxItem="true"
+                 TypeName="MultiSelectDropDown" Description="DeveloperControl.HMultiSelectDropDown" MinHeight="26">
+    <Property Name="Name" Setting="true"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HBreadcrumbNavigation" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HBreadcrumbNavigation" ImagePath="Base/Image/PageControl/HBreadcrumbNavigation.png" ToolboxTab="Common" ToolboxItem="true"
+               TypeName="BreadcrumbNavigation" Description="DeveloperControl.HBreadcrumbNavigation" MinHeight="20">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HCalendar" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCalendar" ImagePath="Base/Image/PageControl/HCalendar.png" ToolboxTab="Common" ToolboxItem="true"
+               TypeName="Calendar" Description="DeveloperControl.HCalendar" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HColorPicker" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HColorPicker" ImagePath="Base/Image/PageControl/HColorPicker.png" ToolboxTab="Common" ToolboxItem="true"
+               TypeName="ColorPicker" Description="DeveloperControl.HColorPicker" MinHeight="20">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HCustomerContainer" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HCustomerContainer" ImagePath="Base/Image/PageControl/HCustomerContainer.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="CustomerContainer" Description="DeveloperControl.HCustomerContainer" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size"  DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HDropSearch" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HDropSearch" ImagePath="Base/Image/PageControl/HDropSearch.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="DropSearch" Description="DeveloperControl.HDropSearch" MinHeight="26">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HtGantt" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HtGantt" ImagePath="Base/Image/PageControl/HtGantt.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="HtGantt" Description="DeveloperControl.HtGantt" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HSearch" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HSearch" ImagePath="Base/Image/PageControl/HSearch.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="Search" Description="DeveloperControl.HSearch" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Width" Setting="true" Type="TextBox" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.WidthDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HHtmlEdit" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HHtmlEdit" ImagePath="Base/Image/PageControl/HHtmlEdit.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="HtmlEdit" Description="DeveloperControl.HHtmlEdit" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size"  DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HIframe" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+ModuleClass="Hoteam.InforCenter.Developer.Contorls.HIframe" ImagePath="Base/Image/PageControl/HIframe.png" ToolboxTab="Common" ToolboxItem="true"
+              TypeName="Iframe" Description="DeveloperControl.HIframe" MinHeight="">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HVerticalTabs" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HVerticalTabs" ImagePath="Base/Image/PageControl/HVerticalTabs.png" ToolboxTab="Common" ToolboxItem="true"
+                Description="DeveloperControl.HVerticalTabs" TypeName="VerticalTabs">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size"  DefaultVal=""  Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HVerticalItem" ModuleAssembly="" ModuleClass="" ToolboxTab="Common" ToolboxItem="false" TypeName="HVerticalItem" Description="DeveloperControl.TabItem">
+    <Property Name="textId" Setting="true" Type="TextBox" Language="true" Category="DeveloperControl.LanguageCategory" Description="DeveloperControl.LanguageDes" ReadOnly="true"/>
+    <Property Name="pageName" Setting="true" Type="Button" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.PageNameDes" ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HSideTabs" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+   ModuleClass="Hoteam.InforCenter.Developer.Contorls.HSideTabs" ImagePath="Base/Image/PageControl/HSideTabs.png" ToolboxTab="Common" ToolboxItem="true"
+                Description="DeveloperControl.HSideTabs" TypeName="SideTabs">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+  <DeveloperCtrlTemplate Name="HRightMenu" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls"
+  ModuleClass="Hoteam.InforCenter.Developer.Contorls.HRightMenu" ImagePath="Base/Image/PageControl/HRightMenu.png" ToolboxTab="Common" ToolboxItem="true"
+               Description="DeveloperControl.HRightMenu" TypeName="RightMenu">
+    <Property Name="Name" Setting="false"  Type="TextBox" DefaultVal="" Category="DeveloperControl.CustomCategory" Description="DeveloperControl.NameDes" ReadOnly="false"/>
+    <Property Name="Size" Setting="false" Type="Size" DefaultVal="" Category="DeveloperControl.SizeCategory" Description="DeveloperControl.SizeDes"  ReadOnly="false"/>
+  </DeveloperCtrlTemplate>
+
+</root>

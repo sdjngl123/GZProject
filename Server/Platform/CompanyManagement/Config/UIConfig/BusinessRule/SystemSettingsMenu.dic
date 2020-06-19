@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CompanySystemMenu" IsWeb="true">
+    <Label Name="CreateMenu">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="EditMenu">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteMenu">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="PersonalMenu" IsWeb="true">
+    <Label Name="EditMenu">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="ACTIONRULECONDITION-VIEW" IsWeb="true">
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORHeader">
+      <LocalizedLabel LanguageRef="zhs">操作符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operator</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">条件值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition value</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULECONDITIONHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览规则权限条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseRule permission condition</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

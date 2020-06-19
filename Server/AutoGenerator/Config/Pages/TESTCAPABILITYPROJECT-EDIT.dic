@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTCAPABILITYPROJECT-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDCODE</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDCODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDNAME</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDNAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTYPERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEDULETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">排程类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEDULETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEDULETYPERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPROJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">上级试验项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestPROJECT</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPROJECTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ABILITYCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">能力排序序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABILITYCODE</LocalizedLabel>
+    </Label>
+    <Label Name="ABILITYCODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ISCNASHeader">
+      <LocalizedLabel LanguageRef="zhs">通过CNAS认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISCNAS</LocalizedLabel>
+    </Label>
+    <Label Name="TESTCAPABILITYPROJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑试验能力项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditTESTCAPABILITYPROJECT</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

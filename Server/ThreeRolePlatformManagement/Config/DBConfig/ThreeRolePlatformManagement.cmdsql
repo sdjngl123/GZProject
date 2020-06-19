@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" > 
+  <Command Name="UPDATETHREEROLENEXTCHANGEPWD">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        UPDATE THREEROLENEXTCHANGEPWD SET ISNEEDCHANGEPASSWORD = [ISNEEDCHANGEPASSWORD] ,ISCHANGEPASSWORD=[ISCHANGEPASSWORD]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+</root>

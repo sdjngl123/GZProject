@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConfigEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">配置文件编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Profile Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="MainPanel">
+      <LocalizedLabel LanguageRef="zhs">  主面板  </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main Panel</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

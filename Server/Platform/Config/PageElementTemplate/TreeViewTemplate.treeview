@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebTreeView Name="CommonTreeViewTemplate" ObjectType="EOWNSPACE" TextField="" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" NodeTypeField="" EntityFilter="" Filter="" View="EOWNSPACEVIEW" ShowStartNode="true" IsTemplate="true" TemplateDescription="配置一个根节点为虚节点,按照对象类型查找父级schema的模板,并且可以查询树结构">
+    <Schema Name="EOWNSPACETOEFOLDER" ObjectType="EFOLDER" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EOWNSPACETOEFOLDERVIEW" Key="1" SuperKey="-1" ParentObjectType="EOWNSPACE" Loop="false" IsExistNode="true" />
+    <Schema Name="EFOLDERTOEFOLDER" ObjectType="EFOLDER" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EOWNSPACETOEFOLDERVIEW" Key="2" SuperKey="1" ParentObjectType="EFOLDER" Loop="true" IsExistNode="true" />
+    <QueryView Name="EOWNSPACEQUERYVIEW" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EOWNSPACEQUERYVIEW" />
+  </WebTreeView>
+</root>

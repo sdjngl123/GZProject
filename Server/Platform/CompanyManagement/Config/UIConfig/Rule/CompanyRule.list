@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="CompanyRuleRuleBusinessModelList" ListViewName="" 
+                  ListTitleDataService="Hoteam.Rule.RulePageService.GetActionRuleBusinessModelTitle"
+                  OnePageDataService="Hoteam.Rule.CompanyRuleService.GetCompanyRuleBusinessModelData" AllPageDataService="">
+  </ListManagement>
+</root>

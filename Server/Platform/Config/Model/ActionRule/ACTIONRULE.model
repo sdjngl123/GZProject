@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="ACTIONRULE" Extend="ENTITY" LogicClass="ActionRule" IconPath="Platform/Image/Model/elementobject.png" Abstract="false" TableName="ACTIONRULE" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Number" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <Index Name="IX_ACTIONRULE_PEID" TableIndex="IX_ACTIONRULE_PEID" Unique="False">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <InfoType Name="PEID" Type="ObjectIDValue" DataType="STRING100" Column="PEID" Edit="" Show="" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" Validation="String100" InheritRegulate="Show" />
+    <InfoType Name="USEBY" Type="DefaultObjectValue" DataType="STRING100" Column="USEBY" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="CREATEPERMISSIONOBJECTTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="CREATEPERMISSIONOBJECTTYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="SERIALNUMBER" Type="DefaultObjectValue" Show="[{&quot;PageType&quot;:&quot;View&quot;,&quot;Width&quot;:&quot;100&quot;,&quot;Height&quot;:&quot;&quot;,&quot;MergeRowNumber&quot;:&quot;&quot;,&quot;Sequence&quot;:&quot;&quot;,&quot;ClickScript&quot;:null,&quot;LabelWidth&quot;:null}]" Width="100" PrimaryKeyOrder="0" DefaultValue="0" Required="False" ValidateUnique="false" InheritRegulate="Inherit" />
+  </EntityType>
+</root>

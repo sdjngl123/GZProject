@@ -1,0 +1,147 @@
+.FormBuilder {
+    height: 100%;
+}
+
+.FormBuilderCtrl .formbuilder.formbuilder-design {
+    height: 100% !important;
+}
+
+.formbuilder-property-fileupload span {
+    display: none;
+}
+
+.formbuilder-menu-combox .formbuilder-menu-combox-arrowsdown img {
+    margin-top: 8px;
+}
+
+.formbuilder-menu-button > a {
+    padding-bottom: 4px;
+}
+
+.formbuilder-menu-image > a {
+    padding-bottom: 4px;
+}
+
+.formbuilder-menu-arrows-down > img {
+    margin-top: 5px;
+}
+
+.formbuilder-menu-image > a > .filename {
+    display: none;
+}
+/*隐藏组件边框*/
+.formbuilder-table-border-solid textarea.form-control,
+td.formbuilder-table-cell.border-solid .form-control {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid textarea.form-control,
+td.formbuilder-table-cell.border-solid-heavy .form-control {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .hoteamDateTime .datetime-input,
+td.formbuilder-table-cell.border-solid .hoteamDateTime .datetime-input {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .hoteamDateTime .datetime-input,
+td.formbuilder-table-cell.border-solid-heavy .hoteamDateTime .datetime-input {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .input-group-addon,
+td.formbuilder-table-cell.border-solid .input-group-addon {
+    border: none;
+}
+.formbuilder-table-border-solid .input-group-addon,
+td.formbuilder-table-cell.border-solid-heavy .input-group-addon {
+    border: none;
+}
+.formbuilder-table-border-solid .hoteam-dropdown-container .form-control,
+td.formbuilder-table-cell.border-solid .hoteam-dropdown-container .form-control {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .hoteam-dropdown-container .form-control,
+td.formbuilder-table-cell.border-solid-heavy .hoteam-dropdown-container .form-control {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .formbuilder-workspace-control-container .form-control,
+td.formbuilder-table-cell.border-solid .formbuilder-workspace-control-container .form-control {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .formbuilder-workspace-control-container .form-control,
+td.formbuilder-table-cell.border-solid-heavy .formbuilder-workspace-control-container .form-control {
+    border: none;
+    box-shadow: none;
+}
+.formbuilder-table-border-solid .formbuilder-workspace-control-container .ke-container,
+td.formbuilder-table-cell.border-solid .formbuilder-workspace-control-container .ke-container {
+    border: none;
+}
+.formbuilder-table-border-solid .formbuilder-workspace-control-container .ke-container,
+td.formbuilder-table-cell.border-solid-heavy .formbuilder-workspace-control-container .ke-container {
+    border: none;
+}
+.formbuilder-table-border-solid .formbuilder-workspace-control-container .dropdown-toggle,
+td.formbuilder-table-cell.border-solid .formbuilder-workspace-control-container .dropdown-toggle {
+    border: none;
+}
+.formbuilder-table-border-solid .formbuilder-workspace-control-container .dropdown-toggle,
+td.formbuilder-table-cell.border-solid-heavy .formbuilder-workspace-control-container .dropdown-toggle {
+    border: none;
+}
+/*隐藏设计模式菜单栏上传图片按钮*/
+.formbuilder-menu .formbuilder-menu-image {
+    display: none;
+}
+/*默认虚线不显示边框*/
+.formbuilder-applying .formbuilder-table-border-dashed td.formbuilder-table-cell, .formbuilder-table-border-dashed td.formbuilder-table-cell-index {
+    border: none;
+}
+/*设计模式显示虚线*/
+.formbuilder-design .formbuilder-table-border-solid td.formbuilder-table-cell, .formbuilder-table-border-solid td.formbuilder-table-cell-index {
+    border: 1px dashed #ccc;
+}
+/*填写模式，虚线不显示，只显示实线*/
+.formbuilder-applying .formbuilder-table-border-solid td.formbuilder-table-cell {
+    border: 0px solid #ccc;
+}
+
+.formbuilder-applying .formbuilder-table-border-solid td.border-solid {
+    border: 1px solid #ccc;
+}
+/*提示信息斜体灰色兼容IE11*/
+.formbuilder-tip-placeholder::-webkit-input-placeholder {
+    color: #999 !important;
+    font-style: italic;
+}
+
+.formbuilder-tip-placeholder::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999 !important;
+    font-style: italic;
+}
+
+.formbuilder-tip-placeholder:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999 !important;
+    font-style: italic;
+}
+
+.formbuilder-tip-placeholder:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999 !important;
+    font-style: italic;
+}
+
+.formbuilder-workspace-control-container .hoteam-label p {
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.FormBuilder .hoteamText-textarea {
+    height: 100%;
+    white-space: pre-wrap;
+    word-break: break-all;
+}

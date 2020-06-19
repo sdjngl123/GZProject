@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="MongoDB_Enabled" Value="false" ToClient="false" Description="全局MongoDB数据库开关" />
+  <AppSet Key="MongoDB_ConnStr" Value="127.0.0.1:27017" ToClient="false" Description="MongoDB数据库IP地址端口号" />
+  <AppSet Key="MongoDB_DefaultDBName" Value="InforCenter" ToClient="false" Description="MongoDB默认数据库名" />
+</root>

@@ -1,0 +1,3 @@
+﻿<PageControl ControlID="[FILTERNAME]_Value" ParentID="[PARENTID]" TypeName="TextBox" >
+  <Settings Key="disabled" Value="true"/>
+</PageControl>

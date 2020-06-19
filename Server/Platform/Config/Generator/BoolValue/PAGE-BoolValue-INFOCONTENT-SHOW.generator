@@ -1,0 +1,4 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="CheckBox" >
+  <Settings Key="readOnly" Value="true"/>
+  <Settings Key="textId" Value="[PAGENAME].[INFONAME]Header" />
+</PageControl>

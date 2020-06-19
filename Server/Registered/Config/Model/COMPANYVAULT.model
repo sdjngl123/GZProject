@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="COMPANYVAULT" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="COMPANYVAULT" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="VAULTNAME" Type="DefaultObjectValue" DataType="STRING100" Column="VAULTNAME" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="VAULTIP" Type="DefaultObjectValue" DataType="STRING100" Column="VAULTIP" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="VAULTPORT" Type="DefaultObjectValue" DataType="STRING100" Column="VAULTPORT" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OWNCOMPANY" Type="DefaultObjectValue" DataType="STRING100" Column="OWNCOMPANY" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="INNERIP" Type="DefaultObjectValue" DataType="STRING100" Column="INNERIP" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="INNERPORT" Type="DefaultObjectValue" DataType="STRING100" Column="INNERPORT" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="VOLUMN" Type="DefaultObjectValue" DataType="STRING100" Column="VOLUMN" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="VAULTTEMPLATENAME" Type="DefaultObjectValue" DataType="STRING100" Column="VAULTTEMPLATENAME" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ISLOCAL" Type="BoolValue" DataType="BOOL" Column="ISLOCAL" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+  </EntityType>
+</root>

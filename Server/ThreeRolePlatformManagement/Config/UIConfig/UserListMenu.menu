@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+  <MenuItem Name="ListUserMenu" Type="Button" Issplit="false" IsTemplate="false">
+
+    <WebAction Name="EditUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="002" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Size" Value="650*500" />
+        <Para Name="SaveService" Value="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.SaveUser" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+
+    <WebAction Name="Lock" MultiMenu="false" ModuleName="Platform" LabelName="ListUserMenu.Lock" Image="p_lock" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="500" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="Edit" ActionType="USERINFO" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_ThreeRolePlatformManagement_LockUnlock_LockUser" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="LockUserID" Value="[List_EID]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+
+    <WebAction Name="Unlock" MultiMenu="false" ModuleName="Platform" LabelName="ListUserMenu.UnLock" Image="p_lock" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="500" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="Edit" ActionType="USERINFO" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_ThreeRolePlatformManagement_LockUnlock_UnLockUser" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="LockUserID" Value="[List_EID]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    
+    <WebAction Name="AuthSet_All" MultiMenu="false" ModuleName="Platform" LabelName="ListUserMenu.AuthSet_All" Image="p_authorize" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="501" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="ThreeRoleAuthTabs" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Mode" Value="Global" />
+        <Para Name="Title" Value="ListUserMenu.AuthSet_All" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="PlatformThreeRole" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="AuthSet_Select" MultiMenu="false" ModuleName="Platform" LabelName="ListUserMenu.AuthSet_Select" Image="p_authorize" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="502" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="ThreeRoleAuthTabs" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Mode" Value="Personal" />
+        <Para Name="Title" Value="ListUserMenu.AuthSet_Select" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="PlatformThreeRole" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="LoginLimit_All" MultiMenu="false" ModuleName="Platform" LabelName="ListUserMenu.LoginLimit_All" Image="p_prohibit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="503" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="ThreeRoleLoginLimitTabs" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Mode" Value="Global" />
+        <Para Name="Title" Value="ListUserMenu.LoginLimit_All" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="PlatformThreeRole" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="LoginLimit_Select" MultiMenu="false" ModuleName="Platform" LabelName="ListUserMenu.LoginLimit_Select" Image="p_prohibit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="504" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="ThreeRoleLoginLimitTabs" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Mode" Value="Personal" />
+        <Para Name="Title" Value="ListUserMenu.LoginLimit_Select" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="PlatformThreeRole" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    
+  </MenuItem>  
+</root>

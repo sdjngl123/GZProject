@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DocumentType Name="word-2003" Extension="doc" Icon="sm_doc" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="word-2007" Extension="docx" Icon="sm_doc" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="ppt-2003" Extension="ppt" Icon="sm_ppt" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="ppt-2007" Extension="pptx" Icon="sm_ppt" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="excel-2003" Extension="xls" Icon="sm_xls" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="excel-2007" Extension="xlsx" Icon="sm_xls" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="project-2003" Extension="mpp" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="Text" Extension="txt" Icon="sm_txt" ClassifyName="CommonDocument" ViewTemplateName="TransformView" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_TransformViewLoadPage"/>
+  <DocumentType Name="pdf" Extension="pdf" Icon="sm_pdf" ClassifyName="CommonDocument" ViewTemplateName="OfficeOnline" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_OfficeOnlineViewLoadPage" FileType="Office"/>
+  <DocumentType Name="jpg" Extension="jpg" Icon="sm_jpg" ClassifyName="CommonDocument" ViewTemplateName="ImageView" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_ImageViewLoadPage"/>
+  <DocumentType Name="gif" Extension="gif" Icon="sm_gif" ClassifyName="CommonDocument" ViewTemplateName="ImageView" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_ImageViewLoadPage"/>
+  <DocumentType Name="png" Extension="png" Icon="sm_png" ClassifyName="CommonDocument" ViewTemplateName="ImageView" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_ImageViewLoadPage"/>
+  <DocumentType Name="bmp" Extension="bmp" Icon="sm_bmp" ClassifyName="CommonDocument" ViewTemplateName="ImageView" ViewTemplateJS="Hoteam_InforCenter_FileOnlineView_ImageViewLoadPage"/>
+  <!--转换为PDF查看dwg-->
+  <!--<DocumentType Name="dwg" Extension="dwg" Icon="icon-dwg" ClassifyName="EngineeringDrawing" ViewTemplateName="TransformView" ViewTemplateJS="Hoteam_SmartPDM_TransformView_LoadPage"/>-->
+  <!--在线查看dwg-->
+  <DocumentType Name="dwg" Extension="dwg" Icon="sm_dwg" ClassifyName="EngineeringDrawing" ViewTemplateName="ModuleImageView" ViewTemplateJS="Hoteam_SmartPDM_ModuleImageView_LoadPage"/>
+  <DocumentType Name="dwf" Extension="dwf" Icon="sm_dwg" ClassifyName="EngineeringDrawing" ViewTemplateName="" ViewTemplateJS=""/>
+  <DocumentType Name="svg" Extension="svg" Icon="sm_defaultfile" ClassifyName="CommonDocument" ViewTemplateName="" ViewTemplateJS=""/>
+  <DocumentType Name="avi" Extension="avi" Icon="sm_avi" ClassifyName="CommonDocument" />
+  <DocumentType Name="svl" Extension="svl" Icon="sm_defaultfile" ClassifyName="Model" />
+  <DocumentType Name="rar" Extension="rar" Icon="sm_rar" ClassifyName="CommonDocument" />
+  <DocumentType Name="zip" Extension="zip" Icon="sm_zip" ClassifyName="CommonDocument" />
+  <DocumentType Name="7z" Extension="7z" Icon="sm_zip" ClassifyName="CommonDocument" />
+  <DocumentType Name="mp4" Extension="mp4" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="rm" Extension="rm" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="rmvb" Extension="rmvb" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="mkv" Extension="mkv" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="exe" Extension="exe" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="wmv" Extension="wmv" Icon="sm_defaultfile" ClassifyName="CommonDocument" />
+  <DocumentType Name="CommonDocument" Extension="" Icon="sm_generaldocument" ClassifyName="" />
+  <DocumentType Name="Model" Extension="" Icon="sm_model" ClassifyName="" />
+  <DocumentType Name="EngineeringDrawing" Extension="" Icon="sm_engineeringdrawing" ClassifyName="" />
+</root>

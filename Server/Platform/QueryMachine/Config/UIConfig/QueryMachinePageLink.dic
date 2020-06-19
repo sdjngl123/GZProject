@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="QueryRole">
+      <LocalizedLabel LanguageRef="zhs">通用查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Universal query</LocalizedLabel>
+    </Label>
+    <Label Name="QueryRoleHistory">
+      <LocalizedLabel LanguageRef="zhs">查询历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query history</LocalizedLabel>
+    </Label>
+    <Label Name="MyQueryRole">
+      <LocalizedLabel LanguageRef="zhs">我的查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My query</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

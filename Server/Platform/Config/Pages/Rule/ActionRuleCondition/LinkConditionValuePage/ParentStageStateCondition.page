@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ParentStageStateCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ParentStageStateCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_ParentStateCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ParentObjectType_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ParentStageState_Container"/>
+      </Settings>
+    </PageControl>
+
+
+    <PageControl ControlID="ParentObjectType_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ParentObjectTypeValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParentObjectTypeValueDDL"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ParentState_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LinkType_Label_FieldFlag" ParentID="LinkType_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+
+    <!-- 对象状态控件-->
+    <PageControl ControlID="ParentObjectTypeValueLabel" ParentID="ParentObjectType_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ParentStageStateCondition.ParentObjectTypeValue" />
+    </PageControl>
+    <PageControl ControlID="ParentObjectTypeValueDDL" ParentID="ParentState_Container" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_ParentStageStateCondition_ChangeParentObjectTypeValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+
+    <!-- 对象状态容器-->
+    <PageControl ControlID="ParentStageState_Container" ParentID="ParentObjectType_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ParentStageStateValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParentStageStateValueDll"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ParentState_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LinkType_Label_FieldFlag" ParentID="LinkType_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+
+    <!-- 对象状态控件-->
+    <PageControl ControlID="ParentStageStateValueLabel" ParentID="ParentStageState_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ParentStageStateCondition.ParentStageStateValue" />
+    </PageControl>
+    <PageControl ControlID="ParentStageStateValueDll" ParentID="ParentStageState_Container" TypeName="DropDown">
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+
+  </PageControls>
+</root>

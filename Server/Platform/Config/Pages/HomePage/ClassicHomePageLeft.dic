@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ClassicHomePageLeft" IsWeb="true">
+    <Label Name="AllNavName">
+      <LocalizedLabel LanguageRef="zhs">菜单导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu navigation</LocalizedLabel>
+    </Label>
+    <Label Name="QuickNavName">
+      <LocalizedLabel LanguageRef="zhs">我的收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My favorite</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

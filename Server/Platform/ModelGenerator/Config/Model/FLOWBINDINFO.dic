@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FLOWBINDINFOModel" IsWeb="true">
+    <Label Name="FLOWBINDINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">流程发起绑定对象信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FLOWBINDINFO</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWBINDINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">流程发起绑定对象信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FLOWBINDINFO</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OBJTYPENAME</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OBJTYPENAME</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FLOWTEMPLATE</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FLOWTEMPLATE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

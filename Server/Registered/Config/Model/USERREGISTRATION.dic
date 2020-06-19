@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="USERREGISTRATIONModel" IsWeb="true">
+    <Label Name="USERREGISTRATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">用户注册</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserRegistration</LocalizedLabel>
+    </Label>
+    <Label Name="USERREGISTRATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">用户注册</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserRegistration</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">单位名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">单位名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">单位地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyAddress</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">单位地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyAddress</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">注册邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisterEmail</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREMAILCaption">
+      <LocalizedLabel LanguageRef="zhs">注册邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisterEmail</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREDPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">注册人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisteredPerson</LocalizedLabel>
+    </Label>
+    <Label Name="REGISTEREDPERSONCaption">
+      <LocalizedLabel LanguageRef="zhs">注册人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegisteredPerson</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">单位类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyType</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">单位类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyType</LocalizedLabel>
+    </Label>
+    <Label Name="WCFADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">WCF地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCFAddress</LocalizedLabel>
+    </Label>
+    <Label Name="WCFADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">WCF地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCFAddress</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASECONNECTHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataBaseConnect</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASECONNECTCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataBaseConnect</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">企业编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyCode</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYCODECaption">
+      <LocalizedLabel LanguageRef="zhs">企业编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyCode</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">注册密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDCaption">
+      <LocalizedLabel LanguageRef="zhs">注册密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="PHONECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">手机号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PhoneCode</LocalizedLabel>
+    </Label>
+    <Label Name="PHONECODECaption">
+      <LocalizedLabel LanguageRef="zhs">手机号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PhoneCode</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

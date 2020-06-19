@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ChangeStageStatePlugin" IsWeb="true">
+    <Label Name="Header">
+      <LocalizedLabel LanguageRef="zhs">更改阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change phase state</LocalizedLabel>
+    </Label>
+    <Label Name="BeforeExec">
+      <LocalizedLabel LanguageRef="zhs">前序执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pre-sequence execution</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCircleState">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="ModelList">
+      <LocalizedLabel LanguageRef="zhs">模型列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

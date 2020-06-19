@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <DictionarySerializer version="1.0">
+    <Context Name="UploadFile">
+      <Label Name="Title">
+        <LocalizedLabel LanguageRef="en">UploadFile file UpLoad</LocalizedLabel>
+        <LocalizedLabel LanguageRef="zhs">上传文件</LocalizedLabel>
+      </Label>
+      <Label Name="FileUpLoadCtrl">
+        <LocalizedLabel LanguageRef="en">File :</LocalizedLabel>
+        <LocalizedLabel LanguageRef="zhs">文件：</LocalizedLabel>
+      </Label>
+      <Label Name="FileUpLoadTip">
+        <LocalizedLabel LanguageRef="en">Tip:</LocalizedLabel>
+        <LocalizedLabel LanguageRef="zhs">提示：</LocalizedLabel>
+      </Label>
+
+      <Label Name="FileUpLoadError">
+        <LocalizedLabel LanguageRef="en">fail to Upload!</LocalizedLabel>
+        <LocalizedLabel LanguageRef="zhs">上传文件失败</LocalizedLabel>
+      </Label>
+    </Context>
+  </DictionarySerializer>
+
+

@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Group Name ="ProfessionalDevelop" >
+    <Module Name ="BusinessModel" Roles="Developers;Customers" FileExt="model"  SubModule="BusinessModel"  RelatedExt="model;dic;schema" ImagePath="~/Platform/Image/Console/businessmodel.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.BusinessModel.DevelopConsoleBusinessModelModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.BusinessModel.DevelopConsoleFileBusinessModel"
+            IsType="true" Group="GroupModel" Description="可建立实体模型和关系模型">
+    </Module>
+
+    <Module Name ="PageConfig" Roles="Developers;Customers" FileExt="page"  SubModule="CommonPage"  RelatedExt="page;dic" ImagePath="~/Platform/Image/Console/page.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.PageManage.DevelopConsolePageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.PageManage.DevelopConsoleFilePage"
+            IsType="true" Group="GroupModel" Description="可建立自定义页面">
+    </Module>
+
+    <Module Name ="LifeState" Roles="Developers;Customers" FileExt="lifestate" SubModule="BusinessModel" RelatedExt="lifestate;dic" ImagePath="~/Platform/Image/Console/lifestate.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.LifeState.DevelopConsoleLifeStateModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.LifeState.DevelopConsoleFileLifeState"
+    Group="GroupOther" Description="状态列表">
+    </Module>
+
+    <Module Name ="LifeCycle" Roles="Developers;Customers" FileExt="life" SubModule="BusinessModel" RelatedExt="life" ImagePath="~/Platform/Image/Console/lifecycle.ico" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.LifeCycle.DevelopConsoleLifeCycleModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.LifeCycle.DevelopConsoleFileLifeCycle"
+            IsType="true" Group="GroupOther">
+    </Module>
+
+    <Module Name ="ActionManage" Roles="Developers;Customers" FileExt="action" SubModule="BusinessModel" RelatedExt="action;dic" ImagePath="~/Platform/Image/Console/modelactions.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.Action.DevelopActionManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.Action.DevelopConsoleFileAction"
+            Group="GroupOther">
+    </Module>
+
+    <Module Name ="ModelAction" Roles="Developers;Customers" FileExt="oa" SubModule="BusinessModel" RelatedExt="oa" ImagePath="~/Platform/Image/Console/modelactions.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.Action.DevelopModelActionModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.Action.DevelopConsoleFileModelAction"
+            Group="GroupModel">
+    </Module>
+
+    <Module Name ="ViewManage" Roles="Developers;Customers" FileExt="view" SubModule="CommonPage" RelatedExt="view;dic" ImagePath="~/Platform/Image/Console/viewmanage.gif" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ViewsManage.DevelopConsoleViewsModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.ViewsManage.DevelopConsoleFileView"
+            IsType="true" Group="GroupView">
+    </Module>
+
+    <Module Name ="ListViewManage" Roles="Developers;Customers" FileExt="listview" SubModule="CommonPage" RelatedExt="listview" ImagePath="~/Platform/Image/Console/viewmanage.GIF" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ListViewManage.DevelopListViewManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.ListViewManage.DevelopConsoleFileListView"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="TreeViewManage" Roles="Developers;Customers" FileExt="treeview" SubModule="CommonPage" RelatedExt="treeviw;dic" ImagePath="~/Platform/Image/Console/tree.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeViewManage.DevelopTreeViewManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeViewManage.DevelopConsoleFileTreeView"
+            Group="GroupView">
+    </Module>
+
+    <Module Name ="MenuItemManage" Roles="Developers;Customers" FileExt="menu" SubModule="CommonPage" RelatedExt="menu;dic" ImagePath="~/Platform/Image/Console/MenuItem.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.MenuItemManage.DevelopMenuItemManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.MenuItemManage.DevelopConsoleFileMenu"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="PageLinkManage" Roles="Developers;Customers" FileExt="link" SubModule="CommonPage" RelatedExt="link;dic" ImagePath="~/Platform/Image/Console/pagelink.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.PageLinkManage.DevelopPageLinkManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.PageLinkManage.DevelopConsoleFilePageLink"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="InfoSource" Roles="Developers;Customers" FileExt="ids"  SubModule="CommonPage" RelatedExt="ids" ImagePath="~/Platform/Image/Console/pagemanage.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.InfoDataSourcesManage.DevelopInfoDataSourcesModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.InfoDataSources.DevelopConsoleFileInfoDataSources"
+            Group="GroupOther">
+    </Module>
+
+    <Module Name ="ListManage" Roles="Developers;Customers" FileExt="list" SubModule="ManagePage" RelatedExt="list;dic" ImagePath="~/Platform/Image/Console/list.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ListManagementManage.DevelopListManagementModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.ListManagement.DevelopConsoleFileListManage"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="EditListManage" Roles="Developers;Customers" FileExt="editlist" SubModule="ManagePage" RelatedExt="editlist;dic" ImagePath="~/Platform/Image/Console/list.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.EditListManage.DevelopEditListManagementModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.EditListManage.DevelopConsoleFileEditListManage"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="TreeManage" Roles="Developers;Customers" FileExt="tree" SubModule="ManagePage" RelatedExt="tree;dic" ImagePath="~/Platform/Image/Console/tree.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeManagementManage.DevelopTreeManagementModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeManagement.DevelopConsoleFileTreeManage"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="NavigationManage" Roles="Developers;Customers" FileExt="nav" SubModule="ManagePage" RelatedExt="nav;dic" ImagePath="~/Platform/Image/Console/modules.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.NavigationManage.DevelopNavigationManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.NavigationManage.DevelopConsoleFileNavigation"
+            Group="GroupConfig">
+    </Module>
+
+    <Module Name ="ListQuery" Roles="Developers;Customers" FileExt="listquery" SubModule="QueryPage" RelatedExt="listquery;dic" ImagePath="~/Platform/Image/Console/listquery.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ListQuery.DevelopListQueryModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.ListQuery.DevelopConsoleFileListQuery"
+            Group="GroupQuery">
+    </Module>
+
+    <Module Name ="TreeQuery" Roles="Developers;Customers" FileExt="treequery" SubModule="QueryPage" RelatedExt="treequery;dic" ImagePath="~/Platform/Image/Console/treequery.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeQuery.DevelopTreeQueryModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeQuery.DevelopConsoleFileTreeQuery"
+            Group="GroupQuery">
+    </Module>
+
+    <Module Name ="TreeListQuery" Roles="Developers;Customers" FileExt="treelistquery" SubModule="QueryPage" RelatedExt="treelistquery;dic" ImagePath="~/Platform/Image/Console/treelistquery.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeListQuery.DevelopTreeListQueryModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeListQuery.DevelopConsoleFileTreeListQuery"
+            Group="GroupQuery">
+    </Module>
+
+    <Module Name ="Objinspector" Roles="Developers;Customers" FileExt="objinspector" SubModule="QueryPage" RelatedExt="objinspector" ImagePath="~/Platform/Image/Console/treelistquery.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+           ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ObjectInspector.DevelopObjectInspectorModule"
+           OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.ObjectInspector.DevelopConsoleFileObjectInspector"
+           Group="GroupQuery" Description="对象查看器">
+    </Module>
+
+    <Module Name ="GuideManage" Roles="Developers;Customers" FileExt="guide" SubModule="QueryPage" RelatedExt="guide" ImagePath="~/Platform/Image/Console/treelistquery.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+           ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.GuideManage.DevelopGuideManagementModule"
+           OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.GuideManage.DevelopConsoleFileGuide"
+           Group="GroupOther" Description="向导页">
+    </Module>
+
+    <Module Name ="DictionaryManage" Roles="Developers;Customers" FileExt="dic" SubModule="QueryPage" RelatedExt="dic" ImagePath="~/Base/Image/Console/language.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+          ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+          ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.DicManage.DevlopDictionaryModule"
+          OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+          OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.DicManage.DevelopConsoleFileDicManage"
+          Group="GroupOther" Description="多语言文件">
+    </Module>
+
+    <Module Name ="ServiceManage" Roles="Developers;Customers" FileExt="service" SubModule="BaseConfig" RelatedExt="service" ImagePath="~/Base/Image/Console/server.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.ServiceManage.ServiceManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Developer.Interface"
+            OperationFileClass="Hoteam.InforCenter.Developer.Interface.ServiceManage.DevelopConsoleFileServiceManage"
+            Group="GroupOther" Description="业务服务">
+    </Module>
+
+    <Module Name ="Setting" Roles="Developers;Customers"  SubModule="BaseConfig" FileExt="setting" RelatedExt="setting" ImagePath="~/Base/Image/Console/setting.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.DeveloperSetting.Setting.ConsoleSettingModule"
+            OperationFileAssembly="Hoteam.InforCenter.Developer.Interface"
+            OperationFileClass="Hoteam.InforCenter.Developer.Interface.ConsoleSetting.Setting.DevelopConsoleFileSettingManage"
+            Group="GroupOther" Description="系统设置">
+    </Module>
+
+    <Module Name ="ValidationManage" SubModule="BusinessExtend" FileExt="val" RelatedExt="val;dic" ImagePath="~/Platform/Image/Console/validationmanage.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ValidationManage.DevelopConsoleValidationModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.Validation.DevelopConsoleFileVal"
+            Group="GroupOther" Description="正则表达式">
+    </Module>
+
+    <Module Name ="Enumeration" FileExt="enum" SubModule="BusinessExtend" RelatedExt="enum;dic" ImagePath="~/Platform/Image/Console/enum.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.EnumManage.DevelopEnumManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.EnumManage.DevelopConsoleFileEnumManage"
+            Group="GroupOther" Description="枚举字典">
+
+    </Module>
+
+    <Module Name ="PluginManage" FileExt="plugin"  SubModule="BusinessExtend" RelatedExt="plugin;dic" ImagePath="~/Platform/Image/Console/pluginmanage.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.PluginManage.DevelopConsolePluginManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.PluginManage.DevelopConsoleFilePluginManage"
+            Group="GroupOther" Description="插件">
+    </Module>
+
+    <Module Name ="VaultManage" SubModule="BusinessExtend" FileExt="vault"  RelatedExt="vault" ImagePath="~/Platform/Image/Document/Vault.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.Vault.DevelopVaultManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.Vault.DevelopConsoleFileVault"
+            Group="GroupOther" Description="文档柜">
+    </Module>
+
+    <Module Name ="FlowTemplateType" SubModule="WorkflowDevelop" FileExt="flowtemplatetype" RelatedExt="flowtemplatetype;dic" ImagePath="~/Platform/Image/Console/flowtemplatetype.gif" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowTemplateType.DevelopFlowTemplateTypeModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowTemplateType.DevelopFlowTemplateTypeFile"
+            Group="Flow" Description="流程模板类型">
+    </Module>
+
+    <Module Name ="FlowActorExtend" SubModule="WorkflowDevelop" FileExt="flowactor" RelatedExt="flowactor;dic" ImagePath="~/Platform/Image/Console/flowactor.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowActorExtend.DevelopFlowActorExtendModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowActorExtend.DevelopFlowActorItemFile"
+            Group="Flow" Description="流程执行人扩展">
+    </Module>
+
+    <Module Name ="FlowConditionExtend" SubModule="WorkflowDevelop" FileExt="flowcondition"  RelatedExt="flowcondition;dic" ImagePath="~/Platform/Image/Console/flowcondition.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowConditionExtend.DevelopFlowConditionExtendModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowConditionExtend.DevelopFlowConditionExtendFile"
+            Group="Flow" Description="流程执行条件">
+    </Module>
+
+    <Module Name ="FlowPlugin" SubModule="WorkflowDevelop" FileExt="flowplugin"  RelatedExt="flowplugin;dic" ImagePath="~/Platform/Image/Console/flowplugin.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowPlugin.DevelopFlowPluginModule"
+            OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowPlugin.DevelopFlowPluginFile"
+            Group="Flow" Description="流程插件">
+    </Module>
+
+    <Module Name ="FlowTemplate" SubModule="WorkflowDevelop" FileExt="flowtemplate"  RelatedExt="flowtemplate" ImagePath="~/Platform/Image/Console/flowplugin.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+           ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowTemplate.DevelopConsoleFlowTemplateModule"
+           OperationFileAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           OperationFileClass="Hoteam.InforCenter.Common.DeveloperSetting.FlowTemplate.DevelopConsoleFlowTemplateFile"
+           Group="Flow" Description="流程模板">
+    </Module>
+
+    <Module Name ="PageTemplate" Roles="Developers;Customers" FileExt="template" SubModule="WebCustom" Order="100" RelatedExt="template" ImagePath="~/Base/Image/Console/template.png" ToolbarID="PageManageBar" TreeToolbarID="ConfigTree"
+           ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+           ModuleClass="Hoteam.InforCenter.Developer.Interface.PageTemplate.PageTemplateModule"
+           Group="GroupOther"></Module>
+
+    <Module Name ="PageManage" Roles="Developers;Customers" FileExt="page" SubModule="WebCustom" Order="101" RelatedExt="page;dic" ImagePath="~/Base/Image/Console/pagemanage.png" ToolbarID="PageManageBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.PageManage.PageManageModule"
+            Group="GroupOther"></Module>
+
+    <Module Name ="FileRefManage" Roles="Developers;Customers" FileExt="fileref" SubModule="WebCustom" Order="102" RelatedExt="fileref" ImagePath="~/Base/Image/Console/fileref.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.FileRefManage.FileRefManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Developer.Interface"
+            OperationFileClass="Hoteam.InforCenter.Developer.Interface.ConsoleSetting.FileRefManage.FileRefConfigFile"
+            Group="GroupOther"></Module>
+
+    <Module Name ="ImageConfigManage" Roles="Developers;Customers" FileExt="image" SubModule="WebCustom" Order="103" RelatedExt="image" ImagePath="~/Base/Image/Console/cfgtemplate.gif" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+            ModuleClass="Hoteam.InforCenter.Developer.Interface.ConsoleSetting.ImageManage.ImageConfigManageModule"
+            OperationFileAssembly="Hoteam.InforCenter.Developer.Interface"
+            OperationFileClass="Hoteam.InforCenter.Developer.Interface.ConsoleSetting.ImageManage.ImageConfigFile"
+            Group="GroupOther"></Module>
+
+    <Module Name ="DocumentTypeConfiguration" Roles="Developers" SubModule="DatabaseExtend" FileExt="doctype"  RelatedExt="doctype" ImagePath="~/Persistence/Image/Console/cmdsql.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+           ModuleAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting"
+           ModuleClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DocType.DevelopDocTypeModule">
+    </Module>
+    <Module Name ="RconfigConfiguration" Roles="Developers" SubModule="DatabaseExtend" FileExt="rconfig"  RelatedExt="rconfig" ImagePath="~/Persistence/Image/Console/cmdsql.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+       ModuleAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting"
+       ModuleClass="Hoteam.InforCenter.Persistence.DeveloperSetting.RConfig.RConfigModule">
+    </Module>
+
+
+
+
+  </Group>
+  <Group Name ="ExtendDevelop" >
+    <Module Name ="GeneratorTemplate" Roles="Developers" SubModule="PageDevelop" FileExt="generator"  RelatedExt="generator" ImagePath="~/Platform/Image/Console/generator.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.GeneratorTemplate.DevelopGeneratorTemplateModule"></Module>
+    <Module Name ="ExportExcel" Roles="Developers" SubModule="ImportExport" FileExt="ExportExcel"  RelatedExt="ExportExcel" ImagePath="~/Platform/Image/Document/xls.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ExportExcel.DevelopExportExcelModule"></Module>
+    <Module Name ="ExportWord" Roles="Developers" SubModule="ImportExport" FileExt="ExportWord" RelatedExt="ExportWord" ImagePath="~/Platform/Image/Document/doc.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ExportWord.DevelopExportWordModule"></Module>
+    <Module Name ="ProjectImportExport" Roles="Developers" SubModule="ImportExport" FileExt="ProjectMPJX" RelatedExt="ProjectMPJX" ImagePath="~/Platform/Image/Document/mpp.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ProjectImportExport.DevelopProjectImportExportModule"></Module>
+    <!--<Module Name ="ReportManage" Roles="Developers" SubModule="ReportDevelop" FileExt="rpt"  RelatedExt="rpt" ImagePath="~/Platform/Image/Console/Report.ICO" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Report.Base" ModuleClass="Hoteam.InforCenter.Report.Base.DevelopConsoleReportModule"></Module>
+    <Module Name ="ReportConfig" Roles="Developers" SubModule="ReportDevelop" FileExt="rconfig" RelatedExt="rconfig" ImagePath="~/Platform/Image/Console/report.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.ReportConfig.DevelopReportConfigModule"></Module>-->
+  </Group>
+
+  <Group Name ="BaseConfiguration" >
+    <!--<Module Name ="DocumentTypeManage" SubModule="BusinessExtend" FileExt="doctype"  RelatedExt="doctype" ImagePath="~/Platform/Image/Document/documenttype.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.DocumentTypeManage.DocumentTypeManageModule"></Module>-->
+    <Module Name ="DbPartitionManage" FileExt="dbpartition"  SubModule="BusinessExtend" RelatedExt="dbpartition" ImagePath="~/Platform/Image/Console/pluginmanage.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.DbPartitionManage.DevelopDbPartitionModule"></Module>
+    <Module Name ="MainFlat" SubModule="BusinessExtend" FileExt="mainflat" RelatedExt="mainflat" ImagePath="~/Platform/Image/Console/defaultpage.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.MainFlat.DevelopMainFlatModule"></Module>
+    <Module Name ="HelpStruct" SubModule="BusinessExtend" FileExt="helpstruct" RelatedExt="helpstruct;css" ImagePath="~/Platform/Image/Console/help.png" ToolbarID="SettingBar" TreeToolbarID="ConfigTree" ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.HelpStruct.DevelopHelpStructModule"></Module>
+  </Group>
+
+  <Group Name ="AppsNodeDevelop" >
+    <Module Name ="AppsNode" Roles="" FileExt="root"  Description="" SubModule=""  RelatedExt="#6495ED" ImagePath="~/Platform/Image/Console/businessmodel.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.AppsNode">
+    </Module>
+    <Module Name ="BusinessModel" Roles="Developers;Customers" FileExt="model"  Description="Console.BusinessModel" SubModule="BusinessModel"  RelatedExt="#6495ED" ImagePath="~/Platform/Image/Console/businessmodel.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.ModelNode">
+    </Module>
+
+    <Module Name ="LifeState" Roles="Developers;Customers" FileExt="lifestate" Description="Console.LifeState" SubModule="BusinessModel" RelatedExt="lifestate;dic" ImagePath="~/Platform/Image/Console/lifestate.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.LifeStateNode">
+    </Module>
+
+    <Module Name ="LifeCycle" Roles="Developers;Customers" FileExt="life" Description="Console.LifeCycle" SubModule="BusinessModel" RelatedExt="#B452CD" ImagePath="~/Platform/Image/Console/lifecycle.ico"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.LifeNode" >
+    </Module>
+
+    <Module Name ="ViewManage" Roles="Developers;Customers" FileExt="view" Description="Console.ViewManage" SubModule="CommonPage" RelatedExt="#FF6A6A" ImagePath="~/Platform/Image/Console/viewmanage.gif"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.ViewNode" >
+    </Module>
+
+    <Module Name ="ListViewManage" Roles="Developers;Customers" FileExt="listview" Description="Console.ListViewManage" SubModule="CommonPage" RelatedExt="#7B68EE" ImagePath="~/Platform/Image/Console/viewmanage.GIF"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.ListViewNode" >
+    </Module>
+
+    <Module Name ="TreeViewManage" Roles="Developers;Customers" FileExt="treeview" Description="Console.TreeViewManage" SubModule="CommonPage" RelatedExt="#B22222" ImagePath="~/Platform/Image/Console/tree.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.TreeViewNode" >
+    </Module>
+
+    <Module Name ="MenuItemManage" Roles="Developers;Customers" FileExt="menu" Description="Console.MenuItemManage" SubModule="CommonPage" RelatedExt="#104E8B" ImagePath="~/Platform/Image/Console/MenuItem.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.MenuNode" >
+    </Module>
+
+    <Module Name ="PageLinkManage" Roles="Developers;Customers" FileExt="link" Description="Console.PageLinkManage" SubModule="CommonPage" RelatedExt="#FF4500" ImagePath="~/Platform/Image/Console/pagelink.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.PageLinkNode" >
+    </Module>
+
+    <Module Name ="InfoSource" Roles="Developers;Customers" FileExt="ids"  Description="Console.InfoSource" SubModule="CommonPage" RelatedExt="#8B8682" ImagePath="~/Platform/Image/Console/pagemanage.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.InforDatasourceNode" >
+    </Module>
+
+    <Module Name ="ListManage" Roles="Developers;Customers" FileExt="list" Description="Console.ListManage" SubModule="ManagePage" RelatedExt="#20B2AA" ImagePath="~/Platform/Image/Console/list.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.ListNode" >
+    </Module>
+
+    <Module Name ="EditListManage" Roles="Developers;Customers" FileExt="editlist" Description="Console.EditListManage" SubModule="ManagePage" RelatedExt="#66CD00" ImagePath="~/Platform/Image/Console/list.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.EditListNode" >
+    </Module>
+
+    <Module Name ="TreeManage" Roles="Developers;Customers" FileExt="tree" Description="Console.TreeManage" SubModule="ManagePage" RelatedExt="#3CB371" ImagePath="~/Platform/Image/Console/tree.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.TreeNode" >
+    </Module>
+
+    <Module Name ="NavigationManage" Roles="Developers;Customers" FileExt="nav" Description="Console.NavigationManage" SubModule="ManagePage" RelatedExt="#D2691E" ImagePath="~/Platform/Image/Console/modules.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.NavNode" >
+    </Module>
+
+    <Module Name ="ListQuery" Roles="Developers;Customers" FileExt="listquery" Description="Console.ListQuery" SubModule="QueryPage" RelatedExt="#FF1493" ImagePath="~/Platform/Image/Console/listquery.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.ListQueryNode" >
+    </Module>
+
+    <Module Name ="TreeQuery" Roles="Developers;Customers" FileExt="treequery" Description="Console.TreeQuery" SubModule="QueryPage" RelatedExt="#FF4040" ImagePath="~/Platform/Image/Console/treequery.png"
+            ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+            ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.TreeQueryNode" >
+    </Module>
+
+    <Module Name ="Objinspector" Roles="Developers;Customers" FileExt="objinspector" Description="Console.Objinspector" SubModule="QueryPage" RelatedExt="#FF7F00" ImagePath="~/Platform/Image/Console/treelistquery.png"
+           ModuleAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+           ModuleClass="Hoteam.InforCenter.Common.DeveloperSetting.AppsNodeManage.InspectorNode">
+    </Module>
+  </Group>
+</root>
+
+
+

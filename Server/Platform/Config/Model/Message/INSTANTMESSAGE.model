@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="INSTANTMESSAGE" Extend="ENTITY" LogicClass="EntityObject" IconPath="Platform\Image\Common\message.png" Abstract="false" TableName="INSTANTMESSAGE" SplitValidateUnique="false" IsGenerateViceTable="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <Index Name="INSTANTMESSAGE_MSTATE_INDEX" TableIndex="INSTANTMESSAGE_MSTATE_INDEX" Unique="False">
+      <IndexInfo Name="MSTATE" Order="ASC" />
+      <IndexInfo Name="MTO" Order="ASC" />
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+    </Index>
+    <InfoType Name="MFROM" Type="SingleUserValue" DataType="STRING100" Column="MFROM" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MTO" Type="SingleUserValue" DataType="STRING100" Column="MTO" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MSTATE" Type="EnumValue" DataType="STRING100" Column="MSTATE" Show="View" Width="100" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="MessageState" />
+    <InfoType Name="MLINK" Type="DefaultObjectValue" DataType="STRING500" Column="MLINK" Show="" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MTITLE" Type="DefaultObjectValue" DataType="STRING100" Column="MTITLE" Show="View" Sequence="111" Width="100" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MCONTENT" Type="DescriptionValue" DataType="TEXT" Column="MCONTENT" Show="View" Sequence="112" Width="100" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MSTATEICON" Type="DefaultObjectValue" DataType="STRING100" Column="MSTATEICON" Show="" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EUID" Type="DefaultObjectValue" Edit="" Show="" Sequence="120" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+  </EntityType>
+</root>

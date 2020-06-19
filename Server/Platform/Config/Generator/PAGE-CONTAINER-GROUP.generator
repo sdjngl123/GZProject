@@ -1,0 +1,7 @@
+﻿<PageControl ControlID="[ROWORDER]" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="vertical"/>
+  <Settings Key="padding" Value="[VERTICALPADDING]px [HERIZONTALPADDING]px"/>
+  <Settings Key="groupName" Value="[GROUPNAME]"/>
+  [INFOLAYOUT]
+</PageControl>
+

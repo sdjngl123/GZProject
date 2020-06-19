@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="InternalMailImportrant">
+    <EnumerationItem Name="Urgency" />
+    <EnumerationItem Name="Normal" />
+  </Enumeration>
+
+  <Enumeration Name="InternalMailType">
+    <EnumerationItem Name="Normal" />
+    <EnumerationItem Name="Send" />
+    <EnumerationItem Name="Drafts" />
+    <EnumerationItem Name="Dustbin" />
+    <EnumerationItem Name="System" />
+  </Enumeration>
+
+
+  <Enumeration Name="OperateLogType">
+    <EnumerationItem Name="Answer" />
+    <EnumerationItem Name="AnswerAll" />
+    <EnumerationItem Name="SendMail" />
+    <EnumerationItem Name="SaveMail" />
+    <EnumerationItem Name="MarkRead" />
+    <EnumerationItem Name="MarkUnRead" />
+    <EnumerationItem Name="Clear" />
+    <EnumerationItem Name="TransferMail" /> 
+  </Enumeration>
+
+  <Enumeration Name="MailFormType">
+    <EnumerationItem Name="OwnerTransfer" />
+    <EnumerationItem Name="Workflow" />
+    <EnumerationItem Name="ObjectMessage" />
+  </Enumeration>
+</root>

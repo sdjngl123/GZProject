@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleLoginTimeLimit">
+  <Settings Key="title" Value="ThreeRoleLoginTimeLimit.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginTimeLimit_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginTimeLimit_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginTimeLimit_OnGetData(pageEvent);"/>
+
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="IsEnable"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="AllowWeek"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="AllowTime"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IsEnable" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="IsEnable_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IsEnable_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IsEnable_Label" ParentID="IsEnable" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginTimeLimit.IsEnable" />
+    </PageControl>
+    <PageControl ControlID="IsEnable_Value" ParentID="IsEnable" TypeName="CheckBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginTimeLimit_IsEnableOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="ThreeRoleLoginTimeLimit.IsEnableValue" />
+    </PageControl>
+
+    <PageControl ControlID="AllowWeek" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="AllowWeek_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AllowWeek_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AllowWeek_Label" ParentID="AllowWeek" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginTimeLimit.AllowWeek" />
+    </PageControl>
+    <PageControl ControlID="AllowWeek_Value" ParentID="AllowWeek" TypeName="MultiSelectDropDown" >
+
+    </PageControl>
+
+    <PageControl ControlID="AllowTime" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="AllowTime_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AllowTime_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AllowTime_Label" ParentID="AllowTime" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginTimeLimit.AllowTime" />
+    </PageControl>
+    <PageControl ControlID="AllowTime_Value" ParentID="AllowTime" TypeName="MultiSelectDropDown" >
+
+    </PageControl>
+  </PageControls>
+</root>

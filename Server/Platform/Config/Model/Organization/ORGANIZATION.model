@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="ORGANIZATION" Extend="ENTITY" LogicClass="EntityObject" IconPath="Platform/Image/Model/p_organizationobject.png" Abstract="true" TableName="ORGANIZATION" SplitValidateUnique="false" IsGenerateViceTable="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <InfoType Name="TEXTDIC" Type="DefaultObjectValue" DataType="STRING200" Column="TEXTDIC" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="NODETYPE" Type="DefaultObjectValue" DataType="STRING100" Column="NODETYPE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="Create Null" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="true" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="View" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="View" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EUID" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="View" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="View" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="ICON" Type="DefaultObjectValue" Sequence="200" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+  </EntityType>
+</root>

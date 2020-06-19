@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="StandardHomePage" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="StandardHomePage_VLayout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="45"/>
+        <Settings Key="childid" Value="ClassicHomePage_Top"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="StandardHomePage_Top_Title"/>
+      </Settings>
+      
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="StandardHomePage_HLayout"/>
+      </Settings>
+
+      <Settings Key="item4" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ClassicHomePage_Bottom"/>
+      </Settings>
+    </PageControl>
+    
+    <!--首页顶部区域-->
+    <PageControl ControlID="ClassicHomePage_Top" ParentID="StandardHomePage_VLayout" TypeName="PageContainer">
+        <Settings Key="pageName" Value="ClassicHomePageTop"/>
+    </PageControl>
+
+    <!--首页精简导航区域-->
+    <PageControl ControlID="StandardHomePage_Top_Title" ParentID="StandardHomePage_VLayout" TypeName="StandardAccordion">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_StandardHomePage_LoadAccordion(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_StandardHomePage_AccordionOnClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="SaveNav" Script="InforCenter_Platform_Navigation_StandardAddQuickNavigation(ctrlEvent);"/>
+        <PageHandler HandlerName ="DeleteNav" Script="InforCenter_Platform_Navigation_StandardDeleteQuickNavigation(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <!--中间内容区域-->
+    <PageControl ControlID="StandardHomePage_HLayout" ParentID="StandardHomePage_VLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="180"/>
+        <Settings Key="childid" Value="SmartHomePage_Navigation"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HomePage_Content"/>
+      </Settings>
+    </PageControl>
+
+    <!--左侧导航-->
+    <PageControl ControlID="SmartHomePage_Navigation" ParentID="SmartHomePage_HLayout" TypeName="Accordion">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SmartHomePageNavigation_LoadNavigationItems(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SmartHomePageNavigation_NavigationOnClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="LastIconOnClick" Script="InforCenter_Platform_Navigation_SmartAddQuickNavigation(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <!--展示内容区域-->
+    <PageControl ControlID="HomePage_Content" ParentID="SmartHomePage_HLayout" TypeName="PageContainer">
+        <Settings Key="pageName" Value="SmartHomePageContents"/>
+    </PageControl>
+    <!--底部-->
+    <PageControl ControlID="ClassicHomePage_Bottom" ParentID="SmartHomePage_VLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ClassicHomePageBottom"/>
+    </PageControl>
+  </PageControls>
+  
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SmartHomePage_LoadContent(pageEvent);"/>
+  </PageHandlers>
+</root>

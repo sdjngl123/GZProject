@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="Organisize" MenuName="" PageLinksName=""
+              TreeViewName="OrganisizeTreeView" ShowTreeQuery="true"
+             TreeChildDataService="" TreeQueryDataService="InforCenter.Organization.OrganizationDataService.GetTreeQueryData"
+                TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="GROUPS" MenuName="TreeOrganizeMenu" PageLinksName="OrganizeGroupsPageLink" />
+    <ObjectType Name="COMPANY" MenuName="TreeCompanyMenu" PageLinksName="CompanyTreePageLink" />
+    <ObjectType Name="GROUPINFO" MenuName="TreeGroupMenu" PageLinksName="GroupsTreePageLink" />
+    <ObjectType Name="ROLEINFO" MenuName="TreeRoleMenu" PageLinksName="RolesTreePageLink" />
+    <ObjectType Name="USERINFO" MenuName="TreeUserMenu" PageLinksName="UserTreePageLink" />
+  </TreeManagement>
+</root>

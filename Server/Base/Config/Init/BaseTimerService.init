@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TimerService">
+  <Package Assembly ="Hoteam.InforCenter.UI.Base"/>
+  <Package Assembly ="Hoteam.InforCenter.Service.Timer"/>
+</root >

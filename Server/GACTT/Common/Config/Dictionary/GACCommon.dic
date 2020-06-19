@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DictionarySerializer version="1.0">
+	<Context Name="GACCommon">
+		<Label Name="More">
+			<LocalizedLabel LanguageRef="en">More</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">更多</LocalizedLabel>
+		</Label>
+		<Label Name="FilterTitle">
+			<LocalizedLabel LanguageRef="zhs">文档、图片、视频、图纸、程序、压缩包</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">txt,dwg,doc,docx,xls,xlsx,ppt,pptx,pdf,svl,gif,png,jpg,jpeg,bmp,svg,dwf,rar,zip,7z,avi,mp4,rm,rmvb,mkv,exe,wmv,dll,xml,mpp</LocalizedLabel>
+		</Label>
+		<Label Name="Refresh">
+			<LocalizedLabel LanguageRef="en">Refresh</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+		</Label>
+		<Label Name="FavoriteSuccess">
+			<LocalizedLabel LanguageRef="en">FavoriteSuccess</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">收藏成功</LocalizedLabel>
+		</Label>
+		<Label Name="FavoriteFailure">
+			<LocalizedLabel LanguageRef="en">FavoriteFailure</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">收藏失败</LocalizedLabel>
+		</Label>
+		<Label Name="ClassifyInstantiation">
+			<LocalizedLabel LanguageRef="en">ClassifyInstantiation,Can not Claaify</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">当前分类已实例化，不能再分类.</LocalizedLabel>
+		</Label>
+		<Label Name="ClassifyNotInstantiation">
+			<LocalizedLabel LanguageRef="en">ClassifyNotInstantiation,Can not Add object.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">当前分类非实例化分类，不能添加对象.</LocalizedLabel>
+		</Label>
+		<Label Name="DocumentExist">
+			<LocalizedLabel LanguageRef="en">Document Exist,Please Don't Repeat.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">文档已存在，请勿重复操作。</LocalizedLabel>
+		</Label>
+		<Label Name="UploadError">
+			<LocalizedLabel LanguageRef="en">Upload Failed,Please Wait or Check Server Setting.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">上传文件失败,请稍后再试或联系管理员。</LocalizedLabel>
+		</Label>
+		<Label Name="CopSumError">
+			<LocalizedLabel LanguageRef="en">Upload Failed,Please Wait or Check Server Setting.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">复制成功[SuessCount]个,环境测失败[CheckErrCount]个，目标目录存在重名文档[RepeatCount]个,可能已经被删除[OurObjErrCount]个</LocalizedLabel>
+		</Label>
+		<Label Name="CopSumErrorDetail">
+			<LocalizedLabel LanguageRef="en">Upload Failed,Please Wait or Check Server Setting.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">复制成功：[SuessName]，\n环境测失败：[CheckErrName]，\n目标目录存在重名文档：[RepeatName],\n可能已经被删除：[OurObjErrName]</LocalizedLabel>
+		</Label>
+		<Label Name="CopySameNameError">
+			<LocalizedLabel LanguageRef="en">same name Is existd in subFolder，the copy forbidden .</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">目标路径下存在重名，不允许复制。</LocalizedLabel>
+		</Label>
+		<Label Name="CheckError">
+			<LocalizedLabel LanguageRef="en">Check error</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">环检测失败</LocalizedLabel>
+		</Label>
+		<Label Name="deleteError">
+			<LocalizedLabel LanguageRef="en">May deleted</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">可能已经被删除</LocalizedLabel>
+		</Label>
+		<Label Name="Suess">
+			<LocalizedLabel LanguageRef="en">Suess</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">成功</LocalizedLabel>
+		</Label>
+		<Label Name="SuessError">
+			<LocalizedLabel LanguageRef="en">Cop Suess [SuessCount],error [ErrorCount] ,Deatils:</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">复制成功[SuessCount]个,失败[ErrorCount]个，详情请看：</LocalizedLabel>
+		</Label>
+		<Label Name="MoveSuessError">
+			<LocalizedLabel LanguageRef="en">Move Suess [SuessCount],error [ErrorCount] ,Deatils:</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">移动成功[SuessCount]个,失败[ErrorCount]个，请刷新重试，详情请看：</LocalizedLabel>
+		</Label>
+		<Label Name="CopySameNameErrorOne">
+			<LocalizedLabel LanguageRef="en">same name Is existd in subFolder.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">目标路径下存在重名</LocalizedLabel>
+		</Label>
+		<Label Name="CopyErrorFileNoExist">
+			<LocalizedLabel LanguageRef="en">Copy error！the Source file '[SOURCEFILE]' not exist maybe</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">复制失败！可能源文件“[SOURCEFILE]”已被移除！</LocalizedLabel>
+		</Label>
+		<Label Name="FavoriteError">
+			<LocalizedLabel LanguageRef="en">The object have Favorite，please don't operate repeat！</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">所选对象已经收藏，请勿重复操作！</LocalizedLabel>
+		</Label>
+		<Label Name="RemoveUserError">
+			<LocalizedLabel LanguageRef="en">Don't remove this user!</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">该用户不允许被移除！</LocalizedLabel>
+		</Label>
+		<Label Name="FileExisted">
+			<LocalizedLabel LanguageRef="en">Don't Add Identical File Again!</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">请勿重复添加同一个文件!</LocalizedLabel>
+		</Label>
+		<Label Name="FileSizeZero">
+			<LocalizedLabel LanguageRef="en">file([name]) is empty,can't upload.</LocalizedLabel>
+			<LocalizedLabel LanguageRef="zhs">文件([name])大小为0,不允许上传.</LocalizedLabel>
+		</Label>
+  
+    <Label Name="InnerNetUpload">
+      <LocalizedLabel LanguageRef="en">Inner network cannot upload file!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">很抱歉！出于网络安全考虑，内网禁止上传文件！</LocalizedLabel>
+    </Label>
+	</Context>
+</DictionarySerializer>

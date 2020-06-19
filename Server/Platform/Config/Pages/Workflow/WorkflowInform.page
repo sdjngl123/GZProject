@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowInform">
+  <Settings Key="title" Value="WorkflowInform.Title"/>
+  <Settings Key="height" Value="470"/>
+  <Settings Key="width" Value="650"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_WorkFlow_WorkflowInform_OnLoad(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0px 10px 0 10px"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InformEditGrid"/>
+      </Settings>
+    </PageControl>
+
+    <!--按钮-->
+    <PageControl ControlID="R-2" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="StaticMenuExample_Menu"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID = "StaticMenuExample_Menu" ParentID = "StaticMenuExample_Container" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="WorkflowInform.Add"/>
+        <Settings Key="value" Value="Add"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_WorkFlow_WorkflowInform_MenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="textId" Value="WorkflowInform.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_WorkFlow_WorkflowInform_MenuClick(ctrlEvent)"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="InformEditGrid" ParentID="SelectedTaskActorInfo_Layout" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="SelectedTaskActorInfo.UserType" />
+        <Settings Key="name" Value="UserType" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedTaskActorInfo_BindingActorDropdown(ctrlEvent);" />
+        <Settings Key="eventbind" >
+          <Settings Key="change" Value="InforCenter_Platform_SelectedTaskActorInfo_ActorDropdownChanged(ctrlEvent);" />
+        </Settings>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="SelectedTaskActorInfo.Result" />
+        <Settings Key="name" Value="Result" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="textValue" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedTaskActorInfo_SelectActorOnClick(ctrlEvent);" />
+        </Settings>
+    </PageControl>
+  </PageControls>
+</root>
+

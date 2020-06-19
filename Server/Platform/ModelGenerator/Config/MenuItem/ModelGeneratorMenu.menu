@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="ModelHeadMenu" Type="Image" Issplit="false" IsTemplate="false">
+    <WebAction Name="Update" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Update" Image="p_resume" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_CheckNodeType" IsLoopExec="false">
+        <Para Name="NodeType" Value="[Tree_Current_Value3]" />
+      </JSMethod>
+
+      <JSMethod Name="InforCenter_Platform_FormBuilder_UpdateDatabaseStruct" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>
+    <!--<WebAction Name="StartModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.StartModel" Image="p_start" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_CheckNodeType" IsLoopExec="false">
+        <Para Name="NodeType" Value="[Tree_Current_Value3]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_StartModel" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="StopModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.StopModel" Image="p_stop" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_CheckNodeType" IsLoopExec="false">
+        <Para Name="NodeType" Value="[Tree_Current_Value3]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_StopModel" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>-->
+    <WebAction Name="DeleteModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.DeleteModel" Image="p_delete" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <BusinessMethod Name="InforCenter.Platform.ModelGeneratorService.CheckModelHaveExtendObjTypeBeforeDelete" IsWCFService="true">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.ModelGeneratorService.DeleteModelByObjType" IsWCFService="true">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="CopyModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelHeadMenu.CopyModel" Image="p_copy" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <WebMethod SelectID="" PageName="CopyModel" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjType" Value="[Tree_Current_Value1]" />
+        <Para Name="InitService" Value="InforCenter.Platform.ModelGeneratorService.GetModelData" />
+        <Para Name="SaveService" Value="InforCenter.Platform.ModelGeneratorService.CopyModelData" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Copy" />
+    </WebAction>
+
+    <!--<WebAction Name="ImportForm" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.ImportForm" Image="p_import" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <WebMethod SelectID="" PageName="ImportPage" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="filetype" Value="Excel" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+    </WebAction>-->
+    <WebAction Name="FlowBind" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.FlowBind" Image="p_import" RefreshType="" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_CheckNodeType" IsLoopExec="false">
+        <Para Name="NodeType" Value="[Tree_Current_Value3]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_ModelForm_BindFlowTemplate" SelectID="" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="EditModelMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="SaveGrid" MultiMenu="false" ModuleName="Dataset" LabelName="ModelGeneratorMenu.Save" Image="p_save" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="020" IsMainConfig="false">
+
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_SaveGrid" IsLoopExec="false">
+        <Para Name="TabsGuid" Value="[TabsGuid]" />
+        <Para Name="ObjType" Value="[Tree_Current_Value1]" />
+        <Para Name="ModelCompanyID" Value="[Tree_Current_Tag_COMPANYID]" />
+        <Para Name="SrcType" Value="[Tree_Current_Tag_SRCTYPE]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="InheritMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="EditItem" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.EditItem" Image="p_resume" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_EditInheritItem" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_Value1]" />
+        <Para Name="ObjInfoType" Value="[List_Column]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="ResetItem" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.ResetItem" Image="p_reset" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_ResetInheritItem" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_Value1]" />
+        <Para Name="ObjInfoType" Value="[List_Column]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ExtendMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="AddRow" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.New" Image="p_add" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_AddRow" IsLoopExec="false">
+        <Para Name="ListGuid" Value="[LISTID]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="RemoveSelect" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Remove" Image="p_remove" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="020" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RemoveRow" IsLoopExec="false">
+        <Para Name="ListGuid" Value="[LISTID]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Up" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Up" Image="p_moveup" RefreshType="UPDATEEDITLIST" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="020" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RowMove" IsLoopExec="false">
+        <Para Name="ListID" Value="[LISTID]" />
+        <Para Name="Mode" Value="up" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Down" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Down" Image="p_movedown" RefreshType="UPDATEEDITLIST" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="020" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RowMove" IsLoopExec="false">
+        <Para Name="ListID" Value="[LISTID]" />
+        <Para Name="Mode" Value="down" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="RootModelMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.CreateModel" Image="p_new" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MODELDATA" />
+        <Para Name="SaveService" Value="InforCenter.Platform.ModelGeneratorService.NewModelData" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ModelMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.CreateModel" Image="p_new" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="" SelectType="" />
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MODELDATA" />
+        <Para Name="PObjType" Value="[Tree_Current_Value1]" />
+        <Para Name="SaveService" Value="InforCenter.Platform.ModelGeneratorService.NewModelData" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="WebModelMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.CreateModel" Image="p_new" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="" SelectType="" />
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="MODELDATA" />
+        <Para Name="PObjType" Value="[Tree_Current_Value1]" />
+        <Para Name="SaveService" Value="InforCenter.Platform.ModelGeneratorService.NewModelData" />
+      </WebMethod>
+    </WebAction>
+    <!--
+    <WebAction Name="StartModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.StartModel" Image="p_start" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_StartModel" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="StopModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.StopModel" Image="p_stop" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_StopModel" IsLoopExec="false">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </JSMethod>
+    </WebAction>-->
+    <WebAction Name="DeleteModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.DeleteModel" Image="p_delete" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <BusinessMethod Name="InforCenter.Platform.ModelGeneratorService.CheckModelHaveExtendObjTypeBeforeDelete" IsWCFService="true">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.ModelGeneratorService.DeleteModelByObjType" IsWCFService="true">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ForeignKeyMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="AddRow" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.New" Image="p_add" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="010" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_AddRow" IsLoopExec="false">
+        <Para Name="ListGuid" Value="[LISTID]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="RemoveSelect" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Remove" Image="p_remove" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="020" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_RemoveRow" IsLoopExec="false">
+        <Para Name="ListGuid" Value="[LISTID]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="WebObjTypeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Write" Image="p_new" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="[Tree_Current_Value1]" />
+        <Para Name="Size" Value="900*600" />
+        <Para Name="FormBuilder" Value="true" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+    </WebAction>
+    <WebAction Name="EditModel" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="" ActionType="" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Size" Value="900*600" />
+        <Para Name="FormBuilder" Value="true" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+    </WebAction>
+    <WebAction Name="DeleteModel" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_edit" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+    </WebAction>
+    <WebAction Name="StartWorkflow" MultiMenu="false" ModuleName="Platform" LabelName="Common.StartWorkflow" Image="p_startWorkflow" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" SelectType="" />
+      <BusinessMethod Name="InforCenter.Platform.ModelGeneratorService.CheckObjectStateColumnExist" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMethod PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="ItemName" Value="StartWorkflowGuide" />
+        <Para Name="Title" Value="Workflow.StartWorkflowTitle" />
+        <Para Name="ObjectID" Value="[List_EID]" />
+        <Para Name="ObjectName" Value="[List_ENAME]" />
+        <Para Name="Size" Value="1000*600" />
+        <Para Name="SelectID" Value="[List_EID]" />
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="StartWorkFlowType" Value="WebObjTypeWorkFlow" />
+      </WebMethod>
+      <WebMessage PromptLabel="StartWorkflow.WorkflowStartSuccess" PromptType="NORMAL" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="ExportForm" MultiMenu="false" ModuleName="Platform" LabelName="ModelHeadMenu.ExportForm" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_CustomForm_Export" SelectID="[List_EID]">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="PrintForm" MultiMenu="false" ModuleName="Platform" LabelName="ModelHeadMenu.PrintForm" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_FormBuilder_PrintForm" SelectID="[List_EID]">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="CustormFormTreeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refesh" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Refesh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshParentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+  </MenuItem>
+  <MenuItem Name="FormRootNodeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refesh" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Refesh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshParentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateFormClassify" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.CreateFormClassify" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="FORMCLASSIFY" />
+        <Para Name="LinkTypeName" Value="FORMCLASSIFYLINK" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="AddCustomForm" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.AddCustomForm" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="" SelectType="" />
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="CustomFormTreeQuery" />
+        <Para Name="LoadAndSelectType" Value="SingleLevel_MultiSelect" />
+        <Para Name="Size" Value="400*500" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="FormClassifyNodeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refesh" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.Refesh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshParentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateFormClassify" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.CreateFormClassify" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="FORMCLASSIFY" />
+        <Para Name="LinkTypeName" Value="FORMCLASSIFYLINK" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="AddCustomForm" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.AddCustomForm" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="" SelectType="" />
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="CustomFormTreeQuery" />
+        <Para Name="LoadAndSelectType" Value="SingleLevel_MultiSelect" />
+        <Para Name="Size" Value="400*500" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="EditFormClassify" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="编辑选中对象" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="DeleteFormClassify" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="删除选中对象，支持删除多个" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="WebObjectNodeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="RemoveCustomForm" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.RemoveCustomForm" Image="p_remove" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="DELETE" ActionType="" SelectType="" />
+      <BusinessMethod Name="InforCenter.Platform.ModelGeneratorService.RemoveFormTypeOnFormClassify" IsWCFService="true">
+        <Para Name="PEID" Value="[Tree_Parent_value1]" ParentPara="para" />
+        <Para Name="ObjectID" Value="[Tree_Current_value1]" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="FlowTaskPermissionEditListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="AddData" ModuleName="Platform" LabelName="Add" Image="p_add"  RefreshType="UPDATECURRENTSTRUCTURE">
+      <JSMethod Name="InforCenter_Platform_FlowTaskPermissionTaskNode_AddRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="RemoveData" ModuleName="Platform" LabelName="Delete" Image="p_delete"  RefreshType="UPDATECURRENTSTRUCTURE">
+      <JSMethod Name="InforCenter_Platform_FlowTaskPermissionTaskNode_RemoveRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+
+  <!--表单管理菜单-->
+  <MenuItem Name="FomrTypeListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateForm" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" TemplateDescription="创建一个新对象">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="FORMDATA" SelectType="" />
+
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="FORMDATA" />
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </WebMethod>
+      <JSMethod Name="InforCenter_Platform_FormBuilder_OpenModule" IsLoopExec="false">
+        <Para Name="PageName" Value="FormBuilder" />
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+        <Para Name="FormTypeID" Value="[ReturnValue_EID]" />
+        <Para Name="Title" Value="ModelGeneratorMenu.FormDesign" />
+        <Para Name="Version" Value="1" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="FormDesign" MultiMenu="false" ModuleName="Platform" LabelName="ModelGeneratorMenu.FormDesign" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="FORMDATA" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_CheckNodeType" IsLoopExec="false">
+        <Para Name="NodeType" Value="[Tree_Current_Value3]" />
+      </JSMethod>
+
+      <WebMethod SelectID="" PageName="FormVerSelect" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageName" Value="FormBuilder" />
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+        <Para Name="FormTypeID" Value="[List_EID]" />
+      </WebMethod>
+      <JSMethod Name="InforCenter_Platform_FormBuilder_OpenModule" IsLoopExec="false">
+        <Para Name="PageName" Value="FormBuilder" />
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+        <Para Name="FormTypeID" Value="[List_EID]" />
+        <Para Name="Title" Value="ModelGeneratorMenu.FormDesign" />
+        <Para Name="Version" Value="[ReturnValue_Version]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+
+    <WebAction Name="Delete" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_ModelGenerator_CheckNodeType" IsLoopExec="false">
+        <Para Name="NodeType" Value="[Tree_Current_Value3]" />
+      </JSMethod>
+
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="SetAboutModel" MultiMenu="false" ModuleName="Platform" LabelName="ModelHeadMenu.SetAboutModel" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <WebMethod SelectID="" PageName="SetAboutModel" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjType" Value="[Tree_Current_value1]" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+  </MenuItem>
+
+  <!--主题菜单-->
+  <MenuItem Name="ThemDesignListMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateForm" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" TemplateDescription="创建一个新对象">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="THEMDESIGNDATA" SelectType="" />
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="THEMDESIGNDATA" />
+      </WebMethod>
+      <JSMethod Name="InforCenter_Platform_FormBuilder_OpenModule" IsLoopExec="false">
+        <Para Name="PageName" Value="FormThemDesign" />
+        <Para Name="ThemID" Value="[ReturnValue_EID]" />
+        <Para Name="Title" Value="ModelHeadMenu.ThemDesign" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="EditForm" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" TemplateDescription="创建一个新对象">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="THEMDESIGNDATA" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="ThemDesign" MultiMenu="false" ModuleName="Platform" LabelName="ModelHeadMenu.ThemDesign" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="FORMDATA" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_FormBuilder_OpenModule" IsLoopExec="false">
+        <Para Name="PageName" Value="FormThemDesign" />
+        <Para Name="ThemID" Value="[List_EID]" />
+        <Para Name="Title" Value="ModelHeadMenu.ThemDesign" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="Delete" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="ImportThem" MultiMenu="false" ModuleName="Platform" LabelName="ModelHeadMenu.ImportThem" Image="p_import" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="THEMDESIGNDATA" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_FormThemDesign_Import" IsLoopExec="false">
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+
+</root>

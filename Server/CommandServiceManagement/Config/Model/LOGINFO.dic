@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LOGINFOModel" IsWeb="true">
+    <Label Name="LOGINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">Loginfo</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Loginfo</LocalizedLabel>
+    </Label>
+    <Label Name="LOGINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">Loginfo</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Loginfo</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

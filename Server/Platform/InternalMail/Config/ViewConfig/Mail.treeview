@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebTreeView Name="MailTreeView" ObjectType="" ExpandAction="" TextField="" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField=""
+               NodeTypeField="" EntityFilter="" Filter="" View="" StateField="" ShowStartNode="false" IsTemplate="false">
+
+    <Schema   Name="Recive" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+      IconClose="Platform\Image\Model\p_inbox.png" IconOpen="Platform\Image\Model\p_inbox.png" IconCloseField="" IconOpenField=""  EntityFilter="" Filter=" NODETYPE='RECIVE' " Loop="false" ObjectType="Recive"
+      Key="1" SuperKey="-1" >
+    </Schema>
+
+    <Schema   Name="ReciveCurrentWeek" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+    IconClose="Platform\Image\Model\p_this_week.png" IconOpen="Platform\Image\Model\p_this_week.png" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter=" NODETYPE='RECIVECURRENTWEEK' " Loop="false" ObjectType="ReciveCurrentWeek"
+    Key="5" SuperKey="1" >
+    </Schema>
+    <Schema   Name="RecivePreThreeWeek" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+   IconClose="Platform\Image\Model\p_nearly_three_weeks.png" IconOpen="Platform\Image\Model\p_nearly_three_weeks.png" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter=" NODETYPE='RECIVEPRETHREEWEEK' " Loop="false" ObjectType="RecivePreThreeWeek"
+   Key="6" SuperKey="1" >
+    </Schema>
+    <Schema   Name="ReciveEarlier" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+   IconClose="Platform\Image\Model\p_earlier.png" IconOpen="Platform\Image\Model\p_earlier.png" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter=" NODETYPE='RECIVEEARLIER' " Loop="false" ObjectType="ReciveEarlier"
+   Key="7" SuperKey="1" >
+    </Schema>
+
+    <Schema  Name="Drafts"  View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" ObjectType="Drafts"
+          IconClose="Platform\Image\Model\p_draft_box.png" IconOpen="Platform\Image\Model\p_draft_box.png" IconCloseField="" IconOpenField=""  EntityFilter="" Filter=" NODETYPE='DRAFTS' " Loop="false"
+           Key="2" SuperKey="-1">
+    </Schema>
+
+    <Schema  Name="Send"  View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]" ObjectType="Send"
+        IconClose="Platform\Image\Model\p_outbox.png" IconOpen="Platform\Image\Model\p_outbox.png" IconCloseField="" IconOpenField=""  EntityFilter="" Filter=" NODETYPE='SEND' " Loop="false"
+        Key="3" SuperKey="-1" >
+    </Schema>
+    <Schema   Name="SendCurrentWeek" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+    IconClose="Platform\Image\Model\p_this_week.png" IconOpen="Platform\Image\Model\p_this_week.png" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter=" NODETYPE='SENDCURRENTWEEK' " Loop="false" ObjectType="SendCurrentWeek"
+    Key="8" SuperKey="3" >
+    </Schema>
+    <Schema   Name="SendPreThreeWeek" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+   IconClose="Platform\Image\Model\p_nearly_three_weeks.png" IconOpen="Platform\Image\Model\p_nearly_three_weeks.png" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter=" NODETYPE='SENDPRETHREEWEEK' " Loop="false" ObjectType="SendPreThreeWeek"
+   Key="9" SuperKey="3" >
+    </Schema>
+    <Schema   Name="SendEarlier" View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" QueryID="[Tree_Current_value1]"
+   IconClose="Platform\Image\Model\p_earlier.png" IconOpen="Platform\Image\Model\p_earlier.png" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter=" NODETYPE='SENDEARLIER' " Loop="false" ObjectType="SendEarlier"
+   Key="10" SuperKey="3" >
+    </Schema>
+
+
+
+    <Schema  Name="Dustbin"  View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" ObjectType="Dustbin"
+       IconClose="Platform\Image\Model\p_bin.png" IconOpen="Platform\Image\Model\p_bin.png" IconCloseField="" IconOpenField=""  EntityFilter="" Filter=" NODETYPE='DUSTBIN' " Loop="false"
+        Key="4" SuperKey="-1">
+    </Schema>
+
+    <Schema  Name="System"  View="INTERNALMAILNODEVIEW" TextField="" TextDicField="TEXTDIC" NodeTypeField="NODETYPE" ObjectType="System"
+        IconClose="Platform\Image\Model\p_mail_system.png" IconOpen="Platform\Image\Model\p_mail_system.png" IconCloseField="" IconOpenField=""  EntityFilter="" Filter=" NODETYPE='SYSTEM' " Loop="false"
+         Key="11" SuperKey="-1">
+    </Schema>
+    <QueryView StateField="STATEID" />
+  </WebTreeView>
+</root>

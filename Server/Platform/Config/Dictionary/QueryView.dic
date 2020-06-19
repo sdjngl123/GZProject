@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryView" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">自定义查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewExist">
+      <LocalizedLabel LanguageRef="zhs">列表视图[VIEWNAME]不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The list view [VIEWNAME] does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="ViewExist">
+      <LocalizedLabel LanguageRef="zhs">视图[VIEWNAME]不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The view [VIEWNAME] does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">确定保存吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure you save it?</LocalizedLabel>
+    </Label>
+    <Label Name="NameEmpty">
+      <LocalizedLabel LanguageRef="zhs">视图名称为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The view name is null</LocalizedLabel>
+    </Label>
+    <Label Name="QueryEmpty">
+      <LocalizedLabel LanguageRef="zhs">视图条件为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The view condition is null</LocalizedLabel>
+    </Label>
+    <Label Name="Custom">
+      <LocalizedLabel LanguageRef="zhs">自定义</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User-defined</LocalizedLabel>
+    </Label>
+    <Label Name="ViewHasExist">
+      <LocalizedLabel LanguageRef="zhs">视图 [VIEWNAME] 已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The view is already[VIEWNAME] exists</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PMSPROJECT-SINGLEVIEW">
+  <Settings Key="height" Value="332"/>
+  <Settings Key="width" Value="186"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ECODE_Value');
+	if(c.id!=''){
+		c.SetText(data.ECODE_DisplayValue);
+	}
+}
+{var o = pageEvent.o.GetControl('STATEID_Value');
+if(o.id!=''){
+o.SetText(data.STATEID_DisplayValue);
+}}{
+var o = pageEvent.o.GetControl('CREATEUID_Value');
+if(o.id!=''){
+o.SetText(data.CREATEUID_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('CREATETIME_Value');
+	if(c.id!=''){
+		c.SetText(data.CREATETIME_DisplayValue);
+	}
+}
+
+{
+	var o = pageEvent.o.GetControl('TYPE_Value');
+	if(o.id!=''){
+		var text = data.TYPE_DisplayValue?data.TYPE_DisplayValue:'';
+		o.SetText(text);
+	}
+}{
+var o = pageEvent.o.GetControl('DIRECTOR_Value');
+if(o.id!=''){
+o.SetText(data.DIRECTOR_DisplayValue);
+}
+}{
+var o = pageEvent.o.GetControl('MANAGER_Value');
+if(o.id!=''){
+o.SetText(data.MANAGER_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('STARTDATE_Value');
+	if(c.id!=''){
+		c.SetText(data.STARTDATE_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('SOPDATE_Value');
+	if(c.id!=''){
+		c.SetText(data.SOPDATE_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('DISTANCESOP_Value');
+	if(c.id!=''){
+		c.SetText(data.DISTANCESOP_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('REMARK_Value');
+	if(c.id!=''){
+		c.SetText(data.REMARK_DisplayValue);
+	}
+}
+"/>
+  </PageHandlers>
+  <Settings Key="title" Value="PMSPROJECT-VIEW.PMSPROJECTHeader"/>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0px 20px"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-7"/>
+</Settings><Settings Key="item8" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-8"/>
+</Settings><Settings Key="item9" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-9"/>
+</Settings><Settings Key="item10" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-10"/>
+</Settings><Settings Key="item11" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-11"/>
+</Settings><Settings Key="item12" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-12"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item0" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.ENAMEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ECODE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ECODE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ECODE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ECODE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE_Label" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.ECODEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="ECODE_Value" ParentID="ECODE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TYPE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TYPE" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item10" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TYPE_Label"/>
+</Settings><Settings Key="item11" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TYPE_Value"/>
+</Settings><Settings Key="item9" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="TYPE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TYPE_Label" ParentID="TYPE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.TYPEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="TYPE_Value" ParentID="TYPE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DIRECTOR"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DIRECTOR" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item14" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="DIRECTOR_Label"/>
+</Settings><Settings Key="item15" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DIRECTOR_Value"/>
+</Settings><Settings Key="item13" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DIRECTOR_Label" ParentID="DIRECTOR" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.DIRECTORHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl><PageControl ControlID="DIRECTOR_Value" ParentID="DIRECTOR" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item4" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MANAGER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MANAGER" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item18" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="MANAGER_Label"/>
+</Settings><Settings Key="item19" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MANAGER_Value"/>
+</Settings><Settings Key="item17" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MANAGER_Label" ParentID="MANAGER" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.MANAGERHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl><PageControl ControlID="MANAGER_Value" ParentID="MANAGER" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item5" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="STARTDATE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STARTDATE" ParentID="R-6" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item22" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="STARTDATE_Label"/>
+</Settings><Settings Key="item23" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="STARTDATE_Value"/>
+</Settings><Settings Key="item21" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STARTDATE_Label" ParentID="STARTDATE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.STARTDATEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="STARTDATE_Value" ParentID="STARTDATE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SOPDATE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SOPDATE" ParentID="R-7" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item26" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SOPDATE_Label"/>
+</Settings><Settings Key="item27" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SOPDATE_Value"/>
+</Settings><Settings Key="item25" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SOPDATE_Label" ParentID="SOPDATE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.SOPDATEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="SOPDATE_Value" ParentID="SOPDATE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DISTANCESOP"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DISTANCESOP" ParentID="R-8" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item30" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="DISTANCESOP_Label"/>
+</Settings><Settings Key="item31" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DISTANCESOP_Value"/>
+</Settings><Settings Key="item29" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DISTANCESOP_Label" ParentID="DISTANCESOP" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.DISTANCESOPHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="DISTANCESOP_Value" ParentID="DISTANCESOP" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-9" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item8" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK" ParentID="R-9" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item34" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="REMARK_Label"/>
+</Settings><Settings Key="item35" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK_Value"/>
+</Settings><Settings Key="item33" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK_Label" ParentID="REMARK" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.REMARKHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="REMARK_Value" ParentID="REMARK" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-10" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item9" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="STATEID"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STATEID" ParentID="R-10" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item38" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="STATEID_Label"/>
+</Settings><Settings Key="item39" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="STATEID_Value"/>
+</Settings><Settings Key="item37" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STATEID_Label" ParentID="STATEID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.STATEIDHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl><PageControl ControlID="STATEID_Value" ParentID="STATEID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+</PageControl><PageControl ControlID="R-11" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item10" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID" ParentID="R-11" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item42" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATEUID_Label"/>
+</Settings><Settings Key="item43" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID_Value"/>
+</Settings><Settings Key="item41" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID_Label" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.CREATEUIDHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl><PageControl ControlID="CREATEUID_Value" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+</PageControl><PageControl ControlID="R-12" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item11" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME" ParentID="R-12" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item46" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATETIME_Label"/>
+</Settings><Settings Key="item47" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME_Value"/>
+</Settings><Settings Key="item45" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME_Label" ParentID="CREATETIME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="PMSPROJECT-VIEW.CREATETIMEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="CREATETIME_Value" ParentID="CREATETIME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,20 @@
+﻿<div style="height:100%;width:100%;position:relative;background:#f5f5f5;border-bottom: 1px solid #e1e1e1;" id="treeviewQueryTemplate">
+    <div class="treeview-query-container">
+        <div class="treequery-query-search">
+            <div class="treequery-query-search-input">
+                <input type="text" class="form-control"/>
+                <div class="treequery-query-search-input-a">
+                  <div class="treequery-query-split"></div>
+                  <div class="treequery-query-img">
+                      <span class="basesprite b-gray-search" style="margin-top:3px;"></span>
+                  </div>
+                </div>
+            </div>
+            <div class="treequery-query-more">
+                <span class="basesprite b-gray-prev"></span>
+                <span class="basesprite b-gray-next"></span>
+                <span class="basesprite b-gray-convert"></span>
+            </div>
+        </div>
+    </div>
+</div>

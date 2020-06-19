@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowPluginContent" IsCache="true">
+  <Settings Key="title" Value="WorkflowPluginContent.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowPluginContent_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_WorkflowPluginContent_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_WorkflowPluginContent_OnCheck(pageEvent);"/>    
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="WorkflowPlugin_HeaderLayout"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PluginPageContainer"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="WorkflowPlugin_HeaderLayout" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HeaderlLabel"/>
+      </Settings>
+     
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="BeforeExec"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="Close"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HeaderlLabel" ParentID="HeaderLayout" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="WorkflowPluginContent.Header" />
+    </PageControl>
+    <PageControl ControlID="BeforeExec" ParentID="HeaderLayout" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="WorkflowPluginContent.BeforeExec" />
+    </PageControl>
+    <PageControl ControlID="Close" ParentID="HeaderLayout" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowPluginContent_Close(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="" />
+      <Settings Key="iconClass" Value="p_delete" />
+    </PageControl>
+
+    <PageControl ControlID="PluginPageContainer" ParentID="Info_Container" TypeName="PageContainer">
+    </PageControl>
+    
+  </PageControls>
+</root>

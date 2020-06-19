@@ -1,0 +1,2099 @@
+﻿a {
+    cursor: pointer;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+textarea {
+    padding: 0;
+    margin: 0;
+}
+/*LayoutContainer*/
+.LayoutContainer {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-layout-horizontal {
+    overflow-y: hidden;
+}
+
+.hoteam-layout-vertical {
+    overflow-x: hidden;
+}
+
+.hoteam-layout-item {
+}
+
+.hoteam-layout-horizontal-item {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+.hoteam-layout-vertical-item {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.hoteam-layout-drag {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.hoteam-layout-horizontal-drag {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.hoteam-layout-vertical-drag {
+    position: absolute;
+    z-index: 1000;
+    left: 1px;
+    right: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+    .hoteam-layout-vertical-drag:hover {
+        cursor: s-resize;
+    }
+
+.hoteam-layout-horizontal-drag:hover {
+    cursor: w-resize;
+}
+
+.hoteam-layout-drag-container {
+    filter: Alpha(Opacity=5);
+    opacity: 0.05;
+    background-color: White;
+}
+
+.hoteam-layout-horizontal-drag-container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.hoteam-layout-vertical-drag-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.hoteam-layout-drag-button {
+    position: absolute;
+    cursor: pointer;
+}
+
+.hoteam-layout-horizontal-drag-button {
+    left: 0px;
+    right: 0px;
+    height: 32px;
+    top: 50%;
+    margin-top: -8px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.hoteam-layout-vertical-drag-button {
+    top: 0px;
+    bottom: 0px;
+    width: 32px;
+    left: 50%;
+    margin-left: -8px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.hoteam-layout-horizontal-scroll {
+    bottom: 17px;
+}
+
+.hoteam-layout-vertical-scroll {
+    right: 17px;
+}
+
+.ui-draggable hoteam-layout-horizontal-scroll {
+    bottom: 0px;
+}
+/*容器*/
+.PageContainer, .CustomerContainer {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+/*Dialog*/
+.ui-dialog .ui-dialog-content {
+    padding: 0px;
+}
+
+.hoteam-dialog-overlay {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 2px;
+    bottom: 8px;
+}
+
+.hoteam-dialog {
+    border: 1px solid grey;
+    box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.ui-widget-overlay {
+    position: absolute;
+    background-color: #080505;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    cursor: move;
+    padding: 6px 8px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.ui-dialog-titlebar-hide {
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    right: 4em;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    color: white;
+    height: 20px;
+    line-height: 16px;
+    display: block;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.ui-widget-header span {
+    display: block;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 19px;
+    margin: -9px 0 0 0;
+    width: 16px;
+    height: 16px;
+    outline: none;
+}
+
+    .ui-dialog .ui-dialog-titlebar-close:hover {
+        text-decoration: none;
+    }
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    background: none;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.ui-dialog .ui-resizable-se {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 3px;
+    bottom: 3px;
+}
+
+.ui-resizable-n {
+    cursor: n-resize;
+    height: 7px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+}
+
+.ui-resizable-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.ui-resizable-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+
+.ui-resizable-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.ui-resizable-sw {
+    cursor: sw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    bottom: -5px;
+}
+
+.ui-resizable-ne {
+    cursor: ne-resize;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+}
+
+.ui-resizable-nw {
+    cursor: nw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    top: -5px;
+}
+
+.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+}
+
+.ui-resizable-se {
+    cursor: se-resize;
+}
+
+.RadioList, .Button, .CheckBox, .DateTime, .DropDown, .Grid, .Label, .Layout, .Tabs, .TextBox, .TextValue, .EditTreeGrid {
+    height: 100%;
+    position: relative;
+}
+
+/*按钮控件*/
+.ui-button-text {
+    white-space: nowrap;
+}
+
+.hoteamButton {
+    width: 100%;
+    position: absolute;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    padding: 3px 10px !important;
+}
+
+    .hoteamButton:active {
+        outline: none !important;
+    }
+
+    .hoteamButton:focus {
+        outline: none !important;
+    }
+
+.Button .btnicon {
+    position: absolute;
+    height: 16px;
+    top: 50%;
+    left: 10px;
+    margin-top: -7px;
+    cursor: pointer;
+}
+
+/*form-check*/
+.hoteam-form-check {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 3px;
+    cursor: pointer;
+    border: 0px;
+}
+/*TextValue控件*/
+.hoteam-textvalue-container {
+    position: relative;
+    height: 100%;
+}
+
+.hoteam-textvalue {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hoteam-textvalue-trash-show.input-sm {
+    padding-right: 22px;
+}
+
+.hoteam-textvalue-trash {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    margin-top: -8px;
+    height: 12px;
+    cursor: pointer;
+    font-size: 12px;
+}
+/*文本控件*/
+.hoteam-textbox {
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+}
+
+.hoteam-textbox-label {
+    position: absolute;
+    height: 26px;
+    line-height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    color: #bdbdbd;
+    cursor: text;
+    left: 0.5em;
+    font-style: italic;
+}
+
+.hoteamText-textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    resize: none;
+}
+
+.hoteam-textbox-number.input-sm {
+    padding-right: 18px;
+}
+
+.hoteam-textbox-control {
+    display: inline-block;
+    height: 26px;
+    width: 18px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+}
+
+    .hoteam-textbox-control > span {
+        height: 12px;
+        display: block;
+        background-color: #eee;
+    }
+
+    .hoteam-textbox-control > .hoteam-textbox-control-up {
+        border-bottom: #ccc 1px solid;
+    }
+
+    .hoteam-textbox-control > span:hover {
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .hoteam-textbox-control span.basesprite.b-angle-up {
+        margin-top: -3px;
+        z-index: 999;
+    }
+
+    .hoteam-textbox-control span.basesprite.b-angle-down {
+        margin-top: -2px;
+    }
+
+
+/*时间控件*/
+.hoteamDateTime {
+    cursor: text;
+    top: 50%;
+    margin-top: -13px;
+    height: 26px;
+    width: 100%;
+    position: absolute;
+}
+
+    .hoteamDateTime.hoteamDateTime-inline {
+        cursor: text;
+        margin-top: 0;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    .hoteamDateTime .datetime-input {
+        cursor: pointer;
+        background-color: #fff;
+        border-right: none;
+    }
+
+    .hoteamDateTime .input-sm {
+        height: 26px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+
+    .hoteamDateTime .input-group-addon {
+        padding: 0px 6px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+        .hoteamDateTime .input-group-addon span.glyphicon {
+            margin-top: 0px;
+            font-size: 12px;
+        }
+
+.hoteamDateTime-disabled * {
+    background: #eee !important;
+    cursor: default !important;
+}
+
+.hoteamDateTime-close {
+    position: absolute;
+    font-size: 12px;
+    display: none;
+    right: 35px;
+    top: 5px;
+    z-index: 1000;
+    cursor: pointer;
+}
+/*RadioList控件*/
+.hoteamRadioList {
+    height: 100%;
+    position: relative;
+}
+
+.hoteamRadio input {
+    vertical-align: middle;
+    margin: 0px 3px 2px 3px;
+}
+
+.hoteamRadio {
+    white-space: nowrap;
+    position: relative;
+}
+/*RadioList-水平*/
+.hoteamRadioListHorizontal {
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+}
+
+    .hoteamRadioListHorizontal .hoteamRadio {
+        float: left;
+        height: 100%;
+    }
+/*RadioList-垂直*/
+.hoteamRadioListVertical .hoteamRadio {
+    line-height: 25px;
+}
+
+/*CheckBox控件*/
+.hoteam-checkbox {
+    position: absolute;
+    margin-top: -12px;
+    height: 24px;
+    line-height: 24px;
+    top: 50%;
+    width: 100%;
+}
+
+    .hoteam-checkbox input {
+        margin: 3px 3px 2px 3px;
+    }
+
+    .hoteam-checkbox input, .hoteam-checkbox .hoteam-checkbox-text {
+        vertical-align: middle;
+        font-size: 12px;
+    }
+
+.hoteam-checkbox-text {
+    white-space: nowrap;
+}
+
+/*Label控件*/
+.hoteam-label-nowrap {
+    position: absolute;
+    width: 100%;
+    padding-right: 6px;
+    top: 50%;
+    line-height: 24px;
+    height: 24px;
+    margin-top: -12px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.hoteam-label-wrap {
+    height: 100%;
+    line-height: 22px;
+    overflow: hidden;
+    word-wrap: break-word;
+    cursor: default;
+    white-space: pre-wrap;
+    font-size: 12px;
+}
+
+.label-line {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #337ab7;
+}
+
+/*下拉列表控件*/
+.hoteam-dropdown-container {
+    width: 100%;
+    position: absolute !important;
+    top: 50%;
+    height: 26px;
+    margin-top: -13px;
+}
+
+    .hoteam-dropdown-container .dropdown-toggle {
+        height: 26px;
+    }
+
+        .hoteam-dropdown-container .dropdown-toggle .caret {
+            margin-top: 5px;
+        }
+
+    .hoteam-dropdown-container .readonly {
+        background-color: #fff !important;
+        cursor: pointer;
+    }
+
+.dropdown-menu-remove {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu-btn {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.multiSelect-dropdown-menu.dropdown-menu > li > a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdown-menu.dropdown-menu-suggest {
+    min-width: inherit;
+}
+
+/*树控件*/
+.Tree {
+    height: 100%;
+    position: relative;
+}
+
+.hoteam-tree {
+    height: 100%;
+    overflow: auto;
+    padding: 4px 4px 0 4px;
+}
+
+.hoteam-tree-dragline {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    cursor: s-resize;
+}
+
+    .hoteam-tree-dragline:hover {
+        background: #eee;
+    }
+
+.hoteam-tree-drag-moveline {
+    position: absolute;
+    height: 5px;
+    background: #BCF5EA;
+    display: none;
+}
+
+.hoteam-tree li > a span {
+    white-space: pre;
+}
+/*表格控件*/
+.hoteamContainer {
+    overflow: hidden;
+}
+
+.jqgrid-rownum, .ui-paging-info, .hoteamGrid tr td {
+    cursor: default;
+}
+
+.hoteamGrid {
+    width: 100%;
+}
+
+    .hoteamGrid tr td {
+        text-overflow: ellipsis;
+    }
+
+        .hoteamGrid tr td img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .hoteamGrid tr td .clickLink {
+            text-decoration: underline;
+            cursor: pointer;
+            text-overflow: ellipsis;
+        }
+
+    .ui-jqgrid .cbox, .hoteamGrid .clickImg {
+        cursor: pointer;
+    }
+
+.ui-pg-table td {
+    *+white-space:nowrap;
+}
+
+    .ui-pg-table, .ui-pg-table td input, .ui-pg-table td span {
+        *+vertical-align:middle;
+    }
+
+.ui-jqgrid .ui-icon-desc, .ui-jqgrid .ui-icon-asc {
+    margin-top: 0px;
+}
+/*EditGrid*/
+.EditGrid {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hoteam-editgrid-text, .hoteam-editgrid tr td select {
+    width: 98%;
+    height: auto;
+}
+
+.hoteam-editgrid-textValue-value {
+    display: none;
+}
+
+/*Menu控件*/
+.Menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hoteam-menu {
+    position: absolute;
+    height: 22px;
+    width: 100%;
+    top: 50%;
+    margin-top: -11px;
+    margin-bottom: 0px;
+    color: #eee;
+    outline: none;
+    overflow: hidden;
+}
+
+    .hoteam-menu .ui-menu-item {
+        float: left;
+        height: 100%;
+        margin-left: 10px;
+        position: relative;
+        display: inline;
+        line-height: 20px;
+    }
+
+        .hoteam-menu .ui-menu-item .hoteam-menu-text {
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 12px;
+            color: #333;
+            display: block;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f7f7f7;
+            cursor: pointer;
+        }
+
+.hoteam-menu-text .basesprite {
+    margin-bottom: -3px;
+}
+
+.hoteam-menu-img {
+    border: none !important;
+    height: 26px;
+    background-color: #fff !important;
+    padding: 0 !important;
+}
+
+    .hoteam-menu-img .hoteam-menu-text-sp {
+        display: none;
+    }
+
+    .hoteam-menu-img .hoteam-menu-icon, .hoteam-menu-img .basesprite {
+        position: relative;
+        top: 5px;
+    }
+
+.hoteam-menu-text-sp {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.hoteam-menu-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -3px;
+}
+
+/*.hoteam-menu-text[disabled] > .hoteam-menu-text-sp {
+    color: #ccc;
+}*/
+
+
+.hoteam-menu-item-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+}
+
+.hoteam-menu .ui-menu-item a:hover {
+    background-color: #fff;
+}
+
+.hoteam-menu-c {
+    position: absolute;
+    z-index: 10000;
+    border-radius: 2px;
+    padding-top: 2px;
+}
+
+.hoteam-menu-clone {
+    position: absolute;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background-color: #f7f7f7;
+}
+
+.hoteam-menu-c > div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-menu-item {
+    height: 100%;
+    background-color: #f7f7f7;
+    overflow: visible;
+    margin: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.hoteam-menu-more {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 17px;
+    display: none;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+    .hoteam-menu-more > div {
+        width: 50%;
+        cursor: pointer;
+        float: left;
+    }
+
+.hoteam-menu-item .hoteam-menu-item-li, .hoteam-menu-clone .hoteam-menu-item-li {
+    position: relative;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    white-space: nowrap;
+    height: 26px;
+}
+
+    .hoteam-menu-item .hoteam-menu-item-li:hover, .hoteam-menu-clone .hoteam-menu-item-li:hover {
+        background-color: #fff;
+    }
+
+.hoteam-menu-c .hoteam-menu-item .hoteam-menu-item-li-line {
+    border-bottom: 1px solid #ccc;
+}
+
+.hoteam-menu-item-text {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+    .hoteam-menu-item-text .basesprite {
+        margin-bottom: -3px;
+    }
+
+    .hoteam-menu-item-text:hover {
+        color: #333;
+    }
+
+.hoteam-menu-childitem {
+    position: absolute;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.hoteam-menu-childitem-li {
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 99;
+}
+
+    .hoteam-menu-childitem-li:hover {
+        background-color: #fff;
+    }
+
+.hoteam-menu-group .ui-menu-item .hoteam-menu-text {
+    border-radius: 0;
+    border-right: none;
+}
+
+.hoteam-menu-group .ui-menu-item.ui-menu-item-first {
+    /*margin-left: 5px;*/
+}
+
+    .hoteam-menu-group .ui-menu-item.ui-menu-item-first .hoteam-menu-text {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+.hoteam-menu-group .ui-menu-item.ui-menu-item-last .hoteam-menu-text {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-right: 1px solid #ccc;
+}
+
+.hoteam-menu-group .ui-menu-item {
+    margin-left: 0;
+}
+
+.ui-menu-sleitem {
+    float: left;
+    margin-left: 5px;
+    position: relative;
+    top: 0px;
+}
+
+    .ui-menu-sleitem .input-group .form-control {
+        background-color: #fff;
+        cursor: pointer;
+        height: 22px;
+        padding: 0 10px;
+    }
+
+    .ui-menu-sleitem .input-group {
+        width: 146px;
+    }
+
+        .ui-menu-sleitem .input-group > label {
+            display: table-cell;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-weight: normal;
+            padding-left: .5em;
+            padding-right: .5em;
+            color: #333;
+            font-weight: normal;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+
+        .ui-menu-sleitem .input-group .dropdown-toggle {
+            height: 22px;
+        }
+
+            .ui-menu-sleitem .input-group .dropdown-toggle .caret {
+                margin-top: 3px;
+            }
+
+.ui-icon {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.MultiSelectDropDown {
+    height: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+}
+
+.hoteam-multiSelect-container {
+    height: 26px;
+    width: 100%;
+    position: absolute !important;
+    top: 50%;
+    margin-top: -13px;
+}
+
+    .hoteam-multiSelect-container .readonly {
+        cursor: pointer;
+        background-color: #fff !important;
+    }
+
+    .hoteam-multiSelect-container .input-group-btn .btn {
+        height: 26px;
+        padding-top: 10px;
+    }
+
+    .hoteam-multiSelect-container .disabled {
+        background-color: #eee;
+    }
+
+.hoteam-rightmenu-c {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+}
+
+    .hoteam-rightmenu-c > div {
+        height: 10000px;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: #fff;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+.hoteam-rightmenu {
+    background-color: #fff;
+    position: relative;
+    border-bottom: none;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.hoteam-rightmenuchildren, .hoteam-rightmenugrandson {
+    background-color: #fff;
+    position: absolute;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+    .hoteam-rightmenuchildren li {
+        /*padding: 2px 0px;
+        border: 1px solid #ccc;
+        border-top: none;*/
+        position: relative;
+    }
+
+        .hoteam-rightmenuchildren li a {
+            line-height: 26px;
+            display: block;
+            overflow: hidden;
+            color: #333333;
+            padding: 0 24px 0 10px;
+            white-space: nowrap;
+        }
+
+            .hoteam-rightmenuchildren li a span {
+                float: left;
+                margin-top: 7px;
+                margin-right: 10px;
+            }
+
+            .hoteam-rightmenuchildren li a:hover {
+                text-decoration: none;
+            }
+
+.hoteam-rightmenu-haschildrenIco {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.hoteam-rightmenu li {
+    /*padding: 2px 0px;
+    border: 1px solid #ccc;*/
+    position: relative;
+    border-top: none;
+}
+
+.hoteam-rightmenu-item-line {
+    border-bottom: 1px solid #ccc;
+}
+
+.hoteam-rightmenu li:hover {
+    background-color: #f7f7f7;
+}
+
+.hoteam-rightmenuchildren li:hover {
+    background-color: #f7f7f7;
+}
+
+.hoteam-rightmenu li a {
+    line-height: 26px;
+    display: block;
+    overflow: hidden;
+    color: #333333;
+    font-size: 12px;
+    padding: 0 24px 0 10px;
+    white-space: nowrap;
+}
+
+    .hoteam-rightmenu li a:hover {
+        text-decoration: none;
+    }
+
+    .hoteam-rightmenu li a span {
+        float: left;
+        margin-top: 6px;
+        margin-right: 10px;
+    }
+
+.hoteam-rightMenu-more {
+    position: absolute !important;
+    left: 0px;
+    bottom: 0px;
+    height: 17px !important;
+    padding: 0px !important;
+    background: #f5f5f5;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+}
+
+    .hoteam-rightMenu-more > div {
+        width: 50%;
+        display: inline-block;
+    }
+
+/*图片显示*/
+.Image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hoteam-ctrl-image-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 5px 2px;
+}
+
+    .hoteam-ctrl-image-container > div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+        .hoteam-ctrl-image-container > div:hover {
+            border: 1px solid #ccc;
+        }
+
+.hoteam-ctrl-icon-container > div {
+    border: none;
+}
+
+    .hoteam-ctrl-icon-container > div:hover {
+        border: none;
+    }
+
+.hoteam-ctrl-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+}
+
+.hoteam-ctrl-icon-container .hoteam-ctrl-image {
+    left: 0;
+}
+
+.hoteam-ctrl-image-placeholder {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #080505;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    display: none;
+}
+
+    .hoteam-ctrl-image-placeholder .basesprite {
+        float: right;
+        margin: 2px 0px;
+        cursor: pointer;
+    }
+
+.hoteam-image-preview-c {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0px;
+    background: #080505;
+    z-index: 99999;
+}
+
+    .hoteam-image-preview-c div.hoteam-image-preview-f {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .hoteam-image-preview-c div.hoteam-image-preview-s {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: auto;
+    }
+
+    .hoteam-image-preview-c img {
+        position: relative;
+        left: 50%;
+        top: 50%;
+    }
+
+.image-preview-top {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background: #000000;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.image-preview-left {
+    width: 20px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.image-preview-right {
+    width: 20px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.image-preview-top .basesprite {
+    float: right;
+    margin-top: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.image-preview-right .basesprite, .image-preview-left .basesprite {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    cursor: pointer;
+}
+
+/*html在线编辑*/
+.HtmlEdit {
+    width: 100%;
+    height: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+    .HtmlEdit textarea {
+        width: 100%;
+        height: 100%;
+        height: 2000px;
+        line-height: 100%;
+    }
+
+    .HtmlEdit .ke-container {
+        width: 99%;
+        height: 99%;
+    }
+
+.ke-statusbar {
+    visibility: hidden;
+}
+
+.Iframe {
+    height: 100%;
+}
+
+.ui-dialog-titlebar-max {
+    top: 50%;
+    width: 19px;
+    height: 18px;
+    right: 2em;
+    padding: 1px;
+    margin: 0px;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.dialog-icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 1px;
+    display: none;
+}
+
+.ke-icon-uploadimage {
+    background-position: 0px -495px;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/*layout*/
+.hoteam-layout-container {
+    overflow: hidden;
+}
+
+.hoteam-lauout-horizontal {
+    float: left;
+    height: 100%;
+}
+
+.hoteam-layout-table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    padding: 0;
+    border: none;
+}
+
+.hoteam-layout-tr {
+    height: 100%;
+    padding: 0;
+    border: none;
+}
+
+    .hoteam-layout-tr > td {
+        border: none;
+        vertical-align: top;
+    }
+
+        .hoteam-layout-tr > td.hoteam-lauout-horizontal {
+            float: none;
+        }
+
+        .hoteam-layout-tr > td.hoteam-lauout-horizontal-auto > div {
+            height: auto;
+        }
+
+.hoteam-layout-drag {
+    position: relative;
+}
+
+    .hoteam-layout-drag div div {
+        position: absolute;
+        border: none;
+        cursor: pointer;
+    }
+
+.hoteam-lauout-horizontal.hoteam-layout-drag {
+    cursor: e-resize;
+    height: expression(this.style.height = this.);
+}
+
+    .hoteam-lauout-horizontal.hoteam-layout-drag div.basesprite {
+        top: 50%;
+        margin-top: -35px;
+        position: absolute;
+    }
+
+    .hoteam-lauout-horizontal.hoteam-layout-drag div div {
+        top: -50%;
+    }
+
+.hoteam-layout-vertical.hoteam-layout-drag {
+    cursor: n-resize;
+}
+
+    .hoteam-layout-vertical.hoteam-layout-drag div {
+        left: 50%;
+        position: absolute;
+    }
+
+        .hoteam-layout-vertical.hoteam-layout-drag div div {
+            left: -50%;
+            margin-left: -20px;
+        }
+
+.ui-state-horizontal {
+    background-color: #e1e1e1;
+}
+
+.ui-state-vertical {
+    background-color: #e1e1e1;
+}
+
+.hoteam-layout-group-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 6px 0 0 0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hoteam-layout-group {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 3px;
+}
+
+.hoteam-layout-group-text {
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: #fff;
+    padding: 0 10px;
+}
+
+/*Combox控件*/
+.AutoCompleteCombox {
+    position: relative;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 100%;
+}
+
+.hoteam-autocompletecombox-container {
+    position: absolute !important;
+    top: 50%;
+    margin-top: -13px;
+}
+
+    .hoteam-autocompletecombox-container .dropdown-toggle {
+        height: 26px;
+    }
+
+        .hoteam-autocompletecombox-container .dropdown-toggle .caret {
+            margin-top: 5px;
+        }
+
+    .hoteam-autocompletecombox-container .readonly {
+        background-color: #eee !important;
+    }
+
+/*侧滑控件样式*/
+.hoteam-sideslip {
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    z-index: 999;
+    padding: 10px 0 10px 15px;
+}
+
+.sideslip-content {
+    width: 100%;
+}
+
+.hoteam-sideslip-show {
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.sideslip-title {
+    height: 30px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 20px;
+}
+/*standard导航*/
+.StandardAccordion {
+    width: 100%;
+    height: 100%;
+}
+
+.hoteam-standard-accordion {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.standard-accordion-title {
+    position: relative;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #1e1e1f;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.standard-accordion-text {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0 8px;
+}
+
+    .standard-accordion-text:hover {
+        border-bottom: 2px solid #2299ee;
+    }
+
+.standard-accordion-text-select {
+    border-bottom: 2px solid #2299ee;
+}
+
+.standard-accordion-title-remove {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: none;
+}
+
+.standard-accordion-add {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.standard-accordion-add-img {
+    display: inline-block;
+    width: 24px;
+    height: 21px;
+    vertical-align: middle;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.standard-accordion-hidden {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    height: 0px;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.standard-accordion-hidden-c {
+    width: 614px;
+    margin: auto;
+}
+
+.standard-accordion-shade {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.1;
+    bottom: 0px;
+    display: none;
+    z-index: 100;
+}
+
+.standard-accordion-hidden-div {
+    float: left;
+    height: 80px;
+    width: 60px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.standard-accordion-hidden-img {
+    height: 48px;
+    width: 48px;
+    margin: auto;
+    display: block;
+}
+
+.standard-accordion-hidden-text {
+    margin-top: 10px;
+}
+
+/*下拉搜索控件*/
+.DropSearch {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hoteam-dropsearch-container {
+    position: absolute;
+    height: 26px;
+    width: 100%;
+    top: 50%;
+    margin-top: -13px;
+}
+
+    .hoteam-dropsearch-container .dropsearch-search {
+        position: absolute;
+        left: 8px;
+        top: 5px;
+    }
+
+    .hoteam-dropsearch-container .dropsearch-close {
+        position: absolute;
+        right: 8px;
+        top: 5px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .hoteam-dropsearch-container input {
+        border-radius: 2px;
+        height: 26px;
+        padding: 0 12px;
+        padding-left: 28px;
+    }
+
+.hoteam-dropsearch-ul {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 0;
+    border-radius: 3px;
+    display: none;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+    .hoteam-dropsearch-ul li {
+        padding: 6px 12px;
+    }
+
+        .hoteam-dropsearch-ul li.hoteam-dropsearch-li-sel {
+            background-color: #eee;
+        }
+
+/*多page容器控件*/
+.VerticalTabs {
+    height: 100%;
+    width: 100%;
+}
+
+.MultiPageContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-multipagecontainer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hoteam-multipage {
+    width: 100%;
+    margin-bottom: 6px;
+    overflow: hidden;
+    padding-top: 10px;
+    position: relative;
+}
+
+.hoteam-multipage-page {
+    overflow: auto;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 10px;
+}
+
+.hoteam-multipage-c {
+    height: 100%;
+    width: 100%;
+    padding: 10px 0 0px 0px;
+}
+
+.hoteam-multipage-c-line {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.hoteam-multipage-c-noline {
+    border: none;
+    padding-left: 6px;
+}
+
+    .hoteam-multipage-c-noline .hoteam-multipage-title {
+        left: -1px;
+    }
+
+.hoteam-multipage-content-line {
+    border: 1px solid #ccc;
+}
+
+.hoteam-multipage-tab {
+    height: 30px;
+    padding-top: 6px;
+}
+
+.hoteam-multipage-tab-text {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.hoteam-multipage-title {
+    position: absolute;
+    top: 2px;
+    left: 14px;
+    background: #fff;
+    line-height: 22px;
+    padding: 0 10px 0 6px;
+    height: 10px;
+}
+
+    .hoteam-multipage-title .basesprite {
+        cursor: pointer;
+    }
+
+.hoteam-multipage-content-c, .hoteam-multipage-content {
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-multipage-text {
+    position: relative;
+    margin-left: 2px;
+    top: -3px;
+    display: inline-block;
+}
+
+.hoteam-multipage-img {
+    float: right;
+    margin-right: 12px;
+    margin-top: 8px;
+}
+
+
+.SearchContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hoteam-search-container {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    height: 24px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.hoteam-search-icon {
+    margin-left: 5px;
+    width: 16px;
+    color: #cbcbcb;
+    float: left;
+}
+
+.hoteam-search-input-c {
+    height: 24px;
+    border: none;
+    float: left;
+    position: relative;
+}
+
+.hoteam-search-input {
+    height: 22px;
+    width: 100%;
+    padding: 0px 38px 0px 8px;
+    line-height: 22px;
+    border: none;
+}
+
+.hoteam-search-btn {
+    background-color: #eeeeee;
+    height: 22px;
+    line-height: 22px;
+    padding: 0px 6px;
+    font-size: 12px;
+    width: 48px;
+    float: left;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.hoteam-search-placeholder {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    color: #969696;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    right: 22px;
+}
+
+.hoteam-search-trash {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.hoteam-search-split {
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    height: 13px;
+    width: 1px;
+    background: #ccc;
+}
+
+.hoteam-search-select {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.hoteam-search-historycontainer {
+    position: absolute;
+    width: 188px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+    border-radius: 3px;
+}
+
+    .hoteam-search-historycontainer li {
+        position: relative;
+        padding: 4px 20px 4px 10px;
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 26px;
+    }
+
+        .hoteam-search-historycontainer li:hover {
+            background-color: rgb(238, 238, 238);
+        }
+
+.hoteam-search-historyclear {
+    border-top: 1px solid #ccc;
+    color: #337ab7;
+}
+
+/*侧边签tabs*/
+.SideTabs {
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-sideTabs-containter {
+    height: 100%;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.hoteam-sideTabs-ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    margin: 0;
+    border-left: 1px solid #ccc;
+}
+
+    .hoteam-sideTabs-ul li {
+        border-bottom: 1px solid #ccc;
+        padding: 5px 4px;
+        cursor: pointer;
+    }
+
+.sideTabs-page {
+    height: 100%;
+    width: 100%;
+}
+
+/*EditButton控件*/
+.EditButton {
+    margin: 0 2px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hoteamEditButton {
+    height: 26px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+}
+
+    .hoteamEditButton .input-group .input-group-addon {
+        padding: 0 6px;
+        cursor: pointer;
+    }
+
+        .hoteamEditButton .input-group .input-group-addon[disabled] {
+            cursor: default;
+        }
+
+    .hoteamEditButton .input-group .hidebutton {
+        border-radius: 3px !important;
+    }
+
+
+.MenuToolbar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.layout-highlight-transparent {
+    border: 1px solid transparent;
+}
+
+.layout-highlight {
+    border: 1px solid #157ec6;
+}
+
+/*颜色选择器*/
+.ColorPicker {
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-colPicker-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hoteam-colPicker {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    width: 32px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.hoteam-colPicker-center {
+    left: 50%;
+    margin-left: -16px;
+}
+
+.hoteam-colPicker-left {
+    left: 0px;
+}
+
+.hoteam-colPicker-right {
+    right: 0px;
+}
+
+/*PageGrid控件*/
+.hoteam-pageGrid, .PageGrid {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.pageGrid-ele-v {
+    margin: 2px;
+    border: 1px solid #ccc;
+    position: relative;
+    float: left;
+    padding-top: 28px;
+    border-radius: 3px;
+}
+
+.pageGrid-ele-v-title {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.pageGrid-ele-v-content {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/*面包屑控件*/
+.BreadcrumbNavigation {
+    height: 100%;
+    width: 100%;
+}
+
+.hoteam-breadnavigation {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+    .hoteam-breadnavigation ul {
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+
+    .hoteam-breadnavigation li {
+        display: inline-block;
+        display: inline\9;
+    }
+
+        .hoteam-breadnavigation li.hoteam-breadnavigation-li-hidden {
+            display: none;
+        }
+
+        .hoteam-breadnavigation li span {
+            margin: 0 1px;
+        }
+
+    .hoteam-breadnavigation .hoteam-breadnavigation-text {
+        color: #438DDD;
+        cursor: pointer;
+    }
+
+    .hoteam-breadnavigation .hoteam-breadnavigation-text-last {
+        color: #333;
+        cursor: default;
+    }
+
+.hoteam-breadnavigation-omi {
+    padding: 0 10px;
+}
+
+.noty_message {
+    word-break: break-word;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#noty_topCenterByOCX_layout_container .noty_message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/**
+    FilterGrid
+*/
+
+.FilterEditGrid {
+    width: 100%;
+    height: 100%;
+}
+
+.ResourceLoadDiagram {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    BOMTreeGrid
+*/
+.BOMTreeGrid {
+    width: 100%;
+    height: 100%;
+}
+
+/*26400 李金岳*/
+.hqgrid-container {
+     height: 100%; 
+}

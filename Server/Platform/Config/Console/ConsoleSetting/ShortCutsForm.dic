@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ShortCutsForm" IsWeb="true">
+    <Label Name="UseCtrlAndShift">
+      <LocalizedLabel LanguageRef="zhs">请使用(Ctrl+Shift+字母)设置快捷键！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use Ctrl And Shift!</LocalizedLabel>
+    </Label>
+    <Label Name="ShortIsUsed">
+      <LocalizedLabel LanguageRef="zhs">快捷键{0}已被使用！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Short Is Used !</LocalizedLabel>
+    </Label>
+    <Label Name="ShortIsUsedByWin">
+      <LocalizedLabel LanguageRef="zhs">快捷键{0}和操作系统快捷键冲突！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Short Is Used by Windows !</LocalizedLabel>
+    </Label>
+    <Label Name="HotWrong">
+      <LocalizedLabel LanguageRef="zhs">快捷键需以Ctrl、Alt、Shift+数组或字母方式组合设置！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hot Wrong !</LocalizedLabel>
+    </Label>
+    <Label Name="SaveSucess">
+      <LocalizedLabel LanguageRef="zhs">保存成功！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">save sucess!</LocalizedLabel>
+    </Label>
+    <Label Name="NoDataSave">
+      <LocalizedLabel LanguageRef="zhs">没有要保存的数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NoDataSave!</LocalizedLabel>
+    </Label>
+    <Label Name="SaveSaveAll">
+      <LocalizedLabel LanguageRef="zhs">不能修改【保存】、【保存全部】快捷键！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveSaveAll!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

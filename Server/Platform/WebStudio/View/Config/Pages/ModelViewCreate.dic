@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ModelViewCreate" IsWeb="true">
+    <Label Name="NewViewName">
+      <LocalizedLabel LanguageRef="zhs">新建视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewName">
+      <LocalizedLabel LanguageRef="zhs">视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewType">
+      <LocalizedLabel LanguageRef="zhs">视图类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

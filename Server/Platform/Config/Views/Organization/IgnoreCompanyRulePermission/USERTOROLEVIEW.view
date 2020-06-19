@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityLinkView Name="USERTOROLEVIEW" ObjectTypeName="USERTOROLE" OrderByString="LSEQUENCE ASC" FixedFilter="" DeepSearch="false" SearchChild="true" SumDistinct="false" ContainSelf="false" SearchMode="All" ISRelatedQurey="false" ISLinkPrentRelated="false" ISLinkRelatedQureyChild="false" ISEntityRelated="false" FixedEntityFilter="" IgnoreCompanyRulePermission="true" IgnoreCompanyID="false">
+    <ViewColumn Name="LID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="80" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATEUID" Width="80" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATETIME" Width="120" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="LSEQUENCE" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+  </EntityLinkView>
+</root>

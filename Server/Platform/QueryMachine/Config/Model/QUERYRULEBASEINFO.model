@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="QUERYRULEBASEINFO" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="QUERYRULEBASEINFO" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <InfoType Name="QUERYMACHINEID" Type="DefaultObjectValue" DataType="STRING100" Column="QUERYMACHINEID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OPERATETYPE" Type="DefaultObjectValue" DataType="STRING100" Column="OPERATETYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="COLNAME" Type="DefaultObjectValue" DataType="STRING100" Column="COLNAME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="COLTEXT" Type="DefaultObjectValue" DataType="STRING100" Column="COLTEXT" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OBJECTTYPENAME" Type="DefaultObjectValue" DataType="STRING100" Column="OBJECTTYPENAME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="CONDITION" Type="DefaultObjectValue" DataType="STRING100" Column="CONDITION" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="RESULTVALUE" Type="DefaultObjectValue" DataType="STRING150" Column="RESULTVALUE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="COLTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="COLTYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ODERNUMBER" Type="DefaultObjectValue" DataType="LONG" Column="ODERNUMBER" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="CUSTOMQUERYROLEID" Type="DefaultObjectValue" DataType="STRING100" Column="CUSTOMQUERYROLEID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="CUSTOMQUERYREPLACEPARA" Type="DefaultObjectValue" DataType="STRING100" Column="CUSTOMQUERYREPLACEPARA" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

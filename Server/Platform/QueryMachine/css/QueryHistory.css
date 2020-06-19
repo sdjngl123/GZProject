@@ -1,0 +1,46 @@
+﻿
+.QueryHistoryTitle 
+{
+    display:inline-block;
+    width:80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.QueryHistoryCheckBox 
+{
+    width:14px;
+    display:inline-block;
+    margin: 0 10px;
+    position: relative;
+    top: -5px;
+}
+
+.QueryHistoryTitleDiv 
+{
+    position:absolute;
+    width:125px;
+    left:0px;
+    top:1px;
+}
+.QueryHistoryValueDiv 
+{
+    width:100%;
+    padding-left:125px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.QueryHistoryAllDiv 
+{
+    height:auto;
+    height:24px;
+    line-height:24px;
+    max-width:500px;
+    position:relative;
+}
+.QueryHistoryAllDivChecked 
+{
+    background:#D9E5EF;
+}

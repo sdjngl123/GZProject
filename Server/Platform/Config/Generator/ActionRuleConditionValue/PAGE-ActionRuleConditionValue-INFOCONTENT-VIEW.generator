@@ -1,0 +1,3 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="Label" >  [PAGEHANDLERS]
+  <Settings Key="position" Value="left"/>
+</PageControl>

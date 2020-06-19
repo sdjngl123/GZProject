@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="TreeEnumerationsMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateEnumerationsCategory" ModuleName="Platform" LabelName="MenuItems.CreateEnumerationCategory" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="CREATE" ActionType="ENUMERATIONCATEGORY" />
+      <WebMethod PageName="CreateObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="ENUMERATIONCATEGORY" />
+      </WebMethod>
+       <BusinessMethod Name="Hoteam.InforCenter.EnumerationService.SetMaxSequence" IsWCFService="true">
+        <Para Name="ParentID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="ObjectID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="TreeEnumerationCategoryMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="EditEnumerationCategory" ModuleName="Platform" LabelName="MenuItems.EditEnumerationCategory" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="DeleteEnumerationCategory" ModuleName="Platform" LabelName="MenuItems.DeleteEnumerationCategory" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+        <Para Name="ValidateObject" Value="ENUMERATION:PEID=EID" />
+        <Para Name="ExistDenyDelete" Value="true" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="CreateEnumeration" ModuleName="Platform" LabelName="MenuItems.CreateEnumeration" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="ENUMERATION" />
+      <WebMethod PageName="CreateObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="ENUMERATION" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="Hoteam.InforCenter.EnumerationService.SetMaxSequence" IsWCFService="true">
+        <Para Name="ParentID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="ObjectID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+        
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ListEnumerationRigthMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="EditEnumeration" ModuleName="Platform" LabelName="MenuItems.EditEnumeration" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="DeleteEnumeration" ModuleName="Platform" LabelName="MenuItems.DeleteEnumeration" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ListEnumerationMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateEnumeration" ModuleName="Platform" LabelName="MenuItems.CreateEnumeration" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="ENUMERATION" />
+      <WebMethod PageName="CreateObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="ENUMERATION" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="EditEnumeration" ModuleName="Platform" LabelName="MenuItems.EditEnumeration" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="DeleteEnumeration" ModuleName="Platform" LabelName="MenuItems.DeleteEnumeration" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ListEnumerationItemMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateEnumerationItem" ModuleName="Platform" LabelName="MenuItems.CreateEnumerationItem" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="ENUMERATIONITEM" />
+      <WebMethod PageName="CreateObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="ENUMERATIONITEM" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+       
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="EditEnumerationItem" ModuleName="Platform" LabelName="MenuItems.EditEnumerationItem" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+        
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="DeleteEnumerationItem" ModuleName="Platform" LabelName="MenuItems.DeleteEnumerationItem" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="TreeEnumerationMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="EditEnumeration" ModuleName="Platform" LabelName="MenuItems.EditEnumeration" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Enumeration_CheckDeleteTree" SelectID="[Tree_Current_Tag_EID]">
+        <Para Name="LovType" Value="[Tree_Current_Tag_LOVTYPE]" />
+      </JSMethod>
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+       
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="DeleteEnumeration" ModuleName="Platform" LabelName="MenuItems.DeleteEnumeration" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Enumeration_CheckDeleteTree" SelectID="[Tree_Current_Tag_EID]">
+        <Para Name="LovType" Value="[Tree_Current_Tag_LOVTYPE]" />
+      </JSMethod>
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+
+  <!--可编辑列表菜单-->
+  <MenuItem Name="EditListEnumerationCategoryMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateEnumerationsCategory" ModuleName="Platform" LabelName="MenuItems.CreateEnumerationCategory" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_GetMaxSerialNum" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="SEQUENCE" Value="[ReturnValue_MaxNum]"  ParentPara="InitData"/>
+        <Para Name="ActionType" Value="ENUMERATIONCATEGORY" />
+      </JSMethod>
+    </WebAction>
+
+    <WebAction Name="DeleteEnumerationCategory" ModuleName="Platform" LabelName="MenuItems.DeleteEnumerationCategory" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="ENUMERATIONCATEGORY" />
+        <Para Name="ValidateObject" Value="ENUMERATION:PEID=EID" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveEnumerationCategory" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_SaveGrid" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="ENUMERATIONCATEGORY" ParentPara="DataServicePara"/>
+               
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="EditListEnumerationMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateEnumeration" ModuleName="Platform" LabelName="MenuItems.CreateEnumeration" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_GetMaxSerialNum" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="SEQUENCE" Value="[ReturnValue_MaxNum]"  ParentPara="InitData"/>
+        <Para Name="ActionType" Value="ENUMERATION" />
+      </JSMethod>
+    </WebAction>
+    
+    <WebAction Name="DeleteEnumeration" ModuleName="Platform" LabelName="MenuItems.DeleteEnumeration" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_Enumeration_CheckDeleteRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="ENUMERATION" />
+      </JSMethod>
+    </WebAction>
+
+    <WebAction Name="SaveEnumeration" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_SaveGrid" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="ENUMERATION" ParentPara="DataServicePara"/>
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData"/>
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+
+    <WebAction Name="ChangeEnumerationType" ModuleName="Platform" LabelName="MenuItems.ChangeEnumerationType" Image="p_switch" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_ChangeEnumerationType" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="ENUMERATION" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="EditListEnumerationItemMenu" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateEnumerationItem" ModuleName="Platform" LabelName="MenuItems.CreateEnumerationItem" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_GetMaxSerialNum" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="SEQUENCE" Value="[ReturnValue_MaxNum]"  ParentPara="InitData"/>
+        <Para Name="ActionType" Value="ENUMERATIONITEM" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="DeleteEnumerationItem" ModuleName="Platform" LabelName="MenuItems.DeleteEnumerationItem" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_Enumeration_CheckDeleteRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="ENUMERATION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveEnumerationItem" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_SaveGrid" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="ENUMERATIONITEM" ParentPara="DataServicePara"/>
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData"/>
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Enumeration" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="UpEnumerationItem" ModuleName="Platform" LabelName="MenuItems.UpEnumerationItem" Image="p_moveup" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_Up" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="DownEnumerationItem" ModuleName="Platform" LabelName="MenuItems.DownEnumerationItem" Image="p_movedown" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_Down" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+    </WebAction>
+    <!--<WebAction Name="ChangeEnumerationType" ModuleName="Platform" LabelName="MenuItems.ChangeEnumerationType" Image="p_reset" ParentWebAtionName="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false">
+      <JSMethod Name="InforCenter_Platform_EnumerationItem_ChangeEnumerationType" SelectID="[List_EID]">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="ENUMERATIONITEM" />
+      </JSMethod>
+    </WebAction>-->
+
+  </MenuItem>
+  <!--可编辑列表菜单 结束-->
+</root>

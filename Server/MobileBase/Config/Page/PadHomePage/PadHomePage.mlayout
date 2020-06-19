@@ -1,0 +1,44 @@
+﻿<div id="header" data-layout="leftdiv" data-theme="a" style="text-align:center;top: 0;display:block;position: absolute;width: 30%;" class="ui-page-theme-a">
+  <div data-role="header" role="banner" class="ui-header ui-bar-inherit ">
+    <h1 class="mobilelisttitle" style="cursor:pointer;padding: 0;margin:0;display:inline" onclick="HMUI.MobileList.ShowHistory(event)"></h1>
+    <a style="display:none" data-role="button" role="button" onclick="HMUI.MobileList.GetPreviousOpenPath();" class="headerbackbtn">
+        <img class="icon-sliding-return" src="MobileBase/Image/icon-return.svg" />
+    </a>
+  </div>
+</div>
+<div data-theme="a" data-layout="rightdiv" style="right:0;width:70%;height:41px;position: absolute;top: 0;" class="ui-page-theme-a" id="rightheader">
+  <div data-role="header" role="banner" class="ui-navbar-header ui-bar-inherit ui-navbar-header-pad" style="z-index: 1000;">
+    <ul class="ui-grid-b">
+    </ul>
+  </div>
+</div>
+<div class="ui-page-container  ui-page-theme-a ui-page-container-pad-left" data-layout="leftdiv">
+  <div data-role="page" id="SlidePageOne"  data-theme="a" ></div>
+  <div data-role="page" id="SlidePageTwo"  data-theme="a" ></div>
+</div>
+<div id="content" data-layout="rightdiv" style=""  class="rightdiv pad full">
+  <div id="rightcontent"></div>
+</div>
+<div id="footer"  data-layout="leftdiv" style="width: 30%; position: absolute; bottom: 0;left:0;" class="ui-footer ui-bar-a ui-footer-pad">
+  <div class="ui-navbar" role="navigation">
+    <ul class="footernav ui-grid-b">
+    </ul>
+  </div>
+  <div style="float:right;display:none" class="btnrefresh">
+    <a style="float:right" class="ui-link ui-alt-icon ui-btn ui-btn-inline" onclick="HMUI.MobileList.RefreshCurrentPage();">
+      <img class="icon" src="MobileBase/Image/icon-refresh.svg" />
+    </a>
+  </div>
+</div>
+<div  data-layout="rightdiv" style="width: 70%; position: absolute;right:0;bottom:0;border-left-width: 1px;" class="ui-footer ui-bar-a ui-footer-pad" id="rightfooter">
+  <div class="ui-navbar" role="navigation">
+    <ul class="ui-grid-b">
+    </ul>
+  </div>
+</div>
+<div data-role="popup" id="popupMobileArrowPage" data-inset="false" data-transition="pop" data-arrow="true" data-theme="a"  data-history="false">
+  <div id="popupMobileContent"></div>
+</div>
+<div data-role="popup" id="popupMobilePage" data-transition="pop" data-theme="a" data-overlay-theme="a" data-history="false"  >
+
+</div>

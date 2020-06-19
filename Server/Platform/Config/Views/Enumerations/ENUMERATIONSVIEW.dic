@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ENUMERATIONSVIEWView" IsWeb="true">
+    <Label Name="ENUMERATIONSVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">值列表节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list node</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMERATIONSVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">值列表节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list node</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object ID</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object ID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

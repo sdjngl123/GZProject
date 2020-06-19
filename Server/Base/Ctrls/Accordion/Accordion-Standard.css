@@ -1,0 +1,221 @@
+﻿/*手风琴导航控件*/
+.Accordion {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.ui-accordion-header {
+    position: relative;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.ui-accordion-header-title {
+    white-space: nowrap;
+    outline: none;
+    padding: 6px 0px;
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+}
+
+    .ui-accordion-header-title > .b-close-b {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        display: none;
+    }
+
+    .ui-accordion-header-title:hover > .b-close-b {
+        display: block;
+    }
+
+.ui-accordion-header-img {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.ui-accordion-header-title-img {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+}
+
+
+.ui-accordion-header-title-text {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    position: relative;
+}
+
+.ui-accordion-header .ui-li-position {
+    float: right;
+    width: 16px;
+    padding: 3px 0px;
+    margin-right: 5px;
+}
+
+.ui-accordion-content {
+    position: relative;
+    display: none;
+}
+
+.ui-accordion-header .ui-accordion-header-left {
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    display: none;
+}
+
+    .ui-accordion-header:hover .ui-accordion-header-left {
+        display: block;
+    }
+
+.ui-accordion-content .hoteam-accordion-list .liaccordion-left {
+    width: 4px;
+    float: left;
+    height: 100%;
+}
+
+.ui-accordion-content .hoteam-accordion-list {
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+
+    .ui-accordion-content .hoteam-accordion-list .liaccordion-middle {
+        width: 1px;
+        height: 100%;
+        position: relative;
+        float: left;
+        margin-left: 18px;
+        display: none;
+    }
+
+    .ui-accordion-content .hoteam-accordion-list > .ui-accordion-header-img {
+        display: inline-block;
+        width: 16px;
+        padding-top: 6px;
+        padding-left: 16px;
+        float: none;
+    }
+
+    .ui-accordion-content .hoteam-accordion-list .liaccordion-middle .liaccordion-middle-buck {
+        position: absolute;
+        top: 15px;
+        left: -2px;
+        height: 4px;
+        width: 4px;
+    }
+
+
+
+    .ui-accordion-content .hoteam-accordion-list .liaccordion-right {
+        font-size: 12px;
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 8em;
+        white-space: nowrap;
+    }
+
+.ui-accordion-content li {
+    width: 100%;
+}
+
+.ui-accordion-header li .liaccordion-right {
+    padding-left: 24px;
+}
+
+.ui-accordion-header li li .ui-accordion-header-title-img {
+    margin-left: 10px;
+}
+
+.ui-accordion-header li li .liaccordion-right {
+    padding-left: 34px;
+}
+
+.ui-accordion-header li li li .liaccordion-right {
+    padding-left: 45px;
+}
+
+.ui-accordion-header li li li li .liaccordion-right {
+    padding-left: 50px;
+}
+
+.ui-accordion-content ul li .ui-button {
+    padding-left: 40px;
+}
+
+.hoteam-accordion-list-hover .liaccordion-right {
+    /*font-weight: 600 !important;*/
+}
+
+.hoteam-accordion-list-select .liaccordion-right {
+    /*font-weight: 600 !important;*/
+}
+
+.hoteam-accordion-list-hover .ui-accordion-header-left
+{
+    display:block;
+}
+
+.hoteam-accordion-list .hoteam-accordion-collection {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.hoteam-accordion-list-hover .hoteam-accordion-collection {
+    display: inline-block;
+}
+
+.hoteam-accordion-tree {
+    position: relative;
+}
+
+    .hoteam-accordion-tree li a {
+        position: relative;
+        padding-right: 20px;
+    }
+
+.hoteam-accordion-tree-lasticon {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+
+
+
+.Accordion {
+    background-color: #f6f6f6;
+}
+
+.ui-accordion-header {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+/*.ui-accordion-header .ui-accordion-header-left {
+        background: none !important;
+    }*/
+
+.ui-accordion-header-select {
+    background-color: #fff;
+}
+
+.ui-accordion-header-select,
+.ui-accordion-header-select-pre {
+    border-bottom: 1px solid #c9c9c9 !important;
+}

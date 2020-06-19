@@ -1,0 +1,9 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+
+InforCenter_Platform_Object_SetStatesSelList(o,'[OBJTYPE]');
+o.SetSelectedByValue(data.[INFONAME]);
+}
+}
+

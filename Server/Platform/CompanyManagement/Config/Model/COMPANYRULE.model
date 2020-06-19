@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="COMPANYRULE" Extend="ACTIONRULE" LogicClass="CompanyRule" IconPath="Platform/Image/Model/elementobject.png" Abstract="false" TableName="COMPANYRULE" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false" />
+</root>

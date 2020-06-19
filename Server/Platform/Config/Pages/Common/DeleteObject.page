@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="DeleteObject" IsCache="true">
+  <Settings Key="title" Value="DeleteObject.Title"/>
+  <Settings Key="height" Value="200"/>
+  <Settings Key="width" Value="320"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_DeleteObject_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="DeleteObject_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DeleteObject_Container"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="DeleteObject_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DeleteObject_Container" ParentID="DeleteObject_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="DeleteObject_Content"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DeleteObject_Content" ParentID="Confirm_LabelContainer" TypeName="CustomerContainer" >
+    </PageControl>
+    <!--DeleteObjectBtn-->
+    <PageControl ControlID="DeleteObject_Btn" ParentID="DeleteObject_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DeleteObject_btnDeleteObjectAll"/>
+      </Settings>
+      <Settings Key="item54" >
+        <Settings Key="size" Value="40"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DeleteObject_btnDeleteObjectCurrent"/>
+      </Settings>
+      <Settings Key="item53" >
+        <Settings Key="size" Value="40"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DeleteObject_btnDeleteObject"/>
+      </Settings>
+      <Settings Key="item52" >
+        <Settings Key="size" Value="40"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DeleteObject_btnCancel"/>
+      </Settings>
+      <Settings Key="item51" >
+        <Settings Key="size" Value="40"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DeleteObject_btnOK"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="DeleteObject_btnDeleteObjectAll" ParentID="DeleteObject_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_DeleteObject_DeleteObjectAll(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="DeleteObject.DeleteObjectAll" />
+    </PageControl>
+    <PageControl ControlID="DeleteObject_btnDeleteObjectCurrent" ParentID="DeleteObject_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_DeleteObject_DeleteObjectCurrent(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="DeleteObject.DeleteObjectCurrent" />
+    </PageControl>
+    <PageControl ControlID="DeleteObject_btnDeleteObject" ParentID="DeleteObject_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_DeleteObject_DeleteObject(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="DeleteObject_btnCancel" ParentID="DeleteObject_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_DeleteObject_Cancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+    <PageControl ControlID="DeleteObject_btnOK" ParentID="DeleteObject_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_DeleteObject_Cancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+  </PageControls>
+</root>
+

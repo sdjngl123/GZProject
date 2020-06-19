@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FormCirculationOpinionPagePlugin" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流转意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Opinion Information</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

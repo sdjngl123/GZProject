@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FlowTaskActor" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流程任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task Executor</LocalizedLabel>
+    </Label>
+    <Label Name="FlowNode">
+      <LocalizedLabel LanguageRef="zhs">任务节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task node</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateActor">
+      <LocalizedLabel LanguageRef="zhs">更改执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change executor</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultActor">
+      <LocalizedLabel LanguageRef="zhs">默认执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default executor</LocalizedLabel>
+    </Label>
+    <Label Name="NoPermissionToChangeActor">
+      <LocalizedLabel LanguageRef="zhs">您没有修改任务执行人的权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You do not have permission to modify the task executor!</LocalizedLabel>
+    </Label>
+    <Label Name="SelectActor">
+      <LocalizedLabel LanguageRef="zhs">选择执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select executive</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

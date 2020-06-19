@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="ACTIONRULECONDITION-CREATE" IsWeb="true">
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERRegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正整数（1-999999999）&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter positive integer (1-999999999)&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORHeader">
+      <LocalizedLabel LanguageRef="zhs">操作符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operator</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">条件值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition value</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 500&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULECONDITIONHeader">
+      <LocalizedLabel LanguageRef="zhs">新建规则权限条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewRule permission condition</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

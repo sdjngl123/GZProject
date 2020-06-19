@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MenuItem Name="ApplyCompanyManagerListMenu">
+    <WebAction Name="AddCompanyFriend" ModuleName="Registered" LabelName="ApplyCompanyManagerListMenu.AddCompanyFriend" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="CREATE" ActionType="COMPANYLINK" SelectID="[List_EID]" SelectMode="NULL" />
+      <JSMethod Name="InforCenter_Platform_Registered_CheckCurrentIsRootCompany" SelectID="[List_EID]" IsLoopExec="false">
+      </JSMethod>
+      <WebMethod SelectID="" PageName="AddCompanyFriend" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+      </WebMethod>
+      <WebMessageAndLogger SendMessage="false" WriteLogger="true"  SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common"/>
+    </WebAction>
+  </MenuItem >
+
+
+  <MenuItem Name="UnAuditCompanyLinkListListMenu">
+    <WebAction Name="Agree" ModuleName="Registered" LabelName="UnAuditCompanyLinkListListMenu.Agree" Image="p_allowall" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_Registered_AuditCompanyLink" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="AcceptCompanyID" Value="[List_ACCEPTCOMPANYID]" />
+        <Para Name="ApplyCompanyID" Value="[List_APPLIEDCOMPANYID]" />
+        <Para Name="AuditResult" Value="Agree" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="Reject" ModuleName="Registered" LabelName="UnAuditCompanyLinkListListMenu.Reject" Image="p_allbanned" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_Registered_AuditCompanyLink" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="AcceptCompanyID" Value="[List_ACCEPTCOMPANYID]" />
+        <Para Name="ApplyCompanyID" Value="[List_APPLIEDCOMPANYID]" />
+        <Para Name="AuditResult" Value="Reject" />
+      </JSMethod>
+      <WebMessageAndLogger SendMessage="false" WriteLogger="true"  SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common"/>
+    </WebAction>
+  </MenuItem >
+
+  
+</root>

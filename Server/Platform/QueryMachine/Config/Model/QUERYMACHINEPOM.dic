@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYMACHINEPOMModel" IsWeb="true">
+    <Label Name="QUERYMACHINEPOMHeader">
+      <LocalizedLabel LanguageRef="zhs">查询关联POM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query associated POM</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEPOMCaption">
+      <LocalizedLabel LanguageRef="zhs">查询关联POM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query associated POM</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query ID</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query ID</LocalizedLabel>
+    </Label>
+    <Label Name="POMOBJECTNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">POM对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">POM object name</LocalizedLabel>
+    </Label>
+    <Label Name="POMOBJECTNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">POM对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">POM object name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

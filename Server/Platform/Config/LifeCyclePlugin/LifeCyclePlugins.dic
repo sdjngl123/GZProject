@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCyclePlugins" IsWeb="true">
+    <Label Name="SendFlowMessage">
+      <LocalizedLabel LanguageRef="zhs">发送流程消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send process message</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeState">
+      <LocalizedLabel LanguageRef="zhs">更改状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change state</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeStageState">
+      <LocalizedLabel LanguageRef="zhs">更改阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change phase state</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCyclePagePlugin">
+      <LocalizedLabel LanguageRef="zhs">生命周期页面插件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The plug-in of the life cycle page </LocalizedLabel>
+    </Label>
+    <Label Name="TaskPagePlugin">
+      <LocalizedLabel LanguageRef="zhs">任务页面插件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The plug-in of the task page </LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageParameter">
+      <LocalizedLabel LanguageRef="zhs">页面参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page parameters</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

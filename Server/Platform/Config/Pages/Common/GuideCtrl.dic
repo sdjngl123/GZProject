@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="GuideCtrl" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="Previous">
+      <LocalizedLabel LanguageRef="zhs">上一步</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Last step</LocalizedLabel>
+    </Label>
+    <Label Name="Next">
+      <LocalizedLabel LanguageRef="zhs">下一步</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Next step</LocalizedLabel>
+    </Label>
+    <Label Name="Finish">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="Cancel">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

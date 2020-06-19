@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="FavoriteShowMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="SetImportant" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.SetImportant" Image="p_set_the_important_mark" ParentWebAtionName="" CtrlType="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <BusinessMethod Name="Hoteam.InforCenter.FavoriteService.SetFavoriteImportant" SelectID="[Tree_Current_value1]" IsWCFService="true">
+        <Para Name="LID" Value="[Tree_Current_value2]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="FavoriteCancel" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.FavoriteCancel" Image="p_unfavorite" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="DELETE" />
+      <BusinessMethod Name="Hoteam.InforCenter.FavoriteService.CancelFavorite" SelectID="[Tree_Current_value1]" IsWCFService="true">
+        <Para Name="LID" Value="[Tree_Current_value2]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.MoveUp" Image="p_moveup" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="true" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="FAVORITELINK" ParentPara="para" />
+        <Para Name="ObjectID" Value="[Tree_Current_value2]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Parent_value1]" ParentPara="para" />
+        <Para Name="IsUp" Value="true" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.MoveDown" Image="p_movedown" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="true" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="FAVORITELINK" ParentPara="para" />
+        <Para Name="ObjectID" Value="[Tree_Current_value2]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Parent_value1]" ParentPara="para" />
+        <Para Name="IsUp" Value="false" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveTo" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.MoveTo" Image="p_move" ParentWebAtionName="" CtrlType="" RefreshType="RefreshList" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_FavoriteObject_OnMove" SelectID="[Tree_Current_value1]" IsLoopExec="false">
+        <Para Name="OldPEID" Value="[Tree_Parent_value1]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="FavoriteMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="SetImportant" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.SetImportant" Image="p_set_the_important_mark" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_LID]" SelectMode="MULTI" Action="EDIT" />
+      <BusinessMethod Name="Hoteam.InforCenter.FavoriteService.SetFavoriteImportant" SelectID="[List_LID]" IsWCFService="true">
+        <Para Name="LID" Value="[List_LID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_LID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_LID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="FavoriteCancel" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.FavoriteCancel" Image="p_unfavorite" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_LID]" SelectMode="MULTI" Action="DELETE" />
+      <BusinessMethod Name="Hoteam.InforCenter.FavoriteService.CancelFavorite" SelectID="[List_LID]" IsWCFService="true">
+        <Para Name="LID" Value="[List_LID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_LID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_LID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.MoveUp" Image="p_moveup" ParentWebAtionName="" CtrlType="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="true" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="CREATE" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="FAVORITELINK" ParentPara="para" />
+        <Para Name="ObjectID" Value="[List_LID]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="IsUp" Value="true" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.MoveDown" Image="p_movedown" ParentWebAtionName="" CtrlType="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="true" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="CREATE" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="FAVORITELINK" ParentPara="para" />
+        <Para Name="ObjectID" Value="[List_LID]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="IsUp" Value="false" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveTo" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.MoveTo" Image="p_move" ParentWebAtionName="" CtrlType="" RefreshType="RefreshList" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" />
+      <JSMethod Name="Hoteam_InforCenter_FavoriteObject_OnMove" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="OldPEID" Value="[Tree_Current_value1]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="FavoriteTreeMenu" Type="Image" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="Create" MultiMenu="false" ModuleName="InforCenter" LabelName="Create" Image="p_new" ParentWebAtionName="" CtrlType="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="FAVORITEFOLDER" />
+        <Para Name="LinkTypeName" Value="FAVORITELINK" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Edit" MultiMenu="false" ModuleName="InforCenter" LabelName="Edit" Image="p_edit" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="FAVORITEFOLDER" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Delete" MultiMenu="false" ModuleName="InforCenter" LabelName="Delete" Image="p_delete" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="DELETE" ActionType="AUTO" SelectType="FAVORITEFOLDER" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="FavoriteQueryTreeMenu" Type="Image" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="Create" MultiMenu="false" ModuleName="InforCenter" LabelName="MenuItems.Create" Image="p_new" ParentWebAtionName="" CtrlType="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="FAVORITEFOLDER" />
+        <Para Name="LinkTypeName" Value="FAVORITELINK" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+</root>

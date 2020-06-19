@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+    <ToolBar Name ="HistoryToolsConsoleToolManageBar" BaseBar="SettingBar">
+        <Item Name ="HistoryToolsGuide" IsCommonItem="true" ImagePath="~/Platform/Image/Console/list.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.HistoryDataTrans.HistoryTransDataCmd"></Item>
+    </ToolBar>
+
+
+</root>

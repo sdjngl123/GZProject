@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="VTSDEMANDModel" IsWeb="true">
+    <Label Name="VTSDEMANDHeader">
+      <LocalizedLabel LanguageRef="zhs">VTS需求</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VTSDEMAND</LocalizedLabel>
+    </Label>
+    <Label Name="VTSDEMANDCaption">
+      <LocalizedLabel LanguageRef="zhs">VTS需求</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VTSDEMAND</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">验证需求名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">验证需求名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">指标代码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">指标代码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="TESTSTANDARDHeader">
+      <LocalizedLabel LanguageRef="zhs">试验标准</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestSTANDARD</LocalizedLabel>
+    </Label>
+    <Label Name="TESTSAMPLESIZEHeader">
+      <LocalizedLabel LanguageRef="zhs">需验证样本量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestSampleSize</LocalizedLabel>
+    </Label>
+    <Label Name="IMPLEMENTSTAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">实施阶段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IMPLEMENTSTAGE</LocalizedLabel>
+    </Label>
+    <Label Name="VERIFICATIONSHeader">
+      <LocalizedLabel LanguageRef="zhs">被验证次数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VERIFICATIONS</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVEDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RECIVEDATE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

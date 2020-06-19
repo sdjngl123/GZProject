@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="A1" IsWeb="true">
+    <Label Name="col1">
+      <LocalizedLabel LanguageRef="zhs">列1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">col1</LocalizedLabel>
+    </Label>
+    <Label Name="">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="HGridColumn">
+      <LocalizedLabel LanguageRef="zhs">44</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">444</LocalizedLabel>
+    </Label>
+    <Label Name="HGridColumn3">
+      <LocalizedLabel LanguageRef="zhs">66</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">77</LocalizedLabel>
+    </Label>
+    <Label Name="TabPage1">
+      <LocalizedLabel LanguageRef="zhs">TabPage1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TabPage1</LocalizedLabel>
+    </Label>
+    <Label Name="TabPage2">
+      <LocalizedLabel LanguageRef="zhs">TabPage2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TabPage2</LocalizedLabel>
+    </Label>
+    <Label Name="AA">
+      <LocalizedLabel LanguageRef="zhs">VV</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VV</LocalizedLabel>
+    </Label>
+    <Label Name="XX">
+      <LocalizedLabel LanguageRef="zhs">XX</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">XX</LocalizedLabel>
+    </Label>
+    <Label Name="A">
+      <LocalizedLabel LanguageRef="zhs">AA</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AA</LocalizedLabel>
+    </Label>
+    <Label Name="BB">
+      <LocalizedLabel LanguageRef="zhs">BB</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BB</LocalizedLabel>
+    </Label>
+    <Label Name="VV">
+      <LocalizedLabel LanguageRef="zhs">VV</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VV</LocalizedLabel>
+    </Label>
+    <Label Name="HMenuList1MenuFile">
+      <LocalizedLabel LanguageRef="zhs">菜单1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">caidan</LocalizedLabel>
+    </Label>
+    <Label Name="HMenuList1item0">
+      <LocalizedLabel LanguageRef="zhs">菜单1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">caidan</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel4">
+      <LocalizedLabel LanguageRef="zhs">*</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">*</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel5">
+      <LocalizedLabel LanguageRef="zhs">小学</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">aaa</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel6">
+      <LocalizedLabel LanguageRef="zhs">*</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">*</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel7">
+      <LocalizedLabel LanguageRef="zhs">下拉</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">xx</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel8">
+      <LocalizedLabel LanguageRef="zhs">*</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">*</LocalizedLabel>
+    </Label>
+    <Label Name="HEditTreeGridColumn">
+      <LocalizedLabel LanguageRef="zhs">让人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">tt</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel1">
+      <LocalizedLabel LanguageRef="zhs">AAC</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="HLabel2">
+      <LocalizedLabel LanguageRef="zhs">BBB</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="HLabel3">
+      <LocalizedLabel LanguageRef="zhs">44</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">555</LocalizedLabel>
+    </Label>
+    <Label Name="2">
+      <LocalizedLabel LanguageRef="zhs">让人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="1">
+      <LocalizedLabel LanguageRef="zhs">uu</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="A1">
+      <LocalizedLabel LanguageRef="zhs">设计页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">sheji</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

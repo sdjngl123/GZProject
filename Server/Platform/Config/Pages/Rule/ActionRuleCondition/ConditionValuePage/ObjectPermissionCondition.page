@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectPermissionCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectPermissionCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_ObjectPermissionCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ObjectPermission_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 授权结果容器-->
+    <PageControl ControlID="ObjectPermission_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ObjectPermissionValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectPermissionValueDDL"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 授权结果控件-->
+    <PageControl ControlID="ObjectPermissionValueLabel" ParentID="ObjectPermission_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ObjectPermissionCondition.ObjectPermissionValue" />
+    </PageControl>
+    <PageControl ControlID="ObjectPermissionValueDDL" ParentID="ObjectPermission_Container" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="ObjectPermissionCondition.Enable"/>
+        <Settings Key="value" Value="Enable"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="ObjectPermissionCondition.Disable"/>
+        <Settings Key="value" Value="Disable"/>
+      </Settings>
+    </PageControl>
+
+  </PageControls>
+</root>

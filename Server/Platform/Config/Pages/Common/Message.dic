@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Message" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">消息提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message Reminder</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Text">
+      <LocalizedLabel LanguageRef="zhs">执行操作出错</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An error occurred while performing the operation</LocalizedLabel>
+    </Label>
+    <Label Name="CopyTo">
+      <LocalizedLabel LanguageRef="zhs">文本已经复制到剪贴板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The text has been copied to clipboard</LocalizedLabel>
+    </Label>
+    <Label Name="Message">
+      <LocalizedLabel LanguageRef="zhs">消息：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message:</LocalizedLabel>
+    </Label>
+    <Label Name="Detail">
+      <LocalizedLabel LanguageRef="zhs">明细：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Details:</LocalizedLabel>
+    </Label>
+    <Label Name="Forbid">
+      <LocalizedLabel LanguageRef="zhs">您已设置浏览器禁止复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have set the browser to prohibit copying</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="GraphEditor" IsWeb="true">
+    <Label Name="Select">
+      <LocalizedLabel LanguageRef="zhs">选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select</LocalizedLabel>
+    </Label>
+    <Label Name="Line">
+      <LocalizedLabel LanguageRef="zhs">连线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Connection</LocalizedLabel>
+    </Label>
+    <Label Name="StartNode">
+      <LocalizedLabel LanguageRef="zhs">开始</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+    </Label>
+    <Label Name="EndNode">
+      <LocalizedLabel LanguageRef="zhs">结束</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End</LocalizedLabel>
+    </Label>
+    <Label Name="Validate">
+      <LocalizedLabel LanguageRef="zhs">验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateSuccess">
+      <LocalizedLabel LanguageRef="zhs">验证成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification successfully</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateFail">
+      <LocalizedLabel LanguageRef="zhs">验证失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification failed</LocalizedLabel>
+    </Label>
+    <Label Name="V-NotHasNode">
+      <LocalizedLabel LanguageRef="zhs">不存在任何节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No Nodes Exist</LocalizedLabel>
+    </Label>
+    <Label Name="V-LineConnectErr">
+      <LocalizedLabel LanguageRef="zhs">连线没有正确的连接到节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The connection does not have the correct connection to the node</LocalizedLabel>
+    </Label>
+    <Label Name="V-NameNullErr">
+      <LocalizedLabel LanguageRef="zhs">标识不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identity is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="V-IDRepeat">
+      <LocalizedLabel LanguageRef="zhs">标识不允许重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identification does not allow duplicates</LocalizedLabel>
+    </Label>
+    <Label Name="V-IsolatedNode">
+      <LocalizedLabel LanguageRef="zhs">孤立节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Isolated Node</LocalizedLabel>
+    </Label>
+    <Label Name="LineEndIsStartNode">
+      <LocalizedLabel LanguageRef="zhs">线的结束不能指向开始节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End of line cannot point to start node</LocalizedLabel>
+    </Label>
+    <Label Name="LineStartIsEndNode">
+      <LocalizedLabel LanguageRef="zhs">线的开始不能指向结束节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The start of the line cannot point to the end node</LocalizedLabel>
+    </Label>
+    <Label Name="NotAuditEndLineHaveCondition">
+      <LocalizedLabel LanguageRef="zhs">以评审，签收，执行节点开始的线上才能有条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You can only have a condition on the line that begins with review, receipt, and execution of the node</LocalizedLabel>
+    </Label>
+    <Label Name="SwitchStartText">
+      <LocalizedLabel LanguageRef="zhs">分支开始</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Branch Start</LocalizedLabel>
+    </Label>
+    <Label Name="SwitchEndText">
+      <LocalizedLabel LanguageRef="zhs">分支结束</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Branch End</LocalizedLabel>
+    </Label>
+    <Label Name="FlowSwitch">
+      <LocalizedLabel LanguageRef="zhs">分支</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Branch</LocalizedLabel>
+    </Label>
+    <Label Name="FlowAnd">
+      <LocalizedLabel LanguageRef="zhs">并行与</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parallel and</LocalizedLabel>
+    </Label>
+    <Label Name="FlowOr">
+      <LocalizedLabel LanguageRef="zhs">并行或</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parallel or</LocalizedLabel>
+    </Label>
+    <Label Name="FlowExecute">
+      <LocalizedLabel LanguageRef="zhs">执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute</LocalizedLabel>
+    </Label>
+    <Label Name="FlowAudit">
+      <LocalizedLabel LanguageRef="zhs">评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Review</LocalizedLabel>
+    </Label>
+    <Label Name="FlowCheck">
+      <LocalizedLabel LanguageRef="zhs">签收</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sign-in</LocalizedLabel>
+    </Label>
+    <Label Name="FlowBusiness">
+      <LocalizedLabel LanguageRef="zhs">业务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

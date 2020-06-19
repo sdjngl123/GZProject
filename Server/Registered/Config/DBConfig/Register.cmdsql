@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="CreateDatabaseForRegister">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        CREATE DATABASE [DATABASE] ON  PRIMARY
+        ( NAME = N'[DATABASE]', FILENAME = N'[FILEPATH]' , SIZE = 5MB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+        LOG ON
+        ( NAME = N'[DATABASE]_log', FILENAME = N'[LOGFILEPATH]' , SIZE = 5184KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+      </CommandItem>
+    </DatabaseType>
+
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        CREATE USER [USER] IDENTIFIED BY [PASSWORD]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        GRANT CONNECT,RESOURCE,DBA TO [USER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--只针对Oracle，注册时设置表空间-->
+  <Command Name="CreateDatabaseForRegister_CreateTablespace">
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        CREATE TABLESPACE [TABLESPACENAME] DATAFILE '[FILEPATH]' SIZE [SIZE]M
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        ALTER USER [USER] DEFAULT TABLESPACE [TABLESPACENAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="SETCOMPANYSYSTEMUSER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE COMPANY SET SYSTEMUSERID=(SELECT EID FROM USERINFO WHERE ECOMPANYID = '[ECOMPANYID]') WHERE ECOMPANYID = '[ECOMPANYID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+
+  <Command Name="GetDatabaseInfoByCompany">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT DATABASECONNECT,DATABASEINFO FROM COMPANY WHERE AUDITSTATE = 'AuditedPass'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetCompanyFriendLinkForLoopCheck">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID,APPLIEDCOMPANYID,ACCEPTCOMPANYID FROM COMPANYLINK
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetAllDataBaseConnectInfoByDataBaseType">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT EID,DATABASETEMPLATENAME,DATABASETYPE,USECOUNT FROM DATABASEUSEINFO WHERE DATABASETYPE ='[DATABASETYPE]' ORDER BY USECOUNT ASC
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetCompanyVaultInfo">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM COMPANYVAULT
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="UpdateNewCompanyGroupVault">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE GROUPINFO SET VAULTINFO = '[VAULTINFO]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetAllCompanyVaultTemplateStatisticsInfo">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT VAULTTEMPLATENAME,COUNT(VAULTTEMPLATENAME) VAULTTEMPLATENAMECOUNT  FROM COMPANYVAULT GROUP BY VAULTTEMPLATENAME
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

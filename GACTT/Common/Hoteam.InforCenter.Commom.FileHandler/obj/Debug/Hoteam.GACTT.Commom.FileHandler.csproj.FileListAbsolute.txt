@@ -1,0 +1,6 @@
+E:\广汽试验\Source\Server\Bin\Hoteam.GACTT.Commom.FileHandler.dll
+E:\广汽试验\Source\Server\Bin\Hoteam.GACTT.Commom.FileHandler.pdb
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Commom.FileHandler\obj\Debug\Hoteam.GACTT.Commom.FileHandler.csprojAssemblyReference.cache
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Commom.FileHandler\obj\Debug\Hoteam.GACTT.Commom.FileHandler.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Commom.FileHandler\obj\Debug\Hoteam.GACTT.Commom.FileHandler.dll
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Commom.FileHandler\obj\Debug\Hoteam.GACTT.Commom.FileHandler.pdb

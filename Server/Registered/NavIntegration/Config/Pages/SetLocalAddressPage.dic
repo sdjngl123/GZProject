@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SetLocalAddressPage" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">设置本地程序地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set Local Address</LocalizedLabel>
+    </Label>
+    <Label Name="LocalAddress">
+      <LocalizedLabel LanguageRef="zhs">本地程序地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LocalAddress</LocalizedLabel>
+    </Label>
+    <Label Name="LocalAddressRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空，输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not empty , and input max length is 100</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NavigationItem Name="CommmonModules" IsAddCustom="true" IsHidden="false" Order="001">
+    <Image>p_system_management</Image>
+    <NavigationItem Name="AccessRecord" IsAddCustom="true" IsHidden="false" Order="012">
+      <PageName>TreeManagement</PageName>
+      <Image>p_recent_visit</Image>
+      <Para Name="ItemName" Value="AccessRecordManagement" />
+    </NavigationItem>
+  </NavigationItem>
+</root>

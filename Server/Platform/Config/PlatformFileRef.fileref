@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JSFile FileName="~/Platform/Js/Platform.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ClipBoard.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/Confirm.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/CreateObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/CopyObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/CreateMultiObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/DeleteObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/EditObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/FileDownload.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/FileUpload.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/InstantMessage.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Js/Common/LinkObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ListCommonQuery.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/CustomPage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ListManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/EditListManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/FilterListManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ListViewCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/EditListViewCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/FilterListViewCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/BomTreeListCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/MainFlat/MainFlat.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/MainFlat/MainFlatFlow.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/MenuCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/Message.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/MutilLangInput.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/Navigation.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/Object.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Js/Common/ObjectEditGrid.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ObjectProperty.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ObjectSingleProperty.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/OnlineUserList.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ReportDisplay.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TabListPage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TabsCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/VerticalTabsCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TreeCommonQuery.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TreeListCommonQuery.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TreeListQueryCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TreeManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TabManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ObjectInspector.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/VerticalTabManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TreeViewCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/TreeListViewCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ViewObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/GuideCtrl.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/Import.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/Export.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/ViewOnLine.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/WebViewCommonQuery.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/ClassicHomePage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/ClassicHomePageTop.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/ShowAgentUser.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/SmartHomePage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/StandardHomePage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/Help.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/HelpTreeQuery.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/MainTabs.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/ModifyPassword.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/OriginalityHomePage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/PersonalSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/HomePageSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/QuickNavigation.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/HomePage/AgentSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/IFrame/IFrmae.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Js/Login/Login.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/ModulePermission/ModulePermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Organization/Organization.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Organization/WorkAgent.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Enumeration/Enumeration.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/FlowPropertyInTask.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/FlowTemplateView.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/MyWorkflowSmartStatistics.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/PropertyPageTemplate.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/StartWorkflow.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkFlowAudit.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/AttachObjectList.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/AttachObjectList.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkflowPlugin.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkflowStatistics.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkflowTaskStatistics.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkFlowTaskView.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkflowAccrssory.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Workflow/WorkflowInform.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/SmartManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/SmartListCommonQuery.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/SmartViewObject.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/Office/Office.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SelectedTip/SelectedTip.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/SelectedList/SelectedList.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/SelectedPagingList/SelectedPagingList.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Js/Workflow/FlowTemplateView.base.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/CodeDropDown/CodeDropDown.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/Filetransfer/Filetransfer.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Platform/Ctrls/TopologyView/topology/topology.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/TopologyView/TopologyView.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/QueryMachine/QueryMachine.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/CodingRuleView/js/codingRuleView.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/CodingRuleView/CodingRuleView.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/Timeline/timeline/js/timeline.js" IsLang="false" IsMobile="false" />
+  <JSFile FileName="~/Platform/Ctrls/Timeline/Timeline.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/Report/Report.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/HtmlEdit/HtmlEdit.js" IsLang="false" IsMobile="false" type="PC,H5" />
+  <JSFile FileName="~/Platform/js/HomePage/DesktopHomePage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/nav.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/backImg.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/menu.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/nav.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/desktop.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/dialog.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/HomePage/desktop/desktopPlug.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/ctrls/MenuPreview/MenuPreview.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/ImportFileUpLoad/jquery.fileupload.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/ImportFileUpLoad/jquery.fileupload-process.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/ImportFileUpLoad/jquery.fileupload-validate.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/js/ImportFileUpLoad/jquery.iframe-transport.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCycle/LifeCycleEdit.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCycle/LifeCycleInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCycle/LifeCyclePluginSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCycle/LifeCyclePluginContent.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCycle/SelectedItemPluginSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCycle/LifeCycleGlobal.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ActionRuleCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ActionRuleConditionValue.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ActionRuleParameter.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectPermissionCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectPropertyCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectTypeCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectCodeCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectNameCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectOwnerCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/ObjectOwnGroupCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/StateCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/ConditionValuePage/StageStateCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/LinkConditionValuePage/LinkTypeCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/LinkConditionValuePage/ParentStageStateCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/LinkConditionValuePage/ParentPropertyCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleCondition/LinkConditionValuePage/LinkPropertyCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRulePermission/ActionRulePermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ObjectPermission/ObjectPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ObjectMessage/ObjectMessage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionAction/PermissionAction.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValue.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToAllUser.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToCreator.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToGroup.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToGroupRole.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToOwner.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToOwnGroup.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToRole.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionActorValuePage/PermissionToUser.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionLinkActorValuePage/PermissionToLinkCreator.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionLinkActorValuePage/PermissionToLinkOwner.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PermissionActor/PermissionLinkActorValuePage/PermissionToLinkOwnGroup.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRuleMessage/ActionRuleMessage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/MessageAction/MessageAction.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/ActionRule/ActionRule.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PatchObjectPermission/SelectObjectForPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PatchObjectPermission/ChildObjectListForPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/PatchObjectPermission/PatchObjectPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/SearchPermission/SearchObjectPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/SearchPermission/ObjectPermissionDetail.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Rule/SearchPermission/SearchPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/Global.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateList/WorkflowTemplateCreate.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateList/WorkflowTemplateSaveAs.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowTemplateEdit.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateList/WorkflowTemplateDelete.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowTemplateSaveAs.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowTemplateSavePrompt.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowTemplateInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowPluginContent.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowInfoTab/WorkflowTemplateInfoTab.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/WorkflowInfoTab/WorkflowBaseInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/WorkflowInfoTab/WorkflowParameterSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/WorkflowInfoTab/WorkflowPluginSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/WorkflowInfoTab/WorkflowRelatedModel.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/WorkflowInfoTab/WorkflowRelatedOrganization.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/WorkflowSelectImage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkflowDesigner/WorkflowTemplateInfo/SelectedTab/WorkflowTemplateSelectedTab.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/AuditNode/SelectedAuditBaseInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/AuditNode/SelectedTaskActorInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/AuditNode/AuditResultInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/AuditNode/SelectedAuditPluginSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/AuditNode/SelectedTaskObjectPermission.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/AuditNode/SelectedTaskType.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/BusinessNode/SelectedBusinessPluginSetting.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/BusinessNode/SelectedBusinessBaseInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/OtherNode/SelectedOtherBaseInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowTemplateInfo/SelectedTab/Line/SelectedLineInfo.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowEditor/workflow-editor.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowEditor/workflow-editor-config.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/Plugin/WorkflowPagePlugin.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/Plugin/ChangeStatePlugin.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/Plugin/ChangeStageStatePlugin.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/Plugin/SendWorkflowMessage.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/WorkflowParameterCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/TaskActor/Creator.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/TaskActor/Admin.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/TaskActor/User.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/TaskActor/Role.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/TaskActor/Group.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/TaskActor/GroupRole.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/WorkflowModelCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/ConditionValuePage/MultiEnumValueCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/ConditionValuePage/MultiGroupValueCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/ConditionValuePage/SingleGroupValueCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/ConditionValuePage/EnumValueCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/WorkFlowDesignerExtend/FlowCondition/ConditionValuePage/DefaultObjectValueCondition.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/LifeCyclePluginExtend/LifeCyclePagePlugin.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Js/Common/GuideManagement.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/AccordionToggle/AccordionToggle.js" IsLang="false" IsMobile="false" />
+  <JSFile FileName="~/Platform/Ctrls/Charts/Charts.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/Charts/echarts-all.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/QueryView/QueryView.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/Widget/Widget.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/ProgressWidget/ProgressWidget.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/GridWidget/GridWidget.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/CustomFormImageUploadValue.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/ImageUploadValue.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/TextValue.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/TextBox.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/EditButton.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/RadioList.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/DropDown.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/menu.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/DateTime.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/CheckBox.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/CheckBoxList.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/TextBoxIDSValue.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/Label.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/CustomLabel.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/Image.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/TextArea.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/HtmlEdit.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/PageContainer.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/FileUpLoadValue.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/toolbox/FormBuilderCommon.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/menucontrol/setpermission.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/menucontrol/setflowtaskpermission.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/menucontrol/image.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Config/FormBuilder/menucontrol/selectFormUI.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Ctrls/HTFileUpload/htFileUpload/ht-file-upload.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/HTFileUpload/HTFileUpload.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Platform/Ctrls/FileUpload/FileUpload.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Ctrls/FileView/FileView.js" IsLang="false" IsMobile="false" group="Platform" type="PC,H5" />
+  <JSFile FileName="~/Platform/Ctrls/UploadPreview/uploadpreview/js/webuploader.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/UploadPreview/uploadpreview/js/UploadPreview.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/UploadPreview/UploadPreview.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/ViewPdf/ViewPdf.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/SView.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/all.min.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/bootstrap-contextmenu.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/Detector.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/CryptoJS.min.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/jszip-utils.min.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/jszip.min.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/nipplejs.min.js" IsLang="false" IsMobile="false" group="Platform" />
+  <JSFile FileName="~/Platform/Ctrls/SView/sview/fingerprint2.js" IsLang="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/CodeDropDown/CodeDropDown.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Platform/Ctrls/TopologyView/topology/topology.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Platform/Ctrls/CodingRuleView/css/codingRuleView.css" IsTheme="false" IsMobile="false" />
+  <CssFile FileName="~/Platform/Ctrls/Timeline/timeline/css/timeline.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Platform/css/desktophomepage.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/Login.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/ClassicHomePage.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/SmartHomePage.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/QuickNavigation.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/Platform.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/MainFlat.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/Ctrls.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/GuideCtrl.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/[THEME]/platform-ui.css" IsTheme="true" IsMobile="false" />
+  <CssFile FileName="~/Platform/Js/WorkFlowDesigner/WorkflowEditor/css/workflow-editor.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Css/WorkflowDesigner.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/Widget/Widget.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/ProgressWidget/ProgressWidget.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/GridWidget/GridWidget.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/HTFileUpload/htFileUpload/ht-file-upload.css" IsTheme="false" IsMobile="false" />
+  <CssFile FileName="~/Platform/Ctrls/UploadPreview/uploadpreview/css/webuploader.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/SView/sview/css/colpick.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/SView/sview/css/common.css" IsTheme="false" IsMobile="false" group="Platform" />
+  <CssFile FileName="~/Platform/Ctrls/SView/sview/css/progressbar.css" IsTheme="false" IsMobile="false" group="Platform" />
+</root>

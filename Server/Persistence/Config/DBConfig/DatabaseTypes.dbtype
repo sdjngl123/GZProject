@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <!--Connection=ORACLE,SQL,OLEDB,ODBC-->
+  <DatabaseType Name="ORACLE" Connection="ORACLE" ExecString="execpara(para)" ExecStringWithResult="execpara2(para,cursor result)" UTCTimeString="utcinttime()" NewGuidString="sys_guid()" Connector="||"></DatabaseType>
+  <DatabaseType Name="SQLSERVER"  Connection="SQL" ExecString="execpara(para)" ExecStringWithResult="execpara(para)" UTCTimeString="dbo.utcinttime()" NewGuidString="Convert(nvarchar(50), NEWID())" Connector="+"></DatabaseType>
+  <DatabaseType Name="MYSQL"  Connection="MYSQL" ExecString="execpara(para)" ExecStringWithResult="execpara(para)" UTCTimeString="utcinttime()" NewGuidString="UUID()" Connector="+"></DatabaseType>
+</root>

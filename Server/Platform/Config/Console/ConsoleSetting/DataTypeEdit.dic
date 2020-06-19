@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DataTypeEdit" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数据类型信息编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type Information Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="DataType">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type</LocalizedLabel>
+    </Label>
+    <Label Name="Validation">
+      <LocalizedLabel LanguageRef="zhs">验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidationDescription">
+      <LocalizedLabel LanguageRef="zhs">用于验证数据类型的有效性,从正则验证列表中选取</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To verify the validity of a data type, select from the regular validation list</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">数据类型的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of data type</LocalizedLabel>
+    </Label>
+    <Label Name="ORACLEDBTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">ORACLE对应的字段类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field Type for ORACLE</LocalizedLabel>
+    </Label>
+    <Label Name="SQLSERVERDBTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">SQLSERVER对应的字段类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field type corresponding to SQLSERVER</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeNameRequired">
+      <LocalizedLabel LanguageRef="zhs">名称不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">名称不能重复，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name cannot be repeated, enter!</LocalizedLabel>
+    </Label>
+    <Label Name="DatatypeRequired">
+      <LocalizedLabel LanguageRef="zhs">对应数据库的数据类型不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The data type of the corresponding database cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="LIFECYCLEVIEW" ObjectTypeName="LIFECYCLE" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="right" OrderByString="CREATETIME DESC" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="DESCRIPTION" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENABLE" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="130" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAME" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+  </ObjectView>
+</root>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FileOnlineView">
+  <Settings Key="height" Value="100%"/>
+  <Settings Key="width" Value="100%"/>
+  <Settings Key="title" Value="FileOnlineView.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="Hoteam_InforCenter_FileOnlineView_LoadPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="AttachEdit_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Browseframe"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="15"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Browseframe" ParentID="AttachEdit_Container" TypeName="CustomerContainer">
+      <!--<Settings Key="templateName" Value="ViewOnlineErrorTemplate"/>-->
+    </PageControl>
+  </PageControls>
+</root>

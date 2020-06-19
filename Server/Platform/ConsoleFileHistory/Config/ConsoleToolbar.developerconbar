@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="ConsoleFileHistoryBar" BaseBar="SettingBar">
+    <Item Name ="ConsoleFileHistory" IsCommonItem="true" ImagePath="~/Platform/Image/Console/ConsoleFileHistory.png" 
+          ItemAssembly="Hoteam.InforCenter.Console.FileHistory" 
+          ItemClass="Hoteam.InforCenter.Console.FileHistory.ViewHistoryCmd"></Item>
+  </ToolBar>
+</root>

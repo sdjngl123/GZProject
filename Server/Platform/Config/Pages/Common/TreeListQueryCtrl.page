@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TreeListQueryCtrl" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TreeListQueryCtrl_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_TreeListQueryCtrl_OnNodeChange(pageEvent);"/>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_TreeListQueryCtrl_OnQuery(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="TreeListQueryCtrl.Title"/>
+  <PageControls>
+    <!--一层-->
+    <PageControl ControlID="TreeListQueryCtrl_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Top_Container"/>
+      </Settings>
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="Top_Container" ParentID="TreeListQueryCtrl_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeViewPage"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="200"></Settings>
+        <Settings Key="childid" Value="ViewFilterPageContainer"></Settings>
+      </Settings>
+    </PageControl>
+    <!--三层-->
+    <PageControl ControlID="TreeViewPage" ParentID="Top_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TreeViewCtrl"/>
+    </PageControl>
+    <PageControl ControlID="ViewFilterPageContainer" ParentID="Top_Container" TypeName="PageContainer">
+    </PageControl>
+  </PageControls>
+</root>

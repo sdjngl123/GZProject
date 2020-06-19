@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root > 
+  <Plugin Name ="SendFlowMessage" PageName="LifeCyclePagePlugin" LifeCycleType="Stage" PluginType ="LinePlugin" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.PagePluginPanel" />
+  <Plugin Name ="LifeCyclePagePlugin" PageName="LifeCyclePagePlugin" LifeCycleType="Stage"  PluginType ="PagePlugin"  Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.PagePlugin.PagePluginPanel" />
+  <Plugin Name ="TaskPagePlugin" PageName="LifeCyclePagePlugin" LifeCycleType="Stage"  PluginType ="NodePlugin"  Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.PagePluginPanel" />
+
+  <Plugin Name ="SendFlowMessage" PageName="LifeCyclePagePlugin" LifeCycleType="Workflow" PluginType ="LinePlugin" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.PagePluginPanel" />
+  <Plugin Name ="LifeCyclePagePlugin" PageName="LifeCyclePagePlugin" LifeCycleType="Workflow"  PluginType ="PagePlugin"  Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.PagePlugin.PagePluginPanel" />
+  <Plugin Name ="TaskPagePlugin" PageName="LifeCyclePagePlugin" LifeCycleType="Workflow"  PluginType ="NodePlugin"  Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.PagePluginPanel" />
+</root>

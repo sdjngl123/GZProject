@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FSMANAGEROOTLINKModel" IsWeb="true">
+    <Label Name="FSMANAGEROOTLINKHeader">
+      <LocalizedLabel LanguageRef="zhs">FSMANAGEROOTLINK</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FSMANAGEROOTLINK</LocalizedLabel>
+    </Label>
+    <Label Name="FSMANAGEROOTHeader">
+      <LocalizedLabel LanguageRef="zhs">文件服务管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FSMANAGEROOT</LocalizedLabel>
+    </Label>
+    <Label Name="FSMANAGEROOTCaption">
+      <LocalizedLabel LanguageRef="zhs">文件服务管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FSMANAGEROOT</LocalizedLabel>
+    </Label>
+    <Label Name="EITEMHeader">
+      <LocalizedLabel LanguageRef="zhs">零组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component</LocalizedLabel>
+    </Label>
+    <Label Name="EITEMCaption">
+      <LocalizedLabel LanguageRef="zhs">零组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONTESTHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONTESTCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="BOOLHeader">
+      <LocalizedLabel LanguageRef="zhs">BOOL</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bool</LocalizedLabel>
+    </Label>
+    <Label Name="BOOLCaption">
+      <LocalizedLabel LanguageRef="zhs">BOOL</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bool</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="ITEMTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="TESTLOVLISTHeader">
+      <LocalizedLabel LanguageRef="zhs">测试值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestLovList</LocalizedLabel>
+    </Label>
+    <Label Name="TESTLOVLISTCaption">
+      <LocalizedLabel LanguageRef="zhs">测试值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestLovList</LocalizedLabel>
+    </Label>
+    <Label Name="TESTLOVHeader">
+      <LocalizedLabel LanguageRef="zhs">测试值列表列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestLov</LocalizedLabel>
+    </Label>
+    <Label Name="TESTLOVCaption">
+      <LocalizedLabel LanguageRef="zhs">测试值列表列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestLov</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">多选枚举</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiEnum</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">多选枚举</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiEnum</LocalizedLabel>
+    </Label>
+    <Label Name="LOVLISTRADIOHeader">
+      <LocalizedLabel LanguageRef="zhs">Radio测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LovListRadio</LocalizedLabel>
+    </Label>
+    <Label Name="LOVLISTRADIOCaption">
+      <LocalizedLabel LanguageRef="zhs">Radio测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LovListRadio</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMRADIOTESTHeader">
+      <LocalizedLabel LanguageRef="zhs">EnumRadio测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnumRadioTest</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMRADIOTESTCaption">
+      <LocalizedLabel LanguageRef="zhs">EnumRadio测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnumRadioTest</LocalizedLabel>
+    </Label>
+    <Label Name="TESTEXHAUSTIONLOVLISTHeader">
+      <LocalizedLabel LanguageRef="zhs">可输入值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestExhaustionLovList</LocalizedLabel>
+    </Label>
+    <Label Name="TESTEXHAUSTIONLOVLISTCaption">
+      <LocalizedLabel LanguageRef="zhs">可输入值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestExhaustionLovList</LocalizedLabel>
+    </Label>
+    <Label Name="ISCHECKOUTHeader">
+      <LocalizedLabel LanguageRef="zhs">是否签出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsCheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="ISCHECKOUTCaption">
+      <LocalizedLabel LanguageRef="zhs">是否签出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsCheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="DATEDEMOHeader">
+      <LocalizedLabel LanguageRef="zhs">dateDemo</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">dateDemo</LocalizedLabel>
+    </Label>
+    <Label Name="DATEDEMOCaption">
+      <LocalizedLabel LanguageRef="zhs">dateDemo</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">dateDemo</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPELISTHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type List</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPELISTCaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type List</LocalizedLabel>
+    </Label>
+    <Label Name="STAGESTATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="STAGESTATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="FLOATTESTHeader">
+      <LocalizedLabel LanguageRef="zhs">浮点数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Float</LocalizedLabel>
+    </Label>
+    <Label Name="FLOATTESTCaption">
+      <LocalizedLabel LanguageRef="zhs">浮点数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Float</LocalizedLabel>
+    </Label>
+    <Label Name="MULTILOVLISTHeader">
+      <LocalizedLabel LanguageRef="zhs">多选值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiLovList</LocalizedLabel>
+    </Label>
+    <Label Name="MULTILOVLISTCaption">
+      <LocalizedLabel LanguageRef="zhs">多选值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="ENUMTESTHeader">
+      <LocalizedLabel LanguageRef="zhs">EnumTest</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnumTest</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMTESTCaption">
+      <LocalizedLabel LanguageRef="zhs">EnumTest</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EnumTest</LocalizedLabel>
+    </Label>
+    <Label Name="FILEUPLOADHeader">
+      <LocalizedLabel LanguageRef="zhs">文件上传</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">文件上传</LocalizedLabel>
+    </Label>
+    <Label Name="FILEUPLOADCaption">
+      <LocalizedLabel LanguageRef="zhs">文件上传</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">文件上传</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

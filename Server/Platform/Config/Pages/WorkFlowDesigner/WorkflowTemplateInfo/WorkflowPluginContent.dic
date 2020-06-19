@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowPluginContent" IsWeb="true">
+    <Label Name="BeforeExec">
+      <LocalizedLabel LanguageRef="zhs">前序执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pre-sequence execution</LocalizedLabel>
+    </Label>
+    <Label Name="Header">
+      <LocalizedLabel LanguageRef="zhs">插件标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in title</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

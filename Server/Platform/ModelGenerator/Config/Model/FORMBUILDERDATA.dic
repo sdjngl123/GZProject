@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FORMBUILDERDATAModel" IsWeb="true">
+    <Label Name="FORMBUILDERDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">表单设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMBUILDERDATA</LocalizedLabel>
+    </Label>
+    <Label Name="FORMBUILDERDATACaption">
+      <LocalizedLabel LanguageRef="zhs">表单设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMBUILDERDATA</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">主模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterType</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">主模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterType</LocalizedLabel>
+    </Label>
+    <Label Name="SLAVETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">从模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SlaveType</LocalizedLabel>
+    </Label>
+    <Label Name="SLAVETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">从模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SlaveType</LocalizedLabel>
+    </Label>
+    <Label Name="DESIGNERDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">布局数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DesignerData</LocalizedLabel>
+    </Label>
+    <Label Name="DESIGNERDATACaption">
+      <LocalizedLabel LanguageRef="zhs">布局数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DesignerData</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">控件数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlData</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLDATACaption">
+      <LocalizedLabel LanguageRef="zhs">控件数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlData</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPORARYDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">临时设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TemporaryData</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPORARYDATACaption">
+      <LocalizedLabel LanguageRef="zhs">临时设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TemporaryData</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">权限数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionData</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONDATACaption">
+      <LocalizedLabel LanguageRef="zhs">权限数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionData</LocalizedLabel>
+    </Label>
+    <Label Name="MODELDATAIDHeader">
+      <LocalizedLabel LanguageRef="zhs">模型ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELDATAID</LocalizedLabel>
+    </Label>
+    <Label Name="MODELDATAIDCaption">
+      <LocalizedLabel LanguageRef="zhs">模型ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELDATAID</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">类型ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPEID</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">类型ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPEID</LocalizedLabel>
+    </Label>
+    <Label Name="ASSISTANTGIDHeader">
+      <LocalizedLabel LanguageRef="zhs">从表占位ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ASSISTANTGID</LocalizedLabel>
+    </Label>
+    <Label Name="ASSISTANTGIDCaption">
+      <LocalizedLabel LanguageRef="zhs">从表占位ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ASSISTANTGID</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

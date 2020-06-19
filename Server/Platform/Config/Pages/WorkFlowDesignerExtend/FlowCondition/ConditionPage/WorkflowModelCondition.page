@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowModelCondition" IsCache="true">
+  <Settings Key="title" Value="WorkflowModelCondition.Title"/>
+  <Settings Key="height" Value="230"/>
+  <Settings Key="width" Value="340"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowModelCondition_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="R-A"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="Operator_Label"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Operator_Value"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Operator_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowModelCondition.Operator" />
+    </PageControl>
+    <PageControl ControlID="Operator_Value" ParentID="R-1" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="ObjectType_Label"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectType_Value"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ObjectType_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowModelCondition.ObjectType" />
+    </PageControl>
+    <PageControl ControlID="ObjectType_Value" ParentID="R-2" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_WorkflowModelCondition_OnObjectTypeChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="InfoType_Label"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InfoType_Value"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InfoType_Label" ParentID="R-3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowModelCondition.InfoType" />
+    </PageControl>
+    <PageControl ControlID="InfoType_Value" ParentID="R-3" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_WorkflowModelCondition_OnInfoTypeChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="R-A" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ConditionValue_Container"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <!-- 条件页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="R-A" TypeName="QueryMachine">
+      <Settings Key="allowOperate" Value="false"/>
+      <!-- 内容动态加载-->
+    </PageControl>
+    
+    <PageControl ControlID="Btn_Container" ParentID="WorkflowParameterCondition_VLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowModelCondition_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+
+  </PageControls>
+
+</root>

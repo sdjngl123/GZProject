@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PermissionToOwner" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象拥有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object owner</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionToOwnerLabel">
+      <LocalizedLabel LanguageRef="zhs">授权给对象拥有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized to the owner of the object</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

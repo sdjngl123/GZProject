@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DataImport" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数据导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Import</LocalizedLabel>
+    </Label>
+    <Label Name="Cover">
+      <LocalizedLabel LanguageRef="zhs">清除已有数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear Existing Data</LocalizedLabel>
+    </Label>
+    <Label Name="Jump">
+      <LocalizedLabel LanguageRef="zhs">跳过已有数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Jump Existing Data</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateSchema">
+      <LocalizedLabel LanguageRef="zhs">检查表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check Table Structure</LocalizedLabel>
+    </Label>
+    <Label Name="FileName">
+      <LocalizedLabel LanguageRef="zhs">文件名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File name</LocalizedLabel>
+    </Label>
+    <Label Name="SelectTable">
+      <LocalizedLabel LanguageRef="zhs">选择表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Table</LocalizedLabel>
+    </Label>
+    <Label Name="ImportFinish">
+      <LocalizedLabel LanguageRef="zhs">导入完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import Complete</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSameTable">
+      <LocalizedLabel LanguageRef="zhs">[TABLENAME]存在多个文件中，仅会导入第一次出现的文件，是否导入？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[TABLENAME]存在多个文件中，仅会导入第一次出现的文件，是否导入？</LocalizedLabel>
+    </Label>
+    <Label Name="SysData">
+      <LocalizedLabel LanguageRef="zhs">系统数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sytem Data</LocalizedLabel>
+    </Label>
+    <Label Name="DemoData">
+      <LocalizedLabel LanguageRef="zhs">验证数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertify Data</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

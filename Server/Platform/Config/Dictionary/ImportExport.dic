@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ImportExport" IsWeb="true">
+    <Label Name="ImportFilter">
+      <LocalizedLabel LanguageRef="zhs">支持上传格式为:[type]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The support upload format is: [type]</LocalizedLabel>
+    </Label>
+    <Label Name="NotFindImportExportResolvingTitle">
+      <LocalizedLabel LanguageRef="zhs">没有找到解析类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No parsing class is found</LocalizedLabel>
+    </Label>
+    <Label Name="NotFindImportExportResolvingContent">
+      <LocalizedLabel LanguageRef="zhs">没有找到解析类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No parsing class is found</LocalizedLabel>
+    </Label>
+    <Label Name="NoFindExportDefaultTypeTitle">
+      <LocalizedLabel LanguageRef="zhs">没有找到文件默认导出类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No file default export type is found</LocalizedLabel>
+    </Label>
+    <Label Name="NoFindExportDefaultTypeContent">
+      <LocalizedLabel LanguageRef="zhs">没有找到文件默认导出类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No file default export type is found</LocalizedLabel>
+    </Label>
+    <Label Name="ImportError">
+      <LocalizedLabel LanguageRef="zhs">导入文件异常，请检查文件内容格式是否正确!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import file exception, please check whether the file content format is correct!</LocalizedLabel>
+    </Label>
+    <Label Name="NoExportDataTitle">
+      <LocalizedLabel LanguageRef="zhs">没有导出数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No data exported</LocalizedLabel>
+    </Label>
+    <Label Name="NoExportDataContent">
+      <LocalizedLabel LanguageRef="zhs">没有导出数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No data exported</LocalizedLabel>
+    </Label>
+    <Label Name="ExportErrorTitle">
+      <LocalizedLabel LanguageRef="zhs">导出文件失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Failed to export file</LocalizedLabel>
+    </Label>
+    <Label Name="ExportErrorContent">
+      <LocalizedLabel LanguageRef="zhs">导出文件失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Failed to export file</LocalizedLabel>
+    </Label>
+    <Label Name="NewRepeatRow">
+      <LocalizedLabel LanguageRef="zhs">导入的Excel数据中有重复的数据，第{0}行重复，请根据主键检查；</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import data from excel has repeat row,the {0} row is repeat,please check by keys; </LocalizedLabel>
+    </Label>
+    <Label Name="LackUniqueKey">
+      <LocalizedLabel LanguageRef="zhs">数据主键不一致，来源数据缺少主键；</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lack Unique Key; </LocalizedLabel>
+    </Label>
+    <Label Name="ExistsRepeatRow">
+      <LocalizedLabel LanguageRef="zhs">导入的Excel数据第{0}行和数据库中已存在的数据重复；</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import data from excel the {0} row is repeat by the data in  database;</LocalizedLabel>
+    </Label>
+    <Label Name="DataRegExFail">
+      <LocalizedLabel LanguageRef="zhs">导入的数据第{0}行'{1}'列数据正则验证失败，{2}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> The RegEx check is failed at {0} row {1} column,message is {2} </LocalizedLabel>
+    </Label>
+    <Label Name="ImportCheckSucess">
+      <LocalizedLabel LanguageRef="zhs">数据分析成功，请导入!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import data check sucess!</LocalizedLabel>
+    </Label>
+    <Label Name="NoValidationDic">
+      <LocalizedLabel LanguageRef="zhs">正则不符合规则，但未找到对应的多语言文本;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RegEx check failed,but not find  the language text;</LocalizedLabel>
+    </Label>
+      <Label Name="UpLoadDataError">
+      <LocalizedLabel LanguageRef="zhs">更新数据失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload Data failed</LocalizedLabel>
+    </Label>
+    <Label Name="NoImportFile">
+      <LocalizedLabel LanguageRef="zhs">没有导入的文件数据!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> No import file data!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

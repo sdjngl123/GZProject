@@ -1,0 +1,5 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="CheckBox" >
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+  <Settings Key="textId" Value="[PAGENAME].[INFONAME]Header" />
+</PageControl>

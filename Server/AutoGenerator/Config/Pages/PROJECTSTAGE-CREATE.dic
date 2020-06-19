@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PROJECTSTAGE-CREATE" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="STARTDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STARTDATE</LocalizedLabel>
+    </Label>
+    <Label Name="STARTDATERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="STOPDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="STOPDATERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SOPDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">SOP日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTSTAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">新建项目阶段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewPROJECTSTAGE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

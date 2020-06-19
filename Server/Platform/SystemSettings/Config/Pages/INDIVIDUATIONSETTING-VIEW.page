@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="INDIVIDUATIONSETTING-VIEW">
+  <Settings Key="height" Value="420"/>
+  <Settings Key="width" Value="557"/>
+  <Settings Key="title" Value="INDIVIDUATIONSETTING-VIEW.SYSTEMSETTINGSHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_SystemSettings_SystemSettings_ViewPageOnLoadData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="180"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+    </PageControl>
+
+    <!--名称-->
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ENAME_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ENAME_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.ENAMEHeader" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Label_FieldFlag" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Value" ParentID="R-1" TypeName="TextBox" >
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="INDIVIDUATIONSETTING-VIEW.ENAMERegex" />
+    </PageControl>
+
+    <!--值类型-->
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="SETTINGTYPE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SETTINGTYPE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="SETTINGTYPE_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SETTINGTYPE_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.SETVALUETYPEHeader" />
+    </PageControl>
+    <PageControl ControlID="SETTINGTYPE_Label_FieldFlag" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="SETTINGTYPE_Value" ParentID="R-2" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="INDIVIDUATIONSETTING-VIEW.SETVALUETYPERegex" />
+    </PageControl>
+
+    <!--备注-->
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="REMARK_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="REMARK_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="REMARK_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="REMARK_Label" ParentID="R-4" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.REMARKHeader" />
+    </PageControl>
+    <PageControl ControlID="REMARK_Label_FieldFlag" ParentID="R-4" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="REMARK_Value" ParentID="R-4" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="INDIVIDUATIONSETTING-VIEW.REMARKRegex" />
+    </PageControl>
+    
+    <!--应用类型，和应用个人设置-->
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="USETYPE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="33%"/>
+        <Settings Key="childid" Value="USETYPE_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="33%"/>
+        <Settings Key="childid" Value="TOCLIENT_Value"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="33%"/>
+        <Settings Key="childid" Value="USINGUSERSET_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="USETYPE_Label" ParentID="R-5" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.TYPEHeader" />
+    </PageControl>
+    <PageControl ControlID="USETYPE_Value" ParentID="R-5" TypeName="RadioList" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1">
+        <Settings Key="disabled" Value="true" />
+        <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.SystemSettingsText" />
+        <Settings Key="value" Value="System" />
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="disabled" Value="true" />
+        <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.PersonalSettingText" />
+        <Settings Key="value" Value="Personal" />
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="TOCLIENT_Value" ParentID="R-5" TypeName="CheckBox" >
+      <Settings Key="regex" Value="" />
+      <Settings Key="regextipId" Value="" />
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.TOCLIENTHeader" />
+    </PageControl>
+    
+    <PageControl ControlID="USINGUSERSET_Value" ParentID="R-5" TypeName="CheckBox" >
+      <Settings Key="regex" Value="" />
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="regextipId" Value="" />
+      <Settings Key="textId" Value="INDIVIDUATIONSETTING-VIEW.USINGUSERSETHeader" />
+    </PageControl>
+
+    <PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageContainerValue_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageContainerValue_Container" ParentID="R-6" TypeName="PageContainer">
+      <!-- 内容动态加载-->
+    </PageControl>
+  </PageControls>
+</root>

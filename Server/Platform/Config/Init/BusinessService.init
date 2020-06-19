@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="BusinessService">
+  <Package Assembly ="Hoteam.InforCenter.Common.Plugin"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.ObjectFactory"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.Cache"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.Query"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.View"/>
+  <Package Assembly ="Hoteam.InforCenter.Organization.DataLayer"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.DataService"/>
+  <Package Assembly ="Hoteam.InforCenter.Enumeration.Business"/>
+  <Package Assembly ="Hoteam.InforCenter.Rule.Model"/>
+  <Package Assembly ="Hoteam.InforCenter.Workflow.Config"/>
+  <Package Assembly ="Hoteam.InforCenter.ModulePermission.Business"/>
+  <Package Assembly ="Hoteam.InforCenter.Report.Base"/>
+  <Package Assembly ="Hoteam.InforCenter.Report.Business"/>
+  <Package Assembly ="Hoteam.InforCenter.FileManage.Business"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.Communication"/>
+  <Package Assembly ="Hoteam.InforCenter.ImportExport.Config"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.ImportInitData"/>
+  <Package Assembly ="Hoteam.InforCenter.DataSetType.Business"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.ObjectValue"/>
+  <!--<Package Assembly ="Hoteam.InforCenter.LifeCycle.Config"/>-->
+  <Package Assembly ="Hoteam.InforCenter.Common.OperateLog"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.UDPNotify"/>
+  <Package Assembly ="Hoteam.InforCenter.Workflow.Engine"/>
+</root >

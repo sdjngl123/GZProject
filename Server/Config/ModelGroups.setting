@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--对象模型类型分组，多个用分号分隔-->
+  <AppSet Key="ModelGroups" Value="SampleQuery;AdvanceQuery;CreatePermission;ActionRuleConditionObjectType;CompanyRuleObjectType;CompanyRuleCreatePermission;HiddenInActionRuleMessage" ToClient="true" Description="SampleQuery：用于简单查询的模型类型，AdvanceQuery：用于高级查询的模型类型，CreatePermission：应用新建权限的模型类型，ActionRuleConditionObjectType：应用规则权限的对象类型，CompanyRuleObjectType：集团权限对象类型，CompanyRuleCreatePermission：集团权限的新建权限;HiddenInActionRuleMessage：在订阅消息中隐藏（ActionRuleConditionObjectType存在时起作用）" />
+  <!--关系对象模型分组-->
+  <AppSet Key="LinkModelGroups" Value="ActionRuleConditionLinkType" ToClient="true" Description="ActionRuleConditionLinkType:规则条件中关系对象列表" />
+</root>

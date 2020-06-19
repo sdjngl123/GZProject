@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="REGISTEREACCEPTCOMPANYLINKVIEW" ObjectTypeName="COMPANYLINK" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" ObjectTypeName="COMPANYLINK" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="APPLIEDCOMPANYID" ObjectTypeName="COMPANYLINK" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="APPLIEDCOMPANYNAME" ObjectTypeName="COMPANYLINK" Width="200" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ACCEPTCOMPANYID" ObjectTypeName="COMPANYLINK" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ACCEPTSTATE" ObjectTypeName="COMPANYLINK" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" ObjectTypeName="COMPANYLINK" Width="130" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="DESCRIPTION" ObjectTypeName="COMPANYLINK" Width="300" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

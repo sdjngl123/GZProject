@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WebService">  
+  <Package Assembly ="Hoteam.InforCenter.Common.Plugin.dll"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.UI.dll"/>
+  <Package Assembly ="Hoteam.InforCenter.ImportExport.Extend.dll"/>
+</root >

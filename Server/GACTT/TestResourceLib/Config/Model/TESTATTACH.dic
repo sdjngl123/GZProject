@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTATTACHModel" IsWeb="true">
+    <Label Name="TESTATTACHHeader">
+      <LocalizedLabel LanguageRef="zhs">库区基础信息表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTATTACH</LocalizedLabel>
+    </Label>
+    <Label Name="TESTATTACHCaption">
+      <LocalizedLabel LanguageRef="zhs">库区基础信息表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTATTACH</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterId</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">文件名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">文件名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="PATHHeader">
+      <LocalizedLabel LanguageRef="zhs">上传目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATH</LocalizedLabel>
+    </Label>
+    <Label Name="UPLOADUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">上传人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UPLOADUSER</LocalizedLabel>
+    </Label>
+    <Label Name="UPLOADTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">上传时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UPLOADTIME</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">REMARK</LocalizedLabel>
+    </Label>
+    <Label Name="UPLOADTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">上传时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UPLOADTIME</LocalizedLabel>
+    </Label>
+    <Label Name="PATHCaption">
+      <LocalizedLabel LanguageRef="zhs">上传目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATH</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterId</LocalizedLabel>
+    </Label>
+    <Label Name="UPLOADUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">上传人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UPLOADUSER</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKCaption">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">REMARK</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">文件内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FILEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">文件内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FILEINFO</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

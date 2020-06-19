@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ModelViewCreate">
+  <Settings Key="title" Value="ModelViewCreate.NewViewName"/>
+  <Settings Key="height" Value="170"/>
+  <Settings Key="width" Value="420"/>
+  <PageHandlers>
+    <!--<PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ModelListViewInfo_PageInit(pageEvent);"/>-->
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ViewName_Container"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ViewType_Container"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="BtnContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ViewName_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="ViewName_Lable"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ViewName_Value"/>
+        <!--<Settings Key="visible" Value="false"/>-->
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ViewName_Lable" ParentID="ViewName_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="ModelViewCreate.ViewName" />
+    </PageControl>
+
+    <PageControl ControlID="ViewName_Value" ParentID="ViewName_Container" TypeName="TextBox" >
+    </PageControl>
+
+    <PageControl ControlID="ViewType_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="ViewType_Lable"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ViewType_Value"/>
+        <!--<Settings Key="visible" Value="false"/>-->
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ViewType_Lable" ParentID="ViewType_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="ModelViewCreate.ViewType" />
+    </PageControl>
+
+    <PageControl ControlID="ViewType_Value" ParentID="ViewType_Container" TypeName="TextBox" >
+    </PageControl>
+    
+    <PageControl ControlID="BtnContainer" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="35%"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnSave"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="30%"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="30%"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnSave" ParentID="BtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ModelListViewInfo_ModelViewCreate_Save(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Save" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="BtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

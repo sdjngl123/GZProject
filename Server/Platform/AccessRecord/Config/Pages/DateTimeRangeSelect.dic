@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DateTimeRangeSelect" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">历史记录清除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear History </LocalizedLabel>
+    </Label>
+    <Label Name="TimeRange">
+      <LocalizedLabel LanguageRef="zhs">清除历史数据时间范围</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear Historical Data Time Range</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">清除历史数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear Historical Data Type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

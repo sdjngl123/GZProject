@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectObjectForPermission" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">选择对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select object</LocalizedLabel>
+    </Label>
+    <Label Name="AddChild">
+      <LocalizedLabel LanguageRef="zhs">添加下级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add subordinate</LocalizedLabel>
+    </Label>
+    <Label Name="ExistObject">
+      <LocalizedLabel LanguageRef="zhs">以下对象[OBJDATA]已经存在，请勿重新增加！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The following objects [OBJDATA] already  exists, Please do not add again!</LocalizedLabel>
+    </Label>
+    <Label Name="RowEmpty">
+      <LocalizedLabel LanguageRef="zhs">授权对象列表不能为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The list of authorization objects cannot be null!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

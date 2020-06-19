@@ -1,0 +1,22 @@
+﻿{
+	var c = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+	{
+		if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('[QUERYOPERATOR]' == '&lt;' || '[QUERYOPERATOR]' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+		}
+
+		[FILTERSTRING] += InforCenter_Platform_Object_GetQueryFilter('[ANDOR]','[QUERYCOLUMN]','[QUERYOPERATOR]',value,[UNQUOTED]);
+		if(c.Check() == false) bCheck = false;	
+	}
+}}

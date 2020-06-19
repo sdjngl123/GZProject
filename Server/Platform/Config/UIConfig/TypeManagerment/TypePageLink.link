@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="TypeManagermentPageLinks">
+    <PageLink Name="DataSetTypeListLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="DataSetTypeList" />
+    </PageLink>   
+  </PageLinks>
+</root>

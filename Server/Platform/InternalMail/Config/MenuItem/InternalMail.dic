@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="NewMail">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="Answer">
+      <LocalizedLabel LanguageRef="zhs">回复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reply</LocalizedLabel>
+    </Label>
+    <Label Name="AnswerAll">
+      <LocalizedLabel LanguageRef="zhs">全部回复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reply all</LocalizedLabel>
+    </Label>
+    <Label Name="Transfer">
+      <LocalizedLabel LanguageRef="zhs">转发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Forward</LocalizedLabel>
+    </Label>
+    <Label Name="MoveTo">
+      <LocalizedLabel LanguageRef="zhs">移动到</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move to</LocalizedLabel>
+    </Label>
+    <Label Name="Signtrue">
+      <LocalizedLabel LanguageRef="zhs">签名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Signature</LocalizedLabel>
+    </Label>
+    <Label Name="MarkRead">
+      <LocalizedLabel LanguageRef="zhs">标记已读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The mark is read</LocalizedLabel>
+    </Label>
+    <Label Name="MarkUnRead">
+      <LocalizedLabel LanguageRef="zhs">标记未读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mark unread</LocalizedLabel>
+    </Label>
+    <Label Name="ClearMail">
+      <LocalizedLabel LanguageRef="zhs">清空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Null</LocalizedLabel>
+    </Label>
+    <Label Name="PasteNonAttach">
+      <LocalizedLabel LanguageRef="zhs">需要粘贴的对象在附件列表中已存在！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Objects that need to be pasted are already exist in the attachment list!</LocalizedLabel>
+    </Label>
+    <Label Name="PastePartialAttach">
+      <LocalizedLabel LanguageRef="zhs">成功粘贴{0}个对象，其余对象在附件列表中已存在！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">succeeded pasted {0} objects, the remaining objects are already exist in the attachment list!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

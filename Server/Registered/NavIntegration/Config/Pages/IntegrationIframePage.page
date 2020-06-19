@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="IntegrationIframePage">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_NavIntegration_IntegrationIframePage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Page_Iframe" ParentID="" TypeName="Iframe" >
+    </PageControl>
+  </PageControls>
+</root>
+

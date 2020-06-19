@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConsoleFileHistory" IsWeb="false">
+    <Label Name="FormTitle">
+      <LocalizedLabel LanguageRef="zhs">文件更改历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File Change History</LocalizedLabel>
+    </Label>
+    <Label Name="colIndex">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Index</LocalizedLabel>
+    </Label>
+    <Label Name="colFileName">
+      <LocalizedLabel LanguageRef="zhs">文件名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FileName</LocalizedLabel>
+    </Label>
+    <Label Name="colFilePath">
+      <LocalizedLabel LanguageRef="zhs">文件路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilePath</LocalizedLabel>
+    </Label>
+    <Label Name="colChangeTime">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change Time</LocalizedLabel>
+    </Label>
+    <Label Name="checkAll">
+      <LocalizedLabel LanguageRef="zhs">全选/取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SelectALL</LocalizedLabel>
+    </Label>
+    <Label Name="colChangeRole">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change Role</LocalizedLabel>
+    </Label>
+    <Label Name="colButton">
+      <LocalizedLabel LanguageRef="zhs">标记已处理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Option Status</LocalizedLabel>
+    </Label>
+    <Label Name="colBtnUnDo">
+      <LocalizedLabel LanguageRef="zhs">标记未处理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change Status</LocalizedLabel>
+    </Label>
+    <Label Name="colStatus">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Status</LocalizedLabel>
+    </Label>
+    <Label Name="Refresh">
+      <LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh</LocalizedLabel>
+    </Label>
+    <Label Name="fileToolStripMenuItem">
+      <LocalizedLabel LanguageRef="zhs">文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File</LocalizedLabel>
+    </Label>
+    <Label Name="batchChangeUnSetToolStripMenuItem">
+      <LocalizedLabel LanguageRef="zhs">批量置未处理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BatchChangeUnSet</LocalizedLabel>
+    </Label>
+    <Label Name="batchChangeSetToolStripMenuItem">
+      <LocalizedLabel LanguageRef="zhs">批量置已处理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BatchChangeSet</LocalizedLabel>
+    </Label>
+    <Label Name="exportToolStripMenuItem">
+      <LocalizedLabel LanguageRef="zhs">导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export</LocalizedLabel>
+    </Label>
+    <Label Name="exitToolStripMenuItem">
+      <LocalizedLabel LanguageRef="zhs">退出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exit</LocalizedLabel>
+    </Label>
+    <Label Name="editToolStripMenuItem">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+
+    <Label Name="alert">
+      <LocalizedLabel LanguageRef="zhs">提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Aler</LocalizedLabel>
+    </Label>
+    <Label Name="alertInfoNull">
+      <LocalizedLabel LanguageRef="zhs">没有需要处理的文件，所有文件都已标识为已处理！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All file has optioned.</LocalizedLabel>
+    </Label>
+    <Label Name="alertInfoOK">
+      <LocalizedLabel LanguageRef="zhs">操作完毕</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OK</LocalizedLabel>
+    </Label>
+    <Label Name="confirm">
+      <LocalizedLabel LanguageRef="zhs">是否将已导出的文件状态标记为已完成？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Confirm the export file status to complete.</LocalizedLabel>
+    </Label>
+    <Label Name="confirmOptionBatch">
+      <LocalizedLabel LanguageRef="zhs">确定更改选中文件的状态吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Confirm the select file to status.</LocalizedLabel>
+    </Label>
+    
+    <Label Name="alertNotSelect">
+      <LocalizedLabel LanguageRef="zhs">请先选中需要处理的文件？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select file row to option first.</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

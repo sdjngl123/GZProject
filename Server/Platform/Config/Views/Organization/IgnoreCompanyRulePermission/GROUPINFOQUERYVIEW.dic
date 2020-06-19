@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="GROUPINFOQUERYVIEWView" IsWeb="true">
+    <Label Name="GROUPINFOQUERYVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">组查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group query view</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPINFOQUERYVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">组查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group query view</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="PARENTGROUPEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父级组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent group</LocalizedLabel>
+    </Label>
+    <Label Name="PARENTGROUPEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父级组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent group</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

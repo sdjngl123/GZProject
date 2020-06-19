@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="WrokFlowList">
+      <LocalizedLabel LanguageRef="zhs">流程列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process list</LocalizedLabel>
+    </Label>
+    <Label Name="TaskAudit">
+      <LocalizedLabel LanguageRef="zhs">流程任务评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task review</LocalizedLabel>
+    </Label>
+    <Label Name="EvectionAgent">
+      <LocalizedLabel LanguageRef="zhs">出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business travel agents</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowStatisticsList">
+      <LocalizedLabel LanguageRef="zhs">流程统计列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process statistics list</LocalizedLabel>
+    </Label>
+    <Label Name="StartWrokFlowListPageLink">
+      <LocalizedLabel LanguageRef="zhs">流程统计列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process statistics list</LocalizedLabel>
+    </Label>
+    <Label Name="ResponsibleWorkflowStatisticsList">
+      <LocalizedLabel LanguageRef="zhs">流程统计列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process statistics list</LocalizedLabel>
+    </Label>
+    <Label Name="TaskStatisticsList">
+      <LocalizedLabel LanguageRef="zhs">流程统计列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process statistics list</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowProperty">
+      <LocalizedLabel LanguageRef="zhs">流程属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process attributes</LocalizedLabel>
+    </Label>
+    <Label Name="AuditList">
+      <LocalizedLabel LanguageRef="zhs">评审列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Review list</LocalizedLabel>
+    </Label>
+    <Label Name="AttachObjectList">
+      <LocalizedLabel LanguageRef="zhs">主目标附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main Target Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="ChildObjectPageLink">
+      <LocalizedLabel LanguageRef="zhs">下级目标附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate Target Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="QuoteAccessory">
+      <LocalizedLabel LanguageRef="zhs">引用附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reference Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="QuoteObjectPageLink">
+      <LocalizedLabel LanguageRef="zhs">引用附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reference Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowTaskProperty">
+      <LocalizedLabel LanguageRef="zhs">任务属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task attribute</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowView">
+      <LocalizedLabel LanguageRef="zhs">流程图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Flow chart</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowObjectList">
+      <LocalizedLabel LanguageRef="zhs">对象列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object list</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedTask">
+      <LocalizedLabel LanguageRef="zhs">已评审流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Processes reviewed</LocalizedLabel>
+    </Label>
+    <Label Name="MyCreateWorkFlow">
+      <LocalizedLabel LanguageRef="zhs">发起的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiated process</LocalizedLabel>
+    </Label>
+    <Label Name="DeliveryWorkFlowTask">
+      <LocalizedLabel LanguageRef="zhs">转交流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer process</LocalizedLabel>
+    </Label>
+    <Label Name="DePositWorkFlowTask">
+      <LocalizedLabel LanguageRef="zhs">托管流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hosting process</LocalizedLabel>
+    </Label>
+    <Label Name="MyWorkFlowTask">
+      <LocalizedLabel LanguageRef="zhs">我的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My process</LocalizedLabel>
+    </Label>
+    <Label Name="RunWrokFlowListPageLink_WorkFlowList">
+      <LocalizedLabel LanguageRef="zhs">运行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Run</LocalizedLabel>
+    </Label>
+    <Label Name="CompleteWrokFlowListPageLink_WorkFlowList">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="StopWrokFlowListPageLink_WorkFlowList">
+      <LocalizedLabel LanguageRef="zhs">停止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="SuspendWrokFlowListPageLink_WorkFlowList">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowObjectList">
+      <LocalizedLabel LanguageRef="zhs">流程附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowTemplate">
+      <LocalizedLabel LanguageRef="zhs">流程图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Flow chart</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowPlugin">
+      <LocalizedLabel LanguageRef="zhs">流程设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

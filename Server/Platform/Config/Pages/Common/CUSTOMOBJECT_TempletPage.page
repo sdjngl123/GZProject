@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="CUSTOMOBJECT_TempletPage" IsCache="true">
+  <Settings Key="height" Value="382"/>
+  <Settings Key="width" Value="679"/>
+  <Settings Key="title" Value="CUSTOMOBJECT_TempletPage.CUSTOMOBJECTHeader"/>
+  <PageHandlers>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="CustomObject_Container" ParentID="" TypeName="LayoutContainer">
+    </PageControl>
+  </PageControls>
+</root>

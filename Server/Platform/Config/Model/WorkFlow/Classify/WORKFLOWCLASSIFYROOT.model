@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="WORKFLOWCLASSIFYROOT" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\bricks.png" Abstract="true" TableName="WORKFLOWCLASSIFYROOT" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" ModelGroups="">
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

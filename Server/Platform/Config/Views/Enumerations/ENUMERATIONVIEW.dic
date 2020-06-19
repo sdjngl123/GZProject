@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ENUMERATIONVIEWView" IsWeb="true">
+    <Label Name="ENUMERATIONVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">枚举视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerateerate views</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMERATIONVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">枚举视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerateerate views</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="LOVTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">值列表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list type</LocalizedLabel>
+    </Label>
+    <Label Name="LOVTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">值列表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list type</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWMODEHeader">
+      <LocalizedLabel LanguageRef="zhs">显示模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWMODECaption">
+      <LocalizedLabel LanguageRef="zhs">显示模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ICONCaption">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

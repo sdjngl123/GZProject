@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="ENUMERATION" Extend="ENTITY" LogicClass="Enumeration" IconPath="Platform/Image/Enumeration/p_enumeration_custom_value.png" Abstract="false" TableName="ENUMERATION" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" Order="2401" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" ModelGroups="CreatePermission">
+    <InfoType Name="PEID" Type="DefaultObjectValue" DataType="STRING100" Column="PEID" Show="" Width="50" PrimaryKeyOrder="0" Required="True" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="DESCRIPTION" Type="DescriptionValue" DataType="STRING200" Column="DESCRIPTION" Edit="Create Edit" Show="Create Edit View" Width="100" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="LOVTYPE" Type="EnumValue" DataType="STRING20" Column="LOVTYPE" PrimaryKeyOrder="0" DefaultValue="Custom" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="LovType" />
+    <InfoType Name="SHOWMODE" Type="EnumValue" DataType="STRING20" Column="SHOWMODE" PrimaryKeyOrder="0" DefaultValue="Exhaustion" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="LovShowMode" />
+    <InfoType Name="SEQUENCE" Type="DefaultObjectValue" DataType="INT" Column="SEQUENCE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="String50" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="ICON" Type="DefaultObjectValue" Sequence="200" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+  </EntityType>
+</root>

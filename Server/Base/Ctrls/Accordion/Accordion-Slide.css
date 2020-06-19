@@ -1,0 +1,198 @@
+﻿/*.ui-accordion-header {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+    .ui-accordion-header .ui-accordion-header-left {
+        background: none !important;
+    }
+
+.ui-accordion-header-select {
+    background-color: #fff;
+}
+
+.ui-accordion-header-select, .ui-accordion-header-select-pre {
+    border-bottom: 1px solid #c9c9c9 !important;
+}
+
+.Accordion {
+    border-right: 1px solid #c9c9c9;
+    background-color: #f6f6f6;
+}*/
+
+
+.hoteam-accordion-slide .ui-accordion-header .ui-accordion-header-left,
+.hoteam-accordion-slide .ui-accordion-header:hover .ui-accordion-header-left
+ {
+    display:none;
+}
+
+.hoteam-accordion-slide .ui-accordion-header-select>.ui-accordion-header-left
+{
+    display:none;
+}
+
+.hoteam-accordion > .hoteam-accordion-slide-pre,
+.hoteam-accordion > .hoteam-accordion-slide-next {
+    display: none;
+}
+
+    .hoteam-accordion > .hoteam-accordion-slide-pre > span,
+    .hoteam-accordion > .hoteam-accordion-slide-next > span {
+        margin: auto;
+    }
+
+
+
+.hoteam-accordion-slide {
+    overflow: hidden;
+    height: 100%;
+}
+
+    .hoteam-accordion-slide > .hoteam-accordion-slide-pre,
+    .hoteam-accordion-slide > .hoteam-accordion-slide-next {
+        display: none;
+        text-align: center;
+    }
+
+.hoteam-accordion-slide-scroll {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .hoteam-accordion-slide-scroll > .hoteam-accordion-slide-pre,
+    .hoteam-accordion-slide-scroll > .hoteam-accordion-slide-next {
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        display: block;
+        background: #fff;
+        cursor: pointer;
+    }
+
+        .hoteam-accordion-slide-scroll > .hoteam-accordion-slide-pre:hover,
+        .hoteam-accordion-slide-scroll > .hoteam-accordion-slide-next:hover {
+            background-color: #e2f2fc;
+        }
+
+    .hoteam-accordion-slide-scroll > .hoteam-accordion-slide-pre {
+        top: 0;
+    }
+
+    .hoteam-accordion-slide-scroll > .hoteam-accordion-slide-next {
+        bottom: 0;
+    }
+
+.hoteam-accordion-slide .hoteam-accordion-slide-scroll {
+}
+
+.hoteam-accordion-slide .ui-accordion-header-title {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    height:29px;
+}
+
+    .hoteam-accordion-slide .ui-accordion-header-title > .b-close-b {
+        position: absolute;
+        right: -2px;
+        top: -2px;
+    }
+
+
+.hoteam-accordion-slide .hoteam-accordion-list-hover {
+}
+
+.hoteam-accordion-slide .ui-accordion-header-title-text {
+    display: none;
+}
+
+.hoteam-accordion-slide .ui-li-position.basesprite {
+    display: none;
+}
+
+.hoteam-accordion-slide .ui-accordion-header-img {
+    width: auto;
+    float: none;
+    padding: 10px 0px;
+}
+
+.hoteam-accordion-slide .ui-accordion-header-title-img {
+    margin-top: -4px;
+}
+
+.ui-accordion-content-slide {
+    position: absolute;
+    z-index: 99999;
+    /*overflow: hidden;*/
+    width: 0;
+    margin-bottom: 0;
+    display: none;
+    width: 12em;
+    background-color: #fff;
+    border-right: 1px solid #c9c9c9;
+}
+
+    .ui-accordion-content-slide .hoteam-accordion-list {
+        padding-left: 1.5em;
+        line-height: normal;
+        border-bottom: 1px #fff solid;
+        height: 30px;
+        color: #666666;
+        position: relative;
+    }
+
+        .ui-accordion-content-slide .hoteam-accordion-list .liaccordion-right {
+            white-space: nowrap;
+            outline: none;
+            padding: 8px 0px;
+            cursor: pointer;
+            height: 28px;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            max-width: 8em;
+            overflow: hidden;
+        }
+
+        .ui-accordion-content-slide .hoteam-accordion-list .liaccordion-left {
+            display: none;
+        }
+
+        .ui-accordion-content-slide .hoteam-accordion-list .liaccordion-middle {
+            display: none;
+        }
+
+    .ui-accordion-content-slide .ui-accordion-content-slide-divideLine {
+        height: 30px;
+        border-left: 4px #fff solid;
+        position: absolute;
+        top: 0;
+        left: -2px;
+        width: 0;
+    }
+
+
+    .ui-accordion-content-slide .hoteam-accordion-list-border-show {
+        border-bottom-color: #c9c9c9;
+    }
+
+    .ui-accordion-content-slide .hoteam-accordion-list-hover .hoteam-accordion-collection {
+    }
+
+    .ui-accordion-content-slide .hoteam-accordion-list .ui-accordion-header-img {
+        height: 26px;
+        padding-left: 0;
+        margin-right: .5em;
+    }
+
+.ui-accordion-content-slide-popup {
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden;
+    width: 0;
+    margin-bottom: 0;
+    display: none;
+    width: 45em;
+    background-color: #FAFAFA;
+    border-right: 1px solid #c9c9c9;
+}

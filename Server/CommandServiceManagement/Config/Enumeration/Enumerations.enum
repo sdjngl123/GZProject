@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="CommandServiceConversionStatus">
+    <EnumerationItem Name="Undistributed" />
+    <EnumerationItem Name="Queuing" />
+    <EnumerationItem Name="Converting" />
+    <EnumerationItem Name="ConvertSuccess" />
+    <EnumerationItem Name="ConvertFailure" />
+  </Enumeration>
+ 
+</root>

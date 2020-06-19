@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUEUECACHEModel" IsWeb="true">
+    <Label Name="QUEUECACHEHeader">
+      <LocalizedLabel LanguageRef="zhs">QUEUECACHE</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QUEUECACHE</LocalizedLabel>
+    </Label>
+    <Label Name="QUEUECACHECaption">
+      <LocalizedLabel LanguageRef="zhs">QUEUECACHE</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QUEUECACHE</LocalizedLabel>
+    </Label>
+    <Label Name="TRANSHASHHeader">
+      <LocalizedLabel LanguageRef="zhs">TRANSHASH</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TRANSHASH</LocalizedLabel>
+    </Label>
+    <Label Name="TRANSHASHCaption">
+      <LocalizedLabel LanguageRef="zhs">TRANSHASH</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TRANSHASH</LocalizedLabel>
+    </Label>
+    <Label Name="QUEUENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">QUEUENAME</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QUEUENAME</LocalizedLabel>
+    </Label>
+    <Label Name="QUEUENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">QUEUENAME</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QUEUENAME</LocalizedLabel>
+    </Label>
+    <Label Name="DATAHeader">
+      <LocalizedLabel LanguageRef="zhs">DATA</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATA</LocalizedLabel>
+    </Label>
+    <Label Name="DATACaption">
+      <LocalizedLabel LanguageRef="zhs">DATA</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATA</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

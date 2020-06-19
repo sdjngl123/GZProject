@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="Favorite">
+  <!--<Settings Key="height" Value="520"/>
+  <Settings Key="width" Value="800"/>-->
+  <Settings Key="title" Value="Favorite.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="Hoteam_InforCenter_FavoriteTree_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="RefreshData" Script="Hoteam_InforCenter_FavoriteTree_RefreshData(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_TreeManagement_OnNodeChange(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 10px 10px 10px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Left_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Left_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeView_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TreeView_Container" ParentID="Left_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FavoriteTreeView"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="RightMenu_Container"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="FavoriteTreeView" ParentID="TreeView_Container" TypeName="Tree">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnExpandLoad" Script="Hoteam_InforCenter_FavoriteTree_OnExpandLoad(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnNodeDblClick" Script="Hoteam_InforCenter_FavoriteTree_OnNodeDblClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="RightMenu_Container" ParentID="TreeView_Container" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RightMenu"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu"></PageControl>
+  </PageControls>
+</root>

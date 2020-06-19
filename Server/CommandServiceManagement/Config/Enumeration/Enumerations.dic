@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="CommandServiceConversionStatusUndistributed">
+      <LocalizedLabel LanguageRef="zhs">未分配</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Undistributed</LocalizedLabel>
+    </Label>
+    <Label Name="CommandServiceConversionStatusQueuing">
+      <LocalizedLabel LanguageRef="zhs">排队中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Queuing</LocalizedLabel>
+    </Label>
+    <Label Name="CommandServiceConversionStatusConverting">
+      <LocalizedLabel LanguageRef="zhs">转换中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Converting</LocalizedLabel>
+    </Label>
+    <Label Name="CommandServiceConversionStatusConvertSuccess">
+      <LocalizedLabel LanguageRef="zhs">转换成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConvertSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="CommandServiceConversionStatusConvertFailure">
+      <LocalizedLabel LanguageRef="zhs">转换失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConvertFailure</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="RightMenuCtrl" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="RightMenu_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RightMenu"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu">
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FlowTemplateView">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowView_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="WorkflowViewControl" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="8px 0px 0px 0px"/>
+      <Settings Key="item1" >
+        <!--<Settings Key="size" Value="1000"/>-->
+        <Settings Key="childid" Value="WorkflowView"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkflowView" ParentID="WorkflowViewControl" TypeName="CustomerContainer">
+    </PageControl>
+  </PageControls>
+</root>
+

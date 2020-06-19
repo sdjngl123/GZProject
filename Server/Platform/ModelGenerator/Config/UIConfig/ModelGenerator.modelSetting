@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModelSetting Name="BaseInfo">
+    <ModelSettingItem Name="Header" Width="" Editable="true" ColType="" />
+    <!--<ModelSettingItem Name="Caption" Width="" Editable="true" ColType="" />-->
+    <ModelSettingItem Name="Name" Width="" Editable="false" ColType="" />
+    <ModelSettingItem Name="Abstract" Width="" Editable="true" ColType="dropdown"  DataBind="TOF"  />
+    <ModelSettingItem Name="PolicyName" Width="" Editable="true" ColType="dropdown"  DefaultValue="NULL" />
+    <ModelSettingItem Name="StagePolicyName" Width="" Editable="true" ColType="dropdown"  DefaultValue="NULLSTAGELIFECIRCLE"  />
+    <ModelSettingItem Name="IsGenerateViceTable" Width="" Editable="true" ColType="dropdown"  DefaultValue="TOF"  />
+  </ModelSetting>
+  <ModelSetting Name="InheritInfo">
+    <ModelSettingItem Name="Header" Width="" Editable="true" ColType="" />
+    <!--<ModelSettingItem Name="Caption" Width="" Editable="true" ColType="" />-->
+    <ModelSettingItem Name="Column" Width="" Editable="false" ColType="" />
+    <ModelSettingItem Name="DataType" Width="" Editable="false" ColType="dropdown" />
+    <ModelSettingItem Name="InheritRegulate" Width="" Editable="true"   ColType="dropdown" DataBind="InheritRegulate" />
+    <ModelSettingItem Name="Type" Width="" Editable="true" ColType="dropdown" />
+    <ModelSettingItem Name="Required" Width="" Editable="true" ColType="dropdown" DataBind="TOF" />
+    <ModelSettingItem Name="ValidateUnique" Width="" Editable="true" ColType="dropdown" DataBind="TOF" /> 
+    <ModelSettingItem Name="DefaultValue" Width="" Editable="true" ColType="" />
+    <ModelSettingItem Name="ExtendProperty1" Width="" Editable="true" ColType="" />
+    <ModelSettingItem Name="ExtendProperty2" Width="" Editable="true" ColType="" />
+    <ModelSettingItem Name="ExtendProperty3" Width="" Editable="true" ColType="" />
+  </ModelSetting>
+  <ModelSetting Name="ExtendInfo">
+    <ModelSettingItem Name="Header" Width="" Editable="true" ColType="" />
+    <!--<ModelSettingItem Name="Caption" Width="" Editable="true" ColType="" />-->
+    <ModelSettingItem Name="Column" Width="" Editable="true" ColType="" Required="true" />
+    <ModelSettingItem Name="DataType" Width="" Editable="true" ColType="dropdown" />
+    <ModelSettingItem Name="Type" Width="" Editable="true" ColType="dropdown" />
+    <ModelSettingItem Name="InheritRegulate" Width="" Editable="true"   ColType="dropdown" DataBind="InheritRegulate" />
+    <ModelSettingItem Name="Required" Width="" Editable="true" ColType="dropdown" DataBind="TOF" />
+    <ModelSettingItem Name="ValidateUnique" Width="" Editable="true" ColType="dropdown" DataBind="TOF" />
+    <ModelSettingItem Name="DefaultValue" Width="" Editable="true" ColType="" />
+    <ModelSettingItem Name="ExtendProperty1" Width="" Editable="true" ColType="" />
+    <ModelSettingItem Name="ExtendProperty2" Width="" Editable="true" ColType="" />
+    <ModelSettingItem Name="ExtendProperty3" Width="" Editable="true" ColType="" />
+  </ModelSetting>
+</root>

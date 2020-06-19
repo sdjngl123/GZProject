@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<TreeManagement Name="TestPlanTaskTree" MenuName=""
+			TreeRootDataService="Hoteam.GACTT.TestPlanService.GetTestTaskPlanTreeNode"
+			TreeChildDataService="Hoteam.GACTT.TestPlanService.GetTestTaskPlanChildTreeNode"
+					TreeViewName="" ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="ALLPROJECT" MenuName="" PageLinksName="AllProjectLinks" Hidden="false" />
+		<ObjectType Name="PMSPROJECT" MenuName="" PageLinksName="PMSProjectLinks" Hidden="false" />
+		<ObjectType Name="PROJECTSTAGE" MenuName="" PageLinksName="ProjectStageLinks" Hidden="false" />
+		<ObjectType Name="TESTPLANTASK" MenuName="" PageLinksName="TestPlanTaskLinks" Hidden="false" />
+	</TreeManagement>
+</root>

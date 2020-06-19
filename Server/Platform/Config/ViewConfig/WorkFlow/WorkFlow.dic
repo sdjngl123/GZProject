@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="TASKLIST">
+      <LocalizedLabel LanguageRef="zhs">流程统计列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process statistics list</LocalizedLabel>
+    </Label>
+    <Label Name="MYFLOWTASK">
+      <LocalizedLabel LanguageRef="zhs">我的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My process</LocalizedLabel>
+    </Label>
+    <Label Name="DEPOSITTASK">
+      <LocalizedLabel LanguageRef="zhs">托管流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hosting process</LocalizedLabel>
+    </Label>
+    <Label Name="DELIVERYTASK">
+      <LocalizedLabel LanguageRef="zhs">转交流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer process</LocalizedLabel>
+    </Label>
+    <Label Name="AUDITEDTASK">
+      <LocalizedLabel LanguageRef="zhs">已评审流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Processes reviewed</LocalizedLabel>
+    </Label>
+    <Label Name="MYCREATEWOEKFLOW">
+      <LocalizedLabel LanguageRef="zhs">发起的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiated process</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWLIST">
+      <LocalizedLabel LanguageRef="zhs">流程列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process list</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUID">
+      <LocalizedLabel LanguageRef="zhs">发起的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiated process</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATOR">
+      <LocalizedLabel LanguageRef="zhs">负责的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Responsible process</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETE">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="RUN">
+      <LocalizedLabel LanguageRef="zhs">运行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Run</LocalizedLabel>
+    </Label>
+    <Label Name="SUSPEND">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="STOP">
+      <LocalizedLabel LanguageRef="zhs">停止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowClassifyTemplateTreeView">
+      <LocalizedLabel LanguageRef="zhs">模板分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template classification</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

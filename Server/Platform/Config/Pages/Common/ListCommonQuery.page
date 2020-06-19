@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ListCommonQuery" IsCache="true">
+  <Settings Key="height" Value="600"/>
+  <Settings Key="width" Value="960"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ListCommonQuery_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_ListCommonQuery_OnQuery(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_ListCommonQuery_OnNodeChange(pageEvent);"/>
+    <PageHandler HandlerName ="OnRowClick" Script="InforCenter_Platform_ListCommonQuery_OnRowClick(pageEvent);"/>
+    <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_ListCommonQuery_OnRowDblClick(pageEvent);"/>
+    <PageHandler HandlerName ="OnLoadSuccess" Script="InforCenter_Platform_ListCommonQuery_OnLoadSuccess(pageEvent);"/>
+    <PageHandler HandlerName ="OnTabChange" Script="InforCenter_Platform_ListCommonQuery_OnTabChange(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="ListCommonQuery.Title"/>
+  <PageControls>
+    <!--主框架-->
+    <PageControl ControlID="ListCommonQuery_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="6px 6px 0 6px"/>
+      <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ContentPageContainer"/>
+        <Settings Key="backgroundColor" Value="#fff"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!--第二层（分左中右）-->
+    <PageControl ControlID="ContentPageContainer" ParentID="ListCommonQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="250"></Settings>
+        <Settings Key="childid" Value="TabsCtrlPage"></Settings>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="6"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPageMainContainer"/>
+      </Settings>
+    </PageControl>
+
+    <!--左侧内容-->
+    <!--tab，包括查询页面和pageLinks-->
+    <PageControl ControlID="TabsCtrlPage" ParentID="ContentPageContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TabsCtrl"/>
+    </PageControl>
+    
+    <!--右侧内容-->
+    <PageControl ControlID="ListViewPageMainContainer" ParentID="ContentPageContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="55%"/>
+        <Settings Key="childid" Value="ListViewPageContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="ListViewPageBtnContainer"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="45%"></Settings>
+        <Settings Key="childid" Value="SelectedListViewPageContainer"></Settings>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="30"></Settings>
+        <Settings Key="childid" Value="SingleSelectContainer"></Settings>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="SingleSelectContainer" ParentID="ListViewPageMainContainer" TypeName="SelectedTip">
+    </PageControl>
+    <PageControl ControlID="ListViewPageContainer" ParentID="ListViewPageMainContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPageOne"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ListViewPageOne" ParentID="ListViewPageContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="26"/>
+        <Settings Key="childid" Value="ListViewPageOneTitleContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPage"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ListViewPageOneTitleContainer" ParentID="ListViewPageOne" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPageOneTitle"/>
+      </Settings>
+    </PageControl>
+    <!--上方列表表头-->
+    <PageControl ControlID="ListViewPageOneTitle" ParentID="ListViewPageOneTitleContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="0 0 0 10px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ListViewPageOneLTitle"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ListViewPageOneRTitle"/>
+      </Settings>
+    </PageControl>
+    <!--左边表头(查询结果)-->
+    <PageControl ControlID="ListViewPageOneLTitle" ParentID="ListViewPageOneTitle" TypeName="Label">
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="ListCommonQuery.QueryList" />
+    </PageControl>
+    <!--右边表头(共XXX条)-->
+    <PageControl ControlID="ListViewPageOneRTitle" ParentID="ListViewPageOneTitle" TypeName="Label">
+      <Settings Key="position" Value="right"/>
+    </PageControl>
+    
+    <PageControl ControlID="ListViewPage" ParentID="ListViewPageOne" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ListViewCtrl"/>
+    </PageControl>
+    <PageControl ControlID="SelectedListViewPageContainer" ParentID="ListViewPageMainContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectedListViewPageTwo"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SelectedListViewPageTwo" ParentID="SelectedListViewPageContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="26"/>
+        <Settings Key="childid" Value="ListViewPageTwoTitleContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectedListViewPage"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ListViewPageTwoTitleContainer" ParentID="SelectedListViewPageTwo" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPageTwoTitle"/>
+      </Settings>
+    </PageControl>
+    <!--下方列表表头-->
+    <PageControl ControlID="ListViewPageTwoTitle" ParentID="ListViewPageTwoTitleContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="0 0 0 10px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ListViewPageTwoLTitle"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ListViewPageTwoRTitle"/>
+      </Settings>
+    </PageControl>
+    <!--左边表头(已选列表)-->
+    <PageControl ControlID="ListViewPageTwoLTitle" ParentID="ListViewPageTwoTitle" TypeName="Label">
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="ListCommonQuery.SelectList" />
+    </PageControl>
+    <!--右边表头(共XXX条)-->
+    <PageControl ControlID="ListViewPageTwoRTitle" ParentID="ListViewPageTwoTitle" TypeName="Label">
+      <Settings Key="position" Value="right"/>
+    </PageControl>
+
+    <PageControl ControlID="SelectedListViewPage" ParentID="SelectedListViewPageTwo" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ListViewCtrl"/>
+    </PageControl>
+
+    <PageControl ControlID="ListViewPageBtnContainer" ParentID="ListViewPageMainContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="38%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="btnAddOne"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="8%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="btnAddAll"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="8%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="btnRemoveOne"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="8%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="btnRemoveAll"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="38%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnAddOne" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_SelectedOne(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Add" />
+      <Settings Key="iconClass" Value="ui-icon-arrow-1-s" />
+    </PageControl>
+    <PageControl ControlID="btnAddAll" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_SelectedAll(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.AddAll" />
+      <Settings Key="iconClass" Value="ui-icon-arrowstop-1-s" />
+    </PageControl>
+    <PageControl ControlID="btnRemoveOne" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_RemoveOne(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Remove" />
+      <Settings Key="iconClass" Value="ui-icon-arrow-1-n" />
+    </PageControl>
+    <PageControl ControlID="btnRemoveAll" ParentID="ListViewPageBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_RemoveAll(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.RemoveAll" />
+      <Settings Key="iconClass" Value="ui-icon-arrowstop-1-n" />
+    </PageControl>
+
+
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ListCommonQuery_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

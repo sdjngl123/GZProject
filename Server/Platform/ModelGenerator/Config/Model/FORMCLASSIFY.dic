@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FORMCLASSIFYModel" IsWeb="true">
+    <Label Name="FORMCLASSIFYHeader">
+      <LocalizedLabel LanguageRef="zhs">表单分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMCLASSIFY</LocalizedLabel>
+    </Label>
+    <Label Name="FORMCLASSIFYCaption">
+      <LocalizedLabel LanguageRef="zhs">表单分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMCLASSIFY</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESCRIPTION</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESCRIPTION</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

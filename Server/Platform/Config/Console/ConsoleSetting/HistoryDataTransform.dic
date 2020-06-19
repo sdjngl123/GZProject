@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="HistoryDataTransform" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">历史数据迁移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">History data tranform</LocalizedLabel>
+    </Label>
+    <Label Name="Base64ToHttpTitle">
+      <LocalizedLabel LanguageRef="zhs">Base64转Http</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Base64 to http</LocalizedLabel>
+    </Label>
+    <Label Name="DataModel">
+      <LocalizedLabel LanguageRef="zhs">模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model name</LocalizedLabel>
+    </Label>
+    <Label Name="DataInfo">
+      <LocalizedLabel LanguageRef="zhs">属性名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Info name</LocalizedLabel>
+    </Label>
+    <Label Name="BtnBase64ToHttpOK">
+      <LocalizedLabel LanguageRef="zhs">确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OK</LocalizedLabel>
+    </Label>
+
+    
+  </Context>
+</DictionarySerializer>

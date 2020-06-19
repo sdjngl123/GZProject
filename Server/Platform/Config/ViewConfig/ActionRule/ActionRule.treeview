@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <WebTreeView Name="RuleManagementTreeView" ShowStartNode="true" View="ROOTTOACTIONRULEVIEW" TextField="" TextDicField="TEXTDIC"
+           IconClose="" IconOpen="" IconCloseField="ICON" IconOpenField="ICON" NodeTypeField="NODETYPE">
+    <!--为了在一级规则中显示对象授权和流程对象权限，这两个规则的USEBY不为Entity或者Link，需要单独处理-->
+    <Schema Key="1" SuperKey="-1" Name="ACTIONRULE"  View="ACTIONRULETOACTIONRULEVIEW" TextField="ENAME"
+      IconClose="" IconOpen="" IconCloseField="" IconOpenField=""  EntityFilter="" Filter="PEID='[Tree_Current_value1]'" Loop="false"
+       ParentNodeTypeName="" NodeTypeField="USEBY">
+    </Schema>
+    <Schema Key="2" SuperKey="1" Name="ACTIONRULE"  View="ACTIONRULETOACTIONRULEVIEW" TextField="ENAME"
+      IconClose="" IconOpen="" IconCloseField="" IconOpenField=""  EntityFilter="" Filter="PEID='[Tree_Current_value1]' AND USEBY='[Tree_Current_Tag_USEBY]'" Loop="true"
+       ParentNodeTypeName="" NodeTypeField="USEBY">
+    </Schema>
+  </WebTreeView>
+
+  <WebTreeView Name="RuleMessageManagementTreeView" ShowStartNode="true" View="ACTIONRULEMESSAGEROOTVIEW" TextField="" TextDicField="TEXTDIC"
+           IconClose="" IconOpen="" IconCloseField="ICON" IconOpenField="ICON" NodeTypeField="NODETYPE">
+    <Schema Key="1" SuperKey="-1" Name="ACTIONRULE"  View="ACTIONRULETOACTIONRULEVIEW" TextField="ENAME"
+      IconClose="" IconOpen="" IconCloseField="" IconOpenField=""  EntityFilter="" Filter="PEID='[Tree_Current_value1]' AND USEBY='[Tree_Current_Tag_USEBY]'" Loop="true"
+       ParentNodeTypeName="" NodeTypeField="USEBY">
+    </Schema>
+  </WebTreeView>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="QueryMachineService"
+     ServiceAssembly="Hoteam.InforCenter.QueryMachine.Service.dll"
+     ServiceClass="Hoteam.InforCenter.QueryMachine.Service.QueryMachineService"
+     ContractAssembly="Hoteam.InforCenter.QueryMachine.Service.dll"
+     ContractClass="Hoteam.InforCenter.QueryMachine.Service.IQueryMachineService"/>
+  
+</root>

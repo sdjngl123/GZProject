@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AuditTypeEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">任务类型设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task type settings</LocalizedLabel>
+    </Label>
+    <Label Name="radSimple">
+      <LocalizedLabel LanguageRef="zhs">简单任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Simple task</LocalizedLabel>
+    </Label>
+    <Label Name="radOverHalf">
+      <LocalizedLabel LanguageRef="zhs">统计多数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Statistics Majority</LocalizedLabel>
+    </Label>
+    <Label Name="radAnyOne">
+      <LocalizedLabel LanguageRef="zhs">任一通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Any Pass</LocalizedLabel>
+    </Label>
+    <Label Name="radByAccord">
+      <LocalizedLabel LanguageRef="zhs">一致通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Adopted Unanimously</LocalizedLabel>
+    </Label>
+    <Label Name="labNoResult">
+      <LocalizedLabel LanguageRef="zhs">否则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Otherwise</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="AuditTypeText" IsWeb="true">
+    <Label Name="Simple">
+      <LocalizedLabel LanguageRef="zhs">简单任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Simple task</LocalizedLabel>
+    </Label>
+    <Label Name="OverHalf">
+      <LocalizedLabel LanguageRef="zhs">统计多数:{0}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Statistics Majority: {0}</LocalizedLabel>
+    </Label>
+    <Label Name="AnyOne">
+      <LocalizedLabel LanguageRef="zhs">任一通过:{0}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Any Pass: {0}</LocalizedLabel>
+    </Label>
+    <Label Name="ByAccord">
+      <LocalizedLabel LanguageRef="zhs">一致通过:{0} 否则:{1}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unanimously approved: {0} Otherwise: {1}</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

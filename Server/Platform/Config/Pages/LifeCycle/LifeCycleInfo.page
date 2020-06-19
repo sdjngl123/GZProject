@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="LifeCycleInfo" IsCache="true">
+  <Settings Key="title" Value="LifeCycleInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_LifeCycleInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnSelectChanged" Script="InforCenter_Platform_LifeCycleInfo_OnSelectChanged(pageEvent);"/>
+    <PageHandler HandlerName ="OnSelectTemplate" Script="InforCenter_Platform_LifeCycleInfo_OnSelectTemplate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_LifeCycleInfo_OnSelectTemplate(pageEvent);"/>
+  </PageHandlers>
+    <PageControls>
+      <PageControl ControlID="LifeCycleInfo_Layout" ParentID="" TypeName="LayoutContainer">
+        <Settings Key="type" Value="vertical"/>
+        <Settings Key="item1" >
+          <Settings Key="size" Value="100%"/>
+          <Settings Key="childid" Value="LifeCycleInfoTabs"/>
+        </Settings>
+      </PageControl>
+      <PageControl ControlID="LifeCycleInfoTabs" ParentID="LifeCycleInfo_Layout" TypeName="Tabs">
+        <PageHandlers>
+          <PageHandler HandlerName ="OnBeforeToggle" Script="InforCenter_Platform_LifeCycleInfo_OnBeforeToggle(ctrlEvent);"/>
+        </PageHandlers>
+        <Settings Key="showClosed" Value="false"/>
+      </PageControl>
+     
+    </PageControls>
+</root>

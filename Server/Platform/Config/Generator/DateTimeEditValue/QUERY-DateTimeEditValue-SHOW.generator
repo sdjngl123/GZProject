@@ -1,0 +1,7 @@
+﻿<PageControl ControlID="[FILTERNAME]_Value" ParentID="[PARENTID]" TypeName="DateTime" >
+  <Settings Key="type" Value="[TYPE]"/>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+  <Settings Key="minView" Value="1"/>
+  <Settings Key="editable" Value="true"/>
+</PageControl>

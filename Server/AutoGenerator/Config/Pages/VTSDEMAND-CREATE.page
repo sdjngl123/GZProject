@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="VTSDEMAND-CREATE">
+  <Settings Key="height" Value="224"/>
+  <Settings Key="width" Value="398"/>
+  <Settings Key="title" Value="VTSDEMAND-CREATE.VTSDEMANDHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('VTSDEMAND',para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ECODE_Value');
+	if(c.id!=''){
+		c.SetText(data.ECODE);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.ECODE, 'ECODE',false);{
+	var c = pageEvent.o.GetControl('TESTSTANDARD_Value');
+	if(c.id!=''){
+		c.SetText(data.TESTSTANDARD);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('TESTSAMPLESIZE_Value');
+	if(c.id!=''){
+		c.SetText(data.TESTSAMPLESIZE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('IMPLEMENTSTAGE_Value');
+	if(c.id!=''){
+		c.SetText(data.IMPLEMENTSTAGE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('VERIFICATIONS_Value');
+	if(c.id!=''){
+		c.SetText(data.VERIFICATIONS);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('RECIVEDATE_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.RECIVEDATE);
+	}
+}
+ var functionName = 'InforCenter_VTSDEMAND_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'VTSDEMAND'};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ECODE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ECODE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('TESTSTANDARD_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TESTSTANDARD = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('TESTSAMPLESIZE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TESTSAMPLESIZE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('IMPLEMENTSTAGE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.IMPLEMENTSTAGE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('VERIFICATIONS_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.VERIFICATIONS = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('RECIVEDATE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.RECIVEDATE = c.GetTicksByDateTime();
+}};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_VTSDEMAND_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ECODE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='ENAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,200})?$" />
+  <Settings Key="regextipId" Value="VTSDEMAND-CREATE.ENAMERegex" />
+</PageControl><PageControl ControlID="ECODE" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ECODE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ECODE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE_Label" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.ECODEHeader" />
+</PageControl><PageControl ControlID="ECODE_Value" ParentID="ECODE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='ECODE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="VTSDEMAND-CREATE.ECODERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTSTANDARD"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTSTANDARD" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TESTSTANDARD_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTSTANDARD_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTSTANDARD_Label" ParentID="TESTSTANDARD" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.TESTSTANDARDHeader" />
+</PageControl><PageControl ControlID="TESTSTANDARD_Value" ParentID="TESTSTANDARD" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='TESTSTANDARD';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="VTSDEMAND-CREATE.TESTSTANDARDRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTSAMPLESIZE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTSAMPLESIZE" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TESTSAMPLESIZE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTSAMPLESIZE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTSAMPLESIZE_Label" ParentID="TESTSAMPLESIZE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.TESTSAMPLESIZEHeader" />
+</PageControl><PageControl ControlID="TESTSAMPLESIZE_Value" ParentID="TESTSAMPLESIZE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='TESTSAMPLESIZE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="VTSDEMAND-CREATE.TESTSAMPLESIZERegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="IMPLEMENTSTAGE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="IMPLEMENTSTAGE" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="IMPLEMENTSTAGE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="IMPLEMENTSTAGE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="IMPLEMENTSTAGE_Label" ParentID="IMPLEMENTSTAGE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.IMPLEMENTSTAGEHeader" />
+</PageControl><PageControl ControlID="IMPLEMENTSTAGE_Value" ParentID="IMPLEMENTSTAGE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='IMPLEMENTSTAGE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="VTSDEMAND-CREATE.IMPLEMENTSTAGERegex" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="VERIFICATIONS"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="VERIFICATIONS" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="VERIFICATIONS_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="VERIFICATIONS_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="VERIFICATIONS_Label" ParentID="VERIFICATIONS" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.VERIFICATIONSHeader" />
+</PageControl><PageControl ControlID="VERIFICATIONS_Value" ParentID="VERIFICATIONS" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='VERIFICATIONS';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="VTSDEMAND-CREATE.VERIFICATIONSRegex" />
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="RECIVEDATE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="RECIVEDATE" ParentID="R-6" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="RECIVEDATE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="RECIVEDATE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="RECIVEDATE_Label" ParentID="RECIVEDATE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="VTSDEMAND-CREATE.RECIVEDATEHeader" />
+</PageControl><PageControl ControlID="RECIVEDATE_Value" ParentID="RECIVEDATE" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='VTSDEMAND';ctrlEvent.infoName='RECIVEDATE';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="datetime"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>  
+  </PageControls>
+</root>

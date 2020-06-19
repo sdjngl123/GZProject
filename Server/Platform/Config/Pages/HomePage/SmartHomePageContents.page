@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SmartHomePageContents">
+  <PageControls>
+    <PageControl ControlID="HomePageContents_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="0 8px"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HomePage_Tabs"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HomePage_Tabs" ParentID="HomePageContents_Layout" TypeName="Tabs">
+      <Settings Key="showSwitchBar" Value="true"/>
+      <Settings Key="showMenu" Value="true"/>
+      <Settings Key="showTitle" Value="false"/>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="MainFlat.Title"/>
+        <Settings Key="pageName" Value="MainFlat"/>
+        <Settings Key="tabId" Value="MainFlat"/>
+        <Settings Key="showClosed" Value="true"/>
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

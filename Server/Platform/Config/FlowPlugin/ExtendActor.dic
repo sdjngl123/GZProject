@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowActorItems" IsWeb="true">
+    <Label Name="Group">
+      <LocalizedLabel LanguageRef="zhs">组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="Role">
+      <LocalizedLabel LanguageRef="zhs">角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role</LocalizedLabel>
+    </Label>
+    <Label Name="User">
+      <LocalizedLabel LanguageRef="zhs">用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User</LocalizedLabel>
+    </Label>
+    <Label Name="GroupRole">
+      <LocalizedLabel LanguageRef="zhs">组角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group Role</LocalizedLabel>
+    </Label>
+    <Label Name="Creator">
+      <LocalizedLabel LanguageRef="zhs">流程发起人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Initiator</LocalizedLabel>
+    </Label>
+    <Label Name="Admin">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

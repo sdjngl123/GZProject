@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<TreeManagement Name="EXTERNALRESOURCEROOTLINKTree" MenuName="EXTERNALRESOURCEROOTLINKTreeRootMenu" TreeViewName="EXTERNALRESOURCEROOTTreeView" ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="EXTERNALRESOURCEROOT" MenuName="EXTERNALRESOURCEROOTLINKTreeRootMenu" PageLinksName="EXTERNALRESOURCEROOTLinks" Hidden="false" />
+		<ObjectType Name="TESTEXTORG" MenuName="EXTERNALRESOURCEROOTLINKTreeChildMenu" PageLinksName="EXTERNALLYRESOURCELinks" Hidden="false" />
+	</TreeManagement>
+
+	<TreeManagement Name="InnerTestCapabilityTree" MenuName="" TreeViewName="GACTTGroupToGroupTreeView" ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="COMPANY" MenuName="" PageLinksName="" Hidden="false" />
+		<ObjectType Name="GROUPINFO" MenuName="" PageLinksName="InnerCapabilityLinks" Hidden="false" />
+	</TreeManagement>
+
+	<TreeManagement Name="OutTestCapabilityTree" MenuName="" TreeViewName="EXTERNALRESOURCEROOTTreeView" ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="EXTERNALRESOURCEROOT" MenuName="" PageLinksName="" Hidden="false" />
+		<ObjectType Name="TESTEXTORG" MenuName="" PageLinksName="OutCapabilityLinks" Hidden="false" />
+	</TreeManagement>
+
+	<TreeManagement Name="ProjectCapabilityTree" MenuName="" TreeViewName="" 
+					 TreeRootDataService="Hoteam.GACTT.TestResourceLibService.GetProjectCapabilityTreeRootNode"
+					ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="PROJECTROOT" MenuName="" PageLinksName="" Hidden="false" />
+		<ObjectType Name="RESOURCETYPE" MenuName="" PageLinksName="ProjectCapabilityLinks" Hidden="false" />
+	</TreeManagement>
+
+	<TreeManagement Name="TestKnowledgeTree" MenuName=""
+			TreeRootDataService="Hoteam.GACTT.TestResourceLibService.GetTestKnowlwdgeTreeNode"
+					TreeViewName="" ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="KNOWLEDGEROOT" MenuName="" PageLinksName="KnowledgeRootLinks" Hidden="false" />
+		<ObjectType Name="KNOWLEDGETYPE" MenuName="" PageLinksName="KnowledgeTypeLinks" Hidden="false" />
+	</TreeManagement>
+</root>

@@ -1,0 +1,9 @@
+﻿{
+var o = pageEvent.o.GetControl('[FILTERNAME]_Value');
+if(o.id!=''){
+var objtype='[OBJTYPE]';
+if(para.DataObjectType)
+objtype=para.DataObjectType;
+InforCenter_Platform_Object_SetInfoTypeList(o,objtype,false);
+}
+}

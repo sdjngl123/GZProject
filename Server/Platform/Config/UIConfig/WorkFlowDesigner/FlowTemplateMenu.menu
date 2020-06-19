@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MenuItem Name="WorkFlowTempateManagementMenu">
+    <WebAction Name="Refesh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <!--新建-->
+    <WebAction Name="Create" ModuleName="Platform" LabelName="Common.Create" Image="p_new" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="CREATE" ActionType="WORKFLOWTEMPLATE"  SelectID="[Tree_Current_value1]" SelectMode="NULL" />
+      <WebMethod PageName="WorkflowTemplateCreate" IsPopup="true" >
+        <Para Name="ObjectType" Value="WORKFLOWTEMPLATE" />
+      </WebMethod>
+      <JSMethod Name="InforCenter_Platform_InitGlobalTemplate" SelectID="">
+        <Para Name="TemplateDisplayName" Value="[ReturnValue_ENAME]" />
+        <Para Name="TemplateType" Value="[ReturnValue_WORKFLOWTEMPLATETYPE]" />       
+      </JSMethod>
+      <WebMethod PageName="WorkflowTemplateEdit" IsPopup="true" >
+        <Para Name="IsCreate" Value="true" />
+        <Para Name="ClassifyID" Value="[Tree_Current_value1]" />
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="WORKFLOWTEMPLATE" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+    <!--编辑-->
+    <WebAction Name="Edit" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_WorkflowDesigner_IsLastVersionTemplate" SelectID="[List_EID]">
+        <Para Name="TemplateID" Value="[List_EID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_InitGlobalTemplate" SelectID="[List_EID]">
+        <Para Name="TemplateName" Value="[List_XMLNAME]" />
+      </JSMethod>
+      <WebMethod PageName="WorkflowTemplateEdit" IsPopup="true" Order="1" SelectID="[List_EID]">
+        <Para Name="ClassifyID" Value="[Tree_Current_value1]" />
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="WORKFLOWTEMPLATE" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+    <!--删除-->
+    <WebAction Name="Delete" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <JSMethod Name="InforCenter_Platform_WorkflowDesigner_IsLastVersionTemplate" SelectID="[List_EID]">
+        <Para Name="TemplateID" Value="[List_EID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_WorkflowTemplateDelete_ValidateUsing" SelectID="[List_EID]">
+        <Para Name="TemplateName" Value="[List_XMLNAME]" />
+      </JSMethod>
+      <WebMethod PageName="WorkflowTemplateDelete" IsPopup="true"  SelectID="[List_EID]" >
+        <Para Name="PageMode" Value="DeleteObject" />
+        <Para Name="TemplateName" Value="[List_XMLNAME]" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="WORKFLOWTEMPLATE" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+    <!--另存为-->
+    <WebAction Name="SaveAs" ModuleName="Platform" LabelName="FlowTemplateMenu.SaveAs" Image="p_saveas" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_WorkflowDesigner_IsLastVersionTemplate" SelectID="[List_EID]">
+        <Para Name="TemplateID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMethod PageName="WorkflowTemplateSaveAs" IsPopup="true" >
+        <Para Name="TemplateType" Value="[List_WORKFLOWTEMPLATETYPE$DBValue]" />
+        <Para Name="TemplateDisplayName" Value="[List_ENAME]" />
+        <Para Name="ClassifyID" Value="[Tree_Current_value1]" />
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <JSMethod Name="InforCenter_Platform_WorkflowTemplateSaveAs_OK" SelectID="">
+        <Para Name="TemplateDisplayName" Value="[ReturnValue_TemplateDisplayName]" />
+        <Para Name="TemplateType" Value="[ReturnValue_TemplateType]" />
+        <Para Name="TemplateName" Value="[List_XMLNAME]" />
+        <Para Name="ClassifyID" Value="[ReturnValue_ClassifyID]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="WORKFLOWTEMPLATE" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+
+    <WebAction Name="MoveTo" ModuleName="Platform" LabelName="FlowTemplateMenu.MoveTo" Image="p_move" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="MULTI" />
+      <JSMethod Name="InforCenter_Platform_WorkflowDesigner_IsLastVersionTemplate" SelectID="[List_EID]">
+        <Para Name="TemplateID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true" IsModal="true">
+        <Para Name="ItemName" Value="WorkFlowTemplateMoveTo" />
+        <Para Name="Size" Value="500*400 " />
+        <Para Name="ReturnValueType" Value="WORKFLOWCLASSIFY" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Workflow.WorkflowService.MoveWerkflowClassify" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="PEID" Value="[ReturnValue_EID]" ParentPara="para" />
+        <Para Name="OldClassifyID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="EID" Value="[List_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="WORKFLOWTEMPLATE" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+
+    <WebAction Name="SetRun" ModuleName="Platform" LabelName="FlowTemplateMenu.SetRun" Image="p_start" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <JSMethod Name="InforCenter_Platform_WorkflowDesigner_IsLastVersionTemplate" SelectID="[List_EID]">
+        <Para Name="TemplateID" Value="[List_EID]" />
+      </JSMethod>
+      <ActionChecker Action="EDIT" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="SINGLE" />
+      <BusinessMethod Name="Hoteam.InforCenter.WorkflowTemplateService.SetWorkflowTemplateEnabled" IsWCFService="true">
+        <Para Name="TemplateName" Value="[List_XMLNAME]" ParentPara="para"/>
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem >
+</root>

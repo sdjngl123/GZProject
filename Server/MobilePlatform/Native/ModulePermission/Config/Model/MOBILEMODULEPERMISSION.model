@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityType Name="MOBILEMODULEPERMISSION" Extend="ENTITY" LogicClass="EntityObject" IconPath="Platform\Image\Common\lock.png" Abstract="false" TableName="MOBILEMODULEPERMISSION" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <Index Name="IX_MMPMISSION_VALUE" TableIndex="IX_MMPMISSION_VALUE" Unique="False">
+      <IndexInfo Name="PERMISSIONTYPEVALUE" Order="ASC" />
+    </Index>
+    <InfoType Name="PERMISSIONTYPEVALUE" Type="DefaultObjectValue" DataType="STRING200" Column="PERMISSIONTYPEVALUE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PERMISSIONVALUE" Type="DefaultObjectValue" DataType="TEXT" Column="PERMISSIONVALUE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

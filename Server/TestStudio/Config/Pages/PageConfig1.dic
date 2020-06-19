@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PageConfig1" IsWeb="true">
+    <Label Name="HLabel2">
+      <LocalizedLabel LanguageRef="zhs">引用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">uu</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel1">
+      <LocalizedLabel LanguageRef="zhs">咯咯咯</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">tt</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel3">
+      <LocalizedLabel LanguageRef="zhs">AAA</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageConfig1">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

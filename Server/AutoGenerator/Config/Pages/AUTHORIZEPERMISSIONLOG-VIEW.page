@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AUTHORIZEPERMISSIONLOG-VIEW">
+  <Settings Key="height" Value="72"/>
+  <Settings Key="width" Value="128"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+var o = pageEvent.o.GetControl('CREATEUID_Value');
+if(o.id!=''){
+o.SetText(data.CREATEUID_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('CREATETIME_Value');
+	if(c.id!=''){
+		c.SetText(data.CREATETIME_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('LOGCONTENT_Value');
+	if(c.id!=''){
+		c.SetText(data.LOGCONTENT_DisplayValue);
+	}
+}
+"/>
+  </PageHandlers>
+  <Settings Key="title" Value="AUTHORIZEPERMISSIONLOG-VIEW.AUTHORIZEPERMISSIONLOGHeader"/>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0px 20px"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="26"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CREATEUID"/><Settings Key="maxSize" Value="300"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CREATETIME"/><Settings Key="maxSize" Value="300"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATEUID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID_Label" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="AUTHORIZEPERMISSIONLOG-VIEW.CREATEUIDHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl><PageControl ControlID="CREATEUID_Value" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+</PageControl><PageControl ControlID="CREATETIME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATETIME_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="CREATETIME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME_Label" ParentID="CREATETIME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="AUTHORIZEPERMISSIONLOG-VIEW.CREATETIMEHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="CREATETIME_Value" ParentID="CREATETIME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="LOGCONTENT"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="LOGCONTENT" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="LOGCONTENT_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="LOGCONTENT_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="LOGCONTENT_Label" ParentID="LOGCONTENT" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="AUTHORIZEPERMISSIONLOG-VIEW.LOGCONTENTHeader" />
+  <Settings Key="suffix" Value="Common.LabelSuffix"/>
+</PageControl>    <PageControl ControlID="LOGCONTENT_Value" ParentID="LOGCONTENT" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+  </PageControls>
+</root>

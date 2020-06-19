@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleUKeyLogin" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数字证书认证登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UKey</LocalizedLabel>
+    </Label>
+    <Label Name="UKeyLogin">
+      <LocalizedLabel LanguageRef="zhs">数字证书登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UKeyLogin</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

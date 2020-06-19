@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebTreeView Name="GACTTGroupToGroupTreeView" ObjectType="" ExpandAction="" TextField="" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField=""
+               NodeTypeField="" EntityFilter="" Filter="" View="" StateField="" ShowStartNode="false" IsTemplate="false">
+
+	  <Schema Name="COMPANYTOGROUP" ObjectType="COMPANY" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" 
+			View="COMPANYVIEWIgnoreCompanyID" QueryID="" StateField="STATEID" Key="1" SuperKey="-1" ParentObjectType="" Loop="false" IsExistNode="true" />
+    <Schema Name="COMPANYTOGROUPINFO" ObjectType="GROUPINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="ORGANIZEVIEW"
+			QueryID="[Tree_Current_value1]" StateField="STATEID" Key="2" SuperKey="1" ParentObjectType="COMPANY" Loop="false" IsExistNode="true" />
+    <Schema Name="GROUPINFOTOGROUP" ObjectType="GROUPINFO" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="CETYPE='GROUPINFO'" 
+			View="ORGANIZEVIEW" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="3" SuperKey="2" ParentObjectType="GROUPINFO" Loop="true" IsExistNode="true" />
+    <QueryView TextField="ENAME" TextDicField="ENAME" IconCloseField="ICON" IconOpenField="ICON" Filter="CETYPE!='ROLEINFO' AND CETYPE!='USERINFO'" View="ORGANIZEVIEWDEEP" StateField="STATEID" QueryField="ENAME;ECODE" />
+  </WebTreeView>
+ </root>

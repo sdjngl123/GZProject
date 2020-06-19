@@ -1,0 +1,29 @@
+﻿
+[cid="POMAttributeMenu"]>.hoteam-menu 
+{
+    right: 0;
+    width: auto;
+}
+[cid="QueryRoleMenu"]>.hoteam-menu 
+{
+    right: 0;
+    width: auto;
+}
+[cid="POMAttributeTreeContainer"]>[data-itemname="item2"]
+{
+   border: 1px solid #c6c6c6;
+}
+
+[cid="QueryRoleGrid"] 
+{
+    border: 1px solid #c6c6c6;
+    border-top:none;
+}
+
+[ctrlpagename="QueryMachineQuery"][cid="Tabs_Ctrl"]
+{
+    border: 1px solid #c6c6c6;
+    border-top:none;
+    border-bottom:none;
+}
+

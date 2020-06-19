@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkFlowAssistAuditPage">
+  <Settings Key="title" Value="WorkFlowAssistAuditPage.Title"/>
+  <Settings Key="height" Value="450"/>
+  <Settings Key="width" Value="700"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkFlowAudit_WorkFlowAssistAuditPageOnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="WorkFlowAssistAuditPage_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="6px 6px 0px 6px"/>
+      <Settings Key="item2">
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="WorkFlowAssistAuditPage_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="1px 2px 1px 2px"/>
+      <Settings Key="border" Value="1px solid #CCCCCC"/>
+      <Settings Key="item2">
+        <Settings Key="childid" Value="WorkFlowAssistAuditPageGrid"/>
+      </Settings>
+      
+    </PageControl>
+
+
+    <PageControl ControlID="WorkFlowAssistAuditPageGrid" ParentID="Info_Container" TypeName="Grid">
+      <Settings Key="showPageBar" Value="false" />
+      <Settings Key="showListTail" Value="false" />
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1"  >
+        <Settings Key="textId" Value="WorkFlowAssistAuditPage.UserInfo" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="100" />
+        <Settings Key="name" Value="UserInfo" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item2"  >
+        <Settings Key="textId" Value="WorkFlowAssistAuditPage.Result" />
+        <Settings Key="name" Value="Result" />
+        <Settings Key="width" Value="100" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item3"  >
+        <Settings Key="textId" Value="WorkFlowAssistAuditPage.OpinionDateTime" />
+        <Settings Key="width" Value="130" />
+        <Settings Key="name" Value="OpinionDateTime" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item4"  >
+        <Settings Key="textId" Value="WorkFlowAssistAuditPage.Opinion" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="Opinion" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+   
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+  </PageControls>
+</root>

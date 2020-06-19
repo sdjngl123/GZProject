@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WebViewCommonQuery">
+  <Settings Key="height" Value="800"/>
+  <Settings Key="width" Value="200"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WebViewCommonQuery_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="GetQueryData" Script=""/>
+    <PageHandler HandlerName="OnReset" Script=""/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;"></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="QueryMachine">
+      <Settings Key="allowOperate" Value="false"/>
+    </PageControl>
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnQuery"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnReset"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="Query_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WebViewCommonQuery_QueryClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="Query_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="
+        {
+        var o = ctrlEvent.o.OtherControl('Info_Container');
+        if(o.id!=''){
+        o.ResetFilterData();
+        }
+        }
+        ;HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:'1=1',EntityFilterString:'1=1',ButtonType:'Reset'});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

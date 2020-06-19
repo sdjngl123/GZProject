@@ -1,0 +1,11 @@
+﻿{
+	var c = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			[FILTERSTRING] += InforCenter_Platform_Object_GetQueryFilter('[ANDOR]','[QUERYCOLUMN]','[QUERYOPERATOR]',value,[UNQUOTED]);
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ServiceItem ServiceName="CommonUploadAndViewService" 
+               ServiceAssembly="Hoteam.InforCenter.CommonUploadAndView.Service.dll" 
+               ServiceClass="Hoteam.InforCenter.CommonUploadAndView.Service.CommonUploadAndViewService" 
+               ContractAssembly="Hoteam.InforCenter.CommonUploadAndView.Service.dll" 
+               ContractClass="Hoteam.InforCenter.CommonUploadAndView.Service.ICommonUploadAndViewService" />
+</root>

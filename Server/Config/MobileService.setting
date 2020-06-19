@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="MobileDataBaseName" Value="MasterDatabase" ToClient="true" Description=" " />
+  <AppSet Key="FlowClientAddress" Value="http://127.0.0.1:8081/WorkflowService/Client" ToClient="true" Description="流程客户端地址"/>
+  <AppSet Key="MasterItemDefaultView" Value="ItemView" ToClient="true" Description="主零组件默认展示视图"/>
+  <AppSet Key="MaxRowCount" Value="10" ToClient="true" Description="列表每页最大显示行数"/>
+	<AppSet Key="IsMessageReturn" Value="false" ToClient="false" Description="消息是否支持回执功能"/>
+</root>

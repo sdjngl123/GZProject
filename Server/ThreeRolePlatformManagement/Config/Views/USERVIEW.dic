@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="USERVIEWView" IsWeb="true">
+    <Label Name="USERVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">用户视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User view</LocalizedLabel>
+    </Label>
+    <Label Name="USERVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">用户视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User view</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="PHONEHeader">
+      <LocalizedLabel LanguageRef="zhs">电话</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phone</LocalizedLabel>
+    </Label>
+    <Label Name="PHONECaption">
+      <LocalizedLabel LanguageRef="zhs">电话</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phone</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mailbox</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILCaption">
+      <LocalizedLabel LanguageRef="zhs">邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mailbox</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="LANGUAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language</LocalizedLabel>
+    </Label>
+    <Label Name="LANGUAGECaption">
+      <LocalizedLabel LanguageRef="zhs">语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTIDCaption">
+      <LocalizedLabel LanguageRef="zhs">代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTSTARTDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">代理开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent start time</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTSTARTDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">代理开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent start time</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTENDDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">代理结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent end time</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTENDDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">代理结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent end time</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+    <Label Name="ISLOCKHeader">
+      <LocalizedLabel LanguageRef="zhs">是否手动锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsLock</LocalizedLabel>
+    </Label>
+    <Label Name="ISLOCKCaption">
+      <LocalizedLabel LanguageRef="zhs">是否手动锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsLock</LocalizedLabel>
+    </Label>
+    <Label Name="ISEXCEPTIONLOCKHeader">
+      <LocalizedLabel LanguageRef="zhs">是否异常锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsExceptionLock</LocalizedLabel>
+    </Label>
+    <Label Name="ISEXCEPTIONLOCKCaption">
+      <LocalizedLabel LanguageRef="zhs">是否异常锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsExceptionLock</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="USERVIEWCondition" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeOrganizeMenu" IsWeb="true">
+    <Label Name="Import">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import</LocalizedLabel>
+    </Label>
+    <Label Name="Export">
+      <LocalizedLabel LanguageRef="zhs">导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeCompanyMenu" IsWeb="true">
+    <Label Name="Import">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import</LocalizedLabel>
+    </Label>
+    <Label Name="CreateGroup">
+      <LocalizedLabel LanguageRef="zhs">新建组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New group</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeGroupMenu" IsWeb="true">
+    <Label Name="CreateGroup">
+      <LocalizedLabel LanguageRef="zhs">新建组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New group</LocalizedLabel>
+    </Label>
+    <Label Name="CreateRole">
+      <LocalizedLabel LanguageRef="zhs">新建角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New role</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveGroup">
+      <LocalizedLabel LanguageRef="zhs">移除组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove group</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveUser">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="MoveToOther">
+      <LocalizedLabel LanguageRef="zhs">移入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move in</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeRoleMenu" IsWeb="true">
+    <Label Name="MoveToOther">
+      <LocalizedLabel LanguageRef="zhs">移入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move in</LocalizedLabel>
+    </Label>
+    <Label Name="CreateUser">
+      <LocalizedLabel LanguageRef="zhs">新建用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New user</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveRole">
+      <LocalizedLabel LanguageRef="zhs">移除角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove role</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeUserMenu" IsWeb="true">
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveUser">
+      <LocalizedLabel LanguageRef="zhs">移除用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove user</LocalizedLabel>
+    </Label>
+    <Label Name="CreateUser">
+      <LocalizedLabel LanguageRef="zhs">新建用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New user</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="OrganizeCompanyMenu" IsWeb="true">
+    <Label Name="RemoveUser">
+      <LocalizedLabel LanguageRef="zhs">移除用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove user</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="OrganizeGroupMenu" IsWeb="true">
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveRole">
+      <LocalizedLabel LanguageRef="zhs">移除角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove role</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="OrganizeRoleMenu" IsWeb="true">
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MoveUp</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MoveDown</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="OrganizeUserMenu" IsWeb="true" />
+</DictionarySerializer>

@@ -1,0 +1,72 @@
+﻿<root version="1.0">
+  <!--类型信息-->
+  <ReportType SortID="01" Name="Report" FileExt="rpt" Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ReportData" InitDesignerClass="Hoteam.InforCenter.Report.Designer.ReportInitDesigner"/>
+
+   <!--报表元件类型-->
+  <ComponentType SortID="00" Name="AbsoluteLocation"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.AbsoluteLocationData"  ReportType="Report" Image="Platform/Image/Report/LayoutTable.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="01" Name="HorizontalBoxLayout"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.HorizontalBoxLayoutData"  ReportType="Report" Image="Platform/Image/Report/HorizontalBoxLayout.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="02" Name="VerticalBoxLayout"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.VerticalBoxLayoutData"  ReportType="Report" Image="Platform/Image/Report/VerticalBoxLayout.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="03" Name="Label"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.LabelData"  ReportType="Report" Image="Platform/Image/Report/Label.bmp" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="04" Name="DBLabel"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.DBLabelData"  ReportType="Report" Image="Platform/Image/Report/ReportDBText.bmp" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="05" Name="Image"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ImageData"  ReportType="Report" Image="Platform/Image/Report/ReportImage.bmp" BackgroundImage="Platform/Image/Report/GEDelete.png"/>
+  <ComponentType SortID="06" Name="Chart"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ChartData"  ReportType="Report" Image="Platform/Image/Report/ReportChart.bmp" BackgroundImage="Platform/Image/Report/Chart.bmp"/>
+  <ComponentType SortID="07" Name="DataSelect"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.DataSelectData"  ReportType="Report" Image="Platform/Image/Report/DataSelect.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="08" Name="DataRepeat"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.DataRepeatData"  ReportType="Report" Image="Platform/Image/Report/DataRepeat.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="09" Name="Expression"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ExpressionData"  ReportType="Report" Image="Platform/Image/Report/ReportExpression.bmp" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  <ComponentType SortID="10" Name="DataGrid"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.DataGridData"  ReportType="Report" Image="Platform/Image/Report/LayoutTable.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+  
+  <!--类型设计类-->
+  <ReportDesigner SortID="01" Name="Report"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.ReportDesigner" ReportType="Report"/>
+  
+  <!--报表元件设计-->
+  <ComponentDesigner SortID="00" Name="AbsoluteLocation"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.AbsoluteLocationComponent"  ReportType="Report"/>
+  <ComponentDesigner SortID="01" Name="VerticalBoxLayout"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.VerticalBoxLayoutComponent"  ReportType="Report"/>
+  <ComponentDesigner SortID="02" Name="HorizontalBoxLayout"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.HorizontalBoxLayoutComponent"  ReportType="Report"/>
+  <ComponentDesigner SortID="03" Name="Label"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.LabelComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="04" Name="DBLabel"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.DBLabelComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="05" Name="Image"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.ImageComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="06" Name="Chart"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.ChartComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="07" Name="DataSelect"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.DataSelectComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="08" Name="DataRepeat"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.DataRepeatComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="09" Name="Expression"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.ExpressionComponent"  ReportType="Report" />
+  <ComponentDesigner SortID="10" Name="DataGrid"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.DataGridComponent"  ReportType="Report" />
+  
+  
+  <!--ReportDisplay-->
+  <ReportDisplay SortID="01" Name="Report"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.ReportRunDisplay" ReportType="Report"/>
+  
+ 
+<!--报表元件对应显示-->
+  <ComponentDisplay SortID="00" Name="AbsoluteLocation"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.AbsoluteLocationDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="01" Name="VerticalBoxLayout"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.VerticalBoxLayoutDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="02" Name="HorizontalBoxLayout"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.HorizontalBoxLayoutDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="03" Name="Label"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.LabelDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="04" Name="DBLabel"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.DBLabelDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="05" Name="Image"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.ImageDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="06" Name="Chart"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.ChartDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="07" Name="DataSelect"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.DataSelectDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="08" Name="DataRepeat"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.DataRepeatDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="09" Name="Expression"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.ExpressionDisplay"  ReportType="Report"/>
+  <ComponentDisplay SortID="10" Name="DataGrid"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.DataGridDisplay"  ReportType="Report" />
+  
+  <!--报表Toobar-->
+  <ReportExtentButton SortID="00" Name="SetDataSource" ReportType="Report"  Image="Platform/Image/Report/DataSourceSetting.png"/>
+  <ReportExtentButton SortID="01" Name="DeleteComponent" ReportType="Report"  Image="Platform/Image/Report/Delete.gif"/>
+  <ReportExtentButton SortID="02" Name="AlignObjectsLeft" ReportType="Report" Assembly="Form.dll" Class="Hoteam.TheOne.Form.Commands.AlignObjectsLeftCmd" Image="Platform/Image/Report/AlignObjectsLeft.png"/>
+  <ReportExtentButton SortID="03" Name="AlignObjectsCenteredHorizontal" ReportType="Report"   Image="Platform/Image/Report/AlignObjectsCenteredHorizontal.png"/>
+  <ReportExtentButton SortID="04" Name="AlignObjectsRight" ReportType="Report" Image="Platform/Image/Report/AlignObjectsRight.png"/>
+  <ReportExtentButton SortID="05" Name="AlignObjectsTop" ReportType="Report"  Image="Platform/Image/Report/AlignObjectsTop.png"/>
+  <ReportExtentButton SortID="06" Name="AlignObjectsCenteredVertical" ReportType="Report"  Image="Platform/Image/Report/AlignObjectsCenteredVertical.png"/>
+  <ReportExtentButton SortID="07" Name="AlignObjectsBottom" ReportType="Report" Image="Platform/Image/Report/AlignObjectsBottom.png"/>
+  <ReportExtentButton SortID="08" Name="MoveUp" ReportType="Report" Image="Platform/Image/Report/MoveUp.png"/>
+  <ReportExtentButton SortID="09" Name="MoveDown" ReportType="Report" Image="Platform/Image/Report/MoveDown.png"/>
+  <ReportExtentButton SortID="10" Name="MoveLeft" ReportType="Report" Image="Platform/Image/Report/MoveLeft.png"/>
+  <ReportExtentButton SortID="11" Name="MoveRight" ReportType="Report" Image="Platform/Image/Report/MoveRight.png"/>
+  <!--<ReportExtentButton SortID="12" Name="Preview" ReportType="Report" Image="Platform/Image/Report/PrintPrew"/>-->
+  <!--数据源类型-->
+  <DataSourceType SortID="00" Name="View"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ViewData"  ReportType="Report"/>
+  <DataSourceType SortID="01" Name="Sql"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.SqlData"  ReportType="Report"/>
+  <!--数据源显示-->
+  <DataSourceControl SortID="00" Name="View"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Form.ViewDataSourceSetting"  ReportType="Report"/>
+  <DataSourceControl SortID="01" Name="Sql"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Form.SqlDataSourceSetting"  ReportType="Report"/>
+</root>

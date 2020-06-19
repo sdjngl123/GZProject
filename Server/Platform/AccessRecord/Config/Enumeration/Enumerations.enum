@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="TimeRange">
+    <EnumerationItem Name="Day" />
+    <EnumerationItem Name="Week" />
+    <EnumerationItem Name="Month" />
+    <EnumerationItem Name="CustomTime" />
+    <EnumerationItem Name="All" />
+  </Enumeration>
+  <Enumeration Name="AccessRecordDataType">
+    <EnumerationItem Name="All" />
+  </Enumeration>
+</root>

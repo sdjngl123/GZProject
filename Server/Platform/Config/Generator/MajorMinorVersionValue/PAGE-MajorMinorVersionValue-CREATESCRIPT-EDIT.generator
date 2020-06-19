@@ -1,0 +1,7 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+InforCenter_Platform_Object_SetVersionSelList(o,'Major');
+o.SetSelectedByValue(data.[INFONAME]);
+}
+}

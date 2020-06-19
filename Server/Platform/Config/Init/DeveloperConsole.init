@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="DeveloperConsole">
+  <Package Assembly ="Hoteam.InforCenter.Common.Plugin"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.DataService"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.ObjectFactory"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.PageGenerator"/>
+  <Package Assembly ="Hoteam.InforCenter.Enumeration.Business"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.UI"/>
+  <Package Assembly ="Hoteam.InforCenter.Common.View"/>
+  <Package Assembly ="Hoteam.InforCenter.Rule.Model"/>
+  <Package Assembly ="Hoteam.InforCenter.Workflow.Config"/>
+</root >

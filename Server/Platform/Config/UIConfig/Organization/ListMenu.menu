@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="ListRoleMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" CtrlType="" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateRole" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="ROLEINFO" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="ROLEINFO" />
+        <Para Name="PromptContent" Value="OrganizationCommon.RoleNameExist" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="EditRole" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PromptContent" Value="OrganizationCommon.RoleNameExist" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="DeleteRole" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_OrganizeDeleteCheck" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_EID]" />
+        <Para Name="EName" Value="[List_ENAME]" />
+        <Para Name="Text" Value="OrganizationCommon.RoleExistReference" />
+      </JSMethod>
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ListGroupMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="CREATE" ActionType="GROUPINFO" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="GROUPINFO" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="EditGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="DeleteGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_ComanyGroupUserDeleteCheck" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_EID]" />
+        <Para Name="EName" Value="[List_ENAME]" />
+        <Para Name="DenyText" Value="OrganizationCommon.GroupExistReference" />
+      </JSMethod>
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ListUserMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="000" IsMainConfig="false" />
+    <WebAction Name="CreateUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="001" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="USERINFO" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="USERINFO" />
+        <Para Name="Size" Value="650*550" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="EditUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="002" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Size" Value="650*550" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="DeleteUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="003" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_ComanyGroupUserDeleteCheck" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_EID]" />
+        <Para Name="EName" Value="[List_ENAME]" />
+      </JSMethod>
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="SetDimission" MultiMenu="false" ModuleName="Platform" LabelName="Organization.SetDimission" Image="p_offwork" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="004" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <BusinessMethod Name="InforCenter.Platform.OrganizationDataService.SetDimissionState" SelectID="[List_EID]" IsWCFService="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessage PromptLabel="OrganizationCommon.SetDimissionPrompt" PromptType="NORMAL" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="SetIncumbent" MultiMenu="false" ModuleName="Platform" LabelName="Organization.SetIncumbent" Image="p_onwork" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="005" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <BusinessMethod Name="InforCenter.Platform.OrganizationDataService.SetIncumbentState" SelectID="[List_EID]" IsWCFService="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessage PromptLabel="OrganizationCommon.SetIncumbentPrompt" PromptType="NORMAL" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="TransferOwnership" MultiMenu="false" ModuleName="Platform" LabelName="Organization.TransferOwnership" Image="p_changemandateholders" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="006" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="TreeCommonQuery" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="UserTransferOwnership" />
+        <Para Name="Size" Value="400*500" />
+        <Para Name="TransferType" Value="User" />
+      </WebMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ListPersonMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreatePerson" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="创建一个新对象" IsMainConfig="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="PERSON" SelectType="" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="PersonGuide" />
+        <Para Name="ObjectType" Value="PERSON" />
+        <Para Name="Title" Value="Organization.PersonGuid" />
+        <Para Name="Size" Value="850*450" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="EditPerson" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="编辑选中对象" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Size" Value="650*370" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="DeletePerson" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="删除选中对象，支持删除多个" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_DeletePersonCheck" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_EID]" />
+        <Para Name="EName" Value="[List_ENAME]" />
+      </JSMethod>
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+</root>

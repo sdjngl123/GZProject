@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FlowTemplateView" IsWeb="true">
+    <Label Name="FlowNode">
+      <LocalizedLabel LanguageRef="zhs">任务节点：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task node:</LocalizedLabel>
+    </Label>
+    <Label Name="Actor">
+      <LocalizedLabel LanguageRef="zhs">执行人员：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executive:</LocalizedLabel>
+    </Label>
+    <Label Name="ExecutorSetting">
+      <LocalizedLabel LanguageRef="zhs">执行人设置：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executive setting:</LocalizedLabel>
+    </Label>
+    <Label Name="PreparedExecutor">
+      <LocalizedLabel LanguageRef="zhs">预期执行人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expected executive:</LocalizedLabel>
+    </Label>
+    <Label Name="ActuralActors">
+      <LocalizedLabel LanguageRef="zhs">实际执行人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual executive :</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTemplate">
+      <LocalizedLabel LanguageRef="zhs">流程模板：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template:</LocalizedLabel>
+    </Label>
+    <Label Name="AuditResultList">
+      <LocalizedLabel LanguageRef="zhs">结果列表：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result list:</LocalizedLabel>
+    </Label>
+    <Label Name="Run">
+      <LocalizedLabel LanguageRef="zhs">正在执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executing</LocalizedLabel>
+    </Label>
+    <Label Name="Complete">
+      <LocalizedLabel LanguageRef="zhs">已完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Completed</LocalizedLabel>
+    </Label>
+    <Label Name="NotExecute">
+      <LocalizedLabel LanguageRef="zhs">未执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not executed</LocalizedLabel>
+    </Label>
+    <Label Name="HaveConditions">
+      <LocalizedLabel LanguageRef="zhs"> 有条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional</LocalizedLabel>
+    </Label>
+    <Label Name="NotConditions">
+      <LocalizedLabel LanguageRef="zhs"> 无条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unconditional</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

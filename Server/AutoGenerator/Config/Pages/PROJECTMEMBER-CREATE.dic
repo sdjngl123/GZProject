@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PROJECTMEMBER-CREATE" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">员工编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTROLE</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTROLERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARMENTHeader">
+      <LocalizedLabel LanguageRef="zhs">所属部门</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DEPARMENT</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARMENTRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ROOMHeader">
+      <LocalizedLabel LanguageRef="zhs">所在科室</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ROOM</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTMEMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">新建项目成员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewPROJECTMEMBER</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

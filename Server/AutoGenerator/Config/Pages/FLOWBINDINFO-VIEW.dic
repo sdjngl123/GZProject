@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FLOWBINDINFO-VIEW" IsWeb="true">
+    <Label Name="FLOWTEMPLATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FLOWTEMPLATE</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWBINDINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览流程发起绑定对象信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseFLOWBINDINFO</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

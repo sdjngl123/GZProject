@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AllCompanyCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_AllCompanyCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_AllCompanyCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="AllCompanyCondition_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="AllCompany_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 容器-->
+    <PageControl ControlID="AllCompany_Container" ParentID="AllCompanyCondition_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AllCompanyLabel"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 控件-->
+    <PageControl ControlID="AllCompanyLabel" ParentID="AllCompany_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="AllCompanyCondition.PermissionToAllUserLabel" />
+    </PageControl>
+  </PageControls>
+</root>

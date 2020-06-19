@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Platform/SystemSettings/Js/SystemSettings.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/SystemSettings/Js/ChildPageManage.js" group="Platform"/>
+</root>

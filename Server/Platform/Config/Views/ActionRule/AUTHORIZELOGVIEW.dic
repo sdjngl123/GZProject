@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AUTHORIZELOGVIEWView" IsWeb="true">
+    <Label Name="AUTHORIZELOGVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">授权日志视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization log view</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHORIZELOGVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">授权日志视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization log view</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="LOGCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="LOGCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

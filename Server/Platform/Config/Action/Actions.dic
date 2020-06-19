@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Actions" IsWeb="true">
+    <Label Name="CREATE">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="EDIT">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="DELETE">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSION">
+      <LocalizedLabel LanguageRef="zhs">授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization</LocalizedLabel>
+    </Label>
+    <Label Name="REMOVE">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="ADD">
+      <LocalizedLabel LanguageRef="zhs">新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="PASTECOPY">
+      <LocalizedLabel LanguageRef="zhs">粘贴复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste and Copy</LocalizedLabel>
+    </Label>
+    <Label Name="DOWNLOAD">
+      <LocalizedLabel LanguageRef="zhs">下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download </LocalizedLabel>
+    </Label>
+    <Label Name="PRINT">
+      <LocalizedLabel LanguageRef="zhs">打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Print</LocalizedLabel>
+    </Label>
+    <Label Name="STARTWORKFLOW">
+      <LocalizedLabel LanguageRef="zhs">发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiate process </LocalizedLabel>
+    </Label>
+    <Label Name="DOWNLOAD">
+      <LocalizedLabel LanguageRef="zhs">下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download </LocalizedLabel>
+    </Label>
+    <Label Name="BROWSE">
+      <LocalizedLabel LanguageRef="zhs">浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browse</LocalizedLabel>
+    </Label>
+    <Label Name="EMEND">
+      <LocalizedLabel LanguageRef="zhs">修订</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify</LocalizedLabel>
+    </Label>
+    <Label Name="ABANDON">
+      <LocalizedLabel LanguageRef="zhs">废弃</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Discard</LocalizedLabel>
+    </Label>
+    <Label Name="CANCELABANDON">
+      <LocalizedLabel LanguageRef="zhs">取消废弃</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel decommission</LocalizedLabel>
+    </Label>
+    <Label Name="CANCELFLOWSTATE">
+      <LocalizedLabel LanguageRef="zhs">取消流程状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel process state</LocalizedLabel>
+    </Label>
+    <Label Name="CANCELPLULISH">
+      <LocalizedLabel LanguageRef="zhs">取消发布</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel publish</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATESTRUCT">
+      <LocalizedLabel LanguageRef="zhs">更改结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change structure</LocalizedLabel>
+    </Label>
+    <Label Name="COPY">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

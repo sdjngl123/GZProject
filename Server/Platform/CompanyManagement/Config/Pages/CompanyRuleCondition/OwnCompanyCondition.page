@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OwnCompanyCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_OwnCompanyCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_OwnCompanyCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="OwnCompanyValue_Container"/>
+      </Settings>      
+    </PageControl>   
+   
+    <!-- 对象类型容器-->
+    <PageControl ControlID="OwnCompanyValue_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="OwnCompanyValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OwnCompanyValueCtrl"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+   
+    <!-- 对象类型控件-->
+    <PageControl ControlID="OwnCompanyValueLabel" ParentID="OwnCompanyValue_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="OwnCompanyCondition.OwnCompanyValue" />
+    </PageControl>
+    <PageControl ControlID="OwnCompanyValueCtrl" ParentID="OwnCompanyValue_Container" TypeName="TextValue">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_OwnCompanyCondition_OwnCompanyOnclick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+     
+  </PageControls>
+</root>

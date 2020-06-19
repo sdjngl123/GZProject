@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ModelInfoTypePage">
+  <Settings Key="title" Value="ModelInfoTypePage.ModelInfoTypePage"/>
+  <Settings Key="height" Value="400"/>
+  <Settings Key="width" Value="655"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ModelInfoTypePage_PageInit(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Content_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Content_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="6"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="FirstContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="6"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Tabs_Container"/>
+      </Settings>
+    </PageControl>
+
+
+
+    <PageControl ControlID="FirstContainer" ParentID="Content_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="13"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="6"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="125"/>
+        <Settings Key="childid" Value="StateLabel"/>
+      </Settings>
+    </PageControl>
+
+
+    <PageControl ControlID="StateLabel" ParentID="FirstContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+    
+    <PageControl ControlID="MenuPageContainer" ParentID="Content_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+
+    <PageControl ControlID="Tabs_Container" ParentID="Content_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="VerticalTabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="VerticalTabsCtrlPage" ParentID="Tabs_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="VerticalTabsCtrl"/>
+    </PageControl>
+
+  </PageControls>
+</root>
+

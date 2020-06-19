@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="DATASETTYPE-VIEW" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="FILEEXTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">文件后缀</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File suffix</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWTOOLHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browser</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="DATASETTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览图文档类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseFigure document type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

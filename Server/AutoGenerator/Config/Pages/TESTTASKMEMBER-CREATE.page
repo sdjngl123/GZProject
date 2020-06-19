@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TESTTASKMEMBER-CREATE">
+  <Settings Key="height" Value="88"/>
+  <Settings Key="width" Value="156"/>
+  <Settings Key="title" Value="TESTTASKMEMBER-CREATE.TESTTASKMEMBERHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('TESTTASKMEMBER',para);{
+var o = pageEvent.o.GetControl('TESTUSER_Value');
+if(o.id!=''){
+o.SetValue(data.TESTUSER);
+o.SetText(data.TESTUSER_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('TESTROLE_Value');
+	if(c.id!=''){
+		c.SetText(data.TESTROLE);
+	}
+}
+ var functionName = 'InforCenter_TESTTASKMEMBER_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'TESTTASKMEMBER'};{
+var c = pageEvent.o.GetControl('TESTUSER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TESTUSER = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('TESTROLE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TESTROLE = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_TESTTASKMEMBER_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTUSER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTUSER" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TESTUSER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTUSER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTUSER_Label" ParentID="TESTUSER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTTASKMEMBER-CREATE.TESTUSERHeader" />
+</PageControl><PageControl ControlID="TESTUSER_Value" ParentID="TESTUSER" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="ctrlEvent.objectType='TESTTASKMEMBER';ctrlEvent.infoName='TESTUSER';InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTROLE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTROLE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TESTROLE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TESTROLE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TESTROLE_Label" ParentID="TESTROLE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTTASKMEMBER-CREATE.TESTROLEHeader" />
+</PageControl><PageControl ControlID="TESTROLE_Value" ParentID="TESTROLE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTTASKMEMBER';ctrlEvent.infoName='TESTROLE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTTASKMEMBER-CREATE.TESTROLERegex" />
+</PageControl>  
+  </PageControls>
+</root>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="THREEROLEUSERINFOModel" IsWeb="true">
+    <Label Name="THREEROLEUSERINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">三员用户信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleUserInfo</LocalizedLabel>
+    </Label>
+    <Label Name="THREEROLEUSERINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">三员用户信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleUserInfo</LocalizedLabel>
+    </Label>
+    <Label Name="ISLOCKHeader">
+      <LocalizedLabel LanguageRef="zhs">是否手动锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsLock</LocalizedLabel>
+    </Label>
+    <Label Name="ISLOCKCaption">
+      <LocalizedLabel LanguageRef="zhs">是否手动锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsLock</LocalizedLabel>
+    </Label>
+    <Label Name="ISFIRSTLOGINHeader">
+      <LocalizedLabel LanguageRef="zhs">是否是首次登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsFirstLogin</LocalizedLabel>
+    </Label>
+    <Label Name="ISFIRSTLOGINCaption">
+      <LocalizedLabel LanguageRef="zhs">是否是首次登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsFirstLogin</LocalizedLabel>
+    </Label>
+    <Label Name="LASTCHANGEPASSWORDDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">最后修改密码日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LastChangePasswordDate</LocalizedLabel>
+    </Label>
+    <Label Name="LASTCHANGEPASSWORDDATECaption">
+      <LocalizedLabel LanguageRef="zhs">最后修改密码日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LastChangePasswordDate</LocalizedLabel>
+    </Label>
+    <Label Name="ISEXCEPTIONLOCKHeader">
+      <LocalizedLabel LanguageRef="zhs">是否异常锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsExceptionLock</LocalizedLabel>
+    </Label>
+    <Label Name="ISEXCEPTIONLOCKCaption">
+      <LocalizedLabel LanguageRef="zhs">是否异常锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsExceptionLock</LocalizedLabel>
+    </Label>
+    <Label Name="EXCEPTIONLOCKDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">异常锁定时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExceptionLockDate</LocalizedLabel>
+    </Label>
+    <Label Name="EXCEPTIONLOCKDATECaption">
+      <LocalizedLabel LanguageRef="zhs">异常锁定时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExceptionLockDate</LocalizedLabel>
+    </Label>
+    <Label Name="EXCEPTIONLOGINCOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">异常登录次数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExceptionLoginCount</LocalizedLabel>
+    </Label>
+    <Label Name="EXCEPTIONLOGINCOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">异常登录次数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExceptionLoginCount</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserID</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

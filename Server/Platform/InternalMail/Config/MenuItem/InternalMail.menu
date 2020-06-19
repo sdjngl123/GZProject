@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="RefreshMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+  </MenuItem>
+  <MenuItem Name="ReciveInternalMailMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="NewMail" ModuleName="InforCenter" LabelName="MenuItems.NewMail" Image="p_new_email" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[Tree_Current_value1]" Action="CREATE" />
+      <WebMethod  PageName="INTERNALMAIL-CREATE" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+      </WebMethod>
+      <WebMessageAndLogger  SelectID="[ReturnValue_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Create">
+        <Para Name="ObjectName" Value="[ReturnValue_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Answer" ModuleName="InforCenter" LabelName="MenuItems.Answer" Image="p_reply" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[List_EID]" Action="CREATE" />
+      <WebMethod  PageName="AnswerInternalMali" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Answer">
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="AnswerAll" ModuleName="InforCenter" LabelName="MenuItems.AnswerAll" Image="p_all_the_reply" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[List_EID]" Action="CREATE" />
+      <WebMethod  PageName="AnswerInternalMali" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="ObjectID" Value="[List_EID]" />
+        <Para Name="Mode" Value="all" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="AnswerAll">
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Transfer" ModuleName="InforCenter" LabelName="MenuItems.Transfer" Image="p_forwarding" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[List_EID]" Action="CREATE" />
+      <WebMethod  PageName="TransferInternalMali" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false" >
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true"  OperateType="Transfer" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+   
+    <WebAction Name="Delete" ModuleName="InforCenter" LabelName="MenuItems.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="DELETE" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.RemoveInternalMailToDustbin" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Delete" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MarkRead" ModuleName="InforCenter" LabelName="MenuItems.MarkRead" Image="p_markread" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="EDIT" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.MarkReadOrUnRead" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+        <Para Name="State" Value="Read"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="MarkRead" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MarkUnRead" ModuleName="InforCenter" LabelName="MenuItems.MarkUnRead" Image="p_mark_unread" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="EDIT" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.MarkReadOrUnRead" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+        <Para Name="State" Value="UnRead"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="MarkUnRead">
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="SendInternalMailMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="NewMail" ModuleName="InforCenter" LabelName="MenuItems.NewMail" Image="p_new_email" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[Tree_Current_value1]" Action="CREATE" />
+      <WebMethod  PageName="INTERNALMAIL-CREATE" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+      </WebMethod>
+      <WebMessageAndLogger  SelectID="[ReturnValue_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Create">
+        <Para Name="ObjectName" Value="[ReturnValue_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Transfer" ModuleName="InforCenter" LabelName="MenuItems.Transfer" Image="p_forwarding" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[List_EID]" Action="CREATE" />
+      <WebMethod  PageName="TransferInternalMali" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Transfer" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="InforCenter" LabelName="MenuItems.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="DELETE" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.RemoveInternalMailToDustbin" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Delete" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  
+  <MenuItem Name="DraftsTreeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="ClearMail" ModuleName="InforCenter" LabelName="MenuItems.ClearMail" Image="p_delete_all" ParentWebAtionName="" CtrlType="" RefreshType="RefreshCurrentStructAndTab" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[Tree_Current_value1]" Action="DELETE" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.RemoveInternalMailToDustbin" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[Tree_Current_Tag_EID]"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_Tag_EID]" TemplateLabel="InternalMail.DraftsClear" WriteLogger="true" SendMessage="true" OperateType="Clear" >
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+    <MenuItem Name="SystemTreeMenu" Type="Button" Issplit="false" IsTemplate="false">
+      <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+      <WebAction Name="ClearMail" ModuleName="InforCenter" LabelName="MenuItems.ClearMail" Image="p_delete_all" ParentWebAtionName="" CtrlType="" RefreshType="RefreshCurrentStructAndTab" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[Tree_Current_value1]" Action="DELETE" />
+        <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.RemoveInternalMailToDustbin" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[Tree_Current_Tag_EID]"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_Tag_EID]" TemplateLabel="InternalMail.SystemClear" WriteLogger="true" SendMessage="true" OperateType="Clear" >
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="DraftsMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="Edit" ModuleName="InforCenter" LabelName="MenuItems.Edit" Image="p_edit" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[List_EID]" Action="EDIT" />
+      <WebMethod SelectID="[List_EID]" PageName="INTERNALMAIL-EDIT" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Edit" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ClearMail" ModuleName="InforCenter" LabelName="MenuItems.Delete" Image="p_delete_all" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="DELETE" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.RemoveInternalMailToDustbin" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_Tag_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Clear" >
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="DustbinTreeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="DeleteMail" ModuleName="InforCenter" LabelName="MenuItems.ClearMail" Image="p_delete_all" ParentWebAtionName="" CtrlType="" RefreshType="RefreshCurrentStructAndTab" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="SINGLE" SelectID="[Tree_Current_Tag_EID]" Action="DELETE" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.ClearInternalMail" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[Tree_Current_Tag_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_Tag_EID]" TemplateLabel="InternalMail.DustbinClear" WriteLogger="true" SendMessage="true" OperateType="Clear" >
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="DustbinMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="DeleteMail" ModuleName="InforCenter" LabelName="MenuItems.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="DELETE" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.ClearInternalMail" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Delete" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  
+  <MenuItem Name="SystemMailMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="InforCenter" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" IsHidden="false" IsTemplate="false" />
+    <WebAction Name="MarkRead" ModuleName="InforCenter" LabelName="MarkRead" Image="p_markread" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="EDIT" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.MarkReadOrUnRead" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+        <Para Name="State" Value="Read"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="MarkRead" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MarkUnRead" ModuleName="InforCenter" LabelName="MarkUnRead" Image="p_mark_unread" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="EDIT" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.MarkReadOrUnRead" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]"  ParentPara="para"/>
+        <Para Name="State" Value="UnRead"  ParentPara="para"/>
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="MarkUnRead">
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="DeleteMail" ModuleName="InforCenter" LabelName="Delete" Image="p_delete" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" IsHidden="false" IsTemplate="false" >
+      <ActionChecker SelectMode="MULTI" SelectID="[List_EID]" Action="DELETE" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Platform.InternalMailService.RemoveInternalMailToDustbin" SelectID="[List_EID]" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="InternalMail.Common" WriteLogger="true" SendMessage="true" OperateType="Delete" >
+        <Para Name="ObjectName" Value="[List_MTITLE]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  
+</root>

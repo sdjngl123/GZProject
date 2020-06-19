@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Organization" IsWeb="true">
+    <Label Name="NoDelete">
+      <LocalizedLabel LanguageRef="zhs">【[USERNAME]】已经被引用，且是在活动态不能删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[USERNAME] has already been referenced and cannot be deleted in the active state</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectUsed">
+      <LocalizedLabel LanguageRef="zhs">所选对象均已被引用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The selected object has been referenced</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectSelected">
+      <LocalizedLabel LanguageRef="zhs">请选择添加的对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the daa object</LocalizedLabel>
+    </Label>
+    <Label Name="UserGuid">
+      <LocalizedLabel LanguageRef="zhs">添加用户向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add user wizard</LocalizedLabel>
+    </Label>
+    <Label Name="PersonGuid">
+      <LocalizedLabel LanguageRef="zhs">新建人员向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add person wizard</LocalizedLabel>
+    </Label>
+    <Label Name="RoleGuid">
+      <LocalizedLabel LanguageRef="zhs">添加角色向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add role wizard</LocalizedLabel>
+    </Label>
+    <Label Name="GroupGuid">
+      <LocalizedLabel LanguageRef="zhs">添加组向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add group wizard</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyGuid">
+      <LocalizedLabel LanguageRef="zhs">添加公司向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add company wizard</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyGuid">
+      <LocalizedLabel LanguageRef="zhs">添加公司向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add company wizard</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ListCommonQuery" IsWeb="true">
+    <Label Name="UserListSearch">
+      <LocalizedLabel LanguageRef="zhs">用户查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User query</LocalizedLabel>
+    </Label>
+    <Label Name="SinglePersonSearch">
+      <LocalizedLabel LanguageRef="zhs">人员查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Person query</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

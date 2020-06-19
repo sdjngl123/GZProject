@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SetFlowTaskPermission" IsCache="true">
+  <Settings Key="title" Value="SetFlowTaskPermission.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SetFlowTaskPermission_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetEditGridData" Script="InforCenter_Platform_EditListManagement_OnGetEditGridData(pageEvent);"/>
+    <PageHandler HandlerName ="OnGridAfterEdit" Script="InforCenter_Platform_EditListManagement_OnGridAfterEdit(pageEvent);"/>
+    <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_EditListManagement_OnRowDblClick(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListManagement_Container"/>
+      </Settings>
+
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+
+      <Settings Key="item5">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+
+    </PageControl>
+    
+    <PageControl ControlID="ListManagement_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewFilterPageContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="BreadNavigation" ParentID="ListManagement_Container" TypeName="BreadcrumbNavigation">
+      <PageHandlers>
+        <PageHandler HandlerName ="NodeOnClick" Script="InforCenter_Platform_ListManagement_BreadNavOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="ListViewFilterPageContainer" ParentID="ListManagement_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"></Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"></Settings>
+        <Settings Key="childid" Value="ListViewPageContainer"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MenuPageContainer" ParentID="ListManagement_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="ListViewPageContainer" ParentID="ListViewFilterPageContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="EditListViewCtrl"/>
+    </PageControl>
+
+
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SetFlowTaskPermission_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

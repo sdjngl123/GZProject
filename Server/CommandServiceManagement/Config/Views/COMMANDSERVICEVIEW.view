@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="COMMANDSERVICEVIEW" ObjectTypeName="ENTITY" OrderByString="" FixedFilter="" MaxQueryColumn="0" AsCommonQuery="true" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="COMMAND" Width="150" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="CONVERSIONSTATE" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="CONVERSIONSTARTDATE" Width="130" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="CONVERSIONENDDATE" Width="130" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="CONVERSIONSPAN" Width="80" Resizable="true" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="EXPECT_CLUSTERNAME" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="EXPECT_ENDPOINTNAME" Width="150" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="EXPECT_CONVERSIONNAME" Width="150" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="EXPECT_IP" Width="150" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="EXPECT_PORT" Width="60" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="CONVERSIONCOUNT" Width="60" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+   
+    <ViewColumn Name="CREATETIME" Width="130" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="COMMANDMESSAGE" Width="200" Resizable="true" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+  </ObjectView>
+</root>

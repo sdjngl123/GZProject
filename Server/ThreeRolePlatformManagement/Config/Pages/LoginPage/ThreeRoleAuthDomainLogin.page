@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleAuthDomainLogin">
+  <Settings Key="title" Value="ThreeRoleAuthDomainLogin.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthDomainLogin_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthDomainLogin_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="DomainUserName"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="DomainPassword"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DomainUserName" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DomainUserName_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DomainUserName_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DomainUserName_Label" ParentID="DomainUserName" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleAuthDomainLogin.DomainUserName" />
+    </PageControl>   
+    <PageControl ControlID="DomainUserName_Value" ParentID="DomainUserName" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+
+    <PageControl ControlID="DomainPassword" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="DomainPassword_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DomainPassword_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DomainPassword_Label" ParentID="DomainPassword" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleAuthDomainLogin.DomainPassword" />
+    </PageControl>
+    <PageControl ControlID="DomainPassword_Value" ParentID="DomainPassword" TypeName="TextBox" >
+      <Settings Key="type" Value="password"/>
+    </PageControl>
+  </PageControls>
+</root>

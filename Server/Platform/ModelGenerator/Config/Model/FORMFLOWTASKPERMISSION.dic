@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FORMFLOWTASKPERMISSIONModel" IsWeb="true">
+    <Label Name="FORMFLOWTASKPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">表单流程任务权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMFLOWTASKPERMISSION</LocalizedLabel>
+    </Label>
+    <Label Name="FORMFLOWTASKPERMISSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">表单流程任务权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMFLOWTASKPERMISSION</LocalizedLabel>
+    </Label>
+    <Label Name="FORMTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">表单类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="FORMTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">表单类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLIDHeader">
+      <LocalizedLabel LanguageRef="zhs">控件ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONTROLID</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLIDECaption">
+      <LocalizedLabel LanguageRef="zhs">控件ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONTROLID</LocalizedLabel>
+    </Label>
+    <Label Name="TASKNODEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">任务节点ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TASKNODEID</LocalizedLabel>
+    </Label>
+    <Label Name="TASKNODEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">任务节点ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TASKNODEID</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">权限内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionContent</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">权限内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionContent</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

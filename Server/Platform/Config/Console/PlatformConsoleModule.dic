@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConsoleModule" IsWeb="false">
+    <Label Name="CommonPageHeader">
+      <LocalizedLabel LanguageRef="zhs">通用页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General Page</LocalizedLabel>
+    </Label>
+    <Label Name="CommonPageCaption">
+      <LocalizedLabel LanguageRef="zhs">通用页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General Page</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageHeader">
+      <LocalizedLabel LanguageRef="zhs">查询页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageCaption">
+      <LocalizedLabel LanguageRef="zhs">查询页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page</LocalizedLabel>
+    </Label>
+    <Label Name="ManagePageHeader">
+      <LocalizedLabel LanguageRef="zhs">管理页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Management Page</LocalizedLabel>
+    </Label>
+    <Label Name="ManagePageCaption">
+      <LocalizedLabel LanguageRef="zhs">管理页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Management Page</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowManageHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Management</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowManageCaption">
+      <LocalizedLabel LanguageRef="zhs">流程管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Management</LocalizedLabel>
+    </Label>
+    <Label Name="ReportManageHeader">
+      <LocalizedLabel LanguageRef="zhs">报表管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Report Management</LocalizedLabel>
+    </Label>
+    <Label Name="ReportManageCaption">
+      <LocalizedLabel LanguageRef="zhs">报表管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Report Management</LocalizedLabel>
+    </Label>
+    <Label Name="ModelHeader">
+      <LocalizedLabel LanguageRef="zhs">业务模型配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Model Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ModelCaption">
+      <LocalizedLabel LanguageRef="zhs">业务模型配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Model Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="OtherHeader">
+      <LocalizedLabel LanguageRef="zhs">其它设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other Settings</LocalizedLabel>
+    </Label>
+    <Label Name="OtherCaption">
+      <LocalizedLabel LanguageRef="zhs">其它设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other Settings</LocalizedLabel>
+    </Label>
+    <Label Name="InfoSourceHeader">
+      <LocalizedLabel LanguageRef="zhs">字段数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field Data Source</LocalizedLabel>
+    </Label>
+    <Label Name="InfoSourceCaption">
+      <LocalizedLabel LanguageRef="zhs">字段数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field Data Source</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessModelHeader">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Modeling</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessModelCaption">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Modeling</LocalizedLabel>
+    </Label>
+    <Label Name="ActionManageHeader">
+      <LocalizedLabel LanguageRef="zhs">动作列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action List</LocalizedLabel>
+    </Label>
+    <Label Name="ActionManageCaption">
+      <LocalizedLabel LanguageRef="zhs">动作列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action List</LocalizedLabel>
+    </Label>
+    <Label Name="ModelActionHeader">
+      <LocalizedLabel LanguageRef="zhs">模型动作关联</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Action Correlation</LocalizedLabel>
+    </Label>
+    <Label Name="ModelActionCaption">
+      <LocalizedLabel LanguageRef="zhs">模型动作关联</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Action Correlation</LocalizedLabel>
+    </Label>
+    <Label Name="LifeStateHeader">
+      <LocalizedLabel LanguageRef="zhs">状态列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State List</LocalizedLabel>
+    </Label>
+    <Label Name="LifeStateCaption">
+      <LocalizedLabel LanguageRef="zhs">状态列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State List</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleHeader">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Life cycle</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleCaption">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Life cycle</LocalizedLabel>
+    </Label>
+    <Label Name="ViewManageHeader">
+      <LocalizedLabel LanguageRef="zhs">查询视图管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query View Management</LocalizedLabel>
+    </Label>
+    <Label Name="ViewManageCaption">
+      <LocalizedLabel LanguageRef="zhs">查询视图管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query View Management</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type</LocalizedLabel>
+    </Label>
+    <Label Name="PluginManageHeader">
+      <LocalizedLabel LanguageRef="zhs">插件管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in Management</LocalizedLabel>
+    </Label>
+    <Label Name="PluginManageCaption">
+      <LocalizedLabel LanguageRef="zhs">插件管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in Management</LocalizedLabel>
+    </Label>
+    <Label Name="ValidationManageHeader">
+      <LocalizedLabel LanguageRef="zhs">正则验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular Verification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidationManageCaption">
+      <LocalizedLabel LanguageRef="zhs">正则验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular Verification</LocalizedLabel>
+    </Label>
+    <Label Name="EnumerationHeader">
+      <LocalizedLabel LanguageRef="zhs">枚举字典</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate Dictionary</LocalizedLabel>
+    </Label>
+    <Label Name="EnumerationCaption">
+      <LocalizedLabel LanguageRef="zhs">枚举字典</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate Dictionary</LocalizedLabel>
+    </Label>
+    <Label Name="DocumentTypeManageHeader">
+      <LocalizedLabel LanguageRef="zhs">文档类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Type</LocalizedLabel>
+    </Label>
+    <Label Name="DocumentTypeManageCaption">
+      <LocalizedLabel LanguageRef="zhs">文档类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Type</LocalizedLabel>
+    </Label>
+    <Label Name="VaultManageHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="VaultManageCaption">
+      <LocalizedLabel LanguageRef="zhs">文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">查询页面配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">查询页面配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ManagePageConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">管理页面配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Manage Page Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ManagePageConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">管理页面配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Manage Page Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="PageStructConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">通用页面元素</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General Page Element</LocalizedLabel>
+    </Label>
+    <Label Name="PageStructConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">通用页面元素</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General Page Element</LocalizedLabel>
+    </Label>
+    <Label Name="ListManageHeader">
+      <LocalizedLabel LanguageRef="zhs">列表管理界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Management Interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListManageCaption">
+      <LocalizedLabel LanguageRef="zhs">列表管理界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Management Interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManageHeader">
+      <LocalizedLabel LanguageRef="zhs">树管理界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Management Interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManageCaption">
+      <LocalizedLabel LanguageRef="zhs">树管理界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Management Interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListQueryHeader">
+      <LocalizedLabel LanguageRef="zhs">列表查询界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Query Interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListQueryCaption">
+      <LocalizedLabel LanguageRef="zhs">列表查询界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Query Interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryHeader">
+      <LocalizedLabel LanguageRef="zhs">树查询界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Query Interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryCaption">
+      <LocalizedLabel LanguageRef="zhs">树查询界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Query Interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeListQueryHeader">
+      <LocalizedLabel LanguageRef="zhs">树列表查询界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree List Query Interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeListQueryCaption">
+      <LocalizedLabel LanguageRef="zhs">树列表查询界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree List Query Interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewManageHeader">
+      <LocalizedLabel LanguageRef="zhs">列表视图配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewManageCaption">
+      <LocalizedLabel LanguageRef="zhs">列表视图配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewManageHeader">
+      <LocalizedLabel LanguageRef="zhs">树视图配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree View Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewManageCaption">
+      <LocalizedLabel LanguageRef="zhs">树视图配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree View Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="NavigationManageHeader">
+      <LocalizedLabel LanguageRef="zhs">系统导航配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System Navigation Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="NavigationManageCaption">
+      <LocalizedLabel LanguageRef="zhs">系统导航配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System Navigation Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinkManageHeader">
+      <LocalizedLabel LanguageRef="zhs">Tab页配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinkManageCaption">
+      <LocalizedLabel LanguageRef="zhs">Tab页配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItemManageHeader">
+      <LocalizedLabel LanguageRef="zhs">菜单配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItemManageCaption">
+      <LocalizedLabel LanguageRef="zhs">菜单配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ActiveXManageHeader">
+      <LocalizedLabel LanguageRef="zhs">ActiveX管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ActiveX management</LocalizedLabel>
+    </Label>
+    <Label Name="ActiveXManageCaption">
+      <LocalizedLabel LanguageRef="zhs">ActiveX管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ActiveX management</LocalizedLabel>
+    </Label>
+    <Label Name="SQLCommandConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL command</LocalizedLabel>
+    </Label>
+    <Label Name="SQLCommandConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL command</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Table Structure</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Table Structure</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaSQLConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库结构SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Schema SQL Command</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaSQLConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库结构SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Schema SQL Command</LocalizedLabel>
+    </Label>
+    <Label Name="DataClearConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库清理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database clear</LocalizedLabel>
+    </Label>
+    <Label Name="DataClearConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库清理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database clear</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseDataHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库初始化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Initialization</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseDataCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库初始化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Initialization</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorTemplateHeader">
+      <LocalizedLabel LanguageRef="zhs">页面生成模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Generation template</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorTemplateCaption">
+      <LocalizedLabel LanguageRef="zhs">页面生成模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Generation template</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTemplateTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template Type</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTemplateTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template Type</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTemplateHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTemplateCaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+
+    <Label Name="FlowActorExtendHeader">
+      <LocalizedLabel LanguageRef="zhs">流程执行人扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Executor Expansion</LocalizedLabel>
+    </Label>
+    <Label Name="FlowActorExtendCaption">
+      <LocalizedLabel LanguageRef="zhs">流程执行人扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Executor Expansion</LocalizedLabel>
+    </Label>
+    <Label Name="FlowConditionExtendHeader">
+      <LocalizedLabel LanguageRef="zhs">流程条件扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Condition Extension</LocalizedLabel>
+    </Label>
+    <Label Name="FlowConditionExtendCaption">
+      <LocalizedLabel LanguageRef="zhs">流程条件扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Condition Extension</LocalizedLabel>
+    </Label>
+    <Label Name="FlowPluginHeader">
+      <LocalizedLabel LanguageRef="zhs">流程插件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Plug-in</LocalizedLabel>
+    </Label>
+    <Label Name="FlowPluginCaption">
+      <LocalizedLabel LanguageRef="zhs">流程插件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Plug-in</LocalizedLabel>
+    </Label>
+    <Label Name="PlatformBaseConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">平台基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform Foundation Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="PlatformBaseConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">平台基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform Foundation Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="MainFlatHeader">
+      <LocalizedLabel LanguageRef="zhs">首页配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home Page Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="MainFlatCaption">
+      <LocalizedLabel LanguageRef="zhs">首页配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home Page Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="HelpStructHeader">
+      <LocalizedLabel LanguageRef="zhs">帮助文档</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help Document</LocalizedLabel>
+    </Label>
+    <Label Name="HelpStructCaption">
+      <LocalizedLabel LanguageRef="zhs">帮助文档</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help Document</LocalizedLabel>
+    </Label>
+    <Label Name="ExportExcelHeader">
+      <LocalizedLabel LanguageRef="zhs">Excel导出模配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Excel Export Mode Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ExportExcelCaption">
+      <LocalizedLabel LanguageRef="zhs">Excel导出模配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Excel Export Mode Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ExportWordHeader">
+      <LocalizedLabel LanguageRef="zhs">Word导出模配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Word Export Mode Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ExportWordCaption">
+      <LocalizedLabel LanguageRef="zhs">Word导出模配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Word Export Mode Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ProjectImportExportHeader">
+      <LocalizedLabel LanguageRef="zhs">Project导入导出配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Project Import Export Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ProjectImportExportCaption">
+      <LocalizedLabel LanguageRef="zhs">Project导入导出配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Project Import Export Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ReportConfigHeader">
+      <LocalizedLabel LanguageRef="zhs">报表扩展配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Report Extension Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ReportConfigCaption">
+      <LocalizedLabel LanguageRef="zhs">报表扩展配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Report Extension Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">流程开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Development</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">流程开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Development</LocalizedLabel>
+    </Label>
+    <Label Name="ImportExportHeader">
+      <LocalizedLabel LanguageRef="zhs">导入导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import Export</LocalizedLabel>
+    </Label>
+    <Label Name="ImportExportCaption">
+      <LocalizedLabel LanguageRef="zhs">导入导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import Export</LocalizedLabel>
+    </Label>
+    <Label Name="CustomDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Customed Development</LocalizedLabel>
+    </Label>
+    <Label Name="CustomDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">自定义开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Customed Development</LocalizedLabel>
+    </Label>
+    <Label Name="ReportDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">报表开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Report Development</LocalizedLabel>
+    </Label>
+    <Label Name="ReportDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">报表开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Report Development</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessExtendHeader">
+      <LocalizedLabel LanguageRef="zhs">业务扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Expansion</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessExtendCaption">
+      <LocalizedLabel LanguageRef="zhs">业务扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Expansion</LocalizedLabel>
+    </Label>
+    <Label Name="DbPartitionManageHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库表分区配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Table Partition Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="DbPartitionManageCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库表分区配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Table Partition Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="GuideManageHeader">
+      <LocalizedLabel LanguageRef="zhs">向导页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="GuideManageCaption">
+      <LocalizedLabel LanguageRef="zhs">向导页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ObjinspectorHeader">
+      <LocalizedLabel LanguageRef="zhs">对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ObjinspectorCaption">
+      <LocalizedLabel LanguageRef="zhs">对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EditListManageHeader">
+      <LocalizedLabel LanguageRef="zhs">可编辑列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EditListManageCaption">
+      <LocalizedLabel LanguageRef="zhs">可编辑列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="GroupModelHeader">
+      <LocalizedLabel LanguageRef="zhs">模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="GroupViewHeader">
+      <LocalizedLabel LanguageRef="zhs">视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View</LocalizedLabel>
+    </Label>
+    <Label Name="GroupQueryHeader">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="GroupConfigHeader">
+      <LocalizedLabel LanguageRef="zhs">配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Config</LocalizedLabel>
+    </Label>
+    <Label Name="GroupOtherHeader">
+      <LocalizedLabel LanguageRef="zhs">其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other Settings</LocalizedLabel>
+    </Label>
+    <Label Name="GroupOtherCaption">
+      <LocalizedLabel LanguageRef="zhs">其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other Settings</LocalizedLabel>
+    </Label>
+    <Label Name="PageConfigHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Config</LocalizedLabel>
+    </Label>
+    <Label Name="PageConfigCaption">
+      <LocalizedLabel LanguageRef="zhs">自定义页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Config</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

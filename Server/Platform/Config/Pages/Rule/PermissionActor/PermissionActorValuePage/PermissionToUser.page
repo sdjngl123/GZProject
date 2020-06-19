@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PermissionToUser">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_PermissionToUser_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_PermissionToUser_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="PermissionToUser_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="User_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象类型容器-->
+    <PageControl ControlID="User_Container" ParentID="PermissionToUser_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="UserLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="UserTextValue"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象类型控件-->
+    <PageControl ControlID="UserLabel" ParentID="User_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="PermissionToUser.PermissionUserLabel" />
+    </PageControl>
+    <PageControl ControlID="UserTextValue" ParentID="User_Container" TypeName="TextValue">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_PermissionToUser_ShowSelecterPage(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>

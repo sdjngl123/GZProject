@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="INTERNALMAIL-VIEW">
+  <Settings Key="height" Value="190"/>
+  <Settings Key="width" Value="337"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+var o = pageEvent.o.GetControl('RECIVER_Value');
+if(o.id!=''){
+o.SetText(data.RECIVER_DisplayValue);
+}
+}{
+var o = pageEvent.o.GetControl('COPYTOUSER_Value');
+if(o.id!=''){
+o.SetText(data.COPYTOUSER_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('MAILTITLE_Value');
+	if(c.id!=''){
+		c.SetText(data.MTITLE_DisplayValue);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('MAILCONTENT_Value');
+	if(c.id!=''){
+		c.SetText(data.MCONTENT_DisplayValue);
+	}
+}
+{
+	var o = pageEvent.o.GetControl('IMPORTANT_Value');
+	if(o.id!=''){
+		o.SetText(data.IMPORTANT_DisplayValue);
+	}
+}
+{
+if(data.MSTATE.toLowerCase()=='unread'){
+ HoteamUI.DataService.Call('InforCenter.Platform.InternalMailService.MarkReadOrUnRead', { para: { ObjectID:data.EID,State:'Read' } });
+}
+                 }"/>
+  </PageHandlers>
+  <Settings Key="title" Value="INTERNALMAIL-VIEW.INTERNALMAILHeader"/>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 20px"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVER" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="RECIVER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVER_Label" ParentID="RECIVER" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="INTERNALMAIL-VIEW.RECIVERHeader" />
+      <Settings Key="suffix" Value="Common.LabelSuffix"/>
+    </PageControl>
+    <PageControl ControlID="RECIVER_Value" ParentID="RECIVER" TypeName="TextBox" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="type" Value="textarea"/>
+    </PageControl>
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="COPYTOUSER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="COPYTOUSER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="COPYTOUSER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER_Label" ParentID="COPYTOUSER" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="INTERNALMAIL-VIEW.COPYTOUSERHeader" />
+      <Settings Key="suffix" Value="Common.LabelSuffix"/>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER_Value" ParentID="COPYTOUSER" TypeName="TextBox" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="type" Value="textarea"/>
+    </PageControl>
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILTITLE"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE" ParentID="R-4" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="MAILTITLE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILTITLE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Label" ParentID="MAILTITLE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="INTERNALMAIL-VIEW.MAILTITLEHeader" />
+      <Settings Key="suffix" Value="Common.LabelSuffix"/>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Value" ParentID="MAILTITLE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IMPORTANT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT" ParentID="R-5" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="IMPORTANT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IMPORTANT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT_Label" ParentID="IMPORTANT" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="INTERNALMAIL-VIEW.IMPORTANTHeader" />
+      <Settings Key="suffix" Value="Common.LabelSuffix"/>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT_Value" ParentID="IMPORTANT" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+    <PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT" ParentID="R-6" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="MAILCONTENT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Label" ParentID="MAILCONTENT" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="INTERNALMAIL-VIEW.MAILCONTENTHeader" />
+      <Settings Key="suffix" Value="Common.LabelSuffix"/>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Value" ParentID="MAILCONTENT" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ExTextEditor" IsWeb="false">
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Cut">
+      <LocalizedLabel LanguageRef="zhs">剪切</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="Find">
+      <LocalizedLabel LanguageRef="zhs">查找</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Find</LocalizedLabel>
+    </Label>
+    <Label Name="Replace">
+      <LocalizedLabel LanguageRef="zhs">替换</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Replace</LocalizedLabel>
+    </Label>
+    <Label Name="AutoWrap">
+      <LocalizedLabel LanguageRef="zhs">自动换行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic Wrap</LocalizedLabel>
+    </Label>
+    <Label Name="CancelAutoWrap">
+      <LocalizedLabel LanguageRef="zhs">取消自动换行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel Automatic Wrap</LocalizedLabel>
+    </Label>
+    <Label Name="ListTemplateName">
+      <LocalizedLabel LanguageRef="zhs">可选模板列表(双击插入)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Optional template List (Double-Click Insert)</LocalizedLabel>
+    </Label>
+    <Label Name="JsNameNotExist">
+      <LocalizedLabel LanguageRef="zhs">JS方法名不存在，请维护方法名。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Js Name Not Exist</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

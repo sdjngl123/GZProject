@@ -1,0 +1,6 @@
+﻿{
+	var obj = {};
+	obj.text = data.[INFONAME]_DisplayValue;
+	obj.value = data.[INFONAME];
+	pageEvent.o.GetControl('[INFONAME]_Value').SetTag(obj);
+}

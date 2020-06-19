@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Context Name="TreeCompanyMenu" IsWeb="true">
+    <Label Name="SetLocalFileServiceAddress">
+      <LocalizedLabel LanguageRef="zhs">设置本地文件服务地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetLocalFileServiceAddress</LocalizedLabel>
+    </Label>
+    
+  </Context>
+  
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="UsersListTemplate">
+      <LocalizedLabel LanguageRef="zhs">不带查询的列表页面模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List page template without query list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,28 @@
+﻿.CodeDropDown{
+    padding-right:20px;
+    clear:both;
+}
+
+
+.CodeDropDown .hoteam-dropdown-label {
+    float: left;
+  width: 20%;
+  text-align: right;
+  line-height: 28px;
+  padding-right: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight:100;
+  width:61px;
+}
+
+.CodeDropDown .hoteam-dropdown-container
+{
+    width:80%;
+    float:left;
+    position:static !important;
+    margin-top:0;
+    margin-bottom:10px;
+}
+

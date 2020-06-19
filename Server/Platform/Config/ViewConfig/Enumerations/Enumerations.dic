@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="EnumerationsTreeView">
+      <LocalizedLabel LanguageRef="zhs">值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileList"
+         JsFile ="~/MobileBase/Config/Page/MobileList/MobileList.js" 
+         LayoutFile="~/MobileBase/Config/Page/MobileList/MobileList.mlayout" 
+         DictionaryContent="MobileList">
+      <PageHandler HandlerName ="OnCreate" Script="HMUI_InforCenter_MobileList_PageInit(pageEvent);"/>
+  </MPage>
+</root>

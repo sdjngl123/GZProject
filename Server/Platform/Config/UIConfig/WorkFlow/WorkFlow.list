@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="RunWorkFlowList" MenuName="WorkFlowManagementRunMenu" ListRightMenuName="WorkFlowManagementRunMenu" ListViewName="WorkFolwListView"  QueryPageName="WORKFOLWVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="MyCreateWorkFlowList" MenuName="CreateWorkFlowMenu" ListRightMenuName="" ListViewName="MyCreateWorkFolwListView"  QueryPageName="WORKFOLWVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="CompleteWorkFlowList" MenuName="WorkFlowManagementCompleteMenu"  RidhtMenuName="WorkFlowManagementCompleteMenu" ListViewName="WorkFolwListView"  QueryPageName="WORKFOLWVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="StopWorkFlowList" MenuName="WorkFlowManagementStopMenu" ListRightMenuName="WorkFlowManagementStopMenu" ListViewName="WorkFolwListView"  QueryPageName="WORKFOLWVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="SuspendWorkFlowList" MenuName="WorkFlowManagementSuspendMenu" ListRightMenuName="WorkFlowManagementSuspendMenu" ListViewName="WorkFolwListView"  QueryPageName="WORKFOLWVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="AuditedTaskList" MenuName="AuditedTaskMenu"  ListRightMenuName="AuditedTaskMenu" ListViewName="AuditedTaskView"  QueryPageName="AUDITEDTASKVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+   
+  </ListManagement>
+  <ListManagement Name="MyWorkFlowTaskList" MenuName=""  ListRightMenuName="" ListViewName="MyWorkFlowTaskView"  QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="DePositWorkFlowTaskList" MenuName=""  ListRightMenuName="" ListViewName="DePositWorkFlowTaskView"  QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="DeliveryWorkFlowTaskList" MenuName=""  ListRightMenuName="" ListViewName="DeliveryWorkFlowTaskView"  QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+</root>

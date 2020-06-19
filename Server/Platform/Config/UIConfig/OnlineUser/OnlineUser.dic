@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="PCOnlineUserList">
+      <LocalizedLabel LanguageRef="zhs">PC端在线用户列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PCOnlineUserList</LocalizedLabel>
+    </Label>
+    <Label Name="MobileOnlineUserList">
+      <LocalizedLabel LanguageRef="zhs">移动端在线用户列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobileOnlineUserList</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

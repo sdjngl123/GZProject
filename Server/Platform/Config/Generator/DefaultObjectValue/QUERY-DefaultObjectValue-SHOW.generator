@@ -1,0 +1,5 @@
+﻿<PageControl ControlID="[FILTERNAME]_Value" ParentID="[PARENTID]" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

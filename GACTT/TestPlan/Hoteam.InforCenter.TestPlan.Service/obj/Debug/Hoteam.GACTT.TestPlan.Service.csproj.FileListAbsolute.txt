@@ -1,0 +1,6 @@
+E:\广汽试验\Source\Server\GACTT\TestPlan\Bin\Hoteam.GACTT.TestPlan.Service.dll
+E:\广汽试验\Source\Server\GACTT\TestPlan\Bin\Hoteam.GACTT.TestPlan.Service.pdb
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Service\obj\Debug\Hoteam.GACTT.TestPlan.Service.csprojAssemblyReference.cache
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Service\obj\Debug\Hoteam.GACTT.TestPlan.Service.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Service\obj\Debug\Hoteam.GACTT.TestPlan.Service.dll
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Service\obj\Debug\Hoteam.GACTT.TestPlan.Service.pdb

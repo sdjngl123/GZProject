@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="CreateReportClassify">
+      <LocalizedLabel LanguageRef="zhs">新建分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateReportClassify</LocalizedLabel>
+    </Label>
+    <Label Name="EditReportClassify">
+      <LocalizedLabel LanguageRef="zhs">编辑分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditReportClassify</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteReportClassify">
+      <LocalizedLabel LanguageRef="zhs">删除分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DeleteReportClassify</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

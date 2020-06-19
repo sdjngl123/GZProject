@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ControlContainer" IsCache="true">
+  <Settings Key="title" Value="ControlContainer.Title"/>
+  <Settings Key="height" Value="[HEIGHT]"/>
+  <Settings Key="width" Value="100%"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnGetData" Script="[SCRIPT]"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Control_LayOut"/>
+      </Settings>
+    </PageControl>
+    [CONTROL]
+  </PageControls>
+</root>

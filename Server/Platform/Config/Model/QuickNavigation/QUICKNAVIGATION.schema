@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="QUICKNAVIGATION" Extend="ENTITY" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="ENAME" Extend="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ECODE" Extend="ECODE" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="STATEID" Extend="STATEID" DataType="STRING20" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="STAGESTATEID" Extend="STAGESTATEID" DataType="STRING20" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EVERSION" Extend="EVERSION" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EMINORVERSION" Extend="EMINORVERSION" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EUID" Extend="EUID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTINSERT" Extend="ELASTINSERT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTFINALSTATE" Extend="ELASTFINALSTATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CREATEUID" Extend="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="CREATETIME" Extend="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="UPDATEUID" Extend="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="UPDATETIME" Extend="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNUID" Extend="OWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNGID" Extend="OWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ESTATION" Extend="ESTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ICON" Extend="ICON" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ECOMPANYID" Extend="ECOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="SERIALNUMBER" Extend="SERIALNUMBER" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="USERID" DataType="STRING100" Required="true" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKTYPE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKROW" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKCOLUMN" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKCONTENT" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKTEXT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKIMAGE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUICKSORT" DataType="INT" Required="false" DefaultValue="0" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Index Name="IX_QUICKNAVIGATION_USERID" Unique="false">
+      <Field Name="USERID" Order="ASC" />
+    </Index>
+  </Table>
+</root>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NavigationItem Name="SystemManagement"  IsAddCustom="true" IsHidden="false" Order="020">
+    <Image>p_system_management</Image>
+    <NavigationItem Name="ModelMangement" IsAddCustom="true" IsHidden="false" Order="600">
+      <PageName>TreeManagement</PageName>
+      <Image>p_list_of_values</Image>
+      <Para Name="ItemName" Value="ModelTree" />
+    </NavigationItem>
+    <NavigationItem Name="CustomFormManagement" IsAddCustom="true" IsHidden="false" Order="610">
+      <PageName>TreeManagement</PageName>
+      <Image>p_list_of_values</Image>
+      <Para Name="ItemName" Value="CustormFormTree" />
+    </NavigationItem>
+  </NavigationItem>
+</root>

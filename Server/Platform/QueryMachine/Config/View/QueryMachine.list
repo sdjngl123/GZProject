@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListManagement Name="QueryMachineQueryList" MenuName="" ListRightMenuName="" ListViewName="QueryMachineQueryListView" QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" />
+  <ListManagement Name="SampleQueryMachineQueryList" MenuName="QueryMachineQueryMenu" ListRightMenuName="" ListViewName="SampleQueryMachineQueryListView" QueryPageName="" ListTitleDataService="" OnePageDataService="Hoteam.InforCenter.QueryMachineService.GetSampleQueryMachineGridOnePageData" AllPageDataService="" HideViewFilterPage="true" />
+</root>

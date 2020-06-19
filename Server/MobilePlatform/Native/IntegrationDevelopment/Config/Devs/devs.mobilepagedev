@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MobilePageDev PageName="Login" Type="Login" Description="登录页" />
+  <MobilePageDev PageName="Home" Type="Home" Description="首页" />
+  <MobilePageDev PageName="PropertyTab" Type="PropertyTab" Description="属性Tab页面" />
+  <MobilePageDev PageName="MasterPropertyTab" Type="MasterPropertyTab" Description="主从属性Tab页面" />
+  <MobilePageDev PageName="MainNav" Type="MainNav" Description="导航页面" />
+  <MobilePageDev PageName="Mine" Type="Mine" Description="我的" />
+  <MobilePageDev PageName="SingleList" Type="SingleList" Description="单列表" />
+  <MobilePageDev PageName="GroupList" Type="GroupList" Description="分组列表" />
+  <MobilePageDev PageName="StandardList" Type="StandardList" Description="标准列表" />
+  <MobilePageDev PageName="MultiConditionList" Type="MultiConditionList" Description="多条件列表" />
+  <MobilePageDev PageName="WebView" Type="WebView" Description="Web页面" />
+  <MobilePageDev PageName="VerticalProgress" Type="VerticalProgress" Description="纵向进度页" />
+  <MobilePageDev PageName="Desk" Type="Desk" Description="工作台页面" />
+  <MobilePageDev PageName="Contacts" Type="Contacts" Description="通讯录页面" />
+  <MobilePageDev PageName="Audit" Type="Contacts" Description="流程评审" />
+  <MobilePageDev PageName="Select" Type="	Select" Description="导航查询" />
+</root>

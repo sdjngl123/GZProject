@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowParameterCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流程参数条件设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process parameter condition settings</LocalizedLabel>
+    </Label>
+    <Label Name="Parameter">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter</LocalizedLabel>
+    </Label>
+    <Label Name="Operator">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="Value">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="ParaValueRegex">
+      <LocalizedLabel LanguageRef="zhs">只能输入数字，（0-99999999）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only numbers can be entered, (0-99999999)</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

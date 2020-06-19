@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LinkType Name="FORMCLASSIFYLINK" Extend="LINK" LogicClass="LinkObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="FORMCLASSIFYLINK" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="false" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="FORMCLASSIFYLINK_PEID_INDEX" TableIndex="FORMCLASSIFYLINK_PEID_INDEX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="FORMCLASSIFYLINK_CEID_INDEX" TableIndex="FORMCLASSIFYLINK_CEID_INDEX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <LinkedTypes ParentType="FORMCLASSIFY" ChildType="FORMCLASSIFY" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+    <LinkedTypes ParentType="CUSTORMFORM" ChildType="FORMCLASSIFY" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+  </LinkType>
+</root>

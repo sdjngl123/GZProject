@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="TimeRangeDay">
+      <LocalizedLabel LanguageRef="zhs">今天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Today</LocalizedLabel>
+    </Label>
+    <Label Name="TimeRangeWeek">
+      <LocalizedLabel LanguageRef="zhs">近一周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Latest Week</LocalizedLabel>
+    </Label>
+    <Label Name="TimeRangeMonth">
+      <LocalizedLabel LanguageRef="zhs">近一月</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Latest Month</LocalizedLabel>
+    </Label>
+    <Label Name="TimeRangeCustomTime">
+      <LocalizedLabel LanguageRef="zhs">自选时间范围</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Self-selection Time Range</LocalizedLabel>
+    </Label>
+    <Label Name="TimeRangeAll">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+    <Label Name="AccessRecordDataTypeAll">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

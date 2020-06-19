@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MailMainBody">
+  <Settings Key="height" Value="520"/>
+  <Settings Key="width" Value="800"/>
+  <Settings Key="title" Value="MailMainBody.MainBody"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_InternalMailBody_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 10px 10px 10px"/>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-11"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="childid" Value="R-8"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-11" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IMPORTANT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT" ParentID="R-11" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="IMPORTANT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IMPORTANT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT_Label" ParentID="IMPORTANT" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.Important" />
+    </PageControl>
+    <PageControl ControlID="IMPORTANT_Value" ParentID="IMPORTANT" TypeName="Label" >
+    </PageControl>
+    
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVERTIME"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVERTIME" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="RECIVERTIME_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVERTIME_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVERTIME_Label" ParentID="RECIVERTIME" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.ReciveTime" />
+    </PageControl>
+    <PageControl ControlID="RECIVERTIME_Value" ParentID="RECIVERTIME" TypeName="Label" >
+    </PageControl>
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SENDUSER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SENDUSER" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="SENDUSER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SENDUSER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SENDUSER_Label" ParentID="SENDUSER" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.SendUser" />
+    </PageControl>
+    <PageControl ControlID="SENDUSER_Value" ParentID="SENDUSER" TypeName="Label" >
+    </PageControl>
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILTITLE"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE" ParentID="R-3" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="MAILTITLE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILTITLE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Label" ParentID="MAILTITLE" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.Title" />
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Value" ParentID="MAILTITLE" TypeName="Label" >
+    </PageControl>
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVEUSER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVEUSER" ParentID="R-4" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="RECIVEUSER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVEUSER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVEUSER_Label" ParentID="RECIVEUSER" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.ReciveUser" />
+    </PageControl>
+    <PageControl ControlID="RECIVEUSER_Value" ParentID="RECIVEUSER" TypeName="TextBox" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="type" Value="textarea"/>
+    </PageControl>
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="COPYTOUSER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER" ParentID="R-5" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="COPYTOUSER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="COPYTOUSER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER_Label" ParentID="COPYTOUSER" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.CopyToUser" />
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER_Value" ParentID="COPYTOUSER" TypeName="TextBox" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="type" Value="textarea"/>
+    </PageControl>
+    <PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENTLABEL"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENTLABEL" ParentID="R-6" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="45%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="120"/>
+        <Settings Key="childid" Value="MAILCONTENT_Label"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="55%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Label" ParentID="MAILCONTENTLABEL" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MailMainBody.MainBody" />
+    </PageControl>
+
+    <PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT" ParentID="R-8" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENT_Value"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Value" ParentID="MAILCONTENT" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="regex" Value="" />
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="regextipId" Value="" />
+    </PageControl>
+
+  </PageControls>
+</root>

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/resetpassword.js"></script>
+    <script type="text/javascript" src="../../../Base/js/JSDes.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/resetpassword.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //为了防止进入下一步之后按后退键后，input中已经有值了，但是提示信息还在所以进行以下判断
+            if ($("#password").val()) {
+                $("#password").next().hide();
+            }
+            if ($("#againPassword").val()) {
+                $("#againPassword").next().hide();
+            }
+            $(".reset-password-placeholder").click(function () {
+                $(this).prev().click().focus();
+            });
+            $(".reset-password-input").on({
+                "focus": function () {
+                    $(this).next().hide();
+                    $(this).addClass("reset-password-input-focus");
+                },
+                "blur": function () {
+                    $(this).removeClass("reset-password-input-focus");
+                    if (regexCheck($(this).parent())) {
+                        checkpassword();
+                    }
+                    if (!$(this).val()) {//如果有值
+                        $(this).next().show();
+                    }
+                }
+            });
+        })
+        //检查密码是否一致
+        function checkpassword() {
+            var password = $("#password").val();
+            var passwordAgain = $("#againPassword").val();
+            if (password && passwordAgain) {
+                if (password != passwordAgain) {
+                    $("#againPassword").nextAll(".reset-password-error").html("两次输入密码不一致").show();
+                    return false;
+                }
+            } else {
+                $("#againPassword").nextAll(".reset-password-error").hide();
+            }
+            return true;
+        }
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1)
+            if (r) {
+                var s = r.split('=')
+                if (s && s.length > 1) {
+                    return s[1];
+                }
+            }
+        }
+        function nextStep() {
+            if (!regexCheck($("body"))) {
+                return;
+            }
+            if (!checkpassword()) {
+                return;
+            }
+            var usercode = $(window.parent.document).find("#usercode").val();
+            var pwd = EncryptDecrypt.Encrypt($("#password").val(), usercode);
+            //调用ajax
+            var para = { Password: pwd, Token: GetQueryString("token"), Method: "SavePassword" }
+            $.ajax({
+                type: "get",
+                data: para,
+                url: "../IdentityVerification.aspx",
+                dataType: "json",
+                success: function (data) {
+                    //alert()
+                    if (data && data.Key == "Success") {
+                        $($(window.parent.document).find("iframe")[0]).attr("src", "html/fourstep.html");
+                    }
+                    if (data && data.Key == "Error") {
+                        $("#againPassword").nextAll(".reset-password-error").show().html(data.Value);
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="step-img" style="background: url(../image/thirdstep.png) no-repeat;">
+    </div>
+    <div class="step-img-title">
+        <span class="one-sp" style="color: #0097ff;">填写账户名</span><span class="second-sp"
+            style="color: #0097ff;">验证身份</span> <span class="third-sp" style="color: #0097ff;">设置新密码</span><span
+                class="four-sp">完成</span>
+    </div>
+    <div class="input-c">
+        <input id="password" type="password" class="reset-password-input" required="required"
+            regex="^[\S]{6,20}$" />
+        <span class="reset-password-placeholder">密码(6-20位,不支持空格)</span> <span class="reset-password-error">
+        </span>
+    </div>
+    <div class="input-c">
+        <input id="againPassword" type="password" class="reset-password-input" required="required"
+            regex="^[\S]{6,20}$" />
+        <span class="reset-password-placeholder">再次输入密码</span> <span class="reset-password-error">
+        </span>
+    </div>
+    <div class="next-btn" onclick="nextStep()">
+        下一步</div>
+</body>
+</html>

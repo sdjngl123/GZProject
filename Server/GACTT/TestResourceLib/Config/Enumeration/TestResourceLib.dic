@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="Enumerations" IsWeb="true">
+		<Label Name="ResourceTypeOUT">
+			<LocalizedLabel LanguageRef="zhs">外部资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">ExternalResource</LocalizedLabel>
+		</Label>
+		<Label Name="ResourceTypeINNER">
+			<LocalizedLabel LanguageRef="zhs">内部资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">InnerResouce</LocalizedLabel>
+		</Label>
+		<Label Name="KnowledgeTypeTMS">
+			<LocalizedLabel LanguageRef="zhs">TMS</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TMS</LocalizedLabel>
+		</Label>
+		<Label Name="KnowledgeTypeKMS">
+			<LocalizedLabel LanguageRef="zhs">KMS</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">KMS</LocalizedLabel>
+		</Label>
+		<Label Name="SecretLevelNO">
+			<LocalizedLabel LanguageRef="zhs">非密</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">No Secret</LocalizedLabel>
+		</Label>
+		<Label Name="SecretLevelNormal">
+			<LocalizedLabel LanguageRef="zhs">一般</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Normal</LocalizedLabel>
+		</Label>
+		<Label Name="SecretLevelYES">
+			<LocalizedLabel LanguageRef="zhs">绝密</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Secret</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainDLX">
+			<LocalizedLabel LanguageRef="zhs">动力性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">DLX</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainNYXHL">
+			<LocalizedLabel LanguageRef="zhs">能源消耗量试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">NYXHL</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainZDX">
+			<LocalizedLabel LanguageRef="zhs">制动性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">ZDX</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainCZWDX">
+			<LocalizedLabel LanguageRef="zhs">操纵稳定性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">CZWDX</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainPSX">
+			<LocalizedLabel LanguageRef="zhs">平顺性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">PSX</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainNVH">
+			<LocalizedLabel LanguageRef="zhs">NVH性能试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">NVH</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainTGX">
+			<LocalizedLabel LanguageRef="zhs">通过性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TGX</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainNJ">
+			<LocalizedLabel LanguageRef="zhs">耐久可靠性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">NJ</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainZDAQ">
+			<LocalizedLabel LanguageRef="zhs">主动安全性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">ZDAQ</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainBDAQ">
+			<LocalizedLabel LanguageRef="zhs">被动安全性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">BDAQ</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainHBX">
+			<LocalizedLabel LanguageRef="zhs">环保性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">HBX</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainDZDQ">
+			<LocalizedLabel LanguageRef="zhs">电子电器性能试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">DZDQ</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainHJSY">
+			<LocalizedLabel LanguageRef="zhs">环境适应性试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">HJSY</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainFD">
+			<LocalizedLabel LanguageRef="zhs">风洞试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">FD</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainZCZG">
+			<LocalizedLabel LanguageRef="zhs">整车主观评价</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">ZCZG</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainXNY">
+			<LocalizedLabel LanguageRef="zhs">新能源专项试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">XNY</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainXTJLBJ">
+			<LocalizedLabel LanguageRef="zhs">系统及零部件试验</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">XTJLBJ</LocalizedLabel>
+		</Label>
+		<Label Name="TestDomainOther">
+			<LocalizedLabel LanguageRef="zhs">其他</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Other</LocalizedLabel>
+		</Label>
+		<Label Name="DepartmentTypeBM">
+			<LocalizedLabel LanguageRef="zhs">部门</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Department</LocalizedLabel>
+		</Label>
+		<Label Name="DepartmentTypeKS">
+			<LocalizedLabel LanguageRef="zhs">科室</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Ks</LocalizedLabel>
+		</Label>
+		<Label Name="BatchEditFieldORG">
+			<LocalizedLabel LanguageRef="zhs">试验组织</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">ORG</LocalizedLabel>
+		</Label>
+		<Label Name="BatchEditFieldLOCATION">
+			<LocalizedLabel LanguageRef="zhs">试验地点</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Location</LocalizedLabel>
+		</Label>
+		<Label Name="BatchEditFieldCONTACTPERSON">
+			<LocalizedLabel LanguageRef="zhs">联系人</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">ContactPerson</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ImageConfig Name="sm_openfolder" Description="打开文件夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="0" YPosition="0" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-64" YPosition="0" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-32" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_collapsefolder" Description="关闭文件夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-128" YPosition="0" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-192" YPosition="0" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-32" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_defaultfile" Description="默认文件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-256" YPosition="0" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-320" YPosition="0" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-32" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_xls" Description="excel文件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="0" YPosition="-64" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-64" YPosition="-64" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-64" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-96" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_png" Description="png图片格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-128" YPosition="-64" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-192" YPosition="-64" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="-64" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-96" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_gif" Description="gif图片格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-256" YPosition="-64" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-320" YPosition="-64" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-64" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-96" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_rar" Description="rar文件压缩方式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-384" YPosition="-64" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-448" YPosition="-64" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-64" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-96" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_zip" Description="zip文件压缩方式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-512" YPosition="-64" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-576" YPosition="-64" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="-64" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-96" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_pdf" Description="pdf文件格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="0" YPosition="-128" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-64" YPosition="-128" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-128" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-160" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_avi" Description="avi视频文件格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-128" YPosition="-128" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-192" YPosition="-128" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="-128" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-160" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_jpg" Description="jpg图片格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-256" YPosition="-128" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-320" YPosition="-128" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-128" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-160" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_bmp" Description="bmp图片格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-384" YPosition="-128" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-448" YPosition="-128" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-128" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-160" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_txt" Description="txt文本格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-512" YPosition="-128" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-576" YPosition="-128" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="-128" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-160" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_mp3" Description="mp3音频格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="0" YPosition="-192" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-64" YPosition="-192" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-64" YPosition="-224" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_html" Description="html超文本标记语言">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-128" YPosition="-192" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-192" YPosition="-192" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-192" YPosition="-224" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_doc" Description="Word文件">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-256" YPosition="-192" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-320" YPosition="-192" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-320" YPosition="-224" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_dwg" Description="二维CAD的标准格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-384" YPosition="-192" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-448" YPosition="-192" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-448" YPosition="-224" Height="16" Width="16" />
+  </ImageConfig>
+  <ImageConfig Name="sm_ppt" Description="ppt演示文稿文档格式">
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_64" XPosition="-512" YPosition="-192" Height="64" Width="64" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_32" XPosition="-576" YPosition="-192" Height="32" Width="32" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/DataSetImage.png" Theme="cupertino" Status="Default" Type="Sprite_16" XPosition="-576" YPosition="-224" Height="16" Width="16" />
+  </ImageConfig>
+</root>

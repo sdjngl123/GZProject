@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="BusinessModelBar" BaseBar="SettingBar">
+    <Item Name ="inherit" ImagePath="~/Platform/Image/Console/relationship.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.BusinessModel.ShowInheritCmd"></Item>
+    <Item Name ="ExportDict" ImagePath="~/Platform/Image/Console/list.png"   ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.ExportDataDictionary.ExportDataDictCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="InitBigDataBar" BaseBar="SettingBar">
+    <Item Name ="InitBigData" IsCommonItem="true"  ImagePath="~/Persistence/Image/Console/InitBigData.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass=" Hoteam.InforCenter.Common.ConsoleSetting.InitBigData.InitBigDataCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="PageManageBar" BaseBar="SettingBar">
+    <Item Name ="Generator" IsCommonItem="true" ImagePath="~/Platform/Image/Console/GeneratorPage.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.PageGenerator.CreatePageConfigCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="ListManageEditBar" BaseBar="SettingBar">
+    <Item Name ="ListManageGuide" ImagePath="~/Platform/Image/Console/list.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.ListManagementManage.ListManagementCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="ListManageBar" BaseBar="SettingBar">
+    <Item Name ="ListManageGuide" IsCommonItem="true" ImagePath="~/Platform/Image/Console/list.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.ListManagementGuide.ListManagementGuideCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="TreeManageBar" BaseBar="SettingBar">
+    <Item Name ="TreeManageGuide" IsCommonItem="true" ImagePath="~/Platform/Image/Console/tree.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.TreeManagementGuide.TreeManagementGuideCmd"></Item>
+  </ToolBar>
+  <!--<ToolBar Name ="WorkFlowBar" BaseBar="">
+    <Item Name ="Create" ImagePath="~/Base/Image/Console/create.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.CreateConfigCmd"></Item>
+    <Item Name ="Modify" ImagePath="~/Base/Image/Console/modify.gif"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.ModifyConfigCmd"></Item>
+    <Item Name ="Delete" ImagePath="~/Base/Image/Console/delete.png"  ItemAssembly="Hoteam.InforCenter.Workflow.Designer" ItemClass="Hoteam.InforCenter.Workflow.Designer.Command.OnDeleteFlowCommand"></Item>
+    <Item Name ="SaveAs" ImagePath="~/Base/Image/save.png"   ItemAssembly="Hoteam.InforCenter.Workflow.Designer" ItemClass="Hoteam.InforCenter.Workflow.Designer.Command.OnSaveAsFlowCommand"></Item>
+    <Item Name ="ViewMode" ImagePath="~/Base/Image/viewmode.png"  ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.SwitchViewModeCmd"></Item>
+    
+  </ToolBar>-->
+  <ToolBar Name ="HistoryToolsConsoleToolManageBar" BaseBar="SettingBar">
+    <Item Name ="HistoryToolsGuide" IsCommonItem="true" ImagePath="~/Platform/Image/Console/list.png" 
+          ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.HistoryDataTrans.HistoryTransDataCmd"></Item>
+  </ToolBar>
+</root>

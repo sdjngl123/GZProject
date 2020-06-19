@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PERSON-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="GENDERHeader">
+      <LocalizedLabel LanguageRef="zhs">性别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gender</LocalizedLabel>
+    </Label>
+    <Label Name="GENDERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="BIRTHDAYHeader">
+      <LocalizedLabel LanguageRef="zhs">生日</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Birthday</LocalizedLabel>
+    </Label>
+    <Label Name="ACADEMICRECORDHeader">
+      <LocalizedLabel LanguageRef="zhs">学历</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Education background</LocalizedLabel>
+    </Label>
+    <Label Name="ACADEMICRECORDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PHONEHeader">
+      <LocalizedLabel LanguageRef="zhs">手机号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mobile phone number</LocalizedLabel>
+    </Label>
+    <Label Name="PHONERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="OFFICENUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">办公号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Office phone number</LocalizedLabel>
+    </Label>
+    <Label Name="OFFICENUMBERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="FAXNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">传真号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fax</LocalizedLabel>
+    </Label>
+    <Label Name="FAXNUMBERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">电子邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">E-mail</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ZIPCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮编</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Postcode</LocalizedLabel>
+    </Label>
+    <Label Name="ZIPCODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">联系地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contact address</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 500&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditPersonnel</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

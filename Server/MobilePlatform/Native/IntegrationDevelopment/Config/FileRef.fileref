@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/MobilePlatform/Native/ModulePermission/Js/MobileModulePermission.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobileAdcancedQuery.js" />
+</root>

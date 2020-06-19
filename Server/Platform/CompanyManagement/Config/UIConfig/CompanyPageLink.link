@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+  <PageLinks Name="Organization" HideTitle="false" IsTemplate="false">
+    <PageLink Name="CompanyList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" Order="020">
+      <Para Name="ItemName" Value="CompanyListMangement" />
+    </PageLink>
+  </PageLinks>
+</root>

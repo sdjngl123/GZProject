@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TESTOBJ-CREATE">
+  <Settings Key="height" Value="122"/>
+  <Settings Key="width" Value="216"/>
+  <Settings Key="title" Value="TESTOBJ-CREATE.TESTOBJHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('TESTOBJ',para);{
+var o = pageEvent.o.GetControl('CREATEUID_Value');
+if(o.id!=''){
+o.SetValue(data.CREATEUID);
+o.SetText(data.CREATEUID_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('CREATETIME_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.CREATETIME);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('FACTORY_Value');
+	if(c.id!=''){
+		c.SetText(data.FACTORY);
+	}
+}
+ var functionName = 'InforCenter_TESTOBJ_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'TESTOBJ'};{
+var c = pageEvent.o.GetControl('CREATEUID_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CREATEUID = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('CREATETIME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CREATETIME = c.GetTicksByDateTime();
+}}{
+var c = pageEvent.o.GetControl('FACTORY_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.FACTORY = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_TESTOBJ_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATEUID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID_Label" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTOBJ-CREATE.CREATEUIDHeader" />
+</PageControl><PageControl ControlID="CREATEUID_Value" ParentID="CREATEUID" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="ctrlEvent.objectType='TESTOBJ';ctrlEvent.infoName='CREATEUID';InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATETIME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME_Label" ParentID="CREATETIME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTOBJ-CREATE.CREATETIMEHeader" />
+</PageControl><PageControl ControlID="CREATETIME_Value" ParentID="CREATETIME" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTOBJ';ctrlEvent.infoName='CREATETIME';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="datetime"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FACTORY"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FACTORY" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="FACTORY_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FACTORY_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FACTORY_Label" ParentID="FACTORY" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTOBJ-CREATE.FACTORYHeader" />
+</PageControl><PageControl ControlID="FACTORY_Value" ParentID="FACTORY" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTOBJ';ctrlEvent.infoName='FACTORY';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTOBJ-CREATE.FACTORYRegex" />
+</PageControl>  
+  </PageControls>
+</root>

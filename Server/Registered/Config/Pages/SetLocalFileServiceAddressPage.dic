@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SetLocalFileServiceAddress" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">设置本地文件服务地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set File server Address</LocalizedLabel>
+    </Label>
+    <Label Name="IP">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IPAddress</LocalizedLabel>
+    </Label>
+    <Label Name="IPAddressRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空，输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not empty , and input max length is 100</LocalizedLabel>
+    </Label>
+    <Label Name="Port">
+      <LocalizedLabel LanguageRef="zhs">端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Port</LocalizedLabel>
+    </Label>
+    <Label Name="PortRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空，输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not empty , and input max length is 100</LocalizedLabel>
+    </Label>
+    <Label Name="Volumn">
+      <LocalizedLabel LanguageRef="zhs">卷</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Volumn</LocalizedLabel>
+    </Label>
+    <Label Name="VolumnRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空，输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not empty , and input max length is 100</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

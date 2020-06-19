@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Description="">
+  <Table Name="WORKFLOWCLASSIFY">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="DESCRIPTION" />
+    <Column Name="PEID" />
+    <Row>
+      <Cell ColName="EID">WORKFLOWCLASSIFY_b688702b78564916829f1f17b780fa59</Cell>
+      <Cell ColName="ENAME">普通流程模板</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636077930530000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636077930530000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="DESCRIPTION">提供简单的普通流程模板</Cell>
+      <Cell ColName="PEID">WORKFLOWCLASSIFYROOT_COMPANY155f6a331e804b69a6fc47e6273699fcWORKFLOWCLASSIFYROOT</Cell>
+    </Row>
+  </Table>
+  <Table Name="WORKFLOWTEMPLATE">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="WORKFLOWTEMPLATETYPE" />
+    <Column Name="DESCRIPTION" />
+    <Column Name="ISRUN" />
+    <Column Name="FLOWADMINISTRATOR" />
+    <Column Name="WORKFLOWTEMPLATEINFO" />
+    <Column Name="PEID" />
+    <Column Name="XMLNAME" />
+    <Column Name="EVERSION" />
+    <Column Name="EUID" />
+    <Column Name="ELASTINSERT" />
+    <Row>
+      <Cell ColName="EID">WORKFLOWTEMPLATE_a31e8f3b7ccb41f6bc31a0af7c9192ae</Cell>
+      <Cell ColName="ENAME">两步评审流程</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636276479140000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636413181200000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="WORKFLOWTEMPLATETYPE">GeneralWorkflow</Cell>
+      <Cell ColName="DESCRIPTION"></Cell>
+      <Cell ColName="ISRUN">TRUE</Cell>
+      <Cell ColName="FLOWADMINISTRATOR">USERINFO_System</Cell>
+      <Cell ColName="WORKFLOWTEMPLATEINFO">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;WorkflowTemplate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeUserByActor="true" ChangeUserByAdmin="true" ChangeUserByCreator="true" XmlID="72ccbd72-28fd-457a-894e-8e7e5d234d89" Name="WORKFLOW8fda0b334ea44404bc00ea3ff17bbe1f" DisplayName="两步评审流程" TemplateType="GeneralWorkflow" Description="" IsRun="true" FlowAdministrator="USERINFO_System"&gt;
+  &lt;ChangeActorNodeList Name="NODEc5920d7ed52749faac6fb053ecd62b991" IsAllowChange="true" IsValidateNull="false" IsValidateCustomNull="false" /&gt;
+  &lt;ChangeActorNodeList Name="NODEc5920d7ed52749faac6fb053ecd62b992" IsAllowChange="true" IsValidateNull="false" IsValidateCustomNull="false" /&gt;
+  &lt;Parameter Name="Result" Value="0" /&gt;
+  &lt;WorkflowNode NodeID="StartNode" NodeType="StartNode" NodeText="开始" CenterX="296" CenterY="96" ImagePath="~\Platform\Image\Console\GraphEditor\StartNode.png" /&gt;
+  &lt;WorkflowNode NodeID="EndNode" NodeType="EndNode" NodeText="结束" CenterX="300" CenterY="496" ImagePath="~\Platform\Image\Console\GraphEditor\EndNode.png" /&gt;
+  &lt;WorkflowNode xsi:type="WorkflowAuditNode" NodeID="NODEc5920d7ed52749faac6fb053ecd62b991" NodeType="FlowExecute" NodeText="执行" CenterX="297" CenterY="249" ImagePath="~\Platform\Image\Workflow\FlowExecute.png" NodeFlag="" ShowOrder="001" EffectivityTime="0" AdjectiveRemindTime="0" AcquiesceResult="" IsIgnoreDefaultActor="false" IsHideOpinion="false" IsHideAttachList="false" ObjectPermission="" TaskType="Simple;false"&gt;
+    &lt;ChangeActorNodeList Name="NODEc5920d7ed52749faac6fb053ecd62b992" IsAllowChange="false" IsValidateNull="false" IsValidateCustomNull="false" /&gt;
+    &lt;ActorItem Name="Creator" Actors="Creator" /&gt;
+    &lt;AuditResult Name="同意" ParameterName="Result" ParameterValue="0" /&gt;
+  &lt;/WorkflowNode&gt;
+  &lt;WorkflowNode xsi:type="WorkflowAuditNode" NodeID="NODEc5920d7ed52749faac6fb053ecd62b992" NodeType="FlowAudit" NodeText="评审" CenterX="298" CenterY="379" ImagePath="~\Platform\Image\Workflow\FlowAudit.png" NodeFlag="" ShowOrder="002" EffectivityTime="0" AdjectiveRemindTime="0" AcquiesceResult="" IsIgnoreDefaultActor="false" IsHideOpinion="false" IsHideAttachList="false" ObjectPermission="" TaskType="Simple;false"&gt;
+    &lt;ChangeActorNodeList Name="NODEc5920d7ed52749faac6fb053ecd62b991" IsAllowChange="false" IsValidateNull="false" IsValidateCustomNull="false" /&gt;
+    &lt;ActorItem Name="Creator" Actors="Creator" /&gt;
+    &lt;AuditResult Name="同意" ParameterName="Result" ParameterValue="0" /&gt;
+  &lt;/WorkflowNode&gt;
+  &lt;WorkflowLink LinkID="LINEc5920d7ed52749faac6fb053ecd62b993" StartNodeID="StartNode" StartX="296" StartY="121" EndNodeID="NODEc5920d7ed52749faac6fb053ecd62b991" EndX="297" EndY="229" DisplayType="0" FirstLength="52" ConditionText=""&gt;
+    &lt;HaveCondition&gt;0&lt;/HaveCondition&gt;
+  &lt;/WorkflowLink&gt;
+  &lt;WorkflowLink LinkID="LINEc5920d7ed52749faac6fb053ecd62b994" StartNodeID="NODEc5920d7ed52749faac6fb053ecd62b991" StartX="297" StartY="274" EndNodeID="NODEc5920d7ed52749faac6fb053ecd62b992" EndX="298" EndY="359" DisplayType="0" FirstLength="52" ConditionText=""&gt;
+    &lt;HaveCondition&gt;0&lt;/HaveCondition&gt;
+  &lt;/WorkflowLink&gt;
+  &lt;WorkflowLink LinkID="LINEc5920d7ed52749faac6fb053ecd62b995" StartNodeID="NODEc5920d7ed52749faac6fb053ecd62b992" StartX="298" StartY="404" EndNodeID="EndNode" EndX="300" EndY="476" DisplayType="0" FirstLength="52" ConditionText=""&gt;
+    &lt;HaveCondition&gt;0&lt;/HaveCondition&gt;
+  &lt;/WorkflowLink&gt;
+&lt;/WorkflowTemplate&gt;</Cell>
+      <Cell ColName="PEID">WORKFLOWCLASSIFY_b688702b78564916829f1f17b780fa59</Cell>
+      <Cell ColName="XMLNAME">WORKFLOW8fda0b334ea44404bc00ea3ff17bbe1f</Cell>
+      <Cell ColName="EVERSION">1</Cell>
+      <Cell ColName="EUID">WORKFLOWTEMPLATE_B0CE9F0C58DC4442BE228D33D0A666AE</Cell>
+      <Cell ColName="ELASTINSERT">WORKFLOWTEMPLATE_a31e8f3b7ccb41f6bc31a0af7c9192ae</Cell>
+    </Row>
+  </Table>
+  <TableSchema Name="WORKFLOWCLASSIFY" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="DESCRIPTION" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PEID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="WORKFLOWTEMPLATE" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="WORKFLOWTEMPLATETYPE" DataType="STRING20" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="DESCRIPTION" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ISRUN" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="FLOWADMINISTRATOR" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="WORKFLOWTEMPLATEINFO" DataType="TEXT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="XMLNAME" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="EVERSION" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="EUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ELASTINSERT" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+</root>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="PageLinkItems" IsWeb="true">
+		<Label Name="Property">
+			<LocalizedLabel LanguageRef="zhs">基础信息</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Property</LocalizedLabel>
+		</Label>
+		<Label Name="ProjectMember">
+			<LocalizedLabel LanguageRef="zhs">团队</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Member</LocalizedLabel>
+		</Label>
+		<Label Name="ProjectStage">
+			<LocalizedLabel LanguageRef="zhs">阶段</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Stage</LocalizedLabel>
+		</Label>
+		<Label Name="AllProject">
+			<LocalizedLabel LanguageRef="zhs">我的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">MyProject</LocalizedLabel>
+		</Label>
+		<Label Name="RProject">
+			<LocalizedLabel LanguageRef="zhs">我负责的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">My Response Project</LocalizedLabel>
+		</Label>
+		<Label Name="PProject">
+			<LocalizedLabel LanguageRef="zhs">我参与的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">My Partic Project</LocalizedLabel>
+		</Label>
+		<Label Name="CProject">
+			<LocalizedLabel LanguageRef="zhs">已结束的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Complete Project</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

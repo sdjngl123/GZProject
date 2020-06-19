@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedTaskType" IsCache="true">
+  <Settings Key="height" Value="300"/>
+  <Settings Key="width" Value="500"/>
+  <Settings Key="title" Value="SelectedTaskType.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedTaskType_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectedTaskType_Layout"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SelectedTaskType_Layout" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="RadioListContainer"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ContentContainer"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="AllAuditContainer"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="AllAuditImgContainer"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RadioListContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="6"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RadioList"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RadioList" ParentID="RadioListContainer" TypeName="RadioList" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_SelectedTaskType_RadioOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="position" Value="vertical" />
+      <Settings Key="item1">
+        <Settings Key="checked" Value="true" />
+        <Settings Key="disabled" Value="false" />
+        <Settings Key="textId" Value="SelectedTaskType.Simple" />
+        <Settings Key="value" Value="Simple" />
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="checked" Value="false" />
+        <Settings Key="disabled" Value="false" />
+        <Settings Key="textId" Value="SelectedTaskType.OverHalf" />
+        <Settings Key="value" Value="OverHalf" />
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="checked" Value="false" />
+        <Settings Key="disabled" Value="false" />
+        <Settings Key="textId" Value="SelectedTaskType.AnyOne" />
+        <Settings Key="value" Value="AnyOne" />
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="checked" Value="false" />
+        <Settings Key="disabled" Value="false" />
+        <Settings Key="textId" Value="SelectedTaskType.ByAccord" />
+        <Settings Key="value" Value="ByAccord" />
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="checked" Value="false" />
+        <Settings Key="disabled" Value="false" />
+        <Settings Key="textId" Value="SelectedTaskType.AuditCount" />
+        <Settings Key="value" Value="AuditCount" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ContentContainer" ParentID="SelectedTaskType_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="SimpleContainer"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="OverHalfTextValue"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="AnyOneDropDown"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ByAccordDropDown"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="AuditCountDropDownContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SimpleContainer" ParentID="ContentContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="AutoAduitCheckBox"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="120"/>
+        <Settings Key="childid" Value="AduitResultLabel"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="SelectResultDropDown"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AutoAduitCheckBox" ParentID="SimpleContainer" TypeName="CheckBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedTaskType_OnAutoAduitChecked(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedTaskType.AutoAduit" />
+    </PageControl>
+    <PageControl ControlID="AduitResultLabel" ParentID="SimpleContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="SelectedTaskType.AduitResult" />
+    </PageControl>
+    <PageControl ControlID="SelectResultDropDown" ParentID="SimpleContainer" TypeName="DropDown" >
+      <Settings Key="disabled" Value="true" />
+    </PageControl>
+    <PageControl ControlID="OverHalfTextValue" ParentID="ContentContainer" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="bgText" Value="SelectedTaskType.KeyActor" />
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+    <PageControl ControlID="AnyOneDropDown" ParentID="ContentContainer" TypeName="LayoutContainer" >
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="AnyOneDropDown1"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="AnyOneElseLabel"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="AnyOneDropDown2"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AnyOneDropDown1" ParentID="AnyOneDropDown" TypeName="DropDown" >
+    </PageControl>
+    <PageControl ControlID="AnyOneElseLabel" ParentID="AnyOneDropDown" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="SelectedTaskType.Else" />
+    </PageControl>
+    <PageControl ControlID="AnyOneDropDown2" ParentID="AnyOneDropDown" TypeName="DropDown" >
+    </PageControl>
+    <PageControl ControlID="ByAccordDropDown" ParentID="ContentContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ByAccordDropdown1"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="ElseLabel"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ByAccordDropdown2"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ByAccordDropdown1" ParentID="ByAccordContainer" TypeName="DropDown" >
+    </PageControl>
+    <PageControl ControlID="ElseLabel" ParentID="ByAccordContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="SelectedTaskType.Else" />
+    </PageControl>
+    <PageControl ControlID="ByAccordDropdown2" ParentID="ByAccordContainer" TypeName="DropDown" >
+    </PageControl>
+
+    <PageControl ControlID="AuditCountDropDownContainer" ParentID="ContentContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="Count"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="People"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="AuditCountDropDown1"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="AuditCountElseLabel"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="AuditCountDropDown2"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Count" ParentID="AuditCountDropDownContainer" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[1-9][0-9]{0,8}$" />
+      <Settings Key="regextipId" Value="SelectedTaskType.CountRegex" />
+    </PageControl>
+    <PageControl ControlID="People" ParentID="AuditCountDropDownContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="SelectedTaskType.People" />
+    </PageControl>
+    <PageControl ControlID="AuditCountDropDown1" ParentID="AuditCountDropDownContainer" TypeName="DropDown" >
+    </PageControl>
+    <PageControl ControlID="AuditCountElseLabel" ParentID="AuditCountDropDownContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="SelectedTaskType.Else" />
+    </PageControl>
+    <PageControl ControlID="AuditCountDropDown2" ParentID="AuditCountDropDownContainer" TypeName="DropDown" >
+    </PageControl>
+
+    <PageControl ControlID="AllAuditContainer" ParentID="SelectedTaskType_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="OverHalfTextValue_AllAuditChk"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="AnyOneDropDown_AllAuditChk"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ByAccordDropDown_AllAuditChk"/>
+      </Settings>
+      <!--<Settings Key="item5" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="AuditCountDropDownContainer_AllAuditChk"/>
+      </Settings>-->
+    </PageControl>
+    <PageControl ControlID="OverHalfTextValue_AllAuditChk" ParentID="AllAuditContainer" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedTaskType.AllAudit" />
+    </PageControl>
+    <PageControl ControlID="AnyOneDropDown_AllAuditChk" ParentID="AllAuditContainer" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedTaskType.AllAudit" />
+    </PageControl>
+    <PageControl ControlID="ByAccordDropDown_AllAuditChk" ParentID="AllAuditContainer" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedTaskType.AllAudit" />
+    </PageControl>
+    <!--<PageControl ControlID="AuditCountDropDownContainer_AllAuditChk" ParentID="AllAuditContainer" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="SelectedTaskType.AllAudit" />
+    </PageControl>-->
+
+    <PageControl ControlID="AllAuditImgContainer" ParentID="SelectedTaskType_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="OverHalfTextValue_AllAuditImg"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="AnyOneDropDown_AllAuditImg"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ByAccordDropDown_AllAuditImg"/>
+      </Settings>
+      <!--<Settings Key="item5" >
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="AuditCountDropDownContainer_AllAuditImg"/>
+      </Settings>-->
+    </PageControl>
+    <PageControl ControlID="OverHalfTextValue_AllAuditImg" ParentID="AllAuditImgContainer" TypeName="CustomerContainer" >
+      <!--<Settings Key="templateName" Value="SelectedTaskType_AllAuditQuestion"/>-->
+    </PageControl>
+    <PageControl ControlID="AnyOneDropDown_AllAuditImg" ParentID="AllAuditImgContainer" TypeName="CustomerContainer" >
+     
+    </PageControl>
+    <PageControl ControlID="ByAccordDropDown_AllAuditImg" ParentID="AllAuditImgContainer" TypeName="CustomerContainer" >
+     
+    </PageControl>
+    <!--<PageControl ControlID="AuditCountDropDownContainer_AllAuditImg" ParentID="AllAuditImgContainer" TypeName="CustomerContainer" >
+      
+    </PageControl>-->
+    <PageControl ControlID="Btn_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedTaskType_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+
+</root>

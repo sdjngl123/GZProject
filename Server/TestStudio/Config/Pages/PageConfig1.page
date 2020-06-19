@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="PageConfig1" IsCache="false">
+  <Settings Key="width" Value="700" />
+  <Settings Key="height" Value="221" />
+  <Settings Key="title" Value="PageConfig1.PageConfig1" />
+  <Settings Key="TemplatePage" Value="" />
+  <Settings Key="Model" Value="" />
+  <Settings Key="ChildModel" Value="" />
+  <Settings Key="CustomOnCreate" Value="false" />
+  <Settings Key="CustomOnGetDataFromPage" Value="false" />
+  <PageControls>
+    <PageControl ControlID="BaseFlowPanel" ParentID="" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="vertical" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="49%" />
+        <Settings Key="childid" Value="LayoutContainerRow0" />
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%" />
+        <Settings Key="childid" Value="LayoutContainer1" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LayoutContainerRow0" ParentID="BaseFlowPanel" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="horizontal" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="218" />
+        <Settings Key="childid" Value="LayoutContainerCol00" />
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="218" />
+        <Settings Key="childid" Value="LayoutContainerCol01" />
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="218" />
+        <Settings Key="childid" Value="LayoutContainerCol02" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LayoutContainerCol00" ParentID="LayoutContainerRow0" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="horizontal" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="100" />
+        <Settings Key="childid" Value="HTextBox1" />
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="80" />
+        <Settings Key="childid" Value="HLabel2" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HTextBox1" ParentID="LayoutContainerCol00" TypeName="TextBox">
+      <PageHandlers />
+      <Settings Key="bgText" Value="" />
+      <Settings Key="disabled" Value="false" />
+      <Settings Key="regex" Value="" />
+      <Settings Key="regextipId" Value="" />
+      <Settings Key="type" Value="text" />
+      <Settings Key="Field" Value="" />
+    </PageControl>
+    <PageControl ControlID="HLabel2" ParentID="LayoutContainerCol00" TypeName="Label">
+      <PageHandlers />
+      <Settings Key="textId" Value="PageConfig1.HLabel2" />
+      <Settings Key="wrap" Value="false" />
+      <Settings Key="position" Value="right" />
+      <Settings Key="suffix" Value="" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="color" Value="Black" />
+    </PageControl>
+    <PageControl ControlID="LayoutContainerCol01" ParentID="LayoutContainerRow0" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="horizontal" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="100" />
+        <Settings Key="childid" Value="HTextBox2" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HTextBox2" ParentID="LayoutContainerCol01" TypeName="TextBox">
+      <PageHandlers />
+      <Settings Key="bgText" Value="" />
+      <Settings Key="disabled" Value="false" />
+      <Settings Key="regex" Value="" />
+      <Settings Key="regextipId" Value="" />
+      <Settings Key="type" Value="text" />
+      <Settings Key="Field" Value="" />
+    </PageControl>
+    <PageControl ControlID="LayoutContainerCol02" ParentID="LayoutContainerRow0" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="horizontal" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="80" />
+        <Settings Key="childid" Value="HLabel1" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HLabel1" ParentID="LayoutContainerCol02" TypeName="Label">
+      <PageHandlers />
+      <Settings Key="textId" Value="PageConfig1.HLabel1" />
+      <Settings Key="wrap" Value="false" />
+      <Settings Key="position" Value="right" />
+      <Settings Key="suffix" Value="" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="color" Value="Black" />
+    </PageControl>
+    <PageControl ControlID="LayoutContainer1" ParentID="BaseFlowPanel" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="horizontal" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="200" />
+        <Settings Key="childid" Value="LayoutContainer2" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LayoutContainer2" ParentID="LayoutContainer1" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="horizontal" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="20%" />
+        <Settings Key="childid" Value="HLabel3" />
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="57%" />
+        <Settings Key="childid" Value="HTextBox3" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HLabel3" ParentID="LayoutContainer2" TypeName="Label">
+      <PageHandlers />
+      <Settings Key="textId" Value="PageConfig1.HLabel3" />
+      <Settings Key="wrap" Value="false" />
+      <Settings Key="position" Value="right" />
+      <Settings Key="suffix" Value="" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="color" Value="Black" />
+    </PageControl>
+    <PageControl ControlID="HTextBox3" ParentID="LayoutContainer2" TypeName="TextBox">
+      <PageHandlers />
+      <Settings Key="bgText" Value="" />
+      <Settings Key="disabled" Value="false" />
+      <Settings Key="regex" Value="" />
+      <Settings Key="regextipId" Value="" />
+      <Settings Key="type" Value="text" />
+      <Settings Key="Field" Value="" />
+    </PageControl>
+  </PageControls>
+  <PageHandlers />
+</root>

@@ -1,0 +1,11 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="RadioList" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+             InforCenter_Platform_Object_SetLovListRadio(o,'[INFONAME]','[OBJTYPE]',false);
+                 "/>
+  </PageHandlers>
+  <Settings Key="position" Value="horizontal" />
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

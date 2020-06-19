@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="CreateMultiObject" IsCache="true">
+  <Settings Key="height" Value="460"/>
+  <Settings Key="width" Value="650"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_CreateMultiObject_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_CreateMultiObject_OnNodeChange(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="CreateMultiObject.Title"/>
+  <PageControls>
+    <!--一层-->
+    <PageControl ControlID="CreateMultiObject_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeViewPage"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="TreeViewPage" ParentID="CreateMultiObject_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TreeViewCtrl"/>
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="Info_Container" ParentID="CreateMultiObject_Container" TypeName="PageContainer">
+     </PageControl>
+    <!--二层-->
+    <PageControl ControlID="Btn_Container" ParentID="CreateMultiObject_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnReturn"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <!--三层-->
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_CreateObject_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <!--三层-->
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+    <!--三层-->
+    <PageControl ControlID="btnReturn" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_CreateMultiObject_OnReturn(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CreateMultiObject.Return" />
+    </PageControl>
+  </PageControls>
+</root>

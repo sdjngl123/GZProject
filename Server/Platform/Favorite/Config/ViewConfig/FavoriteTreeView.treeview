@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebTreeView Name="FavoriteTreeView" ObjectType="FAVORITE" IconClose="p_favorites" IconOpen="p_favorites" NodeType="" TextDicField="ENAME" View="FAVORITEROOTVIEW" StateField="STATEID" ShowStartNode="true" IsTemplate="false">
+    <Schema Name="FAVORITEFOLDER" ObjectType="FAVORITEFOLDER" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter=""       
+            Filter=" CETYPE=N'FAVORITEFOLDER'  AND  LCREATEUID ='[CURUSERID]' " View="FAVORITETREEVIEW" StateField="STATEID" Key="1" SuperKey="-1" ParentObjectType="FAVORITE" Loop="true" IsExistNode="true" />
+    <QueryView Name="FAVORITEFOLDERQUERYVIEW" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="FAVORITETREEVIEW" />
+  </WebTreeView>
+  <WebTreeView Name="FavoriteShowTreeView" ObjectType="FAVORITE" IconClose="p_favorites" IconOpen="p_favorites" NodeType="" TextDicField="ENAME" View="FAVORITEROOTVIEW" StateField="STATEID" ShowStartNode="true" IsTemplate="false">
+    <Schema Name="FAVORITEFOLDER" ObjectType="FAVORITEFOLDER" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" 
+              Filter=" LCREATEUID ='[CURUSERID]' "
+            IconCloseField="IMPORTANTICON" IconOpenField="IMPORTANTICON" EntityFilter="" View="FAVORITETREEVIEW" 
+            StateField="STATEID" Key="1" SuperKey="-1" ParentObjectType="FAVORITE" Loop="true" IsExistNode="true" />
+    <QueryView StateField="STATEID" />
+  </WebTreeView>
+  
+</root>

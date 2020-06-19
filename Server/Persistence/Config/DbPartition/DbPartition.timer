@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <TimerInfo Call="Hoteam.InforCenter.DbPartitionService.SplitTablePartition" IntervalSecond="86400" ElapsedType="1"/>
+</root>
+
+
+
+
+
+
+
+
+
+
+
+
+

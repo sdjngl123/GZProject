@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MenuCtrl" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="Menu_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="0px 0px 0px 4px"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Menu"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Menu" ParentID="Menu_Container" TypeName="Menu">
+    </PageControl>
+  </PageControls>
+</root>

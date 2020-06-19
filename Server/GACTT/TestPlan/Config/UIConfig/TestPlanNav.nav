@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<NavigationItem Name="TestPlanManage" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+		<Image>~/Base/Image/PageControl/HMultiSelectDropDown.png</Image>
+		<NavigationItem Name="VTSDEMANDNav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<PageName>ListManagement</PageName>
+			<Image>~/Base/Image/PageControl/HRightMenu.png</Image>
+			<Para Name="ItemName" Value="VTSDEMANDList" />
+		</NavigationItem>
+		<NavigationItem Name="TESTPLANTASKNav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<PageName>TreeManagement</PageName>
+			<Image>~/Base/Image/PageControl/HRadioList.png</Image>
+			<Para Name="ItemName" Value="TestPlanTaskTree" />
+			<Para Name="ConstraintRefresh" Value="true" />
+		</NavigationItem>
+	</NavigationItem>
+</root>

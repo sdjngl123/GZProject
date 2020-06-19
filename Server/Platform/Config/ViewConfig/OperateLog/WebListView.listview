@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebListView Name="OPERATELOGSEARCHVIEW" View="OPERATELOGSEARCHVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" AllowOverstriking="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageSize="680*340" DetailsPageUseObjectInspector="false" QueryID="" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="false" IsTemplate="false" IsMainConfig="false" />
+</root>

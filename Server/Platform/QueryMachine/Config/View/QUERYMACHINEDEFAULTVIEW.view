@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="QUERYMACHINEDEFAULTVIEW" ObjectTypeName="QUERYMACHINEQUERYOBJ" OrderByString="CREATETIME DESC" AsCommonQuery="true">
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="ECOMPANYID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="EVERSION" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="EMINORVERSION" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="EUID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="ICON" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="LEVELID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="OWNGID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="OWNUID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="STAGESTATEID" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="STATEID" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="150" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATEUID" Width="100" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATETIME" Width="150" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" ReturnDBValue="false" />
+  </ObjectView>
+</root>

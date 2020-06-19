@@ -1,0 +1,159 @@
+.ClassicHomePageTop_Layout
+{
+    background-color: #038489;
+    border: 1px solid #007276;
+}
+
+.HoteamUI_SelectedTip_labName
+{
+    background: #D9EDF7;
+}
+.HoteamUI_SelectedTip_content
+{
+    background: #D9EDF7;
+}
+
+.HoteamUI_SelectedList_UL li.HoteamUI_SelectedList_UL_Selected
+{
+    background-color: #D9EDF7;
+}
+.WorkflowPlugin_HeaderLayout
+{
+    background-color:#D8EBF9;    
+}
+.LifeCyclePlugin_HeaderLayout
+{
+    background-color:#D8EBF9;    
+}
+.SmartHomePage_UserContainer
+{
+    color:White;
+    border-left: 1px solid #01767b;
+}
+
+.SmartHomePage_Message
+{
+    color:White;
+}
+.SmartHomePage_Message_Num
+{
+    background-color: red;
+}
+
+.SmartHomePage_User_ul
+{
+    background-color: #f8f8f8;
+}
+
+.SmartHomePage_User_ul li a
+{
+    color:#666;
+}
+.ClassicHomePage_MainPageWelcome
+{
+    color:#eee;
+}
+.PersonalSettingNote
+{
+    color: Red;
+}
+.PersonalSettingNote > .hoteam-label
+{
+    color: Red;
+}
+.HomePage_Collection li:hover
+{
+    background-color:#e2f0f0;
+    color:#007276;
+}
+#leftNav .common p
+{
+    color: White;
+}
+#StartMenu
+{
+    background-color: #5F6164;
+}
+#StartMenu .content
+{
+    background-color: #F3F3F3;
+}
+#taskbartip
+{
+    background-color: #8C8F93;
+}
+#taskbartip div
+{
+    background-color:#8C8F93;
+}
+#StartMenu .leftcontent #logout
+{
+    color: White;
+    background-color: #A7AAAF;
+}
+#StartMenu .leftcontent #logout:hover
+{
+    background-color: #909296;
+}
+.Platform_Desktop_Plug
+{
+    background-color: #fff;
+}
+.hoteam-navigation-step-active .hoteam-navigation-step-text
+{
+    color:#337ab7;
+}
+.hoteam-navigation-step-active .hoteam-navigation-step-num
+{
+    color:#ffffff;
+}
+
+.login-center-loginBtn div
+{
+    color:#1E9EA3;
+    background-color:#fff;
+}
+.HomePage_Collection_Container
+{
+    border-left: 1px solid #01767b;
+}
+.start {
+    background-image: url(southstreetImages/smallLogo.png);
+}
+.hoteam-login-top-img
+{
+    background:url(southstreetImages/loginTop.png) no-repeat center left;
+}
+.Login_Center>*
+{
+    background:url(southstreetImages/login-center-shadow.png) repeat-x;
+}
+.login-center-item-selul li:hover
+{
+    background-color:#29B8BB;
+}
+.classicHomePage_input {
+    background-color: #038489;
+}
+
+.hoteam-localsearch-d-title {
+    background-color:#038489;
+}
+
+.hoteam-grid-d-title {
+    background-color: #038489;
+}
+
+.hoteam-selectlist-top {
+    background-image: url(/base/css/southstreet/images/baseCtrl.png);
+}
+
+.hoteam-selectlist-down {
+    background-image: url(/base/css/southstreet/images/baseCtrl.png);
+}
+
+.Calendar .fc-event
+{
+    background-color:#038489 !important;
+    border-color:#038489 !important;
+}

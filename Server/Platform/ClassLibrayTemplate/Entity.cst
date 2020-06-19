@@ -1,0 +1,23 @@
+<%-- 
+Name: Entity.cst
+Author: 
+Description: 生成类模板
+--%>
+<%@ CodeTemplate Language="C#" TargetLanguage="C#" Src="" Inherits="" Debug="False" Description="Template description here." %>
+<%@ Property Name="NameSpace" Type="System.String" Default="" Optional="True" Category="" Description="" Editor="" EditorBase="" Serializer="" %>
+<%@ Property Name="ClassName" Type="System.String" Default="" Optional="True" Category="" Description="" Editor="" EditorBase="" Serializer="" %>
+<%@ Property Name="RefNameSpace" Type="System.Array" Default="" Optional="True" Category="" Description="" Editor="" EditorBase="" Serializer="" %>
+#region 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+#endregion
+
+namespace <%=NameSpace%>{
+	
+	public class <%=ClassName%>{
+		public <%=ClassName%>(){
+		}
+	}
+}

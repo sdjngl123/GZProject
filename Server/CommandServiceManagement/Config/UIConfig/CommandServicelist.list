@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListManagement Name="CommandServiceConversionStatusList" MenuName="CommandServiceStatusMenu" ListRightMenuName="" ListViewName="CommandServiceConversionStatusListView" QueryPageName="" 
+                  ListTitleDataService="Hoteam.InforCenter.CommandServiceManagementService.GetConversionInfoGridTitle" 
+                  OnePageDataService="Hoteam.InforCenter.CommandServiceManagementService.GetConversionInfoGridData" AllPageDataService="" HideViewFilterPage="true" SearchFields="" IsBottomTab="false" />
+  
+  <ListManagement Name="CommandServiceServiceLogList" MenuName="" ListRightMenuName="" ListViewName="CommandServiceServiceLogListView" QueryPageName=""
+                  ListTitleDataService="Hoteam.InforCenter.CommandServiceManagementService.GetCommandServiceServiceLogListTitle"
+                  OnePageDataService="Hoteam.InforCenter.CommandServiceManagementService.GetCommandServiceServiceLogListData" AllPageDataService="" HideViewFilterPage="true" SearchFields="" IsBottomTab="false" />
+
+</root>

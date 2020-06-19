@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PATCHOBJECTPERMISSIONOBJECTGRIDVIEDView" IsWeb="true">
+    <Label Name="PATCHOBJECTPERMISSIONOBJECTGRIDVIEDHeader">
+      <LocalizedLabel LanguageRef="zhs">批量授权对象列表视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Batch authorized object list view</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHOBJECTPERMISSIONOBJECTGRIDVIEDCaption">
+      <LocalizedLabel LanguageRef="zhs">批量授权对象列表视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Batch authorized object list view</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object state</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object state</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Creator</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Creator</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectedAuditBaseInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeNodeActor">
+      <LocalizedLabel LanguageRef="zhs">更改执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change executor</LocalizedLabel>
+    </Label>
+    <Label Name="Node">
+      <LocalizedLabel LanguageRef="zhs">节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node</LocalizedLabel>
+    </Label>
+    <Label Name="AllowChange">
+      <LocalizedLabel LanguageRef="zhs">允许修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow Modification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateNull">
+      <LocalizedLabel LanguageRef="zhs">验证为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify null</LocalizedLabel>
+    </Label>
+    <Label Name="AllocateNull">
+      <LocalizedLabel LanguageRef="zhs">验证手动指定为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify that manual assignment is null</LocalizedLabel>
+    </Label>
+    <Label Name="ShowText">
+      <LocalizedLabel LanguageRef="zhs">显示文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Text</LocalizedLabel>
+    </Label>
+    <Label Name="NodeImage">
+      <LocalizedLabel LanguageRef="zhs">节点图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node Picture</LocalizedLabel>
+    </Label>
+    <Label Name="NodeIdentification">
+      <LocalizedLabel LanguageRef="zhs">节点标识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node Identification</LocalizedLabel>
+    </Label>
+    <Label Name="ShowOrder">
+      <LocalizedLabel LanguageRef="zhs">显示顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Order</LocalizedLabel>
+    </Label>
+    <Label Name="TaskType">
+      <LocalizedLabel LanguageRef="zhs">任务类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task type</LocalizedLabel>
+    </Label>
+    <Label Name="EffectTime">
+      <LocalizedLabel LanguageRef="zhs">计划结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Scheduled end time</LocalizedLabel>
+    </Label>
+    <Label Name="EffectDay">
+      <LocalizedLabel LanguageRef="zhs">天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Day</LocalizedLabel>
+    </Label>
+    <Label Name="EffectHour">
+      <LocalizedLabel LanguageRef="zhs">小时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hour</LocalizedLabel>
+    </Label>
+    <Label Name="EffectMinute">
+      <LocalizedLabel LanguageRef="zhs">分</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Minute</LocalizedLabel>
+    </Label>
+    <Label Name="RemindTime">
+      <LocalizedLabel LanguageRef="zhs">提前提醒时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Early Warning Time</LocalizedLabel>
+    </Label>
+    <Label Name="RemindDay">
+      <LocalizedLabel LanguageRef="zhs">天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Day</LocalizedLabel>
+    </Label>
+    <Label Name="RemindHour">
+      <LocalizedLabel LanguageRef="zhs">小时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hour</LocalizedLabel>
+    </Label>
+    <Label Name="RemindMinute">
+      <LocalizedLabel LanguageRef="zhs">分</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Minute</LocalizedLabel>
+    </Label>
+    <Label Name="Ignore">
+      <LocalizedLabel LanguageRef="zhs">忽略执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore the executive</LocalizedLabel>
+    </Label>
+    <Label Name="HideOpinion">
+      <LocalizedLabel LanguageRef="zhs">隐藏意见框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide the comments box</LocalizedLabel>
+    </Label>
+    <Label Name="HideAttachList">
+      <LocalizedLabel LanguageRef="zhs">隐藏附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide the attachment</LocalizedLabel>
+    </Label>
+    <Label Name="AcquiesceResultLabel">
+      <LocalizedLabel LanguageRef="zhs">超期执行结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Overtime execution result</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermission">
+      <LocalizedLabel LanguageRef="zhs">对象权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object permission</LocalizedLabel>
+    </Label>
+    <Label Name="AssistAudit">
+      <LocalizedLabel LanguageRef="zhs">协助评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistAudit</LocalizedLabel>
+    </Label>
+    <Label Name="DayRegex">
+      <LocalizedLabel LanguageRef="zhs">只能输入数字，（0-99999999）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only numbers can be entered, (0-99999999)</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

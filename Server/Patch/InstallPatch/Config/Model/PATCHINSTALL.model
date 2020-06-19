@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="PATCHINSTALL" Extend="ENTITY" LogicClass="EntityObject" IconPath="~/Base/Image/Entity.gif" Abstract="false" TableName="PATCHINSTALL" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <InfoType Name="PATCHID" Type="DefaultObjectValue" DataType="STRING100" Column="PATCHID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PATCHNUM" Type="DefaultObjectValue" DataType="STRING100" Column="PATCHNUM" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PATCHHASHCODE" Type="DefaultObjectValue" DataType="STRING100" Column="PATCHHASHCODE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="FAILUREREASON" Type="DefaultObjectValue" DataType="STRING20" Column="FAILUREREASON" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ISRECOVERYPOINT" Type="DefaultObjectValue" DataType="STRING20" Column="ISRECOVERYPOINT" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PATCHPATH" Type="DefaultObjectValue" DataType="TEXT" Column="PATCHPATH" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="APPNAME" Type="DefaultObjectValue" DataType="TEXT" Column="APPNAME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="APPCODE" Type="DefaultObjectValue" DataType="TEXT" Column="APPCODE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="APPVERSION" Type="DefaultObjectValue" DataType="STRING100" Column="APPVERSION" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PATCHTYPE" Type="DefaultObjectValue" DataType="STRING20" Column="PATCHTYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PATCHCATEGORY" Type="DefaultObjectValue" DataType="STRING20" Column="PATCHCATEGORY" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PUBLISHTIME" Type="DateTimeValue" DataType="STRING20" Column="PUBLISHTIME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="IMPORTANCE" Type="DefaultObjectValue" DataType="STRING20" Column="IMPORTANCE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="BUGCODE" Type="DefaultObjectValue" DataType="STRING100" Column="BUGCODE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ISINITPATCH" Type="DefaultObjectValue" DataType="STRING20" Column="ISINITPATCH" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PATCHVERSION" Type="DefaultObjectValue" DataType="STRING100" Column="PATCHVERSION" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="UPLOADTIME" Type="DateTimeValue" DataType="STRING100" Column="UPLOADTIME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="INSTALLTIME" Type="DateTimeValue" DataType="STRING100" Column="INSTALLTIME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="Create Null" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="View" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

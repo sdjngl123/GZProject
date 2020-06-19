@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="EnumListManagement" MenuName="ListEnumerationMenu" ListRightMenuName="ListEnumerationRigthMenu"  ListViewName="ENUMERATIONLIST"  QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true">
+  </ListManagement>
+</root>

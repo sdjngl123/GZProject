@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowAccessory">
+  <!--<Settings Key="title" Value="StartWorkflow.Title"/>
+  <Settings Key="icon" Value="~/platform/image/navigation/chart.png"/>-->
+  <Settings Key="height" Value="326"/>
+  <Settings Key="width" Value="900"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_InforCenter_StartWorkflow_AccessoryPageOnLoad(pageEvent)"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+      <PageControl ControlID="MainContainer" ParentID="" TypeName="LayoutContainer">
+        <Settings Key="type" Value="vertical"/>
+        <Settings Key="item1" >
+          <Settings Key="size" Value="100%"/>
+          <Settings Key="childid" Value="WorkFlowAccessoryContainer"/>
+        </Settings>
+      </PageControl>
+
+    <!--流程附件信息-->
+    <PageControl ControlID="WorkFlowAccessoryContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TabsCtrlPage" ParentID="WorkFlowAccessoryContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="VerticalTabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>
+

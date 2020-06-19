@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <VersionFormat Name="Letter" MajorDefault="true" Enable="true">
+    <FormatItem   DBValue="1" Display="A"/>
+    <FormatItem   DBValue="2" Display="B"/>
+    <FormatItem   DBValue="3" Display="C"/>
+    <FormatItem   DBValue="4" Display="D"/>
+    <FormatItem   DBValue="5" Display="E"/>
+    <FormatItem   DBValue="6" Display="F"/>
+    <FormatItem   DBValue="7" Display="G"/>
+    <FormatItem   DBValue="8" Display="H"/>
+    <FormatItem   DBValue="9" Display="I"/>
+    <FormatItem   DBValue="10" Display="J"/>
+    <FormatItem   DBValue="11" Display="K"/>
+    <FormatItem   DBValue="12" Display="L"/>
+    <FormatItem   DBValue="13" Display="M"/>
+    <FormatItem   DBValue="14" Display="N"/>
+    <FormatItem   DBValue="15" Display="O"/>
+    <FormatItem   DBValue="16" Display="P"/>
+    <FormatItem   DBValue="17" Display="Q"/>
+    <FormatItem   DBValue="18" Display="R"/>
+    <FormatItem   DBValue="19" Display="S"/>
+    <FormatItem   DBValue="20" Display="T"/>
+    <FormatItem   DBValue="21" Display="U"/>
+    <FormatItem   DBValue="22" Display="V"/>
+    <FormatItem   DBValue="23" Display="W"/>
+    <FormatItem   DBValue="24" Display="X"/>
+    <FormatItem   DBValue="25" Display="Y"/>
+    <FormatItem   DBValue="26" Display="Z"/>
+    <FormatItem   DBValue="27" Display="AA"/>
+    <FormatItem   DBValue="28" Display="AB"/>
+    <FormatItem   DBValue="29" Display="AC"/>
+    <FormatItem   DBValue="30" Display="AD"/>
+    <FormatItem   DBValue="31" Display="AE"/>
+    <FormatItem   DBValue="32" Display="AF"/>
+    <FormatItem   DBValue="33" Display="AG"/>
+    <FormatItem  DBValue="34" Display="AH"/>
+  </VersionFormat>
+  <VersionFormat Name="Number"  MinorDefault="true" Enable="true">
+    <FormatItem  DBValue="1" Display="001"/>
+    <FormatItem  DBValue="2" Display="002"/>
+    <FormatItem  DBValue="3" Display="003"/>
+    <FormatItem  DBValue="4" Display="004"/>
+    <FormatItem  DBValue="5" Display="005"/>
+    <FormatItem  DBValue="6" Display="006"/>
+    <FormatItem  DBValue="7" Display="007"/>
+    <FormatItem  DBValue="8" Display="008"/>
+    <FormatItem  DBValue="9" Display="009"/>
+    <FormatItem  DBValue="10" Display="010"/>
+    <FormatItem  DBValue="11" Display="011"/>
+    <FormatItem  DBValue="12" Display="012"/>
+    <FormatItem  DBValue="13" Display="013"/>
+    <FormatItem  DBValue="14" Display="014"/>
+    <FormatItem  DBValue="15" Display="015"/>
+    <FormatItem  DBValue="16" Display="016"/>
+    <FormatItem  DBValue="17" Display="017"/>
+    <FormatItem  DBValue="18" Display="018"/>
+    <FormatItem  DBValue="19" Display="019"/>
+    <FormatItem  DBValue="20" Display="020"/>
+    <FormatItem  DBValue="21" Display="021"/>
+    <FormatItem  DBValue="22" Display="022"/>
+    <FormatItem  DBValue="23" Display="023"/>
+  </VersionFormat>
+
+  <VersionInterval Name="." Default="true"/>
+  <VersionInterval Name="-"/>
+</root>
+
+

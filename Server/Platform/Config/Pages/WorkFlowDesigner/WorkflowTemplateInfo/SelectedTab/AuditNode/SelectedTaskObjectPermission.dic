@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectedTaskObjectPermission" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object permission</LocalizedLabel>
+    </Label>
+    <Label Name="Model">
+      <LocalizedLabel LanguageRef="zhs">模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="Allow">
+      <LocalizedLabel LanguageRef="zhs">允许</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow</LocalizedLabel>
+    </Label>
+    <Label Name="Deny">
+      <LocalizedLabel LanguageRef="zhs">禁止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prohibition</LocalizedLabel>
+    </Label>
+    <Label Name="SameModel">
+      <LocalizedLabel LanguageRef="zhs">所选行与其他行的模型相同，请重新设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The selected row that has the same model as other rows, please reset it</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

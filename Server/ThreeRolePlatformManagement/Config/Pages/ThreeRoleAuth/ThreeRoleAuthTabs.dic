@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuthTabs" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">认证设置（全局）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Auth</LocalizedLabel>
+    </Label>
+    <Label Name="ExistInvalid">
+      <LocalizedLabel LanguageRef="zhs">页面存在未通过的验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExistInvalid</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/FuncButton.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobilePageButton.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobilePageButtonTypePage.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobilePageListItem.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/StandardList.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobilePageValue.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobilePageButtonValue.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/ExportData.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/ExportDevelopmentData.js" />
+  <JSFile FileName ="~/MobilePlatform/Native/IntegrationDevelopment/Js/MobileModulePermission.js" />
+
+  
+</root>

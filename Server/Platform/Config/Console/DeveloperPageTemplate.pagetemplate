@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <PageTemplate Name="page" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls" ModuleClass="Hoteam.InforCenter.Developer.Contorls.BaseFlowPanel" Method="GetPageControl">
+  </PageTemplate>
+  <PageTemplate Name="pageTemplate" ModuleAssembly="Hoteam.InforCenter.Developer.Contorls" ModuleClass="Hoteam.InforCenter.Developer.Contorls.BaseFlowPanel" Method="GetTemplatePageControl">
+  </PageTemplate>
+</root>

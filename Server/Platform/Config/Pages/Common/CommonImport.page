@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="CommonImport" IsCache="true">
+  <Settings Key="height" Value="600"/>
+  <Settings Key="width" Value="1000"/>
+  <Settings Key="title" Value="CommonImport.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Import_CommonImportOnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="DataSetInfoPage_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="6px 6px 6px 6px"/>
+      <Settings Key="item4">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Top_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="EditList_Container"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Top_Container" ParentID="DataSetInfoPage_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="300"/>
+        <Settings Key="childid" Value="ImportFileCtrlContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="60%"/>
+        <Settings Key="childid" Value="Action_Container"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ImportFileCtrlContainer" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ImportFileCtrl"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="6"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+
+    <PageControl ControlID="ImportFileCtrl" ParentID="ImportFileCtrlContainer" TypeName="CustomerContainer">
+    </PageControl>
+
+    <PageControl ControlID="Action_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ActionContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ActionContainer" ParentID="Action_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="5px 0 0 0"/>
+      <Settings Key="item3">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="BtnCheck"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="BtnUpload"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item7">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="DownTemplete"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="BtnCheck" ParentID="ActionContainer" TypeName="Button">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Import_CommonOnDataCheck(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CommonImport.DataCheck" />
+    </PageControl>
+    <PageControl ControlID="BtnUpload" ParentID="ActionContainer" TypeName="Button">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Import_CommonOnUpload(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CommonImport.Upload" />
+    </PageControl>
+    <PageControl ControlID="DownTemplete" ParentID="ActionContainer" TypeName="Button">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Import_DownTemplete(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CommonImport.DownTemplete" />
+    </PageControl>
+
+    <PageControl ControlID="EditList_Container" ParentID="DataSetInfoPage_Container" TypeName="LayoutContainer" >
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item4">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListManagement_Container"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ListManagement_Container" ParentID="EditList_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewFilterPageContainer"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+
+    </PageControl>
+    <PageControl ControlID="ListViewFilterPageContainer" ParentID="ListManagement_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"></Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"></Settings>
+        <Settings Key="childid" Value="ListViewPageContainer"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MenuPageContainer" ParentID="ListManagement_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="ListViewPageContainer" ParentID="ListViewFilterPageContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="EditListViewCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

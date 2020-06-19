@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ENUMERATIONModel" IsWeb="true">
+    <Label Name="ENUMERATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMERATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent EID</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent EID</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="LOVTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">值列表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list type</LocalizedLabel>
+    </Label>
+    <Label Name="LOVTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">值列表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list type</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWMODEHeader">
+      <LocalizedLabel LanguageRef="zhs">显示模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWMODECaption">
+      <LocalizedLabel LanguageRef="zhs">显示模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

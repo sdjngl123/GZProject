@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+
+  <EditListManagement Name="BaseInfoList" MenuName="" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+                  EditListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetBaseInfoTitleData"
+                  EditListDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetBaseInfoGridData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="InheritList" MenuName="InheritMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+                  EditListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetInheritInfoTitleData"
+                  EditListDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetInheritInfoGridData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="ExtendList" MenuName="ExtendMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+                  EditListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetExtendInfoTitleData"
+                  EditListDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetExtendInfoGridData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="ForeignKeyInfoList" MenuName="ForeignKeyMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+                 EditListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetForeignKeyInfoTitleData"
+                 EditListDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetForeignKeyInfoGridData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="SetFKInfoList" MenuName="ForeignKeyMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+                EditListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetFKSetInfoTitleData"
+                EditListDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetFKSetInfoGridData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="FlowTaskPermissionEditList" MenuName="FlowTaskPermissionEditListMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+                EditListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetFlowTaskPermissionTitleData"
+                EditListDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetFlowTaskPermissionGridData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+  
+</root>

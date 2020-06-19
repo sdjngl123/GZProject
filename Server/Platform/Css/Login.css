@@ -1,0 +1,295 @@
+﻿.hoteam-login-top-img
+{
+      width: 100%;
+      height:95px;
+      margin-left: 30px;
+}
+.hoteam-login-center-left
+{
+    width:672px;
+    height:456px;
+    float:left;
+    background:url(../platform/Image/Login/WelcomeImageLeft.png) no-repeat center;
+}
+.hoteam-login-center-right
+{
+    float: right;
+    width: 300px;
+    margin-top: 45px;
+    margin-right:8px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    position:relative;
+}
+.hoteam-login-center-right-d {
+    background: #fff;
+    background: rgba(255,255,255,0.1);
+    filter: Alpha(opacity=10);
+    height: 100%;
+    background:linear-gradient(-135deg,transparent 3em,rgba(255,255,255,0.15) 0);
+}
+.hoteam-login-center-right-c
+{
+    width: 100%;
+    position: relative;
+    padding: 16px;
+}
+#lblPluginDownLoad
+{
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    cursor:pointer; 
+    padding-top:10px;
+}
+.Login_WelcomeLabel
+{
+    color: #fff;
+    height: 40px;
+    line-height: 32px;
+    width: 120px;
+    display: inline-block;
+    font-size: 16px;
+}
+.login-center-item-img
+{
+    position:absolute;
+    left:8px;
+    top:10px;
+    opacity:0.6;
+}
+.login-autologin-img
+{
+     display:inline-block;
+     margin-bottom: -3px;
+     cursor:pointer;
+}
+.login-autologin-text
+{
+     display:inline-block;
+     cursor:pointer;
+     color:#fff;
+     font-size:12px;
+}
+.login-advanced-setting-img
+{
+    margin-bottom:-3px;
+    cursor:pointer;
+}
+#advancedsetting
+{
+    color: #fff;
+    font-size: 12px;
+    cursor:pointer; 
+}
+.login-advanced-setting-c
+{
+    display:none;
+}
+.login-center-item
+{
+    margin-bottom: 24px;
+    position: relative;
+}
+.login-center-item .login-center-item-sel
+{
+    width:330px;
+    height:30px;
+    background-color:#fff !important;
+    cursor:pointer;
+}
+.login-center-item-selul
+{
+    position: absolute;
+    background-color:#fff;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border-radius: 3px;
+    list-style: none;
+    width: 130px;
+    filter:alpha(opacity=85);
+}
+.login-center-item-selul li
+{
+    height: 30px;
+    padding-left:10px;
+    padding-top:6px;
+    padding-bottom:6px;
+    border-bottom:1px solid #cccccc;
+    position:relative;
+    font-size:12px;
+}
+.login-center-item-half .login-center-item-down
+{
+    position:absolute;
+    right:10px;
+    top:8px;
+    cursor:pointer;
+}
+.login-center-item input
+{
+    height: 34px;
+    padding: 0 12px 0 30px;
+    line-height: 34px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 2px;
+    color:#fff;
+}
+.login-center-item .login-center-item-tip
+{
+    position:absolute;
+    left:30px;
+    color:#fff;
+    top:10px;
+}
+.login-center-item-half .login-center-item-tip
+{
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    color:#fff;
+}
+.login-center-item-half input
+{
+    background: transparent !important;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.login-center-autoLogin
+{
+    margin-top:-12px;
+}
+.login-center-loginBtn
+{
+    margin-top:16px;
+}
+.login-center-loginBtn div
+{
+    width:260px;
+    height:34px;
+    font-size:14px;
+    line-height: 34px;
+    text-align: center;
+    cursor:pointer;
+    border-radius:4px;
+}
+.Login_Bottom
+{
+    text-align: center;
+    padding-top: 25px;
+}
+.login-advanced-setting
+{
+    padding: 10px 0 0 0;
+}
+.login-advanced-setting-bottom
+{
+    width:100%;
+    overflow:hidden;
+    color:#fff;
+    white-space: nowrap;
+}
+.login-center-item-half {
+    display: inline-block;
+    width: 130px;
+    position:relative;
+    margin: 8px 0px;
+}
+.login-input-focus
+{
+    border:1px solid #fff !important;        
+}
+.login-center-item-img-focus
+{
+   opacity:1;
+}
+.hoteam-login-bottom-content
+{
+    font-size:12px;
+    height:25px;  
+}
+
+#DownLoadAPluginList li.title
+{
+    padding: 10px 0 5px 0;
+    display: inline-block;
+    font-weight: 600;
+}
+#DownLoadAPluginList li.description
+{
+    padding: 5px 0 10px 0;
+    border-bottom: 1px dashed #ccc;
+    color: #565656;
+}
+
+.hoteam-login-license
+{
+    position: absolute;
+    bottom: -36px;
+    color: #FFE6E6;
+    padding-left: 10px;    
+}
+
+.hoteam-login-qrcode{
+    text-align:center;
+    color:white;
+}
+
+    .hoteam-login-qrcode > img {
+        width: 120px;
+        height: 120px;
+        margin: 20px 0 10px 0;
+        border: 10px solid white;
+    }
+
+.hoteam-login-scan {
+    height: 40px;
+    margin-left: 32%;
+}
+
+    .hoteam-login-scan > img {
+        background: url(../platform/Image/Login/LoginPageScan.png) no-repeat center;
+        width: 16px;
+        height: 16px;
+        padding: 9px;
+        float: left;
+    }
+
+    .hoteam-login-scan > p {
+        float: left;
+        margin-left: 10px;
+    }
+
+.hoteam-login-badge {
+    position: relative;
+    float: right;
+    padding: 25px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    right: 0px;
+}
+
+
+.hoteam-login-badge-qrcode {
+    background: url(../platform/Image/Login/LoginPageQRCode.png) no-repeat center;
+}
+
+.hoteam-login-badge-pc {
+    background: url(../platform/Image/Login/LoginPageComputer.png) no-repeat center;
+}
+
+.hoteam-login-badge:hover{
+    opacity:1;
+}
+
+.login-center-loginBtn-wait {
+    background: url("/Base/Image/loginloading.gif") 20% 50% no-repeat;
+    background-size: 20px;
+    cursor: default !important;
+}

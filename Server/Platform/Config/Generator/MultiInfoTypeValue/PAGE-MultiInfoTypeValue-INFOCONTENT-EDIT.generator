@@ -1,0 +1,11 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="MultiSelectDropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script=""/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                var o = ctrlEvent.o;
+InforCenter_Platform_Object_SetInfoTypeList(o,'[OBJTYPE]',false);
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

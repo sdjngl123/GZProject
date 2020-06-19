@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MODELVIEWDATAModel" IsWeb="true">
+    <Label Name="MODELVIEWDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">模型视图数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WEBMODELVIEWDATA</LocalizedLabel>
+    </Label>
+    <Label Name="MODELVIEWDATACaption">
+      <LocalizedLabel LanguageRef="zhs">模型视图数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WEBMODELVIEWDATA</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">视图数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">viewdata</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWDATACaption">
+      <LocalizedLabel LanguageRef="zhs">视图数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">viewdata</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWDICDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">视图多语言数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">viewdicdata</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWDICDATACaption">
+      <LocalizedLabel LanguageRef="zhs">视图多语言数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">viewdicdata</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

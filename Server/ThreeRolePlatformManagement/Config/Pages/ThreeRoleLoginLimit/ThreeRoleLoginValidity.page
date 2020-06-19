@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleLoginValidity">
+  <Settings Key="title" Value="ThreeRoleLoginValidity.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginValidity_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginValidity_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginValidity_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="LimitType"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="DateTime"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="LimitType" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LimitType_Value"/>
+      </Settings>
+     
+    </PageControl>
+    
+    <PageControl ControlID="LimitType_Value" ParentID="LimitType" TypeName="RadioList">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_ThreeRolePlatform_ThreeRoleLoginValidity_RadioOnChange(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="position" Value="horizontal" />
+      <Settings Key="item1"  >
+        <Settings Key="checked" Value="true" />
+        <Settings Key="textId" Value="ThreeRoleLoginValidity.None" />
+        <Settings Key="value" Value="None" />
+      </Settings>
+      <Settings Key="item2"  >
+        <Settings Key="textId" Value="ThreeRoleLoginValidity.SetStart" />
+        <Settings Key="value" Value="SetStart" />
+      </Settings>
+     
+      <Settings Key="item3"  >
+        <Settings Key="textId" Value="ThreeRoleLoginValidity.SetEnd" />
+        <Settings Key="value" Value="SetEnd" />
+      </Settings>
+      <Settings Key="item4"  >
+        <Settings Key="textId" Value="ThreeRoleLoginValidity.SetStartAndEnd" />
+        <Settings Key="value" Value="SetStartAndEnd" />
+      </Settings>
+     
+    </PageControl>
+    
+    <PageControl ControlID="DateTime" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="DateTimeStart_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="DateTimeStart_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="DateTimeEnd_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="DateTimeEnd_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DateTimeStart_Label" ParentID="DateTime" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginValidity.DateTimeStart" />
+    </PageControl>   
+    <PageControl ControlID="DateTimeStart_Value" ParentID="DateTime" TypeName="DateTime" >
+      <Settings Key="type" Value="date"/>
+    </PageControl>
+    <PageControl ControlID="DateTimeEnd_Label" ParentID="DateTime" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginValidity.DateTimeEnd" />
+    </PageControl>
+    <PageControl ControlID="DateTimeEnd_Value" ParentID="DateTime" TypeName="DateTime" >
+      <Settings Key="type" Value="date"/>
+    </PageControl>
+  </PageControls>
+</root>

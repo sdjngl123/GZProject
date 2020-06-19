@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OnlineUserList" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_OnlineUserList_LoadGridData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Main_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="4px"/>-->
+      <Settings Key="item0">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Menu_Container"/>
+      </Settings>
+      <!--<Settings Key="item2">
+        <Settings Key="size" Value="6"/>
+      </Settings>-->
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OnlineUserList_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Menu_Container" ParentID="Main_Contaienr" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="4px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MenuContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MenuContainer" ParentID="Menu_Container" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_OnlineUserList_MenuClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="OnlineUserList.LogOut"/>
+        <Settings Key="value" Value="LogOut"/>
+        <Settings Key="icon" Value="p_remove"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="OnlineUserList.LogOutAll"/>
+        <Settings Key="value" Value="LogOutAll"/>
+        <Settings Key="icon" Value="p_remove"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="OnlineUserList_Container" ParentID="Main_Contaienr" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="4px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DataListContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DataListContainer" ParentID="OnlineUserList_Container" TypeName="Grid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnRowClick" Script="InforCenter_Platform_OnlineUserList_Onload(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnLoadRows" Script=""/>
+      </PageHandlers>
+      <Settings Key="rowList" Value="20,50,100" />
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="showExportAndPrintButton" Value="true" />
+      <Settings Key="item01" >
+        <Settings Key="textId" Value="OnlineUserList.UserCode" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="hidden" Value="true" />
+        <Settings Key="name" Value="LoginID" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item02" >
+        <Settings Key="textId" Value="OnlineUserList.UserCode" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="name" Value="UserID" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="hidden" Value="true" />
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="OnlineUserList.UserCode" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="UserCode" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="OnlineUserList.UserName" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="UserName" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="OnlineUserList.UserGroupName" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="UserGroupName" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="OnlineUserList.OnlineTimeSpan" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="OnlineTimeSpan" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="OnlineUserList.LastOperateTimeSpan" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="LastOperateTimeSpan" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="textId" Value="OnlineUserList.LoginIP" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="LoginIP" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="textId" Value="OnlineUserList.LoginDeviceType" />
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="width" Value="" />
+        <Settings Key="name" Value="LoginDeviceType" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

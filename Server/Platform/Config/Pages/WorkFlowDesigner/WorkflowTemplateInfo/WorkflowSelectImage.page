@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowSelectImage" IsCache="true">
+  <Settings Key="title" Value="WorkflowSelectImage.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowSelectImage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="WorkflowSelectImage_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectImageContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SelectImageContainer" ParentID="WorkflowSelectImage_Layout" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="WorkflowSelectImage"/>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="MESSAGEMANAGEMENTVIEW" ObjectTypeName="INSTANTMESSAGE" OrderByString="MSTATE DESC,CREATETIME DESC" FixedFilter="MTO='[CURUSERID]'" AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" TextAlign="left" />
+    <ViewColumn Name="MSTATE" Width="100" Resizable="true" Sortable="true" TextAlign="left" />
+    <ViewColumn Name="MTITLE" Width="100" Resizable="true" Sortable="true" TextAlign="left" />
+    <ViewColumn Name="MCONTENT" Width="-1" Resizable="true" Sortable="false" TextAlign="left" />
+    <ViewColumn Name="MFROM" Width="100" Resizable="true" Sortable="true" TextAlign="left" />
+    <ViewColumn Name="CREATETIME" Width="120" Resizable="true" Sortable="true" TextAlign="left" />
+    <ViewColumn Name="MSTATEICON" Width="0" Resizable="true" Sortable="true" TextAlign="left" />
+    <ViewCondition Name="MSTATE" AndOrFlag="AND" InfoName="MSTATE" Operation="=" Validation="String50" Required="true" />
+    <ViewCondition Name="USERID" AndOrFlag="AND" InfoName="MFROM" Operation="=" Validation="String100" Required="false" />
+    <ViewCondition Name="DATETIMEGE" AndOrFlag="AND" InfoName="CREATETIME" Operation="&gt;=" Validation="DateTime" Required="false" />
+    <ViewCondition Name="DATETIMELE" AndOrFlag="AND" InfoName="CREATETIME" Operation="&lt;=" Validation="DateTime" Required="false" />
+  </ObjectView>
+</root>

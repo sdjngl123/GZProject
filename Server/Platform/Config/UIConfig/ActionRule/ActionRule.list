@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="AuthorizeLogList"   ListViewName="AuthorizeLogListView"   ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+
+  <ListManagement Name="ActionRuleBusinessModelList" ListViewName="" 
+                  ListTitleDataService="Hoteam.Rule.RulePageService.GetActionRuleBusinessModelTitle"
+                  OnePageDataService="Hoteam.Rule.RulePageService.GetActionRuleBusinessModelData" AllPageDataService="">
+  </ListManagement>
+</root>

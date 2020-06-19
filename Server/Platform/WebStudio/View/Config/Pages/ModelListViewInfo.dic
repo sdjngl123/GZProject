@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ModelListViewInfo" IsWeb="true">
+    <Label Name="PropertyTitle">
+      <LocalizedLabel LanguageRef="zhs">属性设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set Property</LocalizedLabel>
+    </Label>
+    <Label Name="SaveSuccess">
+      <LocalizedLabel LanguageRef="zhs">保存成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveSuccess</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

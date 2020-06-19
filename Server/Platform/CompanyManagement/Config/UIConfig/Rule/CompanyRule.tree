@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+ 
+  <!--集团规则-->
+  <TreeManagement Name="CompanyRuleManagerment" MenuName="" PageLinksName="" TreeViewName="CompanyRuleManagementTreeView" ShowTreeQuery="false"
+          TreeChildDataService="Hoteam.InforCenter.CompanyRuleService.GetCompanyRuleChildNode" TreeQueryDataService="" TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="COMPANYRULEROOT" MenuName="TreeCompanyRuleRootMenu" PageLinksName="CompanyRuleRootListPageLink" />
+    <ObjectType Name="COMPANYRULE" MenuName="TreeCompanyRuleMenu" PageLinksName="CompanyRulePageLink" />
+    <ObjectType Name="CREATECOMPANYRULEROOT" MenuName="" PageLinksName="CreateCompanyRuleRootPageLink" />
+    <ObjectType Name="ActionRuleBusinessModel" MenuName="" PageLinksName="CreateCompanyRulePageLink" />
+  </TreeManagement>
+  
+</root>

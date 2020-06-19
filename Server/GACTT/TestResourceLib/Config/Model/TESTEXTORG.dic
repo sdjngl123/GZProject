@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTEXTORGModel" IsWeb="true">
+    <Label Name="TESTEXTORGHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTEXTORG</LocalizedLabel>
+    </Label>
+    <Label Name="TESTEXTORGCaption">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTEXTORG</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="UNITHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unit</LocalizedLabel>
+    </Label>
+    <Label Name="EXPIRATIONDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExpirationDate</LocalizedLabel>
+    </Label>
+    <Label Name="EXPIRATIONDATECaption">
+      <LocalizedLabel LanguageRef="zhs">有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExpirationDate</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">联系人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ContactPerson</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTDETAILSHeader">
+      <LocalizedLabel LanguageRef="zhs">联系方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ContactDetails</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Email</LocalizedLabel>
+    </Label>
+    <Label Name="INTERFACEPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">院内接口人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InterfacePerson</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="UNITCaption">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unit</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

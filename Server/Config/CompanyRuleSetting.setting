@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="OtherCompanyCanOperate" Value="false" ToClient="false" Description="通过集团权限看到的其他公司的数据是否可以做实体操作（如编辑，删除等）" />
+  <AppSet Key="ActionOfOtherCompanyCanOperate" Value="BROWSE" ToClient="false" Description="即使是其他公司也有例外的情况,多个用';'分隔" />
+ 
+</root>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Guide Name="PatchObjectPermissionGuide" SaveJS="InforCenter_Platform_PatchObjectPermission_OnSave" CancelJS="" ShowNav="true" >
+    <Page Name="SelectObjectForPermission" InitJS="InforCenter_Platform_PatchObjectPermissionGuide_InitJS" SaveJS="InforCenter_Platform_PatchObjectPermissionGuide_SaveSelectObject" AllowFinish="false" PageTitleDic="SelectObjectForPermission.Title"/>
+    <Page Name="ObjectPermissionPage" BeforeInitJS="InforCenter_Platform_PatchObjectPermissionGuide_PermissionPageInit" SaveJS="InforCenter_Platform_PatchObjectPermissionGuide_SaveObjectPermissionOnCheck" AllowFinish="true" PageTitleDic="ActionRuleGuide.SetPermission"/>
+  </Guide>
+</root>

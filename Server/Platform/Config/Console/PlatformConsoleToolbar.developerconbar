@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="BusinessModelBar" BaseBar="SettingBar">
+    <Item Name ="inherit" ImagePath="~/Platform/Image/Console/relationship.png"  ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.BusinessModel.ShowInheritCmd"></Item>
+    <Item Name ="ExportDict" ImagePath="~/Platform/Image/Console/list.png"   ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.ExportDataDictionary.ExportDataDictCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="PageManageBar" BaseBar="SettingBar">
+    <Item Name ="Generator" IsCommonItem="true" ImagePath="~/Platform/Image/Console/GeneratorPage.png"  ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.PageGenerator.CreatePageConfigCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="InitBigDataBar" BaseBar="SettingBar">
+    <Item Name ="InitBigData" IsCommonItem="true"  ImagePath="~/Persistence/Image/Console/InitBigData.png"  ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass=" Hoteam.InforCenter.Common.DeveloperSetting.InitBigData.InitBigDataCmd"></Item>
+  </ToolBar>
+
+  <ToolBar Name ="ListManageEditBar" BaseBar="SettingBar">
+    <Item Name ="ListManageGuide" ImagePath="~/Platform/Image/Console/ListManageGuide.png"  ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.ListManagementManage.ListManagementCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="ListManageBar" BaseBar="SettingBar">
+    <Item Name ="ListManageGuide" IsCommonItem="true" ImagePath="~/Platform/Image/Console/ListManageGuide.png"  ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.ListManagementGuide.ListManagementGuideCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="TreeManageBar" BaseBar="SettingBar">
+    <Item Name ="TreeManageGuide" IsCommonItem="true" ImagePath="~/Platform/Image/Console/TreeManageGuide.png"  ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting" ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.TreeManagementGuide.TreeManagementGuideCmd"></Item>
+  </ToolBar>
+
+  <ToolBar Name ="ModulerPermissionDataBar" BaseBar="SettingBar">
+    <Item Name ="ModulePermissionData" IsCommonItem="true" ImagePath="~/Platform/Image/Console/list.png"
+          ItemAssembly="Hoteam.InforCenter.Common.DeveloperSetting"
+          ItemClass="Hoteam.InforCenter.Common.DeveloperSetting.ModulerPermissionData.ModulerPermissionDataCmd"></Item>
+  </ToolBar>
+</root>

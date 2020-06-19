@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--向导功能已经被GuideManagement重写，为保证兼容性 现保留-->
+<root Name="GuideCtrl" IsCache="true">
+  <Settings Key="title" Value="GuideCtrl.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_GuideCtrl_PageOnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+
+  <PageControls>
+
+    <PageControl ControlID="GuideCtrl_Layout_Main" ParentID="" TypeName="LayoutContainer">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="GuideCtrl_Nav"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="childid" Value="GuideCtrl_Page"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="GuideCtrl_Layout_Button"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="GuideCtrl_Nav" ParentID="GuideCtrl_Layout_Main" TypeName="CustomerContainer">
+      <PageHandlers>
+        <!--<PageHandler HandlerName ="OnCreate" Script="GuideCtrl_Nav_OnCreate(ctrlEvent);"/>-->
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="GuideCtrl_Page" ParentID="GuideCtrl_Layout_Main" TypeName="Tabs">
+      <PageHandlers>
+        <!--<PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>-->
+      </PageHandlers>
+      <Settings Key="showTitle" Value="false"/>
+    </PageControl>
+
+    <PageControl ControlID="GuideCtrl_Layout_Button" ParentID="GuideCtrl_Layout_Main" TypeName="LayoutContainer">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="15%"/>
+        <Settings Key="childid" Value="GuideCtrl_Button_Pre"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="15%"/>
+        <Settings Key="childid" Value="GuideCtrl_Button_Next"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="15%"/>
+        <Settings Key="childid" Value="GuideCtrl_Button_Finish"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="15%"/>
+        <Settings Key="childid" Value="GuideCtrl_Button_Cancel"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="GuideCtrl_Button_Pre" ParentID="GuideCtrl_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideCtrlButton_Pre(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="textId" Value="GuideCtrl.Previous" />
+    </PageControl>
+    <PageControl ControlID="GuideCtrl_Button_Next" ParentID="GuideCtrl_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideCtrlButton_Next(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="GuideCtrl.Next" />
+    </PageControl>
+    <PageControl ControlID="GuideCtrl_Button_Finish" ParentID="GuideCtrl_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideCtrlButton_Finish(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="textId" Value="GuideCtrl.Finish" />
+    </PageControl>
+    <PageControl ControlID="GuideCtrl_Button_Cancel" ParentID="GuideCtrl_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideCtrlButton_Cancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="GuideCtrl.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

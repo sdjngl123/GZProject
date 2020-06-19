@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Description="规则权限初始数据" IsSysData="true">
+  <Table Name="ACTIONRULE">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="PEID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="USEBY" />
+    <Column Name="CREATEPERMISSIONOBJECTTYPE" />
+	 <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Row>
+      <Cell ColName="EID">ACTIONRULE_610e9f20d7db4c0fa5f10efa72e69b9c</Cell>
+      <Cell ColName="ENAME">流程对象权限</Cell>
+      <Cell ColName="ECODE"></Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEID">ACTIONRULEROOT_COMPANY155f6a331e804b69a6fc47e6273699fcOBJECTROOT</Cell>
+      <Cell ColName="SERIALNUMBER">2</Cell>
+      <Cell ColName="USEBY">WorkflowPermission</Cell>
+      <Cell ColName="CREATEPERMISSIONOBJECTTYPE"></Cell>
+	    <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636149443970000000</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULE_a84531b303244717a4929edb04fbaa93</Cell>
+      <Cell ColName="ENAME">对象授权</Cell>
+      <Cell ColName="ECODE"></Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEID">ACTIONRULEROOT_COMPANY155f6a331e804b69a6fc47e6273699fcOBJECTROOT</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+      <Cell ColName="USEBY">ObjectPermission</Cell>
+      <Cell ColName="CREATEPERMISSIONOBJECTTYPE"></Cell>
+	    <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636149443970000000</Cell>
+    </Row>
+  </Table>
+  <Table Name="ACTIONRULECONDITION">
+    <Column Name="EID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="ACTIONRULEID" />
+    <Column Name="OPERATOR" />
+    <Column Name="CONDITIONVALUE" />
+    <Column Name="SERIALNUMBER" />
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_6c4354d188df4f2c8c36f0a57ac5badd</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_a84531b303244717a4929edb04fbaa93</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"Enable","ConditionType":"ObjectPermissionCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_d0586474946a463e8bccf0291ea319b3</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_610e9f20d7db4c0fa5f10efa72e69b9c</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"Enable","ConditionType":"ObjectPermissionCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+  </Table>
+  <TableSchema Name="ACTIONRULE" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PEID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="0" PrimaryKeyOrder="0" />
+    <Column Name="USEBY" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEPERMISSIONOBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+	  <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_ACTIONRULE_PEID" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+  </TableSchema>
+  <TableSchema Name="ACTIONRULECONDITION" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ACTIONRULEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OPERATOR" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CONDITIONVALUE" DataType="STRING500" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_CONDITION_ACTIONRULEID" Unique="false">
+      <Field Name="ACTIONRULEID" Order="ASC" />
+    </Index>
+  </TableSchema>
+</root>

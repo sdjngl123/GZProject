@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkFlowTaskView">
+  <Settings Key="title" Value="WorkFlowTaskView.Title"/>
+  <Settings Key="icon" Value="~/platform/image/navigation/chart.png"/>
+  <Settings Key="height" Value="800"/>
+  <Settings Key="width" Value="1000"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkFlowTaskViewPage_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkFlowInfoContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkFlowInfoContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TabsCtrlPage" ParentID="WorkFlowInfoContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>
+

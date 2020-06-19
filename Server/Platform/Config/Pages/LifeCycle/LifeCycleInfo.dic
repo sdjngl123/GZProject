@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCycleInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">生命周期信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LifeCycle information</LocalizedLabel>
+    </Label>
+    <Label Name="StateSet">
+      <LocalizedLabel LanguageRef="zhs">初始状态设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StateSet</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

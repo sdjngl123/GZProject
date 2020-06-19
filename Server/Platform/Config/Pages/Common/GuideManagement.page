@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="GuideManagement" IsCache="true">
+  <Settings Key="title" Value="GuideManagement.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_GuideManagement_PageOnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnDialogCloseClick" Script="InforCenter_Platform_GuideManagement_PageOnClose(pageEvent);"/>
+  </PageHandlers>
+
+  <PageControls>
+
+    <PageControl ControlID="GuideManagement_Layout_Main" ParentID="" TypeName="LayoutContainer">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 6px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="GuideManagement_Nav"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">    
+        <Settings Key="childid" Value="GuideManagement_Page_Layout"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="GuideManagement_Layout_Button"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="GuideManagement_Page_Layout" ParentID="" TypeName="LayoutContainer">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="type" Value="horizontal"/>
+      <!--<Settings Key="item1">
+        <Settings Key="size" Value="12"/>
+      </Settings>-->
+      <Settings Key="item4">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="childid" Value="GuideManagement_Page"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <!--<Settings Key="item3">
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" Value="GuideManagement_Layout_Button"/>
+      </Settings>-->
+    </PageControl>
+
+    <PageControl ControlID="GuideManagement_Nav" ParentID="GuideManagement_Layout_Main" TypeName="CustomerContainer">
+      <PageHandlers>
+        <!--<PageHandler HandlerName ="OnCreate" Script="GuideManagement_Nav_OnCreate(ctrlEvent);"/>-->
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="GuideManagement_Page" ParentID="GuideManagement_Layout_Main" TypeName="Tabs">
+      <PageHandlers>
+        <!--<PageHandler HandlerName ="OnCreate" Script="Js(ctrlEvent);"/>-->
+      </PageHandlers>
+      <Settings Key="showTitle" Value="false"/>
+    </PageControl>
+
+    <PageControl ControlID="GuideManagement_Layout_Button" ParentID="GuideManagement_Layout_Main" TypeName="LayoutContainer">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="GuideManagement_Button_Pre"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="8"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="GuideManagement_Button_Next"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="8"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="GuideManagement_Button_Finish"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item7">
+        <Settings Key="size" Value="8"/>
+      </Settings>
+      <Settings Key="item8">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="GuideManagement_Button_Cancel"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item9">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="GuideManagement_Button_Pre" ParentID="GuideManagement_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideManagementButton_Pre(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="textId" Value="GuideManagement.Previous" />
+    </PageControl>
+    <PageControl ControlID="GuideManagement_Button_Next" ParentID="GuideManagement_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideManagementButton_Next(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="GuideManagement.Next" />
+    </PageControl>
+    <PageControl ControlID="GuideManagement_Button_Finish" ParentID="GuideManagement_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideManagementButton_Finish(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="true" />
+      <Settings Key="textId" Value="GuideManagement.Finish" />
+    </PageControl>
+    <PageControl ControlID="GuideManagement_Button_Cancel" ParentID="GuideManagement_Layout_Button" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_GuideManagementButton_Cancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="GuideManagement.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

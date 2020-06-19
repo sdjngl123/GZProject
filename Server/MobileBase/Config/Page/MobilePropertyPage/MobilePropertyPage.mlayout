@@ -1,0 +1,7 @@
+﻿<div data-role="content" class="divcontent">
+  <div class="scroller">
+    <div class="ui-grid-a" style="margin-bottom:10px;float: left;width:100%" id="MobilePropertyPageContainer">
+
+    </div>
+  </div>
+</div>

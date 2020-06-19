@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="THREEROLEAUTHINFOModel" IsWeb="true">
+    <Label Name="THREEROLEAUTHINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">三员认证设置信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">THREEROLEAUTHINFO</LocalizedLabel>
+    </Label>
+    <Label Name="THREEROLEAUTHINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">三员认证设置信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">THREEROLEAUTHINFO</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserID</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserID</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHHeader">
+      <LocalizedLabel LanguageRef="zhs">认证策略</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Auth</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHCaption">
+      <LocalizedLabel LanguageRef="zhs">认证策略</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Auth</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">认证类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthType</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">认证类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthType</LocalizedLabel>
+    </Label>
+    <Label Name="SETTINGMODEHeader">
+      <LocalizedLabel LanguageRef="zhs">设置模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SettingMode</LocalizedLabel>
+    </Label>
+    <Label Name="SETTINGMODECaption">
+      <LocalizedLabel LanguageRef="zhs">设置模式，全局设置还是个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SettingMode</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">验证类型的详细信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthData</LocalizedLabel>
+    </Label>
+    <Label Name="AUTHDATACaption">
+      <LocalizedLabel LanguageRef="zhs">验证类型的详细信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthData</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

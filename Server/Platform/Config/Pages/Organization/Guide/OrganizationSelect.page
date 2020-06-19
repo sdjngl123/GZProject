@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OrganizationSelect" IsCache="true">
+  <Settings Key="title" Value="OrganizationSelect.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_OrganizationSelect_LoadPage(pageEvent);"/>
+    <!--<PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_OrganizationSelect_OnGetData(pageEvent);"/>-->
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="30px 100px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="TitleContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RadioContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TitleContainer" ParentID="Info_Container" TypeName="Label">
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="OrganizationSelect.Info" />
+      <Settings Key="bold" Value="true" />
+    </PageControl>
+    <PageControl ControlID="RadioContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="herizontal"/>
+      <Settings Key="padding" Value="10px 0px 0px 0px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Radio"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Radio" ParentID="RadioContainer" TypeName="RadioList">
+      <Settings Key="position" Value="vertical"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />  
+    </PageControl>
+  </PageControls>
+</root>

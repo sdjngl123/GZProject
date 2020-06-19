@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="RootModelLink" >
+    <PageLink Name="AllModeLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="AllModeList"/>
+    </PageLink>
+    <PageLink Name="ThemDesign"  PageName="ListManagement">
+      <Para Name="ItemName" Value="ThemDesignList"/>
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="ModelLink" >
+    <PageLink Name="ModelInfoTypePage"  PageName="ModelInfoTypePage">
+      <Para Name="PageLinksName" Value="ObjectInfoLinks"/>
+      <Para Name="MenuName" Value="EditModelMenu"/>
+      <Para Name="FromWeb" Value="[Tree_Current_Tag_FROMWEB]"/>
+    </PageLink>
+    <PageLink Name="FormDesignPageLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="FomrTypeList"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="ObjectInfoLinks" HideTitle="true" >
+    <PageLink Name="BaseInfo"  PageName="EditListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="BaseInfoList"/>
+      <Para Name="ObjType" Value="[Tree_Current_Value1]"/>
+      <Para Name="Height" Value="120"/>
+    </PageLink>
+    <PageLink Name="InheritInfo"  PageName="EditListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="InheritList"/>
+      <Para Name="ObjType" Value="[Tree_Current_Value1]"/>
+      <Para Name="Height" Value="400"/>
+    </PageLink>
+    <PageLink Name="ExtendInfo"  PageName="EditListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="ExtendList"/>
+      <Para Name="ObjType" Value="[Tree_Current_Value1]"/>
+      <Para Name="Height" Value="300"/>
+    </PageLink>
+    <PageLink Name="ForeignKeyInfo"  PageName="EditListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="ForeignKeyInfoList"/>
+      <Para Name="ObjType" Value="[Tree_Current_Value1]"/>
+      <Para Name="Height" Value="140"/>
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="WebObjTypeNodeLinks" HideTitle="true" >
+    <PageLink Name="WebObjTypeLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="WebObjTypeList"/>
+      <Para Name="RefreshTitle" Value="true"/> 
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="RootFormLinks" HideTitle="true" >
+    <PageLink Name="RootFormLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="RootFormList"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="ClassifyNodeLinks" HideTitle="true" >
+    <PageLink Name="ClassifyNodeLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="FormClassifyList"/>
+      <Para Name="ClassifyID" Value="[Tree_Current_Value1]"/>
+    </PageLink>
+  </PageLinks>
+</root>

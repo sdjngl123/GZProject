@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <DataClearItem Name="CLEARMESSAGE" CommandName="CLEARMESSAGE" />
+  <DataClearItem Name="CLEARLOG" CommandName="CLEARLOG" />  
+  <DataClearCondition Name="CLEARMESSAGE_STARTTIME" Type="DateTime" DataClearItemName="CLEARMESSAGE" />
+  <DataClearCondition Name="CLEARMESSAGE_ENDTIME" Type="DateTime" DataClearItemName="CLEARMESSAGE" />
+  <DataClearCondition Name="CLEARLOG_STARTTIME" Type="DateTime" DataClearItemName="CLEARLOG" />
+  <DataClearCondition Name="CLEARLOG_ENDTIME" Type="DateTime" DataClearItemName="CLEARLOG" />
+</root>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" > 
+  <Command Name="ConverDateTimeToUTC">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'ConverDateTimeToUTC'))) DROP function ConverDateTimeToUTC
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ConverDateTimeToUTC">
+        create FUNCTION [dbo].[ConverDateTimeToUTC](@datetime datetime)
+        RETURNS bigint AS
+        BEGIN
+        declare @diff bigint
+        set @diff = datediff(s,'2000-01-01 00:00:00',@datetime)
+        return ( @diff -  8*3600 ) * 10000000   + 630822816000000000
+        END
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="ConverDateTimeToUTC">
+        create or replace function ConverDateTimeToUTC (p_date IN date)
+        RETURN NUMBER IS utc NUMBER;
+        begin
+        utc:=(86400 * (p_date-to_date('2000/01/01 00:00:00','YYYY/MM/DD HH24:MI:SS'))-8*3600)* 10000000   + 630822816000000000;
+        return utc;
+        end ConverDateTimeToUTC;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

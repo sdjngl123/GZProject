@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="WorkPromptPropertyPage"
+         JsFile ="~/MobileBase/Config/Page/WorkPromptPropertyPage/WorkPromptPropertyPage.js" 
+         LayoutFile="~/MobileBase/Config/Page/WorkPromptPropertyPage/WorkPromptPropertyPage.mlayout" 
+         DictionaryContent="WorkPromptPropertyPage">
+    <PageHandler HandlerName ="OnCreate" Script="HMUI_Mobile_WorkPromptPropertyPage_PageInit(pageEvent);"/>
+  </MPage>
+</root>

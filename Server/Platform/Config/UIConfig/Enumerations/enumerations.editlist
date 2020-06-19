@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EditListManagement Name="EnumListManagement" MenuName="EditListEnumerationMenu" RightMenuName="EditListEnumerationMenu"  ListViewName="ENUMERATIONLIST"  EditListTitleDataService="" EditListDataService="Hoteam.InforCenter.EnumerationService.GetGridData" >
+  </EditListManagement>
+
+  <EditListManagement Name="EnumCategoryListManagement" MenuName="EditListEnumerationCategoryMenu" RightMenuName=""  ListViewName="ENUMERATIONCATEGORYLIST"  EditListTitleDataService="" EditListDataService="" >
+  </EditListManagement>
+
+  <EditListManagement Name="EnumItemListManagement" MenuName="EditListEnumerationItemMenu" RightMenuName=""  ListViewName="ENUMERATIONITEMLIST"  EditListTitleDataService="" EditListDataService="Hoteam.InforCenter.EnumerationService.GetGridData" >
+  </EditListManagement>
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LifeCircle Name="TestResourceLife" InitState="INDESIGN" Type="Workflow">
+    <State Name="StartNode" CenterX="200" CenterY="50" />
+    <State Name="EndNode" CenterX="204" CenterY="435" />
+    <State Name="Start" CenterX="216" CenterY="272" />
+    <State Name="Stop" CenterX="211" CenterY="360" />
+    <State Name="INDESIGN" CenterX="217" CenterY="185" />
+    <State Name="Save" CenterX="353" CenterY="256" />
+    <Line ID="LINE91389d9d7e364b6994b0a4480c7db448" StartNodeID="StartNode" StartX="203" StartY="55" EndNodeID="INDESIGN" EndX="175" EndY="79" DisplayType="0" FirstLength="0" />
+    <Line ID="LINE2d23efb9c4b84370a7847643dd0062a8" StartNodeID="INDESIGN" StartX="208" StartY="194" EndNodeID="Start" EndX="216" EndY="263" DisplayType="0" FirstLength="0" />
+    <Line ID="LINE9443125f212a434fad33c0c0d26fa136" StartNodeID="Start" StartX="223" StartY="280" EndNodeID="Stop" EndX="214" EndY="350" DisplayType="0" FirstLength="0" />
+    <Line ID="LINE48c9a550e79e4643b2b5b87d6e777680" StartNodeID="Stop" StartX="204" StartY="377" EndNodeID="EndNode" EndX="211" EndY="438" DisplayType="0" FirstLength="0" />
+    <Line ID="LINE28b5495f61e447a98cc4edd7bba4c582" StartNodeID="Stop" StartX="227" StartY="361" EndNodeID="Start" EndX="233" EndY="259" DisplayType="2" FirstLength="-70" />
+    <Line ID="LINEeaaa235f6bfa43d7830ad430c31d75c5" StartNodeID="Start" StartX="232" StartY="265" EndNodeID="Save" EndX="342" EndY="302" DisplayType="0" FirstLength="0" />
+    <Line ID="LINEdcb5caa5902e4c4fb4be57f48221d6d7" StartNodeID="INDESIGN" StartX="248" StartY="189" EndNodeID="Save" EndX="346" EndY="319" DisplayType="0" FirstLength="0" />
+    <Line ID="LINE070e8d3ee0994c8cbf0b3e2270c85492" StartNodeID="Save" StartX="366" StartY="205" EndNodeID="Start" EndX="237" EndY="266" DisplayType="0" FirstLength="0" />
+  </LifeCircle>
+</root>

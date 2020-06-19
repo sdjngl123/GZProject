@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYRULEROOTModel" IsWeb="true">
+    <Label Name="COMPANYRULEROOTHeader">
+      <LocalizedLabel LanguageRef="zhs">集团权限根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group rights root node</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYRULEROOTCaption">
+      <LocalizedLabel LanguageRef="zhs">集团权限根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group rights root node</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICHeader">
+      <LocalizedLabel LanguageRef="zhs">TEXTDIC</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TEXTDIC</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICCaption">
+      <LocalizedLabel LanguageRef="zhs">TEXTDIC</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TEXTDIC</LocalizedLabel>
+    </Label>
+    <Label Name="USEBYHeader">
+      <LocalizedLabel LanguageRef="zhs">条件类型应用场景</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional type application scenario</LocalizedLabel>
+    </Label>
+    <Label Name="USEBYCaption">
+      <LocalizedLabel LanguageRef="zhs">条件类型应用场景</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional type application scenario</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">根节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node type</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">根节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectPermissionCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象授权结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorized result</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionValue">
+      <LocalizedLabel LanguageRef="zhs">授权结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized result</LocalizedLabel>
+    </Label>
+    <Label Name="Enable">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="Disable">
+      <LocalizedLabel LanguageRef="zhs">禁用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Disable</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

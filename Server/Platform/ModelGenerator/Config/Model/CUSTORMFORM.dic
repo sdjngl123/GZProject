@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="CUSTORMFORMModel" IsWeb="true">
+    <Label Name="CUSTORMFORMHeader">
+      <LocalizedLabel LanguageRef="zhs">表单根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CUSTORMFORM</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTORMFORMCaption">
+      <LocalizedLabel LanguageRef="zhs">表单根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CUSTORMFORM</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

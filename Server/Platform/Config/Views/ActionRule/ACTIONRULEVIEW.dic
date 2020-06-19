@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ACTIONRULEVIEWView" IsWeb="true">
+    <Label Name="ACTIONRULEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission view</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">标题	规则权限视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title rule permission view</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">规则名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">规则名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

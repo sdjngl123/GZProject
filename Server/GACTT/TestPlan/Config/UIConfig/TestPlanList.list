@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ListManagement Name="VTSDEMANDList" MenuName="VTSDEMANDMenu" ListViewName="VTSDEMANDListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+
+	<ListManagement Name="TESTPLANTASKATTACHList" MenuName="TESTPLANTASKATTACHMenu" ListViewName="TESTPLANTASKATTACHListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<ListManagement Name="TESTTASKMEMBERList" MenuName="TESTTASKMEMBERMenu" ListViewName="TESTTASKMEMBERListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<ListManagement Name="TESTPLANTASKList" MenuName="" ListViewName="TESTPLANTASKListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<ListManagement Name="ProjectTESTPLANTASKList" MenuName="" ListViewName="ProjectTESTPLANTASKListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<ListManagement Name="StageTESTPLANTASKList" MenuName="TESTPLANTASKMenu" ListViewName="StageTESTPLANTASKListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+
+</root>

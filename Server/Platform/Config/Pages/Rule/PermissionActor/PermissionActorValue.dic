@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PermissionActorValue" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="ActorType">
+      <LocalizedLabel LanguageRef="zhs">授权类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Type</LocalizedLabel>
+    </Label>
+    <Label Name="SameItem">
+      <LocalizedLabel LanguageRef="zhs">设置的授权类型和授权用户与列表中的重复，请重新选择。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SameItem</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

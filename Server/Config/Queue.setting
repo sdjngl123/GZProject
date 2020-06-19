@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppSet Key="BaseQueuePersistanceType" Value="null" ToClient="true" Description="内置队列的持久化方式：null 或留空 代表不进行持久化 redis 代表使用redis持久化" />
+  <AppSet Key="InsertWorkflowAttachObjectInQueue" Value="false" ToClient="true" Description="是否将发起流程的流程附件对象保存机制使用队列异步插入数据库" />
+</root>

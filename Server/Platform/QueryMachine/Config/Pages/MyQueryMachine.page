@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MyQueryMachine">
+  <Settings Key="title" Value="MyQueryMachine.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_QueryMachineQuery_MyQueryPageLoadData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="QueryBtn_Container"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="QueryBtn_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="8"/>
+      </Settings>
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryBtnContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID = "QueryBtnContainer" ParentID = "QueryBtn_Container" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="QueryMachineQueryRole.Refresh"/>
+        <Settings Key="value" Value="Refresh"/>
+        <Settings Key="icon" Value="p_resume"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_MyQueryPageMenuClick(ctrlEvent)"/>
+      </Settings>
+
+      <Settings Key="item2">
+        <Settings Key="textId" Value="MyQueryMachine.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_MyQueryPageMenuClick(ctrlEvent)"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="MyQueryDropDown_Container"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryMachine_Ctrl_Container"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="MyQueryDropDown_Container" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="MyQueryQuery_label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="80%"/>
+        <Settings Key="childid" Value="MyQueryQuery_Drop"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="2"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="QueryBtn_Btn"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MyQueryQuery_label" ParentID="DropDown_Container" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MyQueryMachine.MyQuery_label" />
+    </PageControl>
+    <PageControl ControlID="MyQueryQuery_Drop" ParentID="DropDown_Container" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_QueryMachineRole_MyQueryChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="QueryBtn_Btn" ParentID="QueryBtn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_MyQueryBtnQuery(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="iconClass" Value="p_inquire" />
+    </PageControl>
+
+    <PageControl ControlID="QueryMachine_Ctrl_Container" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryMachine_Ctrl"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="QueryMachine_Ctrl" ParentID="R-1" TypeName="QueryMachine" >
+      <Settings Key="allowOperate" Value="false"/>
+    </PageControl>
+  </PageControls>
+</root>

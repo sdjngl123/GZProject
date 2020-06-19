@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="Message" IsCache="true">
+  <Settings Key="title" Value="Message.Title"/>
+  <Settings Key="height" Value="300"/>
+  <Settings Key="width" Value="400"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Message_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Message_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Message_LayoutContainerH"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Message_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Message_LayoutContainerH" ParentID="Message_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Message_Content"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Message_Content" ParentID="Message_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="25%"/>
+        <Settings Key="childid" Value="Message_Label"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="75%"/>
+        <Settings Key="childid" Value="Message_Textbox"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--<PageControl ControlID="Message_Label" ParentID="Message_LayoutContainer" TypeName="Label" >
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Message.Text" />
+    </PageControl>-->
+    <PageControl ControlID="Message_Label" ParentID="Message_LayoutContainer" TypeName="CustomerContainer" >
+    </PageControl>
+    <PageControl ControlID="Message_Textbox" ParentID="Message_Content" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>
+    <!--MessageBtn-->
+    <PageControl ControlID="Message_Btn" ParentID="Message_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Message_btnOK"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Message_btnCopy"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" />
+      </Settings>
+
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="Message_btnCopy" ParentID="Message_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Message_Copy(ctrlEvent)"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Message.Copy" />
+    </PageControl>
+    <PageControl ControlID="Message_btnOK" ParentID="Message_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Message_OKOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+
+  </PageControls>
+</root>
+

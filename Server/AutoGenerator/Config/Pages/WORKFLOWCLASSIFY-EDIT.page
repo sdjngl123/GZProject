@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WORKFLOWCLASSIFY-EDIT">
+  <Settings Key="height" Value="154"/>
+  <Settings Key="width" Value="273"/>
+  <Settings Key="title" Value="WORKFLOWCLASSIFY-EDIT.WORKFLOWCLASSIFYHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('DESCRIPTION_Value');
+	if(c.id!=''){
+		c.SetText(data.DESCRIPTION);
+	}
+}
+  var functionName = 'InforCenter_WORKFLOWCLASSIFY_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('DESCRIPTION_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.DESCRIPTION = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_WORKFLOWCLASSIFY_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="100"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="WORKFLOWCLASSIFY-EDIT.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='WORKFLOWCLASSIFY';ctrlEvent.infoName='ENAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,200})?$" />
+  <Settings Key="regextipId" Value="WORKFLOWCLASSIFY-EDIT.ENAMERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DESCRIPTION"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DESCRIPTION" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="DESCRIPTION_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="DESCRIPTION_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DESCRIPTION_Label" ParentID="DESCRIPTION" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="WORKFLOWCLASSIFY-EDIT.DESCRIPTIONHeader" />
+</PageControl><PageControl ControlID="DESCRIPTION_Value" ParentID="DESCRIPTION" TypeName="TextBox" >
+  <Settings Key="type" Value="textarea"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="WORKFLOWCLASSIFY-EDIT.DESCRIPTIONRegex" />
+</PageControl>
+  </PageControls>
+</root>

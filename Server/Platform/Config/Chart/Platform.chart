@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--权限数据-->
+  <ChartSetting Name="Personal" X="Group0" Y="Count" Type="bar" Title="Common.Create" Groups="Group0,Count" titleData="Group0,Count" JoinChar="--"/>
+  <ChartSetting Name="Personal" X="Group0" Y="Count" Type="pie" Title="Common.Create" Groups="Group0;Count" titleData="Group0" JoinChar="--"/>
+  <ChartSetting Name="Personal" X="Group0" Y="Count" Type="bar" Title="Common.Create" Groups="Group0" titleData="Group0" JoinChar="--"/>
+</root>

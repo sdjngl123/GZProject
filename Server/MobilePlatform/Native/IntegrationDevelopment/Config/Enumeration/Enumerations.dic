@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="PageMainConfigParaTypeString">
+      <LocalizedLabel LanguageRef="zhs">字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">String </LocalizedLabel>
+    </Label>
+    <Label Name="PageMainConfigParaTypeInt">
+      <LocalizedLabel LanguageRef="zhs">整型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Integer </LocalizedLabel>
+    </Label>
+    <Label Name="PageMainConfigParaTypeFloat">
+      <LocalizedLabel LanguageRef="zhs">浮点型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Float </LocalizedLabel>
+    </Label>
+    <Label Name="PageMainConfigParaTypeDouble">
+      <LocalizedLabel LanguageRef="zhs">双精度浮点型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Double </LocalizedLabel>
+    </Label>
+    <Label Name="PageMainConfigParaTypeBool">
+      <LocalizedLabel LanguageRef="zhs">布尔型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bool </LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageOrderTypeASC">
+      <LocalizedLabel LanguageRef="zhs">正序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ASC</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageOrderTypeDESC">
+      <LocalizedLabel LanguageRef="zhs">倒序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESC</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageButtonItemTypePopupPage">
+      <LocalizedLabel LanguageRef="zhs">弹出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PopupPage</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageButtonItemTypeGoToPage">
+      <LocalizedLabel LanguageRef="zhs">跳转</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">GoToPage</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageButtonItemTypeExecScript">
+      <LocalizedLabel LanguageRef="zhs">执行脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExecScript</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageExecScriptActionCreate">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageExecScriptActionEdit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageExecScriptActionDelete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageExecScriptActionNull">
+      <LocalizedLabel LanguageRef="zhs">空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Null</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageExecScriptActionDownload">
+      <LocalizedLabel LanguageRef="zhs">下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download</LocalizedLabel>
+    </Label>
+    
+    <Label Name="MobilePageTabControlTypeProperty">
+      <LocalizedLabel LanguageRef="zhs">属性控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Property</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageTabControlTypeWebView">
+      <LocalizedLabel LanguageRef="zhs">Web页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WebView</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageTabControlTypeMileStone">
+      <LocalizedLabel LanguageRef="zhs">里程碑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MileStone</LocalizedLabel>
+    </Label>
+    <Label Name="MobileQueryControlTypeString">
+      <LocalizedLabel LanguageRef="zhs">文本框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">String</LocalizedLabel>
+    </Label>
+    <Label Name="MobileQueryControlTypeStringGroup">
+      <LocalizedLabel LanguageRef="zhs">文本框组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StringGroup</LocalizedLabel>
+    </Label>
+    <Label Name="MobileQueryControlTypeDate">
+      <LocalizedLabel LanguageRef="zhs">日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Date</LocalizedLabel>
+    </Label>
+    <Label Name="MobileQueryControlTypeDateGroup">
+      <LocalizedLabel LanguageRef="zhs">日期范围</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DateGroup</LocalizedLabel>
+    </Label>
+    <Label Name="MobileQueryControlTypeDropdown">
+      <LocalizedLabel LanguageRef="zhs">下拉框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Dropdown</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

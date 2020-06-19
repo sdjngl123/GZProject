@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FSMANAGEROOTModel" IsWeb="true">
+    <Label Name="FSMANAGEROOTHeader">
+      <LocalizedLabel LanguageRef="zhs">文件服务管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FSMANAGEROOT</LocalizedLabel>
+    </Label>
+    <Label Name="FSMANAGEROOTCaption">
+      <LocalizedLabel LanguageRef="zhs">文件服务管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FSMANAGEROOT</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

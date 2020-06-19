@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Context Name="ApplyCompanyManagerListMenu" IsWeb="true">
+    <Label Name="AddCompanyFriend">
+      <LocalizedLabel LanguageRef="zhs">添加企业关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AddCompanyFriend</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="UnAuditCompanyLinkListListMenu" IsWeb="true">
+    <Label Name="Agree">
+      <LocalizedLabel LanguageRef="zhs">同意</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agree</LocalizedLabel>
+    </Label>
+    <Label Name="Reject">
+      <LocalizedLabel LanguageRef="zhs">拒绝</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reject</LocalizedLabel>
+    </Label>
+  </Context>
+
+  
+</DictionarySerializer>

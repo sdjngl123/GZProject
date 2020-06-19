@@ -1,0 +1,17 @@
+﻿{
+	var ctrl=pageEvent.o.GetControl('[INFONAME]_Value');
+	if(ctrl.id!='' &amp;&amp; pageEvent.FlagName =='[INFONAME]'){
+	var text='';
+	var value=[];
+	for (var i = 0; i &lt;  data.length; i++) {
+	  var d=data[i];
+	  value[i] = { Value:d[pageEvent.SourceValue], Text: d[pageEvent.SourceText]};
+	  text+=';'+d[pageEvent.SourceText];
+	}
+	if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+       text = text.substring(1);
+    }
+	ctrl.SetText(text);
+	ctrl.SetValue(JSON.stringify(value));
+	}
+}

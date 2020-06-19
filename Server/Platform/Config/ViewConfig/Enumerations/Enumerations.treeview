@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <WebTreeView Name="EnumerationsTreeView" ObjectType="ENUMERATIONS" ShowStartNode="true" View="ENUMERATIONSVIEW" TextField="" TextDicField=""
+             IconClose="" IconOpen="" IconCloseField="" IconOpenField="" >
+    <Schema Key="1" SuperKey="-1" Name="ENUMERATIONCATEGORYVIEW" ObjectType="ENUMERATIONCATEGORY" View="ENUMERATIONCATEGORYVIEW" TextField="ENAME"
+            IconClose="" IconOpen="" IconCloseField="" IconOpenField=""  EntityFilter="" Filter="" Loop="false"
+            ParentObjectType="">
+    </Schema>
+    <Schema Key="2" SuperKey="1" Name="ENUMERATIONVIEW" ObjectType="" View="ENUMERATIONVIEW" TextField="ENAME"
+        IconClose="" IconOpen="" IconCloseField="ICON" IconOpenField="ICON"  EntityFilter="" Filter="PEID='[Tree_Current_value1]'" Loop="false"
+        ParentObjectType="">
+    </Schema>
+  </WebTreeView>
+</root>

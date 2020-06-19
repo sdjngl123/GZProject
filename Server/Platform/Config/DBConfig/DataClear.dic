@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DataClear" IsWeb="true">
+    <Label Name="CLEARMESSAGE">
+      <LocalizedLabel LanguageRef="zhs">清理内部消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clean up the internal messages</LocalizedLabel>
+    </Label>
+    <Label Name="CLEARLOG">
+      <LocalizedLabel LanguageRef="zhs">清理日志信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clean up the log information</LocalizedLabel>
+    </Label>
+    <Label Name="CLEARMESSAGE_STARTTIME">
+      <LocalizedLabel LanguageRef="zhs">开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start time</LocalizedLabel>
+    </Label>
+    <Label Name="CLEARMESSAGE_ENDTIME">
+      <LocalizedLabel LanguageRef="zhs">结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End time</LocalizedLabel>
+    </Label>
+    <Label Name="CLEARLOG_STARTTIME">
+      <LocalizedLabel LanguageRef="zhs">开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start time</LocalizedLabel>
+    </Label>
+    <Label Name="CLEARLOG_ENDTIME">
+      <LocalizedLabel LanguageRef="zhs">结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End time</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

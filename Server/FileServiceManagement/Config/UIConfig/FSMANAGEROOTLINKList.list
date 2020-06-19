@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListManagement Name="FSMANAGEROOTLINKList" MenuName="FSMANAGEROOTLINKListMenu" ListViewName="FSMANAGEROOTLINKListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+  <ListManagement Name="FileServiceLogList" MenuName="" ListViewName=""
+                  ListTitleDataService="Hoteam.InforCenter.FSService.GetFSManagementGridRowTitle" 
+                  OnePageDataService="Hoteam.InforCenter.FSService.GetFSManagementOnePageGridData"
+                  HideViewFilterPage="false" IsBottomTab="false" />
+
+
+  <ListManagement Name="FileServerNodeList" MenuName="" ListViewName=""
+                  ListTitleDataService="Hoteam.InforCenter.FSService.GetFSRootGridRowTitle"
+                  OnePageDataService="Hoteam.InforCenter.FSService.GetFRootOnePageGridData"
+                  HideViewFilterPage="false" IsBottomTab="false" />
+  
+</root>

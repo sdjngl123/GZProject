@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TIMEREXECUTERECORDModel" IsWeb="true">
+    <Label Name="TIMEREXECUTERECORDHeader">
+      <LocalizedLabel LanguageRef="zhs">定时器执行记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Timer execution record</LocalizedLabel>
+    </Label>
+    <Label Name="TIMEREXECUTERECORDCaption">
+      <LocalizedLabel LanguageRef="zhs">定时器执行记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Timer execution record</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="LASTEXECUTEDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">最后执行时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Last execution time</LocalizedLabel>
+    </Label>
+    <Label Name="LASTEXECUTEDATECaption">
+      <LocalizedLabel LanguageRef="zhs">最后执行时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Last execution time</LocalizedLabel>
+    </Label>
+    <Label Name="FAILIDSHeader">
+      <LocalizedLabel LanguageRef="zhs">执行失败的ID集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The collection of the ID that are failed to execute </LocalizedLabel>
+    </Label>
+    <Label Name="FAILIDSCaption">
+      <LocalizedLabel LanguageRef="zhs">执行失败的ID集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The collection of the ID that are failed to execute </LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

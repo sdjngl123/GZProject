@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConsoleModule" IsWeb="false">
+    <Label Name="PlatformBaseConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">平台基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform Foundation Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="PlatformBaseConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">平台基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform Foundation Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type</LocalizedLabel>
+    </Label>
+    <Label Name="SQLCommandConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL command</LocalizedLabel>
+    </Label>
+    <Label Name="SQLCommandConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL command</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Table Structure</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库表结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Table Structure</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaSQLConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库结构SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Schema SQL Command</LocalizedLabel>
+    </Label>
+    <Label Name="DataSchemaSQLConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库结构SQL命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Schema SQL Command</LocalizedLabel>
+    </Label>
+    <Label Name="DataClearConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库清理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database clear</LocalizedLabel>
+    </Label>
+    <Label Name="DataClearConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库清理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database clear</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseDataHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库初始化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Initialization</LocalizedLabel>
+    </Label>
+    <Label Name="DataBaseDataCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库初始化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Initialization</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseExtendHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Extension</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseExtendCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Extension</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

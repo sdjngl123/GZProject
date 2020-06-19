@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ActionRuleConditionValue">
+  <Settings Key="title" Value="ActionRuleConditionValue.Title"/>
+  <Settings Key="height" Value="240"/>
+  <Settings Key="width" Value="384"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ActionRuleConditionValue_LoadPage(pageEvent);"/>    
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ActionRuleCondition_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item4">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ActionRuleConditionType_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ConditionValue_Container"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 条件类型容器-->
+    <PageControl ControlID="ActionRuleConditionType_Container" ParentID="ActionRuleCondition_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ActionRuleConditionTypeLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ActionRuleConditionTypeDDL"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+    <!-- 条件页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="ActionRuleCondition_Container" TypeName="PageContainer">
+      <!-- 内容动态加载-->
+    </PageControl>
+    <!-- 按钮容器-->
+    <PageControl ControlID="Btn_Container" ParentID="ActionRuleCondition_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <!-- 条件类型控件-->
+    <PageControl ControlID="ActionRuleConditionTypeLabel" ParentID="ActionRuleConditionType_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ActionRuleConditionValue.ConditionType" />
+    </PageControl>
+    <PageControl ControlID="ActionRuleConditionTypeDDL" ParentID="ActionRuleConditionType_Container" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ActionRuleCondition_InitConditionTypeDDL(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_ActionRuleCondition_ConditionTypeSelectedIndexChange(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="false" />
+    </PageControl>
+
+    <!-- 按钮控件-->
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ActionRuleConditionValue_GetConditionValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

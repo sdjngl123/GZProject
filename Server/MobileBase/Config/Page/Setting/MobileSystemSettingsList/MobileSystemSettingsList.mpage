@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileSystemSettingsList"
+         JsFile ="~/MobileBase/Config/Page/Setting/MobileSystemSettingsList/MobileSystemSettingsList.js" 
+         LayoutFile="~/MobileBase/Config/Page/Setting/MobileSystemSettingsList/MobileSystemSettingsList.mlayout" 
+         DictionaryContent="MobileSystemSettingsList">
+      <PageHandler HandlerName ="OnCreate" Script="HMUI_Mobile_SystemSettingsList_PageInit(pageEvent);"/>
+  </MPage>
+</root>

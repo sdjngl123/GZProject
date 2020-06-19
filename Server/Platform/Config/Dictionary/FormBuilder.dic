@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FormBuilder" IsWeb="true">
+    <Label Name="regex">
+      <LocalizedLabel LanguageRef="zhs">正则表达式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">regex</LocalizedLabel>
+    </Label>
+    <Label Name="regextipId">
+      <LocalizedLabel LanguageRef="zhs">正则提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">regextipId</LocalizedLabel>
+    </Label>
+    <Label Name="bgText">
+      <LocalizedLabel LanguageRef="zhs">背景提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">bgText</LocalizedLabel>
+    </Label>
+    <Label Name="textId">
+      <LocalizedLabel LanguageRef="zhs">选项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">textId</LocalizedLabel>
+    </Label>
+    <Label Name="copyrownumber">
+      <LocalizedLabel LanguageRef="zhs">复制到的行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">copyrownumber</LocalizedLabel>
+    </Label>
+    <Label Name="permissionActorInfo">
+      <LocalizedLabel LanguageRef="zhs">属性授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">permissionActorInfo</LocalizedLabel>
+    </Label>
+    <Label Name="flowTaskPermission">
+      <LocalizedLabel LanguageRef="zhs">流程授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">flowTaskPermission</LocalizedLabel>
+    </Label>
+    <Label Name="selectFormUI">
+      <LocalizedLabel LanguageRef="zhs">表单样式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">selectFormUI</LocalizedLabel>
+    </Label>
+    <Label Name="readOnly">
+      <LocalizedLabel LanguageRef="zhs">只读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">readOnly</LocalizedLabel>
+    </Label>
+    <Label Name="writingMode">
+      <LocalizedLabel LanguageRef="zhs">纵向排版</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">writingMode</LocalizedLabel>
+    </Label>   
+      <Label Name="ColNum">
+      <LocalizedLabel LanguageRef="zhs">列数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ColNum</LocalizedLabel>
+    </Label>
+      <Label Name="radioMark">
+      <LocalizedLabel LanguageRef="zhs">单选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">radioMark</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

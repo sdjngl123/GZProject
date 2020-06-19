@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWTASKVIEWView" IsWeb="true">
+    <Label Name="WORKFLOWTASKVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">流程任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTASKVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">流程任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="TASKRESULTHeader">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="TASKRESULTCaption">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="TASKOPINIONHeader">
+      <LocalizedLabel LanguageRef="zhs">意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Comment</LocalizedLabel>
+    </Label>
+    <Label Name="TASKOPINIONCaption">
+      <LocalizedLabel LanguageRef="zhs">意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Comment</LocalizedLabel>
+    </Label>
+    <Label Name="TASKACTORIDHeader">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="TASKACTORIDCaption">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTUSERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">任务代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task agent</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTUSERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">任务代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task agent</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETEUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">实际执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual executive</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETEUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">实际执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual executive</LocalizedLabel>
+    </Label>
+    <Label Name="PLANNEDENDDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">计划结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Scheduled end time</LocalizedLabel>
+    </Label>
+    <Label Name="PLANNEDENDDATECaption">
+      <LocalizedLabel LanguageRef="zhs">计划结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Scheduled end time</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">实际结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual end time</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">实际结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual end time</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPLATETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template Type</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPLATETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template Type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

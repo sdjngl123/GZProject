@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="[PAGENAME]">
+  <Settings Key="title" Value="[PAGENAME].[OBJTYPE]Header"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetForeignKeyObjectData(para.ObjectID,para);if(data){  for (var i in data) { data[i] = JSON.parse(data[i]);if(data[i].length){ for(var j in data[i]){data[i][j] = JSON.parse(data[i][j]);}} }}[CREATESCRIPT]  {var permissionData = InforCenter_Platform_Object_GetControlPermissionData('[OBJTYPE]',para);if(permissionData){for(var p in permissionData){var permission = permissionData[p];var tempCtrl=pageEvent.o.GetControl(p);if(tempCtrl.id!=''){if(permission ==false || permission == 'False'){tempCtrl.Disable();}}}}} var functionName = 'InforCenter_[OBJTYPE]_CopyPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID,ObjectType:'[OBJTYPE]'};[INITDATA][SAVESCRIPT];data.FORMBUILDERID=[FORMBUILDERVER];if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_[OBJTYPE]_CopyPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  [INFOSOURCESCRIPT]"></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Vertical_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Horizontal_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Horizontal_Container" ParentID="Vertical_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FormBuilderCtrl"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FormBuilderCtrl" ParentID="Horizontal_Container" TypeName="FormBuilder" >
+      <Settings Key="position" Value="[LAYOUTINFO]"/>
+      <Settings Key="pattern" Value="applying"/>
+    </PageControl>
+    [CONTROLINFO]
+  </PageControls>
+</root>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MYWORKFLOWROOTNODEVIEWView" IsWeb="true">
+    <Label Name="MYWORKFLOWROOTNODEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="MYWORKFLOWROOTNODEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="TEXTDICHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="TEXTDICCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="NODETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="NODETYPECaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="ICONCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="NODEFLAGHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="NODEFLAGCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="SHOWCHILDCOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">显示下级对象数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ShowChildCount</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWCHILDCOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">显示下级对象数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ShowChildCount</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="MYWORKFLOWROOTNODEVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

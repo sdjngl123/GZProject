@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TESTCAPABILITY-EDIT">
+	<Settings Key="height" Value="394"/>
+	<Settings Key="width" Value="700"/>
+	<Settings Key="title" Value="TESTCAPABILITY-EDIT.TESTCAPABILITYHeader"/>
+	<PageHandlers>
+		<PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);
+{
+var o = pageEvent.o.GetControl('ENAME_Value');
+if(o.id!=''){
+o.SetText(data.ENAME_DisplayValue);
+o.Disable();
+var oldNameCtrl = pageEvent.o.GetControl('OldName_Value');
+oldNameCtrl.SetText(data.ENAME_DisplayValue);
+var pCtrl = pageEvent.o.GetControl('Project_Value');
+if(pCtrl.id!=''){
+pCtrl.SetText(data.ENAME);
+}
+}
+}{
+var o = pageEvent.o.GetControl('TYPE_Value');
+if(o.id!=''){
+o.SetSelectedByValue(data.TYPE);
+if (!HoteamUI.Common.IsNullOrEmpty(data.TESTPROJECT)) {
+o.Disable();
+}
+}
+}{
+var o = pageEvent.o.GetControl('TESTPROJECT_Value');
+if(o.id!=''){
+o.SetText(data.TESTPROJECT_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('STANDARDCODE_Value');
+	if(c.id!=''){
+		c.SetText(data.STANDARDCODE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('STANDARDNAME_Value');
+	if(c.id!=''){
+		c.SetText(data.STANDARDNAME);
+	}
+}
+
+{
+var o = pageEvent.o.GetControl('ORG_Value');
+if(o.id!=''){
+o.SetValue(data.ORG);
+o.SetText(data.ORG_DisplayValue);
+}
+}{
+var o = pageEvent.o.GetControl('CONTACTPERSON_Value');
+if(o.id!=''){
+o.SetValue(data.CONTACTPERSON);
+o.SetText(data.CONTACTPERSON_DisplayValue);
+}
+}
+{
+var o = pageEvent.o.GetControl('LOCATION_Value');
+if(o.id!=''){
+o.SetValue(data.LOCATION);
+o.SetText(data.LOCATION_DisplayValue);
+}
+}{
+var o = pageEvent.o.GetControl('SCHEDULETYPE_Value');
+if(o.id!=''){
+o.SetSelectedByValue(data.SCHEDULETYPE);
+}
+}{
+	var c = pageEvent.o.GetControl('CYCLE_Value');
+	if(c.id!=''){
+		c.SetText(data.CYCLE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('WORKHOURS_Value');
+	if(c.id!=''){
+		c.SetText(data.WORKHOURS);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ACTUALCOST_Value');
+	if(c.id!=''){
+		c.SetText(data.ACTUALCOST);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('VIRTUALCOST_Value');
+	if(c.id!=''){
+		c.SetText(data.VIRTUALCOST);
+	}
+}
+{
+var o = pageEvent.o.GetControl('WORKMODE_Value');
+if(o.id!=''){
+o.SetSelectedByValue(data.WORKMODE);
+}
+}{
+	var c = pageEvent.o.GetControl('CARRYINGCAPACITY_Value');
+	if(c.id!=''){
+		c.SetText(data.CARRYINGCAPACITY);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ISPARALLEL_Value');
+	if(c.id!=''){
+		c.SetChecked(data.ISPARALLEL);
+	}
+	var d = pageEvent.o.GetControl('ISPARALLEL_Label');
+	if(d.id!=''){
+		d.SetText('');
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ISSHARE_Value');
+	if(c.id!=''){
+		c.SetChecked(data.ISSHARE);
+	}
+	var d = pageEvent.o.GetControl('ISSHARE_Label');
+	if(d.id!=''){
+		d.SetText('');
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ISUPLOADTESTDATA_Value');
+	if(c.id!=''){
+		c.SetChecked(data.ISUPLOADTESTDATA);
+	}
+	var d = pageEvent.o.GetControl('ISUPLOADTESTDATA_Label');
+	if(d.id!=''){
+		d.SetText('');
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ISUPLOADVTSDATA_Value');
+	if(c.id!=''){
+		c.SetChecked(data.ISUPLOADVTSDATA);
+	}
+	var d = pageEvent.o.GetControl('ISUPLOADVTSDATA_Label');
+	if(d.id!=''){
+		d.SetText('');
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ABILITYORDER_Value');
+	if(c.id!=''){
+		c.SetText(data.ABILITYORDER);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('ISCNAS_Value');
+	if(c.id!=''){
+		c.SetChecked(data.ISCNAS);
+	}
+	var d = pageEvent.o.GetControl('ISCNAS_Label');
+	if(d.id!=''){
+		d.SetText('');
+	}
+}
+  var functionName = 'InforCenter_TESTCAPABILITY_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+		<PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText();
+var pCtrl = pageEvent.o.GetControl('Project_Value');
+var oldNameCtrl = pageEvent.o.GetControl('OldName_Value');
+var oldName = oldNameCtrl.GetText();
+if(oldName==data.ENAME){
+if(pCtrl.id!=''){
+var nameId = pCtrl.GetText();
+if(nameId!=''){
+data.ENAME=nameId;
+					 }
+			}
+			}
+}
+}{
+var c = pageEvent.o.GetControl('TYPE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TYPE = c.GetSelectedValue();
+}}{
+var c = pageEvent.o.GetControl('STANDARDCODE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.STANDARDCODE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('STANDARDNAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.STANDARDNAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ORG_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ORG = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('CONTACTPERSON_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CONTACTPERSON = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('LOCATION_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.LOCATION = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('SCHEDULETYPE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.SCHEDULETYPE = c.GetSelectedValue();
+}}{
+var c = pageEvent.o.GetControl('CYCLE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CYCLE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('WORKHOURS_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.WORKHOURS = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ACTUALCOST_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ACTUALCOST = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('VIRTUALCOST_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.VIRTUALCOST = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('WORKMODE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.WORKMODE = c.GetSelectedValue();
+}}{
+var c = pageEvent.o.GetControl('CARRYINGCAPACITY_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.CARRYINGCAPACITY = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ISPARALLEL_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+if(c.IsChecked()==true){
+	data.ISPARALLEL = true;
+}else{
+	data.ISPARALLEL = false;
+}
+}
+}{
+var c = pageEvent.o.GetControl('ISSHARE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+if(c.IsChecked()==true){
+	data.ISSHARE = true;
+}else{
+	data.ISSHARE = false;
+}
+}
+}{
+var c = pageEvent.o.GetControl('ISUPLOADTESTDATA_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+if(c.IsChecked()==true){
+	data.ISUPLOADTESTDATA = true;
+}else{
+	data.ISUPLOADTESTDATA = false;
+}
+}
+}{
+var c = pageEvent.o.GetControl('ISUPLOADVTSDATA_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+if(c.IsChecked()==true){
+	data.ISUPLOADVTSDATA = true;
+}else{
+	data.ISUPLOADVTSDATA = false;
+}
+}
+}{
+var c = pageEvent.o.GetControl('ABILITYORDER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ABILITYORDER = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('ISCNAS_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+if(c.IsChecked()==true){
+	data.ISCNAS = true;
+}else{
+	data.ISCNAS = false;
+}
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+		<PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_TESTCAPABILITY_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+		<PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  {
+     var ctrl=pageEvent.o.GetControl('ORG_Value');
+     if(ctrl.id!='' &amp;&amp; pageEvent.FlagName =='ORG'){
+		 var text='';
+		 var value='';
+		 for (var i = 0; i &lt;  data.length; i++) {
+		   var d=data[i];
+		   value+=';'+ d[pageEvent.SourceValue];
+		   text+=';'+d[pageEvent.SourceText];
+		 }
+		 if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+			text = text.substring(1);
+			value = value.substring(1);
+		 }
+		 ctrl.SetText(text);
+		 ctrl.SetValue(value);
+     }
+     
+     if(pageEvent.FieldInitList){
+     	for(var i=0;i&lt;pageEvent.FieldInitList.length;i++){
+     		var fieldInit=pageEvent.FieldInitList[i];
+     		ctrl=pageEvent.o.GetControl(fieldInit.TargetField+'_Value');
+     		if(ctrl.id!=''){
+     			var text='';
+     			for (var j = 0; j &lt;  data.length; j++) {
+     				var d=data[j];
+     			    text+=';'+d[fieldInit.SourceField];
+     			}
+     			if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+     				text = text.substring(1);
+     			}
+     			ctrl.SetText(text);
+     		}
+     	}		
+     }
+}{
+     var ctrl=pageEvent.o.GetControl('LOCATION_Value');
+     if(ctrl.id!='' &amp;&amp; pageEvent.FlagName =='LOCATION'){
+		 var text='';
+		 var value='';
+		 for (var i = 0; i &lt;  data.length; i++) {
+		   var d=data[i];
+		   value+=';'+ d[pageEvent.SourceValue];
+		   text+=';'+d[pageEvent.SourceText];
+		 }
+		 if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+			text = text.substring(1);
+			value = value.substring(1);
+		 }
+		 ctrl.SetText(text);
+		 ctrl.SetValue(value);
+     }
+     
+     if(pageEvent.FieldInitList){
+     	for(var i=0;i&lt;pageEvent.FieldInitList.length;i++){
+     		var fieldInit=pageEvent.FieldInitList[i];
+     		ctrl=pageEvent.o.GetControl(fieldInit.TargetField+'_Value');
+     		if(ctrl.id!=''){
+     			var text='';
+     			for (var j = 0; j &lt;  data.length; j++) {
+     				var d=data[j];
+     			    text+=';'+d[fieldInit.SourceField];
+     			}
+     			if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+     				text = text.substring(1);
+     			}
+     			ctrl.SetText(text);
+     		}
+     	}		
+     }
+}"></PageHandler>
+	</PageHandlers>
+	<PageControls>
+		<PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+			<Settings Key="type" Value="vertical"/>
+			<!--<Settings Key="padding" Value="10px 0"/>-->
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-1"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-2"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-3"/>
+			</Settings>
+			<Settings Key="item4" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-4"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-5"/>
+			</Settings>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-6"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-7"/>
+			</Settings>
+			<Settings Key="item8" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-8"/>
+			</Settings>
+			<Settings Key="item9" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-9"/>
+			</Settings>
+			<Settings Key="item10" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-10"/>
+			</Settings>
+			<Settings Key="item11" Value="">
+				<Settings Key="size" Value="34"/>
+				<Settings Key="childid" Value="R-11"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ENAME"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="TYPE"/>
+			</Settings>
+		</PageControl>
+
+		<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ENAME_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ENAME_Value"/>
+			</Settings>
+			<!--增加选择项目按钮和保存值的文本框-->
+			<Settings Key="item8" Value="">
+				<Settings Key="size" Value="40"/>
+				<Settings Key="childid" Value="BtnAddEName"/>
+			</Settings>
+			<Settings Key="item9" Value="">
+				<Settings Key="size" Value="0"/>
+				<Settings Key="childid" Value="Project_Value"/>
+			</Settings>
+			<Settings Key="item99" Value="">
+				<Settings Key="size" Value="0"/>
+				<Settings Key="childid" Value="OldName_Value"/>
+			</Settings>
+			<!--增加选择项目按钮和保存值的文本框-->
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ENAMEHeader" />
+		</PageControl>
+		<PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-CREATE.TYPERegex" />
+		</PageControl>
+		<!--增加选择项目按钮和保存值的文本框-->
+		<PageControl ControlID="Project_Value" ParentID="ENAME" TypeName="TextBox" >
+			<Settings Key="type" Value="text"/>
+		</PageControl>
+		<PageControl ControlID="OldName_Value" ParentID="ENAME" TypeName="TextBox" >
+			<Settings Key="type" Value="text"/>
+		</PageControl>
+		<PageControl ControlID="BtnAddEName" ParentID="ENAME" TypeName="Button" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnClick" Script="InforCenter_GACTT_TESTCAPABILITY_OnSelectTestProject(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="title" Value="TESTCAPABILITY-CREATE.SelectTestProject" />
+			<Settings Key="iconClass" Value="p_add" />
+		</PageControl>
+		<!--增加选择项目按钮和保存值的文本框-->
+		<PageControl ControlID="TYPE" ParentID="R-1" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="TYPE_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="TYPE_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="TYPE_Label" ParentID="TYPE" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.TYPEHeader" />
+		</PageControl>
+		<PageControl ControlID="TYPE_Value" ParentID="TYPE" TypeName="DropDown" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='TYPE';InforCenter_Platform_GenerateScript_LovListValue(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+        InforCenter_Platform_Object_SetLovList(o,'TYPE','TESTCAPABILITY',true);
+                 "/>
+			</PageHandlers>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.TYPERegex" />
+		</PageControl>
+
+		<PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="TESTPROJECT"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ABILITYORDER"/>
+			</Settings>
+		</PageControl>
+
+		<PageControl ControlID="TESTPROJECT" ParentID="R-2" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="TESTPROJECT_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="TESTPROJECT_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="TESTPROJECT_Label" ParentID="TESTPROJECT" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.TESTPROJECTHeader" />
+		</PageControl>
+		<PageControl ControlID="TESTPROJECT_Value" ParentID="TESTPROJECT" TypeName="TextBox" >
+			<Settings Key="type" Value="text"/>
+			<Settings Key="readOnly" Value="true"/>
+		</PageControl>
+		<PageControl ControlID="ABILITYORDER" ParentID="R-2" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ABILITYORDER_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ABILITYORDER_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ABILITYORDER_Label" ParentID="ABILITYORDER" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-CREATE.ABILITYORDERHeader" />
+		</PageControl>
+		<PageControl ControlID="ABILITYORDER_Value" ParentID="ABILITYORDER" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='ABILITYORDER';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-CREATE.ABILITYORDERRegex" />
+		</PageControl>
+		<PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="STANDARDCODE"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="STANDARDNAME"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="STANDARDCODE" ParentID="R-3" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="STANDARDCODE_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="STANDARDCODE_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value="STANDARDCODE_Label_FieldFlag"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="STANDARDCODE_Label" ParentID="STANDARDCODE" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.STANDARDCODEHeader" />
+		</PageControl>
+		<PageControl ControlID="STANDARDCODE_Label_FieldFlag" ParentID="STANDARDCODE" TypeName="Label" >
+			<Settings Key="position" Value="left"/>
+			<Settings Key="textId" Value="Platform.RequiredFlag" />
+			<Settings Key="color" Value="red" />
+		</PageControl>
+		<PageControl ControlID="STANDARDCODE_Value" ParentID="STANDARDCODE" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='STANDARDCODE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.STANDARDCODERegex" />
+		</PageControl>
+		<PageControl ControlID="STANDARDNAME" ParentID="R-3" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="STANDARDNAME_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="STANDARDNAME_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="STANDARDNAME_Label" ParentID="STANDARDNAME" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.STANDARDNAMEHeader" />
+		</PageControl>
+		<PageControl ControlID="STANDARDNAME_Value" ParentID="STANDARDNAME" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='STANDARDNAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.STANDARDNAMERegex" />
+		</PageControl>
+		<PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ORG"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="CONTACTPERSON"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ORG" ParentID="R-4" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ORG_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ORG_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ORG_Label" ParentID="ORG" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ORGHeader" />
+		</PageControl>
+		<PageControl ControlID="ORG_Value" ParentID="ORG" TypeName="TextValue" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_ExecInfoDataSource('ORG','TESTCAPABILITY','ORG',ctrlEvent.o.ContainerID(),ctrlEvent.o.GetValue())"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+		</PageControl>
+		<PageControl ControlID="CONTACTPERSON" ParentID="R-4" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="CONTACTPERSON_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="CONTACTPERSON_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="CONTACTPERSON_Label" ParentID="CONTACTPERSON" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.CONTACTPERSONHeader" />
+		</PageControl>
+		<PageControl ControlID="CONTACTPERSON_Value" ParentID="CONTACTPERSON" TypeName="TextValue" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnClick" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='CONTACTPERSON';InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+		</PageControl>
+		<PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="LOCATION"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="SCHEDULETYPE"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="LOCATION" ParentID="R-5" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="LOCATION_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="LOCATION_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="LOCATION_Label" ParentID="LOCATION" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.LOCATIONHeader" />
+		</PageControl>
+		<PageControl ControlID="LOCATION_Value" ParentID="LOCATION" TypeName="TextValue" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_ExecInfoDataSource('LOCATION','TESTCAPABILITY','LOCATION',ctrlEvent.o.ContainerID(),ctrlEvent.o.GetValue())"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+		</PageControl>
+		<PageControl ControlID="SCHEDULETYPE" ParentID="R-5" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="SCHEDULETYPE_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="SCHEDULETYPE_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="SCHEDULETYPE_Label" ParentID="SCHEDULETYPE" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.SCHEDULETYPEHeader" />
+		</PageControl>
+		<PageControl ControlID="SCHEDULETYPE_Value" ParentID="SCHEDULETYPE" TypeName="DropDown" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='SCHEDULETYPE';InforCenter_Platform_GenerateScript_LovListValue(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+        InforCenter_Platform_Object_SetLovList(o,'SCHEDULETYPE','TESTCAPABILITY',true);
+                 "/>
+			</PageHandlers>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.SCHEDULETYPERegex" />
+		</PageControl>
+		<PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="CYCLE"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="WORKHOURS"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="CYCLE" ParentID="R-6" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="CYCLE_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="CYCLE_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="CYCLE_Label" ParentID="CYCLE" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.CYCLEHeader" />
+		</PageControl>
+		<PageControl ControlID="CYCLE_Value" ParentID="CYCLE" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='CYCLE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.CYCLERegex" />
+		</PageControl>
+		<PageControl ControlID="WORKHOURS" ParentID="R-6" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="WORKHOURS_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="WORKHOURS_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="WORKHOURS_Label" ParentID="WORKHOURS" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.WORKHOURSHeader" />
+		</PageControl>
+		<PageControl ControlID="WORKHOURS_Value" ParentID="WORKHOURS" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='WORKHOURS';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.WORKHOURSRegex" />
+		</PageControl>
+		<PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ACTUALCOST"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="VIRTUALCOST"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ACTUALCOST" ParentID="R-7" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ACTUALCOST_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ACTUALCOST_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ACTUALCOST_Label" ParentID="ACTUALCOST" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ACTUALCOSTHeader" />
+		</PageControl>
+		<PageControl ControlID="ACTUALCOST_Value" ParentID="ACTUALCOST" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='ACTUALCOST';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.ACTUALCOSTRegex" />
+		</PageControl>
+		<PageControl ControlID="VIRTUALCOST" ParentID="R-7" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="VIRTUALCOST_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="VIRTUALCOST_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="VIRTUALCOST_Label" ParentID="VIRTUALCOST" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.VIRTUALCOSTHeader" />
+		</PageControl>
+		<PageControl ControlID="VIRTUALCOST_Value" ParentID="VIRTUALCOST" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='VIRTUALCOST';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.VIRTUALCOSTRegex" />
+		</PageControl>
+		<PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="WORKMODE"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="CARRYINGCAPACITY"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="WORKMODE" ParentID="R-8" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="WORKMODE_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="WORKMODE_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="WORKMODE_Label" ParentID="WORKMODE" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.WORKMODEHeader" />
+		</PageControl>
+		<PageControl ControlID="WORKMODE_Value" ParentID="WORKMODE" TypeName="DropDown" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='WORKMODE';InforCenter_Platform_GenerateScript_LovListValue(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+        InforCenter_Platform_Object_SetLovList(o,'WORKMODE','TESTCAPABILITY',true);
+                 "/>
+			</PageHandlers>
+			<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.WORKMODERegex" />
+		</PageControl>
+		<PageControl ControlID="CARRYINGCAPACITY" ParentID="R-8" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="CARRYINGCAPACITY_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="CARRYINGCAPACITY_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value="CARRYINGCAPACITY_Label_FieldFlag"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="CARRYINGCAPACITY_Label" ParentID="CARRYINGCAPACITY" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.CARRYINGCAPACITYHeader" />
+		</PageControl>
+		<PageControl ControlID="CARRYINGCAPACITY_Label_FieldFlag" ParentID="CARRYINGCAPACITY" TypeName="Label" >
+			<Settings Key="position" Value="left"/>
+			<Settings Key="textId" Value="Platform.RequiredFlag" />
+			<Settings Key="color" Value="red" />
+		</PageControl>
+		<PageControl ControlID="CARRYINGCAPACITY_Value" ParentID="CARRYINGCAPACITY" TypeName="TextBox" >
+			<PageHandlers>
+				<PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='TESTCAPABILITY';ctrlEvent.infoName='CARRYINGCAPACITY';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="type" Value="text"/>
+			<Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+			<Settings Key="regextipId" Value="TESTCAPABILITY-EDIT.CARRYINGCAPACITYRegex" />
+		</PageControl>
+		<PageControl ControlID="R-9" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ISPARALLEL"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ISSHARE"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISPARALLEL" ParentID="R-9" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ISPARALLEL_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ISPARALLEL_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISPARALLEL_Label" ParentID="ISPARALLEL" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISPARALLELHeader" />
+		</PageControl>
+		<PageControl ControlID="ISPARALLEL_Value" ParentID="ISPARALLEL" TypeName="CheckBox" >
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISPARALLELHeader" />
+		</PageControl>
+		<PageControl ControlID="ISSHARE" ParentID="R-9" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ISSHARE_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ISSHARE_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISSHARE_Label" ParentID="ISSHARE" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISSHAREHeader" />
+		</PageControl>
+		<PageControl ControlID="ISSHARE_Value" ParentID="ISSHARE" TypeName="CheckBox" >
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISSHAREHeader" />
+		</PageControl>
+		<PageControl ControlID="R-10" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ISUPLOADTESTDATA"/>
+			</Settings>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ISUPLOADVTSDATA"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISUPLOADTESTDATA" ParentID="R-10" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ISUPLOADTESTDATA_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ISUPLOADTESTDATA_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISUPLOADTESTDATA_Label" ParentID="ISUPLOADTESTDATA" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISUPLOADTESTDATAHeader" />
+		</PageControl>
+		<PageControl ControlID="ISUPLOADTESTDATA_Value" ParentID="ISUPLOADTESTDATA" TypeName="CheckBox" >
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISUPLOADTESTDATAHeader" />
+		</PageControl>
+		<PageControl ControlID="ISUPLOADVTSDATA" ParentID="R-10" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ISUPLOADVTSDATA_Label"/>
+			</Settings>
+			<Settings Key="item7" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ISUPLOADVTSDATA_Value"/>
+			</Settings>
+			<Settings Key="item5" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISUPLOADVTSDATA_Label" ParentID="ISUPLOADVTSDATA" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISUPLOADVTSDATAHeader" />
+		</PageControl>
+		<PageControl ControlID="ISUPLOADVTSDATA_Value" ParentID="ISUPLOADVTSDATA" TypeName="CheckBox" >
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISUPLOADVTSDATAHeader" />
+		</PageControl>
+		<PageControl ControlID="R-11" ParentID="Info_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value="ISCNAS"/>
+			</Settings>
+			<Settings Key="item6" Value="">
+				<Settings Key="size" Value="50%"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISCNAS" ParentID="R-11" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item2" Value="">
+				<Settings Key="size" Value=""/>
+				<Settings Key="childid" Value="ISCNAS_Label"/>
+			</Settings>
+			<Settings Key="item3" Value="">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ISCNAS_Value"/>
+			</Settings>
+			<Settings Key="item1" Value="">
+				<Settings Key="size" Value="20"/>
+				<Settings Key="childid" Value=""/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ISCNAS_Label" ParentID="ISCNAS" TypeName="Label" >
+			<Settings Key="position" Value="right"/>
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISCNASHeader" />
+		</PageControl>
+		<PageControl ControlID="ISCNAS_Value" ParentID="ISCNAS" TypeName="CheckBox" >
+			<Settings Key="regex" Value="" />
+			<Settings Key="regextipId" Value="" />
+			<Settings Key="textId" Value="TESTCAPABILITY-EDIT.ISCNASHeader" />
+		</PageControl>
+	</PageControls>
+</root>

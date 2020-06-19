@@ -1,0 +1,48 @@
+﻿.hoteam-navigation-step
+{
+    
+    overflow: hidden;
+    white-space: nowrap;
+    position:relative;
+}
+
+.hoteam-navigation-step li
+{
+    display: inline-block;
+    position: relative;
+    width:120px;
+}
+.hoteam-navigation-step-text
+{
+    text-align:center;
+}
+.hoteam-navigation-step-num
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    left: 50%;
+    width: 30px;
+    display: inline-block;
+    margin-left: -15px;
+    text-align: center;
+}
+.hoteam-navigation-step-c {
+    position:relative;
+    height:40px;
+}
+.hoteam-navigation-step-img {
+    position: absolute;
+    left: 50%;
+    margin-left: -16px;
+    top: 50%;
+    margin-top: -16px;
+}
+.hoteam-navigation-step-line {
+    position:absolute;
+    top:18px;
+    right:0px;
+    height: 4px;
+    background: #ccc;
+    width: 100%;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="RootObject" IsWeb="true">
+    <Label Name="ChildObjectTitle">
+      <LocalizedLabel LanguageRef="zhs">主目标附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main Target Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="SendReciverRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enter a maximum length of 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="Creator">
+      <LocalizedLabel LanguageRef="zhs">创建人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Creator:</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="Remove">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="AddChild">
+      <LocalizedLabel LanguageRef="zhs">添加下级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add subordinate</LocalizedLabel>
+    </Label>
+    <Label Name="USERRULERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enter a maximum length of 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="Owner">
+      <LocalizedLabel LanguageRef="zhs">所有者：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner:</LocalizedLabel>
+    </Label>
+    <Label Name="Browse">
+      <LocalizedLabel LanguageRef="zhs">浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browse</LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ItemCode">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="Version">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectState">
+      <LocalizedLabel LanguageRef="zhs">流程状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process state</LocalizedLabel>
+    </Label>
+    <Label Name="SendPermissionSelect">
+      <LocalizedLabel LanguageRef="zhs">发送权限选择：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send Permission Selection:</LocalizedLabel>
+    </Label>
+    <Label Name="CompareAnalysis">
+      <LocalizedLabel LanguageRef="zhs">差异分析</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Difference analysis</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Viewer</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

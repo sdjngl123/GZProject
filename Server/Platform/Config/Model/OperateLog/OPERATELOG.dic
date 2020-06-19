@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OPERATELOGModel" IsWeb="true">
+    <Label Name="OPERATELOGHeader">
+      <LocalizedLabel LanguageRef="zhs">操作日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation log</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGCaption">
+      <LocalizedLabel LanguageRef="zhs">操作日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation log</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object no.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJCODECaption">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object no.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object</LocalizedLabel>
+    </Label>
+    <Label Name="OBJIDCaption">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATEHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATECaption">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="IPHeader">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address</LocalizedLabel>
+    </Label>
+    <Label Name="IPCaption">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用统计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enabling statistics</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用统计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enabling statistics</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="SUBJECTSECURITYLEVELHeader">
+      <LocalizedLabel LanguageRef="zhs">主体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SubjectSecurityLevel</LocalizedLabel>
+    </Label>
+    <Label Name="SUBJECTSECURITYLEVELCaption">
+      <LocalizedLabel LanguageRef="zhs">主体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SubjectSecurityLevel</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTSECURITYLEVELHeader">
+      <LocalizedLabel LanguageRef="zhs">客体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectSecurityLevel</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTSECURITYLEVELCaption">
+      <LocalizedLabel LanguageRef="zhs">客体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectSecurityLevel</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGCLASSIFYHeader">
+      <LocalizedLabel LanguageRef="zhs">操作日志分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OperateLogClassify</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGCLASSIFYCaption">
+      <LocalizedLabel LanguageRef="zhs">操作日志分类（三员日志还是普通日志）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OperateLogClassify</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

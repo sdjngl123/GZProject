@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="MODULEPERMISSIONDATA" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="MODULEPERMISSIONDATA" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="TYPE" Type="DefaultObjectValue" DataType="STRING100" Column="TYPE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="PERMISSIONVALUE" Type="DefaultObjectValue" DataType="STRING250" Column="PERMISSIONVALUE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="MPID" Type="DefaultObjectValue" DataType="STRING100" Column="MPID" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+  </EntityType>
+</root>

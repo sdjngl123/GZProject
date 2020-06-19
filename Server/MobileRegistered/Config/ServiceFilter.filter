@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Filter Rule="*.*.SettingService.*" Call="[ServiceAddr]/RegisteredDataService/json/[3]" Authentication="false"/>
+  <Filter Rule="*.*.SettingService.CheckPassword" Call="[ServiceAddr]/OrganizationDataService/json/[3]" Authentication="false"/>
+</root>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ExportDevelopmentData" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_MobliePlatform_ExportDevelopment_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_MobliePlatform_ExportDevelopment_OnNodeChange(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DevelopmentData_LayoutContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+
+      <Settings Key="item5">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <!--左右-->
+    <PageControl ControlID="DevelopmentData_LayoutContainer" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item5">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeView_Container"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+
+    <!--上下-->
+    <PageControl ControlID="TreeView_Container" ParentID="DevelopmentData_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 0 0 4px"/>
+
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DevelopmentTree"/>
+      </Settings>
+    </PageControl>
+
+    <!--PermissionTree_Tree-->
+    <PageControl ControlID="DevelopmentTree" ParentID="TreeView_Container" TypeName="Tree">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnExpand" Script=""/>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+        <PageHandler HandlerName ="OnExpandLoad" Script="InforCenter_MobliePlatform_ExportDevelopment_LoadChildData(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="showCheck" Value="true"/>
+      <Settings Key="defaultState" Value="0"/>
+      <Settings Key="isThirdState" Value="false"/>
+      <Settings Key="isRelevance" Value="true"/>
+    </PageControl>
+
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="120"/>
+        <Settings Key="childid" Value="btnCheck"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnCheck" ParentID="Btn_Container" TypeName="CheckBox" >
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="textId" Value="ExportDevelopmentData.ExportMiddleState" />
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_MobliePlatform_ExportDevelopment_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+    
+  </PageControls>
+</root>

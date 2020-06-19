@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="OPERATELOG-VIEW" IsWeb="true">
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object no.</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATEHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="IPHeader">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览操作日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseOperation log</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

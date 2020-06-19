@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<TreeManagement Name="PMSProjectTree" MenuName=""
+			TreeRootDataService="Hoteam.GACTT.GACProjectService.GetPMSProjectTreeNode"
+					TreeViewName="" ShowTreeQuery="false" IsHiddenTabs="false" IsLoadAllData="false">
+		<ObjectType Name="MYPROJECT" MenuName="" PageLinksName="MYPROJECTLinks" Hidden="false" />
+		<ObjectType Name="RPROJECT" MenuName="" PageLinksName="RPROJECTLinks" Hidden="false" />
+		<ObjectType Name="PPROJECT" MenuName="" PageLinksName="PPROJECTLinks" Hidden="false" />
+		<ObjectType Name="CPROJECT" MenuName="" PageLinksName="CPROJECTLinks" Hidden="false" />
+	</TreeManagement>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="TOF">
+    <EnumerationItem Name="False" />
+    <EnumerationItem Name="True" />
+  </Enumeration>
+  <Enumeration Name="InheritRegulate">
+    <EnumerationItem Name="Show" />
+    <EnumerationItem Name="Innate" />
+    <EnumerationItem Name="Inherit" />
+    <EnumerationItem Name="Hidden" />
+  </Enumeration>
+  <Enumeration Name="CustomFormType">
+    <EnumerationItem Name="CREATE" />
+    <EnumerationItem Name="EDIT" />
+    <EnumerationItem Name="VIEW" />
+  </Enumeration>
+  
+  
+</root>

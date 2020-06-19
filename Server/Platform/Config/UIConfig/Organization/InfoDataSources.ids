@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ObjectType Name="USERINFO">
+    <InfoType Name="PERSONEID" Script="" PageName="ListCommonQuery"   SourceValue="EID" SourceText="ENAME">
+      <FieldInit SourceField="ENAME" TargetField="ENAME" />
+      <Para Name="ItemName" Value="SinglePersonSearch" />
+    </InfoType>
+  </ObjectType>
+</root>

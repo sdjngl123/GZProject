@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="WindowsHotKey">
+    <EnumerationItem Name="CTRL+C" />
+    <EnumerationItem Name="CTRL+A" />
+    <EnumerationItem Name="CTRL+V" />
+    <EnumerationItem Name="SHIFT+DELETE" />
+    <EnumerationItem Name="CTRL+Z" />
+    <EnumerationItem Name="CTRL+ESC" />
+    <EnumerationItem Name="WIN+F1" />
+    <EnumerationItem Name="WIN+U" />
+    <EnumerationItem Name="WIN+D" />
+    <EnumerationItem Name="CTRL+F" />
+    <EnumerationItem Name="WIN+F" />
+    <EnumerationItem Name="WIN+E" />
+    <EnumerationItem Name="ALT+TAB" />
+    <EnumerationItem Name="WIN+L" />
+    <EnumerationItem Name="WIN+M" />
+    <EnumerationItem Name="CTRL+B" />
+    <EnumerationItem Name="CTRL+I" />
+    <EnumerationItem Name="CTRL+]" />
+    <EnumerationItem Name="CTRL+[" />
+    <EnumerationItem Name="CTRL+L" />
+    <EnumerationItem Name="CTRL+R" />
+
+  </Enumeration>
+</root>

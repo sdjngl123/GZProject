@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="InternalMailImportrantUrgency">
+      <LocalizedLabel LanguageRef="zhs">紧急</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Emergency</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailImportrantNormal">
+      <LocalizedLabel LanguageRef="zhs">普通</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailImportrantUrgency">
+      <LocalizedLabel LanguageRef="zhs">紧急</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Emergency</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailTypeNormal">
+      <LocalizedLabel LanguageRef="zhs">正常</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Normal</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailTypeSend">
+      <LocalizedLabel LanguageRef="zhs">发送</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailTypeDrafts">
+      <LocalizedLabel LanguageRef="zhs">草稿</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Draft</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailTypeDustbin">
+      <LocalizedLabel LanguageRef="zhs">垃圾</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Trash</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailTypeSystem">
+      <LocalizedLabel LanguageRef="zhs">系统</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeSendMail">
+      <LocalizedLabel LanguageRef="zhs">发送邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send a mail</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeSaveMail">
+      <LocalizedLabel LanguageRef="zhs">保存邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save the mail</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeAnswer">
+      <LocalizedLabel LanguageRef="zhs">回复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reply</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeAnswerAll">
+      <LocalizedLabel LanguageRef="zhs">回复全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reply all</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeMarkRead">
+      <LocalizedLabel LanguageRef="zhs">设置已读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set read</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeMarkUnRead">
+      <LocalizedLabel LanguageRef="zhs">设置未读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set unread</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeClear">
+      <LocalizedLabel LanguageRef="zhs">清空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Null</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeTransferMail">
+      <LocalizedLabel LanguageRef="zhs">转发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Forward</LocalizedLabel>
+    </Label>
+    <Label Name="MailFormTypeOwnerTransfer">
+      <LocalizedLabel LanguageRef="zhs">转交所有权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OwnerTransfer</LocalizedLabel>
+    </Label>
+    <Label Name="MailFormTypeWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow</LocalizedLabel>
+    </Label>
+    <Label Name="MailFormTypeObjectMessage">
+      <LocalizedLabel LanguageRef="zhs">消息订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectMessage</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

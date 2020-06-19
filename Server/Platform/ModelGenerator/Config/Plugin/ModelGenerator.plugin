@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--业务逻辑类-->
+  <PluginItem Name="ModelData" Type="ObjectType" Assembly="Hoteam.InforCenter.ModelGenerator.Business" Class="Hoteam.InforCenter.ModelGenerator.Business.Object.ModelData" />
+  <PluginItem Name="FormData" Type="ObjectType" Assembly="Hoteam.InforCenter.ModelGenerator.Business" Class="Hoteam.InforCenter.ModelGenerator.Business.Object.FormData" />
+  <PluginItem Name="FormbuilderData" Type="ObjectType" Assembly="Hoteam.InforCenter.ModelGenerator.Business" Class="Hoteam.InforCenter.ModelGenerator.Business.Object.FormbuilderData" />
+  
+  <PluginItem Name="ModelDataPlugin" Type="Business" Assembly="Hoteam.InforCenter.ModelGenerator.Business" Class="Hoteam.InforCenter.ModelGenerator.Business.ModelPageData" />
+  <PluginItem Name="ModelGeneratorUtility" Type="Business" Assembly="Hoteam.InforCenter.ModelGenerator.Business" Class="Hoteam.InforCenter.ModelGenerator.Business.ModelGeneratorBusiness" />
+  <PluginItem Name="CustomFormPagePlugin" Type="WorkflowPagePluginSave" Assembly="Hoteam.InforCenter.ModelGenerator.Business" Class="Hoteam.InforCenter.ModelGenerator.Business.Flow.CustomFormPagePlugin" />
+</root>

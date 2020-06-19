@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebListView Name="TESTTASKMEMBERListView" View="TESTTASKMEMBERView" Filter=" TESTTASKID='[TASKID]' " AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" AllowOverstriking="false" IsSelectExporting="false" IsAllExporting="false" IsFrontExporting="false" IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsPageUseObjectInspector="false" IsShowSearch="true" ShowPaging="false" ShowPageBar="false" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" ZebraList="true" HoverLight="true" Border="false" IsSelectCheckbox="true" />
+</root>

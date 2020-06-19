@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="IFrame" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">弹出窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pop-up window</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

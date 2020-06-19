@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ActionRuleMessage" IsWeb="true">
+    <Label Name="MessageTypeValue">
+      <LocalizedLabel LanguageRef="zhs">接收类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receipt type</LocalizedLabel>
+    </Label>
+    <Label Name="MessageActorValue">
+      <LocalizedLabel LanguageRef="zhs">接收对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive object</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

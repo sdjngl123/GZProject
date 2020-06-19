@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="WORKFLOWATTACHINFOVIEW" ObjectTypeName="WORKFLOWATTACHINFO" OrderByString="CREATETIME ASC" FixedFilter="" AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ECODE" Width="100" Resizable="false" Sortable="false" />
+    <ViewColumn Name="OBJECTEID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="OBJECTTYPE" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="WORKFLOWID" Width="0" Resizable="false" Sortable="false" />
+  </ObjectView>
+</root>

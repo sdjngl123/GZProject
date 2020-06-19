@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="TestPlanManage">
+      <LocalizedLabel LanguageRef="zhs">试验策划管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestPlanManage</LocalizedLabel>
+    </Label>
+    <Label Name="VTSDEMANDNav">
+      <LocalizedLabel LanguageRef="zhs">VTS需求</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VTSDEMANDNav</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPLANTASKNav">
+      <LocalizedLabel LanguageRef="zhs">试验策划任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTPLANTASKNav</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

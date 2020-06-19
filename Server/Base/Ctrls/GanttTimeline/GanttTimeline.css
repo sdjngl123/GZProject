@@ -1,0 +1,48 @@
+﻿.GanttTimeline {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+    .GanttTimeline .fc-toolbar.fc-header-toolbar {
+        margin-top: .2em;
+        margin-bottom: .2em;
+    }
+
+        .GanttTimeline .fc-toolbar.fc-header-toolbar .fc-center h2 {
+            margin-top: .2em;
+        }
+
+
+    .GanttTimeline .fc-head {
+        background-color: #f5f5f5;
+    }
+
+        .GanttTimeline .fc-head {
+        background-color: #f5f5f5;
+    }
+/*第四级子任务样式*/
+  .tipBox{
+      position:absolute;
+      top:-23px;
+  }
+  .tipText{
+      color:#000;
+      padding:0;
+      margin:0;
+      width:100%;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      text-align:center;
+
+  }
+  .tipImg{
+      display:block;
+      width:10px;
+      height:10px;
+      margin-top:-3px;
+  }

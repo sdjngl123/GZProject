@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AddCompanyFriend">
+  <Settings Key="height" Value="280"/>
+  <Settings Key="width" Value="480"/>
+  <Settings Key="title" Value="AddCompanyFriend.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="CompanyFriend_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="CompanyFriend_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="CompanyFriend_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="CompanyFriend_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="AddCompanyFriend.CompanyFriend" />
+    </PageControl>
+    <PageControl ControlID="CompanyFriend_Value" ParentID="R-1" TypeName="DropSearch" >
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="AddCompanyFriend.CompanyFriendRegex" />
+      <PageHandlers>
+        <PageHandler HandlerName ="OnFocusout" Script="InforCenter_Platfrom_Registered_AddCompanyFriendPageCompanyFriendValueOnFocusout(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="CompanyFriend_Label_FieldFlag" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="DESCRIPTION_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="DESCRIPTION_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="DESCRIPTION_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="AddCompanyFriend.Description" />
+    </PageControl>
+    <PageControl ControlID="DESCRIPTION_Value" ParentID="R-2" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="regex" Value="^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="AddCompanyFriend.DescriptionRegex" />
+    </PageControl>
+
+    <PageControl ControlID="Btn_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platfrom_Registered_AddCompanyFriendPageOnOk(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_CreateObject_OnCancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

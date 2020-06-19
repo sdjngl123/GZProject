@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectedTaskType" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">任务类型设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task type settings</LocalizedLabel>
+    </Label>
+    <Label Name="Simple">
+      <LocalizedLabel LanguageRef="zhs">单一任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Single task</LocalizedLabel>
+    </Label>
+    <Label Name="AutoAduit">
+      <LocalizedLabel LanguageRef="zhs">自动提交</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic submission</LocalizedLabel>
+    </Label>
+    <Label Name="AduitResult">
+      <LocalizedLabel LanguageRef="zhs">自动提交的评审结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The review results of automatic submission</LocalizedLabel>
+    </Label>
+    <Label Name="OverHalf">
+      <LocalizedLabel LanguageRef="zhs">统计多数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Statistics Majority</LocalizedLabel>
+    </Label>
+    <Label Name="AnyOne">
+      <LocalizedLabel LanguageRef="zhs">任意通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Any pass</LocalizedLabel>
+    </Label>
+    <Label Name="ByAccord">
+      <LocalizedLabel LanguageRef="zhs">一致通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Adopted Unanimously</LocalizedLabel>
+    </Label>
+    <Label Name="Else">
+      <LocalizedLabel LanguageRef="zhs">否则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Otherwise</LocalizedLabel>
+    </Label>
+    <Label Name="AuditCount">
+      <LocalizedLabel LanguageRef="zhs">指定人数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of designated person</LocalizedLabel>
+    </Label>
+    <Label Name="People">
+      <LocalizedLabel LanguageRef="zhs">人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">person</LocalizedLabel>
+    </Label>
+    <Label Name="CountRegex">
+      <LocalizedLabel LanguageRef="zhs">请输入大于0的数字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter a number greater than 0</LocalizedLabel>
+    </Label>
+    <Label Name="OverHalfError">
+      <LocalizedLabel LanguageRef="zhs">请选择决策者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the decision maker</LocalizedLabel>
+    </Label>
+    <Label Name="KeyActor">
+      <LocalizedLabel LanguageRef="zhs">决策者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Decision maker</LocalizedLabel>
+    </Label>
+    <Label Name="AssistAudit">
+      <LocalizedLabel LanguageRef="zhs">协助审批</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistAudit</LocalizedLabel>
+    </Label>
+    <Label Name="AllAudit">
+      <LocalizedLabel LanguageRef="zhs">全部评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllAudit</LocalizedLabel>
+    </Label>
+    <Label Name="AllAuditDetail">
+      <LocalizedLabel LanguageRef="zhs">如果勾选全部评审，则该节点所以人员都评审完成后，得出最终评审结果；如果不勾选，只要已评审的结果能推断出最终结果，则其他人不需要再评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllAudit</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

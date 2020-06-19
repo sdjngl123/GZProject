@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleAuthSelect">
+  <Settings Key="title" Value="ThreeRoleAuthSelect.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthSelect_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="Select"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Select" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Select_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <!--<PageControl ControlID="DomainPath_Label" ParentID="DomainPath" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleAuthKey.Key" />
+    </PageControl>-->
+    <PageControl ControlID="Select_Value" ParentID="Select" TypeName="DropDown" >
+      
+    </PageControl>
+  </PageControls>
+</root>

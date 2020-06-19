@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCircleState" IsWeb="true">
+    <Label Name="RUNHeader">
+      <LocalizedLabel LanguageRef="zhs">运行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Run</LocalizedLabel>
+    </Label>
+    <Label Name="RUNCaption">
+      <LocalizedLabel LanguageRef="zhs">运行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Run</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETEHeader">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETECaption">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="STOPHeader">
+      <LocalizedLabel LanguageRef="zhs">停止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="STOPCaption">
+      <LocalizedLabel LanguageRef="zhs">停止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="SUSPENDHeader">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="SUSPENDCaption">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="CANCELHeader">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+    <Label Name="CANCELCaption">
+      <LocalizedLabel LanguageRef="zhs">当其他评审人员的评审结果已经可以决定该节点的结果时，未评审的任务则会置为取消状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the results of the node are already determined by other reviewer's review results, the unreviewed task is set to the cancel state</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

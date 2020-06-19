@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OrganizationCreate" IsCache="true">
+  <Settings Key="title" Value="OrganizationCreate.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_OrganizationCreate_LoadPage(pageEvent);"/>
+    <!--<PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_OrganizationCreate_OnGetData(pageEvent);"/>-->
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OrganizationContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="OrganizationContainer" ParentID="Info_Container" TypeName="PageContainer">
+    </PageControl>
+  </PageControls>
+</root>

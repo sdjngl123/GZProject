@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="TreeCompanyRuleRootMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateActionRuleOnRoot" MultiMenu="false" ModuleName="Platform" LabelName="CreateActionRule" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="ACTIONRULE" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="COMPANYRULE" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+        <Para Name="USEBY" Value="[Tree_Current_Tag_USEBY]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Rule.RulePageService.GenerateSerialNumber" IsWCFService="true">
+        <Para Name="TableName" Value="COMPANYRULE" ParentPara="para" />
+        <Para Name="PEIDCol" Value="PEID" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="ObjectID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="Refesh" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.Refesh" Image="p_resume" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="0000" IsMainConfig="false" />
+  </MenuItem>
+  <MenuItem Name="TreeCompanyRuleMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateActionRule" MultiMenu="false" ModuleName="Platform" LabelName="CreateActionRule" Image="p_new" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="ACTIONRULE" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="COMPANYRULE" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+        <Para Name="USEBY" Value="[Tree_Current_Tag_USEBY]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Rule.RulePageService.GenerateSerialNumber" IsWCFService="true">
+        <Para Name="TableName" Value="COMPANYRULE" ParentPara="para" />
+        <Para Name="PEIDCol" Value="PEID" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="para" />
+        <Para Name="ObjectID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="EditActionRule" MultiMenu="false" ModuleName="Platform" LabelName="EditActionRule" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="DeleteActionRule" MultiMenu="false" ModuleName="Platform" LabelName="DeleteActionRule" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+        <Para Name="Text" Value="DeleteObject.ExistSubObjMsg" />
+        <Para Name="ValidateObject" Value="COMPANYRULE:PEID=EID$COMPANYRULECONDITION:ACTIONRULEID=EID$COMPANYRULEPERMISSION:ACTIONRULEID=EID" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.MoveUp" Image="p_moveup" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_CompanyRule_MoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="UP" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.MoveDown" Image="p_movedown" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_CompanyRule_MoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="DOWN" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="CompanyRuleConditionMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateCompanyRuleCondition" MultiMenu="false" ModuleName="Platform" LabelName="CreateActionRuleCondition" Image="p_new" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ActionRuleCondition_GetMaxSerialNum" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="SERIALNUMBER" Value="[ReturnValue_MaxNum]" ParentPara="InitData" />
+        <Para Name="ActionType" Value="COMPANYRULECONDITION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="DeleteCompanyRuleCondition" MultiMenu="false" ModuleName="Platform" LabelName="DeleteActionRuleCondition" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="COMPANYRULECONDITION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.MoveUp" Image="p_moveup" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ActionRuleCondition_Up" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="Platform" LabelName="MenuItems.MoveDown" Image="p_movedown" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ActionRuleCondition_Down" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveCompanyRuleCondition" MultiMenu="false" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_SaveGrid" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="COMPANYRULECONDITION" ParentPara="DataServicePara" />
+        <Para Name="ACTIONRULEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="CompanyRulePermissionMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateActionRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="CreateActionRulePermission" Image="p_new" ParentWebAtionName="" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ActionRuleCondition_GetMaxSerialNum" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="SERIALNUMBER" Value="[ReturnValue_MaxNum]" ParentPara="InitData" />
+        <Para Name="ActionType" Value="COMPANYRULEPERMISSION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="DeleteActionRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="DeleteActionRulePermission" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="COMPANYRULEPERMISSION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveActionRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_ActionRulePermission_SavePermission" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="COMPANYRULEPERMISSION" ParentPara="DataServicePara" />
+        <Para Name="ACTIONRULEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+        <Para Name="USEBY" Value="[Tree_Current_Tag_USEBY]" />
+        <Para Name="ColName" Value="PERMISSIONACTIONVALUE" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="CompanyRuleObjectMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateCompanyRuleObject" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_new" ParentWebAtionName="" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="COMPANYRULEOBJECT" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="DeleteCompanyRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="COMPANYRULEOBJECT" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveCompanyRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_SaveGrid" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="COMPANYRULEOBJECT" ParentPara="DataServicePara" />
+        <Para Name="COMPANYRULEID" Value="[Tree_Current_value1]" ParentPara="initData" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="CompanyRuleCreatePermissionMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateCompanyRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="CreateActionRulePermission" Image="p_new" ParentWebAtionName="" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ActionRuleCondition_GetMaxSerialNum" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_AddRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="SERIALNUMBER" Value="[ReturnValue_MaxNum]" ParentPara="InitData" />
+        <Para Name="ActionType" Value="COMPANYRULEPERMISSION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="DeleteCompanyRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="DeleteActionRulePermission" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEEDITLIST" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_EditListViewCtrl_DeleteRow" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ActionType" Value="COMPANYRULEPERMISSION" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="SaveCompanyRulePermission" MultiMenu="false" ModuleName="Platform" LabelName="Common.Save" Image="p_save" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_ActionRulePermission_SavePermission" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+        <Para Name="ObjectType" Value="COMPANYRULEPERMISSION" ParentPara="DataServicePara" />
+        <Para Name="DataService" Value="Hoteam.InforCenter.CompanyRuleService.SaveCreatePermissionEditGrid" />
+        <Para Name="CreatePermissionObjectType" Value="[Tree_Current_value1]" ParentPara="DataServicePara" />
+        <Para Name="RootEID" Value="[Tree_Parent_value1]" ParentPara="DataServicePara" />
+        <Para Name="USEBY" Value="Create" />
+        <Para Name="ColName" Value="PERMISSIONACTIONVALUE" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="CompanyRulePermission" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+</root>

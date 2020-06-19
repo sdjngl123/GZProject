@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <root Name="TreeViewCtrl" IsCache="true">
+      <PageControls>
+        <PageControl ControlID="TreeView_ContainerC" ParentID="" TypeName="LayoutContainer">
+            <Settings Key="type" Value="horizontal"/>
+            <Settings Key="item0" >
+                <Settings Key="size" Value="10"/>
+                <Settings Key="visible" Value="false"/>
+            </Settings>
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="TreeView_Container"/>
+            </Settings>
+            <Settings Key="item2">
+                <Settings Key="size" Value="10"/>
+                <Settings Key="visible" Value="false"/>
+            </Settings>
+        </PageControl>
+        <!--一层-->
+        <PageControl ControlID="TreeView_Container" ParentID="TreeView_ContainerC" TypeName="LayoutContainer">
+          <Settings Key="type" Value="vertical"/>
+          <Settings Key="item2" >
+            <Settings Key="size" Value="5"/>
+          </Settings>
+          <Settings Key="item3">
+            <Settings Key="size" Value="100%"/>
+            <Settings Key="childid" Value="TreeView"/>
+          </Settings>
+          <Settings Key="item4" >
+            <Settings Key="size" Value="0"/>
+            <Settings Key="childid" Value="RightMenu_Container"/>
+          </Settings>
+        </PageControl>
+        <!--二层-->
+        <PageControl ControlID="TreeView" ParentID="TreeView_Container" TypeName="Tree">
+          <PageHandlers>
+            <PageHandler HandlerName ="OnBeforeExpand" Script="InforCenter_Platform_TreeViewCtrl_OnBeforeExpand(ctrlEvent);"/>
+            <PageHandler HandlerName ="OnExpand" Script="InforCenter_Platform_TreeViewCtrl_OnExpand(ctrlEvent);"/>
+            <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_TreeViewCtrl_OnClick(ctrlEvent);"/>
+            <PageHandler HandlerName ="OnExpandLoad" Script="InforCenter_Platform_TreeViewCtrl_OnExpandLoad(ctrlEvent);"/>
+            <PageHandler HandlerName ="OnNodeDblClick" Script="InforCenter_Platform_TreeViewCtrl_OnNodeDblClick(ctrlEvent);"/>
+          </PageHandlers>
+        </PageControl>
+        <PageControl ControlID="RightMenu_Container" ParentID="TreeView_Container" TypeName="LayoutContainer">
+          <Settings Key="item1" >
+            <Settings Key="size" Value="100%"/>
+            <Settings Key="childid" Value="RightMenu"/>
+          </Settings>
+        </PageControl>
+        <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu"></PageControl>
+  </PageControls>
+</root>

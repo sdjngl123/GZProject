@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ParentStageStateCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">父对象阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent phase state</LocalizedLabel>
+    </Label>
+    <Label Name="ParentStageStateValue">
+      <LocalizedLabel LanguageRef="zhs">状态值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State value</LocalizedLabel>
+    </Label>
+    <Label Name="IsNotInOption">
+      <LocalizedLabel LanguageRef="zhs">状态值不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The state value does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="ParentObjectTypeValue">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

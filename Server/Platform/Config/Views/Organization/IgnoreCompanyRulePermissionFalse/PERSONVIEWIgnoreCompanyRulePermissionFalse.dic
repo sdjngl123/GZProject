@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PERSONVIEWIgnoreCompanyRulePermissionFalseView" IsWeb="true">
+    <Label Name="PERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personnel</LocalizedLabel>
+    </Label>
+    <Label Name="PERSONCaption">
+      <LocalizedLabel LanguageRef="zhs">人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personnel</LocalizedLabel>
+    </Label>
+    <Label Name="GENDERHeader">
+      <LocalizedLabel LanguageRef="zhs">性别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gender</LocalizedLabel>
+    </Label>
+    <Label Name="GENDERCaption">
+      <LocalizedLabel LanguageRef="zhs">性别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gender</LocalizedLabel>
+    </Label>
+    <Label Name="BIRTHDAYHeader">
+      <LocalizedLabel LanguageRef="zhs">生日</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Birthday</LocalizedLabel>
+    </Label>
+    <Label Name="BIRTHDAYCaption">
+      <LocalizedLabel LanguageRef="zhs">生日</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Birthday</LocalizedLabel>
+    </Label>
+    <Label Name="ACADEMICRECORDHeader">
+      <LocalizedLabel LanguageRef="zhs">学历</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Education background</LocalizedLabel>
+    </Label>
+    <Label Name="ACADEMICRECORDCaption">
+      <LocalizedLabel LanguageRef="zhs">学历</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Education background</LocalizedLabel>
+    </Label>
+    <Label Name="ENTITYHeader">
+      <LocalizedLabel LanguageRef="zhs">基类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Base class</LocalizedLabel>
+    </Label>
+    <Label Name="ENTITYCaption">
+      <LocalizedLabel LanguageRef="zhs">基类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Base class</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="ESTATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">站点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Site</LocalizedLabel>
+    </Label>
+    <Label Name="ESTATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">站点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Site</LocalizedLabel>
+    </Label>
+    <Label Name="ELASTINSERTHeader">
+      <LocalizedLabel LanguageRef="zhs">最后修改插入的EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the inserted EID in the end </LocalizedLabel>
+    </Label>
+    <Label Name="ELASTINSERTCaption">
+      <LocalizedLabel LanguageRef="zhs">最后修改插入的EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the inserted EID in the end </LocalizedLabel>
+    </Label>
+    <Label Name="ELASTFINALSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">最终状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final state</LocalizedLabel>
+    </Label>
+    <Label Name="ELASTFINALSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">最终状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final state</LocalizedLabel>
+    </Label>
+    <Label Name="STAGESTATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="STAGESTATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="EMINORVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">小版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Small version</LocalizedLabel>
+    </Label>
+    <Label Name="EMINORVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">小版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Small version</LocalizedLabel>
+    </Label>
+    <Label Name="PERSONVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">人员视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Person view</LocalizedLabel>
+    </Label>
+    <Label Name="PERSONVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">人员视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Person view</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">联系地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contact address</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">联系地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contact address</LocalizedLabel>
+    </Label>
+    <Label Name="ZIPCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮编</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Postcode</LocalizedLabel>
+    </Label>
+    <Label Name="ZIPCODECaption">
+      <LocalizedLabel LanguageRef="zhs">邮编</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Postcode</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">电子邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">E-mail</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILCaption">
+      <LocalizedLabel LanguageRef="zhs">电子邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">E-mail</LocalizedLabel>
+    </Label>
+    <Label Name="FAXNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">传真号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fax</LocalizedLabel>
+    </Label>
+    <Label Name="FAXNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">传真号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fax</LocalizedLabel>
+    </Label>
+    <Label Name="PHONEHeader">
+      <LocalizedLabel LanguageRef="zhs">手机号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mobile phone number</LocalizedLabel>
+    </Label>
+    <Label Name="PHONECaption">
+      <LocalizedLabel LanguageRef="zhs">手机号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mobile phone number</LocalizedLabel>
+    </Label>
+    <Label Name="OFFICENUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">办公号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Office phone number</LocalizedLabel>
+    </Label>
+    <Label Name="OFFICENUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">办公号码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Office phone number</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="PERSONVIEWCondition" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="PERSONVIEWIgnoreCompanyRulePermissionFalseCondition" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

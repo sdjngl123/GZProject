@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OPERATELOGSEARCHVIEW-QUERY">
+  <Settings Key="height" Value="224"/>
+  <Settings Key="width" Value="126"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="{
+				 var ctrl = pageEvent.o.GetControl('OperateLogType_Value');
+				 pageEvent.objectType = 'OPERATELOG';
+                 pageEvent.infoType = 'OPERATE';
+				 pageEvent.IsQueryPage = true;
+				 pageEvent.Ctrl = ctrl;
+                 var functionName = 'InforCenter_' + pageEvent.objectType + '_' + pageEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, pageEvent);
+                 }else{
+                      var o = ctrl;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'OPERATE','OPERATELOG',true);
+                          }
+                 }
+}{
+var o = pageEvent.o.GetControl('OBJTYPE_Value');
+if(o.id!=''){
+InforCenter_Platform_Object_ObjectTypeListValue(o,'OBJTYPE','OPERATELOG',!false);
+}
+}"/>
+    <PageHandler HandlerName ="GetQueryData" Script="var bCheck=true;var QueyData =[];{
+	var c = pageEvent.o.GetControl('DATETIMEGE_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&gt;=' == '&lt;' || '&gt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+	}
+
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'CREATETIME',QUERYOPERATOR:'&gt;=',VALUE:value,UNQUOTED:true});
+	if(c.Check() == false) bCheck = false;	
+
+
+}}{
+	var c = pageEvent.o.GetControl('DATETIMELE_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&lt;=' == '&lt;' || '&lt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+	}
+
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'CREATETIME',QUERYOPERATOR:'&lt;=',VALUE:value,UNQUOTED:true});
+	if(c.Check() == false) bCheck = false;	
+
+
+}}{
+var c = pageEvent.o.GetControl('USERID_Value');
+if(c.id!=''){
+var value = c.GetValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'USERID',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('OperateLogType_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'OPERATE',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('OBJTYPE_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+QueyData.push({ANDOR:'AND',QUERYCOLUMN:'OBJTYPE',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('IP_Value');
+if(c.id!=''){
+var value = c.GetText();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'IP',QUERYOPERATOR:'=',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+};if(bCheck){return QueyData;}"/>
+    <PageHandler HandlerName="OnReset" Script="var ctrlEvent={};ctrlEvent.o=pageEvent.o.GetControl('btnReset');
+{
+var o = ctrlEvent.o.OtherControl('DATETIMEGE_Value');
+if(o.id!=''){
+o.Clear();
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('DATETIMELE_Value');
+if(o.id!=''){
+o.Clear();
+}
+}{
+var o = ctrlEvent.o.OtherControl('USERID_Value');
+if(o.id!=''){
+o.SetText('');
+o.SetValue('');
+}
+}{
+	var o =ctrlEvent.o.OtherControl('OperateLogType_Value');
+	if(o.id!=''){
+		o.ClearSelectData();
+	}
+}{
+var o = ctrlEvent.o.OtherControl('OBJTYPE_Value');
+if(o.id!=''){
+o.ClearSelectData();
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('IP_Value');
+if(o.id!=''){
+o.SetText('');
+}
+};"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="DATETIMEGE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="DATETIMEGE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value="CREATETIME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DATETIMEGE_Label" ParentID="R-1" TypeName="Label" >
+  <Settings Key="position" Value="Right"/>
+  <Settings Key="textId" Value="OPERATELOGSEARCHVIEW-QUERY.DATETIMEGEHeader" />
+</PageControl>
+
+<PageControl ControlID="DATETIMEGE_Value" ParentID="R-1" TypeName="DateTime" >
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="[^(\s*)] AND ^(?:(?:(?!0000)\d{4})-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01]))$" />
+  <Settings Key="regextipId" Value="OPERATELOGSEARCHVIEW-QUERY.DATETIMEGERegex" />
+</PageControl><PageControl ControlID="DATETIMEGE_Label_FieldFlag" ParentID="DATETIMEGE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="DATETIMELE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="DATETIMELE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value="CREATETIME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="DATETIMELE_Label" ParentID="R-2" TypeName="Label" >
+  <Settings Key="position" Value="Right"/>
+  <Settings Key="textId" Value="OPERATELOGSEARCHVIEW-QUERY.DATETIMELEHeader" />
+</PageControl>
+
+<PageControl ControlID="DATETIMELE_Value" ParentID="R-2" TypeName="DateTime" >
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="[^(\s*)] AND ^(?:(?:(?!0000)\d{4})-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01]))$" />
+  <Settings Key="regextipId" Value="OPERATELOGSEARCHVIEW-QUERY.DATETIMELERegex" />
+</PageControl><PageControl ControlID="DATETIMELE_Label_FieldFlag" ParentID="DATETIMELE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="USERID_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="USERID_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="USERID_Label" ParentID="R-3" TypeName="Label" >
+  <Settings Key="position" Value="Right"/>
+  <Settings Key="textId" Value="OPERATELOGSEARCHVIEW-QUERY.USERIDHeader" />
+</PageControl>
+
+<PageControl ControlID="USERID_Value" ParentID="R-3" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditSingleUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="OPERATELOGSEARCHVIEW-QUERY.USERIDRegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="OperateLogType_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="OperateLogType_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="OperateLogType_Label" ParentID="R-4" TypeName="Label" >
+  <Settings Key="position" Value="Right"/>
+  <Settings Key="textId" Value="OPERATELOGSEARCHVIEW-QUERY.OperateLogTypeHeader" />
+</PageControl>
+
+<PageControl ControlID="OperateLogType_Value" ParentID="R-4" TypeName="DropDown" >
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="OPERATELOGSEARCHVIEW-QUERY.OperateLogTypeRegex" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="OBJTYPE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="OBJTYPE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="OBJTYPE_Label" ParentID="R-5" TypeName="Label" >
+  <Settings Key="position" Value="Right"/>
+  <Settings Key="textId" Value="OPERATELOGSEARCHVIEW-QUERY.OBJTYPEHeader" />
+</PageControl>
+
+<PageControl ControlID="OBJTYPE_Value" ParentID="R-5" TypeName="AutoCompleteCombox" >
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="IP_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="IP_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="IP_Label" ParentID="R-6" TypeName="Label" >
+  <Settings Key="position" Value="Right"/>
+  <Settings Key="textId" Value="OPERATELOGSEARCHVIEW-QUERY.IPHeader" />
+</PageControl>
+
+<PageControl ControlID="IP_Value" ParentID="R-6" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnQuery"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnReset"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="var bCheck=true;var FilterString ='';var EntityFilterString =''; {
+	var c = ctrlEvent.o.OtherControl('DATETIMEGE_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&gt;=' == '&lt;' || '&gt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+	}
+
+	FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','CREATETIME','&gt;=',value,true);
+	if(c.Check() == false) bCheck = false;	
+
+
+}}{
+	var c = ctrlEvent.o.OtherControl('DATETIMELE_Value');
+	if(c.id!=''){
+	var cInfo = c.ControlInfo();
+	var option = cInfo.CtrlOptions;
+	var value = c.GetTicksByDateTime();
+	if(option.type == 'date'){
+			value = c.GetDateTime();
+			if('&lt;=' == '&lt;' || '&lt;=' == '&lt;='){
+				value += ' 23:59:59';
+			}else{
+				value += ' 00:00:00';
+			}
+			value = $.hoteamDateTime.getTicksByDateTime(value, 'datetime');
+	}
+
+	FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','CREATETIME','&lt;=',value,true);
+	if(c.Check() == false) bCheck = false;	
+
+
+}}{
+var c = ctrlEvent.o.OtherControl('USERID_Value');
+if(c.id!=''){
+var value = c.GetValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','USERID','=',value,false);
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = ctrlEvent.o.OtherControl('OperateLogType_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	var enumFilter='';	
+	var andor = 'AND';
+	var column = 'OPERATE';
+	var op = '=';
+	op = op.toUpperCase();
+	var arr = value.split(';');
+		
+	if(op == '=' || op == 'LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' = N\'' + arr[i] + '\' ' + 
+						' OR '+ column + ' LIKE N\'' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+	else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' &lt;&gt; N\'' + arr[i] + '\' ' + 
+							' AND '+ column + ' NOT LIKE N\'' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+
+	if(enumFilter.length &gt; 0)
+	{
+		enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+	}
+	FilterString += enumFilter;
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = ctrlEvent.o.OtherControl('OBJTYPE_Value');
+if(c.id!=''){
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	var enumFilter='';	
+	var andor = 'AND';
+	var column = 'OBJTYPE';
+	var op = '=';
+	op = op.toUpperCase();
+	var arr = value.split(';');
+		
+	if(op == '=' || op == 'LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' = N\'' + arr[i] + '\' ' + 
+						' OR '+ column + ' LIKE N\'' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + ';%\' ' +
+						' OR '+ column + ' LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+	else if(op == '&lt;&gt;' || op == 'NOT LIKE')
+	{
+		for(var i = 0;i &lt;arr.length;i++)
+		{
+			enumFilter += 'AND ' + '('  + column + ' &lt;&gt; N\'' + arr[i] + '\' ' + 
+							' AND '+ column + ' NOT LIKE N\'' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + ';%\' ' +
+							' AND '+ column + ' NOT LIKE N\'%;' + arr[i] + '\'' +') ';
+		}
+	}
+
+	if(enumFilter.length &gt; 0)
+	{
+		enumFilter = andor + ' ('+ enumFilter.substring(3) + ')';
+	}
+	FilterString += enumFilter;
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+	var c = ctrlEvent.o.OtherControl('IP_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','IP','=',value,false);
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+};if(bCheck){var QueryData = HoteamUI.Page.FirePageEvent(ctrlEvent.o.ContainerID(), 'GetQueryData');if (!QueryData){QueryData=[];};FilterString = FilterString.substring(4);EntityFilterString = EntityFilterString.substring(4); HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:FilterString,EntityFilterString:EntityFilterString,ButtonType:'Query',QueryData:QueryData});}"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="
+{
+var o = ctrlEvent.o.OtherControl('DATETIMEGE_Value');
+if(o.id!=''){
+o.Clear();
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('DATETIMELE_Value');
+if(o.id!=''){
+o.Clear();
+}
+}{
+var o = ctrlEvent.o.OtherControl('USERID_Value');
+if(o.id!=''){
+o.SetText('');
+o.SetValue('');
+}
+}{
+	var o =ctrlEvent.o.OtherControl('OperateLogType_Value');
+	if(o.id!=''){
+		o.ClearSelectData();
+	}
+}{
+var o = ctrlEvent.o.OtherControl('OBJTYPE_Value');
+if(o.id!=''){
+o.ClearSelectData();
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('IP_Value');
+if(o.id!=''){
+o.SetText('');
+}
+};HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:'1=1',EntityFilterString:'1=1',ButtonType:'Reset',QueryData:[]});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

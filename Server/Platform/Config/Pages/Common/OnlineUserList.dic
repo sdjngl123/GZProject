@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OnlineUserList" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">在线用户列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Online user list</LocalizedLabel>
+    </Label>
+    <Label Name="UserCode">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+    <Label Name="UserName">
+      <LocalizedLabel LanguageRef="zhs">用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User</LocalizedLabel>
+    </Label>
+    <Label Name="UserGroupName">
+      <LocalizedLabel LanguageRef="zhs">登录组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login group</LocalizedLabel>
+    </Label>
+    <Label Name="OnlineTimeSpan">
+      <LocalizedLabel LanguageRef="zhs">在线时长</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">On-line duration</LocalizedLabel>
+    </Label>
+    <Label Name="LastOperateTimeSpan">
+      <LocalizedLabel LanguageRef="zhs">最后操作时间间隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Last operating time interval</LocalizedLabel>
+    </Label>
+    <Label Name="LoginIP">
+      <LocalizedLabel LanguageRef="zhs">登录IP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login IP</LocalizedLabel>
+    </Label>
+    <Label Name="LogOut">
+      <LocalizedLabel LanguageRef="zhs">强制离线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LogOut</LocalizedLabel>
+    </Label>
+    <Label Name="LogOutAll">
+      <LocalizedLabel LanguageRef="zhs">全部离线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LogOutAll</LocalizedLabel>
+    </Label>
+    <Label Name="LoginDeviceType">
+      <LocalizedLabel LanguageRef="zhs">登录设备类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login device type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

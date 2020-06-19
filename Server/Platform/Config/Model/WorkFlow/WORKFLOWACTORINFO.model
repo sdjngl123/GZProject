@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="WORKFLOWACTORINFO" Extend="ENTITY" LogicClass="WorkflowActor" IconPath="Platform/Image/Model/userobject.png" Abstract="false" TableName="WORKFLOWACTORINFO" SplitValidateUnique="false" IsGenerateViceTable="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <Index Name="FLOWACTOR_FLOWID_INDEX" TableIndex="FLOWACTOR_FLOWID_INDEX" Unique="False">
+      <IndexInfo Name="WORKFLOWID" Order="ASC" />
+    </Index>
+    <InfoType Name="WORKFLOWID" Type="DefaultObjectValue" DataType="STRING100" Column="WORKFLOWID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TASKNODEID" Type="DefaultObjectValue" DataType="STRING100" Column="TASKNODEID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ACTORINFO" Type="DefaultObjectValue" DataType="TEXT" Column="ACTORINFO" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

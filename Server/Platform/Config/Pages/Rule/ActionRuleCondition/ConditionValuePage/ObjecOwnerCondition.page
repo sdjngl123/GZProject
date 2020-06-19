@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectOwnerCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectOwnerCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_ObjectOwnerCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ObjectOwnerValue_Container"/>
+      </Settings>
+    </PageControl>
+    <!-- 对象属性值容器-->
+    <PageControl ControlID="ObjectOwnerValue_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ObjectOwnerValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectOwnerValueText"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性值控件-->
+    <PageControl ControlID="ObjectOwnerValueLabel" ParentID="ObjectOwnerValue_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ObjectOwnerCondition.ObjectOwnerName" />
+    </PageControl>
+    <PageControl ControlID="ObjectOwnerValueText" ParentID="ObjectOwnerValue_Container" TypeName="TextValue">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ObjectOwnerCondition_OwnerOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+   
+  </PageControls>
+</root>

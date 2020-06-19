@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CommunicationQYWX" IsWeb="true">
+    <Label Name="CardTemplate">
+      <LocalizedLabel LanguageRef="zhs">&lt;div class="gray"&gt;[DATETIME]([FROMUSER])&lt;/div&gt;&lt;div class="normal"&gt;[MESSAGE]&lt;/div&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">&lt;div class="gray"&gt;[DATETIME]([FROMUSER])&lt;/div&gt;&lt;div class="normal"&gt;[MESSAGE]&lt;/div&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TextTemplate">
+      <LocalizedLabel LanguageRef="zhs">[TITLE] \n\n [MESSAGE] &lt;br /&gt;&lt;br /&gt; [DATETIME]([FROMUSER])</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[TITLE] &lt;br /&gt;&lt;br /&gt; [MESSAGE] &lt;br /&gt;&lt;br /&gt; [DATETIME]([FROMUSER])</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

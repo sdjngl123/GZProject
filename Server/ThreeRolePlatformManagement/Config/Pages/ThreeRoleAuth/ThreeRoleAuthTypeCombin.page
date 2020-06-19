@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleAuthTypeCombin">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleAuthTypeCombin_Create(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ThreeRoleAuthTypeCombin_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ThreeRoleAuthTypeCombin_HLayout"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ThreeRoleAuthTypeCombin_HLayout" ParentID="ThreeRoleAuthTypeCombin_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ThreeRoleAuthTypeCombin_CheckboxPad"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ThreeRoleAuthTypeCombin_CheckboxPad" ParentID="ThreeRoleAuthTypeCombin_HLayout" TypeName="CheckboxPad">
+      <Settings Key="ColNum" Value="4" />
+      <Settings Key="ChangeMode" Value="2" />
+      <Settings Key="DefaultCheckState" Value="2" />
+    </PageControl>
+  </PageControls>
+</root>
+  

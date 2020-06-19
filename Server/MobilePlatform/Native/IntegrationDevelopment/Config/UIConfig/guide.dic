@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="IntegrationDevelopment" IsWeb="true">
+    <Label Name="TabInfo">
+      <LocalizedLabel LanguageRef="zhs">标签信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Info</LocalizedLabel>
+    </Label>
+    <Label Name="DataConfig">
+      <LocalizedLabel LanguageRef="zhs">填写数据配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataConfig</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

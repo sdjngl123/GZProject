@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PluginItem Name="SystemSettingsObject" Type="ObjectType" Assembly="Hoteam.InforCenter.SystemSettings.Business" Class="Hoteam.InforCenter.SystemSettings.Business.SystemSettingsObject" />
+
+  <PluginItem Name="SystemSettingsBaseValue" Type="SystemSetting" Assembly="Hoteam.InforCenter.SystemSettings.Business" Class="Hoteam.InforCenter.SystemSettings.Business.BaseSettingValueModel" />
+
+  <PluginItem Name="SystemSettingsBusiness" Type="Business" Assembly="Hoteam.InforCenter.SystemSettings.Business" Class="Hoteam.InforCenter.SystemSettings.Business.SystemSettingsUtility" />
+</root>

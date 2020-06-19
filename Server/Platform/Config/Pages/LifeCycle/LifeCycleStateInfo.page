@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="LifeCycleStateInfo" IsCache="true">
+  <Settings Key="title" Value="LifeCycleStateInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_LifeCycleStateInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_LifeCycleStateInfo_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_LifeCycleStateInfo_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+    </PageControl>
+    <!--R1-->
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Name_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Name_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Name_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="LifeCycleStateInfo.Name" />
+    </PageControl>
+    <PageControl ControlID="Name_Value" ParentID="R-1" TypeName="TextValue" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="disabled" Value="true"/>
+    </PageControl>
+    <!--R2-->
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="InitState_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InitState_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InitState_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="LifeCycleStateInfo.InitState" />
+    </PageControl>
+    <PageControl ControlID="InitState_Value" ParentID="R-2" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_LifeCycleInitState_OnChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,5 @@
+E:\广汽试验\Source\Server\GACTT\TestPlan\Bin\Hoteam.GACTT.TestPlan.Parameter.dll
+E:\广汽试验\Source\Server\GACTT\TestPlan\Bin\Hoteam.GACTT.TestPlan.Parameter.pdb
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Parameter\obj\Debug\Hoteam.GACTT.TestPlan.Parameter.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Parameter\obj\Debug\Hoteam.GACTT.TestPlan.Parameter.dll
+E:\广汽试验\Source\GACTT\TestPlan\Hoteam.InforCenter.TestPlan.Parameter\obj\Debug\Hoteam.GACTT.TestPlan.Parameter.pdb

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CustomQuery" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="btnSave">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="SqlHeader">
+      <LocalizedLabel LanguageRef="zhs">Sql语句</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQL statement</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZATIONROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">组织权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organizational rights</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

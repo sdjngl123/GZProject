@@ -1,0 +1,16 @@
+﻿var imageCtrl=pageEvent.o.GetControl('[INFONAME]_Value');
+var fileStr=data.[INFONAME];
+if(fileStr){
+	if(imageCtrl!=undefined){
+		var displaySrc = HoteamUI.Common.GetDefaultDisplayImage(null,fileStr);
+		imageCtrl.SetSrc(displaySrc);			
+		imageCtrl.SetValue(fileStr);
+	}
+}else{
+	if(imageCtrl != undefined){
+		var path = (location.origin?location.origin:(location.protocol +'//'+location.host)) + '/Platform/Image/Common/nopic200.png';
+		imageCtrl.SetSrc(path);			
+	}
+}
+
+

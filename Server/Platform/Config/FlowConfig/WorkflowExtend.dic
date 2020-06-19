@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateTypes" IsWeb="true">
+    <Label Name="GeneralWorkflow">
+      <LocalizedLabel LanguageRef="zhs">普通流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General process</LocalizedLabel>
+    </Label>
+    <Label Name="StageWorkflow">
+      <LocalizedLabel LanguageRef="zhs">转阶段流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer phase flow</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

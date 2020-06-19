@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebTreeView Name="FSMANAGEROOTTreeView" ObjectType="FSMANAGEROOT" TextDicField="ENAME" View="FSMANAGEROOTView" StateField="STATEID" ShowStartNode="true" IsTemplate="false" IsMainConfig="false">
+    <Schema Name="EITEMSCHEMA" ObjectType="EITEM" TextField="ENAME" Filter=" CETYPE='EITEM' " View="FSMANAGEROOTLINKView" QueryID="[Tree_Current_value1]" StateField="STATEID" Key="1" SuperKey="-1" Loop="true" IsExistNode="true" ShowChildCount="false" />
+    <FilePath>H:\源码\Studio2.0\Source(3)\Source\Server\FSManagement\Config\ViewConfig\FSMANAGEROOTTreeView.treeview</FilePath>
+  </WebTreeView>
+</root>

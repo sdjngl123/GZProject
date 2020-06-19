@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ActiveXs" IsWeb="true">
+    <Label Name="FoxitPDFSDKActiveXHeader">
+      <LocalizedLabel LanguageRef="zhs">福昕PDF浏览插件安装</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foxit PDF Navigation Plugin Installation</LocalizedLabel>
+    </Label>
+    <Label Name="FoxitPDFSDKActiveXCaption">
+      <LocalizedLabel LanguageRef="zhs">
+        此插件为PDF浏览插件，配合文件控件浏览PDF文档。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This plug-in browses the plug-in for the PDF and uses the file controls to browse PDF documents.</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftOfficeActiveXHeader">
+      <LocalizedLabel LanguageRef="zhs">Office浏览插件安装</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Office Browse plugin installation</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftOfficeActiveXCaption">
+      <LocalizedLabel LanguageRef="zhs">此插件为Office浏览插件。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This plugin is Office browse plugin.</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamInforCenterRootCertificateHeader">
+      <LocalizedLabel LanguageRef="zhs">HoteamInforCenter根证书安装及说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HoteamInforCenter root certificate installation and instructions</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamInforCenterRootCertificateCaption">
+      <LocalizedLabel LanguageRef="zhs">
+        安装HoteamInforCenter根证书，可以使您在软件应用时提供更多的功能体验。该产品及相关操作不会对您的计算机构成危害，请您放心使用。
+        具体的安装过程可以按照文档中的提示步骤。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Install the HoofInforCenter root certificate can provide you with a more functional experience when your software applications are being applied. This product and related operations do not constitute a hazard to your computer. Please use it.
+The specific installation process can follow the instructions in the documentation.</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftMiniCADHeader">
+      <LocalizedLabel LanguageRef="zhs">迷你看图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mini View</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftMiniCADCaption">
+      <LocalizedLabel LanguageRef="zhs">
+        使用迷你看图在IE浏览器中，直接查看CAD图纸。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use Sparklines to view CAD drawings directly in the IE browser.</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftFileComponentRarHeader">
+      <LocalizedLabel LanguageRef="zhs">华天软件-文件控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HoteamsoftFileComponent</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftFileComponentRarCaption">
+      <LocalizedLabel LanguageRef="zhs">
+        如遇到无法正常上传和浏览文件时，请下载此控件进行安装。下载到本地后需要解压，然后注册ocx程序。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please download this control for installation if you encounter an inability to upload and browse files properly. It needs to be decompressed after downloading to the local area, and then the ocx program is registered.</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftSviewHeader">
+      <LocalizedLabel LanguageRef="zhs">华天软件-Siew浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HoteamsoftSview</LocalizedLabel>
+    </Label>
+    <Label Name="HoteamsoftSviewCaption">
+      <LocalizedLabel LanguageRef="zhs">
+        浏览三维轻量化图纸时，需要先安装Sview工具，并且获取许可。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HoteamsoftFileComponent</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

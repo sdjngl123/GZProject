@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="VerticalTabsCtrl" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_TabsCtrl_OnQuery(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Tabs_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="3px 0 0 3px"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Tabs"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Tabs" ParentID="Tabs_Container" TypeName="VerticalTabs">
+      <Settings Key="showClosed" Value="false" />
+    </PageControl>
+  </PageControls>
+</root>

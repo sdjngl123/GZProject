@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="OBJECTPERMISSION" Extend="ENTITY" LogicClass="ObjectPermission" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="OBJECTPERMISSION" SplitValidateUnique="false" IsMainConfig="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Number" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="OBJECTID" Type="ObjectIDValue" DataType="STRING100" Column="OBJECTID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="PERMISSIONACTORVALUE" Type="PermissionActorValue" DataType="TEXT" Column="PERMISSIONACTORVALUE" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PERMISSIONACTIONVALUE" Type="PermissionActionValue" DataType="TEXT" Column="PERMISSIONACTIONVALUE" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PERMISSIONEXPIREVALUE" Type="DateTimeValue" DataType="LONG" Column="PERMISSIONEXPIREVALUE" Edit="Create Edit" Show="Create Edit View" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="USEOBJECTID" Type="DefaultObjectValue" DataType="STRING100" Column="USEOBJECTID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OBJECTPERMISSIONMODE" Type="DefaultObjectValue" DataType="STRING50" Column="OBJECTPERMISSIONMODE" PrimaryKeyOrder="0" DefaultValue="Manual" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="ObjectPermissionMode" />
+    <InfoType Name="OBJECTIDS" Type="DefaultObjectValue" DataType="TEXT" Column="OBJECTIDS" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="SERIALNUMBER" Type="DefaultObjectValue" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Inherit" />
+  </EntityType>
+</root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuthDomainLogin" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">域账户登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login</LocalizedLabel>
+    </Label>
+    <Label Name="DomainUserName">
+      <LocalizedLabel LanguageRef="zhs">域账户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DomainUserName</LocalizedLabel>
+    </Label>
+    <Label Name="DomainPassword">
+      <LocalizedLabel LanguageRef="zhs">域账户密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DomainPassword</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

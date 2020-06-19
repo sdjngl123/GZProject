@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!-- 规则权限-->
+  <WebListView Name="ACTIONRULELISTVIEW" View="ACTIONRULEVIEW" QueryID="" EntityFilter="" Filter="PEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+  </WebListView>
+  <WebListView Name="ACTIONRULECONDITIONLISTVIEW" View="ACTIONRULECONDITIONVIEW" QueryID="" ShowPaging="false"  EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="" >
+    <!--<EditWebListColumnType ViewColumnName="SERIALNUMBER" IsEdit="true" CheckJS=""/>-->
+    <EditWebListColumnType ViewColumnName="OPERATOR" IsEdit="true" CheckJS=""/>
+    <EditWebListColumnType ViewColumnName="CONDITIONVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="ACTIONRULEPERMISSIONLISTVIEW" View="ACTIONRULEPERMISSIONVIEW" QueryID="" ShowPaging="false"  EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="PERMISSIONACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="LINKACTIONRULEPERMISSIONLISTVIEW" View="ACTIONRULEPERMISSIONVIEW" QueryID="" ShowPaging="false"  EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="PERMISSIONACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="CREATEACTIONRULEPERMISSIONLISTVIEW" View="ACTIONRULEPERMISSIONVIEW" QueryID="" ShowPaging="false"  EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value2]'" AllowCheckBox="true"
+AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="PERMISSIONACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="ACTIONRULEMESSAGELISTVIEW" View="ACTIONRULEMESSAGEVIEW" QueryID="" EntityFilter="" ShowPaging="false" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="MESSAGEACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="LINKACTIONRULEMESSAGELISTVIEW" View="ACTIONRULEMESSAGEVIEW" QueryID="" EntityFilter="" ShowPaging="false" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="MESSAGEACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="CREATEACTIONRULEMESSAGELISTVIEW" View="ACTIONRULEMESSAGEVIEW" QueryID="" EntityFilter="" ShowPaging="false"  Filter="ACTIONRULEID='[Tree_Current_value2]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="MESSAGEACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="AuthorizeLogListView" View="AUTHORIZELOGVIEW" AllowCheckBox="false" AllowIconType="false" Filter="EID='[List_EID]'" IsSelectExporting="false" IsAllExporting="false" IsSelectPrinting="false" IsAllPrinting="false" AutoLoadData="true" IsTemplate="false" />
+</root>

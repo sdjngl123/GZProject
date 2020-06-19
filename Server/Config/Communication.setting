@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="DefaultAlertType" Value="InternalMail" ToClient="false" Description="系统默认的发送消息类型，可选值InstantMessage（内部消息），RTX，Email" />
+  <AppSet Key="RTXMessageServer" Value="http://localhost:8012" ToClient="false" Description="RTX服务器上开启的发送消息的接口地址" />
+  <AppSet Key="RTXKeepSeconds" Value="10" ToClient="false" Description="发送RTX消息的默认超时时间" />
+  <AppSet Key="MailServer" Value="10.0.81.105" ToClient="false" Description="邮件服务器地址（ip地址或域名）" />
+  <AppSet Key="MailServerPort" Value="25" ToClient="false" Description="邮件服务器的端口" />
+  <AppSet Key="MailDomain" Value="" ToClient="false" Description="邮件服务器的域名，一般情况下可不输入" />
+  <AppSet Key="MailUserName" Value="system@system.com" ToClient="false" Description="登陆邮箱服务器的用户名" />
+  <AppSet Key="MailPassword" Value="123456" ToClient="false" Description="登陆邮箱服务器的密码" />
+  <AppSet Key="MailFrom" Value="system@system.com" ToClient="false" Description="发送邮件时所用的发件人地址，例如system@system.com" />
+  <AppSet Key="MailEnableSSL" Value="false" ToClient="false" Description="是否启用SSL" />
+
+  <!--微信公众号发送-->
+  <AppSet Key="WeChartUrl" Value="http://10.0.81.105/biz/wx/wxTransmitMessage" ToClient="false" Description="发送微信消息的url" />
+  <AppSet Key="WeChartMsgSource" Value="华天软件 SmartPDM" ToClient="false" Description="发送微信消息的信息来源" />
+  <AppSet Key="HaveOldContent" Value="true" ToClient="false" Description="回复邮件时是否携带原邮件信息" />
+  <AppSet Key="MailPluginObjectType" Value="WORKFLOWINFO" ToClient="false" Description="邮件附件类型限制,例如：A;B" />
+
+  <!--企业微信发送-->
+  <AppSet Key="QYWeiXinCorpID" Value="wxbe5bc8702c187809" ToClient="false" Description="企业微信的企业ID" />
+  <AppSet Key="QYWeiXinSecret" Value="k1Nv0450ngQEQky9L3tSO0dSJFiMvzINYfEXxmNW4913U" ToClient="false" Description="企业微信应用密钥" />
+  <AppSet Key="QYWeiXinAgentId" Value="0" ToClient="false" Description="企业微信应用ID" />
+  <!--企业微信URL(禁止改动)-->
+  <AppSet Key="QYWeiXinUrlToken" Value="https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=[CorpID]&amp;corpsecret=[Secret]" ToClient="false" Description="企业微信获取Token的URL" />
+  <AppSet Key="QYWeiXinUrlDepart" Value="https://qyapi.weixin.qq.com/cgi-bin/department/list?access_token=[ACCESS_TOKEN]&amp;id=[ID]" ToClient="false" Description="企业微信获取部门信息的URL" />
+  <AppSet Key="QYWeiXinUrlMember" Value="https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?access_token=[ACCESS_TOKEN]&amp;department_id=[DEPARTMENT_ID]&amp;fetch_child=[FETCH_CHILD]" ToClient="false" Description="企业微信获取部门成员的URL" />
+  <AppSet Key="QYWeiXinUrlMemberDetail" Value="https://qyapi.weixin.qq.com/cgi-bin/user/list?access_token=[ACCESS_TOKEN]&amp;department_id=[DEPARTMENT_ID]&amp;fetch_child=[FETCH_CHILD]" ToClient="false" Description="企业微信获取部门成员详情的URL" />
+  <AppSet Key="QYWeiXinUrlSendMsg" Value="https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=[ACCESS_TOKEN]" ToClient="false" Description="企业微信发送应用消息的URL" />
+</root>

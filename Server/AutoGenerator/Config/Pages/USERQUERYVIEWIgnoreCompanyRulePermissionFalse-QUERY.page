@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="USERQUERYVIEWIgnoreCompanyRulePermissionFalse-QUERY">
+  <Settings Key="height" Value="88"/>
+  <Settings Key="width" Value="49"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+    <PageHandler HandlerName ="GetQueryData" Script="var bCheck=true;var QueyData =[];{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+var value = c.GetText();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'ENAME',QUERYOPERATOR:'',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+}{
+var c = pageEvent.o.GetControl('ECODE_Value');
+if(c.id!=''){
+var value = c.GetText();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'ECODE',QUERYOPERATOR:'',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+};if(bCheck){return QueyData;}"/>
+    <PageHandler HandlerName="OnReset" Script="var ctrlEvent={};ctrlEvent.o=pageEvent.o.GetControl('btnReset');
+{
+var o = ctrlEvent.o.OtherControl('ENAME_Value');
+if(o.id!=''){
+o.SetText('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('ECODE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+};"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="ENAME_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="ENAME_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="R-1" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="USERQUERYVIEWIgnoreCompanyRulePermissionFalse-QUERY.ENAMEHeader" />
+</PageControl>
+
+<PageControl ControlID="ENAME_Value" ParentID="R-1" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="ECODE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="ECODE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE_Label" ParentID="R-2" TypeName="Label" >
+  <Settings Key="position" Value="Left"/>
+  <Settings Key="textId" Value="USERQUERYVIEWIgnoreCompanyRulePermissionFalse-QUERY.ECODEHeader" />
+</PageControl>
+
+<PageControl ControlID="ECODE_Value" ParentID="R-2" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnQuery"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnReset"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="var bCheck=true;var FilterString ='';var EntityFilterString =''; {
+	var c = ctrlEvent.o.OtherControl('ENAME_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','ENAME','',value,false);
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+}{
+	var c = ctrlEvent.o.OtherControl('ECODE_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','ECODE','',value,false);
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+};if(bCheck){var QueryData = HoteamUI.Page.FirePageEvent(ctrlEvent.o.ContainerID(), 'GetQueryData');if (!QueryData){QueryData=[];};FilterString = FilterString.substring(4);EntityFilterString = EntityFilterString.substring(4); HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:FilterString,EntityFilterString:EntityFilterString,ButtonType:'Query',QueryData:QueryData});}"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="
+{
+var o = ctrlEvent.o.OtherControl('ENAME_Value');
+if(o.id!=''){
+o.SetText('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('ECODE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+};HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:'1=1',EntityFilterString:'1=1',ButtonType:'Reset',QueryData:[]});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

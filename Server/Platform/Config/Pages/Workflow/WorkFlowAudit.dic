@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkFlowAudit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">任务评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task review</LocalizedLabel>
+    </Label>
+    <Label Name="FlowName">
+      <LocalizedLabel LanguageRef="zhs">流程名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Name</LocalizedLabel>
+    </Label>
+    <Label Name="Result">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="Opinion">
+      <LocalizedLabel LanguageRef="zhs">意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Comment</LocalizedLabel>
+    </Label>
+    <Label Name="Opinion">
+      <LocalizedLabel LanguageRef="zhs">意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Comment</LocalizedLabel>
+    </Label>
+    <Label Name="Commit">
+      <LocalizedLabel LanguageRef="zhs">提交</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Submit</LocalizedLabel>
+    </Label>
+    <Label Name="SetObejctPermissionByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">成功设置流程对象权限。流程名称：{0}，节点名称：{1}，授予人：{2}，权限：{3}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process object permissions are succeeded set. Process name: {0}, node name: {1}, granted person: {2}, permissions: {3}</LocalizedLabel>
+    </Label>
+    <Label Name="ClearObejctPermissionByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">执行人评审完毕，成功收回流程对象权限。流程名称：{0}，节点名称：{1}，授予人：{2}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process objects permissions are succeeded called back after the completion of the executive review. Process name: {0}, node name: {1}, granted person: {2}</LocalizedLabel>
+    </Label>
+    <Label Name="ClearAllObejctPermissionByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">节点执行完毕，成功收回流程对象所有权限。流程名称：{0}，节点名称：{1}</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All rights of process objects permissions are called back after the executes of node completed. Process name: {0}, node name: {1}</LocalizedLabel>
+    </Label>
+    <Label Name="TaskOpinionRegex">
+      <LocalizedLabel LanguageRef="zhs">最大长度200！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 200!</LocalizedLabel>
+    </Label>
+    <Label Name="RollbackTaskSuccess">
+      <LocalizedLabel LanguageRef="zhs">任务撤回成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task revocation succeeded</LocalizedLabel>
+    </Label>
+    <Label Name="EmptyAttachError">
+      <LocalizedLabel LanguageRef="zhs">附件不能为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The attachment cannot be null!</LocalizedLabel>
+    </Label>
+    <Label Name="AssistAuditError">
+      <LocalizedLabel LanguageRef="zhs">该流程已设置协助评审，协助人员都评审完成后才能提交评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistAuditError</LocalizedLabel>
+    </Label>
+    <Label Name="IsNotAssistAudit">
+      <LocalizedLabel LanguageRef="zhs">只有该节点的任务类型为“协助审批”时才允许设置协助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNotAssistAudit</LocalizedLabel>
+    </Label>
+    <Label Name="AssistAuditSuccess">
+      <LocalizedLabel LanguageRef="zhs">设置成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistAuditSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="CannotAssistAudit">
+      <LocalizedLabel LanguageRef="zhs">您已被设为协助评审用户，不允许再设置其他用户！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistAuditSuccess</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

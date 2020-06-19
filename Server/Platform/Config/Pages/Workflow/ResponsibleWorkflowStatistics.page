@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ResponsibleWorkflowStatistics">
+    <PageHandlers>
+    </PageHandlers>
+    <PageControls>
+        <PageControl ControlID="StatisticsContainer" ParentID="" TypeName="LayoutContainer">
+            <Settings Key="type" Value="vertical"/>
+            <Settings Key="padding" Value="8px 0 0 0"/>
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="StatisticsGrid"/>
+            </Settings>
+        </PageControl>
+
+        <PageControl ControlID="StatisticsGrid" ParentID="StatisticsContainer" TypeName="Grid">
+            <PageHandlers>
+                <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_WorkflowStatistics_ResponsibleWorkflowLoadRows(ctrlEvent);"/>
+            </PageHandlers>
+            <Settings Key="multiselect" Value="false" />
+            <Settings Key="autoLoadData" Value="true" />
+            <Settings Key="item0" >
+                <Settings Key="textId" Value="WorkflowListStatistics.Img" />
+                <Settings Key="name" Value="IMGICONTYPE" />
+                <Settings Key="colType" Value="image" />
+                <!--<Settings Key="width" Value="80%" />-->
+                <Settings Key="sortable" Value="false" />
+                <Settings Key="resizable" Value="false" />
+            </Settings>
+            <Settings Key="item1" >
+                <Settings Key="textId" Value="WorkflowTaskStatistics.EID" />
+                <Settings Key="name" Value="EID" />
+                <Settings Key="width" Value="0" />
+                <Settings Key="colType" Value="hidden" />
+                <Settings Key="sortable" Value="false" />
+                <Settings Key="resizable" Value="false" />
+            </Settings>
+            <Settings Key="item2" >
+                <Settings Key="textId" Value="WorkflowListStatistics.Name" />
+                <Settings Key="name" Value="NAME" />
+                <Settings Key="colType" Value="link" />
+                <Settings Key="jsmethod" Value="InforCenter_Platform_ListViewCtrl_ColumnLinkOnClick" />
+                <!--<Settings Key="width" Value="80%" />-->
+                <Settings Key="sortable" Value="false" />
+                <Settings Key="resizable" Value="true" />
+            </Settings>
+            <Settings Key="item3" >
+                <Settings Key="textId" Value="WorkflowListStatistics.Count" />
+                <Settings Key="name" Value="COUNT" />
+                <!--<Settings Key="width" Value="20%" />-->
+                <Settings Key="sortable" Value="false" />
+                <Settings Key="resizable" Value="false" />
+            </Settings>
+        </PageControl>
+    </PageControls>
+</root>
+

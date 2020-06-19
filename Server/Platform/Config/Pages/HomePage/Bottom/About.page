@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="About">
+  <Settings Key="title" Value="About.Title"/>
+  <Settings Key="height" Value="500"/>
+  <Settings Key="width" Value="750"/>
+  <PageControls>
+    <PageControl ControlID="About_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="About_Text"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="64"/>
+        <Settings Key="childid" Value="About_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="About_Text" ParentID="About_LayoutContainer" TypeName="TextBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_About_CtrlInit(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>
+    <!--AboutBtn-->
+    <PageControl ControlID="About_Btn" ParentID="About_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="About_btnOK"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="About_btnOK" ParentID="About_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_About_OKOnClock(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+   
+  </PageControls>
+</root>
+

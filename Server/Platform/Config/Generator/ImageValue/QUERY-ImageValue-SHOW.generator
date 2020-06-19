@@ -1,0 +1,3 @@
+﻿<PageControl ControlID="[FILTERNAME]_Value" ParentID="[PARENTID]" TypeName="Image" >
+  <Settings Key="type" Value="icon"/>
+</PageControl>

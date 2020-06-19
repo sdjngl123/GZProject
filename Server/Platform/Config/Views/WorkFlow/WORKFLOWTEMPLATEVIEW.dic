@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWTEMPLATEVIEWView" IsWeb="true">
+    <Label Name="WORKFLOWTEMPLATEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template view</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTEMPLATEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template view</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="XMLNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template name</LocalizedLabel>
+    </Label>
+    <Label Name="XMLNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template name</LocalizedLabel>
+    </Label>
+    <Label Name="ISRUNHeader">
+      <LocalizedLabel LanguageRef="zhs">启用/禁用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable/disable</LocalizedLabel>
+    </Label>
+    <Label Name="ISRUNCaption">
+      <LocalizedLabel LanguageRef="zhs">是否启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is Enabled</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORCaption">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">模板显示名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">template display name</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTEMPLATETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template type</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTEMPLATETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template type</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">模板分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template Class ID</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">模板分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template Class ID</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="WORKFLOWTEMPLATEVIEWCondition" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ISRUNHeader">
+      <LocalizedLabel LanguageRef="zhs">是否启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is Enabled</LocalizedLabel>
+    </Label>
+    <Label Name="ISRUNCaption">
+      <LocalizedLabel LanguageRef="zhs">是否启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is Enabled</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

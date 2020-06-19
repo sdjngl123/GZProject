@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="WORKFLOWINFO-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度180&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 180&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑工作流</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditWorkflow</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

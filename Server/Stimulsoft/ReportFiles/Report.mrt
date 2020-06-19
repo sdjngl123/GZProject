@@ -1,0 +1,3646 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="114">
+      <DATASETTYPE Ref="2" type="DataTableSource" isKey="true">
+        <Alias>DATASETTYPE</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>FILEEXTENT,System.String</value>
+          <value>VIEWTOOL,System.String</value>
+          <value>DOWNFILTER,System.String</value>
+          <value>ISINTEGRATECAD,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DATASETTYPE</Name>
+        <NameInSource>NewDataSet.DATASETTYPE</NameInSource>
+      </DATASETTYPE>
+      <COUNT_DATASETTYPE Ref="3" type="DataTableSource" isKey="true">
+        <Alias>COUNT_DATASETTYPE</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>COUNTICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>FILEEXTENT,System.String</value>
+          <value>COUNTFILEEXTENT,System.String</value>
+          <value>VIEWTOOL,System.String</value>
+          <value>COUNTVIEWTOOL,System.String</value>
+          <value>DOWNFILTER,System.String</value>
+          <value>COUNTDOWNFILTER,System.String</value>
+          <value>ISINTEGRATECAD,System.String</value>
+          <value>COUNTISINTEGRATECAD,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_DATASETTYPE</Name>
+        <NameInSource>NewDataSet.COUNT_DATASETTYPE</NameInSource>
+      </COUNT_DATASETTYPE>
+      <LIFECYCLE Ref="4" type="DataTableSource" isKey="true">
+        <Alias>LIFECYCLE</Alias>
+        <Columns isList="true" count="12">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>LIFECYCLEINFO,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>XMLNAME,System.String</value>
+          <value>INITSTATE,System.String</value>
+          <value>TYPE,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>LIFECYCLE</Name>
+        <NameInSource>NewDataSet.LIFECYCLE</NameInSource>
+      </LIFECYCLE>
+      <COUNT_LIFECYCLE Ref="5" type="DataTableSource" isKey="true">
+        <Alias>COUNT_LIFECYCLE</Alias>
+        <Columns isList="true" count="24">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>LIFECYCLEINFO,System.String</value>
+          <value>COUNTLIFECYCLEINFO,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+          <value>XMLNAME,System.String</value>
+          <value>COUNTXMLNAME,System.String</value>
+          <value>INITSTATE,System.String</value>
+          <value>COUNTINITSTATE,System.String</value>
+          <value>TYPE,System.String</value>
+          <value>COUNTTYPE,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_LIFECYCLE</Name>
+        <NameInSource>NewDataSet.COUNT_LIFECYCLE</NameInSource>
+      </COUNT_LIFECYCLE>
+      <COMPANY Ref="6" type="DataTableSource" isKey="true">
+        <Alias>COMPANY</Alias>
+        <Columns isList="true" count="12">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ADDRESS,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>SYSTEMUSERID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COMPANY</Name>
+        <NameInSource>NewDataSet.COMPANY</NameInSource>
+      </COMPANY>
+      <COUNT_COMPANY Ref="7" type="DataTableSource" isKey="true">
+        <Alias>COUNT_COMPANY</Alias>
+        <Columns isList="true" count="24">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ADDRESS,System.String</value>
+          <value>COUNTADDRESS,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>COUNTDESCRIPT,System.String</value>
+          <value>SYSTEMUSERID,System.String</value>
+          <value>COUNTSYSTEMUSERID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_COMPANY</Name>
+        <NameInSource>NewDataSet.COUNT_COMPANY</NameInSource>
+      </COUNT_COMPANY>
+      <GROUPINFO Ref="8" type="DataTableSource" isKey="true">
+        <Alias>GROUPINFO</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>PARENTGROUPEID,System.String</value>
+          <value>VAULTINFO,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>MANAGER,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>GROUPINFO</Name>
+        <NameInSource>NewDataSet.GROUPINFO</NameInSource>
+      </GROUPINFO>
+      <COUNT_GROUPINFO Ref="9" type="DataTableSource" isKey="true">
+        <Alias>COUNT_GROUPINFO</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>PARENTGROUPEID,System.String</value>
+          <value>COUNTPARENTGROUPEID,System.String</value>
+          <value>VAULTINFO,System.String</value>
+          <value>COUNTVAULTINFO,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>COUNTDESCRIPT,System.String</value>
+          <value>MANAGER,System.String</value>
+          <value>COUNTMANAGER,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_GROUPINFO</Name>
+        <NameInSource>NewDataSet.COUNT_GROUPINFO</NameInSource>
+      </COUNT_GROUPINFO>
+      <PERSON Ref="10" type="DataTableSource" isKey="true">
+        <Alias>PERSON</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>GENDER,System.String</value>
+          <value>BIRTHDAY,System.String</value>
+          <value>ACADEMICRECORD,System.String</value>
+          <value>PHONE,System.String</value>
+          <value>OFFICENUMBER,System.String</value>
+          <value>FAXNUMBER,System.String</value>
+          <value>EMAIL,System.String</value>
+          <value>ZIPCODE,System.String</value>
+          <value>ADDRESS,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PERSON</Name>
+        <NameInSource>NewDataSet.PERSON</NameInSource>
+      </PERSON>
+      <COUNT_PERSON Ref="11" type="DataTableSource" isKey="true">
+        <Alias>COUNT_PERSON</Alias>
+        <Columns isList="true" count="36">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>COUNTICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>GENDER,System.String</value>
+          <value>COUNTGENDER,System.String</value>
+          <value>BIRTHDAY,System.String</value>
+          <value>COUNTBIRTHDAY,System.String</value>
+          <value>ACADEMICRECORD,System.String</value>
+          <value>COUNTACADEMICRECORD,System.String</value>
+          <value>PHONE,System.String</value>
+          <value>COUNTPHONE,System.String</value>
+          <value>OFFICENUMBER,System.String</value>
+          <value>COUNTOFFICENUMBER,System.String</value>
+          <value>FAXNUMBER,System.String</value>
+          <value>COUNTFAXNUMBER,System.String</value>
+          <value>EMAIL,System.String</value>
+          <value>COUNTEMAIL,System.String</value>
+          <value>ZIPCODE,System.String</value>
+          <value>COUNTZIPCODE,System.String</value>
+          <value>ADDRESS,System.String</value>
+          <value>COUNTADDRESS,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_PERSON</Name>
+        <NameInSource>NewDataSet.COUNT_PERSON</NameInSource>
+      </COUNT_PERSON>
+      <ROLEINFO Ref="12" type="DataTableSource" isKey="true">
+        <Alias>ROLEINFO</Alias>
+        <Columns isList="true" count="10">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ROLEINFO</Name>
+        <NameInSource>NewDataSet.ROLEINFO</NameInSource>
+      </ROLEINFO>
+      <COUNT_ROLEINFO Ref="13" type="DataTableSource" isKey="true">
+        <Alias>COUNT_ROLEINFO</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>COUNTDESCRIPT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_ROLEINFO</Name>
+        <NameInSource>NewDataSet.COUNT_ROLEINFO</NameInSource>
+      </COUNT_ROLEINFO>
+      <USERINFO Ref="14" type="DataTableSource" isKey="true">
+        <Alias>USERINFO</Alias>
+        <Columns isList="true" count="24">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>PERSONEID,System.String</value>
+          <value>PASSWORD,System.String</value>
+          <value>LANGUAGE,System.String</value>
+          <value>TIMEZONE,System.String</value>
+          <value>THEME,System.String</value>
+          <value>HOMEPAGEMODE,System.String</value>
+          <value>AGENTID,System.String</value>
+          <value>AGENTSTARTDATETIME,System.String</value>
+          <value>AGENTENDDATETIME,System.String</value>
+          <value>WENCHATUSER,System.String</value>
+          <value>SIGNATURE,System.String</value>
+          <value>ENAMEPINYIN,System.String</value>
+          <value>QYWEIXINID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>USERINFO</Name>
+        <NameInSource>NewDataSet.USERINFO</NameInSource>
+      </USERINFO>
+      <COUNT_USERINFO Ref="15" type="DataTableSource" isKey="true">
+        <Alias>COUNT_USERINFO</Alias>
+        <Columns isList="true" count="48">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>COUNTICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>PERSONEID,System.String</value>
+          <value>COUNTPERSONEID,System.String</value>
+          <value>PASSWORD,System.String</value>
+          <value>COUNTPASSWORD,System.String</value>
+          <value>LANGUAGE,System.String</value>
+          <value>COUNTLANGUAGE,System.String</value>
+          <value>TIMEZONE,System.String</value>
+          <value>COUNTTIMEZONE,System.String</value>
+          <value>THEME,System.String</value>
+          <value>COUNTTHEME,System.String</value>
+          <value>HOMEPAGEMODE,System.String</value>
+          <value>COUNTHOMEPAGEMODE,System.String</value>
+          <value>AGENTID,System.String</value>
+          <value>COUNTAGENTID,System.String</value>
+          <value>AGENTSTARTDATETIME,System.String</value>
+          <value>COUNTAGENTSTARTDATETIME,System.String</value>
+          <value>AGENTENDDATETIME,System.String</value>
+          <value>COUNTAGENTENDDATETIME,System.String</value>
+          <value>WENCHATUSER,System.String</value>
+          <value>COUNTWENCHATUSER,System.String</value>
+          <value>SIGNATURE,System.String</value>
+          <value>COUNTSIGNATURE,System.String</value>
+          <value>ENAMEPINYIN,System.String</value>
+          <value>COUNTENAMEPINYIN,System.String</value>
+          <value>QYWEIXINID,System.String</value>
+          <value>COUNTQYWEIXINID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_USERINFO</Name>
+        <NameInSource>NewDataSet.COUNT_USERINFO</NameInSource>
+      </COUNT_USERINFO>
+      <WORKFLOWATTACHINFO Ref="16" type="DataTableSource" isKey="true">
+        <Alias>WORKFLOWATTACHINFO</Alias>
+        <Columns isList="true" count="14">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>WORKFLOWID,System.String</value>
+          <value>ATTACHTYPE,System.String</value>
+          <value>OBJECTEID,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>OBJECTINITSTATE,System.String</value>
+          <value>INITSTAGESTATEID,System.String</value>
+          <value>WHETHERORNOTAUDIT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>WORKFLOWATTACHINFO</Name>
+        <NameInSource>NewDataSet.WORKFLOWATTACHINFO</NameInSource>
+      </WORKFLOWATTACHINFO>
+      <COUNT_WORKFLOWATTACHINFO Ref="17" type="DataTableSource" isKey="true">
+        <Alias>COUNT_WORKFLOWATTACHINFO</Alias>
+        <Columns isList="true" count="28">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>WORKFLOWID,System.String</value>
+          <value>COUNTWORKFLOWID,System.String</value>
+          <value>ATTACHTYPE,System.String</value>
+          <value>COUNTATTACHTYPE,System.String</value>
+          <value>OBJECTEID,System.String</value>
+          <value>COUNTOBJECTEID,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>OBJECTINITSTATE,System.String</value>
+          <value>COUNTOBJECTINITSTATE,System.String</value>
+          <value>INITSTAGESTATEID,System.String</value>
+          <value>COUNTINITSTAGESTATEID,System.String</value>
+          <value>WHETHERORNOTAUDIT,System.String</value>
+          <value>COUNTWHETHERORNOTAUDIT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_WORKFLOWATTACHINFO</Name>
+        <NameInSource>NewDataSet.COUNT_WORKFLOWATTACHINFO</NameInSource>
+      </COUNT_WORKFLOWATTACHINFO>
+      <WORKFLOWINFO Ref="18" type="DataTableSource" isKey="true">
+        <Alias>WORKFLOWINFO</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>FLOWADMINISTRATOR,System.String</value>
+          <value>FLOWPARAMETERS,System.String</value>
+          <value>FLOWTEMPLATE,System.String</value>
+          <value>ISCOMMONMANGEMENT,System.String</value>
+          <value>TEMPLATETYPE,System.String</value>
+          <value>EXECLINES,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>WORKFLOWINFO</Name>
+        <NameInSource>NewDataSet.WORKFLOWINFO</NameInSource>
+      </WORKFLOWINFO>
+      <COUNT_WORKFLOWINFO Ref="19" type="DataTableSource" isKey="true">
+        <Alias>COUNT_WORKFLOWINFO</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>FLOWADMINISTRATOR,System.String</value>
+          <value>COUNTFLOWADMINISTRATOR,System.String</value>
+          <value>FLOWPARAMETERS,System.String</value>
+          <value>COUNTFLOWPARAMETERS,System.String</value>
+          <value>FLOWTEMPLATE,System.String</value>
+          <value>COUNTFLOWTEMPLATE,System.String</value>
+          <value>ISCOMMONMANGEMENT,System.String</value>
+          <value>COUNTISCOMMONMANGEMENT,System.String</value>
+          <value>TEMPLATETYPE,System.String</value>
+          <value>COUNTTEMPLATETYPE,System.String</value>
+          <value>EXECLINES,System.String</value>
+          <value>COUNTEXECLINES,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_WORKFLOWINFO</Name>
+        <NameInSource>NewDataSet.COUNT_WORKFLOWINFO</NameInSource>
+      </COUNT_WORKFLOWINFO>
+      <WORKFLOWTASKINFO Ref="20" type="DataTableSource" isKey="true">
+        <Alias>WORKFLOWTASKINFO</Alias>
+        <Columns isList="true" count="28">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>WORKFLOWID,System.String</value>
+          <value>WORKFLOWNAME,System.String</value>
+          <value>FLOWTEMPLATE,System.String</value>
+          <value>FLOWNODEID,System.String</value>
+          <value>TASKFLAG,System.String</value>
+          <value>TASKUID,System.String</value>
+          <value>TASKACTORID,System.String</value>
+          <value>AGENTUSERID,System.String</value>
+          <value>AGENTSTARTDATETIME,System.String</value>
+          <value>AGENTENDDATETIME,System.String</value>
+          <value>COMPLETEUSER,System.String</value>
+          <value>COMPLETETIME,System.String</value>
+          <value>TASKRESULT,System.String</value>
+          <value>TASKOPINION,System.String</value>
+          <value>ISCOMMONMANGEMENT,System.String</value>
+          <value>PREVIOUSNODEID,System.String</value>
+          <value>PLANNEDENDDATE,System.String</value>
+          <value>ADJECTIVEREMINDTIME,System.String</value>
+          <value>PREVIOUSTASKUID,System.String</value>
+          <value>TEMPLATETYPE,System.String</value>
+          <value>ASSISTTASKID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>WORKFLOWTASKINFO</Name>
+        <NameInSource>NewDataSet.WORKFLOWTASKINFO</NameInSource>
+      </WORKFLOWTASKINFO>
+      <COUNT_WORKFLOWTASKINFO Ref="21" type="DataTableSource" isKey="true">
+        <Alias>COUNT_WORKFLOWTASKINFO</Alias>
+        <Columns isList="true" count="56">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>WORKFLOWID,System.String</value>
+          <value>COUNTWORKFLOWID,System.String</value>
+          <value>WORKFLOWNAME,System.String</value>
+          <value>COUNTWORKFLOWNAME,System.String</value>
+          <value>FLOWTEMPLATE,System.String</value>
+          <value>COUNTFLOWTEMPLATE,System.String</value>
+          <value>FLOWNODEID,System.String</value>
+          <value>COUNTFLOWNODEID,System.String</value>
+          <value>TASKFLAG,System.String</value>
+          <value>COUNTTASKFLAG,System.String</value>
+          <value>TASKUID,System.String</value>
+          <value>COUNTTASKUID,System.String</value>
+          <value>TASKACTORID,System.String</value>
+          <value>COUNTTASKACTORID,System.String</value>
+          <value>AGENTUSERID,System.String</value>
+          <value>COUNTAGENTUSERID,System.String</value>
+          <value>AGENTSTARTDATETIME,System.String</value>
+          <value>COUNTAGENTSTARTDATETIME,System.String</value>
+          <value>AGENTENDDATETIME,System.String</value>
+          <value>COUNTAGENTENDDATETIME,System.String</value>
+          <value>COMPLETEUSER,System.String</value>
+          <value>COUNTCOMPLETEUSER,System.String</value>
+          <value>COMPLETETIME,System.String</value>
+          <value>COUNTCOMPLETETIME,System.String</value>
+          <value>TASKRESULT,System.String</value>
+          <value>COUNTTASKRESULT,System.String</value>
+          <value>TASKOPINION,System.String</value>
+          <value>COUNTTASKOPINION,System.String</value>
+          <value>ISCOMMONMANGEMENT,System.String</value>
+          <value>COUNTISCOMMONMANGEMENT,System.String</value>
+          <value>PREVIOUSNODEID,System.String</value>
+          <value>COUNTPREVIOUSNODEID,System.String</value>
+          <value>PLANNEDENDDATE,System.String</value>
+          <value>COUNTPLANNEDENDDATE,System.String</value>
+          <value>ADJECTIVEREMINDTIME,System.String</value>
+          <value>COUNTADJECTIVEREMINDTIME,System.String</value>
+          <value>PREVIOUSTASKUID,System.String</value>
+          <value>COUNTPREVIOUSTASKUID,System.String</value>
+          <value>TEMPLATETYPE,System.String</value>
+          <value>COUNTTEMPLATETYPE,System.String</value>
+          <value>ASSISTTASKID,System.String</value>
+          <value>COUNTASSISTTASKID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_WORKFLOWTASKINFO</Name>
+        <NameInSource>NewDataSet.COUNT_WORKFLOWTASKINFO</NameInSource>
+      </COUNT_WORKFLOWTASKINFO>
+      <WORKFLOWTEMPLATE Ref="22" type="DataTableSource" isKey="true">
+        <Alias>WORKFLOWTEMPLATE</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>EUID,System.String</value>
+          <value>ELASTINSERT,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>WORKFLOWTEMPLATETYPE,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>ISRUN,System.String</value>
+          <value>FLOWADMINISTRATOR,System.String</value>
+          <value>WORKFLOWTEMPLATEINFO,System.String</value>
+          <value>PEID,System.String</value>
+          <value>XMLNAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>WORKFLOWTEMPLATE</Name>
+        <NameInSource>NewDataSet.WORKFLOWTEMPLATE</NameInSource>
+      </WORKFLOWTEMPLATE>
+      <COUNT_WORKFLOWTEMPLATE Ref="23" type="DataTableSource" isKey="true">
+        <Alias>COUNT_WORKFLOWTEMPLATE</Alias>
+        <Columns isList="true" count="36">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>COUNTEVERSION,System.String</value>
+          <value>EUID,System.String</value>
+          <value>COUNTEUID,System.String</value>
+          <value>ELASTINSERT,System.String</value>
+          <value>COUNTELASTINSERT,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>WORKFLOWTEMPLATETYPE,System.String</value>
+          <value>COUNTWORKFLOWTEMPLATETYPE,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+          <value>ISRUN,System.String</value>
+          <value>COUNTISRUN,System.String</value>
+          <value>FLOWADMINISTRATOR,System.String</value>
+          <value>COUNTFLOWADMINISTRATOR,System.String</value>
+          <value>WORKFLOWTEMPLATEINFO,System.String</value>
+          <value>COUNTWORKFLOWTEMPLATEINFO,System.String</value>
+          <value>PEID,System.String</value>
+          <value>COUNTPEID,System.String</value>
+          <value>XMLNAME,System.String</value>
+          <value>COUNTXMLNAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_WORKFLOWTEMPLATE</Name>
+        <NameInSource>NewDataSet.COUNT_WORKFLOWTEMPLATE</NameInSource>
+      </COUNT_WORKFLOWTEMPLATE>
+      <WORKFLOWCLASSIFY Ref="24" type="DataTableSource" isKey="true">
+        <Alias>WORKFLOWCLASSIFY</Alias>
+        <Columns isList="true" count="10">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>PEID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>WORKFLOWCLASSIFY</Name>
+        <NameInSource>NewDataSet.WORKFLOWCLASSIFY</NameInSource>
+      </WORKFLOWCLASSIFY>
+      <COUNT_WORKFLOWCLASSIFY Ref="25" type="DataTableSource" isKey="true">
+        <Alias>COUNT_WORKFLOWCLASSIFY</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+          <value>PEID,System.String</value>
+          <value>COUNTPEID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_WORKFLOWCLASSIFY</Name>
+        <NameInSource>NewDataSet.COUNT_WORKFLOWCLASSIFY</NameInSource>
+      </COUNT_WORKFLOWCLASSIFY>
+      <COMPANYRULE Ref="26" type="DataTableSource" isKey="true">
+        <Alias>COMPANYRULE</Alias>
+        <Columns isList="true" count="10">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>PEID,System.String</value>
+          <value>USEBY,System.String</value>
+          <value>CREATEPERMISSIONOBJECTTYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COMPANYRULE</Name>
+        <NameInSource>NewDataSet.COMPANYRULE</NameInSource>
+      </COMPANYRULE>
+      <COUNT_COMPANYRULE Ref="27" type="DataTableSource" isKey="true">
+        <Alias>COUNT_COMPANYRULE</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>PEID,System.String</value>
+          <value>COUNTPEID,System.String</value>
+          <value>USEBY,System.String</value>
+          <value>COUNTUSEBY,System.String</value>
+          <value>CREATEPERMISSIONOBJECTTYPE,System.String</value>
+          <value>COUNTCREATEPERMISSIONOBJECTTYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_COMPANYRULE</Name>
+        <NameInSource>NewDataSet.COUNT_COMPANYRULE</NameInSource>
+      </COUNT_COMPANYRULE>
+      <COMPANYRULECONDITION Ref="28" type="DataTableSource" isKey="true">
+        <Alias>COMPANYRULECONDITION</Alias>
+        <Columns isList="true" count="8">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ACTIONRULEID,System.String</value>
+          <value>OPERATOR,System.String</value>
+          <value>CONDITIONVALUE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COMPANYRULECONDITION</Name>
+        <NameInSource>NewDataSet.COMPANYRULECONDITION</NameInSource>
+      </COMPANYRULECONDITION>
+      <COUNT_COMPANYRULECONDITION Ref="29" type="DataTableSource" isKey="true">
+        <Alias>COUNT_COMPANYRULECONDITION</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ACTIONRULEID,System.String</value>
+          <value>COUNTACTIONRULEID,System.String</value>
+          <value>OPERATOR,System.String</value>
+          <value>COUNTOPERATOR,System.String</value>
+          <value>CONDITIONVALUE,System.String</value>
+          <value>COUNTCONDITIONVALUE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_COMPANYRULECONDITION</Name>
+        <NameInSource>NewDataSet.COUNT_COMPANYRULECONDITION</NameInSource>
+      </COUNT_COMPANYRULECONDITION>
+      <COMPANYRULEOBJECT Ref="30" type="DataTableSource" isKey="true">
+        <Alias>COMPANYRULEOBJECT</Alias>
+        <Columns isList="true" count="7">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COMPANYRULEID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COMPANYRULEOBJECT</Name>
+        <NameInSource>NewDataSet.COMPANYRULEOBJECT</NameInSource>
+      </COMPANYRULEOBJECT>
+      <COUNT_COMPANYRULEOBJECT Ref="31" type="DataTableSource" isKey="true">
+        <Alias>COUNT_COMPANYRULEOBJECT</Alias>
+        <Columns isList="true" count="14">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>COMPANYRULEID,System.String</value>
+          <value>COUNTCOMPANYRULEID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_COMPANYRULEOBJECT</Name>
+        <NameInSource>NewDataSet.COUNT_COMPANYRULEOBJECT</NameInSource>
+      </COUNT_COMPANYRULEOBJECT>
+      <COMPANYRULEPERMISSION Ref="32" type="DataTableSource" isKey="true">
+        <Alias>COMPANYRULEPERMISSION</Alias>
+        <Columns isList="true" count="8">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ACTIONRULEID,System.String</value>
+          <value>PERMISSIONACTORVALUE,System.String</value>
+          <value>PERMISSIONACTIONVALUE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COMPANYRULEPERMISSION</Name>
+        <NameInSource>NewDataSet.COMPANYRULEPERMISSION</NameInSource>
+      </COMPANYRULEPERMISSION>
+      <COUNT_COMPANYRULEPERMISSION Ref="33" type="DataTableSource" isKey="true">
+        <Alias>COUNT_COMPANYRULEPERMISSION</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ACTIONRULEID,System.String</value>
+          <value>COUNTACTIONRULEID,System.String</value>
+          <value>PERMISSIONACTORVALUE,System.String</value>
+          <value>COUNTPERMISSIONACTORVALUE,System.String</value>
+          <value>PERMISSIONACTIONVALUE,System.String</value>
+          <value>COUNTPERMISSIONACTIONVALUE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_COMPANYRULEPERMISSION</Name>
+        <NameInSource>NewDataSet.COUNT_COMPANYRULEPERMISSION</NameInSource>
+      </COUNT_COMPANYRULEPERMISSION>
+      <CODEKIND Ref="34" type="DataTableSource" isKey="true">
+        <Alias>CODEKIND</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CODEKIND</Name>
+        <NameInSource>NewDataSet.CODEKIND</NameInSource>
+      </CODEKIND>
+      <COUNT_CODEKIND Ref="35" type="DataTableSource" isKey="true">
+        <Alias>COUNT_CODEKIND</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>COUNTOWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>COUNTOWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_CODEKIND</Name>
+        <NameInSource>NewDataSet.COUNT_CODEKIND</NameInSource>
+      </COUNT_CODEKIND>
+      <CODEPERMISSION Ref="36" type="DataTableSource" isKey="true">
+        <Alias>CODEPERMISSION</Alias>
+        <Columns isList="true" count="9">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>OBJECTID,System.String</value>
+          <value>PERMISSIONACTORTYPE,System.String</value>
+          <value>PERMISSIONACTORVALUE,System.String</value>
+          <value>PERMISSIONEXPIREVALUE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CODEPERMISSION</Name>
+        <NameInSource>NewDataSet.CODEPERMISSION</NameInSource>
+      </CODEPERMISSION>
+      <COUNT_CODEPERMISSION Ref="37" type="DataTableSource" isKey="true">
+        <Alias>COUNT_CODEPERMISSION</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>OBJECTID,System.String</value>
+          <value>COUNTOBJECTID,System.String</value>
+          <value>PERMISSIONACTORTYPE,System.String</value>
+          <value>COUNTPERMISSIONACTORTYPE,System.String</value>
+          <value>PERMISSIONACTORVALUE,System.String</value>
+          <value>COUNTPERMISSIONACTORVALUE,System.String</value>
+          <value>PERMISSIONEXPIREVALUE,System.String</value>
+          <value>COUNTPERMISSIONEXPIREVALUE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_CODEPERMISSION</Name>
+        <NameInSource>NewDataSet.COUNT_CODEPERMISSION</NameInSource>
+      </COUNT_CODEPERMISSION>
+      <CODERES Ref="38" type="DataTableSource" isKey="true">
+        <Alias>CODERES</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>CODES,System.String</value>
+          <value>ORDINAL,System.String</value>
+          <value>APPLYER,System.String</value>
+          <value>APPLYDATE,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>OBJECTID,System.String</value>
+          <value>CODEKINDID,System.String</value>
+          <value>GENERATORPATH,System.String</value>
+          <value>PROPERTY,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CODERES</Name>
+        <NameInSource>NewDataSet.CODERES</NameInSource>
+      </CODERES>
+      <COUNT_CODERES Ref="39" type="DataTableSource" isKey="true">
+        <Alias>COUNT_CODERES</Alias>
+        <Columns isList="true" count="36">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>CODES,System.String</value>
+          <value>COUNTCODES,System.String</value>
+          <value>ORDINAL,System.String</value>
+          <value>COUNTORDINAL,System.String</value>
+          <value>APPLYER,System.String</value>
+          <value>COUNTAPPLYER,System.String</value>
+          <value>APPLYDATE,System.String</value>
+          <value>COUNTAPPLYDATE,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>OBJECTID,System.String</value>
+          <value>COUNTOBJECTID,System.String</value>
+          <value>CODEKINDID,System.String</value>
+          <value>COUNTCODEKINDID,System.String</value>
+          <value>GENERATORPATH,System.String</value>
+          <value>COUNTGENERATORPATH,System.String</value>
+          <value>PROPERTY,System.String</value>
+          <value>COUNTPROPERTY,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_CODERES</Name>
+        <NameInSource>NewDataSet.COUNT_CODERES</NameInSource>
+      </COUNT_CODERES>
+      <CODERULE Ref="40" type="DataTableSource" isKey="true">
+        <Alias>CODERULE</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>LENGTH,System.String</value>
+          <value>MARKCHAR,System.String</value>
+          <value>ORDERNUM,System.String</value>
+          <value>THICKRULE,System.String</value>
+          <value>THINRULE,System.String</value>
+          <value>PARENTCODERULE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CODERULE</Name>
+        <NameInSource>NewDataSet.CODERULE</NameInSource>
+      </CODERULE>
+      <COUNT_CODERULE Ref="41" type="DataTableSource" isKey="true">
+        <Alias>COUNT_CODERULE</Alias>
+        <Columns isList="true" count="32">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+          <value>LENGTH,System.String</value>
+          <value>COUNTLENGTH,System.String</value>
+          <value>MARKCHAR,System.String</value>
+          <value>COUNTMARKCHAR,System.String</value>
+          <value>ORDERNUM,System.String</value>
+          <value>COUNTORDERNUM,System.String</value>
+          <value>THICKRULE,System.String</value>
+          <value>COUNTTHICKRULE,System.String</value>
+          <value>THINRULE,System.String</value>
+          <value>COUNTTHINRULE,System.String</value>
+          <value>PARENTCODERULE,System.String</value>
+          <value>COUNTPARENTCODERULE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_CODERULE</Name>
+        <NameInSource>NewDataSet.COUNT_CODERULE</NameInSource>
+      </COUNT_CODERULE>
+      <CODEVALUE Ref="42" type="DataTableSource" isKey="true">
+        <Alias>CODEVALUE</Alias>
+        <Columns isList="true" count="15">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>CODEVALUE,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>KINDID,System.String</value>
+          <value>RULEID,System.String</value>
+          <value>SEGMENTID,System.String</value>
+          <value>PARENTVALUE,System.String</value>
+          <value>PVALUEID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CODEVALUE</Name>
+        <NameInSource>NewDataSet.CODEVALUE</NameInSource>
+      </CODEVALUE>
+      <COUNT_CODEVALUE Ref="43" type="DataTableSource" isKey="true">
+        <Alias>COUNT_CODEVALUE</Alias>
+        <Columns isList="true" count="30">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>CODEVALUE,System.String</value>
+          <value>COUNTCODEVALUE,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+          <value>KINDID,System.String</value>
+          <value>COUNTKINDID,System.String</value>
+          <value>RULEID,System.String</value>
+          <value>COUNTRULEID,System.String</value>
+          <value>SEGMENTID,System.String</value>
+          <value>COUNTSEGMENTID,System.String</value>
+          <value>PARENTVALUE,System.String</value>
+          <value>COUNTPARENTVALUE,System.String</value>
+          <value>PVALUEID,System.String</value>
+          <value>COUNTPVALUEID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_CODEVALUE</Name>
+        <NameInSource>NewDataSet.COUNT_CODEVALUE</NameInSource>
+      </COUNT_CODEVALUE>
+      <CODEVALUEPERMISSION Ref="44" type="DataTableSource" isKey="true">
+        <Alias>CODEVALUEPERMISSION</Alias>
+        <Columns isList="true" count="8">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>CODEVALUEPERMISSION,System.String</value>
+          <value>CODEVALUEID,System.String</value>
+          <value>CODEVALUEPERMISSIONTEXT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CODEVALUEPERMISSION</Name>
+        <NameInSource>NewDataSet.CODEVALUEPERMISSION</NameInSource>
+      </CODEVALUEPERMISSION>
+      <COUNT_CODEVALUEPERMISSION Ref="45" type="DataTableSource" isKey="true">
+        <Alias>COUNT_CODEVALUEPERMISSION</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>CODEVALUEPERMISSION,System.String</value>
+          <value>COUNTCODEVALUEPERMISSION,System.String</value>
+          <value>CODEVALUEID,System.String</value>
+          <value>COUNTCODEVALUEID,System.String</value>
+          <value>CODEVALUEPERMISSIONTEXT,System.String</value>
+          <value>COUNTCODEVALUEPERMISSIONTEXT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_CODEVALUEPERMISSION</Name>
+        <NameInSource>NewDataSet.COUNT_CODEVALUEPERMISSION</NameInSource>
+      </COUNT_CODEVALUEPERMISSION>
+      <USERGETHISTORY Ref="46" type="DataTableSource" isKey="true">
+        <Alias>USERGETHISTORY</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>OBJTYPE,System.String</value>
+          <value>FILEDNAME,System.String</value>
+          <value>USERID,System.String</value>
+          <value>PATH,System.String</value>
+          <value>SHOWMODE,System.String</value>
+          <value>CODEKINDID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>USERGETHISTORY</Name>
+        <NameInSource>NewDataSet.USERGETHISTORY</NameInSource>
+      </USERGETHISTORY>
+      <COUNT_USERGETHISTORY Ref="47" type="DataTableSource" isKey="true">
+        <Alias>COUNT_USERGETHISTORY</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>OBJTYPE,System.String</value>
+          <value>COUNTOBJTYPE,System.String</value>
+          <value>FILEDNAME,System.String</value>
+          <value>COUNTFILEDNAME,System.String</value>
+          <value>USERID,System.String</value>
+          <value>COUNTUSERID,System.String</value>
+          <value>PATH,System.String</value>
+          <value>COUNTPATH,System.String</value>
+          <value>SHOWMODE,System.String</value>
+          <value>COUNTSHOWMODE,System.String</value>
+          <value>CODEKINDID,System.String</value>
+          <value>COUNTCODEKINDID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_USERGETHISTORY</Name>
+        <NameInSource>NewDataSet.COUNT_USERGETHISTORY</NameInSource>
+      </COUNT_USERGETHISTORY>
+      <QUERYMACHINEBASEINFO Ref="48" type="DataTableSource" isKey="true">
+        <Alias>QUERYMACHINEBASEINFO</Alias>
+        <Columns isList="true" count="17">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>ROOTPOM,System.String</value>
+          <value>SHOWVIEW,System.String</value>
+          <value>DATALINKMODEL,System.String</value>
+          <value>FIELDKEY,System.String</value>
+          <value>ORGANIZATIONROLE,System.String</value>
+          <value>CUSTOMQUERYNAME,System.String</value>
+          <value>CUSTOMQUERYSQLCOMMAND,System.String</value>
+          <value>SEQUENCE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>QUERYMACHINEBASEINFO</Name>
+        <NameInSource>NewDataSet.QUERYMACHINEBASEINFO</NameInSource>
+      </QUERYMACHINEBASEINFO>
+      <COUNT_QUERYMACHINEBASEINFO Ref="49" type="DataTableSource" isKey="true">
+        <Alias>COUNT_QUERYMACHINEBASEINFO</Alias>
+        <Columns isList="true" count="34">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+          <value>ROOTPOM,System.String</value>
+          <value>COUNTROOTPOM,System.String</value>
+          <value>SHOWVIEW,System.String</value>
+          <value>COUNTSHOWVIEW,System.String</value>
+          <value>DATALINKMODEL,System.String</value>
+          <value>COUNTDATALINKMODEL,System.String</value>
+          <value>FIELDKEY,System.String</value>
+          <value>COUNTFIELDKEY,System.String</value>
+          <value>ORGANIZATIONROLE,System.String</value>
+          <value>COUNTORGANIZATIONROLE,System.String</value>
+          <value>CUSTOMQUERYNAME,System.String</value>
+          <value>COUNTCUSTOMQUERYNAME,System.String</value>
+          <value>CUSTOMQUERYSQLCOMMAND,System.String</value>
+          <value>COUNTCUSTOMQUERYSQLCOMMAND,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>COUNTSEQUENCE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_QUERYMACHINEBASEINFO</Name>
+        <NameInSource>NewDataSet.COUNT_QUERYMACHINEBASEINFO</NameInSource>
+      </COUNT_QUERYMACHINEBASEINFO>
+      <FAVORITEFOLDER Ref="50" type="DataTableSource" isKey="true">
+        <Alias>FAVORITEFOLDER</Alias>
+        <Columns isList="true" count="9">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>FAVORITEFOLDER</Name>
+        <NameInSource>NewDataSet.FAVORITEFOLDER</NameInSource>
+      </FAVORITEFOLDER>
+      <COUNT_FAVORITEFOLDER Ref="51" type="DataTableSource" isKey="true">
+        <Alias>COUNT_FAVORITEFOLDER</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>COUNTOWNUID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_FAVORITEFOLDER</Name>
+        <NameInSource>NewDataSet.COUNT_FAVORITEFOLDER</NameInSource>
+      </COUNT_FAVORITEFOLDER>
+      <INTERNALMAIL Ref="52" type="DataTableSource" isKey="true">
+        <Alias>INTERNALMAIL</Alias>
+        <Columns isList="true" count="27">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>RECIVETIME,System.String</value>
+          <value>RECIVER,System.String</value>
+          <value>SENDTIME,System.String</value>
+          <value>SENDUSER,System.String</value>
+          <value>COPYTOUSER,System.String</value>
+          <value>MTITLE,System.String</value>
+          <value>MCONTENT,System.String</value>
+          <value>MLINK,System.String</value>
+          <value>IMPORTANT,System.String</value>
+          <value>MAILSIZE,System.String</value>
+          <value>SECRETUSER,System.String</value>
+          <value>MTYPE,System.String</value>
+          <value>MSTATE,System.String</value>
+          <value>ISSEND,System.String</value>
+          <value>MSTATEICON,System.String</value>
+          <value>ACTUALRECIVER,System.String</value>
+          <value>PLUGINID,System.String</value>
+          <value>SENDUSERTEXT,System.String</value>
+          <value>RECIVERTEXT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>INTERNALMAIL</Name>
+        <NameInSource>NewDataSet.INTERNALMAIL</NameInSource>
+      </INTERNALMAIL>
+      <COUNT_INTERNALMAIL Ref="53" type="DataTableSource" isKey="true">
+        <Alias>COUNT_INTERNALMAIL</Alias>
+        <Columns isList="true" count="54">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>RECIVETIME,System.String</value>
+          <value>COUNTRECIVETIME,System.String</value>
+          <value>RECIVER,System.String</value>
+          <value>COUNTRECIVER,System.String</value>
+          <value>SENDTIME,System.String</value>
+          <value>COUNTSENDTIME,System.String</value>
+          <value>SENDUSER,System.String</value>
+          <value>COUNTSENDUSER,System.String</value>
+          <value>COPYTOUSER,System.String</value>
+          <value>COUNTCOPYTOUSER,System.String</value>
+          <value>MTITLE,System.String</value>
+          <value>COUNTMTITLE,System.String</value>
+          <value>MCONTENT,System.String</value>
+          <value>COUNTMCONTENT,System.String</value>
+          <value>MLINK,System.String</value>
+          <value>COUNTMLINK,System.String</value>
+          <value>IMPORTANT,System.String</value>
+          <value>COUNTIMPORTANT,System.String</value>
+          <value>MAILSIZE,System.String</value>
+          <value>COUNTMAILSIZE,System.String</value>
+          <value>SECRETUSER,System.String</value>
+          <value>COUNTSECRETUSER,System.String</value>
+          <value>MTYPE,System.String</value>
+          <value>COUNTMTYPE,System.String</value>
+          <value>MSTATE,System.String</value>
+          <value>COUNTMSTATE,System.String</value>
+          <value>ISSEND,System.String</value>
+          <value>COUNTISSEND,System.String</value>
+          <value>MSTATEICON,System.String</value>
+          <value>COUNTMSTATEICON,System.String</value>
+          <value>ACTUALRECIVER,System.String</value>
+          <value>COUNTACTUALRECIVER,System.String</value>
+          <value>PLUGINID,System.String</value>
+          <value>COUNTPLUGINID,System.String</value>
+          <value>SENDUSERTEXT,System.String</value>
+          <value>COUNTSENDUSERTEXT,System.String</value>
+          <value>RECIVERTEXT,System.String</value>
+          <value>COUNTRECIVERTEXT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_INTERNALMAIL</Name>
+        <NameInSource>NewDataSet.COUNT_INTERNALMAIL</NameInSource>
+      </COUNT_INTERNALMAIL>
+      <REPORTCLASSIFY Ref="54" type="DataTableSource" isKey="true">
+        <Alias>REPORTCLASSIFY</Alias>
+        <Columns isList="true" count="10">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>REPORTCLASSIFY</Name>
+        <NameInSource>NewDataSet.REPORTCLASSIFY</NameInSource>
+      </REPORTCLASSIFY>
+      <COUNT_REPORTCLASSIFY Ref="55" type="DataTableSource" isKey="true">
+        <Alias>COUNT_REPORTCLASSIFY</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>COUNTOWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>COUNTOWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_REPORTCLASSIFY</Name>
+        <NameInSource>NewDataSet.COUNT_REPORTCLASSIFY</NameInSource>
+      </COUNT_REPORTCLASSIFY>
+      <REPORTOBJECT Ref="56" type="DataTableSource" isKey="true">
+        <Alias>REPORTOBJECT</Alias>
+        <Columns isList="true" count="10">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>CLASSIFYID,System.String</value>
+          <value>REPORTPATH,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>REPORTOBJECT</Name>
+        <NameInSource>NewDataSet.REPORTOBJECT</NameInSource>
+      </REPORTOBJECT>
+      <COUNT_REPORTOBJECT Ref="57" type="DataTableSource" isKey="true">
+        <Alias>COUNT_REPORTOBJECT</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>CLASSIFYID,System.String</value>
+          <value>COUNTCLASSIFYID,System.String</value>
+          <value>REPORTPATH,System.String</value>
+          <value>COUNTREPORTPATH,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_REPORTOBJECT</Name>
+        <NameInSource>NewDataSet.COUNT_REPORTOBJECT</NameInSource>
+      </COUNT_REPORTOBJECT>
+      <FORMBUILDERDATA Ref="58" type="DataTableSource" isKey="true">
+        <Alias>FORMBUILDERDATA</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>MASTERTYPE,System.String</value>
+          <value>SLAVETYPE,System.String</value>
+          <value>DESIGNERDATA,System.String</value>
+          <value>CONTROLDATA,System.String</value>
+          <value>TEMPORARYDATA,System.String</value>
+          <value>PERMISSIONDATA,System.String</value>
+          <value>MODELDATAID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>FORMBUILDERDATA</Name>
+        <NameInSource>NewDataSet.FORMBUILDERDATA</NameInSource>
+      </FORMBUILDERDATA>
+      <COUNT_FORMBUILDERDATA Ref="59" type="DataTableSource" isKey="true">
+        <Alias>COUNT_FORMBUILDERDATA</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>COUNTEVERSION,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>MASTERTYPE,System.String</value>
+          <value>COUNTMASTERTYPE,System.String</value>
+          <value>SLAVETYPE,System.String</value>
+          <value>COUNTSLAVETYPE,System.String</value>
+          <value>DESIGNERDATA,System.String</value>
+          <value>COUNTDESIGNERDATA,System.String</value>
+          <value>CONTROLDATA,System.String</value>
+          <value>COUNTCONTROLDATA,System.String</value>
+          <value>TEMPORARYDATA,System.String</value>
+          <value>COUNTTEMPORARYDATA,System.String</value>
+          <value>PERMISSIONDATA,System.String</value>
+          <value>COUNTPERMISSIONDATA,System.String</value>
+          <value>MODELDATAID,System.String</value>
+          <value>COUNTMODELDATAID,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_FORMBUILDERDATA</Name>
+        <NameInSource>NewDataSet.COUNT_FORMBUILDERDATA</NameInSource>
+      </COUNT_FORMBUILDERDATA>
+      <FORMCLASSIFY Ref="60" type="DataTableSource" isKey="true">
+        <Alias>FORMCLASSIFY</Alias>
+        <Columns isList="true" count="7">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>FORMCLASSIFY</Name>
+        <NameInSource>NewDataSet.FORMCLASSIFY</NameInSource>
+      </FORMCLASSIFY>
+      <COUNT_FORMCLASSIFY Ref="61" type="DataTableSource" isKey="true">
+        <Alias>COUNT_FORMCLASSIFY</Alias>
+        <Columns isList="true" count="14">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_FORMCLASSIFY</Name>
+        <NameInSource>NewDataSet.COUNT_FORMCLASSIFY</NameInSource>
+      </COUNT_FORMCLASSIFY>
+      <FORMCLASSIFYTOOBJTYPE Ref="62" type="DataTableSource" isKey="true">
+        <Alias>FORMCLASSIFYTOOBJTYPE</Alias>
+        <Columns isList="true" count="7">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>CLASSIFYID,System.String</value>
+          <value>FORMOBJECTTYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>FORMCLASSIFYTOOBJTYPE</Name>
+        <NameInSource>NewDataSet.FORMCLASSIFYTOOBJTYPE</NameInSource>
+      </FORMCLASSIFYTOOBJTYPE>
+      <COUNT_FORMCLASSIFYTOOBJTYPE Ref="63" type="DataTableSource" isKey="true">
+        <Alias>COUNT_FORMCLASSIFYTOOBJTYPE</Alias>
+        <Columns isList="true" count="14">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>CLASSIFYID,System.String</value>
+          <value>COUNTCLASSIFYID,System.String</value>
+          <value>FORMOBJECTTYPE,System.String</value>
+          <value>COUNTFORMOBJECTTYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_FORMCLASSIFYTOOBJTYPE</Name>
+        <NameInSource>NewDataSet.COUNT_FORMCLASSIFYTOOBJTYPE</NameInSource>
+      </COUNT_FORMCLASSIFYTOOBJTYPE>
+      <MODELDATA Ref="64" type="DataTableSource" isKey="true">
+        <Alias>MODELDATA</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>EUID,System.String</value>
+          <value>ELASTINSERT,System.String</value>
+          <value>ELASTFINALSTATE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>MODEL,System.String</value>
+          <value>SCHEMADATA,System.String</value>
+          <value>DICDATA,System.String</value>
+          <value>CHECKOUTUSER,System.String</value>
+          <value>CHECKOUTDATE,System.String</value>
+          <value>FOREIGNKEYDATA,System.String</value>
+          <value>MULTILANG,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MODELDATA</Name>
+        <NameInSource>NewDataSet.MODELDATA</NameInSource>
+      </MODELDATA>
+      <COUNT_MODELDATA Ref="65" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MODELDATA</Alias>
+        <Columns isList="true" count="40">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>COUNTEVERSION,System.String</value>
+          <value>EUID,System.String</value>
+          <value>COUNTEUID,System.String</value>
+          <value>ELASTINSERT,System.String</value>
+          <value>COUNTELASTINSERT,System.String</value>
+          <value>ELASTFINALSTATE,System.String</value>
+          <value>COUNTELASTFINALSTATE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>MODEL,System.String</value>
+          <value>COUNTMODEL,System.String</value>
+          <value>SCHEMADATA,System.String</value>
+          <value>COUNTSCHEMADATA,System.String</value>
+          <value>DICDATA,System.String</value>
+          <value>COUNTDICDATA,System.String</value>
+          <value>CHECKOUTUSER,System.String</value>
+          <value>COUNTCHECKOUTUSER,System.String</value>
+          <value>CHECKOUTDATE,System.String</value>
+          <value>COUNTCHECKOUTDATE,System.String</value>
+          <value>FOREIGNKEYDATA,System.String</value>
+          <value>COUNTFOREIGNKEYDATA,System.String</value>
+          <value>MULTILANG,System.String</value>
+          <value>COUNTMULTILANG,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MODELDATA</Name>
+        <NameInSource>NewDataSet.COUNT_MODELDATA</NameInSource>
+      </COUNT_MODELDATA>
+      <FUNCBUTTON Ref="66" type="DataTableSource" isKey="true">
+        <Alias>FUNCBUTTON</Alias>
+        <Columns isList="true" count="17">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>BUTTONTEXT,System.String</value>
+          <value>CALLPAGE,System.String</value>
+          <value>GROUPNAME,System.String</value>
+          <value>WEBVIEWURL,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>PAGETYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>FUNCBUTTON</Name>
+        <NameInSource>NewDataSet.FUNCBUTTON</NameInSource>
+      </FUNCBUTTON>
+      <COUNT_FUNCBUTTON Ref="67" type="DataTableSource" isKey="true">
+        <Alias>COUNT_FUNCBUTTON</Alias>
+        <Columns isList="true" count="34">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>COUNTICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>BUTTONTEXT,System.String</value>
+          <value>COUNTBUTTONTEXT,System.String</value>
+          <value>CALLPAGE,System.String</value>
+          <value>COUNTCALLPAGE,System.String</value>
+          <value>GROUPNAME,System.String</value>
+          <value>COUNTGROUPNAME,System.String</value>
+          <value>WEBVIEWURL,System.String</value>
+          <value>COUNTWEBVIEWURL,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>COUNTSEQUENCE,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+          <value>PAGETYPE,System.String</value>
+          <value>COUNTPAGETYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_FUNCBUTTON</Name>
+        <NameInSource>NewDataSet.COUNT_FUNCBUTTON</NameInSource>
+      </COUNT_FUNCBUTTON>
+      <LOOPPLAYIMAGE Ref="68" type="DataTableSource" isKey="true">
+        <Alias>LOOPPLAYIMAGE</Alias>
+        <Columns isList="true" count="11">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>IMAGEPATH,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>LOOPPLAYIMAGE</Name>
+        <NameInSource>NewDataSet.LOOPPLAYIMAGE</NameInSource>
+      </LOOPPLAYIMAGE>
+      <COUNT_LOOPPLAYIMAGE Ref="69" type="DataTableSource" isKey="true">
+        <Alias>COUNT_LOOPPLAYIMAGE</Alias>
+        <Columns isList="true" count="22">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>IMAGEPATH,System.String</value>
+          <value>COUNTIMAGEPATH,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_LOOPPLAYIMAGE</Name>
+        <NameInSource>NewDataSet.COUNT_LOOPPLAYIMAGE</NameInSource>
+      </COUNT_LOOPPLAYIMAGE>
+      <MOBILEADVANCEDQUERY Ref="70" type="DataTableSource" isKey="true">
+        <Alias>MOBILEADVANCEDQUERY</Alias>
+        <Columns isList="true" count="17">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>CONDITIONTITLE,System.String</value>
+          <value>CONTROLTYPE,System.String</value>
+          <value>FILTERSTRING,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>INFONAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEADVANCEDQUERY</Name>
+        <NameInSource>NewDataSet.MOBILEADVANCEDQUERY</NameInSource>
+      </MOBILEADVANCEDQUERY>
+      <COUNT_MOBILEADVANCEDQUERY Ref="71" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEADVANCEDQUERY</Alias>
+        <Columns isList="true" count="34">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>COUNTOWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>COUNTOWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>CONDITIONTITLE,System.String</value>
+          <value>COUNTCONDITIONTITLE,System.String</value>
+          <value>CONTROLTYPE,System.String</value>
+          <value>COUNTCONTROLTYPE,System.String</value>
+          <value>FILTERSTRING,System.String</value>
+          <value>COUNTFILTERSTRING,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>INFONAME,System.String</value>
+          <value>COUNTINFONAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEADVANCEDQUERY</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEADVANCEDQUERY</NameInSource>
+      </COUNT_MOBILEADVANCEDQUERY>
+      <MOBILEPAGEBUTTON Ref="72" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEBUTTON</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>BUTTONITEMTYPE,System.String</value>
+          <value>BACKGROUNDCOLOR,System.String</value>
+          <value>URL,System.String</value>
+          <value>BUTTONITEMTYPEEXTEND,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEBUTTON</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEBUTTON</NameInSource>
+      </MOBILEPAGEBUTTON>
+      <COUNT_MOBILEPAGEBUTTON Ref="73" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEBUTTON</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>COUNTICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>BUTTONITEMTYPE,System.String</value>
+          <value>COUNTBUTTONITEMTYPE,System.String</value>
+          <value>BACKGROUNDCOLOR,System.String</value>
+          <value>COUNTBACKGROUNDCOLOR,System.String</value>
+          <value>URL,System.String</value>
+          <value>COUNTURL,System.String</value>
+          <value>BUTTONITEMTYPEEXTEND,System.String</value>
+          <value>COUNTBUTTONITEMTYPEEXTEND,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEBUTTON</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEBUTTON</NameInSource>
+      </COUNT_MOBILEPAGEBUTTON>
+      <MOBILEPAGEDEV Ref="74" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEDEV</Alias>
+        <Columns isList="true" count="9">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>PAGENAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEDEV</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEDEV</NameInSource>
+      </MOBILEPAGEDEV>
+      <COUNT_MOBILEPAGEDEV Ref="75" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEDEV</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>COUNTPAGENAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEDEV</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEDEV</NameInSource>
+      </COUNT_MOBILEPAGEDEV>
+      <MOBILEPAGEFILTER Ref="76" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEFILTER</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>FILTER,System.String</value>
+          <value>FILTERGROUP,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>ASSEMBLY,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEFILTER</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEFILTER</NameInSource>
+      </MOBILEPAGEFILTER>
+      <COUNT_MOBILEPAGEFILTER Ref="77" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEFILTER</Alias>
+        <Columns isList="true" count="32">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>FILTER,System.String</value>
+          <value>COUNTFILTER,System.String</value>
+          <value>FILTERGROUP,System.String</value>
+          <value>COUNTFILTERGROUP,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>ASSEMBLY,System.String</value>
+          <value>COUNTASSEMBLY,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>COUNTCLASSNAME,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEFILTER</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEFILTER</NameInSource>
+      </COUNT_MOBILEPAGEFILTER>
+      <MOBILEPAGELISTITEM Ref="78" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGELISTITEM</Alias>
+        <Columns isList="true" count="15">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>OBJECTSTATE,System.String</value>
+          <value>SINGLEBUTTON,System.String</value>
+          <value>SLIDEBUTTON,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>LISTCONTENT,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGELISTITEM</Name>
+        <NameInSource>NewDataSet.MOBILEPAGELISTITEM</NameInSource>
+      </MOBILEPAGELISTITEM>
+      <COUNT_MOBILEPAGELISTITEM Ref="79" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGELISTITEM</Alias>
+        <Columns isList="true" count="30">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>OBJECTSTATE,System.String</value>
+          <value>COUNTOBJECTSTATE,System.String</value>
+          <value>SINGLEBUTTON,System.String</value>
+          <value>COUNTSINGLEBUTTON,System.String</value>
+          <value>SLIDEBUTTON,System.String</value>
+          <value>COUNTSLIDEBUTTON,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>LISTCONTENT,System.String</value>
+          <value>COUNTLISTCONTENT,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGELISTITEM</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGELISTITEM</NameInSource>
+      </COUNT_MOBILEPAGELISTITEM>
+      <MOBILEPAGENAV Ref="80" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGENAV</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>WEBVIEWURL,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>NORMALICON,System.String</value>
+          <value>HIGHLIGHTICON,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGENAV</Name>
+        <NameInSource>NewDataSet.MOBILEPAGENAV</NameInSource>
+      </MOBILEPAGENAV>
+      <COUNT_MOBILEPAGENAV Ref="81" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGENAV</Alias>
+        <Columns isList="true" count="32">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>COUNTPAGENAME,System.String</value>
+          <value>WEBVIEWURL,System.String</value>
+          <value>COUNTWEBVIEWURL,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>COUNTSEQUENCE,System.String</value>
+          <value>NORMALICON,System.String</value>
+          <value>COUNTNORMALICON,System.String</value>
+          <value>HIGHLIGHTICON,System.String</value>
+          <value>COUNTHIGHLIGHTICON,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGENAV</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGENAV</NameInSource>
+      </COUNT_MOBILEPAGENAV>
+      <MOBILEPAGEORDER Ref="82" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEORDER</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ORDERITEM,System.String</value>
+          <value>ORDERTYPE,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEORDER</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEORDER</NameInSource>
+      </MOBILEPAGEORDER>
+      <COUNT_MOBILEPAGEORDER Ref="83" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEORDER</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ORDERITEM,System.String</value>
+          <value>COUNTORDERITEM,System.String</value>
+          <value>ORDERTYPE,System.String</value>
+          <value>COUNTORDERTYPE,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEORDER</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEORDER</NameInSource>
+      </COUNT_MOBILEPAGEORDER>
+      <MOBILEPAGEPROPERTYTAB Ref="84" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEPROPERTYTAB</Alias>
+        <Columns isList="true" count="23">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>CONTROLTYPE,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>URL,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>ASSEMBLYNAME,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>DATASOURCETYPE,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>URLPARA,System.String</value>
+          <value>INFOTYPES,System.String</value>
+          <value>STRINGFILTER,System.String</value>
+          <value>RESULTOBJECTTYPE,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEPROPERTYTAB</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEPROPERTYTAB</NameInSource>
+      </MOBILEPAGEPROPERTYTAB>
+      <COUNT_MOBILEPAGEPROPERTYTAB Ref="85" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEPROPERTYTAB</Alias>
+        <Columns isList="true" count="46">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>OBJECTTYPE,System.String</value>
+          <value>COUNTOBJECTTYPE,System.String</value>
+          <value>CONTROLTYPE,System.String</value>
+          <value>COUNTCONTROLTYPE,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>COUNTPAGENAME,System.String</value>
+          <value>URL,System.String</value>
+          <value>COUNTURL,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>ASSEMBLYNAME,System.String</value>
+          <value>COUNTASSEMBLYNAME,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>COUNTCLASSNAME,System.String</value>
+          <value>DATASOURCETYPE,System.String</value>
+          <value>COUNTDATASOURCETYPE,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>COUNTSEQUENCE,System.String</value>
+          <value>URLPARA,System.String</value>
+          <value>COUNTURLPARA,System.String</value>
+          <value>INFOTYPES,System.String</value>
+          <value>COUNTINFOTYPES,System.String</value>
+          <value>STRINGFILTER,System.String</value>
+          <value>COUNTSTRINGFILTER,System.String</value>
+          <value>RESULTOBJECTTYPE,System.String</value>
+          <value>COUNTRESULTOBJECTTYPE,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEPROPERTYTAB</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEPROPERTYTAB</NameInSource>
+      </COUNT_MOBILEPAGEPROPERTYTAB>
+      <MOBILEPAGEPROPERTYTABCONFIG Ref="86" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEPROPERTYTABCONFIG</Alias>
+        <Columns isList="true" count="6">
+          <value>EID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ASSEMBLYNAME,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>INFOTYPES,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEPROPERTYTABCONFIG</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEPROPERTYTABCONFIG</NameInSource>
+      </MOBILEPAGEPROPERTYTABCONFIG>
+      <COUNT_MOBILEPAGEPROPERTYTABCONFIG Ref="87" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEPROPERTYTABCONFIG</Alias>
+        <Columns isList="true" count="12">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ASSEMBLYNAME,System.String</value>
+          <value>COUNTASSEMBLYNAME,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>COUNTCLASSNAME,System.String</value>
+          <value>INFOTYPES,System.String</value>
+          <value>COUNTINFOTYPES,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEPROPERTYTABCONFIG</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEPROPERTYTABCONFIG</NameInSource>
+      </COUNT_MOBILEPAGEPROPERTYTABCONFIG>
+      <MOBILEPAGEPROPERTYTABCUSTOM Ref="88" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEPROPERTYTABCUSTOM</Alias>
+        <Columns isList="true" count="10">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ASSEMBLYNAME,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>INFOTYPES,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEPROPERTYTABCUSTOM</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEPROPERTYTABCUSTOM</NameInSource>
+      </MOBILEPAGEPROPERTYTABCUSTOM>
+      <COUNT_MOBILEPAGEPROPERTYTABCUSTOM Ref="89" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEPROPERTYTABCUSTOM</Alias>
+        <Columns isList="true" count="20">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ASSEMBLYNAME,System.String</value>
+          <value>COUNTASSEMBLYNAME,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>COUNTCLASSNAME,System.String</value>
+          <value>INFOTYPES,System.String</value>
+          <value>COUNTINFOTYPES,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEPROPERTYTABCUSTOM</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEPROPERTYTABCUSTOM</NameInSource>
+      </COUNT_MOBILEPAGEPROPERTYTABCUSTOM>
+      <MOBILEPAGEPROPERTYTABWEB Ref="90" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGEPROPERTYTABWEB</Alias>
+        <Columns isList="true" count="9">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>URL,System.String</value>
+          <value>URLPARA,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGEPROPERTYTABWEB</Name>
+        <NameInSource>NewDataSet.MOBILEPAGEPROPERTYTABWEB</NameInSource>
+      </MOBILEPAGEPROPERTYTABWEB>
+      <COUNT_MOBILEPAGEPROPERTYTABWEB Ref="91" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGEPROPERTYTABWEB</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>URL,System.String</value>
+          <value>COUNTURL,System.String</value>
+          <value>URLPARA,System.String</value>
+          <value>COUNTURLPARA,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGEPROPERTYTABWEB</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGEPROPERTYTABWEB</NameInSource>
+      </COUNT_MOBILEPAGEPROPERTYTABWEB>
+      <MOBILEPAGETAB Ref="92" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGETAB</Alias>
+        <Columns isList="true" count="35">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>TAB,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>FILTERSTRING,System.String</value>
+          <value>LISTPAGECOUNT,System.String</value>
+          <value>ISSELECTED,System.String</value>
+          <value>ISALLSELECT,System.String</value>
+          <value>TABASSEMBLY,System.String</value>
+          <value>TABCLASSNAME,System.String</value>
+          <value>ASSEMBLY,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>SQLCOMMANDNAME,System.String</value>
+          <value>DATASOURCETYPE,System.String</value>
+          <value>RESULTOBJECTTYPE,System.String</value>
+          <value>RESULTORDERBY,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>LISTITEMSTATEICON,System.String</value>
+          <value>ITEMSUBTITLETWO,System.String</value>
+          <value>LISTITEMOBJECTMANAGER,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+          <value>ISROOTQUERY,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGETAB</Name>
+        <NameInSource>NewDataSet.MOBILEPAGETAB</NameInSource>
+      </MOBILEPAGETAB>
+      <COUNT_MOBILEPAGETAB Ref="93" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGETAB</Alias>
+        <Columns isList="true" count="70">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>TAB,System.String</value>
+          <value>COUNTTAB,System.String</value>
+          <value>MOBILEPAGEDEVID,System.String</value>
+          <value>COUNTMOBILEPAGEDEVID,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>FILTERSTRING,System.String</value>
+          <value>COUNTFILTERSTRING,System.String</value>
+          <value>LISTPAGECOUNT,System.String</value>
+          <value>COUNTLISTPAGECOUNT,System.String</value>
+          <value>ISSELECTED,System.String</value>
+          <value>COUNTISSELECTED,System.String</value>
+          <value>ISALLSELECT,System.String</value>
+          <value>COUNTISALLSELECT,System.String</value>
+          <value>TABASSEMBLY,System.String</value>
+          <value>COUNTTABASSEMBLY,System.String</value>
+          <value>TABCLASSNAME,System.String</value>
+          <value>COUNTTABCLASSNAME,System.String</value>
+          <value>ASSEMBLY,System.String</value>
+          <value>COUNTASSEMBLY,System.String</value>
+          <value>CLASSNAME,System.String</value>
+          <value>COUNTCLASSNAME,System.String</value>
+          <value>SQLCOMMANDNAME,System.String</value>
+          <value>COUNTSQLCOMMANDNAME,System.String</value>
+          <value>DATASOURCETYPE,System.String</value>
+          <value>COUNTDATASOURCETYPE,System.String</value>
+          <value>RESULTOBJECTTYPE,System.String</value>
+          <value>COUNTRESULTOBJECTTYPE,System.String</value>
+          <value>RESULTORDERBY,System.String</value>
+          <value>COUNTRESULTORDERBY,System.String</value>
+          <value>SEQUENCE,System.String</value>
+          <value>COUNTSEQUENCE,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>COUNTITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>COUNTITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>COUNTLISTITEMSTATE,System.String</value>
+          <value>LISTITEMSTATEICON,System.String</value>
+          <value>COUNTLISTITEMSTATEICON,System.String</value>
+          <value>ITEMSUBTITLETWO,System.String</value>
+          <value>COUNTITEMSUBTITLETWO,System.String</value>
+          <value>LISTITEMOBJECTMANAGER,System.String</value>
+          <value>COUNTLISTITEMOBJECTMANAGER,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>COUNTPROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>COUNTPROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+          <value>COUNTPROPERTYCLASSNAME,System.String</value>
+          <value>ISROOTQUERY,System.String</value>
+          <value>COUNTISROOTQUERY,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGETAB</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGETAB</NameInSource>
+      </COUNT_MOBILEPAGETAB>
+      <MOBILEPAGETABCONDITION Ref="94" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGETABCONDITION</Alias>
+        <Columns isList="true" count="17">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>LISTITEMSTATEICON,System.String</value>
+          <value>ITEMSUBTITLETWO,System.String</value>
+          <value>LISTITEMOBJECTMANAGER,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGETABCONDITION</Name>
+        <NameInSource>NewDataSet.MOBILEPAGETABCONDITION</NameInSource>
+      </MOBILEPAGETABCONDITION>
+      <COUNT_MOBILEPAGETABCONDITION Ref="95" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGETABCONDITION</Alias>
+        <Columns isList="true" count="34">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>COUNTITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>COUNTITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>COUNTLISTITEMSTATE,System.String</value>
+          <value>LISTITEMSTATEICON,System.String</value>
+          <value>COUNTLISTITEMSTATEICON,System.String</value>
+          <value>ITEMSUBTITLETWO,System.String</value>
+          <value>COUNTITEMSUBTITLETWO,System.String</value>
+          <value>LISTITEMOBJECTMANAGER,System.String</value>
+          <value>COUNTLISTITEMOBJECTMANAGER,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>COUNTPROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>COUNTPROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+          <value>COUNTPROPERTYCLASSNAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGETABCONDITION</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGETABCONDITION</NameInSource>
+      </COUNT_MOBILEPAGETABCONDITION>
+      <MOBILEPAGETABGROUP Ref="96" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGETABGROUP</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>LISTITEMSTATEICON,System.String</value>
+          <value>ITEMSUBTITLETWO,System.String</value>
+          <value>LISTITEMOBJECTMANAGER,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+          <value>ISROOTQUERY,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGETABGROUP</Name>
+        <NameInSource>NewDataSet.MOBILEPAGETABGROUP</NameInSource>
+      </MOBILEPAGETABGROUP>
+      <COUNT_MOBILEPAGETABGROUP Ref="97" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGETABGROUP</Alias>
+        <Columns isList="true" count="36">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>COUNTITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>COUNTITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>COUNTLISTITEMSTATE,System.String</value>
+          <value>LISTITEMSTATEICON,System.String</value>
+          <value>COUNTLISTITEMSTATEICON,System.String</value>
+          <value>ITEMSUBTITLETWO,System.String</value>
+          <value>COUNTITEMSUBTITLETWO,System.String</value>
+          <value>LISTITEMOBJECTMANAGER,System.String</value>
+          <value>COUNTLISTITEMOBJECTMANAGER,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>COUNTPROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>COUNTPROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+          <value>COUNTPROPERTYCLASSNAME,System.String</value>
+          <value>ISROOTQUERY,System.String</value>
+          <value>COUNTISROOTQUERY,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGETABGROUP</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGETABGROUP</NameInSource>
+      </COUNT_MOBILEPAGETABGROUP>
+      <MOBILEPAGETABSTANDARD Ref="98" type="DataTableSource" isKey="true">
+        <Alias>MOBILEPAGETABSTANDARD</Alias>
+        <Columns isList="true" count="14">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MOBILEPAGETABSTANDARD</Name>
+        <NameInSource>NewDataSet.MOBILEPAGETABSTANDARD</NameInSource>
+      </MOBILEPAGETABSTANDARD>
+      <COUNT_MOBILEPAGETABSTANDARD Ref="99" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MOBILEPAGETABSTANDARD</Alias>
+        <Columns isList="true" count="28">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ITEMTITLE,System.String</value>
+          <value>COUNTITEMTITLE,System.String</value>
+          <value>ITEMSUBTITLE,System.String</value>
+          <value>COUNTITEMSUBTITLE,System.String</value>
+          <value>LISTITEMSTATE,System.String</value>
+          <value>COUNTLISTITEMSTATE,System.String</value>
+          <value>PROPERTYCOLUMN,System.String</value>
+          <value>COUNTPROPERTYCOLUMN,System.String</value>
+          <value>PROPERTYASSEMBLY,System.String</value>
+          <value>COUNTPROPERTYASSEMBLY,System.String</value>
+          <value>PROPERTYCLASSNAME,System.String</value>
+          <value>COUNTPROPERTYCLASSNAME,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MOBILEPAGETABSTANDARD</Name>
+        <NameInSource>NewDataSet.COUNT_MOBILEPAGETABSTANDARD</NameInSource>
+      </COUNT_MOBILEPAGETABSTANDARD>
+      <PAGEMAINCONFIG Ref="100" type="DataTableSource" isKey="true">
+        <Alias>PAGEMAINCONFIG</Alias>
+        <Columns isList="true" count="13">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>DATASOURCEASSEMBLY,System.String</value>
+          <value>DATASOURCECLASS,System.String</value>
+          <value>MAINCONFIGPARA,System.String</value>
+          <value>ENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PAGEMAINCONFIG</Name>
+        <NameInSource>NewDataSet.PAGEMAINCONFIG</NameInSource>
+      </PAGEMAINCONFIG>
+      <COUNT_PAGEMAINCONFIG Ref="101" type="DataTableSource" isKey="true">
+        <Alias>COUNT_PAGEMAINCONFIG</Alias>
+        <Columns isList="true" count="26">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>PAGENAME,System.String</value>
+          <value>COUNTPAGENAME,System.String</value>
+          <value>DATASOURCEASSEMBLY,System.String</value>
+          <value>COUNTDATASOURCEASSEMBLY,System.String</value>
+          <value>DATASOURCECLASS,System.String</value>
+          <value>COUNTDATASOURCECLASS,System.String</value>
+          <value>MAINCONFIGPARA,System.String</value>
+          <value>COUNTMAINCONFIGPARA,System.String</value>
+          <value>ENABLE,System.String</value>
+          <value>COUNTENABLE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_PAGEMAINCONFIG</Name>
+        <NameInSource>NewDataSet.COUNT_PAGEMAINCONFIG</NameInSource>
+      </COUNT_PAGEMAINCONFIG>
+      <EFOLDER Ref="102" type="DataTableSource" isKey="true">
+        <Alias>EFOLDER</Alias>
+        <Columns isList="true" count="8">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>EFOLDER</Name>
+        <NameInSource>NewDataSet.EFOLDER</NameInSource>
+      </EFOLDER>
+      <COUNT_EFOLDER Ref="103" type="DataTableSource" isKey="true">
+        <Alias>COUNT_EFOLDER</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTION,System.String</value>
+          <value>COUNTDESCRIPTION,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_EFOLDER</Name>
+        <NameInSource>NewDataSet.COUNT_EFOLDER</NameInSource>
+      </COUNT_EFOLDER>
+      <EITEM Ref="104" type="DataTableSource" isKey="true">
+        <Alias>EITEM</Alias>
+        <Columns isList="true" count="30">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>STAGESTATEID,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>EUID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>DESCRIPTIONTEST,System.String</value>
+          <value>BOOL,System.String</value>
+          <value>ITEMTYPE,System.String</value>
+          <value>TESTLOVLIST,System.String</value>
+          <value>TESTLOV,System.String</value>
+          <value>OPERATELOGTYPE,System.String</value>
+          <value>LOVLISTRADIO,System.String</value>
+          <value>ENUMRADIOTEST,System.String</value>
+          <value>TESTEXHAUSTIONLOVLIST,System.String</value>
+          <value>ISCHECKOUT,System.String</value>
+          <value>DATEDEMO,System.String</value>
+          <value>OBJECTTYPELIST,System.String</value>
+          <value>FLOATTEST,System.String</value>
+          <value>MULTILOVLIST,System.String</value>
+          <value>ENUMTEST,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>EITEM</Name>
+        <NameInSource>NewDataSet.EITEM</NameInSource>
+      </EITEM>
+      <COUNT_EITEM Ref="105" type="DataTableSource" isKey="true">
+        <Alias>COUNT_EITEM</Alias>
+        <Columns isList="true" count="60">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>STAGESTATEID,System.String</value>
+          <value>COUNTSTAGESTATEID,System.String</value>
+          <value>EVERSION,System.String</value>
+          <value>COUNTEVERSION,System.String</value>
+          <value>EUID,System.String</value>
+          <value>COUNTEUID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>OWNUID,System.String</value>
+          <value>COUNTOWNUID,System.String</value>
+          <value>OWNGID,System.String</value>
+          <value>COUNTOWNGID,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>DESCRIPTIONTEST,System.String</value>
+          <value>COUNTDESCRIPTIONTEST,System.String</value>
+          <value>BOOL,System.String</value>
+          <value>COUNTBOOL,System.String</value>
+          <value>ITEMTYPE,System.String</value>
+          <value>COUNTITEMTYPE,System.String</value>
+          <value>TESTLOVLIST,System.String</value>
+          <value>COUNTTESTLOVLIST,System.String</value>
+          <value>TESTLOV,System.String</value>
+          <value>COUNTTESTLOV,System.String</value>
+          <value>OPERATELOGTYPE,System.String</value>
+          <value>COUNTOPERATELOGTYPE,System.String</value>
+          <value>LOVLISTRADIO,System.String</value>
+          <value>COUNTLOVLISTRADIO,System.String</value>
+          <value>ENUMRADIOTEST,System.String</value>
+          <value>COUNTENUMRADIOTEST,System.String</value>
+          <value>TESTEXHAUSTIONLOVLIST,System.String</value>
+          <value>COUNTTESTEXHAUSTIONLOVLIST,System.String</value>
+          <value>ISCHECKOUT,System.String</value>
+          <value>COUNTISCHECKOUT,System.String</value>
+          <value>DATEDEMO,System.String</value>
+          <value>COUNTDATEDEMO,System.String</value>
+          <value>OBJECTTYPELIST,System.String</value>
+          <value>COUNTOBJECTTYPELIST,System.String</value>
+          <value>FLOATTEST,System.String</value>
+          <value>COUNTFLOATTEST,System.String</value>
+          <value>MULTILOVLIST,System.String</value>
+          <value>COUNTMULTILOVLIST,System.String</value>
+          <value>ENUMTEST,System.String</value>
+          <value>COUNTENUMTEST,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_EITEM</Name>
+        <NameInSource>NewDataSet.COUNT_EITEM</NameInSource>
+      </COUNT_EITEM>
+      <ETESTOBJECT Ref="106" type="DataTableSource" isKey="true">
+        <Alias>ETESTOBJECT</Alias>
+        <Columns isList="true" count="19">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>SINGLEUSER,System.String</value>
+          <value>MUTLIUSER,System.String</value>
+          <value>SINGLEROLE,System.String</value>
+          <value>MUTLIROLE,System.String</value>
+          <value>SINGLEGROUP,System.String</value>
+          <value>MUTLIGROUP,System.String</value>
+          <value>DATETIME,System.String</value>
+          <value>ITEMFILE,System.String</value>
+          <value>HTMLFIELD,System.String</value>
+          <value>IMAGE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ETESTOBJECT</Name>
+        <NameInSource>NewDataSet.ETESTOBJECT</NameInSource>
+      </ETESTOBJECT>
+      <COUNT_ETESTOBJECT Ref="107" type="DataTableSource" isKey="true">
+        <Alias>COUNT_ETESTOBJECT</Alias>
+        <Columns isList="true" count="38">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>SINGLEUSER,System.String</value>
+          <value>COUNTSINGLEUSER,System.String</value>
+          <value>MUTLIUSER,System.String</value>
+          <value>COUNTMUTLIUSER,System.String</value>
+          <value>SINGLEROLE,System.String</value>
+          <value>COUNTSINGLEROLE,System.String</value>
+          <value>MUTLIROLE,System.String</value>
+          <value>COUNTMUTLIROLE,System.String</value>
+          <value>SINGLEGROUP,System.String</value>
+          <value>COUNTSINGLEGROUP,System.String</value>
+          <value>MUTLIGROUP,System.String</value>
+          <value>COUNTMUTLIGROUP,System.String</value>
+          <value>DATETIME,System.String</value>
+          <value>COUNTDATETIME,System.String</value>
+          <value>ITEMFILE,System.String</value>
+          <value>COUNTITEMFILE,System.String</value>
+          <value>HTMLFIELD,System.String</value>
+          <value>COUNTHTMLFIELD,System.String</value>
+          <value>IMAGE,System.String</value>
+          <value>COUNTIMAGE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_ETESTOBJECT</Name>
+        <NameInSource>NewDataSet.COUNT_ETESTOBJECT</NameInSource>
+      </COUNT_ETESTOBJECT>
+      <MULTIHEADER Ref="108" type="DataTableSource" isKey="true">
+        <Alias>MULTIHEADER</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>STAGESTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>ACTUALCOUNT,System.String</value>
+          <value>PURCHASER,System.String</value>
+          <value>TASKID,System.String</value>
+          <value>PREDICTCOUNT,System.String</value>
+          <value>PURCHASEDATE,System.String</value>
+          <value>TUBIAO,System.String</value>
+          <value>MAINICON,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>MULTIHEADER</Name>
+        <NameInSource>NewDataSet.MULTIHEADER</NameInSource>
+      </MULTIHEADER>
+      <COUNT_MULTIHEADER Ref="109" type="DataTableSource" isKey="true">
+        <Alias>COUNT_MULTIHEADER</Alias>
+        <Columns isList="true" count="32">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>STAGESTATEID,System.String</value>
+          <value>COUNTSTAGESTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>ACTUALCOUNT,System.String</value>
+          <value>COUNTACTUALCOUNT,System.String</value>
+          <value>PURCHASER,System.String</value>
+          <value>COUNTPURCHASER,System.String</value>
+          <value>TASKID,System.String</value>
+          <value>COUNTTASKID,System.String</value>
+          <value>PREDICTCOUNT,System.String</value>
+          <value>COUNTPREDICTCOUNT,System.String</value>
+          <value>PURCHASEDATE,System.String</value>
+          <value>COUNTPURCHASEDATE,System.String</value>
+          <value>TUBIAO,System.String</value>
+          <value>COUNTTUBIAO,System.String</value>
+          <value>MAINICON,System.String</value>
+          <value>COUNTMAINICON,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_MULTIHEADER</Name>
+        <NameInSource>NewDataSet.COUNT_MULTIHEADER</NameInSource>
+      </COUNT_MULTIHEADER>
+      <PROJECTTASK Ref="110" type="DataTableSource" isKey="true">
+        <Alias>PROJECTTASK</Alias>
+        <Columns isList="true" count="16">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>TASKICON,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>PROJECTMANAGER,System.String</value>
+          <value>AAA,System.String</value>
+          <value>BBB,System.String</value>
+          <value>ENDTIME,System.String</value>
+          <value>TASKPICTURE,System.String</value>
+          <value>PUBLISH,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PROJECTTASK</Name>
+        <NameInSource>NewDataSet.PROJECTTASK</NameInSource>
+      </PROJECTTASK>
+      <COUNT_PROJECTTASK Ref="111" type="DataTableSource" isKey="true">
+        <Alias>COUNT_PROJECTTASK</Alias>
+        <Columns isList="true" count="32">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>ECODE,System.String</value>
+          <value>COUNTECODE,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>ICON,System.String</value>
+          <value>COUNTICON,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>TASKICON,System.String</value>
+          <value>COUNTTASKICON,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>COUNTDESCRIPT,System.String</value>
+          <value>PROJECTMANAGER,System.String</value>
+          <value>COUNTPROJECTMANAGER,System.String</value>
+          <value>AAA,System.String</value>
+          <value>COUNTAAA,System.String</value>
+          <value>BBB,System.String</value>
+          <value>COUNTBBB,System.String</value>
+          <value>ENDTIME,System.String</value>
+          <value>COUNTENDTIME,System.String</value>
+          <value>TASKPICTURE,System.String</value>
+          <value>COUNTTASKPICTURE,System.String</value>
+          <value>PUBLISH,System.String</value>
+          <value>COUNTPUBLISH,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_PROJECTTASK</Name>
+        <NameInSource>NewDataSet.COUNT_PROJECTTASK</NameInSource>
+      </COUNT_PROJECTTASK>
+      <FEEDBACK Ref="112" type="DataTableSource" isKey="true">
+        <Alias>FEEDBACK</Alias>
+        <Columns isList="true" count="9">
+          <value>EID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COURSE,System.String</value>
+          <value>CONTENT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>FEEDBACK</Name>
+        <NameInSource>NewDataSet.FEEDBACK</NameInSource>
+      </FEEDBACK>
+      <COUNT_FEEDBACK Ref="113" type="DataTableSource" isKey="true">
+        <Alias>COUNT_FEEDBACK</Alias>
+        <Columns isList="true" count="18">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>COURSE,System.String</value>
+          <value>COUNTCOURSE,System.String</value>
+          <value>CONTENT,System.String</value>
+          <value>COUNTCONTENT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_FEEDBACK</Name>
+        <NameInSource>NewDataSet.COUNT_FEEDBACK</NameInSource>
+      </COUNT_FEEDBACK>
+      <TRAININGCOURSE Ref="114" type="DataTableSource" isKey="true">
+        <Alias>TRAININGCOURSE</Alias>
+        <Columns isList="true" count="15">
+          <value>EID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>TRAININTTIME,System.String</value>
+          <value>SPEAKER,System.String</value>
+          <value>STATE,System.String</value>
+          <value>CONTENT,System.String</value>
+          <value>STATEICON,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>TRAININGCOURSE</Name>
+        <NameInSource>NewDataSet.TRAININGCOURSE</NameInSource>
+      </TRAININGCOURSE>
+      <COUNT_TRAININGCOURSE Ref="115" type="DataTableSource" isKey="true">
+        <Alias>COUNT_TRAININGCOURSE</Alias>
+        <Columns isList="true" count="30">
+          <value>EID,System.String</value>
+          <value>COUNTEID,System.String</value>
+          <value>ENAME,System.String</value>
+          <value>COUNTENAME,System.String</value>
+          <value>STATEID,System.String</value>
+          <value>COUNTSTATEID,System.String</value>
+          <value>CREATEUID,System.String</value>
+          <value>COUNTCREATEUID,System.String</value>
+          <value>CREATETIME,System.String</value>
+          <value>COUNTCREATETIME,System.String</value>
+          <value>UPDATEUID,System.String</value>
+          <value>COUNTUPDATEUID,System.String</value>
+          <value>UPDATETIME,System.String</value>
+          <value>COUNTUPDATETIME,System.String</value>
+          <value>ECOMPANYID,System.String</value>
+          <value>COUNTECOMPANYID,System.String</value>
+          <value>SERIALNUMBER,System.String</value>
+          <value>COUNTSERIALNUMBER,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>COUNTTITLE,System.String</value>
+          <value>TRAININTTIME,System.String</value>
+          <value>COUNTTRAININTTIME,System.String</value>
+          <value>SPEAKER,System.String</value>
+          <value>COUNTSPEAKER,System.String</value>
+          <value>STATE,System.String</value>
+          <value>COUNTSTATE,System.String</value>
+          <value>CONTENT,System.String</value>
+          <value>COUNTCONTENT,System.String</value>
+          <value>STATEICON,System.String</value>
+          <value>COUNTSTATEICON,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>COUNT_TRAININGCOURSE</Name>
+        <NameInSource>NewDataSet.COUNT_TRAININGCOURSE</NameInSource>
+      </COUNT_TRAININGCOURSE>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="116" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataDATASETTYPE Ref="117" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="13">
+            <DataDATASETTYPE_EID Ref="118" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_EID</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.EID}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_EID>
+            <DataDATASETTYPE_ENAME Ref="119" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.4,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_ENAME</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.ENAME}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_ENAME>
+            <DataDATASETTYPE_CREATEUID Ref="120" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.8,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_CREATEUID</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.CREATEUID}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_CREATEUID>
+            <DataDATASETTYPE_CREATETIME Ref="121" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.2,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_CREATETIME</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.CREATETIME}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_CREATETIME>
+            <DataDATASETTYPE_UPDATEUID Ref="122" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.6,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_UPDATEUID</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.UPDATEUID}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_UPDATEUID>
+            <DataDATASETTYPE_UPDATETIME Ref="123" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_UPDATETIME</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.UPDATETIME}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_UPDATETIME>
+            <DataDATASETTYPE_ICON Ref="124" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8.4,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_ICON</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.ICON}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_ICON>
+            <DataDATASETTYPE_ECOMPANYID Ref="125" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.8,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_ECOMPANYID</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.ECOMPANYID}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_ECOMPANYID>
+            <DataDATASETTYPE_SERIALNUMBER Ref="126" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.2,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_SERIALNUMBER</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.SERIALNUMBER}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_SERIALNUMBER>
+            <DataDATASETTYPE_FILEEXTENT Ref="127" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>12.6,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_FILEEXTENT</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.FILEEXTENT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_FILEEXTENT>
+            <DataDATASETTYPE_VIEWTOOL Ref="128" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_VIEWTOOL</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.VIEWTOOL}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_VIEWTOOL>
+            <DataDATASETTYPE_DOWNFILTER Ref="129" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15.4,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_DOWNFILTER</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.DOWNFILTER}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_DOWNFILTER>
+            <DataDATASETTYPE_ISINTEGRATECAD Ref="130" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16.8,0,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDATASETTYPE_ISINTEGRATECAD</Name>
+              <Page isRef="116" />
+              <Parent isRef="117" />
+              <Text>{DATASETTYPE.ISINTEGRATECAD}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDATASETTYPE_ISINTEGRATECAD>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>DATASETTYPE</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataDATASETTYPE</Name>
+          <Page isRef="116" />
+          <Parent isRef="116" />
+          <Sort isList="true" count="0" />
+        </DataDATASETTYPE>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>093cd91bca594083ad2229898e78b186</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="131" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="132" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/26/2018 6:10:52 PM</ReportChanged>
+  <ReportCreated>12/26/2018 6:10:52 PM</ReportCreated>
+  <ReportFile />
+  <ReportGuid>b83ebc1156eb4b6694c42046fa824417</ReportGuid>
+  <ReportImage isNull="true" />
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2017.2.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

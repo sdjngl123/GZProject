@@ -1,0 +1,980 @@
+.classicHomePage_setting_ul li:hover .b-bussiness-agent {
+    background-position: -128px -288px;
+}
+
+.classicHomePage_setting_ul li:hover .b-person-setting {
+    background-position: -144px -288px;
+}
+
+.classicHomePage_setting_ul li:hover .b-homepage-setting {
+    background-position: -176px -224px;
+}
+
+.classicHomePage_setting_ul li:hover .b-password-setting {
+    background-position: -160px -224px;
+}
+
+.classicHomePage_setting_ul li:hover .b-logout {
+    background-position: -160px -288px;
+}
+
+.hoteam-smartaccordion-title-select {
+    color: #006666 !important;
+}
+
+.hoteam-smartaccordion-title-bottomline {
+    background-color: #038489;
+}
+
+tr.htgrid-row-select>td, .htgrid-tr-hover>td, .htgrid-td-select, .htgrid-td-hover {
+    background-color: #e2f0f0 !important;
+}
+
+.htgrid-hover-light-none tr.htgrid-row-select > td,
+.htgrid-hover-light-none .htgrid-tr-hover > td,
+.htgrid-hover-light-none .htgrid-td-select,
+.htgrid-hover-light-none .htgrid-td-hover {
+    background-color: #fff;
+}
+
+.ui-accordion-header-hover {
+    background-color: #e2f0f0;
+    color: #007276;
+}
+
+.ui-accordion-header-select {
+    background-color: #e2f0f0;
+    color: #007276;
+    border-bottom: 1px solid #dfecec !important;
+}
+
+.ui-accordion-header-select-pre {
+    border-bottom: 1px solid #dfecec !important;
+}
+
+.ui-accordion-content {
+    background-color: #f0f0f0;
+}
+
+.ui-accordion-header .ui-accordion-header-left {
+    background-color: #038489;
+}
+
+.ui-accordion-content .hoteam-accordion-list .liaccordion-left {
+    background-color: #f0f0f0;
+}
+
+.ui-accordion-content .hoteam-accordion-list .liaccordion-middle {
+    background-color: #c0c0c0;
+}
+
+    .ui-accordion-content .hoteam-accordion-list .liaccordion-middle .liaccordion-middle-buck {
+        background-color: #f7f7f7;
+        border: 1px solid #c0c0c0;
+    }
+
+.hoteam-accordion-list-hover {
+    background-color: #fff !important;
+}
+
+.hoteam-accordion-list-select {
+    background-color: #fff !important;
+}
+
+.hoteam-accordion-list-hover .liaccordion-left {
+    background-color: #2ab2d2 !important;
+}
+
+.hoteam-accordion-list-select .liaccordion-left {
+    background-color: #2ab2d2 !important;
+}
+
+.ztree li a.curSelectedNode {
+    background-color: #e2f0f0;
+}
+
+.htGrid .htGrid_body table tr:hover, .htGrid .htGrid_body table tr.even:hover {
+    background-color: #e2f0f0 !important;
+}
+
+.hoteamTabs .nav > li > a {
+    color: #333;
+    font-size: 12px;
+}
+
+.head div.middle ul li.active a {
+    color: #007276;
+}
+
+.SmartTabs .nav > li.active > a > div {
+    border-bottom: 2px solid #007276;
+}
+
+.hoteamTabs .head .middle ul li a:hover {
+    color: #038489;
+}
+
+.hoteamTabs.capsule > .head {
+    border-bottom: 1px solid #038489;
+}
+
+.hoteamTabs.capsule > .head .nav-tabs > li > a .b-close {
+    background-position: -144px -368px;
+}
+
+.hoteamTabs.capsule > .head .nav-tabs > li.active > a .b-close,
+.hoteamTabs.capsule > .head .nav-tabs > li.active > a:focus .b-close,
+.hoteamTabs.capsule > .head .nav-tabs > li.active > a:hover .b-close {
+    background-position: -128px -368px;
+}
+
+    .hoteamTabs.capsule > .head .nav-tabs > li.active > a,
+    .hoteamTabs.capsule > .head .nav-tabs > li.active > a:focus,
+    .hoteamTabs.capsule > .head .nav-tabs > li.active > a:hover {
+    border-right: 1px solid #ddd;
+    color: #fff;
+    background-color: #038489;
+}
+
+    /*capsule sample 样式*/
+
+.hoteamTabs.capsule.sample > .head .nav-tabs > li.active > a,
+.hoteamTabs.capsule.sample > .head .nav-tabs > li.active > a:focus,
+.hoteamTabs.capsule.sample > .head .nav-tabs > li.active > a:hover {
+    color: #038489;
+    background-color: #fff;
+    border-bottom: #038489 2px solid;
+}
+
+.hoteamTabs.capsule.sample> .head .nav-tabs > li > a:focus,
+.hoteamTabs.capsule.sample > .head .nav-tabs > li > a:hover {
+    background-color: transparent;
+}
+
+.hoteamTabs.capsule.sample > .head .nav-tabs > li.active > .nav-tabs-item-border-right {
+    position: absolute;
+    border-top: #038489 2px solid;
+    top: 100%;
+    left: 50%;
+    margin-left: -2px;
+    width: 0;
+    height: 0;
+    border-right: transparent 3px solid;
+    border-left: transparent 3px solid;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    background-color: #008e95;
+}
+
+.sideTabs-li-selected {
+    color: #038489;
+}
+
+.basesprite {
+    background: url(baseCtrl.png) center no-repeat;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+
+.hoteamlogo {
+    background-position: -4px -402px;
+    width: 230px;
+    height: 25px;
+}
+
+.b-white-circle-down {
+    background-position: 0px -32px;
+}
+
+.b-white-circle-up {
+    background-position: 0px -32px;
+}
+
+.b-home {
+    background-position: 0px -32px;
+}
+
+.b-setting {
+    background-position: -16px -32px;
+}
+
+.b-lock {
+    background-position: -32px -32px;
+}
+
+.b-poweroff {
+    background-position: -48px -32px;
+}
+
+.b-calendar {
+    background-position: 0 -160px;
+}
+
+.b-warn {
+    background-position: -16px -160px;
+}
+
+.b-close {
+    background-position: -176px -256px;
+}
+
+.b-blue-close {
+    background-position: -160px -256px;
+}
+
+.b-close-b {
+   background-position: -144px -368px;
+}
+
+.b-white-angle-down {
+    background-position: 0px -96px;
+}
+
+.b-white-angle-up {
+    background-position: -16px -96px;
+}
+
+.b-white-angle-left {
+    background-position: -64px -96px;
+}
+
+.b-white-angle-right {
+    background-position: -32px -96px;
+}
+
+.b-angle-down {
+    background-position: 0px -80px;
+}
+
+.b-angle-up {
+    background-position: -16px -80px;
+}
+
+.b-angle-right {
+    background-position: -32px -80px;
+}
+
+.b-angle-left {
+    background-position: -48px -80px;
+}
+
+.b-blue-angle-down {
+    background-position: -64px -80px;
+}
+
+.b-blue-angle-up {
+    background-position: -80px -80px;
+}
+
+.b-blue-angle-right {
+    background-position: -96px -80px;
+}
+
+.b-blue-angle-left {
+    background-position: -112px -80px;
+}
+
+.b-caret-down {
+    background-position: -16px -176px;
+}
+
+.b-caret-up {
+    background-position: -0px -176px;
+}
+
+.b-caret-left {
+    background-position: -32px -176px;
+}
+
+.b-caret-right {
+    background-position: -48px -176px;
+}
+
+.b-white-caret-down {
+    background-position: -80px -176px;
+}
+
+.b-white-caret-up {
+    background-position: -64px -176px;
+}
+
+.b-white-caret-left {
+    background-position: -96px -176px;
+}
+
+.b-white-caret-right {
+    background-position: -112px -176px;
+}
+
+.b-chevron-left {
+    background-position: -32px -112px;
+}
+
+.b-chevron-right {
+    background-position: -48px -112px;
+}
+
+.b-chevron-up {
+    background-position: -64px -112px;
+}
+
+.b-chevron-down {
+    background-position: -80px -112px;
+}
+
+.b-chevron-circle-down {
+    background-position: 0px -112px;
+}
+
+.b-blue-double-angle-left {
+    background-position: -96px -256px;
+}
+
+.b-blue-double-angle-right {
+    background-position: -112px -256px;
+}
+
+.b-double-angle-left {
+    background-position: -64px -256px;
+}
+
+.b-double-angle-right {
+    background-position: -80px -256px;
+}
+
+.b-blue-double-angle-first {
+    background-position: -224px -256px;
+}
+
+.b-blue-double-angle-end {
+    background-position: -240px -256px;
+}
+
+.b-double-angle-first {
+    background-position: -192px -256px;
+}
+
+.b-double-angle-end {
+    background-position: -208px -256px;
+}
+
+.b-star-o {
+    background-position: 0px -64px;
+}
+
+.b-star {
+    background-position: -16px -64px;
+}
+
+.b-search {
+    background-position: -16px -256px;
+}
+
+.b-search-clear{
+    background-position: -192px -16px;
+}
+
+.b-checkbox-false-full {
+    background-position: 0 -127px;
+}
+
+.b-checkbox-false-full-focus {
+    background-position: -16px -128px;
+}
+
+.b-checkbox-false-part {
+    background-position: -32px -128px;
+}
+
+.b-checkbox-false-part-focus {
+    background-position: -48px -128px;
+}
+
+.b-checkbox-false-disable {
+    background-position: -64px -128px;
+}
+
+.b-checkbox-true-full {
+    background-position: -80px -128px;
+}
+
+.b-checkbox-true-full-focus {
+    background-position: -96px -128px;
+}
+
+.b-checkbox-true-part {
+    background-position: -112px -128px;
+}
+
+.b-checkbox-true-part-focus {
+    background-position: -128px -128px;
+}
+
+.b-checkbox-true-disable {
+    background-position: -144px -128px;
+}
+
+.b-dialog-min {
+    background-position: 0px -48px;
+}
+
+.b-dialog-max {
+    background-position: -16px -48px;
+}
+
+.b-dialog-close {
+    background-position: -32px -49px;
+}
+
+.b-dialog-min-focus {
+    background-position: -48px -48px;
+}
+
+.b-dialog-max-focus {
+    background-position: -64px -48px;
+}
+
+.b-dialog-close-focus {
+    background-position: -80px -48px;
+}
+
+.b-checkboxsel {
+    background-position: -16px -272px;
+}
+
+.b-checkboxunsel {
+    background-position: 0px -272px;
+}
+
+.b-sort-top {
+    background-position: -32px -256px;
+}
+
+.b-sort-down {
+    background-position: -48px -256px;
+}
+
+.b-refresh {
+    background-position: -160px -112px;
+}
+
+.b-blue-refresh {
+    background-position: -112px -112px;
+}
+
+.b-trash {
+    background-position: -144px -112px;
+}
+
+.b-blue-trash {
+    background-position: -96px -112px;
+}
+
+.b-state-left {
+    background-position: -87px -5px;
+    height: 40px;
+    width: 3px;
+}
+
+.b-state-right {
+    background-position: -104px -5px;
+    height: 40px;
+    width: 3px;
+}
+
+.b-state-top {
+    background-position: -116px -6px;
+    height: 3px;
+    width: 40px;
+}
+
+.b-state-bottom {
+    background-position: -116px -24px;
+    height: 3px;
+    width: 40px;
+}
+
+.b-title-refresh {
+    background-position: -164px -198px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-title-listModel {
+    background-position: -100px -198px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-title-listModel-sel {
+    background-position: -100px -230px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-title-imgModel {
+    background-position: -132px -198px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-title-imgModel-sel {
+    background-position: -132px -230px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-title-treeOperation-sel {
+    background-position: -68px -230px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-title-treeOperation {
+    background-position: -68px -198px;
+    height: 20px;
+    width: 24px;
+}
+
+.b-user {
+    background-position: 0px -208px;
+}
+
+.b-blue-user {
+    background-position: -16px -208px;
+}
+
+.b-white-user {
+    background-position: -32px -192px;
+}
+
+.b-password {
+    background-position: -32px -208px;
+}
+
+.b-blue-password {
+    background-position: -48px -208px;
+}
+
+.b-white-password {
+    background-position: -48px -192px;
+}
+
+.b-more {
+    background-position: -192px -112px;
+}
+
+.b-blue-more {
+    background-position: -176px -112px;
+}
+
+.b-gray-more {
+    background-position: -192px -128px;
+}
+
+.b-white-circle-up {
+    background-position: -48px -160px;
+}
+
+.b-white-circle-down {
+    background-position: -64px -160px;
+}
+
+.b-white-checkbox {
+    background-position: -96px -160px;
+}
+
+.b-white-checkbox-sel {
+    background-position: -80px -160px;
+}
+
+.b-export {
+    background-position: 0px -224px;
+}
+
+.b-part-export {
+    background-position: -16px -224px;
+}
+
+.b-print {
+    background-position: 0 -240px;
+}
+
+.b-part-print {
+    background-position: -16px -240px;
+}
+
+.b-hor-more {
+    background-position: -32px -240px;
+}
+
+.b-grid-setting {
+    background-position: -0px -352px;
+}
+
+.b-grid-search {
+    background-position: -32px -352px;
+}
+
+.b-grid-cancelsearch {
+    background-position: -48px -352px;
+}
+
+.b-grid-save {
+    background-position: -16px -352px;
+}
+
+.b-search-line {
+    background-position: 0px -288px;
+}
+
+.b-history-line {
+    background-position: -16px -288px;
+}
+
+.b-collection-line {
+    background-position: -32px -288px;
+}
+
+.b-setting-line {
+    background-position: -48px -288px;
+}
+
+.b-home-line {
+    background-position: -64px -288px;
+}
+
+.b-bussiness-agent {
+    background-position: -80px -288px;
+}
+
+.b-person-setting {
+    background-position: -96px -288px;
+}
+
+.b-homepage-setting {
+    background-position: -144px -224px;
+}
+
+.b-password-setting {
+    background-position: -128px -224px;
+}
+
+.b-logout {
+    background-position: -112px -288px;
+}
+
+.b-grid-angle-down {
+    background-position: -64px -384px;
+}
+
+.b-img-preview {
+     background-position: -32px -272px;   
+}
+
+.b-img-close {
+     background-position: -96px -272px;
+}
+
+.b-img-magnify {
+     background-position: -64px -272px;
+}
+
+.b-img-lessen {
+     background-position: -80px -272px;
+}
+
+.b-img-left {
+     background-position: -112px -272px;
+}
+
+.b-img-right {
+     background-position: -128px -272px;
+}
+
+.b-node-close {
+    background-position: 0px -192px;
+}
+
+.b-node-open {
+    background-position: -16px -192px;
+}
+
+.b-gray-search {
+    background-position: -64px -192px;
+}
+
+.b-gray-search-hover {
+    background-position: -64px -208px;
+}
+
+.b-gray-prev {
+    background-position: -80px -192px;
+}
+
+.b-gray-next {
+    background-position: -96px -192px;
+}
+
+.b-gray-convert {
+    background-position: -112px -192px;
+}
+
+.b-gray-remove {
+    background-position: -128px -192px;
+}
+
+.b-gray-prev-hover {
+    background-position: -80px -208px;
+}
+
+.b-gray-next-hover {
+    background-position: -96px -208px;
+}
+
+.b-gray-convert-hover {
+    background-position: -112px -208px;
+}
+
+.b-gray-remove-hover {
+    background-position: -128px -208px;
+}
+.b-less-remove {
+    background-position: -128px -256px;
+}
+
+/*ztee树所需样式*/
+.ztree li span.chk, .ztree li span.switch {
+    background: url(baseCtrl.png) no-repeat;
+}
+
+.ztree li span.button {
+    line-height: 0;
+    margin-top: 4px;
+    margin-left: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+}
+
+.ztree li span.button.chk.checkbox_false_full {
+    background-position: 0 -128px;
+}
+
+.ztree li span.button.chk.checkbox_false_full_focus {
+    background-position: -16px -128px;
+}
+
+.ztree li span.button.chk.checkbox_false_part {
+    background-position: -32px -128px;
+}
+
+.ztree li span.button.chk.checkbox_false_part_focus {
+    background-position: -48px -128px;
+}
+
+.ztree li span.button.chk.checkbox_false_disable {
+    background-position: -64px -128px;
+}
+
+.ztree li span.button.chk.checkbox_true_full {
+    background-position: -80px -128px;
+}
+
+.ztree li span.button.chk.checkbox_true_full_focus {
+    background-position: -96px -128px;
+}
+
+.ztree li span.button.chk.checkbox_true_part {
+    background-position: -112px -128px;
+}
+
+.ztree li span.button.chk.checkbox_true_part_focus {
+    background-position: -128px -128px;
+}
+
+.ztree li span.button.chk.checkbox_true_disable {
+    background-position: -144px -128px;
+}
+
+.ztree li span.button.noline_open {
+    background-position: -16px -191px;
+}
+
+.ztree li span.button.noline_close {
+    background-position: 0px -192px;
+}
+
+/*Grid树所需样式*/
+.htgrid-row-check {
+    background: url(baseCtrl.png) center no-repeat;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+
+.htgrid-treeNode-checkbox {
+    position: relative;
+    background: url(baseCtrl.png) center no-repeat;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.hoteam-grid-dialog .hoteam-grid-tree span.ico_docu, .hoteam-grid-dialog .hoteam-grid-tree span.ico_open, .hoteam-grid-dialog .hoteam-grid-tree span.ico_close {
+    background: url(baseCtrl.png) no-repeat;
+    background-position: -160px -32px;
+}
+
+.hoteam-grid-dialog .hoteam-grid-tree-up {
+    background: url(baseCtrl.png) no-repeat;
+    background-position: -128px -48px;
+}
+
+.hoteam-grid-dialog .hoteam-grid-tree-down {
+    background: url(baseCtrl.png) no-repeat;
+    background-position: -144px -48px;
+}
+/*EditTreeGrid树所需样式*/
+.EditTreeGrid .htgrid_col_fold_fold {
+    background: url(baseCtrl.png) no-repeat;
+    background-position-x: 0px;
+}
+
+.EditTreeGrid .htgrid_col_fold_folded {
+    background: url(baseCtrl.png) no-repeat;
+    background-position-x: -16px;
+}
+
+.EditTreeGrid .htgrid_col_fold_first {
+    background-position-y: -192px;
+}
+
+.EditTreeGrid .htgrid_col_fold_middle {
+    background-position-y: -192px;
+}
+
+.EditTreeGrid .htgrid_col_fold_end {
+    background-position-y: -192px;
+}
+
+/*EditGrid图标*/
+.htgrid-body-c span.button {
+    position:relative;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url("baseCtrl.png");
+}
+
+.htgrid-body-c span.button.chk.checkbox_false_full {
+    background-position: 0 -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_false_full_focus {
+    background-position: -16px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_true_full {
+    background-position: -80px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_true_full_focus {
+    background-position: -96px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_true_part {
+    background-position: -112px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_true_part_focus {
+    background-position: -128px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_true_disable {
+    background-position: -144px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_false_empty {
+    background-position: -176px -128px;
+}
+
+.htgrid-body-c span.button.chk.checkbox_false_empty_focus {
+    background-position: -160px -128px;
+}
+
+.htgrid-td-editing {
+    background: url(baseCtrl.png);
+    background-position: -330px -30px;
+}
+
+/*向导图片*/
+.hoteam-navigation-step-img {
+    width: 32px;
+    height: 32px;
+    background-image: url(baseCtrl.png);
+    background-position: -96px -304px;
+}
+
+.hoteam-navigation-step-active .hoteam-navigation-step-img {
+    background-position: -48px -304px;
+}
+
+.hoteam-navigation-step-finish .hoteam-navigation-step-img {
+    background-position: 0px -304px;
+}
+
+.hoteam-navigation-toggle-standard {
+    background-position: 0px -384px;
+}
+
+.hoteam-navigation-toggle-slide {
+    background-position: -32px -384px;
+}
+
+.icon-arrow-pre {
+    background-position: -96px -384px;
+    display: block;
+}
+
+    .icon-arrow-pre.disable {
+        background-position: -160px -384px;
+        display: block;
+    }
+
+.icon-arrow-next {
+    background-position: -64px -384px;
+    display: block;
+}
+
+    .icon-arrow-next.disable {
+        background-position: -128px -384px;
+        display: block;
+    }
+
+.accordion-toggle-icon-open {
+    background-position: -160px 0px;
+    width: 32px;
+    height: 16px;
+}
+
+.accordion-toggle-icon-close {
+    background-position: -160px -16px;
+    width: 32px;
+    height: 16px;
+}

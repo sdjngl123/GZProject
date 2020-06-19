@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityLinkView Name="Guide_ListManagement_ReplaceKeyLinkVIEW" ObjectTypeName="Guide_ListManagement_ReplaceKey" OrderByString="CREATETIME DESC" FixedFilter="" DeepSearch="false" SearchChild="true" FixedEntityFilter="">
+    <!--<ViewColumn Name="LID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="false" Sortable="true" />
+    <ViewColumn Name="ECODE" Width="80" Resizable="false" Sortable="true" />
+    <ViewColumn Name="PHONE" Width="80" Resizable="false" Sortable="false" />
+    <ViewColumn Name="EMAIL" Width="80" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ADDRESS" Width="80" Resizable="false" Sortable="false" />
+    <ViewColumn Name="LSEQUENCE" Width="0" Resizable="false" Sortable="false" />
+    <ViewCondition Name="UserName" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" />
+    <ViewCondition Name="UserCode" AndOrFlag="AND" InfoName="ECODE" Operation="LIKE" />-->
+  </EntityLinkView>
+</root>

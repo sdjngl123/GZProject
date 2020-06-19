@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebListView Name="CompanySystemSettingsListView" View="SYSTEMSETTINGSVIEW" EntityFilter="" Filter=" MODULEID= '[Tree_Current_value1]' and OWNER is null AND ISCOMPANY=1" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" AllowOverstriking="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageUseObjectInspector="false" QueryID="DataModel_FAVORITE_USERID" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+  
+</root>

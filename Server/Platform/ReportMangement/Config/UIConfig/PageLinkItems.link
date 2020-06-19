@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="ReportClassifyRootLink" IsTemplate="false" HideTitle="false">
+    <PageLink Name="ReportClassifyList" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="false" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="ReportClassifyList" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="ReportClassifyLink" IsTemplate="false" HideTitle="false">
+    <PageLink Name="ReportList" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="false" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="ReportObjectList" />
+    </PageLink>
+  </PageLinks>
+
+
+  <PageLinks Name="ReportShowLink" IsTemplate="false" HideTitle="false">
+    <PageLink Name="Report" PageName="ShowReportPage" IsSelected="true" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      
+    </PageLink>
+  </PageLinks>
+</root>

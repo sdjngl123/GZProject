@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectInspector" IsCache="true">
+  <Settings Key="title" Value="ObjectInspector.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectInspector_LoadPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!--第一层-->
+    <PageControl ControlID="ObjectInspector_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Top_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="6"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="Top_Container" ParentID="ObjectInspector_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="MenuCtrlPage"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="90%"/>
+        <Settings Key="childid" Value="TitleContainer"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="3"/>
+      </Settings>
+    </PageControl>
+    <!--第三层-->
+    <PageControl ControlID="MenuCtrlPage" ParentID="Top_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="TitleContainer" ParentID="Top_Container" TypeName="CustomerContainer" >
+    </PageControl>
+
+    <!--二层-->
+    <PageControl ControlID="TabsCtrlPage" ParentID="ObjectInspector_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

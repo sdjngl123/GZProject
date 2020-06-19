@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ActiveX Name="HoteamInforCenterRootCertificate" ClassId="" Url="~/Platform/Certificate/RootCertificate.rar" Version="1,0,0,0" AutoDownLoad="false" ShowInList="true" />
+  <ActiveX Name="HoteamsoftFileComponent" ClassId="CLSID:3333C8E2-3E75-4AEC-9186-BE992FE5AD78" Url="~/Platform/Ctrls/Filetransfer/HoteamFC.cab" Version="1,0,4,9" AutoDownLoad="true" ShowInList="false" />
+  <ActiveX Name="HoteamsoftFileComponentRar" ClassId="CLSID:3333C8E2-3E75-4AEC-9186-BE992FE5AD78" Url="~/Platform/Ctrls/Filetransfer/HoteamFC.cab" Version="1,0,4,9" AutoDownLoad="false" ShowInList="true" />
+  <ActiveX Name="HoteamsoftReportViewer" ClassId="CLSID:26704D6E-5F8D-4816-B280-D7D64463D1FB" Url="~/Platform/Ctrls/Report/HoteamRP.cab" Version="1,0,1,5" AutoDownLoad="true" ShowInList="false" />  
+  <ActiveX Name="HoteamsoftOfficeActiveX" ClassId="" Url="~/Platform/Ctrls/Office/OfficeControl.rar" Version="5,0,2,4" AutoDownLoad="false" ShowInList="false" />
+  <ActiveX Name="HoteamsoftOffice" ClassId="clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404" Url="~/Platform/Ctrls/Office/OfficeControl.cab" Version="5,0,2,4" AutoDownLoad="false" ShowInList="false" />
+  <ActiveX Name="HoteamsoftMiniCAD" ClassId="" Url="~\Platform\Ctrls\MiniCAD\MiniCADSee_SDHT.exe" Version="1,0,0,0" AutoDownLoad="false" ShowInList="false" />
+  <ActiveX Name="HoteamsoftSview" ClassId="" Url="~\Platform\Ctrls\Filetransfer\Sview.rar" Version="4,0,1,0" AutoDownLoad="false" ShowInList="true" />
+</root>

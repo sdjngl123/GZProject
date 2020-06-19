@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="AllSettingsLinks">
+    <PageLink Name="SystemSettingsTab" PageName="TreeManagement">
+      <Para Name="ItemName" Value="SystemSettingsTreeManagement"/>
+    </PageLink>
+    <PageLink Name="PersonalSettingsTab" PageName="TreeManagement">
+      <Para Name="ItemName" Value="PersonalSettingsTreeManagement"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="SystemSettings">
+    <PageLink Name="SystemSettingsLink" PageName="ListManagement">
+      <Para Name="ItemName" Value="SystemSettingsList"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="PersonalSettings">
+    <PageLink Name="PersonalSettingsLink" PageName="ListManagement">
+      <Para Name="ItemName" Value="PersonalSettingsList"/>
+    </PageLink>
+  </PageLinks> 
+  <PageLinks Name="SystemSettingsNull">
+    <PageLink Name="SystemSettingsNullLink" PageName="ListManagement">
+      <Para Name="ItemName" Value="SystemSettingsNullList"/>
+    </PageLink>
+  </PageLinks>
+</root>

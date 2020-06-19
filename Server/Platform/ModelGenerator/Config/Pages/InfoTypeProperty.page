@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="InfoTypeProperty">
+  <Settings Key="title" Value="InfoTypeProperty.InfoTypeProperty"/>
+  <Settings Key="height" Value="400"/>
+  <Settings Key="width" Value="655"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_InfoTypeProperty_PageInit(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="InfoTypeProperty_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InfoTypeProperty_ContentLayout"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="InfoTypeProperty_LayoutContainerBtn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InfoTypeProperty_ContentLayout" ParentID="InfoTypeProperty_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="3"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="240"/>
+        <Settings Key="childid" Value="InfoTypePropertyInfo"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="15"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="InfoTypePropertyNoteLayout"/>
+      </Settings>
+    </PageControl>
+    <!--InfoTypePropertyInfo vertical-->
+    <PageControl ControlID="InfoTypePropertyInfo" ParentID="InfoTypeProperty_ContentLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-0"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+    </PageControl>
+    <!--InfoTypePropertyInfo horizontal-->
+    <PageControl ControlID="R-0" ParentID="InfoTypePropertyInfo" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="LangLbl"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="LangDropDown"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="TimeZoneLbl"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="TimezoneDropDown"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--InfoTypePropertyInfo horizontal-->
+    <PageControl ControlID="R-1" ParentID="InfoTypePropertyInfo" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ThemeLbl"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ThemeDropDown"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ModeLbl"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ModeDropDown"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="GENDER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="GENDER_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="BIRTHDAY_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="BIRTHDAY_Value"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ACADEMICRECORD_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ACADEMICRECORD_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="PHONE_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="PHONE_Value"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="EMAIL_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="EMAIL_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ADDRESS_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ADDRESS_Value"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ZIPCODE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ZIPCODE_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="LangLbl" ParentID="R-0" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.Language" />
+    </PageControl>
+    <PageControl ControlID="TimeZoneLbl" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.TimeZone" />
+    </PageControl>
+    <PageControl ControlID="LangDropDown" ParentID="R-0" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" />
+        <Settings Key="value" />
+        <Settings Key="selected" Value="true"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TimezoneDropDown" ParentID="R-1" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" />
+        <Settings Key="value" />
+        <Settings Key="selected" Value="true"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ModeLbl" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.HomePageMode" />
+    </PageControl>
+    <PageControl ControlID="AgencyLbl" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.Agent" />
+    </PageControl>
+    <PageControl ControlID="ModeDropDown" ParentID="R-1" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" />
+        <Settings Key="value" />
+        <Settings Key="selected" Value="true"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="AgencyTextValue" ParentID="R-2" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InfoTypeProperty_AgencyOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="ThemeLbl" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.Theme" />
+    </PageControl>
+    <PageControl ControlID="ThemeDropDown" ParentID="R-1" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1" >
+        <Settings Key="textId" />
+        <Settings Key="value" />
+        <Settings Key="selected" Value="true"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="PASSWORD_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.PASSWORDHeader" />
+    </PageControl>
+    <PageControl ControlID="PASSWORD_Value" ParentID="R-2" TypeName="TextBox" >
+      <Settings Key="type" Value="password"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,500})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.PASSWORDRegex" />
+    </PageControl>
+    <PageControl ControlID="GENDER_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.GENDERHeader" />
+    </PageControl>
+    <PageControl ControlID="GENDER_Value" ParentID="R-2" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.GENDERRegex" />
+    </PageControl>
+    <PageControl ControlID="BIRTHDAY_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.BIRTHDAYHeader" />
+    </PageControl>
+    <PageControl ControlID="BIRTHDAY_Value" ParentID="R-2" TypeName="DateTime" >
+      <Settings Key="type" Value="date"/>
+      <Settings Key="regex" Value="" />
+      <Settings Key="regextipId" Value="" />
+    </PageControl>
+    <PageControl ControlID="ACADEMICRECORD_Label" ParentID="R-3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.ACADEMICRECORDHeader" />
+    </PageControl>
+    <PageControl ControlID="ACADEMICRECORD_Value" ParentID="R-3" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.ACADEMICRECORDRegex" />
+    </PageControl>
+    <PageControl ControlID="PHONE_Label" ParentID="R-3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.PHONEHeader" />
+    </PageControl>
+    <PageControl ControlID="PHONE_Value" ParentID="R-3" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <!--<Settings Key="regex" Value="(^(((\d{3,4})-)?\d{6,8})$|^(1[0-9]\d{9})$)|(^$) AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.PHONERegex" />-->
+    </PageControl>
+    <PageControl ControlID="EMAIL_Label" ParentID="R-4" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.EMAILHeader" />
+    </PageControl>
+    <PageControl ControlID="EMAIL_Value" ParentID="R-4" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <!--<Settings Key="regex" Value="(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)|(^$) AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.EMAILRegex" />-->
+    </PageControl>
+    <PageControl ControlID="ADDRESS_Label" ParentID="R-4" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.ADDRESSHeader" />
+    </PageControl>
+    <PageControl ControlID="ADDRESS_Value" ParentID="R-4" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.ADDRESSRegex" />
+    </PageControl>
+    <PageControl ControlID="ZIPCODE_Label" ParentID="R-5" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="InfoTypeProperty.ZIPCODEHeader" />
+    </PageControl>
+    <PageControl ControlID="ZIPCODE_Value" ParentID="R-5" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <!--<Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="InfoTypeProperty.ZIPCODERegex" />-->
+    </PageControl>
+    <!--注解-->
+    <PageControl ControlID="InfoTypePropertyNoteLayout" ParentID="InfoTypeProperty_ContentLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="16"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InfoTypePropertyNote"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InfoTypePropertyNote" ParentID="InfoTypePropertyNoteLayout" TypeName="Label" >
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="InfoTypeProperty.InfoTypePropertyNote" />
+    </PageControl>
+    
+    <PageControl ControlID="InfoTypeProperty_LayoutContainerBtn" ParentID="InfoTypeProperty_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="InfoTypeProperty_btnOK"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="InfoTypeProperty_btnCancel"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="InfoTypeProperty_btnOK" ParentID="InfoTypeProperty_LayoutContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InfoTypeProperty_OKOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="InfoTypeProperty_btnCancel" ParentID="InfoTypeProperty_LayoutContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ClassicHomePageTop_RetCancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+   
+  </PageControls>
+</root>
+

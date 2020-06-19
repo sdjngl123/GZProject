@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TestCapability">
+	<PageHandlers>
+		<PageHandler HandlerName ="OnCreate" Script="GACTT_TestResourceLib_TestCapability_LoadPage(pageEvent);"/>
+	</PageHandlers>
+	<PageControls>
+		<PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="TreeListView_Container"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="TreeListView_Container" ParentID="TopContainer" TypeName="LayoutContainer">
+			<Settings Key="type" Value="vertical"/>
+			<Settings Key="item1">
+				<Settings Key="size" Value="30"/>
+				<Settings Key="childid" Value="MenuPageContainer"/>
+			</Settings>
+			<Settings Key="item2" >
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ListViewContainer"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="MenuPageContainer" ParentID="TreeListView_Container" TypeName="PageContainer">
+			<Settings Key="pageName" Value="MenuCtrl"/>
+		</PageControl>
+		<PageControl ControlID="ListViewContainer" ParentID="TreeListView_Container" TypeName="LayoutContainer">
+			<Settings Key="type" Value="horizontal"/>
+			<Settings Key="item1">
+				<Settings Key="size" Value="100%"/>
+				<Settings Key="childid" Value="ListView"/>
+			</Settings>
+		</PageControl>
+		<PageControl ControlID="ListView" ParentID="TreeListView_Container" TypeName="EditTreeGrid">
+			<PageHandlers>
+				<PageHandler HandlerName ="OnLoadRows" Script="GACTT_TestResourceLib_TestCapability_GridData(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnOpenRow" Script="GACTT_TestResourceLib_TestCapability_OpenRow(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnRowClick" Script="GACTT_TestResourceLib_TestCapability_OnRowClick(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnCheckboxClick" Script="GACTT_TestResourceLib_TestCapability_OnCheckboxClick(ctrlEvent);"/>
+				<PageHandler HandlerName ="OnColLinkClick" Script="GACTT_TestResourceLib_TestCapability_OnColLinkClick(ctrlEvent);"/>
+			</PageHandlers>
+			<Settings Key="multiselect" Value="true" />
+			<Settings Key="rowrejection" Value="true" />
+			<Settings Key="check" Value="true" />
+			<Settings Key="isColumnSetting" Value="true" />
+		</PageControl>
+	</PageControls>
+</root>

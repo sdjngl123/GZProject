@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SettingEdit" IsWeb="true">
+    <Label Name="RootNodeTitle">
+      <LocalizedLabel LanguageRef="zhs">设置信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Settings information</LocalizedLabel>
+    </Label>
+    <Label Name="SettingValue">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="SettingValueDescription">
+      <LocalizedLabel LanguageRef="zhs">设置项的值信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the value information for the item</LocalizedLabel>
+    </Label>
+    <Label Name="IsToClient">
+      <LocalizedLabel LanguageRef="zhs">客户端设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Client settings</LocalizedLabel>
+    </Label>
+    <Label Name="IsToClientDescription">
+      <LocalizedLabel LanguageRef="zhs">是否发送到客户端，如果设置为True，则前台JS脚本可以调用改配置项的值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to send to client or not, if set to be True, the front JS script can call the value of the configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="SettingKey">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="SettingKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">设置项的名称，标识改配置项，通过该名称获取配置项的值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the name of the item, identify the configuration item, and obtain the value of the configuration item by the name</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DescriptionDescription">
+      <LocalizedLabel LanguageRef="zhs">针对该配置项的描述信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description information for this configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="DeserializeXMLError">
+      <LocalizedLabel LanguageRef="zhs">反序列化Xml错误，请检查xml编辑页面！详细信息：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deserialize Xml error occurred. Please check Xml edit page! Details:</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ConfigEditForm" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">配置文件编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Profile Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="MainPanel">
+      <LocalizedLabel LanguageRef="zhs">  主面板  </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main Panel</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ExTextEditor" IsWeb="true">
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Cut">
+      <LocalizedLabel LanguageRef="zhs">剪切</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cut</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+    <Label Name="Find">
+      <LocalizedLabel LanguageRef="zhs">查找</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Find</LocalizedLabel>
+    </Label>
+    <Label Name="Replace">
+      <LocalizedLabel LanguageRef="zhs">替换</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Replace</LocalizedLabel>
+    </Label>
+    <Label Name="AutoWrap">
+      <LocalizedLabel LanguageRef="zhs">自动换行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic Wrap</LocalizedLabel>
+    </Label>
+    <Label Name="CancelAutoWrap">
+      <LocalizedLabel LanguageRef="zhs">取消自动换行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel Automatic Wrap</LocalizedLabel>
+    </Label>
+    <Label Name="ListTemplateName">
+      <LocalizedLabel LanguageRef="zhs">可选模板列表(双击插入)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Optional template List (Double-Click Insert)</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ActiveXEdit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">ActiveX插件管理编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ActiveX Plug-in management edit window</LocalizedLabel>
+    </Label>
+    <Label Name="SelectedAppRoot">
+      <LocalizedLabel LanguageRef="zhs">请选择当前程序根目录下的文件！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the file under the current program root directory!</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ClassId">
+      <LocalizedLabel LanguageRef="zhs">唯一标识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unique Identification</LocalizedLabel>
+    </Label>
+    <Label Name="Url">
+      <LocalizedLabel LanguageRef="zhs">下载地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download Address</LocalizedLabel>
+    </Label>
+    <Label Name="Version">
+      <LocalizedLabel LanguageRef="zhs">版本号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version No.</LocalizedLabel>
+    </Label>
+    <Label Name="AutoDownLoad">
+      <LocalizedLabel LanguageRef="zhs">支持自动更新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support automatic update</LocalizedLabel>
+    </Label>
+    <Label Name=" ActiveXNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">插件名已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in name already exists</LocalizedLabel>
+    </Label>
+    <Label Name="ShowInList">
+      <LocalizedLabel LanguageRef="zhs">支持手动下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support manual download</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">ActiveX插件的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of ActiveX plug-in</LocalizedLabel>
+    </Label>
+    <Label Name="ClassIdDescription">
+      <LocalizedLabel LanguageRef="zhs">ActiveX插件Classid唯一标识，ocx插件有效。例如:CLSID:3333C8E2-3E75-4AEC-9186-BE992FE5AD78</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unique identification for ActiveX plug-in Classid, ocx plug-in valid. For example: CLSID: 3333C8E2-3E75-4AEC-9186-BE992FE5AD78</LocalizedLabel>
+    </Label>
+    <Label Name="UrlDescription">
+      <LocalizedLabel LanguageRef="zhs">插件的下载地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plugin download address</LocalizedLabel>
+    </Label>
+    <Label Name="VersionDescription">
+      <LocalizedLabel LanguageRef="zhs">ActiveX插件的版本号，ocx插件有效。使用数字格式x,x,x,x（例如：1,0,0,0）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version number of ActiveX plug-in, ocx plug-in valid. Using the digital format x, x, x, x (for example: 1,0,0,0)</LocalizedLabel>
+    </Label>
+    <Label Name="AutoDownLoadDescription">
+      <LocalizedLabel LanguageRef="zhs">设置是否是自动下载插件。一般情况下.ocx插件适用于自动下载，RAR、安装文件适用于手动下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to set the download as plug-in automatically or not. In general. ocx plug-in for automatic downloads, RAR, installation files for manual downloads</LocalizedLabel>
+    </Label>
+    <Label Name=" ActiveXNameRepeatDescription">
+      <LocalizedLabel LanguageRef="zhs">插件名已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in name already exists</LocalizedLabel>
+    </Label>
+    <Label Name="ShowInListDescription">
+      <LocalizedLabel LanguageRef="zhs">设置是否在登陆页中的插件列表中显示。提供用户下载地址，用户可以手动下载插件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to set the display in the plug-in list in the landing page or not. By providing users for download address, user can download plug-in manually</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="SelectItemForm" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">选择项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select item</LocalizedLabel>
+    </Label>
+    <Label Name="Search">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="KeyWord">
+      <LocalizedLabel LanguageRef="zhs">关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Keyword</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

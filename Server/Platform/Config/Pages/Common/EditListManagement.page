@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="EditListManagement" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_EditListManagement_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetEditGridData" Script="InforCenter_Platform_EditListManagement_OnGetEditGridData(pageEvent);"/>
+    <PageHandler HandlerName ="OnGridBeforeEdit" Script="InforCenter_Platform_EditListManagement_OnGridBeforeEdit(pageEvent);"/>
+    <PageHandler HandlerName ="OnGridAfterEdit" Script="InforCenter_Platform_EditListManagement_OnGridAfterEdit(pageEvent);"/>
+    <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_EditListManagement_OnRowDblClick(pageEvent);"/>
+    <PageHandler HandlerName ="OnRowClick" Script="InforCenter_Platform_EditListManagement_OnRowClick(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ListManagement_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="6"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="BreadNavigation"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewFilterPageContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="BreadNavigation" ParentID="ListManagement_Container" TypeName="BreadcrumbNavigation">
+      <PageHandlers>
+        <PageHandler HandlerName ="NodeOnClick" Script="InforCenter_Platform_ListManagement_BreadNavOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="ListViewFilterPageContainer" ParentID="ListManagement_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"></Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"></Settings>
+        <Settings Key="childid" Value="ListViewPageContainer"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MenuPageContainer" ParentID="ListManagement_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="ListViewPageContainer" ParentID="ListViewFilterPageContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="EditListViewCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

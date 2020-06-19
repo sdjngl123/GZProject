@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="UnAuditCompanyList">
+      <LocalizedLabel LanguageRef="zhs">未评审列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UnAudit List</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedCompanyList">
+      <LocalizedLabel LanguageRef="zhs">已评审列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Audited List</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

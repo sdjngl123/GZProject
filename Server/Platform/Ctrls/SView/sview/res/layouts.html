@@ -1,0 +1,1472 @@
+﻿<canvas id="mycanvas" style="width:100%;height:100%; position:absolute; background-color: black; z-index:9999; display:none"></canvas>
+<div id='SViewFrameName' style='width:100%;height:100%; position:absolute; background-color: AliceBlue; z-index:0' oncontextmenu="return false;">
+    <p id="FPSShow" style="enable-background:unset;float:left;margin-top:16px;margin-left:16px"></p>
+    <div class="modal fade" id="setColorModal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header modal-header-setcolor">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 langID="setting.BGColorDialog_title" class="modal-title">设置背景颜色</h4>
+                </div>
+                <div class="modal-body" align="center" style='background-color: #f9f9f9;'>
+                    <div class="container" style='width:100%'>
+                        <div class="row">
+                            <div class="col-xs-4  col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='white' src='images/white.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='black' src='images/black.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='179.179.192' src='images/179.179.192.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='234.234.234' src='images/234.234.234.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='236-248-255' src='images/236-248-255.png' style="height:80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4  col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='148.202.239-255.255.255' src='images/148.202.239-255.255.255.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='128.128.128-240.240.240' src='images/128.128.128-240.240.240.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='230.230.230-170.170.170' src='images/230.230.230-170.170.170.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 backcolor">
+                                <a href="#" class="thumbnail">
+                                    <img id='defaultcolor' src='images/defaultcolor.png' style="height: 80%; width: 100%; display: block;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer-setcolor">
+                    <button type="button" langID="common.close" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--设置水印弹窗-->
+    <div class="modal fade" id="setWaterMarkModal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header modal-header-setcolor">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 langID="setting.BGWaterMark_title" class="modal-title">设置背景水印</h4>
+                </div>
+                <div class="modal-header modal-footer-setcolor">
+                    <input class="describe3" type="text" onkeydown="return ClearSubmit(event)" autofocus="autofocus" id="waterMark_input" value="" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc; width:100%;" maxlength="7" />
+                    <div class="modal-footer modal-footer-setcolor">
+                        <button id="cancleWaterMark" type="button" class="btn btn-default" data-dismiss="modal" style="float:right" langID="common.close">关闭</button>
+                        <button id="confirmWaterMark" type="button" class="btn btn-default" data-dismiss="modal" style="float:left" langID="common.confirm">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="gesture_canvas" style="display:none;position:fixed;top:0;left: 0;z-index:-1;" langID="warning.browserNotSupportCanvas">您的浏览器不支持 canvas 标签</canvas>
+    <div class="modal fade" id="sucessClear" role="dialog" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header modal-header-setcolor">
+                    <h4 langID="ClearMemory.Clear_Memory" class="modal-title" style="float:center">清除缓存</h4>
+                </div>
+                <div class="modal-header modal-footer-setcolor">
+                    <h4 langID="ClearMemory.Clear_Memory_Success" class="modal-title" style="float:center">成功清除缓存！</h4>
+                </div>
+                <div class="modal-footer modal-footer-setcolor">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" langID="common.close">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" aria-hidden="true" id='feedback'>
+        <div class="modal-dialog ">
+            <div class="modal-header modal-header-setcolor">
+                <h4 class="modal-title" style="float:center" langID="FeedBack.FeedBack_Title">用户反馈</h4>
+            </div>
+            <div class="modal-header modal-footer-setcolor">
+                <form name="from1" id="from1" target="iframe" action="mailto:doubles_Work@163.com" method="post" enctype="text/plain">
+                    <ul>
+                        <li>
+                            <label class="data-name data-name1 star" for="describe" style="vertical-align:top" langID="FeedBack.FeedBack_QuestionDetail">问题描述：</label>
+                            <textarea class="describe1" id="content" name="content" value="请协助填写提示信息和问题描述，将有助于我们更快地发现和解决问题！" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc" onkeyup="javascript:checkWord(this);" onmousedown="javascript:checkWord(this);">请协助填写提示信息和问题描述，将有助于我们更快地发现和解决问题！</textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label class="data-name" langID="FeedBack.FeedBack_Function" for="page" id="data-page">相关功能：</label>
+                            <input class="describe2" type="text" name="position" id="position" value="某功能需要改进" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc" />
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label class="data-name star" langID="FeedBack.FeedBack_Contact" for="contact">联系方式：</label>
+                            <input class="describe3" type="text" name="contact" id="contact" value="请输入您的手机/QQ/邮箱" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc" />
+                        </li>
+                    </ul>
+                </form>
+                <div class="modal-footer modal-footer-setcolor">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="float:right" langID="common.close">关闭</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="submit-up" style="float:left" langID="common.subMit">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" aria-hidden="true" id='inputTextNote' style="background: rgba(163, 158, 158, 0.50);">
+        <div class="modal-dialog ">
+            <div class="modal-header modal-header-setcolor">
+                <h5 class="modal-title" style="float:center" langID="TextNote.TextNote_Title">文本批注</h5>
+            </div>
+            <div class="modal-header modal-footer-setcolor">
+                <form name="from1" id="from1" onsubmit="return false" ; enctype="text/plain">
+                    <input class="describe3" type="text" onkeydown="return ClearSubmit(event)" autofocus="autofocus" id="textNote_input" value="" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc; width:100%;" maxlength="100" />
+                </form>
+                <div class="modal-footer modal-footer-setcolor">
+                    <button id="cancleTextNote" type="button" class="btn btn-default" data-dismiss="modal" style="float:right" langID="common.close">关闭</button>
+                    <button id="confirmTextNote" type="button" class="btn btn-default" data-dismiss="modal" style="float:left" langID="common.confirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" aria-hidden="true" id='inputSHotSpot' style="background: rgba(163, 158, 158, 0.50);">
+        <div class="modal-dialog ">
+            <div class="modal-header modal-header-setcolor">
+                <h5 class="modal-title" style="float:center" langID="SHotSpot.SHotSpot_Title">图片批注</h5>
+            </div>
+            <div class="modal-header modal-footer-setcolor">
+                <form name="from2" id="from2" onsubmit="return false" ; enctype="text/plain">
+                    <div class="modal-footer modal-body-setting">
+                        <p style="float:left;text-align:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default;width:25%" langID="SHotSpot.Name">名称</p>
+                        <div class="test" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px;width:75%;">
+                            <input class="describe3" type="text" onkeydown="return ClearSubmit(event)" autofocus="autofocus" id="htospot_name" value="" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc; width:100%;" maxlength="100" />
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-body-setting">
+                        <p style="float:left;text-align:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default;width:25%" langID="SHotSpot.Description">描述</p>
+                        <div class="test" style="float:left ; margin:auto;  padding: 10px 10px 0px 0px;width:75%;">
+                            <input class="describe3" type="text" onkeydown="return ClearSubmit(event)" autofocus="autofocus" id="hotspot_description" value="" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc; width:100%;" maxlength="100" />
+                        </div>
+                    </div>
+
+                    <div class="modal-footer modal-body-setting">
+                        <p style="float:left;text-align:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default;width:25%" langID="SHotSpot.ModelView">视图</p>
+                        <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px;width:75%;">
+                            <select style="float:right;width:100%;" id="hotspot_modelview">
+                                <option value="-1" langID=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-body-setting">
+                        <p style="float:left;text-align:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default;width:25%" langID="SHotSpot.AnimationProcess">动画过程</p>
+                        <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px;width:75%;">
+                            <select style="float:right;width:100%;" id="hotspot_animation_process">
+                                <option value="-1" langID=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-body-setting">
+                        <p style="float:left;text-align:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default;width:25%" langID="SHotSpot.AnimationStep">动画步骤</p>
+                        <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px;width:75%;">
+                            <select style="float:right;width:100%;" id="hotspot_animation_step">
+                                <option value="-1" langID=""></option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer modal-footer-setcolor">
+                    <button id="cancleSHotSpot" type="button" class="btn btn-default" data-dismiss="modal" style="float:right" langID="common.close">关闭</button>
+                    <button id="confirmSHotSpot" type="button" class="btn btn-default" data-dismiss="modal" style="float:left" langID="common.confirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" aria-hidden="true" id='editNote' style="background: rgba(163, 158, 158, 0.50);">
+        <div class="modal-dialog ">
+            <div class="modal-header modal-header-setcolor">
+                <h5 class="modal-title" style="float:center" langID="Edit.TextNote_Edit">批注编辑</h5>
+            </div>
+            <div class="modal-header modal-footer-setcolor">
+                <form name="from1" id="from1" onsubmit="return false; target="iframe" method="post" enctype="text/plain">
+                    <input class="describe3" type="text" onkeydown="return ClearSubmit(event)" id="editNote_input" value="请输入内容" onfocus="if(this.value==defaultValue) {this.value='';this.style.color='#000';}" onblur="if(!value) {value=defaultValue; this.style.color='#ccc';}" style="color:#ccc; width:100%;" maxlength="100" />
+                </form>
+                <div class="modal-footer modal-footer-setcolor">
+                    <button id="cancleEditNote" type="button" class="btn btn-default" data-dismiss="modal" style="float:right" langID="common.close">关闭</button>
+                    <button id="confirmEditNote" type="button" class="btn btn-default" data-dismiss="modal" style="float:left" langID="common.confirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="settingModal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-about">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" align="center" langID="setting.setting">
+                        设置
+                    </h4>
+                </div>
+                <div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.continue_rotation">持续旋转</p>
+                    <div class="testswitch" style="float:right; padding: 5px 0px 5px 10px">
+                        <label class="switch4PC" id="rotateswitch_label" style="float:right;right:60px">
+                            <input id="rotateswitch" type="checkbox" value="0" name="myinputPC" />
+                            <i class='viewAngle'></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.show_fps">显示FPS</p>
+                    <div class="testswitch" style="float:right; padding: 5px 0px 5px 10px">
+                        <label class="switch4PC" id="fpsswitch_label" style="float:right;right:60px">
+                            <input id="fpsswitch" type="checkbox" value="0" name="myinputPC" />
+                            <i class='viewAngle'></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.merge_face">合并面</p>
+                    <div class="testswitch" style="float:right; padding: 5px 0px 5px 10px">
+                        <label class="switch4PC" id="mergefaceswitch_label" style="float:right;right:60px">
+                            <input id="mergefaceswitch" type="checkbox" value="1" name="myinputPC" />
+                            <i class='viewAngle'></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.WaterMark">水印</p>
+                    <div class="testswitch" style="float:right; padding: 5px 0px 5px 10px">
+                        <label class="switch4PC" id="watermarkswitch_label" style="float:right;right:60px">
+                            <input id="watermarkswitch" type="checkbox" value="0" name="myinputPC" />
+                            <i class='viewAngle'></i>
+                        </label>
+                    </div>
+                </div>
+                <!--<div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+        <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.Catia_mode">Catia模式</p>
+        <div class="testswitch" style="float:right">
+            <input id='catiaswitch' style="float:right; top:0px; bottom:0px; right: 10px" class="mui-switch mui-switch-anim" type="checkbox">
+        </div>
+    </div>-->
+                <!--<div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+        <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.High_performance_mode">高性能模式</p>
+        <div class="testswitch" style="float:right">
+            <input id='highLightswitch' style="float:right; top:0px; bottom:0px; right: 10px" class="mui-switch mui-switch-anim" type="checkbox">
+        </div>
+    </div>-->
+                <!--<div class="modal-footer modal-body-setting" align="center" style='background-color: #f9f9f9;'>
+        <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.Use_LOD">Catia模式</p>
+        <div class="testswitch" style="float:right">
+            <input id='lodswitch' style="float:right; top:0px; bottom:0px; right: 10px" class="mui-switch mui-switch-anim" type="checkbox">
+        </div>
+    </div>-->
+
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.Small_strip_pattem">Catia模式</p>
+                    <!--<div class="testswitch" style="float:right ; margin:auto;  padding: 5px 10px 0px 0px">
+            <select style="float:right" id="removeSmallThing"  class="form-control input-sm">
+                <option value="model" langID="setting.Small_strip_pattem_Model">模型</option>
+                <option value="screen" langID="setting.Small_strip_pattem_Screen">屏幕</option>
+            </select>
+        </div>-->
+                    <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select style="float:right;width:80px" id="removeSmallThing">
+                            <option value="model" langID="setting.Small_strip_pattem_Model">模型</option>
+                            <option value="screen" langID="setting.Small_strip_pattem_Screen">屏幕</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.small_strip_size">Catia模式</p>
+                    <!--<div class="testswitch" style="float:right ; margin:auto;  padding: 5px 10px 0px 0px">
+        <select style="float:right" id="removeSmallSize" class="form-control input-sm">-->
+                    <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select style="float:right;width:80px" id="removeSmallSize">
+                            <option value="0" selected="selected">0</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.selectType">Catia模式</p>
+                    <!--<div style="float:right; margin:auto;  padding: 10px 10px 0px 0px">
+            <p id="selectedColor" style="border:1px solid gray;float:right;width:30px;height:30px;background:red;"></p>
+        </div>
+        <div style="float:right; margin:auto;  padding: 10px 0px 0px 0px">
+            <select id="selectType" style="float:left;" class="form-control input-sm">
+                <option value="1" langID="setting.selectType_side">轮廓</option>
+                <option value="2" langID="setting.selectType_color">颜色</option>
+            </select>
+        </div>-->
+                    <div style="float:right; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select id="selectType" style="height:22px;float:left;width:58px">
+                            <option value="1" langID="setting.selectType_side">轮廓</option>
+                            <option value="2" langID="setting.selectType_color">颜色</option>
+                        </select>
+                        <p id="selectedColor" style="border:1px solid gray;float:right;width:22px;height:22px;background:red;"></p>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.Unit_of_measure">Catia模式</p>
+                    <!--<div class="testswitch" style="float:right ; margin:auto;  padding: 5px 10px 0px 0px">
+        <select style="float:right" id="measureUnit" class="form-control input-sm">-->
+                    <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select style="float:right;width:80px" id="measureUnit">
+                            <option value="0" selected="selected" langID="setting.Unit_of_none">无</option>
+                            <option value="1" langID="setting.Unit_of_mm">毫米</option>
+                            <option value="2" langID="setting.Unit_of_cm">厘米</option>
+                            <option value="3" langID="setting.Unit_of_m">米</option>
+                            <option value="4" langID="setting.Unit_of_Inch">英寸</option>
+                            <option value="5" langID="setting.Unit_of_foot">英尺</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.DefaultUpward">默认向上方向</p>
+                    <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select style="float:right;width:80px" id="upDirectionSet">
+                            <option value="0">+x</option>
+                            <option value="1">-x</option>
+                            <option value="2" selected="selected">+y</option>
+                            <option value="3">-y</option>
+                            <option value="4">+z</option>
+                            <option value="5">-z</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.DefaultObservation">默认观察模式</p>
+                    <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select style="float:right;width:80px" id="observeSet">
+                            <option value="0" langID="setting.FreeObservation">自由观察</option>
+                            <option value="1" selected="selected" langID="setting.OribitObservation">动态观察</option>
+                            <option value="2" langID="setting.ConstraintObservation">约束观察</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer modal-body-setting">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="setting.language_Type">Catia模式</p>
+                    <!--<div class="testswitch" style="float:right ; margin:auto;  padding: 5px 10px 0px 0px">
+            <select style="float:right" id="languageSet" class="form-control input-sm">
+                <option value="cn" selected="selected" langID="setting.language_cn">简体中文</option>
+                <option value="en" langID="setting.language_en">English</option>
+            </select>
+        </div>-->
+                    <div class="testswitch" style="float:right ; margin:auto;  padding: 10px 10px 0px 0px">
+                        <select style="float:right;width:80px" id="languageSet">
+                            <option value="cn" selected="selected" langID="setting.language_cn">简体中文</option>
+                            <option value="en" langID="setting.language_en">English</option>
+                        </select>
+                    </div>
+                </div>
+                <!--<div class="modal-footer modal-body-setting">
+        <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px" langID="setting.Show_PMI">Catia模式</p>
+        <div class="testswitch" style="float:right">
+            <input id='pimswitch' style="float:right; top:0px; bottom:0px; right: 2px" class="mui-switch mui-switch-anim" type="checkbox">
+        </div>
+    </div>-->
+                <div class="modal-footer modal-body-setting" id="settingBack">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default " langID="setting.BGColorDialog_title">设置背景</p>
+                </div>
+                <div class="modal-footer modal-body-setting" id="settingWaterMark">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default " langID="setting.BGWaterMark_title">水印文字</p>
+                </div>
+
+                <div class="modal-footer modal-body-setting" id="clearCache">
+                    <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="ClearMemory.Clear_Memory">清除缓存</p>
+                </div>
+                <!--<div class="modal-footer modal-body-setting" id="userFeedback">
+        <p style="float:left; margin:auto;  padding: 10px 10px 10px 0px;cursor:default" langID="FeedBack.FeedBack_Title">用户反馈</p>
+    </div>-->
+
+                <div class="modal-footer modal-footer-setcolor">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" langID="common.close">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="selectColor" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-about">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" align="center" langID="RightMenu.RightMenu_SetColor">
+                        关于
+                    </h4>
+                </div>
+                <div class="modal-body" align="center" style='background-color: #f9f9f9;'>
+                    <div id='pickone'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="createMaterial" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-about">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" align="center" langID="Material.CreateMaterial">
+                        创建材质
+                    </h4>
+                </div>
+                <div class="modal-body" align="center" style='background-color: #f9f9f9;
+                                max-height: 500px;overflow: auto;'>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.MaterialType">材质类型:</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control input-sm" id="material_type_sel">
+                                            <option value="1" id="phong_option" selected>Phong</option>
+                                            <option value="2" id="pbr_option">PBR</option>
+                                            <option value="4" id="matcap_option">MatCap</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr matcap_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.MaterialName">名称:</label>
+                                    <div class="col-md-8">
+                                        <input id="material_name" type="text" class="form-control input-sm" value="Material Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr matcap_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.DifusseColor">漫反射光:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="difusseColor" class="input-group-addon" style="background:rgb(231,231,231);"></span>
+                                            <input id="difusseColor_text" type="text" class="form-control input-sm" readonly="readonly" value="231,231,231" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.SpecularColor">镜面反射光:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="specularColor" class="input-group-addon" style="background:rgb(73,73,73);"></span>
+                                            <input id="specularColor_text" type="text" class="form-control input-sm" readonly="readonly" value="73,73,73" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.Shininess">光亮度:</label>
+                                    <div class="col-md-8">
+                                        <input id="brightness" type="number" class="form-control input-sm" value="30" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr matcap_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.Transparency">透明度:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="transparency-span" class="input-group-addon" style="background:rgb(154,205,50);">1</span>
+                                            <input id="transparency-slider" type="text" class="form-control input-sm" value="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr pbr_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.MetalnessFactor">金属光泽:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="metallic-luster-span" class="input-group-addon" style="background:rgb(154,205,50);">0.04</span>
+                                            <input id="metallic-luster-slider" type="text" class="form-control input-sm" value="0.04" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr pbr_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.RoughnessFactor">粗糙度:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="roughness-span" class="input-group-addon" style="background:rgb(154,205,50);">0.5</span>
+                                            <input id="roughness-slider" type="text" class="form-control input-sm" value="0.5" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr pbr_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.UseClearCoat">是否清除覆盖:</label>
+                                    <div class="col-md-8" align="left">
+                                        <label style="padding-top: 7px;">
+                                            <input type="checkbox" id="is_remove_cover" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr pbr_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.ClearCoat">清除覆盖:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="remove-cover-span" class="input-group-addon" style="background:rgb(154,205,50);">0.9</span>
+                                            <input id="remove-cover-slider" type="text" class="form-control input-sm" value="0.9" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr pbr_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.ClearCoatRoughness">清除粗糙覆盖:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="clear-rough-overlays-span" class="input-group-addon" style="background:rgb(154,205,50);">0.04</span>
+                                            <input id="clear-rough-overlays-slider" type="text" class="form-control input-sm" value="0.04" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group material_attr phong_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.AmbientColor">环境光:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="ambientColor" class="input-group-addon" style="background:rgb(231,231,231);"></span>
+                                            <input id="ambientColor_text" type="text" class="form-control input-sm" readonly="readonly" value="231,231,231" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.EmissiveColor">辐射光:</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <span id="emissiveColor" class="input-group-addon" style="background:rgb(0,0,0);"></span>
+                                            <input id="emissiveColor_text" type="text" class="form-control input-sm" readonly="readonly" value="0,0,0" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.UvRotate">纹理坐标旋转度:</label>
+                                    <div class="col-md-8">
+                                        <input type="number" class="form-control input-sm" value="0" id="texture_coordinate_rotation" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.UvScale">纹理坐标缩放:</label>
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <label class="control-label col-md-2" style="text-align: left">U:</label>
+                                            <div class="col-md-4">
+                                                <input id="texture_coor_scaling_u" type="number" class="form-control input-sm" value="1" />
+                                            </div>
+                                            <label class="control-label col-md-2" style="text-align: left">V:</label>
+                                            <div class="col-md-4">
+                                                <input id="texture_coor_scaling_v" type="number" class="form-control input-sm" value="1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.UvTranslate">纹理坐标翻转:</label>
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <label class="control-label col-md-2" style="text-align: left">U:</label>
+                                            <div class="col-md-4">
+                                                <input id="texture_coor_rollover_u" type="number" class="form-control input-sm" value="0" />
+                                            </div>
+                                            <label class="control-label col-md-2" style="text-align: left">V:</label>
+                                            <div class="col-md-4">
+                                                <input id="texture_coor_rollover_v" type="number" class="form-control input-sm" value="0" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr pbr_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.MetalnessRoughnessTexture">粗糙金属纹理:</label>
+                                    <div class="col-md-8" align="left">
+                                        <a class="btn btn-default btn-sm" href="javascript:void(0)" id="rough_metal_texture_btn" langID="Material.Image">图片</a>
+                                        <img class="img-rounded hide texture_img" style="width: 30px;height: 30px" id="rough_metal_texture_img" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.DifusseTexture">漫反射纹理:</label>
+                                    <div class="col-md-8" align="left">
+                                        <a class="btn btn-default btn-sm" href="javascript:void(0)" id="diffuse_texture_btn" langID="Material.Image">图片</a>
+                                        <img class="img-rounded hide texture_img" style="width: 30px;height: 30px" id="diffuse_texture_img" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.SpecularTexture">镜面反射纹理:</label>
+                                    <div class="col-md-8" align="left">
+                                        <a class="btn btn-default btn-sm" href="javascript:void(0)" id="specular_texture_btn" langID="Material.Image">图片</a>
+                                        <img class="img-rounded hide texture_img" style="width: 30px;height: 30px" id="specular_texture_img" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.EmissiveTexture">辐射纹理:</label>
+                                    <div class="col-md-8" align="left">
+                                        <a class="btn btn-default btn-sm" href="javascript:void(0)" id="radiation_texture_btn" langID="Material.Image">图片</a>
+                                        <img class="img-rounded hide texture_img" style="width: 30px;height: 30px" id="radiation_texture_img" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr matcap_attr hide">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.MatcapTexture">材质捕获纹理:</label>
+                                    <div class="col-md-8" align="left">
+                                        <a class="btn btn-default btn-sm" href="javascript:void(0)" id="material_capture_texture_btn" langID="Material.Image">图片</a>
+                                        <img class="img-rounded hide texture_img" style="width: 30px;height: 30px" id="material_capture_texture_img" />
+                                    </div>
+                                </div>
+                                <div class="form-group material_attr phong_attr pbr_attr matcap_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.NormalTexture">常规纹理:</label>
+                                    <div class="col-md-8" align="left">
+                                        <a class="btn btn-default btn-sm" href="javascript:void(0)" id="nomal_texture_btn" langID="Material.Image">图片</a>
+                                        <img class="img-rounded hide texture_img" style="width: 30px;height: 30px" id="nomal_texture_img" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group material_attr phong_attr pbr_attr matcap_attr">
+                                    <label class="control-label col-md-4" style="text-align: left" langID="Material.NormalMapScale">常规纹理缩放:</label>
+                                    <div class="col-md-8" align="left">
+                                        <div class="row">
+                                            <label class="control-label col-md-2" style="text-align: left">X:</label>
+                                            <div class="col-md-4">
+                                                <input id="normal_texture_scaling_x" type="number" class="form-control input-sm" value="1" />
+                                            </div>
+                                            <label class="control-label col-md-2" style="text-align: left">Y:</label>
+                                            <div class="col-md-4">
+                                                <input id="normal_texture_scaling_y" type="number" class="form-control input-sm" value="1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"
+                            style="float:right" langID="common.confirm" id="createMaterial_confirm">
+                        确定
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="texture_modal" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-about">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" align="center">
+                        纹理模板
+                    </h4>
+                </div>
+
+                <div class="modal-body" align="center" style='background-color: #f9f9f9;
+                        max-height: 500px;overflow: auto;'>
+                    <div class="container-fluid">
+                        <div class="row" id="texture_modal_items">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                            style="float:right" langID="common.confirm" id="texture_modal_confirm">
+                        确定
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="edgeSelectColor" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-about">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" align="center" langID="RightMenu.RightMenu_SetColor">
+                        关于
+                    </h4>
+                </div>
+                <div class="modal-body" align="center" style='background-color: #f9f9f9;'>
+                    <div id='picktwo'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aboutModal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-about">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" align="center" langID="about.about_title">
+                        关于
+                    </h4>
+                </div>
+                <div class="modal-body" style='background-color: #f9f9f9'>
+                    <div class="card" style="padding:8px;background-color: #6c757d;position: relative;border: 1px solid rgba(0,0,0,.125); border-radius: 0.5rem;color: #fff;box-shadow: 7px 7px 15px #6c757d;margin:8px">
+                        <img src='images/logo.png' style='width:30px;height:30px'><span>&nbsp</span><span id="product">SView fr HTML5 v6.0.1</span><br />
+                        <span><span id="endTime">2019-05-01</span><span id="timeEndText" langID="about.about_license_expire">&nbsp到期</span></span>
+                        <div style="text-align:right">
+                            <h3 id="customer"></h3>
+                            <span id="customerEmail">zhangsan@baidu.com</span>
+                        </div>
+                        <span id="licenseID">NO.04E3DD7B02382AA5BE0</span>
+                    </div>
+                    <div align="center" style="margin-top:16px">
+                        <span langID="about.about_license_modules">模块:</span><span>&nbsp</span><span id="modules"></span><br />
+                        <span langID="about.about_license_creator">制作工具:</span><span>&nbsp</span><span id="creator">SView License Tools v1.0</span><br />
+                        <span langID="about.about_license_createtime">制作时间:</span><span>&nbsp</span><span id="createDate">2019-3-15</span>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer-about">
+                    <div class='center-block'>
+                        <p align="center"><span>Copyright<span>&nbsp</span>©<span>&nbsp</span></span><a href="http://www.hoteamsoft.com/" target='_blank' style="text-decoration:none" langID="about.about_company">山东山大华天软件有限公司</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myProgress">
+        <div id="myBar">
+        </div>
+        <div id="label">0%</div>
+    </div>
+    <div id="context-menu">
+        <ul class="dropdown-menu" role="menu"></ul>
+    </div>
+    <canvas id='renderCanvas' style='position: absolute; z-index:-2;width:100%;height:100%;left:0px' langID="warning.browserNotSupportCanvasChangeBrowser">您的浏览器不支持HTML5 canvas，请换一个浏览器。 </canvas>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class='container-fluid'>
+        <div class='row pull-top'>
+        </div>
+        <div class='row'>
+            <div class='test leftbar pull-left'>
+                <div class='col-xs-3' style='margin:0px;padding:0px'>
+                    <div class='pull-leftbar-header'>
+                        <ul class='inline'>
+                            <li id="top_assembly"><a href='javascript:void(0)'><img src='images/sview_assembly.png' alt='装配' title='装配' TitleID="RightMenuTitle.assembly"></a></li>
+                            <li id="top_view"><a href='javascript:void(0)'><img src='images/button_view.png' alt='视图' title='视图' TitleID="RightMenuTitle.ViewList"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='clear_float'></div>
+                <div id='assebmlyTreeDiv' class='col-xs-3 pull-left-body' style='margin:0px;padding:0px;'>
+                </div>
+                <div id='top_viewDiv' class='col-xs-3 pull-left-body' style='margin:0px;padding:0px;display:none' hidden="hidden">
+                    <div id="sview_view_panel">
+                        <div>
+                            <button type="button" id="addModleView" TitleID="Assembly.Assembly_add"></button>
+                            <button type="button" id="removeModelView" TitleID="Assembly.Assembly_delete"></button>
+                        </div>
+                        <ul id="sview_view_tree" class="view_tree"></ul>
+                    </div>
+                </div>
+                <div id="rMenu" style="position:absolute; display:none;">
+                    <li id="add" langID="Assembly.Assembly_add"><a href="#">添加</a></li>
+                    <li id="delete" langID="Assembly.Assembly_delete"><a href="#">删除</a></li>
+                    <li id="copy" langID="Assembly.Assembly_copy"><a href="#">复制</a></li>
+                    <li id="cut" langID="Assembly.Assembly_cut"><a href="#">剪切</a></li>
+                    <li id="paste" langID="Assembly.Assembly_paste"><a href="#">粘贴</a></li>
+                    <li id="rename" langID="Assembly.Assembly_rename"><a href="#">重命名</a></li>
+                </div>
+                <input id="addasm" multiple="" type="file" style="display:none;">
+                <!--<span style="width:10px;height:10px;position:absolute;right:5px;bottom:5px;z-index:-1;background-color:white" id="resize_span"></span>-->
+            </div>
+
+            <div class='rightbar pull-right' id='rightMenu'>
+                <div class='rt-sus'>
+                    <ul>
+                        <li class='MRS' id='RestoreView_li'>
+                            <a id='RestoreView' href='javascript:void(0)'><img TitleID='RightMenuTitle.RestoreView_li' src='images/sview_home.png' alt='复位' title='复位A'></a>
+                        </li>
+                        <li class='MRS' id="view">
+                            <a href='javascript:void(0)' id='lst'><img TitleID='RightMenuTitle.ViewList' src='images/button_view.png' alt='视图' title='视图'></a>
+                            <div class='test ul-dropmenu'>
+                                <div>
+                                    <a href='javascript:void(0)' id='showEdgeLine' class='viewAngle_main'><img TitleID='ViewList.showEdgeLine' src='images/button_solid_wire.png' title='实体线框模式'></a>
+                                    <a href='javascript:void(0)' id='notshowEdgeLine' class='viewAngle_main'><img TitleID='ViewList.notshowEdgeLine' src='images/sview_perspective_solid.png' title='实体模式'></a>
+                                    <a href='javascript:void(0)' id='onlyshowEdgeLine' class='viewAngle_main' style="padding:5px 4px 5px 5px"><img TitleID='ViewList.onlyshowEdgeLine' src='images/button_wire.png' title='线框模式'></a>
+                                    <hr style='margin:5px 0px; height:32px;border:none;border-left:2px dotted #185598;float:left' />
+                                    <a href='javascript:void(0)' id='IsShowTransparent' class='viewAngle' style="padding:5px 5px 5px 4px"><img TitleID='ViewList.IsShowTransparent' src='images/sview_perspective_transparent.png' title='半透明模式'></a>
+                                </div>
+                                <hr style='clear:both;margin:0px; height:1px;border:none;border-top:2px dotted #185598;' />
+                                <div>
+                                    <a style='width:32px' href='javascript:return false;'></a>
+                                    <a href='javascript:void(0)' id='top' class='viewAngle'><img TitleID='ViewList.top' src='images/button_top.png' title='俯视图'></a>
+                                    <a style='width:32px' href='javascript:return false;'></a>
+                                    <a href='javascript:void(0)' id='isometric' class='viewAngle'><img TitleID='ViewList.isometric' src='images/button_zhouce.png' title='轴视图'></a>
+                                </div>
+                                <div>
+                                    <a href='javascript:void(0)' id='left' class='viewAngle'><img TitleID='ViewList.left' src='images/button_left.png' title='左视图'></a>
+                                    <a href='javascript:void(0)' id='front' class='viewAngle'><img TitleID='ViewList.front' src='images/button_front.png' title='正视图'></a>
+                                    <a href='javascript:void(0)' id='right' class='viewAngle'><img TitleID='ViewList.right' src='images/button_right.png' title='右视图'></a>
+                                    <a href='javascript:void(0)' id='back' class='viewAngle'><img TitleID='ViewList.back' src='images/button_behind.png' title='后视图'></a>
+                                </div>
+                                <div>
+                                    <a style='width:32px' href='javascript:return false;'></a>
+                                    <a href='javascript:void(0)' id='bottom' class='viewAngle'><img TitleID='ViewList.bottom' src='images/button_bottom.png' title='仰视图'></a>
+                                    <a style='width:32px' href='javascript:return false;'></a>
+                                    <a href='javascript:void(0)' id='perspective' class='viewAngle'><img TitleID='ViewList.perspective' src='images/sview_camera_perspective.png' title='透视投影'></a>
+                                </div>
+                                <hr style='clear:both;margin:0px; height:1px;border:none;border-top:2px dotted #185598;' />
+
+                                <div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="ViewList.showTrilateralEdge" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">显示网格</p>
+                                        <div class="testswitch" style="float:right; margin:0px">
+                                            <label class="switch4PC" style="float:right; top:5px; bottom:0px;">
+                                                <input id="showTrilateralEdge" type="checkbox" value="0" name="myinputPC" />
+                                                <i class='viewAngle'></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="ViewList.mulSelect" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">多选</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right; top:5px; bottom:0px;">
+                                                <input id="mulSelect" type="checkbox" value="0" name="myinputPC" />
+                                                <i class='viewAngle'></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="ViewList.showBox" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">显示包围盒</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right; top:5px; bottom:0px;">
+                                                <input id="showBox" type="checkbox" value="0" name="myinputPC" />
+                                                <i class='viewAngle'></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="ViewList.observeMode"  style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default;width:75px;overflow: hidden;word-wrap:break-word;word-break:break-all;">观察模式</p>
+                                        <!--<div style='float:left; display:inline;'><p langID="" style='cursor:default'>观察模式</p></div>-->
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right;  bottom:0px;width:65px;">
+                                                <select class="viewAngle" style="width:100%;position:absolute;  bottom:0px;" id="ObserveSelect">
+                                                    <option langID="ViewList.FreeObserve" value="0">自由观察</option>
+                                                    <option langID="ViewList.OribitObserve" value="1" selected ="selected">动态观察</option>
+                                                    <option langID="ViewList.ConstraintObserve" value="2">约束观察</option>
+                                                </select>
+                                                <!--<i class='viewAngle'></i>-->
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='MRS' id='assembly'>
+                            <a href='javascript:void(0)'><img TitleID='RightMenuTitle.assembly' src='images/sview_assembly.png' alt='装配' title='装配'></a>
+                        </li>
+                        <!-- <li id ='contextmu' class='MRS' style='display:none'>
+                             <a href='javascript:void(0)'><img src='images/contextmenu.png' alt='快捷菜单' title='快捷菜单'></a>
+                            <em class='icon-triangle'><img src='images/icon-triangle.png' alt='旋转模式' width='6' height='6' style='width: 6px;height: 6px;'></em>
+                             <div id ='contextmenudiv' class='test ul-dropmenu' style='left: -170px; width: 170px; padding: 0px;z-index: 9999;'>
+                              </div>
+                        </li> -->
+                        <!--  <li><a href='javascript:void(0)' id='quanping' onclick='FullScreen();'><img src='images/sview-icon10.png' alt='全屏' title = '全屏'></a></li>
+                            -->
+                        <!--  <li class='MRS last'><a href='javascript:void(0)' id='more' ><img src='images/button_menugroup.png' alt='更多' title = '更多'></a></li> -->
+                        <li id='walking' class='MRS'>
+                            <a href='javascript:void(0)'><img TitleID='RightMenuTitle.walking' src='images/button_walking.png' alt='漫游模式' title='漫游模式'></a>
+                            <!-- <em class='icon-triangle'><img src='images/icon-triangle.png' alt='旋转模式' width='6' height='6' style='width: 6px;height: 6px;'></em>-->
+                            <div class='test ul-dropmenu' style='left:-165px;width:160px; padding: 2px;z-index: 9999; '>
+                                
+                                <div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="WalkThrough.WalkThrough_Mode" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">漫游模式</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right; top:5px; bottom:0px;margin:0px 15px 0px 15px">
+                                                <input id="walking_touch_handler" type="checkbox" value="0" name="myinputPC" />
+                                                <i class='viewAngle'></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style='clear:both;margin:0px 15px 0px 0px; height:1px;border:none;border-top:2px dotted #185598;' />
+                                <div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="WalkThrough.WalkThrough_Speed" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">漫游速度</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right;  bottom:0px;margin:0px 15px 0px 0px;">
+                                                <select class='walking_speed' style="width:100%;position:absolute;  bottom:0px;">
+                                                    
+                                                    <option value='0.05x'>0.05x</option>
+                                                    <option value='0.25x'>0.25x</option>
+                                                    <option value='0.5x'>0.5x</option>
+                                                    <option value='0.75x'>0.75x</option>
+                                                    <option value='1x' selected="selected">1x</option>
+                                                    <option value='2x'>2x</option>
+                                                    <option value='4x'>4x</option>
+                                                    <option value='6x'>6x</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="WalkThrough.WalkThrough_Updirection" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">向上方向</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right;  bottom:0px;margin:0px 15px 0px 0px;">
+                                                <select class='walking_updirection' style="width:100%;position:absolute;  bottom:0px;" id="walking_updirection">
+                                                    <option value='0'>+X</option>
+                                                    <option value='1'>-X</option>
+                                                    <option value='2' selected="selected">+Y</option>
+                                                    <option value='3'>-Y</option>
+                                                    <option value='4'>+Z</option>
+                                                    <option value='5'>-Z</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="WalkThrough.WalkThrough_Career_perspective" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">视野大小</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right;  bottom:0px;margin:0px 15px 0px 0px;">
+                                                <select class='walking_fov' style="width:100%;position:absolute;  bottom:0px;">
+                                                    <option value='50°'>50°</option>
+                                                    <option value='60°' selected="selected">60°</option>
+                                                    <option value='70°'>70°</option>
+                                                    <option value='80°'>80°</option>
+                                                    <option value='90°'>90°</option>
+                                                    <option value='100°'>100°</option>
+                                                    <option value='110°'>110°</option>
+                                                    <option value='120°'>120°</option>
+                                                    <option value='130°'>130°</option>
+                                                    <option value='140°'>140°</option>
+                                                    <option value='150°'>150°</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div style="position:relative; height:45px">
+                                        <p langID="WalkThrough.WalkThrough_JoyStick" style="float:left; margin:auto; overflow: auto; position: absolute; padding: 10px 10px 10px 0px;cursor:default">虚拟按键</p>
+                                        <div class="testswitch" style="float:right; margin: 0px">
+                                            <label class="switch4PC" style="float:right; top:5px; bottom:0px;margin:0px 15px 0px 15px">
+                                                <input id="walking_joystick" type="checkbox" value="0" name="myinputPC" />
+                                                <i class='viewAngle'></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                    
+                        </li>
+                        <!--<li id='fullscreen' class='MRS'>
+                            <a href='javascript:void(0)'><img TitleID='RightMenuTitle.FullScreen' src='images/button_full.png' alt='全屏' title='全屏'></a>
+                        </li>
+                        <li id='exitfullscreen' class='MRS hide'>
+                            <a href='javascript:void(0)'><img TitleID='RightMenuTitle.ExitFullScreen' src='images/button_nofull.png' alt='退出全屏' title='退出全屏'></a>
+                        </li>-->
+                        <li id='modelproperties' class='MRS'>
+                            <a href='javascript:void(0)'><img TitleID='RightMenuTitle.modelproperties' src='images/sview_measure_attributes.png' alt='模型属性' title='模型属性'></a>
+                        </li>
+                        <li id='mainMenu' class='MRS'>
+                            <a href='javascript:void(0)'><img TitleID='RightMenuTitle.mainMenu' src='images/button_menugroup.png' alt='菜单' title='菜单'></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="config_rotation">
+            <div class="config" style='display:none'>
+                <a href="javascript:void(0)"><img alt="配置" title="配置"></a>
+                <div class="config_dropmenu ul-dropmenu" style="top:-145px;left:-180px; width: 180px; padding:5px;z-index: 9999;">
+                    <div><b>配置启动</b><input style="display:inline;width:20px" type="text" name="" value="5" /><b>秒</b><br /></div>
+                    <div>
+                        <b><span style="vertical-align:top;" langID="Configure.Configure_Speed">速度：</span></b>
+                        <input type="range" style="display:inline;visible:none;margin: 10px 5px 0px 0px; width:60%;z-index: 9999;" id='explosive_percentage' min="0" step="0.01" max="1" value="0" onmousemove="SetExplosivePosition()" />
+                    </div>
+                    <div>
+                        <div style="float:left;margin-top:10px;"><b langID="Configure.Configure_Direction">方向：</b></div>
+                        <a href="javascript:void(0)" id="yzsection" class="section_xyz bg-blue" onClick="return SetClipDir(1);"><img src='images/button_yzsection.png' title="yz面剖切"></a>
+                        <a href="javascript:void(0)" id="xysection" class="section_xyz" onClick="return SetClipDir(3);"><img src='images/button_xysection.png' title="xy面剖切"></a>
+                        <a href="javascript:void(0)" id="xzsection" class="section_xyz" onClick="return SetClipDir(2);"><img src='images/button_zxsection.png' title="zx面剖切"></a>
+
+                    </div>
+                    <div>
+                        <div style="float:left;margin-top:10px;"><b langID="Configure.Configure_Rotation_scheme">转动方案：</b></div>
+                        <div style="float:left;margin-top:10px;">
+                            <select>
+                                <option langID="Configure.Configure_Rotation_scheme_Explosive">同时爆炸</option>
+                                <option langID="Configure.Configure_Rotation_scheme_Rotation">曲线旋转</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="rotation" style="display:none">
+                <a href="javascript:void(0)"><img id='RAndEimage' src='images/beforerot.png' alt="启动旋转" title="启动旋转"></a>
+            </div>
+            <div class="accelerate" style='display:none'>
+                <a href="javascript:void(0)"><img id="accelerate_img" src='images/rotation-1.png' alt="加速旋转" title="加速旋转"></a>
+            </div>
+
+        </div>
+        <div class="joystick">
+        </div>
+        <div class='navbar-fixed-bottom pull-bottom'>
+            <div class='bottom-row'>
+                <div id='bottomMenu' class='col-xs-12 hide'>
+                    <div class='test pull-bottom' id='bottom_Menu'>
+                        <ul>
+                            <li class='MRS' id='_note'>
+                                <a href='javascript:void(0)'><img TitleID='BottomMenuTitle._note' src='images/button_note.png' alt='批注' title='批注'></a>
+                            </li>
+
+                            <li class='MRS' id='animation'>
+                                <a href='javascript:void(0)'><img TitleID='BottomMenuTitle.animation' src='images/sview_ani_play.png' alt='动画' title='动画'></a>
+                            </li>
+                            <li class='MRS' id='measure'>
+                                <a href='javascript:void(0)'><img TitleID='BottomMenuTitle.measure' src='images/button_measure.png' alt='测量' title='测量'></a>
+                            </li>
+                            <li class='MRS' id='lipq'>
+                                <a id='pq' href='javascript:void(0)'><img TitleID='BottomMenuTitle.lipq' src='images/button_section.png' alt='剖切' title='剖切'></a>
+                            </li>
+                            <li class='MRS' id='li_explosive'>
+                                <a href='javascript:void(0)'><img TitleID='BottomMenuTitle.li_explosive' src='images/button_explosive.png' alt='爆炸图' title='爆炸图'></a>
+                            </li>
+                            <li class='MRS' id='li_Snopt'>
+                                <a href='javascript:void(0)'><img TitleID='BottomMenuTitle.snapshot' src='images/button_snapshot.png' alt='截图' title='截图'></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id='section_bar' class='col-xs-12 hide' style='border-radius: 10px;' style='display:none'>
+                    <div class='test pull-bottom' id='sectionBar'>
+                        <div id='section_bar_first' style='float:left;width:60px'>
+                            <ul>
+                                <li style="width:60px" class="bg-blue">
+                                    <a href='javascript:void(0)' id='section_bar_main'>
+                                        <img id='section_bar_third_main_img' TitleID='SectionMenuTitle.section_bar_main' src='images/button_yzsection.png' alt='剖切方向' title='剖切方向'>
+                                        <span class="measure-caret"></span>
+                                    </a>
+                                    <div id='section_bar_type' class='test ul-dropmenu' style='top: -60px; left:-30px;width: 110px; padding: 2px;z-index: 100000;display:none'>
+                                        <a href='javascript:void(0)' id='section_yzsection' class='section_xyz bg-blue'><img TitleID='SectionMenuTitle.section_yzsection' src='images/button_yzsection.png' title='yz面剖切'></a>
+                                        <a href='javascript:void(0)' id='section_xysection' class='section_xyz'><img TitleID='SectionMenuTitle.section_xysection' src='images/button_xysection.png' title='xy面剖切'></a>
+                                        <a href='javascript:void(0)' id='section_xzsection' class='section_xyz'><img TitleID='SectionMenuTitle.section_xzsection' src='images/button_zxsection.png' title='zx面剖切'></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='section_bar_second' style='float:left;'>
+                            <ul>
+                                <li style="list-style-type:none; height:35px">
+                                    <input type='range' style='visible:none;z-index: 9999;' id='section_percentage' min='0' step='0.01' max='1' value='0' />
+                                </li>
+                                <li style="list-style-type:none; margin: 0px 2.5px;" id='section_reversal'>
+                                    <a href='javascript:void(0)'><img TitleID='SectionMenuTitle.section_reversal' src='images/button_sectionreversal.png' title='剖切反向'></a>
+                                </li>
+                                <li style="list-style-type:none; margin: 0px 2.5px;" id='section_plane'>
+                                    <a href='javascript:void(0)'><img TitleID='SectionMenuTitle.section_plane' src='images/button_showsectionplane.png' title='剖切面显隐'></a>
+                                </li>
+                                <li style="list-style-type:none; margin: 0px 2.5px;" id='section_cappingPlane'>
+                                    <a href='javascript:void(0)'><img TitleID='SectionMenuTitle.section_cappingPlane' src='images/sview_section_showcappingplane.png' title='盖面显隐'></a>
+                                </li>
+                                <li class='GESTL' style="list-style-type:none; margin: 0px 2.5px;">
+                                    <a href='javascript:void(0)' ' id='section_exit'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id='explose_bar' class='col-xs-12 hide' style='border-radius: 10px'>
+                    <div class='pull-bottom test' id='exploseBar'>
+                        <div id='exploser_bar_first' style='float:left;width:60px'>
+                            <ul>
+                                <li style='width:60px' class="bg-blue">
+                                    <a href='javascript:void(0)' id='explose_bar_third_main'>
+                                        <img TitleID='ExplosiveMenuTitle.section_bar_main' id='explos_bar_third_main_img' src='images/sview_explosive_global.png' alt='爆炸方向' title='爆炸方向'>
+                                        <span class="measure-caret"></span>
+                                    </a>
+                                    <div id='explose_bar_third_type' class='test ul-dropmenu' style='top: -60px; left:-30px;width: 110px; padding: 2px;z-index: 10000;display:none'>
+                                        <a href='javascript:void(0)' id='explosive_center' class='explosive bg-blue'><img TitleID='ExplosiveMenuTitle.explosive_center' src='images/sview_explosive_global.png' title='中心爆炸'></a>
+                                        <a href='javascript:void(0)' id='explosive_by_x' class='explosive'><img TitleID='ExplosiveMenuTitle.explosive_by_x' src='images/sview_explosive_yzdirection.png' title='x轴线性爆炸'></a>
+                                        <a href='javascript:void(0)' id='explosive_by_y' class='explosive'><img TitleID='ExplosiveMenuTitle.explosive_by_y' src='images/sview_explosive_xzdirection.png' title='y轴线性爆炸'></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='explose_bar_second'>
+                            <ul>
+                                <li id='explose_input' style="height:35px">
+                                    <input type='range' style='visible:none; z-index: 9999;' id='explosive_per' min='0' step='0.01' max='1' value='0' />
+                                </li>
+                                <li class='GESTL' id='explose_exit'>
+                                    <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id='note_bar' class='col-xs-12 hide'>
+                    <div class='pull-bottom test' id='notebar'>
+                        <ul>
+                            <li class='MRS' id='_scaleL'>
+                                <a href='javascript:void(0)'><img TitleID='BottomMenuTitle._scaleL' src='images/sview_gesturenote.png' alt='手势批注' title='手势批注'></a>
+                            </li>
+                            <li class='MRS' id='node_text'>
+                                <a href='javascript:void(0)'><img TitleID='NoteMenuTitle.node_text' src='images/sview_textnote.png' alt='文本批注' title='文本批注'></a>
+                            </li>
+                            <li class='MRS' id='node_sequence'>
+                                <a href='javascript:void(0)'><img TitleID='NoteMenuTitle.note_order' src='images/button_sequence.png' alt='序号' title='序号'></a>
+                            </li>
+                            <li class='MRS' id='node_component'>
+                                <a href='javascript:void(0)'><img TitleID='NoteMenuTitle.note_component' src='images/button_component.png' alt='零组件' title='零组件'></a>
+                            </li>
+                            <li class='MRS' id='node_hotspot'>
+                                <a href='javascript:void(0)'><img TitleID='NoteMenuTitle.note_shotspot' src='images/sview_shotspot.png' alt='图片批注' title='图片批注'></a>
+                            </li>
+                            <li id='node_edit'>
+                                <a href='javascript:void(0)'><img TitleID='NoteMenuTitle.node_edit' src='images/sview_note_edit.png' alt='编辑' title='编辑'></a>
+                            </li>
+                            <li class='GESTL' id='node_del'>
+                                <a href='javascript:void(0)'><img TitleID='NoteMenuTitle.node_del' src='images/sview_note_delete.png' alt='删除' title='删除'></a>
+                            </li>
+                            <li class='GESTL' id='node_exit'>
+                                <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id='gesture_bar' class='col-xs-12 hide' style='border-radius: 10px;' style='display:none'>
+                    <div class='pull-bottom test' id='gesturebar'>
+                        <div id='gesture_bar_first' style='float:left;z-index:10000;'>
+                            <ul>
+                                <li>
+                                    <a href='javascript:void(0)' id='gesture_bar_main'><img id='gesture_bar_main_img' TitleID='GestureMenuTitle.gesture_bar_main' src='images/button_gesture3d_freedom.png' alt='直线' title='当前类型'></a>
+                                    <div id='gesture_bar_type' class='test ul-dropmenu' style='top: -60px; left:-40px;width: 140px; padding: 2px;z-index: 9999;display:none'>
+                                        <a href='javascript:void(0)' id='freedom' class='gesture-class bg-blue'><img id='freedoimg' TitleID='GestureMenuTitle.freedom' src='images/button_gesture3d_freedom.png' alt='直线' title='直线'></a>
+                                        <a href='javascript:void(0)' id='circle' class='gesture-class'><img id='circle_img' TitleID='GestureMenuTitle.circle' src='images/button_gesture3d_circle.png' alt='圆' title='圆'></a>
+                                        <a href='javascript:void(0)' id='rect' class='gesture-class'><img id='rect_img' TitleID='GestureMenuTitle.rect' src='images/button_gesture3d_rect.png' alt='矩形' title='矩形'></a>
+                                        <a href='javascript:void(0)' id='triangle' class='gesture-class'><img id='triangle_img' TitleID='GestureMenuTitle.triangle' src='images/button_gesture3d_triangle.png' alt='三角形' title='三角形'></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='gesture_bar_second' style='float:left;'>
+                            <ul>
+                                <li>
+                                    <a href='javascript:void(0)' id='gesture_bar_second_main'><img id='gesture_bar_second_main_img' TitleID='GestureMenuTitle.gesture_bar_second_main' src='images/black.png' alt='黑色' title='颜色'></a>
+                                    <div id='gesture_bar_second_type' class='test ul-dropmenu' style='top: -140px; left:-40px;width: 140px; padding: 2px;z-index: 9999;display:none'>
+                                        <a href='javascript:void(0)' id='gesture_black' class='gesture-second-class  bg-blue' para='#000000'><img id='gesture_black_img' TitleID='GestureMenuTitle.gesture_black' src='images/black.png' alt='黑色' title='黑色'></a>
+                                        <a href='javascript:void(0)' id='gesture_red' class='gesture-second-class' para='#D81E06'><img id='gesture_red_img' TitleID='GestureMenuTitle.gesture_red' src='images/red.png' alt='红色' title='红色'></a>
+                                        <a href='javascript:void(0)' id='gesture_blue' class='gesture-second-class' para='#1296DB'><img id='gesture_blue_img' TitleID='GestureMenuTitle.gesture_blue' src='images/blue.png' alt='蓝色' title='蓝色'></a>
+                                        <a href='javascript:void(0)' id='gesture_green' class='gesture-second-class' para='#2CB936'><img id='gesture_green_img' TitleID='GestureMenuTitle.gesture_green' src='images/green.png' alt='绿色' title='绿色'></a>
+                                        <a href='javascript:void(0)' id='gesture_yellow' class='gesture-second-class' para='#F4EA2A'><img id='gesture_yellow_img' TitleID='GestureMenuTitle.gesture_yellow' src='images/yellow.png' alt='黄色' title='黄色'></a>
+                                        <a href='javascript:void(0)' id='gesture_orange' class='gesture-second-class' para='#E98F36'><img id='gesture_orange_img' TitleID='GestureMenuTitle.gesture_orange' src='images/orange.png' alt='橙色' title='橙色'></a>
+                                        <a href='javascript:void(0)' id='gesture_gray' class='gesture-second-class' para='#8A8A8A'><img id='gesture_gray_img' TitleID='GestureMenuTitle.gesture_gray' src='images/gray.png' alt='灰色' title='灰色'></a>
+                                        <a href='javascript:void(0)' id='gesture_purple' class='gesture-second-class' para='#A92DC8'><img id='gesture_purple_img' TitleID='GestureMenuTitle.gesture_purple' src='images/purple.png' alt='紫色' title='紫色'></a>
+                                        <a href='javascript:void(0)' id='gesture_brown' class='gesture-second-class' para='#811204'><img id='gesture_brown_img' TitleID='GestureMenuTitle.gesture_brown' src='images/brown.png' alt='棕色' title='棕色'></a>
+                                        <a href='javascript:void(0)' id='gesture_pink' class='gesture-second-class' para='#C82DC7'><img id='gesture_pink_img' TitleID='GestureMenuTitle.gesture_pink' src='images/pink.png' alt='粉色' title='粉色'></a>
+                                        <a href='javascript:void(0)' id='gesture_white' class='gesture-second-class' para='#FFFFFF'><img id='gesture_white_img' TitleID='GestureMenuTitle.gesture_white' src='images/white.png' alt='白色' title='白色'></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='gesture_bar_third' style='float:left;'>
+                            <ul>
+                                <li>
+                                    <a href='javascript:void(0)' id='gesture_bar_third_main'><img id='gesture_bar_third_main_img' TitleID='GestureMenuTitle.gesture_bar_third_main' src='images/button_gesture3D_width.png' alt='粗细' title='粗细'></a>
+                                    <div id='gesture_bar_third_type' class='test ul-dropmenu' style='top: -60px; left:-30px;width: 110px; padding: 2px;z-index: 10000;display:none'>
+                                        <a href='javascript:void(0)' id='gesture_thin_line' class='gesture_third_class' para='2'><img id='gesture_thin_line_img' TitleID='GestureMenuTitle.gesture_thin_line' src='images/thin_line.png' alt='细' title='细'></a>
+                                        <a href='javascript:void(0)' id='gesture_middle_line' class='gesture_third_class bg-blue' para='5'><img id='gesture_middle_line_img' TitleID='GestureMenuTitle.gesture_middle_line' src='images/middle_line.png' alt='中' title='中'></a>
+                                        <a href='javascript:void(0)' id='gesture_strong_line' class='gesture_third_class' para='8'><img id='gesture_strong_line_img' TitleID='GestureMenuTitle.gesture_strong_line' src='images/strong_line.png' alt='粗' title='粗'></a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='gesture_bar_content' style='float:left;'>
+                            <ul>
+                                <li class='GESTL' id='gesture_undo'>
+                                    <a href='javascript:void(0)'><img TitleID='GestureMenuTitle.gesture_undo' src='images/sview_undo.png' alt='撤销' title='撤销'></a>
+                                </li>
+                                <li class='GESTL' id='gesture_confirm'>
+                                    <a href='javascript:void(0)'><img TitleID='common.confirm' src='images/button_gesture3D_confirm.png' alt='确定' title='确定'></a>
+                                </li>
+                                <li class='GESTL' id='gesture_exit'>
+                                    <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='dagger_bar' class='col-xs-12' style='display:none; border-radius: 10px;'>
+                    <div class='pull-bottom test' id='daggerbar'>
+                        <div id='dragger-first'>
+                            <ul>
+                                <li class='DGLIM'>
+                                    <a href='javascript:void(0)' id='dragger-main'><img id='dragger-main-img' TitleID='DraggerMenuTitle.dragger_main' src='images/sview_dragger_translation.png' alt='平移' title='移动模式'></a>
+                                    <div id='dragger-type' class='test ul-dropmenu' style='top: -140px; left:0px;width: 40px; padding: 2px;z-index: 9999;display:none'>
+                                        <a href='javascript:void(0)' id='trans' class='dragger-class bg-blue'><img id='trans-img' TitleID='DraggerMenuTitle.trans' src='images/sview_dragger_translation.png' alt='平移' title='平移'></a>
+                                        <a href='javascript:void(0)' id='rot' class='dragger-class'><img id='rot-img' TitleID='DraggerMenuTitle.rot' src='images/sview_dragger_rotation.png' alt='旋转' title='旋转'></a>
+                                        <a href='javascript:void(0)' id='sca' class='dragger-class'><img id='sca-img' TitleID='DraggerMenuTitle.sca' src='images/sview_dragger_scaling.png' alt='缩放' title='缩放'></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='dragger-translation' style='display:none' class='test show'>
+                            <ul>
+                                <li class='DGLI bg-blue dface dragger-face'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.dragger_face' src='images/ssview_dragger_planetranslation.png' alt='沿平面' title='沿平面'></a>
+                                </li>
+                                <li class='DGLI dragger-x'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.yzsection' src='images/button_yzsection.png' alt='沿X轴' title='沿X轴'></a>
+                                </li>
+                                <li class='DGLI dragger-y'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.zxsection' src='images/button_zxsection.png' alt='沿Y轴' title='沿Y轴'></a>
+                                </li>
+                                <li class='DGLI dragger-z'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.xysection' src='images/button_xysection.png' alt='沿Z轴' title='沿Z轴'></a>
+                                </li>
+                                <li class='DGLI dragger-exit'>
+                                    <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='dragger-rotation' style='display:none'>
+                            <ul>
+                                <li class='DGLI bg-blue dface dragger-face'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.dragger_Centertranslation' src='images/ssview_dragger_planetranslation.png' alt='绕中心' title='绕中心'></a>
+                                </li>
+                                <li class='DGLI dragger-x'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.Cyzsection' src='images/button_yzsection.png' alt='沿X轴' title='沿X轴'></a>
+                                </li>
+                                <li class='DGLI dragger-y'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.Czxsection' src='images/button_zxsection.png' alt='沿Y轴' title='沿Y轴'></a>
+                                </li>
+                                <li class='DGLI dragger-z'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.Cxysection' src='images/button_xysection.png' alt='沿Z轴' title='沿Z轴'></a>
+                                </li>
+                                <li class='DGLI dragger-exit'>
+                                    <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id='dragger-scaling' style='display:none'>
+                            <ul>
+                                <li class='DGLI bg-blue dface dragger-face'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.dragger_planetranslation' src='images/ssview_dragger_planetranslation.png' alt='沿整体' title='沿整体'></a>
+                                </li>
+                                <li class='DGLI dragger-x'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.yzsection' src='images/button_yzsection.png' alt='沿X轴' title='沿X轴'></a>
+                                </li>
+                                <li class='DGLI dragger-y'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.zxsection' src='images/button_zxsection.png' alt='沿Y轴' title='沿Y轴'></a>
+                                </li>
+                                <li class='DGLI dragger-z'>
+                                    <a href='javascript:void(0)'><img TitleID='DraggerMenuTitle.xysection' src='images/button_xysection.png' alt='沿Z轴' title='沿Z轴'></a>
+                                </li>
+                                <li class='DGLI dragger-exit'>
+                                    <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='animation_bar' class='col-xs-12 hide' style='display:none'>
+                    <div class='test pull-bottom' id='animationbar'>
+                        <div id="general_animationbar">
+                            <ul>
+                                <li style="list-style-type:none;">
+                                    <a href='javascript:void(0)' class='ani-pause'><img TitleID='AnimationMenuTitle.pause' src='images/button_ani_pause.png' alt='暂停' title='暂停'></a>
+                                </li>
+                                <li style="list-style-type:none; height:35px">
+                                    <input type='range' style='position:relative; visible:none; z-index: 9999; top:0; bottom:0' id='ani_percentage' min='0' step='0.01' max='1' value='0' />
+                                </li>
+                                <li style="list-style-type:none;">
+                                    <a href='javascript:void(0)' class='ani-backward'><img TitleID='AnimationMenuTitle.backward' src='images/sview_ani_pre.png' alt='后退' title='后退'></a>
+                                </li>
+                                <li style="list-style-type:none;">
+                                    <a href='javascript:void(0)' class='ani-forward'><img TitleID='AnimationMenuTitle.forward' src='images/sview_ani_next.png' alt='前进' title='前进'></a>
+                                </li>
+                                <li id='ani-more-li' style="list-style-type:none;">
+                                    <a href='javascript:void(0)' class='ani-more'><img TitleID='AnimationMenuTitle.more' src='images/sview_ani_more.png' alt='更多' title='更多'></a>
+                                    <div id='setSpeed' class='test ul-dropmenu' style='top: -120px; left:-100px;width:150px; padding: 2px;z-index: 9999; display:none'>
+                                        <div style='margin:10px 0px 0px 5px'>
+                                            <div style='display:inline;'><b align="center" langID="Animation.Animation_Loop">循环播放</b></div>
+                                            <div style='display:inline; margin:0px 0px 0px 15px'> <input id="aniLoop" type="checkbox" /> </div>
+                                        </div>
+                                        <div style=' margin:10px 0px 0px 5px'>
+                                            <div style='display:inline;'><b langID="Animation.Animation_Speed">播放速度</b></div>
+                                            <div style='display:inline;margin:0px 0px 0px 10px'>
+                                                <select id="speedSelect">
+                                                    <option value='0.5'>0.5x</option>
+                                                    <option value='1' selected="selected">1x</option>
+                                                    <option value='2'>2x</option>
+                                                    <option value='4'>4x</option>
+                                                    <option value='8'>8x</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div style='margin:10px 0px 10px 5px'>
+                                            <div style='display:inline; '><b align="center" langID="Animation.Animation_Auto_WalkThrough">自动漫游</b></div>
+                                            <div style='display:inline; margin:0px 0px 0px 15px'> <input id="autoWalk" type="checkbox" checked /> </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="GESTL" style="list-style-type:none;">
+                                    <a href='javascript:void(0)' class='ani-exit'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="ring_animationbar" hidden="hidden">
+                            <ul>
+                                <li style="list-style-type:none;">
+                                    <a href='javascript:void(0)' id="ringani-pause"><img TitleID='AnimationMenuTitle.start' src='images/button_ani_play.png' alt='开始' title='开始'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id='measure_bar' class='col-xs-12 hide'>
+                    <div id='measureBar' class='pull-bottom test'>
+                        <ul id="measureType" style='float:left;width:55px;<!--border-right:1px #0094ff dashed -->'>
+                            <li id='measure_CurrentType' style="width:55px;padding:5px" class="bg-blue">
+                                <a href='javascript:void(0)'>
+                                    <!--<span style="font-size:5px" class="glyphicon glyphicon-chevron-up"></span>-->
+                                    <img id="measure_CurrentType_Image" TitleID='MeasureMenuTitle.measure_Type_distance' src='images/sview_measure_distance.png' alt='点点测量' title='点点测量'>
+                                    <span class="measure-caret"></span>
+                                </a>
+                                <div id='measure_bar_third_type' class='test ul-dropmenu' style='top: -60px; left:00px;width: 110px; padding: 2px;z-index: 10000;display:none'>
+                                    <a href='javascript:void(0)' id='measure_Type_Distance' class='measure bg-blue'><img TitleID='MeasureMenuTitle.measure_Type_distance' src='images/sview_measure_distance.png' title='中心爆炸'></a>
+                                    <a href='javascript:void(0)' id='measure_Type_Angle' class='measure'><img TitleID='MeasureMenuTitle.measure_Type_Angle' src='images/sview_measure_angle.png' title='x轴线性爆炸'></a>
+                                    <a href='javascript:void(0)' id='measure_Type_Property' class='measure'><img TitleID='MeasureMenuTitle.measure_Type_Property' src='images/sview_measure_attributes.png' title='y轴线性爆炸'></a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                        <ul id="measureDistance" style="float:left;display:none">
+                            <li id='measure_PntToPnt' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Distance_PntToPnt' src='images/sview_measure_distance_dd.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_PntToLine' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Distance_PntToLine' src='images/sview_measure_distance_dl.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_PntToFace' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Distance_PntToFace' src='images/sview_measure_distance_ps.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_LineToLine' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Distance_LineToLine' src='images/sview_measure_distance_ll.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_LineToFace' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Distance_LineToFace' src='images/sview_measure_distance_ls.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_FaceToFace' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Distance_FaceToFace' src='images/sview_measure_distance_ss.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                        </ul>
+                        <ul id="measureAngle" style="float:left;display:none">
+                            <li id='measure_LineWithLine' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Angle_LineToLine' src='images/sview_measure_angle_ll.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_LineWithFace' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Angle_LineToFace' src='images/sview_measure_angle_lf.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_FaceWithFace' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Angle_FaceToFace' src='images/sview_measure_angle_ff.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                        </ul>
+                        <ul id="measureProperty" style="float:left;display:none">
+                            <li id='measure_Point' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Property_Point' src='images/sview_measure_porperty_dot.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_Line' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Property_Line' src='images/sview_measure_porperty_line.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_Face' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Property_Face' src='images/sview_measure_porperty_surface.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                            <li id='measure_Model' class="measureBackground">
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_Property_Model' src='images/sview_measure_porperty_model.png' alt='点点测量' title='点点测量'></a>
+                            </li>
+                        </ul>
+                        <ul id="commonEdit" style='float:left;'>
+                            <li class='GESTL' id='measure_del'>
+                                <a href='javascript:void(0)'><img TitleID='MeasureMenuTitle.measure_del' src='images/button_delete.png' alt='删除' title='删除'></a>
+                            </li>
+                            <li class='GESTL' id='measure_exit'>
+                                <a href='javascript:void(0)'><img TitleID='common.exit' src='images/sview_button_exit.png' alt='退出' title='退出'></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="logo">
+            <a href="http://vip.hoteamsoft.com/" target="_blank" class="logo">
+                <img width="78.5px" height="28.5px" src='images/sview-logo-1.png' alt="Logo" />
+            </a>
+        </div>-->
+    </div>
+</div>
+<div id="measurePorpertyList" class="noselect hide">
+
+</div>
+<div id="sview_anima_step_panel">
+    <div id="sview_anima_step_panel_all">
+        <div id="stepZtreePanel">
+            <ul id="stepPanelTree" class="ztree"></ul>
+        </div>
+    </div>
+</div>
+<div id="hideBtnDiv"><img id="hideBtn" src="./images/sview_ani_anilist_open.png" style="width: 24px" onselectstart="return false;">
+</div>
+<div id="sview_anima_step_panel_lit" onselectstart="return false;" class="noselect">
+    <div id="sview_anima_step_content">
+        <!--<div id="banner">按住此处移动当前div</div>-->
+        <p id="sview_anima_step_panel_lit_title" align="center"></p>
+        <p id="sview_anima_step_panel_lit_stepName"></p>
+    </div>
+</div>
+<div id="sview_license_info_panel_lit" hidden ="hidden">
+    <div id="sview_license_info_content">
+        <!--<div id="banner">按住此处移动当前div</div>-->
+        <p id="sview_license_info_panel_lit_info"></p>
+    </div>
+</div>

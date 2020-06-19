@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MOBILEPAGELISTITEM-EDIT">
+  <Settings Key="height" Value="290"/>
+  <Settings Key="width" Value="530"/>
+  <Settings Key="title" Value="MOBILEPAGELISTITEM-EDIT.MOBILEPAGELISTITEMHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_IntegrationDevelopment_MobilePageListItemEdit_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_IntegrationDevelopment_MobilePageListItemEdit_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_IntegrationDevelopment_MobilePageListItemEdit_OnSaveCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-0"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="150"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="R-0" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ENAME"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME" ParentID="R-0" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="ENAME_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ENAME_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MOBILEPAGELISTITEM-CREATE.ENAMEHeader" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="MOBILEPAGELISTITEM-CREATE.ENAMERegex" />
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OBJECTTYPE"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="OBJECTTYPE" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="OBJECTTYPE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OBJECTTYPE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="OBJECTTYPE_Label" ParentID="OBJECTTYPE" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MOBILEPAGELISTITEM-EDIT.OBJECTTYPEHeader" />
+    </PageControl>
+    <PageControl ControlID="OBJECTTYPE_Value" ParentID="OBJECTTYPE" TypeName="AutoCompleteCombox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="MOBILEPAGELISTITEM-EDIT.OBJECTTYPERegex" />
+    </PageControl>
+
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OBJECTSTATE"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="OBJECTSTATE" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="OBJECTSTATE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OBJECTSTATE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="OBJECTSTATE_Label" ParentID="OBJECTSTATE" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MOBILEPAGELISTITEM-EDIT.OBJECTSTATEHeader" />
+    </PageControl>
+    <PageControl ControlID="OBJECTSTATE_Value" ParentID="OBJECTSTATE" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,20})?$" />
+      <Settings Key="regextipId" Value="MOBILEPAGELISTITEM-EDIT.OBJECTSTATERegex" />
+    </PageControl>
+
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SINGLEBUTTON"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SINGLEBUTTON" ParentID="R-3" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="SINGLEBUTTON_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SINGLEBUTTON_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SINGLEBUTTON_Label" ParentID="SINGLEBUTTON" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MOBILEPAGELISTITEM-EDIT.SINGLEBUTTONHeader" />
+    </PageControl>
+    <PageControl ControlID="SINGLEBUTTON_Value" ParentID="SINGLEBUTTON" TypeName="TextValue" >
+      <Settings Key="type" Value="text"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_IntegrationDevelopment_MobilePageButtonValue_OnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LISTCONTENT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LISTCONTENT" ParentID="R-4" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="LISTCONTENT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LISTCONTENT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LISTCONTENT_Label" ParentID="LISTCONTENT" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MOBILEPAGELISTITEM-EDIT.LISTCONTENT" />
+    </PageControl>
+    <PageControl ControlID="LISTCONTENT_Value" ParentID="LISTCONTENT" TypeName="TextValue" >
+      <Settings Key="type" Value="text"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_IntegrationDevelopment_MobilePageButtonValue_OnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SLIDEBUTTON"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SLIDEBUTTON" ParentID="R-5" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="SLIDEBUTTON_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SLIDEBUTTON_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="SLIDEBUTTON_Label" ParentID="SLIDEBUTTON" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MOBILEPAGELISTITEM-EDIT.SLIDEBUTTONHeader" />
+    </PageControl>
+
+    <PageControl ControlID="SLIDEBUTTON_Value" ParentID="SLIDEBUTTON" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="Menu"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Grid"/>
+      </Settings>
+    </PageControl>
+
+    <!--菜单-->
+    <PageControl ControlID="Menu" ParentID="SLIDEBUTTON_Value" TypeName="Menu">
+
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="Common.Create"/>
+        <Settings Key="value" Value="Create"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_IntegrationDevelopment_MobilePageListItem_MenuClick(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="Common.Edit"/>
+        <Settings Key="value" Value="Edit"/>
+        <Settings Key="icon" Value="p_edit"/>
+        <Settings Key="js" Value="InforCenter_IntegrationDevelopment_MobilePageListItem_MenuClick(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="Common.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_IntegrationDevelopment_MobilePageListItem_MenuClick(ctrlEvent);"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Grid" ParentID="SLIDEBUTTON_Value" TypeName="EditGrid">
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="MOBILEPAGELISTITEM-EDIT.ButtonName" />
+        <Settings Key="name" Value="ButtonName" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="width" Value="100%" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="name" Value="Value" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="colType" Value="hidden" />
+        <Settings Key="width" Value="0" />
+      </Settings>
+    </PageControl>
+
+  </PageControls>
+</root>

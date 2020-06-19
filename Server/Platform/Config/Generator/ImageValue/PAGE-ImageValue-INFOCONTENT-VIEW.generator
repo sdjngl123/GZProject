@@ -1,0 +1,6 @@
+﻿    <PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="Image" >
+      <Settings Key="type" Value="icon"/>
+      <Settings Key="fixedType" Value="height" />
+      <Settings Key="position" Value="left" />
+      <Settings Key="preview" Value="false"/>
+    </PageControl>

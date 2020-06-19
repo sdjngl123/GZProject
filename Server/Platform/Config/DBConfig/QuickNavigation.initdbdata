@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Description="">
+  <Table Name="QUICKNAVIGATION">
+    <Column Name="EID" />
+    <Column Name="ECODE" />
+    <Column Name="CREATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="USERID" />
+    <Column Name="QUICKTYPE" />
+    <Column Name="QUICKROW" />
+    <Column Name="QUICKCOLUMN" />
+    <Column Name="QUICKCONTENT" />
+    <Column Name="QUICKTEXT" />
+    <Column Name="QUICKIMAGE" />
+    <Column Name="QUICKSORT" />
+    <Row>
+      <Cell ColName="EID">QUICKNAVIGATION_0e8abd88c9984a2abf4741ad3e77121b</Cell>
+      <Cell ColName="ECODE">ExampleGroup</Cell>
+      <Cell ColName="CREATETIME">635860893610000000</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="USERID">USERINFO_System</Cell>
+      <Cell ColName="QUICKTYPE">TopLevel</Cell>
+      <Cell ColName="QUICKROW">0</Cell>
+      <Cell ColName="QUICKCOLUMN">0</Cell>
+      <Cell ColName="QUICKCONTENT" />
+      <Cell ColName="QUICKTEXT" />
+      <Cell ColName="QUICKIMAGE" />
+      <Cell ColName="QUICKSORT">2</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">QUICKNAVIGATION_51ac7cbba7f5471792df77409b243bdd</Cell>
+      <Cell ColName="ECODE">SystemManagement</Cell>
+      <Cell ColName="CREATETIME">635860231640000000</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="USERID">USERINFO_System</Cell>
+      <Cell ColName="QUICKTYPE">TopLevel</Cell>
+      <Cell ColName="QUICKROW">0</Cell>
+      <Cell ColName="QUICKCOLUMN">0</Cell>
+      <Cell ColName="QUICKCONTENT" />
+      <Cell ColName="QUICKTEXT" />
+      <Cell ColName="QUICKIMAGE" />
+      <Cell ColName="QUICKSORT">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">QUICKNAVIGATION_831cd495556343328e26310f4e6e5f30</Cell>
+      <Cell ColName="ECODE">TestGroup</Cell>
+      <Cell ColName="CREATETIME">635860230640000000</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="USERID">USERINFO_System</Cell>
+      <Cell ColName="QUICKTYPE">TopLevel</Cell>
+      <Cell ColName="QUICKROW">0</Cell>
+      <Cell ColName="QUICKCOLUMN">0</Cell>
+      <Cell ColName="QUICKCONTENT" />
+      <Cell ColName="QUICKTEXT" />
+      <Cell ColName="QUICKIMAGE" />
+      <Cell ColName="QUICKSORT">0</Cell>
+    </Row>
+  </Table>
+  <TableSchema Name="QUICKNAVIGATION" IsAbstract="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECODE" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="USERID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKROW" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKCOLUMN" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKCONTENT" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKTEXT" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKIMAGE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="QUICKSORT" DataType="INT" Required="false" DefaultValue="0" PrimaryKeyOrder="0" />
+    <Index Name="IX_QUICKNAVIGATION_USERID" Unique="false">
+      <Field Name="USERID" Order="ASC" />
+    </Index>
+  </TableSchema>
+</root>

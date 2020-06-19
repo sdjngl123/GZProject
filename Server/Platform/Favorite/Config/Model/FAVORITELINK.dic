@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FAVORITELINKModel" IsWeb="true">
+    <Label Name="FAVORITELINKHeader">
+      <LocalizedLabel LanguageRef="zhs">收藏夹关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites relation</LocalizedLabel>
+    </Label>
+    <Label Name="FAVORITELINKCaption">
+      <LocalizedLabel LanguageRef="zhs">收藏夹关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites relation</LocalizedLabel>
+    </Label>
+    <Label Name="FAVORITETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">收藏时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collection time</LocalizedLabel>
+    </Label>
+    <Label Name="FAVORITETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">收藏时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collection time</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">是否重要</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Important or not</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTCaption">
+      <LocalizedLabel LanguageRef="zhs">是否重要</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Important or not</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTICONHeader">
+      <LocalizedLabel LanguageRef="zhs">对象图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object icon</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTICONCaption">
+      <LocalizedLabel LanguageRef="zhs">对象图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object icon</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

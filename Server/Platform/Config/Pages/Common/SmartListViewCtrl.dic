@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SmartListViewCtrl" IsWeb="true">
+    <Label Name="DownLoad">
+      <LocalizedLabel LanguageRef="zhs">下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download </LocalizedLabel>
+    </Label>
+    <Label Name="Share">
+      <LocalizedLabel LanguageRef="zhs">分享</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Share</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="Rename">
+      <LocalizedLabel LanguageRef="zhs">重命名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rename</LocalizedLabel>
+    </Label>
+    <Label Name="Collection">
+      <LocalizedLabel LanguageRef="zhs">收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites</LocalizedLabel>
+    </Label>
+    <Label Name="listTitle">
+      <LocalizedLabel LanguageRef="zhs">任务列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task List</LocalizedLabel>
+    </Label>
+    <Label Name="totalTask">
+      <LocalizedLabel LanguageRef="zhs">任务总数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The total number of the task</LocalizedLabel>
+    </Label>
+    <Label Name="createTask">
+      <LocalizedLabel LanguageRef="zhs">创建的任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created tasks</LocalizedLabel>
+    </Label>
+    <Label Name="receiveTask">
+      <LocalizedLabel LanguageRef="zhs">收到的任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Received tasks</LocalizedLabel>
+    </Label>
+    <Label Name="confirmTask">
+      <LocalizedLabel LanguageRef="zhs">确认的任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Confirmed task</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

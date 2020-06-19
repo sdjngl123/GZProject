@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="OPERATELOG" Extend="ENTITY" LogicClass="EntityObject" IconPath="Platform\Image\Common\log.png" Abstract="false" TableName="OPERATELOG" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" GeneratePageType="View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <Index Name="IX_OPERATELOG_USERID" TableIndex="IX_OPERATELOG_USERID" Unique="False">
+      <IndexInfo Name="USERID" Order="ASC" />
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+    </Index>
+    <Index Name="IX_OPERATELOG_CREATETIME" TableIndex="IX_OPERATELOG_CREATETIME" Unique="False">
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+    </Index>
+    <Index Name="IX_OPERATELOG_OBJID" TableIndex="IX_OPERATELOG_OBJID" Unique="False">
+      <IndexInfo Name="OBJID" Order="ASC" />
+    </Index>
+    <InfoType Name="USERID" Type="SingleUserValue" DataType="STRING100" Column="USERID" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJNAME" Type="DefaultObjectValue" DataType="STRING2000" Column="OBJNAME" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJCODE" Type="DefaultObjectValue" DataType="STRING2000" Column="OBJCODE" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJTYPE" Type="ObjectTypeListValue" DataType="STRING100" Column="OBJTYPE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJID" Type="DefaultObjectValue" DataType="STRING100" Column="OBJID" Show="" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OPERATE" Type="EnumValue" DataType="STRING100" Column="OPERATE" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="OperateLogType" IsSecurity="false" />
+    <InfoType Name="DESCRIPTION" Type="DescriptionValue" DataType="TEXT" Column="DESCRIPTION" Show="View" Width="100" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="IP" Type="DefaultObjectValue" DataType="STRING100" Column="IP" Show="View" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="ENABLE" Type="BoolValue" DataType="BOOL" Column="ENABLE" PrimaryKeyOrder="0" DefaultValue="1" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="SUBJECTSECURITYLEVEL" Type="DefaultObjectValue" DataType="STRING20" Column="SUBJECTSECURITYLEVEL" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" IsSecurity="false" />
+    <InfoType Name="OBJECTSECURITYLEVEL" Type="DefaultObjectValue" DataType="STRING20" Column="OBJECTSECURITYLEVEL" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" IsSecurity="false" />
+    <InfoType Name="OPERATELOGCLASSIFY" Type="EnumValue" DataType="STRING20" Column="OPERATELOGCLASSIFY" PrimaryKeyOrder="0" DefaultValue="Normal" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" ExtendProperty1="OperateLogClassify" IsSecurity="false" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Innate" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" IsSecurity="false" />
+  </EntityType>
+</root>

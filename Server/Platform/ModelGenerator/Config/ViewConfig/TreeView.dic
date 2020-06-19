@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="FLOWCREATOR">
+      <LocalizedLabel LanguageRef="zhs">发起人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Flow Creator</LocalizedLabel>
+    </Label>
+    <Label Name="ALLUSER">
+      <LocalizedLabel LanguageRef="zhs">所有人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllUser</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTMODEL">
+      <LocalizedLabel LanguageRef="zhs">业务建模根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RootModelNode</LocalizedLabel>
+    </Label>
+    <Label Name="WEBMODEL">
+      <LocalizedLabel LanguageRef="zhs">业务模型节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTORMFORM">
+      <LocalizedLabel LanguageRef="zhs">表单根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormRootNode</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYNODE">
+      <LocalizedLabel LanguageRef="zhs">表单分类节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormClassifyNode</LocalizedLabel>
+    </Label>
+    <Label Name="WEBOBJTYPENODE">
+      <LocalizedLabel LanguageRef="zhs">模型表单节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectTypeFormNode</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTMODELVIEW">
+      <LocalizedLabel LanguageRef="zhs">模型视图根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RootModelView</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWNAME">
+      <LocalizedLabel LanguageRef="zhs">查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ViewName</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWCONDITION">
+      <LocalizedLabel LanguageRef="zhs">查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    
+
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCycleEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">生命周期编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lifecycle Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="NewObject">
+      <LocalizedLabel LanguageRef="zhs">新建生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Life Cycle</LocalizedLabel>
+    </Label>
+    <Label Name="InitState">
+      <LocalizedLabel LanguageRef="zhs">初始状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initial state</LocalizedLabel>
+    </Label>
+    <Label Name="InitStateNullErr">
+      <LocalizedLabel LanguageRef="zhs">初始状态不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initial state not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="NameNullErr">
+      <LocalizedLabel LanguageRef="zhs">生命周期名称不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Life cycle name is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="Workflow">
+      <LocalizedLabel LanguageRef="zhs">流程生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Lifecycle</LocalizedLabel>
+    </Label>
+    <Label Name="Stage">
+      <LocalizedLabel LanguageRef="zhs">阶段生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase Life Cycle</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

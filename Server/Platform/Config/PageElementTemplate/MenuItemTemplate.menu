@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MenuItem Name="CommonMenuItemsTemplate" IsTemplate="true" TemplateDescription="通用的一组菜单模板,包括新建、编辑、删除、对象授权、复制、剪切、粘贴、发起流程">
+    <WebAction Name="Create" ModuleName="Example" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsTemplate="true" TemplateDescription="新建子对象的菜单模板,使用时需要更改模块名称、ActionChecker的验证类型及CreateObject的页面参数">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="CREATE" ActionType="EITEM" SelectType="" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="EITEM" />
+        <Para Name="LinkTypeName" Value="EFOLDERTOEITEM" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Edit" ModuleName="Example" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" IsTemplate="true" TemplateDescription="通用编辑对象模板，使用时修改模块名称">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Delete" ModuleName="Example" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" IsTemplate="true" TemplateDescription="通用删除对象模板，使用时修改模块名称">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="ObjectPermission" ModuleName="Example" LabelName="Common.ObjectPermission" Image="p_security" ParentWebAtionName="" RefreshType="UPDATELIST" IsTemplate="true" TemplateDescription="通用对象授权模板，使用时修改模块名称">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="PERMISSION" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="ObjectPermission" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="Copy" ModuleName="Example" LabelName="Common.Copy" Image="p_copy" ParentWebAtionName="" RefreshType="UPDATELIST" IsTemplate="true" TemplateDescription="通用复制对象（引用）模板，使用时修改模块名称">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="AUTO" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_ClipBoard_Copy" SelectID="[List_EID]">
+        <Para Name="EID" Value="[List_EID]" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Paste" ModuleName="Example" LabelName="Common.Paste" Image="p_paste" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE" IsTemplate="true" TemplateDescription="通用粘贴对象（引用）模板，使用时修改模块名称">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_ClipBoard_Paste" SelectID="[Tree_Current_value1]">
+        <Para Name="LinkTypeName" Value="EFOLDERTOEITEM" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Cut" ModuleName="Example" LabelName="Common.Cut" Image="p_cut" ParentWebAtionName="" RefreshType="UPDATELIST" IsTemplate="true" TemplateDescription="通用剪切对象模板，使用时修改模块名称">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_ClipBoard_Cut" SelectID="[List_EID]">
+        <Para Name="EID" Value="[List_EID]" />
+        <Para Name="LID" Value="[List_LID]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="StartWorkflow" ModuleName="Example" LabelName="Common.StartWorkflow" Image="p_startWorkflow" ParentWebAtionName="" RefreshType="UPDATELIST" IsTemplate="true" TemplateDescription="通用发起流程模板，使用时修改模块名称">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="StartWorkflow" IsPopup="true" IsModal="true">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessage PromptLabel="StartWorkflow.WorkflowStartSuccess" PromptType="NORMAL" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+  </MenuItem>
+</root>

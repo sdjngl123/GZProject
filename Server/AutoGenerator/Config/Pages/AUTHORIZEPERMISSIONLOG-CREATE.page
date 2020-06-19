@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AUTHORIZEPERMISSIONLOG-CREATE">
+  <Settings Key="height" Value="54"/>
+  <Settings Key="width" Value="96"/>
+  <Settings Key="title" Value="AUTHORIZEPERMISSIONLOG-CREATE.AUTHORIZEPERMISSIONLOGHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('AUTHORIZEPERMISSIONLOG',para);{
+	var c = pageEvent.o.GetControl('LOGCONTENT_Value');
+	if(c.id!=''){
+		c.SetText(data.LOGCONTENT_DisplayValue);
+	}
+}
+ var functionName = 'InforCenter_AUTHORIZEPERMISSIONLOG_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'AUTHORIZEPERMISSIONLOG'};;if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_AUTHORIZEPERMISSIONLOG_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="LOGCONTENT"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="LOGCONTENT" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="LOGCONTENT_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="LOGCONTENT_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="LOGCONTENT_Label" ParentID="LOGCONTENT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="AUTHORIZEPERMISSIONLOG-CREATE.LOGCONTENTHeader" />
+</PageControl>    <PageControl ControlID="LOGCONTENT_Value" ParentID="LOGCONTENT" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>  
+  </PageControls>
+</root>

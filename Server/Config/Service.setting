@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="httpBindAdress" Value="http://127.0.0.1:8888/" ToClient="false" Description="业务服务器绑定的地址,通过此地址对外提供WCF服务,一般情况下只需要更改端口号" />
+  <AppSet Key="TransactionMaxTime" Value="120" ToClient="false" Description="单个事务执行的最长时间,超过之后会记录开发日志,单位是秒,调试过程中可缩小以检测耗时操作,实际部署时应放大,以减少日志输出,建议120" />
+  <AppSet Key="CommandMaxCount" Value="500" ToClient="false" Description="单个事务中最大命令数,超过之后会记录开发日志,以进行分析" />
+  <AppSet Key="MasterDataBase" Value="SQLSERVER" ToClient="false" Description="此配置项目项用于注册功能" />
+  <AppSet Key="SingleDataBaseUserConut" Value="1000" ToClient="false" Description="此配置项目项用于注册功能" />
+  <AppSet Key="AdminUserName" Value="USERINFO_System" ToClient="false" Description="系统管理员的名称" />
+  <AppSet Key="EnablePreLoadedIntoBuffer" Value="false" ToClient="false" Description="系统管理员的名称" />
+  <AppSet Key="HttpGetEnabled" Value="false" ToClient="false" Description="是否支持Http请求" />
+  <AppSet Key="MaxConcurrentCalls" Value="2000" ToClient="false" Description="可限制当前在整个 ServiceHost 中处理的消息数目。默认为处理器计数的 16 倍。" />
+  <AppSet Key="MaxConcurrentInstances" Value="2000" ToClient="false" Description="可限制在整个 ServiceHost 中一次执行的 InstanceContext 对象数。默认为 MaxConcurrentSessions 的值和 MaxConcurrentCalls 值的总和" />
+  <AppSet Key="MaxConcurrentSessions" Value="2000" ToClient="false" Description="可限制 ServiceHost 对象可以接受的会话数。服务主机可接受的最大会话数。 默认为处理器计数的 100 倍。" />
+</root>

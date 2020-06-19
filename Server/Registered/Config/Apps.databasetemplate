@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+  <DatabaseTemplate Name="SQL1" DatabaseType="SQLSERVER" 
+                    ConnectionString="server=10.0.81.105\SQL2008R2;Trusted_Connection=false;database=[DATABASE];uid=sa;pwd=sa;MultipleActiveResultSets=true;Max Pool Size=1000;" 
+                    TestConnectString="server=10.0.81.105\SQL2008r2;Trusted_Connection=false;database=master;uid=sa;pwd=sa;MultipleActiveResultSets=true;Max Pool Size=1000;"
+                    TestSQL="SELECT @@VERSION"/>
+  <!--<DatabaseTemplate Name="SQL2" DatabaseType="SQLSERVER" 
+                    ConnectionString="server=.\SQL2008R2;Trusted_Connection=false;database=[DATABASE];uid=sa;pwd=sa;MultipleActiveResultSets=true;Max Pool Size=1000;"
+                    TestConnectString="server=.\SQL2008r2;Trusted_Connection=false;database=master;uid=sa;pwd=sa;MultipleActiveResultSets=true;Max Pool Size=1000;"
+                    TestSQL="SELECT @@VERSION"/>
+  
+  <DatabaseTemplate Name="ORA1" DatabaseType="ORACLE"
+                    ConnectionString="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521)))(CONNECT_DATA=(SID=ORCL)(SERVER=DEDICATED)));User Id=[UID];Password=[PWD];Max Pool Size=1000;"
+                    TestConnectString="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521)))(CONNECT_DATA=(SID=ORCL)(SERVER=DEDICATED)));User Id=zgh;Password=zgh;Max Pool Size=1000;"
+                    TestSQL="SELECT * FROM V$VERSION"/>-->
+  <!--
+  <Database Name="MySQL" DatabaseType="MYSQL" ConnectionString="server=10.0.81.105;database=InforCenter;uid=root;pwd=123456;Max Pool Size=1000;Allow User Variables=true" Timeout="0" Enable="false" />				      
+  <Database Name="SQLSERVER" DatabaseType="SQLSERVER" ConnectionString="server=10.0.81.3\MSSQLSERVER2014;Trusted_Connection=false;database=GACExperimentNew;uid=sa;pwd=123;MultipleActiveResultSets=true;Max Pool Size=1000;" Timeout="0" Enable="true" />
+   -->
+</root>

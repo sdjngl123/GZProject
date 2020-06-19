@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Context Name="TestPlanMenu" IsWeb="true">
+		<Label Name="AttachManage">
+			<LocalizedLabel LanguageRef="zhs">附件管理</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">AttachManage</LocalizedLabel>
+		</Label>
+		<Label Name="AddMember">
+			<LocalizedLabel LanguageRef="zhs">添加人員</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">AddMember</LocalizedLabel>
+		</Label>
+		<Label Name="Download">
+			<LocalizedLabel LanguageRef="zhs">下载</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Download</LocalizedLabel>
+		</Label>
+		<Label Name="Add">
+			<LocalizedLabel LanguageRef="zhs">添加</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+		</Label>
+		<Label Name="Remove">
+			<LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+		</Label>
+		<Label Name="Knowledge">
+			<LocalizedLabel LanguageRef="zhs">知识</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Knowledge</LocalizedLabel>
+		</Label>
+		<Label Name="Resource">
+			<LocalizedLabel LanguageRef="zhs">资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Resource</LocalizedLabel>
+		</Label>
+		<Label Name="Audit">
+			<LocalizedLabel LanguageRef="zhs">审核</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Audit</LocalizedLabel>
+		</Label>
+		<Label Name="NewTestCapability">
+			<LocalizedLabel LanguageRef="zhs">新建试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">NewTestCapability</LocalizedLabel>
+		</Label>
+		<Label Name="BatchEdit">
+			<LocalizedLabel LanguageRef="zhs">批量修改</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">BatchEdit</LocalizedLabel>
+		</Label>	
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeListQuery Name="ChangeTaskActor" TreeViewName="OrganizationQueryTreeView"
+                 ListViewName="USERSQUERYLISTVIEW"
+               AllowMultiSelect="true" AllowReturnEmptyValue="false" 
+                 ListTitleDataService="InforCenter.Workflow.WorkflowService.GetChangeTaskActorTitleData"
+                 OnePageDataService="InforCenter.Workflow.WorkflowService.GetChangeTaskActorListData"
+                 TreeChildDataService="InforCenter.Workflow.WorkflowService.GetChangeTaskActorChildNode" 
+                 TreeQueryDataService="" 
+                 TreeAllDataService=""
+                 TreeRootDataService="InforCenter.Workflow.WorkflowService.GetChangeTaskActorRootNode"
+                 CommitJS="InforCenter_Platform_FlowTaskActor_ReturnValue"
+                 ReturnValueType="USERINFO"
+                 QueryPageName="ChangeTaskActorQuery">
+  </TreeListQuery>
+</root>

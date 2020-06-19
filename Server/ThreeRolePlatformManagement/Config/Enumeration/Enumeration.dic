@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="UserSecurityLevel1">
+      <LocalizedLabel LanguageRef="zhs">非涉密</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">非涉密</LocalizedLabel>
+    </Label>
+    <Label Name="UserSecurityLevel2">
+      <LocalizedLabel LanguageRef="zhs">一般</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">一般</LocalizedLabel>
+    </Label>
+    <Label Name="UserSecurityLevel3">
+      <LocalizedLabel LanguageRef="zhs">重要</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">重要</LocalizedLabel>
+    </Label>
+    <Label Name="UserSecurityLevel4">
+      <LocalizedLabel LanguageRef="zhs">核心</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">核心</LocalizedLabel>
+    </Label>
+    <Label Name="SecurityLevel1">
+      <LocalizedLabel LanguageRef="zhs">非密</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">非密</LocalizedLabel>
+    </Label>
+    <Label Name="SecurityLevel2">
+      <LocalizedLabel LanguageRef="zhs">秘密</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">秘密</LocalizedLabel>
+    </Label>
+    <Label Name="SecurityLevel3">
+      <LocalizedLabel LanguageRef="zhs">机密</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">机密</LocalizedLabel>
+    </Label>
+    <Label Name="SecurityLevel4">
+      <LocalizedLabel LanguageRef="zhs">绝密</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">绝密</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRolePasswordPolicyCombinChar">
+      <LocalizedLabel LanguageRef="zhs">字符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Char</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRolePasswordPolicyCombinCharNum">
+      <LocalizedLabel LanguageRef="zhs">字符数字组合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CharAndNumber</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRolePasswordPolicyCombinCharNumSpecial">
+      <LocalizedLabel LanguageRef="zhs">字符数字特殊字符组合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CharAndNumberAndSpecialChar</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekMonday">
+      <LocalizedLabel LanguageRef="zhs">星期一</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Monday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekTuesday">
+      <LocalizedLabel LanguageRef="zhs">星期二</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tuesday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekWednesday">
+      <LocalizedLabel LanguageRef="zhs">星期三</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Wednesday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekThursday">
+      <LocalizedLabel LanguageRef="zhs">星期四</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Thursday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekFriday">
+      <LocalizedLabel LanguageRef="zhs">星期五</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Friday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekSaturday">
+      <LocalizedLabel LanguageRef="zhs">星期六</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Saturday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowWeekSunday">
+      <LocalizedLabel LanguageRef="zhs">星期日</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sunday</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime1">
+      <LocalizedLabel LanguageRef="zhs">1点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">1am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime2">
+      <LocalizedLabel LanguageRef="zhs">2点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">2am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime3">
+      <LocalizedLabel LanguageRef="zhs">3点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">3am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime4">
+      <LocalizedLabel LanguageRef="zhs">4点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">4am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime5">
+      <LocalizedLabel LanguageRef="zhs">5点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">5am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime6">
+      <LocalizedLabel LanguageRef="zhs">6点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">6am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime7">
+      <LocalizedLabel LanguageRef="zhs">7点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">7am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime8">
+      <LocalizedLabel LanguageRef="zhs">8点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">8am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime9">
+      <LocalizedLabel LanguageRef="zhs">9点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">9am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime10">
+      <LocalizedLabel LanguageRef="zhs">10点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">10am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime11">
+      <LocalizedLabel LanguageRef="zhs">11点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">11am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime12">
+      <LocalizedLabel LanguageRef="zhs">12点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">12am</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime13">
+      <LocalizedLabel LanguageRef="zhs">13点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">13pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime14">
+      <LocalizedLabel LanguageRef="zhs">14点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">14pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime15">
+      <LocalizedLabel LanguageRef="zhs">15点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">15pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime16">
+      <LocalizedLabel LanguageRef="zhs">16点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">16pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime17">
+      <LocalizedLabel LanguageRef="zhs">17点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">17pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime18">
+      <LocalizedLabel LanguageRef="zhs">18点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">18pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime19">
+      <LocalizedLabel LanguageRef="zhs">19点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">19pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime20">
+      <LocalizedLabel LanguageRef="zhs">20点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">20pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime21">
+      <LocalizedLabel LanguageRef="zhs">21点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">21pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime22">
+      <LocalizedLabel LanguageRef="zhs">22点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">22pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime23">
+      <LocalizedLabel LanguageRef="zhs">23点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">23pm</LocalizedLabel>
+    </Label>
+    <Label Name="ThreeRoleAllowTime24">
+      <LocalizedLabel LanguageRef="zhs">24点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">24pm</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

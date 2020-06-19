@@ -1,0 +1,6 @@
+﻿{
+	var c = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(c.Check() == false) bCheck = false;
+	var value = c.GetText().trim();
+	data.[INFONAME] = value;
+}

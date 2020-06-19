@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTRESOURCEModel" IsWeb="true">
+    <Label Name="TESTRESOURCEHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验资源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTRESOURCE</LocalizedLabel>
+    </Label>
+    <Label Name="TESTRESOURCECaption">
+      <LocalizedLabel LanguageRef="zhs">外部试验资源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTRESOURCE</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="RESOURCETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">资源方向</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ResourceType</LocalizedLabel>
+    </Label>
+    <Label Name="RESOURCETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">资源方向</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ResourceType</LocalizedLabel>
+    </Label>
+    <Label Name="SOURCEHeader">
+      <LocalizedLabel LanguageRef="zhs">来源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOURCE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

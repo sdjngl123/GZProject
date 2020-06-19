@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+	<ListQuery Name="TestOutResourceListQuery" ListViewName="TESTOUTRESOURCEListView"  QueryPageName="TESTOUTRESOURCEView-QUERY" PageLinksName=""
+			   AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="TESTRESOURCE" ActionName="Create">
+	</ListQuery>
+
+	<ListQuery Name="TestResourceListQuery" ListViewName="TESTRESOURCEListView"  QueryPageName="TESTRESOURCEView-QUERY" PageLinksName=""
+		   AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="TESTRESOURCE" ActionName="Create">
+	</ListQuery>
+
+	<ListQuery Name="TestKnowledgeListQuery" ListViewName="TESTKNOWLEDGEQueryListView"  QueryPageName="TESTKNOWLEDGEQueryView-QUERY" PageLinksName=""
+			   AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="TESTKNOWLEDGE" ActionName="Create">
+	</ListQuery>
+
+
+	<ListQuery Name="TestLocationListQuery" ListViewName="TESTELOCATIONListView"  QueryPageName="TESTELOCATIONView-QUERY" PageLinksName=""
+				   AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="TESTELOCATION" ActionName="Create">
+	</ListQuery>
+
+	<ListQuery Name="TestOrgListQuery" ListViewName="TESTEXTORGListView"  QueryPageName="TESTEXTORGView-QUERY" PageLinksName=""
+				   AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="TESTEXTORG" ActionName="Create">
+	</ListQuery>
+
+	<ListQuery Name="TestProjectListQuery" ListViewName="TESTPROJECTListView"  QueryPageName="TESTPROJECTView-QUERY" PageLinksName=""
+			   AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="TESTPROJECT" ActionName="Create">
+	</ListQuery>
+</root>

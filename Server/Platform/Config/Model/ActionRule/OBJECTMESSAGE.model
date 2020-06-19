@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityType Name="OBJECTMESSAGE" Extend="ENTITY" LogicClass="ObjectMessage" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="OBJECTMESSAGE" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Number" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <Index Name="IX_MESSAGE_OBJECTID" TableIndex="IX_MESSAGE_OBJECTID" Unique="False">
+      <IndexInfo Name="OBJECTID" Order="ASC" />
+    </Index>
+    <InfoType Name="OBJECTID" Type="ObjectIDValue" DataType="STRING100" Column="OBJECTID" Width="50" PrimaryKeyOrder="0" Required="True" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MESSAGEACTORVALUE" Type="PermissionActorValue" DataType="TEXT" Column="MESSAGEACTORVALUE" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="MESSAGEACTIONVALUE" Type="MessageActionValue" DataType="TEXT" Column="MESSAGEACTIONVALUE" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="OBJECTEUID" Type="DefaultObjectValue" DataType="STRING100" Column="OBJECTEUID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="" Show="" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="" Sequence="100" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNUID" Type="SingleUserValue" Edit="" Show="" Sequence="170" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="OWNGID" Type="SingleGroupValue" Edit="" Show="" Sequence="180" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+  </EntityType>
+</root>

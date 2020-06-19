@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowPlugin">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowPlugin_OnCreate(pageEvent);"/>
+    <!--<PageHandler HandlerName ="OnPluginSave" Script="InforCenter_Platform_WorkflowPlugin_OnPluginSave(pageEvent);"/>-->
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container1"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container2"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container3"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container4"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container5"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container6"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container7"/>
+      </Settings>
+      <Settings Key="item8" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container8"/>
+      </Settings>
+      <Settings Key="item9" >
+        <Settings Key="size" Value="auto"/>
+        <Settings Key="childid" Value="Container9"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Container1" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container2" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container3" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container4" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container5" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container6" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container7" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container8" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="Container9" ParentID="TopContainer" TypeName="PageContainer">
+    </PageControl>
+  </PageControls>
+</root>
+

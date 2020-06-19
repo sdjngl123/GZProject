@@ -1,0 +1,59 @@
+﻿.ProgressWidget {
+    width: 100%;
+    height: 100%;
+}
+.progressWidget {
+    width: 100%;
+    height: 100%;
+}
+
+.progressWidget-hd {
+    position: relative;
+    display: table;
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+.progressWidget-hd-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.progressWidget-bd {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+.progressWidget-bd-content {
+    width: 100%;
+    top: 20%;
+    position: relative;
+    padding-right: 20px;
+}
+.progressWidget-bd-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 60%;
+    float: left;
+    margin: 3px 5px 0 5px;
+}
+.progressWidget-bd-value{
+    font-size: 16px;
+}
+.progressWidget-progress_bar{
+    background-color: #EBEBEB;
+    height: 5px;
+    border-radius: 2px;
+    margin-top: 8px;
+    
+}
+.progressWidget-progress_innerbar{
+    height: 100%;
+    border-radius: 2px;
+    width:0;
+}

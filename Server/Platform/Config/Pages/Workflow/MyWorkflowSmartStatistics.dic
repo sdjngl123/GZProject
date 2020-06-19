@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MyWorkflowSmartStatistics" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">我的流程任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My process task</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="Count">
+      <LocalizedLabel LanguageRef="zhs">数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Quantity</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

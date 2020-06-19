@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="THEMDESIGNDATAModel" IsWeb="true">
+    <Label Name="THEMDESIGNDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">主题设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">THEMDESIGNDATA</LocalizedLabel>
+    </Label>
+    <Label Name="THEMDESIGNDATACaption">
+      <LocalizedLabel LanguageRef="zhs">主题设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">THEMDESIGNDATA</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="THEMDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">主题数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">THEMDATA</LocalizedLabel>
+    </Label>
+    <Label Name="THEMDATACaption">
+      <LocalizedLabel LanguageRef="zhs">主题数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">THEMDATA</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="DESIGNDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESIGNDATA</LocalizedLabel>
+    </Label>
+    <Label Name="DESIGNDATACaption">
+      <LocalizedLabel LanguageRef="zhs">设计数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESIGNDATA</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPORARYDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">临时数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TEMPORARYDATA</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPORARYDATACaption">
+      <LocalizedLabel LanguageRef="zhs">临时数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TEMPORARYDATA</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

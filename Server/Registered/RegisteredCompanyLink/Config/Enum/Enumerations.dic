@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="CompanyAcceptStateUnaudited">
+      <LocalizedLabel LanguageRef="zhs">未审核</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unaudited</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyAcceptStateAgree">
+      <LocalizedLabel LanguageRef="zhs">同意</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agree</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyAcceptStateReject">
+      <LocalizedLabel LanguageRef="zhs">拒绝</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reject</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyExtendTypeExtend">
+      <LocalizedLabel LanguageRef="zhs">继承</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extend</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyExtendTypeCopy">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

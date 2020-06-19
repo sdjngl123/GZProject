@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CommonUpload" IsWeb="true">
+    <Label Name="FileSizeZero">
+      <LocalizedLabel LanguageRef="en">file([name]) is empty,can't upload.</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">文件([name])大小为0,不允许上传.</LocalizedLabel>
+    </Label>
+    <Label Name="FileExisted">
+      <LocalizedLabel LanguageRef="en">Don't Add Identical File Again!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">请勿重复添加同一个文件!</LocalizedLabel>
+    </Label>
+    <Label Name="UploadError">
+      <LocalizedLabel LanguageRef="en">Upload Failed,Please Wait or Check Server Setting.</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">上传文件失败,请稍后再试或联系管理员。</LocalizedLabel>
+    </Label>
+    <Label Name="DownloadUrlIsNull">
+      <LocalizedLabel LanguageRef="en">DownloadUrlIsNull</LocalizedLabel>
+      <LocalizedLabel LanguageRef="zhs">不存在可下载的文件</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="USERQUERYVIEWIgnoreCompanyRulePermissionFalse-QUERY" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

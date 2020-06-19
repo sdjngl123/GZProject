@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="InfoTypeProperty" IsWeb="true">
+    <Label Name="InfoTypeProperty">
+      <LocalizedLabel LanguageRef="zhs">用户设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User settings</LocalizedLabel>
+    </Label>
+    <Label Name="Language">
+      <LocalizedLabel LanguageRef="zhs">默认语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default language</LocalizedLabel>
+    </Label>
+    <Label Name="en">
+      <LocalizedLabel LanguageRef="zhs">English</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">English</LocalizedLabel>
+    </Label>
+    <Label Name="zhs">
+      <LocalizedLabel LanguageRef="zhs">中文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chinese</LocalizedLabel>
+    </Label>
+    <Label Name="TimeZone">
+      <LocalizedLabel LanguageRef="zhs">默认时区</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default time zone</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageMode">
+      <LocalizedLabel LanguageRef="zhs">主页模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home mode</LocalizedLabel>
+    </Label>
+    <Label Name="Agent">
+      <LocalizedLabel LanguageRef="zhs">出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business travel agents</LocalizedLabel>
+    </Label>
+    <Label Name="Theme">
+      <LocalizedLabel LanguageRef="zhs">默认主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default topic</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">保存失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save failed!</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mailbox</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILRegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的电子邮箱&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct e-mail address&lt;/br&gt; the maximum length of the entering: 100 bytes &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="BIRTHDAYHeader">
+      <LocalizedLabel LanguageRef="zhs">生日</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Birthday</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null! &lt;/br&gt; the maximum length of the entering: 500 bytes &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="GENDERHeader">
+      <LocalizedLabel LanguageRef="zhs">性别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gender</LocalizedLabel>
+    </Label>
+    <Label Name="GENDERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 100 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ACADEMICRECORDHeader">
+      <LocalizedLabel LanguageRef="zhs">学历</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Education background</LocalizedLabel>
+    </Label>
+    <Label Name="ACADEMICRECORDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 100 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PHONEHeader">
+      <LocalizedLabel LanguageRef="zhs">电话</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phone</LocalizedLabel>
+    </Label>
+    <Label Name="PHONERegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的电话&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct phone number &lt;/br&gt; the maximum length of the entering:100 bytes &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enter a maximum length of 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ZIPCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮编</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Postcode</LocalizedLabel>
+    </Label>
+    <Label Name="ZIPCODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 100 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="AgencyOneself">
+      <LocalizedLabel LanguageRef="zhs">不能设置自己为出差代理人！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You cannot set yourself as the business trip agent!</LocalizedLabel>
+    </Label>
+    <Label Name="CannotSetAsAgency">
+      <LocalizedLabel LanguageRef="zhs">[user]已经设置别人为代理人，您不能再设置[user]为您的出差代理人！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[user] has set someone else as the agent, you can no longer set [user] as your business travel agent!</LocalizedLabel>
+    </Label>
+    <Label Name="CannotSetAgency">
+      <LocalizedLabel LanguageRef="zhs">您已经被设置为出差代理人，因此您不能再设置他人为出差代理人！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have been set as the business trip agent, so you can't set somene elseas the business trip agent anymore!</LocalizedLabel>
+    </Label>
+    <Label Name="InfoTypePropertyNote">
+      <LocalizedLabel LanguageRef="zhs">注：语言、时区、主题、主页模式下次登录生效！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Note: Next logon takes effect in the mode of language, time zone, subject, homepage!</LocalizedLabel>
+    </Label>
+    <Label Name="WorkSpace">
+      <LocalizedLabel LanguageRef="zhs">工作空间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workspace</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

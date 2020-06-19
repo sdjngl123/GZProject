@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ListManagement Name="PROJECTSTAGEList" MenuName="PROJECTSTAGEMenu" ListViewName="PROJECTSTAGEListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="PROJECTMEMBERList" MenuName="PROJECTMEMBERMenu" ListViewName="PROJECTMEMBERListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="PROJECTSTAGENoMenuList" MenuName="" ListViewName="PROJECTSTAGEListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="PROJECTMEMBERNoMenuList" MenuName="" ListViewName="PROJECTMEMBERListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="MyProjectList" MenuName="MyProjectListMenu" ListViewName="PMSPROJECTListView" SearchFields="ENAME;ECODE" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="ResponseProjectList" MenuName="PMSPROJECTMenu" ListViewName="ResponseProjectListView" SearchFields="ENAME;ECODE" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="ParticProjectList" MenuName="ParticProjectListMenu" ListViewName="ParticProjectListView" SearchFields="ENAME;ECODE" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="CompleteProjectList" MenuName="ParticProjectListMenu" ListViewName="CompleteProjectListView" SearchFields="ENAME;ECODE" HideViewFilterPage="false" IsBottomTab="false" />
+
+</root>

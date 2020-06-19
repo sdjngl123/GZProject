@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="LookAtOrganization">
+      <LocalizedLabel LanguageRef="zhs">查看组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LookAtOrganization</LocalizedLabel>
+    </Label>
+    <Label Name="SetSystemPassword">
+      <LocalizedLabel LanguageRef="zhs">重新设置密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserCode</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

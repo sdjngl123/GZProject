@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <!--新建-->
+  <Action Name="CREATE" IsDefaultAction="true" Order="001" UseBy="Create"/>
+
+  <!--实体-->
+  <Action Name="BROWSE" IsDefaultAction="true" Order="010"/>  
+  <Action Name="EDIT" IsDefaultAction="true" Order="020" IsMessageAction="true"/>
+  <Action Name="DELETE" IsDefaultAction="true" Order="030" IsMessageAction="true"/>
+  <Action Name="DOWNLOAD" IsDefaultAction="true" Order="040"/>  
+  <Action Name="PERMISSION" IsDefaultAction="true" Order="050"/>
+  <Action Name="EMEND" IsDefaultAction="true" Order="060" IsMessageAction="true"/>
+  <Action Name="PASTECOPY" IsDefaultAction="true" Order="070"/>
+  <!--<Action Name="PRINT" IsDefaultAction="true" Order="080"/>-->
+  <Action Name="STARTWORKFLOW" IsDefaultAction="true" Order="080"/>
+  <Action Name="COPY" IsDefaultAction="true" Order="090" DisablePermission="true"/>
+  
+  <!--关系-->
+  <Action Name="ADD" IsDefaultAction="true" Order="010" UseBy="Link"/>
+  <Action Name="REMOVE" IsDefaultAction="true" Order="020" UseBy="Link"/>
+
+</root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Table Name="MOBILEPAGETAB" Extend="ENTITY" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="ENAME" Extend="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ECODE" Extend="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="STATEID" Extend="STATEID" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="STAGESTATEID" Extend="STAGESTATEID" DataType="STRING20" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EVERSION" Extend="EVERSION" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EMINORVERSION" Extend="EMINORVERSION" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EUID" Extend="EUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTINSERT" Extend="ELASTINSERT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTFINALSTATE" Extend="ELASTFINALSTATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CREATEUID" Extend="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="CREATETIME" Extend="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="UPDATEUID" Extend="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="UPDATETIME" Extend="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="OWNUID" Extend="OWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNGID" Extend="OWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ESTATION" Extend="ESTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ICON" Extend="ICON" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ECOMPANYID" Extend="ECOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="SERIALNUMBER" Extend="SERIALNUMBER" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="TAB" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TITLE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="FILTERSTRING" DataType="STRING500" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="LISTPAGECOUNT" DataType="STRING100" Required="false" DefaultValue="20" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ISSELECTED" DataType="BOOL" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ISALLSELECT" DataType="BOOL" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TABASSEMBLY" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TABCLASSNAME" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ASSEMBLY" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="CLASSNAME" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="SQLCOMMANDNAME" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="DATASOURCETYPE" DataType="STRING100" Required="true" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="RESULTOBJECTTYPE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="RESULTORDERBY" DataType="STRING100" Required="false" DefaultValue="CreateTime desc" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="SEQUENCE" DataType="INT" Required="true" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ITEMTITLE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ITEMSUBTITLE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="LISTITEMSTATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="LISTITEMSTATEICON" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ITEMSUBTITLETWO" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="LISTITEMOBJECTMANAGER" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PROPERTYCOLUMN" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PROPERTYASSEMBLY" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PROPERTYCLASSNAME" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ISROOTQUERY" DataType="BOOL" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" InheritRegulate="Show" />
+  </Table>
+</root>

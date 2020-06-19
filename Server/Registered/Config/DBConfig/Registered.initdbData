@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Description="">
+  <Table Name="ACTIONRULE">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="PEID" />
+    <Column Name="SERIALNUMBER" />
+    <Row>
+      <Cell ColName="EID">ACTIONRULE_41b52cab6fcb40be9483302a8e41c925</Cell>
+      <Cell ColName="ENAME">禁止删除普通角色（禁止调整）</Cell>
+      <Cell ColName="ECODE" />
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="PEID" />
+      <Cell ColName="SERIALNUMBER">1004</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULE_50a936f2b8e8412f94e1199e92a77e7f</Cell>
+      <Cell ColName="ENAME">禁止删除管理者角色（禁止调整）</Cell>
+      <Cell ColName="ECODE" />
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="PEID" />
+      <Cell ColName="SERIALNUMBER">1002</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULE_89557192610840439006a741e26d5eaf</Cell>
+      <Cell ColName="ENAME">禁止删除系统管理组（禁止调整）</Cell>
+      <Cell ColName="ECODE" />
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="PEID" />
+      <Cell ColName="SERIALNUMBER">1003</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULE_f90acab2edea41c6a939b78628f8f02f</Cell>
+      <Cell ColName="ENAME">禁止删除管理员（禁止调整）</Cell>
+      <Cell ColName="ECODE" />
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="PEID" />
+      <Cell ColName="SERIALNUMBER">1001</Cell>
+    </Row>
+  </Table>
+  <Table Name="ACTIONRULECONDITION">
+    <Column Name="EID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="ACTIONRULEID" />
+    <Column Name="OPERATOR" />
+    <Column Name="CONDITIONVALUE" />
+    <Column Name="SERIALNUMBER" />
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_6a9d2a6713014fa7bc0ab693ea7bc708</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_41b52cab6fcb40be9483302a8e41c925</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"EID","Parameter2":"==","Parameter3":"ROLEINFO_Normal","ConditionType":"ObjectPropertyCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1002</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_77415ea090cd4d2580178df83758e7da</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_50a936f2b8e8412f94e1199e92a77e7f</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"EID","Parameter2":"==","Parameter3":"ROLEINFO_System","ConditionType":"ObjectPropertyCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1002</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_9fa740eb111a467ab40b873628b3c6e5</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_50a936f2b8e8412f94e1199e92a77e7f</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"ROLEINFO","ConditionType":"ObjectTypeCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1001</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_a2bd7d9724254527880e0af7f69af1f5</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_f90acab2edea41c6a939b78628f8f02f</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"EID","Parameter2":"==","Parameter3":"USERINFO_System","ConditionType":"ObjectPropertyCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">2</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_b1917ad8193d4270af97c33a2b52dcdc</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_89557192610840439006a741e26d5eaf</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"EID","Parameter2":"==","Parameter3":"GROUPINFO_System","ConditionType":"ObjectPropertyCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1002</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_cfdbccf02c564ff480c02b93bbd21dcf</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_41b52cab6fcb40be9483302a8e41c925</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"USERINFO","ConditionType":"ObjectTypeCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1001</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_ec98dc253cd04114aa64ecc435cdeb9c</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_f90acab2edea41c6a939b78628f8f02f</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"USERINFO","ConditionType":"ObjectTypeCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULECONDITION_f4d170c0f26e46519a954dc7f259c4f0</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_89557192610840439006a741e26d5eaf</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"Parameter1":"GROUPINFO","ConditionType":"ObjectTypeCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1001</Cell>
+    </Row>
+  </Table>
+  <Table Name="ACTIONRULEPERMISSION">
+    <Column Name="EID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="ACTIONRULEID" />
+    <Column Name="PERMISSIONACTORVALUE" />
+    <Column Name="PERMISSIONACTIONVALUE" />
+    <Column Name="SERIALNUMBER" />
+    <Row>
+      <Cell ColName="EID">ACTIONRULEPERMISSION_098951dc88bc4887857c31e0eced92d1</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_41b52cab6fcb40be9483302a8e41c925</Cell>
+      <Cell ColName="PERMISSIONACTORVALUE">{"ActorType":"PermissionToAllUser"}</Cell>
+      <Cell ColName="PERMISSIONACTIONVALUE">{"DenyActions":"CREATE;EDIT;DELETE;PERMISSION"}</Cell>
+      <Cell ColName="SERIALNUMBER">1001</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULEPERMISSION_128d7d28578346b8a016ec8c49cff3f4</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_50a936f2b8e8412f94e1199e92a77e7f</Cell>
+      <Cell ColName="PERMISSIONACTORVALUE">{"ActorType":"PermissionToAllUser"}</Cell>
+      <Cell ColName="PERMISSIONACTIONVALUE">{"AllowActions":"CREATE;EDIT;PERMISSION;REMOVE","DenyActions":"DELETE"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULEPERMISSION_12b1a451e2cd4b59ab4c15888add50b2</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_89557192610840439006a741e26d5eaf</Cell>
+      <Cell ColName="PERMISSIONACTORVALUE">{"ActorType":"PermissionToAllUser"}</Cell>
+      <Cell ColName="PERMISSIONACTIONVALUE">{"AllowActions":"CREATE;EDIT;PERMISSION","DenyActions":"DELETE"}</Cell>
+      <Cell ColName="SERIALNUMBER">1001</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">ACTIONRULEPERMISSION_a85dc3d543f7411184baef82ae9bba42</Cell>
+      <Cell ColName="ECOMPANYID" />
+      <Cell ColName="ACTIONRULEID">ACTIONRULE_f90acab2edea41c6a939b78628f8f02f</Cell>
+      <Cell ColName="PERMISSIONACTORVALUE">{"ActorType":"PermissionToAllUser"}</Cell>
+      <Cell ColName="PERMISSIONACTIONVALUE">{"AllowActions":"CREATE;EDIT;PERMISSION;REMOVE","DenyActions":"DELETE"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+  </Table>
+
+  <Table Name="GROUPINFO">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="PARENTGROUPEID" />
+    <Column Name="VAULTINFO" />
+    <Column Name="DESCRIPT" />
+    <Row>
+      <Cell ColName="EID">GROUPINFO_System</Cell>
+      <Cell ColName="ENAME">系统管理组</Cell>
+      <Cell ColName="ECODE"></Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">634938753390000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">634938753390000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PARENTGROUPEID"></Cell>
+      <Cell ColName="VAULTINFO">DefaultValut</Cell>
+      <Cell ColName="DESCRIPT"></Cell>
+    </Row>
+  </Table>
+  <Table Name="ORGANIZE">
+    <Column Name="LID" />
+    <Column Name="PEID" />
+    <Column Name="PETYPE" />
+    <Column Name="CEID" />
+    <Column Name="CETYPE" />
+    <Column Name="LSEQUENCE" />
+    <Column Name="LQUALITY" />
+    <Column Name="LCOMPANYID" />
+    <Column Name="PEUID" />
+    <Column Name="CEUID" />
+    <Column Name="GROUPID" />
+    <Row>
+      <Cell ColName="LID">ORGANIZE_GROUPS</Cell>
+      <Cell ColName="PEID">ORGANIZATION_GROUPS</Cell>
+      <Cell ColName="PETYPE">ORGANIZATION</Cell>
+      <Cell ColName="CEID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="CETYPE">COMPANY</Cell>
+      <Cell ColName="LSEQUENCE">1</Cell>
+      <Cell ColName="LQUALITY">1</Cell>
+      <Cell ColName="LCOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEUID"></Cell>
+      <Cell ColName="CEUID"></Cell>
+      <Cell ColName="GROUPID"></Cell>
+    </Row>
+    <Row>
+      <Cell ColName="LID">ORGANIZE_GROUPS1</Cell>
+      <Cell ColName="PEID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PETYPE">COMPANY</Cell>
+      <Cell ColName="CEID">GROUPINFO_System</Cell>
+      <Cell ColName="CETYPE">GROUPINFO</Cell>
+      <Cell ColName="LSEQUENCE">0</Cell>
+      <Cell ColName="LQUALITY">1</Cell>
+      <Cell ColName="LCOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEUID"></Cell>
+      <Cell ColName="CEUID"></Cell>
+      <Cell ColName="GROUPID">ORGANIZATION_GROUPS</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="LID">ORGANIZE_GROUPS3</Cell>
+      <Cell ColName="PEID">GROUPINFO_System</Cell>
+      <Cell ColName="PETYPE">GROUPINFO</Cell>
+      <Cell ColName="CEID">ROLEINFO_System</Cell>
+      <Cell ColName="CETYPE">ROLEINFO</Cell>
+      <Cell ColName="LSEQUENCE">2</Cell>
+      <Cell ColName="LQUALITY">1</Cell>
+      <Cell ColName="LCOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEUID"></Cell>
+      <Cell ColName="CEUID"></Cell>
+      <Cell ColName="GROUPID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="LID">ORGANIZE_GROUPS4</Cell>
+      <Cell ColName="PEID">ROLEINFO_System</Cell>
+      <Cell ColName="PETYPE">ROLEINFO</Cell>
+      <Cell ColName="CEID">USERINFO_System</Cell>
+      <Cell ColName="CETYPE">USERINFO</Cell>
+      <Cell ColName="LSEQUENCE">1</Cell>
+      <Cell ColName="LQUALITY">1</Cell>
+      <Cell ColName="LCOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEUID"></Cell>
+      <Cell ColName="CEUID"></Cell>
+      <Cell ColName="GROUPID">GROUPINFO_System</Cell>
+    </Row>
+  </Table>
+  <Table Name="PERSON">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ICON" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="GENDER" />
+    <Column Name="BIRTHDAY" />
+    <Column Name="ACADEMICRECORD" />
+    <Column Name="PHONE" />
+    <Column Name="OFFICENUMBER" />
+    <Column Name="FAXNUMBER" />
+    <Column Name="EMAIL" />
+    <Column Name="ZIPCODE" />
+    <Column Name="ADDRESS" />
+    <Row>
+      <Cell ColName="EID">PERSON_86009246101e4c6da26e51454baaa047</Cell>
+      <Cell ColName="ENAME">系统管理员</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636227198020000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636227198020000000</Cell>
+      <Cell ColName="ICON">p_userobject</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="GENDER">Male</Cell>
+      <Cell ColName="BIRTHDAY"></Cell>
+      <Cell ColName="ACADEMICRECORD"></Cell>
+      <Cell ColName="PHONE"></Cell>
+      <Cell ColName="OFFICENUMBER"></Cell>
+      <Cell ColName="FAXNUMBER"></Cell>
+      <Cell ColName="EMAIL"></Cell>
+      <Cell ColName="ZIPCODE"></Cell>
+      <Cell ColName="ADDRESS"></Cell>
+    </Row>
+  </Table>
+  <Table Name="ROLEINFO">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="DESCRIPT" />
+    <Row>
+      <Cell ColName="EID">ROLEINFO_System</Cell>
+      <Cell ColName="ENAME">管理员角色</Cell>
+      <Cell ColName="ECODE"></Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">634938753390000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">634938753390000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="DESCRIPT"></Cell>
+    </Row>
+  </Table>
+  <Table Name="USERINFO">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="STATEID" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ICON" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="PERSONEID" />
+    <Column Name="PASSWORD" />
+    <Column Name="LANGUAGE" />
+    <Column Name="TIMEZONE" />
+    <Column Name="THEME" />
+    <Column Name="HOMEPAGEMODE" />
+    <Column Name="AGENTID" />
+    <Column Name="AGENTSTARTDATETIME" />
+    <Column Name="AGENTENDDATETIME" />
+    <Column Name="WENCHATUSER" />
+    <Column Name="ENAMEPINYIN" />
+    <Row>
+      <Cell ColName="EID">USERINFO_System</Cell>
+      <Cell ColName="ENAME">系统管理员</Cell>
+      <Cell ColName="ECODE">system</Cell>
+      <Cell ColName="STATEID">Incumbent</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">634938753390000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636227198090000000</Cell>
+      <Cell ColName="ICON">~/Platform/Image/Model/p_userobject.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PERSONEID">PERSON_86009246101e4c6da26e51454baaa047</Cell>
+      <Cell ColName="PASSWORD">##ENC##Qm1hW1QSmIWfoasu8ikgYCaSqFkAoj+kQbfHYJXf2CrWOFRoAiYk+MA2wZY06cko</Cell>
+      <Cell ColName="LANGUAGE">zhs</Cell>
+      <Cell ColName="TIMEZONE">+08:00</Cell>
+      <Cell ColName="THEME">cupertino</Cell>
+      <Cell ColName="HOMEPAGEMODE">ClassicHomePage</Cell>
+      <Cell ColName="AGENTID"></Cell>
+      <Cell ColName="AGENTSTARTDATETIME">0</Cell>
+      <Cell ColName="AGENTENDDATETIME">0</Cell>
+      <Cell ColName="WENCHATUSER"></Cell>
+      <Cell ColName="ENAMEPINYIN">xitongguanliyuan</Cell>
+    </Row>
+  </Table>
+  
+  <TableSchema Name="GROUPINFO" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PARENTGROUPEID" DataType="STRING2000" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="VAULTINFO" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="DESCRIPT" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_GROUPINFO_PARENTGROUPEID" Unique="false">
+      <Field Name="PARENTGROUPEID" Order="DESC" />
+    </Index>
+    <Index Name="IX_GROUPINFO_CREATETIME" Unique="false">
+      <Field Name="CREATETIME" Order="ASC" />
+    </Index>
+  </TableSchema>
+  <TableSchema Name="ORGANIZE" IsAbstract="false" IsMainConfig="false">
+    <Column Name="LID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="PEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="LSEQUENCE" DataType="INT" Required="true" DefaultValue="0" PrimaryKeyOrder="0" />
+    <Column Name="LQUALITY" DataType="FLOAT" Required="true" DefaultValue="1" PrimaryKeyOrder="0" />
+    <Column Name="LCOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PEUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CEUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="GROUPID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="ORGANIZE1_PEID_INDEX" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="ORGANIZE1_CEID_INDEX" Unique="false">
+      <Field Name="CEID" Order="ASC" />
+    </Index>
+  </TableSchema>
+  <TableSchema Name="PERSON" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ICON" DataType="STRING200" Required="false" DefaultValue="p_userobject" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="GENDER" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="BIRTHDAY" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ACADEMICRECORD" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PHONE" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OFFICENUMBER" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="FAXNUMBER" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="EMAIL" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ZIPCODE" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ADDRESS" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="ROLEINFO" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="DESCRIPT" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_ROLEINFO_CREATETIME" Unique="false">
+      <Field Name="CREATETIME" Order="DESC" />
+    </Index>
+  </TableSchema>
+  <TableSchema Name="USERINFO" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECODE" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="STATEID" DataType="STRING20" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ICON" DataType="STRING200" Required="false" DefaultValue="~/Platform/Image/Model/p_userobject.png" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERSONEID" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PASSWORD" DataType="STRING200" Required="false" DefaultValue="123456" PrimaryKeyOrder="0" />
+    <Column Name="LANGUAGE" DataType="STRING100" Required="true" DefaultValue="zhs" PrimaryKeyOrder="0" />
+    <Column Name="TIMEZONE" DataType="STRING100" Required="true" DefaultValue="+08:00" PrimaryKeyOrder="0" />
+    <Column Name="THEME" DataType="STRING100" Required="true" DefaultValue="cupertino" PrimaryKeyOrder="0" />
+    <Column Name="HOMEPAGEMODE" DataType="STRING100" Required="true" DefaultValue="ClassicHomePage" PrimaryKeyOrder="0" />
+    <Column Name="AGENTID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="AGENTSTARTDATETIME" DataType="LONG" Required="false" DefaultValue="0" PrimaryKeyOrder="0" />
+    <Column Name="AGENTENDDATETIME" DataType="LONG" Required="false" DefaultValue="0" PrimaryKeyOrder="0" />
+    <Column Name="WENCHATUSER" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENAMEPINYIN" DataType="STRING500" Required="true" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Index Name="IX_USERINFO_CREATETIME" Unique="false">
+      <Field Name="CREATETIME" Order="DESC" />
+    </Index>
+  </TableSchema> 
+  <TableSchema Name="ACTIONRULE" IsAbstract="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PEID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_ACTIONRULE_PEID" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+  </TableSchema>
+  <TableSchema Name="ACTIONRULECONDITION" IsAbstract="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ACTIONRULEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OPERATOR" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CONDITIONVALUE" DataType="STRING500" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_CONDITION_ACTIONRULEID" Unique="false">
+      <Field Name="ACTIONRULEID" Order="ASC" />
+    </Index>
+  </TableSchema>
+  <TableSchema Name="ACTIONRULEPERMISSION" IsAbstract="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ACTIONRULEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERMISSIONACTORVALUE" DataType="TEXT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERMISSIONACTIONVALUE" DataType="TEXT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Index Name="IX_PERMISSION_ACTIONRULEID" Unique="false">
+      <Field Name="ACTIONRULEID" Order="ASC" />
+    </Index>
+  </TableSchema>
+
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<NavigationItem Name="WorkSpace" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+		<Image>~/Platform/Ctrls/CodingRuleView/images/watercode.png</Image>
+		<NavigationItem Name="MyWorkSpace" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<!--<PageName>TreeManagement</PageName>-->
+			<Image>~/Platform/Ctrls/CodingRuleView/images/watercode.png</Image>
+		</NavigationItem>
+
+		<NavigationItem Name="TestTask" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<PageName>TreeManagement</PageName>
+			<Image>~/Platform/Ctrls/CodingRuleView/images/watercode.png</Image>
+			<Para Name="ItemName" Value="TestTaskTree" />
+			<Para Name="ConstraintRefresh" Value="true" />
+		</NavigationItem>
+	</NavigationItem>
+
+</root>

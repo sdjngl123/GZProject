@@ -1,0 +1,104 @@
+   .codingRule * {
+       box-sizing: content-box;
+   }
+
+   .codingRule {
+       overflow: hidden;
+   }
+
+   .codingRule-group {
+       display: inline-block;
+       margin-top: 1em;
+       margin-bottom: 1em;
+   }
+
+   .codingRule-icons {
+       line-height: 32px;
+   }
+
+   .codingRule-icons>.codingRule-icon {
+       display: inline-block;
+       width: 16px;
+       height: 16px;
+       margin-top: .5em;
+       padding: 6px;
+   }
+
+   .codeingRule-text-container-top {
+       border-bottom: #999 2px solid;
+   }
+
+   .codeingRule-text-container-bottom {
+       border-top: #999 2px solid;
+   }
+
+   .codeingRule-line {
+       display: inline-block;
+       height: .5em;
+       width: .5em;
+       margin-left: .5em;
+   }
+
+   .codeingRule-text-container-bottom>.codeingRule-line {
+       border: #999 2px solid;
+       border-top: none;
+       border-right: none;
+       vertical-align: top;
+   }
+
+   .codeingRule-text-container-top>.codeingRule-line {
+       border: #999 2px solid;
+       border-bottom: none;
+       border-right: none;
+       vertical-align: bottom;
+   }
+
+   .codeingRule-text {
+       margin-left: 1em;
+       display: inline-block;
+       line-height: 1.5em;
+       /* height: 1em; */
+       color: #999;
+       white-space: nowrap;
+       font-size: 14px;
+       width: 8em;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       cursor: default;
+   }
+
+   .codeingRule-text-container-top>.codeingRule-line>.codeingRule-text {
+       margin-top: -1em;
+   }
+
+   .codingRule-group-odd>.codeingRule-text-container-bottom {
+       visibility: hidden;
+   }
+
+   .codingRule-group-even>.codeingRule-text-container-top {
+       visibility: hidden;
+   }
+
+   .codingRule-icon-number {
+       background: url("../images/number.png") no-repeat;
+   }
+
+   .codingRule-icon-char {
+       background: url("../images/char.png") no-repeat;
+   }
+
+   .codingRule-icon-num-char {
+       background: url("../images/num-char.png") no-repeat;
+   }
+
+   .codingRule-icon-watercode {
+       background: url("../images/watercode.png") no-repeat;
+   }
+
+   .codingRule-icon-date {
+       background: url("../images/date.png") no-repeat;
+   }
+
+   .codingRule-icon-more {
+       background: url("../images/more.png") no-repeat;
+   }

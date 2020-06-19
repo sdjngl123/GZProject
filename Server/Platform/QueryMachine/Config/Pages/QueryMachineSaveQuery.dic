@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryMachineSaveQuery" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">保存查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save query</LocalizedLabel>
+    </Label>
+    <Label Name="Query_label">
+      <LocalizedLabel LanguageRef="zhs">查询名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt; maximum length is 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

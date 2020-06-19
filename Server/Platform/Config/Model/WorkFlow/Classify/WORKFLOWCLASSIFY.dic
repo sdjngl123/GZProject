@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWCLASSIFYModel" IsWeb="true">
+    <Label Name="WORKFLOWCLASSIFYHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template classification</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWCLASSIFYCaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template classification</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent category ID</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent category ID</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

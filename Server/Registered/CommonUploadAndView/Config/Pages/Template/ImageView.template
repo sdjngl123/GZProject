@@ -1,0 +1,5 @@
+﻿<div id ="ImageView_ViewOnlineContainer" style="margin:10px;height:100%;">
+  <div  style="vertical-align:middle;text-align:center;" >
+    <img class="ImageView" src="" alt = '' style = "max-height:600px;max-width:1235px;vertical-align:middle;text-align:center;"/>
+    </div>
+</div>

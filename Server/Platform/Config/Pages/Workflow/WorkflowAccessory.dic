@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowAccessory" IsWeb="true">
+    <Label Name="ChildNodeInto">
+      <LocalizedLabel LanguageRef="zhs">下级节点进入流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate node entry process</LocalizedLabel>
+    </Label>
+    <Label Name="Remove">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">拷贝</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy</LocalizedLabel>
+    </Label>
+    <Label Name="Paste">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

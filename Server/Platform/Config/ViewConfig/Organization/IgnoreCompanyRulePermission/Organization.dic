@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="GROUPSLISTVIEW" IsWeb="true">
+    <Label Name="GROUPSLISTVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="GROUPSLISTVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+  </Context>
+  <Context Name="PERSONListView" IsWeb="true">
+    <Label Name="PERSONListViewHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="PERSONListViewCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+  </Context>
+  <Context Name="PersonSearchListView" IsWeb="true">
+    <Label Name="PersonSearchListViewHeader">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PersonSearchListViewCaption">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTKNOWLEDGE-CREATE" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">知识类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARTMENTHeader">
+      <LocalizedLabel LanguageRef="zhs">归口单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Department</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARTMENTRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTDOMAINHeader">
+      <LocalizedLabel LanguageRef="zhs">试验领域</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestDomain</LocalizedLabel>
+    </Label>
+    <Label Name="TESTDOMAINRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SECRETLEVELHeader">
+      <LocalizedLabel LanguageRef="zhs">密级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SecretLevel</LocalizedLabel>
+    </Label>
+    <Label Name="SECRETLEVELRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">发布日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PUBLISHDATE</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHDATERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">附件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ATTACHTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHTYPERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">附件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FILEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFORegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 500&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYKEYHeader">
+      <LocalizedLabel LanguageRef="zhs">关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QUERYKEY</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYKEYRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTKNOWLEDGEHeader">
+      <LocalizedLabel LanguageRef="zhs">新建测试知识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewTESTKNOWLEDGE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

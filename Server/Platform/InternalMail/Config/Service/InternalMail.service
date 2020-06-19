@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="InternalMailService"
+     ServiceAssembly="Hoteam.InforCenter.InternalMail.Service.dll"
+     ServiceClass="Hoteam.InforCenter.InternalMail.Service.InternalMailService"
+     ContractAssembly="Hoteam.InforCenter.InternalMail.Service.dll"
+     ContractClass="Hoteam.InforCenter.InternalMail.Service.IInternalMailService"/>
+</root>

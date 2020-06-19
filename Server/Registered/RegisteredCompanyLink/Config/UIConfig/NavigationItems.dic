@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    
+    <Label Name="ApplyCompanyManager">
+      <LocalizedLabel LanguageRef="zhs">企业关系申请</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ApplyCompany</LocalizedLabel>
+    </Label>
+    <Label Name="AuditCompanyManager">
+      <LocalizedLabel LanguageRef="zhs">公司关系审核</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditCompanyManager</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

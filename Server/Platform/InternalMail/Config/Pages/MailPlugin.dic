@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MailPlugin" IsWeb="true">
+    <Label Name="Plugin">
+      <LocalizedLabel LanguageRef="zhs">邮件附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail attachment</LocalizedLabel>
+    </Label>
+    <Label Name="ReciveTime">
+      <LocalizedLabel LanguageRef="zhs">接收时间：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive time:</LocalizedLabel>
+    </Label>
+    <Label Name="SendUser">
+      <LocalizedLabel LanguageRef="zhs">发件人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sender:</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">邮件主题：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail subject:</LocalizedLabel>
+    </Label>
+    <Label Name="ReciveUser">
+      <LocalizedLabel LanguageRef="zhs">接收人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recipient:</LocalizedLabel>
+    </Label>
+    <Label Name="CopyToUser">
+      <LocalizedLabel LanguageRef="zhs">抄送人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Carbon copy recipient:</LocalizedLabel>
+    </Label>
+    <Label Name="Important">
+      <LocalizedLabel LanguageRef="zhs">重要性：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance:</LocalizedLabel>
+    </Label>
+    <Label Name="ECODE">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">code</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSION">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">version</LocalizedLabel>
+    </Label>
+    <Label Name="ENAME">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPE">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">objectType</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

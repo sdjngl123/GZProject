@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="CACHEINFOModel" IsWeb="true">
+    <Label Name="CACHEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">缓存信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cache Information</LocalizedLabel>
+    </Label>
+    <Label Name="CACHEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">缓存信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cache Information</LocalizedLabel>
+    </Label>
+    <Label Name="SHARECACHEHeader">
+      <LocalizedLabel LanguageRef="zhs">是否共享缓存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whetehr to share the cache</LocalizedLabel>
+    </Label>
+    <Label Name="PARTIALREFERSHHeader">
+      <LocalizedLabel LanguageRef="zhs">局部刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Local refresh</LocalizedLabel>
+    </Label>
+    <Label Name="PARTIALREFERSHCaption">
+      <LocalizedLabel LanguageRef="zhs">局部刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Local refresh</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

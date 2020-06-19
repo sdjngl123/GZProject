@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="PageLinkItems" IsWeb="true">
+		<Label Name="PlanTaskLink">
+			<LocalizedLabel LanguageRef="zhs">试验任务策划单</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">PlanTaskLink</LocalizedLabel>
+		</Label>
+	 
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PropertyFormPage">
+  <PageHandlers>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ItemFormPage_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ItemFormPageContainer"/>
+      </Settings>
+    </PageControl>    
+    <PageControl ControlID="ItemFormPageContainer" ParentID="ItemFormPage_Container" TypeName="PageContainer">      
+    </PageControl>
+  </PageControls>
+</root>

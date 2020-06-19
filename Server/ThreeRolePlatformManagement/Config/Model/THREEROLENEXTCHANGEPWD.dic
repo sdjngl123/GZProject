@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="THREEROLENEXTCHANGEPWDModel" IsWeb="true">
+    <Label Name="THREEROLENEXTCHANGEPWDHeader">
+      <LocalizedLabel LanguageRef="zhs">下次登录修改密码记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleNextChangePWD</LocalizedLabel>
+    </Label>
+    <Label Name="THREEROLENEXTCHANGEPWDCaption">
+      <LocalizedLabel LanguageRef="zhs">下次登录修改密码记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleNextChangePWD</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserID</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserID</LocalizedLabel>
+    </Label>
+    <Label Name="ISCHANGEPASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">是否已经更改密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISCHANGEPASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="ISCHANGEPASSWORDCaption">
+      <LocalizedLabel LanguageRef="zhs">是否已经更改密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISCHANGEPASSWORD</LocalizedLabel>
+    </Label>
+    <Label Name="ISNEEDCHANGEPASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">是否需要更改密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNeedChangePassword</LocalizedLabel>
+    </Label>
+    <Label Name="ISNEEDCHANGEPASSWORDCaption">
+      <LocalizedLabel LanguageRef="zhs">是否需要更改密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNeedChangePassword</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <DeveloperResView Name ="SolutionTree"  ImagePath="/Base/Image/Console/solutionview.png"  ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+                    ModuleClass="Hoteam.InforCenter.Developer.Interface.Controls.SolutionTree" Active="true" Description="Console.SolutionView" Order="1"/>
+  <DeveloperResView Name ="ModuleTree"  ImagePath="/Base/Image/Console/moduleview.png"  ModuleAssembly="Hoteam.InforCenter.Developer.Interface"
+                    ModuleClass="Hoteam.InforCenter.Developer.Interface.Controls.ModuleTree" Active="true" Description="Console.ModuleView" Order="2"/>
+  <DeveloperResView Name ="ModelTree"  ImagePath="/Base/Image/Console/moduleview.png"  ModuleAssembly="Hoteam.InforCenter.Common.DeveloperControl"
+                    ModuleClass="Hoteam.InforCenter.Common.DeveloperControl.Controls.ModelTree" Active="true" Description="Console.ModuleView" Order="3"/>
+</root>

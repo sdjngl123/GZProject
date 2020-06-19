@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ClassicHomePageLeft" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="NavTabs" ParentID="" TypeName="Tabs">
+      <Settings Key="showTitle" Value="true"/>
+      <Settings Key="showClosed" Value="false"/>
+      <Settings Key="selectedTab" Value="0"/>
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="ClassicHomePageLeft.QuickNavName"/>
+        <Settings Key="tabId" Value="exampleTab2"/>
+        <Settings Key="pageName" Value="ClassicHomePageQuickNav"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="ClassicHomePageLeft.AllNavName"/>
+        <Settings Key="tabId" Value="exampleTab1"/>
+        <Settings Key="pageName" Value="ClassicHomePageNavigation"/>
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

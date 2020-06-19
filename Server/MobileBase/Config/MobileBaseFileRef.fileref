@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/MobileBase/Js/jquery.min.js" group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/iscroll.js"  group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/MobileBasePage.js" group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/json2.js" group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/jquery.mobile.js" group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/jquery.mobile.custom.js" group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/MobileCommon.js"  group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/MobileInteractive.js"  group="base" IsMobile="true"/>
+  <JSFile FileName ="~/MobileBase/Js/MobileCache.js"  group="base" IsMobile="true"/>
+  <JSFile FileName ="~/Base/Js/JSDes.js"  group="base" IsMobile="true"/>
+
+  <CssFile FileName ="~/MobileBase/Themes/jquery.mobile.icons.min.css" group="base" IsMobile="true"/>
+  <!--<CssFile FileName ="~/MobileBase/Themes/jquery.mobile.min.css" group="base" IsMobile="true"/>-->
+  <CssFile FileName ="~/MobileBase/Themes/jquery.mobile.custom.css" group="base" IsMobile="true"/>
+  <CssFile FileName ="~/MobileBase/Themes/jquery.mobile.structure.min.css" group="base" IsMobile="true"/>
+  <CssFile FileName ="~/MobileBase/Css/jquery.moblie.extend.css" group="base" IsMobile="true"/>
+  <CssFile FileName ="~/MobileBase/Css/MobileBase.css" group="base" IsMobile="true"/>
+
+  <JSFile FileName ="~/MobileBase/Js/echarts-all.js" group="base" IsMobile="true"/>
+  
+</root>

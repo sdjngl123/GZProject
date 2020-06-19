@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ACTIONRULEMESSAGEVIEWView" IsWeb="true">
+    <Label Name="ACTIONRULEMESSAGEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">规则订阅视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule subscription view</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEMESSAGEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">规则订阅视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule subscription view</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive object</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTORVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">接收对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive object</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive operation</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEACTIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">接收操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive operation</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

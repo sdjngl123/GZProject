@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <ThreeRoleLoginLimit
+    Name="ThreeRoleLoginAddressLimit"
+    Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+    Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleLoginLimitExtend.IPAddressLimit"
+    PageName="ThreeRoleLoginAddressLimit"
+    Order ="1"/>
+  <ThreeRoleLoginLimit
+    Name="ThreeRoleExceptionLock"
+    Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+    Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleLoginLimitExtend.ExceptionLockLimit"
+    PageName="ThreeRoleExceptionLock"
+    Order ="2"/>
+  <ThreeRoleLoginLimit
+   Name="ThreeRoleLoginValidity"
+   Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+   Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleLoginLimitExtend.ValidityLimit"
+   PageName="ThreeRoleLoginValidity"
+   Order ="3"/>
+  <ThreeRoleLoginLimit
+   Name="ThreeRoleLoginTimeLimit"
+   Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+   Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleLoginLimitExtend.TimeLimit"
+   PageName="ThreeRoleLoginTimeLimit"
+   Order ="4"/>
+</root>

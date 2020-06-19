@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <EditListManagement Name="ModelListViewInfoEditList" MenuName="ModelListViewInfoMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+              EditListTitleDataService="HoteamSoft.InforCenter.WebStudioViewService.GetModelInfoTitleList"
+              EditListDataService="HoteamSoft.InforCenter.WebStudioViewService.GetModelInfoDataList" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="SetModelInfoTypeEditList" MenuName="" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+              EditListTitleDataService="HoteamSoft.InforCenter.WebStudioViewService.SetModelInfoTypeViewTitle"
+              EditListDataService="HoteamSoft.InforCenter.WebStudioViewService.SetModelInfoTypeViewData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+
+  <EditListManagement Name="ModelListViewConditionEditList" MenuName="ModelListViewConditionMenu" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+            EditListTitleDataService="HoteamSoft.InforCenter.WebStudioViewService.GetModelInfoConditionTitleList"
+            EditListDataService="HoteamSoft.InforCenter.WebStudioViewService.GetModelInfoConditionDataList" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+  
+  <EditListManagement Name="SetModelInfoConditionEditList" MenuName="" ListRightMenuName=""  ListViewName=""  QueryPageName=""
+            EditListTitleDataService="HoteamSoft.InforCenter.WebStudioViewService.SetModelInfoConditionViewTitle"
+            EditListDataService="HoteamSoft.InforCenter.WebStudioViewService.SetModelInfoConditionViewData" AllPageDataService="" HideViewFilterPage="true">
+  </EditListManagement>
+</root>

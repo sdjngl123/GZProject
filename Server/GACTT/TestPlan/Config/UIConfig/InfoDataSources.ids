@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+	<ObjectType Name="TESTPLANTASK">
+		<InfoType Name="PROJECT" Script="" PageName="ListCommonQuery"   SourceValue="EID" SourceText="ENAME">
+			<Para Name="ItemName" Value="PMSProjectListQuery" />
+		</InfoType>
+	</ObjectType>
+</root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryStructureTreeMenu" IsWeb="true">
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp1">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

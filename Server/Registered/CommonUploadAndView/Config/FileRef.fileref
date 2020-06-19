@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Registered/CommonUploadAndView/Js/Upload.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/CommonUploadAndView/Js/FileOnlineView.js"  group="Registered"/>
+  
+  <!--第三方类库 Group设置为空-->
+  <JSFile FileName ="~/Registered/CommonUploadAndView/ctrls/plupload2.1.8/plupload.full.min.js"  group=""/>
+  <JSFile FileName ="~/Registered/CommonUploadAndView/ctrls/plupload2.1.8/plupload.flash.js"  group=""/>
+  <JSFile FileName ="~/Registered/CommonUploadAndView/ctrls/plupload2.1.8/zh_CN.js"  group=""/>
+  <JSFile FileName ="~/Registered/CommonUploadAndView/ctrls/plupload2.1.8/jquery.plupload.queue/jquery.plupload.queue.min.js"  group=""/>
+  <JSFile FileName ="~/Registered/CommonUploadAndView/ctrls/ImageView/viewer.min.js"  group=""/>
+  
+  <CssFile FileName ="~/Registered/CommonUploadAndView/ctrls/plupload2.1.8/jquery.plupload.queue/css/jquery.plupload.queue.css" group=""/>
+  <CssFile FileName ="~/Registered/CommonUploadAndView/ctrls/ImageView/viewer.css" group=""/>
+
+</root>

@@ -1,0 +1,76 @@
+.ht-file-upload {
+    height: 100%;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    position: relative;
+    padding: 5px;
+}
+
+.ht-file-upload-list {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #F3F3F3;
+}
+
+.ht-file-upload-button {
+    display: inline-block;
+    padding: 2px 6px;
+    border: #8A8A8A solid 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .ht-file-upload-button:hover {
+        background-color: #e6e6e6;
+    }
+
+    .ht-file-upload-button > span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 20px;
+    }
+
+.ht-file-upload-button-upload-image {
+    background: url(./images/add.png) center no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.ht-file-upload-list-item-image > img {
+    width: 16px;
+    height: 16px;
+}
+
+.ht-file-upload-list-item:hover {
+    background-color: #d9e5ef;
+}
+
+.ht-file-upload-list-item > div {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-right: 6px;
+}
+
+.ht-file-upload-list-item-delete > span {
+    text-decoration: underline;
+    color: #C61816;
+    cursor: pointer;
+}
+
+.ht-file-upload.ht-file-upload-readOnly .ht-file-upload-list {
+    top: 0;
+}
+
+.ht-file-upload.ht-file-upload-readOnly .ht-file-upload-list-item-delete {
+    display: none;
+}
+
+.formbuilder-control-file > a .filename {
+    display:none;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="AUTHORIZELOGVIEW" ObjectTypeName="AUTHORIZEPERMISSIONLOG" OrderByString="CREATETIME DESC" >
+    <ViewColumn Name="CREATETIME" Width="120" Resizable="true" Sortable="true" />
+    <ViewColumn Name="LOGCONTENT" Width="-1" Resizable="true" Sortable="false" />
+  </ObjectView>
+</root>

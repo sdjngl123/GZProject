@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListQuery Name="UserListSearch" ListViewName="USERSQUERYLISTVIEW"  QueryPageName="USERVIEW-QUERY" PageLinksName=""
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="USERINFO" ActionName="Create">
+  </ListQuery>
+  <ListQuery Name="RoleListSearch" ListViewName="ROLESQUERYLISTVIEW"  QueryPageName="ROLEVIEW-QUERY" 
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="ROLEINFO">
+  </ListQuery>
+  <ListQuery Name="SingleRoleListSearch" ListViewName="ROLESQUERYLISTVIEW"  QueryPageName="ROLEVIEW-QUERY"
+            AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="ROLEINFO">
+  </ListQuery>
+
+  <ListQuery Name="SingleUserTreeListQuery" ListViewName="USERTREELISTQUERYLOADVIEW"  QueryPageName="TreeListQueryCtrl" QueryPageNameItem="UserTreeListQuery"
+             AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="USERINFO" ActionName="Create">
+  </ListQuery>
+  <ListQuery Name="MultiUserTreeListQuery" ListViewName="USERTREELISTQUERYLOADVIEW"  QueryPageName="TreeListQueryCtrl" QueryPageNameItem="UserTreeListQuery"
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="USERINFO" ActionName="Create">
+  </ListQuery>
+  <ListQuery Name="SingleGroupTreeListQuery" ListViewName="GROUPTREELISTLOADVIEW"  QueryPageName="TreeListQueryCtrl" QueryPageNameItem="GroupTreeListQuery"
+            AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" SingleSelectFiled="ENAME;ECODE" OnePageDataService="" ReturnValueType="GROUPINFO">
+  </ListQuery>
+  <ListQuery Name="SingleGroupListQuery" ListViewName="GROUPINFOQUERYVIEW"  QueryPageName="GROUPINFOVIEW-QUERY" QueryPageNameItem=""
+          AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="GROUPINFO">
+  </ListQuery>
+  <ListQuery Name="MultiGroupTreeListQuery" ListViewName="GROUPTREELISTLOADVIEW"  QueryPageName="TreeListQueryCtrl" QueryPageNameItem="GroupTreeListQuery"
+          AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="GROUPINFO">
+  </ListQuery>
+  <ListQuery Name="MultiGroupListQuery" ListViewName="GROUPINFOQUERYVIEW"  QueryPageName="GROUPINFOVIEW-QUERY" QueryPageNameItem=""
+          AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="GROUPINFO">
+  </ListQuery>
+  <ListQuery Name="MultiRoleListSearch" ListViewName="ROLESQUERYLISTVIEW"  QueryPageName="ROLEVIEW-QUERY"
+            AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="ROLEINFO">
+  </ListQuery>
+  <ListQuery Name="CompanyListSearch" ListViewName="COMPANYListView"  QueryPageName="COMPANYVIEW-QUERY" PageLinksName=""
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="COMPANY" ActionName="">
+  </ListQuery>
+<!--给添加用户页面选择人员用-->
+  <ListQuery Name="SinglePersonSearch" ListViewName="PersonSearchListView"  QueryPageName="PERSONVIEW-QUERY"
+            AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="PERSON">
+  </ListQuery>
+</root>

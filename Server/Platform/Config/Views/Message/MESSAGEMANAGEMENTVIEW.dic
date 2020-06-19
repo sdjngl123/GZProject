@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MESSAGEMANAGEMENTVIEWView" IsWeb="true">
+    <Label Name="MESSAGEMANAGEMENTVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">消息管理视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message management view</LocalizedLabel>
+    </Label>
+    <Label Name="MESSAGEMANAGEMENTVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">消息管理视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message management view</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Content</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Content</LocalizedLabel>
+    </Label>
+    <Label Name="MFROMHeader">
+      <LocalizedLabel LanguageRef="zhs">发送人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sender</LocalizedLabel>
+    </Label>
+    <Label Name="MFROMCaption">
+      <LocalizedLabel LanguageRef="zhs">发送人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sender</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="MESSAGEMANAGEMENTVIEWCondition" IsWeb="true">
+    <Label Name="MSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">消息发送者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message sender</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">消息发送者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message sender</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMEGEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time is greater than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMEGECaption">
+      <LocalizedLabel LanguageRef="zhs">时间大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time is greater than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The time is less than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELECaption">
+      <LocalizedLabel LanguageRef="zhs">时间小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The time is less than</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

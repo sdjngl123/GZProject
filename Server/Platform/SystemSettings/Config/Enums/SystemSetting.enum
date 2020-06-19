@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="SetValueType">
+    <EnumerationItem Name="Bool" />
+    <EnumerationItem Name="String" />
+    <EnumerationItem Name="DropDownList" />
+    <EnumerationItem Name="MultiDropDownList" />
+    <EnumerationItem Name="ObjectValue" />
+  </Enumeration>
+
+  <Enumeration Name="SettingsType">
+    <EnumerationItem Name="System" />
+    <EnumerationItem Name="Personal" />
+  </Enumeration>
+</root>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ClassicHomePageTop" IsWeb="true">
+    <Label Name="Username">
+      <LocalizedLabel LanguageRef="zhs">管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Administrator</LocalizedLabel>
+    </Label>
+    <Label Name="Welcome">
+      <LocalizedLabel LanguageRef="zhs">欢迎您&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Welcome you&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp </LocalizedLabel>
+    </Label>
+    <Label Name="ShowAgent">
+      <LocalizedLabel LanguageRef="zhs">出差代理信息   &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business travel agency information&amp;nbsp; nbsp nbsp; nbsp nbsp; nbsp nbsp;</LocalizedLabel>
+    </Label>
+    <Label Name="Agent">
+      <LocalizedLabel LanguageRef="zhs">您设置的出差代理为：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The business travel agent you set is:</LocalizedLabel>
+    </Label>
+    <Label Name="Agented">
+      <LocalizedLabel LanguageRef="zhs">设置您为出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set you as the business travel agent</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSetting">
+      <LocalizedLabel LanguageRef="zhs">用户设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User settings</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageSetting">
+      <LocalizedLabel LanguageRef="zhs">首页设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">First page setup</LocalizedLabel>
+    </Label>
+    <Label Name="ModifyPassword">
+      <LocalizedLabel LanguageRef="zhs">修改密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the password</LocalizedLabel>
+    </Label>
+    <Label Name="ThemeSetting">
+      <LocalizedLabel LanguageRef="zhs">主题设置&amp;nbsp;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Theme settings&amp;nbsp;</LocalizedLabel>
+    </Label>
+    <Label Name="Logout">
+      <LocalizedLabel LanguageRef="zhs">退出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exit</LocalizedLabel>
+    </Label>
+    <Label Name="ConfirmLogout">
+      <LocalizedLabel LanguageRef="zhs">确定退出系统吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to exit the system?</LocalizedLabel>
+    </Label>
+    <Label Name="WelcomeWord">
+      <LocalizedLabel LanguageRef="zhs">欢迎 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Welcome</LocalizedLabel>
+    </Label>
+    <Label Name="MyCollection">
+      <LocalizedLabel LanguageRef="zhs">我的收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My favorite</LocalizedLabel>
+    </Label>
+    <Label Name="BussinessAgent">
+      <LocalizedLabel LanguageRef="zhs">出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business travel agents</LocalizedLabel>
+    </Label>
+    <Label Name="SearchPlaceHolder">
+      <LocalizedLabel LanguageRef="zhs">搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search</LocalizedLabel>
+    </Label>
+    <Label Name="SearchTypePlaceHolder">
+      <LocalizedLabel LanguageRef="zhs">所有类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All Type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

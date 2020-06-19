@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="LoopPlayLink">
+      <LocalizedLabel LanguageRef="zhs">轮播图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoopPlayImage</LocalizedLabel>
+    </Label>
+    <Label Name="FunButton">
+      <LocalizedLabel LanguageRef="zhs">功能按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FunButton</LocalizedLabel>
+    </Label>
+    <Label Name="MainConfig">
+      <LocalizedLabel LanguageRef="zhs">主配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainConfig</LocalizedLabel>
+    </Label>
+    <Label Name="MainConfigPara">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainConfigPara</LocalizedLabel>
+    </Label>
+    <Label Name="PagePara">
+      <LocalizedLabel LanguageRef="zhs">页面参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PagePara</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItem">
+      <LocalizedLabel LanguageRef="zhs">菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MenuItem</LocalizedLabel>
+    </Label>
+    <Label Name="FilterCondition">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterCondition</LocalizedLabel>
+    </Label>
+    <Label Name="OrderPara">
+      <LocalizedLabel LanguageRef="zhs">排序参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OrderPara</LocalizedLabel>
+    </Label>
+    <Label Name="AdvancedQuery">
+      <LocalizedLabel LanguageRef="zhs">高级查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AdvancedQuery</LocalizedLabel>
+    </Label>
+    <Label Name="Tab">
+      <LocalizedLabel LanguageRef="zhs">标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyTab">
+      <LocalizedLabel LanguageRef="zhs">属性Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyTab</LocalizedLabel>
+    </Label>
+    <Label Name="MobileNav">
+      <LocalizedLabel LanguageRef="zhs">导航页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobileNav</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SQLTransactionDic" IsWeb="true">
+    <Label Name="OnlyQueryException">
+      <LocalizedLabel LanguageRef="zhs">该数据库已标记为只读，不允许提交事务！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OnlyQueryException</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

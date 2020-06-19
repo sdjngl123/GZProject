@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeManagementEdit" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">树管理编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree management edit window</LocalizedLabel>
+    </Label>
+    <Label Name="BaseConfiguration">
+      <LocalizedLabel LanguageRef="zhs">基本配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated objects</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManagementName">
+      <LocalizedLabel LanguageRef="zhs">树管理项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree management item name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu name</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksName">
+      <LocalizedLabel LanguageRef="zhs">默认Tab页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default Tab Page</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewName">
+      <LocalizedLabel LanguageRef="zhs">树视图的配置项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configuration item name of the tree view</LocalizedLabel>
+    </Label>
+    <Label Name="ShowTreeQuery">
+      <LocalizedLabel LanguageRef="zhs">是否显示查询功能</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the query function</LocalizedLabel>
+    </Label>
+    <Label Name="ShowTreeQueryDescription">
+      <LocalizedLabel LanguageRef="zhs">是否显示树结构的查询功能，如果显示查询功能，则首先根据“节点查询数据WCF接口”和“全部节点数据WCF接口”查找，如果没有配置，则按照树视图中配置的QueryView查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the query function of the tree structure, if the query function is displayed, firstly, find through the "node query data WCF interface" and "all node data WCF interface". If it is not configured, query through the QueryView configured in the tree view</LocalizedLabel>
+    </Label>
+    <Label Name="IsHiddenTabs">
+      <LocalizedLabel LanguageRef="zhs">是否右侧Tab页签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the right side is Tab page</LocalizedLabel>
+    </Label>
+    <Label Name="IsHiddenTabsDescription">
+      <LocalizedLabel LanguageRef="zhs">满足隐藏tab页签头，一般用于一个页签时，注意：多页签配置此项时同样隐藏。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Satisfies to hidden the tab head of the tab page, generally used for a tab, note: if multi-tab needs to configure this, they shall be hidden in the same manner.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeOnClick">
+      <LocalizedLabel LanguageRef="zhs">树节点的点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Click events of the tree nodes</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeMenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypePageLinksName">
+      <LocalizedLabel LanguageRef="zhs">链接页面的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of the linked page</LocalizedLabel>
+    </Label>
+    <Label Name="TreeChildDataService">
+      <LocalizedLabel LanguageRef="zhs">下级节点的WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF interface for subordinate nodes</LocalizedLabel>
+    </Label>
+    <Label Name="TreeChildDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义获取下级节点数据，如InforCenter.Organization.OrganizationDataService.GetGroupToGroupChildNode，自定义WCF接口的参数固定为TreeViewPara，返回值为List&lt;TreeNodeObject&gt;类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the access to subordinate node data, such as InforCenter. Organization. OrganizationDataService. GetGroupToGroupChildNode, the parameters  of the custom WCF interface are fixed as TreeViewPara, return value is the List &lt;TreeNodeObject&gt; type, if this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryDataService">
+      <LocalizedLabel LanguageRef="zhs">节点查询数据WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node query data WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义节点查询数据，此接口对应查询、上一个、下一个按钮。如InforCenter.Common.WebTreeViewService.GetTreeQueryData，自定义WCF接口的参数固定为TreeViewQueryPara，返回值为string类型（返回节点标识号，如0.1.2，代表定位到根节点-&gt;第一个节点-&gt;第二个节点，每级标识号从0开始），如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the node query data, this interface corresponds to the query, the previous one, the next button. Such as InforCenter. Common. WebTreeViewService. GetTreeQueryData, the parameters of the custom WCF interface are fixed as TreeViewQueryPara, the return value is string type (return node identification number, such as 0.1.2, on behalf of positioning to the root node -&gt; the first node -&gt; the second Node, the identification number at each level starts at 0), this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeAllDataService">
+      <LocalizedLabel LanguageRef="zhs">全部节点数据的WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF interface for all node data</LocalizedLabel>
+    </Label>
+    <Label Name="TreeAllDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义节点全数据，此接口针对展开功能。如InforCenter.Common.WebTreeViewService.GetTreeAllData，自定义WCF接口的参数固定为TreeViewPara，返回值为List&lt;TreeNodeObject&gt;类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the node full data, this interface addresses the expansion function. Such as InforCenter.Common.WebTreeViewService.GetTreeAllData, the parameters of the custom WCF interfaceare fixed as TreeViewPara and the return value is List &lt;TreeNodeObject&gt; type. If this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeRootDataService">
+      <LocalizedLabel LanguageRef="zhs">根节点数据的WCF</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF for root node data</LocalizedLabel>
+    </Label>
+    <Label Name="TreeRootDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义根节点及第二级节点数据。如InforCenter.Organization.OrganizationDataService.GetGroupToGroupRootNode，自定义WCF接口的参数固定为TreeViewPara，返回值为TreeRootData类型。如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the root node and the secondary level node data. Such as InforCenter. Organization. OrganizationDataService. GetGroupToGroupRootNode, the parameters of the custom WCF interface are fixed as TreeViewPara, and the return value is TreeRootData type. If this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManagementNameDescription">
+      <LocalizedLabel LanguageRef="zhs">树管理页面配置项名称，作为查找配置项的关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use tree management page configuration item name as a keyword to find configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="MenuNameDescription">
+      <LocalizedLabel LanguageRef="zhs">默认菜单的名称.如果没有对某种对象配置专门的菜单，则会显示此配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the default menu. This configuration item is displayed if a specific menu is not configured for an object</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksNameDescription">
+      <LocalizedLabel LanguageRef="zhs">默认Tab页面。如果没有对某种对象配置专门的Tab页面，则会显示此配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The default tab page. This configuration item is displayed if a specific tab page is not configured for an object</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">树视图的配置项名称（可选值为所有.treeview中配置的视图名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The configuration item name for the tree view. (The optional value is all view name configured in tree view)</LocalizedLabel>
+    </Label>
+    <Label Name="ShowTreeQueryDescription">
+      <LocalizedLabel LanguageRef="zhs">是否显示树结构的查询功能，如果显示查询功能，则首先根据“节点查询数据WCF接口”和“全部节点数据WCF接口”查找，如果没有配置，则按照树视图中配置的QueryView查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the query function of the tree structure, if the query function is displayed, firstly, find through the "node query data WCF interface" and "all node data WCF interface". If it is not configured, query through the QueryView configured in the tree view</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeOnClickDescription">
+      <LocalizedLabel LanguageRef="zhs">树节点的点击事件，单击树节点触发。例如：InforCenter_Platform_ModulePermission_OrgTreeOnClick(ctrlEvent);</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Click the tree node to trigger the click event of the tree node. Such as InforCenter_Platform_ModulePermission_OrgTreeOnClick (ctrlEvent);</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">树管理项关联类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree management item association type name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeMenuNameDescription">
+      <LocalizedLabel LanguageRef="zhs">菜单的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypePageLinksNameDescription">
+      <LocalizedLabel LanguageRef="zhs">链接页面的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of the linked page</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTreeManageMent">
+      <LocalizedLabel LanguageRef="zhs">新建树管理项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New building management item</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteTreeManage">
+      <LocalizedLabel LanguageRef="zhs">删除树管理项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete tree management item</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAddTreeManageMent">
+      <LocalizedLabel LanguageRef="zhs">复制新增树管理项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy new tree management item</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTObjType">
+      <LocalizedLabel LanguageRef="zhs">新建树管理关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New tree management association object</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTObjType">
+      <LocalizedLabel LanguageRef="zhs">删除树管理关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deleting tree management associated objects</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManagementNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">树管理配置名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Repeat thetree management configuration name</LocalizedLabel>
+    </Label>
+    <Label Name="root">
+      <LocalizedLabel LanguageRef="zhs">根目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root Directory</LocalizedLabel>
+    </Label>
+
+    <Label Name="TreeCountDataService">
+      <LocalizedLabel LanguageRef="zhs">树节点数量Wcf接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TreeCountDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">树节点数量Wcf接口，此接口空代表不显示数量，非空代表调用Wcf获取节点显示数量。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

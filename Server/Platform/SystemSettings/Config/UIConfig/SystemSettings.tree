@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="SystemSettingsTreeManagement" MenuName="" PageLinksName=""
+             TreeViewName="" ShowTreeQuery="false"
+            TreeChildDataService="InforCenter.SystemSetting.SystemSettingsService.GetSystemSettingsChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="InforCenter.SystemSetting.SystemSettingsService.GetSystemSettingsTreeRootNode">
+    <ObjectType Name="ChildNode" MenuName="" PageLinksName="SystemSettings" />
+    <ObjectType Name="SystemSettings" MenuName="" PageLinksName="SystemSettingsNull" />
+  </TreeManagement>
+  
+  <TreeManagement Name="PersonalSettingsTreeManagement" MenuName="" PageLinksName=""
+             TreeViewName="" ShowTreeQuery="false"
+            TreeChildDataService="InforCenter.SystemSetting.SystemSettingsService.GetSystemSettingsChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="InforCenter.SystemSetting.SystemSettingsService.GetPersonalSettingsTreeRootNode">
+    <ObjectType Name="ChildNode" MenuName="" PageLinksName="PersonalSettings" />
+    <ObjectType Name="PersonalSettings" MenuName="" PageLinksName="SystemSettingsNull" />
+  </TreeManagement>
+</root>

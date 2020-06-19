@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="Login">
+  <PageControls>
+    <!-- 登录页面框架（上、中、下）-->
+    <PageControl ControlID="Login_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="615"/>
+        <Settings Key="childid" Value="Login_Center_Container_R"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid"/>
+      </Settings>
+    </PageControl>
+    <!-- 登录页面内容区域框架（上、中、下）-->
+    <PageControl ControlID="Login_Center_Container_R" ParentID="Login_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="85"/>
+        <Settings Key="childid" Value="Login_Top_R"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="475"/>
+        <Settings Key="childid" Value="Login_Center_R"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="55"/>
+        <Settings Key="childid" Value="Login_Bottom_R"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 登录页面：上方图片区域框架-->
+    <PageControl ControlID="Login_Top_R" ParentID="Login_Center_Container_R" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="1005"/>
+        <Settings Key="childid" Value="Login_Top_Center_R"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid"/>
+      </Settings>
+    </PageControl>
+    <!-- 登录页面：中间内容区域（左、中、右）-->
+    <PageControl ControlID="Login_Center_R" ParentID="Login_Center_Container_R" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="1005"/>
+        <Settings Key="childid" Value="Login_Content_R"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!-- 登录页面：下方区域框架内容-->
+    <PageControl ControlID="Login_Bottom_R" ParentID="Login_Center_Container_R" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="LoginBottomContent"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Login_PageBottomInit(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <!-- 登录页面：上方区域图片-->
+    <PageControl ControlID="Login_Top_Center_R" ParentID="Login_Top_R" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="LoginTopContent"/>
+    </PageControl>
+
+    <!-- 登录页面：中间区域内容-->
+    <PageControl ControlID="Login_Content_R" ParentID="Login_Center_R" TypeName="CustomerContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Login_PageInit(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>

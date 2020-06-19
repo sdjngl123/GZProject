@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityType Name="USERREGISTRATION" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Ctrls\Tree\img\diy\1_close.png" Abstract="false" TableName="USERREGISTRATION" SplitValidateUnique="false" PolicyName="NULL" VersionFormat="Letter">
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Inherit" ExtendProperty1="" Edit="Create Edit" Show="Create Edit View" Validation="" Width="50" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Inherit" ExtendProperty1="" Edit="" Show="View" Validation="" Sequence="150" Width="50" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Inherit" ExtendProperty1="" Edit="" Show="View" Validation="" Sequence="160" Width="50" />
+    <InfoType Name="COMPANYNAME" Type="DefaultObjectValue" DataType="STRING500" Column="COMPANYNAME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty2="" Width="50" />
+    <InfoType Name="COMPANYADDRESS" Type="DefaultObjectValue" DataType="STRING500" Column="COMPANYADDRESS" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" Width="50" />
+    <InfoType Name="REGISTEREMAIL" Type="DefaultObjectValue" DataType="STRING100" Column="REGISTEREMAIL" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" Width="50" />
+    <InfoType Name="REGISTEREDPERSON" Type="DefaultObjectValue" DataType="STRING20" Column="REGISTEREDPERSON" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" Width="50" />
+    <InfoType Name="COMPANYTYPE" Type="EnumValue" DataType="STRING50" Column="COMPANYTYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="CompanyType" Width="50" />
+    <InfoType Name="WCFADDRESS" Type="DefaultObjectValue" DataType="STRING50" Column="WCFADDRESS" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" Width="50" />
+    <InfoType Name="DATABASECONNECT" Type="DefaultObjectValue" DataType="STRING50" Column="DATABASECONNECT" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" Width="50" />
+    <InfoType Name="COMPANYCODE" Type="DefaultObjectValue" DataType="INT" Column="COMPANYCODE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" Width="50" />
+    <InfoType Name="PASSWORD" Type="DefaultObjectValue" DataType="STRING200" Column="PASSWORD" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PHONECODE" Type="DefaultObjectValue" DataType="STRING100" Column="PHONECODE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+  </EntityType>
+</root>

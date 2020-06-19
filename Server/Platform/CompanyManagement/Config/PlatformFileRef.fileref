@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+
+  <!--集团权限-->
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRule/CompanyRule.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRulePermission/CompanyRulePermission.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRuleCondition/ObjectStateCondition4Company.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRuleCondition/CreatorCondition.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRuleCondition/OwnerCondition.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRuleCondition/OwnGroupCondition.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRuleCondition/OwnCompanyCondition.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyRuleCondition/AllCompanyCondition.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/CompanyManagement/js/CompanyManagement/CompanyManagement.js" group="Platform"/>
+
+
+</root>

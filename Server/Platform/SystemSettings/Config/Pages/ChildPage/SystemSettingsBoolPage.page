@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SystemSettingsBoolPage">
+  <Settings Key="height" Value="200"/>
+  <Settings Key="width" Value="497"/>
+  <Settings Key="title" Value="SystemSettingsBoolPage.SYSTEMSETTINGSHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_SystemSettings_SystemSettings_BoolPageLoadData(pageEvent)"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_SystemSettings_SystemSettings_BoolPageGetData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--bool值-->
+      <Settings Key="item24" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-24"/>
+      </Settings>
+    </PageControl>
+    <!--bool值-->
+    <PageControl ControlID="R-24" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Bool_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Bool_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Bool_Label" ParentID="R-24" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SystemSettingsBoolPage.VALUEHeader" />
+    </PageControl>
+    <PageControl ControlID="Bool_Value" ParentID="R-24" TypeName="RadioList">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="item1">
+        <Settings Key="checked" Value="true" />
+        <Settings Key="textId" Value="SystemSettingsBoolPage.TextTrue" />
+        <Settings Key="value" Value="true" />
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="SystemSettingsBoolPage.TextFlase" />
+        <Settings Key="value" Value="false" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement 
+    Name="WorkFlowTempateManagerment" 
+    MenuName="WorkFlowTempateManagementMenu" 
+    ListRightMenuName="WorkFlowTempateManagementMenu" 
+    ListViewName="WorkfloTemplateInfolistview"  
+    QueryPageName="WORKFLOWTEMPLATEVIEW-QUERY" 
+    ListTitleDataService="" 
+    OnePageDataService="" 
+    AllPageDataService=""
+    HideViewFilterPage="true">
+  </ListManagement>
+</root>

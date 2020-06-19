@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LinkType Name="LINK" Extend="" LogicClass="LinkObject" IconPath="Base\Image\Entity.gif" Abstract="true" TableName="LINK" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="LINK_INDEX1" TableIndex="LINK_INDEX1" Unique="False">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="LINK_INDEX2" TableIndex="LINK_INDEX2" Unique="False">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <InfoType Name="LID" Type="DefaultObjectValue" DataType="STRING100" Column="LID" PrimaryKeyOrder="1" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Name="PEID" Type="DefaultObjectValue" DataType="STRING100" Column="PEID" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Name="PETYPE" Type="DefaultObjectValue" DataType="STRING100" Column="PETYPE" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Hidden" ExtendProperty1="" />
+    <InfoType Name="CEID" Type="DefaultObjectValue" DataType="STRING100" Column="CEID" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Name="CETYPE" Type="DefaultObjectValue" DataType="STRING100" Column="CETYPE" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Hidden" ExtendProperty1="" />
+    <InfoType Name="LSEQUENCE" Type="DefaultObjectValue" DataType="INT" Column="LSEQUENCE" PrimaryKeyOrder="0" DefaultValue="0" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Name="LQUALITY" Type="DefaultObjectValue" DataType="FLOAT10_5" Column="LQUALITY" PrimaryKeyOrder="0" DefaultValue="1" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Name="LSTATION" Type="DefaultObjectValue" DataType="STRING100" Column="LSTATION" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Hidden" />
+    <InfoType Name="LCREATEUID" Type="SingleUserValue" DataType="STRING50" Column="LCREATEUID" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Hidden" ExtendProperty1="" />
+    <InfoType Name="LCREATETIME" Type="DateTimeValue" DataType="LONG" Column="LCREATETIME" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Hidden" ExtendProperty1="" />
+    <InfoType Name="LOWNUID" Type="SingleUserValue" DataType="STRING50" Column="LOWNUID" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Hidden" ExtendProperty1="" />
+    <InfoType Name="LOWNGID" Type="SingleGroupValue" DataType="STRING50" Column="LOWNGID" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Hidden" ExtendProperty1="" />
+    <InfoType Name="LCOMPANYID" Type="DefaultObjectValue" DataType="STRING50" Column="LCOMPANYID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PEUID" Type="DefaultObjectValue" DataType="STRING100" Column="PEUID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="CEUID" Type="DefaultObjectValue" DataType="STRING100" Column="CEUID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <LinkedTypes ParentType="ENTITY" ChildType="ENTITY" IsHidden="false" />
+  </LinkType>
+</root>

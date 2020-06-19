@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MenuItem Name="WorkFlowTempateClassifyRootMenu">
+    <!--新建-->
+    <WebAction Name="Create" ModuleName="Platform" LabelName="Common.Create" Image="p_new" ParentWebAtionName=""  RefreshType="UPDATECURRENTSTRUCTURE">
+      <ActionChecker Action="CREATE" ActionType="WORKFLOWCLASSIFY"  SelectID="[Tree_Current_value1]" SelectMode="NULL" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="WORKFLOWCLASSIFY" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData"/>
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Refresh" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE">
+    </WebAction>
+   
+  </MenuItem >
+
+  <MenuItem Name="WorkFlowTempateClassifyMenu">
+    <!--编辑-->
+    <WebAction Name="Edit" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName=""  RefreshType="UPDATEPARENTSTRUCTURE">
+      <ActionChecker Action="EDIT" ActionType="WORKFLOWCLASSIFY" SelectID="[Tree_Current_value1]" SelectMode="SINGLE" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="EditObject" IsPopup="true" IsModal="true">
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+      </WebMessageAndLogger>
+    </WebAction>
+    <!--删除-->
+    <WebAction Name="Delete" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE">
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="DeleteObject" IsPopup="true" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+        <Para Name="DenyText" Value="DeleteObject.ExistSubObjectNotDeleteMsg" />
+        <Para Name="ValidateObject" Value="WORKFLOWTEMPLATE:PEID=EID" />
+        <Para Name="ExistDenyDelete" Value="true" />
+        
+      </WebMethod>
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="Refresh" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="UPDATEPARENTSTRUCTURE">
+    </WebAction>
+  </MenuItem >
+
+  <MenuItem Name="WorkFlowTempateClassifyListMenu">
+    <WebAction Name="Create" ModuleName="Platform" LabelName="Common.Create" Image="p_new" ParentWebAtionName=""  RefreshType="UPDATECURRENTSTRUCTURE">
+      <ActionChecker Action="CREATE" ActionType="WORKFLOWCLASSIFY"  SelectID="[Tree_Current_value1]" SelectMode="NULL" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="WORKFLOWCLASSIFY" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="initData"/>
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <!--编辑-->
+    <WebAction Name="Edit" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName=""  RefreshType="UPDATECURRENTSTRUCTURE">
+      <ActionChecker Action="EDIT" ActionType="WORKFLOWCLASSIFY" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsModal="true" >
+        <Para Name="PromptContent" Value="FlowTemplate.NameExist" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true">
+      </WebMessageAndLogger>
+    </WebAction>
+    <!--删除-->
+    <WebAction Name="Delete" ModuleName="Platform" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE">
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+        <Para Name="DenyText" Value="DeleteObject.ExistSubObjectNotDeleteMsg" />
+        <Para Name="ValidateObject" Value="WORKFLOWTEMPLATE:PEID=EID" />
+        <Para Name="ExistDenyDelete" Value="true" />
+      </WebMethod>
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="Refresh" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE">
+    </WebAction>
+  </MenuItem >
+</root>

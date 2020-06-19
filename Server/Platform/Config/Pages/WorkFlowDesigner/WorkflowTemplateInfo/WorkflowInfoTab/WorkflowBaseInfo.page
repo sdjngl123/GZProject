@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowBaseInfo" IsCache="true">
+  <Settings Key="title" Value="WorkflowBaseInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowBaseInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_WorkflowBaseInfo_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_WorkflowBaseInfo_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-7"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="7"/>
+      </Settings>
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-Hd1"/>
+      </Settings>
+      <Settings Key="item12" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-Hd2"/>
+      </Settings>
+      <Settings Key="item13" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-Hd3"/>
+      </Settings>
+      <Settings Key="item14" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-Hd4"/>
+      </Settings>
+      <Settings Key="item15" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="visible" Value="false"/>
+        <Settings Key="childid" Value="R-Hd5"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item91" Value="">
+        <Settings Key="size" Value="260"/>
+        <Settings Key="childid" Value="R-8"/>
+      </Settings>
+    </PageControl>
+    <!--R1-->
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Type_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Type_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Type_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.Type" />
+    </PageControl>
+    <PageControl ControlID="Type_Value" ParentID="R-1" TypeName="TextValue" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="disabled" Value="true"/>
+    </PageControl>
+    <!--R2-->
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Name_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Name_Value"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="IsRun_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Name_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.Name" />
+    </PageControl>
+    <PageControl ControlID="Name_Value" ParentID="R-2" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="Validation.String200" />
+    </PageControl>
+    <PageControl ControlID="IsRun_Value" ParentID="R-2" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="WorkflowBaseInfo.IsRun" />
+    </PageControl>
+    <!--R3-->
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="WorkflowManager_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkflowManager_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkflowManager_Label" ParentID="R-3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.WorkflowManager" />
+    </PageControl>
+    <PageControl ControlID="WorkflowManager_Value" ParentID="R-3" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowBaseInfo_WorkflowManagerOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--R4-->
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ChangeActor_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="33%"/>
+        <Settings Key="childid" Value="ChangeActor_Manager"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34%"/>
+        <Settings Key="childid" Value="ChangeActor_Start"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value="ChangeActor_Actor"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ChangeActor_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.ChangeActor" />
+    </PageControl>
+    <PageControl ControlID="ChangeActor_Manager" ParentID="R-4" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="WorkflowBaseInfo.Manager" />
+    </PageControl>
+    <PageControl ControlID="ChangeActor_Start" ParentID="R-4" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="WorkflowBaseInfo.Start" />
+    </PageControl>
+    <PageControl ControlID="ChangeActor_Actor" ParentID="R-4" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="WorkflowBaseInfo.Actor" />
+    </PageControl>
+    <!--R5-->
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Description_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Description_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Description_Label" ParentID="R-5" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.Description" />
+    </PageControl>
+    <PageControl ControlID="Description_Value" ParentID="R-5" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+      <Settings Key="regextipId" Value="Validation.String500" />
+    </PageControl>
+    <!--R6-->
+    <PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Model_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Model_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Model_Label" ParentID="R-6" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.Model" />
+    </PageControl>
+    <PageControl ControlID="Model_Value" ParentID="R-6" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowBaseInfo_RelateModelOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--R7-->
+    <PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Organization_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Organization_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Organization_Label" ParentID="R-7" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.Organization" />
+    </PageControl>
+    <PageControl ControlID="Organization_Value" ParentID="R-7" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowBaseInfo_RelateOrganizationOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <!--R8-->
+    <PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ChangeNodeActor_LabelC"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ChangeNodeActor_ValueC"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ChangeNodeActor_LabelC" ParentID="R-8" TypeName="LayoutContainer" >
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="ChangeNodeActor_Label"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ChangeNodeActor_Label" ParentID="ChangeNodeActor_LabelC" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowBaseInfo.ChangeNodeActor" />
+    </PageControl>
+    <PageControl ControlID="ChangeNodeActor_ValueC" ParentID="R-8" TypeName="LayoutContainer" >
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="2"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ChangeNodeActor_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="12"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ChangeNodeActor_Value" ParentID="ChangeNodeActor_ValueC" TypeName="EditGrid">
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="WorkflowBaseInfo.Node" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="Node" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="text" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="WorkflowBaseInfo.AllowChange" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="60" />
+        <Settings Key="name" Value="AllowChange" />
+        <Settings Key="colType" Value="checkbox" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <!--<Settings Key="item3" >
+        <Settings Key="textId" Value="WorkflowBaseInfo.ValidateNull" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="60" />
+        <Settings Key="name" Value="ValidateNull" />
+        <Settings Key="colType" Value="checkbox" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>-->
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="WorkflowBaseInfo.AllocateNull" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="110" />
+        <Settings Key="name" Value="AllocateNull" />
+        <Settings Key="colType" Value="checkbox" />
+        <Settings Key="resizable" Value="true" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="ID" />
+        <Settings Key="colType" Value="hidden" />
+      </Settings>
+    </PageControl>
+    <!--Hd1-->
+    <PageControl ControlID="R-Hd1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkFlowSettingExtend_Value1"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkFlowSettingExtend_Value1" ParentID="R-Hd1" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <!--Hd2-->
+    <PageControl ControlID="R-Hd2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkFlowSettingExtend_Value2"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkFlowSettingExtend_Value2" ParentID="R-Hd2" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <!--Hd3-->
+    <PageControl ControlID="R-Hd3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkFlowSettingExtend_Value3"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkFlowSettingExtend_Value3" ParentID="R-Hd3" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <!--Hd4-->
+    <PageControl ControlID="R-Hd4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkFlowSettingExtend_Value4"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkFlowSettingExtend_Value4" ParentID="R-Hd4" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+
+    <!--Hd5-->
+    <PageControl ControlID="R-Hd5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="WorkFlowSettingExtend_Value5"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="WorkFlowSettingExtend_Value5" ParentID="R-Hd5" TypeName="PageContainer">
+      <PageHandlers>
+        <PageHandlerHandler Name ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="pageName" Value=""/>
+    </PageControl>
+  </PageControls>
+</root>

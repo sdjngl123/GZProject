@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="WORKFLOWTASKINFO" Extend="ENTITY" LogicClass="WorkflowTask" IconPath="Platform/Image/Model/taskobject.png" Abstract="false" TableName="WORKFLOWTASKINFO" SplitValidateUnique="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" Order="2303" IsBusinessModel="true" IsMainConfig="false" PolicyName="WorkflowLife" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" ModelGroups="AdvanceQuery" FromWeb="false" StopUse="false">
+    <Index Name="FLOWTASK_FLOWID_INDEX" TableIndex="FLOWTASK_FLOWID_INDEX" Unique="False">
+      <IndexInfo Name="WORKFLOWID" Order="ASC" />
+    </Index>
+    <Index Name="FLOWTASK_ACTORID_INDEX" TableIndex="FLOWTASK_ACTORID_INDEX" Unique="False">
+      <IndexInfo Name="TASKACTORID" Order="ASC" />
+      <IndexInfo Name="STATEID" Order="DESC" />
+      <IndexInfo Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <IndexInfo Name="AGENTUSERID" Order="ASC" />
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+    </Index>
+    <Index Name="FLOWTASK_AGENTID_INDEX" TableIndex="FLOWTASK_AGENTID_INDEX" Unique="False">
+      <IndexInfo Name="AGENTUSERID" Order="ASC" />
+      <IndexInfo Name="STATEID" Order="DESC" />
+      <IndexInfo Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <IndexInfo Name="CREATETIME" Order="DESC" />
+    </Index>
+    <InfoType Name="WORKFLOWID" Type="DefaultObjectValue" DataType="STRING100" Column="WORKFLOWID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="WORKFLOWNAME" Type="DefaultObjectValue" DataType="STRING200" Column="WORKFLOWNAME" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="FLOWTEMPLATE" Type="FlowTemplateValue" DataType="STRING100" Column="FLOWTEMPLATE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="FLOWNODEID" Type="DefaultObjectValue" DataType="STRING50" Column="FLOWNODEID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TASKFLAG" Type="DefaultObjectValue" DataType="STRING100" Column="TASKFLAG" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TASKUID" Type="DefaultObjectValue" DataType="STRING50" Column="TASKUID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TASKACTORID" Type="SingleUserValue" DataType="STRING50" Column="TASKACTORID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="AGENTUSERID" Type="SingleUserValue" DataType="STRING50" Column="AGENTUSERID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="AGENTSTARTDATETIME" Type="DateTimeValue" DataType="LONG" Column="AGENTSTARTDATETIME" PrimaryKeyOrder="0" DefaultValue="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="AGENTENDDATETIME" Type="DateTimeValue" DataType="LONG" Column="AGENTENDDATETIME" PrimaryKeyOrder="0" DefaultValue="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="COMPLETEUSER" Type="SingleUserValue" DataType="STRING50" Column="COMPLETEUSER" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="COMPLETETIME" Type="DateTimeValue" DataType="LONG" Column="COMPLETETIME" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TASKRESULT" Type="DefaultObjectValue" DataType="STRING100" Column="TASKRESULT" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TASKOPINION" Type="DefaultObjectValue" DataType="STRING200" Column="TASKOPINION" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ISCOMMONMANGEMENT" Type="DefaultObjectValue" DataType="BOOL" Column="ISCOMMONMANGEMENT" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PREVIOUSNODEID" Type="DefaultObjectValue" DataType="STRING50" Column="PREVIOUSNODEID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PLANNEDENDDATE" Type="DateTimeValue" DataType="LONG" Column="PLANNEDENDDATE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ADJECTIVEREMINDTIME" Type="DateTimeValue" DataType="LONG" Column="ADJECTIVEREMINDTIME" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PREVIOUSTASKUID" Type="DefaultObjectValue" DataType="STRING50" Column="PREVIOUSTASKUID" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TEMPLATETYPE" Type="WorkflowTemplateTypeValue" DataType="STRING100" Column="TEMPLATETYPE" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ASSISTTASKID" Type="DefaultObjectValue" DataType="STRING100" Column="ASSISTTASKID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="Create Null" Show="Create Edit" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="STATEID" Type="StateValue" Edit="" Show="View" Sequence="100" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="CREATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="130" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+  </EntityType>
+</root>

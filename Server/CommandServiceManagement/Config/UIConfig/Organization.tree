@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="ConversionStatisticsTreeManagement" MenuName="" PageLinksName=""
+              TreeViewName="" ShowTreeQuery="false"
+             TreeChildDataService="" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="Hoteam.InforCenter.CommandServiceManagementService.GetConversionStatisticsRoot">
+    <ObjectType Name="Cluster" MenuName="" PageLinksName="CommandServiceStatusLink" />
+    <ObjectType Name="ConversionNode" MenuName="" PageLinksName="CommandServiceStatusLink" />
+    <ObjectType Name="Conversion" MenuName="" PageLinksName="CommandServiceStatusLink" />
+    
+  </TreeManagement>
+
+  <TreeManagement Name="ConversionCountInfoTreeManagement" MenuName="" PageLinksName=""
+              TreeViewName="" ShowTreeQuery="false"
+             TreeChildDataService="" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="Hoteam.InforCenter.CommandServiceManagementService.GetConversionCountInfoRoot">
+    <ObjectType Name="ConversionInfo" MenuName="" PageLinksName="ConversionCountInfoTreeManagementLink" />
+  </TreeManagement>
+</root>

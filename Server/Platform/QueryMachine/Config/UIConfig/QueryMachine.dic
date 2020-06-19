@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="QueryMachine">
+      <LocalizedLabel LanguageRef="zhs">查询构建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="AdvancedQuery">
+      <LocalizedLabel LanguageRef="zhs">高级查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Advanced query</LocalizedLabel>
+    </Label>
+    <Label Name="CommmonModules">
+      <LocalizedLabel LanguageRef="zhs">常用功能</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common function</LocalizedLabel>
+    </Label>
+    <Label Name="BuildGroup">
+      <LocalizedLabel LanguageRef="zhs">业务管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business management</LocalizedLabel>
+    </Label>
+    <Label Name="QueryStructure">
+      <LocalizedLabel LanguageRef="zhs">查询构建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="SampleQuery">
+      <LocalizedLabel LanguageRef="zhs">简单查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Simple query</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

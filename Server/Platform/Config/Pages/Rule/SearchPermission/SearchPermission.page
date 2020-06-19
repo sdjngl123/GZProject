@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SearchPermission">  
+  <Settings Key="title" Value="SearchPermission.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SearchPermission_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_SearchPermission_OnQuery(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SearchPageContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SearchPageContainer" ParentID="TopContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="VerticalTabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>
+

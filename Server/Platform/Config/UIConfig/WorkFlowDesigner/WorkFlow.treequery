@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeQuery Name="WorkFlowTemplateMoveTo" TreeViewName="WorkflowClassifyTreeView" ShowTreeQuery="false" DropSearch="false" SelectControl="Tree" TreeChildDataService="" TreeRootDataService="" TreeAllDataService="" TreeQueryDataService="" LoadAndSelectType="SingleLevel_SingleSelect" AllowReturnEmptyValue="false" ReturnValueType="WORKFLOWCLASSIFY" CommitJS="" />
+  <TreeQuery Name="WorkFlowTemplateTreeQuery" TreeViewName="WorkflowClassifyTemplateTreeView" ShowTreeQuery="true" DropSearch="false" SelectControl="Tree" TreeQueryDataService="InforCenter.Workflow.WorkflowService.GetTreeQueryTempalteData" LoadAndSelectType="SingleLevel_SingleSelect" AllowReturnEmptyValue="true" ReturnValueType="WORKFLOWTEMPLATE" />
+
+  <TreeQuery Name="WorkflowClassifyToTemplateTreeQuery" TreeViewName="WorkflowClassifyToTemplateTreeView" ShowTreeQuery="true"
+             DropSearch="false" SelectControl="Tree" TreeQueryDataService=""
+     CommitJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_OnOK"
+     SelectedOneJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_OnSelectedOne"
+     NodeDblClickJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_OnNodeDbClick"
+               SelectedListInitJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_TreeSelectedListInit"
+             TreeChildDataService="InforCenter.Workflow.WorkflowService.WorkflowClassifyToTemplateChildData"
+             LoadAndSelectType="SingleLevel_MultiSelect" AllowReturnEmptyValue="true" ReturnValueType="" />
+</root>

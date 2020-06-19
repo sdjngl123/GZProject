@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectedBusinessBaseInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="ShowText">
+      <LocalizedLabel LanguageRef="zhs">显示文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Text</LocalizedLabel>
+    </Label>
+    <Label Name="NodeImage">
+      <LocalizedLabel LanguageRef="zhs">节点图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node Picture</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

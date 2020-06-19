@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ActionRuleParameter">
+  <Settings Key="title" Value="ActionRuleParameter.Title"/>
+  <Settings Key="height" Value="240"/>
+  <Settings Key="width" Value="384"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ActionRuleParameter_LoadPage(pageEvent);"/>    
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ActionRuleParameter_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0px 6px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Menu_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="Paremeter_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Menu_Container" ParentID="ActionRuleParameter_Container" TypeName="Menu">
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="Common.Save"/>
+        <Settings Key="value" Value="Save"/>
+        <Settings Key="icon" Value="p_save"/>
+        <Settings Key="js" Value="InforCenter_Platform_ActionRuleParameter_OnSave(ctrlEvent);"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Paremeter_Container" ParentID="ActionRuleParameter_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="groupName" Value="ActionRuleParameter.Parameter"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50%"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Parameter"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="50%"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Parameter" ParentID="Paremeter_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="60"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="ParameterCheckBox"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ParameterCheckBox" ParentID="Parameter" TypeName="CheckBox" >
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="checked" Value="false" />
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="ActionRuleParameter.Enable" />
+    </PageControl>
+  </PageControls>
+</root>

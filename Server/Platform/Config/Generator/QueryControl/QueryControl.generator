@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="[INFONAME]-QUERYCONTROL">
+  <Settings Key="height" Value="[HEIGHT]"/>
+  <Settings Key="width" Value="100%"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('[OBJTYPE]',para);[CREATESCRIPT];"/>
+    <PageHandler HandlerName ="OnGetData" Script="var data = {};[SAVESCRIPT];result = data;"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="[INFONAME]_Value"/>
+      </Settings>
+    </PageControl>
+    [INFOCONTENT]
+  </PageControls>
+</root>

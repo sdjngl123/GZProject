@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="QueryMachineQuery">
+  <Settings Key="title" Value="QueryMachineQuery.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_QueryMachineQuery_QueryPageLoadData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+
+    <PageControl ControlID="Info_Container_P" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Info_Container" ParentID="Info_Container_P" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item5">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="300"/>
+        <Settings Key="childid" Value="Left_Container"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="3"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="closeStateTooltipId" Value="QueryMachineQuery.Show"/>
+        <Settings Key="openStateTooltipId" Value="QueryMachineQuery.Hidden"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Right_Container"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+
+
+    <PageControl ControlID="Left_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Tabs_Ctrl"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Tabs_Ctrl" ParentID="Left_Container" TypeName="Tabs" >
+    </PageControl>
+
+    <PageControl ControlID="Right_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Content_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Content_Container" ParentID="Right_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="MenuPage_Container"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageContainer_Ctrl"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+
+
+    <PageControl ControlID="MenuPage_Container" ParentID="Content_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="6"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="MenuPageContainer" ParentID="MenuPage_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="PageContainer_Ctrl" ParentID="Content_Container" TypeName="PageContainer" >
+    </PageControl>
+  </PageControls>
+</root>

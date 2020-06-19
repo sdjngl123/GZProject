@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedBusinessPluginSetting" IsCache="true">
+  <Settings Key="title" Value="SelectedBusinessPluginSetting.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedBusinessPluginSetting_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_SelectedBusinessPluginSetting_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_SelectedBusinessPluginSetting_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+ 
+    <PageControl ControlID="SelectedBusinessPluginSetting_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="SelectedBusinessPluginSettingAddpluginLayout"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectedBusinessPluginSettingVLayout"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="SelectedBusinessPluginSettingVLayout" ParentID="SelectedBusinessPluginSetting_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_1"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_2"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_3"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_4"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_5"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_6"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_7"/>
+      </Settings>
+      <Settings Key="item8" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_8"/>
+      </Settings>
+      <Settings Key="item9" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_9"/>
+      </Settings>
+      <Settings Key="item10" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_10"/>
+      </Settings>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_11"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_12"/>
+      </Settings>
+      <Settings Key="item13" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_13"/>
+      </Settings>
+      <Settings Key="item14" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_14"/>
+      </Settings>
+      <Settings Key="item15" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_15"/>
+      </Settings>
+      <Settings Key="item16" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_16"/>
+      </Settings>
+      <Settings Key="item17" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_17"/>
+      </Settings>
+      <Settings Key="item18" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_18"/>
+      </Settings>
+      <Settings Key="item19" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_19"/>
+      </Settings>
+      <Settings Key="item20" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_20"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageContainer_1" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_2" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_3" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_4" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_5" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_6" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_7" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_8" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_9" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_10" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_11" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_12" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_13" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_14" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_15" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_16" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_17" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_18" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_19" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_20" ParentID="SelectedBusinessPluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+
+
+    <PageControl ControlID="SelectedBusinessPluginSettingAddpluginLayout" ParentID="SelectedBusinessPluginSetting_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectedBusinessPluginSettingAddpluginDropdown"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="SelectedBusinessPluginSettingAddpluginButton"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SelectedBusinessPluginSettingAddpluginDropdown" ParentID="SelectedBusinessPluginSettingAddpluginLayout" TypeName="DropDown" >
+    </PageControl>
+    <PageControl ControlID="SelectedBusinessPluginSettingAddpluginButton" ParentID="SelectedBusinessPluginSettingAddpluginLayout" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedBusinessPluginSetting_AddPlugin(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="" />
+      <Settings Key="iconClass" Value="p_add" />
+    </PageControl>
+  </PageControls>
+</root>

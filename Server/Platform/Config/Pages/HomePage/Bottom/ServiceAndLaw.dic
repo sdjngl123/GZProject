@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ServiceAndLaw" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">服务条款&amp;法律声明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Legal statement of Terms of Service</LocalizedLabel>
+    </Label>
+    <Label Name="Text">
+      <LocalizedLabel LanguageRef="zhs">服务条款&amp;法律声明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Legal statement of Terms of Service</LocalizedLabel>
+    </Label>
+    <Label Name="Clause">
+      <LocalizedLabel LanguageRef="zhs">声明：
+    本软件由华天软件开发。本软件[包括但不限于本软件产品中所含的任何图象、数据、文字和附加程序(.dll、.exe等)]，随附的帮助材料及本软件产品的任何副本的一切所有权及知识产权归华天软件所有，受中华人民共和国版权法及国际版权条约和其他知识产权法及条约的保护。用户仅获得本软件的使用权。
+    您认可并同意华天华天软件拥有所有包含在软件中及与软件相关的法定权利、所有权和权益，包括存在于软件中及与软件相关的所有知识产权。（无论这些权利是否已经注册，亦无论存在于世界上什么地方）
+    除非您与华天软件另有书面约定，否则《协议》不会授予您使用任何华天软件商业名称、商标、服务标记、徽标、域名及其他明显标志的权利。
+        </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Statement:
+This software is developed by HoteamSoft. This software [Includes, but is not limited to, any image, data, text, and additional program (.dll、exe,etc) contained in this software product. dll]. All ownership and intellectual property rights of any copy of the supporting materials and the software products shall be owned by Huantian Software, they are protected by the Copyright Law of the People's Republic of China and International Copyright Treaties and other intellectual property laws and treaties. The user only obtains the right to use the software.
+You acknowledge and agree that the HoteamSoft has all legal rights, titles and interests that are included in the software and in relation to the software, including all intellectual property rights that exist in the software and in relation to the software.(No matter whether these rights have been registered, no matter where they exist in the world)
+The Agreement will not grant you the right to use any HoteamSoft business name, trademark, service tag, logo, domain name, and other obvious signs unless you agree in writing with HoteamSoft.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

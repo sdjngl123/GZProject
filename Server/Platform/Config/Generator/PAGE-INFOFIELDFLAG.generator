@@ -1,0 +1,5 @@
+﻿<PageControl ControlID="[INFONAME]_Label_FieldFlag" ParentID="[PARENTID]" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl>

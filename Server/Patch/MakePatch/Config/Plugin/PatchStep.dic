@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Plugins" IsWeb="true">
+    <Label Name="PatchBasicInfoCtrl">
+      <LocalizedLabel LanguageRef="zhs">基础信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic Information</LocalizedLabel>
+    </Label>
+    <Label Name="PatchLinkInfoCtrl">
+      <LocalizedLabel LanguageRef="zhs">补丁关系信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Relationship Information</LocalizedLabel>
+    </Label>
+    <Label Name="PatchApplicationInfoCtrl">
+      <LocalizedLabel LanguageRef="zhs">应用程序信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application Information</LocalizedLabel>
+    </Label>
+    <Label Name="ApplicationCtrl">
+      <LocalizedLabel LanguageRef="zhs">应用程序文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application File</LocalizedLabel>
+    </Label>
+    <Label Name="TfsApplicationCtrl">
+      <LocalizedLabel LanguageRef="zhs">TFS变更集文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TFS Application File</LocalizedLabel>
+    </Label>
+    <Label Name="CreateWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">创建Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="PauseWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">暂停Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="StartWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">启动Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="CloseWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">关闭Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Turn off Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="AutoGeneratorCtrl">
+      <LocalizedLabel LanguageRef="zhs">自动生成页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically Generate Page</LocalizedLabel>
+    </Label>
+    <Label Name="FileReplaceCtrl">
+      <LocalizedLabel LanguageRef="zhs">文件覆盖</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File Overlay</LocalizedLabel>
+    </Label>
+    <Label Name="RestartIISCtrl">
+      <LocalizedLabel LanguageRef="zhs">重启IIS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Restart IIS</LocalizedLabel>
+    </Label>
+    <Label Name="StopIISCtrl">
+      <LocalizedLabel LanguageRef="zhs">停止IIS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop IIS</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateConfigFileCtrl">
+      <LocalizedLabel LanguageRef="zhs">Config文件更新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Config File Update</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateDatabaseSchemaCtrl">
+      <LocalizedLabel LanguageRef="zhs">更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebTreeView Name="ReportManagementShowTreeView" ObjectType="REPORTCLASSIFYROOT" ExpandAction="" TextField="" TextDicField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" NodeTypeField="" EntityFilter="" Filter="" View="REPORTCLASSIFYROOTVIEW" StateField="" ShowStartNode="true" IsTemplate="false">
+    <Schema Name="REPORTCLASSIFY" ObjectType="REPORTCLASSIFY" ExpandAction="" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="REPORTCLASSIFYVIEW" StateField="" Key="1" SuperKey="-1" ParentObjectType="REPORTCLASSIFYROOT" Loop="false" IsExistNode="true" />
+    <Schema Name="REPORTOBJECT" ObjectType="REPORTOBJECT" ExpandAction="" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="CLASSIFYID = '[Tree_Current_value1]'" View="REPORTOBJECTVIEW" StateField="" Key="2" SuperKey="1" ParentObjectType="REPORTCLASSIFY" Loop="false" IsExistNode="true" />
+  </WebTreeView>
+ 
+</root>

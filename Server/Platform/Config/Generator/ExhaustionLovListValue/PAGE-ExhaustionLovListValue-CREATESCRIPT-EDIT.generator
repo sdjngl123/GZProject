@@ -1,0 +1,17 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+var p = {};
+p.InfoName = '[INFONAME]';
+p.ObjType = '[OBJTYPE]';
+var isPrompt = HoteamUI.DataService.Call('InforCenter.Enumeration.EnumerationService.IsPromptLovList',{para:p});
+if(isPrompt)
+{
+o.SetText(data.[INFONAME]);
+}else
+{
+o.SetSelectedByValue(data.[INFONAME]);
+}
+
+}
+}

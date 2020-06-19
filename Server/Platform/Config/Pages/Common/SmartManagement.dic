@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SmartManagement" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">Smart管理页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Smart management page</LocalizedLabel>
+    </Label>
+    <Label Name="SmartManagementSearchCountBefore">
+      <LocalizedLabel LanguageRef="zhs">共搜到相关内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The total number of the related content searched</LocalizedLabel>
+    </Label>
+    <Label Name="SmartManagementSearchCountNumber">
+      <LocalizedLabel LanguageRef="zhs">个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="AllInfo">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+    <Label Name="AllInfo">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+    <Label Name="Refresh">
+      <LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh</LocalizedLabel>
+    </Label>
+    <Label Name="HideTree">
+      <LocalizedLabel LanguageRef="zhs">隐藏目录树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide directory tree</LocalizedLabel>
+    </Label>
+    <Label Name="ShowTree">
+      <LocalizedLabel LanguageRef="zhs">展开目录树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand the directory tree</LocalizedLabel>
+    </Label>
+    <Label Name="ListModel">
+      <LocalizedLabel LanguageRef="zhs">列表模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List mode</LocalizedLabel>
+    </Label>
+    <Label Name="ThumbnailModel">
+      <LocalizedLabel LanguageRef="zhs">缩略图模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Thumbnails mode</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

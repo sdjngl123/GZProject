@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MlistView" IsWeb="true">
+    <Label Name="DataSetCount">
+      <LocalizedLabel LanguageRef="zhs">下级对象：总[COUNT]条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> View Online allow one file</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

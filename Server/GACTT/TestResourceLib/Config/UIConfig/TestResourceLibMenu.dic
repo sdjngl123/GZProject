@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Context Name="TestResourceLibMenu" IsWeb="true">
+		<Label Name="Start">
+			<LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+		</Label>
+		<Label Name="Stop">
+			<LocalizedLabel LanguageRef="zhs">停用</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+		</Label>
+		<Label Name="TESTEXTORGNav">
+			<LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">External test organization</LocalizedLabel>
+		</Label>
+		<Label Name="TESTRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">外部试验资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">External test resources</LocalizedLabel>
+		</Label>
+		<Label Name="TESTATTACHNav">
+			<LocalizedLabel LanguageRef="zhs">外部试验单位附件</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTATTACHNav</LocalizedLabel>
+		</Label>
+		<Label Name="EXTERNALLYRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">外部可用资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">EXTERNALLYRESOURCENav</LocalizedLabel>
+		</Label>
+		<Label Name="TESTABILITYKNOWLEDGENav">
+			<LocalizedLabel LanguageRef="zhs">试验能力知识</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTABILITYKNOWLEDGENav</LocalizedLabel>
+		</Label>
+		<Label Name="TESTABILITYRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">试验能力资源明细</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTABILITYRESOURCENav</LocalizedLabel>
+		</Label>
+		<Label Name="TESTCAPABILITYNav">
+			<LocalizedLabel LanguageRef="zhs">试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTCAPABILITYNav</LocalizedLabel>
+		</Label>
+		<Label Name="AttachManage">
+			<LocalizedLabel LanguageRef="zhs">附件管理</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">AttachManage</LocalizedLabel>
+		</Label>
+		<Label Name="Download">
+			<LocalizedLabel LanguageRef="zhs">下载</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Download</LocalizedLabel>
+		</Label>
+		<Label Name="Add">
+			<LocalizedLabel LanguageRef="zhs">添加</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+		</Label>
+		<Label Name="Remove">
+			<LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+		</Label>
+		<Label Name="Knowledge">
+			<LocalizedLabel LanguageRef="zhs">知识</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Knowledge</LocalizedLabel>
+		</Label>
+		<Label Name="Resource">
+			<LocalizedLabel LanguageRef="zhs">资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Resource</LocalizedLabel>
+		</Label>
+		<Label Name="Audit">
+			<LocalizedLabel LanguageRef="zhs">审核</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Audit</LocalizedLabel>
+		</Label>
+		<Label Name="NewTestCapability">
+			<LocalizedLabel LanguageRef="zhs">新建试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">NewTestCapability</LocalizedLabel>
+		</Label>
+		<Label Name="BatchEdit">
+			<LocalizedLabel LanguageRef="zhs">批量修改</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">BatchEdit</LocalizedLabel>
+		</Label>	
+	</Context>
+</DictionarySerializer>

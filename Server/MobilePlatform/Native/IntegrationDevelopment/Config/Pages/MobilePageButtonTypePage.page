@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MobilePageButtonTypePage">
+  <Settings Key="height" Value="400"/>
+  <Settings Key="width" Value="570"/>
+  <Settings Key="title" Value="MobilePageButtonTypePage.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_IntegrationDevelopment_MobilePageButtonTypePage_OnCreate(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 0 0 0"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-11"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="150"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item31" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-31"/>
+      </Settings>
+      <Settings Key="item32" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-32"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="100%"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item7">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item8">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+      <Settings Key="item9">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageName"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="PageName" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="PageName_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageName_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageName_Label" ParentID="PageName" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MobilePageButtonTypePage.PageName" />
+    </PageControl>
+    <PageControl ControlID="PageName_Value" ParentID="PageName" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="MOBILEPAGEDEV-CREATE.PAGENAMERegex" />
+    </PageControl>
+    <PageControl ControlID="R-11" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageType"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageType" ParentID="R-11" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="PageType_Label"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageType_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageType_Label" ParentID="PageType" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MobilePageButtonTypePage.PageType" />
+    </PageControl>
+    <PageControl ControlID="PageType_Value" ParentID="PageType" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="MOBILEPAGEDEV-CREATE.PAGENAMERegex" />
+    </PageControl>
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParaList"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ParaList" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="ParaList_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParaList_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ParaList_Label" ParentID="ParaList" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MobilePageButtonTypePage.ParaList" />
+    </PageControl>
+    <PageControl ControlID="ParaList_Value" ParentID="ParaList" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="Menu"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Grid"/>
+      </Settings>
+    </PageControl>
+
+    <!--菜单-->
+    <PageControl ControlID="Menu" ParentID="ParaList_Value" TypeName="Menu">
+
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="Common.Create"/>
+        <Settings Key="value" Value="Create"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_IntegrationDevelopment_MobilePageButtonTypePage_MenuClick(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="Common.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_IntegrationDevelopment_MobilePageButtonTypePage_MenuClick(ctrlEvent);"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Grid" ParentID="ParaList_Value" TypeName="EditGrid">
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="MobilePageButtonTypePage.ParaName" />
+        <Settings Key="name" Value="ParaName" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="width" Value="50%" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="MobilePageButtonTypePage.ParaValue" />
+        <Settings Key="name" Value="ParaValue" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="width" Value="50%" />
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="R-31" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="Assembly_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Assembly_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Assembly_Label" ParentID="R-31" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MobilePageButtonTypePage.Assembly" />
+    </PageControl>
+    <PageControl ControlID="Assembly_Value" ParentID="R-31" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="MobilePageButtonTypePage.AssemblyRegex" />
+    </PageControl>
+
+    <PageControl ControlID="R-32" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="Class_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Class_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Class_Label" ParentID="R-32" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MobilePageButtonTypePage.Class" />
+    </PageControl>
+    <PageControl ControlID="Class_Value" ParentID="R-32" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="MobilePageButtonTypePage.ClassRegex" />
+    </PageControl>
+  
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value=""/>
+        <Settings Key="childid" Value="Action_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Action_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Action_Label" ParentID="R-4" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="MobilePageButtonTypePage.Action" />
+    </PageControl>
+    <PageControl ControlID="Action_Value" ParentID="R-4" TypeName="DropDown" >
+    </PageControl>
+
+   
+    
+    <PageControl ControlID="Btn_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_IntegrationDevelopment_MobilePageButtonTypePage_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

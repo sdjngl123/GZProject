@@ -1,0 +1,41 @@
+<%-- 
+Name:
+Author: 
+Description: 
+--%>
+<%@ CodeTemplate Language="C#" TargetLanguage="Text" Src="" Inherits="" Debug="False" Description="Template description here." %>
+<%@ Property Name="ProjectName" Type="System.String" Default="" Optional="True" Category="Settings" Description="This is a sample string property." %>
+
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "<%=ProjectName%>.DAL", "<%=ProjectName%>.DAL\<%=ProjectName%>.DAL.csproj", "{65EA86C2-9DFA-4BBB-9FF4-552C5D7154DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "<%=ProjectName%>.IDAL", "<%=ProjectName%>.IDAL\<%=ProjectName%>.IDAL.csproj", "{97202F87-BBDA-409B-882F-9BCC963317B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "<%=ProjectName%>.Models", "<%=ProjectName%>.Models\<%=ProjectName%>.Models.csproj", "{F0A3A876-56FE-4B5A-B2F1-3E52205FA028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlHelper", "SqlHelper\SqlHelper.csproj", "{DF894D22-4BB2-40B2-8E2D-AB93542964D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "<%=ProjectName%>.Factory", "<%=ProjectName%>.Factory\<%=ProjectName%>.Factory.csproj", "{1F0D0F87-7BAD-4B0B-BCAF-C6F92F1BD6F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "<%=ProjectName%>.BLL", "<%=ProjectName%>.BLL\<%=ProjectName%>.BLL.csproj", "{D4F4BFCA-591E-4162-AF7B-AE726006A807}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADEEF0AB-0010-4DE9-8201-DEB2DC388C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADEEF0AB-0010-4DE9-8201-DEB2DC388C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADEEF0AB-0010-4DE9-8201-DEB2DC388C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADEEF0AB-0010-4DE9-8201-DEB2DC388C6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+
+<script runat="template">
+
+</script>

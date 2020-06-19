@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FSManagement" IsWeb="true">
+    <Label Name="FSManagement">
+      <LocalizedLabel LanguageRef="zhs">文件服务管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FSManagement</LocalizedLabel>
+    </Label>
+    <Label Name="DistributionNode">
+      <LocalizedLabel LanguageRef="zhs">分发管理节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DistributionNode</LocalizedLabel>
+    </Label>
+    <Label Name="RequestIP">
+      <LocalizedLabel LanguageRef="zhs">请求IP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">request ip</LocalizedLabel>
+    </Label>
+    <Label Name="RequestCommand">
+      <LocalizedLabel LanguageRef="zhs">请求命令</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RequestCommand</LocalizedLabel>
+    </Label>
+    <Label Name="TaskCount">
+      <LocalizedLabel LanguageRef="zhs">任务数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TaskCount</LocalizedLabel>
+    </Label>
+    <Label Name="RequestTime">
+      <LocalizedLabel LanguageRef="zhs">处理时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RequestTime</LocalizedLabel>
+    </Label>
+    <Label Name="RequestData">
+      <LocalizedLabel LanguageRef="zhs">内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RequestData</LocalizedLabel>
+    </Label>
+    <Label Name="ServerNodeName">
+      <LocalizedLabel LanguageRef="zhs">服务节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ServerNodeName</LocalizedLabel>
+    </Label>
+    
+    <Label Name="DistributionNode">
+      <LocalizedLabel LanguageRef="zhs">分发管理节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DistributionNode</LocalizedLabel>
+    </Label>
+    <Label Name="DistributionNode">
+      <LocalizedLabel LanguageRef="zhs">分发管理节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DistributionNode</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

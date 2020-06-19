@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConsoleRole" IsWeb="false">
+    <Label Name="Administrators">
+      <LocalizedLabel LanguageRef="zhs">管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Administrator</LocalizedLabel>
+    </Label>
+    <Label Name="Developers">
+      <LocalizedLabel LanguageRef="zhs">开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Developer</LocalizedLabel>
+    </Label>
+    <Label Name="Customers">
+      <LocalizedLabel LanguageRef="zhs">实施</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Customer</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

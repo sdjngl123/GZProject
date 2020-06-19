@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ENUMERATIONCATEGORYModel" IsWeb="true">
+    <Label Name="ENUMERATIONCATEGORYHeader">
+      <LocalizedLabel LanguageRef="zhs">值列表类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list category</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMERATIONCATEGORYCaption">
+      <LocalizedLabel LanguageRef="zhs">值列表类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list category</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LinkType Name="FAVORITELINK" Extend="LINK" LogicClass="LinkObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="FAVORITELINK" SplitValidateUnique="false" IsGenerateViceTable="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="true" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="FAVORITELINK_PEID_INDEX" TableIndex="FAVORITELINK_PEID_INDEX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="FAVORITELINK_CEID_INDEX" TableIndex="FAVORITELINK_CEID_INDEX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <InfoType Name="FAVORITETIME" Type="DateTimeValue" DataType="LONG" Column="FAVORITETIME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="IMPORTANT" Type="DefaultObjectValue" DataType="BOOL" Column="IMPORTANT" PrimaryKeyOrder="0" DefaultValue="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="IMPORTANTICON" Type="DefaultObjectValue" DataType="STRING100" Column="IMPORTANTICON" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="PETYPE" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CETYPE" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="LCREATEUID" Type="SingleUserValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="" />
+    <LinkedTypes ParentType="FAVORITE" ChildType="FAVORITEFOLDER" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+    <LinkedTypes ParentType="FAVORITEFOLDER" ChildType="FAVORITEFOLDER" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+  </LinkType>
+</root>

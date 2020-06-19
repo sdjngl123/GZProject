@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryMachineQuery" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="AddLinkTitle">
+      <LocalizedLabel LanguageRef="zhs">请选择与当前属性关联的模型属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select model attribute associated with the current attribute</LocalizedLabel>
+    </Label>
+    <Label Name="POMClass">
+      <LocalizedLabel LanguageRef="zhs">模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="Attribute">
+      <LocalizedLabel LanguageRef="zhs">属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute</LocalizedLabel>
+    </Label>
+    <Label Name="POMClassRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt;maximum length is 100 &lt;/br&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand the query criteria</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide the query criteria</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

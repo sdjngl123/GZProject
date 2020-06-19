@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="AcademicRecordBachelor">
+      <LocalizedLabel LanguageRef="zhs">学士</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bachelor </LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordDoctor">
+      <LocalizedLabel LanguageRef="zhs">博士</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ph. D.</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordMaster">
+      <LocalizedLabel LanguageRef="zhs">硕士</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Master</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordOther">
+      <LocalizedLabel LanguageRef="zhs">其它</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleConditionOperatorAND">
+      <LocalizedLabel LanguageRef="zhs">AND</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AND</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleConditionOperatorOR">
+      <LocalizedLabel LanguageRef="zhs">OR</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OR</LocalizedLabel>
+    </Label>
+    <Label Name="GenderFemale">
+      <LocalizedLabel LanguageRef="zhs">女</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Female</LocalizedLabel>
+    </Label>
+    <Label Name="GenderMale">
+      <LocalizedLabel LanguageRef="zhs">男</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Male</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageModeDefaultHomePage">
+      <LocalizedLabel LanguageRef="zhs">默认主页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default home page</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageModeClassicHomePage">
+      <LocalizedLabel LanguageRef="zhs">经典模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Classic mode</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageModeDesktopHomePage">
+      <LocalizedLabel LanguageRef="zhs">桌面模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Desktop mode</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageModeOriginalityHomePage">
+      <LocalizedLabel LanguageRef="zhs">创意模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Creative mode</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageModeSmartHomePage">
+      <LocalizedLabel LanguageRef="zhs">精简模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Easy mode</LocalizedLabel>
+    </Label>
+    <Label Name="HomePageModeStandardHomePage">
+      <LocalizedLabel LanguageRef="zhs">标准模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Standard mode</LocalizedLabel>
+    </Label>
+    <Label Name="MessageStateRead">
+      <LocalizedLabel LanguageRef="zhs">已读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Read</LocalizedLabel>
+    </Label>
+    <Label Name="MessageStateUnread">
+      <LocalizedLabel LanguageRef="zhs">未读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unread</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryControlTypeTree">
+      <LocalizedLabel LanguageRef="zhs">树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryControlTypeList">
+      <LocalizedLabel LanguageRef="zhs">列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryControlTypeTreeList">
+      <LocalizedLabel LanguageRef="zhs">树和列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree and list</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeCommon">
+      <LocalizedLabel LanguageRef="zhs">通用操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General operation</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeLogin">
+      <LocalizedLabel LanguageRef="zhs">登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log in</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeLogout">
+      <LocalizedLabel LanguageRef="zhs">注销</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log off</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeTransferOwnership">
+      <LocalizedLabel LanguageRef="zhs">转交所有权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer ownership</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeCreate">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeEdit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeBrowse">
+      <LocalizedLabel LanguageRef="zhs">浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browse</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeFavorite">
+      <LocalizedLabel LanguageRef="zhs">收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeDelete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeDeleteAll">
+      <LocalizedLabel LanguageRef="zhs">删除所有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete all</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeAdd">
+      <LocalizedLabel LanguageRef="zhs">添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeRemove">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeSaveAs">
+      <LocalizedLabel LanguageRef="zhs">另存为</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save As</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypePasteCopy">
+      <LocalizedLabel LanguageRef="zhs">粘贴复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste and Copy</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeAgent">
+      <LocalizedLabel LanguageRef="zhs">出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business travel agents</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeSetPermissionByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程中设置权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Setting permissions in the process</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeModulePermission">
+      <LocalizedLabel LanguageRef="zhs">功能授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Function authorization</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypePermission">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeEmend">
+      <LocalizedLabel LanguageRef="zhs">修订</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeImport">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import</LocalizedLabel>
+    </Label>
+    <Label Name="PromptTypeNORMAL">
+      <LocalizedLabel LanguageRef="zhs">普通提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Generic prompt</LocalizedLabel>
+    </Label>
+    <Label Name="PromptTypeCONFIRM">
+      <LocalizedLabel LanguageRef="zhs">询问提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ask for tips</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshList">
+      <LocalizedLabel LanguageRef="zhs">刷新列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the list</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshEditList">
+      <LocalizedLabel LanguageRef="zhs">刷新可编辑列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the editable list</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshFilterList">
+      <LocalizedLabel LanguageRef="zhs">刷新条件列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the filter list</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentNode">
+      <LocalizedLabel LanguageRef="zhs">刷新当前节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current node</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentNodeAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新当前节点和Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current node and  tab</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentStruct">
+      <LocalizedLabel LanguageRef="zhs">刷新当前结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh thecurrent structure</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentAndStruct">
+      <LocalizedLabel LanguageRef="zhs">刷新当前和结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current structure</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentStructAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新当前结构和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current atructure and tab page</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentAndStructAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新当前、结构和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current, structure, and the tab page</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshParentStruct">
+      <LocalizedLabel LanguageRef="zhs">刷新父级结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh theparent structure</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshParentAndStruct">
+      <LocalizedLabel LanguageRef="zhs">刷新父级和结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the parent and structure</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshParentStructAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新父级结构和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the parent structure and tab page</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshParentAndStructAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新父级、结构和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the parent, structure, and tab page</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshRootStruct">
+      <LocalizedLabel LanguageRef="zhs">刷新根结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the root structure</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshRootStructAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新根节点结构和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the root node structure and tab page</LocalizedLabel>
+    </Label>
+
+    <Label Name="RefreshTypeRefreshCurrentStructAndRootCountAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新当前结构、根节点数量和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current structure,root count and tab page</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshParentStructAndRootCountAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新父级结构、根节点数量和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the parent structure,root count and tab page</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshCurrentCountAndTab">
+      <LocalizedLabel LanguageRef="zhs">刷新当前节点数量和Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current count and tab page</LocalizedLabel>
+    </Label>
+
+
+    <Label Name="RefreshTypeRefreshSelectTab">
+      <LocalizedLabel LanguageRef="zhs">刷新当前Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the current tab</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshQuickNav">
+      <LocalizedLabel LanguageRef="zhs">刷新快捷导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the quick navigation</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeRefreshObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">刷新对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh the object viewer</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeDeleteObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">删除对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete the object viewer</LocalizedLabel>
+    </Label>
+    <Label Name="Themecupertino">
+      <LocalizedLabel LanguageRef="zhs">蓝色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Blue</LocalizedLabel>
+    </Label>
+    <Label Name="Themesmoothness">
+      <LocalizedLabel LanguageRef="zhs">灰色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Gray</LocalizedLabel>
+    </Label>
+    <Label Name="Themesouthstreet">
+      <LocalizedLabel LanguageRef="zhs">绿色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Green</LocalizedLabel>
+    </Label>
+    <Label Name="TimeZone+00:00">
+      <LocalizedLabel LanguageRef="zhs">(GMT +00:00) 英国</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">(GMT +00.00) UK</LocalizedLabel>
+    </Label>
+    <Label Name="TimeZone+08:00">
+      <LocalizedLabel LanguageRef="zhs">(GMT +08:00) 中国</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">(GMT +08.00) China</LocalizedLabel>
+    </Label>
+    <Label Name="TimeZone-05:00">
+      <LocalizedLabel LanguageRef="zhs">(GMT -05:00) 美国</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">(GMT -05.00) USA</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowMessageCURRENTUSER">
+      <LocalizedLabel LanguageRef="zhs">执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executor</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowMessagePROMOTER">
+      <LocalizedLabel LanguageRef="zhs">发起人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Originator</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowTemplateStateTRUE">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowTemplateStateFALSE">
+      <LocalizedLabel LanguageRef="zhs">禁用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Disable</LocalizedLabel>
+    </Label>
+    <Label Name="ModelFieldInheritInnate">
+      <LocalizedLabel LanguageRef="zhs">固有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inherent</LocalizedLabel>
+    </Label>
+    <Label Name="ModelFieldInheritShow">
+      <LocalizedLabel LanguageRef="zhs">显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display</LocalizedLabel>
+    </Label>
+    <Label Name="ModelFieldInheritHidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide</LocalizedLabel>
+    </Label>
+    <Label Name="ModelExtendFieldInheritInnate">
+      <LocalizedLabel LanguageRef="zhs">固有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inherent</LocalizedLabel>
+    </Label>
+    <Label Name="ModelExtendFieldInheritInherit">
+      <LocalizedLabel LanguageRef="zhs">继承</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inheritance</LocalizedLabel>
+    </Label>
+    <Label Name="ModelExtendFieldInheritShow">
+      <LocalizedLabel LanguageRef="zhs">显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display</LocalizedLabel>
+    </Label>
+    <Label Name="ModelExtendFieldInheritHidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide</LocalizedLabel>
+    </Label>
+    <Label Name="ModelExtendFieldOverrideLevelMust">
+      <LocalizedLabel LanguageRef="zhs">必有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Must</LocalizedLabel>
+    </Label>
+    <Label Name="ModelExtendFieldOverrideLevelIgnore">
+      <LocalizedLabel LanguageRef="zhs">忽略</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore</LocalizedLabel>
+    </Label>
+    <Label Name="DocumentTypeClassifyCommonDocument">
+      <LocalizedLabel LanguageRef="zhs">一般文档</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General document</LocalizedLabel>
+    </Label>
+    <Label Name="YesOrNo0">
+      <LocalizedLabel LanguageRef="zhs">否</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No</LocalizedLabel>
+    </Label>
+    <Label Name="YesOrNo1">
+      <LocalizedLabel LanguageRef="zhs">是</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Yes</LocalizedLabel>
+    </Label>
+    <Label Name="ViewToolAutoVue">
+      <LocalizedLabel LanguageRef="zhs">AutoVue浏览器（19.2；20.0）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AutoVue browser (19.2; 20.0)</LocalizedLabel>
+    </Label>
+    <Label Name="ViewToolCAXA">
+      <LocalizedLabel LanguageRef="zhs">CAXA浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CAXA browser</LocalizedLabel>
+    </Label>
+    <Label Name="ViewToolLightWeight">
+      <LocalizedLabel LanguageRef="zhs">轻量化浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lightweight browser</LocalizedLabel>
+    </Label>
+    <Label Name="ViewToolSView2D">
+      <LocalizedLabel LanguageRef="zhs">SView2D浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SView2D browser</LocalizedLabel>
+    </Label>
+    <Label Name="ViewToolSView3D">
+      <LocalizedLabel LanguageRef="zhs">SView3D浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SView3D browser</LocalizedLabel>
+    </Label>
+    <Label Name="IndividualUserView">
+      <LocalizedLabel LanguageRef="zhs">用户视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User view</LocalizedLabel>
+    </Label>
+    <Label Name="LovTypeSystem">
+      <LocalizedLabel LanguageRef="zhs">系统值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System values list</LocalizedLabel>
+    </Label>
+    <Label Name="LovTypeCustom">
+      <LocalizedLabel LanguageRef="zhs">自定义值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom Values List</LocalizedLabel>
+    </Label>
+    <Label Name="LovShowModeExhaustion">
+      <LocalizedLabel LanguageRef="zhs">穷举</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exhaustive</LocalizedLabel>
+    </Label>
+    <Label Name="LovShowModePrompt">
+      <LocalizedLabel LanguageRef="zhs">提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prompt</LocalizedLabel>
+    </Label>
+    <Label Name="FieldTypedate">
+      <LocalizedLabel LanguageRef="zhs">日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Date</LocalizedLabel>
+    </Label>
+    <Label Name="FieldTypedatetime">
+      <LocalizedLabel LanguageRef="zhs">日期时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Date time</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionModeManual">
+      <LocalizedLabel LanguageRef="zhs">手动设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Manual settings</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionModeSetByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程中设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Settings in the process</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionModeSetActorByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程中设置执行人权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the performer permissions in the process</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionModeSetAgentByWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程中设置代理人权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the agent permissions in the process</LocalizedLabel>
+    </Label>
+    <Label Name="MenuSizeBig">
+      <LocalizedLabel LanguageRef="zhs">大</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Large</LocalizedLabel>
+    </Label>
+    <Label Name="MenuSizeSmall">
+      <LocalizedLabel LanguageRef="zhs">小</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Small</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTempleteQUERY-PAGE-TOP">
+      <LocalizedLabel LanguageRef="zhs">上下布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Up- and -down layout</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTempleteQUERY-PAGE-LEFT">
+      <LocalizedLabel LanguageRef="zhs">左右布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Left- and -right layout</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTextAlignLeft">
+      <LocalizedLabel LanguageRef="zhs">左对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Left</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTextAlignRight">
+      <LocalizedLabel LanguageRef="zhs">右对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Align Right</LocalizedLabel>
+    </Label>
+    <Label Name="QueryTextAlignCenter">
+      <LocalizedLabel LanguageRef="zhs">居中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Center</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordPrimary">
+      <LocalizedLabel LanguageRef="zhs">小学</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Primary school</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordJunior">
+      <LocalizedLabel LanguageRef="zhs">初中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Junior middle school</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordSenior">
+      <LocalizedLabel LanguageRef="zhs">高中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">High school</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordJuniorCollege">
+      <LocalizedLabel LanguageRef="zhs">专科</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Junior college</LocalizedLabel>
+    </Label>
+    <Label Name="AcademicRecordRegularCollege">
+      <LocalizedLabel LanguageRef="zhs">本科</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Undergraduate course</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryControlTypeListTree">
+      <LocalizedLabel LanguageRef="zhs">列表和树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List and tree</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleTypeWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleTypeStage">
+      <LocalizedLabel LanguageRef="zhs">阶段生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stage</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleState1">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleState0">
+      <LocalizedLabel LanguageRef="zhs">禁用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogClassifyThreeRole">
+      <LocalizedLabel LanguageRef="zhs">三员操作日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRole</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogClassifyNormal">
+      <LocalizedLabel LanguageRef="zhs">一般操作日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Normal</LocalizedLabel>
+    </Label>
+
+  </Context>
+</DictionarySerializer>

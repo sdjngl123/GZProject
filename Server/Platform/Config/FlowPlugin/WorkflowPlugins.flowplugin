@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root > 
+  <Plugin Name ="SendFlowMessage" PageName="SendWorkflowMessage"  PluginType ="BusinessPlugin" UseByType="AuditNode;Workflow" DefaultBeforeExec="true" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.SendFlowMessage" />
+  <Plugin Name ="ChangeState" PageName="ChangeStatePlugin" TemplateType="GeneralWorkflow" PluginType ="BusinessPlugin" UseByType="BusinessNode" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.ChangeState" />
+  <Plugin Name ="ChangeStageState" PageName="ChangeStageStatePlugin" TemplateType="GeneralWorkflow" PluginType ="BusinessPlugin" UseByType="BusinessNode" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.ChangeStageState" />
+  <Plugin Name ="WorkflowPagePlugin" PageName="WorkflowPagePlugin"  PluginType ="PagePlugin" UseByType="Workflow" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.PagePlugin.PagePluginPanel" />
+  <Plugin Name ="TaskPagePlugin" PageName="WorkflowPagePlugin"  PluginType ="PagePlugin" UseByType="AuditNode" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.PagePlugin.PagePluginPanel" />
+</root>

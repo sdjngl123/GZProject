@@ -1,0 +1,11 @@
+﻿{
+	var c = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(c.id!=''){
+		c.SetChecked(data.[INFONAME]);
+	}
+
+	var d = pageEvent.o.GetControl('[INFONAME]_Label');
+	if(d!=undefined){
+		d.SetText('');
+	}
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectedLineInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">条件信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition information</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制选中行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy selected row</LocalizedLabel>
+    </Label>
+    <Label Name="ParameterType">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="Condition">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="Operator">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="Left">
+      <LocalizedLabel LanguageRef="zhs">(</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">(</LocalizedLabel>
+    </Label>
+    <Label Name="Right">
+      <LocalizedLabel LanguageRef="zhs">)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">)</LocalizedLabel>
+    </Label>
+    <Label Name="Validate">
+      <LocalizedLabel LanguageRef="zhs">验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

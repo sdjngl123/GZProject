@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MenuItem Name="Guide_ListManagement_ReplaceKeyMenu">
+    <WebAction Name="CreateItem" ModuleName="[Module]" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="创建一个新对象">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="[ObjectType]" SelectType="" />
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="[ObjectType]" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="EditItem" ModuleName="[Module]" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="编辑选中对象">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="DeleteItem" ModuleName="[Module]" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" LoadMenuCtrlData="" TemplateDescription="删除选中对象，支持删除多个">
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="StartWorkflow" ModuleName="[Module]" LabelName="Common.StartWorkflow" Image="~/Platform/Image/Workflow/StartWorkflow.png" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="对选中对象进行发起流程">
+      <WebMethod SelectID="[List_EID]" PageName="StartWorkflow" IsPopup="true" IsModal="true">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessage PromptLabel="StartWorkflow.WorkflowStartSuccess" PromptType="NORMAL" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" SelectType="" />
+    </WebAction>
+    <WebAction Name="ItemObjectPermission" ModuleName="[Module]" LabelName="Common.ObjectPermission" Image="~/Platform/Image/Common/Security.ico" ParentWebAtionName="" RefreshType="" TemplateDescription="为对象和人员赋予临时性的授权">
+      <WebMethod SelectID="[List_EID]" PageName="ObjectPermission" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="PERMISSION" ActionType="AUTO" />
+    </WebAction>
+    <WebAction Name="ItemObjectMessage" ModuleName="[Module]" LabelName="Common.ObjectMessage" Image="~/Platform/Image/Common/Security.ico" ParentWebAtionName="" RefreshType="" TemplateDescription="为用户、角色、组、组角色、对象创建人、对象拥有人、对象拥有组等，订阅对象操作消息">
+      <WebMethod SelectID="[List_EID]" PageName="ObjectMessage" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="PERMISSION" ActionType="AUTO" />
+    </WebAction>
+    <WebAction Name="ChangeItemOwnUser" ModuleName="[Module]" LabelName="Guide_ListManagement_ReplaceKey.ChangeItemOwnUser" Image="~/Platform/Image/Organization/user_key.png" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="更改对象的拥有人">
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true" IsModal="true">
+        <Para Name="ItemName" Value="GroupToRoleToUser" />
+        <Para Name="LoadAndSelectType" Value="SingleLevel_SingleSelect" />
+        <Para Name="Title" Value="MenuItems.ChangeItemOwnUser" />
+        <Para Name="Size" Value="500*600" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.ObjectService.ChangeObjectOwnUser" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+        <Para Name="OwnUserID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="ChangeItemOwnGroup" ModuleName="[Module]" LabelName="Guide_ListManagement_ReplaceKey.ChangeItemOwnGroup" Image="~/Platform/Image/Organization/group_key.png" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="更改对象的拥有组">
+      <WebMethod PageName="ListCommonQuery" IsPopup="true" IsModal="true">
+        <Para Name="ItemName" Value="SingleGroupTreeListQuery" />
+        <Para Name="Title" Value="MenuItems.ChangeItemOwnGroup" />
+        <Para Name="Size" Value="960*600" />
+        <Para Name="CustomQueryFilter" Value="" />
+        <Para Name="CustomQueryEntityFilter" Value="" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.ObjectService.ChangeObjectOwnGroup" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+        <Para Name="OwnGroupID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" SelectType="" />
+    </WebAction>
+
+    <WebAction Name="ItemCopy" ModuleName="[Module]" LabelName="Common.Copy" Image="~/Platform/Image/Common/copy.png" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" LoadMenuCtrlData="" TemplateDescription="复制选中对象，供其他模块粘贴使用">
+      <JSMethod Name="InforCenter_Platform_ClipBoard_Copy" SelectID="[List_EID]">
+        <Para Name="EID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="AUTO" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="AddQuickNavObject" ModuleName="[Module]" LabelName="Guide_ListManagement_ReplaceKey.AddQuickNavObject" Image="~/Platform/Image/Common/star.png" ParentWebAtionName="" RefreshType="" TemplateDescription="把选中对象添加到收藏栏中">
+      <JSMethod Name="InforCenter_Platform_QuickNav_Add" SelectID="" >
+        <Para Name="Content" Value="[List_EID]" />
+        <Para Name="Text" Value="[List_ENAME]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="Guide_ListManagement_ReplaceKeyRightMenu">
+    <WebAction Name="CreateItem" ModuleName="[Module]" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="创建一个新对象">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="[ObjectType]" SelectType="" />
+      <WebMethod SelectID="" PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="[ObjectType]" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="EditItem" ModuleName="[Module]" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="编辑选中对象">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+    </WebAction>
+    <WebAction Name="DeleteItem" ModuleName="[Module]" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" LoadMenuCtrlData="" TemplateDescription="删除选中对象，支持删除多个">
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="StartWorkflow" ModuleName="[Module]" LabelName="Common.StartWorkflow" Image="~/Platform/Image/Workflow/StartWorkflow.png" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="对选中对象进行发起流程">
+      <WebMethod SelectID="[List_EID]" PageName="StartWorkflow" IsPopup="true" IsModal="false">
+        <Para Name="ObjectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessage PromptLabel="StartWorkflow.WorkflowStartSuccess" PromptType="NORMAL" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" SelectType="" />
+    </WebAction>
+    <WebAction Name="ItemObjectPermission" ModuleName="[Module]" LabelName="Common.ObjectPermission" Image="~/Platform/Image/Common/Security.ico" ParentWebAtionName="" RefreshType="" TemplateDescription="为对象和人员赋予临时性的授权">
+      <WebMethod SelectID="[List_EID]" PageName="ObjectPermission" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="PERMISSION" ActionType="AUTO" />
+    </WebAction>
+    <WebAction Name="ItemObjectMessage" ModuleName="[Module]" LabelName="Common.ObjectMessage" Image="~/Platform/Image/Common/Security.ico" ParentWebAtionName="" RefreshType="" TemplateDescription="为用户、角色、组、组角色、对象创建人、对象拥有人、对象拥有组等，订阅对象操作消息">
+      <WebMethod SelectID="[List_EID]" PageName="ObjectMessage" IsPopup="true" IsModal="true" />
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="PERMISSION" ActionType="AUTO" />
+    </WebAction>
+    <WebAction Name="ChangeItemOwnUser" ModuleName="[Module]" LabelName="Guide_ListManagement_ReplaceKey.ChangeItemOwnUser" Image="~/Platform/Image/Organization/user_key.png" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="更改对象的拥有人">
+      <WebMethod PageName="TreeCommonQuery" IsPopup="true" IsModal="true">
+        <Para Name="ItemName" Value="GroupToRoleToUser" />
+        <Para Name="LoadAndSelectType" Value="SingleLevel_SingleSelect" />
+        <Para Name="Title" Value="MenuItems.ChangeItemOwnUser" />
+        <Para Name="Size" Value="500*600" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.ObjectService.ChangeObjectOwnUser" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+        <Para Name="OwnUserID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="ChangeItemOwnGroup" ModuleName="[Module]" LabelName="Guide_ListManagement_ReplaceKey.ChangeItemOwnGroup" Image="~/Platform/Image/Organization/group_key.png" ParentWebAtionName="" RefreshType="UPDATELIST" TemplateDescription="更改对象的拥有组">
+      <WebMethod PageName="ListCommonQuery" IsPopup="true" IsModal="true">
+        <Para Name="ItemName" Value="SingleGroupTreeListQuery" />
+        <Para Name="Title" Value="MenuItems.ChangeItemOwnGroup" />
+        <Para Name="Size" Value="960*600" />
+        <Para Name="CustomQueryFilter" Value="" />
+        <Para Name="CustomQueryEntityFilter" Value="" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.ObjectService.ChangeObjectOwnGroup" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+        <Para Name="OwnGroupID" Value="[ReturnValue_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" SelectType="" />
+    </WebAction>
+
+    <WebAction Name="ItemCopy" ModuleName="[Module]" LabelName="Common.Copy" Image="~/Platform/Image/Common/copy.png" ParentWebAtionName="" CtrlType="Button" RefreshType="UPDATELIST" LoadMenuCtrlData="" TemplateDescription="复制选中对象，供其他模块粘贴使用">
+      <JSMethod Name="InforCenter_Platform_ClipBoard_Copy" SelectID="[List_EID]">
+        <Para Name="EID" Value="[List_EID]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="AUTO" ActionType="AUTO" SelectType="" />
+    </WebAction>
+    <WebAction Name="AddQuickNavObject" ModuleName="[Module]" LabelName="Guide_ListManagement_ReplaceKey.AddQuickNavObject" Image="~/Platform/Image/Common/star.png" ParentWebAtionName="" RefreshType="" TemplateDescription="把选中对象添加到收藏栏中">
+      <JSMethod Name="InforCenter_Platform_QuickNav_Add" SelectID="" >
+        <Para Name="Content" Value="[List_EID]" />
+        <Para Name="Text" Value="[List_ENAME]" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+    </WebAction>
+  </MenuItem>
+</root>

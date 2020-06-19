@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TreeManagement Name="FSMANAGEROOTLINKTree" MenuName="" 
+                  TreeViewName="FSMANAGEROOTTreeView" ShowTreeQuery="false"
+                  TreeAllDataService="Hoteam.InforCenter.FSService.GetFSManagementTreeAllNode"
+                  IsHiddenTabs="false" IsLoadAllData="true">
+    <ObjectType Name="FSMANAGEROOT" MenuName="" PageLinksName="FileServerNodeLinks" Hidden="false" />
+    <ObjectType Name="DISTRIBUTIONNODETYPE" MenuName="FSMANAGEROOTLINKTreeChildMenu" PageLinksName="FSMANAGEROOTLINKLinks" Hidden="false" />
+    <ObjectType Name="FSNODETYPE" MenuName="" PageLinksName="FSNODETYPELinks" Hidden="false" />
+  </TreeManagement>
+</root>

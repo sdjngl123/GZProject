@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="AllSettingsLinks">
+    <PageLink Name="CompanySettingsTab" PageName="TreeManagement">
+      <Para Name="ItemName" Value="CompanySettingsTreeManagement"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="CompanySystemSettingsLinks">
+    <PageLink Name="SystemSettingsLink" PageName="ListManagement">
+      <Para Name="ItemName" Value="CompanySystemSettingsList"/>
+    </PageLink>
+  </PageLinks>
+</root>

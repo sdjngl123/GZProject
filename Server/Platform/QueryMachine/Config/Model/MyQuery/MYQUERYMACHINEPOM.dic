@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MYQUERYMACHINEPOMModel" IsWeb="true">
+    <Label Name="MYQUERYMACHINEPOMHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义查询关联POM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query associated POM</LocalizedLabel>
+    </Label>
+    <Label Name="MYQUERYMACHINEPOMCaption">
+      <LocalizedLabel LanguageRef="zhs">自定义查询关联POM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query associated POM</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

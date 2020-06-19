@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Plugins" IsWeb="true">
+    <Label Name="InstantMessage">
+      <LocalizedLabel LanguageRef="zhs">即时消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Instant message</LocalizedLabel>
+    </Label>
+    <Label Name="Email">
+      <LocalizedLabel LanguageRef="zhs">邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail</LocalizedLabel>
+    </Label>
+    <Label Name="RTX">
+      <LocalizedLabel LanguageRef="zhs">腾讯通</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RTX</LocalizedLabel>
+    </Label>
+    <Label Name="WeChat">
+      <LocalizedLabel LanguageRef="zhs">微信</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WeChat</LocalizedLabel>
+    </Label>
+    <Label Name="QYWeiXin">
+      <LocalizedLabel LanguageRef="zhs">企业微信</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QYWeiXin</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWACTORINFOModel" IsWeb="true">
+    <Label Name="WORKFLOWACTORINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">流程执行人信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process executor information</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWACTORINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">流程执行人信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process executor information</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process ID</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDCaption">
+      <LocalizedLabel LanguageRef="zhs">流程ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process ID</LocalizedLabel>
+    </Label>
+    <Label Name="TASKNODEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程任务节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task node</LocalizedLabel>
+    </Label>
+    <Label Name="TASKNODEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">流程任务节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task node</LocalizedLabel>
+    </Label>
+    <Label Name="ACTORINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executor</LocalizedLabel>
+    </Label>
+    <Label Name="ACTORINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executor</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

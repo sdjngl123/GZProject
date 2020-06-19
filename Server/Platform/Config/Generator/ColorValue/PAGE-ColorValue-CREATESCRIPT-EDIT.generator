@@ -1,0 +1,8 @@
+﻿{
+	var c = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(c.id!=''){
+		if(data.[INFONAME]){
+			c.SetColor(data.[INFONAME]);
+		}
+	}
+}

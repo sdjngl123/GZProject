@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="OBJECTPERMISSION-EDIT">
+  <Settings Key="height" Value="88"/>
+  <Settings Key="width" Value="156"/>
+  <Settings Key="title" Value="OBJECTPERMISSION-EDIT.OBJECTPERMISSIONHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+var o = pageEvent.o.GetControl('PERMISSIONACTORVALUE_Value');
+if(o.id!=''){
+o.SetValue(data.PERMISSIONACTORVALUE);
+o.SetText(data.PERMISSIONACTORVALUE_DisplayValue);
+}
+}
+{
+var o = pageEvent.o.GetControl('PERMISSIONACTIONVALUE_Value');
+if(o.id!=''){
+o.SetValue(data.PERMISSIONACTIONVALUE);
+o.SetText(data.PERMISSIONACTIONVALUE_DisplayValue);
+}
+}
+{
+	var c = pageEvent.o.GetControl('PERMISSIONEXPIREVALUE_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.PERMISSIONEXPIREVALUE);
+	}
+}
+  var functionName = 'InforCenter_OBJECTPERMISSION_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+	var c = pageEvent.o.GetControl('PERMISSIONACTORVALUE_Value');
+	if(c.id!=''){
+	if(c.Check() == false) bCheck = false;
+	data.PERMISSIONACTORVALUE = c.GetValue();
+	}
+}{
+	var c = pageEvent.o.GetControl('PERMISSIONACTIONVALUE_Value');
+	if(c.id!=''){
+	if(c.Check() == false) bCheck = false;
+	data.PERMISSIONACTIONVALUE = c.GetValue();
+	}
+}{
+var c = pageEvent.o.GetControl('PERMISSIONEXPIREVALUE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.PERMISSIONEXPIREVALUE = c.GetTicksByDateTime();
+}};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_OBJECTPERMISSION_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="PERMISSIONACTORVALUE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="PERMISSIONACTIONVALUE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERMISSIONACTORVALUE" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="PERMISSIONACTORVALUE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PERMISSIONACTORVALUE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERMISSIONACTORVALUE_Label" ParentID="PERMISSIONACTORVALUE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="OBJECTPERMISSION-EDIT.PERMISSIONACTORVALUEHeader" />
+</PageControl><PageControl ControlID="PERMISSIONACTORVALUE_Value" ParentID="PERMISSIONACTORVALUE" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ActionRulePermission_ShowPermissionActorValuePage(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnFocus" Script=""/>
+  </PageHandlers>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="PERMISSIONACTIONVALUE" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="PERMISSIONACTIONVALUE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PERMISSIONACTIONVALUE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERMISSIONACTIONVALUE_Label" ParentID="PERMISSIONACTIONVALUE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="OBJECTPERMISSION-EDIT.PERMISSIONACTIONVALUEHeader" />
+</PageControl><PageControl ControlID="PERMISSIONACTIONVALUE_Value" ParentID="PERMISSIONACTIONVALUE" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ActionRulePermission_ShowPermissionActionValuePage(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnFocus" Script=""/>
+  </PageHandlers>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="PERMISSIONEXPIREVALUE"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERMISSIONEXPIREVALUE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="PERMISSIONEXPIREVALUE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="PERMISSIONEXPIREVALUE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="PERMISSIONEXPIREVALUE_Label" ParentID="PERMISSIONEXPIREVALUE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="OBJECTPERMISSION-EDIT.PERMISSIONEXPIREVALUEHeader" />
+</PageControl><PageControl ControlID="PERMISSIONEXPIREVALUE_Value" ParentID="PERMISSIONEXPIREVALUE" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='OBJECTPERMISSION';ctrlEvent.infoName='PERMISSIONEXPIREVALUE';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="datetime"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>
+  </PageControls>
+</root>

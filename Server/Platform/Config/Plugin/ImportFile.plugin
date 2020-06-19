@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginItem Name="xls" Type="ImportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Excel.ExcelImportXls2003" />
+  <PluginItem Name="xlsx2007" Type="ImportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Excel.ExcelImportXlsx2007" />
+  <PluginItem Name="mpp2007" Type="ImportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Project.ProjectImportMpp" />
+</root>

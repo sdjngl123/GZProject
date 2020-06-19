@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYVAULTModel" IsWeb="true">
+    <Label Name="COMPANYVAULTHeader">
+      <LocalizedLabel LanguageRef="zhs">公司文档柜信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMPANYVAULT</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYVAULTCaption">
+      <LocalizedLabel LanguageRef="zhs">公司文档柜信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMPANYVAULT</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultName</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">文档柜名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultName</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTIPHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜IP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultIP</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTIPCaption">
+      <LocalizedLabel LanguageRef="zhs">文档柜IP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultIP</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTPORTHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultPort</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTPORTCaption">
+      <LocalizedLabel LanguageRef="zhs">文档柜端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultPort</LocalizedLabel>
+    </Label>
+    <Label Name="OWNCOMPANYHeader">
+      <LocalizedLabel LanguageRef="zhs">所属公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OwnCompany</LocalizedLabel>
+    </Label>
+    <Label Name="OWNCOMPANYCaption">
+      <LocalizedLabel LanguageRef="zhs">所属公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OwnCompany</LocalizedLabel>
+    </Label>
+    <Label Name="INNERIPHeader">
+      <LocalizedLabel LanguageRef="zhs">InnerIP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InnerIP</LocalizedLabel>
+    </Label>
+    <Label Name="INNERIPCaption">
+      <LocalizedLabel LanguageRef="zhs">InnerIP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InnerIP</LocalizedLabel>
+    </Label>
+    <Label Name="INNERPORTHeader">
+      <LocalizedLabel LanguageRef="zhs">InnerPort</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InnerPort</LocalizedLabel>
+    </Label>
+    <Label Name="INNERPORTCaption">
+      <LocalizedLabel LanguageRef="zhs">InnerPort</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InnerPort</LocalizedLabel>
+    </Label>
+    <Label Name="VOLUMNHeader">
+      <LocalizedLabel LanguageRef="zhs">卷</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Volumn</LocalizedLabel>
+    </Label>
+    <Label Name="VOLUMNCaption">
+      <LocalizedLabel LanguageRef="zhs">卷</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Volumn</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTTEMPLATENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultTemplateName</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTTEMPLATENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">文档柜模板名称（主要用于统计该模板使用个数，大于最大值时，不再使用该模板，不可使用文档柜名称，文档柜名称是自动生成的）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VaultTemplateName</LocalizedLabel>
+    </Label>
+    <Label Name="ISLOCALHeader">
+      <LocalizedLabel LanguageRef="zhs">是否为本地文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsLocal</LocalizedLabel>
+    </Label>
+    <Label Name="ISLOCALCaption">
+      <LocalizedLabel LanguageRef="zhs">是否为本地文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsLocal</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

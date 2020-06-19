@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="BusinessServiceUDPEnable" Value="false" ToClient="false" Description="业务服务是否开启UDP" />
+  <AppSet Key="BusinessServiceUDPPort" Value="8898" ToClient="false" Description="业务服务开启的UDP广播端口" />
+</root>

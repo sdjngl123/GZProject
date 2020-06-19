@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="DatabaseConfigBar" BaseBar="SettingBar">
+    <Item Name ="Database" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/Database.png" ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.Database.DevelopConsoleDatabaseModule"></Item>
+    <Item Name ="UpdateDatabase" IsCommonItem="true"  ImagePath="~/Persistence/Image/Console/UpdateDatabase.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass=" Hoteam.InforCenter.Persistence.DeveloperSetting.Database.UpdateDBSchemaCmd"></Item>
+    <!--<Item Name ="Export"  ImagePath="~/Persistence/Image/Console/export.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DataExport.DataExportCmd"></Item>
+    <Item Name ="Import"  ImagePath="~/Persistence/Image/Console/import.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DataImport.DataImportCmd"></Item>
+    <Item Name ="Clear"   ImagePath="~/Persistence/Image/Console/clear.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DataClear.DataClearCmd"></Item>-->
+    <Item Name ="AccountBook" IsCommonItem="false"  ImagePath="~/Persistence/Image/Console/accountbook.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.AccountBook.AccountBookCmd"></Item>
+  </ToolBar>
+
+  <ToolBar Name ="DataBaseDataConfigBar" BaseBar="SettingBar">
+    <Item Name ="Import" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/import.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DataImport.DataImportCmd"></Item>
+    <Item Name ="Export" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/export.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DataExport.DataExportCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="DataClearConfigBar" BaseBar="SettingBar">
+    <Item Name ="Clear" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/clear.png"  ItemAssembly="Hoteam.InforCenter.Persistence.DeveloperSetting" ItemClass="Hoteam.InforCenter.Persistence.DeveloperSetting.DataClear.DataClearCmd"></Item>
+  </ToolBar>
+</root>

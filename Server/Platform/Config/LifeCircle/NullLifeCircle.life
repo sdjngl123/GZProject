@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LifeCircle Name="NULL" InitState="INDESIGN" Type="Workflow">
+    <State Name="StartNode" CenterX="250" CenterY="49" />
+    <State Name="NULLSTATE" CenterX="250" CenterY="150" />
+    <State Name="EndNode" CenterX="250" CenterY="250" />
+    <Line ID="StartNodeToNULLSTATE" StartNodeID="StartNode" StartX="0" StartY="0" EndNodeID="NULLSTATE" EndX="0" EndY="0" DisplayType="0" FirstLength="0" />
+    <Line ID="NULLSTATEToEndNode" StartNodeID="NULLSTATE" StartX="0" StartY="0" EndNodeID="EndNode" EndX="0" EndY="0" DisplayType="0" FirstLength="0" />
+  </LifeCircle>
+</root>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="IFrame">
+  <Settings Key="title" Value="IFrame.Title"/>
+  <Settings Key="height" Value="100%"/>
+  <Settings Key="width" Value="100%"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_IFrame_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="IFrame_Layout" ParentID="" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="IFrame"/>
+    </PageControl>
+  </PageControls>
+</root>

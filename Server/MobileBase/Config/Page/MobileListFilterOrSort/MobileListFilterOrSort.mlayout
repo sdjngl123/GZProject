@@ -1,0 +1,6 @@
+﻿<div id="listfilterContainer">
+  <ul id="listfilter" class="listfilterPage" data-role="listview" data-inset="true" data-shadow="false"></ul>
+</div>
+<div class="btn-center">
+  <a class="ui-btn" onclick="Hoteam_InforCenter_MobileListFilterOrSort_OkClick();">确定</a>
+</div>

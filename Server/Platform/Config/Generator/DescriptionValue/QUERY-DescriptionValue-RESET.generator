@@ -1,0 +1,6 @@
+﻿{
+	var c = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+	if(c.id!=''){
+		c.SetText('');
+	}
+}

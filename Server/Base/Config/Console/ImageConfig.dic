@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ImageConfig" IsWeb="false">
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">图片配置项名称，当需要使用图标时需要填写的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the image item, the name that needs to be filled in when the icon needs to be used</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DescriptionDescription">
+      <LocalizedLabel LanguageRef="zhs">对名称的解释和描述信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Explanation and Description Information of Name</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">雪碧图的类型，16*16还是32*32</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Type of Sprite map is about 16*16 or 32*32</LocalizedLabel>
+    </Label>
+    <Label Name="XPosition">
+      <LocalizedLabel LanguageRef="zhs">X坐标位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">X Coordinate Position</LocalizedLabel>
+    </Label>
+    <Label Name="XPositionDescription">
+      <LocalizedLabel LanguageRef="zhs">雪碧图的X坐标位置，只能填写整数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The X coordinate position of Sprite map can only be filled in an integer</LocalizedLabel>
+    </Label>
+    <Label Name="YPosition">
+      <LocalizedLabel LanguageRef="zhs">Y坐标位置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Y Coordinate Position</LocalizedLabel>
+    </Label>
+    <Label Name="YPositionDescription">
+      <LocalizedLabel LanguageRef="zhs">雪碧图的Y坐标位置，只能填写整数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Y coordinate position of Sprite map can only be filled in an integer</LocalizedLabel>
+    </Label>
+    <Label Name="ImagePath">
+      <LocalizedLabel LanguageRef="zhs">图片路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture Path</LocalizedLabel>
+    </Label>
+    <Label Name="ImagePathDescription">
+      <LocalizedLabel LanguageRef="zhs">图片的路径，只能填写相对Server的路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The Picture path can only fill in the relative Server path</LocalizedLabel>
+    </Label>
+    <Label Name="CommonTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">普通图片的类型，16*16还是32*32还是其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type of the pictures is 16*16 or 32*32 or others</LocalizedLabel>
+    </Label>
+    <Label Name="CreateImageConfig">
+      <LocalizedLabel LanguageRef="zhs">创建图片配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create picture configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="CreateSpriteConfig">
+      <LocalizedLabel LanguageRef="zhs">创建雪碧图配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create Sprite map configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCommonImageConfig">
+      <LocalizedLabel LanguageRef="zhs">创建普通图片配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create normal picture configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="PathNotExist">
+      <LocalizedLabel LanguageRef="zhs">路径不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Path does not exist</LocalizedLabel>
+    </Label>
+    <Label Name="NotAllowImportConfigOnTopNode">
+      <LocalizedLabel LanguageRef="zhs">不允许在顶级节点下导入配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to import configuration items under the top node</LocalizedLabel>
+    </Label>
+    <Label Name="Theme">
+      <LocalizedLabel LanguageRef="zhs">主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subject</LocalizedLabel>
+    </Label>
+    <Label Name="ThemeDescription">
+      <LocalizedLabel LanguageRef="zhs">主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subject</LocalizedLabel>
+    </Label>
+    <Label Name="Status">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="StatusDescription">
+      <LocalizedLabel LanguageRef="zhs">图片的状态，Default（默认状态），Obvious（高亮状态），Disable（不可用状态）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture state, Default(Default state), Obvious(Highlight state), Disable(Not available state)</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

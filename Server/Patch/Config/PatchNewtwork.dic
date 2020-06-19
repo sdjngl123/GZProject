@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PatchNewtwork" IsWeb="true">
+    <Label Name="NetWorkServiceError">
+      <LocalizedLabel LanguageRef="zhs">补丁服务器没有反应，请检查网络</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The patch server does not respond, please check the network</LocalizedLabel>
+    </Label>
+    <Label Name="GetPatchServiceError">
+      <LocalizedLabel LanguageRef="zhs">获取服务时发生错误，请查看日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An error occurred while getting the service, please check the log</LocalizedLabel>
+    </Label>
+    <Label Name="GetPatchServiceDataError">
+      <LocalizedLabel LanguageRef="zhs">获取数据时发生错误：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An error occurred while fetching the data:</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

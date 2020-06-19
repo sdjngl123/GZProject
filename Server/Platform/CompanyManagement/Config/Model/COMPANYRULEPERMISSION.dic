@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYRULEPERMISSIONModel" IsWeb="true">
+    <Label Name="COMPANYRULEPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">集团规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group rule permission</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYRULEPERMISSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">集团规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group rule permission</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

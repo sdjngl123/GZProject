@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ActionEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">动作编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">动作名称,用于区分对象的不同动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action name is used to distinguish different actions of objects</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultAction">
+      <LocalizedLabel LanguageRef="zhs">默认动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default Action</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultActionDescription">
+      <LocalizedLabel LanguageRef="zhs">在规则权限中获取的对象动作列表中，如果选择的对象没有进行模型动作关联，则会取默认动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In the list of object actions acquired in the rule permissions, the default action is taken if the selected object is not associated with the model action</LocalizedLabel>
+    </Label>
+    <Label Name="DisablePermission">
+      <LocalizedLabel LanguageRef="zhs">规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DisablePermissionDescription">
+      <LocalizedLabel LanguageRef="zhs">是否使用规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsMessageAction">
+      <LocalizedLabel LanguageRef="zhs">订阅消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsMessageActionDescription">
+      <LocalizedLabel LanguageRef="zhs">是否应用订阅消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Order">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="OrderDescription">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="UseBy">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UseBy</LocalizedLabel>
+    </Label>
+    <Label Name="UseByDescription">
+      <LocalizedLabel LanguageRef="zhs">Create创建、Link关系、Company公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

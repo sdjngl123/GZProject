@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="BusinessModelEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">业务建模信息编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business modeling information editing window</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectInfo">
+      <LocalizedLabel LanguageRef="zhs">对象属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Properties</LocalizedLabel>
+    </Label>
+    <Label Name="NewObject">
+      <LocalizedLabel LanguageRef="zhs">新建业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Business Modeling</LocalizedLabel>
+    </Label>
+    <Label Name="OwnInfoList">
+      <LocalizedLabel LanguageRef="zhs">扩展属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended property</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKeySetting">
+      <LocalizedLabel LanguageRef="zhs">外键设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreign Key Settings</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendList">
+      <LocalizedLabel LanguageRef="zhs">继承属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inheritance Properties</LocalizedLabel>
+    </Label>
+    <Label Name="NotNull">
+      <LocalizedLabel LanguageRef="zhs">不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null, please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="NotUnderlines">
+      <LocalizedLabel LanguageRef="zhs">不能输入下划线，请重新输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Underline cannot be entered, please enter again!</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIndex">
+      <LocalizedLabel LanguageRef="zhs">对象索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Index</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIndexName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIndexNameDescription">
+      <LocalizedLabel LanguageRef="zhs">对象索引的名称，系统会在数据库创建相同名称的索引。如FLOW_CREATEOR_INDEX</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the object index that creates an index of the same name in the database, such as FLOW_CREATEOR_INDEX</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIndexList">
+      <LocalizedLabel LanguageRef="zhs">索引列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Index List</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIndexInfoList">
+      <LocalizedLabel LanguageRef="zhs">索引明细</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Index Details</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectIndexInfoListDescription">
+      <LocalizedLabel LanguageRef="zhs">该索引包含哪些字段及其按照什么顺序排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">What fields are included in the index and what sort order are sorted</LocalizedLabel>
+    </Label>
+    <Label Name="IncludeColumn">
+      <LocalizedLabel LanguageRef="zhs">包含性列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Include Sex Column</LocalizedLabel>
+    </Label>
+    <Label Name="IncludeColumnDescription">
+      <LocalizedLabel LanguageRef="zhs">该索引包含哪些其他表列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">What other table columns are included in the index</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectRelationList">
+      <LocalizedLabel LanguageRef="zhs">对象关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Relation</LocalizedLabel>
+    </Label>
+    <Label Name="labLanguage">
+      <LocalizedLabel LanguageRef="zhs">本地化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Localization</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyInfo">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="labSplitCheckU">
+      <LocalizedLabel LanguageRef="zhs">分别进行唯一性验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Uniqueness verification is carried out separately</LocalizedLabel>
+    </Label>
+    <Label Name="labSplitCheckUDescription">
+      <LocalizedLabel LanguageRef="zhs">当字段需要唯一性验证时，是字段联合验证重复还是单独验证重复，true为分别检测各字段是否重复，false为联合检测字段是否重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the field requires uniqueness verification, it is a combination of field validation or individual validation, true is to detect whethereach field is repeated, false is to check whether the joint detection field is repeated or not</LocalizedLabel>
+    </Label>
+    <Label Name="chkSplitCheckU">
+      <LocalizedLabel LanguageRef="zhs">分别检测各字段是否重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detect whether each field is repeated or not respectively </LocalizedLabel>
+    </Label>
+    <Label Name="Extend">
+      <LocalizedLabel LanguageRef="zhs">派生自</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Derived From</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendDescription">
+      <LocalizedLabel LanguageRef="zhs">其上级父对象，如果是实体对象，应派生自基类（ENTITY）及其子对象，如果是关系对象，应派生自关系对象基类（LINK）及其子类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For its superior parent object, if it is an entity object, it should be derived from the base class (ENTITY) and its child objects, if it is a relational object, it should be derived from the relational object base class (LINK) and its child classes</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="LogicClass">
+      <LocalizedLabel LanguageRef="zhs">逻辑类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Logical class</LocalizedLabel>
+    </Label>
+    <Label Name="LogicClassDescription">
+      <LocalizedLabel LanguageRef="zhs">将模型进行实例化的类，并且可以在类中定义模型的各种方法（可选值：在插件中类型为ObjectType的插件名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For classes that instantiate the model, you can define various methods of the model in a class (optional: plug-in name of type ObjectType in plug-in)</LocalizedLabel>
+    </Label>
+    <Label Name="LoopCheck">
+      <LocalizedLabel LanguageRef="zhs">环检测</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Loop Detection</LocalizedLabel>
+    </Label>
+    <Label Name="LoopCheckDescription">
+      <LocalizedLabel LanguageRef="zhs">检测对象结构是否形成环（子对象下包含父对象），只有调用InforCenter.Common.ObjectService.Paste和InforCenter.Common.ObjectService.AddLinkObject接口时才有环检测</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the object structure is formed into a ring (the child object contains a parent object), and only when the InforCenter.Common.ObjectService.Paste and InforCenter. Common. ObjectService. AddLinkObject interfaces are called</LocalizedLabel>
+    </Label>
+    <Label Name="PersistenceType">
+      <LocalizedLabel LanguageRef="zhs">持久化类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Persistence Type</LocalizedLabel>
+    </Label>
+    <Label Name="PersistenceTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">数据持久化存储类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Persistence Type</LocalizedLabel>
+    </Label>
+    <Label Name="IconPath">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="IconPathDescription">
+      <LocalizedLabel LanguageRef="zhs">对象的固有图标，在列表或树显示对象时，如果没有为对象设置图标（通过列表视图或树视图），会显示该图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An intrinsic icon for an object will appear when a list or tree display object is not set for the object (through a list view or a tree view)</LocalizedLabel>
+    </Label>
+    <Label Name="PolicyName">
+      <LocalizedLabel LanguageRef="zhs">流程生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Lifecycle</LocalizedLabel>
+    </Label>
+    <Label Name="PolicyNameDescription">
+      <LocalizedLabel LanguageRef="zhs">选用哪种流程生命周期模型，可选值为系统所有的流程生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">What kind of process life cycle model is selected, optional values are all process life cycles of the system</LocalizedLabel>
+    </Label>
+    <Label Name="StagePolicyName">
+      <LocalizedLabel LanguageRef="zhs">阶段生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase Life Cycle</LocalizedLabel>
+    </Label>
+    <Label Name="StagePolicyNameDescription">
+      <LocalizedLabel LanguageRef="zhs">选用哪种阶段生命周期模型，可选值为系统所有的阶段生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">What kind of phase life cycle model is selected, optional values are all phase life cycles of the system</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称，新建时输入的名称，会自动变成大写字母，根据该名称创建数据库表，为防止出错，名称只能是字母和数字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the object type, the name entered of the new, will be automatically become a capital letter, and the database table is created according to the name. In order to prevent errors, the name can only be letters and numbers</LocalizedLabel>
+    </Label>
+    <Label Name="Abstract">
+      <LocalizedLabel LanguageRef="zhs">是否抽象类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Abstract Class</LocalizedLabel>
+    </Label>
+    <Label Name="AbstractDescription">
+      <LocalizedLabel LanguageRef="zhs">如果是抽象类，不会在数据库创建相应的表，不会存在新建，编辑，删除等操作，但是可以有查询操作（必须建立视图），也可以像普通对象一样进行权限判断。主要用在不同用户下有不同数据的情况下（如个人空间根节点）。一般情况下，虚对象要建立对应的视图，但是视图的表的数据量不应该太大（如个人空间根节点可以根据用户表创建视图）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If it is an abstract class, the corresponding table will not be created in the database. There will be no new operations such as creating new, editing, deleting, etc. However, you can have the query operation (you must create a view), or you can make permission judgment like a common object, mainly with different data under different users (e. g., personal space root node). In general, a virtual object is to create a corresponding view, but the amount of data in the view's table should not be too large (such as a personal space root node can create a view based on the user table)</LocalizedLabel>
+    </Label>
+    <Label Name="TableName">
+      <LocalizedLabel LanguageRef="zhs">表名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Table Name</LocalizedLabel>
+    </Label>
+    <Label Name="VersionFormat">
+      <LocalizedLabel LanguageRef="zhs">大版本格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Large Version Format</LocalizedLabel>
+    </Label>
+    <Label Name="VersionFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">设置大版本格式，Letter：纯字母，如A，B，C；Number：纯数字，如1,2,3，在version配置文件中扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set large version format, Letter: plain letter, such as A, B, C; Number: plain number, such as 1.2.3, expanded in version configuration file</LocalizedLabel>
+    </Label>
+    <Label Name="MinorVersionFormat">
+      <LocalizedLabel LanguageRef="zhs">小版本格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Small Version Format</LocalizedLabel>
+    </Label>
+    <Label Name="MinorVersionFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">设置小版本格式，Letter：纯字母，如A，B，C；Number：纯数字，如1,2,3，在version配置文件中扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set small version format, Letter: plain letter, such as A, B, C; Number: plain number, such as 1.2.3, expanded in version configuration file</LocalizedLabel>
+    </Label>
+    <Label Name="VersionInterval">
+      <LocalizedLabel LanguageRef="zhs">大小版本间隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Size Release Interval</LocalizedLabel>
+    </Label>
+    <Label Name="VersionIntervalDescription">
+      <LocalizedLabel LanguageRef="zhs">设置大版本与小版本间隔，如：A.01，在version配置文件中扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the large version and small version of the interval, such as: A.01, in the version configuration file expansion</LocalizedLabel>
+    </Label>
+    <Label Name="IsBusinessModel">
+      <LocalizedLabel LanguageRef="zhs">是否业务模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it business model or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsBusinessModelDescription">
+      <LocalizedLabel LanguageRef="zhs">true表示一个模型是否业务相关的，false表示系统内置，一版情况用于区分那些展示给用户，设置一些权限或其他规则。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">True represents whether a model is business-related, false represents the built-in of the system, a version of which is used to distinguish those presented to the user, set some permissions, or other rules.</LocalizedLabel>
+    </Label>
+    <Label Name="Column">
+      <LocalizedLabel LanguageRef="zhs">列名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column name</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnDescription">
+      <LocalizedLabel LanguageRef="zhs">属性值的名称，对应于数据库的一列，也是数据库列名称，首字母不能是数字，且不允许输入下划线之外的特殊字符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the attribute value corresponds to a column in the database, which is also the name of the database column</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">处理类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Processing Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">系统提供的针对数据库数据的处理类型值，根据不同字段会在自动生成页面生成不同控件，在页面的显示值也会不同</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The system provides a processing type value for the database data, and different controls are generated on the automatic generation page according to different fields, with different display values of the pages</LocalizedLabel>
+    </Label>
+    <Label Name="DataType">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Type</LocalizedLabel>
+    </Label>
+    <Label Name="DataTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">该属性的数据类型，对应于数据类型模块中维护的一条数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The data type of this attribute corresponds to a data type maintained in the data type module</LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="EditDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        对象新建，编辑页面中是否允许编辑，可选值：
+        Create：对象创建页面该字段可以编辑
+        Edit：对象编辑页面该字段可以编辑
+        Null：该字段如果为空则可以编辑，不为空不可以编辑
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        Object New, Edit whether to allow editing in the page or not, optional:
+        Create: Object Create Page This field can be edited
+        Edit: Object Edit Page This field can be edited
+        Null: This field can be edited if null and cannot be edited for blank
+      </LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display</LocalizedLabel>
+    </Label>
+    <Label Name="ShowDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        新建，编辑，属性页面是否显示，可选值为：
+        Create：对象创建页面显示该字段
+        Edit：对象编辑页面显示该字段
+        View：属性页面是否显示该字段
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        New, Edit, attribute Page shows, optional values are:
+        Create: The object creation page displays the field
+        Edit: The object edit page displays the field
+        View: Whether the attribute page display the field or not
+      </LocalizedLabel>
+    </Label>
+    <Label Name="Required">
+      <LocalizedLabel LanguageRef="zhs">必填字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Required Field</LocalizedLabel>
+    </Label>
+    <Label Name="WebRequired">
+      <LocalizedLabel LanguageRef="zhs">前端必填字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WebRequired Field</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratePageType">
+      <LocalizedLabel LanguageRef="zhs">自动生成页面类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically generate page types</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratePageTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        Create：是否生成创建页面
+        Edit：是否生成编辑页面
+        View：是否生成属性页面
+        Copy：是否生成新建页面的复制页面
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        Create: Do you want to generate the Create Page
+        Edit: Do you want to Generate Edit Page
+        View: Do you want to generate an attribute page
+        Copy: Do you want to generate a new page's replication page
+      </LocalizedLabel>
+    </Label>
+    <Label Name="RequiredDescription">
+      <LocalizedLabel LanguageRef="zhs">表明该字段是否必填，如果必填，保存时会验证该字段是否为空，也会在自动生成的新建，编辑页面中对应的字段后有必填标识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It indicates whether the field is required. If required, it will be verified if the field is null. It will also be required to be identified after the corresponding field in the newly created and edited page automatically generated.</LocalizedLabel>
+    </Label>
+    <Label Name="WebRequiredDescription">
+      <LocalizedLabel LanguageRef="zhs">表明该字段页面是否必填，如果必填，会在自动生成的新建，编辑页面中对应的字段后有必填标识，但数据库存储是不会验证该字段是否为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It indicates whether the field is required. If required, it will be verified if the field is null. It will also be required to be identified after the corresponding field in the newly created and edited page automatically generated.</LocalizedLabel>
+    </Label>
+    <Label Name="Validation">
+      <LocalizedLabel LanguageRef="zhs">验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidationDescription">
+      <LocalizedLabel LanguageRef="zhs">需要验证的正则表达式，可选值为系统维护的正则表达式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regular expressions needs to be verified, optional values are regular expressions maintained by the system</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultValue">
+      <LocalizedLabel LanguageRef="zhs">默认值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default value</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultValueDescription">
+      <LocalizedLabel LanguageRef="zhs">该属性的默认值，会在生成对象时填上默认值，页面生成后也会在相应的控件中显示默认值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The default value of this attribute is filled with the default value when the object is generated, and the default value is displayed in the corresponding control after the page is generated.</LocalizedLabel>
+    </Label>
+    <Label Name="Enumeration">
+      <LocalizedLabel LanguageRef="zhs">枚举值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enumerate values</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExtendProperty1">
+      <LocalizedLabel LanguageRef="zhs">扩展属性1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended attribute 1</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExtendProperty1Description">
+      <LocalizedLabel LanguageRef="zhs">用于扩展的属性1，现用于关联某字段类型的枚举</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">attribute 1 for extension is now used to associate an enumeration of a field type</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExtendProperty2">
+      <LocalizedLabel LanguageRef="zhs">扩展属性2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended attribute 2</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExtendProperty2Description">
+      <LocalizedLabel LanguageRef="zhs">用于扩展的属性2，可在二次开发中自定义用途</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For extended properties 2, its use can be customized in secondary development</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExtendProperty3">
+      <LocalizedLabel LanguageRef="zhs">扩展属性3</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended attribute 3</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExtendProperty3Description">
+      <LocalizedLabel LanguageRef="zhs">用于扩展的属性3，可在二次开发中自定义用途</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For extended attributes 3, its use can be customized in secondary development</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty1">
+      <LocalizedLabel LanguageRef="zhs">绑定数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Binding Data Source</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty1Description">
+      <LocalizedLabel LanguageRef="zhs">现用于关联某字段类型的枚举，</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Currently used to associate an enumeration of a field type,</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty2">
+      <LocalizedLabel LanguageRef="zhs">扩展属性2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended attribute 2</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty2Description">
+      <LocalizedLabel LanguageRef="zhs">用于扩展的属性2，可在二次开发中自定义用途</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For extended properties 2, its use can be customized in secondary development</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty3">
+      <LocalizedLabel LanguageRef="zhs">扩展属性3</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended attribute 3</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty3Description">
+      <LocalizedLabel LanguageRef="zhs">用于扩展的属性3，可在二次开发中自定义用途</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For extended attributes 3, its use can be customized in secondary development</LocalizedLabel>
+    </Label>
+    <Label Name="Unique">
+      <LocalizedLabel LanguageRef="zhs">唯一性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Uniqueness</LocalizedLabel>
+    </Label>
+    <Label Name="UniqueDescription">
+      <LocalizedLabel LanguageRef="zhs">表明该索引是否是唯一索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It indicates whether the index is a unique index</LocalizedLabel>
+    </Label>
+    <Label Name="Order">
+      <LocalizedLabel LanguageRef="zhs">顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateUnique">
+      <LocalizedLabel LanguageRef="zhs">唯一性验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Uniqueness Verification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateUniqueDescription">
+      <LocalizedLabel LanguageRef="zhs">该属性是否要求唯一</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Does the attribute require unique</LocalizedLabel>
+    </Label>
+    <Label Name="PreLoadedIntoBuffer">
+      <LocalizedLabel LanguageRef="zhs">预加载到缓冲区</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pre-load to buffer</LocalizedLabel>
+    </Label>
+    <Label Name="PreLoadedIntoBufferDescription">
+      <LocalizedLabel LanguageRef="zhs">在业务服务器启动时，使用查询表方式，让数据加载到数据库缓冲区。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the business server is started, use the look-up table to load the data into the database buffer.</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowWeb">
+      <LocalizedLabel LanguageRef="zhs">是否Web端显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsShowWeb</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowWebDescription">
+      <LocalizedLabel LanguageRef="zhs">Web端业务建模树展示此模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Web Client Model Tree Show Current Model</LocalizedLabel>
+    </Label>
+    <Label Name="Sequence">
+      <LocalizedLabel LanguageRef="zhs">排列顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Arrangement Order</LocalizedLabel>
+    </Label>
+    <Label Name="SequenceDescription">
+      <LocalizedLabel LanguageRef="zhs">在自动生成页面中，相应字段所对应的控件排列顺序，按照字母顺序正序排列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In the automatic generation page, the control arrangement sequence corresponds to the corresponding field is arranged in the order of alphabetical order.</LocalizedLabel>
+    </Label>
+    <Label Name="ParentObjectType">
+      <LocalizedLabel LanguageRef="zhs">父对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object type</LocalizedLabel>
+    </Label>
+    <Label Name="ParentObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">在关系对象中父对象类型，可选值为所有实体对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object type in relational object, optional value is all solid objects</LocalizedLabel>
+    </Label>
+    <Label Name="ChildObjectType">
+      <LocalizedLabel LanguageRef="zhs">子对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-object type</LocalizedLabel>
+    </Label>
+    <Label Name="ChildObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">在关系对象中子对象类型，可选值为所有实体对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In the child object type of relationship object, optional value is for all entities</LocalizedLabel>
+    </Label>
+    <Label Name="ParentPrimaryKey">
+      <LocalizedLabel LanguageRef="zhs">父关联实体查询主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent associated entity query primary key</LocalizedLabel>
+    </Label>
+    <Label Name="ParentPrimaryKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">父关系对象查询时，PEID=实体对象.关联ID，默认为EID，还可以设置EUID及其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PEID=Entity object when the parent relationship object is queried, associate ID, by default as EID, and EUID and others can also be set</LocalizedLabel>
+    </Label>
+    <Label Name="ChildPrimaryKey">
+      <LocalizedLabel LanguageRef="zhs">子关联实体查询主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Child associated entity query primary key</LocalizedLabel>
+    </Label>
+    <Label Name="ChildPrimaryKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">子关系对象查询时，CEID=实体对象.关联ID，默认为EID，还可以设置EUID及其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CEID=Entity object when a child relationship object is queried. Associated ID is default as EID, and EUID and others can also be set</LocalizedLabel>
+    </Label>
+    <Label Name="InhertTreeRoot">
+      <LocalizedLabel LanguageRef="zhs">继承树根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inherited tree root node</LocalizedLabel>
+    </Label>
+    <Label Name="InheritTreeForm">
+      <LocalizedLabel LanguageRef="zhs">继承树显示窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inherited tree display window</LocalizedLabel>
+    </Label>
+    <Label Name="Width">
+      <LocalizedLabel LanguageRef="zhs">宽度（百分比）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width (percentage)</LocalizedLabel>
+    </Label>
+    <Label Name="Height">
+      <LocalizedLabel LanguageRef="zhs">高度（像素）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Height (px)</LocalizedLabel>
+    </Label>
+    <Label Name="WidthDescription">
+      <LocalizedLabel LanguageRef="zhs">在自动生成的页面中控件所在行的宽度比，系统会根据宽度进行计算，根据计算结果进行控件的布局，可选值为0-100（没有百分号%）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The width ratio of the row of the control in the automatically generated page is calculated according to the width, and the layout of the control is performed according to the calculation result, and the selectable value is 0-100(No percent sign %).</LocalizedLabel>
+    </Label>
+    <Label Name="MergeRowNumber">
+      <LocalizedLabel LanguageRef="zhs">合并行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of Merge Lines</LocalizedLabel>
+    </Label>
+    <Label Name="PageType">
+      <LocalizedLabel LanguageRef="zhs">页面类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Type</LocalizedLabel>
+    </Label>
+    <Label Name="Inherit">
+      <LocalizedLabel LanguageRef="zhs">继承控制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inheritance Control</LocalizedLabel>
+    </Label>
+    <Label Name="InheritDescription">
+      <LocalizedLabel LanguageRef="zhs">可以根据继承控制来到达缩减字段的目的，显示代表创建数据库字段，隐藏代表不创建数据库字段，继承代表完全使用基类的继承控制（只在继承字段中存在,如果基类隐藏，则子类隐藏，基类显示，则子类显示），固有代表继承控制在子类中不可以更改的字段，如EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The purpose of the reduced field can be reached according to the inheritance control, display representative creating a database field. The hidden representative does not create a database field. The inheritance representative does not create the inheritance control of the base class completely (only in the inheritance field, if the base class is hidden, the child class is hidden, and the base class is displayed, then the child class display), an inherent representation inherits a field that is not modifiable in a subclass, such as EID</LocalizedLabel>
+    </Label>
+    <Label Name="OverrideLevel">
+      <LocalizedLabel LanguageRef="zhs">覆盖控制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OverrideLevel</LocalizedLabel>
+    </Label>
+    <Label Name="OverrideLevelDescription">
+      <LocalizedLabel LanguageRef="zhs">针对模型重写，模型合并时，是否对模型字段进行必须存在或忽略。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OverrideLevel</LocalizedLabel>
+    </Label>
+    <Label Name="PrimaryKeyOrder">
+      <LocalizedLabel LanguageRef="zhs">主键顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Primary Key Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="PrimaryKeyOrderDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        可选值为整型数据，如果该字段不是主键，则值为0，如果大于0，则该属性字段为主键；如果模型的属性字段存在多个大于0的主键顺序，会将所有属性字段（主键顺序大于0）按照从大到小的顺序创建联合主键
+        默认情况下，以EID为主键,推荐按照常用的查询顺序创建主键（必要时可以按照EID作为最后一个主键，以避免主键重复），而不是以EID创建主键，此时可能需要以EID创建索引以优化相关查询
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        Optional values are integer data, if the field is not a primary key, the value is 0, and if it is greater than 0, the attribute field is the primary key; if there is more than one primary key order in the attribute field of the model, all the attribute fields (the primary key order is greater than 0) are created in ascending order of descending order
+        By default, the primary key is recommended in the usual query order (when necessary, as the last primary key when necessary to avoid duplication of the primary key) instead of creating the primary key with the EIDs by default, rather than creating the primary key with the EIDs, at which point the index may need to be created to optimize the correlation. inquire
+      </LocalizedLabel>
+    </Label>
+    <Label Name="AsContainSub">
+      <LocalizedLabel LanguageRef="zhs">包含下级派生模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contains subordinate derived models</LocalizedLabel>
+    </Label>
+    <Label Name="AsContainSubDescription">
+      <LocalizedLabel LanguageRef="zhs">新建对象、数据查询时，弹出包含派生的业务类型，供新建选择、数据查询使用。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When a new object is created, the data query will pop up with the derived service type for new selection and data query.</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllowStartWorkfolw">
+      <LocalizedLabel LanguageRef="zhs">是否允许发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to allow the process to be initiated</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllowStartWorkfolwDescription">
+      <LocalizedLabel LanguageRef="zhs">是否允许发起流程，默认允许发起。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the initiating process is allowed or initiated by default.</LocalizedLabel>
+    </Label>
+    <Label Name="IsContainSub">
+      <LocalizedLabel LanguageRef="zhs">启用包含下级派生模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable inclusion of subordinate derived models</LocalizedLabel>
+    </Label>
+    <Label Name="IsContainSubDescription">
+      <LocalizedLabel LanguageRef="zhs">是否启用包含下级派生模型设置，true启用设置，根据子关系的实体模型设置生成查询语句。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether to enable the inclusion of subordinate derived model settings, true enable settings, and generate query statements based on the entity model settings for child relationships.</LocalizedLabel>
+    </Label>
+    <Label Name="SequenceIncrement">
+      <LocalizedLabel LanguageRef="zhs">顺序号增量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence number increment</LocalizedLabel>
+    </Label>
+    <Label Name="SequenceIncrementDescription">
+      <LocalizedLabel LanguageRef="zhs">针对LSEQUENCE（顺序）字段，自动添加关系时的增量是多少，默认是1。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the LSEQUENCE field, the increment in the auto-add relationship is, by default, 1.</LocalizedLabel>
+    </Label>
+    <Label Name="QureyResultRelated">
+      <LocalizedLabel LanguageRef="zhs">结果关联查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result Association Query</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentOjbectType">
+      <LocalizedLabel LanguageRef="zhs">向上查询关联关系对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query an association object up</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentOjbectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">当前关系对象的向上查询结果，再次关联的关系对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The up-query result of the current relationship object, the associated object again.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentPrimaryKey">
+      <LocalizedLabel LanguageRef="zhs">向上结果关联的关系对象主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The relationship object primary key associated with the up result</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentPrimaryKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">向上结果关联的关系对象主键，默认为PEID。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The relationship object primary key associated with the up result is the PEID by default.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentParentEntitys">
+      <LocalizedLabel LanguageRef="zhs">向上结果关联的父级实体对象模型集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent Entity Object Model Collection Associated with Up Results</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentParentEntitysDescription">
+      <LocalizedLabel LanguageRef="zhs">向上结果关联的父级实体对象模型集合。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The parent entity object model collection associated with the up result.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentChildEntitys">
+      <LocalizedLabel LanguageRef="zhs">向上结果关联的子级实体对象模型集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The child entity object model collection associated with an up result</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedParentChildEntitysDescription">
+      <LocalizedLabel LanguageRef="zhs">向上结果关联的子级实体对象模型集合。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The child entity object model collection associated with the up result.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildOjbectType">
+      <LocalizedLabel LanguageRef="zhs">向下查询关联关系对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query down the associated object</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildOjbectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">当前关系对象的向下查询结果，再次关联的关系对象。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The down query result of the current relationship object, the associated object again.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildPrimaryKey">
+      <LocalizedLabel LanguageRef="zhs">向下结果关联的关系对象主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship object primary key associated with the down result</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildPrimaryKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">向下结果关联的关系对象主键，默认为CEID。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The relationship object primary key associated with the down result is the CEID by default.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildParentEntitys">
+      <LocalizedLabel LanguageRef="zhs">向下结果关联的父级实体对象模型集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The parent entity object model collection associated with a downward result</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildParentEntitysDescription">
+      <LocalizedLabel LanguageRef="zhs">向下结果关联的父级实体对象模型集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The parent entity object model collection associated with a downward result</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildChildEntitys">
+      <LocalizedLabel LanguageRef="zhs">向下结果关联的子级实体对象模型集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The child entity object model collection associated with a downward result</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedChildChildEntitysDescription">
+      <LocalizedLabel LanguageRef="zhs">向下结果关联的子级实体对象模型集合。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The child entity object model collection associated with a downward result.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedEntityType">
+      <LocalizedLabel LanguageRef="zhs">查询结果关联实体对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query result associated entity object</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedEntityTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">查询结果关联实体对象，只允许设置一个，如果多个请设置基类型。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query results are associated with entity objects, only one is allowed, if more than one base type is set.</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedEntityPrimaryKey">
+      <LocalizedLabel LanguageRef="zhs">查询结果关联实体对象的主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Result Association Entity Object Primary Key</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedEntityPrimaryKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">查询结果关联实体对象的主键，默认为EID。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The query result is the primary key of the entity object, which is the default.</LocalizedLabel>
+    </Label>
+    <Label Name="CreateExtendProperty">
+      <LocalizedLabel LanguageRef="zhs">新建扩展属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Extended Properties</LocalizedLabel>
+    </Label>
+    <Label Name="CreateLink">
+      <LocalizedLabel LanguageRef="zhs">新建对象关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Object Relationship</LocalizedLabel>
+    </Label>
+    <Label Name="CreateIndex">
+      <LocalizedLabel LanguageRef="zhs">新建索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Index</LocalizedLabel>
+    </Label>
+    <Label Name="SetEdit">
+      <LocalizedLabel LanguageRef="zhs">编辑该项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit Item</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="Reset">
+      <LocalizedLabel LanguageRef="zhs">重置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reset</LocalizedLabel>
+    </Label>
+    <Label Name="BaseInfoMessage">
+      <LocalizedLabel LanguageRef="zhs">请输入业务建模-&gt;基本信息-&gt;多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enter Business Modeling-Basic Basic Information-Speak Multiple Languages</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyFormat">
+      <LocalizedLabel LanguageRef="zhs">属性格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute format</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        该属性在视图中的显示格式，
+        针对日期类型可以使用日期的格式化参数，如yyyy-MM-dd；
+        其他类型，则只能使用{0}来代表属性值，如 发起人：{0}，结果为：发起人：张三
+        如果没有显示格式的要求可不填写
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        The attribute is in the display format in the view,
+        Format parameters for the date type that can be used, such as MM-dd;
+        For other types, you can only use {0} to represent an attribute value, such as the originator: {0}, with the result: initiator: Zhang San
+        If there is no requirement to display the format, it may not be completed
+      </LocalizedLabel>
+    </Label>
+    <Label Name="GeneratePageInfo">
+      <LocalizedLabel LanguageRef="zhs">生成页面相关</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Generate page-related</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyRepeat">
+      <LocalizedLabel LanguageRef="zhs">属性重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate attribute</LocalizedLabel>
+    </Label>
+    <Label Name="BelongGroup">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="BelongGroupDescription">
+      <LocalizedLabel LanguageRef="zhs">扩展属性下可对属性分组(ObjectInfoGroup)，该属性用于标记当前继承属性应当属于哪个ObjectInfoGroup</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended attributes can be grouped by attributes (ObjectInfoGroup), which is used to mark the current inheritance attribute should belong to which ObjectInfoGroup</LocalizedLabel>
+    </Label>
+    <Label Name="IsGenerateViceTable">
+      <LocalizedLabel LanguageRef="zhs">是否生成副表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want the child table be generated or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsGenerateViceTableDescription">
+      <LocalizedLabel LanguageRef="zhs">如果生成副表，将会在更新数据库结构时，生成以“表名2”为模型的数据库表，该模型不能编辑，属性与主表一致</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If a secondary table is generated, a database table with Table Name 2 as, the model will be generated when updating the database structure, and the model cannot be edited and the attribute is consistent with the main table</LocalizedLabel>
+    </Label>
+    <Label Name="IsBussinessField">
+      <LocalizedLabel LanguageRef="zhs">是否业务字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it business field</LocalizedLabel>
+    </Label>
+    <Label Name="IsBussinessFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">根据具体业务选择使用，可存储任何与业务相关的数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use specific business selection to store any business-related data</LocalizedLabel>
+    </Label>
+    <Label Name="FieldName">
+      <LocalizedLabel LanguageRef="zhs">外键字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreign key field</LocalizedLabel>
+    </Label>
+    <Label Name="FieldNameDescription">
+      <LocalizedLabel LanguageRef="zhs">选择本模型中的属性名，外键字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select the attribute name, foreign key field in this model</LocalizedLabel>
+    </Label>
+    <Label Name="LinkObjectName">
+      <LocalizedLabel LanguageRef="zhs">关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated objects</LocalizedLabel>
+    </Label>
+    <Label Name="LinkObjectNameDescription">
+      <LocalizedLabel LanguageRef="zhs">外键字段对应的对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Objects corresponding to foreign key fields</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignField">
+      <LocalizedLabel LanguageRef="zhs">关联字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated Fields</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">外键字段对应的外键对象里面的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fields inside the foreign key object corresponding to the foreign key field</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKey">
+      <LocalizedLabel LanguageRef="zhs">外键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreign key</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">设置外键字段，以及外键所在的对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the foreign key field and the object where the foreign key is located</LocalizedLabel>
+    </Label>
+    <Label Name="EOCustomCommand">
+      <LocalizedLabel LanguageRef="zhs">单层自定义Command</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom Command</LocalizedLabel>
+    </Label>
+    <Label Name="EOCustomCommandDescription">
+      <LocalizedLabel LanguageRef="zhs">单层关系查询语句初始化时针对当前类型进行替换自定义sql command</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Link query init replace custom sql command</LocalizedLabel>
+    </Label>
+    <Label Name="EACustomCommand">
+      <LocalizedLabel LanguageRef="zhs">多层自定义Command</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom Command</LocalizedLabel>
+    </Label>
+    <Label Name="EACustomCommandDescription">
+      <LocalizedLabel LanguageRef="zhs">多层关系查询语句初始化时针对当前类型进行替换自定义sql command</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Link query init replace custom sql command</LocalizedLabel>
+    </Label>
+    <Label Name="ModelGroups">
+      <LocalizedLabel LanguageRef="zhs">模型分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model grouping</LocalizedLabel>
+    </Label>
+    <Label Name="ModelGroupsDescription">
+      <LocalizedLabel LanguageRef="zhs">模型分组，在模型使用时，可以将当前模型分到不同的组下面，如那些模型可以用于新建，那些模型可以用于发起流程等。如果模型用在不同分组，用';'隔开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model packets, when used in models, can be grouped under different groups, such as those models that can be used to create new models that can be used to initiate processes, and so on. If the model is used in different packets, it is separated by';'</LocalizedLabel>
+    </Label>
+    <Label Name="ModelUnionAll">
+      <LocalizedLabel LanguageRef="zhs">模型并联</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model union all</LocalizedLabel>
+    </Label>
+    <Label Name="ModelUnionAllDescription">
+      <LocalizedLabel LanguageRef="zhs">模型并联，在模型基本信息可选择模型所并联的集合名称，在创建视图时可以创建并联视图；可以实现当前并联分组的所有模型Union all的处理。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model union all, when used in models,can create union all the model in view.</LocalizedLabel>
+    </Label>
+    <Label Name="CreateForeignKey">
+      <LocalizedLabel LanguageRef="zhs">新建外键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New foreign key</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKeyTitle">
+      <LocalizedLabel LanguageRef="zhs">设置外键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set foreign key</LocalizedLabel>
+    </Label>
+    <Label Name="ClickScript">
+      <LocalizedLabel LanguageRef="zhs">点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Click event</LocalizedLabel>
+    </Label>
+    <Label Name="LabelWidth">
+      <LocalizedLabel LanguageRef="zhs">标题宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title width</LocalizedLabel>
+    </Label>
+    <Label Name="ModelOrder">
+      <LocalizedLabel LanguageRef="zhs">模型顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model order</LocalizedLabel>
+    </Label>
+    <Label Name="ModelOrderDescription">
+      <LocalizedLabel LanguageRef="zhs">模型顺序,按照字母顺序排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model order, sorted in alphabetical order</LocalizedLabel>
+    </Label>
+    <Label Name="PartitionInfoList">
+      <LocalizedLabel LanguageRef="zhs">表分区列设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Table partition column settings</LocalizedLabel>
+    </Label>
+    <Label Name="PartitionInfooListDescription">
+      <LocalizedLabel LanguageRef="zhs">可以按照选择的列及分区类型，在每个周期末尾，自动执行新的分区设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The new partition settings can be automatically performed at the end of each cycle based on the selected column and partition type</LocalizedLabel>
+    </Label>
+    <Label Name="PartitionNotSupportMulti">
+      <LocalizedLabel LanguageRef="zhs">分区不支持同时设置多个字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Partition does not support simultaneous setting of multiple fields</LocalizedLabel>
+    </Label>
+    <Label Name="PartitionOnlySupportDateTime">
+      <LocalizedLabel LanguageRef="zhs">分区列仅支持日期时间型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Partition column only supports date-time type</LocalizedLabel>
+    </Label>
+
+    <Label Name="ExistForeignLinkObjectName">
+      <LocalizedLabel LanguageRef="zhs">关联对象 {0} 重复，无法添加重复的关联对象!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Link object type repeat,cannot save</LocalizedLabel>
+    </Label>
+
+    <Label Name="ForeignKeyCannotRepeat">
+      <LocalizedLabel LanguageRef="zhs">外键设置不允许同一字段设置多次！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The foreign key setting cannot set same column over one.</LocalizedLabel>
+    </Label>
+
+    <Label Name="ForeignKeyNotSet">
+      <LocalizedLabel LanguageRef="zhs">外键设置中外键字段未设置！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The foreign key setting not set correct.</LocalizedLabel>
+    </Label>
+
+    <Label Name="ForeignKeyListEmpty">
+      <LocalizedLabel LanguageRef="zhs">外键设置不完整！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The foreign key setting not complete.</LocalizedLabel>
+    </Label>
+    <Label Name="IsSecurity">
+      <LocalizedLabel LanguageRef="zhs">是否是保密代号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsSecurity</LocalizedLabel>
+    </Label>
+    <Label Name="IsSecurityDescription">
+      <LocalizedLabel LanguageRef="zhs">如果是保密代号，导出、下载等功能需要将该属性的值替换成保密代号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsSecurityDescription</LocalizedLabel>
+    </Label>
+    <Label Name="CreateList">
+      <LocalizedLabel LanguageRef="zhs">创建列表关联配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateView</LocalizedLabel>
+    </Label>
+    <Label Name="CreateListDescription">
+      <LocalizedLabel LanguageRef="zhs">模型创建完成后可选择创建查询视图、列表视图、菜单、列表配置、导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateView</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTree">
+      <LocalizedLabel LanguageRef="zhs">创建树列表关联配置（抽象类生效）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateView</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTreeDescription">
+      <LocalizedLabel LanguageRef="zhs">模型创建完成后可选择创建查询视图、树视图、菜单、树配置、标签页、导航（注：当前模型为根节点，且为抽象类）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateView</LocalizedLabel>
+    </Label>
+
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+﻿{
+	var c = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(c.id!=''){
+		c.SetText(data.[INFONAME]_DisplayValue);
+		if(data.[INFONAME]){
+			$('#'+c.id+'_Label').css('color',data.[INFONAME]_DisplayValue);
+		}
+	}
+}

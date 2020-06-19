@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ImportPage" IsCache="true">
+  <Settings Key="height" Value="220"/>
+  <Settings Key="width" Value="350"/>
+  <Settings Key="title" Value="Import.Title"/>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ImportFileCtrl"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="Confirm_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ImportFileCtrl" ParentID="Top_Container" TypeName="CustomerContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Import_OnCreate(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+    <PageControl ControlID="Confirm_Btn" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnCancel"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Confirm_btnCancel" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Import_CancelOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

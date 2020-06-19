@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="DatabaseConfigBar" BaseBar="SettingBar">
+    <Item Name ="UpdateDatabase" IsCommonItem="true"  ImagePath="~/Persistence/Image/Console/Database.ico"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass=" Hoteam.InforCenter.Persistence.ConsoleSetting.Database.UpdateDBSchemaCmd"></Item>
+    <Item Name ="Export"  ImagePath="~/Persistence/Image/Console/export.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.DataExport.DataExportCmd"></Item>
+    <Item Name ="Import"  ImagePath="~/Persistence/Image/Console/import.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.DataImport.DataImportCmd"></Item>
+    <Item Name ="Clear"   ImagePath="~/Persistence/Image/Console/clear.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.DataClear.DataClearCmd"></Item>
+    <Item Name ="AccountBook" IsCommonItem="true"  ImagePath="~/Persistence/Image/Console/accountbook.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.AccountBook.AccountBookCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="DataClearConfigBar" BaseBar="SettingBar">
+    <Item Name ="Clear" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/clear.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.DataClear.DataClearCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="DataBaseDataConfigBar" BaseBar="SettingBar">
+    <Item Name ="Export" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/export.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.DataExport.DataExportCmd"></Item>
+    <Item Name ="Import" IsCommonItem="true" ImagePath="~/Persistence/Image/Console/import.png"  ItemAssembly="Hoteam.InforCenter.Persistence.ConsoleSetting" ItemClass="Hoteam.InforCenter.Persistence.ConsoleSetting.DataImport.DataImportCmd"></Item>
+  </ToolBar>
+  
+</root>

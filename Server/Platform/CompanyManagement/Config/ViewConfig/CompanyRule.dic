@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="CompanyRule">
+      <LocalizedLabel LanguageRef="zhs">集团规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group rule</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyRuleCreate">
+      <LocalizedLabel LanguageRef="zhs">新建权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New permission</LocalizedLabel>
+    </Label>
+    <Label Name="CREATECOMPANYRULEROOT">
+      <LocalizedLabel LanguageRef="zhs">新建权限规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New permission rule</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleBusinessModel">
+      <LocalizedLabel LanguageRef="zhs">对象规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object rule</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

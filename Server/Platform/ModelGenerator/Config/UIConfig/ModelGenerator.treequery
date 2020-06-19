@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <TreeQuery Name="CustomFormTreeQuery" TreeViewName="OrganisizeTreeView" ShowTreeQuery="true" DropSearch="false"
+             SelectControl="List" TreeChildDataService=""
+             TreeRootDataService=""
+             DropSearchChangeService="HoteamSoft.InforCenter.ModelGeneratorService.GetCustomFormTreeQueryData"
+             ListAllDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetCustomFormTreeQueryData"
+             TreeAllDataService=""
+             TreeQueryDataService=""
+             CommitJS="InforCenter_ModelGenerator_GetFormType_TreeListCommonQuery_OnOK"
+             SelectedOneJS="InforCenter_ModelGenerator_GetFormType_TreeListCommonQuery_OnSelected"
+             LoadAndSelectType="SingleLevel_MultiSelect" AllowReturnEmptyValue="false" ReturnValueType="" />
+  <TreeQuery Name="FormDesignFlowTaskOrgTreeQuery" TreeViewName="FormDesignFlowTaskOrgTreeView" AllQuery="true" ShowTreeQuery="true" DropSearch="false"
+             SelectControl="Tree" TreeChildDataService="" TreeRootDataService="" TreeAllDataService=""
+             TreeQueryDataService="InforCenter.Organization.OrganizationDataService.GetTreeQueryData"
+             
+                  CommitJS="InforCenter_ModelGenerator_ControlPermission_OnOK"
+     SelectedOneJS="InforCenter_ModelGenerator_ControlPermission_OnSelected"
+     NodeDblClickJS="InforCenter_ModelGenerator_ControlPermission_OnNodeDbClick"
+               SelectedListInitJS="InforCenter_ModelGenerator_ControlPermission_TreeSelectedListInit"
+             
+             LoadAndSelectType="SingleLevel_MultiSelect" AllowReturnEmptyValue="false" ReturnValueType="" />
+
+
+
+  <TreeQuery Name="CustomFormFlowAuditNodeTreeQuery" TreeViewName="WorkflowClassifyToTemplateTreeView" ShowTreeQuery="true"
+           DropSearch="false" SelectControl="Tree" TreeQueryDataService=""
+   CommitJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_OnOK"
+   SelectedOneJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_OnSelectedOne"
+   NodeDblClickJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_OnNodeDbClick"
+             SelectedListInitJS="InforCenter_Platform_GetWorkflowTemplateTaskInfo_TreeSelectedListInit"
+             TreeRootDataService ="HoteamSoft.InforCenter.ModelGeneratorService.GetCustomFormFlowAuditTreeRootData"
+           TreeChildDataService="InforCenter.Workflow.WorkflowService.WorkflowClassifyToTemplateChildData"
+           LoadAndSelectType="SingleLevel_MultiSelect" AllowReturnEmptyValue="true" ReturnValueType="" />
+
+</root>

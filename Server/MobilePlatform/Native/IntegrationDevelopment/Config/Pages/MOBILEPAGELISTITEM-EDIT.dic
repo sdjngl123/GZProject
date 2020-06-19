@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGELISTITEM-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectState</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTSTATERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGELISTITEMHeader">
+      <LocalizedLabel LanguageRef="zhs">新建列表项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewMobilePageListItem</LocalizedLabel>
+    </Label>
+    <Label Name="SINGLEBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">列表按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SINGLEBUTTON</LocalizedLabel>
+    </Label>
+    <Label Name="SLIDEBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">侧滑按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SLIDEBUTTON</LocalizedLabel>
+    </Label>
+    <Label Name="ButtonName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="LISTCONTENT">
+      <LocalizedLabel LanguageRef="zhs">列表内容点击</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LISTCONTENT</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

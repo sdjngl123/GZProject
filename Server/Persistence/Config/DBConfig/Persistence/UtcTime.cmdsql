@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <!--时间操作命令-->
+  <Command Name="GETUTCTIME">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select dbo.utcinttime() utctime
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select utcinttime() utctime from dual
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select utcinttime() utctime;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

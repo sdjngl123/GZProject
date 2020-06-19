@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 字段类型-->
+  <PluginItem Name="MobilePageValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.MobilePageDev.Business" Class="Hoteam.InforCenter.MobilePageDev.Business.ObjectValue.MobilePageValue" />
+  <PluginItem Name="MobilePageImageValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.MobilePageDev.Business" Class="Hoteam.InforCenter.MobilePageDev.Business.ObjectValue.MobilePageImageValue" />
+
+  <PluginItem Name="MobilePageDev" Type="ObjectType" Assembly="Hoteam.InforCenter.MobilePageDev.Business" Class="Hoteam.InforCenter.MobilePageDev.Business.Object.MobilePageDev" />
+  <PluginItem Name="MobilePageListItem" Type="ObjectType" Assembly="Hoteam.InforCenter.MobilePageDev.Business" Class="Hoteam.InforCenter.MobilePageDev.Business.Object.MobilePageListItem" />
+  
+</root>

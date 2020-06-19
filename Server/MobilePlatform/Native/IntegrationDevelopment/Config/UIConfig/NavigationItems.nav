@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NavigationItem Name="MobileIntegrationDevelopment" ShowMode="Fixed" IsAddCustom="true" IsHidden="false" Order="900">
+    <PageName />
+    <Image>p_customview</Image>
+    <NavigationItem Name="MobilePageDevelopment" IsAddCustom="true" IsHidden="false" Order="901">
+      <PageName>TreeManagement</PageName>
+      <Image>p_task</Image>
+      <Para Name="ItemName" Value="MobilePageDevelopmentTree" />
+    </NavigationItem>
+    <NavigationItem Name="MobilePermission" IsAddCustom="true" IsHidden="false" Order="902">
+      <PageName>MobileModulePermission</PageName>
+      <Image>p_moduleauthorization</Image>
+    </NavigationItem>
+  </NavigationItem>
+  
+</root>

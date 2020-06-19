@@ -1,0 +1,16 @@
+﻿{
+				 var ctrl = pageEvent.o.GetControl('[FILTERNAME]_Value');
+				 pageEvent.objectType = '[OBJTYPE]';
+                 pageEvent.infoType = '[INFONAME]';
+				 pageEvent.IsQueryPage = true;
+				 pageEvent.Ctrl = ctrl;
+                 var functionName = 'InforCenter_' + pageEvent.objectType + '_' + pageEvent.infoType + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, pageEvent);
+                 }else{
+                      var o = ctrl;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetVaultList(o,true);
+                          }
+                 }
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Filter Rule="Hoteam.Registered.RegisteredDataService.*" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <!--<Filter Rule="Hoteam.Registered.RegisteredDataService.UserRegistration" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="Hoteam.Registered.RegisteredDataService.ChangePassword" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="Hoteam.Registered.RegisteredDataService.GetLoginUser" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="Hoteam.Registered.RegisteredDataService.CheckMailOrCompanyNameExistForResetPassword" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>-->
+  
+</root>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTPROJECTModel" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验项目名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">试验项目名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验项目编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">试验项目编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDCODE</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDNAME</LocalizedLabel>
+    </Label>
+    <Label Name="KNOWLEDGECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">知识编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">KNOWLEDGECODE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEDULETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">排程类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEDULETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ISCNASHeader">
+      <LocalizedLabel LanguageRef="zhs">通过CNAS认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISCNAS</LocalizedLabel>
+    </Label>
+    <Label Name="ABILITYCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">能力排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABILITYCODE</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPROJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">上级试验项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestPROJECT</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPROJECTCaption">
+      <LocalizedLabel LanguageRef="zhs">上级试验项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestPROJECT</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDCODECaption">
+      <LocalizedLabel LanguageRef="zhs">标准编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDCODE</LocalizedLabel>
+    </Label>
+    <Label Name="STANDARDNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">标准名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDNAME</LocalizedLabel>
+    </Label>
+    <Label Name="KNOWLEDGECODECaption">
+      <LocalizedLabel LanguageRef="zhs">知识编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">KNOWLEDGECODE</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">试验类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="SCHEDULETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">排程类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEDULETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ABILITYORDERHeader">
+      <LocalizedLabel LanguageRef="zhs">能力排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABILITYORDER</LocalizedLabel>
+    </Label>
+    <Label Name="ABILITYORDERCaption">
+      <LocalizedLabel LanguageRef="zhs">能力排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ABILITYORDER</LocalizedLabel>
+    </Label>
+    <Label Name="ISCNASCaption">
+      <LocalizedLabel LanguageRef="zhs">通过CNAS认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISCNAS</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

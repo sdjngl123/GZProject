@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PATCHDEPENDENCELINKINSTALLModel" IsWeb="true">
+    <Label Name="PATCHDEPENDENCELINKINSTALLHeader">
+      <LocalizedLabel LanguageRef="zhs">PATCHDEPENDENCELINKINSTALL</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATCHDEPENDENCELINKINSTALL</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHDEPENDENCELINKINSTALLCaption">
+      <LocalizedLabel LanguageRef="zhs">PATCHDEPENDENCELINKINSTALL</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATCHDEPENDENCELINKINSTALL</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ecode</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">补丁编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ecode</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ename</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">补丁名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ename</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

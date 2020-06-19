@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListQuery Name="AllMobilePageDev" ListViewName="MobilePageDevListView"  QueryPageName="MOBILEPAGEDEVVIEW-QUERY"
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="">
+  </ListQuery>
+</root>

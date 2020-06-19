@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ServiceItem ServiceName="TestResourceLibService" ServiceAssembly="Hoteam.InforCenter.TestResourceLib.Service.dll"
+				 ServiceClass="Hoteam.InforCenter.TestResourceLib.Service.TestResourceLibService"
+				 ContractAssembly="Hoteam.InforCenter.TestResourceLib.Service.dll"
+				 ContractClass="Hoteam.InforCenter.TestResourceLib.Service.ITestResourceLibService" />
+</root>

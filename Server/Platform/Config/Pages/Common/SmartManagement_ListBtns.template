@@ -1,0 +1,6 @@
+﻿<div style="height:100%;width:100%;" id="smartlistbtns">
+	<div class="smart-list-btns basesprite b-title-imgModel" title=""></div>
+	<div class="smart-list-btns basesprite b-title-listModel-sel" title=""></div>
+	<div class="smart-list-btns basesprite b-title-treeOperation-sel" title=""></div>
+	<div class="smart-list-btns basesprite b-title-refresh" title=""	></div>
+</div>

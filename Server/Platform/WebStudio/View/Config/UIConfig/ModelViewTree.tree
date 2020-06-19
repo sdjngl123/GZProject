@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeManagement Name="ModelViewTree" MenuName="ModelViewTreeHeadMenu" TreeViewName="" ShowTreeQuery="false" IsHiddenTabs="false" 
+                  TreeChildDataService="" 
+                  TreeRootDataService="HoteamSoft.InforCenter.WebStudioViewService.ModelViewTreeRootData" 
+                  TreeAllDataService="" TreeQueryDataService="" PageLinksName="" 
+                  IsLoadAllData="false" TreeNodeOnClick = "InforCenter_Platform_ModelListViewInfo_ModelViewTree_OnNodeClick">
+    <ObjectType Name="ROOTMODELVIEW" MenuName="ModelViewTreeMenu" PageLinksName="" />
+    <ObjectType Name="VIEWNAME" MenuName="" PageLinksName="ModelViewInfoLink" />
+    <ObjectType Name="VIEWCONDITION" MenuName="" PageLinksName="ModelViewConditionLink" />
+  </TreeManagement>
+</root>

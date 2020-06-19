@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="QueryMachineQueryHistory">
+  <Settings Key="title" Value="QueryMachineQueryHistory.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_QueryMachineQuery_QueryHistoryPageLoadData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="QueryBtn_Container"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryMachineHistoryCtrl"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="QueryBtn_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="8"/>
+      </Settings>
+      <Settings Key="item11" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryBtnContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID = "QueryBtnContainer" ParentID = "QueryBtn_Container" TypeName="Menu">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script=""/>
+      </PageHandlers>
+      <Settings Key="item0">
+        <Settings Key="textId" Value="QueryMachineQueryRole.Refresh"/>
+        <Settings Key="value" Value="Refresh"/>
+        <Settings Key="icon" Value="p_resume"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryMachineQueryHistoryMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="QueryMachineQueryHistory.Edit"/>
+        <Settings Key="value" Value="Edit"/>
+        <Settings Key="icon" Value="p_edit"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryMachineQueryHistoryMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="QueryMachineQueryHistory.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryMachineQueryHistoryMenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="textId" Value="QueryMachineQueryHistory.DeleteAll"/>
+        <Settings Key="value" Value="DeleteAll"/>
+        <Settings Key="icon" Value="p_delete_all"/>
+        <Settings Key="js" Value="InforCenter_Platform_QueryMachine_QueryMachineQueryHistoryMenuClick(ctrlEvent)"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="QueryMachineHistoryCtrl" ParentID="Info_Container" TypeName="CustomerContainer" >
+    </PageControl>
+  </PageControls>
+</root>

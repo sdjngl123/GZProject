@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TfsSetting TfsUrl="http://10.0.81.226:8080/tfs/inforcenter">
+    <ServerPath>$/ICP-EnterpriseV8.1/升级库/ICP-Studio2.1/维护库/ICP-Studio2.1.1/Source/Server</ServerPath>
+    <ServerPath>$/InforCenter PlatformV8.0/开发库/Source/Server</ServerPath>
+    <ServerPath>$/ICP-EnterpriseV8.1/开发库/Source/Server</ServerPath>
+    <ServerPath>$/InforCenter8.2/Develop/Source/Server</ServerPath>
+    <ServerPath>$/公司项目管理/Develop/Source/Server</ServerPath>
+    <ServerPath>$/M-PLMCAPP-18-0073中广核产业链质量文件电子化平台建设项目/Develop/Source/Server</ServerPath>
+  </TfsSetting>
+</root>

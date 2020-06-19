@@ -1,0 +1,8 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="EditButton" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_ExecInfoDataSource([INFODATASOURCEPARA],ctrlEvent.o.ContainerID(),ctrlEvent.o.GetTag()==null?'':ctrlEvent.o.GetTag().value,[SHOWWHENQUERY])"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="EXTERNALLYRESOURCE-CREATE">
+  <Settings Key="height" Value="222"/>
+  <Settings Key="width" Value="394"/>
+  <Settings Key="title" Value="EXTERNALLYRESOURCE-CREATE.EXTERNALLYRESOURCEHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('EXTERNALLYRESOURCE',para);
+{
+var o = pageEvent.o.GetControl('ENAME_Value');
+if(o.id!=''){
+o.SetValue(data.ENAME);
+o.SetText(data.ENAME_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('ECODE_Value');
+	if(c.id!=''){
+		c.SetText(data.ECODE);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.ECODE, 'ECODE',false);{
+	var c = pageEvent.o.GetControl('SALESUNIT_Value');
+	if(c.id!=''){
+		c.SetText(data.SALESUNIT);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('UNIT_Value');
+	if(c.id!=''){
+		c.SetText(data.UNIT);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('REMARK_Value');
+	if(c.id!=''){
+		c.SetText(data.REMARK);
+	}
+}
+{
+var o = pageEvent.o.GetControl('TYPE_Value');
+if(o.id!=''){
+o.SetSelectedByValue(data.TYPE);
+}
+} var functionName = 'InforCenter_EXTERNALLYRESOURCE_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'EXTERNALLYRESOURCE'};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('ECODE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ECODE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('SALESUNIT_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.SALESUNIT = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('UNIT_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.UNIT = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('REMARK_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.REMARK = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('TYPE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TYPE = c.GetSelectedValue();
+}};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_EXTERNALLYRESOURCE_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  {
+     var ctrl=pageEvent.o.GetControl('ENAME_Value');
+     if(ctrl.id!='' &amp;&amp; pageEvent.FlagName =='ENAME'){
+		 var text='';
+		 var value='';
+		 for (var i = 0; i &lt;  data.length; i++) {
+		   var d=data[i];
+		   value+=';'+ d[pageEvent.SourceValue];
+		   text+=';'+d[pageEvent.SourceText];
+		 }
+		 if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+			text = text.substring(1);
+			value = value.substring(1);
+		 }
+		 ctrl.SetText(text);
+		 ctrl.SetValue(value);
+     }
+     
+     if(pageEvent.FieldInitList){
+     	for(var i=0;i&lt;pageEvent.FieldInitList.length;i++){
+     		var fieldInit=pageEvent.FieldInitList[i];
+     		ctrl=pageEvent.o.GetControl(fieldInit.TargetField+'_Value');
+     		if(ctrl.id!=''){
+     			var text='';
+     			for (var j = 0; j &lt;  data.length; j++) {
+     				var d=data[j];
+     			    text+=';'+d[fieldInit.SourceField];
+     			}
+     			if (HoteamUI.Common.IsNullOrEmpty(text) == false) {
+     				text = text.substring(1);
+     			}
+     			ctrl.SetText(text);
+     		}
+     	}		
+     }
+}"></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="100"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ECODE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="EXTERNALLYRESOURCE-CREATE.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_ExecInfoDataSource('ENAME','EXTERNALLYRESOURCE','ENAME',ctrlEvent.o.ContainerID(),ctrlEvent.o.GetValue())"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+  <Settings Key="regextipId" Value="EXTERNALLYRESOURCE-CREATE.ENAMERegex" />
+</PageControl><PageControl ControlID="ECODE" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ECODE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ECODE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODE_Label" ParentID="ECODE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="EXTERNALLYRESOURCE-CREATE.ECODEHeader" />
+</PageControl><PageControl ControlID="ECODE_Value" ParentID="ECODE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='EXTERNALLYRESOURCE';ctrlEvent.infoName='ECODE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="EXTERNALLYRESOURCE-CREATE.ECODERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="TYPE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="SALESUNIT"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TYPE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TYPE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TYPE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TYPE_Label" ParentID="TYPE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="EXTERNALLYRESOURCE-CREATE.TYPEHeader" />
+</PageControl><PageControl ControlID="TYPE_Value" ParentID="TYPE" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='EXTERNALLYRESOURCE';ctrlEvent.infoName='TYPE';InforCenter_Platform_GenerateScript_LovListValue(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+        InforCenter_Platform_Object_SetLovList(o,'TYPE','EXTERNALLYRESOURCE',true);
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="EXTERNALLYRESOURCE-CREATE.TYPERegex" />
+</PageControl><PageControl ControlID="SALESUNIT" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SALESUNIT_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SALESUNIT_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="SALESUNIT_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SALESUNIT_Label" ParentID="SALESUNIT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="EXTERNALLYRESOURCE-CREATE.SALESUNITHeader" />
+</PageControl><PageControl ControlID="SALESUNIT_Label_FieldFlag" ParentID="SALESUNIT" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="SALESUNIT_Value" ParentID="SALESUNIT" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='EXTERNALLYRESOURCE';ctrlEvent.infoName='SALESUNIT';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="EXTERNALLYRESOURCE-CREATE.SALESUNITRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="UNIT"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UNIT" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="UNIT_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UNIT_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="UNIT_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UNIT_Label" ParentID="UNIT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="EXTERNALLYRESOURCE-CREATE.UNITHeader" />
+</PageControl><PageControl ControlID="UNIT_Label_FieldFlag" ParentID="UNIT" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="UNIT_Value" ParentID="UNIT" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='EXTERNALLYRESOURCE';ctrlEvent.infoName='UNIT';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^(\d{0,10})(\.\d{1,4})?$" />
+  <Settings Key="regextipId" Value="EXTERNALLYRESOURCE-CREATE.UNITRegex" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="REMARK_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="REMARK_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="REMARK_Label" ParentID="REMARK" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="EXTERNALLYRESOURCE-CREATE.REMARKHeader" />
+</PageControl><PageControl ControlID="REMARK_Value" ParentID="REMARK" TypeName="TextBox" >
+  <Settings Key="type" Value="textarea"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="EXTERNALLYRESOURCE-CREATE.REMARKRegex" />
+</PageControl>  
+  </PageControls>
+</root>

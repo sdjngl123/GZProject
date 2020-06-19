@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeViewEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">树视图配置窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree view configuration window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">名称，作为查找配置项的关键字，也作为多语言Lable名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use the name as the keyword to find the configuration item, as well as the multilingual Lable name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">业务对象类型（此值必须是系统存在的业务模型）,在查找树下级节点时与父级对象类型比较，如果类型相同，则挂在相应的父级节点下面，此值对应通用页面树节点的Value3属性
+
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business object type (This value must be the business model that exists in the system). When looking for the child node of the tree, compare it with the parent object type, and if the type is the same, hang under the corresponding parent node, which corresponds to the Value3 attribute of the general page tree node</LocalizedLabel>
+    </Label>
+    <Label Name="ExpandAction">
+      <LocalizedLabel LanguageRef="zhs">节点展开验证动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node deployment verification action</LocalizedLabel>
+    </Label>
+    <Label Name="ExpandActionDescription">
+      <LocalizedLabel LanguageRef="zhs">节点展开验证的动作，可为空，为空时不验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The action of node deployment verification can be null, when it is null, don’t verify it.</LocalizedLabel>
+    </Label>
+    <Label Name="ShowStartNode">
+      <LocalizedLabel LanguageRef="zhs">显示根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show root node</LocalizedLabel>
+    </Label>
+    <Label Name="ShowStartNodeDescription">
+      <LocalizedLabel LanguageRef="zhs">是否显示根节点，默认false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Displays the root node, default false</LocalizedLabel>
+    </Label>
+    <Label Name="FilterFlag">
+      <LocalizedLabel LanguageRef="zhs">返回值配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return value configuration</LocalizedLabel>
+    </Label>
+    <Label Name="FilterFlagDescription">
+      <LocalizedLabel LanguageRef="zhs">主要用于返回值名称配置，多个使用分号分割，如：Tree_Current_value1;ObjectID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is mainly used for return value name configuration, multiple use partition numbers, such as: Tree_Current_value1; ObjectID</LocalizedLabel>
+    </Label>
+    <Label Name="View">
+      <LocalizedLabel LanguageRef="zhs">查询视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query View Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewDescription">
+      <LocalizedLabel LanguageRef="zhs">控制台中配置的视图名称（扩展名为.view的视图名称 ）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the view configured in the console (The name of the view whose extension name is view)</LocalizedLabel>
+    </Label>
+    <Label Name="TextField">
+      <LocalizedLabel LanguageRef="zhs">节点文本的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field of node text</LocalizedLabel>
+    </Label>
+    <Label Name="TextFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">显示节点的文本的字段，可选值为视图中存在的属性，如ENAME，这里只能指定一项，若要显示多个数据库字段，需要在视图中先合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Displays the field of the node text, and the optional value is the attribute that exists in the view, such as ENAME, only one is specified here. To display more than one database field, you need to merge in the view first</LocalizedLabel>
+    </Label>
+    <Label Name="TextDicField">
+      <LocalizedLabel LanguageRef="zhs">节点多语言文本的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The field of the multi-language text of the node</LocalizedLabel>
+    </Label>
+    <Label Name="TextDicFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">节点多语言文本的字段，数据库字段名称，数据库存储的值为Context.Label格式，如Platform.Ownspace，在树节点上的文本显示优先级为：节点多语言文本的字段&gt;节点文本的字段&gt;通过名称配置的多语言&gt;对象ID（如果前三种都没有值则显示对象ID）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The field of the multi-language text of the node, database field name, database stored value is Context. Label format, such as Platform. Ownspace, the priority of the text displayed on the tree node:the field of the node multi-language text, the field of the node text, the multilingual entity that is configured through the name, object ID (the object ID is displayed if none of the first three has values)</LocalizedLabel>
+    </Label>
+    <Label Name="IconClose">
+      <LocalizedLabel LanguageRef="zhs">折叠图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collapse icon</LocalizedLabel>
+    </Label>
+    <Label Name="IconCloseDescription">
+      <LocalizedLabel LanguageRef="zhs">树节点折叠图标，可以填写图片路径或者雪碧图名称，如果展开和折叠使用同一个图标，IconClose和IconOpen配置任意一个都可以</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree node collapse icon, you can fill in either a picture path or a Sprite name, and if you expand and collapse using the same icon, you can either configure IconClose or IconOpen </LocalizedLabel>
+    </Label>
+    <Label Name="IconOpen">
+      <LocalizedLabel LanguageRef="zhs">展开图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand icon</LocalizedLabel>
+    </Label>
+    <Label Name="IconOpenDescription">
+      <LocalizedLabel LanguageRef="zhs">展开图标，可以填写图片路径或者雪碧图名称，如果展开和折叠使用同一个图标，IconClose和IconOpen配置任意一个都可以</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand the icon, you can fill in either a picture path or a Sprite name, and if you expand and collapse using the same icon, you can either configure IconClose and IconOpen </LocalizedLabel>
+    </Label>
+    <Label Name="QueryField">
+      <LocalizedLabel LanguageRef="zhs">查询字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Field</LocalizedLabel>
+    </Label>
+    <Label Name="QueryFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">用于查询视图，多个字段以；分割。在没有配置查询字段，默认使用TextField值。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to query views, multiple fields to; split. The TextField value is used by default when no query field is configured.</LocalizedLabel>
+    </Label>
+    <Label Name="StateField">
+      <LocalizedLabel LanguageRef="zhs">状态字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State field</LocalizedLabel>
+    </Label>
+    <Label Name="StateFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">状态图标,默认为对象的StatEid，需要将对象关联【生命周期】，状态是【状态列表】中的值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State icon is default as the stateid of the object, it is necessary to associate the object with its [lifecycle] and the state is the value in the [list of states] of the object</LocalizedLabel>
+    </Label>
+    <Label Name="StageField">
+      <LocalizedLabel LanguageRef="zhs">阶段字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase field</LocalizedLabel>
+    </Label>
+    <Label Name="StageFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">阶段字段，对象的阶段状态的字段，需要将对象关联【生命周期】，状态是【状态列表】中的值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase field, the field of the phase state of the object, it is necessary to associate the object with its [lifecycle], and the state is the value in the [list of states] of the object</LocalizedLabel>
+    </Label>
+    <Label Name="IconCloseField">
+      <LocalizedLabel LanguageRef="zhs">折叠图标的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fields of the collapse icon</LocalizedLabel>
+    </Label>
+    <Label Name="IconCloseFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">折叠图标的字段，可选值为视图里面包含的属性（如基类的ICON属性），从数据库中获取图标路径，如果折叠图标的字段和折叠图标同时配置，以折叠图标的字段为准</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The fields of the collapsed icon, the selectable values are attributes contained within the view (such as the ICON attribute of the base class), the icon path is obtained the database, and if the field of the collapsed icon and the collapsed icon are simultaneously configured, the fields of the collapse icon will prevail</LocalizedLabel>
+    </Label>
+    <Label Name="IconOpenField">
+      <LocalizedLabel LanguageRef="zhs">展开图标的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand the field of the icon</LocalizedLabel>
+    </Label>
+    <Label Name="ShowFormat">
+      <LocalizedLabel LanguageRef="zhs">节点文本的展示格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display format of node text</LocalizedLabel>
+    </Label>
+    <Label Name="ShowFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">在视图中的显示格式可以进行多列组合展示，最终展示结果为属性格式和展示格式合并的效果，用法如下
+如果在发送内容列中添加发送人和发送时间，则
+1. 首先在属性格式中填写格式，如：发送内容：{0}
+2. 点击展示格式，在弹出的对话框中添加发送人和发送时间两列，并填写对应列的格式，如：发送者格式为：发送者：{0}，发送时间格式为：发送时间：yyyy-MM
+3. 在弹出的对话框的展示格式文本框中填写格式，如:{0} {1}/{2}。{0}会替换发送内容，{1}替换发送者，{2}替换发送时间
+最终结果为：发送内容：TestInformation 发送者：张三/发送时间：2014-10
+
+注意事项：
+如果没有显示格式的要求可不填写，不填写默认为{0}
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The display format in the view can be displayed in multiple columns, and the final display result is the result of the combination of the attribute format and display format. The usage is as follows:
+If the sender and the sending time are added in the sending content column,
+1. First fill in the format in the attribute format, such as: sending content: {0}
+2. Click the display format, add the sender and sending time two columns in the pop-up dialog box, fill in the format of the corresponding column, such as: the sender format is: sender: {0}, the sending time format is: yyyy-MM
+3. Fill in the format in the display format text box of the pop-up dialog, such as: {0} {1}/{2}. {0} will replace the sending content, {1} replace the sender, {2} replace the sending time
+The final result is: send content: TestInformation  senderr: Zhang San / sending time: 2014-10
+Notes:
+If there is no requirement to display format, it is not necessary to fill in it. When it is npt filled in, the default value is {0}</LocalizedLabel>
+    </Label>
+    <Label Name="IconOpenFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">展开图标的字段，可选值为视图里面包含的属性，从数据库中获取图标路径，如果展开图标的字段和展开图标同时配置，以展开图标的字段为准</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand the field of the icon, the selectable value is the attribute contained within the view, the icon path is obtained from the database, and if the field of the expanded icon and the expand icon are configured at the same time, the field of the expanded icon will prevail</LocalizedLabel>
+    </Label>
+    <Label Name="NodeTypeField">
+      <LocalizedLabel LanguageRef="zhs">节点类型的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field of node type</LocalizedLabel>
+    </Label>
+    <Label Name="NodeTypeFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">对象中存放节点类型的字段，可选值为视图里面包含的属性，从数据库中获取节点类型，用于在一个视图中存在多个对象类型，且不同的对象类型有不同的下级节点。如果同时配置了节点类型（NodeType）和节点类型字段（NodeTypeField），以节点类型字段为准</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the field in which the node type is stored in the object, the optional value is the attribute contained in the view, the node type is obtained from the database, and it is used in the view with a plurality of object types exist, and different object types have different subordinate nodes. If both the node type (NodeType) and the node type field (NodeTypeField) are configured, that node type field prevail</LocalizedLabel>
+    </Label>
+    <Label Name="NodeType">
+      <LocalizedLabel LanguageRef="zhs">节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node type</LocalizedLabel>
+    </Label>
+    <Label Name="NodeTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">为节点指定自定义类型（与对象类型（ObjectType）的区别为该类型是自定义的，对象类型必须是是系统存在的业务对象模型名称），在查找树下级节点时与父级节点类型比较，如果类型相同，则挂在相应的父级节点下面，此值对应通用页面树节点的Value5属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Specifies the custom type for the node (The difference between the object type (ObjectType) is that the node type is custom, the object type must be the business object model name that exists in the system), and when finding the tree child node to compare with the parent node type, if the type is the same, tit shall be hung below the corresponding parent node, the value of which corresponds to the Value5 attribute of the general page tree node</LocalizedLabel>
+    </Label>
+    <Label Name="EntityFilter">
+      <LocalizedLabel LanguageRef="zhs">子表过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Child table filter criteria</LocalizedLabel>
+    </Label>
+    <Label Name="EntityFilterDescription">
+      <LocalizedLabel LanguageRef="zhs">只用于关系表查询（关系表和实体表联合查询），该条件是实体对象表的查询条件，如 WORKFLOWID='[SelectID]'，可替换参数为包含前台列表参数数据（如[List_EID]）和树节点参数数据（如[Tree_Current_Value1]）及页面参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is used only for relational table queries (relational table and entity table federated query), which is the query criteria for the entity object table, such as WORKFLOWID='[SelectID]'and the replaceable parameter is the parameter data including foreground list parameter (such as [List_EID]), tree node parameter date (suh as[Tree_Current_Value1]) and the page parameter</LocalizedLabel>
+    </Label>
+    <Label Name="Filter">
+      <LocalizedLabel LanguageRef="zhs">主表的过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Filter Criteria for main Table</LocalizedLabel>
+    </Label>
+    <Label Name="FilterDescription">
+      <LocalizedLabel LanguageRef="zhs">用于单表查询和关系表查询，在单表查询中，该条件就是对象表(实体对象表或关系对象表)的条件；针对关系表查询（关系表和实体表联合查询），该条件为关系表的查询条件 例子如下：WORKFLOWID=(SELECT WORKFLOWID FROM WORKFLOWTASKINFO WHERE EID='[Tree_Current_value1]')
+可替换参数为包含前台列表参数数据（如[List_EID]）和树节点参数数据（如[Tree_Current_Value1]）及页面参数
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used for single table query and relational table query, in the single table query, the condition is the condition of the object table (entity object table or relational object table); for relational table queries (relational table and entity table joint query), the example of the condition is the condition of the relationship table is as follows: WORKFLO WID=(SELECT WORKFLOWID FROM WORKFLOWTASKINFO WHERE EID='[Tree_Current_value1]')
+The replaceable parameter is the parameter data including foreground list parameter data (such as [List_EID]), tree node parameter data (such as Tree_Current_Value1) and the page parameter</LocalizedLabel>
+    </Label>
+    <Label Name="Key">
+      <LocalizedLabel LanguageRef="zhs">主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Primary key</LocalizedLabel>
+    </Label>
+    <Label Name="KeyDescription">
+      <LocalizedLabel LanguageRef="zhs">用于标示该层级的主键，整型，必填，在查找树下级节点时与父级主键比较，如果相同，则挂在相应的父级节点下面，此值对应通用页面树节点的Value4属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Primary key used to marki this level is integral, it must be filled, compared to parent primary key when looking for child nodes of the tree, and if they are the same, hangs it below the corresponding parent node, the value of which corresponds to the Value4 attribute of the general page tree node</LocalizedLabel>
+    </Label>
+    <Label Name="SuperKey">
+      <LocalizedLabel LanguageRef="zhs">父级主键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent primary key</LocalizedLabel>
+    </Label>
+    <Label Name="SuperKeyDescription">
+      <LocalizedLabel LanguageRef="zhs">当树加载下级时，前台会将该节点层级的主键(value4)传过来，查找schema的父级主键，如果匹配，将按照该schema查找下级树结构。可选值为整形，如果是起始节点，则配置-1
+在查找下级树结构时，会首先按照父级节点类型查找，再按照父级对象类型查找，最后按照父级主键查找，如果该节点循环加载，则按照自身查找，最终结果为查找的所有数据（去除重复）的集合。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the tree loads a subordinate, the foreground will pass the primary key (value4) at the node level, find the parent primary key of the schema, and if it matches, looks up the child tree structure according to the schema. The optional value is integral, if it is the start node, configure-1
+When looking for a subordinate level tree structure, first find it according to the parent node type, then find it according to the parent object type, and finally find it according to the parent key of the parent level. If the node is cyclically loaded, find it by itself, the final result is the set of all the found data (removing duplicates).</LocalizedLabel>
+    </Label>
+    <Label Name="Loop">
+      <LocalizedLabel LanguageRef="zhs">是否循环加载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to cyclic loading</LocalizedLabel>
+    </Label>
+    <Label Name="LoopDescription">
+      <LocalizedLabel LanguageRef="zhs">是否循环加载，本项配置对应的节点在加载下级节点时是否可能存在循环加载
+当自身需要加载自身时，（如父类型和子类型都是文件夹）时，此值设为true，如果只需要加载一次，此值设为false
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to cyclic loading, whether cyclic loading is exist when the node corresponding to this configuration loading subordinate level nodes
+This value is set to true when it need to load itself (such as both parent type and child type are folders), if you only need to load once, this value is set to false</LocalizedLabel>
+    </Label>
+    <Label Name="ParentObjectType">
+      <LocalizedLabel LanguageRef="zhs">父级对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object type</LocalizedLabel>
+    </Label>
+    <Label Name="ParentObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">当树加载下级时，前台会将该节点的对象类型（value3）传过来，查找schema的父级对象类型，如果匹配，将按照该schema查找下级树结构。
+在查找下级树结构时，会首先按照父级节点类型查找，再按照父级对象类型查找，最后按照父级主键查找，如果该节点循环加载，则按照自身查找，最终结果为查找的所有数据（去除重复）的集合。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the tree loads a subordinate, the foreground will pass the node's object type (value3), find the parent object type of the schema, and if it matches, looks for the child tree structure according to the schema.
+When looking for a subordinate level tree structure, first find it according to the parent node type, then find it according to the parent object type, finally find it according to the parent key of the parent level. If the node is cyclically loaded, find it by itself, the final result is the set of all the found data (removing duplicates).</LocalizedLabel>
+    </Label>
+    <Label Name="ParentNodeTypeName">
+      <LocalizedLabel LanguageRef="zhs">父级节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent node type</LocalizedLabel>
+    </Label>
+    <Label Name="ParentNodeTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">当树加载下级时，前台会将该节点的节点类型（value5）传过来，查找schema的父级节点类型，如果匹配，将按照该schema查找下级树结构。
+在查找下级树结构时，会首先按照父级节点类型查找，再按照父级对象类型查找，最后按照父级主键查找，如果该节点循环加载，则按照自身查找，最终结果为查找的所有数据（去除重复）的集合。
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the tree loads a subordinate, the foreground will pass the node type (value5) of the node, find the parent node type of the schema, and if it matches, looks for the child tree structure according to the schema.
+When looking for a subordinate level tree structure, first find it according to the parent node type, then find it according to the parent object type, and finally find it according to the parent key of the parent level. If the node is cyclically loaded, find it by itself, the final result is the set of all the found data (removing duplicates).</LocalizedLabel>
+    </Label>
+    <Label Name="IsExistNode">
+      <LocalizedLabel LanguageRef="zhs">是否存在节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether there is a node</LocalizedLabel>
+    </Label>
+    <Label Name="IsExistNodeDescription">
+      <LocalizedLabel LanguageRef="zhs">是否存在下级节点，默认为true。如果为false，则树前面的“+”会去掉，表明没有下级节点。除非确保该节点下面一定没有数据时，此值才设为false（如果设为false，即使下级节点有数据也不会显示，一些结构固定不发生改变的树可能用得到）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether there is a child node and the default is true. If it is false, the "+" in front of the tree is removed indicating there are no child nodes. This value is set to false unless you make sure that there is no data below the node (if set to false, even if there is data below the child node. it will not display, some trees that do not change in structure may be available)</LocalizedLabel>
+    </Label>
+    <Label Name="ShowChildCount">
+      <LocalizedLabel LanguageRef="zhs">显示下级节点数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show tree node child count</LocalizedLabel>
+    </Label>
+    <Label Name="ShowChildCountDescription">
+      <LocalizedLabel LanguageRef="zhs">适用于类似我的流程树节点的下级数量显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show tree node child count</LocalizedLabel>
+    </Label>
+    <Label Name="ShowChildCountField">
+      <LocalizedLabel LanguageRef="zhs">显示下级节点数量的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show tree node child count</LocalizedLabel>
+    </Label>
+    <Label Name="ShowChildCountFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">适用于类似我的流程树节点的下级数量显示，字段的返回值应为true或者false；优先以字段值为准。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show tree node child count</LocalizedLabel>
+    </Label>
+    <Label Name="root">
+      <LocalizedLabel LanguageRef="zhs">根目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root Directory</LocalizedLabel>
+    </Label>
+    <Label Name="attribute">
+      <LocalizedLabel LanguageRef="zhs">根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node</LocalizedLabel>
+    </Label>
+    <Label Name="Schema">
+      <LocalizedLabel LanguageRef="zhs">下级节点加载模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate node load mode</LocalizedLabel>
+    </Label>
+    <Label Name="QueryView">
+      <LocalizedLabel LanguageRef="zhs">树结构查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree structure query</LocalizedLabel>
+    </Label>
+    <Label Name="CreateWebTreeView">
+      <LocalizedLabel LanguageRef="zhs">创建WebTreeView节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New WebTreeView node</LocalizedLabel>
+    </Label>
+    <Label Name="CreateWebTreeViewSchema">
+      <LocalizedLabel LanguageRef="zhs">创建Schema节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Schema Node</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAdd">
+      <LocalizedLabel LanguageRef="zhs">复制新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy and add</LocalizedLabel>
+    </Label>
+    <Label Name="TreeExist">
+      <LocalizedLabel LanguageRef="zhs">您不能创建重名的模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You cannot create a duplicate module</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

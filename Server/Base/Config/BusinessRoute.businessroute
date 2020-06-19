@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <BusinessRoute Name="LoadBalanceRoute" Assembly="Hoteam.InforCenter.UI.Base" ClassName="Hoteam.InforCenter.UI.Base.BusinessRoute.LoadBalanceBusinessRoute"/>
+  <BusinessRoute Name="DefaultRoute" Assembly="Hoteam.InforCenter.UI.Base" ClassName="Hoteam.InforCenter.UI.Base.BusinessRoute.DefaultBusinessRoute"/>
+</root>

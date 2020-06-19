@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMMANDSERVICEVIEWView" IsWeb="true">
+    <Label Name="COMMANDSERVICEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">转换状态视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">conversion stat view</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDSERVICEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">转换状态视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">conversion stat view</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDHeader">
+      <LocalizedLabel LanguageRef="zhs">转化命令名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMAND</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDCaption">
+      <LocalizedLabel LanguageRef="zhs">转化命令名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMAND</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">转化状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONSTATE</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">转化状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONSTATE</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_CLUSTERNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">预期集群名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_CLUSTERNAME</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_CLUSTERNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">预期集群名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_CLUSTERNAME</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_ENDPOINTNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">预期节点名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_ENDPOINTNAME</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_ENDPOINTNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">预期节点名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_ENDPOINTNAME</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_CONVERSIONNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">预期转换器名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_CONVERSIONNAME</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_CONVERSIONNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">预期转换器名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_CONVERSIONNAME</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_IPHeader">
+      <LocalizedLabel LanguageRef="zhs">预期转换器ip</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_IP</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_IPCaption">
+      <LocalizedLabel LanguageRef="zhs">预期转换器ip</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_IP</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_PORTHeader">
+      <LocalizedLabel LanguageRef="zhs">预期转换器端口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_PORT</LocalizedLabel>
+    </Label>
+    <Label Name="EXPECT_PORTCaption">
+      <LocalizedLabel LanguageRef="zhs">预期转换器端口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXPECT_PORT</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONCOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">转化次数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONCOUNT</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONCOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">转化次数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONCOUNT</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONSTARTDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">转换开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONSTARTDATE</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONSTARTDATECaption">
+      <LocalizedLabel LanguageRef="zhs">转换开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONSTARTDATE</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONENDDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">转换结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONENDDATE</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONENDDATECaption">
+      <LocalizedLabel LanguageRef="zhs">转换结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONENDDATE</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CREATETIME</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CREATETIME</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDMESSAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">命令消息正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMANDMESSAGE</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDMESSAGECaption">
+      <LocalizedLabel LanguageRef="zhs">命令消息正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMANDMESSAGE</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONSPANHeader">
+      <LocalizedLabel LanguageRef="zhs">转换时长(秒)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONSPAN</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONSPANCaption">
+      <LocalizedLabel LanguageRef="zhs">转换时长(秒)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONSPAN</LocalizedLabel>
+    </Label>
+  </Context>
+  
+  <Context Name="COMMANDSERVICEVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

@@ -1,0 +1,5 @@
+﻿
+<Settings Key="item[ROWORDER]" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="InfoItem[ROWORDER]_Container"/>
+</Settings>

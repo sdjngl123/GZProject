@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--新建视图接口-->
+  <PluginItem Name="ModelListViewInfo" Type="Business" Assembly="Hoteam.InforCenter.WebStudio.View.Business" Class="Hoteam.InforCenter.WebStudio.View.Business.ModelListViewOption" />
+  <PluginItem Name="ViewCacheUpdate" Type="UDPNotify" Assembly="Hoteam.InforCenter.WebStudio.View.Business" Class="Hoteam.InforCenter.WebStudio.View.Business.ViewCacheUpdateNotify" />
+</root>

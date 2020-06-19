@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FileDownloadPage" IsCache="true">
+  <Settings Key="height" Value="390"/>
+  <Settings Key="width" Value="650"/>
+  <Settings Key="draggable" Value="false"/>
+  <Settings Key="resizable" Value="false"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_FileDownloadPage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="FileDownloadPage.Title"/>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FileDownloadCtrl"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FileDownloadCtrl" ParentID="Top_Container" TypeName="Filetransfer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreateComplete" Script="InforCenter_Platform_FileDownloadCtrl_OnCreateComplete(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnDownloadSuccess" Script="InforCenter_Platform_FileDownloadCtrl_OnDownloadSuccess(ctrlEvent);"/>
+      </PageHandlers>
+      <!--<Settings Key="size" Value="400"/>-->
+    </PageControl>
+    
+    <PageControl ControlID="Btn_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FileDownloadPage_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+  </PageControls>
+</root>

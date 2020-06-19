@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem ServiceName="MobileNativeService"  ServiceAssembly="Hoteam.InforCenter.MobileNative.Service.dll" ServiceClass="Hoteam.InforCenter.MobileNative.Service.MobileNativeService" ContractAssembly="Hoteam.InforCenter.MobileNative.Service.dll" ContractClass="Hoteam.InforCenter.MobileNative.Service.IMobileNativeService"/>
+</root>

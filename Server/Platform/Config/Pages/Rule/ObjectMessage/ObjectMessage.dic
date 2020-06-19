@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectMessage" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象消息订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object message subscription</LocalizedLabel>
+    </Label>
+    <Label Name="MessageActorValue">
+      <LocalizedLabel LanguageRef="zhs">消息接收对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message receiving object</LocalizedLabel>
+    </Label>
+    <Label Name="MessageActionValue">
+      <LocalizedLabel LanguageRef="zhs">接收消息动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receive message action</LocalizedLabel>
+    </Label>
+    <Label Name="MessageList">
+      <LocalizedLabel LanguageRef="zhs">对象消息订阅列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object message subscription list</LocalizedLabel>
+    </Label>
+    <Label Name="Published">
+      <LocalizedLabel LanguageRef="zhs">发布</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Publish</LocalizedLabel>
+    </Label>
+    <Label Name="SameMessageInfoError">
+      <LocalizedLabel LanguageRef="zhs">当前选中行和其它行消息接收对象重复！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The messages of the current selected row and other row have duplicate objects!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

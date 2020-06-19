@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--消息管理-->
+  <MenuItem Name="MessageManagementMenu">
+    <WebAction Name="DeleteMessage" ModuleName="Platform" LabelName="MenuItems.DeleteMessage" Image="p_delete" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMethod PageName="DeleteObject" IsPopup="true" Order="1"  SelectID="[List_EID]">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="DeleteAllMessage" ModuleName="Platform" LabelName="MenuItems.DeleteAllMessage" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO" SelectID="" SelectMode="NULL" />
+      <WebMessage PromptLabel="DeleteObject.Text" PromptType="CONFIRM" />
+      <BusinessMethod Name="InforCenter.Common.CommunicationService.DeleteAllMessage" IsWCFService="true">
+      </BusinessMethod>
+      <JSMethod Name="InforCenter_Platform_InstantMessage_DeleteAllRecordLog" SelectID="">
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MakeRead" ModuleName="Platform" LabelName="MenuItems.MakeRead" Image="p_markread" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <BusinessMethod Name="InforCenter.Common.CommunicationService.MakeRead" SelectID="[List_EID]" IsWCFService="true">
+      </BusinessMethod>
+      <WebMessageAndLogger SendMessage="false" WriteLogger="true"  SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common"/>
+    </WebAction>
+    <WebAction Name="MakeAllRead" ModuleName="Platform" LabelName="MenuItems.MakeAllRead" Image="p_markallread" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="" SelectMode="NULL" />
+      <BusinessMethod Name="InforCenter.Common.CommunicationService.MakeAllRead" IsWCFService="true">
+      </BusinessMethod>
+      <WebMessageAndLogger SendMessage="false" WriteLogger="true"  SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common"/>
+    </WebAction>
+  </MenuItem >
+
+  <MenuItem Name="MessageManagementRightMenu">
+    <WebAction Name="DeleteMessage" ModuleName="Platform" LabelName="MenuItems.DeleteMessage" Image="p_delete" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="MULTI" />
+      <WebMethod PageName="DeleteObject" IsPopup="true" Order="1"  SelectID="[List_EID]">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="MakeRead" ModuleName="Platform" LabelName="MenuItems.MakeRead" Image="p_markread" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="MULTI" />
+      <BusinessMethod Name="InforCenter.Common.CommunicationService.MakeRead" SelectID="[List_EID]" IsWCFService="true">
+      </BusinessMethod>
+      <WebMessageAndLogger SendMessage="false" WriteLogger="true"  SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common"/>
+    </WebAction>
+  </MenuItem >
+</root>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DocumentTypeEdit" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">文档类型管理编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Type Management Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="Extension">
+      <LocalizedLabel LanguageRef="zhs">扩展名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extension</LocalizedLabel>
+    </Label>
+    <Label Name="Icon">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ClassifyName">
+      <LocalizedLabel LanguageRef="zhs">分类名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Classification name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewMode">
+      <LocalizedLabel LanguageRef="zhs">预览模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Preview mode</LocalizedLabel>
+    </Label>
+    <Label Name="EditMode">
+      <LocalizedLabel LanguageRef="zhs">编辑模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit Mode</LocalizedLabel>
+    </Label>
+    <Label Name="NotNull">
+      <LocalizedLabel LanguageRef="zhs">列不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="DocTypeNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">文档类型的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of document type</LocalizedLabel>
+    </Label>
+    <Label Name="ExtensionDescription">
+      <LocalizedLabel LanguageRef="zhs">文档附件所对应的扩展名，该文档如果有多个扩展名，用分号分隔。例如:doc;docx</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The extension associated with the document attachment, separated by a semicolon if there are multiple extensions. for example: doc; docx</LocalizedLabel>
+    </Label>
+    <Label Name="IconDescription">
+      <LocalizedLabel LanguageRef="zhs">文档类型对应的图标路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon path for document type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="WorkFlowListPageLink" IsTemplate="false">
+    <PageLink Name="WorkflowStatisticsList" PageName="WorkflowListStatistics" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  <PageLinks Name="StartWrokFlowListPageLink" IsTemplate="false">
+    <PageLink Name="StartWorkflowStatisticsList" PageName="StartWorkflowStatistics" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  <PageLinks Name="ResponsibleWrokFlowListPageLink" IsTemplate="false">
+    <PageLink Name="ResponsibleWorkflowStatisticsList" PageName="ResponsibleWorkflowStatistics" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  <PageLinks Name="RunWrokFlowListPageLink" IsTemplate="false">
+    <PageLink Name="WrokFlowList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="RunWorkFlowList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="CompleteWrokFlowListPageLink" IsTemplate="false">
+    <PageLink Name="WrokFlowList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="CompleteWorkFlowList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="StopWrokFlowListPageLink" IsTemplate="false">
+    <PageLink Name="WrokFlowList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="StopWorkFlowList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="SuspendWrokFlowListPageLink" IsTemplate="false">
+    <PageLink Name="WrokFlowList" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="SuspendWorkFlowList" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="WorkFlowPropertys" ObjectType="WORKFLOWINFO" HideTitle="false" IsTemplate="false">
+    <PageLink Name="WorkFlowProperty" PageName="ObjectProperty" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkFlowObjectList" PageName="WorkflowAccessory" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="WorkflowId" Value="[SelectID]" />
+    </PageLink>
+    <PageLink Name="AuditList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="WorkFlowTasklistview" />
+    </PageLink>
+    <PageLink Name="WorkflowView" PageName="PropertyPageTemplate" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkflowInform" PageName="WorkflowInform" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ViewWorkflowID" Value="[SelectID]" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="WorkFlowTaskPageLink" IsTemplate="false">
+    <PageLink Name="TaskStatisticsList" PageName="WorkflowTaskStatistics" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  <PageLinks Name="WorkFlowAuditPageLink" IsTemplate="false">
+    <PageLink Name="TaskAudit" PageName="WorkFlowAudit" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="MenuName" Value="AuditTaskMenu" />
+      <Para Name="AuditMenuName" Value="OnlyAuditTaskMenu" />
+      <Para Name="PageLinksName" Value="TaskAuditPageLink" />
+    </PageLink>
+    <PageLink Name="AuditList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="AuditTasklistview" />
+    </PageLink>
+    <PageLink Name="WorkflowView" PageName="FlowTemplateView" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  <PageLinks Name="TaskAuditPageLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="AttachObjectList" PageName="RootObject" IsSelected="true" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="AuditWorkflowID" Value="[WORKFLOWID]" />
+    </PageLink>
+    <!--<PageLink Name="ChildObjectPageLink" PageName="ChildObject" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="AuditWorkflowID" Value="[WORKFLOWID]" />
+    </PageLink>
+    <PageLink Name="QuoteObjectPageLink" PageName="QuoteObject" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="AuditWorkflowID" Value="[WORKFLOWID]" />
+    </PageLink>-->
+  </PageLinks>
+  <PageLinks Name="MyWorkFlowTaskPageLink" IsTemplate="false">
+    <PageLink Name="MyWorkFlowTask" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MyWorkFlowTaskList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="DePositWorkFlowTaskPageLink" IsTemplate="false">
+    <PageLink Name="DePositWorkFlowTask" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="DePositWorkFlowTaskList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="DeliveryWorkFlowTaskPageLink" IsTemplate="false">
+    <PageLink Name="DeliveryWorkFlowTask" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="DeliveryWorkFlowTaskList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="AuditedTaskPageLink" IsTemplate="false">
+    <PageLink Name="AuditedTask" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="AuditedTaskList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="MyCreateWorkFlowPageLink" IsTemplate="false">
+    <PageLink Name="MyCreateWorkFlow" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MyCreateWorkFlowList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="WorkFlowTaskPropertys" ObjectType="WORKFLOWTASKINFO" HideTitle="false" IsTemplate="false">
+    <PageLink Name="WorkFlowTaskProperty" PageName="ObjectProperty" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkFlowProperty" PageName="FlowPropertyInTask" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkFlowObjectList" PageName="WorkflowAccessory" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="TaskId" Value="[SelectID]" />
+    </PageLink>
+    <PageLink Name="AuditList" PageName="TabListPage" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ListViewName" Value="TaskPropertylistview" />
+    </PageLink>
+    <PageLink Name="WorkflowView" PageName="PropertyPageTemplate" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkflowPlugin" PageName="WorkflowPlugin" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="IsEdit" Value="false" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="WorkFlowStartPageLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="FlowTaskActor" PageName="FlowTaskActor" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false" />
+    <PageLink Name="WorkflowTemplate" PageName="FlowTemplateView" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkflowPlugin" PageName="WorkflowPlugin" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>
+  <!--<PageLinks Name="WorkFlowStartPageLink" IsTemplate="false">
+    <PageLink Name="WorkflowObjectList" PageName="WorkflowObjectList" IsSelected="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+    <PageLink Name="WorkflowTemplate" PageName="FlowTemplateView" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" />
+  </PageLinks>-->
+
+  <PageLinks Name="WorkFlowAccessoryLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="RootAccessory" PageName="RootObject" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false" />
+    <!--<PageLink Name="ChildAccessory" PageName="ChildObject" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false" />
+    <PageLink Name="QuoteAccessory" PageName="QuoteObject" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false" />-->
+  </PageLinks>
+</root>

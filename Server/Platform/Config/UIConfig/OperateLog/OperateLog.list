@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="OperateLogSearch" MenuName="" ListViewName="OPERATELOGSEARCHVIEW"  QueryPageName="OPERATELOGSEARCHVIEW-QUERY" ListTitleDataService="" OnePageDataService="InforCenter.Common.OperateLogServiceExt.GetOperateLogOnePageGrid" AllPageDataService="">
+  </ListManagement>
+</root>

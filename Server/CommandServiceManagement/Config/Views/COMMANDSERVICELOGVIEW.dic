@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMMANDSERVICELOGVIEWView" IsWeb="true">
+    <Label Name="COMMANDSERVICELOGVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">转换日志视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMANDSERVICELOGVIEW</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDSERVICELOGVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">转换日志视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMANDSERVICELOGVIEW</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDIDHeader">
+      <LocalizedLabel LanguageRef="zhs">命令ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMANDID</LocalizedLabel>
+    </Label>
+    <Label Name="COMMANDIDCaption">
+      <LocalizedLabel LanguageRef="zhs">命令ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">COMMANDID</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONINFOIDHeader">
+      <LocalizedLabel LanguageRef="zhs">转化ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONINFOID</LocalizedLabel>
+    </Label>
+    <Label Name="CONVERSIONINFOIDCaption">
+      <LocalizedLabel LanguageRef="zhs">转化ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONVERSIONINFOID</LocalizedLabel>
+    </Label>
+    <Label Name="LOGLEVELHeader">
+      <LocalizedLabel LanguageRef="zhs">日志级别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LOGLEVEL</LocalizedLabel>
+    </Label>
+    <Label Name="LOGLEVELCaption">
+      <LocalizedLabel LanguageRef="zhs">日志级别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LOGLEVEL</LocalizedLabel>
+    </Label>
+    <Label Name="CONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">日志内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONTENT</LocalizedLabel>
+    </Label>
+    <Label Name="CONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">日志内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONTENT</LocalizedLabel>
+    </Label>
+    
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CREATETIME</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CREATETIME</LocalizedLabel>
+    </Label>
+    
+  </Context>
+  
+  <Context Name="COMMANDSERVICELOGVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

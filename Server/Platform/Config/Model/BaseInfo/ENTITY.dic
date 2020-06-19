@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="ENTITYModel" IsWeb="true">
+    <Label Name="ENTITYHeader">
+      <LocalizedLabel LanguageRef="zhs">基类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Base class</LocalizedLabel>
+    </Label>
+    <Label Name="ENTITYCaption">
+      <LocalizedLabel LanguageRef="zhs">基类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Base class</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">主对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDHeader">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="OWNGIDCaption">
+      <LocalizedLabel LanguageRef="zhs">所属组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="ESTATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">站点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Site</LocalizedLabel>
+    </Label>
+    <Label Name="ESTATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">站点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Site</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ICONCaption">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ELASTINSERTHeader">
+      <LocalizedLabel LanguageRef="zhs">最后修改插入的EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the inserted EID in the end </LocalizedLabel>
+    </Label>
+    <Label Name="ELASTINSERTCaption">
+      <LocalizedLabel LanguageRef="zhs">最后修改插入的EID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify the inserted EID in the end </LocalizedLabel>
+    </Label>
+    <Label Name="ELASTFINALSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">最终状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final state</LocalizedLabel>
+    </Label>
+    <Label Name="ELASTFINALSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">最终状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Final state</LocalizedLabel>
+    </Label>
+    <Label Name="STAGESTATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="STAGESTATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+    <Label Name="EMINORVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">小版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Small version</LocalizedLabel>
+    </Label>
+    <Label Name="EMINORVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">小版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Small version</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

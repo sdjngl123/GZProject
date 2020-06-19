@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ValidationItem Name="String80" Value="^([\s\S]{0,80})?$" />
+  <ValidationItem Name="String180" Value="^([\s\S]{0,180})?$" />
+  <ValidationItem Name="String20" Value="^([\s\S]{0,20})?$" />
+  <ValidationItem Name="String50" Value="^([\s\S]{0,50})?$" />
+  <ValidationItem Name="String100" Value="^([\s\S]{0,100})?$" />
+  <ValidationItem Name="String200" Value="^([\s\S]{0,200})?$" />
+  <ValidationItem Name="String500" Value="^([\s\S]{0,500})?$" />
+  <ValidationItem Name="String1000" Value="^([\s\S]{0,1000})?$" />
+  <ValidationItem Name="String2000" Value="^([\s\S]{0,2000})?$" />
+  <ValidationItem Name="Integer" Value="^[1-9][0-9]{0,8}$" />
+  <ValidationItem Name="LongInteger" Value="^(\+|-)?\d{1,20}$" />
+  <ValidationItem Name="Float" Value="^(-?\d+)(\.\d+)?$" />
+  <ValidationItem Name="Double" Value="^(-?\d+)(\.\d+)?$" />
+  <ValidationItem Name="Numeric" Value="^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?" />
+  <ValidationItem Name="Date" Value="^(?:(?:(?!0000)\d{4})-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01]))$" />
+  <ValidationItem Name="DateTime" Value="^(?:(?:(?!0000)\d{4})-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01]) ([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])$" />
+  <ValidationItem Name="Time" Value="^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$" />
+  <ValidationItem Name="Phone" Value="(^(((\d{3,4})-)?\d{6,8})$|^(1[0-9]\d{9})$)|(^$)" />
+  <ValidationItem Name="EMail" Value="(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)|(^$)" />
+  <ValidationItem Name="ZipCode" Value="^[1-9]\d{5}(?!\d)$|(^$)" />
+  <ValidationItem Name="NotEmpty" Value="^\s*(\S+\s*)+$" />
+  <ValidationItem Name="Code" Value="^([A-Za-z0-9_]{1,100})$" />
+  <ValidationItem Name="Char100" Value="^([A-Za-z]{1,100})$" />
+  <ValidationItem Name="Float10_5" Value="^(-?\d{0,10})(\.\d{1,4})?$" />
+  <ValidationItem Name="NewPassWord" Value="^[\S]{6,20}$" />
+  <ValidationItem Name="NonNegatFloat10_5" Value="^(\d{0,10})(\.\d{1,4})?$" />
+  <ValidationItem Name="ISREQUIRE" Value="{\S}" />
+</root>

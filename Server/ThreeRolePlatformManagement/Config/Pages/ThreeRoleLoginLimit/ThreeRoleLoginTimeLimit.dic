@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleLoginTimeLimit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">时间限制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TimeLimit</LocalizedLabel>
+    </Label>
+    <Label Name="IsEnable">
+      <LocalizedLabel LanguageRef="zhs">是否启用时间限制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">is Enable Time limit</LocalizedLabel>
+    </Label>
+    <Label Name="IsEnableValue">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="AllowWeek">
+      <LocalizedLabel LanguageRef="zhs">允许登录星期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllowWeek</LocalizedLabel>
+    </Label>
+    <Label Name="AllowTime">
+      <LocalizedLabel LanguageRef="zhs">允许登录时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AllowTime</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

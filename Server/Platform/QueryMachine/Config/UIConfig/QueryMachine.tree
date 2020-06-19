@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="QueryMachineTreeManagement" MenuName="" PageLinksName=""
+             TreeViewName="" ShowTreeQuery="false"
+            TreeChildDataService="InforCenter.Platform.QueryMachineService.GetQueryMachineTreeChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="InforCenter.Platform.QueryMachineService.GetQueryMachineTreeRootNode">
+    <ObjectType Name="QUERYMACHINEBASEINFO" MenuName="QueryStructureTreeMenu" PageLinksName="QueryMachine" />
+    <ObjectType Name="RootNode" MenuName="" PageLinksName="QueryMachine" />
+    <ObjectType Name="CustomNode" MenuName="" PageLinksName="CustomQuery" />
+  </TreeManagement>
+</root>

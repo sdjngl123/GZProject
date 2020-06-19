@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SettingGroup" IsWeb="false">
+    <Label Name="OtherSeniorSetting">
+      <LocalizedLabel LanguageRef="zhs">其他高级设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OtherSeniorSetting</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryViewSeniorSetting">
+      <LocalizedLabel LanguageRef="zhs">树结构查询高级设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TreeQueryViewSeniorSetting</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ROLEVIEWIgnoreCompanyRulePermissionFalse-QUERY">
+  <Settings Key="height" Value="29"/>
+  <Settings Key="width" Value="49"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+    <PageHandler HandlerName ="GetQueryData" Script="var bCheck=true;var QueyData =[];{
+var c = pageEvent.o.GetControl('ENAMElIKE_Value');
+if(c.id!=''){
+var value = c.GetText();
+
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'ENAME',QUERYOPERATOR:'LIKE',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+	}
+
+}{
+var c = pageEvent.o.GetControl('ECODELIKE_Value');
+if(c.id!=''){
+var value = c.GetText();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	QueyData.push({ANDOR:'AND',QUERYCOLUMN:'ECODE',QUERYOPERATOR:'LIKE',VALUE:value,UNQUOTED:false});
+	if(c.Check() == false) bCheck = false;	
+}
+}
+};if(bCheck){return QueyData;}"/>
+    <PageHandler HandlerName="OnReset" Script="var ctrlEvent={};ctrlEvent.o=pageEvent.o.GetControl('btnReset');
+{
+var o = ctrlEvent.o.OtherControl('ENAMElIKE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('ECODELIKE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+};"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="0 0 0 5px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="200"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      
+<Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="InfoItem1_Container"/>
+</Settings>
+    </PageControl>
+    
+<PageControl ControlID="InfoItem1_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="220"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="220"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+</PageControl>
+    
+<PageControl ControlID="R-1" ParentID="InfoItem1_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="ENAMElIKE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="ENAMElIKE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAMElIKE_Label" ParentID="R-1" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="ROLEVIEWIgnoreCompanyRulePermissionFalse-QUERY.ENAMElIKEHeader" />
+</PageControl>
+
+<PageControl ControlID="ENAMElIKE_Value" ParentID="R-1" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="ROLEVIEWIgnoreCompanyRulePermissionFalse-QUERY.ENAMElIKERegex" />
+</PageControl><PageControl ControlID="ENAMElIKE_Label_FieldFlag" ParentID="ENAMElIKE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl>
+<PageControl ControlID="R-2" ParentID="InfoItem2_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="ECODELIKE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="ECODELIKE_Value"/>
+  </Settings>
+  <Settings Key="item3" Value="">
+  <Settings Key="size" Value="6"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ECODELIKE_Label" ParentID="R-2" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="ROLEVIEWIgnoreCompanyRulePermissionFalse-QUERY.ECODELIKEHeader" />
+</PageControl>
+
+<PageControl ControlID="ECODELIKE_Value" ParentID="R-2" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="btnQuery"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="btnReset"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="var bCheck=true;var FilterString ='';var EntityFilterString =''; {
+var c = ctrlEvent.o.OtherControl('ENAMElIKE_Value');
+if(c.id!=''){
+var value = c.GetText();
+
+	FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','ENAME','LIKE',value,false);
+	if(c.Check() == false) bCheck = false;	
+	}
+
+}{
+	var c = ctrlEvent.o.OtherControl('ECODELIKE_Value');
+	if(c.id!=''){
+		var value = c.GetText();
+		if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+		{
+			FilterString += InforCenter_Platform_Object_GetQueryFilter('AND','ECODE','LIKE',value,false);
+		}
+		if(c.Check() == false) bCheck = false;
+	}
+};if(bCheck){var QueryData = HoteamUI.Page.FirePageEvent(ctrlEvent.o.ContainerID(), 'GetQueryData');if (!QueryData){QueryData=[];};FilterString = FilterString.substring(4);EntityFilterString = EntityFilterString.substring(4); HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:FilterString,EntityFilterString:EntityFilterString,ButtonType:'Query',QueryData:QueryData});}"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="
+{
+var o = ctrlEvent.o.OtherControl('ENAMElIKE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+}
+{
+var o = ctrlEvent.o.OtherControl('ECODELIKE_Value');
+if(o.id!=''){
+o.SetText('');
+}
+};HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:'',EntityFilterString:'',ButtonType:'Reset',QueryData:[]});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

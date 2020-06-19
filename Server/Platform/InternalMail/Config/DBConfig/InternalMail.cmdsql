@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="GETHAVEINTERNALMAILUSERLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT A.ACTUALRECIVER,A.CREATETIME FROM ( SELECT ACTUALRECIVER,CREATETIME,ROW_NUMBER() OVER (PARTITION BY ACTUALRECIVER ORDER BY CREATETIME DESC) ROWID FROM INTERNALMAIL WHERE MSTATE='Unread') A WHERE A.ROWID=1
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT A.ACTUALRECIVER,A.CREATETIME FROM ( SELECT to_char(ACTUALRECIVER) ACTUALRECIVER ,to_char(CREATETIME) CREATETIME,ROW_NUMBER() OVER (PARTITION BY to_char(ACTUALRECIVER) ORDER BY to_char( CREATETIME) DESC) OROWID FROM INTERNALMAIL WHERE MSTATE='Unread') A WHERE A.OROWID=1
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select C.ACTUALRECIVER,C.CREATETIME from (
+        select *,@rownum:=@rownum+1 total,
+        if(@recive=a.recive,@num:=@num+1,@num:=1) as num,@recive:=a.recive from
+        (
+        select ACTUALRECIVER,CREATETIME from INTERNALMAIL WHERE MSTATE='Unread' order by ACTUALRECIVER asc, CREATETIME desc
+        ) a,(select @rownum:=0, @recive:=null,@num:=0) b
+        ) c where num =1;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

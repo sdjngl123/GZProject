@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!--集团规则条件-->
+  <PluginItem Name="ObjectStateCondition4Company" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleConditions.ObjectStateCondition4Company" Group="Company"/>
+  <PluginItem Name="CreatorCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleConditions.CreatorCondition" Group="Company"/>
+  <PluginItem Name="OwnerCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleConditions.OwnerCondition" Group="Company"/>
+  <PluginItem Name="OwnGroupCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleConditions.OwnGroupCondition" Group="Company"/>
+  <PluginItem Name="OwnCompanyCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleConditions.OwnCompanyCondition" Group="Company"/>
+  <PluginItem Name="AllCompanyCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleConditions.AllCompanyCondition" Group="Company"/>
+
+  <!--集团权限对外提供的接口-->
+  <PluginItem Name="CompanyConditionUtility" Type="Business" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.CompanyRuleUtility" />
+
+</root>

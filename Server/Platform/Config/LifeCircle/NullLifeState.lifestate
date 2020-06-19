@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <State Name ="NULLSTATE" ImagePath="~/Platform/Image/Console/lifestate.png"/>
+</root>

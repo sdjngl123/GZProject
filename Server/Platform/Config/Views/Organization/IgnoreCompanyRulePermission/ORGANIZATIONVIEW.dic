@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ORGANIZATIONVIEWView" IsWeb="true">
+    <Label Name="ORGANIZATIONVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">组织结构视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure view</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZATIONVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">组织结构视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure view</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ID</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ID</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICHeader">
+      <LocalizedLabel LanguageRef="zhs">文本多语言配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text multi-language configuration</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICCaption">
+      <LocalizedLabel LanguageRef="zhs">文本多语言配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text multi-language configuration</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="RegisteredConsole" IsWeb="true">
+    <Label Name="UpdateAllCompanyDataBase">
+      <LocalizedLabel LanguageRef="zhs">手动选择模型更新只更新选中模型，不会考虑多模型合并和模型覆盖等情况，请确保选中的模型系统中只存在一个，否则选中项将会覆盖原有数据库结构！！  确定要在所有公司更新选中项【[SELECTITEM]】的数据库结构吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">手动选择模型更新只更新选中模型，不会考虑多模型合并和模型覆盖等情况，请确保选中的模型系统中只存在一个，否则选中项将会覆盖原有数据库结构！！  确定要在所有公司更新选中项【[SELECTITEM]】的数据库结构吗？</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ConsoleToolbar" IsWeb="false">
+  </Context>
+</DictionarySerializer>

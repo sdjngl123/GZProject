@@ -1,0 +1,110 @@
+﻿<div data-role="content" style="width: 96%;margin: auto;margin-top:10px">
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" >
+    <span  class="mobile-systemSettingsInfo-item-left">退出清除缓存：</span>
+    <span  class="mobile-systemSettingsInfo-item-right-checkbox" onmousedown="HMUI_Mobile_MobileSystemSettingsInfo_ClickSetExitCleanCacheValue(this);">
+      <div class="ui-flipswitch ui-shadow-inset ui-bar-inherit ui-corner-all ui-mini">
+        <a href="#" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit"></a>
+        <span class="ui-flipswitch-off"></span>
+        <input type="checkbox" id="ExitCleanCache" class="ui-flipswitch-input" tabindex="-1"/>
+      </div>
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">缓存预警大小（MB）：</span>
+    <span  class="pad-mobile-systemSettingsInfo-item-right">
+      <input type="text" id="CacheWarnSize" placeholder="请输入缓存预警大小" data-clear-btn="true" onchange="HMUI_Mobile_MobileSystemSettingsInfo_BlurSetValue(this,'CacheWarnSize','缓存预警大小','true');" />
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" style="display:none;" >
+    <span  class="mobile-systemSettingsInfo-item-left">启用消息检测：</span>
+    <span  class="mobile-systemSettingsInfo-item-right-checkbox" onmousedown="HMUI_Mobile_MobileSystemSettingsInfo_ClickSetValue(this,'MessageCheckEnable');">
+      <div class="ui-flipswitch ui-shadow-inset ui-bar-inherit ui-corner-all ui-mini">
+        <a href="#" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit"></a>
+        <span class="ui-flipswitch-off"></span>
+        <input type="checkbox" id="MessageCheckEnable" class="ui-flipswitch-input" tabindex="-1"/>
+      </div>
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item"  style="display:none;" >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">消息检测间隔（秒）：</span>
+    <span  class="pad-mobile-systemSettingsInfo-item-right">
+      <input type="text" id="MessageCheckInterval" placeholder="消息检测间隔（秒）" data-clear-btn="true" onchange="HMUI_Mobile_MobileSystemSettingsInfo_BlurSetValue(this,'MessageCheckInterval','消息检测间隔','true');"  />
+    </span>
+  </div>
+<div class="ui-btn pad-mobile-systemSettingsInfo-item" style="display:none;" >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">每页最大行数（大于100）：</span>
+    <span  class="pad-mobile-systemSettingsInfo-item-right">
+      <input type="text" id="MaxRowCount" placeholder="请输入最大行数（大于100）" data-clear-btn="true" onchange="HMUI_Mobile_MobileSystemSettingsInfo_BlurSetValue(this,'MaxRowCount','最大最大行数','true');"  />
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">零组件默认视图：</span>
+    <span  class="pad-mobile-systemSettingsInfo-item-right">
+      <select  id="MasterItemDefaultView"  data-native-menu="false">
+        <option value="ItemView">设计视图</option>
+        <option value="CAPPView">工艺视图</option>
+      </select>
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">服务器地址：</span>
+    <span  class="pad-mobile-systemSettingsInfo-item-right">
+      <input type="text" id="ServerIp" placeholder="请输入服务器地址" data-clear-btn="true" onchange="HMUI_Mobile_MobileSystemSettingsInfo_BlurSetValue(this,'ServerIp','服务器地址','true');" />
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">端口：</span>
+    <span  class="pad-mobile-systemSettingsInfo-item-right">
+      <input type="text" id="ServerPort" placeholder="请输入端口号" data-clear-btn="true" onchange="HMUI_Mobile_MobileSystemSettingsInfo_BlurSetValue(this,'ServerPort','端口','true');"  />
+    </span>
+  </div>
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" >
+    <span  class="mobile-systemSettingsInfo-item-left">系统离线：</span>
+    <div  class="mobile-systemSettingsInfo-item-right-checkbox" onmousedown="HMUI_Mobile_MobileSystemSettingsInfo_ClickSetSystemOffLineValue(this);">
+      <div class="ui-flipswitch ui-shadow-inset ui-bar-inherit ui-corner-all ui-mini">
+        <a href="#" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit"></a>
+        <span class="ui-flipswitch-off"></span>
+        <input type="checkbox" id="SystemOffLine" class="ui-flipswitch-input" tabindex="-1"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item" style="display:none;" >
+    <span  class="mobile-systemSettingsInfo-item-left">缓存浏览数据：</span>
+    <div  class="mobile-systemSettingsInfo-item-right-checkbox" onmousedown="HMUI_Mobile_MobileSystemSettingsInfo_ClickSetValue(this,'SetCacheData');">
+      <div class="ui-flipswitch ui-shadow-inset ui-bar-inherit ui-corner-all ui-mini  ui-flipswitch-active">
+        <a href="#" class="ui-flipswitch-on ui-btn ui-shadow ui-btn-inherit"></a>
+        <span class="ui-flipswitch-off"></span>
+        <input type="checkbox" id="SetCacheData" class="ui-flipswitch-input" tabindex="-1" checked="checked"/>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item " >
+    <span  class="pad-mobile-systemSettingsInfo-item-left">
+      更新时间：
+    </span>
+    <span id="MobileSystemSettingsInfo_Update" class="pad-mobile-systemSettingsInfo-item-right-text"></span>
+  </div>
+
+  <div class="ui-btn pad-mobile-systemSettingsInfo-item pad-mobile-systemSettingsInfo-item-updatetime"  onclick="HMUI_Mobile_MobileSystemSettingsInfo_ClickUpdateVersion(this);">
+    <span  class="pad-mobile-systemSettingsInfo-item-left">
+      版本信息：
+    </span>
+
+    <span class="pad-mobile-systemSettingsInfo-item-right-text" style="display:none;" id="MobileSystemSettingsInfo_NewVersion" >
+      【有新版本可用，点击更新】
+    </span>
+    <span id="MobileSystemSettingsInfo_Version"></span>
+  </div>
+
+
+
+
+
+
+
+
+
+

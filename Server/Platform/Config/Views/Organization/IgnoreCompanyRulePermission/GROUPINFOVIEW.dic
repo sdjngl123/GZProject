@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="GROUPINFOVIEWView" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="PARENTGROUPEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父级组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent group</LocalizedLabel>
+    </Label>
+    <Label Name="PARENTGROUPEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父级组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent group</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Cabinet</LocalizedLabel>
+    </Label>
+      <Label Name="MANAGERHeader">
+      <LocalizedLabel LanguageRef="zhs">部门负责人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Manager</LocalizedLabel>
+    </Label>
+    <Label Name="MANAGERCaption">
+      <LocalizedLabel LanguageRef="zhs">部门负责人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Manager</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="GROUPINFOVIEWCondition" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MyWorkflowSmartStatistics" IsCache="true">
+  <Settings Key="title" Value="MyWorkflowSmartStatistics.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_MyWorkflowSmartStatistics_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="StatisticsContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="MyTaskLabel"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="DepositTaskLabel"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="DeliveryTaskLabel"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="UnComplateWorkflowLabel"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="MyTaskLabel" ParentID="StatisticsContainer" TypeName="Label" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TaskLabel_OnCreate(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Workflow.MyTask" />
+    </PageControl>
+    <PageControl ControlID="DepositTaskLabel" ParentID="StatisticsContainer" TypeName="Label" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TaskLabel_OnCreate(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Workflow.DepositTask" />
+    </PageControl>
+    <PageControl ControlID="DeliveryTaskLabel" ParentID="StatisticsContainer" TypeName="Label" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TaskLabel_OnCreate(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Workflow.DeliveryTask" />
+    </PageControl>
+    <PageControl ControlID="UnComplateWorkflowLabel" ParentID="StatisticsContainer" TypeName="Label" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowLabel_OnCreate(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Workflow.UnComplateWorkflow" />
+    </PageControl>
+  </PageControls>
+</root>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="PatchGetDataWebService" Value="https://coplan.hoteamsoft.com" ToClient="true" Description="补丁工具获取相关数据webservice地址" />
+  <AppSet Key="PatchLoginID" Value="InstallPatchLoginID" ToClient="false" Description="虚拟用户采用的登录ID" />
+  <AppSet Key="PatchUserID" Value="USERINFO_System" ToClient="false" Description="虚拟用户采用用户ID" />
+  <AppSet Key="PatchUserGroup" Value="GROUPINFO_System" ToClient="false" Description="虚拟用户采用的组ID" />
+  <AppSet Key="PatchServerConnect" Value="PatchServer" ToClient="false" Description="连接补丁服务器的连接" />
+  <AppSet Key="ApplicationConnect" Value="SQLSERVER" ToClient="false" Description="本地程序连接" />
+  <AppSet Key="PatchTimeZone" Value="+08:00" ToClient="false" Description="虚拟用户采用的时区,时区格式示例:+08:00" />
+  <AppSet Key="PatchLoginIP" Value="127.0.0.1" ToClient="false" Description="虚拟用户采用的登录IP" />
+  <AppSet Key="PatchCompanyID" Value="COMPANY_155f6a331e804b69a6fc47e6273699fc" ToClient="false" Description="虚拟用户采用的公司ID" />
+  <AppSet Key="PatchTFSURL" Value="http://10.0.81.226:8080/tfs/inforcenter;http://10.0.81.225:8080/tfs/inforcenter" ToClient="false" Description="虚拟用户采用的公司ID" />
+</root>

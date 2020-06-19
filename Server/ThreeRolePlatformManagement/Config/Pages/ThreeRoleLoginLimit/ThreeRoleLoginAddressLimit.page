@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleLoginAddressLimit">
+  <Settings Key="title" Value="ThreeRoleLoginAddressLimit.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginAddressLimit_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginAddressLimit_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleLoginAddressLimit_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="IPAddress"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IPAddress" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="IPAddressStart_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="IPAddressStart_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="IPAddressEnd_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="IPAddressEnd_Value"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IPAddressStart_Label" ParentID="IPAddress" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginAddressLimit.IPAddressStart" />
+    </PageControl>   
+    <PageControl ControlID="IPAddressStart_Value" ParentID="IPAddress" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="ThreeRoleLoginAddressLimit.IPAddressStartRegex" />
+    </PageControl>
+    <PageControl ControlID="IPAddressEnd_Label" ParentID="IPAddress" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleLoginAddressLimit.IPAddressEnd" />
+    </PageControl>
+    <PageControl ControlID="IPAddressEnd_Value" ParentID="IPAddress" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="ThreeRoleLoginAddressLimit.IPAddressEndRegex" />
+    </PageControl>
+  </PageControls>
+</root>

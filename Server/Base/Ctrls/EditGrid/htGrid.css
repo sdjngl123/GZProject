@@ -1,0 +1,464 @@
+.htgrid-head-c {
+    overflow: hidden;
+}
+
+.htgrid-body-c {
+    overflow: auto;
+    outline: none;
+    min-height: 0%;
+}
+
+.htgrid-head-c table {
+    table-layout: fixed;
+    border-top: 1px solid #e1e1e1;
+    /*border-left:1px solid #e1e1e1;*/
+    background-color: #f5f5f5;
+}
+
+.htgrid-body-c table {
+    table-layout: fixed;
+    position: relative;
+    /*border-left:1px solid #e1e1e1;*/
+}
+
+.htgrid-head-c tr td {
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: pre;
+    overflow: hidden;
+    position: relative;
+    padding: 0 4px;
+}
+
+.htgrid-body-c tr td {
+    border-bottom: 1px solid #e1e1e1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: pre;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 22px;
+    position: relative;
+}
+
+.htgrid-border-all .htgrid-body-c tr td {
+    border-right: 1px solid #e1e1e1;
+}
+
+.htgrid-head-c tr.trhidden {
+    height: 0px;
+}
+
+.htgrid-body-c tr.btrhidden {
+    height: 1px;
+}
+
+.htgrid-head-c tr.trhidden td {
+    border: none;
+}
+
+.htgrid-body-c tr.btrhidden td {
+    border: none;
+}
+
+.htgrid-sort {
+    cursor: pointer;
+}
+
+.htgrid-sort-c {
+    position: absolute;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.htgrid-node-td {
+    display: inline-block;
+    float: left;
+    height: 24px;
+}
+
+.htgrid-treeNode-space {
+    display: inline-block;
+}
+
+.htgrid-treeNode-img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.htgrid-treeNode-aimg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    cursor: default;
+    margin-top: 3px;
+}
+
+.htgrid-view-td {
+    position: relative;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.htgrid-resize {
+    position: absolute;
+    cursor: col-resize;
+    display: inline-block;
+    height: 100%;
+    width: 3px;
+    right: 0px;
+    top: 0px;
+}
+
+.htgrid-drager {
+    position: absolute;
+    left: -3px;
+    background: #a5bcf3;
+    width: 4px;
+    top: 0;
+    height: 100%;
+    display: none;
+    z-index: 20;
+}
+
+.htgrid-frozen-h {
+    position: absolute;
+    background: #f5f5f5;
+    display: none;
+    z-index: 22;
+}
+
+    .htgrid-frozen-h table {
+        table-layout: fixed;
+        border-top: 1px solid #e1e1e1;
+        /*border-left:1px solid #e1e1e1;*/
+        width: 100%;
+    }
+
+    .htgrid-frozen-h tr td {
+        border-right: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        position: relative;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: pre;
+        overflow: hidden;
+        padding: 0 4px;
+    }
+
+    .htgrid-frozen-h tr.trhidden {
+        height: 0px;
+    }
+
+        .htgrid-frozen-h tr.trhidden td {
+            border: none;
+        }
+
+.htgrid-frozen-b {
+    position: absolute;
+    background: #fff;
+    display: none;
+    overflow: hidden;
+    outline: none;
+}
+
+    .htgrid-frozen-b table {
+        table-layout: fixed;
+        /*border-left:1px solid #e1e1e1;*/
+        width: 100%;
+    }
+
+    .htgrid-frozen-b tr td {
+        border-bottom: 1px solid #e1e1e1;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: pre;
+        overflow: hidden;
+        padding: 0 4px;
+        font-size: 12px;
+        position: relative;
+    }
+
+.htgrid-border-all .htgrid-frozen-b tr td {
+    border-right: 1px solid #e1e1e1;
+}
+
+.htgrid-frozen-b tr.btrhidden {
+    height: 1px;
+}
+
+    .htgrid-frozen-b tr.btrhidden td {
+        border: none;
+    }
+
+.htgrid-page-c {
+    width: 100%;
+    height: 37px;
+}
+
+.htgrid-page-l {
+    width: 30%;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    float: left;
+}
+
+.htgrid-page-m {
+    /*width: 40%;*/
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    line-height: 30px;
+    float: left;
+}
+
+.htgrid-page-r {
+    /*width: 30%;*/
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    padding-right: 10px;
+    line-height: 32px;
+    font-size: 12px;
+    text-align: right;
+    float: right;
+}
+
+.htgrid-page-btn {
+    display: inline-block;
+    height: 22px;
+    width: 26px;
+    border: 1px solid #ccc;
+    border-right: none;
+    top: 5px;
+    line-height: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hrgrid-page-sel {
+    height: 22px;
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.hrgrid-page-btn-disable {
+    background: #f5f5f5;
+    cursor: default;
+}
+
+.htgrid-row-pretd {
+    text-align: center;
+    width: 25px;
+    padding: 0 !important;
+}
+
+.htgrid-td-scroll {
+    width: 0px;
+    padding: 0 !important;
+}
+
+.htgrid-sort-c {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.htgrid-td-hide {
+    display: none;
+}
+
+.page-btn-l, .page-btn-r {
+    /*top: 5px;*/
+}
+
+    .page-btn-l span,
+    .page-btn-r span,
+    .page-btn-first span,
+    .page-btn-end span
+    {
+        top: 2px;
+        position: relative;
+    }
+
+.htgrid-edit-td {
+    position: relative;
+    display: inline-block;
+    min-height: 17px;
+    float: left;
+    width: 100%;
+}
+
+.htgrid-sort-disable {
+    cursor: default !important;
+}
+
+.htgrid-edit-error {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 7px;
+    display: none;
+    z-index: 3;
+    top: 2px;
+}
+
+.htgrid-title-c {
+    padding-left: 20px;
+    background: #f5f5f5;
+}
+
+.htgrid-tr-old > td {
+    background-color: #f5f5f5;
+}
+
+.htgrid-zebralist-none .htgrid-tr-old > td {
+    background-color: #fff;
+}
+
+.htgrid-td-lasttd {
+    border-right: none !important;
+    padding: 0px !important;
+}
+
+.htgrid-row-lasttd {
+    border-bottom: none !important;
+    border-right: none !important;
+    background: #fff !important;
+    padding: 0px !important;
+}
+
+.hrgrid-page-btn-select {
+    background: #fff !important;
+    font-weight: 600;
+    color: #0869AE;
+}
+
+.htgrid-check-false {
+    background-position: -112px -160px !important;
+}
+
+.htgrid-check-true {
+    background-position: -128px -160px !important;
+}
+
+.htgrid-check-half {
+    background-position: -144px -160px;
+}
+
+.htgrid-td-editing {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}
+
+.htgrid-tr-remove .htgrid-view-td {
+    color: red;
+    text-decoration: line-through;
+}
+
+    .htgrid-tr-remove .htgrid-view-td * {
+        color: red;
+        text-decoration: line-through;
+    }
+
+.htgrid-teeeNode-open {
+    background-position: -16px -192px !important;
+}
+
+.htgrid-teeeNode-close {
+    background-position: 0px -192px !important;
+}
+
+.htgrid-teeeNode-hidden {
+    background: none !important;
+    cursor: default;
+}
+
+.htgrid-load-more-c {
+    cursor: pointer;
+    background: #E0DDDD;
+    display: none;
+}
+
+.htgrid-load-more {
+    cursor: pointer;
+    position: relative;
+}
+
+.htgrid-page-c .htgrid-page-goinput {
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+    padding: 0 2px;
+    line-height: 20px;
+}
+
+.htgrid-page-c .htgrid-page-go {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 6px;
+    position: relative;
+    top: 2px;
+    height: 20px;
+    border: 1px solid #ccc;
+    line-height: 16px;
+    border-radius: 2px;
+    padding: 0 4px;
+    background: #EFEFEF;
+}
+
+.htgrid-treeNode-checkbox-container {
+    display: inline-block;
+    padding-left: 4px;
+    width: 26px;
+    vertical-align: top;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.htgrid-td-changed {
+    height: 22px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+}
+
+.htgrid-body-c-row-auto .htgrid-td-changed {
+    height: auto;
+}
+
+.htgrid-td-changed-checkbox {
+    padding-right: 0;
+    height: 16px;
+}
+
+tr.htgrid-row-select.htgrid-row-merge-select > td {
+    background: none;
+}

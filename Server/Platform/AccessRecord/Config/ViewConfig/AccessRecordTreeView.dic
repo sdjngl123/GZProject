@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="DAY">
+      <LocalizedLabel LanguageRef="zhs">天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Day</LocalizedLabel>
+    </Label>
+    <Label Name="WEEK">
+      <LocalizedLabel LanguageRef="zhs">周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Week</LocalizedLabel>
+    </Label>
+    <Label Name="MONTH">
+      <LocalizedLabel LanguageRef="zhs">月</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Month</LocalizedLabel>
+    </Label>
+    <Label Name="ALL">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

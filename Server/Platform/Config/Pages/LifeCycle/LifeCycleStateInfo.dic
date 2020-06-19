@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCycleStateInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="InitState">
+      <LocalizedLabel LanguageRef="zhs">初始状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Init State</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

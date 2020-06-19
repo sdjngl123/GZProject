@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="COMPANYRULECONDITIONVIEW" ObjectTypeName="COMPANYRULECONDITION" OrderByString="SERIALNUMBER ASC" FixedFilter="" AsCommonQuery="true" IgnoreCompanyRulePermission="true" IgnoreCompanyID="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OPERATOR" Width="80" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CONDITIONVALUE" Width="-1" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

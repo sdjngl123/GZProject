@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectTypeCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="SerialNumber">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeValue">
+      <LocalizedLabel LanguageRef="zhs">类型值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type value</LocalizedLabel>
+    </Label>
+    <Label Name="Operator">
+      <LocalizedLabel LanguageRef="zhs">操作符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operator</LocalizedLabel>
+    </Label>
+    <Label Name="AND">
+      <LocalizedLabel LanguageRef="zhs">AND</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AND</LocalizedLabel>
+    </Label>
+    <Label Name="OR">
+      <LocalizedLabel LanguageRef="zhs">OR</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OR</LocalizedLabel>
+    </Label>
+    <Label Name="IsNotInOption">
+      <LocalizedLabel LanguageRef="zhs">类型值不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type value does not exist</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

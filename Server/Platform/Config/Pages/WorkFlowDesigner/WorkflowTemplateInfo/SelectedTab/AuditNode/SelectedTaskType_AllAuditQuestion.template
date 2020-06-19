@@ -1,0 +1,5 @@
+<div>
+  <img id="SelectedTaskType_AllAuditQuestion_{i}" src="Platform/Image/Workflow/question.png" style="margin-top:13px;" onclick="InforCenter_Platform_SelectedTaskType_AllAuditOnMouseOver('SelectedTaskType_AllAuditQuestion_{i}');">
+    
+  </img>
+</div>

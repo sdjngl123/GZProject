@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SearchObjectPermission">
+  <Settings Key="height" Value="326"/>
+  <Settings Key="width" Value="900"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SearchObjectPermission_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 10px"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="SearchContainer"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="GridContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="SearchContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="180"/>
+        <Settings Key="childid" Value="UserContainer"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="200"/>
+        <Settings Key="childid" Value="GroupContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="UserContainer" ParentID="UserContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="User_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="User_Value"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="User_Label" ParentID="UserContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="SearchObjectPermission.User" />
+    </PageControl>
+  
+    <PageControl ControlID="User_Value" ParentID="UserContainer" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SearchObjectPermission_UserOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="canDelete" Value="false"/>
+    
+    </PageControl>
+    <PageControl ControlID="GroupContainer" ParentID="SearchContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="Group_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Group_Value"/>
+      </Settings>
+      
+    </PageControl>
+    <PageControl ControlID="Group_Label" ParentID="GroupContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SearchObjectPermission.Group" />
+    </PageControl>
+
+    <PageControl ControlID="Group_Value" ParentID="GroupContainer" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_SearchObjectPermission_GroupOnChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    
+    <PageControl ControlID="GridContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PermissionGrid"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="PermissionGrid" ParentID="GridContainer" TypeName="EditGrid" >
+      <Settings Key="multiselect" Value="false"/>
+      <Settings Key="showListTail" Value="false"/>
+      <Settings Key="isLayoutSave" Value="false"/>
+      <Settings Key="isColumnSetting" Value="false"/>
+    </PageControl>
+  </PageControls>
+</root>
+

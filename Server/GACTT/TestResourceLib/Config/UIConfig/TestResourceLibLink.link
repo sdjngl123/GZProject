@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<PageLinks Name="EXTERNALRESOURCEROOTLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="EXTERNALRESOURCEROOTLINKLinksList" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+			<Para Name="ItemName" Value="EXTERNALLYRESOURCEAllList" />
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="EXTERNALLYRESOURCELinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="EXTERNALRESOURCEROOTLINKLinksList" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+			<Para Name="ItemName" Value="EXTERNALLYRESOURCEList" />
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="InnerCapabilityLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="InnerCapability" PageName="TestCapability" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="OutCapabilityLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="OutCapability" PageName="TestCapability" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+		</PageLink>
+	</PageLinks>
+
+	<PageLinks Name="ProjectCapabilityLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="TestProject" PageName="TestCapability" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+			<Para Name="HiddenMenu" Value="true" />
+			<Para Name="ObjectType" Value="TESTPROJECT" />
+		</PageLink>
+	</PageLinks>
+
+	<!--新建试验能力-->
+	<PageLinks Name="CreateTestCapabilityLinks" HideTitle="true" IsTemplate="false">
+		<PageLink  Name="Capability"  PageName="TESTCAPABILITY-CREATE" IsSelected="true" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+		</PageLink>
+		<PageLink  Name="Resource"  PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+			<Para Name="ItemName" Value="AddTestResourceList" />
+		</PageLink>
+		<PageLink  Name="Knowledge"  PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+			<Para Name="ItemName" Value="AddTestKnowledgeList" />
+		</PageLink>
+	</PageLinks>
+
+	<PageLinks Name="EditTestCapabilityLinks" HideTitle="true" IsTemplate="false">
+		<PageLink  Name="Capability"  PageName="TESTCAPABILITY-EDIT" IsSelected="true" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+		</PageLink>
+		<PageLink  Name="Resource"  PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+			<Para Name="ItemName" Value="AddTestResourceList" />
+		</PageLink>
+		<PageLink  Name="Knowledge"  PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+			<Para Name="ItemName" Value="AddTestKnowledgeList" />
+		</PageLink>
+	</PageLinks>
+
+	<PageLinks Name="KnowledgeRootLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="AllKnowledgeLink" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+			<Para Name="ItemName" Value="TESTKNOWLEDGEList" />
+		</PageLink>
+	</PageLinks>
+	<PageLinks Name="KnowledgeTypeLinks" HideTitle="true" IsTemplate="false">
+		<PageLink Name="TypeKnowledgeLink" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+			<Para Name="ItemName" Value="TypeTESTKNOWLEDGEList" />
+		</PageLink>
+	</PageLinks>
+
+</root>

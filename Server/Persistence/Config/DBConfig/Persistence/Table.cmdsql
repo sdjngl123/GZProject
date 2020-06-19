@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <!--删除表-->
+  <Command Name="DROPTABLEINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        IF EXISTS(SELECT * FROM SYS.tables WHERE NAME ='[TABLENAME]')  DROP TABLE [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DECLARE T_COUNT NUMBER;
+        BEGIN
+        SELECT COUNT(1) INTO T_COUNT FROM USER_TABLES WHERE UPPER(TABLE_NAME) = UPPER('[TABLENAME]');
+        IF( T_COUNT &gt; 0 ) THEN
+        EXECUTE IMMEDIATE ('DROP TABLE  [TABLENAME] ');
+        END IF;
+        END;
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        IF EXISTS(SELECT * FROM SYS.tables WHERE NAME ='[TABLENAME]')  DROP TABLE [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="QUERYTABLEINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select name TABLENAME from sys.tables where name = [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME FROM USER_TABLES WHERE TABLE_NAME = [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME FROM information_schema.TABLES WHERE TABLE_SCHEMA = (select database()) AND TABLE_NAME  = [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYTABLEINFO_ALL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select name TABLENAME from sys.tables
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME FROM USER_TABLES
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME FROM information_schema.TABLES WHERE TABLE_SCHEMA = (select database())
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYTABLECOLUMNINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select c.name COLNAME ,
+        case t.name
+        when 'nvarchar' then 'nvarchar(' + cast(c.max_length/2 as varchar)+')'
+        when 'varchar' then 'varchar(' + cast(c.max_length as varchar)+')'
+        when 'numeric' then 'numeric(' + cast(c.precision as varchar) +','+ cast(c.scale as varchar) +')'
+        else t.name end  COLTYPE, case c.is_nullable when 1 then '1' else '0' end  ALLOWNULL
+        from sys.columns c,sys.types t
+        where c.object_id = object_id([TABLENAME],N'U') and t.user_type_id = c.user_type_id
+        order by c.column_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT column_name COLNAME,
+        case DATA_TYPE when 'NVARCHAR2' then DATA_TYPE || '('||CHAR_LENGTH ||')'
+        when 'NUMBER' then DATA_TYPE || '('|| DATA_PRECISION || ',' ||DATA_SCALE ||')'
+        else DATA_TYPE end COLTYPE,
+        CASE NULLABLE WHEN 'Y' THEN '1' ELSE '0' END ALLOWNULL
+        FROM USER_TAB_COLS
+        WHERE TABLE_NAME = [TABLENAME] and VIRTUAL_COLUMN = 'NO' and DATA_TYPE !='RAW'
+        order by COLUMN_ID
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT column_name COLNAME,
+        case DATA_TYPE when 'varchar' then upper(concat('VARCHAR' , '(',CHARACTER_MAXIMUM_LENGTH ,')'))
+        when 'decimal' then upper(concat('NUMERIC' ,'(', NUMERIC_PRECISION , ',' ,NUMERIC_SCALE ,')'))
+        when 'tinyint' then  upper(column_type)
+        else upper(DATA_TYPE) end COLTYPE,
+        CASE IS_NUllABLE WHEN 'YES' THEN '1' ELSE '0' END ALLOWNULL
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME =[TABLENAME] and table_schema = (select DATABASE())
+        order by ORDINAL_POSITION
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+  <Command Name="QUERYTABLECOLUMNINFO_ALL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select object_name(c.object_id) TABLENAME,c.name COLNAME ,
+        case t.name
+        when 'nvarchar' then 'nvarchar(' + cast(c.max_length/2 as varchar)+')'
+        when 'varchar' then 'varchar(' + cast(c.max_length as varchar)+')'
+        when 'numeric' then 'numeric(' + cast(c.precision as varchar) +','+ cast(c.scale as varchar) +')'
+        else t.name end  COLTYPE, case c.is_nullable when 1 then '1' else '0' end  ALLOWNULL
+        from sys.columns c,sys.types t
+        where  t.user_type_id = c.user_type_id
+        order by TABLENAME,c.column_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME,column_name COLNAME,
+        case DATA_TYPE when 'NVARCHAR2' then DATA_TYPE || '('||CHAR_LENGTH ||')'
+        when 'NUMBER' then DATA_TYPE || '('|| DATA_PRECISION || ',' ||DATA_SCALE ||')'
+        else DATA_TYPE end COLTYPE,
+        CASE NULLABLE WHEN 'Y' THEN '1' ELSE '0' END ALLOWNULL
+        FROM USER_TAB_COLS
+        WHERE VIRTUAL_COLUMN = 'NO' and DATA_TYPE !='RAW'
+        order by TABLENAME,COLUMN_ID
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME,column_name COLNAME,
+        case DATA_TYPE when 'varchar' then upper(concat('VARCHAR' , '(',CHARACTER_MAXIMUM_LENGTH ,')'))
+        when 'decimal' then upper(concat('NUMERIC' ,'(', NUMERIC_PRECISION , ',' ,NUMERIC_SCALE ,')'))
+        when 'tinyint' then  upper(column_type)
+        else upper(DATA_TYPE) end COLTYPE,
+        CASE IS_NUllABLE WHEN 'YES' THEN '1' ELSE '0' END ALLOWNULL
+        FROM information_schema.COLUMNS
+        WHERE table_schema = (select DATABASE())
+        order by TABLENAME,ORDINAL_POSITION
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+  <Command Name="QUERYDEFAULTVALUEINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select c.name COLNAME, m.text DEFAULTVALUE
+        from syscolumns c,syscomments m
+        where c.id = OBJECT_ID([TABLENAME],N'U') and c.cdefault = m.id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT column_name COLNAME, DATA_DEFAULT DEFAULTVALUE
+        FROM USER_TAB_COLS
+        WHERE TABLE_NAME = [TABLENAME] AND DATA_DEFAULT IS NOT NULL AND DATA_TYPE !='RAW'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select column_name COLNAME,column_default DEFAULTVALUE
+        from information_schema.COLUMNS
+        where table_schema = (select DATABASE())
+        and table_name = [TABLENAME]
+        and column_default is not null
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+  <Command Name="QUERYDEFAULTVALUEINFO_ALL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select object_name(c.id) TABLENAME,c.name COLNAME, m.text DEFAULTVALUE
+        from syscolumns c,syscomments m
+        where c.cdefault = m.id
+        order by TABLENAME,COLNAME
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME TABLENAME,column_name COLNAME, DATA_DEFAULT DEFAULTVALUE
+        FROM USER_TAB_COLS
+        WHERE DATA_DEFAULT IS NOT NULL AND DATA_TYPE !='RAW'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select table_name TABLENAME,column_name COLNAME,column_default DEFAULTVALUE
+        from information_schema.COLUMNS
+        where table_schema = (select DATABASE())
+        and column_default is not null
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+  <Command Name="QUERYTABLEINDEXINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select i.name INDEXNAME ,case  when i.is_unique = 1 then '1' else '0' end ISUNIQUE, c.name COLNAME,case  when ic.is_descending_key = 0 then 'ASC' else 'DESC' end ORDERTYPE,ic.is_included_column ISINCLUDE
+        from sys.indexes i,sys.index_columns ic,sys.columns c
+        where i.object_id = object_id([TABLENAME],N'U') and i.is_primary_key = 0
+        and ic.object_id = object_id([TABLENAME],N'U')
+        and c.object_id = object_id([TABLENAME],N'U')
+        and i.index_id = ic.index_id and ic.column_id = c.column_id
+        order by ic.index_column_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select inx.INDEX_NAME INDEXNAME, case inx.uniqueness when 'UNIQUE' then '1' else '0' end ISUNIQUE, ic.COLUMN_NAME COLNAME,ic.DESCEND ORDERTYPE,0 ISINCLUDE
+        FROM  user_indexes inx, USER_IND_COLUMNS ic
+        where inx.table_name = [TABLENAME]
+        and inx.index_name not in  (select INDEX_NAME from user_constraints where table_name is not null and  constraint_type = 'P' and table_name =[TABLENAME])
+        and inx.index_name = ic.index_name
+        ORDER BY ic.COLUMN_POSITION
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        -- 暂时没找到对应的索引排序在哪一个表中，暂用ASC代替
+        select s.index_name INDEXNAME,case s.NON_UNIQUE when '0' then '1' ELSE '0' end ISUNIQUE,c.column_name COLNAME , 'ASC' ORDERTYPE,0 ISINCLUDE
+        from information_schema.STATISTICS s,information_schema.COLUMNS c
+        where s.TABLE_SCHEMA = c.TABLE_SCHEMA and s.TABLE_SCHEMA = (select DATABASE())
+        and s.table_name = c.TABLE_NAME and s.table_name=[TABLENAME]
+        and s.column_name = c.column_name  AND  c.column_key != 'PRI'
+
+        order by s.seq_in_index
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYTABLEINDEXINFO_ALL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select object_name(i.object_id) TABLENAME,i.name INDEXNAME ,case  when i.is_unique = 1 then '1' else '0' end ISUNIQUE, c.name COLNAME,case  when ic.is_descending_key = 0 then 'ASC' else 'DESC' end ORDERTYPE,ic.is_included_column ISINCLUDE
+        from sys.indexes i,sys.index_columns ic,sys.columns c
+        where i.is_primary_key = 0
+        and ic.object_id = i.object_id
+        and c.object_id = i.object_id
+        and i.index_id = ic.index_id and ic.column_id = c.column_id
+        order by TABLENAME,ic.index_column_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select inx.table_name TABLENAME,inx.INDEX_NAME INDEXNAME, case inx.uniqueness when 'UNIQUE' then '1' else '0' end ISUNIQUE, ic.COLUMN_NAME COLNAME,ic.DESCEND ORDERTYPE,0 ISINCLUDE
+        FROM  user_indexes inx, USER_IND_COLUMNS ic
+        where inx.index_name not in  (select INDEX_NAME from user_constraints where table_name is not null and  constraint_type = 'P' and table_name =inx.table_name)
+        and inx.index_name = ic.index_name
+        ORDER BY TABLENAME,ic.COLUMN_POSITION
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        -- 暂时没找到对应的索引排序在哪一个表中，暂用ASC代替
+        select s.table_name TABLENAME,s.index_name INDEXNAME,case s.NON_UNIQUE when '0' then '1' ELSE '0' end ISUNIQUE,c.column_name COLNAME , 'ASC' ORDERTYPE,0 ISINCLUDE
+        from information_schema.STATISTICS s,information_schema.COLUMNS c
+        where s.TABLE_SCHEMA = c.TABLE_SCHEMA and s.TABLE_SCHEMA = (select DATABASE())
+        and s.table_name = c.TABLE_NAME
+        and s.column_name = c.column_name  AND  c.column_key != 'PRI'
+        order by TABLENAME,s.seq_in_index
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYTABLEPKINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select i.name INDEXNAME,c.name COLNAME
+        from sys.indexes i,sys.index_columns ic,sys.columns c
+        where i.object_id = object_id([TABLENAME],N'U') and i.is_primary_key = 1
+        and ic.object_id = object_id([TABLENAME],N'U')
+        and c.object_id = object_id([TABLENAME],N'U')
+        and i.index_id = ic.index_id and ic.column_id = c.column_id
+        order by ic.index_column_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select con.index_name INDEXNAME,ind.COLUMN_NAME COLNAME from user_constraints con,user_ind_columns ind
+        where con.table_name=[TABLENAME] and con.constraint_type = 'P' and con.index_name = ind.INDEX_NAME
+        order by ind.COLUMN_POSITION
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select s.index_name INDEXNAME ,s.column_name COLNAME
+        from information_schema.STATISTICS s, information_schema.COLUMNS c
+        where s.TABLE_SCHEMA = c.TABLE_SCHEMA and s.TABLE_SCHEMA = (select DATABASE())
+        and s.column_name = c.column_name AND c.column_key = 'PRI'
+        and s.table_name = [TABLENAME]
+        order by s.seq_in_index
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+  <Command Name="QUERYTABLEPKINFO_ALL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select object_name(i.object_id) TABLENAME,i.name INDEXNAME,c.name COLNAME
+        from sys.indexes i,sys.index_columns ic,sys.columns c
+        where i.is_primary_key = 1
+        and ic.object_id = i.object_id
+        and c.object_id = i.object_id
+        and i.index_id = ic.index_id and ic.column_id = c.column_id
+        order by TABLENAME,ic.index_column_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select con.table_name TABLENAME,con.index_name INDEXNAME,ind.COLUMN_NAME COLNAME from user_constraints con,user_ind_columns ind
+        where con.constraint_type = 'P' and con.index_name = ind.INDEX_NAME
+        order by TABLENAME,ind.COLUMN_POSITION
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select s.table_name TABLENAME,s.index_name INDEXNAME ,s.column_name COLNAME
+        from information_schema.STATISTICS s, information_schema.COLUMNS c
+        where s.TABLE_SCHEMA = c.TABLE_SCHEMA and s.TABLE_SCHEMA = (select DATABASE())
+        and s.column_name = c.column_name AND c.column_key = 'PRI'
+        order by TABLENAME,s.seq_in_index
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+  <!--查找约束，主要是主键约束，用于删除主键-->
+  <Command Name="QUERYCONSTRAINTINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select t.name+N'_' +  c.name + N'_DEFAULT' CONSTRAINTKEY,con.name  CONSTRAINTNAME
+        from sys.default_constraints con ,sys.columns c,sys.tables t
+        where con.parent_object_id = c.object_id  and con.type_desc = 'DEFAULT_CONSTRAINT' and con.parent_column_id = c.column_id and c.object_id = t.object_id
+        union
+        select  t.name+N'_PK' CONSTRAINTKEY,i.name  CONSTRAINTNAME
+        from sys.indexes i,sys.tables t
+        where i.is_primary_key = 1 and i.object_id = t.object_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select cu.CONSTRAINT_NAME CONSTRAINTKEY,cu.COLUMN_NAME CONSTRAINTNAME  from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'P'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select concat(t.table_name,'_PK') CONSTRAINTKEY,s.constraint_name CONSTRAINTNAME
+        from information_schema.TABLE_CONSTRAINTS s, information_schema.TABLES t
+        where s.table_schema=t.table_schema
+        and s.table_name = t.table_name
+        and s.constraint_type = 'PRIMARY KEY' and table_type = 'BASE TABLE'
+        and s.table_schema = (select database())
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYORACLEPRIMARYKEY">
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select cu.CONSTRAINT_NAME CONSTRAINTKEY,cu.COLUMN_NAME CONSTRAINTNAME  from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'P'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYDBOBJECTSQL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select o.name NAME,s.definition DEFSQL
+        from sys.objects o,sys.all_sql_modules s
+        where o.object_id = s.object_id
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select NAME,TEXT DEFSQL from user_source order by  name,line
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select f.name NAME ,
+        concat(f.name,
+        '(',f.param_list,')',
+        (case f.type WHEN 'FUNCTION' THEN 'returns' ELSE '' end),
+        (case WHEN f.returns = 'bigint(20)' then 'bigint'
+        WHEN LOCATE("CHARSET utf8",f.returns)>0 THEN REPLACE(f.returns,'CHARSET utf8','') else f.returns END),
+        f.body) DEFSQL,f.*
+        from mysql.proc f where db = (select DATABASE())
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="QUERYDBOBJECTSQL2">
+    <DatabaseType Name="">
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select VIEW_NAME NAME,TEXT DEFSQL from user_views
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select table_name NAME,view_definition DEFSQL
+        from information_schema.views where TABLE_SCHEMA =  (select DATABASE())
+      </CommandItem>
+    </DatabaseType>
+
+  </Command>
+
+  <!--前置创建表分区脚本-->
+  <Command Name="CREATETABLEPREFIXPARTITION">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        CREATE PARTITION FUNCTION [PFUNCNAME]([PARTITIONCOLUMNTYPE]) AS RANGE LEFT FOR VALUES ([LESSTHANVALUE]);
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        CREATE PARTITION SCHEME [PSCHEMANAME] AS PARTITION [PFUNCNAME] TO ([PRIMARY],[PRIMARY])
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--后置创建表分区脚本-->
+  <Command Name="CREATETABLESUFIXPARTITION">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        ON [PSCHEMANAME]([PARTITIONCOLUMNNAME])
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        PARTITION BY RANGE([PARTITIONCOLUMNNAME])(PARTITION [PARTITIONNAME] VALUES LESS THAN([LESSTHANVALUE]),PARTITION [PARTITIONMAXNAME] VALUES LESS THAN (MAXVALUE))
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        PARTITION BY RANGE([PARTITIONCOLUMNNAME])(PARTITION [PARTITIONNAME] VALUES LESS THAN([LESSTHANVALUE]),PARTITION [PARTITIONMAXNAME] VALUES LESS THAN (MAXVALUE))
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="ALTERTABLEPARTITION">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        ALTER PARTITION SCHEME [PSCHEMANAME] NEXT USED [PRIMARY]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        ALTER PARTITION FUNCTION [PFUNCNAME]() SPLIT RANGE([LESSTHANVALUE])
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        ALTER TABLE [TABLENAME] PARTITION [PARTITIONMAXNAME] AT([LESSTHANVALUE]) INTO ([PARTITIONNAME], PARTITION [PARTITIONMAXNAME])
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        ALTER TABLE [TABLENAME] REORGANIZE PARTITION [PARTITIONMAXNAME] INTO(PARTITION [PARTITIONNAME] VALUES LESS THAN([LESSTHANVALUE]),PARTITION [PARTITIONMAXNAME] VALUES LESS THAN(MAXVALUE))
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="QUERYTABLEPARTITION">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        --查看分区情况
+        SELECT C.NAME AS PCNNAME,PS.NAME AS PSNAME,PF.NAME AS PFNAME,PRV_RIGHT.VALUE AS RIGHTV, T.NAME AS TABLENAME
+        FROM SYS.PARTITIONS AS P
+        JOIN SYS.TABLES T
+        ON T.OBJECT_ID=P.OBJECT_ID
+        JOIN SYS.INDEXES AS I
+        ON I.OBJECT_ID=P.OBJECT_ID
+        AND I.INDEX_ID=P.INDEX_ID
+        JOIN SYS.DATA_SPACES AS DS
+        ON DS.DATA_SPACE_ID=I.DATA_SPACE_ID
+        JOIN SYS.PARTITION_SCHEMES AS PS
+        ON PS.DATA_SPACE_ID=DS.DATA_SPACE_ID
+        JOIN SYS.PARTITION_FUNCTIONS AS PF
+        ON PF.FUNCTION_ID=PS.FUNCTION_ID
+        JOIN SYS.INDEX_COLUMNS IC
+        ON IC.OBJECT_ID=T.OBJECT_ID AND IC.PARTITION_ORDINAL>0
+        JOIN SYS.COLUMNS C
+        ON C.OBJECT_ID=T.OBJECT_ID AND IC.COLUMN_ID=C.COLUMN_ID
+        LEFT JOIN SYS.PARTITION_RANGE_VALUES PRV_RIGHT
+        ON PRV_RIGHT.FUNCTION_ID = PS.FUNCTION_ID
+        AND PRV_RIGHT.BOUNDARY_ID = P.PARTITION_NUMBER
+        WHERE T.NAME=[TABLENAME]
+        ORDER BY PRV_RIGHT.VALUE DESC
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        --查看分区情况
+        SELECT C.COLUMN_NAME AS PCNAME,P.PARTITION_NAME AS PSNAME,'' AS PFNAME,P.HIGH_VALUE AS RIGHTV, T.TABLE_NAME AS TABLENAME FROM USER_TABLES T
+        JOIN USER_TAB_PARTITIONS P
+        ON P.TABLE_NAME=T.TABLE_NAME
+        JOIN DBA_PART_KEY_COLUMNS C
+        ON C.NAME=T.TABLE_NAME
+        WHERE T.PARTITIONED='YES' AND T.TABLE_NAME=[TABLENAME] AND P.PARTITION_NAME NOT LIKE 'PS_%_MAX'
+        ORDER BY P.PARTITION_NAME DESC
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT PARTITION_EXPRESSION AS PCNAME,PARTITION_NAME AS PSNAME,'' AS PFNAME,PARTITION_DESCRIPTION AS RIGHTV,TABLE_NAME AS TABLENAME FROM INFORMATION_SCHEMA.`PARTITIONS`
+        WHERE TABLE_SCHEMA=SCHEMA()
+        AND TABLE_NAME=[TABLENAME]
+        AND PARTITION_NAME
+        NOT LIKE 'PS_%_MAX'
+        ORDER BY PARTITION_ORDINAL_POSITION DESC
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

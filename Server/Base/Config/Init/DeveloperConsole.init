@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="DeveloperConsole">
+  <Package Assembly ="Hoteam.InforCenter.Developer.Interface"/>
+  <Package Assembly ="Hoteam.InforCenter.Service.Interface"/>
+  <Package Assembly ="Hoteam.InforCenter.UI.Base"/>
+</root >

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FormCirculationOpinionPagePlugin">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ModelGenerator_CirculationOpinion_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ModelGenerator_CirculationOpinion_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OpinionPage_Container"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="OpinionPage_Container" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="CirculationOpinionContainer"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>    
+    
+    <PageControl ControlID="CirculationOpinionContainer" ParentID="OpinionPage_Container" TypeName="CirculationOpinion">      
+    </PageControl>
+  </PageControls>
+</root>

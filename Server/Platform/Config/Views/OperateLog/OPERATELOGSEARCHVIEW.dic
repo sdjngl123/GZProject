@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OPERATELOGSEARCHVIEWView" IsWeb="true">
+    <Label Name="OPERATELOGSEARCHVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">操作日志查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation log query view</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATELOGSEARCHVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">操作日志查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation log query view</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATEHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATECaption">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time</LocalizedLabel>
+    </Label>
+    <Label Name="IPHeader">
+      <LocalizedLabel LanguageRef="zhs">登录IP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login IP</LocalizedLabel>
+    </Label>
+    <Label Name="IPCaption">
+      <LocalizedLabel LanguageRef="zhs">登录IP</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login IP</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="OPERATELOGSEARCHVIEWCondition" IsWeb="true">
+    <Label Name="DATETIMEGEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time is greater than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMEGECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created time is greater than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The time is less than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELECaption">
+      <LocalizedLabel LanguageRef="zhs">时间小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The time is less than</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="IPHeader">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address</LocalizedLabel>
+    </Label>
+    <Label Name="IPCaption">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

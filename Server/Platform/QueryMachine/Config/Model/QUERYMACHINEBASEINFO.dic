@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYMACHINEBASEINFOModel" IsWeb="true">
+    <Label Name="QUERYMACHINEBASEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">查询构建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEBASEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">查询构建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTPOMHeader">
+      <LocalizedLabel LanguageRef="zhs">主POM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main POM</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTPOMCaption">
+      <LocalizedLabel LanguageRef="zhs">主POM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main POM</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">表格形式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form Type</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">表格形式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form Type</LocalizedLabel>
+    </Label>
+    <Label Name="DATALINKMODELHeader">
+      <LocalizedLabel LanguageRef="zhs">数据相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Correlation Model</LocalizedLabel>
+    </Label>
+    <Label Name="DATALINKMODELCaption">
+      <LocalizedLabel LanguageRef="zhs">数据相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Correlation Model</LocalizedLabel>
+    </Label>
+    <Label Name="FIELDKEYHeader">
+      <LocalizedLabel LanguageRef="zhs">关键字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Key Field</LocalizedLabel>
+    </Label>
+    <Label Name="FIELDKEYCaption">
+      <LocalizedLabel LanguageRef="zhs">关键字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Key Field</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZATIONROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Permissions</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZATIONROLECaption">
+      <LocalizedLabel LanguageRef="zhs">规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Permissions</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义查询名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query name</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">自定义查询名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query name</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYSQLCOMMANDHeader">
+      <LocalizedLabel LanguageRef="zhs">自定义sql查询语句</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom sql query statement</LocalizedLabel>
+    </Label>
+    <Label Name="CUSTOMQUERYSQLCOMMANDCaption">
+      <LocalizedLabel LanguageRef="zhs">自定义sql查询语句</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom sql query statement</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

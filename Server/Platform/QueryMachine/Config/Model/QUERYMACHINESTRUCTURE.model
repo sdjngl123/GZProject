@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LinkType Name="QUERYMACHINESTRUCTURE" Extend="LINK" LogicClass="LinkObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="QUERYMACHINESTRUCTURE" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="false" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="QUERYMACHINESTRUCTURE_PEID_IDX" TableIndex="QUERYMACHINESTRUCTURE_PEID_IDX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="QUERYMACHINESTRUCTURE_CEID_IDX" TableIndex="QUERYMACHINESTRUCTURE_CEID_IDX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <InfoType Extend="LID" Type="DefaultObjectValue" PrimaryKeyOrder="1" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="PEID" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="CEID" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="LSEQUENCE" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="0" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="LCREATEUID" Type="SingleUserValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Inherit" ExtendProperty1="" />
+    <InfoType Extend="LCREATETIME" Type="DateTimeValue" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Inherit" ExtendProperty1="" />
+  </LinkType>
+</root>

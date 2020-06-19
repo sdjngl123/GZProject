@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--列表用-->
+  <MenuItem Name="QueryMachineQueryMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Copy" MultiMenu="false" ModuleName="Platform" LabelName="Common.Copy" Image="p_copy" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="false" Order="0010">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="COPY" ActionType="AUTO"  SelectType="" />
+      <JSMethod Name="InforCenter_Platform_ClipBoard_Copy" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="EID" Value="[List_EID]" />
+        <Para Name="EUID" Value="[List_EUID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Copy">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="StartWorkflow" MultiMenu="false" ModuleName="Platform" LabelName="Common.StartWorkflow" Image="p_startworkflow" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="true" TemplateDescription="" Order="0020">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="STARTWORKFLOW" ActionType="AUTO" SelectType="" />
+      <BusinessMethod Name="InforCenter.WorkFlow.InforCenterWorkFlowExtendService.PLMStartWorkflowCheck" IsWCFService="true">
+        <Para Name="ObjectID" Value="[List_EID]" ParentPara="para" />
+      </BusinessMethod>
+      <WebMethod PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="ItemName" Value="StartWorkflowGuide" />
+        <Para Name="Title" Value="WorkflowGuide.StartWorkflowTitle" />
+        <Para Name="ObjectID" Value="[List_EID]" />
+        <Para Name="ViewName" Value="[List_ENAME]"  ParentPara="workflowName"/>
+        <Para Name="ViewCode" Value="\[List_ECODE]"  ParentPara="workflowName"/>
+        <Para Name="ViewVersion" Value="\[List_EVERSION]"  ParentPara="workflowName"/>
+        <Para Name="ViewType" Value="\[List_VIEWTYPE]"  ParentPara="workflowName"/>
+        <Para Name="Size" Value="950*645" />
+        <Para Name="SelectID" Value="[List_EID]" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_ObjectIDS]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="StartWorkFlow">
+        <Para Name="ObjectName" Value="[ReturnValue_ENAME]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="BatchObjectPermission" MultiMenu="true" ModuleName="Platform" LabelName="QueryMachineQueryMenu.BatchObjectPermission" Image="p_objectauthorization" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="false" Order="0030">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="PERMISSION" ActionType="AUTO" SelectType=""/>
+      <WebMethod SelectID="[List_EID]" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+        <Para Name="Title" Value="MyWorkSpaceMenu.BatchObjectPermission" />
+        <Para Name="ItemName" Value="PatchObjectPermissionGuide" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Permission" />
+    </WebAction>
+    <WebAction Name="ChangeItemOwnUser" MultiMenu="true" ModuleName="Platform" LabelName="QueryMachineQueryMenu.TurnObjectRight" Image="p_changemandateholders" ParentWebAtionName="" RefreshType="RefreshList" RefreshedSelect="false" IsHidden="false" IsTemplate="false" Order="0040">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="TreeCommonQuery" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="UserTransferOwnership" />
+        <Para Name="Size" Value="600*400" />
+        <Para Name="TransferType" Value="Object" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="TransferOwnership" />
+    </WebAction>
+    <WebAction Name="FavoriteObject" MultiMenu="true" ModuleName="Platform" LabelName="QueryMachineQueryMenu.Favorite" Image="p_collection" ParentWebAtionName="" CtrlType="" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="false" Order="0060">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="CREATE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="Hoteam_InforCenter_FavoriteObject_OnFavorite" SelectID="[List_EID]" IsLoopExec="false" />
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Common" />
+    </WebAction>
+    <WebAction Name="NewMail" MultiMenu="false" ModuleName="Platform" LabelName="QueryMachineQueryMenu.NewMail" Image="p_new_email" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="false" Order="0070">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="AUTO" SelectType=""/>
+      <WebMethod SelectID="[List_EID]" PageName="INTERNALMAIL-CREATE" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+</root>

@@ -1,0 +1,600 @@
+﻿.Message_Err {
+    font-family: Helvetica, Tahoma, Arial, "微软雅黑", "宋体", sans-serif;
+    color: red;
+    font-size: 11px;
+}
+
+.IFrame_Layout {
+    overflow: hidden;
+}
+
+.import {
+    /*margin-top: 30px;*/
+}
+
+.import  .importFileTip-container
+{
+    display:none;
+}
+
+    .import ul {
+        /*height: 30px;*/
+        width: 250px;
+        margin: 10px 12px;
+    }
+
+        .import ul li {
+            float: left;
+            width: 150px;
+        }
+
+            .import ul li.title {
+                width: 50px;
+            }
+
+            .import ul li span.filename {
+                position: absolute;
+                top: 11px;
+                width: 200px;
+                padding-left: 5px;
+                height: 20px;
+                text-overflow: ellipsis;
+                word-break: break-all;
+                word-wrap: break-word;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .import ul li span.filenamecontainer {
+                left:115px;
+                background-color:white;
+            }
+
+.titleArea {
+    height: 38px;
+}
+
+    .titleArea .left {
+        float: left;
+    }
+
+    .titleArea .right {
+        float: right;
+        height: 40px;
+    }
+
+.titleAreaText {
+    color: white;
+    font-size: 12px;
+    right: 0;
+}
+
+.bottomArea {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.bottomAreaText {
+    font-size: 12px;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+}
+
+.HomePageLogoContainer {
+    height: 34px;
+    width: 25px;
+    line-height: 34px;
+    float: left;
+    margin-left: 8px;
+}
+
+.HomePageLogo {
+    position: relative;
+    margin-top: 4px;
+}
+
+.HomePage_SystemLabel {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 18px;
+    float: left;
+    line-height: 34px;
+}
+
+.HomePage_Toggle {
+    color: #fff;
+    float: left;
+    line-height: 38px;
+    margin-left: 17em;
+    cursor: pointer;
+    margin-top: 11px;
+}
+
+.HomePage_Collection_Container {
+    float: right;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+}
+
+    .HomePage_Collection_Container .HomePage_CollectionTitle {
+        display: inline-block;
+        color: white;
+        margin-left: 16px;
+        margin-right: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .HomePage_Collection_Container .HomePage_Collection_down {
+        margin-bottom: -3px;
+        cursor: pointer;
+    }
+
+.MainFlat_Left {
+    height: 24px;
+    width: 5px;
+}
+
+.MainFlat_Center {
+    width: 100%;
+}
+
+.MainFlat_Right {
+    height: 24px;
+    width: 5px;
+}
+
+.MainFlat_Border {
+    height: 150px;
+    min-width: 158px;
+}
+
+.MainFlat_Title {
+    font-size: 12px;
+}
+
+.HoteamUI_SelectedList_UL li {
+    padding: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    position: relative;
+    background-color: #eee;
+    height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    padding-right:25px;
+}
+
+    .HoteamUI_SelectedList_UL li span.HoteamUI_SelectedList_UL_ICON {
+        width: 16px;
+        height: 16px;
+        float: left;
+        margin-top: 1px;
+        margin-right: 5px;
+    }
+
+    .HoteamUI_SelectedList_UL li span.HoteamUI_SelectedList_UL_delete {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+.Home_Page_ShortCut_Container {
+    margin: 5px 2px 5px 2px;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.Home_Page_ShortCut_top {
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.HoteamUI_SelectedTip_labName {
+    width: 50px;
+    height: 28px;
+    color: Black;
+    position: absolute;
+    border-right: none;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.HoteamUI_SelectedTip_content {
+    height: 28px;
+    margin-left: 52px;
+    line-height: 28px;
+    margin-right: 1px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tree-operate-container {
+    position: absolute;
+    top: 50%;
+    margin-top: -96px;
+    height: 70px;
+    width: 100%;
+    left: 8px;
+}
+
+.tree-operate {
+    height: 22px;
+    width: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+    .tree-operate:hover {
+        background-color: #eee;
+    }
+
+.tree-operate-right {
+    background: url(../platform/image/common/rightAngle.png) center no-repeat;
+}
+
+.tree-operate-doubleright {
+    background: url(../platform/image/common/rightDoubleAngle.png) center no-repeat;
+}
+
+.tree-operate-left {
+    background: url(../platform/image/common/leftAngle.png) center no-repeat;
+}
+
+.tree-operate-doubleleft {
+    background: url(../platform/image/common/leftDoubleAngle.png) center no-repeat;
+}
+
+.SelectedList {
+    height: 100%;
+}
+
+.HoteamUI_SelectedList_UL {
+    padding: 5px;
+    overflow: auto;
+    height: 100%;
+}
+
+.HoteamUI_SelectedList_UL_HiddenRemove li {
+    background-color: #fff;
+}
+
+.HoteamUI_SelectedList_UL_HiddenRemove .HoteamUI_SelectedList_UL_delete {
+    display: none;
+}
+
+.smart-list-btns {
+    margin-top: 5px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.treeview-query-container {
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    height: 28px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 2px;
+}
+
+.treeview-query-search {
+    position: relative;
+    padding-right: 50px;
+    padding-left: 8px;
+}
+
+.treeview-query-search-input-a {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 51px;
+    right: 0px;
+    top: 0px;
+    background: #fff;
+}
+
+
+.treeview-query-search input {
+    border: none;
+    height: 22px;
+    box-shadow: none;
+    padding-right: 16px;
+    padding-left: 8px;
+}
+
+    .treeview-query-search input:focus {
+        outline: none;
+        border: none;
+        border-color: #fff;
+        box-shadow: none;
+    }
+
+.treeview-query-more {
+    position: absolute;
+    right: 0px;
+}
+
+.treeview-query-split {
+    height: 12px;
+    position: absolute;
+    width: 1px;
+    right: 26px;
+    top: 5px;
+    background: #ccc;
+}
+
+.treeview-query-img {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 21px;
+    right: 0px;
+    top: 0px;
+}
+
+.treeview-query-search-input {
+    border: 1px solid #ccc;
+    padding-right: 50px;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.treeview-query-search-trash {
+    position: absolute;
+    right: 53px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.treeview-query-more {
+    position: absolute;
+    right: 0px;
+    width: 45px;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+}
+
+.treequery-query-search {
+    position: relative;
+    padding-right: 68px;
+    padding-left: 8px;
+}
+
+.treequery-query-search-input-a {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 31px;
+    right: 0px;
+    top: 0px;
+    background: #fff;
+}
+
+
+.treequery-query-search input {
+    border: none;
+    height: 22px;
+    box-shadow: none;
+}
+
+    .treequery-query-search input:focus {
+        outline: none;
+        border: none;
+        border-color: #fff;
+        box-shadow: none;
+    }
+
+.treequery-query-split {
+    height: 12px;
+    position: absolute;
+    width: 1px;
+    right: 25px;
+    top: 5px;
+    background: #ccc;
+}
+
+.treequery-query-img {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 21px;
+    right: 0px;
+    top: 0px;
+}
+
+.treequery-query-search-input {
+    border: 1px solid #ccc;
+    padding-right: 30px;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.treequery-query-more {
+    position: absolute;
+    right: 0px;
+    width: 68px;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+    .treequery-query-more span {
+        margin-top: 4px;
+        float: left;
+        margin-left: 4px;
+    }
+
+
+.ui-dialog .ui-dialog-content[pagepagename="GuideManagement"] {
+    background-color: #F7F7F7;
+}
+
+.ui-dialog .ui-dialog-content [cid="GuideManagement_Page"] {
+    background: #ffffff;
+}
+
+[cid="Message_LayoutContainer"] {
+    background-color: #F7F7F7;
+}
+
+[cid="Message_Textbox"] > textarea.form-control[readonly] {
+    background-color: #ffffff;
+}
+
+[pagepagename="ViewObject"] .hoteam-ctrl-image-container > div {
+    border: none;
+}
+
+/*[pagepagename="ViewObject"] .hoteam-ctrl-image-container > div:hover {
+        border: 1px solid #ccc;
+    }*/
+
+.ClassicHomePage_Navigation_Toggle {
+    border-bottom: 1px solid #c6c6c6;
+    height: 100%;
+}
+
+
+.hoteam-navigation-toggle-slide > .accordion-toggle-text {
+    display: none;
+}
+
+.hoteam-navigation-toggle-slide > .accordion-toggle-icon {
+    margin-left: 1px;
+}
+
+.accordion-toggle-text {
+    display: inline-block;
+    line-height: 26px;
+    margin-left: 16px;
+    vertical-align: bottom;
+}
+
+.accordion-toggle-icon {
+    display: inline-block;
+    margin-left: 16px;
+    margin-top: 6px;
+    width: 30px;
+    height: 16px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.Confirm_Content,
+.DeleteObject_Content,
+.ExportPage_MessageCtrl {
+    padding: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border: #E0E0E0 1px solid;
+}
+
+.confirm-message {
+    height: 100%;
+    overflow: auto;
+}
+
+    .confirm-message > img {
+        width: 24px;
+        height: 24px;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .confirm-message > p {
+        line-height: 24px;
+    }
+
+[cid="Message_Content"], [cid="Message_Label"], [cid="DeleteObject_Content"] {
+    overflow: auto;
+}
+
+.HoteamUI_SearchHistoryUI {
+    position:absolute;
+    width:188px;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index:99999;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+    border-radius: 3px;
+}
+.HoteamUI_SearchHistoryUI li{
+    position:relative;
+    padding:4px 20px 4px 10px;
+    cursor:pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height:26px;
+}
+
+.HoteamUI_SearchHistoryUI li:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.HoteamUI_SearchHistoryUI_AllClear {
+    border-top: 1px solid #ccc;
+    color: #337ab7;
+}
+
+[pagepagename="MailMainBody"] textarea.form-control[readonly],
+[pagepagename="MailPlugin"] textarea.form-control[readonly] {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+    [pagepagename="MailMainBody"] textarea.form-control[readonly]:focus,
+    [pagepagename="MailPlugin"] textarea.form-control[readonly]:focus {
+        outline: none;
+        border-color: #ccc;
+        box-shadow: none;
+    }
+
+.hoteam-selectlist-top {
+    background-position: -128px -48px;
+    background-repeat:no-repeat;
+    position: absolute;
+    right: 60px;
+    display: none;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.hoteam-selectlist-down {
+    background-position: -144px -48px;
+    background-repeat:no-repeat;
+    position: absolute;
+    right: 38px;
+    display: none;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.hoteam-formbuilder-radiolist-textunderline li {
+    text-decoration: underline;
+}

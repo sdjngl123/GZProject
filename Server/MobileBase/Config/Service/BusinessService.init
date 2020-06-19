@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="BusinessService">
+  <Package Assembly ="Hoteam.Mobile.Common.Config"/>
+  <Package Assembly ="Hoteam.Mobile.QRCode.Config"/>
+</root >

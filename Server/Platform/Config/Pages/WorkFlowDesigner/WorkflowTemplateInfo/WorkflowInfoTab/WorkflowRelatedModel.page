@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowRelatedModel" IsCache="true">
+    <Settings Key="height" Value="600"/>
+    <Settings Key="width" Value="800"/>
+    <Settings Key="title" Value="WorkflowRelatedModel.Title"/>
+    <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowRelatedModel_OnCreate(pageEvent);"/>
+    </PageHandlers>
+    <PageControls>
+        <PageControl ControlID="WorkflowRelatedModel_Layout" ParentID="" TypeName="LayoutContainer">
+            <Settings Key="type" Value="vertical"/>
+            <Settings Key="padding" Value="0 8px 0 8px"/>
+            <Settings Key="item2" >
+                <Settings Key="size" Value="50"/>
+                <Settings Key="childid" Value="WorkflowRelatedModelMenu"/>
+            </Settings>
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="WorkflowRelatedModelEditGrid"/>
+            </Settings>
+            <Settings Key="item3" >
+                <Settings Key="size" Value="60"/>
+                <Settings Key="childid" Value="Btn_Container"/>
+            </Settings>
+        </PageControl>
+        <!--菜单-->
+        <PageControl ControlID="WorkflowRelatedModelMenu" ParentID="WorkflowRelatedModel_Layout" TypeName="Menu">
+
+            <Settings Key="item1" >
+                <Settings Key="textId" Value="Common.Create"/>
+                <Settings Key="value" Value="Create"/>
+                <Settings Key="icon" Value="p_add"/>
+                <Settings Key="js" Value="InforCenter_Platform_WorkflowRelatedModel_CreateMenu(ctrlEvent);"/>
+            </Settings>
+            <Settings Key="item2" >
+                <Settings Key="textId" Value="Common.Delete"/>
+                <Settings Key="value" Value="Delete"/>
+                <Settings Key="icon" Value="p_delete"/>
+                <Settings Key="js" Value="InforCenter_Platform_WorkflowRelatedModel_DeleteMenu(ctrlEvent);"/>
+            </Settings>
+            <Settings Key="item3" >
+                <Settings Key="textId" Value="WorkflowRelatedModel.MoveUp"/>
+                <Settings Key="value" Value="MoveUp"/>
+                <Settings Key="icon" Value="p_moveup"/>
+                <Settings Key="js" Value="InforCenter_Platform_WorkflowRelatedModel_MoveUpMenu(ctrlEvent);"/>
+            </Settings>
+            <Settings Key="item4" >
+                <Settings Key="textId" Value="WorkflowRelatedModel.MoveDown"/>
+                <Settings Key="value" Value="MoveDown"/>
+                <Settings Key="icon" Value="p_movedown"/>
+                <Settings Key="js" Value="InforCenter_Platform_WorkflowRelatedModel_moveDownMenu(ctrlEvent);"/>
+            </Settings>
+
+        </PageControl>
+        <PageControl ControlID="WorkflowRelatedModelEditGrid" ParentID="WorkflowRelatedModel_Layout" TypeName="EditGrid">
+
+            <Settings Key="multiselect" Value="true" />
+        </PageControl>
+
+        <PageControl ControlID="Btn_Container" ParentID="WorkflowRelatedModel_Layout" TypeName="LayoutContainer">
+            <Settings Key="type" Value="horizontal"/>
+            <Settings Key="item1" Value="">
+                <Settings Key="size" Value="35%"/>
+                <Settings Key="childid" Value=""/>
+            </Settings>
+            <Settings Key="item2" Value="">
+                <Settings Key="size" Value="100"/>
+                <Settings Key="childid" Value="btnOK"/>
+            </Settings>
+            <Settings Key="item3" Value="">
+                <Settings Key="size" Value="30%"/>
+                <Settings Key="childid" Value=""/>
+            </Settings>
+            <Settings Key="item4" Value="">
+                <Settings Key="size" Value="100"/>
+                <Settings Key="childid" Value="btnCancel"/>
+            </Settings>
+            <Settings Key="item5" Value="">
+                <Settings Key="size" Value="35%"/>
+                <Settings Key="childid" Value=""/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+            <PageHandlers>
+                <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowRelatedModel_OnOK(ctrlEvent);"/>
+            </PageHandlers>
+            <Settings Key="textId" Value="Common.OK" />
+        </PageControl>
+        <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+            <PageHandlers>
+                <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+            </PageHandlers>
+            <Settings Key="textId" Value="Common.Cancel" />
+        </PageControl>
+    </PageControls>
+</root>

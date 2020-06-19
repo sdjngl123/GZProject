@@ -1,0 +1,72 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="LayoutContainer">
+  <PageHandlers>
+  </PageHandlers>
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2">
+    <Settings Key="childid" Value="[INFONAME]_Value_Image"/>
+  </Settings>
+  <Settings Key="item3">
+    <Settings Key="size" Value="40"/>
+    <Settings Key="childid" Value="[INFONAME]_Value_Operate"/>
+  </Settings>
+</PageControl>
+
+<PageControl ControlID="[INFONAME]_Value_Operate" ParentID="[INFONAME]_Value" TypeName="LayoutContainer">
+  <PageHandlers>
+  </PageHandlers>
+  <Settings Key="type" Value="vertical"/>
+  <Settings Key="item4">
+    <Settings Key="size" Value="4"/>
+  </Settings>
+  <Settings Key="item3">
+    <Settings Key="size" Value="30"/>
+    <Settings Key="childid" Value=""/>
+  </Settings>
+  <Settings Key="item1">
+    <Settings Key="size" Value="30"/>
+    <Settings Key="childid" Value="[INFONAME]_Value_UploadBtn"/>
+  </Settings>
+  <Settings Key="item2">
+    <Settings Key="size" Value="30"/>
+    <Settings Key="childid" Value="[INFONAME]_Value_DeleteBtn"/>
+  </Settings>
+  <Settings Key="item8" Value="">
+    <Settings Key="size" Value="0"/>
+    <Settings Key="childid" Value="[INFONAME]_FileUpLoadCtrl"/>
+  </Settings>
+</PageControl>
+
+
+<PageControl ControlID="[INFONAME]_Value_Image" ParentID="[INFONAME]_Value" TypeName="Image" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+  </PageHandlers>
+  <Settings Key="fixedType" Value="height" />
+  <Settings Key="border" Value="true" />
+</PageControl>
+
+<PageControl ControlID="[INFONAME]_Value_UploadBtn" ParentID="[INFONAME]_Value_Operate" TypeName="Button" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="Hoteam_InferCenter_ImageUpload_OnClick(ctrlEvent,'[EXTENDPROPERTY3]');"/>
+  </PageHandlers>
+  <Settings Key="iconClass" Value="p_arrow_up" />
+  <!--<Settings Key="textId" Value="Common.Upload" />-->
+</PageControl>
+
+<PageControl ControlID="[INFONAME]_Value_DeleteBtn" ParentID="[INFONAME]_Value_Operate" TypeName="Button" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="    
+    var imageName = '[INFONAME]_Value_Image';
+    var imageCtrl = ctrlEvent.o.OtherControl(imageName);
+    imageCtrl.SetSrc('');
+    imageCtrl.SetValue(null);
+    "/>
+  </PageHandlers>
+  <Settings Key="iconClass" Value="p_delete" />
+  <!--<Settings Key="textId" Value="Common.Delete" />-->
+</PageControl>
+<PageControl ControlID="[INFONAME]_FileUpLoadCtrl" ParentID="[INFONAME]_Value_Operate" TypeName="Filetransfer">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnUploadSuccess" Script="Hoteam_InferCenter_ImageUpload_OnUploadSuccess(ctrlEvent,'[INFONAME]');"/>
+  </PageHandlers>
+</PageControl>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectPropertyCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Properties</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPropertyName">
+      <LocalizedLabel LanguageRef="zhs">属性名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPropertyOperator">
+      <LocalizedLabel LanguageRef="zhs">操作符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operator</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPropertyValue">
+      <LocalizedLabel LanguageRef="zhs">属性值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute value</LocalizedLabel>
+    </Label>
+    <Label Name="ValueType">
+      <LocalizedLabel LanguageRef="zhs">显示值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display value</LocalizedLabel>
+    </Label>
+    <Label Name="Equal">
+      <LocalizedLabel LanguageRef="zhs">==</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">==</LocalizedLabel>
+    </Label>
+    <Label Name="NotEqual">
+      <LocalizedLabel LanguageRef="zhs">!=</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">!=</LocalizedLabel>
+    </Label>
+    <Label Name="GreatThan">
+      <LocalizedLabel LanguageRef="zhs">&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="GreatEqual">
+      <LocalizedLabel LanguageRef="zhs">&gt;=</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">&gt;=</LocalizedLabel>
+    </Label>
+    <Label Name="LessThan">
+      <LocalizedLabel LanguageRef="zhs">&lt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">&lt; </LocalizedLabel>
+    </Label>
+    <Label Name="LessEqual">
+      <LocalizedLabel LanguageRef="zhs">&lt;=</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">&lt;=</LocalizedLabel>
+    </Label>
+    <Label Name="Like">
+      <LocalizedLabel LanguageRef="zhs">Like</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Like</LocalizedLabel>
+    </Label>
+    <Label Name="NotLike">
+      <LocalizedLabel LanguageRef="zhs">Not Like</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not Like</LocalizedLabel>
+    </Label>
+    <Label Name="Empty">
+      <LocalizedLabel LanguageRef="zhs">空值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Null</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+
+  <ListManagement Name="CompanyListMangement" 
+                  MenuName="ListCompanyMenu" 
+                  ListRightMenuName="" 
+                  ListViewName="COMPANYListViewIgnoreCompanyRulePermissionFalse" 
+                  QueryPageName="COMPANYVIEW-QUERY" 
+                  ListTitleDataService="Hoteam.InforCenter.CompanyRuleService.GetCompanyManagementListTitle" 
+                  OnePageDataService="Hoteam.InforCenter.CompanyRuleService.GetCompanyManagementListData" 
+                  AllPageDataService="" 
+                  HideViewFilterPage="true" /> 
+</root>

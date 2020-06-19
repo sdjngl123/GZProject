@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FUNCBUTTONModel" IsWeb="true">
+    <Label Name="FUNCBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">功能按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FuncButton</LocalizedLabel>
+    </Label>
+    <Label Name="FUNCBUTTONCaption">
+      <LocalizedLabel LanguageRef="zhs">功能按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FuncButton</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONTEXTHeader">
+      <LocalizedLabel LanguageRef="zhs">显示文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonText</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONTEXTCaption">
+      <LocalizedLabel LanguageRef="zhs">显示文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonText</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ICONCaption">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="CALLPAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">调用页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CallPage</LocalizedLabel>
+    </Label>
+    <Label Name="CALLPAGECaption">
+      <LocalizedLabel LanguageRef="zhs">调用页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CallPage</LocalizedLabel>
+    </Label>
+    <Label Name="MAINCONFIGHeader">
+      <LocalizedLabel LanguageRef="zhs">主配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainConfig</LocalizedLabel>
+    </Label>
+    <Label Name="MAINCONFIGCaption">
+      <LocalizedLabel LanguageRef="zhs">主配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainConfig</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDHeader">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageName</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDCaption">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageName</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="WEBVIEWURLHeader">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="WEBVIEWURLCaption">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">分组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">GroupName</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">分组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">GroupName</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="PAGETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">页面类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageType</LocalizedLabel>
+    </Label>
+    <Label Name="PAGETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">页面类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageType</LocalizedLabel>
+    </Label>
+    <Label Name="ISPADHeader">
+      <LocalizedLabel LanguageRef="zhs">是否PAD</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsPAD</LocalizedLabel>
+    </Label>
+    <Label Name="ISPADCaption">
+      <LocalizedLabel LanguageRef="zhs">是否PAD</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsPAD</LocalizedLabel>
+    </Label>
+    <Label Name="ISPHONEHeader">
+      <LocalizedLabel LanguageRef="zhs">是否Phone</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsPhone</LocalizedLabel>
+    </Label>
+    <Label Name="ISPHONECaption">
+      <LocalizedLabel LanguageRef="zhs">是否Phone</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsPhone</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="RuleManagement" MenuName="" PageLinksName="ActionRuleListPageLink"
+             TreeViewName="RuleManagementTreeView" ShowTreeQuery="false"
+            TreeChildDataService="Hoteam.InforCenter.RulePageService.GetActionRuleChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="">
+    <!--<ObjectType Name="ACTIONRULE" MenuName="TreeActionRuleMenu" PageLinksName="ActionRulePageLink" />-->
+    <ObjectType Name="ACTIONRULEROOT" MenuName="TreeActionRuleRootMenu" PageLinksName="ActionRuleListPageLink" />
+    <ObjectType Name="Entity" MenuName="TreeActionRuleMenu" PageLinksName="ActionRulePageLink" />
+    <ObjectType Name="Link" MenuName="TreeActionRuleMenu" PageLinksName="LinkActionRulePageLink" />
+    <ObjectType Name="CREATEACTIONRULEROOT" MenuName="" PageLinksName="CreateActionRuleRootPageLink" />
+    <ObjectType Name="ObjectPermission" MenuName="TreeObjectPermissionRuleMenu" PageLinksName="ObjectPermissionRulePageLinks" />
+    <ObjectType Name="WorkflowPermission" MenuName="TreeObjectPermissionRuleMenu" PageLinksName="ObjectPermissionRulePageLinks" />
+    <ObjectType Name="ActionRuleBusinessModel" MenuName="" PageLinksName="CreateActionRulePageLink" />
+  </TreeManagement>
+
+  <TreeManagement Name="RuleMessageManagement" MenuName="" PageLinksName="ActionRuleListPageLink"
+             TreeViewName="RuleMessageManagementTreeView" ShowTreeQuery="false"
+            TreeChildDataService="Hoteam.InforCenter.RulePageService.GetActionRuleChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="">
+    <!--<ObjectType Name="ACTIONRULE" MenuName="TreeActionRuleMenu" PageLinksName="ActionRulePageLink" />-->
+    <ObjectType Name="ACTIONRULEMESSAGEROOT" MenuName="TreeActionRuleRootMenu" PageLinksName="ActionRuleListPageLink" />
+    <!--<ObjectType Name="CREATEACTIONRULEMESSAGEROOT" MenuName="" PageLinksName="CreateActionRuleRootPageLink" />-->
+    <ObjectType Name="ActionRuleMessage" MenuName="TreeActionRuleMenu" PageLinksName="ActionRuleMessagePageLink" />    
+    <!--<ObjectType Name="Link" MenuName="TreeActionRuleMenu" PageLinksName="LinkActionRuleMessagePageLink" />-->
+    <!--<ObjectType Name="ActionRuleMessageBusinessModel" MenuName="" PageLinksName="CreateActionRuleMessagePageLink" />-->
+  </TreeManagement>
+  
+</root>

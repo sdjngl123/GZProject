@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--名称唯一，重复则覆盖上层-->
+  <QueryMachineQuery Name="WorkFlowTemplateQuery"  Title="QueryMachineQuery.WorkFlowTemplateQuery" >
+    <!--查询结果中必须包含EID-->
+    <QuerySqlCommand>
+      select ENAME,CREATEUID,EID from WORKFLOWTEMPLATE where 1=1 [$con1$]   [$con2$]
+    </QuerySqlCommand>
+    <QueryRoles>
+      <!--替换方式为：当前行所替换对应替换符 如 And WORKFLOWTEMPLATE.ENAME LIKE'%与%' 替换[$con1$]，如果条件Value为空则将对应[$con1$]替换为空-->
+      <QueryRole Id="1" ReplacePara="[$con1$]"  ObjectType="WORKFLOWTEMPLATE" ColName="ENAME" ColTitle="QueryMachineQuery.Name" OperateType="and" Condition="Like" Value="" />
+      <QueryRole Id="2" ReplacePara="[$con2$]" ObjectType="WORKFLOWTEMPLATE" ColName="CREATEUID" ColTitle="QueryMachineQuery.CREATEUID" OperateType="and" Condition="=" Value="" />
+    </QueryRoles>
+    <QueryColumns>
+      <QueryColumn Name="ENAME" Title="QueryMachineQuery.Name" />
+      <QueryColumn Name="CREATEUID" Title="QueryMachineQuery.CREATEUID" />
+    </QueryColumns>
+  </QueryMachineQuery>
+</root>

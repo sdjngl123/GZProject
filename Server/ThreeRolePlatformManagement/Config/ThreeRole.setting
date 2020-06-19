@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="HighSecurityShow" Value="***" ToClient="false" Description="高密级显示文本" />
+  <AppSet Key="ModulePermissionDisableNav" Value="Organization;ModulePermission;ActionRule;OperateLogSearch" ToClient="true" Description="不能在功能授权中授权的模块" />
+  <AppSet Key="ThreeRoleModel" Value="USERINFO;GROUPINFO;ROLEINFO;PERSION;MODULEPERSMISSION;ACTIONRULE;ACTIONRULECONDITION;ACTIONRULEPERMISSION" ToClient="false" Description="需要记录三员日志的模型" />
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="FavoriteService"
+     ServiceAssembly="Hoteam.InforCenter.Favorite.Service.dll"
+     ServiceClass="Hoteam.InforCenter.Favorite.Service.FavoriteService"
+     ContractAssembly="Hoteam.InforCenter.Favorite.Service.dll"
+     ContractClass="Hoteam.InforCenter.Favorite.Service.IFavoriteService"/>
+ 
+</root>

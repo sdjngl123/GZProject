@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LifeCircle Name="WorkflowLife" InitState="RUN">
+    <State Name="StartNode" CenterX="416" CenterY="44" />
+    <State Name="EndNode" CenterX="416" CenterY="437" />
+    <State Name="RUN" CenterX="416" CenterY="165" />
+    <State Name="COMPLETE" CenterX="416" CenterY="319" />
+    <State Name="SUSPEND" CenterX="556" CenterY="164" />
+    <State Name="STOP" CenterX="556" CenterY="320" />
+    <Line ID="LINE5a1e2e80bfdf4889acbd570779d2f9cb" StartNodeID="StartNode" StartX="415" StartY="66" EndNodeID="RUN" EndX="416" EndY="143" IsStraightLine="false" />
+    <Line ID="LINE3a9029e6497f4bec969bd6e897495ab4" StartNodeID="RUN" StartX="407" StartY="162" EndNodeID="COMPLETE" EndX="414" EndY="297" IsStraightLine="false" />
+    <Line ID="LINEf1a9e8503a2c4495b4306af3bfd66c73" StartNodeID="COMPLETE" StartX="414" StartY="341" EndNodeID="EndNode" EndX="424" EndY="394" IsStraightLine="false" />
+    <Line ID="LINE4d4d2d5c19c249a481ed72805ec320f4" StartNodeID="RUN" StartX="456" StartY="165" EndNodeID="SUSPEND" EndX="516" EndY="164" IsStraightLine="false" />
+    <Line ID="LINE5557f8bb27b24ab0a7c1433921084611" StartNodeID="SUSPEND" StartX="556" StartY="142" EndNodeID="RUN" EndX="416" EndY="143" IsStraightLine="false" />
+    <Line ID="LINE82e2074cc0b346a5b3e9536e70698085" StartNodeID="SUSPEND" StartX="556" StartY="186" EndNodeID="STOP" EndX="554" EndY="299" IsStraightLine="false" />
+    <Line ID="LINE71abedc9c7d44be88fd5ffed2d8bf60d" StartNodeID="COMPLETE" StartX="454" StartY="319" EndNodeID="STOP" EndX="514" EndY="321" IsStraightLine="false" />
+    <Line ID="LINE46f1ea5250484dca9be76239015443b3" StartNodeID="STOP" StartX="560" StartY="324" EndNodeID="EndNode" EndX="434" EndY="428" IsStraightLine="false" />
+  </LifeCircle>
+</root>

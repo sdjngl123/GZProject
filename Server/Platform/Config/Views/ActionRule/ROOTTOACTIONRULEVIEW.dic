@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ROOTTOACTIONRULEVIEWView" IsWeb="true">
+    <Label Name="ROOTTOACTIONRULEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限根节点视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule authority root node view</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTTOACTIONRULEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">标题	规则权限根节点视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title rule permissions root node view</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICHeader">
+      <LocalizedLabel LanguageRef="zhs">根节点文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node text</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICCaption">
+      <LocalizedLabel LanguageRef="zhs">根节点文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node text</LocalizedLabel>
+    </Label>
+    <Label Name="USEBYHeader">
+      <LocalizedLabel LanguageRef="zhs">条件类型应用场景</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Conditional type application scenario</LocalizedLabel>
+    </Label>
+    <Label Name="USEBYCaption">
+      <LocalizedLabel LanguageRef="zhs">该条件是用在实体对象还是关系对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This condition is used in a entity object or a relational object</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">根节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node type</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">根节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryMachineQueryMenu" IsWeb="true">
+    <Label Name="AddQuickNavJS">
+      <LocalizedLabel LanguageRef="zhs">收藏一段脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favourite - Script</LocalizedLabel>
+    </Label>
+    <Label Name="NewMail">
+      <LocalizedLabel LanguageRef="zhs">新建邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New email</LocalizedLabel>
+    </Label>
+    <Label Name="Favorite">
+      <LocalizedLabel LanguageRef="zhs">收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites</LocalizedLabel>
+    </Label>
+    <Label Name="BatchObjectPermission">
+      <LocalizedLabel LanguageRef="zhs">批量授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BatchObjectPermission</LocalizedLabel>
+    </Label>
+    <Label Name="TurnObjectRight">
+      <LocalizedLabel LanguageRef="zhs">转交所有权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TurnObjectRight</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Filter Rule="InforCenter.Organization.OrganizationDataService.GetLoginInfo" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.Organization.OrganizationDataService.GetLoginUser" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.Organization.OrganizationDataService.CheckPassword" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.Organization.OrganizationDataService.CheckAutoLoginUser" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.Organization.OrganizationDataService.GetLoginService" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.Interval.IntervalService.*" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="*.*.WorkflowService.StartWorkflow" Call="[ServiceAddr]/[2]/json/[3]" Authentication="true" Lock="true" LockID="WorkflowService"/>
+  <Filter Rule="*.*.WorkflowService.AuditFlowTask" Call="[ServiceAddr]/[2]/json/[3]" Authentication="true" Lock="true" LockID="WorkflowService"/>
+  
+</root>

@@ -1,0 +1,44 @@
+﻿<div class="mobile-registered-page">
+  <div sytle="width:100%;background-color:#fff;position:relative;">
+    <div class="mobile-registered-content mobile-re-title">
+      <div class="mobile-re-n">
+        <span style="color:#0090ff;">[RegisteredLogo]</span>[RegisteredTitle]
+      </div>
+    </div>
+    <span class="mobile-re-back">
+      <img src="MobileBase/Image/carat-d.svg" style="height: 20px; width: 20px;transform: rotateY(180deg);"/>
+    </span>
+    <span class="mobile-re-login">[RegisteredLogin]</span>
+  </div>
+  <div class="mobile-re-line"></div>
+  <div class="mobile-registered-content mobile-re-content">
+    <div class="mobile-re-c">
+      <input id="registeredname" placeholder="[username]" class="mobile-re-input" regex="^(\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)$|^(1[0-9]{10})$|^(((\+86)|(86))?1[0-9]{10})$" autocomplete="off" required="required"/>
+      <span class="mobile-re-error"></span>
+    </div>
+    <div class="mobile-re-c mobile-re-iden-c">
+      <table border="0" cellpadding="0" cellspacing="0" style="width:100%;border-spacing: 0;">
+        <tr>
+          <td>
+            <input id="identifyingcode" placeholder="[identifyingCode]" class="mobile-re-input mobile-iden-input" regex="^\d{6}$" required="required"/>
+          </td>
+          <td style="width:100px;">
+            <div id="mobilegetVerNum" class="mobile-iden-btn">[GetIdentifyingCode]</div>
+          </td>
+        </tr>
+      </table>
+      <span class="mobile-re-error"></span>
+    </div>
+    <div class="mobile-re-c">
+      <input id="registeredpassword" placeholder="[Password]" class="mobile-re-input" type="password" regex="^[\w\W]{8,20}$" required="required"/>
+      <span class="mobile-re-error"></span>
+    </div>
+    <div class="mobile-re-c">
+      <input id="registeredcompany" placeholder="[CompanyName]" class="mobile-re-input"/>
+      <span class="mobile-re-error"></span>
+    </div>
+    <div class="mobile-re-c">
+      <div id="registeredBtn" class="mobile-re-btn">[Registered]</div>
+    </div>
+  </div>
+</div>

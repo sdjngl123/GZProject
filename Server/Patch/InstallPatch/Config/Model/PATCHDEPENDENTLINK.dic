@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PATCHDEPENDENCELINKModel" IsWeb="true">
+    <Label Name="PATCHDEPENDENCELINKHeader">
+      <LocalizedLabel LanguageRef="zhs">PATCHDEPENDENCELINK</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATCHDEPENDENCELINK</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHDEPENDENCELINKCaption">
+      <LocalizedLabel LanguageRef="zhs">PATCHDEPENDENCELINK</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATCHDEPENDENCELINK</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

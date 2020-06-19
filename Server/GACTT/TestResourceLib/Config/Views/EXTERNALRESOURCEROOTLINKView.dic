@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="EXTERNALRESOURCEROOTLINKViewView" IsWeb="true">
+    <Label Name="EXTERNALRESOURCEROOTLINKViewHeader">
+      <LocalizedLabel LanguageRef="zhs">EXTERNALRESOURCEROOTLINKView</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXTERNALRESOURCEROOTLINKView</LocalizedLabel>
+    </Label>
+    <Label Name="EXTERNALRESOURCEROOTLINKViewCaption">
+      <LocalizedLabel LanguageRef="zhs">EXTERNALRESOURCEROOTLINKView</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EXTERNALRESOURCEROOTLINKView</LocalizedLabel>
+    </Label>
+    <Label Name="LIDHeader">
+      <LocalizedLabel LanguageRef="zhs">关系标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="LIDCaption">
+      <LocalizedLabel LanguageRef="zhs">关系标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent Object Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent Object Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="PETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">父对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object type</LocalizedLabel>
+    </Label>
+    <Label Name="PETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">父对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object type</LocalizedLabel>
+    </Label>
+    <Label Name="CEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">子对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-Object Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">子对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-Object Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">子对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-object Type</LocalizedLabel>
+    </Label>
+    <Label Name="CETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">子对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-object Type</LocalizedLabel>
+    </Label>
+    <Label Name="LSEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="LSEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="LQUALITYHeader">
+      <LocalizedLabel LanguageRef="zhs">数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Quantity</LocalizedLabel>
+    </Label>
+    <Label Name="LQUALITYCaption">
+      <LocalizedLabel LanguageRef="zhs">数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Quantity</LocalizedLabel>
+    </Label>
+    <Label Name="LCOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="LCOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="PEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父对象Euid</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object Euid</LocalizedLabel>
+    </Label>
+    <Label Name="PEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父对象Euid</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object Euid</LocalizedLabel>
+    </Label>
+    <Label Name="CEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">子对象Euid</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-object Euid</LocalizedLabel>
+    </Label>
+    <Label Name="CEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">子对象Euid</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sub-object Euid</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterID</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterID</LocalizedLabel>
+    </Label>
+    <Label Name="SALESUNITHeader">
+      <LocalizedLabel LanguageRef="zhs">计价单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SalesUnit</LocalizedLabel>
+    </Label>
+    <Label Name="SALESUNITCaption">
+      <LocalizedLabel LanguageRef="zhs">计价单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SalesUnit</LocalizedLabel>
+    </Label>
+    <Label Name="UNITHeader">
+      <LocalizedLabel LanguageRef="zhs">单价</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">unit</LocalizedLabel>
+    </Label>
+    <Label Name="UNITCaption">
+      <LocalizedLabel LanguageRef="zhs">单价</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">unit</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKCaption">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="EXTERNALRESOURCEROOTLINKViewCondition" IsWeb="true" />
+  <Context Name="EXTERNALRESOURCEROOTLINKViewCondition" IsWeb="true" />
+</DictionarySerializer>

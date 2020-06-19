@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="RegisteredCompanyLinkService"
+     ServiceAssembly="Hoteam.InforCenter.RegisteredCompanyLink.Service.dll"
+     ServiceClass="Hoteam.InforCenter.RegisteredCompanyLink.Service.RegisteredCompanyLinkService"
+     ContractAssembly="Hoteam.InforCenter.RegisteredCompanyLink.Service.dll"
+     ContractClass="Hoteam.InforCenter.RegisteredCompanyLink.Service.IRegisteredCompanyLinkService"/>
+</root>

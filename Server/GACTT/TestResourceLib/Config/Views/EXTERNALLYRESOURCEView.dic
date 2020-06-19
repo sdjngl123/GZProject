@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="EXTERNALLYRESOURCEViewView" IsWeb="true">
+    <Label Name="EXTERNALLYRESOURCEViewHeader">
+      <LocalizedLabel LanguageRef="zhs">外部可用资源View</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExternallyResourceView</LocalizedLabel>
+    </Label>
+    <Label Name="EXTERNALLYRESOURCEViewCaption">
+      <LocalizedLabel LanguageRef="zhs">外部可用资源View</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExternallyResourceView</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SERIALNUMBER</LocalizedLabel>
+    </Label>
+    <Label Name="SALESUNITHeader">
+      <LocalizedLabel LanguageRef="zhs">计价单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SalesUnit</LocalizedLabel>
+    </Label>
+    <Label Name="SALESUNITCaption">
+      <LocalizedLabel LanguageRef="zhs">计价单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SalesUnit</LocalizedLabel>
+    </Label>
+    <Label Name="UNITHeader">
+      <LocalizedLabel LanguageRef="zhs">单价</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">unit</LocalizedLabel>
+    </Label>
+    <Label Name="UNITCaption">
+      <LocalizedLabel LanguageRef="zhs">单价</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">unit</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKCaption">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterID</LocalizedLabel>
+    </Label>
+    <Label Name="MASTERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MasterID</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">资源编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">资源编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">资源名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">资源名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="EXTERNALLYRESOURCEViewCondition" IsWeb="true" />
+</DictionarySerializer>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="QUERYROLEHISTORY" Extend="QUERYRULEBASEINFO" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="QUERYROLEHISTORY" SplitValidateUnique="false" IsGenerateViceTable="false" IsViceTable="false" IsBusinessModel="false" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false">
+    <InfoType Name="BASEQUERYROLEID" Type="DefaultObjectValue" DataType="STRING100" Column="BASEQUERYROLEID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+  </EntityType>
+</root>

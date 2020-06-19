@@ -1,0 +1,15 @@
+﻿
+{
+	var o = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(o.id != ''){
+		var src = data.[INFONAME];
+		if(HoteamUI.Common.IsNullOrEmpty(src)){
+			if('[INFONAME]' == 'ICON'){
+				src =  '[ICONPATH]?time='+new Date().getTime();		
+			}else{
+				src = '~/Platform/Image/Common/nopic16.png';
+			}
+		}
+		o.SetSrc(src);
+	}
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ACTIONRULECONDITIONModel" IsWeb="true">
+    <Label Name="ACTIONRULECONDITIONHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission condition</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULECONDITIONCaption">
+      <LocalizedLabel LanguageRef="zhs">规则权限条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission condition</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">规则编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule number</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">规则编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule number</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORHeader">
+      <LocalizedLabel LanguageRef="zhs">操作符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operator</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORCaption">
+      <LocalizedLabel LanguageRef="zhs">操作符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operator</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">条件值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition value</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">条件值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition value</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

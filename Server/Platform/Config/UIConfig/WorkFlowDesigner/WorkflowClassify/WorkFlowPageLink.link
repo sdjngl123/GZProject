@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--流程管理模块-流程统计页面-->
+  <PageLinks Name="WorkFlowTempateRootPageLink">
+    <PageLink Name="WorkFlowTempateRootPage"  PageName="ListManagement">
+      <Para Name="ItemName" Value="WorkFlowClassifyRootManagerment"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="WorkFlowTempateManagerment">
+    <PageLink Name="WorkFlowTempatePage"  PageName="ListManagement">
+      <Para Name="ItemName" Value="WorkFlowTempateManagerment"/>
+    </PageLink>
+  </PageLinks>
+</root>

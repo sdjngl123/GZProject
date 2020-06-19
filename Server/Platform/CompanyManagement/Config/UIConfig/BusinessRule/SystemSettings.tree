@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="CompanySettingsTreeManagement" MenuName="" PageLinksName=""
+             TreeViewName="" ShowTreeQuery="false"
+            TreeChildDataService="InforCenter.SystemSetting.SystemSettingsService.GetSystemSettingsChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="InforCenter.SystemSetting.SystemSettingsService.GetSystemSettingsTreeRootNode">
+    <ObjectType Name="ChildNode" MenuName="" PageLinksName="CompanySystemSettingsLinks" />
+  </TreeManagement>
+  
+</root>

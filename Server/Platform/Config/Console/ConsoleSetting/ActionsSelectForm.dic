@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ServiceEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">业务服务编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Service Editing Window</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceName">
+      <LocalizedLabel LanguageRef="zhs">服务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Service Name</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceNameDescription">
+      <LocalizedLabel LanguageRef="zhs">WCF的名称，是前台访问业务服务的标示；一般出现在服务地址来中标示WCF服务接口最终所在的地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of WCF is the sign of the foreground access service, which generally appears in the service address to indicate the address of the WCF service interface that is ultimately located</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceAssembly">
+      <LocalizedLabel LanguageRef="zhs">服务组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Service Component</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceAssemblyDescription">
+      <LocalizedLabel LanguageRef="zhs">WCF服务实现类所在的程序集名称（dll）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assembly name (dll) where WCF service implementation class is located</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceClass">
+      <LocalizedLabel LanguageRef="zhs">服务类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Service Class</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceClassDescription">
+      <LocalizedLabel LanguageRef="zhs">WCF服务实现类的全名称，包括命名空间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The full name of a WCF service implementation class, including name space</LocalizedLabel>
+    </Label>
+    <Label Name="ContractAssembly">
+      <LocalizedLabel LanguageRef="zhs">契约组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contract Component</LocalizedLabel>
+    </Label>
+    <Label Name="ContractAssemblyDescription">
+      <LocalizedLabel LanguageRef="zhs">WCF契约类所在的程序集名称（dll）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assembly name (dll) in which the WCF contract class is located</LocalizedLabel>
+    </Label>
+    <Label Name="ContractClass">
+      <LocalizedLabel LanguageRef="zhs">契约类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contract Class</LocalizedLabel>
+    </Label>
+    <Label Name="ContractClassDescription">
+      <LocalizedLabel LanguageRef="zhs">WCF契约类的全名称，包括命名空间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The full name of the WCF contract class, including name space</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">服务名重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate Service Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

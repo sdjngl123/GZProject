@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryMachine" IsWeb="true">
+    <Label Name="SampleQuery">
+      <LocalizedLabel LanguageRef="zhs">简单查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Simple query</LocalizedLabel>
+    </Label>
+    <Label Name="RootQuery">
+      <LocalizedLabel LanguageRef="zhs">配置查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configure query</LocalizedLabel>
+    </Label>
+    <Label Name="SaveSuccess">
+      <LocalizedLabel LanguageRef="zhs">保存成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save successfully</LocalizedLabel>
+    </Label>
+    <Label Name="CustomQuery">
+      <LocalizedLabel LanguageRef="zhs">自定义查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query</LocalizedLabel>
+    </Label>
+    <Label Name="NoQueryPower">
+      <LocalizedLabel LanguageRef="zhs">您没有对象：{0}的查询操作权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You do not have an object: {0}'s query operation permissions!</LocalizedLabel>
+    </Label>
+    <Label Name="NoPower">
+      <LocalizedLabel LanguageRef="zhs">您没有当前操作权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You do not have the current operating permissions!</LocalizedLabel>
+    </Label>
+    <Label Name="NoKeyWord">
+      <LocalizedLabel LanguageRef="zhs">关键字段不允许为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The keyword segment is not allowed to be null!</LocalizedLabel>
+    </Label>
+    <Label Name="QueryIsDelete">
+      <LocalizedLabel LanguageRef="zhs">当前查询已删除，不能再进行编辑。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current query has been deleted and cannot be edited.</LocalizedLabel>
+    </Label>
+    <Label Name="QueryIsView">
+      <LocalizedLabel LanguageRef="zhs">您没有当前查询的浏览权限，不能再进行编辑。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current query has not been viewed and cannot be edited.</LocalizedLabel>
+    </Label>
+    <Label Name="Empty">
+      <LocalizedLabel LanguageRef="zhs">空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">null</LocalizedLabel>
+    </Label>
+    <Label Name="NotEmpty">
+      <LocalizedLabel LanguageRef="zhs">不为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not null</LocalizedLabel>
+    </Label>
+    <Label Name="NoQueryRule">
+      <LocalizedLabel LanguageRef="zhs">搜索规则不允许为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search rule is not allowed to be null!</LocalizedLabel>
+    </Label>
+    <Label Name="QueryNoExists">
+      <LocalizedLabel LanguageRef="zhs">当前查询在系统中不存在。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current query does not exist in the system.</LocalizedLabel>
+    </Label>
+    <Label Name="SelectOneRows">
+      <LocalizedLabel LanguageRef="zhs">请选择一行数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a line of data!</LocalizedLabel>
+    </Label>
+    <Label Name="SelectRows">
+      <LocalizedLabel LanguageRef="zhs">请选择数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select data!</LocalizedLabel>
+    </Label>
+    <Label Name="RootPOMIsNull">
+      <LocalizedLabel LanguageRef="zhs">请先选择主模型。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select the main model first.</LocalizedLabel>
+    </Label>
+    <Label Name="DeteleText">
+      <LocalizedLabel LanguageRef="zhs">您确定删除对象吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to delete the object?</LocalizedLabel>
+    </Label>
+    <Label Name="RootModel">
+      <LocalizedLabel LanguageRef="zhs">主模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main model</LocalizedLabel>
+    </Label>
+    <Label Name="NoneSelect">
+      <LocalizedLabel LanguageRef="zhs">请选中一条数据。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a data.</LocalizedLabel>
+    </Label>
+    <Label Name="CanNotRemoveRoot">
+      <LocalizedLabel LanguageRef="zhs">不能移除主模型。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The main model cannot be removed.</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyCanSelectedAttributeNode">
+      <LocalizedLabel LanguageRef="zhs">只能关联属性节点。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only attribute nodes can be associated.</LocalizedLabel>
+    </Label>
+    <Label Name="CanNotAddRootModel">
+      <LocalizedLabel LanguageRef="zhs">不能为主模型属性设置关联。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associations cannot be set for main model attribute.</LocalizedLabel>
+    </Label>
+    <Label Name="NameRepeat">
+      <LocalizedLabel LanguageRef="zhs">名称重复!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate name!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

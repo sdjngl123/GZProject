@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="AccessRecordLinks" ObjectType="" IsTemplate="false">
+    <PageLink Name="AccessRecordLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="AccessRecordList" />
+    </PageLink>
+  </PageLinks>
+</root>

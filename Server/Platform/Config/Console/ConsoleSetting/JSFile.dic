@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="JSFile" IsWeb="false">
+    <Label Name="FileName">
+      <LocalizedLabel LanguageRef="zhs">文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File</LocalizedLabel>
+    </Label>
+    <Label Name="FileNameDescription">
+      <LocalizedLabel LanguageRef="zhs">引用文件的全路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Group">
+      <LocalizedLabel LanguageRef="zhs">分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="GroupDescription">
+      <LocalizedLabel LanguageRef="zhs">文件分组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsLang">
+      <LocalizedLabel LanguageRef="zhs">多语言文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Template</LocalizedLabel>
+    </Label>
+    <Label Name="IsLangDescription">
+      <LocalizedLabel LanguageRef="zhs">是否多语言文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsMobile">
+      <LocalizedLabel LanguageRef="zhs">移动设备</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsMobileDescription">
+      <LocalizedLabel LanguageRef="zhs">是否移动设备</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">可选内容：PC,H5(为兼容已有配置，默认包含PC)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CreateJSFile">
+      <LocalizedLabel LanguageRef="zhs">添加JS文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DeleteJSFile">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CreateCssFile">
+      <LocalizedLabel LanguageRef="zhs">添加Css文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsTheme">
+      <LocalizedLabel LanguageRef="zhs">皮肤样式文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsThemeDescription">
+      <LocalizedLabel LanguageRef="zhs">是否皮肤样式文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

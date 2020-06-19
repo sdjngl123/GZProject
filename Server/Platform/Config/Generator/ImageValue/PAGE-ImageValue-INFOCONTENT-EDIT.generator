@@ -1,0 +1,10 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="Image" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedImage_OnClick(ctrlEvent);"/>    
+  </PageHandlers>
+  <Settings Key="src" Value=""/>
+  <Settings Key="type" Value="icon"/>
+  <Settings Key="fixedType" Value="height" />
+  <Settings Key="position" Value="left" />
+  <Settings Key="preview" Value="false"/>
+</PageControl>

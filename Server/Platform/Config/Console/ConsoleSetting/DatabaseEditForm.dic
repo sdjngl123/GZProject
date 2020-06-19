@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DatabaseEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数据库信息编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database Information Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseNameDescription">
+      <LocalizedLabel LanguageRef="zhs">配置项的名称，用于区分不同的数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the configuration item used to distinguish between different database connections</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseType">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseDescription">
+      <LocalizedLabel LanguageRef="zhs">数据库类型，表明该数据库连接用于哪个数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A database type that indicates which database the database connection is used for</LocalizedLabel>
+    </Label>
+    <Label Name="ConnectString">
+      <LocalizedLabel LanguageRef="zhs">连接字符串</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Connection String</LocalizedLabel>
+    </Label>
+    <Label Name="ConnectStringDescription">
+      <LocalizedLabel LanguageRef="zhs">连接到特定数据库的字符串，要与数据库类型相对应，默认情况下，只可以改数据库地址，数据库名称，用户名和密码选项，其余选项一般情况不需要更改。SQLSERVER示例：server=.;Trusted_Connection=false;database=InforCenter;uid=sa;pwd=sa;MultipleActiveResultSets=true;Max Pool Size=1000;ORACLE示例：Data Source=orcl_192.168.3.9;User Id=InforCenter;Password=InforCenter;Integrated Security=No;Max Pool Size=1000;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The string connected to a specific database should correspond to the database type. By default, only the database address, database name, user name, and password option can be changed, and the rest of the options generally do not need to be changed. SQLSERVER example: server=. ; Trusted_Connection=false; database=InforCenter; uid=sa; pwd=sa; MultipleActiveResultSets=true; Max Pool Size=1000; ORACLE示例: Data Source=orcl_192.168.3.9; UserId=InforCenter; Password=InforCenter; Integrated Security=No; Max Pool Size=1000;</LocalizedLabel>
+    </Label>
+    <Label Name="Timeout">
+      <LocalizedLabel LanguageRef="zhs">超时时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time out</LocalizedLabel>
+    </Label>
+    <Label Name="TimeoutDescription">
+      <LocalizedLabel LanguageRef="zhs">数据库连接超时时间，单位是秒，设为0则不超时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Database connection timeout, in seconds, set to 0, no timeout</LocalizedLabel>
+    </Label>
+    <Label Name="Enable">
+      <LocalizedLabel LanguageRef="zhs">是否启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is Enabled</LocalizedLabel>
+    </Label>
+    <Label Name="EnableDescription">
+      <LocalizedLabel LanguageRef="zhs">表明该配置项是否起作用,如果设为false，则前台登录时将不会出现该连接，不能访问该数据库</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Indicates whether the CI works, and if set to false, the connection will not appear when the foreground is logged in, and the database cannot be accessed</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseNameRequired">
+      <LocalizedLabel LanguageRef="zhs">名称不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="DatabaseTypeRequired">
+      <LocalizedLabel LanguageRef="zhs">类型不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="ConnectStringRequired">
+      <LocalizedLabel LanguageRef="zhs">连接字符串不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The connection string cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="TimeOutRequired">
+      <LocalizedLabel LanguageRef="zhs">超时时间不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Timeout cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="WebStudio">
+      <LocalizedLabel LanguageRef="zhs">主数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainDataBase</LocalizedLabel>
+    </Label>
+    <Label Name="WebStudioDescription">
+      <LocalizedLabel LanguageRef="zhs">是否主数据库连接</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main dataBase Connection</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

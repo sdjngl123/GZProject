@@ -1,0 +1,13 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnLoad" Script="
+                
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'Major');
+                          }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

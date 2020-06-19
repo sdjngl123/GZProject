@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="OPERATELOGSEARCHVIEW-QUERY" IsWeb="true">
+    <Label Name="DATETIMEGEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time is greater than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMEGERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;请输入正确的日期&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;Please enter the correct date&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The time is less than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;请输入正确的日期&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;Please enter the correct date&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">用户名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User name</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogTypeRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="OBJTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="IPHeader">
+      <LocalizedLabel LanguageRef="zhs">IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

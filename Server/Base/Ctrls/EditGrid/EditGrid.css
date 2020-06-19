@@ -1,0 +1,106 @@
+﻿.hoteam-editgrid-textvalue-img
+{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+}
+.hoteam-editgrid-textvalue
+{
+    width:100%;
+    overflow:hidden;
+    display:inline-block;
+    position:relative;
+    height: 23px;
+    line-height: 23px;
+}
+.hoteam-editgrid-textvalue-edit
+{
+    border:1px solid #ccc;
+    width:100%;    
+    position:relative;
+    overflow: hidden;
+    height: 22px;
+    line-height: 22px;
+}
+.hoteam-editgrid-textvalue-text
+{
+    display:inline-block;
+    height:100%;
+    width:100%; 
+    text-overflow: ellipsis;
+    overflow: hidden;  
+}
+.hoteam-editgrid-textvalue-textimg{
+    padding-right: 22px;
+}
+.hoteam-editgrid-textvalue-textimgdouble{
+    padding-right: 40px;
+}
+.hoteam-editgrid-editbutton-edit {
+    width:100%;
+}
+.hoteam-editgrid-editbutton-edit .hoteam-editgrid-editbutton-text {
+    width:100%;
+    border:1px solid #ccc;
+    padding-right:16px;
+}
+.hoteam-editgrid-editbutton-edit .hoteam-editgrid-editbutton-img {
+    position:absolute;
+    right:3px;
+    border-left: 1px solid #ccc;
+    cursor:pointer;
+}
+
+.hoteam-editgrid-textvalue-close {
+    right: 20px !important;
+}
+
+.hgrid-datetime-close {
+    position:absolute;
+    right:0px;
+    top:0px;
+    cursor: pointer;
+    z-index:100;
+}
+
+
+.htgrid-edit-number-container .hoteam-textbox-control {
+    display: inline-block;
+    height: 19px;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    position: absolute;
+    overflow: hidden;
+    top: -2px;
+    width: 12px;
+    margin-top:0;
+}
+
+
+.htgrid-edit-number-container .hoteam-textbox-control>span {
+    height: 9px;
+    display: block;
+    background-color: #eee;
+    position:relative;
+}
+
+.htgrid-edit-number-container .hoteam-textbox-control span.basesprite.b-angle-up{
+    display:block;
+    position:absolute;
+    top:-2px;
+    left:-3px;
+}
+
+
+.htgrid-edit-number-container .hoteam-textbox-control span.basesprite.b-angle-down {
+    margin-top: -2px;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+}

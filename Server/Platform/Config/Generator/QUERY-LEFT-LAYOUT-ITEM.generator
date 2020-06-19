@@ -1,0 +1,5 @@
+﻿
+<PageControl ControlID="InfoItem[ROWORDER]_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  [INFOLAYOUT]
+</PageControl>

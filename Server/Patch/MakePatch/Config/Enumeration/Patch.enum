@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="PatchType">
+    <EnumerationItem Name="Regular" />
+    <EnumerationItem Name="Temp" />
+  </Enumeration>
+  <Enumeration Name="PatchCategory">
+    <EnumerationItem Name="BugRepair" />
+    <EnumerationItem Name="VersionUpdate" />
+  </Enumeration>
+  <Enumeration Name="PatchImportance">
+    <EnumerationItem Name="Common" />
+    <EnumerationItem Name="Importance" />
+  </Enumeration>
+</root>

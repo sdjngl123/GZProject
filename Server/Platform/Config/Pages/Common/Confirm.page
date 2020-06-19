@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="Confirm" IsCache="true">
+  <Settings Key="title" Value="Confirm.Title"/>
+  <Settings Key="height" Value="200"/>
+  <Settings Key="width" Value="320"/>
+    <PageHandlers>
+      <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Confirm_OnCreate(pageEvent);"/>
+      <PageHandler HandlerName ="OnClose" Script=""/>
+    </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Confirm_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Confirm_LabelContainer"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Confirm_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Confirm_LabelContainer" ParentID="Confirm_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="6"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Confirm_Content"/>
+      </Settings>
+    </PageControl>
+    <!--<PageControl ControlID="Confirm_Content" ParentID="Confirm_LabelContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="wrap" Value="true"/>
+    </PageControl>-->
+
+    <PageControl ControlID="Confirm_Content" ParentID="Confirm_LabelContainer" TypeName="CustomerContainer" >
+    </PageControl>
+    
+    <!--ConfirmBtn-->
+    <PageControl ControlID="Confirm_Btn" ParentID="Confirm_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnOK"/>
+      </Settings>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="8"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnYES"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="8"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnNO"/>
+      </Settings>
+      <Settings Key="item13" >
+        <Settings Key="size" Value="8"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnCancel"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="Confirm_btnOK" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Confirm_OKOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="Confirm_btnYES" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Confirm_YesOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Yes" />
+    </PageControl>
+    <PageControl ControlID="Confirm_btnNO" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Confirm_NoOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.No" />
+    </PageControl>
+    <PageControl ControlID="Confirm_btnCancel" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Confirm_CancelOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

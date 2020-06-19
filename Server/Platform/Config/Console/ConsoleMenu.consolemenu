@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <MenuPosition Name="MainMenu" >
+    <Menu Name="MainPage" />
+    <Menu Name="Save" />
+    <Menu Name="Help" />
+  </MenuPosition>
+
+  <MenuPosition Name="FolderMenu" >
+    <Menu Name="New" />
+    <Menu Name="NewApp" />
+    <Menu Name="NewFolder" />
+    <Menu Name="AddExist" />
+    <Menu Name="Copy" />
+    <Menu Name="Cut" />
+    <Menu Name="Paste" />
+    <Menu Name="Edit" />
+    <Menu Name="Delete" />
+    <Menu Name="Refresh" />
+    <Menu Name="Position" />
+  </MenuPosition>
+
+  <MenuPosition Name="ObjectMenu" >
+    <Menu Name="Copy" />
+    <Menu Name="Cut" />
+    <Menu Name="Paste" />
+    <Menu Name="Edit" />
+    <Menu Name="Delete" />
+    <Menu Name="Position" />
+  </MenuPosition>
+
+</root>

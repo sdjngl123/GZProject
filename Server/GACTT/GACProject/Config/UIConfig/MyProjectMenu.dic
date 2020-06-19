@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="MyProjectMenu" IsWeb="true">
+		<Label Name="ProjectMember">
+			<LocalizedLabel LanguageRef="zhs">团队</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Member</LocalizedLabel>
+		</Label>
+		<Label Name="ProjectStage">
+			<LocalizedLabel LanguageRef="zhs">阶段</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Stage</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,4 @@
+﻿<PageControl ControlID="[FILTERNAME]_Value" ParentID="[PARENTID]" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+</PageControl>
+

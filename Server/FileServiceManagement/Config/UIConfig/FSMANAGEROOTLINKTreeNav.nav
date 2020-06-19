@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NavigationItem Name="SystemManagement" IsAddCustom="true" IsHidden="false" Order="100">
+    <PageName />
+    <Image>p_system_management</Image>
+    <NavigationItem Name="FileServiceManagement" IsAddCustom="false" IsHidden="false" IsMainConfig="false">
+      <PageName>TreeManagement</PageName>
+      <Image>p_editproperty</Image>
+      <Para Name="ItemName" Value="FSMANAGEROOTLINKTree" />
+    </NavigationItem>
+  </NavigationItem>
+</root>

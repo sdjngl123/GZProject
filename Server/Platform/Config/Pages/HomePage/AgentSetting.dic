@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AgentSetting" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">代理设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Proxy settings</LocalizedLabel>
+    </Label>
+    <Label Name="Agent">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="StartTime">
+      <LocalizedLabel LanguageRef="zhs">开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start time</LocalizedLabel>
+    </Label>
+    <Label Name="EndTime">
+      <LocalizedLabel LanguageRef="zhs">结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End time</LocalizedLabel>
+    </Label>
+    <Label Name="AgentNull">
+      <LocalizedLabel LanguageRef="zhs">代理人不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The agent cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">保存失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save failed!</LocalizedLabel>
+    </Label>
+    <Label Name="NotSetAgentBySelf">
+      <LocalizedLabel LanguageRef="zhs">不能设置自己为出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You cannot set yourself as the business trip agent</LocalizedLabel>
+    </Label>
+    <Label Name="StartDateBiggerThanEndDate">
+      <LocalizedLabel LanguageRef="zhs">开始时间不能大于或等于结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The start time cannot be greater than or equal to the end time</LocalizedLabel>
+    </Label>
+    <Label Name="StartDateBiggerThanNowDate">
+      <LocalizedLabel LanguageRef="zhs">开始时间必须大于当前时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The start time must be greater than the current time</LocalizedLabel>
+    </Label>
+    <Label Name="StartDateMustBeSetting">
+      <LocalizedLabel LanguageRef="zhs">如果设置了结束时间，开始时间必须设置！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If the end time is set, the start time must be set!</LocalizedLabel>
+    </Label>
+    <Label Name="AgentSetting">
+      <LocalizedLabel LanguageRef="zhs">出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business travel agents</LocalizedLabel>
+    </Label>
+    <Label Name="CancleAgentTitle">
+      <LocalizedLabel LanguageRef="zhs">取消出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel the business trip agent</LocalizedLabel>
+    </Label>
+    <Label Name="CancleAgentMsg">
+      <LocalizedLabel LanguageRef="zhs">“[User]”取消了“[AgentUser]”的出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">“[User]” cancel the business travel agent of the “[AgentUser]”</LocalizedLabel>
+    </Label>
+    <Label Name="SetAgentTitle">
+      <LocalizedLabel LanguageRef="zhs">设置出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Setting a business travel agent</LocalizedLabel>
+    </Label>
+    <Label Name="SetAgentMsg">
+      <LocalizedLabel LanguageRef="zhs">“[User]”设置“[AgentUser]”为出差代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">“[User]” sets the “[AgentUser]” as the business trip agent</LocalizedLabel>
+    </Label>
+    <Label Name="OverTimeCancelAgentTitle">
+      <LocalizedLabel LanguageRef="zhs">自动收回代理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent is called back automaticlly</LocalizedLabel>
+    </Label>
+    <Label Name="OverTimeCancelAgentMsg">
+      <LocalizedLabel LanguageRef="zhs">出差代理到期，系统自动收回了用户“[User]”设置给用户“[AgentUser]”的出差代理权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the business trip agent expires, the system automatically takes back the business agent privilege of the “[AgentUser]” of the user set by the user.</LocalizedLabel>
+    </Label>
+    <Label Name="CannotSetAgencyBecauseSet">
+      <LocalizedLabel LanguageRef="zhs">用户“[User]”已设置“[AgentUser]”为出差代理，并且设置时间段存在交集，您不能设置“[User]”为出差代理。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The“[User]” has set “[AgentUser]” as the business trip agent and the setting time periods is intersect, so you cannot set “[User]” as the business trip agent.</LocalizedLabel>
+    </Label>
+    <Label Name="CannotSetAgencyBecauseBeSetted">
+      <LocalizedLabel LanguageRef="zhs">“[User]”已设置您为出差代理，并且您设置的时间区间与被设置为出差代理人的时间区间存在交集！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">“[User]” has set you as the business travel agent, and the time interval you set has an intersection with the time interval set to the business travel agent!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

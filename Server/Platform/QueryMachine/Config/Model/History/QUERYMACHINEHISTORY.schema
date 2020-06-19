@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Table Name="QUERYMACHINEHISTORY" Extend="QUERYMACHINEBASEINFO" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="ENAME" Extend="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ECODE" Extend="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="STATEID" Extend="STATEID" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="STAGESTATEID" Extend="STAGESTATEID" DataType="STRING20" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EVERSION" Extend="EVERSION" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EMINORVERSION" Extend="EMINORVERSION" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EUID" Extend="EUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTINSERT" Extend="ELASTINSERT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTFINALSTATE" Extend="ELASTFINALSTATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CREATEUID" Extend="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="CREATETIME" Extend="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="UPDATEUID" Extend="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="UPDATETIME" Extend="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNUID" Extend="OWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNGID" Extend="OWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ESTATION" Extend="ESTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ICON" Extend="ICON" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ECOMPANYID" Extend="ECOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="DESCRIPTION" Extend="DESCRIPTION" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ROOTPOM" Extend="ROOTPOM" DataType="STRING100" Required="true" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="SHOWVIEW" Extend="SHOWVIEW" DataType="TEXT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="DATALINKMODEL" Extend="DATALINKMODEL" DataType="STRING1000" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="FIELDKEY" Extend="FIELDKEY" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ORGANIZATIONROLE" Extend="ORGANIZATIONROLE" DataType="TEXT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CUSTOMQUERYNAME" Extend="CUSTOMQUERYNAME" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CUSTOMQUERYSQLCOMMAND" Extend="CUSTOMQUERYSQLCOMMAND" DataType="TEXT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="SEQUENCE" Extend="SEQUENCE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="BASEQUERYID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="QUERYROLES" DataType="TEXT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+  </Table>
+</root>

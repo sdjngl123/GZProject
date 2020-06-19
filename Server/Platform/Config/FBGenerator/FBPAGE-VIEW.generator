@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="[PAGENAME]">
+  <Settings Key="height" Value="[PAGEHEIGHT]"/>
+  <Settings Key="width" Value="[PAGEWIDTH]"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+  </PageHandlers>
+  <Settings Key="title" Value="[PAGENAME].[OBJTYPE]Header"/>
+  <PageControls>
+    <PageControl ControlID="Vertical_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Horizontal_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Horizontal_Container" ParentID="Vertical_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FormBuilderCtrl"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FormBuilderCtrl" ParentID="Horizontal_Container" TypeName="FormBuilder" >
+      <Settings Key="position" Value="[LAYOUTINFO]"/>
+      <Settings Key="pattern" Value="view"/>
+      <Settings Key="formBulderId" Value="[FORMBUILDERDATAID]"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="GetAddRowsDataId" Script="InforCenter_Platform_FormBuilder_GetAddRowsDataId(ctrlEvent,[FORMBUILDERDATAID]);"/>
+      </PageHandlers>
+    </PageControl>
+    [CONTROLINFO]
+  </PageControls>
+
+</root>

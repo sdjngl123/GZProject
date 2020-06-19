@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="CustomQuery">
+  <Settings Key="height" Value="100"/>
+  <Settings Key="width" Value="177"/>
+  <Settings Key="title" Value="CustomQuery.QUERYMACHINEBASEINFOHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_CustomQuery_PageLoadData(pageEvent)"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script=""/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_QUERYMACHINEBASEINFO_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 0"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ENAME"/>
+      </Settings> 
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ORGANIZATIONROLE"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="200"/>
+        <Settings Key="childid" Value="SqlContainer"/>
+      </Settings>
+        <Settings Key="item4" Value="">
+        <Settings Key="size" Value="200"/>
+        <Settings Key="childid" Value="QueryRoleSaveBtnContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ENAME_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ENAME_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="CustomQuery.ENAMEHeader" />
+    </PageControl>
+    <PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="CustomQuery.ENAMERegex" />
+    </PageControl>
+
+    <PageControl ControlID="SqlContainer" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Sql_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Sql_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Sql_Label" ParentID="SqlContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="CustomQuery.SqlHeader" />
+    </PageControl>
+    <PageControl ControlID="Sql_Value" ParentID="SqlContainer" TypeName="TextBox" >
+      <Settings Key="readOnly" Value="true"/>
+      <Settings Key="type" Value="textarea"/>
+    </PageControl>
+
+
+
+    <!--组织权限-->
+    <PageControl ControlID="ORGANIZATIONROLE" ParentID="R-11" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ORGANIZATIONROLE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ORGANIZATIONROLE_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ORGANIZATIONROLE_Label" ParentID="ORGANIZATIONROLE" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="CustomQuery.ORGANIZATIONROLEHeader" />
+    </PageControl>
+    <PageControl ControlID="ORGANIZATIONROLE_Value" ParentID="ORGANIZATIONROLE" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_QueryMachine_OrganizationValueOnClick(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+    
+    <!--保存、修改、删除按钮-->
+    <PageControl ControlID="QueryRoleSaveBtnContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnSave"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnSave" ParentID="QueryRoleSaveBtnContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_CustomQuery_BtnSave(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="CustomQuery.btnSave" />
+    </PageControl>
+  </PageControls>
+</root>

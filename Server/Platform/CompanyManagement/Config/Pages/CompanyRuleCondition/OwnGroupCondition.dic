@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OwnGroupCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">对象拥有组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object has a group</LocalizedLabel>
+    </Label>
+    <Label Name="OwnGroupValue">
+      <LocalizedLabel LanguageRef="zhs">对象拥有组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object has a group</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

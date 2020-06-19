@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ShouAuditResult" IsCache="true">
+  <Settings Key="title" Value="ShouAuditResult.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedAuditBaseInfo_ShouAuditResultOnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ShouAuditResult_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="AuditResultInfoEditGrid"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="AuditResultInfoEditGrid" ParentID="AuditResultInfo_Layout" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="ShouAuditResult.ResultName" />
+        <Settings Key="name" Value="ResultName" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="false" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="ShouAuditResult.ParameterName" />
+        <Settings Key="name" Value="ParameterName" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="databind" Value="InforCenter_Platform_AuditResultInfo_BindingParaDropdown(ctrlEvent);" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="ShouAuditResult.ParaValue" />
+        <Settings Key="name" Value="ParaValue" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="colType" Value="text" />
+
+      </Settings>
+    </PageControl>
+    
+
+    <PageControl ControlID="Btn_Container" ParentID="ShouAuditResult_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedAuditBaseInfo_FlowNodeExtend_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

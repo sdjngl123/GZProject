@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="COMPANYVIEWIgnoreCompanyRulePermissionFalse-QUERY" IsWeb="true">
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">公司编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company No.</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company Name</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

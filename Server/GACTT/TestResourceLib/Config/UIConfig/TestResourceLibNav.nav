@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<NavigationItem Name="TestResourceCapabilityLib" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+		<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+		<NavigationItem Name="TestResourceLib" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+			<NavigationItem Name="TestLocation" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>ListManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="TESTELOCATIONList" />
+			</NavigationItem>
+			<NavigationItem Name="TESTEXTORGNav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>ListManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="TESTEXTORGList" />
+			</NavigationItem>
+			<NavigationItem Name="TESTRESOURCENav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>ListManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="TESTRESOURCEList" />
+			</NavigationItem>
+			<NavigationItem Name="EXTERNALLYRESOURCENav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>TreeManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="EXTERNALRESOURCEROOTLINKTree" />
+			</NavigationItem>
+			<!--<NavigationItem Name="INNERTESTRESOURCENav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>ListManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="INNERTESTRESOURCEList" />
+			</NavigationItem>-->
+			<NavigationItem Name="TestKnowledge" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>TreeManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="TestKnowledgeTree" />
+			</NavigationItem>
+		</NavigationItem>
+		<NavigationItem Name="TestCapabilityLib" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+			<NavigationItem Name="INNERTESTCAPABILITYNav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>TreeManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="InnerTestCapabilityTree" />
+			</NavigationItem>
+			<NavigationItem Name="OUTTESTCAPABILITYNav" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+				<PageName>TreeManagement</PageName>
+				<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+				<Para Name="ItemName" Value="OutTestCapabilityTree" />
+			</NavigationItem>
+		</NavigationItem>
+		<NavigationItem Name="TestProjectLib" IsAddCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+			<PageName>TreeManagement</PageName>
+			<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+			<Para Name="ItemName" Value="ProjectCapabilityTree" />
+			<!--<PageName>ListManagement</PageName>
+			<Image>~/Base/Image/PageControl/HColorPicker.png</Image>
+			<Para Name="ItemName" Value="TESTCAPABILITYPROJECTList" />-->
+		</NavigationItem>
+
+	</NavigationItem>
+</root>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebListView Name="FavoriteListView" View="FAVORITELINKVIEW" Filter=" LCREATEUID ='[CURUSERID]' " KeyField="LID" AllowCheckBox="true" AllowIconType="true" AllowObjectType="true" AllowOverstriking="true" OverstrikingField="IMPORTANT" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsIconField="IMPORTANTICON" DetailsAction="BROWSE" DetailsPageUseObjectInspector="true" QueryID="[Tree_Current_value1]" IsShowSearch="false" ShowPaging="true" IsLayoutSave="false" IsColumnSetting="false" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" DetailsPageSize="550*200" />
+</root>

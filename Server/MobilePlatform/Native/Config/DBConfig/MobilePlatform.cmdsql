@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  
+  <Command Name="GETMOBILEMESSAGESTATISTICSLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <!--select
+        a.MTITLE TITLE,
+        a.MCONTENT CONTENT,
+        a.CREATETIME,
+        a.MTO,
+        t.num NUM
+        from
+        (select
+        m.MTITLE,
+        m.MCONTENT,
+        m.CREATETIME,
+        m.MTO,
+        row_number() over (partition by m.MTO order by M.CREATETIME desc) as group_index from INSTANTMESSAGE m) a
+        left join (select COUNT(EID) as num,MTO from INSTANTMESSAGE WHERE  MSTATE = 'Unread'  Group by MTO ) t on a.MTO = t.MTO
+        where
+        a.group_index = 1-->
+        select
+a.MTITLE TITLE,
+a.MCONTENT CONTENT,
+a.CREATETIME,
+a.ACTUALRECIVER,
+t.num NUM
+from
+(select
+m.MTITLE,
+m.MCONTENT,
+m.CREATETIME,
+m.ACTUALRECIVER,
+row_number() over (partition by m.ACTUALRECIVER order by M.CREATETIME desc) as group_index from INTERNALMAIL m) a
+left join (select COUNT(EID) as num,ACTUALRECIVER from INTERNALMAIL WHERE  MSTATE = 'Unread'  Group by ACTUALRECIVER ) t on a.ACTUALRECIVER = t.ACTUALRECIVER
+where
+a.group_index = 1
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <!--select
+        a.MTITLE TITLE,
+        a.MCONTENT CONTENT,
+        a.CREATETIME,
+        b.ENAME NAME,
+        t.num NUM
+        from
+        (select
+        m.MTITLE,
+        m.MCONTENT,
+        m.CREATETIME,
+        m.MTO,
+        row_number() over (partition by m.MTO order by M.CREATETIME desc) as group_index from INSTANTMESSAGE m) a
+        left join (select COUNT(EID) as num,MTO from INSTANTMESSAGE WHERE  MSTATE = 'Unread'  Group by MTO ) t on a.MTO = t.MTO
+        left join USERINFO b on a.MTO = b.EID
+        where
+        a.group_index = 1-->
+      select
+a.MTITLE TITLE,
+a.MCONTENT CONTENT,
+a.CREATETIME,
+a.ACTUALRECIVER,
+t.num NUM
+from
+(select
+m.MTITLE,
+m.MCONTENT,
+m.CREATETIME,
+m.ACTUALRECIVER,
+row_number() over (partition by m.ACTUALRECIVER order by M.CREATETIME desc) as group_index from INTERNALMAIL m) a
+left join (select COUNT(EID) as num,ACTUALRECIVER from INTERNALMAIL WHERE  MSTATE = 'Unread'  Group by ACTUALRECIVER ) t on a.ACTUALRECIVER = t.ACTUALRECIVER
+where
+a.group_index = 1
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取待审批任务个数和未读消息个数-->
+  <Command Name="GETUNHANDLEINFORMATIONNUM">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select 'WORKFLOWTASKINFO' as OBJECTTYPE,count(1) as NUM from WORKFLOWTASKINFO
+        where (TASKACTORID=[USERID] or AGENTUSERID=[USERID])  and STATEID='RUN' AND ECOMPANYID=[ECOMPANYID]
+        union
+        SELECT 'INTERNALMAIL' as  OBJECTTYPE ,count(1) as NUM FROM INTERNALMAIL
+        WHERE ACTUALRECIVER = [USERID]  AND MSTATE='Unread' AND (MTYPE='System' or  MTYPE='Normal')
+        AND ECOMPANYID=[ECOMPANYID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  <!--获取消息数据-->
+  <Command Name="GETMESSAGES">
+    <DatabaseType Name="">
+      <!--<CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM INTERNALMAIL  where RECIVER=[USERID] AND MState='UnRead' AND (MTITLE like '%[FILTER]%' or MCONTENT like '%[FILTER]%') 
+      </CommandItem>-->
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (
+        SELECT EID,ENAME,MTITLE,MCONTENT,ACTUALRECIVER,SENDUSERTEXT,RECIVERTEXT,MSTATEICON,MSTATE,MTYPE,IMPORTANT
+        ,CREATEUID,CREATETIME,UPDATEUID,UPDATETIME,RECIVETIME,RECIVER,SENDUSER,SENDTIME,ISSEND
+        ,row_number() over(ORDER BY UPDATETIME DESC) AS IDX FROM INTERNALMAIL
+        WHERE ACTUALRECIVER = [USERID] AND MSTATE=[MSTATE] AND (MTYPE='System' or  MTYPE='Normal')
+        AND ECOMPANYID=[ECOMPANYID]
+        AND (MTITLE like '%[FILTER]%' or MCONTENT like '%[FILTER]%')) A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取已读消息-->
+  <Command Name="GETREADMESSAGES">
+    <DatabaseType Name="">
+      <!--<CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM INTERNALMAIL  where RECIVER=[USERID] AND MState='Read'
+      </CommandItem>-->
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY UPDATETIME DESC) AS IDX FROM INTERNALMAIL
+        where ACTUALRECIVER like '%[USERID]%' AND MState='Read' AND MTYPE='System' AND (MTITLE like '%[FILTER]%' or MCONTENT like '%[FILTER]%')) A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--设置消息已读-->
+  <Command Name="SETMESSAGESTATE">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        update INTERNALMAIL set MState='Read' where EID in ([MESSEAGEID])
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        update INTERNALMAIL set MState='Read' where EID in ([MESSEAGEID])
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--显示消息信息-->
+  <Command Name="SHOWMESSAGEINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select * from INTERNALMAIL where EID=[MesseageID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取待审批任务-->
+  <Command Name="GETUNAUDITFLOWTASKS">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY CREATETIME DESC) AS IDX FROM WORKFLOWTASKINFO
+        where (TASKACTORID=[USERID] or AGENTUSERID=[USERID])  and STATEID='RUN' and ENAME like '%[FILTER]%') A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取已审批任务-->
+  <Command Name="GETAUDITEDFLOWTASKS">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <!--SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY CREATETIME DESC) AS IDX FROM WORKFLOWTASKINFO
+        where (TASKACTORID=[USERID] or AGENTUSERID=[USERID])  and STATEID='COMPLETE' and ENAME like '%[FILTER]%') A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX-->
+        SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY CREATETIME DESC) AS IDX FROM WORKFLOWTASKINFO
+        where COMPLETEUSER=[USERID]  and STATEID='COMPLETE' and ENAME like '%[FILTER]%') A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取已发起任务-->
+  <Command Name="GETSTARTEDFLOWTASKS">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <!--SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY CREATETIME) AS IDX FROM WORKFLOWTASKINFO
+        where CREATEUID=[USERID] and STATEID != 'COMPLETE' and ENAME like '%[FILTER]%') A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX-->
+        SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY CREATETIME DESC) AS IDX FROM WORKFLOWINFO
+        where CREATEUID=[USERID]  and ENAME like '%[FILTER]%') A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程任务属性-->
+  <Command Name="GETFLOWTASKPROPERTY">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select tem.EID as TEMPLATEEID,f.ENAME as FLOWNAME,t.* from WORKFLOWINFO f
+        left join WORKFLOWTASKINFO t on t.WORKFLOWID=f.EID
+        left join WORKFLOWTEMPLATE tem on tem.XMLNAME=t.FLOWTEMPLATE
+        where t.EID=[TASKID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程审批记录-->
+  <Command Name="GETFLOWAUDITTASKLIST">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <!--select * from (
+        select f.ENAME as FLOWNAME,t.*,row_number() over(ORDER BY t.COMPLETETIME) AS IDX
+        from WORKFLOWTASKINFO t
+        left join WORKFLOWINFO f on f.EID=t.WORKFLOWID
+        where t.STATEID='COMPLETE' and WORKFLOWID=[WORKFLOWID]
+        ) A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX-->
+
+        select f.ENAME as FLOWNAME,t.*
+        from WORKFLOWTASKINFO t
+        left join WORKFLOWINFO f on f.EID=t.WORKFLOWID
+        where t.STATEID='COMPLETE' and WORKFLOWID=[WORKFLOWID]
+        ORDER BY t.COMPLETETIME
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程附件列表（主目标附件）-->
+  <Command Name="GETMAINATTACHLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select  attch.EID,attch.WORKFLOWID,attch.OBJECTEID,attch.ATTACHTYPE,attch.CREATETIME
+        from WORKFLOWATTACHINFO attch
+        inner join WORKFLOWTASKINFO t on t.WORKFLOWID=attch.WORKFLOWID
+        where t.EID=[TASKID] and attch.ATTACHTYPE='main'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程附件列表（下级标附件）-->
+  <Command Name="GETCHILDATTACHLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select  attch.EID,attch.WORKFLOWID,attch.OBJECTEID,attch.ATTACHTYPE,attch.CREATETIME
+        from WORKFLOWATTACHINFO attch
+        inner join WORKFLOWTASKINFO t on t.WORKFLOWID=attch.WORKFLOWID
+        where t.EID=[TASKID] and attch.ATTACHTYPE='child'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程附件列表（引用标附件）-->
+  <Command Name="GETREFERENCEATTACHLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select  attch.EID,attch.WORKFLOWID,attch.AttachID as ObjectEID,'reference' as AttachType,f.CREATETIME
+        from WORKFLOWQUOTEATTACH attch
+        inner join WORKFLOWINFO f on attch.WORKFLOWID=f.EID
+        inner join WORKFLOWTASKINFO t on t.WORKFLOWID=f.EID
+        where t.EID=[TASKID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程附件列表（全部附件）-->
+  <Command Name="GETATTACHLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select distinct attch.EID,attch.WORKFLOWID,attch.OBJECTEID,attch.ATTACHTYPE,attch.CREATETIME
+        from WORKFLOWATTACHINFO attch
+        inner join WORKFLOWTASKINFO t on t.WORKFLOWID=attch.WORKFLOWID
+        where t.EID=[TASKID] 
+        union
+        select attch.EID,attch.WORKFLOWID,attch.AttachID as ObjectEID,'reference' as AttachType,f.CREATETIME
+        from WORKFLOWQUOTEATTACH attch
+        inner join WORKFLOWINFO f on attch.WORKFLOWID=f.EID
+        inner join WORKFLOWTASKINFO t on t.WORKFLOWID=f.EID
+        where t.EID=[TASKID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取流程任务（展示流程指派）-->
+  <Command Name="GETWORKFLOWTASKS">
+    <DatabaseType Name="">
+      <CommandItem CmdType="" IsQuery="true">
+        select * from (
+        select *,row_number() over(ORDER BY CREATETIME) AS IDX
+        from WORKFLOWTASKINFO
+        where FLOWNODEID=FLOWNODEID  and EID=[TASKID]
+        ) A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY A.IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  <!--获取数据查询-->
+  <Command Name="GETSEARCHOBJECTS">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsCount="true">
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (
+        SELECT *,row_number() over(ORDER BY [ORDERBY]) AS IDX FROM (
+        SELECT 'WORKFLOWINFO' as ObjectType,EID,ENAME,'' as ECODE,CREATETIME,CREATEUID, '' as EVERSION from WORKFLOWINFO
+        UNION
+        SELECT 'DOCDATASET' as ObjectType,EID,ENAME,ECODE,CREATETIME,CREATEUID,EVERSION from DOCDATASET
+        ) ret
+        where (ret.ENAME like '%[CONTENT]%' or ret.ECODE like '%[CONTENT]%' [SCANEID] )  [OBJECTTYPE]
+        ) A
+        WHERE A.IDX between [STARTROW] AND [ENDROW] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取更改执行人-->
+  <Command Name="GETCHANGETASKACTOR">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select f.CREATEUID,actor.* from WORKFLOWACTORINFO actor
+        inner join WORKFLOWINFO f on f.EID= actor.WORKFLOWID
+        where actor.TASKNODEID in ([TASKNODEID]) and actor.WORKFLOWID=[WORKFLOWID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  <!--获取项目所有节点-->
+  <Command Name="GETPROJECTNODE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+       select * from MYPROJECTNODE where ECOMPANYID =[ECOMPANYID] and NODEFLAG !='MYPROJECTROOTNODE'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取项目所有任务-->
+  <Command Name="GETPMTASKBYPROJECTID">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select p.EID as PROJECTID,l.LID,t.* from PROJECT p
+        inner join PROJECTPLANTOPLAN l on l.PEID=p.EID
+        inner join PMTASK t on t.PROJECTPLANID=l.CEID
+        where p.EID in ([PROJECTID])
+        order by p.CREATETIME desc,t.PLANSTARTDATE
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--获取项目所有一级任务-->
+  <Command Name="GETFIRSTLEVELPMTASKBYPROJECTID">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select p.EID as PROJECTID,l.LID,t.* from PROJECT p
+        inner join PROJECTPLANTOPLAN l on l.PEID=p.EID
+        inner join PMTASK t on t.PROJECTPLANID=l.CEID
+        where p.EID =[PROJECTID] and t.TASKLEVEL='1'
+        order by p.CREATETIME desc,t.PLANSTARTDATE
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  <!--获取项目所有一级任务-->
+  <Command Name="GETPROJECTRESOURCE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+       select l.CEID,l.PROJECTROLE,r.ENAME from PROJECTRESOUSCELINK l
+left join PROJECTROLEINFO r on l.PROJECTROLE=r.EID
+where l.PEID=[PROJECTID]
+and l.LCOMPANYID=[COMPANYID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GETCOMMONQUERYSQL">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM
+        (
+        [UNION]
+        )
+        A
+        WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM(
+        SELECT *,ROW_NUMBER() OVER([ORDERBY]) AS IDX FROM ([UNION]) A
+        WHERE 1=1 [FILTER]
+        )B
+        WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM
+        (
+        [UNION]
+        )
+        A
+        WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SET @number = 0;
+        SELECT * FROM(
+        SELECT *,@number:=@number+1 IDX FROM ([UNION]) A
+        WHERE 1=1 [FILTER]
+        )B
+        WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

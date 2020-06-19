@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="Groups">
+      <LocalizedLabel LanguageRef="zhs">组织</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization</LocalizedLabel>
+    </Label>
+    <Label Name="Roles">
+      <LocalizedLabel LanguageRef="zhs">角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role</LocalizedLabel>
+    </Label>
+    <Label Name="Users">
+      <LocalizedLabel LanguageRef="zhs">用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPS">
+      <LocalizedLabel LanguageRef="zhs">组织</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

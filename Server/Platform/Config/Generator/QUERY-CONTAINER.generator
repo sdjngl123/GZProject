@@ -1,0 +1,17 @@
+﻿<PageControl ControlID="R-[ROWORDER]" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="[FILTERNAME]_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="[FILTERNAME]_Value"/>
+  </Settings>
+  [FIELDFLAG]
+</PageControl>
+<PageControl ControlID="[FILTERNAME]_Label" ParentID="R-[ROWORDER]" TypeName="Label" >
+  <Settings Key="position" Value="[TEXTALIGN]"/>
+  <Settings Key="textId" Value="[PAGENAME].[FILTERNAME]Header" />
+</PageControl>
+

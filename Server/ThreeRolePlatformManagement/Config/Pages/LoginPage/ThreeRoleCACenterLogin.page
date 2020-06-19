@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleCACenterLogin">
+  <Settings Key="title" Value="ThreeRoleCACenterLogin.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleCACenterLogin_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleCACenterLogin_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="CACenterLogin"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="CACenterLogin" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="CACenterLogin_Label"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="CACenterLogin_Label" ParentID="CACenterLogin" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="ThreeRoleCACenterLogin.CACenterLogin" />
+    </PageControl>   
+    <PageControl ControlID="CACenterLogin_Value" ParentID="CACenterLogin" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+
+   
+  </PageControls>
+</root>

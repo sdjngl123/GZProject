@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MenuItem Name="VTSDEMANDMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateVTSDEMAND" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="VTSDEMAND" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+
+	<MenuItem Name="TESTPLANTASKMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTPLANTASK" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTPLANTASK" />
+				<Para Name="ProjectID" Value="[Tree_Parent_value1]" />
+				<Para Name="StageID" Value="[Tree_Current_value1]" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="AttachManage" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestPlanMenu.AttachManage" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="CREATE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="TESTPLANTASKATTACHList" />
+				<Para Name="TASKID" Value="[List_EID]" />
+				<Para Name="Title" Value="TestPlanMenu.AttachManage" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="AddMember" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestPlanMenu.AddMember" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="CREATE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="TESTTASKMEMBERList" />
+				<Para Name="TASKID" Value="[List_EID]" />
+				<Para Name="Title" Value="TestPlanMenu.AddMember" />
+				<Para Name="Size" Value="550*300" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+
+	<MenuItem Name="TESTPLANTASKATTACHMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTPLANTASKATTACH" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTPLANTASKATTACH" />
+				<Para Name="TASKID" Value="[TASKID]" ParentPara="initData" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Edit"  />
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+
+
+	<MenuItem Name="TESTTASKMEMBERMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTTASKMEMBER" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTTASKMEMBER" />
+				<Para Name="TESTTASKID" Value="[TASKID]" ParentPara="initData" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestPlan" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+</root>

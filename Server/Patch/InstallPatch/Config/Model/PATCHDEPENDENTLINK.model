@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LinkType Name="PATCHDEPENDENCELINK" Extend="LINK" LogicClass="LinkObject" IconPath="~/Base/Image/Entity.gif" Abstract="false" TableName="PATCHDEPENDENCELINK" SplitValidateUnique="false" IsBusinessModel="false" IsMainConfig="false" LoopCheck="false" IsContainSub="false">
+    <Index Name="PATCHDEPENDENCELINK_PEID_INDEX" TableIndex="PATCHDEPENDENCELINK_PEID_INDEX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="PATCHDEPENDENCELINK_CEID_INDEX" TableIndex="PATCHDEPENDENCELINK_CEID_INDEX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <LinkedTypes ParentType="PATCH" ChildType="PATCH" IsHidden="false" />
+  </LinkType>
+</root>

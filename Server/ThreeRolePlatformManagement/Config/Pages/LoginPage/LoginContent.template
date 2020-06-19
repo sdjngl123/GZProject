@@ -1,0 +1,74 @@
+﻿<div style="width:1020px;height:100%;">
+  <div class="hoteam-login-center-left"></div>
+  <div class="hoteam-login-center-right">
+    <span class="hoteam-login-badge hoteam-login-badge-qrcode"></span>
+    <span class="hoteam-login-badge hoteam-login-badge-pc" style="display:none;"></span>
+    <div class="hoteam-login-center-right-d">
+      <div class="hoteam-login-center-right-c">
+        <div id="lblWelcome" class="Login_WelcomeLabel"></div>
+        <div class="login-center-item">
+          <input id="txtUserName" type="text" class="form-control" style="width:260px;" autocomplete="off" tabIndex="1"/>
+          <span id="lblUserName" class="login-center-item-tip"></span>
+          <span class="basesprite b-white-user login-center-item-img"></span>
+        </div>
+        <div class="login-center-item">
+          <!--<input id="txtPassword" class="form-control" style="width:260px;" type="password" autocomplete="off"/>-->
+          <span id="lblPassword" class="login-center-item-tip"></span>
+          <span class="basesprite b-white-password login-center-item-img"></span>
+        </div>
+        <div class="login-center-autoLogin">
+          <div id="autoLogin" class="login-autologin-img basesprite b-white-checkbox"></div>
+          <div id="autoLoginname" class="login-autologin-text"></div>
+        </div>
+        <div class="login-center-loginBtn">
+          <div id="lblLogin" onclick="InforCenter_Platform_Login_LoginCheck()" tabIndex="7"></div>
+        </div>
+        <span id="lblPluginDownLoad">
+          <a href="javascript:void(0)" style="color:#fff" onclick="InforCenter_Platform_Login_ShowPluginDownLoadList()"></a>
+        </span>
+        <div class="login-advanced-setting">
+          <span class="login-advanced-setting-img basesprite b-white-circle-down"></span>
+          <span id="advancedsetting"></span>
+          <div class="login-advanced-setting-bottom">--------------------------------------------------------------</div>
+        </div>
+        <div class="login-advanced-setting-c">
+          <div class="login-center-item-half">
+            <input id="ddlGroup" class="form-control login-center-item-sel" readonly="" tabIndex="3"/>
+            <span class="basesprite b-white-angle-down login-center-item-down"></span>
+            <span id="lblGroup" class="login-center-item-tip"></span>
+          </div>
+          <div class="login-center-item-half">
+            <input id="ddlLanguage" class="form-control login-center-item-sel" readonly="" tabIndex="4"/>
+            <span class="basesprite b-white-angle-down login-center-item-down"></span>
+            <span id="lblLanguage" class="login-center-item-tip"></span>
+          </div>
+          <div class="login-center-item-half">
+            <input id="ddlTheme" class="form-control login-center-item-sel" readonly="" tabIndex="5"/>
+            <span class="basesprite b-white-angle-down login-center-item-down"></span>
+            <span id="lblThemes" class="login-center-item-tip"></span>
+          </div>
+          <div class="login-center-item-half">
+            <input id="ddlConnection" class="form-control login-center-item-sel" readonly="" tabIndex="6"/>
+            <span class="basesprite b-white-angle-down login-center-item-down"></span>
+            <span id="lblConnection" class="login-center-item-tip"></span>
+          </div>
+          <div class="login-center-item-half">
+            <input id="ddlLoginType" class="form-control login-center-item-sel" readonly="" tabIndex="7"/>
+            <span class="basesprite b-white-angle-down login-center-item-down"></span>
+            <span id="lblLoginType" class="login-center-item-tip"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hoteam-login-center-right-c" style="display:none;">
+        <div id="lblQRCode" class="Login_WelcomeLabel"></div>
+        <div class="hoteam-login-qrcode">
+          <img id="loginQRCode"></img>
+          <div class="hoteam-login-scan">
+            <img></img><p id="lblScanQRCode"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="lblLicenseInfo" class="hoteam-login-license"></span>
+  </div>  
+</div>

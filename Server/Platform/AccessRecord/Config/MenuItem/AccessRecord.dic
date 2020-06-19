@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AccessRecordShowMenu" IsWeb="true">
+    <Label Name="ClearCustom">
+      <LocalizedLabel LanguageRef="zhs">自定义清除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom clear</LocalizedLabel>
+    </Label>
+    <Label Name="ClearSelect">
+      <LocalizedLabel LanguageRef="zhs">清除选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear Selection</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="AccessRecordTreeMenu" IsWeb="true">
+    <Label Name="ClearAll">
+      <LocalizedLabel LanguageRef="zhs">清除全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear All</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="AccessRecordMenu" IsWeb="true">
+    <Label Name="Open">
+      <LocalizedLabel LanguageRef="zhs">打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open</LocalizedLabel>
+    </Label>
+    <Label Name="Clear">
+      <LocalizedLabel LanguageRef="zhs">清除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear</LocalizedLabel>
+    </Label>
+    <Label Name="Day">
+      <LocalizedLabel LanguageRef="zhs">按照天显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display by Day</LocalizedLabel>
+    </Label>
+    <Label Name="Week">
+      <LocalizedLabel LanguageRef="zhs">按照周显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display by Week</LocalizedLabel>
+    </Label>
+    <Label Name="Month">
+      <LocalizedLabel LanguageRef="zhs">按照月显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display by Month</LocalizedLabel>
+    </Label>
+    <Label Name="All">
+      <LocalizedLabel LanguageRef="zhs">所有历史记录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All History</LocalizedLabel>
+    </Label>
+    <Label Name="ShowMode">
+      <LocalizedLabel LanguageRef="zhs">显示方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="ClearSelect">
+      <LocalizedLabel LanguageRef="zhs">清除选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear Selection</LocalizedLabel>
+    </Label>
+    <Label Name="ClearAll">
+      <LocalizedLabel LanguageRef="zhs">清除全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear All</LocalizedLabel>
+    </Label>
+    <Label Name="ClearCustom">
+      <LocalizedLabel LanguageRef="zhs">自定义清除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom clear</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ClassicHomePageBottom" IsWeb="true">
+    <Label Name="Help">
+      <LocalizedLabel LanguageRef="zhs">帮助中心  </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help Center</LocalizedLabel>
+    </Label>
+    <Label Name="About">
+      <LocalizedLabel LanguageRef="zhs">关于我们  </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">About us</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceAndLaw">
+      <LocalizedLabel LanguageRef="zhs">服务条款&amp;法律声明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Legal statement of Terms of Service</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

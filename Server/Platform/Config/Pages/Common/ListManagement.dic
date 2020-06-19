@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListManagement" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">列表管理页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List management page</LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

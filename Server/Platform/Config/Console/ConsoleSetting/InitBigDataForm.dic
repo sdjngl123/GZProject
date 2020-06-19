@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="InitBigDataForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">初始化大数据窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initialize large data window</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectColumnInit">
+      <LocalizedLabel LanguageRef="zhs">对象列信息设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Column Information Settings</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeList">
+      <LocalizedLabel LanguageRef="zhs">对象类型列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type List</LocalizedLabel>
+    </Label>
+    <Label Name="Exec">
+      <LocalizedLabel LanguageRef="zhs">执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute</LocalizedLabel>
+    </Label>
+    <Label Name="EndExec">
+      <LocalizedLabel LanguageRef="zhs">结束执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End Execution</LocalizedLabel>
+    </Label>
+    <Label Name="InitFail">
+      <LocalizedLabel LanguageRef="zhs">初始化失败，表中无数据。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initialization failed with no data in the table.</LocalizedLabel>
+    </Label>
+    <Label Name="InitFailExist">
+      <LocalizedLabel LanguageRef="zhs">初始化失败，表中已存在[Count]条。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The initialization failed because there is a Corruption Count clause in the table.</LocalizedLabel>
+    </Label>
+    <Label Name="StartExec">
+      <LocalizedLabel LanguageRef="zhs"> 开始执行 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Execution</LocalizedLabel>
+    </Label>
+    <Label Name="ExecResult">
+      <LocalizedLabel LanguageRef="zhs">执行结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute Results</LocalizedLabel>
+    </Label>
+    <Label Name="SumCount">
+      <LocalizedLabel LanguageRef="zhs">表中已存在[ExistCount]条，新插入[NewCount]条，共[SumCount]条。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The [ExistCount] section already exists in the table, and the new [NewCount] bar [SumCount] is newly inserted.</LocalizedLabel>
+    </Label>
+    <Label Name="ElapsedTime">
+      <LocalizedLabel LanguageRef="zhs">耗时：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time Consuming:</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteNonclusteredIndex">
+      <LocalizedLabel LanguageRef="zhs">删除非聚集索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete non-clustered index</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

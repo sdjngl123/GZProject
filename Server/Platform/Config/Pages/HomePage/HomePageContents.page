@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="HomePageContents" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="HomePageContents_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HomePage_Tabs"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HomePage_Tabs" ParentID="HomePageContents_Layout" TypeName="Tabs">
+      <Settings Key="showSwitchBar" Value="true"/>
+      <Settings Key="showMenu" Value="true"/>
+      <Settings Key="titleType" Value="capsule"/>
+      <Settings Key="hasBorder" Value="false"/>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="MainFlat.Title"/>
+        <Settings Key="pageName" Value="MainFlatFlow"/>
+        <Settings Key="tabId" Value="MainFlatFlow"/>
+        <Settings Key="showClosed" Value="true"/>
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

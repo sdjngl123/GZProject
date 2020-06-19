@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MobileModulePermission" IsWeb="true">
+    <Label Name="AllForbid">
+      <LocalizedLabel LanguageRef="zhs">全部禁止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Disable all</LocalizedLabel>
+    </Label>
+    <Label Name="AllAllow">
+      <LocalizedLabel LanguageRef="zhs">全部允许</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow all</LocalizedLabel>
+    </Label>
+    <Label Name="Err">
+      <LocalizedLabel LanguageRef="zhs">组织根节点不允许保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization root node is not allowed to save</LocalizedLabel>
+    </Label>
+    <Label Name="Success">
+      <LocalizedLabel LanguageRef="zhs">保存成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save successfully</LocalizedLabel>
+    </Label>
+    <Label Name="Failure">
+      <LocalizedLabel LanguageRef="zhs">保存失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save failed!</LocalizedLabel>
+    </Label>
+    <Label Name="All">
+      <LocalizedLabel LanguageRef="zhs">所有人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner</LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand tree</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide tree</LocalizedLabel>
+    </Label>
+    <Label Name="RoleTree">
+      <LocalizedLabel LanguageRef="zhs">角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role</LocalizedLabel>
+    </Label>
+    <Label Name="UserTree">
+      <LocalizedLabel LanguageRef="zhs">所有用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All users</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">模块授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module authorization</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

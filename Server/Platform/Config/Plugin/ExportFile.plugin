@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginItem Name="xls" Type="ExportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Excel.ExcelExportXls2003" />
+  <PluginItem Name="xlsx2007" Type="ExportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Excel.ExcelExportXlsx2007" />
+  <PluginItem Name="docx2007" Type="ExportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Word.WordExportDocx2007" />
+  <PluginItem Name="doc" Type="ExportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Word.WordExportDoc2003" />
+  <PluginItem Name="mpp2007" Type="ExportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.Project.ProjectExportMpp" />
+  <PluginItem Name="dbdata" Type="ExportType" Assembly="Hoteam.InforCenter.ImportExport.Extend.dll" Class="Hoteam.InforCenter.ImportExport.Extend.DbData.DbDataExport" />
+</root>

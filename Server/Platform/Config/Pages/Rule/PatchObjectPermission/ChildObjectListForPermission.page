@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ChildObjectListForPermission">
+  <Settings Key="height" Value="620"/>
+  <Settings Key="width" Value="850"/>
+  <Settings Key="title" Value="ChildObjectListForPermission.ChildObjectTitle"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ChildObjectListForPermission_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Wait_VContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Wait_VContainer" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Wait_HContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Wait_HContainer" ParentID="Wait_VContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="45"/>
+        <Settings Key="childid" Value="WaitImage"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="WaitLabel"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50%"/>
+      </Settings>
+    </PageControl>
+    <!--<PageControl ControlID="WaitImage" ParentID="Wait_HContainer" TypeName="Image">
+      <Settings Key="src" Value="~/Platform/Image/Rule/Wait.gif" />
+    </PageControl>
+    <PageControl ControlID="WaitLabel" ParentID="Wait_HContainer" TypeName="Label">
+      <Settings Key="position" Value="left"/>
+      <Settings Key="fontSize" Value="16px"/>
+      <Settings Key="wrap" Value="true"/>
+      <Settings Key="textId" Value="ChildObjectListForPermission.WaitLabel" />
+    </PageControl>-->
+
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 10px"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item32" Value="">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item31" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="CheckboxPadExample_CheckboxPad"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="460"/>
+        <Settings Key="childid" Value="ObjectList"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+    </PageControl>
+
+
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="CREATEUIDContainer"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="OWNUIDContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="CREATEUIDContainer" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="CREATEUID_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="CREATEUID_Value"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="CREATEUID_Label" ParentID="CREATEUID" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ChildObjectListForPermission.CREATEUID" />
+    </PageControl>
+    <PageControl ControlID="CREATEUID_Value" ParentID="CREATEUID" TypeName="MultiSelectDropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_ChildObjectListForPermission_CreateUIDDOnChange(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="OWNUIDContainer" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="OWNUID_Label"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OWNUID_Value"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="OWNUID_Label" ParentID="OWNUIDContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ChildObjectListForPermission.OWNUID" />
+    </PageControl>
+
+    <PageControl ControlID="OWNUID_Value" ParentID="OWNUIDContainer" TypeName="MultiSelectDropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_ChildObjectListForPermission_OwnUIDOnChange(ctrlEvent)"/>
+      </PageHandlers>
+    </PageControl>
+
+
+
+    <PageControl ControlID="CheckboxPadExample_CheckboxPad" ParentID="Info_Container" TypeName="CheckboxPad">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ChildObjectListForPermission_CheckBoxClick(ctrlEvent)"/>
+      </PageHandlers>
+      <Settings Key="ColNum" Value="10" />
+      <Settings Key="ChangeMode" Value="2" />
+      <!--ChangeMode: 2/3-->
+      <Settings Key="DefaultCheckState" Value="1" />
+      <!--默认选中状态：0/1/2-->
+    </PageControl>
+
+    <PageControl ControlID="ObjectList" ParentID="Info_Container" TypeName="EditGrid">
+
+    </PageControl>
+
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ChildObjectListForPermission_BtnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+
+  </PageControls>
+</root>

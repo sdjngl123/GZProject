@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="INDIVIDUATIONSETTING-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt; maximum length is 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SETVALUETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">值类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value type</LocalizedLabel>
+    </Label>
+    <Label Name="TextTrue">
+      <LocalizedLabel LanguageRef="zhs">True</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">True</LocalizedLabel>
+    </Label>
+    <Label Name="TOCLIENTHeader">
+      <LocalizedLabel LanguageRef="zhs">前台使用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Front office use</LocalizedLabel>
+    </Label>
+    <Label Name="SystemSettingsText">
+      <LocalizedLabel LanguageRef="zhs">系统</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSettingText">
+      <LocalizedLabel LanguageRef="zhs">个人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Individual</LocalizedLabel>
+    </Label>
+    <Label Name="TextFlase">
+      <LocalizedLabel LanguageRef="zhs">Flase</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Flase</LocalizedLabel>
+    </Label>
+    <Label Name="ENUMERATIONNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">枚举名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">enumerate name</LocalizedLabel>
+    </Label>
+    <Label Name="SETVALUETYPERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt;maximum length is 100 &lt;/br&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="VALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="VALUERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度1000&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 1000 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt; maximum length is 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">应用类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application type</LocalizedLabel>
+    </Label>
+    <Label Name="TYPERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt;maximum length is 100 &lt;/br&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="USINGUSERSETHeader">
+      <LocalizedLabel LanguageRef="zhs">应用个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Apply personal setting</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMSETTINGSHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit system settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

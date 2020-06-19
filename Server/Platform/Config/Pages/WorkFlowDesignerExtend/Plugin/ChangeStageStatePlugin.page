@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ChangeStageStatePlugin" IsCache="true">
+  <Settings Key="height" Value="80"/>
+  <Settings Key="title" Value="ChangeStageStatePlugin.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ChangeStageStatePlugin_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_ChangeStageStatePlugin_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ModelListContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="ChangeLifeStateContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ModelListContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ModelList_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ModelList_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ModelList_Label" ParentID="ModelListContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ChangeStageStatePlugin.ModelList" />
+    </PageControl>
+    <PageControl ControlID="ModelList_Value" ParentID="ModelListContainer" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_ChangeStageStatePlugin_ModelListOnChange(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    <PageControl ControlID="ChangeLifeStateContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="LifeCricleState_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LifeCricleState_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LifeCricleState_Label" ParentID="ChangeLifeStateContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ChangeStageStatePlugin.LifeCircleState" />
+    </PageControl>
+    <PageControl ControlID="LifeCricleState_Value" ParentID="ChangeLifeStateContainer" TypeName="DropDown">
+    </PageControl>
+
+  </PageControls>
+</root>

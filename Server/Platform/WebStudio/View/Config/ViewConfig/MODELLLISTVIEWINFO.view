@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="MODELLLISTVIEWINFO" ObjectTypeName="ENTITY" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="100" Resizable="false" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="ENENAME" Width="100" Resizable="false" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+    <ViewColumn Name="OPERATION" Width="100" Resizable="false" Sortable="false" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="true" ReturnDBValue="false" />
+  </ObjectView>
+</root>

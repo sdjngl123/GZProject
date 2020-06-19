@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ServiceItem ServiceName="CustomPageService" ServiceAssembly="Hoteam.InforCenter.Common.PageGenerator.dll" ServiceClass="Hoteam.InforCenter.Common.PageGenerator.CustomPageService" ContractAssembly="Hoteam.InforCenter.Common.PageGenerator.dll" ContractClass="Hoteam.InforCenter.Common.PageGenerator.ICustomPageService" />
+</root>

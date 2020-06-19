@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="InternalMail">
+  <Settings Key="title" Value="InternalMail.Title"/>
+  <Settings Key="height" Value="200"/>
+  <Settings Key="width" Value="320"/>
+  <Settings Key="modal" Value="false"/>
+  <Settings Key="draggable" Value="false"/>
+  <Settings Key="display" Value="down"/>
+  <Settings Key="minWindow" Value="false"/>
+  <Settings Key="resizable" Value="false"/>
+  <Settings Key="position" Value="right,bottom"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_InternalMail_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script="InforCenter_Platform_InternalMail_OnClose(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="InternalMail_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InternalMail_LayoutContainerH"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="InternalMail_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InternalMail_LayoutContainerH" ParentID="InternalMail_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InternalMail_Content"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InternalMail_Content" ParentID="InternalMail_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="childid" Value="InternalMail_Text"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InternalMail_Text" ParentID="Confirm_LabelContainer" TypeName="CustomerContainer" >
+      <Settings Key="templateName" Value="InternalMail"/>
+    </PageControl>
+    <!--InternalMailBtn-->
+    <PageControl ControlID="InternalMail_Btn" ParentID="InternalMail_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="InternalMail_Read"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="InternalMail_InternalMailManage"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" />
+      </Settings>
+
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="InternalMail_Read" ParentID="InternalMail_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InternalMail_Read(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="InternalMail.Read" />
+    </PageControl>
+    <PageControl ControlID="InternalMail_InternalMailManage" ParentID="InternalMail_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InternalMail_MessageManage(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="InternalMail.InternalMailManage" />
+    </PageControl>
+  </PageControls>
+</root>
+

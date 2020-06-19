@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SystemSetting Name="Bool"  PageName="SystemSettingsBoolPage" Title="SystemSetting.Bool"  PluginName="SystemSettingsBaseValue"/>
+  <SystemSetting Name="String"  PageName="SystemSettingsStringPage" Title="SystemSetting.String" PluginName="SystemSettingsBaseValue"/>
+  <SystemSetting Name="DropDownList" PageName="SystemSettingsDropDownPage" Title="SystemSetting.DropDownList" PluginName="SystemSettingsBaseValue"/>
+  <SystemSetting Name="MultiDropDownList" PageName="SystemSettingsMultiDropDownPage" Title="SystemSetting.MultiItemShowType" PluginName="SystemSettingsBaseValue"/>
+  <SystemSetting Name="ObjectValue" PageName="SystemSettingsObjectPage" Title="SystemSetting.ObjectValue" PluginName="SystemSettingsBaseValue"/>
+</root> 

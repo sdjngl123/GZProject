@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PermissionToOwner">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_PermissionToOwner_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_PermissionToOwner_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="PermissionToOwner_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Owner_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 容器-->
+    <PageControl ControlID="Owner_Container" ParentID="PermissionToOwner_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OwnerLabel"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 控件-->
+    <PageControl ControlID="OwnerLabel" ParentID="Owner_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="PermissionToOwner.PermissionToOwnerLabel" />
+    </PageControl>
+  </PageControls>
+</root>

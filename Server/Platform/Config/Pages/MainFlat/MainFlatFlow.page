@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MainFlatFlow" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_MainFlatFlow_MainFlatInit(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!--一层-->
+    <PageControl ControlID="MainFlatFlow_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="2px 2px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageGridCtrl"/>
+      </Settings>
+    </PageControl>
+    <!--四层-->
+    <PageControl ControlID="PageGridCtrl" ParentID="MainFlatFlow_Container" TypeName="PageGrid">
+    </PageControl>
+  </PageControls>
+</root>
+

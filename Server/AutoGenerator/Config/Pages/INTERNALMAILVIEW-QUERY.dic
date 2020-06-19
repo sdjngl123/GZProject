@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="INTERNALMAILVIEW-QUERY" IsWeb="true">
+    <Label Name="SENDUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">发件人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">To</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="MCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="SENDTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="SENDTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发送时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send time</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="MSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

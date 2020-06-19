@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="[PAGENAME]">
+  <Settings Key="height" Value="[PAGEHEIGHT]"/>
+  <Settings Key="width" Value="[PAGEWIDTH]"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="[CREATESCRIPT]"/>
+    <PageHandler HandlerName ="GetQueryData" Script="var bCheck=true;var QueyData =[];[GETQUERYDATASCRIPT];if(bCheck){return QueyData;}"/>
+    <PageHandler HandlerName="OnReset" Script="var ctrlEvent={};ctrlEvent.o=pageEvent.o.GetControl('btnReset');[RESETSCRIPT];"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  [INFOSOURCESCRIPT]"></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      [INFOLAYOUT]
+    </PageControl>
+    [INFOCONTENT]
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnQuery"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="btnReset"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="var bCheck=true;var FilterString ='';var EntityFilterString =''; [QUERYSCRIPT];if(bCheck){var QueryData = HoteamUI.Page.FirePageEvent(ctrlEvent.o.ContainerID(), 'GetQueryData');if (!QueryData){QueryData=[];};FilterString = FilterString.substring(4);EntityFilterString = EntityFilterString.substring(4); HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{[RELATEDQUERY]FilterString:FilterString,[RELATEDQUERY]EntityFilterString:EntityFilterString,ButtonType:'Query',QueryData:QueryData});}"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="SubQuery_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="[RESETSCRIPT];HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{[RELATEDQUERY]FilterString:'1=1',[RELATEDQUERY]EntityFilterString:'1=1',ButtonType:'Reset',QueryData:[]});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

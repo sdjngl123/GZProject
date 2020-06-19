@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="A1" IsCache="false">
+  <Settings Key="width" Value="597" />
+  <Settings Key="height" Value="429" />
+  <Settings Key="title" Value="A1.A1" />
+  <Settings Key="TemplatePage" Value="False" />
+  <Settings Key="Model" Value="LINK" />
+  <Settings Key="ChildModel" Value="" />
+  <Settings Key="CustomOnCreate" Value="false" />
+  <Settings Key="CustomOnGetDataFromPage" Value="false" />
+  <PageControls>
+    <PageControl ControlID="BaseFlowPanel" ParentID="" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="vertical" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="0" />
+        <Settings Key="childid" Value="LayoutContainer3" />
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="70%" />
+        <Settings Key="childid" Value="LayoutContainer1" />
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="60" />
+        <Settings Key="childid" Value="HTabs1" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LayoutContainer3" ParentID="BaseFlowPanel" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="vertical" />
+    </PageControl>
+    <PageControl ControlID="LayoutContainer1" ParentID="BaseFlowPanel" TypeName="LayoutContainer">
+      <PageHandlers />
+      <Settings Key="type" Value="vertical" />
+      <Settings Key="item0" Value="">
+        <Settings Key="size" Value="24%" />
+        <Settings Key="childid" Value="HLabel1" />
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="23%" />
+        <Settings Key="childid" Value="HTextBox1" />
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="22%" />
+        <Settings Key="childid" Value="HLabel2" />
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="23%" />
+        <Settings Key="childid" Value="HDropDown1" />
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="20" />
+        <Settings Key="childid" Value="HLabel3" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="HLabel1" ParentID="LayoutContainer1" TypeName="Label">
+      <PageHandlers />
+      <Settings Key="textId" Value="A1.HLabel1" />
+      <Settings Key="wrap" Value="false" />
+      <Settings Key="position" Value="right" />
+      <Settings Key="suffix" Value="" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="color" Value="Red" />
+    </PageControl>
+    <PageControl ControlID="HTextBox1" ParentID="LayoutContainer1" TypeName="TextBox">
+      <PageHandlers />
+      <Settings Key="bgText" Value="" />
+      <Settings Key="disabled" Value="false" />
+      <Settings Key="regex" Value="" />
+      <Settings Key="regextipId" Value="" />
+      <Settings Key="type" Value="text" />
+      <Settings Key="Field" Value="" />
+    </PageControl>
+    <PageControl ControlID="HLabel2" ParentID="LayoutContainer1" TypeName="Label">
+      <PageHandlers />
+      <Settings Key="textId" Value="A1.HLabel2" />
+      <Settings Key="wrap" Value="false" />
+      <Settings Key="position" Value="right" />
+      <Settings Key="suffix" Value="" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="color" Value="Black" />
+    </PageControl>
+    <PageControl ControlID="HDropDown1" ParentID="LayoutContainer1" TypeName="DropDown">
+      <PageHandlers />
+      <Settings Key="disabled" Value="false" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="DataSourceField" Value="" />
+      <Settings Key="CustomOnload" Value="false" />
+    </PageControl>
+    <PageControl ControlID="HLabel3" ParentID="LayoutContainer1" TypeName="Label">
+      <PageHandlers />
+      <Settings Key="textId" Value="A1.HLabel3" />
+      <Settings Key="wrap" Value="false" />
+      <Settings Key="position" Value="right" />
+      <Settings Key="suffix" Value="" />
+      <Settings Key="Field" Value="" />
+      <Settings Key="color" Value="Black" />
+    </PageControl>
+    <PageControl ControlID="HTabs1" ParentID="BaseFlowPanel" TypeName="Tabs">
+      <PageHandlers />
+      <Settings Key="showSwitchBar" Value="false" />
+      <Settings Key="showMenu" Value="false" />
+      <Settings Key="titleType" Value="capsule" />
+      <Settings Key="hasBorder" Value="false" />
+      <Settings Key="item0">
+        <Settings Key="textId" Value="A1.2" />
+        <Settings Key="pageName" Value="" />
+        <Settings Key="tabId" Value="2" />
+        <Settings Key="showClosed" Value="false" />
+        <Settings Key="pageParas" />
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="textId" Value="A1.1" />
+        <Settings Key="pageName" Value="" />
+        <Settings Key="tabId" Value="1" />
+        <Settings Key="showClosed" Value="false" />
+        <Settings Key="pageParas" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+  <PageHandlers>
+    <PageHandler HandlerName="OnCreate" Script="var data = InforCenter_Platform_PageDesgin_GetInitData(pageEvent,'LINK');var functionName='InforCenter_A1_OnCreate';if(typeof window[functionName] == 'function'){ return window[functionName](pageEvent,data);}" />
+    <PageHandler HandlerName="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data={};if(para.hasOwnProperty('ObjectID')&amp;&amp;para.ObjectID!=''){data.ObjectID=para.ObjectID;}else{data.ObjectType='LINK';}data.LINK={};if(bCheck){InforCenter_Platform_Object_Data = data;}" />
+  </PageHandlers>
+</root>

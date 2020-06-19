@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFOLWVIEWView" IsWeb="true">
+    <Label Name="WORKFOLWVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">流程视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process view</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFOLWVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">流程视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process view</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">流程名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Name</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process state</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">流程状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process state</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORCaption">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="WORKFOLWVIEWCondition" IsWeb="true">
+    <Label Name="NAMELIKEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Name</LocalizedLabel>
+    </Label>
+    <Label Name="NAMELIKECaption">
+      <LocalizedLabel LanguageRef="zhs">流程名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Name</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINIISTRATORHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINIISTRATORCaption">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

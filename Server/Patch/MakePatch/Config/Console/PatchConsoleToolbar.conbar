@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="MakePatchBar" BaseBar="SettingBar">
+    <Item Name ="MakePatch" IsCommonItem="true" ImagePath="~/Platform/Image/Console/MakePatch.png"  ItemAssembly="Hoteam.InforCenter.Patch.MakePatch" ItemClass="Hoteam.InforCenter.Patch.MakePatch.MakePatchCmd"></Item>
+  </ToolBar>
+</root>

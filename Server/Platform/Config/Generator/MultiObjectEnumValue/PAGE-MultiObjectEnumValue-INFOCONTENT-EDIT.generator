@@ -1,0 +1,20 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="MultiSelectDropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='[OBJTYPE]';ctrlEvent.infoName='[INFONAME]';InforCenter_Platform_GenerateScript_MultiObjectEnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = '[OBJTYPE]';
+                 ctrlEvent.infoType = '[INFONAME]';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_MultiObjectEnumValueOnLoad';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetObjectEnumList(o,'[INFONAME]','[OBJTYPE]',false);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

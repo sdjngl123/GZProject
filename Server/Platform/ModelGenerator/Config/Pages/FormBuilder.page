@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FormBuilder">
+  <Settings Key="height" Value="100%"/>
+  <Settings Key="width" Value="100%"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_FormBuilder_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnBeforeClose" Script="InforCenter_Platform_FormBuilder_BeforeClose(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MainContainer"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MainContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item0">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FormBuilder_Layout"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="4"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="FormBuilder_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+
+      <Settings Key="item0">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="FormBuilder_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="FormBuilder_LayoutContainer_btn"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item123">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FormBuilder_Container" ParentID="FormBuilder_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="childid" Value="FormBuilderCtrl"/>
+        <Settings Key="size" Value="100%"></Settings>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="FormBuilderCtrl" ParentID="FormBuilder_Container" TypeName="FormBuilder">
+      <PageHandlers>
+        <PageHandler HandlerName ="GetData" Script="InforCenter_Platform_FormBuilder_GetData(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="pattern" Value="design"/>
+    </PageControl>
+
+    <PageControl ControlID="FormBuilder_LayoutContainer_btn" ParentID="FormBuilder_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="10%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnSaveAs"/>
+      </Settings>
+      <Settings Key="item33" Value="">
+        <Settings Key="size" Value="10%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item45" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnSaveThem"/>
+      </Settings>
+      <!--<Settings Key="item5" Value="">
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>-->
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="40%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnOK" ParentID="FormBuilder_LayoutContainer_btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FormBuilder_Save(ctrlEvent,false);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="ModelGenerator.Save" />
+    </PageControl>
+    <PageControl ControlID="btnSaveAs" ParentID="FormBuilder_LayoutContainer_btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FormBuilder_Save(ctrlEvent,true);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="ModelGenerator.SaveAs" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="FormBuilder_LayoutContainer_btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+    <PageControl ControlID="btnSaveThem" ParentID="FormBuilder_LayoutContainer_btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FormThemDesign_Save(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="ModelGenerator.btnSaveThem" />
+    </PageControl>
+
+  </PageControls>
+</root>

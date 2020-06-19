@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="ROLEVIEWIgnoreCompanyID" ObjectTypeName="ROLEINFO" QueryPageTemplete="QUERY-PAGE-LEFT" OrderByString="CREATETIME DESC" FixedFilter="" AsCommonQuery="false" IgnoreCompanyRulePermission="true" IgnoreCompanyID="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="DESCRIPT" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="80" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="120" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATEUID" Width="80" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="UPDATETIME" Width="120" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAMElIKE" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Validation="String100" Required="true" />
+    <ViewCondition Name="ECODELIKE" AndOrFlag="AND" InfoName="ECODE" Operation="LIKE" Validation="" Required="false" />
+  </ObjectView>
+</root>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListViewEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">列表视图配置窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Configuration Window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">列表视图名称，用该名称可以获取列表视图，该名称是在需要使用列表视图的时候填写的视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Name. Use this name to get a list view, which is the name of the view that you want to fill in when you want to use the list view</LocalizedLabel>
+    </Label>
+    <Label Name="View">
+      <LocalizedLabel LanguageRef="zhs">查询视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query View Name</LocalizedLabel>
+    </Label>
+    <Label Name="ViewDescription">
+      <LocalizedLabel LanguageRef="zhs">控制台中配置的视图名称（扩展名为.view的视图名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the view (extension) configured in the console. (View name of view)</LocalizedLabel>
+    </Label>
+    <Label Name="KeyField">
+      <LocalizedLabel LanguageRef="zhs">唯一主键，目前用于列表刷新后，再次选中。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unique primary key, currently used for list refresh, is checked again.</LocalizedLabel>
+    </Label>
+    <Label Name="KeyFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">唯一主键，目前用于列表刷新后，再次选中。实体视图默认是EID，关系视图默认是LID。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unique primary key is currently used for list refresh, is checked again. The entity view is the default by default, and the relational view defaults to the LID.</LocalizedLabel>
+    </Label>
+    <Label Name="QueryID">
+      <LocalizedLabel LanguageRef="zhs">起始ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Starting ID</LocalizedLabel>
+    </Label>
+    <Label Name="QueryIDDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        针对关系视图，设置起始ID，只有关系对象生效，可选值为
+        [页面参数]，
+        [Tree_节点_值]（节点可选值为“Current，Parent，Root”,代表当前节点，父级节点，根节点，值的可选值为value1，value2,value3,value4,value5，可以代表树节点的5个属性，如果是通用页面分别代表EID，LID,对象类型，树视图的层号，节点类型）如[Tree_Current_value1]代表当前节点的EID
+        [Tree_节点_Tag_视图字段] （视图字段为根据树视图查询的列信息，如[Tree_Current_Tag_ENAME],代表当前节点的ENAME信息）
+        [List_属性值]如[List_EID]，代表列表选中对象的EID
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        For a relational view, set the start ID, only the relational object takes effect, and the optional value is
+        The page parameter is incremented,
+        [Tree_Node_Vaule] (Optional node value is "Current, Parent, Root" represents the current node, the parent node, the root node, the selectable value of the value is value1, value2, value3, value4, value5, can represent the five attributes of the tree node, The object type, the layer number of the tree view, the node type, such as Spanning Tree_Current_value1, represents the current node's EID
+        The [Tree_Node_Tag_View field] appears (the view field is column information that is queried according to the tree view, such as Spanning Tree_Current_Tag_ENAME), which represents the ENAME information of the current node)
+        The [List_Attribute value], such as [List_EID] represents the EIDs of the objects in the list
+      </LocalizedLabel>
+    </Label>
+    <Label Name="EntityFilter">
+      <LocalizedLabel LanguageRef="zhs">子表过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Child table filter criteria</LocalizedLabel>
+    </Label>
+    <Label Name="EntityFilterDescription">
+      <LocalizedLabel LanguageRef="zhs">只用于关系表查询（关系表和实体表联合查询），该条件是实体对象表的查询条件，如 WORKFLOWID='[SelectID]',可替换参数为包含前台列表参数数据（如[List_EID]）和树节点参数数据（如[Tree_Current_Value1]）及页面参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is used only for relational table queries (relational table and entity table federated query), which is the query criteria for the entity object table, such as WORKFLOWID='[SelectID]'and the replaceable parameter is the parameter data including foreground list parameter (such as [List_EID]), tree node parameter date (suh as[Tree_Current_Value1]) and the page parameter</LocalizedLabel>
+    </Label>
+    <Label Name="Filter">
+      <LocalizedLabel LanguageRef="zhs">主表的过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Filter Criteria for main Table</LocalizedLabel>
+    </Label>
+    <Label Name="FilterDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        用于单表查询和关系表查询，在单表查询中，该条件就是对象表(实体对象表或关系对象表)的条件；针对关系表查询（关系表和实体表联合查询），该条件为关系表的查询条件 例子如下：WORKFLOWID=(SELECT WORKFLOWID FROM WORKFLOWTASKINFO WHERE EID='[Tree_Current_value1]')
+        可替换参数为包含前台列表参数数据（如[List_EID]）和树节点参数数据（如[Tree_Current_Value1]）及页面参数
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        For single table query and relational table query, in a single table query, the condition is the condition of the object table (entity object table or relational object table) ; for relational table queries (relational table and entity table combined query), the query condition example of the relationship table is as follows: WORKFLOWID=(SELECT WORKFLOWID FROM WORKFLOWTASKINFO WHERE EID='[Tree_Current_value1]')
+        The alternate parameter is the parameter data including foreground list parameter (such as [List_EID]) and tree node parameter date (suh as[Tree_Current_Value1]) , and the page parameter
+      </LocalizedLabel>
+    </Label>
+    <Label Name="RelatedEntityFilter">
+      <LocalizedLabel LanguageRef="zhs">结果关联查询-子表过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result Associated Query-child table filter criteria</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedEntityFilterDescription">
+      <LocalizedLabel LanguageRef="zhs">结果关联查询-只用于关系表查询（关系表和实体表联合查询），该条件是实体对象表的查询条件，如 WORKFLOWID='[SelectID]',可替换参数为包含前台列表参数数据（如[List_EID]）和树节点参数数据（如[Tree_Current_Value1]）及页面参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result Association Query-only is used for relational table query (relational table and entity table combined query), which is the query condition of the entity object table, such as WORKSHOP ID='[SelectID]'' and the replaceable parameter is the parameter data including foreground list parameter (such as [List_EID]) and tree node parameter date (such as[Tree_Current_Value1]), and the page parameter</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedFilter">
+      <LocalizedLabel LanguageRef="zhs">结果关联查询-主表的过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result associated query-filter Criteria for main table</LocalizedLabel>
+    </Label>
+    <Label Name="RelatedFilterDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        结果关联查询-用于单表查询和关系表查询，在单表查询中，该条件就是对象表(实体对象表或关系对象表)的条件；针对关系表查询（关系表和实体表联合查询），该条件为关系表的查询条件 例子如下：WORKFLOWID=(SELECT WORKFLOWID FROM WORKFLOWTASKINFO WHERE EID='[Tree_Current_value1]')
+        可替换参数为包含前台列表参数数据（如[List_EID]）和树节点参数数据（如[Tree_Current_Value1]）及页面参数
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        Result Association Query-it is used for single table query and relational table query, the condition is the condition of object table (entity object table or relational object table) in single table query; for relational table query (relational table and entity table combined query), this condition is the query condition example of relational table as follows: WORKFLOWID=(SELECT WORKFLOWID FROM WORKFLOWTASKINFO WHERE EID='[Tree_Current_value1]')
+        The alternate parameter is the parameter data including foreground list parameter (such as Spanning Tree_Current_Value1) and tree node parameter date (such as[Tree_Current_Value1]), the page parameter
+      </LocalizedLabel>
+    </Label>
+    <Label Name="DetailsIcon">
+      <LocalizedLabel LanguageRef="zhs">详细图标列的图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon for detailed icon column</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsIconDescription">
+      <LocalizedLabel LanguageRef="zhs">对具体图标路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For a specific icon path</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsIconField">
+      <LocalizedLabel LanguageRef="zhs">详细图标列的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field of the detailed icon column</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsIconFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">对应数据库的图标列的字段，该字段存放的是图标路径，如果配置此字段，则不使用对象图标,一般情况下可用基类的ICON字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The field of the icon column for the corresponding database, which is stored as an icon path, and if you configure this field, you do not use the object icon, and typically the ICON field of the base class is available</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsAction">
+      <LocalizedLabel LanguageRef="zhs">详细图标列验证动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed Icon Column Verification Action</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsActionDescription">
+      <LocalizedLabel LanguageRef="zhs">详细图标列需要验证的动作，可为空，为空时不验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed icon column that requires the action to be verified can be null, it does not validate when null</LocalizedLabel>
+    </Label>
+    <Label Name="AllowCheckBox">
+      <LocalizedLabel LanguageRef="zhs">显示CheckBox列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show CheckBox column</LocalizedLabel>
+    </Label>
+    <Label Name="AllowCheckBoxDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表中显示CheckBox列，如果列表多选，此值应为true</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the CheckBox column in the list, if the list is more selected, this value should be true</LocalizedLabel>
+    </Label>
+    <Label Name="AllowObjectType">
+      <LocalizedLabel LanguageRef="zhs">显示对象类型列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show object type columns</LocalizedLabel>
+    </Label>
+    <Label Name="AllowObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表中显示对象类型列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the object type column is displayed in the list</LocalizedLabel>
+    </Label>
+    <Label Name="AllowIconType">
+      <LocalizedLabel LanguageRef="zhs">显示图标列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show Icon Columns</LocalizedLabel>
+    </Label>
+    <Label Name="AllowIconTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表中显示图标列，如果为false，将隐藏图标列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the icon column is displayed in the list, and if false, the icon column will be hidden</LocalizedLabel>
+    </Label>
+    <Label Name="IsSelectExporting">
+      <LocalizedLabel LanguageRef="zhs">支持选择导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support Selection Export</LocalizedLabel>
+    </Label>
+    <Label Name="IsSelectExportingDescription">
+      <LocalizedLabel LanguageRef="zhs">是否支持选择导出，如果设为true，在列表左下角会显示选择导出按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to support selection export, if set to true, the Select Export button appears in the lower left corner of the list</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllExporting">
+      <LocalizedLabel LanguageRef="zhs">支持全部导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Supports Full Export</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllExportingDescription">
+      <LocalizedLabel LanguageRef="zhs">是否支持全部导出，如果设为true，在列表左下角会显示全部导出按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether all export is supported, if it is set to be true, all export buttons appear in the lower left corner of the list</LocalizedLabel>
+    </Label>
+    <Label Name="IsSelectPrinting">
+      <LocalizedLabel LanguageRef="zhs">支持选择打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support Selection Printing</LocalizedLabel>
+    </Label>
+    <Label Name="IsSelectPrintingDescription">
+      <LocalizedLabel LanguageRef="zhs">是否支持选择打印，如果设为true，在列表左下角会显示选择打印按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to support the selection printing, if it is set to be true, the selection print button appears in the lower left corner of the list</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllPrinting">
+      <LocalizedLabel LanguageRef="zhs">支持全部打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Supports full printing</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllPrintingDescription">
+      <LocalizedLabel LanguageRef="zhs">是否支持打印全部，如果设为true，在列表左下角会显示打印全部按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to support printing all, if it is set to be true, the print all buttons appear in the lower left corner of the list</LocalizedLabel>
+    </Label>
+    <Label Name="ShowMode">
+      <LocalizedLabel LanguageRef="zhs">显示模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Mode</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowThumbnail">
+      <LocalizedLabel LanguageRef="zhs">是否显示缩略图模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether it shows thumbnail mode or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowThumbnailDescription">
+      <LocalizedLabel LanguageRef="zhs">标示列表是否拥有缩略图模式，如果是，会在展示的列表页面中提供缩略图模式切换按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It indicates whether the list has a thumbnail mode, and if so, a thumbnail mode toggle button is provided in the displayed list page</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultBigImg">
+      <LocalizedLabel LanguageRef="zhs">默认大图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default Large Icon</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultBigImgDescription">
+      <LocalizedLabel LanguageRef="zhs">对象的默认大图标，转换为缩略图模式时，如果对象没有特定大图标，会显示该图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the object's default large icon is converted to a thumbnail mode, the icon is displayed if the object does not have a specific large icon</LocalizedLabel>
+    </Label>
+    <Label Name="BigImageField">
+      <LocalizedLabel LanguageRef="zhs">大图标字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Large Icon Field</LocalizedLabel>
+    </Label>
+    <Label Name="BigImageFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">大图标字段，内容对应对象存放大图标地址的字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Large icon field, the field corresponding to the content corresponding to the address of the large icon</LocalizedLabel>
+    </Label>
+    <Label Name="AsCommonQuery">
+      <LocalizedLabel LanguageRef="zhs">是通用查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is a universal query</LocalizedLabel>
+    </Label>
+    <Label Name="AsCommonQueryDescription">
+      <LocalizedLabel LanguageRef="zhs">在查询构建中判断是否通用查询，一般情况下可不设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not necessary to judge whether a general query is used in the query construction.</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">列表视图名重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate List View Name</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsPageSize">
+      <LocalizedLabel LanguageRef="zhs">详细页面大小</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detail Page Size</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsPageSizeDescription">
+      <LocalizedLabel LanguageRef="zhs">点击图标列时弹出的详细页面大小，如800*600，不填为属性页默认大小，当标签页配置中配置对象属性时弹出页面的大小多用此属性指定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The size of the detailed page that pops up when clicking on the icon column, such as 800*600, is not filled with the default size of the attribute page. When the object attribute is configured in the label page configuration, the size of the pop-up page will be specified by this attribute</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsPageUseObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">详细页面使用对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use the Object Viewer for detailed pages</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsPageUseObjectInspectorDescription">
+      <LocalizedLabel LanguageRef="zhs">通过点击详细图标，调整到对象查看器，默认false显示普通属性页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">By clicking on the detailed icon, adjust to the Object Viewer, and the default false displays the General Properties Page</LocalizedLabel>
+    </Label>
+    <Label Name="AutoLoadData">
+      <LocalizedLabel LanguageRef="zhs">默认加载数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default Load Data</LocalizedLabel>
+    </Label>
+    <Label Name="AutoLoadDataDescription">
+      <LocalizedLabel LanguageRef="zhs">首次是否加载列表数据，为false时不加载，此属性用在列表数据很大的情况下，如操作日志，进入页面时不加载，输入查询条件查询时再加载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If the list data is loaded for the first time, it is not loaded when it is false. This attribute is used when the list data is large, such as the operation log, does not load when entering the page, and is reloaded when the query criteria query is entered.</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsPageJSMethod">
+      <LocalizedLabel LanguageRef="zhs">自定义图标列点击方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom Icon Column Click Method</LocalizedLabel>
+    </Label>
+    <Label Name="DetailsPageJSMethodDescription">
+      <LocalizedLabel LanguageRef="zhs">当点击图标列时，执行的自定义脚本，如果为空，默认弹出属性页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the icon column is clicked, the custom script is executed, and if it is null, the default pop-up attribute page</LocalizedLabel>
+    </Label>
+    <Label Name="CustomObjectTypeField">
+      <LocalizedLabel LanguageRef="zhs">自定义对象类型列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom Object Type Column</LocalizedLabel>
+    </Label>
+    <Label Name="CustomObjectTypeFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">自定义对象类型，一般用于一个对象类型，分了多个子类，并且有特殊显示，相当与treeview的NodeType。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A custom object type, typically is used for an object type, which is divided into a number of child classes, and has a special display that corresponds to NodeType of the tree view.</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAdd">
+      <LocalizedLabel LanguageRef="zhs">复制新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy and add</LocalizedLabel>
+    </Label>
+    <Label Name="AddEditColumn">
+      <LocalizedLabel LanguageRef="zhs">添加编辑列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Edit Column</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowSearch">
+      <LocalizedLabel LanguageRef="zhs">是否显示本地搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to show local search or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowSearchDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表底部显示本地搜索图标，如果显示，此值应为true</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the local search icon at the bottom of the list, this value should be true if displayed</LocalizedLabel>
+    </Label>
+    <Label Name="IsLayoutSave">
+      <LocalizedLabel LanguageRef="zhs">允许显示视图保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow display view is saved</LocalizedLabel>
+    </Label>
+    <Label Name="IsLayoutSaveDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表底部显示视图保存图标，如果显示，此值应为true</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the view save icon at the bottom of the list, this value should be true if it is displayed</LocalizedLabel>
+    </Label>
+    <Label Name="ShowPaging">
+      <LocalizedLabel LanguageRef="zhs">是否分页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want pagination</LocalizedLabel>
+    </Label>
+    <Label Name="ShowPagingDescription">
+      <LocalizedLabel LanguageRef="zhs">是否分页，开发过程中，遇到不需要分页展示列表，配置false，默认true。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want pagination. If encountered no paginated list during development process, false is configured, and the default true is configured.</LocalizedLabel>
+    </Label>
+    <Label Name="IsColumnSetting">
+      <LocalizedLabel LanguageRef="zhs">允许显示列设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow display column settings</LocalizedLabel>
+    </Label>
+    <Label Name="IsColumnSettingDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表底部显示列设置图标，如果显示，此值应为true</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the column setup icon at the bottom of the list or not, this value should be true if displayed</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="JsMethod">
+      <LocalizedLabel LanguageRef="zhs">执行JS脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute JS Script</LocalizedLabel>
+    </Label>
+    <Label Name="DetailColumnSetting">
+      <LocalizedLabel LanguageRef="zhs">列表详细列配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Detail Column Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="DetailColumnSettingDescription">
+      <LocalizedLabel LanguageRef="zhs">列表详细列配置，满足列表多对象展示，并且每种对象类型，执行不同的js的脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List detailed column configuration to meet the list multi-object display, and each object type, perform a different js script</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowTitle">
+      <LocalizedLabel LanguageRef="zhs">是否增加标题行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Header Row</LocalizedLabel>
+    </Label>
+    <Label Name="IsShowTitleDescription">
+      <LocalizedLabel LanguageRef="zhs">是否在列表的上方增加一个标题行，该标题行的内容为ListView的多语言配置信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to add a header line above the list or not, the contents of the header line is ListView multi-language configuration information</LocalizedLabel>
+    </Label>
+    <Label Name="DistinctField">
+      <LocalizedLabel LanguageRef="zhs">去重字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete duplication field</LocalizedLabel>
+    </Label>
+    <Label Name="DistinctFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">前台根据这个字段去掉重复的行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Front desk removes duplicate rows from this field</LocalizedLabel>
+    </Label>
+    <Label Name="FilterFlag">
+      <LocalizedLabel LanguageRef="zhs">返回值配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return value configuration</LocalizedLabel>
+    </Label>
+    <Label Name="FilterFlagDescription">
+      <LocalizedLabel LanguageRef="zhs">主要用于返回值名称配置，多个使用分号分割，如：Tree_Current_value1;ObjectID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is mainly used for return value name configuration, multiple use partition numbers, such as: Tree_Current_value1; ObjectID</LocalizedLabel>
+    </Label>
+    <Label Name="ViewNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">查询视图不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">view not empty</LocalizedLabel>
+    </Label>
+    <Label Name="OnRowDoubleClickJSMethod">
+      <LocalizedLabel LanguageRef="zhs">行双击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Double-click row events</LocalizedLabel>
+    </Label>
+    <Label Name="OnRowDoubleClickJSMethodDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        双击选中行执行前台Js脚本函数的名称,如:ListView_OnRowDoubleClick;
+        JS函数:ListView_OnRowDoubleClick(para)
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        Double-click the selected row to execute the foreground Js script function name,for example:ListView_OnRowDoubleClick;
+        JS Method:ListView_OnRowDoubleClick(para)
+      </LocalizedLabel>
+    </Label>
+    <Label Name="CellValueChange">
+      <LocalizedLabel LanguageRef="zhs">编辑列焦点离开事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit column focus to leave the event</LocalizedLabel>
+    </Label>
+    <Label Name="CellValueChangeDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        编辑列值输入完成后，焦点离开验证事件，只限于可编辑列表使用,如:EditColName_CellValueChange;
+        JS函数:EditColName_CellValueChange(ctrlEvent)
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">
+        Once the edit column value input is complete, the focus leaves the validation event and is limited to editable lists,for example:EditColName_CellValueChange;
+        JS Method:EditColName_CellValueChange(ctrlEvent)
+      </LocalizedLabel>
+    </Label>
+    <Label Name="ZebraList">
+      <LocalizedLabel LanguageRef="zhs">列表隔行换色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The list is interlaced with color</LocalizedLabel>
+    </Label>
+    <Label Name="ZebraListDescription">
+      <LocalizedLabel LanguageRef="zhs">奇数行与偶数行背景色不一致</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The background color of the odd and even rows is inconsistent</LocalizedLabel>
+    </Label>
+    <Label Name="HoverLight">
+      <LocalizedLabel LanguageRef="zhs">高亮显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">highlight</LocalizedLabel>
+    </Label>
+    <Label Name="HoverLightDescription">
+      <LocalizedLabel LanguageRef="zhs">鼠标移动到某行时，该行是否高亮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether a row is highlighted when the mouse is moved to it</LocalizedLabel>
+    </Label>
+    <Label Name="Border">
+      <LocalizedLabel LanguageRef="zhs">显示边线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display line</LocalizedLabel>
+    </Label>
+    <Label Name="BorderDescription">
+      <LocalizedLabel LanguageRef="zhs">单元格显示左右边线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The cells show the right and left edges</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeField">
+      <LocalizedLabel LanguageRef="zhs">对象类型依赖字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display line</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeFieldDescription">
+      <LocalizedLabel LanguageRef="zhs">单元格显示左右边线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The cells show the right and left edges</LocalizedLabel>
+    </Label>
+    <Label Name="AddEditColumn">
+      <LocalizedLabel LanguageRef="zhs">添加编辑列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Edit Column</LocalizedLabel>
+    </Label>
+
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Filter Rule="Hoteam.Patch.InstallPatchService.*" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+</root>

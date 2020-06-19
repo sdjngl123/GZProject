@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ExportPage" IsCache="true">
+  <Settings Key="title" Value="Confirm.Title"/>
+  <Settings Key="height" Value="200"/>
+  <Settings Key="width" Value="320"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_Export_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="10%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="90%"/>
+        <Settings Key="childid" Value="ExportPage_MessageCtrl"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="ExportCtrl"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Confirm_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ExportPage_MessageCtrl" ParentID="Top_Container" TypeName="CustomerContainer">
+    </PageControl>
+    <PageControl ControlID="ExportCtrl" ParentID="Top_Container" TypeName="Iframe">
+    </PageControl>
+
+    <PageControl ControlID="Confirm_Btn" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnOK"/>
+      </Settings>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="8"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Confirm_btnCancel"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Confirm_btnOK" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Export_OKOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="Confirm_btnCancel" ParentID="Confirm_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Export_CancelOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

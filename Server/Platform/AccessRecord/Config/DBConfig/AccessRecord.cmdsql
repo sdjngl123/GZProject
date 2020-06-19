@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="QueryAccessRecord">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT OBJID FROM (
+        SELECT DISTINCT T.OBJID,ROW_NUMBER() OVER( ORDER BY OBJID DESC ) AS IDX  FROM
+        (SELECT TOP 1000000 OBJID,CREATETIME FROM OPERATELOG   WHERE ENABLE = '1' AND OBJID IS NOT NULL AND USERID=[USERID]  AND OPERATE IN ('EDIT','CREATE','VIEW') [FILTER]
+        ORDER BY CREATETIME DESC ) T  GROUP BY T.OBJID ) A WHERE IDX &gt; [STARTROW] AND IDX &lt;= [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT OBJID FROM (
+        SELECT DISTINCT T.OBJID,ROW_NUMBER() OVER( ORDER BY OBJID DESC ) AS IDX  FROM
+        (SELECT TOP 1000000 OBJID,CREATETIME FROM OPERATELOG   WHERE ENABLE = '1' AND OBJID IS NOT NULL AND USERID=[USERID]  AND OPERATE IN ('EDIT','CREATE','VIEW') [FILTER]
+        ORDER BY CREATETIME DESC ) T  GROUP BY T.OBJID ) A WHERE IDX &gt; [STARTROW] AND IDX &lt;= [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

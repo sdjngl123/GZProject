@@ -1,0 +1,10 @@
+﻿{
+	var c = pageEvent.o.GetControl('[FILTERNAME]_Value');
+	if(c.id!=''){
+		var value = InforCenter_Platform_Object_TimeFormatToInt(c.GetDateTime());
+
+		[QueyData].push({ANDOR:'[ANDOR]',QUERYCOLUMN:'[QUERYCOLUMN]',QUERYOPERATOR:'[QUERYOPERATOR]',VALUE:value,UNQUOTED:[UNQUOTED]});
+		if(c.Check() == false) bCheck = false;	
+
+	}
+}

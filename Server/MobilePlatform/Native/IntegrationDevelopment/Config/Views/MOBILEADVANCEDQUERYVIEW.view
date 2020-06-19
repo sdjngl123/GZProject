@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="MOBILEADVANCEDQUERYVIEW" ObjectTypeName="MOBILEADVANCEDQUERY" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="right" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false" ViewAssembly="Hoteam.InforCenter.MobilePageDev.Business" ViewClass="Hoteam.InforCenter.MobilePageDev.Business.AdvancedQueryListViewFormat" >
+    <ViewColumn Name="ENAME" ObjectTypeName="MOBILEADVANCEDQUERY" Width="-1" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CONDITIONTITLE" ObjectTypeName="MOBILEADVANCEDQUERY" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CONTROLTYPE" ObjectTypeName="MOBILEADVANCEDQUERY" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="FILTERSTRING" ObjectTypeName="MOBILEADVANCEDQUERY" Width="100" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="EID" ObjectTypeName="MOBILEADVANCEDQUERY" Width="0" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="OBJECTTYPE" ObjectTypeName="MOBILEADVANCEDQUERY" Width="200" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="true" />
+    <ViewColumn Name="INFONAME" ObjectTypeName="MOBILEADVANCEDQUERY" Width="200" Resizable="true" Sortable="true" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="true" />
+  </ObjectView>
+</root>

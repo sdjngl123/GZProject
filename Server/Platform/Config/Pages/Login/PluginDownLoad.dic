@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PluginDownLoad" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">插件下载列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in download list</LocalizedLabel>
+    </Label>
+    <Label Name="Close">
+      <LocalizedLabel LanguageRef="zhs">关闭</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Shut down</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

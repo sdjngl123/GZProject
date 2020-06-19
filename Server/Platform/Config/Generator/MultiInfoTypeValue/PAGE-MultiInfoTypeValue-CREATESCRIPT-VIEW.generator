@@ -1,0 +1,8 @@
+﻿
+{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+var text = data.[INFONAME]_DisplayValue?data.[INFONAME]_DisplayValue:'';
+o.SetText(text);
+}
+}

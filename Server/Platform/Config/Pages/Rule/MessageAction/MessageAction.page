@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MessageAction">
+  <Settings Key="title" Value="MessageAction.Title"/>
+  <Settings Key="height" Value="240"/>
+  <Settings Key="width" Value="320"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_MessageAction_LoadPage(pageEvent);"/>    
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="MessageAction_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="80%"/>
+        <Settings Key="childid" Value="ActionList_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 操作列表容器-->
+    <PageControl ControlID="ActionList_Container" ParentID="MessageAction_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ActionListControl"/>
+      </Settings>
+    </PageControl>
+    <!-- 按钮容器-->
+    <PageControl ControlID="Btn_Container" ParentID="MessageAction_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <!-- 操作列表控件-->
+    <PageControl ControlID="ActionListControl" ParentID="ActionList_Container" TypeName="CheckboxPad">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_MessageAction_LoadActionList(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="ColNum" Value="4" />
+      <Settings Key="ChangeMode" Value="2" />
+      <Settings Key="DefaultCheckState" Value="0" />
+    </PageControl>
+    
+    <!-- 按钮控件-->
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_MessageAction_GetMessageActionValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

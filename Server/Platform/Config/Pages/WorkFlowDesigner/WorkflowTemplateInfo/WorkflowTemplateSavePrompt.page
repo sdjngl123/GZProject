@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowTemplateSavePrompt" IsCache="true">
+  <Settings Key="title" Value="WorkflowTemplateSavePrompt.Title"/>
+  <Settings Key="height" Value="210"/>
+  <Settings Key="width" Value="330"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowTemplateSavePrompt_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="SavePrompt_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SavePrompt_Content"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="SavePrompt_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SavePrompt_Content" ParentID="SavePrompt_LayoutContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="WorkflowTemplateSavePrompt.Text" />
+    </PageControl>
+    <!--DeleteObjectBtn-->
+    <PageControl ControlID="SavePrompt_Btn" ParentID="SavePrompt_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <!--<Settings Key="item2" >
+      <Settings Key="size" Value="100"/>
+      <Settings Key="childid" Value="SavePromptt_btnOK"/>
+    </Settings>-->
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="SavePrompt_btnSaveAs"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="SavePrompt_btnEmend"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="SavePrompt_btnCancel"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="SavePromptt_btnOK" ParentID="SavePrompt_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowTemplateSavePrompt_OK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="WorkflowTemplateSavePrompt.OK" />
+    </PageControl>
+    <PageControl ControlID="SavePrompt_btnSaveAs" ParentID="SavePrompt_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowTemplateSavePrompt_SaveAs(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="WorkflowTemplateSavePrompt.SaveAs" />
+    </PageControl>
+    <PageControl ControlID="SavePrompt_btnEmend" ParentID="SavePrompt_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowTemplateSavePrompt_Emend(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="WorkflowTemplateSavePrompt.Emend" />
+    </PageControl>
+    <PageControl ControlID="SavePrompt_btnCancel" ParentID="SavePrompt_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowTemplateSavePrompt_Cancel(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

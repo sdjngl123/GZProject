@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="[PAGENAME]">
+  <Settings Key="height" Value="[PAGEHEIGHT]"/>
+  <Settings Key="width" Value="[PAGEWIDTH]"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);[CREATESCRIPT]"/>
+  </PageHandlers>
+  <Settings Key="title" Value="[PAGENAME].[OBJTYPE]Header"/>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0px [HERIZONTALPADDING]px"/>
+      [INFOLAYOUT]
+    </PageControl>
+    [INFOCONTENT]
+  </PageControls>
+</root>

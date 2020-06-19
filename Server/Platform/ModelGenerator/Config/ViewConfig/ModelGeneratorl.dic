@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FomrTypeListView" IsWeb="true">
+    <Label Name="FomrTypeListViewHeader">
+      <LocalizedLabel LanguageRef="zhs">表单类型列表视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FomrTypeListView</LocalizedLabel>
+    </Label>
+    <Label Name="FomrTypeListViewCaption">
+      <LocalizedLabel LanguageRef="zhs">表单类型列表视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FomrTypeListView</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

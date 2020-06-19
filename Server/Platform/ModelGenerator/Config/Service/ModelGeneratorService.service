@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+    ServiceName="ModelGeneratorService"
+    ServiceAssembly="Hoteam.InforCenter.ModelGenerator.Service.dll"
+    ServiceClass="Hoteam.InforCenter.ModelGenerator.Service.ModelGeneratorService"
+    ContractAssembly="Hoteam.InforCenter.ModelGenerator.Service.dll"
+    ContractClass="Hoteam.InforCenter.ModelGenerator.Service.IModelGeneratorService"/>
+
+
+</root>

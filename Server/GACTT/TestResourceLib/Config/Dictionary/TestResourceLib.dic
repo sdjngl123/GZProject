@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Context Name="TestResourceLib" IsWeb="true">
+		<Label Name="SetSuccess">
+			<LocalizedLabel LanguageRef="zhs">设置成功</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">SetSuccess</LocalizedLabel>
+		</Label>
+		<Label Name="TestProject">
+			<LocalizedLabel LanguageRef="zhs">试验项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestProject</LocalizedLabel>
+		</Label>
+		<Label Name="KnowledgeType">
+			<LocalizedLabel LanguageRef="zhs">知识类型</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">KnowledgeType</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FAVORITETREEVIEWView" IsWeb="true">
+    <Label Name="FAVORITETREEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">收藏夹关系树视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites Relation Tree View</LocalizedLabel>
+    </Label>
+    <Label Name="FAVORITETREEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">收藏夹关系树视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites Relation Tree View</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="LIDHeader">
+      <LocalizedLabel LanguageRef="zhs">关系标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship identifier</LocalizedLabel>
+    </Label>
+    <Label Name="LIDCaption">
+      <LocalizedLabel LanguageRef="zhs">关系标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship identifier</LocalizedLabel>
+    </Label>
+    <Label Name="LSEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="LSEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="PEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">父对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">子对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Child object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="CEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">子对象标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Child object identifier</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--业务逻辑类-->
+	<PluginItem Name="TestKnowledge" Type="ObjectType" Assembly="Hoteam.InforCenter.TestResourceLib.Business" Class="Hoteam.InforCenter.TestResourceLib.Business.Object.TestKnowledge" />
+</root>

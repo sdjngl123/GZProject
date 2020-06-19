@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <WorkflowConditionItem Name="WorkflowParameter" TemplateType=""
+                        Assembly="Hoteam.InforCenter.Workflow.Extend" 
+                         Class="Hoteam.InforCenter.Workflow.Extend.FlowCondition.FlowParameterCondition"
+                         PageName="WorkflowParameterCondition"
+                         SetDataJSMethod=""
+                         InitDataJSMethod="InforCenter_Platform_WorkflowParameterCondition_InitData"
+                         />
+
+  <WorkflowConditionItem Name="WorkflowModel" TemplateType=""
+                        Assembly="Hoteam.InforCenter.Workflow.Extend"
+                         Class="Hoteam.InforCenter.Workflow.Extend.FlowCondition.FlowModelCondition"
+                         PageName="WorkflowModelCondition"
+                         SetDataJSMethod=""
+                         InitDataJSMethod="InforCenter_Platform_WorkflowModelCondition_InitData"
+                         />
+</root>

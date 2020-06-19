@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="EditListViewCtrl" IsWeb="true">
+    <Label Name="CuurentExportConfirmInfo">
+      <LocalizedLabel LanguageRef="zhs">确定导出选中内容？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to export the selected content?</LocalizedLabel>
+    </Label>
+    <Label Name="CuurentPrintConfirmInfo">
+      <LocalizedLabel LanguageRef="zhs">确定打印选中内容？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to print the selected content?</LocalizedLabel>
+    </Label>
+    <Label Name="PrintPopWinTitle">
+      <LocalizedLabel LanguageRef="zhs">打印窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Print Window</LocalizedLabel>
+    </Label>
+    <Label Name="AllExportConfirmInfo">
+      <LocalizedLabel LanguageRef="zhs">确定导出全部内容？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to export the entire content?</LocalizedLabel>
+    </Label>
+    <Label Name="AllPrintConfirmInfo">
+      <LocalizedLabel LanguageRef="zhs">确定打印全部内容？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to print everything?</LocalizedLabel>
+    </Label>
+    <Label Name="NoExportDataTitle">
+      <LocalizedLabel LanguageRef="zhs">无导出数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No Export Data</LocalizedLabel>
+    </Label>
+    <Label Name="NoExportDataContent">
+      <LocalizedLabel LanguageRef="zhs">无导出数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No Export Data</LocalizedLabel>
+    </Label>
+    <Label Name="NoPrintDataTitle">
+      <LocalizedLabel LanguageRef="zhs">无打印数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No Print Data</LocalizedLabel>
+    </Label>
+    <Label Name="NoPrintDataContent">
+      <LocalizedLabel LanguageRef="zhs">无打印数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No Print Data</LocalizedLabel>
+    </Label>
+    <Label Name="PrintText">
+      <LocalizedLabel LanguageRef="zhs">打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Print</LocalizedLabel>
+    </Label>
+    <Label Name="AllPrintText">
+      <LocalizedLabel LanguageRef="zhs">打印全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Print All</LocalizedLabel>
+    </Label>
+    <Label Name="PrintNumColTitle">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentExport">
+      <LocalizedLabel LanguageRef="zhs">导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export</LocalizedLabel>
+    </Label>
+    <Label Name="AllExport">
+      <LocalizedLabel LanguageRef="zhs">导出全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export All</LocalizedLabel>
+    </Label>
+    <Label Name="ExportMaxRowNumAlert">
+      <LocalizedLabel LanguageRef="zhs">提示：最大导出行数为{0}行，其余的信息将不会被导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tip: The maximum number of export lines is {0} line, and the rest of the information will not be exported</LocalizedLabel>
+    </Label>
+    <Label Name="PrintMaxRowNumAlert">
+      <LocalizedLabel LanguageRef="zhs">提示：最大打印行数为{0}行，其余的信息将不会被预览和打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tip: The maximum number of print lines is {0} line, and the rest of the information will not be preview and printed</LocalizedLabel>
+    </Label>
+    <Label Name="ExportPopTitle">
+      <LocalizedLabel LanguageRef="zhs">导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export</LocalizedLabel>
+    </Label>
+    <Label Name="ExportPopLinkStr">
+      <LocalizedLabel LanguageRef="zhs">点击下载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Click Download</LocalizedLabel>
+    </Label>
+    <Label Name="DownloadOKAlert">
+      <LocalizedLabel LanguageRef="zhs">下载成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download successfully</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

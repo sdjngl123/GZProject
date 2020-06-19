@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 对象类型-->  
+  <PluginItem Name="CompanyRule" Type="ObjectType" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.Model.CompanyRule" />
+  <PluginItem Name="CompanyRuleCondition" Type="ObjectType" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.Model.CompanyRuleCondition" />
+  <PluginItem Name="CompanyRulePermission" Type="ObjectType" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.Model.CompanyRulePermission" />
+  <PluginItem Name="CompanyRuleObjectType" Type="ObjectType" Assembly="Hoteam.InforCenter.CompanyRule.Business" Class="Hoteam.InforCenter.CompanyRule.Business.Model.CompanyRuleObjectType" />
+</root>

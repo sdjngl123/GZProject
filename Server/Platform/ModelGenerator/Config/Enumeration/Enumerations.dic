@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Enumerations" IsWeb="true">
+    <Label Name="TOFTrue">
+      <LocalizedLabel LanguageRef="zhs">是</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">True</LocalizedLabel>
+    </Label>
+    <Label Name="TOFFalse">
+      <LocalizedLabel LanguageRef="zhs">否</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">False</LocalizedLabel>
+    </Label>
+    <Label Name="InheritRegulateInnate">
+      <LocalizedLabel LanguageRef="zhs">固有</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Innate</LocalizedLabel>
+    </Label>
+    <Label Name="InheritRegulateInherit">
+      <LocalizedLabel LanguageRef="zhs">继承</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inherit</LocalizedLabel>
+    </Label>
+    <Label Name="InheritRegulateShow">
+      <LocalizedLabel LanguageRef="zhs">显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show</LocalizedLabel>
+    </Label>
+    <Label Name="InheritRegulateHidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hidden</LocalizedLabel>
+    </Label>
+    <Label Name="CustomFormTypeCREATE">
+      <LocalizedLabel LanguageRef="zhs">创建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="CustomFormTypeEDIT">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="CustomFormTypeVIEW">
+      <LocalizedLabel LanguageRef="zhs">浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

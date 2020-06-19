@@ -1,0 +1,637 @@
+﻿html, body
+{
+    overflow: hidden;
+}
+
+/*通用*/
+.text-right
+{
+    text-align: right;
+}
+.ui-btn > span, .ui-btn > .icon
+{
+    vertical-align: middle;
+}
+
+.ui-mobile
+{
+    position:relative;
+}
+
+@media screen and (orientation:portrait)
+{
+    .ui-mobile .ui-page
+    {
+        min-height: 100%;
+    }
+}
+@media screen and (orientation:landscape)
+{
+    .ui-mobile .ui-page
+    {
+        min-height: 100%;
+    }
+}
+
+
+@media (max-width:35em)
+{
+    .ui-table-reflow.ui-responsive tr
+    {
+        border-bottom:3px solid #EFEFEF;    
+    }    
+}
+
+.ui-panel
+{
+    width: 20em;
+}
+
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay, .ui-panel-animate.ui-panel-position-left.ui-panel-display-push
+{
+    -webkit-transform: translate3d(-20em,0,0);
+    transform: translate3d(-20em,0,0); 
+}
+
+.ui-btn > .icon:active
+{
+    /*transform: scale(0.9);
+    -webkit-transform: scale(0.9);*/
+}
+
+
+/*.ui-page */
+.ui-page-container
+{
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 2.6em;
+    bottom: 3.8em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.ui-page-container.ui-page-hasfilterable
+{
+    /*margin-top: -33px;*/
+}
+
+.ui-mobile .ui-page-container.ui-page-hasfilterable .ui-page-active
+{
+    overflow: hidden;
+}
+
+
+.ui-page-container .pagelistview-conatiner
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.ui-page-container.ui-page-hasfilterable .ui-filterable-inline
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.2em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.ui-page-container.ui-page-hasfilterable .pagelistview-conatiner
+{
+    position: absolute;
+    top: 3.2em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.ui-input-search input
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 2em;
+}
+
+
+.ui-mobile[data-role=page], .ui-page
+{
+    /*margin-top: -44px;*/
+}
+
+.ui-filterable-inline
+{
+    display: none;
+}
+
+.ui-filterable-inline .ui-block-6
+{
+    width: 55%;
+}
+
+.ui-filterable-inline .ui-block-4
+{
+    width: 45%;
+}
+
+/*.ui-filterable-inline .ui-input-search.ui-input-has-clear
+{
+   padding-right: 0;
+}*/
+
+.ui-page-theme-a .ui-listview .ui-btn:hover
+{
+    /*background-color: #E6E6E6;*/
+}
+
+/*
+ * ui-page listview-thumb
+ */
+.ui-listview > .ui-li-has-thumb > .ui-btn, .ui-listview > .ui-li-static.ui-li-has-thumb
+{
+    min-height: 3.5em;
+}
+.ui-listview > li h2
+{
+    font-size: 14px;
+}
+
+
+.ui-listview > .ui-li-has-thumb > .ui-btn, .ui-listview > .ui-li-static.ui-li-has-thumb
+{
+    padding-left: 3.25em;
+}
+
+.ui-listview > .ui-li-has-thumb > .ui-btn:hover
+{
+    /*background-color: #E6E6E6;*/
+}
+
+.ui-listview > .ui-li-static, .ui-li-has-thumb > .ui-btn
+{
+    padding-top: .35em;
+    padding-bottom: .05em;
+}
+
+.ui-li-has-thumb > .icon, .ui-li-has-thumb > .ui-btn > .icon
+{
+   /* position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 5em;
+    max-width: 5em;
+    width: 28px;
+    height: 28px;
+    padding-left: .5em;
+    padding-top: .8em;*/
+    
+    height: 1.8em;
+    width: 1.8em;
+    float:left;
+    margin-left:-2.5em;
+    margin-top:.5em;
+}
+
+.ui-li-has-thumb > .icon, .ui-li-has-thumb > .ui-btn > p
+{
+    color: #ABABAB;
+}
+
+.ui-listview > .ui-li-has-thumb > .ui-btn > .ui-controlgroup
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    margin: 0;
+}
+
+.ui-listview > .ui-li-has-thumb > .ui-btn > .ui-controlgroup > .ui-controlgroup-controls
+{
+    height: 100%;
+    padding-right: 1.5em;
+}
+
+.ui-listview > .ui-li-has-thumb > .ui-btn > .ui-controlgroup > .ui-controlgroup-controls > .ui-btn
+{
+    height: 1.3em;
+    padding-top: 1.2em;
+    padding-bottom: 1.3em; /* padding-left: 2.5em;     padding-right: 2.4em;*/
+    border-width: 0;
+    border-radius: 0;
+    background-color: inherit;
+}
+
+.ui-listview > .ui-li-has-thumb > .ui-btn > .ui-controlgroup > .ui-controlgroup-controls > .ui-btn:hover
+{
+    background-color: inherit;
+}
+
+.ui-listview .ui-controlgroup-controls .icon
+{
+    position: absolute;
+    display: block;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+/*.ui-input-has-clear
+{
+    padding-right: 0;
+}
+
+.ui-input-search.ui-input-has-clear .ui-btn.ui-input-clear, 
+.ui-input-text.ui-input-has-clear .ui-btn.ui-input-clear
+{
+    display:none;
+}
+*/
+.ui-input-has-icon
+{
+    padding-right: 2.375em;
+}
+
+
+
+/*
+ *  ui-collapsible
+ */
+.ui-collapsible > .ui-collapsible-heading > .ui-collapsible-heading-toggle > .ui-btn
+{
+    border: none;
+}
+
+
+.ui-content .ui-navbar-header > ul
+{
+    width: 100%;
+}
+
+
+.ui-navbar-header > ul > li, .ui-navbar-header .ui-grid-b > .ui-block-b
+{
+    float: right;
+    width: 7.5em;
+}
+
+.ui-navbar-header a.ui-btn-icon-left
+{
+    background-color: inherit;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ui-navbar-header a.ui-btn-icon-left:hover
+{
+    background: inherit;
+}
+
+.ui-navbar-header ul
+{
+    margin: 0;
+    padding-top: 2px;
+}
+
+.ui-navbar-header a.ui-btn-icon-left
+{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .2em 0 0 0;
+    color: #ffffff;
+}
+
+.ui-navbar-header a.ui-btn-icon-left > span
+{
+    color: #ffffff;
+    margin-left: .5em;
+    font-size:0.8em;
+}
+
+
+.ui-navbar-header .ui-link.ui-btn.ui-btn-icon-left:after
+{
+    content: normal;
+}
+
+.ui-footer
+{
+    min-height: 3.8em;
+    max-height: 3.8em;
+}
+
+.ui-footer > .ui-navbar > ul
+{
+    float: left;
+   /* width:100%;*/
+}
+
+.ui-footer > .ui-navbar > ul > li
+{
+    width: 8em;
+}
+
+#footer > .ui-navbar > ul > li
+{
+    width: 5em;
+}
+
+.ui-footer > .ui-navbar a.ui-btn
+{
+    border: none;
+    padding-top: 3.2em;
+    color: #ffffff;
+}
+
+
+.ui-footer > .ui-navbar a.ui-btn-icon-top > .icon
+{
+    position: absolute;
+    top: .4825em;
+    left: 50%;
+    margin-left: -14px;
+    width: 28px;
+    height: 28px;
+    z-index: 1000;
+}
+
+
+
+
+#slidenavlistview .ui-btn
+{
+    background-color: inherit;
+    color: #858585;
+}
+
+#slidenavlistview .ui-btn.ui-btn-active
+{
+    background-color: inherit;
+    color: #29ABE2;
+}
+
+#slidenavlistview .ui-btn > .icon
+{
+    fill: #858585;
+}
+
+
+#slidenavlistview .ui-btn.ui-btn-active > .icon, #slidenavlistview .ui-btn:active > .icon, #rightfooter.ui-footer-pad > .ui-navbar a.ui-btn-icon-top.ui-btn-active > .icon, #rightfooter.ui-footer-pad > .ui-navbar a.ui-btn-icon-top:active > .icon
+{
+    fill: #29ABE2;
+    stroke: none;
+}
+
+#listsearch-btns .ui-btn
+{
+    background-color: inherit;
+}
+
+#listsearch-btns .ui-btn > .icon
+{
+    opacity: .7;
+}
+
+#listsearch-btns .ui-btn.ui-btn-active > .icon
+{
+    opacity: 1;
+}
+
+
+/*
+*   image
+*/
+
+.ui-alt-icon.ui-icon-carat-r:after, .ui-alt-icon .ui-icon-carat-r:after
+{
+    background-image: url(Image/carat-r.svg);
+    height: 14px;
+    width: 16px;
+    margin-top: -8px;
+}
+
+.ui-btn-icon-right:after
+{
+    background-color: inherit;
+}
+
+.ui-icon-carat-d:after
+{
+    box-sizing: border-box;
+    border-top: 4px #cdcdcd solid;
+    border-radius: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+}
+
+.ui-icon-delete:after
+{
+    /*content: inherit;
+    background-color: inherit;
+    background: none;*/
+}
+
+/*
+ *  popup 
+ */
+.ui-popup
+{
+}
+.ui-popup .ui-listview .ui-controlgroup
+{
+    margin: 0;
+}
+
+.ui-popup .ui-listview > .ui-li-static
+{
+    padding: 0px;
+}
+
+
+.clickable-area
+{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #ffefef;
+}
+
+.clickable-area:focus
+{
+    outline: 0;
+}
+
+.ui-flipswitch,.ui-page-theme-a .ui-bar-inherit.ui-flipswitch
+{
+    background-color:#E6E6E6;
+    width: 3.875em;
+}
+
+.ui-flipswitch.ui-flipswitch-active,.ui-page-theme-a .ui-bar-inherit.ui-flipswitch.ui-flipswitch-active
+{
+    padding-left: 2em;
+    background-color:#3EAEFF;
+    width: 1.875em
+}
+/*
+.ui-flipswitch.ui-corner-all
+{
+    border-radius: 1em;
+}*/
+
+.ui-listview > li.ui-first-child, .ui-listview > li.ui-first-child > a.ui-btn
+{
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.ui-listview > li.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn
+{
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.ui-header
+{
+    border: none;
+    color: #ffffff;
+    height: 2.6em;
+    line-height: 2.6em;
+}
+
+.ui-title.confirmtitle
+{
+    color:#333333;
+}
+
+.ui-header .icon
+{
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: .3em;
+}
+
+
+.ui-li-divider, .ui-listview > .ui-li-divider, th.ui-bar-a
+{
+    background-color: #FAFAFC;
+    color: #2D2D2F;
+    border-left: none;
+}
+
+.full .ui-page-container
+{
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+
+/*PAD*/
+
+.ui-footer-pad
+{
+    /*max-height: 5em;     height: 5em;*/
+    background-color: #FFFFFF;
+}
+
+.ui-footer-pad .icon
+{
+    fill: #B2B2B2;
+}
+
+#content.pad
+{
+    width: 70%;
+    position:absolute;
+    right: 0;
+    top: 2.6em;
+    bottom: 3.8em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: none;
+}
+
+#mobilePage.full .ui-footer-pad, #mobilePage.full #rightheader
+{
+    display: none;
+}
+
+.ui-footer-pad.ui-footer > .ui-navbar a.ui-btn
+{
+    /*padding-top: 5em;*/
+    color: #4B4B4B;
+}
+
+.ui-footer-pad.ui-footer > .ui-navbar a.ui-btn.ui-btn-active
+{
+    background-color: inherit;
+}
+
+#footer.ui-footer-pad > .ui-navbar a.ui-btn-icon-top > .icon
+{
+    /* top: 1.5em;*/
+}
+
+#rightfooter.ui-footer-pad > .ui-navbar a.ui-btn-icon-top > .icon
+{
+    width: 3em;
+    height: 2.5em;
+    margin-left: -1.5em;
+    fill: #858585;
+}
+
+#rightfooter.ui-footer-pad > .ui-navbar > ul > li
+{
+    max-width:14%;
+}
+
+
+
+/*Phone*/
+#mobilePage.full #header, #mobilePage.full #footer
+{
+    display: none;
+}
+
+
+html .ui-body-a .ui-bar-inherit.ui-header
+{
+    background-color: #ffffff;
+    border-bottom: #dddddd 1px solid;
+    color: #333333;
+}
+
+
+.ui-popup-screen.in
+{
+    background-color: black;
+}
+
+.ui-listview > li.ui-first-child, .ui-listview > li.ui-first-child > a.ui-btn
+{
+    border-top: none;
+}
+

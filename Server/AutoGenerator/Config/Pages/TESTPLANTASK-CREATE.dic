@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTPLANTASK-CREATE" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTHeader">
+      <LocalizedLabel LanguageRef="zhs">所属项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Project</LocalizedLabel>
+    </Label>
+    <Label Name="STAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">阶段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stage</LocalizedLabel>
+    </Label>
+    <Label Name="TESTREPRESENTATIVEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验代表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestRepresentative</LocalizedLabel>
+    </Label>
+    <Label Name="STARTSUBMITDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">提报需求开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StartSubmitDate</LocalizedLabel>
+    </Label>
+    <Label Name="ENDSUBMITDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">提报需求结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EndSubmitDate</LocalizedLabel>
+    </Label>
+    <Label Name="STARTINTEGRATIONDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">部门整合开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STARTINTEGRATIONDATE</LocalizedLabel>
+    </Label>
+    <Label Name="ENDINTEGRATIONDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">部门整合结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENDINTEGRATIONDATE</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPLANTASKHeader">
+      <LocalizedLabel LanguageRef="zhs">新建试验策划任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewTESTPLANTASK</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

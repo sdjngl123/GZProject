@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Registered/Js/Login/Login.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/Js/Registered.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/Js/RegisteredAudit.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/Js/CompanyVault.js"  group="Registered"/>
+
+  <CssFile FileName ="~/Registered/css/Login.css" group="Registered"/>
+</root>

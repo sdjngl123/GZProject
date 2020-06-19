@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ActionRuleParameter" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">参数设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Settings</LocalizedLabel>
+    </Label>
+    <Label Name="Parameter">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter</LocalizedLabel>
+    </Label>
+    <Label Name="Enable">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="Success">
+      <LocalizedLabel LanguageRef="zhs">保存成功!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save successfully!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

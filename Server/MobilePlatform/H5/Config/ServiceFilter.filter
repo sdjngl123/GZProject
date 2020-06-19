@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Filter Rule="*.*.SettingService.*" Call="[ServiceAddr]/MobilePlatformService/json/[3]" Authentication="true"/>
+  <Filter Rule="*.*.MobilePlatformService.*" Call="[ServiceAddr]/MobilePlatformService/json/[3]" Authentication="false"/>
+  <Filter Rule="*.*.SettingService.SavePersonalSetting" Call="[ServiceAddr]/MobilePlatformService/json/[3]" Authentication="false"/>
+</root>

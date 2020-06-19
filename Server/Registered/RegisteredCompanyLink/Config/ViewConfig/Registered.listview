@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <WebListView Name="ApplyCompanyManagerListView" View="REGISTEREDAPPLYCOMPANYLINKVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" QueryID="" IsShowSearch="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+   
+  <WebListView Name="UnAuditCompanyListView" View="REGISTEREACCEPTCOMPANYLINKVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" QueryID="" IsShowSearch="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+  <WebListView Name="AuditedCompanyListView" View="REGISTEREACCEPTCOMPANYLINKVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" QueryID="" IsShowSearch="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="CompanyFriendQueryListView" View="CompanyFriendQueryView" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" QueryID="" IsShowSearch="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+</root>

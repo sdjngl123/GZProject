@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="BusinessService">  
+  <Package Assembly ="Hoteam.InforCenter.Service.WCFInit"/>
+  <Package Assembly ="Hoteam.InforCenter.Service.Interface"/>
+</root >

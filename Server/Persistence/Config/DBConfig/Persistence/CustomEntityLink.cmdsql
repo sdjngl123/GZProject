@@ -1,0 +1,2145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <!--关系对象数据源模板-->
+  <!--单层全部 查找子数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINK_EO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        {LOOPCEUNIONS}
+        insert into #LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,str(LSEQUENCE,4) +right(LID,4) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" >
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        {LOOPCEUNIONS}
+        insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EO;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EO()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EO;
+        create TABLE [CURUSERID]_EO (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {LOOPCEUNIONS}
+        insert into [CURUSERID]_EO select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          {RELATEDSUBUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--多层全部 查找子数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINK_EA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+        {LOOPCEUNIONS}
+        select  B.LEVELID+1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH +str(LSEQUENCE,4) +right(LID,4) as LPATH
+        from {TABLENAME} ,LINKBOM B {CETABLE} where {TABLENAME}.PEID=B.QUERYID {CETABLEFILTER} [FILTER]
+        {LOOPCEUNIONE}
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID > [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        declare
+        lev int:=0;
+        begin
+        {TOPCEUNIONS}
+        insert into LINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH) values(0,[QUERYID],N'',1,N'');
+        --insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {CETABLE} where {CETABLEFILTER} {TABLENAME}.PEID =  [QUERYID];
+        {TOPCEUNIONE}
+        while(sql%rowcount>0) loop
+        begin
+        lev:=lev+1;
+        {LOOPCEUNIONS}
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID, {TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME} ,LINKBOMTABLE B {CETABLE} where  {TABLENAME}.PEID=B.QUERYID {CETABLEFILTER} and B.LEVELID = lev-1 [FILTER];
+        {LOOPCEUNIONE}
+        end;
+        end loop;
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" >
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EA();
+        create TABLE [CURUSERID]_EA() (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {TOPCEUNIONS}
+        insert into [CURUSERID]_EA() select 1 as LEVELID, {TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {CETABLE} where {CETABLEFILTER} A.PEID =  [QUERYID];
+        {TOPCEUNIONE}
+        while ROW_COUNT()>0 DO
+        set lev = lev+1;
+        {LOOPCEUNIONS}
+        insert into [CURUSERID]_EA() select  B.LEVELID+1 as LEVELID,{CETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from {TABLENAME} A,[CURUSERID]_EA() B {CETABLE} where A.PEID=B.QUERYID and B.LEVELID = lev {CETABLEFILTER}  [FILTER];
+        {LOOPCEUNIONE}
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_EA();
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_EA();
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_EA();
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,[{RELATEDCETABLE}.FIELDS] from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_EA();
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_EA();
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_EA();
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--单层全部 查找父数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINK_PO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        {LOOPPEUNIONS}
+        insert into #LINKBOMTABLE select 1 as LEVELID,{TABLENAME} .{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,str(LSEQUENCE,4) +right(LID,4) as LPATH from {TABLENAME}  {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,str(B.LSEQUENCE,4) +right(B.LID,4) as LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,str(B.LSEQUENCE,4) +right(B.LID,4) as LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        {LOOPPEUNIONS}
+        insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from  {TABLENAME}   {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,lpad(to_char(B.LSEQUENCE),4,'0') || substr(B.LID,length(B.LID)-3,4) as LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,lpad(to_char(B.LSEQUENCE),4,'0') || substr(B.LID,length(B.LID)-3,4) as LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_PO;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_PO()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_PO;
+        create TABLE [CURUSERID]_EA() (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {LOOPPEUNIONS}
+        insert into [CURUSERID]_PO select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length.LID)-3,4)) as LPATH from {TABLENAME}  {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          {RELATEDSUBUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--多层全部 查找父数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINK_PA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+        {LOOPPEUNIONS}
+        select  B.LEVELID+1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH +str(LSEQUENCE,4) +right(LID,4) as LPATH
+        from {TABLENAME} ,LINKBOM B {PETABLE} where {TABLENAME}.CEID=B.QUERYID {PETABLEFILTER}  [FILTER]
+        {LOOPPEUNIONE}
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID > [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete  from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        declare
+        lev int:=0;
+        begin
+        {TOPPEUNIONS}
+        --insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {PETABLE} where {PETABLEFILTER} {TABLENAME}.CEID =  [QUERYID];
+        insert into LINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH) values(0,[QUERYID],N'',1,N'');
+        {TOPPEUNIONE}
+        while(sql%rowcount>0) loop
+        begin
+        lev:=lev+1;
+        {LOOPPEUNIONS}
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from {TABLENAME} A,LINKBOMTABLE B {PETABLE} where A.CEID=B.QUERYID and B.LEVELID = lev-1 {PETABLEFILTER}  [FILTER];
+        {LOOPPEUNIONE}
+        end;
+        end loop;
+        delete from LINKBOMTABLE where LEVELID &lt;= [LEVELID];
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          [RELATEDORDERBY]
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_PA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_PA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_PA;
+        create TABLE [CURUSERID]_PA (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {TOPPEUNIONS}
+        insert into [CURUSERID]_PA select 1 as LEVELID, {TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {PETABLE} where {PETABLEFILTER}  {TABLENAME}.CEID =  [QUERYID];
+        {TOPPEUNIONE}
+        while ROW_COUNT()>0 DO
+        set lev = lev+1;
+        {LOOPPEUNIONS}
+        insert into [CURUSERID]_PA select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from {TABLENAME} A,[CURUSERID]_PA B {PETABLE} where A.CEID=B.QUERYID {PETABLEFILTER} and B.LEVELID = lev  [FILTER];
+        {LOOPPEUNIONE}
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,[{RELATEDCETABLE}.FIELDS] from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,[{RELATEDSUBTABLE}.FIELDS] from [CURUSERID]_PA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          [RELATEDORDERBY];
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--单层分页 查找子数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKLIMIT_EO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        {LOOPCEUNIONS}
+        insert into #LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,str(LSEQUENCE,4) +right(LID,4) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" >
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,str(B.LSEQUENCE,4) +right(B.LID,4) as LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,str(B.LSEQUENCE,4) +right(B.LID,4) as LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        {LOOPCEUNIONS}
+        insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,lpad(to_char(B.LSEQUENCE),4,'0') || substr(B.LID,length(B.LID)-3,4) as LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,lpad(to_char(B.LSEQUENCE),4,'0') || substr(B.LID,length(B.LID)-3,4) as LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EO;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EO()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EO;
+        create TABLE [CURUSERID]_EO (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {LOOPCEUNIONS}
+        insert into [CURUSERID]_EO select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="false">
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A;
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDSUBUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--多层分页 查找子数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKLIMIT_EA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+        {LOOPCEUNIONS}
+        select  B.LEVELID+1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH +str(LSEQUENCE,4) +right(LID,4) as LPATH
+        from {TABLENAME} ,LINKBOM B {CETABLE} where {TABLENAME}.PEID=B.QUERYID  {CETABLEFILTER} [FILTER]
+        {LOOPCEUNIONE}
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID > [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete  from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        declare
+        lev int:=0;
+        begin
+        {TOPCEUNIONS}
+        insert into LINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH) values(0,[QUERYID],N'',1,N'');
+        --insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {CETABLE} where {CETABLEFILTER} {TABLENAME}.PEID =  [QUERYID];
+        {TOPCEUNIONE}
+        while(sql%rowcount>0) loop
+        begin
+        lev:=lev+1;
+        {LOOPCEUNIONS}
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID,{CETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from {TABLENAME} A,LINKBOMTABLE B {CETABLE} where A.PEID=B.QUERYID {CETABLEFILTER} and B.LEVELID = lev-1 [FILTER];
+        {LOOPCEUNIONE}
+        end;
+        end loop;
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EA();
+        create TABLE [CURUSERID]_EA() (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {TOPCEUNIONS}
+        insert into [CURUSERID]_EA() select 1 as LEVELID, {TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {CETABLE} where {CETABLEFILTER} A.PEID =  [QUERYID];
+        {TOPCEUNIONE}
+        while ROW_COUNT()>0 DO
+        set lev = lev+1;
+        {LOOPCEUNIONS}
+        insert into [CURUSERID]_EA() select  B.LEVELID+1 as LEVELID,{CETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from {TABLENAME} A,[CURUSERID]_EA() B {CETABLE} where A.PEID=B.QUERYID and B.LEVELID = lev {CETABLEFILTER} [FILTER];
+        {LOOPCEUNIONE}
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="false">
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_EA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_EA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_EA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          rom [CURUSERID]_EA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_EA();
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,[{RELATEDCETABLE}.FIELDS] from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_EA();
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,[{RELATEDSUBTABLE}.FIELDS] from [CURUSERID]_EA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_EA();
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--单层分页 查找父数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKLIMIT_PO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        {LOOPPEUNIONS}
+        insert into #LINKBOMTABLE select 1 as LEVELID,{TABLENAME} .{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,str(LSEQUENCE,4) +right(LID,4) as LPATH from {TABLENAME}  {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,str(B.LSEQUENCE,4) +right(B.LID,4) as LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,str(B.LSEQUENCE,4) +right(B.LID,4) as LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        {LOOPPEUNIONS}
+        insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from  {TABLENAME}   {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} [RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,lpad(to_char(B.LSEQUENCE),4,'0') || substr(B.LID,length(B.LID)-3,4) as LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select 1 as LEVELID,B.LQUALITY as TOTALQTY,lpad(to_char(B.LSEQUENCE),4,'0') || substr(B.LID,length(B.LID)-3,4) as LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_PO;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_PO()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_PO;
+        create TABLE [CURUSERID]_PO() (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {LOOPPEUNIONS}
+        insert into [CURUSERID]_PO select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length.LID)-3,4)) as LPATH from {TABLENAME}  {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="false">
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from [CURUSERID]_PO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A;
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDSUBUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_EA A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--多层分页 查找父数据-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKLIMIT_PA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+        {LOOPPEUNIONS}
+        select  B.LEVELID+1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH +str(LSEQUENCE,4) +right(LID,4) as LPATH
+        from {TABLENAME} ,LINKBOM B {PETABLE} where {TABLENAME}.CEID=B.QUERYID {PETABLEFILTER} [FILTER]
+        {LOOPPEUNIONE}
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID > [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select *,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete  from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        declare
+        lev int:=0;
+        begin
+        {TOPPEUNIONS}
+        insert into LINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH) values(0,[QUERYID],N'',1,N'');
+        --insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {PETABLE} where {PETABLEFILTER} {TABLENAME}.CEID =  [QUERYID];
+        {TOPPEUNIONE}
+        while(sql%rowcount>0) loop
+        begin
+        lev:=lev+1;
+        {LOOPPEUNIONS}
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from {TABLENAME} A,LINKBOMTABLE B {PETABLE} where A.CEID=B.QUERYID {PETABLEFILTER} and B.LEVELID = lev-1 [FILTER];
+        {LOOPPEUNIONE}
+        end;
+        end loop;
+        delete from LINKBOMTABLE where LEVELID &lt;= [LEVELID];
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true">
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDPEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDCETABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select * from (select A.*,row_number() over([RELATEDORDERBY]) AS IDX from (
+          {RELATEDSUBUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,A.LINKID AS LID,[{RELATEDSUBTABLE}.FIELDS]
+          from LINKBOMTABLE A,{RELATEDSUBTABLE} 
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_PA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_PA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_PA;
+        create TABLE [CURUSERID]_PA (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {TOPPEUNIONS}
+        insert into [CURUSERID]_PA select 1 as LEVELID, {TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {PETABLE} where {PETABLEFILTER}  {TABLENAME}.CEID =  [QUERYID];
+        {TOPPEUNIONE}
+        while ROW_COUNT()>0 DO
+        set lev = lev+1;
+        {LOOPPEUNIONS}
+        insert into [CURUSERID]_PA select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from {TABLENAME} A,[CURUSERID]_PA B {PETABLE} where A.CEID=B.QUERYID {PETABLEFILTER} and B.LEVELID = lev [FILTER];
+        {LOOPPEUNIONE}
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="false">
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsCount="false" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_PA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+        </CommandItem>
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select A.LEVELID,A.TOTALQTY,A.LPATH,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          SET @number = 0;
+          select * from (select A.*,@number:=@number+1 IDX from (
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,[{RELATEDCETABLE}.FIELDS] from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          {RELATEDCEUNIONS}
+          select LEVELID,TOTALQTY,LPATH,LINKID AS LID,[{RELATEDPETABLE}.FIELDS] from [CURUSERID]_PA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <!--单层个数 查找子个数-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKCOUNT_EO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        {LOOPCEUNIONS}
+        insert into #LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,str(LSEQUENCE,4) +right(LID,4) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" >
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        {LOOPCEUNIONS}
+        insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EO;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EO()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EO;
+        create TABLE [CURUSERID]_EO (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {LOOPCEUNIONS}
+        insert into [CURUSERID]_EO select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {CETABLE} Where 1=1 [FILTER] {CETABLEFILTER}
+        {LOOPCEUNIONE}
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A;
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_EO();
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A;
+          drop table [CURUSERID]_EO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EO;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--多层个数 查找子个数-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKCOUNT_EA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+        {LOOPCEUNIONS}
+        select  B.LEVELID+1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH +str(LSEQUENCE,4) +right(LID,4) as LPATH
+        from {TABLENAME} ,LINKBOM B {CETABLE} where {TABLENAME}.PEID=B.QUERYID {CETABLEFILTER}  [FILTER]
+        {LOOPCEUNIONE}
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID > [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete  from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        declare
+        lev int:=0;
+        begin
+        {TOPCEUNIONS}
+        insert into LINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH) values(0,[QUERYID],N'',1,N'');
+        --insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {CETABLE} where {CETABLEFILTER} {TABLENAME}.PEID =  [QUERYID];
+        {TOPCEUNIONE}
+        while(sql%rowcount>0) loop
+        begin
+        lev:=lev+1;
+        {LOOPCEUNIONS}
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID,{CETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from {TABLENAME} A,LINKBOMTABLE B {CETABLE} where A.PEID=B.QUERYID {CETABLEFILTER} and B.LEVELID = lev-1  [FILTER];
+        {LOOPCEUNIONE}
+        end;
+        end loop;
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_EA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_EA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_EA;
+        create TABLE [CURUSERID]_EA (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {TOPCEUNIONS}
+        insert into [CURUSERID]_EA select 1 as LEVELID, {TABLENAME}.{CETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {CETABLE} where {CETABLEFILTER} A.PEID =  [QUERYID];
+        {TOPCEUNIONE}
+        while ROW_COUNT()>0 DO
+        set lev = lev+1;
+        {LOOPCEUNIONS}
+        insert into [CURUSERID]_EA select  B.LEVELID+1 as LEVELID,{CETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from {TABLENAME} A,[CURUSERID]_EA B {CETABLE} where A.PEID=B.QUERYID and B.LEVELID = lev {CETABLEFILTER} [FILTER];
+        {LOOPCEUNIONE}
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL QUERYENTITYLINK_EA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_EA;
+         drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL QUERYENTITYLINK_EA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_EA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_EA;
+         drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL QUERYENTITYLINK_EA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          rom [CURUSERID]_EA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_EA;
+         drop PROCEDURE [CURUSERID]QUERYENTITYLINK_EA;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--单层个数 查找父个数-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKCOUNT_PO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="false">
+          if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="false">
+          Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="false">
+          {LOOPPEUNIONS}
+          insert into #LINKBOMTABLE select 1 as LEVELID,{TABLENAME} .{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,str(LSEQUENCE,4) +right(LID,4) as LPATH from {TABLENAME}  {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+          {LOOPPEUNIONE}
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true">
+          <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+            select count(1) from (
+            {RELATEDPEUNIONS}
+            select A.LID
+            from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+            where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+            {RELATEDPEUNIONE}
+            ) A
+          </CommandItem>
+          <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+            select count(1) from (
+            {RELATEDCEUNIONS}
+            select A.LID
+            from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+            where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+            {RELATEDCEUNIONE}
+            ) A
+          </CommandItem>
+          <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+            select count(1) from (
+            {RELATEDSUBUNIONS}
+            select A.LID
+            from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+            where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+            {RELATEDSUBUNIONE}
+            ) A
+          </CommandItem>
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        {LOOPPEUNIONS}
+        insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from  {TABLENAME}   {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} [RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_PO;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_PO()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_PO;
+        create TABLE [CURUSERID]_PO (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {LOOPPEUNIONS}
+        insert into [CURUSERID]_PO select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length.LID)-3,4)) as LPATH from {TABLENAME}  {PETABLE}  Where 1=1 [FILTER] {PETABLEFILTER}
+        {LOOPPEUNIONE}
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A;
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.LID
+          from [CURUSERID]_PO A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where A.QUERYID = {RELATEDTABLENAME}.{RELATEDRELATED} and {RELATEDTABLENAME}.CEID={RELATEDPETABLE}.{RELATEDCETABLERELATED} [RELATEDFILTER] [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_PO();
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.LID
+          from [CURUSERID]_PO A,{RELATEDSUBTABLE}
+          where [RELATEDFILTER] A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A;
+          drop table [CURUSERID]_PO;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PO;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--多层个数 查找父个数-->
+  <Command Name="SQLTEMPLATE_RELTEDQUERYENTITYLINKCOUNT_PA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if object_id('tempdb..#LINKBOMTABLE') is Not null drop table #LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Create Table #LINKBOMTABLE(LEVELID int, QUERYID nvarchar(100), LINKID nvarchar(100), TOTALQTY float, LPATH nvarchar(max))
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        with LINKBOM as
+        (
+        select 0 as LEVELID,cast([QUERYID] as nvarchar(100)) as QUERYID,cast(N'' as nvarchar(100)) as LINKID,cast(1 as float) as TOTALQTY, cast(N'' as nvarchar(4000)) as LPATH
+        union all
+        {LOOPPEUNIONS}
+        select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,LID as LINKID,B.TOTALQTY*LQUALITY as TOTALQTY, B.LPATH +str(LSEQUENCE,4) +right(LID,4)  as LPATH
+        from {TABLENAME} ,LINKBOM B {PETABLE} where {TABLENAME}.CEID=B.QUERYID {PETABLEFILTER} [FILTER]
+        {LOOPPEUNIONE}
+        )
+        insert into #LINKBOMTABLE select * from LINKBOM where LEVELID > [LEVELID]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from #LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete  from LINKBOMTABLE
+      </CommandItem>
+      <CommandItem CmdType="EXEC" IsQuery="false">
+        declare
+        lev int:=0;
+        begin
+        {TOPPEUNIONS}
+        insert into LINKBOMTABLE(LEVELID,QUERYID,LINKID,TOTALQTY,LPATH) values(0,[QUERYID],N'',1,N'');
+        --insert into LINKBOMTABLE select 1 as LEVELID,{TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  lpad(to_char(LSEQUENCE),4,'0') || substr(LID,length(LID)-3,4) as LPATH from {TABLENAME}  {PETABLE} where {PETABLEFILTER} {TABLENAME}.CEID =  [QUERYID];
+        {TOPPEUNIONE}
+        while(sql%rowcount>0) loop
+        begin
+        lev:=lev+1;
+        {LOOPPEUNIONS}
+        insert into LINKBOMTABLE select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, B.LPATH || lpad(to_char(A.LSEQUENCE),4,'0') || substr(A.LID,length(A.LID)-3,4) as LPATH from {TABLENAME} A,LINKBOMTABLE B {PETABLE} where A.CEID=B.QUERYID {PETABLEFILTER} and B.LEVELID = lev-1 [FILTER];
+        {LOOPPEUNIONE}
+        end;
+        end loop;
+        delete from LINKBOMTABLE where LEVELID &lt;= [LEVELID];
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          select count(1) from (
+          {RELATEDPEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDPEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDTABLENAME}.{RELATEDRELATED} AND {RELATEDTABLENAME}.CEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          select count(1) from (
+          {RELATEDSUBUNIONS}
+          select A.QUERYID
+          from LINKBOMTABLE A,{RELATEDSUBTABLE}
+          where 1=1 [RELATEDFILTER] AND A.QUERYID={RELATEDSUBTABLE}.{RELATEDRELATED} [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDSUBUNIONE}
+          ) A
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        drop PROCEDURE if EXISTS [CURUSERID]QUERYENTITYLINK_PA;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        create PROCEDURE [CURUSERID]QUERYENTITYLINK_PA()
+        BEGIN
+        DECLARE lev INT;
+        set lev = 0;
+
+        drop table if exists [CURUSERID]_PA;
+        create TABLE [CURUSERID]_PA (LEVELID int, QUERYID varchar(100), LINKID varchar(100), TOTALQTY float, LPATH varchar(21640))ENGINE=MEMORY;
+        {TOPPEUNIONS}
+        insert into [CURUSERID]_PA select 1 as LEVELID, {TABLENAME}.{PETABLERELATED} as QUERYID,LID as LINKID,LQUALITY as TOTALQTY,  concat(lpad(LSEQUENCE,4,'0'), substr(LID,length(LID)-3,4)) as LPATH from {TABLENAME}  {PETABLE} where {PETABLEFILTER}  {TABLENAME}.CEID =  [QUERYID];
+        {TOPPEUNIONE}
+        while ROW_COUNT()>0 DO
+        set lev = lev+1;
+        {LOOPPEUNIONS}
+        insert into [CURUSERID]_PA select  B.LEVELID+1 as LEVELID,{PETABLERELATED} as QUERYID,A.LID as LINKID,B.TOTALQTY*A.LQUALITY as TOTALQTY, concat(B.LPATH , lpad(A.LSEQUENCE,4,'0') , substr(A.LID,length(A.LID)-3,4)) as LPATH from {TABLENAME} A,[CURUSERID]_PA B {PETABLE} where A.CEID=B.QUERYID {PETABLEFILTER} and B.LEVELID = lev  [FILTER];
+        {LOOPPEUNIONE}
+        end while;
+        END;
+      </CommandItem>
+      <CommandItem CmdType="SQL">
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeParent">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDPETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDPETABLE}.{RELATEDPETABLERELATED} [{RELATEDPETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="LinkTypeChild">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_PA A, {RELATEDTABLENAME} ,{RELATEDCETABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDPETABLE}.{RELATEDRELATED} and {RELATEDTABLENAME}.PEID={RELATEDCETABLE}.{RELATEDCETABLERELATED} [{RELATEDCETABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+        <CommandItem CmdType="SQL" IsQuery="true" Switch="EntityType">
+          CALL [CURUSERID]QUERYENTITYLINK_PA();
+          select count(1) from (
+          {RELATEDCEUNIONS}
+          select A.QUERYID
+          from [CURUSERID]_PA A, {RELATEDSUBTABLE}
+          where [RELATEDFILTER] AND A.QUERYID = {RELATEDSUBTABLE}.{RELATEDRELATED}  [{RELATEDSUBTABLE}.RELATEDENTITYFILTER]
+          {RELATEDCEUNIONE}
+          ) A;
+          drop table [CURUSERID]_PA;
+          drop PROCEDURE [CURUSERID]QUERYENTITYLINK_PA;
+        </CommandItem>
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

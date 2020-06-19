@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NavigationItem Name="CommmonModules" IsHidden="false" Order="001">
+    <Image>p_system_management</Image>
+    <NavigationItem Name="Favorite" IsHidden="false" IsAddCustom="true" Order="011">
+      <PageName>TreeManagement</PageName>
+      <Image>p_favorites</Image>
+      <Para Name="ItemName" Value="FavoriteManagement" />
+    </NavigationItem>
+  </NavigationItem>
+</root>

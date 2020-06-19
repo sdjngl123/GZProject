@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MakePatchForm" IsWeb="true">
+    <Label Name="SaveFileName">
+      <LocalizedLabel LanguageRef="zhs">名称：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name:</LocalizedLabel>
+    </Label>
+    <Label Name="SavePath">
+      <LocalizedLabel LanguageRef="zhs">保存路径：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save Path:</LocalizedLabel>
+    </Label>
+    <Label Name="CreatePatch">
+      <LocalizedLabel LanguageRef="zhs">新建补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Patch</LocalizedLabel>
+    </Label>
+    <Label Name="OpenCurrentPatch">
+      <LocalizedLabel LanguageRef="zhs">打开已有补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open Existing Patche</LocalizedLabel>
+    </Label>
+    <Label Name="OpenProjectFile">
+      <LocalizedLabel LanguageRef="zhs">工程文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Engineering Document</LocalizedLabel>
+    </Label>
+    <Label Name="OpenPatchFile">
+      <LocalizedLabel LanguageRef="zhs">补丁文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch File</LocalizedLabel>
+    </Label>
+    <Label Name="SavePatchFile">
+      <LocalizedLabel LanguageRef="zhs">保存补丁工程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save the Patch File</LocalizedLabel>
+    </Label>
+    <Label Name="GerneratePatch">
+      <LocalizedLabel LanguageRef="zhs">生成补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Generate Patche</LocalizedLabel>
+    </Label>
+    <Label Name="Help">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="PatchProjectName">
+      <LocalizedLabel LanguageRef="zhs">补丁工程名称：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Name:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchSavePath">
+      <LocalizedLabel LanguageRef="zhs">工程存放路径：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Engineering Storage Path:</LocalizedLabel>
+    </Label>
+    <Label Name="Help">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="Help">
+      <LocalizedLabel LanguageRef="zhs">帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">补丁制作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Fabrication</LocalizedLabel>
+    </Label>
+    <Label Name="PatchBasicInfo">
+      <LocalizedLabel LanguageRef="zhs">基础信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic Information</LocalizedLabel>
+    </Label>
+    <Label Name="PatchLinkInfo">
+      <LocalizedLabel LanguageRef="zhs">补丁关系信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Relationship Information</LocalizedLabel>
+    </Label>
+    <Label Name="PatchAppInfo">
+      <LocalizedLabel LanguageRef="zhs">应用程序信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application Information</LocalizedLabel>
+    </Label>
+    <Label Name="ProductLine">
+      <LocalizedLabel LanguageRef="zhs">产品线:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Product Line:</LocalizedLabel>
+    </Label>
+    <Label Name="ProductSeries">
+      <LocalizedLabel LanguageRef="zhs">产品系列:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Product Series:</LocalizedLabel>
+    </Label>
+    <Label Name="Product">
+      <LocalizedLabel LanguageRef="zhs">产品:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Product:</LocalizedLabel>
+    </Label>
+    <Label Name="Project">
+      <LocalizedLabel LanguageRef="zhs">项目:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Project:</LocalizedLabel>
+    </Label>
+    <Label Name="Element">
+      <LocalizedLabel LanguageRef="zhs">组件:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component:</LocalizedLabel>
+    </Label>
+    <Label Name="DefectsCode">
+      <LocalizedLabel LanguageRef="zhs">缺陷编号:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Defect Number:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchType">
+      <LocalizedLabel LanguageRef="zhs">补丁类型:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Type:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchCategory">
+      <LocalizedLabel LanguageRef="zhs">补丁类别:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Category:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchID">
+      <LocalizedLabel LanguageRef="zhs">补丁标识:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch ID:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchCode">
+      <LocalizedLabel LanguageRef="zhs">补丁编号:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch No.:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchVersion">
+      <LocalizedLabel LanguageRef="zhs">补丁版本:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Version:</LocalizedLabel>
+    </Label>
+    <Label Name="PatchName">
+      <LocalizedLabel LanguageRef="zhs">补丁名称:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Name:</LocalizedLabel>
+    </Label>
+    <Label Name="Importance">
+      <LocalizedLabel LanguageRef="zhs">重要程度:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Severity:</LocalizedLabel>
+    </Label>
+    <Label Name="PublishDate">
+      <LocalizedLabel LanguageRef="zhs">发布时间:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Release Time:</LocalizedLabel>
+    </Label>
+    <Label Name="InitPatch">
+      <LocalizedLabel LanguageRef="zhs">是否模块初始补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module Initial Patch</LocalizedLabel>
+    </Label>
+    <Label Name="TestPoint">
+      <LocalizedLabel LanguageRef="zhs">测试要点:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Key Points of Test:</LocalizedLabel>
+    </Label>
+    <Label Name="QuestionSolve">
+      <LocalizedLabel LanguageRef="zhs">解决问题描述:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description of the Problem:</LocalizedLabel>
+    </Label>
+    <Label Name="EditFunction">
+      <LocalizedLabel LanguageRef="zhs">修改功能说明:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description of Modification Function:</LocalizedLabel>
+    </Label>
+    <Label Name="Operation">
+      <LocalizedLabel LanguageRef="zhs">使用操作说明:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Instructions for Use:</LocalizedLabel>
+    </Label>
+    <Label Name="Other">
+      <LocalizedLabel LanguageRef="zhs">其他注意事项:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Additional Considerations:</LocalizedLabel>
+    </Label>
+    <Label Name="BasicInfo">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">说明信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description Information</LocalizedLabel>
+    </Label>
+    <Label Name="PatchDependenceInfo">
+      <LocalizedLabel LanguageRef="zhs">补丁依赖关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Dependency</LocalizedLabel>
+    </Label>
+    <Label Name="SubordinateComponent">
+      <LocalizedLabel LanguageRef="zhs">所属组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component(s)</LocalizedLabel>
+    </Label>
+    <Label Name="Step">
+      <LocalizedLabel LanguageRef="zhs">执行步骤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Perform Step</LocalizedLabel>
+    </Label>
+    <Label Name="AddStep">
+      <LocalizedLabel LanguageRef="zhs">增加步骤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Step</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveStep">
+      <LocalizedLabel LanguageRef="zhs">删除步骤</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete Step</LocalizedLabel>
+    </Label>
+    <Label Name="StepUp">
+      <LocalizedLabel LanguageRef="zhs">步骤上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Step Up</LocalizedLabel>
+    </Label>
+    <Label Name="StepDown">
+      <LocalizedLabel LanguageRef="zhs">步骤下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Step Down</LocalizedLabel>
+    </Label>
+    <Label Name="ApplicationCtrl">
+      <LocalizedLabel LanguageRef="zhs">应用程序文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Application File</LocalizedLabel>
+    </Label>
+    <Label Name="TfsApplicationCtrl">
+      <LocalizedLabel LanguageRef="zhs">TFS程序文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TFS Application File</LocalizedLabel>
+    </Label>
+    <Label Name="CreateWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">创建Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="PauseWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">暂停Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="StartWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">启动Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="CloseWindowsServiceCtrl">
+      <LocalizedLabel LanguageRef="zhs">关闭Windows服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Turn off Windows Service</LocalizedLabel>
+    </Label>
+    <Label Name="AutoGeneratorCtrl">
+      <LocalizedLabel LanguageRef="zhs">自动生成页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically Generate Page</LocalizedLabel>
+    </Label>
+    <Label Name="FileReplaceCtrl">
+      <LocalizedLabel LanguageRef="zhs">文件覆盖</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File Overlay</LocalizedLabel>
+    </Label>
+    <Label Name="RestartIISCtrl">
+      <LocalizedLabel LanguageRef="zhs">重启IIS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Restart IIS</LocalizedLabel>
+    </Label>
+    <Label Name="StopIISCtrl">
+      <LocalizedLabel LanguageRef="zhs">停止IIS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop IIS</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateConfigFileCtrl">
+      <LocalizedLabel LanguageRef="zhs">Config文件更新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Config File Update</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateDatabaseSchemaCtrl">
+      <LocalizedLabel LanguageRef="zhs">更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    <Label Name="AutoGenerator">
+      <LocalizedLabel LanguageRef="zhs">自动生成页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatically Generate Page</LocalizedLabel>
+    </Label>
+    <Label Name="IISRstart">
+      <LocalizedLabel LanguageRef="zhs">重启IIS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Restart IIS</LocalizedLabel>
+    </Label>
+    <Label Name="IISStop">
+      <LocalizedLabel LanguageRef="zhs">暂停IIS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause IIS</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateDatabaseSchema">
+      <LocalizedLabel LanguageRef="zhs">更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Database Structure</LocalizedLabel>
+    </Label>
+    <Label Name="FileReplace">
+      <LocalizedLabel LanguageRef="zhs">文件覆盖</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File Overlay</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceName">
+      <LocalizedLabel LanguageRef="zhs">服务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Service Name</LocalizedLabel>
+    </Label>
+    <Label Name="Close">
+      <LocalizedLabel LanguageRef="zhs">关闭</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Shut down</LocalizedLabel>
+    </Label>
+    <Label Name="ProgramPath">
+      <LocalizedLabel LanguageRef="zhs">可执行程序路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executable Program Path</LocalizedLabel>
+    </Label>
+    <Label Name="Pause">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="Start">
+      <LocalizedLabel LanguageRef="zhs">启动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Up</LocalizedLabel>
+    </Label>
+    <Label Name="FileName">
+      <LocalizedLabel LanguageRef="zhs">文件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File name</LocalizedLabel>
+    </Label>
+    <Label Name="FileAction">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="ProgramName">
+      <LocalizedLabel LanguageRef="zhs">程序名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Program Name</LocalizedLabel>
+    </Label>
+    <Label Name="TitleServiceAlert">
+      <LocalizedLabel LanguageRef="zhs">请输入表头服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please input a header service</LocalizedLabel>
+    </Label>
+    <Label Name="SaveCompleate">
+      <LocalizedLabel LanguageRef="zhs">保存成功！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save successfully!</LocalizedLabel>
+    </Label>
+    <Label Name="GenerateCompleate">
+      <LocalizedLabel LanguageRef="zhs">生成成功！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create successfully!</LocalizedLabel>
+    </Label>
+    <Label Name="BasicEmpty">
+      <LocalizedLabel LanguageRef="zhs">基础信息页面 必填项存在为空的情况，请检查输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The basic information page is required to be null. Please check the input!</LocalizedLabel>
+    </Label>
+    <Label Name="ApplicationStepEmpty">
+      <LocalizedLabel LanguageRef="zhs">应用程序信息页面 执行步骤未添加，请检查输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The application information page execution step is not added, please check the input!</LocalizedLabel>
+    </Label>
+    <Label Name="ApplicationFileEmpty">
+      <LocalizedLabel LanguageRef="zhs">应用程序信息页面 未选中需要更新的组件，请检查是否已经选择需要更新的组件信息或者通过TFS变更集获取更新内容！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The application information page does not select the component that needs to be updated. Please check whether you have selected the component information that you want to update or not!</LocalizedLabel>
+    </Label>
+    <Label Name="FileNameExist">
+      <LocalizedLabel LanguageRef="zhs">保存的文件名已存在，是否覆盖？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The saved file name already exists. Do you want to overwrite it?</LocalizedLabel>
+    </Label>
+    <Label Name="PatchNoTfsFile">
+      <LocalizedLabel LanguageRef="zhs">当前变更集不存在任何文件！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Current tfs changeset has no file.</LocalizedLabel>
+    </Label>
+
+    <Label Name="SelectPatchError">
+      <LocalizedLabel LanguageRef="zhs">请选择有效的补丁包！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a valid patch!</LocalizedLabel>
+    </Label>
+    <Label Name="SelectProjectError">
+      <LocalizedLabel LanguageRef="zhs">请选择有效的补丁工程文件！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a valid patch project file!</LocalizedLabel>
+    </Label>
+    <Label Name="Information">
+      <LocalizedLabel LanguageRef="zhs">提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prompt</LocalizedLabel>
+    </Label>
+    <Label Name="OK">
+      <LocalizedLabel LanguageRef="zhs">确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OK</LocalizedLabel>
+    </Label>
+    <Label Name="Cancel">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+    <Label Name="project">
+      <LocalizedLabel LanguageRef="zhs">项目选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Project Selection</LocalizedLabel>
+    </Label>
+    <Label Name="product">
+      <LocalizedLabel LanguageRef="zhs">产品选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Product Selection</LocalizedLabel>
+    </Label>
+    <Label Name="element">
+      <LocalizedLabel LanguageRef="zhs">组件选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component Selection</LocalizedLabel>
+    </Label>
+    <Label Name="productSeries">
+      <LocalizedLabel LanguageRef="zhs">产品系列选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">productSeries</LocalizedLabel>
+    </Label>
+    <Label Name="CreatePatchSolution">
+      <LocalizedLabel LanguageRef="zhs">新建补丁方案</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Patch</LocalizedLabel>
+    </Label>
+    <Label Name="LinkPatch">
+      <LocalizedLabel LanguageRef="zhs">依赖补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Link Patch</LocalizedLabel>
+    </Label>
+    <Label Name="MergePatch">
+      <LocalizedLabel LanguageRef="zhs">合并补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Merge Patch</LocalizedLabel>
+    </Label>
+    <Label Name="MergeCheck">
+      <LocalizedLabel LanguageRef="zhs">补丁类型为合并补丁，合并补丁信息不能为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> Merge Patch Text can not be empty!</LocalizedLabel>
+    </Label>
+
+    <Label Name="PatchFileExist">
+      <LocalizedLabel LanguageRef="zhs">该补丁名称文件已存在，是否覆盖？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The patch file has exsit,do you want to over write?</LocalizedLabel>
+    </Label>
+    <Label Name="ProductorProjectSelect">
+      <LocalizedLabel LanguageRef="zhs">请选择产品或项目</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select product or project</LocalizedLabel>
+    </Label>
+    <Label Name="ProductSelect">
+      <LocalizedLabel LanguageRef="zhs">请选择择产品</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select product </LocalizedLabel>
+    </Label>
+    <Label Name="ProductSeriesSelect">
+      <LocalizedLabel LanguageRef="zhs">请选择产品系列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select ProductSeriesSelect </LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="PatchTfsSet" IsWeb="true">
+     <Label Name="element">
+      <LocalizedLabel LanguageRef="zhs">TFS帐号设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TFS Set</LocalizedLabel>
+    </Label>
+    <Label Name="EmptyUserSet">
+      <LocalizedLabel LanguageRef="zhs">TFS请先在TFS设置中完善帐号信息！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TFS Set Not Set</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

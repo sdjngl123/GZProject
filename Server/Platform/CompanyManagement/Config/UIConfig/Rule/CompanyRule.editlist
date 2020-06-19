@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EditListManagement Name="CompanyRuleConditionList" MenuName="CompanyRuleConditionMenu" RightMenuName=""  ListViewName="COMPANYRULECONDITIONLISTVIEW"  EditListTitleDataService="" EditListDataService="" >
+  </EditListManagement>
+
+  <EditListManagement Name="CompanyRulePermissionList" MenuName="CompanyRulePermissionMenu" RightMenuName=""  ListViewName="COMPANYRULEPERMISSIONLISTVIEW" 
+                      EditListTitleDataService="Hoteam.Rule.CompanyRuleService.GetCompanyRulePermissionTitle" 
+                      EditListDataService="Hoteam.Rule.CompanyRuleService.GetCompanyRulePermissionData" >
+  </EditListManagement>
+
+  <EditListManagement Name="CompanyObjectList" MenuName="CompanyRuleObjectMenu" RightMenuName=""  ListViewName="COMPANYRULEOBJECTLISTVIEW"
+                      EditListTitleDataService=""
+                      EditListDataService="" >
+  </EditListManagement>
+  <EditListManagement Name="CreateCompanyRulePermissionList" MenuName="CompanyRuleCreatePermissionMenu" RightMenuName=""  ListViewName="CREATECOMPANYRULEPERMISSIONLISTVIEW"
+                    EditListTitleDataService="Hoteam.Rule.CompanyRuleService.GetCreateActionRulePermissionTitle"
+                    EditListDataService="Hoteam.Rule.CompanyRuleService.GetCreateCompanyRulePermissionData" >
+  </EditListManagement>
+</root>

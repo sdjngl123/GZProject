@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ReportManagementShowPage">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ReportMangement_ReportManagementShowPage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top" ParentID="" TypeName="LayoutContainer">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Tab"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Tab" ParentID="Top" TypeName="Tabs">
+    </PageControl>
+
+  </PageControls>
+</root>
+

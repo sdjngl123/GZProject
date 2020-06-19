@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCircleState" IsWeb="true">
+    <Label Name="IncumbentHeader">
+      <LocalizedLabel LanguageRef="zhs">活动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Active</LocalizedLabel>
+    </Label>
+    <Label Name="IncumbentCaption">
+      <LocalizedLabel LanguageRef="zhs">活动用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The user of the activity</LocalizedLabel>
+    </Label>
+    <Label Name="DimissionHeader">
+      <LocalizedLabel LanguageRef="zhs">非活动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inactive</LocalizedLabel>
+    </Label>
+    <Label Name="DimissionCaption">
+      <LocalizedLabel LanguageRef="zhs">非活动用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inactive user</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

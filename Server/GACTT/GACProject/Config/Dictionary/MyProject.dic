@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="PMSProject" IsWeb="true">
+		<Label Name="MyProject">
+			<LocalizedLabel LanguageRef="zhs">我的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">My Project</LocalizedLabel>
+		</Label>
+		<Label Name="ResponseProject">
+			<LocalizedLabel LanguageRef="zhs">我负责的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Response Project</LocalizedLabel>
+		</Label>
+		<Label Name="ParticipateProject">
+			<LocalizedLabel LanguageRef="zhs">我参与的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Participate Project</LocalizedLabel>
+		</Label>
+		<Label Name="CompleteProject">
+			<LocalizedLabel LanguageRef="zhs">已结束的项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Complete Project</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

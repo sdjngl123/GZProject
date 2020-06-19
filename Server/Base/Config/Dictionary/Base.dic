@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="BaseService" IsWeb="true">
+    <Label Name="NuSuchConfigInfo">
+      <LocalizedLabel LanguageRef="zhs">找不到指定的配置信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Specified configuration information can not be found</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceFilterTransferError">
+      <LocalizedLabel LanguageRef="zhs">业务服务地址转换时发生了错误</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An error occurred during business service address transferring</LocalizedLabel>
+    </Label>
+    <Label Name="DataServiceError">
+      <LocalizedLabel LanguageRef="zhs">业务服务调用时发生了错误</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An error occurred during business service transferring </LocalizedLabel>
+    </Label>
+    <Label Name="GetDataServiceError">
+      <LocalizedLabel LanguageRef="zhs">业务服务调用时发生了错误,可能是操作超时或数据服务未启动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">An error occurred during business service transferring, possibly because the operation timed out or the data service was not started</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

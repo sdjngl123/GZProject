@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="HelpTreeQuery">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_HelpTreeQuery_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeDblClick" Script="InforCenter_Platform_HelpTreeQuery_OnNodeDblClick(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_HelpTreeQuery_OnNodeChange(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="HelpTreeQuery.Title"/>
+  <PageControls>
+    <!--一层-->
+    <PageControl ControlID="HelpTreeQuery_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+
+      <Settings Key="item1" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="SingleSelectContainer"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeViewMainPage_Container"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+    </PageControl>
+    <!--二层-->
+    <PageControl ControlID="SingleSelectContainer" ParentID="HelpTreeQuery_Container" TypeName="SelectedTip">
+    </PageControl>
+    
+    <PageControl ControlID="TreeViewMainPage_Container" ParentID="HelpTreeQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="TreeViewPage"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="TreeViewPage" ParentID="TreeViewMainPage_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TreeViewCtrl"/>
+    </PageControl>
+    
+    <PageControl ControlID="Btn_Container" ParentID="HelpTreeQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_HelpTreeQuery_OnOK(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

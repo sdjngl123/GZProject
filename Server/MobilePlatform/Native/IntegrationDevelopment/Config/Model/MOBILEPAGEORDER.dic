@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGEORDERModel" IsWeb="true">
+    <Label Name="MOBILEPAGEORDERHeader">
+      <LocalizedLabel LanguageRef="zhs">排序类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEORDERCaption">
+      <LocalizedLabel LanguageRef="zhs">排序类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Order</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="ORDERITEMHeader">
+      <LocalizedLabel LanguageRef="zhs">排序项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OrderItem</LocalizedLabel>
+    </Label>
+    <Label Name="ORDERITEMCaption">
+      <LocalizedLabel LanguageRef="zhs">排序项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OrderItem</LocalizedLabel>
+    </Label>
+    <Label Name="ORDERTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">排序类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OrderType</LocalizedLabel>
+    </Label>
+    <Label Name="ORDERTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">排序类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OrderType</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDHeader">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDCaption">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="TITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="TITLECaption">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

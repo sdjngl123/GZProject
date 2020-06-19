@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="RegisterDataBasePath_SQL" Value="D:\DataBasePath" ToClient="false" Description="用户注册组件启用时有效，只针对SQL Server，注册的数据库数据文件存放位置" />
+  <AppSet Key="RegisterDataBaseLogPath_SQL" Value="D:\DataBasePath" ToClient="false" Description="用户注册组件启用时有效，只针对SQL Server，注册的数据库日志文件存放位置" />
+
+  <AppSet Key="RegisterDataCreateTableSpace_Oracle" Value="false" ToClient="false" Description="用户注册生成数据库时，是否需要新建表空间，取值为true或false，只针对Oracle" />
+  <AppSet Key="RegisterDataCreateTableSpacePath_Oracle" Value="D:\DataBasePath" ToClient="false" Description="用户注册生成数据库时，新建表空间存放路径，只针对Oracle，配置项RegisterDataCreateTableSpace_Oracle为true时有效" />
+  <AppSet Key="RegisterDataCreateTableSpaceSize_Oracle" Value="200" ToClient="false" Description="用户注册生成数据库时，新建表空间大小，取值为整型，单位M，只针对Oracle，配置项RegisterDataCreateTableSpace_Oracle为true时有效" />
+
+  <AppSet Key="Register_SystemName" Value="中广核" ToClient="false" Description="审核时发送注册成功邮箱中的系统名称" />
+  <AppSet Key="LocalSoftwareConnect" Value="SQLSERVER" ToClient="false" Description="工厂端应用的连接字符串" />
+
+
+  <!--非ocx上传配置项-->
+  <AppSet Key="CommonUploadFileExtend" Value="txt,dwg,doc,docx,xls,xlsx,ppt,pptx,pdf,svl,gif,png,jpg,jpeg,bmp,svg,dwf,rar,zip,7z,avi,mp4,rm,rmvb,mkv,exe,wmv" ToClient="true" Description="上传文件后缀名扩展" />
+  <AppSet Key="OWADiscoverXml" Value="~\Registered\CommonUploadAndView\Config\discovery.xml" ToClient="false" />
+  <AppSet Key="OWAHmacKey" Value="Dbh1zG6OvhISvBNHqLDDWIF7Nvwdf2iTJEkv04sH8rTjzfiROd4WJunI0yP+Amd3K2MqMa4rphNYGTd1XzV8tA==" ToClient="false" />
+  <AppSet Key="RegisterSuccessMessage" Value="您已注册成功，管理员将于48小时内完成审核，审核结果会发送到注册邮箱。" ToClient="true" />
+
+</root>

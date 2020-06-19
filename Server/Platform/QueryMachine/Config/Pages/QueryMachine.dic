@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryMachine" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt; maximum length is 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enter a maximum length of 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="addViewBtn">
+      <LocalizedLabel LanguageRef="zhs">新建视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New view</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTModelHeader">
+      <LocalizedLabel LanguageRef="zhs">主模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Main model</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZATIONROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Permissions</LocalizedLabel>
+    </Label>
+    <Label Name="btnDelete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="btnSave">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="btnCreate">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">表格形式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form Type</LocalizedLabel>
+    </Label>
+    <Label Name="Up">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="Down">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="ODERNUMBER">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Serial number</LocalizedLabel>
+    </Label>
+    <Label Name="FIELDKEYHeader">
+      <LocalizedLabel LanguageRef="zhs">关键字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Key Field</LocalizedLabel>
+    </Label>
+    <Label Name="ROOTPOMRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt;maximum length is 100 &lt;/br&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="DataLinkModelHeader">
+      <LocalizedLabel LanguageRef="zhs">数据相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Correlation Model</LocalizedLabel>
+    </Label>
+    <Label Name="DataLinkModelRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度1000&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not allowed to be null! &lt;/br&gt; The maximum length is 1000 &lt;/br&gt;!</LocalizedLabel>
+    </Label>
+    <Label Name="FIELDKEYRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt;maximum length is 100 &lt;/br&gt; </LocalizedLabel>
+    </Label>
+    <Label Name="QueryRuleResultRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 100 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEBASEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">新建查询构建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New query build</LocalizedLabel>
+    </Label>
+    <Label Name="AddPOM">
+      <LocalizedLabel LanguageRef="zhs">添加模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Model</LocalizedLabel>
+    </Label>
+    <Label Name="RemovePOM">
+      <LocalizedLabel LanguageRef="zhs">移除模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove Model</LocalizedLabel>
+    </Label>
+    <Label Name="AddLink">
+      <LocalizedLabel LanguageRef="zhs">设置关联</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Setting Association</LocalizedLabel>
+    </Label>
+    <Label Name="POMTree">
+      <LocalizedLabel LanguageRef="zhs">模型属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelAttribute</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="QueryRole">
+      <LocalizedLabel LanguageRef="zhs">搜索规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QueryRole</LocalizedLabel>
+    </Label>
+    <Label Name="OperateType">
+      <LocalizedLabel LanguageRef="zhs">操作类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation type</LocalizedLabel>
+    </Label>
+    <Label Name="ColName">
+      <LocalizedLabel LanguageRef="zhs">字段名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field Name</LocalizedLabel>
+    </Label>
+    <Label Name="Condition">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="ResultValue">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="Attribute">
+      <LocalizedLabel LanguageRef="zhs">属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

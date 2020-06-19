@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="WorkflowClassify" MenuName="" PageLinksName=""
+             TreeViewName="WorkflowClassifyTreeView" ShowTreeQuery="false"
+            TreeChildDataService="" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="WORKFLOWCLASSIFYROOT" MenuName="WorkFlowTempateClassifyRootMenu" PageLinksName="WorkFlowTempateRootPageLink" />
+    <ObjectType Name="WORKFLOWCLASSIFY" MenuName="WorkFlowTempateClassifyMenu" PageLinksName="WorkFlowTempateManagerment" />
+  </TreeManagement>
+
+</root>

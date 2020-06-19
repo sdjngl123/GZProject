@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SystemSettings" IsWeb="true">
+    <Label Name="systemSettings">
+      <LocalizedLabel LanguageRef="zhs">公司设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System Settings</LocalizedLabel>
+    </Label>
+    <Label Name="personalSettings">
+      <LocalizedLabel LanguageRef="zhs">个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personal settings</LocalizedLabel>
+    </Label>
+    <Label Name="settingNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">设置名称已存在，请确认！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set name is already exists, please confirm!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

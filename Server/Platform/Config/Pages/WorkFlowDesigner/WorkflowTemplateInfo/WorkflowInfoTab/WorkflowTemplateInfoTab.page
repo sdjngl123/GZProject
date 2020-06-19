@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowTemplateInfoTab" IsCache="true">
+  <Settings Key="title" Value="WorkflowTemplateInfoTab.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowTemplateInfoTab_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="WorkflowInfo_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InfoTabs"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InfoTabs" ParentID="WorkflowInfo_Layout" TypeName="Tabs">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnBeforeToggle" Script="InforCenter_Platform_WorkflowTemplateInfoTab_OnBeforeToggle(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="showClosed" Value="false"/>
+      <Settings Key="theme" Value="SmartTabs"/>
+    </PageControl>
+  </PageControls>
+</root>

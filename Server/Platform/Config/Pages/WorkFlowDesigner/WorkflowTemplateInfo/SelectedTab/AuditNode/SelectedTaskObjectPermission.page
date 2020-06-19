@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedTaskObjectPermission" IsCache="true">
+    <Settings Key="height" Value="400"/>
+    <Settings Key="width" Value="630"/>
+    <Settings Key="title" Value="SelectedTaskObjectPermission.Title"/>
+    <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedTaskObjectPermission_OnCreate(pageEvent);"/>
+    </PageHandlers>
+    <PageControls>
+        <PageControl ControlID="SelectedTaskObjectPermission_Layout" ParentID="" TypeName="LayoutContainer">
+            <Settings Key="type" Value="vertical"/>
+            <Settings Key="padding" Value="0 8px 0 8px"/>
+            <Settings Key="item2" >
+                <Settings Key="size" Value="32"/>
+                <Settings Key="childid" Value="SelectedTaskObjectPermissionMenu"/>
+            </Settings>
+            <Settings Key="item1" >
+                <Settings Key="size" Value="100%"/>
+                <Settings Key="childid" Value="SelectedTaskObjectPermissionEditGrid"/>
+            </Settings>
+            <Settings Key="item3" >
+                <Settings Key="size" Value="60"/>
+                <Settings Key="childid" Value="Btn_Container"/>
+            </Settings>
+        </PageControl>
+        <!--菜单-->
+        <PageControl ControlID="SelectedTaskObjectPermissionMenu" ParentID="SelectedTaskObjectPermission_Layout" TypeName="Menu">
+            <Settings Key="item1" >
+                <Settings Key="textId" Value="Common.Create"/>
+                <Settings Key="value" Value="Create"/>
+                <Settings Key="icon" Value="p_add"/>
+                <Settings Key="js" Value="InforCenter_Platform_SelectedTaskObjectPermission_CreateMenu(ctrlEvent);"/>
+            </Settings>
+            <Settings Key="item2" >
+                <Settings Key="textId" Value="Common.Delete"/>
+                <Settings Key="value" Value="Delete"/>
+                <Settings Key="icon" Value="p_delete"/>
+                <Settings Key="js" Value="InforCenter_Platform_SelectedTaskObjectPermission_DeleteMenu(ctrlEvent);"/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="SelectedTaskObjectPermissionEditGrid" ParentID="SelectedTaskObjectPermission_Layout" TypeName="EditGrid">
+
+            <Settings Key="multiselect" Value="true" />
+        </PageControl>
+
+        <PageControl ControlID="Btn_Container" ParentID="SelectedTaskObjectPermission_Layout" TypeName="LayoutContainer">
+            <Settings Key="type" Value="horizontal"/>
+            <Settings Key="item1" Value="">
+                <Settings Key="size" Value="35%"/>
+                <Settings Key="childid" Value=""/>
+            </Settings>
+            <Settings Key="item2" Value="">
+                <Settings Key="size" Value="100"/>
+                <Settings Key="childid" Value="btnOK"/>
+            </Settings>
+            <Settings Key="item3" Value="">
+                <Settings Key="size" Value="30%"/>
+                <Settings Key="childid" Value=""/>
+            </Settings>
+            <Settings Key="item4" Value="">
+                <Settings Key="size" Value="100"/>
+                <Settings Key="childid" Value="btnCancel"/>
+            </Settings>
+            <Settings Key="item5" Value="">
+                <Settings Key="size" Value="35%"/>
+                <Settings Key="childid" Value=""/>
+            </Settings>
+        </PageControl>
+        <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+            <PageHandlers>
+                <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedTaskObjectPermission_OnOK(ctrlEvent);"/>
+            </PageHandlers>
+            <Settings Key="textId" Value="Common.OK" />
+        </PageControl>
+        <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+            <PageHandlers>
+                <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+            </PageHandlers>
+            <Settings Key="textId" Value="Common.Cancel" />
+        </PageControl>
+    </PageControls>
+</root>

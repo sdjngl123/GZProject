@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="VaultManageEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">文档柜管理编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document cabinet management edit window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">文档柜名称，用于标示该文档柜，用该名称可以获取文件柜信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the document cabinet is used to mark the cabinet, and the cabinet information can be obtained by using the name</LocalizedLabel>
+    </Label>
+    <Label Name="InnerIP">
+      <LocalizedLabel LanguageRef="zhs">内部访问地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Internal access address</LocalizedLabel>
+    </Label>
+    <Label Name="InnerIPDescription">
+      <LocalizedLabel LanguageRef="zhs">文件柜内部访问地址,即业务服务访问文件柜的地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The inside access address of the cabinet, that is the address of the business service access cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="InnerPort">
+      <LocalizedLabel LanguageRef="zhs">内部访问端口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Internal access port</LocalizedLabel>
+    </Label>
+    <Label Name="InnerPortDescription">
+      <LocalizedLabel LanguageRef="zhs">文件柜内部访问端口号，即业务服务访问文件柜的端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The internal access port number of the filing cabinet, that is the port number of the business service access cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="IP1">
+      <LocalizedLabel LanguageRef="zhs">IP地址1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address 1</LocalizedLabel>
+    </Label>
+    <Label Name="IP1Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址1，客户端访问文件服务IP地址，可以填写4个，系统会根据客户端网段从IP1依次匹配地址，如果匹配，以匹配的IP地址作为文件柜IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The IP address 1, the client access file service IP address, the client can fill in four IP adresses, the system sequentially matches the address from IP1 according to the network segment of the client, if it matches, the matching IP address is used as the IP address of the file cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="Port1">
+      <LocalizedLabel LanguageRef="zhs">端口1</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Port 1</LocalizedLabel>
+    </Label>
+    <Label Name="Port1Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址1对应文件服务的端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The port number of the file service corresponding to the IP address 1 </LocalizedLabel>
+    </Label>
+    <Label Name="IP2">
+      <LocalizedLabel LanguageRef="zhs">IP地址2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address 2</LocalizedLabel>
+    </Label>
+    <Label Name="IP2Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址2，客户端访问文件服务IP地址，可以填写4个，系统会根据客户端网段从IP1依次匹配地址，如果匹配，以匹配IP的地址作为文件柜IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The IP address 2, the client access file service IP address, the client can fill in four IP adresses, the system sequentially matches the address from IP1 according to the network segment of the client, if it matches, the address of the matching IP is used as the IP address of the file cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="Port2">
+      <LocalizedLabel LanguageRef="zhs">端口2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Port 2</LocalizedLabel>
+    </Label>
+    <Label Name="Port2Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址2对应文件服务的端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The port number of the file service corresponding to the IP address 2 </LocalizedLabel>
+    </Label>
+    <Label Name="IP3">
+      <LocalizedLabel LanguageRef="zhs">IP地址3</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address 3</LocalizedLabel>
+    </Label>
+    <Label Name="IP3Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址3，客户端访问文件服务IP地址，可以填写4个，系统会根据客户端网段从IP1依次匹配地址，如果匹配，以匹配IP的地址作为文件柜IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The IP address 3, the client access file service IP address, the client can fill in four IP adresses, the system sequentially matches the address from IP1according to the network segment of the client, if it matches, the address of the matching IP is used as the IP address of the file cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="Port3">
+      <LocalizedLabel LanguageRef="zhs">端口3</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Port 3</LocalizedLabel>
+    </Label>
+    <Label Name="Port3Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址3对应文件服务的端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The port number of the file service corresponding to the IP address 3 </LocalizedLabel>
+    </Label>
+    <Label Name="IP4">
+      <LocalizedLabel LanguageRef="zhs">IP地址4</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IP address 4</LocalizedLabel>
+    </Label>
+    <Label Name="IP4Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址4，客户端访问文件服务IP地址，可以填写4个，系统会根据客户端网段从IP1依次匹配地址，如果匹配，以匹配IP的地址作为文件柜IP地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The IP address 4, the client access file service IP address, the client can fill in four IP adresses, the system sequentially matches the address from IP1 according to the network segment of the client, if it matches, the address of the matching IP is used as the IP address of the file cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="Port4">
+      <LocalizedLabel LanguageRef="zhs">端口4</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Port 4</LocalizedLabel>
+    </Label>
+    <Label Name="Port4Description">
+      <LocalizedLabel LanguageRef="zhs">IP地址4对应文件服务的端口号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The port number of the file service corresponding to the IP address 4 </LocalizedLabel>
+    </Label>
+    <Label Name="Volumn">
+      <LocalizedLabel LanguageRef="zhs">卷</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Volume</LocalizedLabel>
+    </Label>
+    <Label Name="VolumnDescription">
+      <LocalizedLabel LanguageRef="zhs">文件柜卷标示，表明该文件柜所在的卷</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The file cabinet volume label indicates the volume in which the cabinet is located</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

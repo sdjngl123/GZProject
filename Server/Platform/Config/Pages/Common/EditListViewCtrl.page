@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="EditListViewCtrl" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="ListView_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="10"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListView-C"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="RightMenu_Container"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="RightMenu_Container" ParentID="ListView_Container" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RightMenu"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ListView-C" ParentID="ListView_Container" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="0px 4px 0px 4px"/>
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListView"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu"></PageControl>
+    <PageControl ControlID="ListView" ParentID="ListView_Container" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_EditListViewCtrl_GridData(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnBeforeEdit" Script="InforCenter_Platform_EditListViewCtrl_OnBeforeEdit(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnAfterEdit" Script="InforCenter_Platform_EditListViewCtrl_OnAfterEdit(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnColImageClick" Script="InforCenter_Platform_EditListViewCtrl_OnAfterEdit(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnRowDblClick" Script="InforCenter_Platform_EditListViewCtrl_OnRowDblClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnRowClick" Script="InforCenter_Platform_EditListViewCtrl_OnRowClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="addButton" >
+        <Settings Key="exportList" >
+          <Settings Key="js" Value="InforCenter_Platform_EditListViewCtrl_GridExport_Current(ctrlEvent);" />
+          <Settings Key="iconClass" Value="p_exportList" />
+          <Settings Key="textId" Value="ListViewCtrl.CurrentExport" />
+        </Settings>
+        <!--<Settings Key="allExportList" >
+          <Settings Key="js" Value="InforCenter_Platform_ListViewCtrl_GridExport_All(ctrlEvent);" />
+          <Settings Key="iconClass" Value="p_allExportList" />
+          <Settings Key="textId" Value="ListViewCtrl.AllExport" />
+        </Settings>-->
+      </Settings>
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="showExportAndPrintButton" Value="true" />
+    </PageControl>
+  </PageControls>
+</root>

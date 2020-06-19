@@ -1,0 +1,8 @@
+.ganttContainer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+.ganttContainer ::selection{
+    background-color: transparent;
+}

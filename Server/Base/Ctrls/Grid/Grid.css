@@ -1,0 +1,321 @@
+﻿.htgrid-edit-td input{
+    position:absolute;
+    top:-2px;
+    height:19px;
+    line-height:18px;
+}
+
+.htgrid-edit-td > select {
+    width: 100%;
+}
+
+.htgrid_col_button
+{
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: auto;
+}
+
+
+.htgrid_col_progress {
+    position:relative;
+    text-align:center;
+    height: 20px;
+    width: 100%;
+    line-height:20px;
+}
+.htgrid_col_progress div{
+    position:absolute;
+    height: 100%;  
+    z-index:2;
+}
+
+
+.htgrid_col_progress span{
+    z-index: 10;
+    position: relative;
+}
+
+.htgrid_col_thumbnail
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+}
+
+.htgrid_col_thumbnail>img
+{
+   width:auto;
+   height:auto;
+   max-height:100%;
+   max-width:100%;
+}
+
+.htgrid-drag-line {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    cursor:s-resize;
+    height:5px;
+}
+.htgrid-drag-moveline {
+    position:absolute;
+    height:5px;
+    background:#BCF5EA;
+    display:none;
+}
+.htgrid-drag-line:hover{
+    background:#eee;
+}
+.hoteam-grid-dialog
+{
+    position: absolute;
+    height: 360px;
+    width: 530px;
+    background: #fff;
+    z-index: 100000;
+    top: 50%;
+    left: 50%;
+    margin-left: -265px;
+    margin-top: -180px;
+    border-radius: 5px;
+}
+.hoteam-grid-d-title
+{
+    height:30px;
+    width:100%;
+    line-height:30px;
+    background-color:#0075c2;  
+    color:#fff;   
+    cursor:move;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.hoteam-grid-d-content
+{
+    height:325px;
+    width:100%;
+    padding: 0 6px;
+}
+.hoteam-grid-d-btns
+{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #E2E2E2;
+}
+.hoteam-grid-d-btns button
+{
+    position: relative;
+    top: 7px;
+    margin: 0 36px;
+    padding: 4px 28px;   
+}
+.hoteam-grid-tree
+{
+    height:285px;
+    overflow:auto;
+    padding: 5px 0px;
+}
+.hoteam-grid-tree-d
+{
+    display:inline-block;
+    float:right;
+}
+.hoteam-grid-tree-d span
+{
+    margin:0 36px;
+}
+.hoteam-grid-d-text
+{
+    float:left;
+    display:inline-block;
+    margin-left:8px;
+    height:100%;
+    line-height:35px;    
+}
+.hoteam-grid-d-close
+{
+    float: right;
+    display: inline-block;
+    margin-right: 8px;
+    top: 10px;
+    position: relative;
+    cursor:pointer;
+}
+.hoteam-page-btn
+{
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    margin: 0 0px 0 10px;
+    display:inline-block;
+}
+.htgrid-sort-asc
+{
+    background:url(baseCtrl.png) center no-repeat;
+    height:16px;
+    width:16px;
+    display:inline-block;
+    background-position:-32px -256px;
+}
+.htgrid-sort-desc
+{
+    background:url(baseCtrl.png) center no-repeat;
+    height:16px;
+    width:16px;
+    display:inline-block;
+    background-position:-48px -256px;
+}
+.hoteam-grid-overlay
+{
+    position: absolute;
+    background-color: #080505;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    top: 0;
+    left: 0;
+}
+.hoteam-grid-dialog .hoteam-grid-column-img
+{
+    height:16px;
+    width:16px;
+    display:none;
+}
+.hoteam-editgrid-autocomplete-text {
+    width:100%;       
+}
+/*.hoteam-grid-dialog li>a:hover .hoteam-grid-column-img
+{
+    display:inline-block;
+}*/
+.htgrid-tr-lineThrough td,.htgrid-tr-lineThrough td .hoteam-editgrid-textvalue *{
+    text-decoration:line-through;
+}
+
+/*本地查询--Start*/
+.hoteam-localsearch-dialog
+{
+    position: absolute;
+    width: 600px;
+    height: 485px;
+    background: #fff;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    border-radius: 5px;
+    margin-top: -256px;
+}
+.hoteam-localsearch-d-title
+{
+    height:30px;
+    width:100%;
+    line-height:30px;
+    background-color:#0075c2;  
+    color:#fff;   
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.hoteam-localsearch-d-content
+{
+    height:400px;
+    width:100%;
+}
+.hoteam-localsearch-d-btns
+{
+    height:50px;
+    width:100%;    
+    padding:10px;
+}
+.hoteam-localsearch-tree
+{
+    height:335px;
+    overflow:auto;
+}
+.hoteam-localsearch-tree-d
+{
+    display:inline-block;
+    float:right;
+}
+.hoteam-localsearch-d-text
+{
+    float:left;
+    display:inline-block;
+    margin-left:8px;
+    height:100%; 
+}
+.hoteam-localsearch-d-close
+{
+    float: right;
+    display: inline-block;
+    margin-right: 8px;
+    top: 6px;
+    position: relative;
+    cursor:pointer;
+}
+.hoteam-grid-extend-ul{
+    position: absolute;
+    z-index: 100000;
+    background: #fff;
+    border: 1px solid #eee;
+    display:none;
+}
+.hoteam-grid-extend-ul li{
+    padding:5px 10px;
+    cursor:pointer;
+}
+.hoteam-grid-extend-ul li .basesprite{
+    position:relative;
+    top:3px;
+}
+.hoteam-grid-extend-text {
+    margin-left:10px;
+    font-size:12px;
+}
+.hoteam-grid-extend-ul li:hover {
+    background:#eee;
+}
+.hoteam-grid-tree .button {
+    margin-top:-17px !important;
+}
+.hoteam-grid-node-text {
+    display: inline-block;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.hoteam-localsearch-title{cursor:move;}
+.hoteam-localsearch-split{color:#E1E1E1; width:100%;text-align:center;margin-top: 10px;}
+.hoteam-localsearch-center{text-align:center;}
+
+.viewnamecontainer{width:570px;height:30px;overflow:auto;margin:5px 0px 0px 30px;line-height:30px;}
+.localSearch-container{width:570px;height:370px;overflow:auto;margin:0 15px;}
+.localSearch-container-row{width:540px;height:30px;margin:5px 35px 0 15px;}
+.localSearch-container-row .field,
+.localSearch-container-row .condition,
+.localSearch-container-row .result,
+.localSearch-container-row .connect,
+.localSearch-container-row .add,
+.localSearch-container-row .subduct{ float:left;}
+
+.localSearch-container-row .field{width:115px;margin-right:10px;}
+.localSearch-container-row .condition{width:85px;margin-right:10px;}
+.localSearch-container-row .result{width:200px;margin-right:10px;height:26px;}
+.localSearch-container-row .connect{width:50px;margin-right:10px;}
+.localSearch-container-row .add,.localSearch-container-row .subduct{width:16px;height:16px;background:url(../../../Base/Css/cupertino/images/baseCtrl.png) no-repeat; margin-top:4px;cursor:pointer; }
+.localSearch-container-row .add{margin-right:10px;background-position: 0px -192px; }
+.localSearch-container-row .subduct{background-position: -16px -192px;}
+.localSearch-container-row .w100{width:100%;}
+.localSearch-container-row select{ height:26px;border: 1px solid #ccc;border-radius: 2px;}
+/*按钮*/
+.hoteam-localsearch-center .localsave{position:relative; width:100px;height:30px; text-align:center;}
+.hoteam-localsearch-center .localquery{position:relative;left:-80px; width:100px;height:30px; text-align:center;}
+.hoteam-localsearch-center .localcancel{position:relative;left:80px;width:100px;height:30px; text-align:center;}
+/*本地查询--End*/

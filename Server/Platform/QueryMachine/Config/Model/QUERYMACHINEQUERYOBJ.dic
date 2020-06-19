@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYMACHINEQUERYOBJModel" IsWeb="true">
+    <Label Name="QUERYMACHINEQUERYOBJHeader">
+      <LocalizedLabel LanguageRef="zhs">此对象用于显示默认视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This object is used to display the default view</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYMACHINEQUERYOBJCaption">
+      <LocalizedLabel LanguageRef="zhs">此对象用于显示默认视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This object is used to display the default view</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

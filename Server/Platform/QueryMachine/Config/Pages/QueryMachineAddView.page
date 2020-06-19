@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="QueryMachineAddView">
+  <Settings Key="title" Value="QueryMachineAddView.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_QueryMachineAddView_QueryPageLoadData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Name_Container"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ObjectType_Container"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="Name_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Name_label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Name_TextBox"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="Name_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Name_label" ParentID="Name_Container" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachineAddView.Query_label" />
+    </PageControl>
+    <PageControl ControlID="Name_Label_FieldFlag" ParentID="Name_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="Name_TextBox" ParentID="Name_Container" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="QueryMachineAddView.ENAMERegex" />
+    </PageControl>
+    <PageControl ControlID="Name_Container" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="Name_label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Name_TextBox"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="Name_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Name_label" ParentID="Name_Container" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="QueryMachineAddView.Query_label" />
+    </PageControl>
+    <PageControl ControlID="Name_Label_FieldFlag" ParentID="Name_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="Name_TextBox" ParentID="Name_Container" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="QueryMachineAddView.ENAMERegex" />
+    </PageControl>
+    
+  </PageControls>
+</root>

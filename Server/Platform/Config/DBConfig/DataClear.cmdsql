@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" > 
+  <Command Name="CLEARMESSAGE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DELETE FROM INSTANTMESSAGE WHERE CREATETIME &gt;=[CLEARMESSAGE_STARTTIME] AND CREATETIME &lt;=[CLEARMESSAGE_ENDTIME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="CLEARLOG">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DELETE FROM OPERATELOG WHERE CREATETIME &gt;=[CLEARLOG_STARTTIME] AND CREATETIME &lt;=[CLEARLOG_ENDTIME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

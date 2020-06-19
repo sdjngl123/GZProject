@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeManagementGuide" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">树配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleInfo">
+      <LocalizedLabel LanguageRef="zhs">模块信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module Information</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfo">
+      <LocalizedLabel LanguageRef="zhs">场景选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Scene selection</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoCaption">
+      <LocalizedLabel LanguageRef="zhs">请选择一种树模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a tree mode</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoStatic">
+      <LocalizedLabel LanguageRef="zhs">静态树模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Static tree mode</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoStaticCaption">
+      <LocalizedLabel LanguageRef="zhs">    树结构层次和深度固定，树节点类型由自定义确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree structure hierarchy and depth fixation, tree node type defined by custom</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoModel">
+      <LocalizedLabel LanguageRef="zhs">对象树模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object tree mode</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoModelCaption">
+      <LocalizedLabel LanguageRef="zhs">    树节点多数为业务对象节点，由主外键确定上下级关系，树层次不确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Most of the tree nodes are business object nodes, and the subordinate relation is determined by the main foreign key, and the tree hierarchy is not determined.</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoStaticDescription">
+      <LocalizedLabel LanguageRef="zhs">静态树节点多数情况下节点都是固定的，节点也是明确的，一般情况下不需要连接数据库
+例如：
+
+  -流程任务
+  |--我的流程任务
+  |--托管流程任务
+  |--转交流程任务
+  |--已评审流程任务
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The nodes are fixed in most cases in the static tree node, the nodes are clear, and the connection database is not required normally
+For example:
+-Process tasks
+--My process tasks
+--Managed process tasks
+—Referral process tasks
+--Review process task</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoModelDescription">
+      <LocalizedLabel LanguageRef="zhs">模型树上的节点由业务对象组成，父子关系由数据库主外键确定，树结构一般比较复杂
+例如：
+
+  -文件夹
+  |--零组件
+  | |--零组件
+  | |--图文档
+  |--图文档
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The nodes on the model tree consist of business objects, the parent-child relationship is determined by the main foreign key of the database, and the tree structure is generally complex
+For example:
+  -Folder
+  |--Components
+  | |--Components
+  | |--Figure documents
+  | |--Figure documents</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoLink">
+      <LocalizedLabel LanguageRef="zhs">关系树模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relational tree mode</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoLinkCaption">
+      <LocalizedLabel LanguageRef="zhs">    树节点为业务对象节点，由关系表确定上下级关系，树层次不确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The tree node is a business object node, and the subordinate relation is determined by the relation table, and the tree hierarchy is not determined.</LocalizedLabel>
+    </Label>
+    <Label Name="SceneInfoLinkDescription">
+      <LocalizedLabel LanguageRef="zhs">模型树上的节点由业务对象组成，父子关系由数据库关系表确定，树结构一般比较复杂，树节点上可能会存在相同对象
+例如：
+
+        -文件夹
+        |--零组件
+        | |--零组件
+        | |--图文档
+        |--图文档
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The nodes on the model tree consist of business objects, the parent-child relationship is determined by the database relation table, the tree structure is generally complex, and the same object may exist on the tree node
+For example:
+
+        -Folder
+        |--Components
+        | |--Components
+        | |--Figure documents
+        |--Figure documents</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeCtrl">
+      <LocalizedLabel LanguageRef="zhs">节点配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node configuration</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNode">
+      <LocalizedLabel LanguageRef="zhs">树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree node</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeRoot">
+      <LocalizedLabel LanguageRef="zhs">根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeMenuAndTab">
+      <LocalizedLabel LanguageRef="zhs">节点右键菜单和tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node right-click menu and tab page</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeMenu">
+      <LocalizedLabel LanguageRef="zhs">菜单：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu:</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeTab">
+      <LocalizedLabel LanguageRef="zhs">tab页：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab page:</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeNew">
+      <LocalizedLabel LanguageRef="zhs">新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="OtherConfig">
+      <LocalizedLabel LanguageRef="zhs">其他配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other configuration</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeOtherConfig">
+      <LocalizedLabel LanguageRef="zhs">树节点其他配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Other configurations of tree node </LocalizedLabel>
+    </Label>
+    <Label Name="ShowRoot">
+      <LocalizedLabel LanguageRef="zhs">是否显示根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display the root node</LocalizedLabel>
+    </Label>
+    <Label Name="ShowQuery">
+      <LocalizedLabel LanguageRef="zhs">是否显示树查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to display a tree query</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultMenu">
+      <LocalizedLabel LanguageRef="zhs">默认菜单：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default menu:</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultTab">
+      <LocalizedLabel LanguageRef="zhs">默认tab页：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default tab page:</LocalizedLabel>
+    </Label>
+    <Label Name="CreateStaticNode">
+      <LocalizedLabel LanguageRef="zhs">创建静态树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create static tree node</LocalizedLabel>
+    </Label>
+    <Label Name="CreateModelNode">
+      <LocalizedLabel LanguageRef="zhs">创建对象树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create object tree node</LocalizedLabel>
+    </Label>
+    <Label Name="CreateNode">
+      <LocalizedLabel LanguageRef="zhs">新建节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New node</LocalizedLabel>
+    </Label>
+    <Label Name="NodeNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">节点名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node name repeat</LocalizedLabel>
+    </Label>
+    <Label Name="CmbNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cannot be null</LocalizedLabel>
+    </Label>
+    <Label Name="SelectModel">
+      <LocalizedLabel LanguageRef="zhs">选择模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select model</LocalizedLabel>
+    </Label>
+    <Label Name="SelectModelError">
+      <LocalizedLabel LanguageRef="zhs">请选择一种模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select a mode</LocalizedLabel>
+    </Label>
+    <Label Name="SelectModelEmpty">
+      <LocalizedLabel LanguageRef="zhs">请选择模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please select model</LocalizedLabel>
+    </Label>
+    <Label Name="OldModelNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">原模型为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The original model is null</LocalizedLabel>
+    </Label>
+    <Label Name="NewModelNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">新模型为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The new model is null</LocalizedLabel>
+    </Label>
+    <Label Name="CustomerNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">模型名称为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The model name is null</LocalizedLabel>
+    </Label>
+    <Label Name="TreeNodeDataCtrl">
+      <LocalizedLabel LanguageRef="zhs">节点数据配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node data configuration</LocalizedLabel>
+    </Label>
+    <Label Name="SelectTreeView">
+      <LocalizedLabel LanguageRef="zhs">通过树视图获取数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Get data through a tree view</LocalizedLabel>
+    </Label>
+    <Label Name="SelectCustomer">
+      <LocalizedLabel LanguageRef="zhs">自定义WCF数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom WCF data source</LocalizedLabel>
+    </Label>
+    <Label Name="RootWCFService">
+      <LocalizedLabel LanguageRef="zhs">根节点服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root node service</LocalizedLabel>
+    </Label>
+    <Label Name="ChildWCFService">
+      <LocalizedLabel LanguageRef="zhs">下级节点服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate level node service</LocalizedLabel>
+    </Label>
+    <Label Name="QueryWCFService">
+      <LocalizedLabel LanguageRef="zhs">查询节点服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query node service</LocalizedLabel>
+    </Label>
+    <Label Name="AllQueryWCFService">
+      <LocalizedLabel LanguageRef="zhs">全部节点服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All node service</LocalizedLabel>
+    </Label>
+    <Label Name="ExistView">
+      <LocalizedLabel LanguageRef="zhs">已存在视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Views that are already exist</LocalizedLabel>
+    </Label>
+    <Label Name="ExistViewCaption">
+      <LocalizedLabel LanguageRef="zhs">选择一个系统中已经存在的视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select views that are already present in a system</LocalizedLabel>
+    </Label>
+    <Label Name="NewView">
+      <LocalizedLabel LanguageRef="zhs">新建视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New view</LocalizedLabel>
+    </Label>
+    <Label Name="NewViewCaption">
+      <LocalizedLabel LanguageRef="zhs">创建新的视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create a new view</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewName">
+      <LocalizedLabel LanguageRef="zhs">树视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree view name</LocalizedLabel>
+    </Label>
+    <Label Name="Icon">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="IsGenerateLinkObject">
+      <LocalizedLabel LanguageRef="zhs">是否生成关系对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to generate a relational object</LocalizedLabel>
+    </Label>
+    <Label Name="InputLinkName">
+      <LocalizedLabel LanguageRef="zhs">请输入关系对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter a relationship object name</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManagementComplete">
+      <LocalizedLabel LanguageRef="zhs">树管理模块生成完毕!生成新建、编辑、查询等页面，请点击“常用功能”中“自动生成页面”按钮；更新数据库结构表，请单击“常用功能”中“更新数据库结构”按钮；如果需要调整细节请到各个项管理页面维护。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The tree management module has been generated! Generate the pages of new, edit, query, and so on. Click the “Auto generate page” button in the “Common functions”. Update the database structure table, and click “Update database structure” button in the “Common functions”. If the details need to be adjusted, go to each item management page for maintenance.</LocalizedLabel>
+    </Label>
+    <Label Name="QueryID">
+      <LocalizedLabel LanguageRef="zhs">起始查询ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start query ID</LocalizedLabel>
+    </Label>
+    <Label Name="QueryIDDescription">
+      <LocalizedLabel LanguageRef="zhs">用于关系视图中起始查询ID，一般为关系对象的PEID或CEID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to start a query ID in a relational view, typically the PEID or CEID of a relational object</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

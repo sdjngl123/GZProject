@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTEXTORG-EDIT" IsWeb="true">
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="UNITHeader">
+      <LocalizedLabel LanguageRef="zhs">外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unit</LocalizedLabel>
+    </Label>
+    <Label Name="UNITRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="EXPIRATIONDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExpirationDate</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">联系人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ContactPerson</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTPERSONRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTDETAILSHeader">
+      <LocalizedLabel LanguageRef="zhs">联系方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ContactDetails</LocalizedLabel>
+    </Label>
+    <Label Name="CONTACTDETAILSRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Email</LocalizedLabel>
+    </Label>
+    <Label Name="EMAILRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="INTERFACEPERSONHeader">
+      <LocalizedLabel LanguageRef="zhs">院内接口人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InterfacePerson</LocalizedLabel>
+    </Label>
+    <Label Name="INTERFACEPERSONRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remark</LocalizedLabel>
+    </Label>
+    <Label Name="REMARKRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 500&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTEXTORGHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑外部试验单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditTESTEXTORG</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

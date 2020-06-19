@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="CompanyAuditState">
+    <EnumerationItem Name="AuditedPass" />
+    <EnumerationItem Name="AuditedUnPass" />
+    <EnumerationItem Name="Unaudited" />
+  </Enumeration>
+  <Enumeration Name="CompanyAcceptState">
+    <EnumerationItem Name="Agree" />
+    <EnumerationItem Name="Reject" />
+    <EnumerationItem Name="Unaudited" />
+  </Enumeration>
+  <Enumeration Name="CompanyExtendType">
+    <EnumerationItem Name="Extend" />
+    <EnumerationItem Name="Copy" />
+  </Enumeration>
+</root>

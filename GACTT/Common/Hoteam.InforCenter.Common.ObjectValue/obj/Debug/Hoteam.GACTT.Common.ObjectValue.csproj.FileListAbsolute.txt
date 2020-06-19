@@ -1,0 +1,5 @@
+E:\广汽试验\Source\Server\GACTT\Common\Bin\Hoteam.GACTT.Common.ObjectValue.dll
+E:\广汽试验\Source\Server\GACTT\Common\Bin\Hoteam.GACTT.Common.ObjectValue.pdb
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.ObjectValue\obj\Debug\Hoteam.GACTT.Common.ObjectValue.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.ObjectValue\obj\Debug\Hoteam.GACTT.Common.ObjectValue.dll
+E:\广汽试验\Source\GACTT\Common\Hoteam.InforCenter.Common.ObjectValue\obj\Debug\Hoteam.GACTT.Common.ObjectValue.pdb

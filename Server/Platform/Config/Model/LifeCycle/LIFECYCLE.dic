@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="LIFECYCLEModel" IsWeb="true">
+    <Label Name="LIFECYCLEHeader">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LIFECYCLE</LocalizedLabel>
+    </Label>
+    <Label Name="LIFECYCLECaption">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LIFECYCLE</LocalizedLabel>
+    </Label>
+    <Label Name="LIFECYCLEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">生命周期内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LIFECYCLEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="LIFECYCLEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">生命周期内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LIFECYCLEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESCRIPTION</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DESCRIPTION</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="INITSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">初始状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">INITSTATE</LocalizedLabel>
+    </Label>
+    <Label Name="INITSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">初始状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">INITSTATE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用/停用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENABLE</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用/停用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENABLE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

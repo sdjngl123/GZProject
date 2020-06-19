@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        html, body
+        {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            overflow: hidden;
+            background-color: transparent;
+        }
+        img
+        {
+            height: 100%;
+            width: 100%;
+            display:none;
+        }
+    </style>
+    <script type="text/javascript">
+        Flag_ReStart = "r";
+        Flag_Complete = "c";
+        Flag_Loading = "l";
+        Flag = Flag_Complete;
+        Loading = function () {
+
+            switch (Flag) {
+                case Flag_ReStart:
+                    break;
+                case Flag_Complete:
+                    var load = window.document.all.load;
+                    if (load) {
+                        Flag = Flag_Loading;
+                        load.style.display = "block";
+                        load.src = "../Base/Image/loading.gif";
+                    }
+                    break;
+                case Flag_Loading:
+                    Flag = Flag_ReStart;
+                    break;
+            }
+
+        }
+
+        Complete = function () {
+
+            switch (Flag) {
+                case Flag_ReStart:
+                    Flag = Flag_Loading;
+                    break;
+                case Flag_Complete:
+                    break;
+                case Flag_Loading:
+                    var load = window.document.all.load;
+                    if (load) {
+                        load.style.display = "none";
+                        Flag = Flag_Complete;
+                    }
+                    break;
+            }
+        }
+    </script>
+</head>
+<body id="dataLoadPointer">
+    <img id="load" alt="loading" src="" />
+</body>
+</html>

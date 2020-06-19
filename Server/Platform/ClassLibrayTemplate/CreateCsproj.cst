@@ -1,0 +1,98 @@
+<%-- 
+Name:
+Author: 
+Description: 生成类库项目模板
+--%>
+<%@ CodeTemplate Language="C#" TargetLanguage="Text" Src="" Inherits="" Debug="False" Description="Template description here." %>
+<%@ Property Name="NameSpace" Type="System.String" Default="" Optional="True" Category="Settings" Description="" %>
+<%@ Property Name="Guid" Type="System.String" Default="" Optional="True" Category="Settings" Description="" %>
+<%@ Property Name="RefData" Type="Hoteam.InforCenter.Developer.Interface.Forms.ListRefData" Default="" Optional="True" Category="Context" Description="" %>
+<%@ Property Name="ClassNames" Type="System.Array" Default="" Optional="True" Category="Settings" Description="" %>
+<%@ Property Name="SystemClassNames" Type="System.Array" Default="" Optional="True" Category="Settings" Description="" %>
+<%@ Assembly Name="Hoteam.InforCenter.Developer.Interface" %>
+<%@ Import Namespace="Hoteam.InforCenter.Developer.Interface.Forms" %>
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid><%=Guid%></ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace><%=NameSpace%></RootNamespace>
+    <AssemblyName><%=NameSpace%></AssemblyName>
+	<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+   <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.Data" />
+	<% foreach(string name in SystemClassNames){ %>
+       <Reference Include="<%=name%>" />
+	<%}%>
+    <Reference Include="System.Xml" />
+	<Reference Include="System.configuration"/>
+	<Reference Include="System.Xml.Linq"/>
+	<Reference Include="System.Data.DataSetExtensions"/>
+	<Reference Include="Microsoft.CSharp"/>
+  </ItemGroup>
+  <ItemGroup>
+   <% foreach(string name in ClassNames){ %>
+    <Compile Include="<%=name%>" />
+	<%}%>
+	<Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+   <% foreach(ReferenceData tempData in RefData.ReferenceData){ %>
+    <Reference Include="<%=GetClassLibName(tempData)%>">
+      <HintPath><%=GetClassLibPath(tempData)%></HintPath>
+      <Private>False</Private>
+    </Reference>
+	<%}%>
+  </ItemGroup>
+ 
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
+<script runat="template">
+
+</script>
+
+<script runat="template">
+
+public string GetClassLibName(Hoteam.InforCenter.Developer.Interface.Forms.ReferenceData refData){return ToUpper(refData.ClassLibName);}
+public string GetClassLibPath(Hoteam.InforCenter.Developer.Interface.Forms.ReferenceData refData){return ToUpper(refData.ClassLibPath);}
+
+public string ToUpper(String str)
+{
+	return str.Substring(0,1).ToUpper()+str.Substring(1);
+}
+public string ToLower(string str){
+	return str.Substring(0,1).ToLower()+str.Substring(1);
+}
+
+</script>

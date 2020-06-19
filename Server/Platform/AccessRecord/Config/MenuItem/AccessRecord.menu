@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="AccessRecordShowMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="OpenObjectInspector" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Open" Image="~/Platform/Image/Model/p_openfolder.png" ParentWebAtionName="" CtrlType="" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnOpen" SelectID="[Tree_Current_value1]" IsLoopExec="false" />
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Clear" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Clear" Image="p_delete" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="DELETE" />
+      <BusinessMethod Name="Hoteam.InforCenter.AccessRecordService.DeleteRecord" IsWCFService="true">
+        <Para Name="LOGID" Value="[Tree_Current_value2]" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="ShowDay" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Day" Image="p_day" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="DELETE" />
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Day" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowWeek" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Week" Image="p_weekly_show" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" />
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Week" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowMonth" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Month" Image="p_shown_month" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" />
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Month" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowAll" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.All" Image="p_show_all_history" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="All" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="AccessRecordTreeMenu" Type="Image" Issplit="false" IsTemplate="false">
+    <WebAction Name="ShowDay" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Day" Image="p_day" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Day" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowWeek" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Week" Image="p_weekly_show" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Week" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowMonth" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Month" Image="p_shown_month" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Month" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowAll" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.All" Image="p_show_all_history" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="All" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="AccessRecordMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="ClearSelect" MultiMenu="false" ModuleName="InforCenter" LabelName="ClearSelect" Image="p_remove_selected" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[LIST_LOGID]" SelectMode="MULTI" Action="DELETE" />
+      <BusinessMethod Name="Hoteam.InforCenter.AccessRecordService.DeleteRecord" IsWCFService="true">
+        <Para Name="LOGID" Value="[LIST_LOGID]" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="ClearAll" MultiMenu="false" ModuleName="InforCenter" LabelName="ClearAll" Image="p_Remove_all" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_NeedToDelete" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="Hoteam.InforCenter.AccessRecordService.DeleteAllRecord" IsWCFService="true" />
+    </WebAction>
+    <WebAction Name="ClearCustom" MultiMenu="false" ModuleName="InforCenter" LabelName="ClearCustom" Image="p_custom_clearance" ParentWebAtionName="" CtrlType="" RefreshType="UPDATELIST" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_NeedToDelete" IsLoopExec="false">
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <WebMethod PageName="DateTimeRangeSelect" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+    </WebAction>
+  </MenuItem>
+
+  <MenuItem Name="AccessRecordShowTreeRootMenu" Type="Image" Issplit="false" IsTemplate="false">
+    <WebAction Name="ShowDay" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Day" Image="p_day" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Day" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowWeek" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Week" Image="p_weekly_show" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Week" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowMonth" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.Month" Image="p_shown_month" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEPARENTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="Month" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ShowAll" MultiMenu="false" ModuleName="InforCenter" LabelName="AccessRecordMenu.All" Image="p_show_all_history" ParentWebAtionName="" CtrlType="" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="Hoteam_InforCenter_AccessRecord_OnShowModeChange" IsLoopExec="false">
+        <Para Name="Mode" Value="All" />
+        <Para Name="ShowType" Value="left" />
+        <Para Name="TREEID" Value="[TREEID]" />
+      </JSMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+</root>

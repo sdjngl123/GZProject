@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="INTERNALMAIL-CREATE">
+  <Settings Key="height" Value="358"/>
+  <Settings Key="width" Value="636"/>
+  <Settings Key="title" Value="INTERNALMAIL-CREATE.INTERNALMAILHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('INTERNALMAIL',para);{
+var o = pageEvent.o.GetControl('CREATEUID_Value');
+if(o.id!=''){
+o.SetText(data.CREATEUID_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('CREATETIME_Value');
+	if(c.id!=''){
+		c.SetText(data.CREATETIME_DisplayValue);
+	}
+}
+{
+var o = pageEvent.o.GetControl('UPDATEUID_Value');
+if(o.id!=''){
+o.SetText(data.UPDATEUID_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('UPDATETIME_Value');
+	if(c.id!=''){
+		c.SetText(data.UPDATETIME_DisplayValue);
+	}
+}
+
+{
+var o = pageEvent.o.GetControl('RECIVER_Value');
+if(o.id!=''){
+o.SetValue(data.RECIVER);
+o.SetText(data.RECIVER_DisplayValue);
+}}InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.RECIVER, 'RECIVER',false);
+{
+var o = pageEvent.o.GetControl('COPYTOUSER_Value');
+if(o.id!=''){
+o.SetValue(data.COPYTOUSER);
+o.SetText(data.COPYTOUSER_DisplayValue);
+}}InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.COPYTOUSER, 'COPYTOUSER',false);{
+	var c = pageEvent.o.GetControl('MTITLE_Value');
+	if(c.id!=''){
+		c.SetText(data.MTITLE);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.MTITLE, 'MTITLE',false);{
+	var c = pageEvent.o.GetControl('MCONTENT_Value');
+	if(c.id!=''){
+		c.SetText(data.MCONTENT);
+	}
+}
+InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.MCONTENT, 'MCONTENT',false);{
+	var o = pageEvent.o.GetControl('IMPORTANT_Value');
+	if(o.id!=''){
+		InforCenter_Platform_Object_SetEnumRadioValue(o,'IMPORTANT','INTERNALMAIL',false);
+		o.SetSelectByValue(data.IMPORTANT);
+	}
+}InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.IMPORTANT, 'IMPORTANT',false);
+{
+var o = pageEvent.o.GetControl('SECRETUSER_Value');
+if(o.id!=''){
+o.SetValue(data.SECRETUSER);
+o.SetText(data.SECRETUSER_DisplayValue);
+}}InforCenter_Platform_Object_CheckNotNullAndDisable(pageEvent,data.SECRETUSER, 'SECRETUSER',false); var functionName = 'InforCenter_INTERNALMAIL_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'INTERNALMAIL'};{
+var c = pageEvent.o.GetControl('RECIVER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.RECIVER = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('COPYTOUSER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.COPYTOUSER = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('MTITLE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.MTITLE = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('MCONTENT_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.MCONTENT = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('IMPORTANT_Value');
+if(c.Check() == false) bCheck = false;
+data.IMPORTANT = c.GetValue();
+}{
+var c = pageEvent.o.GetControl('SECRETUSER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.SECRETUSER = c.GetValue();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_INTERNALMAIL_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings><Settings Key="item4" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-4"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-5"/>
+</Settings><Settings Key="item6" Value="">
+  <Settings Key="size" Value="100"/>
+  <Settings Key="childid" Value="R-6"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-7"/>
+</Settings><Settings Key="item8" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-8"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="RECIVER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="RECIVER" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="RECIVER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="RECIVER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="RECIVER_Label" ParentID="RECIVER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.RECIVERHeader" />
+</PageControl><PageControl ControlID="RECIVER_Value" ParentID="RECIVER" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="COPYTOUSER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="COPYTOUSER" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="COPYTOUSER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="COPYTOUSER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="COPYTOUSER_Label" ParentID="COPYTOUSER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.COPYTOUSERHeader" />
+</PageControl><PageControl ControlID="COPYTOUSER_Value" ParentID="COPYTOUSER" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SECRETUSER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SECRETUSER" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SECRETUSER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SECRETUSER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SECRETUSER_Label" ParentID="SECRETUSER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.SECRETUSERHeader" />
+</PageControl><PageControl ControlID="SECRETUSER_Value" ParentID="SECRETUSER" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MTITLE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MTITLE" ParentID="R-4" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="MTITLE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MTITLE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MTITLE_Label" ParentID="MTITLE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.MTITLEHeader" />
+</PageControl><PageControl ControlID="MTITLE_Value" ParentID="MTITLE" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='INTERNALMAIL';ctrlEvent.infoName='MTITLE';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="INTERNALMAIL-CREATE.MTITLERegex" />
+</PageControl><PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="IMPORTANT"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="IMPORTANT" ParentID="R-5" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="IMPORTANT_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="IMPORTANT_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="IMPORTANT_Label" ParentID="IMPORTANT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.IMPORTANTHeader" />
+</PageControl><PageControl ControlID="IMPORTANT_Value" ParentID="IMPORTANT" TypeName="RadioList" >
+  <Settings Key="position" Value="horizontal" />
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="INTERNALMAIL-CREATE.IMPORTANTRegex" />
+</PageControl><PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MCONTENT"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MCONTENT" ParentID="R-6" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="MCONTENT_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="MCONTENT_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="MCONTENT_Label" ParentID="MCONTENT" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.MCONTENTHeader" />
+</PageControl><PageControl ControlID="MCONTENT_Value" ParentID="MCONTENT" TypeName="TextBox" >
+  <Settings Key="type" Value="textarea"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl><PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CREATEUID"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="CREATETIME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID" ParentID="R-7" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATEUID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATEUID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATEUID_Label" ParentID="CREATEUID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.CREATEUIDHeader" />
+</PageControl>    <PageControl ControlID="CREATEUID_Value" ParentID="CREATEUID" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl><PageControl ControlID="CREATETIME" ParentID="R-7" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CREATETIME_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CREATETIME_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="CREATETIME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CREATETIME_Label" ParentID="CREATETIME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.CREATETIMEHeader" />
+</PageControl><PageControl ControlID="CREATETIME_Label_FieldFlag" ParentID="CREATETIME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl>    <PageControl ControlID="CREATETIME_Value" ParentID="CREATETIME" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl><PageControl ControlID="R-8" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="UPDATEUID"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="UPDATETIME"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPDATEUID" ParentID="R-8" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="UPDATEUID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UPDATEUID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPDATEUID_Label" ParentID="UPDATEUID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.UPDATEUIDHeader" />
+</PageControl>    <PageControl ControlID="UPDATEUID_Value" ParentID="UPDATEUID" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl><PageControl ControlID="UPDATETIME" ParentID="R-8" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="UPDATETIME_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="UPDATETIME_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="UPDATETIME_Label" ParentID="UPDATETIME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="INTERNALMAIL-CREATE.UPDATETIMEHeader" />
+</PageControl>    <PageControl ControlID="UPDATETIME_Value" ParentID="UPDATETIME" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>  
+  </PageControls>
+</root>

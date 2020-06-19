@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="AuditCompanyManagerLinks">
+    <PageLink Name="UnAuditCompanyList" PageName="ListManagement" ActiveRefresh="true" >
+      <Para Name="ItemName" Value="UnAuditCompanyList"/>
+    </PageLink>
+    <PageLink Name="AuditedCompanyList" PageName="ListManagement" ActiveRefresh="true" >
+      <Para Name="ItemName" Value="AuditedCompanyList"/>
+    </PageLink>
+  </PageLinks>
+
+</root>

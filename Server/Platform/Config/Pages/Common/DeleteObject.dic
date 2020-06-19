@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DeleteObject" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">删除对话框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete the dialog box</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteObjectAll">
+      <LocalizedLabel LanguageRef="zhs">删除所有版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete all version</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteObjectCurrent">
+      <LocalizedLabel LanguageRef="zhs">删除当前版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete the current version</LocalizedLabel>
+    </Label>
+    <Label Name="Text">
+      <LocalizedLabel LanguageRef="zhs">您确定删除对象吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to delete the object?</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubObjMsg">
+      <LocalizedLabel LanguageRef="zhs">删除的对象存在下级，您确定删除对象吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted object has a subordinate. Are you sure to delete the object?</LocalizedLabel>
+    </Label>
+    <Label Name="ExistReferenceMsg">
+      <LocalizedLabel LanguageRef="zhs">删除的对象存在引用，您确定删除对象吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted object has a reference. Are you sure to delete the object?</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubObjAndReferenceMsg">
+      <LocalizedLabel LanguageRef="zhs">删除的对象存在下级和引用，您确定删除对象吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted object has subordinate and reference. Are you sure to delete the object?</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubObjectNotDeleteMsg">
+      <LocalizedLabel LanguageRef="zhs">删除的对象存在下级，不允许删除。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted object has a subordinate, it is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistReferenceNotDeleteMsg">
+      <LocalizedLabel LanguageRef="zhs">删除的对象存在引用，不允许删除。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted object has a reference, it is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistSubObjAndReferenceNotDeleteMsg">
+      <LocalizedLabel LanguageRef="zhs">删除的对象存在下级和引用，不允许删除。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted object has subordinate and reference, it is not allowed to be deleted.</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">删除失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete failed!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

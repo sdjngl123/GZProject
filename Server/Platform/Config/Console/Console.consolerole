@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Role RoleName="Administrators" Password="123" Active="true">
+    <DisplayName>管理员</DisplayName>
+    <ConfigPath>E:\广汽试验\Source\Server\Platform\Config\Console\Console.consolerole</ConfigPath>
+  </Role>
+  <Role RoleName="Customers" Password="123" Active="false">
+    <DisplayName>实施</DisplayName>
+    <ConfigPath>E:\广汽试验\Source\Server\Platform\Config\Console\Console.consolerole</ConfigPath>
+  </Role>
+  <Role RoleName="Developers" Password="123" Active="false">
+    <DisplayName>开发</DisplayName>
+    <ConfigPath>E:\广汽试验\Source\Server\Platform\Config\Console\Console.consolerole</ConfigPath>
+  </Role>
+</root>

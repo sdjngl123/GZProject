@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ShouAuditResult" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">评审结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Review Result</LocalizedLabel>
+    </Label>
+    <Label Name="ResultName">
+      <LocalizedLabel LanguageRef="zhs">结果名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result Name</LocalizedLabel>
+    </Label>
+    <Label Name="ParameterName">
+      <LocalizedLabel LanguageRef="zhs">参数名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Name</LocalizedLabel>
+    </Label>
+    <Label Name="ParaValue">
+      <LocalizedLabel LanguageRef="zhs">参数值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Value</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

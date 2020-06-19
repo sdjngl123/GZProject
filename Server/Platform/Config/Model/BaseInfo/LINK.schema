@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="LINK" Extend="" IsAbstract="true" IsMainConfig="false">
+    <Column Name="LID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="PEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="PETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="CEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="CETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="LSEQUENCE" DataType="INT" Required="true" DefaultValue="0" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="LQUALITY" DataType="FLOAT10_5" Required="true" DefaultValue="1" PrimaryKeyOrder="0" InheritRegulate="Innate" />
+    <Column Name="LSTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="LCREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="LCREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="LOWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="LOWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="LCOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PEUID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="CEUID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Index Name="LINK_INDEX1" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="LINK_INDEX2" Unique="false">
+      <Field Name="CEID" Order="ASC" />
+    </Index>
+  </Table>
+</root>

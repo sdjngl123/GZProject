@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkFlowAudit">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkFlowAudit_LoadPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="WorkFlowAudit_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="25"/>
+        <Settings Key="childid" Value="TaskResultContainer"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="TaskOpinionContainer"/>
+      </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="VerticalTabsCtrlPage"/>
+      </Settings>
+    </PageControl>
+    <!--菜单-->
+    <PageControl ControlID="MenuPageContainer" ParentID="WorkFlowAudit_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+
+    <!--任务属性-->
+
+    <PageControl ControlID="TaskResultContainer" ParentID="WorkFlowAudit_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="0 10px"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="TaskResult_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="TaskResult_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="TaskOpinionContainer" ParentID="WorkFlowAudit_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="padding" Value="0 10px"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="35"/>
+        <Settings Key="childid" Value="TaskOpinion_Label"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="TaskOpinion_Value"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="100"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="TaskResult_Label" ParentID="TaskResultContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="WorkFlowAudit.Result" />
+    </PageControl>
+    <PageControl ControlID="TaskResult_Value" ParentID="TaskResultContainer" TypeName="RadioList" >
+    </PageControl>
+    <PageControl ControlID="TaskOpinion_Label" ParentID="TaskOpinionContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="WorkFlowAudit.Opinion" />
+    </PageControl>
+    <PageControl ControlID="TaskOpinion_Value" ParentID="TaskOpinionContainer" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="regex" Value="^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="WorkFlowAudit.TaskOpinionRegex" />
+    </PageControl>
+    <!--纵向tab，包括附件、插件-->
+    <PageControl ControlID="VerticalTabsCtrlPage" ParentID="WorkFlowAudit_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="VerticalTabsCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

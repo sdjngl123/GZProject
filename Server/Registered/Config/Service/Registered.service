@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="RegisteredDataService"
+     ServiceAssembly="Hoteam.InforCenter.Registered.OrganizationDataService.dll"
+     ServiceClass="Hoteam.InforCenter.Registered.OrganizationDataService.OrganizationDataService"
+     ContractAssembly="Hoteam.InforCenter.Registered.OrganizationDataService.dll"
+     ContractClass="Hoteam.InforCenter.Registered.OrganizationDataService.IOrganizationDataService"/>
+</root>

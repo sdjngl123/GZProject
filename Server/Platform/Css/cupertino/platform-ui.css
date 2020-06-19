@@ -1,0 +1,158 @@
+.ClassicHomePageTop_Layout
+{
+    background-color: #0869AE;
+}
+
+.HoteamUI_SelectedTip_labName
+{
+    background: #D9EDF7;
+}
+.HoteamUI_SelectedTip_content
+{
+    background: #D9EDF7;
+}
+
+.HoteamUI_SelectedList_UL li.HoteamUI_SelectedList_UL_Selected
+{
+    background-color: #D9E5EF;
+}
+.WorkflowPlugin_HeaderLayout
+{
+    background-color:#D8EBF9;    
+}
+.LifeCyclePlugin_HeaderLayout
+{
+    background-color:#D8EBF9;    
+}
+.SmartHomePage_UserContainer
+{
+    color:White;
+    border-left: 1px solid #01767b;
+}
+
+.SmartHomePage_Message
+{
+    color:White;
+}
+.SmartHomePage_Message_Num
+{
+    background-color: red;
+}
+
+.SmartHomePage_User_ul
+{
+    background-color: #f8f8f8;
+}
+
+.SmartHomePage_User_ul li a
+{
+    color:#666;
+}
+.ClassicHomePage_MainPageWelcome
+{
+    color:#eee;
+}
+.PersonalSettingNote
+{
+    color: Red;
+}
+.PersonalSettingNote > .hoteam-label
+{
+    color: Red;
+}
+.HomePage_Collection li:hover
+{
+    background-color:#e2f2fc;
+    color:#4a88ca;
+}
+#leftNav .common p
+{
+    color: White;
+}
+#StartMenu
+{
+    background-color: #5F6164;
+}
+#StartMenu .content
+{
+    background-color: #F3F3F3;
+}
+#taskbartip
+{
+    background-color: #8C8F93;
+}
+#taskbartip div
+{
+    background-color:#8C8F93;
+}
+#StartMenu .leftcontent #logout
+{
+    color: White;
+    background-color: #A7AAAF;
+}
+#StartMenu .leftcontent #logout:hover
+{
+    background-color: #909296;
+}
+.Platform_Desktop_Plug
+{
+    background-color: #fff;
+}
+.hoteam-navigation-step-active .hoteam-navigation-step-text
+{
+    color:#337ab7;
+}
+.hoteam-navigation-step-active .hoteam-navigation-step-num
+{
+    color:#ffffff;
+}
+
+.login-center-loginBtn div
+{
+    color: #0869ae;
+    background-color: #fff;
+}
+.HomePage_Collection_Container
+{
+    border-left: 1px solid #007AD0;
+}
+.start {
+    background-image: url(cupertinoImages/smallLogo.png);
+}
+
+.hoteam-login-top-img
+{
+    background:url(cupertinoImages/loginTop.png) no-repeat center left;
+}
+.Login_Center>*
+{
+    background:url(cupertinoImages/login-center-shadow.png) repeat-x;
+}
+.login-center-item-selul li:hover
+{
+    background-color:#2782C3;
+}
+
+.hoteam-selectlist-top {
+    background-image: url(/base/css/cupertino/images/baseCtrl.png);
+}
+.hoteam-selectlist-down {
+    background-image: url(/base/css/cupertino/images/baseCtrl.png);
+}
+.classicHomePage_input {
+    background: #0869AE;
+}
+
+.hoteam-localsearch-d-title {
+    background-color: #0075c2;
+}
+
+.hoteam-grid-d-title {
+    background-color: #0075c2;
+}
+
+.Calendar .fc-event
+{
+    background-color:#0869AE !important;
+    border-color:#0869AE !important;
+}

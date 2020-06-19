@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuth" IsWeb="true">
+    <Label Name="SingleAuth">
+      <LocalizedLabel LanguageRef="zhs">单一认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleAuth</LocalizedLabel>
+    </Label>
+    <Label Name="CombinAuth">
+      <LocalizedLabel LanguageRef="zhs">组合认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CombinAuth</LocalizedLabel>
+    </Label>
+    <Label Name="MultiAuth">
+      <LocalizedLabel LanguageRef="zhs">多选认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MultiAuth</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

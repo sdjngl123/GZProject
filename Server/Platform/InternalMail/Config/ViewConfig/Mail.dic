@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="Favorite">
+      <LocalizedLabel LanguageRef="zhs">收藏夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVE">
+      <LocalizedLabel LanguageRef="zhs">收件箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inbox</LocalizedLabel>
+    </Label>
+    <Label Name="SEND">
+      <LocalizedLabel LanguageRef="zhs">发件箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Outbox</LocalizedLabel>
+    </Label>
+    <Label Name="DRAFTS">
+      <LocalizedLabel LanguageRef="zhs">草稿箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Draft</LocalizedLabel>
+    </Label>
+    <Label Name="DUSTBIN">
+      <LocalizedLabel LanguageRef="zhs">垃圾箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Garbage can</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEM">
+      <LocalizedLabel LanguageRef="zhs">系统邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System mail</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVECURRENTWEEK">
+      <LocalizedLabel LanguageRef="zhs">本周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This week</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVEPRETHREEWEEK">
+      <LocalizedLabel LanguageRef="zhs">前三周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The first three weeks</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVEEARLIER">
+      <LocalizedLabel LanguageRef="zhs">更早</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Earlier</LocalizedLabel>
+    </Label>
+    <Label Name="SENDCURRENTWEEK">
+      <LocalizedLabel LanguageRef="zhs">本周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This week</LocalizedLabel>
+    </Label>
+    <Label Name="SENDPRETHREEWEEK">
+      <LocalizedLabel LanguageRef="zhs">前三周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The first three weeks</LocalizedLabel>
+    </Label>
+    <Label Name="SENDEARLIER">
+      <LocalizedLabel LanguageRef="zhs">更早</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Earlier</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

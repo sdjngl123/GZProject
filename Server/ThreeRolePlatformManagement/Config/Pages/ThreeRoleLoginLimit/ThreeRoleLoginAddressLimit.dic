@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleLoginAddressLimit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">登录地址限制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Doamin</LocalizedLabel>
+    </Label>
+    <Label Name="IPAddressStart">
+      <LocalizedLabel LanguageRef="zhs">IP地址池起始</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IPAddressStart</LocalizedLabel>
+    </Label>
+    <Label Name="IPAddressStartRegex">
+      <LocalizedLabel LanguageRef="zhs">最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Max length Is 100</LocalizedLabel>
+    </Label>
+    <Label Name="IPAddressEnd">
+      <LocalizedLabel LanguageRef="zhs">IP地址池结束</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IPAddressEnd</LocalizedLabel>
+    </Label>
+    <Label Name="IPAddressEndRegex">
+      <LocalizedLabel LanguageRef="zhs">最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Max length Is 100</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

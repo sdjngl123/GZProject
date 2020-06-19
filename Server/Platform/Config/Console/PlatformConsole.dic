@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Console" IsWeb="false">
+    <Label Name="IsTemplate">
+      <LocalizedLabel LanguageRef="zhs">是否是模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsTemplateDescription">
+      <LocalizedLabel LanguageRef="zhs">标示是不是通用模板，在可以按照模板添加的节点上单击右键，选择“根据模板添加”，如果是模板，会在弹出的页面中显示模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the mark is a generic template or not, right-click the node that can be added according to the template, select “Add from template”, and if it is a template, the template will be displayed in the pop-up page</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateDescription">
+      <LocalizedLabel LanguageRef="zhs">模板描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template description</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateDescriptionDescription">
+      <LocalizedLabel LanguageRef="zhs">模板详细说明，将在模板选择列表中显示，供选择模板使用。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A detailed description of the template will be displayed in the template selection list for use by the selection template.</LocalizedLabel>
+    </Label>
+    <Label Name="TempLateAdd">
+      <LocalizedLabel LanguageRef="zhs">根据模板添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add From template</LocalizedLabel>
+    </Label>
+    <Label Name="ListConfigGuide">
+      <LocalizedLabel LanguageRef="zhs">列表配置向导</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Configuration Wizard</LocalizedLabel>
+    </Label>
+    <Label Name="SuspensionMenuField">
+      <LocalizedLabel LanguageRef="zhs">悬浮菜单所在列名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the column in which the suspension menu is located</LocalizedLabel>
+    </Label>
+    <Label Name="FileExtensionField">
+      <LocalizedLabel LanguageRef="zhs">文档后缀名字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document suffix name segment</LocalizedLabel>
+    </Label>
+    <Label Name="IsMainConfig">
+      <LocalizedLabel LanguageRef="zhs">是否是主配置文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is the main configuration file or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsMainConfigDescription">
+      <LocalizedLabel LanguageRef="zhs">是否是主配置文件，用于配置项合并，配置信息以true为主</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the main configuration file is used for configuration item consolidation and configuration information is based on true</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPE">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessModel">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BusinessModel</LocalizedLabel>
+    </Label>
+    <Label Name="LifeState">
+      <LocalizedLabel LanguageRef="zhs">生命周期状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LifeState</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycle">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LifeCycle</LocalizedLabel>
+    </Label>
+    <Label Name="ViewManage">
+      <LocalizedLabel LanguageRef="zhs">查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ViewManage</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewManage">
+      <LocalizedLabel LanguageRef="zhs">列表视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListViewManage</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewManage">
+      <LocalizedLabel LanguageRef="zhs">树视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TreeViewManage</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItemManage">
+      <LocalizedLabel LanguageRef="zhs">菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MenuItemManage</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinkManage">
+      <LocalizedLabel LanguageRef="zhs">标签页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageLinkManage</LocalizedLabel>
+    </Label>
+    <Label Name="InfoSource">
+      <LocalizedLabel LanguageRef="zhs">数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoSource</LocalizedLabel>
+    </Label>
+    <Label Name="ListManage">
+      <LocalizedLabel LanguageRef="zhs">列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListManage</LocalizedLabel>
+    </Label>
+    <Label Name="EditListManage">
+      <LocalizedLabel LanguageRef="zhs">可编辑树列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditListManage</LocalizedLabel>
+    </Label>
+    <Label Name="TreeManage">
+      <LocalizedLabel LanguageRef="zhs">树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TreeManage</LocalizedLabel>
+    </Label>
+    <Label Name="NavigationManage">
+      <LocalizedLabel LanguageRef="zhs">导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NavigationManage</LocalizedLabel>
+    </Label>
+    <Label Name="ListQuery">
+      <LocalizedLabel LanguageRef="zhs">列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ListQuery</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQuery">
+      <LocalizedLabel LanguageRef="zhs">树查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TreeQuery</LocalizedLabel>
+    </Label>
+    <Label Name="Objinspector">
+      <LocalizedLabel LanguageRef="zhs">对象查看器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Objinspector</LocalizedLabel>
+    </Label>
+    <Label Name="AppsNode">
+      <LocalizedLabel LanguageRef="zhs">组件包</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AppsNode</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="DATABASEUSEINFO" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="DATABASEUSEINFO" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="DATABASETEMPLATENAME" Type="DefaultObjectValue" DataType="STRING100" Column="DATABASETEMPLATENAME" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="DATABASETYPE" Type="DefaultObjectValue" DataType="STRING100" Column="DATABASETYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="USECOUNT" Type="DefaultObjectValue" DataType="INT" Column="USECOUNT" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+  </EntityType>
+</root>

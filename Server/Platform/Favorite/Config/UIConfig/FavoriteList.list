@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListManagement Name="FavoriteList" MenuName="FavoriteMenu" ListRightMenuName="" ListViewName="FavoriteListView" SearchFields="" 
+                  QueryPageName="" ListTitleDataService=""  AllPageDataService="" DetailsIconField="IMPORTANTICON" InitParaJSMethod="" HideViewFilterPage="true"  >
+  </ListManagement>
+</root>

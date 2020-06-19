@@ -1,0 +1,10 @@
+﻿{
+	var c = pageEvent.o.GetControl('[INFONAME]_Value');
+	if(c.id!=''){
+		if(data.[INFONAME] == true || data.[INFONAME] == 'true'){
+			c.SetText(HoteamUI.Language.Lang('Common.Yes'));
+		}else{
+			c.SetText(HoteamUI.Language.Lang('Common.No'));
+		}
+	}
+}

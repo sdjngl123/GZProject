@@ -1,0 +1,54 @@
+﻿<div class="titleArea">
+  <div class="left">
+    <div class="HomePageLogoContainer">
+      <div class="HomePageLogo basesprite hoteamlogo"></div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="ClassicHomePage_MainPageMenu" id="ClassicHomePage_Setting" >
+      <div class="basesprite b-setting-line"></div>
+    </div>
+    <!--<div class="ClassicHomePage_Line"></div>-->
+    <div class="ClassicHomePage_MainPageMenu">
+      <div class="basesprite b-collection-line" id="homePage_collectionBtn"></div>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu">
+      <div class="basesprite b-history-line" id="homePage_historyBtn"></div>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu" style="margin-right:10px;">
+      <div class="classicHomePage_input_c">
+        <input type="text" class="classicHomePage_input" style="padding-right: 40px;" id="homePageSearch"/>
+        <div class="classicHomePage_input_split" style="right: 49px;"></div>
+        <span class="classicHomePage_input_img basesprite b-white-angle-down" style="right: 30px;" id="homePageSearchHistoryBtn"></span>
+        <div class="classicHomePage_input_split"></div>
+        <span class="classicHomePage_input_img basesprite b-search-line" id="homePageSearchBtn"></span>
+        <span class="classicHomePage_input_placeholder" id="homePageSearchPlaceHolder">搜索</span>
+        <span class="classicHomePage_input_img basesprite b-close b-search-clear" id="homePageSearchDelete" style="right:50px;display:none;"></span>
+      </div>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu" style="margin-right:10px;">
+      <div class="classicHomePage_input_c">
+        <input type="text" class="classicHomePage_input" id="homePageSearchType" readyonly="" style="padding-right:18px;"/>
+        <span class="classicHomePage_input_img basesprite b-white-angle-down" id="homePageSearchTypeBtn"></span>
+        <div class="classicHomePage_input_split"></div>
+        <span class="classicHomePage_input_placeholder" id="homePageSearchTypePlaceHolder">所有类型</span>
+        <span class="classicHomePage_input_img basesprite b-close b-search-clear" id="homePageMutiSelectDelete" style="right: 28px;display:none;"></span>
+      </div>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu">
+      <div class="basesprite b-home-line" id="MainPageMenu"></div>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu">
+      <span class="ClassicHomePage_MainPageMenu_Text"></span>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu">
+      <span class="ClassicHomePage_MainPageMenu_Text" id="homePageGroupName"></span>
+    </div>
+    <div class="ClassicHomePage_MainPageMenu">
+      <span class="ClassicHomePage_MainPageMenu_Text" id="homePageUserName"></span>
+    </div>
+    <!--<div class="ClassicHomePage_MainPageMenu">
+      <div class="basesprite b-fly-line"></div>
+    </div>-->
+  </div>
+</div>

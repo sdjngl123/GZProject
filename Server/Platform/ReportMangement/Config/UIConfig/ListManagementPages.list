@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListManagement Name="ReportClassifyList" MenuName="ReportClassifyRootListMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="ReportClassifyListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+    
+  </ListManagement>
+  <ListManagement Name="ReportObjectList" MenuName="ReportObjectMenu" ListRightMenuName="" DefaultPageLinksName="" ListViewName="ReportObjectListView"  ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" >
+
+  </ListManagement>
+  
+</root>

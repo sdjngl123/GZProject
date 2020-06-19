@@ -1,0 +1,83 @@
+﻿<div style="width:100%;height:100%;">
+  <div class="re-login-left-img"></div>
+  <div class="re-login-container">
+    <div style="height:55px;">
+      <div id="userLogin" class="re-login-user-login re-login-user-login-sel re-login-title">
+      </div>
+      <div id="userRegister" class="re-login-user-regist re-login-title">
+      </div>
+    </div>
+    <div class="re-login-content">
+      <div class="re-login-username-c">
+        <div class="basesprite b-user re-login-fa"></div>
+        <div class="re-login-input-c">
+            <input id="txtUserName" type="text" class="re-login-input" autocomplete="off"></input>
+        </div>
+        <span id="lblUserName" class="re-input-placeholder"></span>
+        <span class="login-error"></span>
+      </div>
+      <div class="re-login-password-c">
+        <span class="basesprite b-password re-login-fa"></span>
+        <span id="lblPassword"  class="re-input-placeholder"></span>
+        <span class="login-error"></span>
+      </div>
+      <div class="re-login-auto-c">
+        <div class="re-login-check-c">
+          <input id="autoLogin" type="checkbox" class="re-login-check"></input>
+        </div>
+        <div class="re-auto-login-title" id="autoLoginname"></div>
+        <div class="re-forget-password" id="reforgetpassword">
+          <a id="forgetPassword" style="color:black;"></a>
+        </div>
+      </div>
+      <div class="re-login" id="lblLogin" onclick="InforCenter_Platform_Login_LoginCheck()">
+      </div>
+      <div class="re-advanced-setting-c">
+        <div class="re-advanced-setting-title">
+          <span id="advancedSetting"></span>
+          <span class="fa fa-caret-down"></span>
+        </div>
+        <div class="re-item">
+          <input id="ddlGroup" class="form-control re-center-item-sel" readonly=""/>
+          <span class="basesprite b-angle-down re-item-down"></span>
+          <span id="lblGroup" class="re-inputsel-placeholder"></span>
+        </div>
+        <div class="re-item" style="float:right;">
+          <input id="ddlLanguage" class="form-control re-center-item-sel" readonly=""/>
+          <span class="basesprite b-angle-down re-item-down"></span>
+          <span id="lblLanguage" class="re-inputsel-placeholder"></span>
+        </div>
+      </div>
+    </div>
+    <div class="re-register-content" style="display:none;">
+      <div class="re-register-input-c">
+        <input id="registerUser" type="text" class="re-register-input" regex="^(\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)$|^(1[0-9]{10})$|^(((\+86)|(86))?1[0-9]{10})$" autocomplete="off" required="required"></input>
+        <span id="registerName" class="re-register-input-placeholder"></span>
+        <span class="re-register-error"></span>
+      </div>
+      <div class="re-register-input-c">
+        <input id="r_verificationNum" type="text" class="re-register-input re-register-input-verification" regex="^\d{6}$" required="required"></input>
+        <span id="verificationNum" class="re-register-input-placeholder"></span>
+        <div id="getVerNum" class="re-register-verification-btn"></div>
+        <span class="re-register-error"></span>
+      </div>
+      <div class="re-register-input-c">
+        <input id="r_Password" type="password" class="re-register-input" regex="^[\S]{6,20}$" required="required"></input>
+        <span id="registerPassword" class="re-register-input-placeholder"></span>
+        <span class="re-register-error"></span>
+      </div>
+      <div class="re-register-input-c">
+        <input id="r_companyName" type="text" class="re-register-input"></input>
+        <span id="companyName" class="re-register-input-placeholder"></span>
+        <span class="re-register-error"></span>
+      </div>
+      <div class="re-register-input-c">
+        <input id="r_companyAccount" type="text" class="re-register-input" regex="^([A-Za-z0-9]{1,50})$" required="required"></input>
+        <span id="companyAccount" class="re-register-input-placeholder"></span>
+        <span class="re-register-error"></span>
+      </div>
+      <div class="re-register-btn" id="registerBtn"></div>
+    </div>
+  </div>
+  
+</div>

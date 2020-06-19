@@ -1,0 +1,33 @@
+﻿var todo='edit-[INFONAME]';
+
+var imageCtrl=pageEvent.o.GetControl('[INFONAME]_Value_Image');
+var fileStr = data.[INFONAME];
+if (fileStr) {
+	var fileInformation = JSON.parse(fileStr);
+	if (fileInformation) {
+		var url = InforCenter_Platform_GetFileUrl(fileInformation.VaultName, fileInformation.Path);
+		var src = url + '?time=' + new Date().getTime();
+		if (imageCtrl != undefined) {
+			imageCtrl.SetSrc(src);
+			imageCtrl.SetValue(fileStr);
+		}
+	} else {
+		if (imageCtrl != undefined) {
+			imageCtrl.SetSrc('');
+			imageCtrl.SetValue('');
+		}
+	}
+} else {
+	if (imageCtrl != undefined) {
+
+		if(imageCtrl.id==''){
+			return;
+		}else{
+			imageCtrl.SetSrc('');
+			imageCtrl.SetValue('');
+		}
+
+
+
+	}
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ClassicHomePageTop" IsCache="true">
+  <PageControls>
+<PageControl ControlID="ClassicHomePageTop_Layout" ParentID="" TypeName="CustomerContainer">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ClassicHomePageTop_Init(ctrlEvent);"/>
+  </PageHandlers>
+</PageControl>
+  </PageControls>
+  </root>

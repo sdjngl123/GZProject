@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SideTabsCtrl">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_SideTabsCtrl_OnQuery(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Tabs_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Tabs"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Tabs" ParentID="Tabs_Container" TypeName="SideTabs">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnShow" Script="InforCenter_Platform_SideTabsCtrl_OnShow(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnHide" Script="InforCenter_Platform_SideTabsCtrl_OnHide(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>

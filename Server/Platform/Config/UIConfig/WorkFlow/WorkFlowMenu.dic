@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="ChangeWfResponsibility">
+      <LocalizedLabel LanguageRef="zhs">更改流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeAcResponsibility">
+      <LocalizedLabel LanguageRef="zhs">更改任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change task executor</LocalizedLabel>
+    </Label>
+    <Label Name="Stop">
+      <LocalizedLabel LanguageRef="zhs">停止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="Refresh">
+      <LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh</LocalizedLabel>
+    </Label>
+    <Label Name="Suspend">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="Resume">
+      <LocalizedLabel LanguageRef="zhs">恢复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recover</LocalizedLabel>
+    </Label>
+    <Label Name="DeliveryWorkflow">
+      <LocalizedLabel LanguageRef="zhs">转交任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer task</LocalizedLabel>
+    </Label>
+    <Label Name="Remove">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="RollbackTask">
+      <LocalizedLabel LanguageRef="zhs">撤回</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Withdraw</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="CommitTask">
+      <LocalizedLabel LanguageRef="zhs">提交</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Submit</LocalizedLabel>
+    </Label>
+     <Label Name="AssistAudit">
+      <LocalizedLabel LanguageRef="zhs">协助评审</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistAudit</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

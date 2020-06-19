@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="ENTITY" Extend="" IsAbstract="true" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="STATEID" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="STAGESTATEID" DataType="STRING20" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="EVERSION" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="EMINORVERSION" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="EUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="ELASTINSERT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="ELASTFINALSTATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" OverrideLevel="Must" />
+    <Column Name="CREATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Innate" OverrideLevel="Must" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="OWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="OWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="ESTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="ICON" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Hidden" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+  </Table>
+</root>

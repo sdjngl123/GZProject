@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="WORKFLOWTEMPLATE-VIEW" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="ISRUNHeader">
+      <LocalizedLabel LanguageRef="zhs">是否启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is Enabled</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTEMPLATETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template type</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTEMPLATEHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseProcess template</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

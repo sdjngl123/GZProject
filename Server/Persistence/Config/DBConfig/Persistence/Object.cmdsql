@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <!--对象操作命令模板-->
+  <Command Name="SQLTEMPLATE_INSERT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        INSERT INTO {TABLENAME}({FIELDS}) VALUES({FIELDVALUES})
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SQLTEMPLATE_DELETEBYFILTER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE FROM {TABLENAME} WHERE 1=1 [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SQLTEMPLATE_UPDATE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE {TABLENAME} SET {UPDATEVALUES} WHERE {OBJECTID}=[{OBJECTID}]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SQLTEMPLATE_UPDATEFIELD">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        UPDATE {TABLENAME} SET [FIELD]=[FIELDVALUE] WHERE {OBJECTID}=[{OBJECTID}]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!--对象数据源语句模块-->
+  <Command Name="SQLTEMPLATE_QUERYBYFILTER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT [FIELDS] FROM {TABLENAME} WHERE 1=1 [FILTER] [ORDERBY]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SQLTEMPLATE_QUERYCOUNT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(1) FROM {TABLENAME} WHERE 1=1 [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <!---->
+  <Command Name="SQLTEMPLATE_QUERYBYFILTERLIMIT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM {TABLENAME} WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT [FIELDS] FROM (
+        SELECT [FIELDS],row_number() over([ORDERBY]) AS IDX FROM {TABLENAME} WHERE 1=1 [FILTER]
+        ) A WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM {TABLENAME} WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SET @number = 0;
+        SELECT [FIELDS] FROM (
+        SELECT [FIELDS],@number:=@number+1 IDX FROM {TABLENAME} WHERE 1=1 [FILTER]
+        ) A WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="FOREIGNKEYQUERYBYFILTER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT [FIELDS] FROM [OBJECTTYPE] [JOINSTR] WHERE 1=1 [FILTER] [ORDERBY]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="FOREIGNKEYQUERYCOUNT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(1) FROM [OBJECTTYPE] [JOINSTR] WHERE 1=1 [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="FOREIGNKEYQUERYBYFILTERLIMIT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM [OBJECTTYPE] [JOINSTR] WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (
+        SELECT [FIELDS],row_number() over([ORDERBY]) AS IDX FROM [OBJECTTYPE] [JOINSTR] WHERE 1=1 [FILTER]
+        ) A WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM [OBJECTTYPE] [JOINSTR] WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SET @number = 0;
+        SELECT * FROM (
+        SELECT [FIELDS],@number:=@number+1 IDX FROM [OBJECTTYPE] [JOINSTR] WHERE 1=1 [FILTER]
+        ) A WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+
+
+
+
+  <Command Name="UNIONALLQUERYBYFILTER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM
+        ([UNIONALL])A
+        WHERE 1=1 [FILTER] [ORDERBY]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="UNIONALLQUERYCOUNT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(1) FROM
+        ([UNIONALL])A
+        WHERE 1=1 [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="UNIONALLQUERYBYFILTERLIMIT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM
+        ([UNIONALL])A
+        WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (
+        SELECT [FIELDS],row_number() over([ORDERBY]) AS IDX FROM
+        ([UNIONALL])A
+        WHERE 1=1 [FILTER]
+        ) A WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM
+        ([UNIONALL])A
+        WHERE 1=1 [FILTER]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SET @number = 0;
+        SELECT * FROM (
+        SELECT [FIELDS],@number:=@number+1 IDX FROM
+        ([UNIONALL])A
+        WHERE 1=1 [FILTER]
+        ) A WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX;
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+
+
+  <!--多对象操作命令模板-->
+  <Command Name="SQLTEMPLATE_MULTIQUERYBYFILTER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        {SUBUNIONS}
+        SELECT [{SUBTABLE}.FIELDS]
+        FROM {SUBTABLE}
+        WHERE 1=1 [{SUBTABLE}.ENTITYFILTER]
+        {SUBUNIONE}
+        [ORDERBY]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SQLTEMPLATE_MULTIQUERYCOUNT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(1) FROM (
+        {SUBUNIONS}
+        SELECT EID FROM {SUBTABLE}
+        WHERE 1=1 [{SUBTABLE}.ENTITYFILTER]
+        {SUBUNIONE}
+        ) A
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SQLTEMPLATE_MULTIQUERYBYFILTERLIMIT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsCount="true">
+        SELECT COUNT(1) FROM (
+        {SUBUNIONS}
+        SELECT EID FROM {SUBTABLE}
+        WHERE 1=1 [{SUBTABLE}.ENTITYFILTER]
+        {SUBUNIONE}
+        ) A
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM (SELECT *,ROW_NUMBER() OVER([ORDERBY]) AS IDX FROM (
+        {SUBUNIONS}
+        SELECT [{SUBTABLE}.FIELDS]
+        FROM {SUBTABLE}
+        WHERE 1=1 [{SUBTABLE}.ENTITYFILTER]
+        {SUBUNIONE}
+        ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

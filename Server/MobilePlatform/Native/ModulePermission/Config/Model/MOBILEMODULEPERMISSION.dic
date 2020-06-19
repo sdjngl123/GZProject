@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="MOBILEMODULEPERMISSIONModel" IsWeb="true">
+    <Label Name="MOBILEMODULEPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">移动端模块授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module authorization</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEMODULEPERMISSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">移动端模块授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module authorization</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONTYPEVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Type</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONTYPEVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">授权类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Type</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

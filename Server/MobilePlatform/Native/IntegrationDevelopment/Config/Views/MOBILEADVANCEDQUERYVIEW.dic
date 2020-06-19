@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEADVANCEDQUERYVIEWView" IsWeb="true">
+    <Label Name="MOBILEADVANCEDQUERYVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">高级查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEADVANCEDQUERYVIEW</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEADVANCEDQUERYVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">高级查询视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEADVANCEDQUERYVIEW</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlType</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlType</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">条件标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONDITIONTitle</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONTITLECaption">
+      <LocalizedLabel LanguageRef="zhs">条件标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CONDITIONTitle</LocalizedLabel>
+    </Label>
+    <Label Name="FILTERSTRINGHeader">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterString</LocalizedLabel>
+    </Label>
+    <Label Name="FILTERSTRINGCaption">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FilterString</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="INFONAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">关联字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoName</LocalizedLabel>
+    </Label>
+    <Label Name="INFONAMECaption">
+      <LocalizedLabel LanguageRef="zhs">关联字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoName</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="MOBILEADVANCEDQUERYVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

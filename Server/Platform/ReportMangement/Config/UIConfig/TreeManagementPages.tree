@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="ReportManagementShowTree" MenuName=""  PageLinksName=""
+                  TreeViewName="ReportManagementShowTreeView" ShowTreeQuery="false" IsHiddenTabs="true"
+                  TreeChildDataService="" TreeQueryDataService=""
+                  TreeAllDataService="" TreeRootDataService=""  >
+    <ObjectType Name="REPORTCLASSIFYROOT" MenuName="ReportClassifyRootTreeMenu" PageLinksName="ReportClassifyRootLink" />
+    <ObjectType Name="REPORTCLASSIFY"  MenuName="ReportClassifyTreeMenu" PageLinksName="ReportClassifyLink" />
+    <ObjectType Name="REPORTOBJECT" MenuName="" PageLinksName="ReportShowLink" />
+  </TreeManagement>
+</root>

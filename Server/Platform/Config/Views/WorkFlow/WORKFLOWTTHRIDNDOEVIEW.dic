@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWTTHRIDNDOEVIEWView" IsWeb="true">
+    <Label Name="WORKFLOWTTHRIDNDOEVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理第三级节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process management level 3 node</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWTTHRIDNDOEVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">流程管理第三级节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process management level 3 node</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

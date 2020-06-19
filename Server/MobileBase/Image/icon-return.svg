@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<symbol  id="icon-return" viewBox="-17.464 -7.319 25 18.941">
+	<g id="icon-return-2_2_">
+		<g id="返回2_2_">
+			<g id="返回箭头1_2_">
+			</g>
+		</g>
+	</g>
+	<path fill="#FFFFFF" d="M-6.475,9.688V6.58V5.59l0.99-0.01C1.388,5.514,5.26,2.458,6.269-3.734C2.493,0.631-1.86,0.633-5.475,0.634
+		l-1,0.001v-1.001V-3.43l-9.26,6.56L-6.475,9.688 M-5.475,11.622L-17.464,3.13l11.989-8.493v4.997
+		C-0.676-0.368,3.773-0.61,7.536-7.319c0,4.262-0.704,13.78-13.011,13.899V11.622L-5.475,11.622z"/>
+</symbol>
+<use xlink:href="#icon-return"  width="25" height="18.941" id="XMLID_33_" x="-17.464" y="-7.319" transform="matrix(0.9986 0 0 -0.9986 19.6885 16.0068)" overflow="visible"/>
+</svg>

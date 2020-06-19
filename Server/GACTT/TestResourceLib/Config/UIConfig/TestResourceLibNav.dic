@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Context Name="NavigationItems" IsWeb="true">
+		<Label Name="TestResourceCapabilityLib">
+			<LocalizedLabel LanguageRef="zhs">资源能力库</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestResourceCapabilityLib</LocalizedLabel>
+		</Label>
+		<Label Name="TestResourceLib">
+			<LocalizedLabel LanguageRef="zhs">资源库</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestResourceCapabilityLib</LocalizedLabel>
+		</Label>
+		<Label Name="TestCapabilityLib">
+			<LocalizedLabel LanguageRef="zhs">能力库</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestResourceCapabilityLib</LocalizedLabel>
+		</Label>
+		<Label Name="TestProjectLib">
+			<LocalizedLabel LanguageRef="zhs">试验项目库</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestProjectLib</LocalizedLabel>
+		</Label>
+		<Label Name="TestLocation">
+			<LocalizedLabel LanguageRef="zhs">试验地点</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestLocation</LocalizedLabel>
+		</Label>
+		<Label Name="TestKnowledge">
+			<LocalizedLabel LanguageRef="zhs">试验知识</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestKnowledge</LocalizedLabel>
+		</Label>
+		<Label Name="TESTEXTORGNav">
+			<LocalizedLabel LanguageRef="zhs">外部单位</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">External test organization</LocalizedLabel>
+		</Label>
+		<Label Name="TESTRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">外部资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">External test resources</LocalizedLabel>
+		</Label>
+		<Label Name="INNERTESTRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">内部资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Inner test resources</LocalizedLabel>
+		</Label>
+		<Label Name="TESTATTACHNav">
+			<LocalizedLabel LanguageRef="zhs">外部试验单位附件</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTATTACHNav</LocalizedLabel>
+		</Label>
+		<Label Name="EXTERNALLYRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">外部可用资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">EXTERNALLYRESOURCENav</LocalizedLabel>
+		</Label>
+		<Label Name="TESTABILITYKNOWLEDGENav">
+			<LocalizedLabel LanguageRef="zhs">试验能力知识</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTABILITYKNOWLEDGENav</LocalizedLabel>
+		</Label>
+		<Label Name="TESTABILITYRESOURCENav">
+			<LocalizedLabel LanguageRef="zhs">试验能力资源明细</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TESTABILITYRESOURCENav</LocalizedLabel>
+		</Label>
+		<Label Name="INNERTESTCAPABILITYNav">
+			<LocalizedLabel LanguageRef="zhs">内部试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">INNERTESTCAPABILITYNav</LocalizedLabel>
+		</Label>
+		<Label Name="OUTTESTCAPABILITYNav">
+			<LocalizedLabel LanguageRef="zhs">外部试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">OUTTESTCAPABILITYNav</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="CustomFormPagePlugin">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ModelGenerator_FormInfo_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ModelGenerator_FormInfo_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="CustomFormPage_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="CustomFormPageContainer"/>
+      </Settings>
+    </PageControl>    
+    <PageControl ControlID="CustomFormPageContainer" ParentID="CustomFormPage_Container" TypeName="PageContainer">      
+    </PageControl>
+  </PageControls>
+</root>

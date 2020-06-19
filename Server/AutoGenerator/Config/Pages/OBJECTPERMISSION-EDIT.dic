@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="OBJECTPERMISSION-EDIT" IsWeb="true">
+    <Label Name="PERMISSIONACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONEXPIREVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">截止有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deadline</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditObject authorization</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

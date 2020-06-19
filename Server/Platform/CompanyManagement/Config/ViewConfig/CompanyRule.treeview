@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <WebTreeView Name="CompanyRuleManagementTreeView" ShowStartNode="true" View="COMPANYRULEROOTVIEW" TextField="" TextDicField="TEXTDIC"
+         IconClose="" IconOpen="" IconCloseField="" IconOpenField="" NodeTypeField="NODETYPE">
+    <Schema Key="1" SuperKey="-1" Name="COMPANYRULE"  View="COMPANYRULETOCOMPANYVIEW" TextField="ENAME"
+          IconClose="" IconOpen="" IconCloseField="" IconOpenField=""  EntityFilter="" Filter="PEID='[Tree_Current_value1]'" Loop="true"
+           ParentNodeTypeName="" ObjectType="COMPANYRULE" ParentObjectType="COMPANYRULE">
+    </Schema>
+  </WebTreeView>
+</root>

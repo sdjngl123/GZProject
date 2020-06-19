@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FlowTaskActorSelect" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">选择流程任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select a process task executor</LocalizedLabel>
+    </Label>
+    <Label Name="Organzation_Label">
+      <LocalizedLabel LanguageRef="zhs">组织</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization</LocalizedLabel>
+    </Label>
+    <Label Name="Admin_Label">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="Creator_Label">
+      <LocalizedLabel LanguageRef="zhs">流程发起人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Initiator</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

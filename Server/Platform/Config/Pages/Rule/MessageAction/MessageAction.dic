@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MessageAction" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">操作列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

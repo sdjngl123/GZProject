@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWINFOModel" IsWeb="true">
+    <Label Name="WORKFLOWINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">工作流</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">工作流</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORHeader">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWADMINISTRATORCaption">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWPARAMETERSHeader">
+      <LocalizedLabel LanguageRef="zhs">流程参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process parameter</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWPARAMETERSCaption">
+      <LocalizedLabel LanguageRef="zhs">流程参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process parameter</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="ISCOMMONMANGEMENTHeader">
+      <LocalizedLabel LanguageRef="zhs">是否是通用流程管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it a common process management</LocalizedLabel>
+    </Label>
+    <Label Name="ISCOMMONMANGEMENTCaption">
+      <LocalizedLabel LanguageRef="zhs">是否是通用流程管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it a common process management</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPLATETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template Type</LocalizedLabel>
+    </Label>
+    <Label Name="TEMPLATETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template Type</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="EXECLINESHeader">
+      <LocalizedLabel LanguageRef="zhs">已执行的线的集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collection of lines that have been executed</LocalizedLabel>
+    </Label>
+    <Label Name="EXECLINESCaption">
+      <LocalizedLabel LanguageRef="zhs">已执行的线的集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collection of lines that have been executed</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

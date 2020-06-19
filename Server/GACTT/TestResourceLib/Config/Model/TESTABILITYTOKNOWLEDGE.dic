@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTABILITYTOKNOWLEDGEModel" IsWeb="true">
+    <Label Name="TESTABILITYTOKNOWLEDGEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验能力与知识关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTABILITYTOKNOWLEDGE</LocalizedLabel>
+    </Label>
+    <Label Name="TESTABILITYTOKNOWLEDGECaption">
+      <LocalizedLabel LanguageRef="zhs">试验能力与知识关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTABILITYTOKNOWLEDGE</LocalizedLabel>
+    </Label>
+    <Label Name="SOURCEHeader">
+      <LocalizedLabel LanguageRef="zhs">来源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOURCE</LocalizedLabel>
+    </Label>
+    <Label Name="SOURCECaption">
+      <LocalizedLabel LanguageRef="zhs">来源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOURCE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="Guide_ListManagement_ReplaceKeyVIEW" ObjectTypeName="Guide_ListManagement_ReplaceKey" OrderByString="CREATETIME DESC" FixedFilter="" AsCommonQuery="true">
+    <ViewCondition Name="NAMELIKE" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Validation="String100" Required="true" />
+    <ViewCondition Name="CODELIKE" AndOrFlag="AND" InfoName="ECODE" Operation="LIKE" Validation="String100" Required="false" />
+  </ObjectView>
+</root>

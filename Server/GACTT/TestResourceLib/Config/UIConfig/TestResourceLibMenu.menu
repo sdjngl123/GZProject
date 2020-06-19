@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--外部可用资源-->
+	<MenuItem Name="EXTERNALLYRESOURCEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateEXTERNALLYRESOURCE" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="EXTERNALLYRESOURCE" />
+				<Para Name="MASTERID" Value="[Tree_Current_value1]" ParentPara="initData" />
+				<Para Name="Size" Value="530*340" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+				<Para Name="Size" Value="530*340" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<!--外部测试资源-->
+	<MenuItem Name="TESTRESOURCEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTRESOURCE" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTRESOURCE" />
+				<Para Name="SOURCE" Value="OUT" ParentPara="initData" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<!--内部测试资源-->
+	<MenuItem Name="INNERTESTRESOURCEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTRESOURCE" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTRESOURCE" />
+				<Para Name="SOURCE" Value="INNER" ParentPara="initData" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<!--外部试验单位-->
+	<MenuItem Name="TESTEXTORGMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTEXTORG" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTEXTORG" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="AttachManage" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.AttachManage" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="CREATE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="TESTATTACHList" />
+				<Para Name="ORGID" Value="[List_EID]" />
+				<Para Name="Title" Value="TestResourceLibMenu.AttachManage" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<!--测试地点-->
+	<MenuItem Name="TESTELOCATIONMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTELOCATION" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTELOCATION" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Edit"  />
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="Start" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Start" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_TestResourceLib_SetObjectDbValue" IsLoopExec="false">
+				<Para Name="ObjectID" Value="[List_EID]" />
+				<Para Name="FieldName" Value="STATEID" />
+				<Para Name="Value" Value="Start" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Edit"  />
+		</WebAction>
+		<WebAction Name="Stop" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Stop" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_TestResourceLib_SetObjectDbValue" IsLoopExec="false">
+				<Para Name="ObjectID" Value="[List_EID]" />
+				<Para Name="FieldName" Value="STATEID" />
+				<Para Name="Value" Value="Stop" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Edit"  />
+		</WebAction>
+	</MenuItem>
+
+	<!--外部试验单位附件-->
+	<MenuItem Name="TESTATTACHMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTATTACH" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<JSMethod Name="Hoteam_TestResourceLib_AttachFile_OnUpload" IsLoopExec="false">
+				<Para Name="ObjectID" Value="[ORGID]" />
+			</JSMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Download" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Download" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="Hoteam_TestResourceLib_AttachFile_Download" IsLoopExec="false">
+				<Para Name="ObjectID" Value="[List_EID]" />
+			</JSMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+
+	<!--试验项目库-->
+	<MenuItem Name="TESTCAPABILITYPROJECTMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTCAPABILITYPROJECT" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTCAPABILITYPROJECT" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<!--外部可用资源根节点菜单-->
+	<MenuItem Name="EXTERNALRESOURCEROOTLINKTreeRootMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+	</MenuItem>
+	<!--外部可用资源子节点菜单-->
+	<MenuItem Name="EXTERNALRESOURCEROOTLINKTreeChildMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateEXTERNALLYRESOURCE" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="UPDATECURRENTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="EXTERNALLYRESOURCE" />
+				<Para Name="MASTERID" Value="[Tree_Current_value1]" ParentPara="initData" />
+				<Para Name="Size" Value="530*340" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+	</MenuItem>
+
+	<!--测试能力-->
+	<MenuItem Name="TestCapabilityTreeListMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false"  IsMainConfig="false" />
+		<WebAction Name="CreateTESTCAPABILITY" ModuleName="GACTT" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="RefreshParentStruct" IsHidden="false" IsTemplate="false">
+			<ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="TESTCAPABILITY" SelectType="" />
+			<WebMethod SelectID="" PageName="EditMultiObjectTab" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="CreateTestCapabilityLinks" />
+				<Para Name="SaveJS" Value="InforCenter_GACTT_TestAbility_SaveData" />
+				<Para Name="Size" Value="920*600" />
+				<Para Name="Title" Value="TestResourceLibMenu.NewTestCapability" />
+				<Para Name="ORG" Value="[Tree_Current_value1]" ParentPara="initData" />
+				<Para Name="TESTPROJECT" Value="[List_EID]" ParentPara="initData" />
+				<Para Name="TestType" Value="[List_TYPE]" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"  OperateType="Create"/>
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshCurrentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="" PageName="EditMultiObjectTab" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="EditTestCapabilityLinks" />
+				<Para Name="SaveJS" Value="InforCenter_GACTT_TestAbility_SaveData" />
+				<Para Name="Size" Value="920*600" />
+				<Para Name="Title" Value="TestResourceLibMenu.NewTestCapability" />
+				<Para Name="ObjectID" Value="[List_EID]" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"  OperateType="Edit"/>
+		</WebAction>
+		<WebAction Name="BatchEdit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.BatchEdit" Image="p_edit" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="CapabilityBatchEdit" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+				<Para Name="ObjectID" Value="[List_EID]" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true"  OperateType="Edit"/>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="Knowledge" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Knowledge" Image="p_edit" RefreshType="" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="TESTABILITYTOKNOWLEDGEList" />
+				<Para Name="Title" Value="TestResourceLibMenu.Knowledge" />
+				<Para Name="AbilityID" Value="[List_EID]" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Edit"  />
+		</WebAction>
+		<WebAction Name="Resource" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Resource" Image="p_edit" RefreshType="" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="TESTABILITIYTORESOUCEList" />
+				<Para Name="Title" Value="TestResourceLibMenu.Resource" />
+				<Para Name="AbilityID" Value="[List_EID]" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Edit"  />
+		</WebAction>
+		<WebAction Name="Audit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Audit" Image="p_startWorkflow" RefreshType="" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="false">
+				<Para Name="ItemName" Value="StartWorkflowGuide" />
+				<Para Name="Title" Value="Workflow.StartWorkflowTitle" />
+				<Para Name="ObjectID" Value="[List_EID]" />
+				<Para Name="ObjectName" Value="[List_ENAME]" />
+				<Para Name="Size" Value="1000*600" />
+				<Para Name="SelectID" Value="[List_EID]" />
+				<Para Name="ListID" Value="[ListID]" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" />
+		</WebAction>
+	</MenuItem>
+	<!--试验知识-->
+	<MenuItem Name="TESTKNOWLEDGEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreateTESTKNOWLEDGE" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="TESTKNOWLEDGE" />
+				<Para Name="Size" Value="550*350" />
+				<Para Name="TypeId" Value="[Tree_Current_value1]" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" >
+				<Para Name="Size" Value="550*350" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Download" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Download" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="Hoteam_TestResourceLib_AttachFile_Download" IsLoopExec="false">
+				<Para Name="ObjectID" Value="[List_EID]" />
+			</JSMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+
+	<!--实验能力关联资源列表菜单-->
+	<MenuItem Name="TESTABILITIYTORESOUCEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="Add" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Add" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_TestAbility_Add" IsLoopExec="false">
+				<Para Name="PEID" Value="[AbilityID]" />
+				<Para Name="LinkTypeName" Value="TESTABILITIYTORESOUCE" />
+				<Para Name="QueryName" Value="TestResourceListQuery" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+		<WebAction Name="Remove" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Remove" Image="p_remove" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_TestAbility_Remove" IsLoopExec="false">
+				<Para Name="LID" Value="[List_LID]" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+	</MenuItem>
+	<!--实验能力关联知识列表菜单-->
+	<MenuItem Name="TESTABILITYTOKNOWLEDGEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="TestResourceLib" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="Add" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Add" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_TestAbility_Add" IsLoopExec="false">
+				<Para Name="PEID" Value="[AbilityID]" />
+				<Para Name="LinkTypeName" Value="TESTABILITYTOKNOWLEDGE" />
+				<Para Name="QueryName" Value="TestKnowledgeListQuery" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+		<WebAction Name="Remove" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Remove" Image="p_remove" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_TestAbility_Remove" IsLoopExec="false">
+				<Para Name="LID" Value="[List_LID]" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+	</MenuItem>
+
+	<MenuItem Name="AddTestResourceListMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Add" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Add" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_NewTestAbility_Add" IsLoopExec="false">
+				<Para Name="QueryName" Value="TestResourceListQuery" />
+				<Para Name="ListID" Value="[ListID]" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+		<WebAction Name="Remove" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Remove" Image="p_remove" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_NewTestAbility_Remove" IsLoopExec="false">
+				<Para Name="ListID" Value="[ListID]" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+	</MenuItem>
+	<MenuItem Name="AddTestKnowledgeListMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Add" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Add" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_NewTestAbility_Add" IsLoopExec="false">
+				<Para Name="QueryName" Value="TestKnowledgeListQuery" />
+				<Para Name="ListID" Value="[ListID]" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+		<WebAction Name="Remove" MultiMenu="false" ModuleName="TestResourceLib" LabelName="TestResourceLibMenu.Remove" Image="p_remove" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<JSMethod Name="InforCenter_GACTT_NewTestAbility_Remove" IsLoopExec="false">
+				<Para Name="ListID" Value="[ListID]" />
+			</JSMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+	</MenuItem>
+
+
+</root>

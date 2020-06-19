@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectObjectForPermission">
+  <Settings Key="title" Value="SelectObjectForPermission.ChildObjectTitle"/>
+  <Settings Key="height" Value="500"/>
+  <Settings Key="width" Value="800"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectObjectForPermission_OnCreate(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 4px"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="MenuContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectList"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID = "MenuContainer" ParentID = "Info_Container" TypeName="Menu">
+      <Settings Key="item1">
+        <Settings Key="textId" Value="Common.Paste"/>
+        <Settings Key="value" Value="Paste"/>
+        <Settings Key="icon" Value="p_paste"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectObjectForPermission_MenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="textId" Value="Common.Remove"/>
+        <Settings Key="value" Value="Remove"/>
+        <Settings Key="icon" Value="p_remove"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectObjectForPermission_MenuClick(ctrlEvent)"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="textId" Value="SelectObjectForPermission.AddChild"/>
+        <Settings Key="value" Value="AddChild"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectObjectForPermission_MenuClick(ctrlEvent)"/>
+      </Settings>
+
+    </PageControl>
+
+    <PageControl ControlID="ObjectList" ParentID="R-3" TypeName="EditGrid">
+    </PageControl>
+  </PageControls>
+</root>

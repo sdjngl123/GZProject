@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebListView Name="CommonListViewTemplate" View="EITEMVIEW" EntityFilter="" Filter="EVERSION=[EversionValue]" AllowCheckBox="true" AllowIconType="true" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="" QueryID="" AutoLoadData="true" IsTemplate="true" TemplateDescription="通用列表视图模板，用于显示单对象的列表，使用时只需更改“查询视图名称”和“主表的过滤条件”即可使用" />
+  <WebListView Name="CommonTreeListViewTemplate" View="EFOLDERTOEITEMVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="" QueryID="[Tree_Current_value1]" AutoLoadData="true" IsTemplate="true" TemplateDescription="带有树和列表的页面中，配置列表视图的模板，此模板用在关系视图中，一般情况下修改查询视图名称即可使用" />
+</root>

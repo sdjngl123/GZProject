@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AUDITEDTASKVIEWView" IsWeb="true">
+    <Label Name="AUDITEDTASKVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">已审批任务视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Approved task view</LocalizedLabel>
+    </Label>
+    <Label Name="AUDITEDTASKVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">已审批任务视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Approved task view</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">任务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">任务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task name</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDHeader">
+      <LocalizedLabel LanguageRef="zhs">工作流ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow ID</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWIDCaption">
+      <LocalizedLabel LanguageRef="zhs">工作流ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow ID</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">工作流名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow name</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">工作流名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow name</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATECaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="TASKACTORIDHeader">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="TASKACTORIDCaption">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTUSERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTUSERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETEUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">实际完成人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual person who complete it</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETEUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">实际完成人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual person who complete it</LocalizedLabel>
+    </Label>
+    <Label Name="TASKRESULTHeader">
+      <LocalizedLabel LanguageRef="zhs">任务结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task results</LocalizedLabel>
+    </Label>
+    <Label Name="TASKRESULTCaption">
+      <LocalizedLabel LanguageRef="zhs">任务结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task results</LocalizedLabel>
+    </Label>
+    <Label Name="TASKOPINIONHeader">
+      <LocalizedLabel LanguageRef="zhs">任务意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mission opinion</LocalizedLabel>
+    </Label>
+    <Label Name="TASKOPINIONCaption">
+      <LocalizedLabel LanguageRef="zhs">任务意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mission opinion</LocalizedLabel>
+    </Label>
+    <Label Name="PLANNEDENDDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">计划结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Scheduled end time</LocalizedLabel>
+    </Label>
+    <Label Name="PLANNEDENDDATECaption">
+      <LocalizedLabel LanguageRef="zhs">计划结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Scheduled end time</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">实际结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual end time</LocalizedLabel>
+    </Label>
+    <Label Name="COMPLETETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">实际结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual end time</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="AUDITEDTASKVIEWCondition" IsWeb="true">
+    <Label Name="TaskNameHeader">
+      <LocalizedLabel LanguageRef="zhs">任务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task name</LocalizedLabel>
+    </Label>
+    <Label Name="TaskNameCaption">
+      <LocalizedLabel LanguageRef="zhs">任务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task name</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTempleteHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTempleteCaption">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="TaskActorHeader">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="TaskActorCaption">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="AgentUserHeader">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="AgentUserCaption">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="CompleteUserHeader">
+      <LocalizedLabel LanguageRef="zhs">实际完成人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual person who complete it</LocalizedLabel>
+    </Label>
+    <Label Name="CompleteUserCaption">
+      <LocalizedLabel LanguageRef="zhs">实际完成人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual person who complete it</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

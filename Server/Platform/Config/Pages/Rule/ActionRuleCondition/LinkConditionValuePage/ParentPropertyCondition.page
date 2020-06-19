@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ParentPropertyCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ParentPropertyCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_ParentPropertyCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ParentPropertyName_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ParentPropertyOperater_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ParentPropertyValue_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性名称容器-->
+    <PageControl ControlID="ParentPropertyName_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ParentPropertyNameLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParentPropertyNameText"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ParentPropertyName_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ParentPropertyName_Label_FieldFlag" ParentID="ParentPropertyName_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <!-- 对象属性判断操作符容器-->
+    <PageControl ControlID="ParentPropertyOperater_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ParentPropertyOperatorLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParentPropertyOperatorDDL"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="ParentPropertyOperator_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ParentPropertyOperator_Label_FieldFlag" ParentID="ParentPropertyOperater_Container" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <!-- 对象属性值容器-->
+    <PageControl ControlID="ParentPropertyValue_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ParentPropertyValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParentPropertyValueText"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ParentPropertyValueType"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性名称控件-->
+    <PageControl ControlID="ParentPropertyNameLabel" ParentID="ParentPropertyName_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ParentPropertyCondition.ParentPropertyName" />
+    </PageControl>
+    <PageControl ControlID="ParentPropertyNameText" ParentID="ParentPropertyName_Container" TypeName="TextBox">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,200})?$" />
+      <Settings Key="regextipId" Value="ParentPropertyCondition.ParentPropertyNameRegex" />
+    </PageControl>
+
+    <!-- 对象属性判断操作符控件-->
+    <PageControl ControlID="ParentPropertyOperatorLabel" ParentID="ParentPropertyOperater_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ParentPropertyCondition.ParentPropertyOperator" />
+    </PageControl>
+    <PageControl ControlID="ParentPropertyOperatorDDL" ParentID="ParentPropertyOperater_Container" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="ParentPropertyCondition.Equal"/>
+        <Settings Key="value" Value="=="/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="ParentPropertyCondition.NotEqual"/>
+        <Settings Key="value" Value="!="/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="ParentPropertyCondition.GreatThan"/>
+        <Settings Key="value" Value="&gt;"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="ParentPropertyCondition.GreatEqual"/>
+        <Settings Key="value" Value="&gt;="/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="ParentPropertyCondition.LessThan"/>
+        <Settings Key="value" Value="&lt;"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="textId" Value="ParentPropertyCondition.LessEqual"/>
+        <Settings Key="value" Value="&lt;="/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="textId" Value="ParentPropertyCondition.Like"/>
+        <Settings Key="value" Value="Like"/>
+      </Settings>
+      <Settings Key="item8" >
+        <Settings Key="textId" Value="ParentPropertyCondition.NotLike"/>
+        <Settings Key="value" Value="Not Like"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性值控件-->
+    <PageControl ControlID="ParentPropertyValueLabel" ParentID="ParentPropertyValue_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ParentPropertyCondition.ParentPropertyValue" />
+    </PageControl>
+    <PageControl ControlID="ParentPropertyValueText" ParentID="ParentPropertyValue_Container" TypeName="TextBox">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+    <PageControl ControlID="ParentPropertyValueType" ParentID="ParentPropertyValue_Container" TypeName="CheckBox">
+      <Settings Key="textId" Value="ParentPropertyCondition.ValueType"/>
+      <Settings Key="checked" Value="true"/>
+    </PageControl>
+  </PageControls>
+</root>

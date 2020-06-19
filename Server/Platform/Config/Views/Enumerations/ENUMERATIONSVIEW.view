@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="ENUMERATIONSVIEW" ObjectTypeName="ENUMERATIONS" OrderByString="" FixedFilter="" AsCommonQuery="true" IgnoreCompanyRulePermission="true" IgnoreCompanyID="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

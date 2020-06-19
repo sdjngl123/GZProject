@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="MobileIntegrationDevelopment">
+      <LocalizedLabel LanguageRef="zhs">移动端集成开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobileIntegrationDevelopment</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePageDevelopment">
+      <LocalizedLabel LanguageRef="zhs">页面开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageDevelopment</LocalizedLabel>
+    </Label>
+    <Label Name="MobilePermission">
+      <LocalizedLabel LanguageRef="zhs">移动端授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mobile Permission</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

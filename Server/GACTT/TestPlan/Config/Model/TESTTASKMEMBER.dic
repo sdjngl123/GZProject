@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTTASKMEMBERModel" IsWeb="true">
+    <Label Name="TESTTASKMEMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">试验任务人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTTASKMEMBER</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTASKMEMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">试验任务人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTTASKMEMBER</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTASKIDHeader">
+      <LocalizedLabel LanguageRef="zhs">试验任务ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestTaskID</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTASKIDCaption">
+      <LocalizedLabel LanguageRef="zhs">试验任务ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestTaskID</LocalizedLabel>
+    </Label>
+    <Label Name="TESTUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">试验参与人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestUser</LocalizedLabel>
+    </Label>
+    <Label Name="TESTROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestRole</LocalizedLabel>
+    </Label>
+    <Label Name="TESTUSERCaption">
+      <LocalizedLabel LanguageRef="zhs">试验参与人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestUser</LocalizedLabel>
+    </Label>
+    <Label Name="TESTROLECaption">
+      <LocalizedLabel LanguageRef="zhs">试验角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestRole</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

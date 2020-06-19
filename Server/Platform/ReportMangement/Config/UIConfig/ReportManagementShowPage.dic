@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="ReportManagement">
+      <LocalizedLabel LanguageRef="zhs">报表管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ReportManagement</LocalizedLabel>
+    </Label>
+    <Label Name="ReportShow">
+      <LocalizedLabel LanguageRef="zhs">报表展示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ReportShow</LocalizedLabel>
+    </Label>
+    <Label Name="ReportDesign">
+      <LocalizedLabel LanguageRef="zhs">报表设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ReportDesign</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

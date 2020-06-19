@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="AuditRegisterUser" IsWeb="true">
+   
+    <Label Name="ExistCompanyFriend">
+      <LocalizedLabel LanguageRef="zhs">已建立企业关系，不需要再添加！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExistCompanyFriend</LocalizedLabel>
+    </Label>
+    <Label Name="SameCompanyFriend">
+      <LocalizedLabel LanguageRef="zhs">不能与自己公司建立关系！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SameCompanyFriend</LocalizedLabel>
+    </Label>
+    <Label Name="ExistLoopCompanyFriend">
+      <LocalizedLabel LanguageRef="zhs">企业不能形成环，请重新添加！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExistLoopCompanyFriend</LocalizedLabel>
+    </Label>
+    <Label Name="RootCompanyCannotAddFriend">
+      <LocalizedLabel LanguageRef="zhs">根企业不能添加企业关系！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RootCompanyCannotAddFriend</LocalizedLabel>
+    </Label>
+    <Label Name="SystemCompanyCannotAddFriend">
+      <LocalizedLabel LanguageRef="zhs">运营商企业不能添加企业关系！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SystemCompanyCannotAddFriend</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyNotExist">
+      <LocalizedLabel LanguageRef="zhs">所填的企业不存在，请重新输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyNotExist!</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyHaveBeenFirended">
+      <LocalizedLabel LanguageRef="zhs">已经存在企业关系，不需要重复添加！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyHaveBeenFirended!</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyIsNull">
+      <LocalizedLabel LanguageRef="zhs">所填的企业值为空,请重新输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CompanyIsNull!</LocalizedLabel>
+    </Label>
+    <Label Name="ModelChangeTitle">
+      <LocalizedLabel LanguageRef="zhs">模型变更通知</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelChangeTitle</LocalizedLabel>
+    </Label>
+    <Label Name="ModelChangeContent">
+      <LocalizedLabel LanguageRef="zhs">继承模型【[TableName]】已经被上级管理员修改！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">继承模型【[TableName]】已经被上级管理员修改！</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

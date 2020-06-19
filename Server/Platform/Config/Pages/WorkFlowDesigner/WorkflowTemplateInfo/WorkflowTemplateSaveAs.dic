@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateSaveAs" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">模板另存为</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save template as</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">template name</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template type</LocalizedLabel>
+    </Label>
+    <Label Name="Classify">
+      <LocalizedLabel LanguageRef="zhs">模板分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template classification</LocalizedLabel>
+    </Label>
+    <Label Name="NameExit">
+      <LocalizedLabel LanguageRef="zhs">名称已经存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name already exists</LocalizedLabel>
+    </Label>
+    <Label Name="NameRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null! &lt;/br&gt; maximum length is 100</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">另存为失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save as failed!</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行另存为流程模板操作,模板名称是‘[TemplateName]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes save as process template operation with template name '[templateName]'.</LocalizedLabel>
+    </Label>
+    <Label Name="EmendDescription">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行修订流程模板操作,模板名称是‘[TemplateName]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes the Emend process template operation with the template name '[templateName]'.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

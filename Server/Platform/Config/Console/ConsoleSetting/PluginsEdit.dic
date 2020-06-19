@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PluginsEdit" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">插件信息编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in Information Editing Window</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">插件的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name of the Plug-in</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">插件的类型，可以自己扩展，平台提供如下类型：模型目标类（ObjectType）、模型字段类型（ObjectValueType）、对象横切类型（AOPActionType）、规则权限条件类型：（ActionRuleCondition）、授权类型（PermisssionType）、消息类型（Message）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The type of the plug-in can be extended by itself. The platform provides the following types: Object target type (ObjectValueType), Object Crossing Type (AOPActionType), Rule Permission Condition Type: (ActionRuleCondition), Authorization Type (PermisssionType), Authorization Type (ObjectValueType), Object Type, Object Type, Object Type, Message type (Message)</LocalizedLabel>
+    </Label>
+    <Label Name="Assembly">
+      <LocalizedLabel LanguageRef="zhs">组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component</LocalizedLabel>
+    </Label>
+    <Label Name="AssemblyDescription">
+      <LocalizedLabel LanguageRef="zhs">插件类所在程序集名称（dll）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The assembly name (dll) in which the plug-in class is located</LocalizedLabel>
+    </Label>
+    <Label Name="Class">
+      <LocalizedLabel LanguageRef="zhs">类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Class</LocalizedLabel>
+    </Label>
+    <Label Name="ClassDescription">
+      <LocalizedLabel LanguageRef="zhs">对应类的全名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Full Name of the Corresponding Class</LocalizedLabel>
+    </Label>
+    <Label Name="NotNull">
+      <LocalizedLabel LanguageRef="zhs">列不能为空!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column cannot be null!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

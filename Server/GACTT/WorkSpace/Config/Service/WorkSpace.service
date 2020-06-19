@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ServiceItem ServiceName="WorkSpaceService" ServiceAssembly="Hoteam.InforCenter.WorkSpace.Service.dll"
+				 ServiceClass="Hoteam.InforCenter.WorkSpace.Service.WorkSpaceService"
+				 ContractAssembly="Hoteam.InforCenter.WorkSpace.Service.dll"
+				 ContractClass="Hoteam.InforCenter.WorkSpace.Service.IWorkSpaceService" />
+</root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QueryMachineQueryHistory" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Can not be null! The &lt;/br&gt; maximum length is 200 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="Query_label">
+      <LocalizedLabel LanguageRef="zhs">通用查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Universal query</LocalizedLabel>
+    </Label>
+    <Label Name="MyQuery_label">
+      <LocalizedLabel LanguageRef="zhs">自定义查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom query</LocalizedLabel>
+    </Label>
+    <Label Name="btnQuery">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteAll">
+      <LocalizedLabel LanguageRef="zhs">删除全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete all</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

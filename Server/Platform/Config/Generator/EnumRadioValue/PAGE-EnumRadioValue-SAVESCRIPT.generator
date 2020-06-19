@@ -1,0 +1,5 @@
+﻿{
+var c = pageEvent.o.GetControl('[INFONAME]_Value');
+if(c.Check() == false) bCheck = false;
+data.[INFONAME] = c.GetValue();
+}

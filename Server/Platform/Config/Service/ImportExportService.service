@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ServiceItem ServiceName="ImportExportService" ServiceAssembly="Hoteam.InforCenter.ImportExport.Service.dll" ServiceClass="Hoteam.InforCenter.ImportExport.Service.ImportExportService" ContractAssembly="Hoteam.InforCenter.ImportExport.Service.dll" ContractClass="Hoteam.InforCenter.ImportExport.Service.IImportExportService" />
+</root>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 消息方式-->
+  <PluginItem Name="RTX" Type="Message" Assembly="Hoteam.InforCenter.Common.Communication" Class="Hoteam.InforCenter.Common.Communication.RTX" />
+  <!--<PluginItem Name="Email" Type="Message" Assembly="Hoteam.InforCenter.Common.Communication" Class="Hoteam.InforCenter.Common.Communication.Email" />
+  <PluginItem Name="InstantMessage" Type="Message" Assembly="Hoteam.InforCenter.Common.Communication" Class="Hoteam.InforCenter.Common.Communication.InstantMessage" />-->
+  <!--<PluginItem Name="WeChat" Type="Message" Assembly="Hoteam.InforCenter.Common.Communication" Class="Hoteam.InforCenter.Common.Communication.WeChat" />-->
+  <PluginItem Name="QYWeiXin" Type="Message" Assembly="Hoteam.InforCenter.Common.Communication" Class="Hoteam.InforCenter.Common.Communication.QYWeiXin" />
+</root>

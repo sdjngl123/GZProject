@@ -1,0 +1,47 @@
+﻿<div id="main">
+  <div id="topNav" class="quickNav">
+  </div>
+  <div id="leftNav" class="quickNav"></div>
+  <div id="bottomNav" class="quickNav"></div>
+  <div id="rightNav" class="quickNav"></div>
+
+  <div id="desktop">
+
+  </div>
+
+  <div id="StartMenu" class="menu">
+    <div class="content"></div>
+    <div class="leftcontent">
+
+      <!--TODO：多语言读取-->
+      <ul>
+        <li id="UserName">
+           
+        </li>
+        <li>
+          <a id="MainPageMenu" href="javascript:void(0)"></a>
+        </li>
+        <li >
+          <a id="PersonalSetting" href="javascript:InforCenter_Platform_ClassicHomePageTop_Setting()"></a>
+        </li>
+        <li>
+          <a id="ModifyPassword" href="javascript:InforCenter_Platform_ClassicHomePageTop_ModifyPWD()"></a>
+        </li>
+
+        <li class="line">
+        </li>
+        <li>
+          <a id="Help" href="javascript:InforCenter_Platform_ClassicHomePageBottom_OnClick('Help')"></a>
+        </li>
+        <li>
+          <a id="About" href="javascript:InforCenter_Platform_ClassicHomePageBottom_PopUp('About')"></a>
+        </li>
+        <li>
+          <a id="ServiceAndLaw" href="javascript:InforCenter_Platform_ClassicHomePageBottom_PopUp('ServiceAndLaw')"></a>
+        </li>
+      </ul>
+      <div id="logout" onclick="HoteamUI.Security.Logout()">
+      </div>
+    </div>
+  </div>
+</div>

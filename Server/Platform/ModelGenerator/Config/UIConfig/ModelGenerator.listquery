@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListQuery Name="ThemDataListQuery" ListViewName="ThemDesignListView"  QueryPageName="" 
+             AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="THEMDESIGNDATA">
+  </ListQuery>
+</root>

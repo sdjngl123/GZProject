@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Description="集团权限初始数据" IsSysData="true">
+  <Table Name="COMPANYRULE">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="PEID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="USEBY" />
+    <Column Name="CREATEPERMISSIONOBJECTTYPE" />
+    <Row>
+      <Cell ColName="EID">COMPANYRULE_a13ed6b4b7b64e798544ba9429be06ce</Cell>
+      <Cell ColName="ENAME">集团管理员规则</Cell>
+      <Cell ColName="ECODE"></Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="PEID">COMPANYRULEROOT_COMPANYRULEROOT</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+      <Cell ColName="USEBY">Company</Cell>
+      <Cell ColName="CREATEPERMISSIONOBJECTTYPE"></Cell>
+    </Row>
+  </Table>
+  <Table Name="COMPANYRULECONDITION">
+    <Column Name="EID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="ACTIONRULEID" />
+    <Column Name="OPERATOR" />
+    <Column Name="CONDITIONVALUE" />
+    <Column Name="SERIALNUMBER" />
+    <Row>
+      <Cell ColName="EID">COMPANYRULECONDITION_9ce95d633c534fb3b58958c6bb3bdbc1</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="ACTIONRULEID">COMPANYRULE_a13ed6b4b7b64e798544ba9429be06ce</Cell>
+      <Cell ColName="OPERATOR">AND</Cell>
+      <Cell ColName="CONDITIONVALUE">{"ConditionType":"AllCompanyCondition"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="COMPANYRULEOBJECT">
+    <Column Name="EID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="OBJECTTYPE" />
+    <Column Name="COMPANYRULEID" />
+    <Row>
+      <Cell ColName="EID">COMPANYRULEOBJECT_b0336c85a92649659005ce0cdc0bdf62</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="OBJECTTYPE">COMPANY</Cell>
+      <Cell ColName="COMPANYRULEID">COMPANYRULE_a13ed6b4b7b64e798544ba9429be06ce</Cell>
+    </Row>
+  </Table>
+  <Table Name="COMPANYRULEPERMISSION">
+    <Column Name="EID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="ACTIONRULEID" />
+    <Column Name="PERMISSIONACTORVALUE" />
+    <Column Name="PERMISSIONACTIONVALUE" />
+    <Column Name="SERIALNUMBER" />
+    <Row>
+      <Cell ColName="EID">COMPANYRULEPERMISSION_57b7baa1d4a64cb788d5620a35013242</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="ACTIONRULEID">COMPANYRULE_a13ed6b4b7b64e798544ba9429be06ce</Cell>
+      <Cell ColName="PERMISSIONACTORVALUE">{"ActorValue":"USERINFO_System","ActorType":"PermissionToUser"}</Cell>
+      <Cell ColName="PERMISSIONACTIONVALUE">{"AllowActions":"COMPANYSHOWDATA"}</Cell>
+      <Cell ColName="SERIALNUMBER">1</Cell>
+    </Row>
+  </Table>
+  <TableSchema Name="COMPANYRULE" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PEID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="0" PrimaryKeyOrder="0" />
+    <Column Name="USEBY" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEPERMISSIONOBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="COMPANYRULECONDITION" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ACTIONRULEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OPERATOR" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CONDITIONVALUE" DataType="STRING500" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="COMPANYRULEOBJECT" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="COMPANYRULEID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="COMPANYRULEPERMISSION" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ACTIONRULEID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERMISSIONACTORVALUE" DataType="TEXT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PERMISSIONACTIONVALUE" DataType="TEXT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+</root>

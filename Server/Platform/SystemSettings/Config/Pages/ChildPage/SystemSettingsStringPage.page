@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SystemSettingsStringPage">
+  <Settings Key="height" Value="340"/>
+  <Settings Key="width" Value="497"/>
+  <Settings Key="title" Value="SystemSettingsStringPage.SYSTEMSETTINGSHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_SystemSettings_SystemSettings_StringPageLoadData(pageEvent)"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_SystemSettings_SystemSettings_StringPageGetData(pageEvent)"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 0"/>
+      <!--String值-->
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+    </PageControl>
+    
+    <!--值-->
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="VALUE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="VALUE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="VALUE_Label" ParentID="R-3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SystemSettingsStringPage.VALUEHeader" />
+    </PageControl>
+    <PageControl ControlID="VALUE_Value" ParentID="R-3" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^([\s\S]{0,1000})?$" />
+      <Settings Key="regextipId" Value="SystemSettingsStringPage.VALUERegex" />
+    </PageControl>
+  </PageControls>
+</root>

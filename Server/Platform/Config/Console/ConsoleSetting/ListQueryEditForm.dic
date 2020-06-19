@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListQueryEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">列表查询编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Query Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeSelect">
+      <LocalizedLabel LanguageRef="zhs">返回值类型选择窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return Value Type Selection Window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">配置项名称,，作为查找配置项的关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CI Name, as a keyword to find CI</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewName">
+      <LocalizedLabel LanguageRef="zhs">列表视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Name</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">列表视图配置项名称（.listview中配置项的名称），用于获取列表标题和数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View CI Name (. the name of the CI in the listview), used to get the list title and data</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageName">
+      <LocalizedLabel LanguageRef="zhs">查询页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Name</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">用于列表查询的页面名称（.page页面），当列表使用视图查询数据时，可以填写根据视图生成的查询页面（如EITEMVIEW-QUERY），如果使用自定义WCF接口查询数据，可以使自定义查询页面 （如WorkflowTemplateQuery）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the page used for the list query. page), when the list uses view query data, you can fill out the query page generated from the view (such as EITEMVIEW-QUERY), and if you use the custom WCF interface query data, you can make the custom query page (such as Workfl) owTemplateQuery)</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageNameItem">
+      <LocalizedLabel LanguageRef="zhs">查询页面配置项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Configuration Items</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageNameItemDescription">
+      <LocalizedLabel LanguageRef="zhs">用于配置可配置的查询页面，如：TreeListQueryCtrl页面，此业务对应treelistquery配置文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A configurable query page can be configuated, such as the TreeListQueryCtrl page, which corresponds to the treelistquery configuration file</LocalizedLabel>
+    </Label>
+    <Label Name="AllowMultiSelect">
+      <LocalizedLabel LanguageRef="zhs">允许多选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow Multi-selection</LocalizedLabel>
+    </Label>
+    <Label Name="AllowMultiSelectDescription">
+      <LocalizedLabel LanguageRef="zhs">是否允许多选，用于限制返回值的个数，默认值false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to allow multiple options to limit the number of return values, the default value false</LocalizedLabel>
+    </Label>
+    <Label Name="AllowReturnEmptyValue">
+      <LocalizedLabel LanguageRef="zhs">允许返回空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow Return Null</LocalizedLabel>
+    </Label>
+    <Label Name="AllowReturnEmptyValueDescription">
+      <LocalizedLabel LanguageRef="zhs">是否允许返回空,默认值false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow return null, default false</LocalizedLabel>
+    </Label>
+    <Label Name="ListTitleDataService">
+      <LocalizedLabel LanguageRef="zhs">列表标题WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List title WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListTitleDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">获取列表标题的WCF接口，主要用于获取自定义的列表标题，如InforCenter.Workflow.WorkflowTemplateService.GetWorkflowTemplateTitleData，自定义WCF接口的参数固定为GridRowTitlePara，返回值为GridTitleData类型。如果配置此接口，则不会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The WCF interface for obtaining the title of the list is used primarily to get a custom list title, such as InforCenter. Workflow. WorkflowTemplateService. GetWorkflowTemplateTitleData, the custom WCF interface is fixed to GridRowTitlePara and the return value is the GridTitleData type. If you configure this interface, the default interface for the generic page is not used.</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageDataService">
+      <LocalizedLabel LanguageRef="zhs">列表数据WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List data WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">获取分页列表数据的WCF接口，主要用于获取自定义的列表数据，如InforCenter.Workflow.WorkflowTemplateService.GetOnePageGridData，自定义WCF接口的参数固定为OnePageGridDataPara，返回值为GridObject类型。如果配置此接口，则不会是使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The WCF interface for getting the paged list data is used primarily to get custom list data, such as InforCenter.Workflow.WorkflowTemplateService.GetOnePageGridData, the custom WCF interface is fixed to OnePageGridDataPara and the return value is the GridObject type. If you configure this interface, you will not use the default interface for the generic page.</LocalizedLabel>
+    </Label>
+    <Label Name="ReturnValueType">
+      <LocalizedLabel LanguageRef="zhs">返回值类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return Value Type</LocalizedLabel>
+    </Label>
+    <Label Name="ReturnValueTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">返回值类型验证，用与返回值类型验证，只能返回选择的类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return value type validation is validated with the return value type, which can only return the type of selection</LocalizedLabel>
+    </Label>
+    <Label Name="CommitJS">
+      <LocalizedLabel LanguageRef="zhs">提交执行脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Submit Execution Script</LocalizedLabel>
+    </Label>
+    <Label Name="CommitJSDescription">
+      <LocalizedLabel LanguageRef="zhs">自定义确定按钮处理方法，主要作用重写确定按钮事件。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom button processing method, main action is to override the determined button event.</LocalizedLabel>
+    </Label>
+    <Label Name="QueryJS">
+      <LocalizedLabel LanguageRef="zhs">查询执行脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Execution Script</LocalizedLabel>
+    </Label>
+    <Label Name="QueryJSDescription">
+      <LocalizedLabel LanguageRef="zhs">自定义查询按钮处理方法，主要作用重写确定按钮事件。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom the query button processing method, and the main action is to override the determined button event.</LocalizedLabel>
+    </Label>
+    <Label Name="NodeChangeJS">
+      <LocalizedLabel LanguageRef="zhs">节点切换执行脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node Switch Execution Script</LocalizedLabel>
+    </Label>
+    <Label Name="NodeChangeJSDescription">
+      <LocalizedLabel LanguageRef="zhs">自定义节点切换处理方法，主要作用重写确定按钮事件。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom node switching processing method, main action is to overwrite the determined button event.</LocalizedLabel>
+    </Label>
+    <Label Name="ListQueryNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">列表通用查询名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Listing General Query Name Duplicate</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

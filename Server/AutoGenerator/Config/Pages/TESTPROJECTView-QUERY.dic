@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTPROJECTView-QUERY" IsWeb="true">
+    <Label Name="STANDARDNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDNAME</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="STANDARDCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">标准编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STANDARDCODE</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="SCHEDULETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">排程类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SCHEDULETYPE</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

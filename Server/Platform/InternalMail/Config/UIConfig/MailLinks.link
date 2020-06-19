@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="DraftsMailLinks" ObjectType="" IsTemplate="false">
+    <PageLink Name="DraftsMailLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="DraftsList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="DustbinMailLinks" ObjectType="" IsTemplate="false">
+    <PageLink Name="DustbinMailLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="DustbinList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="SystemMailLinks" ObjectType="" IsTemplate="false">
+    <PageLink Name="SystemMailLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="SystemMailList" />
+    </PageLink>
+  </PageLinks>
+
+
+
+  <PageLinks Name="ReciveInternalMailLinks" ObjectType="" IsTemplate="false">
+    <PageLink Name="ReciveMailLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="ReciveInternalMailList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="SendInternalMailLinks" ObjectType="" IsTemplate="false">
+    <PageLink Name="SendMailLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="SendInternalMailList" />
+    </PageLink>
+  </PageLinks>
+
+
+  <PageLinks Name="MailContentPageLinks" ObjectType="" IsTemplate="false" >
+    <PageLink Name="MainBodyLink" PageName="MailMainBody" IsSelected="false"    IsTemplate="false">
+    </PageLink>
+    <PageLink Name="PluginLink" PageName="MailPlugin" IsSelected="false"    IsTemplate="false">
+    </PageLink>
+  </PageLinks>
+
+</root>

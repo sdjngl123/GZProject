@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedLineInfo" IsCache="true">
+  <Settings Key="title" Value="SelectedLineInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedLineInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_SelectedLineInfo_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="SelectedLineInfo_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="45"/>
+        <Settings Key="childid" Value="SelectedLineInfoMenu"/>
+      </Settings>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SelectedLineInfoEditGrid"/>
+      </Settings>
+    </PageControl>
+    
+    <!--菜单-->
+    <PageControl ControlID="SelectedLineInfoMenu" ParentID="SelectedLineInfo_Layout" TypeName="Menu">
+
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="Common.Create"/>
+        <Settings Key="value" Value="Create"/>
+        <Settings Key="icon" Value="p_add"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectedLineInfo_CreateMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="Common.Delete"/>
+        <Settings Key="value" Value="Delete"/>
+        <Settings Key="icon" Value="p_delete"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectedLineInfo_DeleteMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="SelectedLineInfo.MoveUp"/>
+        <Settings Key="value" Value="MoveUp"/>
+        <Settings Key="icon" Value="p_moveup"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectedLineInfo_MoveUpMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="SelectedLineInfo.MoveDown"/>
+        <Settings Key="value" Value="MoveDown"/>
+        <Settings Key="icon" Value="p_movedown"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectedLineInfo_moveDownMenu(ctrlEvent);"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="SelectedLineInfo.Validate"/>
+        <Settings Key="value" Value="Validate"/>
+        <Settings Key="icon" Value="~/Platform/Image/Console/GraphEditor/validate.png"/>
+        <Settings Key="js" Value="InforCenter_Platform_SelectedLineInfo_ValidateMenu(ctrlEvent);"/>
+      </Settings>
+
+    </PageControl>
+    <PageControl ControlID="SelectedLineInfoEditGrid" ParentID="SelectedLineInfo_Layout" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="SelectedLineInfo.Left" />
+        <Settings Key="name" Value="Left" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="width" Value="35" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedLineInfo_BindingLeftDropdown(ctrlEvent);" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="SelectedLineInfo.ParameterType" />
+        <Settings Key="name" Value="ParameterType" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="width" Value="75" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedLineInfo_BindingParameterDropdown(ctrlEvent);" />
+        <Settings Key="eventbind" >
+          <Settings Key="change" Value="InforCenter_Platform_SelectedLineInfo_ParameterDropdownChanged(ctrlEvent);" />
+        </Settings>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="SelectedLineInfo.Condition" />
+        <Settings Key="name" Value="Condition" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="textValue" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedLineInfo_ConditionOnClick(ctrlEvent);" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="SelectedLineInfo.Right" />
+        <Settings Key="name" Value="Right" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="width" Value="35" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedLineInfo_BindingRightDropdown(ctrlEvent);" />
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="SelectedLineInfo.Operator" />
+        <Settings Key="name" Value="Operator" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="dropdown" />
+        <Settings Key="width" Value="50" />
+        <Settings Key="databind" Value="InforCenter_Platform_SelectedLineInfo_BindingOperatorDropdown(ctrlEvent);" />
+        
+      </Settings>
+    </PageControl>
+  </PageControls>
+
+</root>

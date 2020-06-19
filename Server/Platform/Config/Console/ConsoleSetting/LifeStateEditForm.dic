@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeStateEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">生命周期状态编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Life cycle state Edit Window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">状态名称，用于区分对象的不同生命周期状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State names, used to distinguish between different life cycle state of objects</LocalizedLabel>
+    </Label>
+    <Label Name="ImagePath">
+      <LocalizedLabel LanguageRef="zhs">图片路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture Path</LocalizedLabel>
+    </Label>
+    <Label Name="ImagePathDescription">
+      <LocalizedLabel LanguageRef="zhs">在生命周期设计器中状态节点的图片路径，~代表系统根路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture path of the state node in the life cycle designer,~on behalf of the system root path</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">状态类型，包括流程状态、阶段状态。流程状态可以包含在流程生命周期中，节点状态可以包含在阶段生命周期中。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State type, including process state, phase state. The process state can be included in the process lifecycle, and the node state can be included in the phase life cycle.</LocalizedLabel>
+    </Label>
+    <Label Name="Workflow">
+      <LocalizedLabel LanguageRef="zhs">流程状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process state</LocalizedLabel>
+    </Label>
+    <Label Name="Stage">
+      <LocalizedLabel LanguageRef="zhs">阶段状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Phase state</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

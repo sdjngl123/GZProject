@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWATTACHINFOVIEWView" IsWeb="true">
+    <Label Name="WORKFLOWATTACHINFOVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">WORKFLOWATTACHINFO</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WORKFLOWATTACHINFO</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWATTACHINFOVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">WORKFLOWATTACHINFO</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WORKFLOWATTACHINFO</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

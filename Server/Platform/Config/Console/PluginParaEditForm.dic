@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PluginParaEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流程插件参数定义</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Plug-in Parameter Definition</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+    ServiceName="FormListViewService"
+    ServiceAssembly="Hoteam.InforCenter.FormListManagement.Service.dll"
+    ServiceClass="Hoteam.InforCenter.FormListManagement.Service.FormListViewService"
+    ContractAssembly="Hoteam.InforCenter.FormListManagement.Service.dll"
+    ContractClass="Hoteam.InforCenter.FormListManagement.Service.IFormListViewService"/>
+</root>

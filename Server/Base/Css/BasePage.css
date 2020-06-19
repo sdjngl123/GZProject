@@ -1,0 +1,162 @@
+﻿html
+{
+    overflow:hidden;
+}
+body
+{
+    background:#fff;
+}
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,form,p
+{
+     margin:0px;
+}
+
+/*问题：49*/
+body,textarea,input,select
+{
+    font-family: 微软雅黑,Lucida Grande,Lucida Sans,Arial,sans-serif !important;
+    font-size:12px;
+}
+
+a
+{
+    text-decoration:none;
+}
+a:hover
+{
+    text-decoration:underline;
+}
+a img
+{
+    border:none;
+}
+em,var
+{
+    font-style:normal;
+}
+ul,ol,li
+{
+     padding:0px;
+     list-style:none;
+}
+input,textarea,a,button
+{
+    outline:none;
+}
+.noMargin
+{
+    margin:0px;
+}
+form
+{
+    position:absolute;
+    top:0px;
+    bottom:0px;
+}
+
+.hoteam-console-image
+{
+    float:right;
+}
+
+.selectedlist li
+{
+    line-height:20px;
+    height:20px;
+    padding:5px;
+    border:solid 1px #fff;
+}
+.selectedlist li span
+{
+    float:left;
+}
+.selectedlist li span.selectedico
+{
+    height:16px;
+    width:16px;
+    background-repeat:no-repeat;
+    background-position:0 0 ;
+    margin:4px 10px 0 0 ;
+}
+.selectedlist li.selected
+{
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFCC;
+}
+
+/*
+    登录等待效果样式
+*/
+
+#LoginWait_Container
+{
+    position: fixed; background-color: #D8F0FC; z-index:10000; height:100%;width:100%;
+}
+#LoginWait
+{
+    height:120px; top:45%; position:absolute; width:100%; background-color:#479CD1;
+}
+
+#LoginWait_Container .Waite_Logo
+{
+    height:80px;background-position:center;
+      background-image: url(Logo.png);
+    background-repeat: no-repeat;
+}
+#LoginWait_Container .text
+{
+    height:20px; line-height:20px; font-size:18px; text-align:center; font-weight:bold; color:#fff
+}
+::-webkit-scrollbar
+{
+    width:12px;
+    height:12px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:#c6c6c6;
+    -webkit-border-radius:4px;
+    outline-offset:-2px;
+    border:1px solid #c6c6c6;
+}
+
+.hoteam-layout-wait {
+    position: absolute;
+    z-index: 999;
+    background: url("/Base/Css/loading.gif") 50% 50% no-repeat transparent;
+    background-color: #080505;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+/*IE10 去除阴影*/
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+    div {
+        box-shadow: none !important;
+    }
+}
+
+.EditTreeGrid ::selection {
+    background-color: transparent;
+}
+
+.menubar ::selection {
+    background-color: transparent;
+}
+
+.TreeListLabel ::selection {
+    background-color: transparent;
+}
+
+.bottomArea ::selection {
+    background-color: transparent;
+}
+
+.EditTreeGrid .htgrid-edit-td ::selection{
+    background-color:#7DC5FF;
+}
+

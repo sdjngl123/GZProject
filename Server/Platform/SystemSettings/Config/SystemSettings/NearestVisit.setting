@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppSet Key="nearestVisit205" Value="E:\8.1ICPStudio2.1\ICP-Studio2.1\Source\Server\AutoGenerator\Config\Pages\ACTIONRULE-CREATE.page" ToClient="false" Description="205">
+    <FilePath>E:\8.1ICPStudio2.1\ICP-Studio2.1\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit206" Value="E:\8.1ICPStudio2.1\ICP-Studio2.1\Source\Server\Config\Apps.database" ToClient="false" Description="206">
+    <FilePath>E:\8.1ICPStudio2.1\ICP-Studio2.1\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit199" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\AutoGenerator\Config\Pages\ACTIONRULE-CREATE.page" ToClient="false" Description="199">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit200" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Base\Config\SADSA.model" ToClient="false" Description="200">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit203" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Base\Config\Console\BaseConsoleToolbar.dic" ToClient="false" Description="203">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit204" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Base\Config\Console\BaseConsoleToolbar.conbar" ToClient="false" Description="204">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit202" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Base\Config\Console\BaseConsoleModule.dic" ToClient="false" Description="202">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit201" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Example\Config\UIConfig\JHJKHJKMenu.menu" ToClient="false" Description="201">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit198" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Example\Training\Config\FeedBack\FEEDBACK.model" ToClient="false" Description="198">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit197" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Example\Training\Config\Training\TRAININGCOURSE.model" ToClient="false" Description="197">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit196" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Example\Config\Model\TTTTT.model" ToClient="false" Description="196">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit195" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Example\Config\Model\ZZZZZ.model" ToClient="false" Description="195">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit194" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\AutoGenerator\Config\IOUIO.model" ToClient="false" Description="194">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit193" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\Config\Model\BaseInfo\ENTITY.model" ToClient="false" Description="193">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit192" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Example\Config\Model\JHJKHJK.model" ToClient="false" Description="192">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit191" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\AutoGenerator\HJKHJKH.model" ToClient="false" Description="191">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit190" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\AutoGenerator\QWQERUY.model" ToClient="false" Description="190">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit189" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\AutoGenerator\UIOUIOU.model" ToClient="false" Description="189">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit188" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Config\Apps.database" ToClient="false" Description="188">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+  <AppSet Key="nearestVisit187" Value="C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\AutoGenerator\TTRR.model" ToClient="false" Description="187">
+    <FilePath>C:\Users\Administrator\source\Workspaces\工作区\ICP-EnterpriseV8.1\开发库\Source\Server\Platform\SystemSettings\Config\SystemSettings\NearestVisit.setting</FilePath>
+  </AppSet>
+</root>

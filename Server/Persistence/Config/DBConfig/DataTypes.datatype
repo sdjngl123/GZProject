@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DataType Name="BOOL" Validation="" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="NUMBER(2,0)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="BIT" />
+    <FieldType DBType="MYSQL" DBFieldType="TINYINT(1)" />
+  </DataType>
+  <DataType Name="INT" Validation="Integer" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="NUMBER(20,0)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="INT" />
+    <FieldType DBType="MYSQL" DBFieldType="INT" />
+  </DataType>
+  <DataType Name="LONG" Validation="LongInteger" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="NUMBER(20,0)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="BIGINT" />
+    <FieldType DBType="MYSQL" DBFieldType="BIGINT" />
+  </DataType>
+  <DataType Name="FLOAT" Validation="Float" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="FLOAT" />
+    <FieldType DBType="SQLSERVER" DBFieldType="FLOAT" />
+    <FieldType DBType="MYSQL" DBFieldType="FLOAT" />
+  </DataType>
+  <DataType Name="FLOAT10_5" Validation="Float10_5" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="FLOAT" />
+    <FieldType DBType="SQLSERVER" DBFieldType="FLOAT" />
+    <FieldType DBType="MYSQL" DBFieldType="FLOAT" />
+  </DataType>
+  <DataType Name="DOUBLE" Validation="Double" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="NUMBER(20,0)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="DOUBLE" />
+    <FieldType DBType="MYSQL" DBFieldType="DOUBLE" />
+  </DataType>
+  <DataType Name="NUMERIC" Validation="Numeric" Unquoted="true">
+    <FieldType DBType="ORACLE" DBFieldType="NUMBER(38,8)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NUMERIC(38,8)" />
+    <FieldType DBType="MYSQL" DBFieldType="NUMERIC(38,8)" />
+  </DataType>
+  <DataType Name="STRING20" Validation="String20" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(20)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(20)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(20)" />
+  </DataType>
+  <DataType Name="STRING50" Validation="String50" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(50)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(50)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(50)" />
+  </DataType>
+  <DataType Name="STRING100" Validation="String100" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(100)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(100)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(100)" />
+  </DataType>
+  <DataType Name="STRING150" Validation="String150" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(150)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(150)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(150)" />
+  </DataType>
+  <DataType Name="STRING200" Validation="String200" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(200)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(200)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(200)" />
+  </DataType>
+  <DataType Name="STRING250" Validation="String250" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(250)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(250)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(250)" />
+  </DataType>
+  <DataType Name="STRING450" Validation="String450" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(450)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(450)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(450)" />
+  </DataType>
+  <DataType Name="STRING500" Validation="String500" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(500)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(500)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(500)" />
+  </DataType>
+  <DataType Name="STRING1000" Validation="String1000" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(1000)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(1000)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(100)" />
+  </DataType>
+  <DataType Name="STRING2000" Validation="String2000" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(2000)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(2000)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(2000)" />
+  </DataType>
+  <DataType Name="STRINGMAX" Validation="StringMAX" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(2000)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(MAX)" />
+    <FieldType DBType="MYSQL" DBFieldType="TEXT" />
+  </DataType>
+  <DataType Name="TEXT" Validation="" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NCLOB" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NTEXT" />
+    <FieldType DBType="MYSQL" DBFieldType="TEXT" />
+  </DataType>
+  <DataType Name="PERCENT" Validation="" Unquoted="false">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(20)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(20)" />
+    <FieldType DBType="MYSQL" DBFieldType="VARCHAR(20)" />
+  </DataType>
+</root>

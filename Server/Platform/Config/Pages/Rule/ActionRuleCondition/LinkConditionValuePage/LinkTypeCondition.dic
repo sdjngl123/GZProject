@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LinkTypeCondition" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">关系类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship type</LocalizedLabel>
+    </Label>
+    <Label Name="LinkType">
+      <LocalizedLabel LanguageRef="zhs">类型值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type value</LocalizedLabel>
+    </Label>
+    <Label Name="RelationValue">
+      <LocalizedLabel LanguageRef="zhs">关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship</LocalizedLabel>
+    </Label>
+    <Label Name="IsNotInOption">
+      <LocalizedLabel LanguageRef="zhs">类型值不存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type value does not exist</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

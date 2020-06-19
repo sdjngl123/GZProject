@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PermissionActorValue">
+  <Settings Key="title" Value="PermissionActorValue.Title"/>
+  <Settings Key="height" Value="180"/>
+  <Settings Key="width" Value="300"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_PermissionActorValue_LoadPage(pageEvent);"/>    
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="PermissionActorValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ActorType_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ActorValue_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 授权类型容器-->
+    <PageControl ControlID="ActorType_Container" ParentID="PermissionActorValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ActorTypeLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ActorTypeDDL"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+    <!-- 授权类型页面容器-->
+    <PageControl ControlID="ActorValue_Container" ParentID="PermissionActorValue_Container" TypeName="PageContainer">
+      <!-- 内容动态加载-->
+    </PageControl>
+    <!-- 按钮容器-->
+    <PageControl ControlID="Btn_Container" ParentID="PermissionActorValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    
+    <!-- 授权类型控件-->
+    <PageControl ControlID="ActorTypeLabel" ParentID="AcotrType_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="PermissionActorValue.ActorType" />
+    </PageControl>
+    <PageControl ControlID="ActorTypeDDL" ParentID="AcotrType_Container" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_PermissionActorValue_InitPermissionTypeDLL(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_PermissionActorValue_PermissionTypeSelectedIndexChange(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="disabled" Value="false" />
+    </PageControl>
+
+    <!-- 按钮控件-->
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_PermissionActorValue_GetPermissionActorValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

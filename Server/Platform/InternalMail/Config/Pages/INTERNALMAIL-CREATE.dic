@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="INTERNALMAIL-CREATE" IsWeb="true">
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 500 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="COPYTOUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">抄送人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cc</LocalizedLabel>
+    </Label>
+    <Label Name="COPYTOUSERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 500 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SECRETUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">密送人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bcc</LocalizedLabel>
+    </Label>
+    <Label Name="SECRETUSERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 500 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MAILTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MAILTITLERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 500 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length is 100 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MAILCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="MAILCONTENTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度2000&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum length of the input is 2000 &lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="INTERNALMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">新建内部邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create a new internal mail</LocalizedLabel>
+    </Label>
+    <Label Name="PLUGINHeader">
+      <LocalizedLabel LanguageRef="zhs">附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="Send">
+      <LocalizedLabel LanguageRef="zhs">发送</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="Cancel">
+      <LocalizedLabel LanguageRef="zhs">取消</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPE">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTNAME">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="EID">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

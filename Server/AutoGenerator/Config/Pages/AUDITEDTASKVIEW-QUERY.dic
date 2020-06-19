@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="AUDITEDTASKVIEW-QUERY" IsWeb="true">
+    <Label Name="TaskNameHeader">
+      <LocalizedLabel LanguageRef="zhs">任务名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task name</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="FlowTempleteHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="TaskActorHeader">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="AgentUserHeader">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="CompleteUserHeader">
+      <LocalizedLabel LanguageRef="zhs">实际完成人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Actual person who complete it</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

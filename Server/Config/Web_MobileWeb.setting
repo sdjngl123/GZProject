@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<AppSet Key="MobileLoginPage" Value="MobileLogin" ToClient="true" Description="移动系统默认登陆页" />
+  <AppSet Key="AppVersion" Value="1.1.0.0" ToClient="false" Description="客户端程序版本" />
+  <AppSet Key="WebAppVersion" Value="1.1.0.0" ToClient="true" Description="Web程序版本" />
+  <AppSet Key="AppDownLoadPage" Value="/Mobile/AppDownload.html" ToClient="false" Description="客户端程序下载页面" />
+  <AppSet Key="AppDownLoadPath" Value="/Mobile/App/InforMobile.apk" ToClient="false" Description="客户端程序下载地址" />
+  <AppSet Key="AndroidUpdateTime" Value="2015年11月09日" ToClient="true" />
+  <AppSet Key="IOSUpdateTime" Value="2015年11月09日" ToClient="true" />
+  <AppSet Key="ImagesBaseUrl" Value="MobileBase/Image/mobile-icon.svg#" ToClient="true" />
+  <AppSet Key="InstantMessageInterval" Value="30" ToClient="true" Description="客户端循环访问服务器检查新消息的时间间隔，单位为秒" />
+  <AppSet Key="CheckConnectionTimeSpan" Value="60" ToClient="false" Description="客户端连接超时时间，当指定时间内客户端不主动连接服务器（通过循环消息检测）认为用户已掉线，单位为秒" />
+  <AppSet Key="LoginACL" Value="false"  Description="设备认证" />
+  <AppSet Key="HideSViewButtonArray" Value=""  Description="设备认证" />-->
+  
+</root>

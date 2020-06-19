@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">Tab页配置窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Configuration Window</LocalizedLabel>
+    </Label>
+    <Label Name="root">
+      <LocalizedLabel LanguageRef="zhs">根目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root Directory</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksName">
+      <LocalizedLabel LanguageRef="zhs">标签页组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label Page Group Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksNameDescription">
+      <LocalizedLabel LanguageRef="zhs">一组Tab页面的名称，作为查找配置项的关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of a set of Tab pages as the key to find the configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">可选值为所有对象，当查看属性信息（点击对应对象的详细图标）时，弹出所配置的tab页。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Optional values are all objects, and when viewing attribute information (click on the detailed icon for the corresponding object), poping up the configured tab page.</LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">对应的显示页面,（扩展名为.page页面）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The corresponding display page, (extension name is . page)</LocalizedLabel>
+    </Label>
+    <Label Name="TabSelectedIndex">
+      <LocalizedLabel LanguageRef="zhs">默认选中的tab页序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default selected tab page serial number</LocalizedLabel>
+    </Label>
+    <Label Name="TabSelectedIndexDescription">
+      <LocalizedLabel LanguageRef="zhs">设置默显示的Tab页面，如果没有此值则显示第一个Tab子页,Int类型，从0开始
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set the tab page for the implied display, and if you do not have this value, display the first Tab child-page, the Int type, starting from 0</LocalizedLabel>
+    </Label>
+    <Label Name="HideTitle">
+      <LocalizedLabel LanguageRef="zhs">隐藏Tab标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide Tab header</LocalizedLabel>
+    </Label>
+    <Label Name="HideTitleDescription">
+      <LocalizedLabel LanguageRef="zhs">
+        隐藏Tab控件导航
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide Tab control navigation</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinkName">
+      <LocalizedLabel LanguageRef="zhs">标签页名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label page name</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinkNameDescription">
+      <LocalizedLabel LanguageRef="zhs">PageLink的名称，也用于作为多语言的Label</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of PageLink is also used as a Label for multiple languages</LocalizedLabel>
+    </Label>
+    <Label Name="Value">
+      <LocalizedLabel LanguageRef="zhs">参数值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Value</LocalizedLabel>
+    </Label>
+    <Label Name="PagePara">
+      <LocalizedLabel LanguageRef="zhs">页面参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page parameters</LocalizedLabel>
+    </Label>
+    <Label Name="PageParaDescription">
+      <LocalizedLabel LanguageRef="zhs">需要传到页面中的参数列表，此处的页面参数不能使用替换参数（如[List_EID]）,只能填写固定的参数,弹出框中，第一列代表参数名称，第二列代表参数值，第三列代表参数组成的数组的名称（数组名称相同的的会组成一个数组），第四列代表该参数会在哪一个父级参数下面（第三列、第四列没有的可不写）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">A list of parameters that need to be uploaded to the page, where the page parameter cannot be used with an alternate parameter (e. g., [List_EID]), can only fill in fixed parameters. In the pop-up box, the first column represents the parameter name, the second column represents the parameter value, and the third column represents the name of the array of parameters Name (an array with the same array name), the fourth column represents which parent parameter the parameter is under (third column, fourth column does not have to write)</LocalizedLabel>
+    </Label>
+    <Label Name="CreatePageLinks">
+      <LocalizedLabel LanguageRef="zhs">创建标签页组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Label Page Group</LocalizedLabel>
+    </Label>
+    <Label Name="CreatePageLink">
+      <LocalizedLabel LanguageRef="zhs">创建标签页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Label Page</LocalizedLabel>
+    </Label>
+    <Label Name="ActiveRefresh">
+      <LocalizedLabel LanguageRef="zhs">标签页激活刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Page Activation Refresh</LocalizedLabel>
+    </Label>
+    <Label Name="ActiveRefreshDescription">
+      <LocalizedLabel LanguageRef="zhs">此配置将忽略同一个页面不加载，标签页激活时刷新，默认false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This configuration will ignore the same page not loaded, refresh when the label page is active, and default false</LocalizedLabel>
+    </Label>
+    <Label Name="IsDelayLoadPage">
+      <LocalizedLabel LanguageRef="zhs">标签页延迟加载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label page delay loading</LocalizedLabel>
+    </Label>
+    <Label Name="IsDelayLoadPageDescription">
+      <LocalizedLabel LanguageRef="zhs">考虑到标签页全部加载性能问题，标签页支持延迟加载，激活标签页刷新，默认true</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In view of the full load performance issue on the label page, the tab page supports delayed loading, the active label page refreshes, and default true</LocalizedLabel>
+    </Label>
+    <Label Name="IsSelected">
+      <LocalizedLabel LanguageRef="zhs">是否默认选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default is selected or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsSelectedDescription">
+      <LocalizedLabel LanguageRef="zhs">标签页加载是，自动选中默认选中页，默认false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label page load is Yes, automatically check the default selected page, default false</LocalizedLabel>
+    </Label>
+    <Label Name="CheckContentPermission">
+      <LocalizedLabel LanguageRef="zhs">检查内容权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check Content Permissions</LocalizedLabel>
+    </Label>
+    <Label Name="CheckContentPermissionDescription">
+      <LocalizedLabel LanguageRef="zhs">检查内容权限，如果设置检查权限，则tab对应主对象没有权限，则当前页面显示没有权限。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check the content permissions. If the check permissions are set, the main tab corresponding object does not have permission, the current page shows no permission.</LocalizedLabel>
+    </Label>
+    <Label Name="Order">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="OrderDescription">
+      <LocalizedLabel LanguageRef="zhs">标签页排序号，如：001，100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label page sort number, such as: 001, 100</LocalizedLabel>
+    </Label>
+    <Label Name="Dic">
+      <LocalizedLabel LanguageRef="zhs">多语言管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-language management</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAdd">
+      <LocalizedLabel LanguageRef="zhs">复制新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy and add</LocalizedLabel>
+    </Label>
+    <Label Name="Up">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="Down">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateAddPageLinks">
+      <LocalizedLabel LanguageRef="zhs">根据模板添加Tab页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add Tab Page from template</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,16 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="LayoutContainer">
+  <PageHandlers>
+  </PageHandlers>
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2">
+    <Settings Key="childid" Value="[INFONAME]_Value_Image"/>
+  </Settings>
+</PageControl>
+
+<PageControl ControlID="[INFONAME]_Value_Image" ParentID="[PARENTID]" TypeName="Image" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script=""/>
+  </PageHandlers>
+  <Settings Key="fixedType" Value="height" />
+  <Settings Key="border" Value="true" />
+</PageControl>

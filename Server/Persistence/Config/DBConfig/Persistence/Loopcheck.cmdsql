@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+<!--环检测命令-->
+  <Command Name="LINKLOOPCHECK">
+    <DatabaseType Name="">
+      <CommandItem CmdType="PRO" IsQuery="true">
+        LOOPCHECK(LINKTABLE,OBJEID,INSERTEID,COMPANYID)
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="PRO" IsQuery="true">
+        LOOPCHECK(LINKTABLE,OBJEID,INSERTEID,COMPANYID,CURSOR result)
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="MYSQL">
+      <CommandItem CmdType="PRO" IsQuery="true">
+        LOOPCHECK(LINKTABLE,OBJEID,INSERTEID,COMPANYID);
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

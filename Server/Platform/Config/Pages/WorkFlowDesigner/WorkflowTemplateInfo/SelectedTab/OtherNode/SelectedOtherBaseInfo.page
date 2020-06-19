@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedOtherBaseInfo" IsCache="true">
+  <Settings Key="title" Value="SelectedOtherBaseInfo.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedOtherBaseInfo_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_SelectedOtherBaseInfo_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_SelectedOtherBaseInfo_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-7"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="R-8"/>
+      </Settings>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="R-9"/>
+      </Settings>
+
+    </PageControl>
+    <!--R1-->
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ShowText_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ShowText_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ShowText_Label" ParentID="R-1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedOtherBaseInfo.ShowText" />
+    </PageControl>
+    <PageControl ControlID="ShowText_Value" ParentID="R-1" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="Validation.String100" />
+    </PageControl>
+
+    <!--R2-->
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="NodeImage_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="NodeImage_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NodeImage_Label" ParentID="R-2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SelectedOtherBaseInfo.NodeImage" />
+    </PageControl>
+    <PageControl ControlID="NodeImage_Value" ParentID="R-2" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedOtherBaseInfo_SelectedImageOnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    
+  </PageControls>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTPLANTASKATTACHModel" IsWeb="true">
+    <Label Name="TESTPLANTASKATTACHHeader">
+      <LocalizedLabel LanguageRef="zhs">策划任务附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTPLANTASKATTACH</LocalizedLabel>
+    </Label>
+    <Label Name="TESTPLANTASKATTACHCaption">
+      <LocalizedLabel LanguageRef="zhs">策划任务附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TESTPLANTASKATTACH</LocalizedLabel>
+    </Label>
+    <Label Name="TASKIDHeader">
+      <LocalizedLabel LanguageRef="zhs">策划任务ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TASKID</LocalizedLabel>
+    </Label>
+    <Label Name="TASKIDCaption">
+      <LocalizedLabel LanguageRef="zhs">策划任务ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TASKID</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">文件信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FILEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="ISMUSTHeader">
+      <LocalizedLabel LanguageRef="zhs">是否必要文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsMust</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">文件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="ISMUSTCaption">
+      <LocalizedLabel LanguageRef="zhs">是否必要文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsMust</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">文件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">文件信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FILEINFO</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

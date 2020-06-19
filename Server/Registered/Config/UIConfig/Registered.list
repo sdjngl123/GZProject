@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="RegisterdManagerList" MenuName="RegisterdManagerListMenu" ListRightMenuName="" ListViewName="RegisterdManagerListView"  QueryPageName="" ListTitleDataService="" OnePageDataService="" AllPageDataService="">
+  </ListManagement>
+
+</root>

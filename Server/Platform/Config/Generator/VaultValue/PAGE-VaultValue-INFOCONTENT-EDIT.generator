@@ -1,0 +1,20 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='[OBJTYPE]';ctrlEvent.infoName='[INFONAME]';InforCenter_Platform_GenerateScript_EnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = '[OBJTYPE]';
+                 ctrlEvent.infoType = '[INFONAME]';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetVaultList(o,[REQUIRE]);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

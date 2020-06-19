@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--可以设定执行人自定义界面，如果PageName不为空，弹出PageName界面；否则执行JSMethod脚本，js脚本参数名必须为para，执行页面和脚本时会将设置执行人的可编辑列表控件的ctrlEvent传入-->
+  <WorkflowActorItem Name="Group" TemplateType=""
+                        Assembly="Hoteam.InforCenter.Workflow.Extend" 
+                         Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.GroupPanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectGroupOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitGroupData"/>
+  
+  <WorkflowActorItem Name="Role" TemplateType=""
+                      Assembly="Hoteam.InforCenter.Workflow.Extend"
+                       Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.RolePanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectRoleOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitRoleData"/>
+  <WorkflowActorItem Name="User" TemplateType=""
+                      Assembly="Hoteam.InforCenter.Workflow.Extend"
+                       Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.UserPanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectUserOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitUserData"/>
+  <WorkflowActorItem Name="GroupRole" TemplateType=""
+                        Assembly="Hoteam.InforCenter.Workflow.Extend"
+                         Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.GroupRolePanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectGroupRoleOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitGroupRoleData"/>
+  <WorkflowActorItem Name="Creator" TemplateType=""
+                    Assembly="Hoteam.InforCenter.Workflow.Extend"
+                     Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.CreatorPanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectCreatorOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitCreatorData"/>
+  <WorkflowActorItem Name="Admin" TemplateType=""
+                    Assembly="Hoteam.InforCenter.Workflow.Extend"
+                     Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.AdminPanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectAdminOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitAdminData"/>
+</root>

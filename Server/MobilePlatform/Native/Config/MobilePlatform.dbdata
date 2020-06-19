@@ -1,0 +1,2318 @@
+﻿<root IsSysData="false">
+  <Table Name="MOBILEPAGEDEV" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="PAGENAME" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="ENAME">导航页</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735537260000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636754382340000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">MainNav</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="ENAME">首页</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636597144950000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636753657890000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">Home</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="ENAME">流程管理</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636595591200000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636753657810000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">StandardList</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="ENAME">消息管理</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636589363830000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636753657740000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">StandardList</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="ENAME">最近浏览</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636614700830000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636754382090000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">StandardList</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="ENAME">我的收藏</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636615156020000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636754382210000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">StandardList</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="ENAME">工作台</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735554400000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636754382420000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">Desk</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="ENAME">导航查询</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636796784810000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636796784810000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">Select</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_b45323f186af40e4a4945cfecc07fa62</Cell>
+      <Cell ColName="ENAME">Web页面</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636630762280000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636664379190000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">WebView</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_fceb8c4dba95453b8bc59b7927de7b0c</Cell>
+      <Cell ColName="ENAME">我的</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735555010000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636735555010000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">Mine</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEDEV_fd760574ccc94275a7c44b13c274d4e1</Cell>
+      <Cell ColName="ENAME">通讯录</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754423430000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636754423430000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="PAGENAME">Contacts</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGETAB" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="TAB" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="TITLE" />
+    <Column Name="FILTERSTRING" />
+    <Column Name="LISTPAGECOUNT" />
+    <Column Name="ISSELECTED" />
+    <Column Name="ISALLSELECT" />
+    <Column Name="TABASSEMBLY" />
+    <Column Name="TABCLASSNAME" />
+    <Column Name="ASSEMBLY" />
+    <Column Name="CLASSNAME" />
+    <Column Name="SQLCOMMANDNAME" />
+    <Column Name="DATASOURCETYPE" />
+    <Column Name="RESULTOBJECTTYPE" />
+    <Column Name="RESULTORDERBY" />
+    <Column Name="SEQUENCE" />
+    <Column Name="ITEMTITLE" />
+    <Column Name="ITEMSUBTITLE" />
+    <Column Name="LISTITEMSTATE" />
+    <Column Name="LISTITEMSTATEICON" />
+    <Column Name="ITEMSUBTITLETWO" />
+    <Column Name="LISTITEMOBJECTMANAGER" />
+    <Column Name="PROPERTYCOLUMN" />
+    <Column Name="PROPERTYASSEMBLY" />
+    <Column Name="PROPERTYCLASSNAME" />
+    <Column Name="ISROOTQUERY" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_6686105b40eb40f1a27a21584da82121</Cell>
+      <Cell ColName="ENAME"></Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636813922200000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814168770000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="TITLE">{"zhs":"查询","en":"Query"}</Cell>
+      <Cell ColName="FILTERSTRING"></Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">0</Cell>
+      <Cell ColName="ISALLSELECT">0</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY">Hoteam.InforCenter.MobileNative.Business</Cell>
+      <Cell ColName="CLASSNAME">Hoteam.InforCenter.MobileNative.Business.CommonQuery</Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">FAVORITE</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ITEMTITLE">ENAME</Cell>
+      <Cell ColName="ITEMSUBTITLE">CREATEUID</Cell>
+      <Cell ColName="LISTITEMSTATE"></Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_8e398baa294446779d4c29193f1fc44e</Cell>
+      <Cell ColName="ENAME">已发起</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636752782980000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795955470000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">StartedFlow</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="TITLE">{"zhs":"已发起","en":"StartedFlow"}</Cell>
+      <Cell ColName="FILTERSTRING">CREATEUID='[CURUSERID]'  and ENAME like '%[FILTER]%'</Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">0</Cell>
+      <Cell ColName="ISALLSELECT">0</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WORKFLOWINFO</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">2</Cell>
+      <Cell ColName="ITEMTITLE">ENAME</Cell>
+      <Cell ColName="ITEMSUBTITLE">CREATETIME</Cell>
+      <Cell ColName="LISTITEMSTATE">STATEID</Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_abc1115ab9ff451baa84f7dae08ae934</Cell>
+      <Cell ColName="ENAME">已读</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636749897980000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636813994030000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">Read</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="TITLE">{"zhs":"已读","en":"Read"}</Cell>
+      <Cell ColName="FILTERSTRING">MSTATE='Read' AND MTYPE&lt;&gt;'Send'</Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">0</Cell>
+      <Cell ColName="ISALLSELECT">1</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">2</Cell>
+      <Cell ColName="ITEMTITLE">MTITLE</Cell>
+      <Cell ColName="ITEMSUBTITLE">MCONTENT</Cell>
+      <Cell ColName="LISTITEMSTATE">MSTATE</Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_c1745f94c21f444982c4b6b79268dd98</Cell>
+      <Cell ColName="ENAME">最近浏览</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636780395460000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795958900000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">最近浏览</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="TITLE">{"zhs":"最近浏览","en":"RecentlyViewed"}</Cell>
+      <Cell ColName="FILTERSTRING"></Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">1</Cell>
+      <Cell ColName="ISALLSELECT">0</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY">Hoteam.InforCenter.MobileNative.System.Business</Cell>
+      <Cell ColName="CLASSNAME">Hoteam.InforCenter.MobileNative.System.Business.RecentlyViewed</Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">MOBILEPAGEPROPERTYTABWEB</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ITEMTITLE"></Cell>
+      <Cell ColName="ITEMSUBTITLE"></Cell>
+      <Cell ColName="LISTITEMSTATE"></Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_d32f80ed4745449ba92e3a81b314af9b</Cell>
+      <Cell ColName="ENAME">已评审</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636752783960000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795955560000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">Audited</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="TITLE">{"zhs":"已审批","en":"Audited"}</Cell>
+      <Cell ColName="FILTERSTRING">COMPLETEUSER='[CURUSERID]'  and STATEID='COMPLETE'  and ENAME like '%[FILTER]%'</Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">0</Cell>
+      <Cell ColName="ISALLSELECT">0</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">3</Cell>
+      <Cell ColName="ITEMTITLE">ENAME</Cell>
+      <Cell ColName="ITEMSUBTITLE">CREATETIME</Cell>
+      <Cell ColName="LISTITEMSTATE">STATEID</Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_dd433bcb35654d0bb030acab9cc21919</Cell>
+      <Cell ColName="ENAME">未读</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636749367700000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795955110000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">UnRead</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="TITLE">{"zhs":"未读","en":"UnRead"}</Cell>
+      <Cell ColName="FILTERSTRING">MSTATE='Unread'</Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">1</Cell>
+      <Cell ColName="ISALLSELECT">1</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ITEMTITLE">MTITLE</Cell>
+      <Cell ColName="ITEMSUBTITLE">MCONTENT</Cell>
+      <Cell ColName="LISTITEMSTATE">MSTATE</Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_dfd8c06084a945f6841032773b2a88a3</Cell>
+      <Cell ColName="ENAME">待审批</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636752764450000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795955390000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">UnAudit</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="TITLE">{"zhs":"待审批","en":"UnAudit"}</Cell>
+      <Cell ColName="FILTERSTRING">(TASKACTORID='[CURUSERID]' or AGENTUSERID='[CURUSERID]')  and STATEID='RUN' and ENAME like '%[FILTER]%'</Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">1</Cell>
+      <Cell ColName="ISALLSELECT">0</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ITEMTITLE">ENAME</Cell>
+      <Cell ColName="ITEMSUBTITLE">CREATETIME</Cell>
+      <Cell ColName="LISTITEMSTATE">STATEID</Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGETAB_f53ec2fc96e84b2f94dd9d0685b34d60</Cell>
+      <Cell ColName="ENAME">我的收藏</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636780389300000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795959360000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TAB">我的收藏</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="TITLE">{"zhs":"我的收藏","en":"MyCollection"}</Cell>
+      <Cell ColName="FILTERSTRING"></Cell>
+      <Cell ColName="LISTPAGECOUNT">20</Cell>
+      <Cell ColName="ISSELECTED">1</Cell>
+      <Cell ColName="ISALLSELECT">0</Cell>
+      <Cell ColName="TABASSEMBLY"></Cell>
+      <Cell ColName="TABCLASSNAME"></Cell>
+      <Cell ColName="ASSEMBLY">Hoteam.InforCenter.MobileNative.System.Business</Cell>
+      <Cell ColName="CLASSNAME">Hoteam.InforCenter.MobileNative.System.Business.MyCollection</Cell>
+      <Cell ColName="SQLCOMMANDNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGETABSTANDARD</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">MOBILEPAGEPROPERTYTABWEB</Cell>
+      <Cell ColName="RESULTORDERBY">CreateTime desc</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ITEMTITLE"></Cell>
+      <Cell ColName="ITEMSUBTITLE"></Cell>
+      <Cell ColName="LISTITEMSTATE"></Cell>
+      <Cell ColName="LISTITEMSTATEICON"></Cell>
+      <Cell ColName="ITEMSUBTITLETWO"></Cell>
+      <Cell ColName="LISTITEMOBJECTMANAGER"></Cell>
+      <Cell ColName="PROPERTYCOLUMN"></Cell>
+      <Cell ColName="PROPERTYASSEMBLY"></Cell>
+      <Cell ColName="PROPERTYCLASSNAME"></Cell>
+      <Cell ColName="ISROOTQUERY">0</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGELISTITEM" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="OBJECTTYPE" />
+    <Column Name="OBJECTSTATE" />
+    <Column Name="SINGLEBUTTON" />
+    <Column Name="SLIDEBUTTON" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="LISTCONTENT" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_2a715026bf0f475b81eb8ffce14ad735</Cell>
+      <Cell ColName="ENAME">零组件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814170210000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821061140000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_6a25a3ae6e4548d49970a079b7a974e4</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_5248ef1ea2244d7493eb5b1355853fc8</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_3273fa09d02246eb9d45d700fc7633b4</Cell>
+      <Cell ColName="ENAME">工作流--完成</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636619599060000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795956710000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWINFO</Cell>
+      <Cell ColName="OBJECTSTATE">COMPLETE</Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_894602a596a54ae899bcccfddccf7d0f</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_4f22333331fe4a90ba527b72c6b9cc61</Cell>
+      <Cell ColName="ENAME">未读</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636590369640000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795147460000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="OBJECTSTATE">UnRead</Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON">MOBILEPAGEBUTTON_70b5e9fb30634104a3407288d9016abf;MOBILEPAGEBUTTON_f9a18f8c964145b38a14fb4fd6097d1a</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_44f439b25367423589578f7255c541d7</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_5f66450255e7423d980b45d9d958bf80</Cell>
+      <Cell ColName="ENAME">已读</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636619528040000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795147390000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="OBJECTSTATE">Read</Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON">MOBILEPAGEBUTTON_12540ccc3e174c3086de5b2ef7080166</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_92dcf91d51a74066b5246c3988c6f9ec</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_6bf52c13bdbc4bc9b6dcb92e241e79db</Cell>
+      <Cell ColName="ENAME">流程任务--运行</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636596264740000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795956890000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="OBJECTSTATE">RUN</Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_7e73073a77384fb0ae4c0f7e7b6b79f3</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_c6dfc3cc53634fff9d53f7b351ab1bb6</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_7aa6ece901974bc2aa60eeb9555fd55a</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814171370000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821061590000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_9a763dc7611b41eda529ac08757d4aaf</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_07a2be179a71492482370ec8459432f6</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_8f5feef12e5444f89f8955e2984dd77e</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636658514600000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821063740000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_42bdf85894ba4384a3c9e8a603555025</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_65c6e1d883e744c184b126f4e1c6734e</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_c2ff6be0f4a344f7b1f6ac50b5ecd540</Cell>
+      <Cell ColName="ENAME">项目</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636824511230000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636824511230000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">PROJECT</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_fc2b698e08494273891ce220ac52be09</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_c50e4fa2d39449a680cb8f0d82d8e994</Cell>
+      <Cell ColName="ENAME">任务</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636824511530000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636824511530000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">PMTASK</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_c24b83481bad48e48b00d1e2219637c1</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_d07b5f7aa9094c0a9299ad3481a2441c</Cell>
+      <Cell ColName="ENAME">工作流--运行</Cell>
+      <Cell ColName="CREATEUID">USERINFO_A6A83227DCF8493DB59F59CF579EB5C6</Cell>
+      <Cell ColName="CREATETIME">636655124890000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795955750000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWINFO</Cell>
+      <Cell ColName="OBJECTSTATE">RUN</Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_49313947c5d443ee913b655e7518dead</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_dd9973b60cc94f43a1eae6ee80d2520d</Cell>
+      <Cell ColName="ENAME">文件夹</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814013570000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814013570000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">WSFOLDER</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_6044d0808ba84b5782fb27d163ecfa15</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_de4efa079ff84c01834c33c61e78baca</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636658516190000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821062930000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_0e2c23acd70c4351bcb0972756284c17</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_60b1fed79e6e4b97bfddcbe3bc6e2c85</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_e28883e4026146a9a7669ee4c5fdabc8</Cell>
+      <Cell ColName="ENAME">零组件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814012720000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821063520000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_f002ceb86aa545b0a4dab7fe9fe89607</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_8535c59486a448878613b3ead1b75eda</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_ed432a407bf14647905af5ac36e9a7d9</Cell>
+      <Cell ColName="ENAME">流程任务--完成</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636632676970000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795956580000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="OBJECTSTATE">COMPLETE</Cell>
+      <Cell ColName="SINGLEBUTTON"></Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_4b9b3617400644599a4c617b22a694f3</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGELISTITEM_ef06ecf6a2664267ba4cb243aeb4d4f9</Cell>
+      <Cell ColName="ENAME">零组件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636615187480000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821063230000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="OBJECTSTATE"></Cell>
+      <Cell ColName="SINGLEBUTTON">MOBILEPAGEBUTTON_c5e78554cd66414ab1716ba63fd0308b</Cell>
+      <Cell ColName="SLIDEBUTTON"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="LISTCONTENT">MOBILEPAGEBUTTON_426a83a9b4ec4b14a6905bcc1c9d94de</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGEBUTTON" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="ICON" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="TITLE" />
+    <Column Name="BUTTONITEMTYPE" />
+    <Column Name="BACKGROUNDCOLOR" />
+    <Column Name="URL" />
+    <Column Name="BUTTONITEMTYPEEXTEND" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_07a2be179a71492482370ec8459432f6</Cell>
+      <Cell ColName="ENAME">列表内容点击</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821061590000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"浏览","en":""}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_0e2c23acd70c4351bcb0972756284c17</Cell>
+      <Cell ColName="ENAME">浏览</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821062930000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"浏览","en":""}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","PageID":"","AssemblyName":"Hoteam.InforCenter.Mobile.Doc.Business","ClassName":"Hoteam.InforCenter.Mobile.Doc.Business.DatasetDownloadBusiness","Action":"Download"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_12540ccc3e174c3086de5b2ef7080166</Cell>
+      <Cell ColName="ENAME">删除</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1526355986498</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"删除","en":"Delete"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR">#eb4f38</Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","AssemblyName":"","ClassName":"","Action":"Delete"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_426a83a9b4ec4b14a6905bcc1c9d94de</Cell>
+      <Cell ColName="ENAME">点击查看属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821063230000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1525922084102</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"ViewProperty"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_42bdf85894ba4384a3c9e8a603555025</Cell>
+      <Cell ColName="ENAME">DatasetDownload</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821063740000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE"></Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","PageID":"","AssemblyName":"Hoteam.InforCenter.Mobile.Doc.Business","ClassName":"Hoteam.InforCenter.Mobile.Doc.Business.DatasetDownloadBusiness","Action":"Download"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_44f439b25367423589578f7255c541d7</Cell>
+      <Cell ColName="ENAME">点击查看属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1525257611863</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"点击查看属性","en":"Click"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PagePara":"[{\"ParaName\":\"\",\"ParaValue\":\"\"}]"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_49313947c5d443ee913b655e7518dead</Cell>
+      <Cell ColName="ENAME">PropertyRecord</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1529915679924</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性记录","en":"PropertyRecord"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_4b9b3617400644599a4c617b22a694f3</Cell>
+      <Cell ColName="ENAME">PropertyRecord</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1527670878744</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性记录","en":"PropertyRecord"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_5248ef1ea2244d7493eb5b1355853fc8</Cell>
+      <Cell ColName="ENAME">列表内容点击</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821061140000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1545820161852</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_6044d0808ba84b5782fb27d163ecfa15</Cell>
+      <Cell ColName="ENAME">文件夹属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814013570000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1545804522176</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_60b1fed79e6e4b97bfddcbe3bc6e2c85</Cell>
+      <Cell ColName="ENAME">点击查看属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821062930000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1530254769777</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"ViewProperty"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_65c6e1d883e744c184b126f4e1c6734e</Cell>
+      <Cell ColName="ENAME">点击查看属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821063740000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1530254585143</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"ViewPorperty"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_6a25a3ae6e4548d49970a079b7a974e4</Cell>
+      <Cell ColName="ENAME">浏览</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821061140000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"浏览","en":""}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","PageID":"","AssemblyName":"Hoteam.InforCenter.Mobile.Doc.Business","ClassName":"Hoteam.InforCenter.Mobile.Doc.Business.DatasetDownloadBusiness","Action":"Download"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_7e73073a77384fb0ae4c0f7e7b6b79f3</Cell>
+      <Cell ColName="ENAME">audit</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/audit.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"审核","en":"Audit"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"Audit","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_8535c59486a448878613b3ead1b75eda</Cell>
+      <Cell ColName="ENAME">零组件属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821063520000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1545804439016</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_894602a596a54ae899bcccfddccf7d0f</Cell>
+      <Cell ColName="ENAME">PropertyRecord</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1526363081477</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性记录","en":"PropertyRecord"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_92dcf91d51a74066b5246c3988c6f9ec</Cell>
+      <Cell ColName="ENAME">ViewProperty</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1526355941619</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"ViewProperty"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_9a763dc7611b41eda529ac08757d4aaf</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821061590000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"浏览","en":""}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","PageID":"","AssemblyName":"Hoteam.InforCenter.Mobile.Doc.Business","ClassName":"Hoteam.InforCenter.Mobile.Doc.Business.DatasetDownloadBusiness","Action":"Download"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_c24b83481bad48e48b00d1e2219637c1</Cell>
+      <Cell ColName="ENAME">任务属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636824511530000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1546854339426</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":""}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_c5e78554cd66414ab1716ba63fd0308b</Cell>
+      <Cell ColName="ENAME">DatasetDownload</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821063230000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"浏览","en":"DatasetDownload"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","PageID":"","AssemblyName":"Hoteam.InforCenter.Mobile.Doc.Business","ClassName":"Hoteam.InforCenter.Mobile.Doc.Business.DatasetDownloadBusiness","Action":"Download"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_c6dfc3cc53634fff9d53f7b351ab1bb6</Cell>
+      <Cell ColName="ENAME">查看属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME"></Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1525264976446</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"查看属性","en":"Property"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_f002ceb86aa545b0a4dab7fe9fe89607</Cell>
+      <Cell ColName="ENAME">DatasetDownload</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636821063520000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/browse.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"浏览","en":"DatasetDownload"}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">ExecScript</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"","PageID":"","AssemblyName":"Hoteam.InforCenter.Mobile.Doc.Business","ClassName":"Hoteam.InforCenter.Mobile.Doc.Business.DatasetDownloadBusiness","Action":"Download"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEBUTTON_fc2b698e08494273891ce220ac52be09</Cell>
+      <Cell ColName="ENAME">项目属性</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636824511230000000</Cell>
+      <Cell ColName="ICON">~/Base/Image/Entity.gif?time=1546854297443</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":""}</Cell>
+      <Cell ColName="BUTTONITEMTYPE">GoToPage</Cell>
+      <Cell ColName="BACKGROUNDCOLOR"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="BUTTONITEMTYPEEXTEND">{"PageType":"PropertyTab","PageID":""}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGEFILTER" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="OBJECTTYPE" />
+    <Column Name="FILTER" />
+    <Column Name="FILTERGROUP" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="TITLE" />
+    <Column Name="ASSEMBLY" />
+    <Column Name="CLASSNAME" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEFILTER_0f7f170e7ba0465dbad37414db105493</Cell>
+      <Cell ColName="ENAME">零部件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636815796240000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636815796360000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="FILTER"></Cell>
+      <Cell ColName="FILTERGROUP"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="TITLE">{"zhs":"零部件","en":"零部件"}</Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEFILTER_2647417a35ba4c2dbc1e2a979ec00947</Cell>
+      <Cell ColName="ENAME">邮件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636590912040000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795147550000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="FILTER"></Cell>
+      <Cell ColName="FILTERGROUP"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="TITLE">{"zhs":"内部邮件","en":"INTERNALMAIL"}</Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEFILTER_780311638863477bb78b7c2de9b63af9</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636813922600000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636813922600000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="FILTER"></Cell>
+      <Cell ColName="FILTERGROUP"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="TITLE">{"zhs":"图文档","en":"Document"}</Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEFILTER_b447a0e700a14266a38d7a653842244b</Cell>
+      <Cell ColName="ENAME">流程任务</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636601486310000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795957900000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="FILTER"></Cell>
+      <Cell ColName="FILTERGROUP"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="TITLE">{"zhs":"流程任务","en":"WORKFLOWTASKINFO"}</Cell>
+      <Cell ColName="ASSEMBLY"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGEORDER" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="ORDERITEM" />
+    <Column Name="ORDERTYPE" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="TITLE" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEORDER_a574bec62f874891841f51b630325a97</Cell>
+      <Cell ColName="ENAME">创建时间</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636816464800000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636816586830000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="ORDERITEM">CREATETIME</Cell>
+      <Cell ColName="ORDERTYPE">DESC</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="TITLE">{"zhs":"创建时间","en":"CREATETIME"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEORDER_e54c7b41042048f0a6a6b151db9c61c8</Cell>
+      <Cell ColName="ENAME">创建时间</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636813922850000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636816586630000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="ORDERITEM">CREATETIME</Cell>
+      <Cell ColName="ORDERTYPE">ASC</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="TITLE">{"zhs":"创建时间","en":"CREATETIME"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEORDER_e5651eaac64b462f8d9d0481d1e6f28f</Cell>
+      <Cell ColName="ENAME">创建时间</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636600770240000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636795147690000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="ORDERITEM">CreateTime</Cell>
+      <Cell ColName="ORDERTYPE">DESC</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="TITLE">{"zhs":"创建时间","en":"CreateTime"}</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGEPROPERTYTAB" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="TITLE" />
+    <Column Name="OBJECTTYPE" />
+    <Column Name="CONTROLTYPE" />
+    <Column Name="PAGENAME" />
+    <Column Name="URL" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="ASSEMBLYNAME" />
+    <Column Name="CLASSNAME" />
+    <Column Name="DATASOURCETYPE" />
+    <Column Name="SEQUENCE" />
+    <Column Name="URLPARA" />
+    <Column Name="INFOTYPES" />
+    <Column Name="STRINGFILTER" />
+    <Column Name="RESULTOBJECTTYPE" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_12c688369aa4455cb13c1297aa5bef65</Cell>
+      <Cell ColName="ENAME">流程属性查看</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636597995430000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636747664740000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"ViewProperty"}</Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWINFO</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;CREATEUID;CREATETIME;FLOWADMINISTRATOR;FLOWTEMPLATE;TEMPLATETYPE</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE"></Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_17e3fa079eee4e82a19450980a7570eb</Cell>
+      <Cell ColName="ENAME">零组件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814172590000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814172590000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">2</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;EVERSION;EMINORVERSION;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;OWNUID;OWNGID;ORIGIN;FIRSTPRODUCTCODE;UNIVERSAL;UNIT</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_376f4c6097834741ac0ca5b8142ca5f7</Cell>
+      <Cell ColName="ENAME">项目</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636824509810000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636824509810000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":""}</Cell>
+      <Cell ColName="OBJECTTYPE">PROJECT</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">4</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;STATEID;STAGESTATEID;EVERSION;PROJECTMANAGER;PROJECTLEVEL;PLANSTARTDATE;PLANENDDATE;PLANSTATE;PERCENTCOMPLETE;EPS;DEPARTMENT;PLANSCHEDULE;PLANDEVIATIONRATE;PLANPUBLISHSTATE</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">PROJECT</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_51b3193fcdf6425b8bde0902cf6f1edd</Cell>
+      <Cell ColName="ENAME">流程审批记录</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636747711110000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636747711110000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"审批记录","en":"AuditRecord"}</Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWINFO</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;COMPLETEUSER;COMPLETETIME;TASKRESULT;TASKOPINION</Cell>
+      <Cell ColName="STRINGFILTER">Workflowid='[ObjectID]'</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_77c138c5c4c34edf959dd4ed11c55730</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814167840000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814167840000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;EVERSION;EMINORVERSION;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;OWNUID;OWNGID</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_978df205d5df4958a77cdb9b98517b6f</Cell>
+      <Cell ColName="ENAME">MessageProperty</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636600740380000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636747709620000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"ViewProperty"}</Cell>
+      <Cell ColName="OBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="ASSEMBLYNAME">Hoteam.InforCenter.MobileNative.Message.Business</Cell>
+      <Cell ColName="CLASSNAME">Hoteam.InforCenter.MobileNative.Message.Business.ViewMessageProperty</Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;RECIVETIME;RECIVER;MTITLE;MCONTENT</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">INTERNALMAIL</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_97f46871ef8f435ea8277740c7a76f19</Cell>
+      <Cell ColName="ENAME">零组件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814003430000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814003430000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"零组件","en":"Item"}</Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">2</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;EVERSION;EMINORVERSION;ELASTFINALSTATE;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;OWNUID;OWNGID;ITEMTYPE;ORIGIN;FIRSTPRODUCTCODE;UNIVERSAL;UNIT</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_b2805924199e4ba0b0e3f69bf646de23</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814172010000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814172010000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;EVERSION;EMINORVERSION;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;OWNUID;OWNGID;DESCRIPTION</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_b85980f37553430d8abb04c2a8ad306a</Cell>
+      <Cell ColName="ENAME">任务审批记录</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636747713280000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636747713870000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"审批记录","en":"AuditRecord"}</Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">4</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;COMPLETEUSER;COMPLETETIME;TASKRESULT;TASKOPINION</Cell>
+      <Cell ColName="STRINGFILTER">WorkflowID in (Select WorkflowID from WORKFLOWTASKINFO where eid='[ObjectID]')</Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_bc94381b73af489a883f3988ac2d0091</Cell>
+      <Cell ColName="ENAME">零组件</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814168470000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814168470000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="OBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">2</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;EVERSION;EMINORVERSION;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;OWNUID;OWNGID;FIRSTPRODUCTCODE;UNIVERSAL;UNIT</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">PSEITEM</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_cdd24c7248ae406e944ee710b239c1bb</Cell>
+      <Cell ColName="ENAME">文件夹</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814014260000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636814071570000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="OBJECTTYPE">WSFOLDER</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">3</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;DESCRIPTION</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WSFOLDER</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_e7c1ea443e7a4aba95617b0d74c01a0e</Cell>
+      <Cell ColName="ENAME">任务属性查看</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636744054600000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636813295530000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性查看","en":"TaskProperty"}</Cell>
+      <Cell ColName="OBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">3</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;CREATEUID;CREATETIME;WORKFLOWNAME;FLOWTEMPLATE;COMPLETEUSER;COMPLETETIME;TASKRESULT;TASKOPINION</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">WORKFLOWTASKINFO</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_f7050f1dd62e4b0d8e14cca314aced90</Cell>
+      <Cell ColName="ENAME">图文档</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636814000890000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821620160000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"属性信息","en":"Property"}</Cell>
+      <Cell ColName="OBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;ECODE;EVERSION;EMINORVERSION;CREATEUID;CREATETIME;UPDATEUID;UPDATETIME;OWNUID;OWNGID;CHECKOUTUSER;CHECKOUTSTATE;CHECKOUTDATE</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">DOCDATASET</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGEPROPERTYTAB_fac7fc13fa114209ba1c5a7826215a15</Cell>
+      <Cell ColName="ENAME">任务</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636824510520000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636824510520000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"任务","en":""}</Cell>
+      <Cell ColName="OBJECTTYPE">PMTASK</Cell>
+      <Cell ColName="CONTROLTYPE">Property</Cell>
+      <Cell ColName="PAGENAME"></Cell>
+      <Cell ColName="URL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="ASSEMBLYNAME"></Cell>
+      <Cell ColName="CLASSNAME"></Cell>
+      <Cell ColName="DATASOURCETYPE">MOBILEPAGEPROPERTYTABCONFIG</Cell>
+      <Cell ColName="SEQUENCE">5</Cell>
+      <Cell ColName="URLPARA"></Cell>
+      <Cell ColName="INFOTYPES">ENAME;STAGESTATEID;CREATEUID;CREATETIME;WORKFLOWSTATE;PRINCIPAL;PLANSTARTDATE;PLANENDDATE;ACTSTARTDATE;ACTENDDATE;PLANPERIOD;ACTPERIOD;PLANTASKTIME;ACTWORKTIME;TASKPERCENT;TASKCHECKER;TASKSTATE;EXAMINE;ISMILESTONE;ISCYCLETASK;ISLEAFTASK;HASSEND;ISAUTHORITYRESOLVE</Cell>
+      <Cell ColName="STRINGFILTER"></Cell>
+      <Cell ColName="RESULTOBJECTTYPE">PMTASK</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="LOOPPLAYIMAGE" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="IMAGEPATH" />
+    <Column Name="ENABLE" />
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_1591e2cf5b5d431ca282170b1ba4df56</Cell>
+      <Cell ColName="ENAME">4</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754375260000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977950000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/21a1e3f2-42af-4c2c-8119-f1ffbf383d4d.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_173d56d8731c433faa1b9533b364e983</Cell>
+      <Cell ColName="ENAME"></Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636736347270000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977620000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/23d638f4-5ec0-4511-917a-16418a8e0e80.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_423c08687e044769a4a9ca1ac914342a</Cell>
+      <Cell ColName="ENAME">1</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636736347360000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977480000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/cf248c50-5b3a-413d-b800-c13a563ed2c6.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_a8d53cadaf024dd494ba7c42f6522844</Cell>
+      <Cell ColName="ENAME">3</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754375310000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977890000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/885c0752-982f-4217-a4f0-71078bb9aca6.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_acd4a6bb251e4a82a6eacc95ec5ee823</Cell>
+      <Cell ColName="ENAME">2</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636736347310000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977540000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/82d3d0d7-31c5-449b-acf8-ed887510319d.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_cfb03e1135a7416780e2af563010aa77</Cell>
+      <Cell ColName="ENAME"></Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636736347220000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977680000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/cd232a2b-82f7-4e66-affd-2ee51fe62d44.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_e303ddd9ba8d4743b36f8696a0afbb4f</Cell>
+      <Cell ColName="ENAME">1</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754375390000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977760000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/ee912969-1b54-4af4-b1ac-08974d7a32f3.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">LOOPPLAYIMAGE_ed8eb3a09f114d0790be0c32ab20172c</Cell>
+      <Cell ColName="ENAME">2</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754375360000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636807977840000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="IMAGEPATH">/image/Mobile/LoopImage/e7a86f7e-9b05-440f-89db-19238417db00.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="FUNCBUTTON" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ICON" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="BUTTONTEXT" />
+    <Column Name="CALLPAGE" />
+    <Column Name="GROUPNAME" />
+    <Column Name="WEBVIEWURL" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="SEQUENCE" />
+    <Column Name="ENABLE" />
+    <Column Name="PAGETYPE" />
+    <Column Name="ISPAD" />
+    <Column Name="ISPHONE" />
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_0177907d79364e52853be329ffb78a62</Cell>
+      <Cell ColName="ENAME">最近浏览-首页</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636614332340000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636803629720000000</Cell>
+      <Cell ColName="ICON">~/image/recentlyviewed.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"最近浏览","en":"RecentlyViewed"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="GROUPNAME">{"zhs":"系统操作","en":"SystemOperate"}</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="SEQUENCE">4</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_64f449543b774cdaa9fb26e663c7f80d</Cell>
+      <Cell ColName="ENAME">工作看板-首页</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636664378770000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636803630010000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/bom.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"工作看板","en":"WorkPanel"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_b45323f186af40e4a4945cfecc07fa62</Cell>
+      <Cell ColName="GROUPNAME">{"zhs":"领导看板","en":"ManagementPanel"}</Cell>
+      <Cell ColName="WEBVIEWURL">[http]://[IP]:[Port]/workpanel.html?WebRootPath=[http]://[IP]:[Port]/</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="SEQUENCE">6</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_7b74c282d70a4fb5a0e300bcc43d8888</Cell>
+      <Cell ColName="ENAME">流程审批-工作台</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754376520000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636838235650000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/flowmanage.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"流程审批","en":"FlowAudit"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="GROUPNAME">{"zhs":"审批","en":"Audit"}</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_b16c23e31c9a425d8f92dd0747c7d504</Cell>
+      <Cell ColName="ENAME">最近浏览-工作台</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754377960000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636803631180000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/doccenter.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"最近浏览","en":"RecentlyViewed"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_701566172bc14914baaf0e5f6fe75fe5</Cell>
+      <Cell ColName="GROUPNAME">{"zhs":"系统操作","en":"System"}</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="SEQUENCE">3</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_d63369a763584b358a69c5619aecac61</Cell>
+      <Cell ColName="ENAME">我的收藏-工作台</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754378330000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636803631340000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/docview.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"我的收藏","en":"MyCollection"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="GROUPNAME">{"zhs":"系统操作","en":"System"}</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="SEQUENCE">4</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_f1a849c4eb994837962e014d87605bfd</Cell>
+      <Cell ColName="ENAME">流程审批-首页</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636597896630000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636803629440000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/flowmanage.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"流程审批","en":"FlowManage"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_502447edaf6c4c12891b1829fb091832</Cell>
+      <Cell ColName="GROUPNAME">{"zhs":"","en":""}</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">FUNCBUTTON_f78aaf2d3b6645e3ae37964b8b3acdbf</Cell>
+      <Cell ColName="ENAME">我的收藏-首页</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636613425970000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636803629820000000</Cell>
+      <Cell ColName="ICON">~/image/Mobile/Function/DocView.png</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="BUTTONTEXT">{"zhs":"我的收藏","en":"ChangeManage"}</Cell>
+      <Cell ColName="CALLPAGE">MOBILEPAGEDEV_73a28ca897044bdeb9914cb520344bee</Cell>
+      <Cell ColName="GROUPNAME"></Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="SEQUENCE">5</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="PAGETYPE"></Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEPAGENAV" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="TITLE" />
+    <Column Name="PAGENAME" />
+    <Column Name="WEBVIEWURL" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="SEQUENCE" />
+    <Column Name="NORMALICON" />
+    <Column Name="HIGHLIGHTICON" />
+    <Column Name="ENABLE" />
+    <Column Name="ISPAD" />
+    <Column Name="ISPHONE" />
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_088f484eef464c699795ee97783fb68d</Cell>
+      <Cell ColName="ENAME">DeskNav</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735551760000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636821054010000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"工作台","en":"Desk"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_8acb861018fe4715865566f12e46300f</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\home_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\home_highlight.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_4399722c24e34b6eb49477dbec24706c</Cell>
+      <Cell ColName="ENAME">HomeNav</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735541160000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636796775710000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"首页","en":"Home"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_33b9530bbf334c8a8e743daafb489be0</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">1</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\home_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\home_highlight.png</Cell>
+      <Cell ColName="ENABLE">0</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_510c51dff4354c19ad19c6a2a477da48</Cell>
+      <Cell ColName="ENAME">MineNav</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735552780000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636838235570000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"我的","en":"Mine"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_fceb8c4dba95453b8bc59b7927de7b0c</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">5</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\min_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\min_highlight.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_7b4744e1a9bb4877a89f0c6fa68f4df5</Cell>
+      <Cell ColName="ENAME">WorkPanel</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636748341360000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636755257780000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"工作看板","en":"WorkPanel"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_b45323f186af40e4a4945cfecc07fa62</Cell>
+      <Cell ColName="WEBVIEWURL">[http]://[IP]:[Port]/workpanel.html?WebRootPath=[http]://[IP]:[Port]/</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">6</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\msg_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\msg_highlight.png</Cell>
+      <Cell ColName="ENABLE">0</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_7b91cbcdd1f94800bd7b0e0a384f6edf</Cell>
+      <Cell ColName="ENAME">ContactsNav</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735551200000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636796779340000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"通讯录","en":"Contacts"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_fd760574ccc94275a7c44b13c274d4e1</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">3</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\search_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\search_highlight.png</Cell>
+      <Cell ColName="ENABLE">0</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_7b9f7439df614aa9802740b01907f72b</Cell>
+      <Cell ColName="ENAME">MessageNav</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636735542360000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636737082130000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"消息","en":"Message"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">2</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\msg_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\msg_highlight.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+    <Row>
+      <Cell ColName="EID">MOBILEPAGENAV_86e6e435c26e48f5aea2496a0aac0d9e</Cell>
+      <Cell ColName="ENAME">Search</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636796776960000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636796811870000000</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="TITLE">{"zhs":"查询","en":"Search"}</Cell>
+      <Cell ColName="PAGENAME">MOBILEPAGEDEV_a7c70a0e54eb4a00a5a381e13bb13e37</Cell>
+      <Cell ColName="WEBVIEWURL"></Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_2e5b1c97b428431cb46b003a6600bcce</Cell>
+      <Cell ColName="SEQUENCE">4</Cell>
+      <Cell ColName="NORMALICON">~\image\Mobile\Nav\search_normal.png</Cell>
+      <Cell ColName="HIGHLIGHTICON">~\image\Mobile\Nav\search_highlight.png</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="ISPAD">1</Cell>
+      <Cell ColName="ISPHONE">1</Cell>
+    </Row>
+  </Table>
+  <Table Name="MOBILEADVANCEDQUERY" Increment="true">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="OWNUID" />
+    <Column Name="OWNGID" />
+    <Column Name="ECOMPANYID" />
+    <Column Name="SERIALNUMBER" />
+    <Column Name="CONDITIONTITLE" />
+    <Column Name="CONTROLTYPE" />
+    <Column Name="FILTERSTRING" />
+    <Column Name="MOBILEPAGEDEVID" />
+    <Column Name="ENABLE" />
+    <Column Name="OBJECTTYPE" />
+    <Column Name="INFONAME" />
+    <Row>
+      <Cell ColName="EID">MOBILEADVANCEDQUERY_8ada2c2b05004cc9a56ce459da0a0312</Cell>
+      <Cell ColName="ENAME">ENAME</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">636754548340000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">636755417150000000</Cell>
+      <Cell ColName="OWNUID">USERINFO_System</Cell>
+      <Cell ColName="OWNGID">GROUPINFO_System</Cell>
+      <Cell ColName="ECOMPANYID">COMPANY_155f6a331e804b69a6fc47e6273699fc</Cell>
+      <Cell ColName="SERIALNUMBER"></Cell>
+      <Cell ColName="CONDITIONTITLE">{"zhs":"名称","en":"Name"}</Cell>
+      <Cell ColName="CONTROLTYPE">String</Cell>
+      <Cell ColName="FILTERSTRING">AND ENAME LIKE '%[ENAME]%'</Cell>
+      <Cell ColName="MOBILEPAGEDEVID">MOBILEPAGEDEV_6aed220de8c7479195e50881cae53112</Cell>
+      <Cell ColName="ENABLE">1</Cell>
+      <Cell ColName="OBJECTTYPE"></Cell>
+      <Cell ColName="INFONAME"></Cell>
+    </Row>
+  </Table>
+  <TableSchema Name="MOBILEPAGEDEV" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PAGENAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGETAB" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TAB" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TITLE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="FILTERSTRING" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="LISTPAGECOUNT" DataType="STRING100" Required="false" DefaultValue="20" PrimaryKeyOrder="0" />
+    <Column Name="ISSELECTED" DataType="BOOL" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ISALLSELECT" DataType="BOOL" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TABASSEMBLY" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TABCLASSNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ASSEMBLY" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CLASSNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SQLCOMMANDNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="DATASOURCETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="RESULTOBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="RESULTORDERBY" DataType="STRING100" Required="false" DefaultValue="CreateTime desc" PrimaryKeyOrder="0" />
+    <Column Name="SEQUENCE" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ITEMTITLE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ITEMSUBTITLE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="LISTITEMSTATE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="LISTITEMSTATEICON" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ITEMSUBTITLETWO" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="LISTITEMOBJECTMANAGER" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PROPERTYCOLUMN" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PROPERTYASSEMBLY" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PROPERTYCLASSNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ISROOTQUERY" DataType="BOOL" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGELISTITEM" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OBJECTSTATE" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SINGLEBUTTON" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SLIDEBUTTON" DataType="STRING1000" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="LISTCONTENT" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGEBUTTON" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ICON" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TITLE" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="BUTTONITEMTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="BACKGROUNDCOLOR" DataType="STRING20" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="URL" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="BUTTONITEMTYPEEXTEND" DataType="NVARCHAR(0)" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGEFILTER" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OBJECTTYPE" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="FILTER" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="FILTERGROUP" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TITLE" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ASSEMBLY" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CLASSNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGEORDER" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ORDERITEM" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ORDERTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TITLE" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGEPROPERTYTAB" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TITLE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CONTROLTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PAGENAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="URL" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ASSEMBLYNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CLASSNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="DATASOURCETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SEQUENCE" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="URLPARA" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="INFOTYPES" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="STRINGFILTER" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="RESULTOBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="LOOPPLAYIMAGE" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="IMAGEPATH" DataType="NVARCHAR(0)" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="FUNCBUTTON" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ICON" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="BUTTONTEXT" DataType="STRING500" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CALLPAGE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="GROUPNAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="WEBVIEWURL" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SEQUENCE" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+    <Column Name="PAGETYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ISPAD" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+    <Column Name="ISPHONE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEPAGENAV" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="TITLE" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="PAGENAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="WEBVIEWURL" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SEQUENCE" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="NORMALICON" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="HIGHLIGHTICON" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+    <Column Name="ISPAD" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+    <Column Name="ISPHONE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+  </TableSchema>
+  <TableSchema Name="MOBILEADVANCEDQUERY" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" />
+    <Column Name="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="OWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ECOMPANYID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CONDITIONTITLE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="CONTROLTYPE" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="FILTERSTRING" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="MOBILEPAGEDEVID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="ENABLE" DataType="BOOL" Required="false" DefaultValue="1" PrimaryKeyOrder="0" />
+    <Column Name="OBJECTTYPE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+    <Column Name="INFONAME" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" />
+  </TableSchema>
+</root>

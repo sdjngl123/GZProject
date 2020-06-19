@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PAGEMAINCONFIGModel" IsWeb="true">
+    <Label Name="PAGEMAINCONFIGHeader">
+      <LocalizedLabel LanguageRef="zhs">页面主配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageMainConfig</LocalizedLabel>
+    </Label>
+    <Label Name="PAGEMAINCONFIGCaption">
+      <LocalizedLabel LanguageRef="zhs">页面主配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageMainConfig</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCEASSEMBLYHeader">
+      <LocalizedLabel LanguageRef="zhs">数据源程序集</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSourceAssembly</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCEASSEMBLYCaption">
+      <LocalizedLabel LanguageRef="zhs">数据源程序集</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSourceAssembly</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCECLASSHeader">
+      <LocalizedLabel LanguageRef="zhs">数据源类名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSourceClass</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCECLASSCaption">
+      <LocalizedLabel LanguageRef="zhs">数据源类名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSourceClass</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="PAGENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pagename</LocalizedLabel>
+    </Label>
+    <Label Name="PAGENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pagename</LocalizedLabel>
+    </Label>
+    <Label Name="PARANAMETHeader">
+      <LocalizedLabel LanguageRef="zhs">参数名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PARANAME</LocalizedLabel>
+    </Label>
+    <Label Name="PARANAMECaption">
+      <LocalizedLabel LanguageRef="zhs">参数名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PARANAME</LocalizedLabel>
+    </Label>
+    <Label Name="MAINCONFIGPARAHeader">
+      <LocalizedLabel LanguageRef="zhs">主配置参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainConfigPara</LocalizedLabel>
+    </Label>
+    <Label Name="MAINCONFIGPARACaption">
+      <LocalizedLabel LanguageRef="zhs">主配置参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainConfigPara</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

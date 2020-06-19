@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<JSFile FileName="~/GACTT/TestResourceLib/Js/TestLocation.js" IsLang="false" IsMobile="false" group="GACTT" />
+	<JSFile FileName="~/GACTT/TestResourceLib/Js/TestResource.js" IsLang="false" IsMobile="false" group="GACTT" />
+	<JSFile FileName="~/GACTT/TestResourceLib/Js/TestCapability.js" IsLang="false" IsMobile="false" group="GACTT" />
+</root>

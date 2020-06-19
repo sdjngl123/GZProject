@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EditListManagement Name="ActionRuleConditionList" MenuName="ActionRuleConditionMenu" RightMenuName=""  ListViewName="ACTIONRULECONDITIONLISTVIEW"  EditListTitleDataService="" EditListDataService="" >
+  </EditListManagement>
+
+  <EditListManagement Name="ActionRulePermissionList" MenuName="ActionRulePermissionMenu" RightMenuName=""  ListViewName="ACTIONRULEPERMISSIONLISTVIEW" 
+                      EditListTitleDataService="Hoteam.Rule.RulePageService.GetActionRulePermissionTitle" 
+                      EditListDataService="Hoteam.Rule.RulePageService.GetActionRulePermissionData" >
+  </EditListManagement>
+  <EditListManagement Name="LinkActionRulePermissionList" MenuName="ActionRulePermissionMenu" RightMenuName=""  ListViewName="LINKACTIONRULEPERMISSIONLISTVIEW"
+                      EditListTitleDataService="Hoteam.Rule.RulePageService.GetActionRulePermissionTitle"
+                      EditListDataService="Hoteam.Rule.RulePageService.GetActionRulePermissionData" >
+  </EditListManagement>
+  <EditListManagement Name="CreateActionRulePermissionList" MenuName="ActionRuleCreatePermissionMenu" RightMenuName=""  ListViewName="CREATEACTIONRULEPERMISSIONLISTVIEW"
+                      EditListTitleDataService="Hoteam.Rule.RulePageService.GetCreateActionRulePermissionTitle"
+                      EditListDataService="Hoteam.Rule.RulePageService.GetCreateActionRulePermissionData" >
+  </EditListManagement>
+
+  <EditListManagement Name="ActionRuleMessageList" MenuName="ActionRuleMessageMenu" RightMenuName=""  ListViewName="ACTIONRULEMESSAGELISTVIEW"
+    EditListTitleDataService="Hoteam.Rule.RulePageService.GetActionRuleMessageTitle"
+                      EditListDataService="Hoteam.Rule.RulePageService.GetActionRuleMessageData" >
+  </EditListManagement>
+
+<EditListManagement Name="LinkActionRuleMessageList" MenuName="ActionRuleMessageMenu" RightMenuName=""  ListViewName="LINKACTIONRULEMESSAGELISTVIEW"
+                      EditListTitleDataService="Hoteam.Rule.RulePageService.GetActionRuleMessageTitle"
+                      EditListDataService="Hoteam.Rule.RulePageService.GetActionRuleMessageData" >
+  </EditListManagement>
+<EditListManagement Name="CreateActionRuleMessageList" MenuName="ActionRuleCreateMessageMenu" RightMenuName=""  ListViewName="CREATEACTIONRULEMESSAGELISTVIEW"
+                      EditListTitleDataService="Hoteam.Rule.RulePageService.GetActionRuleMessageTitle"
+                      EditListDataService="Hoteam.Rule.RulePageService.GetActionRuleMessageData" >
+  </EditListManagement>
+</root>

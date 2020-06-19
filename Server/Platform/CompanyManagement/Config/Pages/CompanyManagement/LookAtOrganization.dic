@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LookAtOrganization" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">查看组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Look at organization</LocalizedLabel>
+    </Label>
+    <Label Name="Close">
+      <LocalizedLabel LanguageRef="zhs">关闭</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Close</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

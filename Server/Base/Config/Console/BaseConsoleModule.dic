@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ConsoleModule" IsWeb="false">
+    <Label Name="BaseConfigHeader">
+      <LocalizedLabel LanguageRef="zhs">基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic configuration</LocalizedLabel>
+    </Label>
+    <Label Name="BaseConfigCaption">
+      <LocalizedLabel LanguageRef="zhs">基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">控制台开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Console development</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">控制台开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Console development</LocalizedLabel>
+    </Label>
+    <Label Name="WebCustomHeader">
+      <LocalizedLabel LanguageRef="zhs">前端自定义</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The front-end customization</LocalizedLabel>
+    </Label>
+    <Label Name="WebCustomCaption">
+      <LocalizedLabel LanguageRef="zhs">前端自定义</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The front-end customization</LocalizedLabel>
+    </Label>
+    <Label Name="PageDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">页面扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page extension</LocalizedLabel>
+    </Label>
+    <Label Name="PageDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">页面扩展</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page extension</LocalizedLabel>
+    </Label>
+    <Label Name="SystemManageHeader">
+      <LocalizedLabel LanguageRef="zhs">系统管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System management</LocalizedLabel>
+    </Label>
+    <Label Name="SystemManageCaption">
+      <LocalizedLabel LanguageRef="zhs">系统管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System management</LocalizedLabel>
+    </Label>
+    <Label Name="SettingHeader">
+      <LocalizedLabel LanguageRef="zhs">系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System settings</LocalizedLabel>
+    </Label>
+    <Label Name="SettingCaption">
+      <LocalizedLabel LanguageRef="zhs">系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System settings</LocalizedLabel>
+    </Label>
+    <Label Name="ActiveXManageHeader">
+      <LocalizedLabel LanguageRef="zhs">ActiveX管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ActiveX management</LocalizedLabel>
+    </Label>
+    <Label Name="ActiveXManageCaption">
+      <LocalizedLabel LanguageRef="zhs">ActiveX管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ActiveX management</LocalizedLabel>
+    </Label>
+    <Label Name="AppInfoManageHeader">
+      <LocalizedLabel LanguageRef="zhs">系统组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System components</LocalizedLabel>
+    </Label>
+    <Label Name="AppInfoManageCaption">
+      <LocalizedLabel LanguageRef="zhs">系统组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System components</LocalizedLabel>
+    </Label>
+    <Label Name="PackageInitHeader">
+      <LocalizedLabel LanguageRef="zhs">初始化入口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initialize the Portal</LocalizedLabel>
+    </Label>
+    <Label Name="PackageInitCaption">
+      <LocalizedLabel LanguageRef="zhs">初始化入口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initialize the Portal</LocalizedLabel>
+    </Label>
+    <Label Name="LanguageManageHeader">
+      <LocalizedLabel LanguageRef="zhs">语种列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language list</LocalizedLabel>
+    </Label>
+    <Label Name="LanguageManageCaption">
+      <LocalizedLabel LanguageRef="zhs">语种列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language list</LocalizedLabel>
+    </Label>
+    <Label Name="DictionaryManageHeader">
+      <LocalizedLabel LanguageRef="zhs">多语言管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-language management</LocalizedLabel>
+    </Label>
+    <Label Name="DictionaryManageCaption">
+      <LocalizedLabel LanguageRef="zhs">多语言管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-language management</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceManageHeader">
+      <LocalizedLabel LanguageRef="zhs">业务服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business service</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceManageCaption">
+      <LocalizedLabel LanguageRef="zhs">业务服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business service</LocalizedLabel>
+    </Label>
+    <Label Name="TimerServiceManageHeader">
+      <LocalizedLabel LanguageRef="zhs">定时服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Timing service</LocalizedLabel>
+    </Label>
+    <Label Name="TimerServiceManageCaption">
+      <LocalizedLabel LanguageRef="zhs">定时服务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Timing service</LocalizedLabel>
+    </Label>
+    <Label Name="JsControlManageHeader">
+      <LocalizedLabel LanguageRef="zhs">前台控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type of foreground control</LocalizedLabel>
+    </Label>
+    <Label Name="JsControlManageCaption">
+      <LocalizedLabel LanguageRef="zhs">前台控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type of foreground control</LocalizedLabel>
+    </Label>
+    <Label Name="FileRefManageHeader">
+      <LocalizedLabel LanguageRef="zhs">前台文件引用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reference of foreground file </LocalizedLabel>
+    </Label>
+    <Label Name="FileRefManageCaption">
+      <LocalizedLabel LanguageRef="zhs">前台文件引用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reference of foreground file </LocalizedLabel>
+    </Label>
+    <Label Name="FilterManageHeader">
+      <LocalizedLabel LanguageRef="zhs">前台调用中转</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transit of foreground transfer</LocalizedLabel>
+    </Label>
+    <Label Name="FilterManageCaption">
+      <LocalizedLabel LanguageRef="zhs">前台调用中转</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transit of foreground transfer</LocalizedLabel>
+    </Label>
+    <Label Name="PageManageHeader">
+      <LocalizedLabel LanguageRef="zhs">前台页面管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreground page management</LocalizedLabel>
+    </Label>
+    <Label Name="PageManageCaption">
+      <LocalizedLabel LanguageRef="zhs">前台页面管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreground page management</LocalizedLabel>
+    </Label>
+    <Label Name="PageTemplateHeader">
+      <LocalizedLabel LanguageRef="zhs">前台Html模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreground Html template</LocalizedLabel>
+    </Label>
+    <Label Name="PageManageCaption">
+      <LocalizedLabel LanguageRef="zhs">前台Html模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Foreground Html template</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleModuleConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">控制台导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Console navigation</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleModuleConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">控制台导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Console navigation</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleToolBarConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">控制台菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Console menu</LocalizedLabel>
+    </Label>
+    <Label Name="ConsoleToolBarConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">控制台菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Console menu</LocalizedLabel>
+    </Label>
+    <Label Name="ConfigFileTemplateHeader">
+      <LocalizedLabel LanguageRef="zhs">配置文件模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configuration profile template</LocalizedLabel>
+    </Label>
+    <Label Name="ConfigFileTemplateCaption">
+      <LocalizedLabel LanguageRef="zhs">配置文件模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configuration profile template</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">系统基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System basic configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">平台扩展配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform extension configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ImageConfigManageHeader">
+      <LocalizedLabel LanguageRef="zhs">图片扩展配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture extension configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ImageConfigManageCaption">
+      <LocalizedLabel LanguageRef="zhs">图片配置管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture configuration management</LocalizedLabel>
+    </Label>
+    <Label Name="ProfessionalDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">平台专业开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform professional development</LocalizedLabel>
+    </Label>
+    <Label Name="ProfessionalDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">平台专业开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform professional development</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendDevelopHeader">
+      <LocalizedLabel LanguageRef="zhs">平台扩展开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform extension development</LocalizedLabel>
+    </Label>
+    <Label Name="AdvancedDevelopCaption">
+      <LocalizedLabel LanguageRef="zhs">平台扩展开发</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Platform extension development</LocalizedLabel>
+    </Label>
+    <Label Name="BaseConfigurationHeader">
+      <LocalizedLabel LanguageRef="zhs">系统基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System basic configuration</LocalizedLabel>
+    </Label>
+    <Label Name="BaseConfigurationCaption">
+      <LocalizedLabel LanguageRef="zhs">系统基础配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System basic configuration</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

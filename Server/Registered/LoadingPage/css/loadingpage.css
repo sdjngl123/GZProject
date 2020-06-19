@@ -1,0 +1,119 @@
+﻿.loadingpage-container
+{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+.loadingpage-center
+{
+    width: 100%;
+    height: 615px;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loadingpage-center-top
+{
+    height: 85px;
+    margin: 0px auto;
+    width: 1005px;
+}
+.loadingpage-center-top-content
+{
+    height: 100%;
+    width: 100%;
+    background: url(../image/regiesterTop.png) no-repeat;
+}
+
+.loadingpage-center-center
+{
+    width: 100%;
+    height: 475px;
+    background-color: #0769ad;
+}
+.loadingpage-center-center-content
+{
+    margin: 0px auto;
+    width: 1005px;
+    height: 100%;
+}
+.loadingpage-center-center-content-leftimage
+{
+    background: url(../image/loginLeft.png) no-repeat center;
+    float: left;
+    height: 297px;
+    width: 542px;
+    position: relative;
+    top: 75px;
+}
+.loadingpage-center-center-content-rightimage
+{
+    background: url(../image/loginRight.png) no-repeat center;
+    float: right;
+    position: relative;
+    top: 50px;
+    height: 365px;
+    width: 350px;
+}
+
+.loadingpage-center-bottom
+{
+    height: 55px;
+    width: 1005px;
+    margin: 0px auto;
+}
+.loadingpage-center-bottom-content
+{
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+.loadingpage-overlay
+{
+    background-color: #000000;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+    position: absolute;
+    width: 100%;
+    z-index: 5000;
+}
+.loadingpage-overlay-text
+{
+    height: 120px;
+    width: 200px;
+    z-index: 5001;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.loadingpage-waite_logo
+{
+    height:100px;
+    background: url(../image/loading.gif) no-repeat center ;
+}
+
+.loadingpage-waite-text
+{
+    height:20px; 
+    line-height:20px; 
+    font-size:18px; 
+    text-align:center; 
+    font-weight:bold; 
+    color:#fff
+}

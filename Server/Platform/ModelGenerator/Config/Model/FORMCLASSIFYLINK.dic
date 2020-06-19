@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FORMCLASSIFYLINKModel" IsWeb="true">
+    <Label Name="FORMCLASSIFYLINKHeader">
+      <LocalizedLabel LanguageRef="zhs">表单分类关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMCLASSIFYLINK</LocalizedLabel>
+    </Label>
+    <Label Name="FORMCLASSIFYLINKCaption">
+      <LocalizedLabel LanguageRef="zhs">表单分类关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMCLASSIFYLINK</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

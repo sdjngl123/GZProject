@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="USERINFO-CREATE" IsWeb="true">
+    <Label Name="PERSONEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personnel</LocalizedLabel>
+    </Label>
+    <Label Name="PERSONEIDRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">帐号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Account number</LocalizedLabel>
+    </Label>
+    <Label Name="ECODERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;请输入数字、字母和下划线（最长100位）&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;Please enter number, letter, and underscore (up to 100 bits)&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDHeader">
+      <LocalizedLabel LanguageRef="zhs">密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password</LocalizedLabel>
+    </Label>
+    <Label Name="PASSWORDRegex">
+      <LocalizedLabel LanguageRef="zhs">密码(6-20位,不支持空格)&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password (6-20 bits, spaces are not supported)&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="LANGUAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language</LocalizedLabel>
+    </Label>
+    <Label Name="LANGUAGERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TIMEZONEHeader">
+      <LocalizedLabel LanguageRef="zhs">时区</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time zone</LocalizedLabel>
+    </Label>
+    <Label Name="TIMEZONERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="THEMEHeader">
+      <LocalizedLabel LanguageRef="zhs">主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subject</LocalizedLabel>
+    </Label>
+    <Label Name="THEMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="HOMEPAGEMODEHeader">
+      <LocalizedLabel LanguageRef="zhs">主页模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home mode</LocalizedLabel>
+    </Label>
+    <Label Name="HOMEPAGEMODERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="WENCHATUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">微信企业用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WeChat enterprise user</LocalizedLabel>
+    </Label>
+    <Label Name="WENCHATUSERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="SIGNATUREHeader">
+      <LocalizedLabel LanguageRef="zhs">个性签名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Signature</LocalizedLabel>
+    </Label>
+    <Label Name="QYWEIXINIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业微信用户ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ent WebChat User ID</LocalizedLabel>
+    </Label>
+    <Label Name="QYWEIXINIDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="USERINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">新建用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewUser</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

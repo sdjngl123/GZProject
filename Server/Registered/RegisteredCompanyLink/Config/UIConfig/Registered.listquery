@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListQuery Name="SingleCompanyFriendLinkListQuery" ListViewName="CompanyFriendQueryListView"  QueryPageName="CompanyFriendQueryView-QUERY" PageLinksName=""
+             AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" 
+             OnePageDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetCompanyFriendLinkQueryData" ReturnValueType="COMPANY" ActionName="" ReturnGridData="true">
+  </ListQuery>
+  <ListQuery Name="SinglePreCompanyUsersListQuery" ListViewName="USERSQUERYLISTVIEW"  QueryPageName="USERVIEW-QUERY" PageLinksName=""
+           AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetPreCompanyUsersTitle"
+           OnePageDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetPreCompanyUsers" ReturnValueType="USERINFO" ActionName="" ReturnGridData="true">
+  </ListQuery>
+</root>

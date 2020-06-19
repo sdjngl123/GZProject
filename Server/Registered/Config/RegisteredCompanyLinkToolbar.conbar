@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="BusinessModelBar" BaseBar="SettingBar">
+    <Item Name ="UpdateAllCompanyDatabase" ImagePath="~/Persistence/Image/Console/Database.ico"  ItemAssembly="Hoteam.InforCenter.Registered.ConsoleSetting" ItemClass="Hoteam.InforCenter.Registered.ConsoleSetting.UpdateAllCompanyDBSchemaCmd"></Item>
+    <Item Name ="inherit" ImagePath="~/Platform/Image/Console/relationship.png"  ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.BusinessModel.ShowInheritCmd"></Item>
+    <Item Name ="ExportDict" ImagePath="~/Platform/Image/Console/list.png"   ItemAssembly="Hoteam.InforCenter.Common.ConsoleSetting" ItemClass="Hoteam.InforCenter.Common.ConsoleSetting.ExportDataDictionary.ExportDataDictCmd"></Item>
+  </ToolBar>
+  
+ 
+
+</root>

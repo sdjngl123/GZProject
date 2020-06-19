@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="OnlineUserListLinks">
+    <PageLink Name="PCOnlineUserList"  PageName="OnlineUserList">
+      <Para Name="Type" Value="PC" />
+    </PageLink>
+    <PageLink Name="MobileOnlineUserList"  PageName="OnlineUserList">
+      <Para Name="Type" Value="Mobile" />
+    </PageLink>
+  </PageLinks>
+</root>

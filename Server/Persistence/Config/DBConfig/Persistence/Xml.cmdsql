@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <!--XML信息表相关命令-->
+  <Command Name="GETXMLINFOBYNAME">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM XMLPERSISTENCE WHERE XMLNAME =[XMLNAME] AND XMLTYPE =[XMLTYPE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETXMLINFOBYID">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM XMLPERSISTENCE WHERE XMLID =[XMLID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETXMLINFOBYTYPE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM XMLPERSISTENCE WHERE XMLTYPE =[XMLTYPE] ORDER BY SORDER DESC
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETXMLTITLEBYTYPE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT XMLID,XMLTYPE,XMLNAME FROM XMLPERSISTENCE WHERE XMLTYPE =[XMLTYPE] ORDER BY SORDER DESC
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GETXMLMAXORDER">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select max(SORDER) SORDER from XMLPERSISTENCE  WHERE XMLTYPE =[XMLTYPE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="CHECKXMLNAMEEXIST">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(XMLID) FROM XMLPERSISTENCE  WHERE XMLTYPE =[XMLTYPE] AND XMLNAME=[XMLNAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="ADDXMLINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Insert into XMLPERSISTENCE values([XMLID],[XMLTYPE],[XMLNAME],[XMLINFO],[SORDER])
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Insert into XMLPERSISTENCE values([XMLID],[XMLTYPE],[XMLNAME],[XMLINFO],[SORDER])
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="DELXMLINFO">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE  FROM XMLPERSISTENCE WHERE XMLID = [XMLID]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

@@ -1,0 +1,5 @@
+﻿<div style="height:50px;line-height:50px;">
+  <span id="SmartManagementSearchCountBefore">共搜到相关内容</span>
+  <span id="SmartManagementSearchCount" style="color:red;margin:0 2px;">[COUNT]</span>
+  <span id="SmartManagementSearchCountAfter">个</span>
+</div>

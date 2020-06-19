@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ObjectInspector" IsWeb="false">
+    <Label Name="MenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuNameDescription">
+      <LocalizedLabel LanguageRef="zhs">填写系统中存在的菜单组的名称（.menu菜单组配置项的名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fill in the name of the menu group that exists in the system.(Name of the menu menu group configuration item)</LocalizedLabel>
+    </Label>
+    <Label Name="TitleFormat">
+      <LocalizedLabel LanguageRef="zhs">标题格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Format</LocalizedLabel>
+    </Label>
+    <Label Name="TitleFormatDescription">
+      <LocalizedLabel LanguageRef="zhs">标题内容显示的格式，如：[ECODE]/[ENAME]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The format in which the header content is displayed,For example：[ECODE]/[ENAME]</LocalizedLabel>
+    </Label>
+    <Label Name="TitleTemplate">
+      <LocalizedLabel LanguageRef="zhs">标题格式模版</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Template</LocalizedLabel>
+    </Label>
+    <Label Name="TitleTemplateDescription">
+      <LocalizedLabel LanguageRef="zhs">标题格式模版</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title format template</LocalizedLabel>
+    </Label>
+    <Label Name="TitleTemplateJs">
+      <LocalizedLabel LanguageRef="zhs">标题格式模版对应的JS函数名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TitleTemplateJs</LocalizedLabel>
+    </Label>
+    <Label Name="TitleTemplateJsDescription">
+      <LocalizedLabel LanguageRef="zhs">标题格式模版对应的JS函数名,如：EITEM_TitleTemplateJs</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The JS function name corresponding to the title format template,For example：EITEM_TitleTemplateJs</LocalizedLabel>
+    </Label>
+    <Label Name="LoadJS">
+      <LocalizedLabel LanguageRef="zhs">页面加载JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Load JS</LocalizedLabel>
+    </Label>
+    <Label Name="LoadJSDescription">
+      <LocalizedLabel LanguageRef="zhs">页面加载时调用的JS函数，如：EITEM_ObjectInspector_LoadJS</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">JS function called when the page loads,For example：EITEM_ObjectInspector_LoadJS</LocalizedLabel>
+    </Label>
+    <Label Name="LoadedJS">
+      <LocalizedLabel LanguageRef="zhs">页面加载完毕JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoadedJS</LocalizedLabel>
+    </Label>
+    <Label Name="LoadedJSDescription">
+      <LocalizedLabel LanguageRef="zhs">页面加载完毕后执行的JS函数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The JS function that executes after the page loads</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyObjectInspector">
+      <LocalizedLabel LanguageRef="zhs">支持多开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support the end</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyObjectInspectorDescription">
+      <LocalizedLabel LanguageRef="zhs">打开多个对象查看器，true只打开一个，false可打开多个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open multiple object viewers, true opens only one, false opens multiple</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hidden</LocalizedLabel>
+    </Label>
+    <Label Name="HiddenDescription">
+      <LocalizedLabel LanguageRef="zhs">是否隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether to hide</LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create</LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated objects</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated objects</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksName">
+      <LocalizedLabel LanguageRef="zhs">Tab页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Page</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksNameDescription">
+      <LocalizedLabel LanguageRef="zhs">Tab页面。对象配置专门的Tab页面。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab page. The object is configured with a special tab page.</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExist">
+      <LocalizedLabel LanguageRef="zhs">对象查看器已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Exist</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

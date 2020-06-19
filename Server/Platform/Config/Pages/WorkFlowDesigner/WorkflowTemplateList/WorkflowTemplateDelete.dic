@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateDelete" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">删除对话框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete the dialog box</LocalizedLabel>
+    </Label>
+    <Label Name="Text">
+      <LocalizedLabel LanguageRef="zhs">您确定删除对象吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to delete the object?</LocalizedLabel>
+    </Label>
+    <Label Name="UsingWhetherTodelete">
+      <LocalizedLabel LanguageRef="zhs">删除的流程模板包括[[alltemplate]],其中[[usetemplate]]流程模板已经被使用，是否继续删除？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted process template includes the [[alltemplate]], among which [[usetemplate]] workflow template is already in use. Do you want to continue Deleting?</LocalizedLabel>
+    </Label>
+    <Label Name="UsingCannotDelete">
+      <LocalizedLabel LanguageRef="zhs">“[TemplateName]”已经被使用，不能删除！ </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">"[templateName]" has been used and can not be deleted!</LocalizedLabel>
+    </Label>
+    <Label Name="WhetherTodelete">
+      <LocalizedLabel LanguageRef="zhs">删除的流程模板包括[[alltemplate]]，是否继续删除？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted process template includes [[alltemplate]]. Do you want to continue Deleting?</LocalizedLabel>
+    </Label>
+    <Label Name="Fail">
+      <LocalizedLabel LanguageRef="zhs">删除失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete failed!</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteWorkflowTemplates">
+      <LocalizedLabel LanguageRef="zhs">删除流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete process template</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行删除流程模板操作,模板名称是‘[TemplateName]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes the delete process template operation with the template name '[templateName]'.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

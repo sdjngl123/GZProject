@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectNameCondition">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectNameCondition_LoadPage(pageEvent);"/>
+    <!-- 页面数据获取统一方法，每个页面必须实现-->
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_ObjectNameCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ObjectNameOperater_Container"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ObjectNameValue_Container"/>
+      </Settings>
+    </PageControl>
+
+
+    <!-- 对象属性判断操作符容器-->
+    <PageControl ControlID="ObjectNameOperater_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ObjectNameOperatorLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectNameOperatorDDL"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+    <!-- 对象属性值容器-->
+    <PageControl ControlID="ObjectNameValue_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ObjectNameValueLabel"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectNameValueText"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="20"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性判断操作符控件-->
+    <PageControl ControlID="ObjectNameOperatorLabel" ParentID="ObjectNameOperater_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ObjectNameCondition.ObjectNameOperator" />
+    </PageControl>
+    <PageControl ControlID="ObjectNameOperatorDDL" ParentID="ObjectNameOperater_Container" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="ObjectNameCondition.Equal"/>
+        <Settings Key="value" Value="=="/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="ObjectNameCondition.NotEqual"/>
+        <Settings Key="value" Value="!="/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="ObjectNameCondition.GreatThan"/>
+        <Settings Key="value" Value="&gt;"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="textId" Value="ObjectNameCondition.GreatEqual"/>
+        <Settings Key="value" Value="&gt;="/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="textId" Value="ObjectNameCondition.LessThan"/>
+        <Settings Key="value" Value="&lt;"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="textId" Value="ObjectNameCondition.LessEqual"/>
+        <Settings Key="value" Value="&lt;="/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="textId" Value="ObjectNameCondition.Like"/>
+        <Settings Key="value" Value="Like"/>
+      </Settings>
+      <Settings Key="item8" >
+        <Settings Key="textId" Value="ObjectNameCondition.NotLike"/>
+        <Settings Key="value" Value="Not Like"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性值控件-->
+    <PageControl ControlID="ObjectNameValueLabel" ParentID="ObjectNameValue_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ObjectNameCondition.ObjectNameValue" />
+    </PageControl>
+    <PageControl ControlID="ObjectNameValueText" ParentID="ObjectNameValue_Container" TypeName="TextBox">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+      <!--<Settings Key="regex" Value="正则表达式" />
+      <Settings Key="regextipId" Value="验证提示多语言标签" />-->
+    </PageControl>
+   
+  </PageControls>
+</root>

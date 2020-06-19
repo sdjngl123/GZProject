@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <MenuItem Name="SystemMenu" IsTemplate="false" Issplit="false">
+    <!--<WebAction Name="CreateMenu" ModuleName="SystemSettings" LabelName="CreateMenu" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE" IsHidden="false" IsTemplate="false" Order="2000">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="SYSTEMSETTINGS" />
+      <WebMethod PageName="CreateObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectType" Value="INDIVIDUATIONSETTING" />
+        <Para Name="MODULEID" Value="[Tree_Current_value1]"/>       
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>-->
+
+    <WebAction Name="EditMenu" ModuleName="SystemSettings" LabelName="EditMenu" Image="p_edit" ParentWebAtionName="" Order="2001" RefreshType="UPDATELIST">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="INDIVIDUATIONSETTING-EDIT" IsPopup="true" IsModal="true" >
+        <Para Name="ObjectType" Value="INDIVIDUATIONSETTING" />
+        <Para Name="TypeID" Value="[Tree_Parent_value1]"/>
+        <Para Name="ObjectID" Value="[List_EID]"/>
+        <Para Name="MODULEID" Value="[Tree_Current_value1]"/>
+        <Para Name="UserType" Value="System"/>
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+
+    <!--<WebAction Name="DeleteMenu" ModuleName="SystemSettings" LabelName="DeleteMenu" Image="p_delete" ParentWebAtionName="" RefreshType="UPDATELIST" Order="2002" IsTemplate="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>-->
+  </MenuItem>
+  
+  <MenuItem Name="PersonalMenu" IsTemplate="false" Issplit="false">
+    <WebAction Name="EditMenu" ModuleName="SystemSettings" LabelName="EditMenu" Image="p_edit" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="INDIVIDUATIONSETTING-EDIT" IsPopup="true" IsModal="true" >
+        <Para Name="ObjectType" Value="INDIVIDUATIONSETTING" />
+        <Para Name="TypeID" Value="[Tree_Parent_value1]"/>
+        <Para Name="UserType" Value="Personal"/>
+        <Para Name="MODULEID" Value="[Tree_Current_value1]"/>
+        <Para Name="ObjectID" Value="[List_EID]"/>
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+</root>

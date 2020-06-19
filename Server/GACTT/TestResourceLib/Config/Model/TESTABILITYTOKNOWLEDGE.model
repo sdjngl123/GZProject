@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LinkType Name="TESTABILITYTOKNOWLEDGE" Extend="LINK" LogicClass="LinkObject" IconPath="Base\Image\Console\Entity.gif" Abstract="false" TableName="TESTABILITYTOKNOWLEDGE" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" CreateList="View;ListView;Menu;List;Nav" IsBusinessModel="true" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="TESTABILITYTOKNOWLEDGE_PEID_INDEX" TableIndex="TESTABILITYTOKNOWLEDGE_PEID_INDEX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="TESTABILITYTOKNOWLEDGE_CEID_INDEX" TableIndex="TESTABILITYTOKNOWLEDGE_CEID_INDEX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <LinkedTypes ParentType="TESTCAPABILITY" ChildType="TESTKNOWLEDGE" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+  </LinkType>
+</root>

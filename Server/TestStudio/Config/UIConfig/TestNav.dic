@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="newItem1">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="testNav">
+      <LocalizedLabel LanguageRef="zhs">测试</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">testNav</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeListQueryEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">树列表查询编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree list query edit window</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeSelect">
+      <LocalizedLabel LanguageRef="zhs">返回值类型选择窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return Value Type Selection Window</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">配置项名称，作为查找配置项的关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the configuration item, as a keyword to find the configuration item</LocalizedLabel>
+    </Label>
+    <Label Name="SelectControl">
+      <LocalizedLabel LanguageRef="zhs">选择控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select controls</LocalizedLabel>
+    </Label>
+    <Label Name="SelectControlDescription">
+      <LocalizedLabel LanguageRef="zhs">选择控件：Tree--树，List--列表，TreeList--树列表，默认Tree</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select controls: Tree-Tree, List--List, Tree List--Tree List, Default Tree</LocalizedLabel>
+    </Label>
+    <Label Name="ShowTreeQuery">
+      <LocalizedLabel LanguageRef="zhs">显示查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display the query criteria</LocalizedLabel>
+    </Label>
+    <Label Name="ShowTreeQueryDescription">
+      <LocalizedLabel LanguageRef="zhs">如果为true，将在树上显示查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If it is true, query criteria will appear on the tree</LocalizedLabel>
+    </Label>
+    <Label Name="DropSearch">
+      <LocalizedLabel LanguageRef="zhs">是否是下拉查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it a drop-down query</LocalizedLabel>
+    </Label>
+    <Label Name="DropSearchDescription">
+      <LocalizedLabel LanguageRef="zhs">默认false，false为树节点定位查询，true为下查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default false, false is the tree node location query, true is the drop-down query</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewName">
+      <LocalizedLabel LanguageRef="zhs">树视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree view name</LocalizedLabel>
+    </Label>
+    <Label Name="TreeViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">配置树视图名称，用于获取树结构（可选值为所有.treeview中配置的视图名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configure the name of the tree view to get the tree structure (The optional value is All view name configured in the tree view)</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewName">
+      <LocalizedLabel LanguageRef="zhs">列表视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Name</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">配置列表视图名称，用于获列表标题和内容（可选值为所有.listview中配置的视图名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configure the list view name to get the list title and content (The optional value is all view name configured in the list view)</LocalizedLabel>
+    </Label>
+    <Label Name="QueryListViewName">
+      <LocalizedLabel LanguageRef="zhs">列表查询视图名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Query View Name</LocalizedLabel>
+    </Label>
+    <Label Name="QueryListViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">配置列表视图名称，用于获取列表标题和内容（可选值为所有.listview中配置的视图名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Configure the list view name to get the list title and content (The optional value is all view name configured in the list view)</LocalizedLabel>
+    </Label>
+    <Label Name="AllowMultiSelect">
+      <LocalizedLabel LanguageRef="zhs">是否允许多选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether multiple selection is allowed</LocalizedLabel>
+    </Label>
+    <Label Name="AllowMultiSelectDescription">
+      <LocalizedLabel LanguageRef="zhs">是否允许多选，用于限制返回值的个数，默认值false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to allow multiple options to limit the number of return values, the default value false</LocalizedLabel>
+    </Label>
+    <Label Name="AllowReturnEmptyValue">
+      <LocalizedLabel LanguageRef="zhs">允许返回空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow Return Null</LocalizedLabel>
+    </Label>
+    <Label Name="AllowReturnEmptyValueDescription">
+      <LocalizedLabel LanguageRef="zhs">是否允许返回空,默认值false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow return null, default false</LocalizedLabel>
+    </Label>
+    <Label Name="ListTitleDataService">
+      <LocalizedLabel LanguageRef="zhs">列表标题WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List title WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListTitleDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">获取列表标题的WCF接口，主要用于获取自定义的列表标题，如InforCenter.Workflow.WorkflowTemplateService.GetWorkflowTemplateTitleData，自定义WCF接口的参数固定为GridRowTitlePara，返回值为GridTitleData类型。如果配置此接口，则不会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The WCF interface for obtaining the title of the list is used primarily to get a custom list title, such as InforCenter. Workflow. WorkflowTemplateService. GetWorkflowTemplateTitleData, the custom WCF interface is fixed to GridRowTitlePara and the return value is the GridTitleData type. If you configure this interface, the default interface for the generic page is not used.</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageDataService">
+      <LocalizedLabel LanguageRef="zhs">列表数据WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List data WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">获取分页列表数据的WCF接口，主要用于获取自定义的列表数据，如InforCenter.Workflow.WorkflowTemplateService.GetOnePageGridData，自定义WCF接口的参数固定为OnePageGridDataPara，返回值为GridObject类型。如果配置此接口，则不会是使用通用页面的默认接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Get the WCF interface for the paging list data, it is primarily used to get custom list data, such as InforCenter. Workflow. WorkflowTemplateService. GetOnePageGridData, the parameters of the custom WCF interface are fixed as OnePageGridDataPara and the return value is the GridObject type. If this interface is configured, the default interface of the general page is not used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeChildDataService">
+      <LocalizedLabel LanguageRef="zhs">下级节点的WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF interface for subordinate nodes</LocalizedLabel>
+    </Label>
+    <Label Name="TreeChildDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义获取下级节点数据，如InforCenter.Organization.OrganizationDataService.GetGroupToGroupChildNode，自定义WCF接口的参数固定为TreeViewPara，返回值为List&lt;TreeNodeObject&gt;类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the access to subordinate node data, such as InforCenter. Organization. OrganizationDataService. GetGroupToGroupChildNode, the parameters  of the custom WCF interface are fixed as TreeViewPara, return value is the List &lt;TreeNodeObject&gt; type, if this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryDataService">
+      <LocalizedLabel LanguageRef="zhs">节点查询数据WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node query data WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="TreeQueryDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义节点查询数据，此接口对应查询、上一个、下一个按钮。如InforCenter.Common.WebTreeViewService.GetTreeQueryData，自定义WCF接口的参数固定为TreeViewQueryPara，返回值为string类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For custom node query data, this interface corresponds to the query, the previous, and the next button. Such as InforCenter. Common. WebTreeViewService. GetTreeQueryData, the parameters of the custom WCF interface are fixed as TreeViewQueryPara, the return value is string type, and if this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="DropSearchChangeService">
+      <LocalizedLabel LanguageRef="zhs">下拉查询数据WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Drop- down query data WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="DropSearchChangeServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义下拉查询数据。如InforCenter.Common.WebTreeViewService.GetTreeQueryData，自定义WCF接口的参数固定为TreeViewQueryPara，返回值为string类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize drop-down query data. Such as InforCenter. Common. WebTreeViewService.GetTreeQueryData, the parameters of the custom WCF interface are fixed as TreeViewQueryPara, the return value is string type, and if this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeAllDataService">
+      <LocalizedLabel LanguageRef="zhs">全部节点数据的WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF interface for all node data</LocalizedLabel>
+    </Label>
+    <Label Name="TreeAllDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义节点全数据，此接口针对展开功能。如InforCenter.Common.WebTreeViewService.GetTreeAllData，自定义WCF接口的参数固定为TreeViewPara，返回值为List&lt;TreeNodeObject&gt;类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the node full data, this interface addresses the expansion function. Such as InforCenter.Common.WebTreeViewService.GetTreeAllData, the parameters of the custom WCF interfaceare fixed as TreeViewPara and the return value is List &lt;TreeNodeObject&gt; type. If this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="ListAllDataService">
+      <LocalizedLabel LanguageRef="zhs">全列表数据的WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF interface for full list data</LocalizedLabel>
+    </Label>
+    <Label Name="ListAllDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义节点全数据，此接口针对展开功能。如InforCenter.Common.WebTreeViewService.GetTreeAllData，自定义WCF接口的参数固定为TreeViewPara，返回值为List&lt;TreeNodeObject&gt;类型，如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the node full data, this interface addresses the expansion function. Such as InforCenter.Common.WebTreeViewService.GetTreeAllData, the parameters of the custom WCF interfaceare fixed as TreeViewPara and the return value is List &lt;TreeNodeObject&gt; type. If this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeRootDataService">
+      <LocalizedLabel LanguageRef="zhs">根节点数据的WCF</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF for root node data</LocalizedLabel>
+    </Label>
+    <Label Name="TreeRootDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">用于自定义根节点及第二级节点数据。如InforCenter.Organization.OrganizationDataService.GetGroupToGroupRootNode，自定义WCF接口的参数固定为TreeViewPara，返回值为TreeRootData类型。如果不配置此接口，则会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Used to customize the root node and the secondary level node data. Such as InforCenter. Organization. OrganizationDataService. GetGroupToGroupRootNode, the parameters of the custom WCF interface are fixed as TreeViewPara, and the return value is TreeRootData type. If this interface is not configured, the default interface of the general page is used.</LocalizedLabel>
+    </Label>
+    <Label Name="TreeListQueryNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">树列表通用查询名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Repeat the name of the tree list general query </LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageName">
+      <LocalizedLabel LanguageRef="zhs">列表查询页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List query page</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">列表对应的查询页面名称，如果不配置，则自动隐藏查询区域</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the query page corresponding to the list, and if it is not configured, the query area is automatically hidden</LocalizedLabel>
+    </Label>
+    <Label Name="ReturnValueType">
+      <LocalizedLabel LanguageRef="zhs">返回值类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return Value Type</LocalizedLabel>
+    </Label>
+    <Label Name="ReturnValueTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">返回值类型验证，可以返回多个对象，使用“；”区分</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return value type validation, multiple objects can be returned, used “；” to distinguish</LocalizedLabel>
+    </Label>
+    <Label Name="CommitJS">
+      <LocalizedLabel LanguageRef="zhs">提交执行脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Submit Execution Script</LocalizedLabel>
+    </Label>
+    <Label Name="CommitJSDescription">
+      <LocalizedLabel LanguageRef="zhs">自定义确定按钮处理方法，主要作用重写确定按钮事件。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom button processing method, main action is to override the determined button event.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SystemSettingsObjectPage">
+  <Settings Key="height" Value="340"/>
+  <Settings Key="width" Value="497"/>
+  <Settings Key="title" Value="SystemSettingsObjectPage.SYSTEMSETTINGSHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_SystemSettings_ObjectPage_OnLoadData(pageEvent)"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_SystemSettings_ObjectPage_OnGetData(pageEvent)"/>
+  </PageHandlers>
+
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 0"/>
+      <!--对象查询页面-->
+      <Settings Key="item20" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-20"/>
+      </Settings>
+      <!--对象查询项-->
+      <Settings Key="item21" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-21"/>
+      </Settings>
+      <!--选择控件(单选) -->
+      <Settings Key="item22" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-22"/>
+      </Settings>
+    </PageControl>
+
+    <!--对象查询页面-->
+    <PageControl ControlID="R-20" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="QueryContainer_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QueryContainer_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="QueryContainer_Label" ParentID="R-20" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SystemSettingsObjectPage.QueryContainer_Label" />
+    </PageControl>
+    <PageControl ControlID="QueryContainer_Value" ParentID="R-20" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+
+    <!--对象查询项-->
+    <PageControl ControlID="R-21" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="OBJECTSELECT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="OBJECTSELECT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="OBJECTSELECT_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="OBJECTSELECT_Label" ParentID="R-21" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SystemSettingsObjectPage.OBJECTSELECTITEMHeader" />
+    </PageControl>
+    <PageControl ControlID="OBJECTSELECT_Value" ParentID="R-21" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+
+    <!--对象值-->
+    <PageControl ControlID="R-22" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="ObjectValue_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectValue_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <!--<Settings Key="childid" Value="ObjectValue_Label_FieldFlag"/>-->
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ObjectValue_Label" ParentID="R-22" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SystemSettingsDropDownPage.VALUEHeader" />
+    </PageControl>
+    <PageControl ControlID="ObjectValue_Label_FieldFlag" ParentID="R-22" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="ObjectValue_Value" ParentID="R-22" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_SystemSettings_ObjectSelectId_OnClick(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>

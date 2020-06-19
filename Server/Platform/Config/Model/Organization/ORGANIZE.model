@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LinkType Name="ORGANIZE" Extend="LINK" LogicClass="Organize" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="ORGANIZE" SplitValidateUnique="false" IsGenerateViceTable="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="false" LoopCheck="false" IsContainSub="false" SequenceIncrement="1">
+    <Index Name="ORGANIZE1_PEID_INDEX" TableIndex="ORGANIZE1_PEID_INDEX" Unique="false">
+      <IndexInfo Name="PEID" Order="ASC" />
+    </Index>
+    <Index Name="ORGANIZE1_CEID_INDEX" TableIndex="ORGANIZE1_CEID_INDEX" Unique="false">
+      <IndexInfo Name="CEID" Order="ASC" />
+    </Index>
+    <InfoType Name="GROUPID" Type="DefaultObjectValue" DataType="STRING100" Column="GROUPID" PrimaryKeyOrder="0" Required="False" ValidateUnique="true" InheritRegulate="Show" />
+    <InfoType Extend="PEID" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="true" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="PETYPE" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="CEID" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="True" ValidateUnique="true" InheritRegulate="Innate" ExtendProperty1="" />
+    <InfoType Extend="CETYPE" Type="DefaultObjectValue" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" InheritRegulate="Show" ExtendProperty1="" />
+    <LinkedTypes ParentType="COMPANY" ChildType="GROUPINFO" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+    <LinkedTypes ParentType="GROUPINFO" ChildType="GROUPINFO" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+    <LinkedTypes ParentType="ORGANIZATION" ChildType="COMPANY" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+    <LinkedTypes ParentType="GROUPINFO" ChildType="ROLEINFO" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+    <LinkedTypes ParentType="ROLEINFO" ChildType="USERINFO" ParentPrimaryKey="EID" ChildPrimaryKey="EID" IsHidden="false" />
+  </LinkType>
+</root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="MESSAGEMANAGEMENTVIEW-QUERY" IsWeb="true">
+    <Label Name="MSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="MSTATERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度50&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 50&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">消息发送者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message sender</LocalizedLabel>
+    </Label>
+    <Label Name="USERIDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMEGEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time is greater than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMEGERegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的日期时间&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct date time&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELEHeader">
+      <LocalizedLabel LanguageRef="zhs">时间小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The time is less than</LocalizedLabel>
+    </Label>
+    <Label Name="DATETIMELERegex">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的日期时间&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct date time&lt;/br&gt;</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

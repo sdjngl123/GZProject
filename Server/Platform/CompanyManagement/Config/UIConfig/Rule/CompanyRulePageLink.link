@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="CompanyRuleRootListPageLink">
+    <PageLink Name="CompanyRuleList"  PageName="TabListPage">
+      <Para Name="ListViewName" Value="COMPANYRULELISTVIEW"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="CompanyRulePageLink">
+    <PageLink Name="CompanyObjectList"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="CompanyObjectList"/>
+    </PageLink>
+    <PageLink Name="CompanyRuleCondition"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="CompanyRuleConditionList"/>
+    </PageLink>
+    <PageLink Name="CompanyRulePermission"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="CompanyRulePermissionList"/>
+    </PageLink>
+
+    
+  </PageLinks>
+
+  <PageLinks Name="CreateCompanyRuleRootPageLink">
+    <PageLink Name="CreateCompanyRuleRootPageLink"  PageName="ListManagement">
+      <Para Name="ItemName" Value="CompanyRuleRuleBusinessModelList"/>
+    </PageLink>
+  </PageLinks>
+   
+  <PageLinks Name="CreateCompanyRulePageLink">
+    <PageLink Name="CreateCompanyRulePageLink"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="CreateCompanyRulePermissionList"/>
+    </PageLink>
+  </PageLinks>
+</root>

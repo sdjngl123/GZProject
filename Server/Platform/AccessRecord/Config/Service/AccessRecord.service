@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+     ServiceName="AccessRecordService"
+     ServiceAssembly="Hoteam.InforCenter.AccessRecord.Service.dll"
+     ServiceClass="Hoteam.InforCenter.AccessRecord.Service.AccessRecordService"
+     ContractAssembly="Hoteam.InforCenter.AccessRecord.Service.dll"
+     ContractClass="Hoteam.InforCenter.AccessRecord.Service.IAccessRecordService"/>
+ 
+</root>

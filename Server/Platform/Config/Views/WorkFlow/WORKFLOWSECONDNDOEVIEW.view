@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="WORKFLOWSECONDNDOEVIEW" ObjectTypeName="WORKFLOWNODE" OrderByString="" FixedFilter="NODEFLAG='WFMANAGEMENTSECONDNODE'" AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="TEXTDIC" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="NODETYPE" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="ICON" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="NODEFLAG" Width="0" Resizable="false" Sortable="false" />
+  </ObjectView>
+</root>

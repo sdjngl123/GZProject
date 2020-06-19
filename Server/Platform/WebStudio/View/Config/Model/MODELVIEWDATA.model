@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="WEBMODELVIEWDATA" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="WEBMODELVIEWDATA" SplitValidateUnique="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="VIEWDATA" Type="DefaultObjectValue" DataType="TEXT" Column="VIEWDATA" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="VIEWDICDATA" Type="DefaultObjectValue" DataType="TEXT" Column="VIEWDICDATA" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" OverrideLevel="Must" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" OverrideLevel="Must" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" OverrideLevel="Must" ExtendProperty1="" IsBussinessField="false" />
+  </EntityType>
+</root>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="StageStateCondition">
+  <Settings Key="height" Value="80"/>
+  <Settings Key="title" Value="StageStateCondition.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_StageStateCondition_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_StageStateCondition_OnGetDataFromPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ModelListContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="StageStateContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="ModelListContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="ModelList_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ModelList_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ModelList_Label" ParentID="ModelListContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StageStateCondition.ObjectType" />
+    </PageControl>
+    <PageControl ControlID="ModelList_Value" ParentID="ModelListContainer" TypeName="DropDown">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_StageStateCondition_ModelListOnChange(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+    
+    <PageControl ControlID="StageStateContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="70"/>
+        <Settings Key="childid" Value="StageState_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="StageState_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="StageState_Label" ParentID="StageStateContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="StageStateCondition.StageState" />
+    </PageControl>
+    <PageControl ControlID="StageState_Value" ParentID="StageStateContainer" TypeName="DropDown">
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+      <Settings Key="regextipId" Value="Validation.NotEmpty" />
+    </PageControl>
+
+  </PageControls>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="GROUPQUERYVIEWIgnoreCompanyRulePermissionFalse" ObjectTypeName="GROUPINFO" OrderByString="ENAME ASC" FixedFilter="" AsCommonQuery="true" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="200" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="-1" Resizable="true" Sortable="false" Frozen="false" RowSpan="false" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAME" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Validation="String200" Required="false" />
+    <ViewCondition Name="ECODE" AndOrFlag="AND" InfoName="ECODE" Operation="LIKE" Validation="String100" Required="false" />
+  </ObjectView>
+</root>

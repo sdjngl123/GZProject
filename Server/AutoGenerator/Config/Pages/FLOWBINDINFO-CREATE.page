@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FLOWBINDINFO-CREATE">
+  <Settings Key="height" Value="54"/>
+  <Settings Key="width" Value="96"/>
+  <Settings Key="title" Value="FLOWBINDINFO-CREATE.FLOWBINDINFOHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('FLOWBINDINFO',para);{
+	var c = pageEvent.o.GetControl('FLOWTEMPLATEUID_Value');
+	if(c.id!=''){
+		c.SetText(data.FLOWTEMPLATEUID);
+	}
+}
+ var functionName = 'InforCenter_FLOWBINDINFO_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'FLOWBINDINFO'};{
+var c = pageEvent.o.GetControl('FLOWTEMPLATEUID_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.FLOWTEMPLATEUID = c.GetText().trim();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_FLOWBINDINFO_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FLOWTEMPLATEUID"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FLOWTEMPLATEUID" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="FLOWTEMPLATEUID_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FLOWTEMPLATEUID_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FLOWTEMPLATEUID_Label" ParentID="FLOWTEMPLATEUID" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="FLOWBINDINFO-CREATE.FLOWTEMPLATEUIDHeader" />
+</PageControl><PageControl ControlID="FLOWTEMPLATEUID_Value" ParentID="FLOWTEMPLATEUID" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='FLOWBINDINFO';ctrlEvent.infoName='FLOWTEMPLATEUID';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="FLOWBINDINFO-CREATE.FLOWTEMPLATEUIDRegex" />
+</PageControl>  
+  </PageControls>
+</root>

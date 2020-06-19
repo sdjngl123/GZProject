@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--如果是用户名密码模式，使用现有的登录页面-->
+  <ThreeRoleAuthPlugin
+    Name="UserNameAndPassword"
+    Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+    Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthTypeExtend.DefaultType"
+    PageName="ThreeRoleAuthPasswordPolicy" 
+    LoginPageName=""
+    Order ="1"/>
+  <ThreeRoleAuthPlugin
+    Name="DomainValidate"
+    Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+    Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthTypeExtend.ADDomainType"
+    PageName="ThreeRoleAuthDomain"
+    LoginPageName="ThreeRoleAuthDomainLogin"
+    Order ="2"/>
+  <ThreeRoleAuthPlugin
+   Name="DigitalCertificate"
+   Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+   Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthTypeExtend.UKeyType"
+   PageName="ThreeRoleAuthKey"
+   LoginPageName="ThreeRoleUKeyLogin"
+   Order ="3"/>
+  <ThreeRoleAuthPlugin
+   Name="AuthenticationCenter"
+   Assembly="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend"
+   Class="Hoteam.InforCenter.ThreeRoleAuthPlatform.Extend.ThreeRoleAuthTypeExtend.CAType"
+   PageName=""
+   LoginPageName="ThreeRoleCACenterLogin"
+   Order ="4"/>
+</root>

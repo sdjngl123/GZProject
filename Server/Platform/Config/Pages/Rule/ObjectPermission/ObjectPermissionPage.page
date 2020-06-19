@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ObjectPermissionPage">
+  <Settings Key="title" Value="ObjectPermissionPage.Title"/>
+  <Settings Key="height" Value="460"/>
+  <Settings Key="width" Value="860"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectPermissionPage_LoadPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnSave" Script="InforCenter_Platform_ObjectPermissionPage_OnSave(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_ObjectPermissionPage_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ObjectPermission_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      
+      <Settings Key="item1">
+        <Settings Key="size" Value="36"/>
+        <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PermissionListContainer"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="AuthorizePermission"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 菜单容器-->
+    <PageControl ControlID="MenuPageContainer" ParentID="ObjectPermission_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <!-- 授权列表容器-->
+    <PageControl ControlID="PermissionListContainer" ParentID="ObjectPermission_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 4px"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PermissionListEditGrid"/>
+      </Settings>
+    </PageControl>
+    
+    <!-- 授权列表可编辑列表-->
+    <PageControl ControlID="PermissionListEditGrid" ParentID="PermissionListContainer" TypeName="EditGrid">
+      <PageHandlers>
+        <!--<PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ObjectPermission_EditGridOnCreate(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_ObjectPermission_EditGridOnLoadRows(ctrlEvent);"/>-->
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnLoadRows" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="true" />
+    </PageControl>
+
+    <PageControl ControlID="AuthorizePermission" ParentID="ObjectPermission_Container" TypeName="CheckBox" >
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="ObjectPermission.AuthorizeChildren" />
+    </PageControl>
+
+
+  </PageControls>
+</root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="PageMainConfigParaType">
+    <EnumerationItem Name="String" />
+    <EnumerationItem Name="Int" />
+    <EnumerationItem Name="Float" />
+    <EnumerationItem Name="Double" />
+    <EnumerationItem Name="Bool" />
+  </Enumeration>
+  <Enumeration Name="MobilePageOrderType">
+    <EnumerationItem Name="ASC" />
+    <EnumerationItem Name="DESC" />
+  </Enumeration>
+  <Enumeration Name="MobilePageButtonItemType">
+    <EnumerationItem Name="PopupPage" />
+    <EnumerationItem Name="GoToPage" />
+    <EnumerationItem Name="ExecScript" />
+  </Enumeration>
+  <Enumeration Name="MobilePageExecScriptAction">
+    <EnumerationItem Name="Create" />
+    <EnumerationItem Name="Edit" />
+    <EnumerationItem Name="Delete" />
+    <EnumerationItem Name="Download" />
+    <EnumerationItem Name="Null" />
+  </Enumeration>
+  <Enumeration Name="MobilePageTabControlType">
+    <EnumerationItem Name="Property" />
+    <EnumerationItem Name="WebView" />
+    <EnumerationItem Name="MileStone" />
+  </Enumeration>
+  <Enumeration Name="MobileQueryControlType">
+    <EnumerationItem Name="String" />
+    <EnumerationItem Name="StringGroup" />
+    <EnumerationItem Name="Date" />
+    <EnumerationItem Name="DateGroup" />
+    <EnumerationItem Name="Dropdown" />
+  </Enumeration>
+</root>

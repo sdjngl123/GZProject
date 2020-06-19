@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuthDomain" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">域配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Doamin</LocalizedLabel>
+    </Label>
+    <Label Name="DomainPath">
+      <LocalizedLabel LanguageRef="zhs">域路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DomainPath</LocalizedLabel>
+    </Label>
+    <Label Name="DomainPathRegex">
+      <LocalizedLabel LanguageRef="zhs">最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">最大长度100</LocalizedLabel>
+    </Label>
+    <Label Name="DomainPatheg">
+      <LocalizedLabel LanguageRef="zhs">e.g.LDAP://192.168.1.1/OU=ou1,DC=dc1,DC=dc2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">e.g.LDAP://192.168.1.1/OU=ou1,DC=dc1,DC=dc2</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

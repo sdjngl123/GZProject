@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <!--个人工作区-->
+  <NavigationItem Name="CommmonModules" ShowMode="Fixed" IsAddCustom="true" IsHidden="false" Order="001">
+    <PageName />
+    <Image>p_customview</Image>
+    <NavigationItem Name="MyFlowTask" IsAddCustom="true" IsHidden="false" Order="100">
+      <PageName>TreeManagement</PageName>
+      <Image>p_task</Image>
+      <Para Name="ItemName" Value="MyFlowTask" />
+    </NavigationItem>
+  </NavigationItem>
+  <!--系统管理-->
+  <NavigationItem Name="SystemManagement" IsAddCustom="true" IsHidden="false" Order="100">
+    <PageName />
+    <Image>p_system_management</Image>
+    <!--组织结构-->
+    <NavigationItem Name="Organization" IsAddCustom="true" IsHidden="false" Order="010">
+      <PageName>TabManagement</PageName>
+      <Image>p_organizationstructure</Image>
+      <Para Name="ItemName" Value="Organization" />
+    </NavigationItem>
+    <!--权限管理-->
+    <NavigationItem Name="PermissionManagement" IsAddCustom="true" IsHidden="false" Order="020">
+      <PageName />
+      <Image>p_company_management</Image>
+
+      <!--功能授权-->
+      <NavigationItem Name="ModulePermission" IsAddCustom="true" IsHidden="false" Order="020">
+        <PageName>ModulePermission</PageName>
+        <Image>p_moduleauthorization</Image>
+      </NavigationItem>
+
+      <!--规则权限-->
+      <NavigationItem Name="ActionRule" IsAddCustom="true" IsHidden="false" Order="030">
+        <PageName>TreeManagement</PageName>
+        <Image>p_rule_permissions</Image>
+        <Para Name="ItemName" Value="RuleManagement" />
+      </NavigationItem>
+
+    </NavigationItem>
+
+    <!--值列表-->
+    <NavigationItem Name="Enumerations" IsAddCustom="true" IsHidden="false" Order="030">
+      <PageName>TreeManagement</PageName>
+      <Image>p_list_of_values</Image>
+      <Para Name="ItemName" Value="Enumerations" />
+    </NavigationItem>
+
+    <!--类型管理-->
+    <NavigationItem Name="TypeManagerment" IsAddCustom="true" IsHidden="false" Order="040">
+      <PageName>TabManagement</PageName>
+      <Image>p_customview</Image>
+      <Para Name="ItemName" Value="TypeManagermentPageLinks" />
+    </NavigationItem>
+
+    <!--规则订阅-->
+    <NavigationItem Name="ActionRuleMessage" IsAddCustom="true" IsHidden="false" Order="050">
+      <PageName>TreeManagement</PageName>
+      <Image>p_messagesubscription</Image>
+      <Para Name="ItemName" Value="RuleMessageManagement" />
+    </NavigationItem>
+
+    <!--日志管理-->
+    <NavigationItem Name="OperateLogSearch" IsAddCustom="true" IsHidden="false" Order="060">
+      <PageName>ListManagement</PageName>
+      <Image>p_operationlog</Image>
+      <Para Name="ItemName" Value="OperateLogSearch" />
+    </NavigationItem>
+
+    <!--在线用户-->
+    <NavigationItem Name="OnlineUserList" IsAddCustom="true" IsHidden="false" Order="170">
+      <PageName>TabManagement</PageName>
+      <Image>p_onlineusers</Image>
+      <Para Name="ItemName" Value="OnlineUserListLinks" />
+    </NavigationItem>
+
+    <NavigationItem Name="LifeCycleMangement" IsAddCustom="true" IsHidden="false" Order="600">
+      <PageName>ListManagement</PageName>
+      <Image>p_list_of_values</Image>
+      <Para Name="ItemName" Value="LifeCycleList" />
+    </NavigationItem>
+    <NavigationItem Name="WorkFlowManagement" IsAddCustom="true" IsHidden="false" Order="700">
+      <PageName>TreeManagement</PageName>
+      <Image>p_bpm</Image>
+      <Para Name="ItemName" Value="WorkFlowManagement" />
+    </NavigationItem>
+
+    <NavigationItem Name="WorkFlowTempateManagerment" IsAddCustom="true" IsHidden="false" Order="800">
+      <PageName>TreeManagement</PageName>
+      <Image>p_process_design</Image>
+      <Para Name="ItemName" Value="WorkflowClassify" />
+    </NavigationItem>
+
+  </NavigationItem>
+  <NavigationItem Name="AddModel" ShowMode="Fixed" IsAddCustom="false" IsHidden="false" Order="999">
+    <PagePara>
+      {
+      "ItemName": "AddModel"
+      }
+    </PagePara>
+    <Image>p_add</Image>
+  </NavigationItem>
+</root>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement  Name="LifeCycleList"   MenuName="LifeCycleMenu"   ListViewName="LifeCycleListView"  
+    QueryPageName="LIFECYCLEVIEW-QUERY"    ListTitleDataService=""   OnePageDataService=""   AllPageDataService="" HideViewFilterPage="true">
+  </ListManagement>
+</root>

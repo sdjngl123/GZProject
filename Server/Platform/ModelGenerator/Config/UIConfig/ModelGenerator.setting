@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="HiddenTypeValue" Value="LinkChildDataModelValue;UnionDataModelValue;AllObjectTypeListValue;MenuValue;SubDataModelValue;VaultValue;ThickRuleValue;ThinRuleValue;CodeKindNameValue;MobilePageValue;MobilePageImageValue;WorkflowTemplateTypeValue;CompanyValue;FlowTemplateValue;ActionRuleConditionValue;PermissionActorValue;PermissionActionValue;MessageActionValue" ToClient="false" Description="不支持的业务建模属性处理类型" />
+
+</root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebTreeView Name="EXTERNALRESOURCEROOTTreeView" ObjectType="EXTERNALRESOURCEROOT" DefaultClose="false" TextDicField="ENAME" View="EXTERNALRESOURCEROOTView" StateField="STATEID" ShowStartNode="true" IsTemplate="false" IsMainConfig="false">
+    <Schema Name="EXTERNALLYRESOURCESCHEMA" ObjectType="EXTERNALLYRESOURCE" DefaultClose="false" TextField="UNIT" Filter="" View="TESTEXTORGView" QueryID="" StateField="STATEID" Key="1" SuperKey="-1" Loop="false" IsExistNode="true" ShowChildCount="false" />
+    <FilePath>E:\广汽试验\Source\Server\GACTT\TestResourceLib\Config\ViewConfig\EXTERNALRESOURCEROOTTreeView.treeview</FilePath>
+  </WebTreeView>
+</root>

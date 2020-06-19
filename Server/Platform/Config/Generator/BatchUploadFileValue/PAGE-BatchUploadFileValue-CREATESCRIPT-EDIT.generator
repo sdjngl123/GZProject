@@ -1,0 +1,60 @@
+﻿{
+    var c = pageEvent.o.GetControl('[INFONAME]_Value');
+    if (c.id != '') {
+        var callback = function(data, ret) {
+            if (ret != null) {
+                var docData = JSON.parse(ret.UploadFileValue);
+                if (docData.length != 0) {
+                    var savePara = {};
+                    var imgList = HoteamUI.Common.ExeFunction('Inforcenter_Platform_FileManage_DocTypeImageList');
+
+                    for (var index in docData) {
+						var item = docData[index];
+                        item.text = item.FileName;
+                        item.size = item.FileSize + 'KB';
+                        item.filetype = item.FileType;
+                        if (imgList) {
+                            for (img in imgList) {
+                                if (img.Ext == item.fileextent) {
+                                    item.image = img.Img;
+                                }
+                            }
+                        }
+                    }
+
+                    if (data.onUploadSuccess) {
+                        data.onUploadSuccess(docData);
+                    }
+                }
+            }
+        };
+
+        var options = {};
+        options.onUpload = function(onUploadSuccess, onUploadError) {
+            var obj = {};
+            obj.onUploadSuccess = onUploadSuccess;
+            obj.onUploadError = onUploadError;
+            HoteamUI.UIManager.Popup('FileUploadPage', {}, callback, obj);
+        };
+
+        options.onDelete = function(item) {
+            HoteamUI.DataService.Call('Inforcenter.FileManage.FileManageService.DeleteFile', {
+                fileString: JSON.stringify([item])
+            });
+        };
+        options.onDownload = function(item) {
+            if (HoteamUI.Common.IsNullOrEmpty(item) == false) {
+                var pagePara = {};
+                pagePara.data = item;
+                HoteamUI.UIManager.Popup('FileDownloadPage', pagePara, {}, {});
+            }
+        };
+
+		var json = data.[INFONAME];
+		if(json){
+			options.data =  JSON.parse(json);
+		}
+		
+        c.Init(options);
+    }
+}

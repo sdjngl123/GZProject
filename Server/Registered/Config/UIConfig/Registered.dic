@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="RegisterdManagerListMenu" IsWeb="true">
+    <Label Name="AuditPass">
+      <LocalizedLabel LanguageRef="zhs">审核通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditPass</LocalizedLabel>
+    </Label>
+    <Label Name="AuditNoPass">
+      <LocalizedLabel LanguageRef="zhs">审核不通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditNoPass</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedPass">
+      <LocalizedLabel LanguageRef="zhs">审核通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedPass</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedUnPass">
+      <LocalizedLabel LanguageRef="zhs">审核不通过</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuditedUnPass</LocalizedLabel>
+    </Label>
+    <Label Name="Unaudited">
+      <LocalizedLabel LanguageRef="zhs">未审核</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Unaudited</LocalizedLabel>
+    </Label>
+    <Label Name="All">
+      <LocalizedLabel LanguageRef="zhs">全部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All</LocalizedLabel>
+    </Label>
+
+  </Context>
+
+</DictionarySerializer>

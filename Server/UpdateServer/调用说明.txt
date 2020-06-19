@@ -1,0 +1,9 @@
+命令参数：
+Command#Dir#Param
+
+Command列表：
+1.GETFILE
+2.VERSION
+3.CLOSE
+
+例如：Version#Example#2017-09-08-01

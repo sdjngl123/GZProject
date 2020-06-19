@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowObjectList">
+  <!--<Settings Key="title" Value="StartWorkflow.Title"/>
+  <Settings Key="icon" Value="~/platform/image/navigation/chart.png"/>-->
+  <Settings Key="height" Value="326"/>
+  <Settings Key="width" Value="900"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_StartWorkflow_ObjectGridData(pageEvent)"/>
+    <PageHandler HandlerName ="OnClose" Script=""/>
+  </PageHandlers>
+  <PageControls>
+    
+      <PageControl ControlID="MainContainer" ParentID="" TypeName="LayoutContainer">
+        <Settings Key="type" Value="vertical"/>
+        <Settings Key="item1" >
+          <Settings Key="size" Value="100%"/>
+          <Settings Key="childid" Value="TopContainer"/>
+        </Settings>
+      </PageControl>
+
+      <PageControl ControlID="TopContainer" ParentID="MainContainer" TypeName="LayoutContainer">
+        <Settings Key="type" Value="vertical"/>
+        <Settings Key="padding" Value="8px 0 0 0"/>
+        <Settings Key="item3" >
+          <Settings Key="size" Value="316"/>
+          <Settings Key="childid" Value="ObjectContainer"/>
+        </Settings>
+      </PageControl>
+
+      <PageControl ControlID="ObjectContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+        <Settings Key="type" Value="horizontal"/>
+        <Settings Key="item1">
+          <Settings Key="size" Value="100%"/>
+          <Settings Key="childid" Value="ObjectListEditGrid"/>
+        </Settings>
+        <Settings Key="item2">
+          <Settings Key="size" Value="40"/>
+          <Settings Key="childid" Value="ObjectButtonContainer"/>
+        </Settings>
+      </PageControl>
+      <PageControl ControlID="ObjectListEditGrid" ParentID="ObjectContainer" TypeName="EditGrid">
+        <PageHandlers>
+          <PageHandler HandlerName ="OnCreate" Script=""/>
+          <PageHandler HandlerName ="OnLoadRows" Script=""/>
+        </PageHandlers>
+        <Settings Key="multiselect" Value="true" />
+        <Settings Key="item0" >
+          <Settings Key="textId" Value="WorkflowObjectList.Img" />
+          <Settings Key="name" Value="IMGICONTYPE" />
+          <Settings Key="colType" Value="image" />
+          <Settings Key="sortable" Value="false" />
+          <Settings Key="resizable" Value="false" />
+        </Settings>
+        <Settings Key="item1" >
+          <Settings Key="textId" Value="ENTITYModel.EIDHeader" />
+          <Settings Key="editable" Value="false" />
+          <Settings Key="width" Value="0" />
+          <Settings Key="name" Value="EID" />
+          <Settings Key="resizable" Value="false" />
+          <Settings Key="colType" Value="hidden" />
+        </Settings>
+        <Settings Key="item2" >
+          <Settings Key="textId" Value="StartWorkflow.ObjectName" />
+          <Settings Key="editable" Value="false" />
+          <Settings Key="width" Value="-1" />
+          <Settings Key="name" Value="ENAME" />
+          <Settings Key="resizable" Value="true" />
+          <Settings Key="colType" Value="text" />
+        </Settings>
+        <Settings Key="item3" >
+          <Settings Key="textId" Value="StartWorkflow.ObjectCode" />
+          <Settings Key="editable" Value="false" />
+          <Settings Key="width" Value="-1" />
+          <Settings Key="name" Value="ECODE" />
+          <Settings Key="resizable" Value="true" />
+          <Settings Key="colType" Value="text" />
+        </Settings>
+        <Settings Key="item4" >
+          <Settings Key="textId" Value="StartWorkflow.ObjectType" />
+          <Settings Key="editable" Value="false" />
+          <Settings Key="width" Value="-1" />
+          <Settings Key="name" Value="OBJECTTYPE" />
+          <Settings Key="resizable" Value="true" />
+          <Settings Key="colType" Value="text" />
+        </Settings>
+      </PageControl>
+      <PageControl ControlID="ObjectButtonContainer" ParentID="ObjectContainer" TypeName="LayoutContainer">
+        <Settings Key="type" Value="vertical"/>
+        <Settings Key="item1">
+          <Settings Key="size" Value="30"/>
+          <Settings Key="childid" Value="btnPaste"/>
+        </Settings>
+        <Settings Key="item2">
+          <Settings Key="size" Value="30"/>
+          <Settings Key="childid" Value="btnRemove"/>
+        </Settings>
+      </PageControl>
+      <PageControl ControlID="btnPaste" ParentID="ObjectButtonContainer" TypeName="Button" >
+        <PageHandlers>
+          <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowStart_AddGridData(ctrlEvent);"/>
+        </PageHandlers>
+        <Settings Key="iconClass" Value="p_copy" />
+      </PageControl>
+      <PageControl ControlID="btnRemove" ParentID="ObjectButtonContainer" TypeName="Button" >
+        <PageHandlers>
+          <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_WorkflowStart_RemoveGridData(ctrlEvent);"/>
+        </PageHandlers>
+        <Settings Key="iconClass" Value="p_delete" />
+      </PageControl>
+
+
+  </PageControls>
+</root>
+

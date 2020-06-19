@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FlowPropertyInTask">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_FlowPropertyInTask_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!--在任务属性中显示流程属性-->
+    <PageControl ControlID="FlowPropertyContainer" ParentID="" TypeName="PageContainer">
+      
+    </PageControl>
+  </PageControls>
+</root>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectBrowse ObjectName="WORKFLOWSTATIC" JSMthod="InforCenter_Platform_ObjectManagement_WorkflowAttachInfoColumnLinkOnClick"   ListCtrlType="" />
+  <ObjectBrowse ObjectName="WORKFLOWATTACHINFO" JSMthod="InforCenter_Platform_ObjectManagement_WorkflowAttachInfoColumnLinkOnClick"  ListCtrlType=""  />
+  <ObjectBrowse ObjectName="WORKFLOWTASKINFO" JSMthod="InforCenter_Platform_ObjectManagement_WorkflowAttachInfoColumnLinkOnClick"  ListCtrlType=""  />
+  <ObjectBrowse ObjectName="WORKFLOWINFO" JSMthod="InforCenter_Platform_ListViewCtrl_GridColImage"  ListCtrlType=""  />
+
+</root>

@@ -1,0 +1,5 @@
+﻿<div style="height:30px;line-height:30px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">
+  <img id="[ParentID]TitleImage" style="position:relative;left:1px;top:-2px;"/>
+  <span id="[ParentID]OjbectType"></span>
+  <span id="[ParentID]TitleValue"></span>
+</div>

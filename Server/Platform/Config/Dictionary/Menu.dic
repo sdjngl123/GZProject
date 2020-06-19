@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Menu" IsWeb="true">
+    <Label Name="MissBind">
+      <LocalizedLabel LanguageRef="zhs">右键菜单缺少绑定对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The right-click menu is short of binding objects</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

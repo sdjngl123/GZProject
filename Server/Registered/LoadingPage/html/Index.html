@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link type="text/css" rel="stylesheet" href="../../../Registered/LoadingPage/css/loadingpage.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $('.loadingpage-container').css("height", $(window).height());
+            $('#overlay').css("height", $(window).height());
+
+            $(window).resize(function () {
+                $('.loadingpage-container').css("height", $(window).height());
+                $('#overlay').css("height", $(window).height());
+
+            });
+
+        })
+
+    </script>
+</head>
+<body>
+<div id="overlay" class="loadingpage-overlay">
+
+</div>
+<div id="overlayText" class="loadingpage-overlay-text">
+<div class="loadingpage-waite_logo">
+</div>
+<div class="loadingpage-waite-text">
+Loading......
+</div>
+</div>
+ <div class="loadingpage-container">
+   
+    <div id="center" class="loadingpage-center">
+
+      <div class=" loadingpage-center-top">
+      <div class="loadingpage-center-top-content"></div>
+      </div>
+
+      <div class=" loadingpage-center-center">
+      <div class="loadingpage-center-center-content">
+      <div class="loadingpage-center-center-content-leftimage">
+      </div>
+      <div class="loadingpage-center-center-content-rightimage">
+      </div>
+
+      </div>
+      </div>
+
+      <div class=" loadingpage-center-bottom">
+
+      <div class="loadingpage-center-bottom-content">
+      版权所有&nbsp;©&nbsp;2012-2016&nbsp;&nbsp;华天软件&nbsp;&nbsp;保留所有权利
+      </div>
+
+      
+
+      </div>
+    </div>
+  
+    </div>
+</body>
+</html>

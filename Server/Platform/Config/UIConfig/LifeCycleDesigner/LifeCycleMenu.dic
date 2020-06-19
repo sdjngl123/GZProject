@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="CodeKindPermission">
+      <LocalizedLabel LanguageRef="zhs">方案授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Protocol Authorization</LocalizedLabel>
+    </Label>
+    <Label Name="CodeKindStart">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="CodeKindStop">
+      <LocalizedLabel LanguageRef="zhs">停用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Disable</LocalizedLabel>
+    </Label>
+    <Label Name="ViewRecord">
+      <LocalizedLabel LanguageRef="zhs">查看历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View History</LocalizedLabel>
+    </Label>
+    <Label Name="CodeAbandon">
+      <LocalizedLabel LanguageRef="zhs">废弃</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Discard</LocalizedLabel>
+    </Label>
+    <Label Name="Refesh">
+      <LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh</LocalizedLabel>
+    </Label>
+    <Label Name="RecycleCode">
+      <LocalizedLabel LanguageRef="zhs">回收编码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Withdraw Code</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCodeKind">
+      <LocalizedLabel LanguageRef="zhs">创建方案</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Scheme</LocalizedLabel>
+    </Label>
+    <Label Name="EditCodeKind">
+      <LocalizedLabel LanguageRef="zhs">编辑方案</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit Scheme</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteCodeKind">
+      <LocalizedLabel LanguageRef="zhs">删除方案</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete Scheme</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCodeRule">
+      <LocalizedLabel LanguageRef="zhs">创建码段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Code Section</LocalizedLabel>
+    </Label>
+    <Label Name="EditCodeRule">
+      <LocalizedLabel LanguageRef="zhs">编辑码段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit Code Section</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteCodeRule">
+      <LocalizedLabel LanguageRef="zhs">删除码段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete Code Section</LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="Up">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="Down">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="MarkChar">
+      <LocalizedLabel LanguageRef="zhs">间隔符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Spacer</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="Add">
+      <LocalizedLabel LanguageRef="zhs">添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add</LocalizedLabel>
+    </Label>
+    <Label Name="Export">
+      <LocalizedLabel LanguageRef="zhs">导出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Export</LocalizedLabel>
+    </Label>
+    <Label Name="Import">
+      <LocalizedLabel LanguageRef="zhs">导入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import</LocalizedLabel>
+    </Label>
+    <Label Name="ImportCodeValue">
+      <LocalizedLabel LanguageRef="zhs">导入码值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import Code Value</LocalizedLabel>
+    </Label>
+    <Label Name="PasteCodeRule">
+      <LocalizedLabel LanguageRef="zhs">粘贴码段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste Code Section</LocalizedLabel>
+    </Label>
+    <Label Name="PasteCodeKind">
+      <LocalizedLabel LanguageRef="zhs">粘贴编码方案</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Paste Coding Scheme</LocalizedLabel>
+    </Label>
+    <Label Name="StartOrStop">
+      <LocalizedLabel LanguageRef="zhs">启用/停用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start/Stop</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

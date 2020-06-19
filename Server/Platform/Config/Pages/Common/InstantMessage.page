@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="InstantMessage" IsCache="true">
+  <Settings Key="title" Value="InstantMessage.Title"/>
+  <Settings Key="height" Value="200"/>
+  <Settings Key="width" Value="320"/>
+  <Settings Key="modal" Value="false"/>
+  <Settings Key="draggable" Value="false"/>
+  <Settings Key="display" Value="down"/>
+  <Settings Key="minWindow" Value="false"/>
+  <Settings Key="resizable" Value="false"/>
+  <Settings Key="position" Value="right,bottom"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_InstantMessage_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnClose" Script="InforCenter_Platform_InstantMessage_OnClose(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="InstantMessage_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InstantMessage_LayoutContainerH"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="InstantMessage_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InstantMessage_LayoutContainerH" ParentID="InstantMessage_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="InstantMessage_Content"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="12"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InstantMessage_Content" ParentID="InstantMessage_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="childid" Value="InstantMessage_Text"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="InstantMessage_Text" ParentID="Confirm_LabelContainer" TypeName="CustomerContainer" >
+      <Settings Key="templateName" Value="InstantMessage"/>
+    </PageControl>
+    <!--InstantMessageBtn-->
+    <PageControl ControlID="InstantMessage_Btn" ParentID="InstantMessage_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="InstantMessage_Read"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="16%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="InstantMessage_MessageManage"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="42%"/>
+        <Settings Key="childid" />
+      </Settings>
+
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="InstantMessage_Read" ParentID="InstantMessage_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InstantMessage_Read(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="InstantMessage.Read" />
+    </PageControl>
+    <PageControl ControlID="InstantMessage_MessageManage" ParentID="InstantMessage_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InstantMessage_MessageManage(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="InstantMessage.MessageManage" />
+    </PageControl>
+  </PageControls>
+</root>
+

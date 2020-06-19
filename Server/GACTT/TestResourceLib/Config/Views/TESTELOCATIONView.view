@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="TESTELOCATIONView" ObjectTypeName="TESTELOCATION" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="right" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="REMARK" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="STATEID" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECOMPANYID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAME" ObjectTypeName="TESTELOCATION" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    <ViewCondition Name="REMARK" ObjectTypeName="TESTELOCATION" AndOrFlag="AND" InfoName="REMARK" Operation="LIKE" Required="false" />
+  </ObjectView>
+</root>

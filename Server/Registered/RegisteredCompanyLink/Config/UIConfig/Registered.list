@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListManagement Name="ApplyCompanyManagerList" MenuName="ApplyCompanyManagerListMenu" ListRightMenuName="" ListViewName="ApplyCompanyManagerListView"  QueryPageName="" ListTitleDataService="" OnePageDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetApplyCompanyGrid" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="UnAuditCompanyList" MenuName="UnAuditCompanyLinkListListMenu" ListRightMenuName="" ListViewName="UnAuditCompanyListView"  QueryPageName="" ListTitleDataService="" OnePageDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetAcceptCompanyUnAuditGrid" AllPageDataService="">
+  </ListManagement>
+  <ListManagement Name="AuditedCompanyList" MenuName="" ListRightMenuName="" ListViewName="AuditedCompanyListView"  QueryPageName="" ListTitleDataService="" OnePageDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetAcceptCompanyAuditedGrid" AllPageDataService="">
+  </ListManagement>
+
+  <ListManagement Name="AllModeList" MenuName="" ListRightMenuName="" ListViewName="" QueryPageName=""
+                ListTitleDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetModelGridTitle"
+                OnePageDataService="InforCenter.Registered.RegisteredCompanyLinkService.GetModelGridData"
+                AllPageDataService="" InitParaJSMethod="" HideViewFilterPage="true" SearchFields="" SideTabWidth="" >
+  </ListManagement>
+</root>

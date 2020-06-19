@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityType Name="FORMFLOWTASKPERMISSION" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="FORMFLOWTASKPERMISSION" SplitValidateUnique="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="FORMTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="FORMTYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="CONTROLID" Type="DefaultObjectValue" DataType="STRING100" Column="CONTROLID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="TASKNODEID" Type="DefaultObjectValue" DataType="STRING100" Column="TASKNODEID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="PERMISSIONCONTENT" Type="DefaultObjectValue" DataType="STRING2000" Column="PERMISSIONCONTENT" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+  </EntityType>
+</root>

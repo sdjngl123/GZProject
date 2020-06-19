@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="WORKFOLWVIEW" ObjectTypeName="WORKFLOWINFO" OrderByString="CREATETIME DESC" FixedFilter="">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" Frozen="false" RowSpan="false" />
+    <ViewColumn Name="STATEID" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" />
+    <ViewColumn Name="FLOWADMINISTRATOR" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" />
+    <ViewColumn Name="FLOWTEMPLATE" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" />
+    <ViewColumn Name="CREATEUID" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" />
+    <ViewColumn Name="CREATETIME" Width="140" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewCondition Name="NAMELIKE" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Validation="String100" Required="false" />
+    <ViewCondition Name="FLOWTEMPLATE" AndOrFlag="AND" InfoName="FLOWTEMPLATE" Operation="LIKE" Required="false" />
+  </ObjectView>
+</root>

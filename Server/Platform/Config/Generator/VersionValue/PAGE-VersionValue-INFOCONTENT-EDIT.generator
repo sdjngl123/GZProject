@@ -1,0 +1,10 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnLoad" Script="
+                var o = ctrlEvent.o;
+      InforCenter_Platform_Object_SetVersionSelList(o,'[VERSIONTYPE]');
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="[REGEX]" />
+  <Settings Key="regextipId" Value="[REGEXTIPID]" />
+</PageControl>

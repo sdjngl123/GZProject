@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DATABASEUSEINFOModel" IsWeb="true">
+    <Label Name="DATABASEUSEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库使用信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATABASEUSEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASEUSEINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">数据库使用信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DATABASEUSEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASETEMPLATENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataBaseTemplateName</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASETEMPLATENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">数据库模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataBaseTemplateName</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">数据库类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DatabaseType</LocalizedLabel>
+    </Label>
+    <Label Name="DATABASETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">数据库类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DatabaseType</LocalizedLabel>
+    </Label>
+    <Label Name="USECOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">使用数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UseCount</LocalizedLabel>
+    </Label>
+    <Label Name="USECOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">使用数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UseCount</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

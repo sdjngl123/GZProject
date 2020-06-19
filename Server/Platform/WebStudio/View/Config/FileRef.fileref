@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Platform/WebStudio/View/Js/ModelListViewInfo.js" group="Platform"/>
+  <JSFile FileName ="~/Platform/WebStudio/View/Js/ModelViewCreate.js" group="Platform"/>
+</root>

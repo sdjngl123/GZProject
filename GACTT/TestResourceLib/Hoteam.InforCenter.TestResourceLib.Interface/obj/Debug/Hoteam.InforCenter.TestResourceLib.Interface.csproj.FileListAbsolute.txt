@@ -1,0 +1,5 @@
+E:\广汽试验\Source\Server\Interface\Hoteam.InforCenter.TestResourceLib.Interface.dll
+E:\广汽试验\Source\Server\Interface\Hoteam.InforCenter.TestResourceLib.Interface.pdb
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Interface\obj\Debug\Hoteam.InforCenter.TestResourceLib.Interface.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Interface\obj\Debug\Hoteam.InforCenter.TestResourceLib.Interface.dll
+E:\广汽试验\Source\GACTT\TestResourceLib\Hoteam.InforCenter.TestResourceLib.Interface\obj\Debug\Hoteam.InforCenter.TestResourceLib.Interface.pdb

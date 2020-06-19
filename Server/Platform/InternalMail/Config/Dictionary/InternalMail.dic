@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="InternalMail" IsWeb="true">
+    <Label Name="ReciveCurrentWeek">
+      <LocalizedLabel LanguageRef="zhs">本周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This week</LocalizedLabel>
+    </Label>
+    <Label Name="RecivePreThreeWeek">
+      <LocalizedLabel LanguageRef="zhs">前三周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The first three weeks</LocalizedLabel>
+    </Label>
+    <Label Name="ReciveEarlier">
+      <LocalizedLabel LanguageRef="zhs">更早</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Earlier</LocalizedLabel>
+    </Label>
+    <Label Name="SendCurrentWeek">
+      <LocalizedLabel LanguageRef="zhs">本周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This week</LocalizedLabel>
+    </Label>
+    <Label Name="SendPreThreeWeek">
+      <LocalizedLabel LanguageRef="zhs">前三周</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The first three weeks</LocalizedLabel>
+    </Label>
+    <Label Name="SendEarlier">
+      <LocalizedLabel LanguageRef="zhs">更早</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Earlier</LocalizedLabel>
+    </Label>
+    <Label Name="Recive">
+      <LocalizedLabel LanguageRef="zhs">收件箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Inbox</LocalizedLabel>
+    </Label>
+    <Label Name="Send">
+      <LocalizedLabel LanguageRef="zhs">发件箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Outbox</LocalizedLabel>
+    </Label>
+    <Label Name="Drafts">
+      <LocalizedLabel LanguageRef="zhs">草稿箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Draft</LocalizedLabel>
+    </Label>
+    <Label Name="Dustbin">
+      <LocalizedLabel LanguageRef="zhs">垃圾箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Garbage can</LocalizedLabel>
+    </Label>
+    <Label Name="System">
+      <LocalizedLabel LanguageRef="zhs">系统邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System mail</LocalizedLabel>
+    </Label>
+    <Label Name="SendMail">
+      <LocalizedLabel LanguageRef="zhs">发送邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send a mail</LocalizedLabel>
+    </Label>
+    <Label Name="SaveMail">
+      <LocalizedLabel LanguageRef="zhs">保存邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save the mail</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">新邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New mail</LocalizedLabel>
+    </Label>
+    <Label Name="Content">
+      <LocalizedLabel LanguageRef="zhs">有新的未读站内邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is new unread inbound mail</LocalizedLabel>
+    </Label>
+    <Label Name="dontAnswer">
+      <LocalizedLabel LanguageRef="zhs">系统邮件，请勿答复！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System mail, please do not reply!</LocalizedLabel>
+    </Label>
+    <Label Name="RepetInfo">
+      <LocalizedLabel LanguageRef="zhs">请勿重复操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do not repeat the operation!</LocalizedLabel>
+    </Label>
+    <Label Name="mTitleEmpty">
+      <LocalizedLabel LanguageRef="zhs">邮件主题为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The mail topic is null!</LocalizedLabel>
+    </Label>
+    <Label Name="reciverEmpty">
+      <LocalizedLabel LanguageRef="zhs">收件人为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The recipient is null!</LocalizedLabel>
+    </Label>
+    <Label Name="selectObjectEmpty">
+      <LocalizedLabel LanguageRef="zhs">未选择移除对象！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object is not selected!</LocalizedLabel>
+    </Label>
+    <Label Name="Common">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行[ActionName]操作，邮件主题是‘[ObjectName]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] execute the [ActionName] operation with the mail subject as '[ObjectName]'.</LocalizedLabel>
+    </Label>
+    <Label Name="DustbinClear">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行[ActionName]操作，对象名称是‘垃圾箱’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes the [ActionName] operation with the object named as 'Trash'.</LocalizedLabel>
+    </Label>
+    <Label Name="DraftsClear">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行[ActionName]操作，对象名称是‘草稿箱’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes the [ActionName] operation with the object named as 'Drafts'.</LocalizedLabel>
+    </Label>
+    <Label Name="SystemClear">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行[ActionName]操作，对象名称是‘系统邮件’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes the [ActionName] operation with the object named as 'system mail'.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

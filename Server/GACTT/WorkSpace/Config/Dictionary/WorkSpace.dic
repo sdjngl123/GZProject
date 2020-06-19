@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="WorkSpace" IsWeb="true">
+		<Label Name="MyTask">
+			<LocalizedLabel LanguageRef="zhs">我的任务</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">My Task</LocalizedLabel>
+		</Label>
+		<Label Name="ResponseTask">
+			<LocalizedLabel LanguageRef="zhs">我负责的任务</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Response Task</LocalizedLabel>
+		</Label>
+		<Label Name="ParticipateTask">
+			<LocalizedLabel LanguageRef="zhs">我参与的任务</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Participate Task</LocalizedLabel>
+		</Label>
+		<Label Name="CompleteTask">
+			<LocalizedLabel LanguageRef="zhs">已结束的任务</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Complete Task</LocalizedLabel>
+		</Label>
+	</Context>
+</DictionarySerializer>

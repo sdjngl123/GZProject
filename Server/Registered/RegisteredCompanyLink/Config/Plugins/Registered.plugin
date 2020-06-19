@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--业务逻辑类-->
+  <PluginItem Name="RegisteredCompanyLinkBuiness" Type="Business" Assembly="Hoteam.InforCenter.RegisteredCompanyLink.Business" Class="Hoteam.InforCenter.RegisteredCompanyLink.Business.ExtendDataModelUtil" />
+  <PluginItem Name="RegisteredExtendUtil" Type="Business" Assembly="Hoteam.InforCenter.RegisteredCompanyLink.Business" Class="Hoteam.InforCenter.RegisteredCompanyLink.Business.RegisteredExtend" />
+  <PluginItem Name="ModelDataCompanyInfo" Type="Business" Assembly="Hoteam.InforCenter.RegisteredCompanyLink.Business" Class="Hoteam.InforCenter.RegisteredCompanyLink.Business.ModelDataUtil" />
+
+  <PluginItem Name="RelationCompanyValue" Type="ObjectValueType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.DefaultObjectValue" />
+</root>

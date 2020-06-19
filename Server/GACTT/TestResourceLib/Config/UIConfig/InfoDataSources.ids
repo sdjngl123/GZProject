@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+	<ObjectType Name="EXTERNALLYRESOURCE">
+		<InfoType Name="ENAME" Script="" PageName="ListCommonQuery"   SourceValue="EID" SourceText="ENAME">
+			<Para Name="ItemName" Value="TestOutResourceListQuery" />
+		</InfoType>
+	</ObjectType>
+
+	<ObjectType Name="TESTCAPABILITY">
+		<InfoType Name="ORG" Script="" PageName="ListCommonQuery"   SourceValue="EID" SourceText="ECODE">
+			<Para Name="ItemName" Value="TestOrgListQuery" />
+		</InfoType>
+		<InfoType Name="LOCATION" Script="" PageName="ListCommonQuery"   SourceValue="EID" SourceText="ENAME">
+			<Para Name="ItemName" Value="TestLocationListQuery" />
+		</InfoType>
+	</ObjectType>
+
+</root>

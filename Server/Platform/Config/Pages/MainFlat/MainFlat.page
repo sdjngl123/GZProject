@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="MainFlat" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_MainFlat_MainFlatInit(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="MainFlat_LayoutContainerV" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="700"/>
+        <Settings Key="childid" Value="MainFlat_LayoutContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MainFlat_LayoutContainer" ParentID="MainFlat_LayoutContainerV" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value="MainFlat_A"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="MainFlat_B"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value="MainFlat_C"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MainFlat_A" ParentID="MainFlat_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MainFlat_B" ParentID="MainFlat_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="" />
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MainFlat_C" ParentID="MainFlat_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+  </PageControls>
+</root>
+

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ModelGenerator" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelDesign</LocalizedLabel>
+    </Label>
+    <Label Name="btnSaveThem">
+      <LocalizedLabel LanguageRef="zhs">保存主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">btnSaveThem</LocalizedLabel>
+    </Label> 
+    <Label Name="OnchangeBefore">
+      <LocalizedLabel LanguageRef="zhs">业务建模调整后尚未保存，请先保存模型数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model data has changed,please save before option</LocalizedLabel>
+    </Label>
+    <Label Name="FormManagement">
+      <LocalizedLabel LanguageRef="zhs">自定义表单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormManagement</LocalizedLabel>
+    </Label>
+    <Label Name="BaseInfo">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BaseInfo</LocalizedLabel>
+    </Label>
+    <Label Name="SaveThem">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveThem</LocalizedLabel>
+    </Label>
+    
+    <Label Name="FormBuilderModelExist">
+      <LocalizedLabel LanguageRef="zhs">当前表单已被使用无法删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form type exist data cannot be delete</LocalizedLabel>
+    </Label>
+    <Label Name="FormTypeExist">
+      <LocalizedLabel LanguageRef="zhs">选中的表单类型已存在</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form type exist</LocalizedLabel>
+    </Label>
+    <Label Name="InheritProperty">
+      <LocalizedLabel LanguageRef="zhs">继承属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InheritProperty</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty">
+      <LocalizedLabel LanguageRef="zhs">扩展属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendProperty</LocalizedLabel>
+    </Label>
+    <Label Name="Property">
+      <LocalizedLabel LanguageRef="zhs">属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Property</LocalizedLabel>
+    </Label>
+    <Label Name="Header">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="CommonTool">
+      <LocalizedLabel LanguageRef="zhs">基础控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CommonTool</LocalizedLabel>
+    </Label>
+    <Label Name="Label">
+      <LocalizedLabel LanguageRef="zhs">标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Label</LocalizedLabel>
+    </Label>
+    <Label Name="Image">
+      <LocalizedLabel LanguageRef="zhs">图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Image</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="Column">
+      <LocalizedLabel LanguageRef="zhs">列名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="Caption">
+      <LocalizedLabel LanguageRef="zhs">说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Caption</LocalizedLabel>
+    </Label>
+    <Label Name="DataType">
+      <LocalizedLabel LanguageRef="zhs">数据类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataType</LocalizedLabel>
+    </Label>
+    <Label Name="InheritRegulate">
+      <LocalizedLabel LanguageRef="zhs">继承控制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InheritRegulate</LocalizedLabel>
+    </Label>
+    <Label Name="Required">
+      <LocalizedLabel LanguageRef="zhs">必填字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Required</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateUnique">
+      <LocalizedLabel LanguageRef="zhs">唯一性验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OnlyReg</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultValue">
+      <LocalizedLabel LanguageRef="zhs">默认值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DefaultValue</LocalizedLabel>
+    </Label>
+    <Label Name="BindData">
+      <LocalizedLabel LanguageRef="zhs">绑定数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BindData</LocalizedLabel>
+    </Label>
+    <Label Name="Extend2">
+      <LocalizedLabel LanguageRef="zhs">扩展属性2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extend2 Property</LocalizedLabel>
+    </Label>
+    <Label Name="Extend3">
+      <LocalizedLabel LanguageRef="zhs">扩展属性3</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extend3 Property</LocalizedLabel>
+    </Label>
+    <Label Name="IsBusiness">
+      <LocalizedLabel LanguageRef="zhs">是否业务字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsBusiness</LocalizedLabel>
+    </Label>
+    <Label Name="MainKey">
+      <LocalizedLabel LanguageRef="zhs">主键顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MainKey Squence</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyReg">
+      <LocalizedLabel LanguageRef="zhs">属性格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PropertyReg</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">处理类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="Edit">
+      <LocalizedLabel LanguageRef="zhs">编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit</LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show</LocalizedLabel>
+    </Label>
+    <Label Name="Width">
+      <LocalizedLabel LanguageRef="zhs">宽度(百分比)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width</LocalizedLabel>
+    </Label>
+    <Label Name="Squence">
+      <LocalizedLabel LanguageRef="zhs">排列顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Squence</LocalizedLabel>
+    </Label>
+    <Label Name="Regx">
+      <LocalizedLabel LanguageRef="zhs">验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Regx</LocalizedLabel>
+    </Label>
+    <Label Name="Abstract">
+      <LocalizedLabel LanguageRef="zhs">是否抽象类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Abstract</LocalizedLabel>
+    </Label>
+    <Label Name="ModelGroups">
+      <LocalizedLabel LanguageRef="zhs">模型分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelGroups</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendProperty1">
+      <LocalizedLabel LanguageRef="zhs">绑定数据源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSource</LocalizedLabel>
+    </Label>
+	 <Label Name="ExtendProperty2">
+      <LocalizedLabel LanguageRef="zhs">扩展属性2</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendProperty2</LocalizedLabel>
+    </Label>
+
+    <Label Name="ExtendProperty3">
+      <LocalizedLabel LanguageRef="zhs">扩展属性3</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendProperty3</LocalizedLabel>
+    </Label>
+    <Label Name="PolicyName">
+      <LocalizedLabel LanguageRef="zhs">使用状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PolicyName</LocalizedLabel>
+    </Label>
+    <Label Name="StagePolicyName">
+      <LocalizedLabel LanguageRef="zhs">生命周期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StagePolicyName</LocalizedLabel>
+    </Label>
+    <Label Name="IsGenerateViceTable">
+      <LocalizedLabel LanguageRef="zhs">是否生成副表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsGenerateViceTable</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOuted">
+      <LocalizedLabel LanguageRef="zhs">已经被其他人检出！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOut By Other People!</LocalizedLabel>
+    </Label>
+    <Label Name="UnCheckOut">
+      <LocalizedLabel LanguageRef="zhs">未检出，不允许操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UnCheckOut,Action deny!</LocalizedLabel>
+    </Label>
+    <Label Name="CheckInSuccess">
+      <LocalizedLabel LanguageRef="zhs">检入成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckInSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOutSuccess">
+      <LocalizedLabel LanguageRef="zhs">检出成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOutSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="UndoCheckOutSuccess">
+      <LocalizedLabel LanguageRef="zhs">撤销检出成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UndoCheckOutSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="NotNeedCheckIn">
+      <LocalizedLabel LanguageRef="zhs">未检出，不需要检入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not need check In!</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOutedBySelf">
+      <LocalizedLabel LanguageRef="zhs">已检出，请勿重复操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOuted,Please Repeat Again!</LocalizedLabel>
+    </Label>
+    <Label Name="StatisticModelInfo">
+      <LocalizedLabel LanguageRef="zhs">固定模型，不允许编辑！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Statistic Model,Action deny!</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteModelDeny">
+      <LocalizedLabel LanguageRef="zhs">存在下级继承模型，无法删除！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exist Child Extend Model,Deny delete!</LocalizedLabel>
+    </Label>
+    <Label Name="ModelObjectExist">
+      <LocalizedLabel LanguageRef="zhs">模型已生成对象，无法删除！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exist Model Object,Deny delete!</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorPageInfo">
+      <LocalizedLabel LanguageRef="zhs">请进行表单设计后再进行生成页面！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please Generator Page before Form Design!</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKeyField">
+      <LocalizedLabel LanguageRef="zhs">外键字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ForeignKey Field</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKey">
+      <LocalizedLabel LanguageRef="zhs">外键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ForeignKey</LocalizedLabel>
+    </Label>
+    <Label Name="AboutObject">
+      <LocalizedLabel LanguageRef="zhs">关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AboutObject</LocalizedLabel>
+    </Label>
+    <Label Name="AboutField">
+      <LocalizedLabel LanguageRef="zhs">关联字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AboutField</LocalizedLabel>
+    </Label>
+    <Label Name="SetForeignKey">
+      <LocalizedLabel LanguageRef="zhs">设置外键</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetForeignKey</LocalizedLabel>
+    </Label>
+    <Label Name="SaveSuccess">
+      <LocalizedLabel LanguageRef="zhs">保存成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SaveSuccess</LocalizedLabel>
+    </Label>
+    <Label Name="ActionDenyInfo">
+      <LocalizedLabel LanguageRef="zhs">当前对象不允许执行此操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Current Object Can't Do this</LocalizedLabel>
+    </Label>
+    <Label Name="FirstRow">
+      <LocalizedLabel LanguageRef="zhs">已经是第一行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It's the first line, there is no need for move up operation!</LocalizedLabel>
+    </Label>
+    <Label Name="LastRow">
+      <LocalizedLabel LanguageRef="zhs">已经是最后一行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It's the last line, there is no need for move down operation!</LocalizedLabel>
+    </Label>
+    <Label Name="ModelStateInfo">
+      <LocalizedLabel LanguageRef="zhs">模型为启用状态，禁止操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">model state is start, can't edit!</LocalizedLabel>
+    </Label>
+    <Label Name="StartInfo">
+      <LocalizedLabel LanguageRef="zhs">启用前请先检入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">please check in before start!</LocalizedLabel>
+    </Label>
+    <Label Name="ModelStarted">
+      <LocalizedLabel LanguageRef="zhs">已启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">started!</LocalizedLabel>
+    </Label>
+    <Label Name="ModelStopd">
+      <LocalizedLabel LanguageRef="zhs">进入设计状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">stopd!</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存当前版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAs">
+      <LocalizedLabel LanguageRef="zhs">保存为新版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save As</LocalizedLabel>
+    </Label>
+    <Label Name="ParentTypeStoped">
+      <LocalizedLabel LanguageRef="zhs">父级类型处在设计状态，请先启用父类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ParentTypeStoped</LocalizedLabel>
+    </Label>
+    <Label Name="NameRegex">
+      <LocalizedLabel LanguageRef="zhs">只能输入字母和数字且首字符为字母长度不能大于50</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Must be input character and length max 50</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorSuccess">
+      <LocalizedLabel LanguageRef="zhs">生成成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Generator Success</LocalizedLabel>
+    </Label>
+    <Label Name="UpdateSuccess">
+      <LocalizedLabel LanguageRef="zhs">更新完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update Success</LocalizedLabel>
+    </Label>
+    <Label Name="TypeStarted">
+      <LocalizedLabel LanguageRef="zhs">已启用，请勿重复操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">type stared</LocalizedLabel>
+    </Label>
+    <Label Name="TypeStoped">
+      <LocalizedLabel LanguageRef="zhs">已是设计状态，请勿重复操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">type stoped</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOutUser">
+      <LocalizedLabel LanguageRef="zhs">检出人：[CheckOutUser]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOutUser:[CheckOutUser]</LocalizedLabel>
+    </Label>
+    <Label Name="CreateUid">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create Uid</LocalizedLabel>
+    </Label>
+    <Label Name="CreateTime">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create Time</LocalizedLabel>
+    </Label>
+    <Label Name="FormState">
+      <LocalizedLabel LanguageRef="zhs">表单状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form State</LocalizedLabel>
+    </Label>
+    <Label Name="StartTime">
+      <LocalizedLabel LanguageRef="zhs">启用时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Time</LocalizedLabel>
+    </Label>
+    <Label Name="StartModelInfo">
+      <LocalizedLabel LanguageRef="zhs">请先启用关联的外键模型：[Name]。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please Start About Foreign Object:[Name].</LocalizedLabel>
+    </Label>
+    <Label Name="StopModelInfo">
+      <LocalizedLabel LanguageRef="zhs">存在关联的主模型：[Name]，请先将以上主模型设为设计状态。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exist Main Object:[Name],Please Close Main Object.</LocalizedLabel>
+    </Label>
+    <Label Name="StartFlowDenyInfo">
+      <LocalizedLabel LanguageRef="zhs">模型未启用状态列，不能发起流程。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Workflow Deny.</LocalizedLabel>
+    </Label>
+    <Label Name="TypeExist">
+      <LocalizedLabel LanguageRef="zhs">模型名称已存在，请调整后再保存。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Name Exist,Please Edited Save.</LocalizedLabel>
+    </Label>
+    <Label Name="SQLKeyWordInfo">
+      <LocalizedLabel LanguageRef="zhs">模型名称是数据库关键字。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model Name are database keyword.</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnNameExist">
+      <LocalizedLabel LanguageRef="zhs">扩展属性列名存在重复。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extend property Column Name Exist.</LocalizedLabel>
+    </Label>
+    <Label Name="FormSaveInfo">
+      <LocalizedLabel LanguageRef="zhs">表单内容未保存，是否关闭？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">form content not yet save,close now?</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyNameInheritBaseConflict">
+      <LocalizedLabel LanguageRef="zhs">扩展属性名称模型名称冲突 [NAME]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendProperty Name Conflict [NAME]</LocalizedLabel>
+    </Label>
+    <Label Name="PropertyNameExtendInheritConflict">
+      <LocalizedLabel LanguageRef="zhs">扩展属性名称与继承属性冲突  [NAME]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendProperty Name Conflict  [NAME]</LocalizedLabel>
+    </Label>
+    <Label Name="FormTypeExist">
+      <LocalizedLabel LanguageRef="zhs">表单类型 [FormType] 已经存在，请勿重复添加。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormType [FormType] Exist, Please Do not Add Again</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">列名不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Name Eempty</LocalizedLabel>
+    </Label>
+
+    <Label Name="DataCannotEmpty">
+      <LocalizedLabel LanguageRef="zhs">信息填写不完整！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Cannot Empty</LocalizedLabel>
+    </Label>
+
+    <Label Name="InheritList">
+      <LocalizedLabel LanguageRef="zhs">继承属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InheritInfo</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendList">
+      <LocalizedLabel LanguageRef="zhs">扩展属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExtendInfo</LocalizedLabel>
+    </Label>
+    <Label Name="BaseInfoList">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BaseInfo</LocalizedLabel>
+    </Label>
+    <Label Name="ForeignKeyInfoList">
+      <LocalizedLabel LanguageRef="zhs">外键信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ForeignKeyInfo</LocalizedLabel>
+    </Label>
+    <Label Name="TaskNode">
+      <LocalizedLabel LanguageRef="zhs">任务节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TaskNode</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionTxt">
+      <LocalizedLabel LanguageRef="zhs">授权内容</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionTxt</LocalizedLabel>
+    </Label>
+    <Label Name="FlowCompleteInfo">
+      <LocalizedLabel LanguageRef="zhs">流程结束</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Flow Complete</LocalizedLabel>
+    </Label>
+
+    <Label Name="ContainerTool">
+      <LocalizedLabel LanguageRef="zhs">容器控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ContainerTool</LocalizedLabel>
+    </Label>
+    <Label Name="PageContainerTool">
+      <LocalizedLabel LanguageRef="zhs">页面容器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageContainerTool</LocalizedLabel>
+    </Label>
+    <Label Name="ConnotSaveOtherCompanyModel">
+      <LocalizedLabel LanguageRef="zhs">不能保存其他公司的模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConnotSaveOtherCompanyModel</LocalizedLabel>
+    </Label>
+    <Label Name="CheckSaveInfo">
+      <LocalizedLabel LanguageRef="zhs">请确认已打开的表单设计器已保存？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please Check Save</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeExist">
+      <LocalizedLabel LanguageRef="zhs">对象类型已存在，请调整后再保存。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType Exist, please edit</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNotExist">
+      <LocalizedLabel LanguageRef="zhs">对象类型[{0}]不存在，可能已经被删除！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">"ObjectFactory:Type {0} not exist !</LocalizedLabel>
+    </Label>
+
+  </Context>
+  <Context Name="ModelGeneratorMenu" IsWeb="true">
+    <Label Name="FormDesign">
+      <LocalizedLabel LanguageRef="zhs">表单设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormDesign</LocalizedLabel>
+    </Label>
+    <Label Name="Refesh">
+      <LocalizedLabel LanguageRef="zhs">刷新</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refesh</LocalizedLabel>
+    </Label>
+    <Label Name="Write">
+      <LocalizedLabel LanguageRef="zhs">填写</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Write</LocalizedLabel>
+    </Label>
+    <Label Name="FlowBind">
+      <LocalizedLabel LanguageRef="zhs">绑定流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FlowBind</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="Update">
+      <LocalizedLabel LanguageRef="zhs">更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Update</LocalizedLabel>
+    </Label>
+    <Label Name="New">
+      <LocalizedLabel LanguageRef="zhs">添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="Remove">
+      <LocalizedLabel LanguageRef="zhs">移除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove</LocalizedLabel>
+    </Label>
+    <Label Name="Up">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Up</LocalizedLabel>
+    </Label>
+    <Label Name="Down">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Down</LocalizedLabel>
+    </Label>
+    <Label Name="Save">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save</LocalizedLabel>
+    </Label>
+    <Label Name="CheckIn">
+      <LocalizedLabel LanguageRef="zhs">检入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckIn</LocalizedLabel>
+    </Label>
+    <Label Name="CheckOut">
+      <LocalizedLabel LanguageRef="zhs">检出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="UndoCheckOut">
+      <LocalizedLabel LanguageRef="zhs">撤销检出</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UndoCheckOut</LocalizedLabel>
+    </Label>
+    <Label Name="CreateModel">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteModel">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete</LocalizedLabel>
+    </Label>
+    <Label Name="EditItem">
+      <LocalizedLabel LanguageRef="zhs">编辑该项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditItem</LocalizedLabel>
+    </Label>
+    <Label Name="ResetItem">
+      <LocalizedLabel LanguageRef="zhs">重置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ResetItem</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorPage">
+      <LocalizedLabel LanguageRef="zhs">生成页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">GeneratorPage</LocalizedLabel>
+    </Label>
+    <Label Name="StartModel">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StartModel</LocalizedLabel>
+    </Label>
+    <Label Name="StopModel">
+      <LocalizedLabel LanguageRef="zhs">设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditModel</LocalizedLabel>
+    </Label>
+    <Label Name="Open">
+      <LocalizedLabel LanguageRef="zhs">打开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Open</LocalizedLabel>
+    </Label>
+    <Label Name="StartModelConfirm">
+      <LocalizedLabel LanguageRef="zhs">启用前请确认已更新数据库结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">confirm update sqlstruct before start</LocalizedLabel>
+    </Label>
+    <Label Name="ImportForm">
+      <LocalizedLabel LanguageRef="zhs">导入表单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ImportForm</LocalizedLabel>
+    </Label>
+    <Label Name="CreateFormClassify">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CreateFormClassify</LocalizedLabel>
+    </Label>
+    <Label Name="AddCustomForm">
+      <LocalizedLabel LanguageRef="zhs">添加表单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AddCustomForm</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveCustomForm">
+      <LocalizedLabel LanguageRef="zhs">移除表单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RemoveCustomForm</LocalizedLabel>
+    </Label>
+ 
+  </Context>
+</DictionarySerializer>

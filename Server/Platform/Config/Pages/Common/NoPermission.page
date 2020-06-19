@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="NoPermission" IsCache="true">
+  <Settings Key="title" Value="ViewObject.Title"/>
+  <PageControls>
+    <PageControl ControlID="ContentContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="0 8px 15px 8px"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="NoPermission_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="NoPermission_Label" ParentID="ContentContainer" TypeName="Label" >
+      <Settings Key="position" Value="center"/>
+      <Settings Key="textId" Value="NoPermission.NoPermissionBrowse" />
+    </PageControl>
+  </PageControls>
+</root>

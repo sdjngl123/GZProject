@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SendWorkflowMessage" IsCache="true">
+  <Settings Key="height" Value="75"/>
+  <Settings Key="title" Value="SendWorkflowMessage.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SendWorkflowMessage_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_SendWorkflowMessage_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="SendTypeContainer"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="UserTypeContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SendTypeContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="SendType_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SendType_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SendType_Label" ParentID="SendTypeContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SendWorkflowMessage.SendType" />
+    </PageControl>
+    <PageControl ControlID="SendType_Value" ParentID="SendTypeContainer" TypeName="CheckboxPad">
+      <Settings Key="ColNum" Value="1" />
+      <Settings Key="ChangeMode" Value="2" />
+      <Settings Key="DefaultCheckState" Value="0" />
+    </PageControl>
+
+    <PageControl ControlID="UserTypeContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="UserType_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="UserType_ValueContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="UserType_ValueContainer" ParentID="UserTypeContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="15"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="UserType_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="15"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="UserType_Label" ParentID="UserTypeContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="SendWorkflowMessage.UserType" />
+    </PageControl>
+    <PageControl ControlID="UserType_Value" ParentID="UserType_ValueContainer" TypeName="CheckboxPad">
+      <Settings Key="ColNum" Value="1" />
+      <Settings Key="ChangeMode" Value="2" />
+      <Settings Key="DefaultCheckState" Value="0" />
+    </PageControl>
+
+  </PageControls>
+</root>

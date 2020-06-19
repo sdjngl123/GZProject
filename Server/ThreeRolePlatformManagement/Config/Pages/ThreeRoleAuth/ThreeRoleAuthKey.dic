@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleAuthKey" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数字证书配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ThreeRoleAuthKey</LocalizedLabel>
+    </Label>
+    <Label Name="Key">
+      <LocalizedLabel LanguageRef="zhs">证书Key</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Key</LocalizedLabel>
+    </Label>
+    <Label Name="KeyRegex">
+      <LocalizedLabel LanguageRef="zhs">最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Key</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

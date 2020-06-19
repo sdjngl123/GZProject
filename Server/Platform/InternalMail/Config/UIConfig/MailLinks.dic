@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="PSEItem">
+      <LocalizedLabel LanguageRef="zhs">零件管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Part management</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemProperty">
+      <LocalizedLabel LanguageRef="zhs">属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Attribute</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemView">
+      <LocalizedLabel LanguageRef="zhs">视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">View</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemDs">
+      <LocalizedLabel LanguageRef="zhs">文档</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemChange">
+      <LocalizedLabel LanguageRef="zhs">更改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemHistory">
+      <LocalizedLabel LanguageRef="zhs">历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">History</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemUsing">
+      <LocalizedLabel LanguageRef="zhs">使用&amp;引用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use&amp; reference </LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemRight">
+      <LocalizedLabel LanguageRef="zhs">权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Permission</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemLog">
+      <LocalizedLabel LanguageRef="zhs">日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log</LocalizedLabel>
+    </Label>
+    <Label Name="ItemBaseInfo">
+      <LocalizedLabel LanguageRef="zhs">基本属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic property</LocalizedLabel>
+    </Label>
+    <Label Name="ItemTypeInfo">
+      <LocalizedLabel LanguageRef="zhs">类型属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type property</LocalizedLabel>
+    </Label>
+    <Label Name="ItemLineInfo">
+      <LocalizedLabel LanguageRef="zhs">关系属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship property</LocalizedLabel>
+    </Label>
+    <Label Name="ItemClassifyInfo">
+      <LocalizedLabel LanguageRef="zhs">分类属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Classification property</LocalizedLabel>
+    </Label>
+    <Label Name="ItemEditBaseInfo">
+      <LocalizedLabel LanguageRef="zhs">基本属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic property</LocalizedLabel>
+    </Label>
+    <Label Name="ItemEditTypeInfo">
+      <LocalizedLabel LanguageRef="zhs">类型属性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type property</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemRefDoc">
+      <LocalizedLabel LanguageRef="zhs">参考文档</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reference document</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemGeneratorDoc">
+      <LocalizedLabel LanguageRef="zhs">产生文档</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Generate document</LocalizedLabel>
+    </Label>
+    <Label Name="PSEItemVisual">
+      <LocalizedLabel LanguageRef="zhs">可视化</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Visualization</LocalizedLabel>
+    </Label>
+    <Label Name="MainBodyLink">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="PluginLink">
+      <LocalizedLabel LanguageRef="zhs">邮件附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail attachment</LocalizedLabel>
+    </Label>
+    <Label Name="InternalMailQuery">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="ReciveMailLink">
+      <LocalizedLabel LanguageRef="zhs">邮件接收</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail receipt</LocalizedLabel>
+    </Label>
+    <Label Name="SendMailLink">
+      <LocalizedLabel LanguageRef="zhs">邮件发送</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail sending</LocalizedLabel>
+    </Label>
+    <Label Name="DraftsMailLink">
+      <LocalizedLabel LanguageRef="zhs">草稿箱列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Drafts list</LocalizedLabel>
+    </Label>
+    <Label Name="DustbinMailLink">
+      <LocalizedLabel LanguageRef="zhs">垃圾箱列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List of trash bins</LocalizedLabel>
+    </Label>
+    <Label Name="SystemMailLink">
+      <LocalizedLabel LanguageRef="zhs">系统邮件列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System mail list</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

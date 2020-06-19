@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Guide_ListManagement_ReplaceKeyVIEWView" IsWeb="true">
+    <Label Name="Guide_ListManagement_ReplaceKeyVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">[Headerzhs]视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[Headerzhs]View</LocalizedLabel>
+    </Label>
+    <Label Name="Guide_ListManagement_ReplaceKeyVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">[Captionzhs]视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[Captionzhs] view</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Guide_ListManagement_ReplaceKeyVIEWCondition" IsWeb="true">
+    <Label Name="NAMELIKEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="NAMELIKECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CODELIKEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="CODELIKECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

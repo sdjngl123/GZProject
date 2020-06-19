@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowTemplateEdit" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流程编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Editing</LocalizedLabel>
+    </Label>
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">显示流程信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Show process information</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏流程信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide process information</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">[UserName]执行编辑流程模板操作,模板名称是‘[TemplateName]’。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] executes the editing process template operation with the template name '[templateName]'.</LocalizedLabel>
+    </Label>
+    <Label Name="NOResult">
+      <LocalizedLabel LanguageRef="zhs">“[NODE]”节点没有评审结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The “[NODE]”node has no review results</LocalizedLabel>
+    </Label>
+    <Label Name="NOActor">
+      <LocalizedLabel LanguageRef="zhs">“[NODE]”节点没有执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The“[NODE]” node has no executor</LocalizedLabel>
+    </Label>
+    <Label Name="NotExistAuditLoop">
+      <LocalizedLabel LanguageRef="zhs">节点形成环，并且形成环的节点没有评审节点，环为：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The node forms a ring and the the nodes formed the ring have no review node, the rings are:</LocalizedLabel>
+    </Label>
+    <Label Name="ExistAllAuditAutoLoop">
+      <LocalizedLabel LanguageRef="zhs">节点形成环，并且形成环的节点【任务类型】都为自动提交，环为：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The node forms a ring and the node [task type] formed the ring is automatically submitted, the rings are:</LocalizedLabel>
+    </Label>
+    <Label Name="NoPass">
+      <LocalizedLabel LanguageRef="zhs">“[NODE]”节点类型为自动提交，但是自动提交的结果不在任何一条分支中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">“[NODE]” type is automatically submitted, but the result of automatic commit is not in any branch</LocalizedLabel>
+    </Label>
+    <Label Name="CheckErrorCanNotEnable">
+      <LocalizedLabel LanguageRef="zhs">验证失败，不能进行启用操作，请在流程编辑页面勾选“启用”，保存时查看具体原因。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authentication failed and the operation cannot be enabled. Please edit the template and then enable it</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

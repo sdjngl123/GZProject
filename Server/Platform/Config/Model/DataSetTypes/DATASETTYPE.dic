@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DATASETTYPEModel" IsWeb="true">
+    <Label Name="DATASETTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">图文档类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Figure document type</LocalizedLabel>
+    </Label>
+    <Label Name="DATASETTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">图文档类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Figure document type</LocalizedLabel>
+    </Label>
+    <Label Name="FILEEXTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">文件后缀</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File suffix</LocalizedLabel>
+    </Label>
+    <Label Name="FILEEXTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">文件后缀</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File suffix</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWTOOLHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browser</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWTOOLCaption">
+      <LocalizedLabel LanguageRef="zhs">浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browser</LocalizedLabel>
+    </Label>
+    <Label Name="DOWNFILTERHeader">
+      <LocalizedLabel LanguageRef="zhs">下载关联文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download associated file</LocalizedLabel>
+    </Label>
+    <Label Name="DOWNFILTERCaption">
+      <LocalizedLabel LanguageRef="zhs">下载关联文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download associated file</LocalizedLabel>
+    </Label>
+    <Label Name="ISINTEGRATECADHeader">
+      <LocalizedLabel LanguageRef="zhs">是否集成CAD</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to integrate CAD </LocalizedLabel>
+    </Label>
+    <Label Name="ISINTEGRATECADCaption">
+      <LocalizedLabel LanguageRef="zhs">是否集成CAD</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to integrate CAD </LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

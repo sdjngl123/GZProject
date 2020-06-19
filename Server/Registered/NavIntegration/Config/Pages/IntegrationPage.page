@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="IntegrationPage" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_NavIntegration_IntegrationPage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ClassicHomePage_VLayout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ClassicHomePage_HLayout"/>
+      </Settings>
+      
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_HLayout" ParentID="ClassicHomePage_VLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HomePage_Content"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="HomePage_Content" ParentID="ClassicHomePage_HLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="IntegrationHomePageContents"/>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="PMSPROJECTView" ObjectTypeName="PMSPROJECT" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="right" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="STATEID" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECOMPANYID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="TYPE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="DIRECTOR" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="MANAGER" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="STARTDATE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SOPDATE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="DISTANCESOP" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="REMARK" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAME" ObjectTypeName="PMSPROJECT" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    <ViewCondition Name="ECODE" ObjectTypeName="PMSPROJECT" AndOrFlag="AND" InfoName="ECODE" Operation="LIKE" Required="false" />
+    <ViewCondition Name="TYPE" ObjectTypeName="PMSPROJECT" AndOrFlag="AND" InfoName="TYPE" Operation="=" Required="false" />
+  </ObjectView>
+</root>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--OrganizationQueryTreeView-->
+  <TreeListQuery Name="UserTreeListQuery" TreeViewName="OrganisizeTreeView"
+                 TreeChildDataService="" TreeQueryDataService="" TreeAllDataService="" TreeRootDataService=""   QueryPageName="USERQUERYVIEW-QUERY" >
+  </TreeListQuery>
+  <!--GroupQueryTreeView-->
+  <TreeListQuery Name="GroupTreeListQuery" TreeViewName="GroupToGroupTreeView"
+               TreeChildDataService="" TreeQueryDataService="" TreeAllDataService="" TreeRootDataService=""  QueryPageName="GROUPQUERYVIEW-QUERY" >
+  </TreeListQuery>
+</root>

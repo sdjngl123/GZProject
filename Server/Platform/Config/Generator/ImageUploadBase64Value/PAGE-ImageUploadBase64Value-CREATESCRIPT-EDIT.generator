@@ -1,0 +1,14 @@
+﻿var imageCtrl=pageEvent.o.GetControl('[INFONAME]_Value_Image');
+var fileStr = data.[INFONAME];
+if (fileStr) {
+	if (imageCtrl != undefined) {
+		var displaySrc = HoteamUI.Common.GetBase64DisplayImage(fileStr);
+		imageCtrl.SetSrc(displaySrc);
+		imageCtrl.SetValue(fileStr);
+	}
+} else {
+	if (imageCtrl != undefined) {
+		imageCtrl.SetSrc('');
+		imageCtrl.SetValue('');
+	}
+}

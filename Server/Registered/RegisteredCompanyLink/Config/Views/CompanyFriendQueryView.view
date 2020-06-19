@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="CompanyFriendQueryView" ObjectTypeName="COMPANY" QueryVersionType="" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="Right" OrderByString="CREATETIME DESC" FixedFilter="" MaxQueryColumn="0" AsCommonQuery="true" IgnoreCompanyRulePermission="true" IgnoreCompanyID="true">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="200" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="150" Resizable="true" Sortable="true" TextAlign="left" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ECODE" AndOrFlag="AND" InfoName="ECODE" Operation="=" Required="false" />
+    <ViewCondition Name="ENAME" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+  </ObjectView>
+</root>

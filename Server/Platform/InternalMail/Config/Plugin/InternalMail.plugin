@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--业务逻辑类-->
+  <PluginItem Name="InternalMail" Type="ObjectType" Assembly="Hoteam.InforCenter.InternalMail.Bussiness" Class="Hoteam.InforCenter.InternalMail.Bussiness.Object.InternalMail" />
+  <PluginItem Name="InternalMail" Type="Message" Assembly="Hoteam.InforCenter.InternalMail.Bussiness" Class="Hoteam.InforCenter.InternalMail.Bussiness.InternalMailTool" />
+  <PluginItem Name="InternalMailBussiness" Type="Business" Assembly="Hoteam.InforCenter.InternalMail.Bussiness" Class="Hoteam.InforCenter.InternalMail.Bussiness.InternalMailBussiness" />
+</root>

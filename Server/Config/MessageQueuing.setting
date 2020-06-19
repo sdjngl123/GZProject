@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="MessageQueuingUse" Value="false" ToClient="false" Description="是否使用消息队列" />
+  <AppSet Key="MessageQueuingType" Value="MSMQ" ToClient="false" Description="消息队列类型" />
+
+  <AppSet Key="MQTopic_LinkMonitor" Value="LinkMonitor" ToClient="false" Description="用于链路监控的主题" />
+</root>

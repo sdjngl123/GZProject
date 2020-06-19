@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="THEMDESIGNDATA" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="THEMDESIGNDATA" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" GeneratePageType="Create Edit View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="THEMDATA" Type="DefaultObjectValue" DataType="TEXT" Column="THEMDATA" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="DESIGNDATA" Type="DefaultObjectValue" DataType="TEXT" Column="DESIGNDATA" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TEMPORARYDATA" Type="DefaultObjectValue" DataType="TEXT" Column="TEMPORARYDATA" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="100" PrimaryKeyOrder="0" DefaultValue="" Required="False" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="" Show="" Width="" PrimaryKeyOrder="0" DefaultValue="" Required="False" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Inherit" ExtendProperty1="" />
+  </EntityType>
+</root>

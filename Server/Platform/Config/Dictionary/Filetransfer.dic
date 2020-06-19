@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Filetransfer" IsWeb="true">
+    <Label Name="FiletransferError">
+      <LocalizedLabel LanguageRef="zhs">请先安装OCX控件后再使用本功能</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please install the OCX control before using this feature</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

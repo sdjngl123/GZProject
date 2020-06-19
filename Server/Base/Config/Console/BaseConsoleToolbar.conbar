@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ToolBar Name ="SettingBar" BaseBar="">
+    <Item Name ="OpenFolder" ImagePath="~/Base/Image/Console/OpenFolder.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.OpenItemFolderCmd"></Item>
+    <Item Name ="OpenTreeNode" ImagePath="~/Base/Image/Console/tree_selfolder.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.OpenItemTreeNodeCmd"></Item>
+    <Item Name ="Create" ImagePath="~/Base/Image/Console/create.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.CreateConfigCmd"></Item>
+    <Item Name ="Modify" ImagePath="~/Base/Image/Console/modify.gif"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.ModifyConfigCmd"></Item>
+    <Item Name ="Delete" ImagePath="~/Base/Image/Console/delete.png"  ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.DeleteConfigCmd"></Item>
+    <Item Name ="Copy" ImagePath="~/Base/Image/Console/copy.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.CopyCmd"></Item>
+    <Item Name ="Cut" ImagePath="~/Base/Image/Console/cut.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.CutCmd"></Item>
+    <Item Name ="Paste" ImagePath="~/Base/Image/Console/paste.png"  ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.PasteCmd"></Item>
+    <Item Name ="ViewMode" ImagePath="~/Base/Image/Console/viewmode.png"  ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.SwitchViewModeCmd"></Item>
+  </ToolBar>
+  <ToolBar Name ="ConfigTree" BaseBar="">
+    <Item Name ="Open" ImagePath="~/Base/Image/Console/tree_selfolder.png"  ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.OpenFolderCmd"></Item>
+    <Item Name ="Create" ImagePath="~/Base/Image/Console/create.png"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.CreateFolderCmd"></Item>
+    <Item Name ="Modify" ImagePath="~/Base/Image/Console/modify.gif"   ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.ModifyFolderCmd"></Item>
+    <Item Name ="Delete" ImagePath="~/Base/Image/Console/delete.png"  ItemAssembly="Hoteam.InforCenter.Console.Interface" ItemClass="Hoteam.InforCenter.Console.Interface.Command.DeleteFolderCmd"></Item>
+  </ToolBar>
+</root>

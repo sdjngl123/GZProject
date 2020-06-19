@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="StartWorkflow" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiate process </LocalizedLabel>
+    </Label>
+    <Label Name="FlowName">
+      <LocalizedLabel LanguageRef="zhs">流程名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Name</LocalizedLabel>
+    </Label>
+    <Label Name="Template">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process template</LocalizedLabel>
+    </Label>
+    <Label Name="FlowAdmin">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="NodeActor">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectName">
+      <LocalizedLabel LanguageRef="zhs">对象名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object name</LocalizedLabel>
+    </Label>
+    <Label Name="Classify">
+      <LocalizedLabel LanguageRef="zhs">模板分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template classification</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectCode">
+      <LocalizedLabel LanguageRef="zhs">对象编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectListEmpty">
+      <LocalizedLabel LanguageRef="zhs">流程对象列表无数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There’s no data for process object list</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowStartSuccess">
+      <LocalizedLabel LanguageRef="zhs">流程发起成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiate process successfully</LocalizedLabel>
+    </Label>
+    <Label Name="SetAuditCountError">
+      <LocalizedLabel LanguageRef="zhs">流程模板设置的指定人数错误！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetAuditCountError</LocalizedLabel>
+    </Label>
+    <Label Name="SetAuditCountErrorDetail">
+      <LocalizedLabel LanguageRef="zhs">【[NODENAME]】设置的指定人数为【[SETCOUNT]】,大于实际执行人数【[ACTURECOUNT]】。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">【[NODENAME]】设置的指定人数为【[SETCOUNT]】,大于实际执行人数【[ACTURECOUNT]】。</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

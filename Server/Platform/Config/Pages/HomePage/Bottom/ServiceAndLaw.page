@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ServiceAndLaw">
+  <Settings Key="title" Value="ServiceAndLaw.Title"/>
+  <Settings Key="height" Value="500"/>
+  <Settings Key="width" Value="750"/>
+  <PageControls>
+    <PageControl ControlID="ServiceAndLaw_LayoutContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ServiceAndLaw_Text"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="64"/>
+        <Settings Key="childid" Value="ServiceAndLaw_Btn"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ServiceAndLaw_Text" ParentID="ServiceAndLaw_LayoutContainer" TypeName="TextBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ServiceAndLaw_CtrlInit(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="readOnly" Value="true"/>
+    </PageControl>
+    <!--ServiceAndLawBtn-->
+    <PageControl ControlID="ServiceAndLaw_Btn" ParentID="ServiceAndLaw_LayoutContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="ServiceAndLaw_btnOK"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" />
+      </Settings>
+    </PageControl>
+    <!--按钮-->
+    <PageControl ControlID="ServiceAndLaw_btnOK" ParentID="ServiceAndLaw_Btn" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ServiceAndLaw_OKOnClock(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+  </PageControls>
+</root>
+

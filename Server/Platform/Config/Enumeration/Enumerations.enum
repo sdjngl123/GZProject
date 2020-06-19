@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="AcademicRecord">
+    <EnumerationItem Name="Primary" />
+    <EnumerationItem Name="Junior" />
+    <EnumerationItem Name="Senior" />
+    <EnumerationItem Name="JuniorCollege" />
+    <EnumerationItem Name="RegularCollege" />
+    <EnumerationItem Name="Master" />
+    <EnumerationItem Name="Doctor" />
+    <EnumerationItem Name="Other" />
+  </Enumeration>
+  <Enumeration Name="ActionRuleConditionOperator">
+    <EnumerationItem Name="AND" />
+    <EnumerationItem Name="OR" />
+  </Enumeration>
+  <Enumeration Name="Gender">
+    <EnumerationItem Name="Female" />
+    <EnumerationItem Name="Male" />
+  </Enumeration>
+  <Enumeration Name="HomePageMode">
+    <EnumerationItem Name="ClassicHomePage" />
+  </Enumeration>
+  <Enumeration Name="MessageState">
+    <EnumerationItem Name="Read" />
+    <EnumerationItem Name="Unread" />
+  </Enumeration>
+  <Enumeration Name="TreeQueryControlType">
+    <EnumerationItem Name="Tree" />
+    <EnumerationItem Name="List" />
+    <EnumerationItem Name="TreeList" />
+    <EnumerationItem Name="ListTree" />
+  </Enumeration>
+  <Enumeration Name="OperateLogType">
+    <EnumerationItem Name="Common" />
+    <EnumerationItem Name="Login" />
+    <EnumerationItem Name="Logout" />
+    <EnumerationItem Name="TransferOwnership" />
+    <EnumerationItem Name="Create" />
+    <EnumerationItem Name="Edit" />
+    <EnumerationItem Name="Browse" />
+    <EnumerationItem Name="Delete" />
+    <EnumerationItem Name="DeleteAll" />
+    <EnumerationItem Name="Remove" />
+    <EnumerationItem Name="Add" />
+    <EnumerationItem Name="SaveAs" />
+    <EnumerationItem Name="PasteCopy" />
+    <EnumerationItem Name="Agent" />
+    <EnumerationItem Name="SetPermissionByWorkflow" />
+    <EnumerationItem Name="ModulePermission" />
+    <EnumerationItem Name="Permission" />
+    <EnumerationItem Name="Favorite" />
+    <EnumerationItem Name="Emend" />
+    <EnumerationItem Name="Import" />
+  </Enumeration>
+  <Enumeration Name="PromptType">
+    <EnumerationItem Name="NORMAL" />
+    <EnumerationItem Name="CONFIRM" />
+  </Enumeration>
+  <Enumeration Name="RefreshType">
+    <EnumerationItem Name="RefreshList" />
+    <EnumerationItem Name="RefreshEditList" />
+    <EnumerationItem Name="RefreshFilterList" />
+    <EnumerationItem Name="RefreshCurrentNode" />
+    <EnumerationItem Name="RefreshCurrentNodeAndTab" />
+    <EnumerationItem Name="RefreshCurrentStruct" />
+    <EnumerationItem Name="RefreshCurrentAndStruct" />
+    <EnumerationItem Name="RefreshCurrentStructAndTab" />
+    <EnumerationItem Name="RefreshCurrentAndStructAndTab" />
+    <EnumerationItem Name="RefreshParentStruct" />
+    <EnumerationItem Name="RefreshParentAndStruct" />
+    <EnumerationItem Name="RefreshParentStructAndTab" />
+    <EnumerationItem Name="RefreshParentAndStructAndTab" />
+    <EnumerationItem Name="RefreshRootStruct" />
+    <EnumerationItem Name="RefreshRootStructAndTab" />
+    <EnumerationItem Name="RefreshSelectTab" />
+    <EnumerationItem Name="RefreshQuickNav" />
+    <EnumerationItem Name="RefreshObjectInspector" />
+    <EnumerationItem Name="DeleteObjectInspector" />
+
+    <EnumerationItem Name="RefreshParentStructAndRootCountAndTab" />
+    <EnumerationItem Name="RefreshCurrentStructAndRootCountAndTab" />
+    <EnumerationItem Name="RefreshCurrentCountAndTab" />
+  </Enumeration>
+  <Enumeration Name="SelectMode">
+    <EnumerationItem Name="MULTI" />
+    <EnumerationItem Name="NULL" />
+    <EnumerationItem Name="SINGLE" />
+  </Enumeration>
+  <Enumeration Name="MenuSize">
+    <EnumerationItem Name="Big" />
+    <EnumerationItem Name="Small" />
+  </Enumeration>
+  <Enumeration Name="Theme">
+    <EnumerationItem Name="cupertino" />
+    <EnumerationItem Name="smoothness" />
+    <EnumerationItem Name="southstreet" />
+  </Enumeration>
+  <Enumeration Name="TimeZone">
+    <EnumerationItem Name="+00:00" />
+    <EnumerationItem Name="+08:00" />
+    <EnumerationItem Name="-05:00" />
+  </Enumeration>
+  <Enumeration Name="WorkFlowMessage">
+    <EnumerationItem Name="CURRENTUSER" />
+    <EnumerationItem Name="PROMOTER" />
+  </Enumeration>
+  <Enumeration Name="WorkFlowTemplateState">
+    <EnumerationItem Name="TRUE" />
+    <EnumerationItem Name="FALSE" />
+  </Enumeration>
+  <Enumeration Name="ModelFieldInherit">
+    <EnumerationItem Name="Innate" />
+    <EnumerationItem Name="Show" />
+    <EnumerationItem Name="Hidden" />
+  </Enumeration>
+  <Enumeration Name="ModelExtendFieldInherit">
+    <EnumerationItem Name="Innate" />
+    <EnumerationItem Name="Inherit" />
+    <EnumerationItem Name="Show" />
+    <EnumerationItem Name="Hidden" />
+  </Enumeration>
+  <Enumeration Name="ModelExtendFieldOverrideLevel">
+    <EnumerationItem Name="Must" />
+    <EnumerationItem Name="Ignore" />
+  </Enumeration>
+  <Enumeration Name="DocumentTypeClassify">
+    <EnumerationItem Name="CommonDocument" />
+  </Enumeration>
+  <Enumeration Name="YesOrNo">
+    <EnumerationItem Name="0" />
+    <EnumerationItem Name="1" />
+  </Enumeration>
+  <Enumeration Name="ViewTool">
+    <EnumerationItem Name="AutoVue" />
+    <!--<EnumerationItem Name="CAXA" />-->
+    <EnumerationItem Name="LightWeight" />
+    <!--<EnumerationItem Name="SView2D" />
+    <EnumerationItem Name="SView3D" />-->
+  </Enumeration>
+  <Enumeration Name="Individual">
+    <EnumerationItem Name="UserView" />
+  </Enumeration>
+  <Enumeration Name="LovType">
+    <EnumerationItem Name="System" />
+    <EnumerationItem Name="Custom" />
+  </Enumeration>
+  <Enumeration Name="LovShowMode">
+    <EnumerationItem Name="Exhaustion" />
+    <EnumerationItem Name="Prompt" />
+  </Enumeration>
+  <Enumeration Name="FieldType">
+    <EnumerationItem Name="date" />
+    <EnumerationItem Name="datetime" />
+  </Enumeration>
+  <Enumeration Name="ObjectPermissionMode">
+    <EnumerationItem Name="Manual" />
+    <EnumerationItem Name="SetActorByWorkflow" />
+    <EnumerationItem Name="SetAgentByWorkflow" />
+  </Enumeration>
+  <Enumeration Name="QueryTemplete">
+    <EnumerationItem Name="QUERY-PAGE-TOP" />
+    <EnumerationItem Name="QUERY-PAGE-LEFT" />
+  </Enumeration>
+  <Enumeration Name="QueryTextAlign">
+    <EnumerationItem Name="Left" />
+    <EnumerationItem Name="Right" />
+    <EnumerationItem Name="Center" />
+  </Enumeration>
+  <Enumeration Name="LifeCycleType">
+    <EnumerationItem Name="Workflow" />
+    <EnumerationItem Name="Stage" />
+  </Enumeration>
+  <Enumeration Name="LifeCycleState">
+    <EnumerationItem Name="1" />
+    <EnumerationItem Name="0" />
+  </Enumeration>
+  <Enumeration Name="OperateLogClassify">
+    <EnumerationItem Name="ThreeRole" />
+    <EnumerationItem Name="Normal" />
+  </Enumeration>
+
+</root>

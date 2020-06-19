@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="INTERNALMAILNODEModel" IsWeb="true">
+    <Label Name="INTERNALMAILNODEHeader">
+      <LocalizedLabel LanguageRef="zhs">内部邮件树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Internal mail tree node</LocalizedLabel>
+    </Label>
+    <Label Name="INTERNALMAILNODECaption">
+      <LocalizedLabel LanguageRef="zhs">内部邮件树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Internal mail tree node</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node type</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node type</LocalizedLabel>
+    </Label>
+    <Label Name="NODEFLAGHeader">
+      <LocalizedLabel LanguageRef="zhs">节点标记</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node tag</LocalizedLabel>
+    </Label>
+    <Label Name="NODEFLAGCaption">
+      <LocalizedLabel LanguageRef="zhs">节点标记</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node tag</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

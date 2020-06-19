@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <State Name="INDESIGN" ImagePath="~/Platform/Image/Console/lifestate.png" />
+  <State Name="INWORKFLOW" ImagePath="~/Platform/Image/Console/lifestate.png" />
+  <State Name="PUBLISHED" ImagePath="~/Platform/Image/Console/lifestate.png" />
+  <State Name="ABANDONED" ImagePath="~/Platform/Image/Console/lifestate.png" />
+</root>

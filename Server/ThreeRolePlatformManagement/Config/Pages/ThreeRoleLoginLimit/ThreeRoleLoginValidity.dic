@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleLoginValidity" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">账户有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Validity</LocalizedLabel>
+    </Label>
+    <Label Name="None">
+      <LocalizedLabel LanguageRef="zhs">不限制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">None</LocalizedLabel>
+    </Label>
+    <Label Name="SetStart">
+      <LocalizedLabel LanguageRef="zhs">设置开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetStart</LocalizedLabel>
+    </Label>
+    <Label Name="SetEnd">
+      <LocalizedLabel LanguageRef="zhs">设置结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetEnd</LocalizedLabel>
+    </Label>
+    <Label Name="SetStartAndEnd">
+      <LocalizedLabel LanguageRef="zhs">设置开始和结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetStartAndEnd</LocalizedLabel>
+    </Label>
+    <Label Name="DateTimeStart">
+      <LocalizedLabel LanguageRef="zhs">开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DateTimeStart</LocalizedLabel>
+    </Label>
+    <Label Name="DateTimeEnd">
+      <LocalizedLabel LanguageRef="zhs">结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DateTimeEnd</LocalizedLabel>
+    </Label>
+    <Label Name="StartTimeIsNull">
+      <LocalizedLabel LanguageRef="zhs">开始时间不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StartTimeIsNull</LocalizedLabel>
+    </Label>
+    <Label Name="EndTimeIsNull">
+      <LocalizedLabel LanguageRef="zhs">结束时间不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EndTimeIsNull</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

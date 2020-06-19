@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ConfigFileTemplate Name ="&lt;Vault&gt;&lt;/Vault&gt;" Type="VaultConfigTemplate" Description="系统文档柜Vault标签模板">
+    <![CDATA[
+    <Vault Name="DefaultValut" IP1="127.0.0.1" IP2="" IP3="" IP4="" Port1="8887" Port2="" Volumn="Default" InnerIP="127.0.0.1" InnerPort="8887" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;State&gt;&lt;/State&gt;" Type="LifeStateConfigTemplate" Description="系统生命周期State标签模板">
+    <![CDATA[
+     <State Name="INDESIGN" ImagePath="~/Platform/Image/Console/lifestate.png" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;Database&gt;&lt;/Database&gt;" Type="DatabaseConfigTemplate" Description="数据库database标签模板">
+    <![CDATA[
+    <Database Name="SQLSERVER" DatabaseType="SQLSERVER" ConnectionString="server=.;Trusted_Connection=false;database=InforCenter;uid=sa;pwd=sa;MultipleActiveResultSets=true;Max Pool Size=1000;" Timeout="0" Enable="true" /">
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Action&gt;&lt;/Action&gt;" Type="ActionConfigTemplate" Description="动作Action标签模板">
+    <![CDATA[
+    <Action Name="CREATE" IsDefaultAction="true"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ObjectAction&gt;&lt;/ObjectAction&gt;" Type="ObjectActionConfigTemplate" Description="模型动作Action标签模板">
+    <![CDATA[
+    <ObjectAction Name="ACTIONRULE">
+      <ActionRef Name="EDIT"/>
+      <ActionRef Name="DELETE"/>
+    </ObjectAction>
+    ]]>
+  </ConfigFileTemplate>
+
+
+  <ConfigFileTemplate Name ="&lt;ListManagement&gt;&lt;/ListManagement&gt;" Type="ListManagementTemplate" Description="列表管理ListManagement标签模板">
+    <![CDATA[
+    <ListManagement Name="UserListMangement" MenuName="ListUserMenu" RightMenuName="ListUserRightMenu"  ListViewName="USERSLISTVIEW"  QueryPageName="USERVIEW-QUERY" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true">
+    </ListManagement>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;ObjectType&gt;&lt;/ObjectType&gt;" Type="ObjectTypeTemplate" Description="关联对象ObjectType标签模板">
+    <![CDATA[
+    <ObjectType Name="USERINFO" MenuName="ListUserMenu" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;TreeManagement&gt;&lt;/TreeManagement&gt;" Type="TreeManagementTemplate" Description="树管理TreeManagement标签模板">
+    <![CDATA[
+    <TreeManagement Name="Organization" MenuName="" PageLinksName=""
+              TreeViewName="OrganizationTreeView" ShowTreeQuery="false"
+             TreeChildDataService="" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="GROUPS" MenuName="TreeGroupsMenu" PageLinksName="GroupsPageLink" />
+    <ObjectType Name="GROUPINFO" MenuName="TreeGroupMenu" PageLinksName="GroupPageLink" />
+    <ObjectType Name="USERINFO" MenuName="TreeUserMenu" PageLinksName="UserToRolePageLink" />
+    <ObjectType Name="ROLES" MenuName="TreeRoleMenu" PageLinksName="RolesPageLink" />
+    <ObjectType Name="USERS" MenuName="TreeUsersMenu" PageLinksName="UsersPageLink" />
+  </TreeManagement>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;ObjectType&gt;&lt;/ObjectType&gt;" Type="TreeManagementObjectTypeTemplate" Description="树关联对象ObjectType标签模板">
+    <![CDATA[
+     <ObjectType Name="GROUPS" MenuName="TreeGroupsMenu" PageLinksName="GroupsPageLink" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <!--菜单-->
+  <ConfigFileTemplate Name ="&lt;MenuItem&gt;&lt;/MenuItem&gt;" Type="MenuItemConfigTemplate" Description="菜单项MenuItem标签模板">
+    <![CDATA[
+    <MenuItem Name="TreeGroupsMenu">
+    </MenuItem>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;WebAction&gt;&lt;/WebAction&gt;" Type="MenuItemConfigTemplate" Description="菜单项WebAction标签模板">
+    <![CDATA[
+    <WebAction Name="CreateGroupOnRoot" ModuleName="Platform" LabelName="CreateGroup" Image="p_add" ParentWebAtionName="" RefreshType="UPDATECURRENTSTRUCTURE">
+      <ActionChecker SelectID="[Tree_Current_value1]/[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="GROUPINFO/AUTO" />
+       <WebMessage PromptLabel="WebActionConfirm" PromptType="NORMAL/CONFIRM" />
+      <WebMethod PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="GROUPINFO" />
+        <Para Name="PARENTGROUPEID" Value="[Tree_Current_value1]/[List_EID]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <JSMethod Name="InforCenter_Platform_Organization_MoveForTree">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="DOWN" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ActionChecker&gt;&lt;/ActionChecker&gt;" Type="MenuItemConfigTemplate" Description="菜单项ActionChecker标签模板">
+    <![CDATA[
+   <ActionChecker SelectID="[Tree_Current_value1]/[List_EID]" SelectMode="NULL/SINGLE/MULTI" Action="CREATE" ActionType="GROUPINFO/AUTO" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;WebMessage&gt;&lt;/WebMessage&gt;" Type="MenuItemConfigTemplate" Description="菜单项WebMessage标签模板">
+    <![CDATA[
+    <WebMessage PromptLabel="WebActionConfirm" PromptType="NORMAL/CONFIRM" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;WebMethod&gt;&lt;/WebMethod&gt;" Type="MenuItemConfigTemplate" Description="菜单项WebMethod标签模板">
+    <![CDATA[
+      <WebMethod PageName="CreateObject" IsPopup="true" IsModal="true">
+        <Para Name="ObjectType" Value="GROUPINFO" />
+        <Para Name="PARENTGROUPEID" Value="[Tree_Current_value1]/[List_EID]" ParentPara="initData" />
+      </WebMethod>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;BusinessMethod&gt;&lt;/BusinessMethod&gt;" Type="MenuItemConfigTemplate" Description="菜单项BusinessMethod标签模板">
+    <![CDATA[
+     <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;JSMethod&gt;&lt;/JSMethod&gt;" Type="MenuItemConfigTemplate" Description="菜单项JSMethod标签模板">
+    <![CDATA[
+     <JSMethod Name="InforCenter_Platform_Organization_MoveForTree">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="DOWN" />
+      </JSMethod>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;WebMessageAndLogger&gt;&lt;/WebMessageAndLogger&gt;" Type="MenuItemConfigTemplate" Description="菜单项WebMessageAndLogger标签模板">
+    <![CDATA[
+         <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    ]]>
+  </ConfigFileTemplate>
+  <!--菜单结束-->
+  <!--页面控件 开始-->
+
+
+  <ConfigFileTemplate Name ="&lt;Filetransfer&gt;&lt;/Filetransfer&gt;" Type="PageConfigTemplate" Description="Filetransfer下拉列表控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="FileDownloadCtrl" ParentID="Top_Container" TypeName="Filetransfer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreateComplete" Script="InforCenter_Platform_FileDownloadCtrl_OnCreateComplete(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnDownloadSuccess" Script="InforCenter_Platform_FileDownloadCtrl_OnDownloadSuccess(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="size" Value="400"/>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Office&gt;&lt;/Office&gt;" Type="PageConfigTemplate" Description="Office下拉列表控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="OfficeOnlineExample_Office" ParentID="OfficeOnlineExample_Container" TypeName="Office">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Example_OfficeOnlineExample_OfficeOnCreate(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;MenuPreview&gt;&lt;/MenuPreview&gt;" Type="PageConfigTemplate" Description="MenuPreview下拉列表控件标签模板">
+    <![CDATA[
+   <PageControl ControlID="OriginalityHomePageNavigation_MenuPreview" ParentID="OriginalityHomePageNavigation_Layout" TypeName="MenuPreview">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_OriginalityHomePageNavigation_LoadNavigationItems(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_OriginalityHomePageNavigation_NavigationOnClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="LastIconOnClick" Script="InforCenter_Platform_Navigation_AddQuickNavigation(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Report&gt;&lt;/Report&gt;" Type="PageConfigTemplate" Description="Report下拉列表控件标签模板">
+    <![CDATA[
+      <PageControl ControlID="ReportCtrl" ParentID="Top_Container" TypeName="Report">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreateComplete" Script="InforCenter_Platform_ReportDisplay_OnCreateComplete(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="size" Value="1000"/>
+    </PageControl>
+  ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TopologyView&gt;&lt;/TopologyView&gt;" Type="PageConfigTemplate" Description="TopologyView下拉列表控件标签模板">
+    <![CDATA[
+    <PageControl ControlID="TopologyViewExample_Grid" ParentID="ParentCtrl" TypeName="TopologyView">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnLoadData" Script="JS(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    ]]>
+  </ConfigFileTemplate>
+
+  <!--页面控件 结束-->
+
+  <!--列表视图-->
+  <ConfigFileTemplate Name ="&lt;WebListView&gt;&lt;/WebListView&gt;" Type="WebListViewConfigTemplate" Description="WebListView标签模板">
+    <![CDATA[
+     <WebListView Name="GROUPSLISTVIEW" View="GROUPINFOVIEW" QueryID="" EntityFilter="" Filter="PARENTGROUPEID='[Tree_Current_value1]'" AllowCheckBox="true"
+    AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+    IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="" >
+  </WebListView>
+     ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--树视图-->
+  <ConfigFileTemplate Name ="&lt;WebTreeView&gt;&lt;/WebTreeView&gt;" Type="WebTreeViewConfigTemplate" Description="WebTreeView标签模板">
+    <![CDATA[
+  <WebTreeView Name="EItemStructTreeView" ObjectType="EITEM" TextField="ENAME" TextDicField="" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" NodeTypeField="" NodeType="ROOTEITEM" EntityFilter="" Filter="EID='[SelectID]'" View="EITEMVIEW" ShowStartNode="true">
+    <Schema Name="EITEMEXPOSEONE" ObjectType="EITEM" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EITEMEXPOSEONE" Key="1" SuperKey="-1" ParentObjectType="EITEM" Loop="true" />
+    <QueryView Name="EITEMEXPOSEAll" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EITEMEXPOSEALL" />
+  </WebTreeView>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Schema&gt;&lt;/Schema&gt;" Type="WebTreeViewConfigTemplate" Description="Schema标签模板">
+    <![CDATA[
+   <Schema Name="EITEMEXPOSEONE" ObjectType="EITEM" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EITEMEXPOSEONE" Key="1" SuperKey="-1" ParentObjectType="EITEM" Loop="true" />
+     ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;QueryView&gt;&lt;/QueryView&gt;" Type="WebTreeViewConfigTemplate" Description="QueryView标签模板">
+    <![CDATA[
+    <QueryView Name="EITEMEXPOSEAll" TextField="ENAME" IconClose="" IconOpen="" IconCloseField="" IconOpenField="" EntityFilter="" Filter="" View="EITEMEXPOSEALL" />
+     ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--Tab页-->
+  <ConfigFileTemplate Name ="&lt;PageLinks&gt;&lt;/PageLinks&gt;" Type="PageLinkConfigTemplate" Description="PageLinks标签模板">
+    <![CDATA[
+  <PageLinks Name="EOwnSpaceLink">
+    <PageLink Name="SubFolder" PageName="ListManagement">
+      <Para Name="ItemName" Value="EOwnSpaceFloder"/>
+    </PageLink>
+  </PageLinks>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;PageLink&gt;&lt;/PageLink&gt;" Type="PageLinkConfigTemplate" Description="PageLink标签模板">
+    <![CDATA[
+   <PageLink Name="SubFolder" PageName="ListManagement">
+      <Para Name="ItemName" Value="EOwnSpaceFloder"/>
+    </PageLink>
+    ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--字段数据源-->
+  <ConfigFileTemplate Name ="&lt;ObjectType&gt;&lt;/ObjectType&gt;" Type="InfoDataSourcesTemplate" Description="ObjectType标签模板">
+    <![CDATA[
+   <ObjectType Name="ETESTOBJECT">
+    <InfoType Name="ENAME" Script ="" PageName="ListCommonQuery"   SourceValue="" SourceText="ENAME">
+      <Para Name="ItemName" Value="EItemSingleSearch" />
+      <Para Name="EversionValue" Value="0"/>
+    </InfoType>
+    </ObjectType>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;InfoType&gt;&lt;/InfoType&gt;" Type="InfoDataSourcesTemplate" Description="InfoType标签模板">
+    <![CDATA[
+    <InfoType Name="ENAME" Script ="" PageName="ListCommonQuery"   SourceValue="" SourceText="ENAME">
+      <Para Name="ItemName" Value="EItemSingleSearch" />
+      <Para Name="EversionValue" Value="0"/>
+    </InfoType>
+    ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--导航配置-->
+  <ConfigFileTemplate Name ="&lt;NavigationItem&gt;&lt;/NavigationItem&gt;" Type="NavigationItemsTemplate" Description="NavigationItem标签模板">
+    <![CDATA[
+    <NavigationItem Name="CommmonModules" Order="000">
+      <PageName />
+      <Image>~/Platform/Image/Navigation/System.png</Image>
+      <NavigationItem Name="" Order="100">
+        <PageName>TreeManagement</PageName>
+        <Image>~/Platform/Image/Navigation/MyFlowTask.png</Image>
+        <Para Name="" Value="" />
+      </NavigationItem>
+    </NavigationItem>
+    ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--列表查询-->
+  <ConfigFileTemplate Name ="&lt;ListQuery&gt;&lt;/ListQuery&gt;" Type="ListCommonQueryTemplate" Description="ListQuery标签模板">
+    <![CDATA[
+    <ListQuery Name="UserListSearch" ListViewName="USERSQUERYLISTVIEW"  QueryPageName="USERVIEW-QUERY" 
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="USERINFO">
+  </ListQuery>
+    ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--树查询-->
+  <ConfigFileTemplate Name ="&lt;TreeQuery&gt;&lt;/TreeQuery&gt;" Type="TreeCommonQueryTemplate" Description="TreeQuery标签模板">
+    <![CDATA[
+    <TreeQuery Name="GroupToGroup" TreeViewName="OrganizationQueryTreeView" AllowReturnEmptyValue="false"
+                LoadAndSelectType="SingleLevel_SingleSelect" ReturnValueType="GROUPINFO"
+             TreeRootDataService="InforCenter.Organization.OrganizationDataService.GetGroupToGroupRootNode"
+             TreeChildDataService="InforCenter.Organization.OrganizationDataService.GetGroupToGroupChildNode"
+             TreeQueryDataService="" TreeAllDataService="">
+  </TreeQuery>
+ ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <!--数列表查询-->
+  <ConfigFileTemplate Name ="&lt;TreeListQuery&gt;&lt;/TreeListQuery&gt;" Type="TreeListCommonQueryTemplate" Description="TreeListQuery标签模板">
+    <![CDATA[
+  <TreeListQuery Name="SingleUserTreeListQuery" TreeViewName="OrganizationQueryTreeView" ListViewName="USERTREELISTQUERYLOADVIEW" QueryListViewName="USERSQUERYLISTVIEW"
+                 AllowMultiSelect="false" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" 
+                 TreeChildDataService="" TreeQueryDataService="" TreeAllDataService="" TreeRootDataService=""  ReturnValueType="USERINFO"  QueryPageName="USERQUERYVIEW-QUERY" >
+  </TreeListQuery>
+  ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+
+
+  <ConfigFileTemplate Name ="&lt;Command(SQL)&gt;&lt;/Command(SQL)&gt;" Type="SQLCommandTemplate" Description="SQL命令标签模板">
+    <![CDATA[
+  <Command Name="CHECKTASKISROLLBACK">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(*) FROM WORKFLOWTASKINFO WHERE PREVIOUSTASKUID='[TASKUID]' AND STATEID='COMPLETE'
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(*) FROM WORKFLOWTASKINFO WHERE PREVIOUSTASKUID='[TASKUID]' AND STATEID='COMPLETE'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DataType&gt;&lt;/DataType&gt;" Type="DataTypeTemplate" Description="数据类型DataType标签模板">
+    <![CDATA[
+  <DataType Name="STRING100" Validation="String100">
+    <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(100)" />
+    <FieldType DBType="SQLSERVER" DBFieldType="NVARCHAR(100)" />
+  </DataType>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;FieldType&gt;&lt;/FieldType&gt;" Type="FieldTypeTemplate" Description="数据项类型FieldType标签模板">
+    <![CDATA[
+      <FieldType DBType="ORACLE" DBFieldType="NVARCHAR2(100)" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Table(Schema)&gt;&lt;/Table(Schema)&gt;" Type="DataSchemaTemplate" Description="数据库结构标签模板">
+    <![CDATA[
+  <Table Name="ACTIONRULE" Extend="ENTITY" IsAbstract="false">
+    <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="ENAME" Extend="ENAME" DataType="STRING200" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ECODE" Extend="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="STATEID" Extend="STATEID" DataType="STRING20" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EVERSION" Extend="EVERSION" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EUID" Extend="EUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CREATEUID" Extend="CREATEUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CREATETIME" Extend="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="UPDATEUID" Extend="UPDATEUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="UPDATETIME" Extend="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNUID" Extend="OWNUID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNGID" Extend="OWNGID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ESTATION" Extend="ESTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ICON" Extend="ICON" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="PEID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="SERIALNUMBER" DataType="INT" Required="true" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Index Name="IX_ACTIONRULE_PEID" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+  </Table>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Column&gt;&lt;/Column&gt;" Type="DataSchemaTemplate" Description="数据库结构标签模板">
+    <![CDATA[
+    <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Index&gt;&lt;/Index&gt;" Type="DataSchemaTemplate" Description="数据库结构标签模板">
+    <![CDATA[
+    <Index Name="IX_ACTIONRULE_PEID" Unique="false">
+      <Field Name="PEID" Order="ASC" />
+    </Index>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Command(SchemaSQL)&gt;&lt;/Command(SchemaSQL)&gt;" Type="DataSchemaSQLTemplate" Description="数据库结构SQL命令标签模板">
+    <![CDATA[
+  <Command Name="CREATEEXECPARA">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        if (exists(select * from sysobjects where id= object_id(N'execpara'))) drop procedure execpara
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="execpara">
+        create  PROCEDURE execpara (@para  text) AS BEGIN exec(@para) END
+      </CommandItem>   
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="EXECPARA">
+        CREATE OR REPLACE PROCEDURE EXECPARA(
+        para  in long
+        )
+        as
+        begin
+        execute immediate para;
+        end;
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" DBObject="EXECPARA2">
+        CREATE OR REPLACE PROCEDURE EXECPARA2(
+        para  in long,
+        result out sys_refcursor
+        )
+        as
+        begin
+        execute immediate para using result;
+        end;
+      </CommandItem>
+    </DatabaseType>
+   </Command>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;Table(DBData)&gt;&lt;/Table((DBData))&gt;" Type="DataBaseDataTemplate" Description="数据库初始文件板标签模板">
+    <![CDATA[
+  <Table Name="GROUPINFO">
+    <Column Name="EID" />
+    <Column Name="ENAME" />
+    <Column Name="ECODE" />
+    <Column Name="CREATEUID" />
+    <Column Name="CREATETIME" />
+    <Column Name="UPDATEUID" />
+    <Column Name="UPDATETIME" />
+    <Column Name="PARENTGROUPEID" />
+    <Column Name="VAULTINFO" />
+    <Column Name="LSEQUENCE" />
+    <Row>
+      <Cell ColName="EID">GROUPINFO_System</Cell>
+      <Cell ColName="ENAME">系统管理组</Cell>
+      <Cell ColName="ECODE">AdminGroup</Cell>
+      <Cell ColName="CREATEUID">USERINFO_System</Cell>
+      <Cell ColName="CREATETIME">634938753390000000</Cell>
+      <Cell ColName="UPDATEUID">USERINFO_System</Cell>
+      <Cell ColName="UPDATETIME">634938753390000000</Cell>
+      <Cell ColName="PARENTGROUPEID">ORGANIZATION_GROUPS</Cell>
+      <Cell ColName="VAULTINFO">DefaultValut</Cell>
+      <Cell ColName="LSEQUENCE">0</Cell>
+    </Row>
+  </Table>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DataClearItem&gt;&lt;/DataClearItem&gt;" Type="DataClearTemplate" Description="数据库清理命令板标签模板">
+    <![CDATA[
+    <DataClearItem Name="CLEARMESSAGE" CommandName="CLEARMESSAGE" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DataClearCondition&gt;&lt;/DataClearCondition&gt;" Type="DataClearTemplate" Description="数据库清理条件板标签模板">
+    <![CDATA[
+     <DataClearCondition Name="CLEARMESSAGE_STARTTIME" Type="DateTime" DataClearItemName="CLEARMESSAGE" />
+    ]]>
+  </ConfigFileTemplate>
+
+
+
+  <!--插件管理-->
+  <ConfigFileTemplate Name ="&lt;PluginItem&gt;&lt;/PluginItem&gt;" Type="PluginsItemTemplate" Description="PluginItem标签模板">
+    <![CDATA[
+   <PluginItem Name="EntityObject" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.EntityObject" />
+  ]]>
+  </ConfigFileTemplate>
+  <!--结束-->
+
+  <ConfigFileTemplate Name ="&lt;Enumeration&gt;&lt;/Enumeration&gt;" Type="Enumeration" Description="枚举Enumeration标签模板">
+    <![CDATA[
+  <Enumeration Name="AcademicRecord">
+    <EnumerationItem Name="Bachelor" />
+    <EnumerationItem Name="Doctor" />
+    <EnumerationItem Name="Master" />
+    <EnumerationItem Name="Other" />
+  </Enumeration>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;EnumerationItem&gt;&lt;/EnumerationItem&gt;" Type="EnumerationItem" Description="枚举项EnumerationItem标签模板">
+    <![CDATA[
+    <EnumerationItem Name="Other" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;DocumentType&gt;&lt;/DocumentType&gt;" Type="DocumentTypeTemplate" Description="文档类型DocumentType标签模板">
+    <![CDATA[
+    <DocumentType Name="word-2003" Extension="doc" Icon="~/Platform/Image/Document/doc.gif"  />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ValidationItem&gt;&lt;/ValidationItem&gt;" Type="ValidationItemTemplate" Description="验证类型ValidationItem标签模板">
+    <![CDATA[
+      <ValidationItem Name="String100" Value="^([\s\S]{0,100})?$" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;WorkflowTemplateType&gt;&lt;/WorkflowTemplateType&gt;" Type="WorkflowTemplateTypeTemplate" Description="流程模板类型标签模板">
+    <![CDATA[
+   <WorkflowTemplateType Name="ExampleTemplateDemo" CommonManagement="false"  Assembly="Hoteam.InforCenter.Example.FlowExtend" Class="Hoteam.InforCenter.Example.FlowExtend.ExampleFlowInfo" PageName="WorkflowExtendSetting">
+    <WorkflowNodeExtend Assembly="Hoteam.InforCenter.Example.FlowExtend" Class="Hoteam.InforCenter.Example.FlowExtend.ExampleNodeInfo" PageName="SelectedAuditExtendSetting"/>
+  </WorkflowTemplateType>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;WorkflowActorItem&gt;&lt;/WorkflowActorItem&gt;" Type="WorkflowActorItemTemplate" Description="流程节点执行人标签模板">
+    <![CDATA[
+     <WorkflowActorItem Name="Group" TemplateType=""
+                        Assembly="Hoteam.InforCenter.Workflow.Extend" 
+                         Class="Hoteam.InforCenter.Workflow.Extend.TaskActor.GroupPanel" PageName="" 
+                     SetDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_SelectGroupOnClick"
+                     InitDataJSMethod="InforCenter_Platform_SelectedTaskActorInfo_InitGroupData"/>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;WorkflowConditionItem&gt;&lt;/WorkflowConditionItem&gt;" Type="WorkflowConditionItemTemplate" Description="流程条件标签模板">
+    <![CDATA[
+    <WorkflowConditionItem Name="WorkflowParameter" TemplateType=""
+                        Assembly="Hoteam.InforCenter.Workflow.Extend" 
+                         Class="Hoteam.InforCenter.Workflow.Extend.FlowCondition.FlowParameterCondition"
+                         PageName="WorkflowParameterCondition"
+                         SetDataJSMethod=""
+                         InitDataJSMethod="InforCenter_Platform_WorkflowParameterCondition_InitData"
+                         />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Plugin&gt;&lt;/Plugin&gt;" Type="WorkflowPluginTemplate" Description="流程插件标签模板">
+    <![CDATA[
+ <Plugin Name ="SendFlowMessage" PageName="SendWorkflowMessage"  PluginType ="BusinessPlugin" Assembly="Hoteam.InforCenter.Workflow.Extend" Class="Hoteam.InforCenter.Workflow.Extend.BusinessPlugin.SendFlowMessage" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DatabaseType&gt;&lt;/DatabaseType&gt;" Type="DatabaseTypeTemplate" Description="数据库类型标签模板">
+    <![CDATA[
+ <DatabaseType Name="ORACLE" Connection="ORACLE" ExecString="execpara(para)" ExecStringWithResult="execpara2(para,cursor result)" UTCTimeString="utcinttime()"></DatabaseType>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;MainFlatItems&gt;&lt;/MainFlatItem&gt;" Type="MainFlatTemplate" Description="首页配置MainFlatItems标签模板">
+    <![CDATA[
+ <MainFlatItems Position="A">
+    <MainFlatItem  Height="600" Url="CodeStandardization" MoreUrl="CodeStandardization"/>
+  </MainFlatItems>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;MainFlatItem&gt;&lt;/MainFlatItem&gt;" Type="MainFlatTemplate" Description="首页配置MainFlatItem标签模板">
+    <![CDATA[
+  <MainFlatItem  Height="600" Url="CodeStandardization" MoreUrl="CodeStandardization"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;CatalogItem&gt;&lt;/CatalogItem&gt;" Type="HelpStructTemplate" Description="帮助文档标签模板">
+    <![CDATA[
+    <CatalogItem ID="8f133631ecec45ae8fa49376ef0cc074" PID="ff675e1004e840b080421e0327bbceb3" Level="4" Title="全选" Content="功能介绍：将当前页数据全部选中。功能使用：勾选列表标题行上全选勾选框，将当前页数据全部选中。" IsHasContent="true" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ExportExcelTemplatesFile&gt;&lt;/ExportExcelTemplatesFile&gt;" Type="ExportExcelTemplate" Description="Excel导出配置ExportExcelTemplatesFile标签模板">
+    <![CDATA[
+     <ExportExcelTemplatesFile TemplateName="TESTOFFICE07" TemplatePath="~/Example/Config/ExportTemplate/Test.xlsx" TemplateRows="8" TemplateCols="14" TemplateSpace="3">
+    <TemplateBase DataTableName="">
+      <TemplateColumn ColName="ENAME" StartRow="4" StartColumn="3" />
+      <TemplateColumn ColName="ECODE" StartRow="4" StartColumn="5" />
+      <TemplateColumn ColName="EVERSION" StartRow="4" StartColumn="9" />
+      <TemplateColumn ColName="CREATETIME" StartRow="4" StartColumn="13" />
+    </TemplateBase>
+    <TemplateContent DataTableName="" ContentCount="2">
+      <TemplateColumn ColName="LEVELID" StartRow="7" StartColumn="1" />
+      <TemplateColumn ColName="ECODE" StartRow="7" StartColumn="2" />
+      <TemplateColumn ColName="ENAME" StartRow="7" StartColumn="4" />
+      <TemplateColumn ColName="LPATH" StartRow="7" StartColumn="6"/>
+      <TemplateColumn ColName="TOTALQTY" StartRow="7" StartColumn="8"/>
+      <TemplateColumn ColName="EVERSION" StartRow="7" StartColumn="10"/>
+      <TemplateColumn ColName="CREATETIME" StartRow="7" StartColumn="12"/>
+    </TemplateContent>
+    <TemplateImages>
+      <TemplateImage StartRow="1" StartColoum="1" EndRow="2" EndColoum="4" ImageUrl="~/Example/Config/ExportTemplate/ExportLogo.png" />
+    </TemplateImages>
+  </ExportExcelTemplatesFile>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateBase&gt;&lt;/TemplateBase&gt;" Type="ExportExcelTemplate" Description="Excel导出配置TemplateBase标签模板">
+    <![CDATA[
+    <TemplateBase DataTableName="">
+      <TemplateColumn ColName="ENAME" StartRow="4" StartColumn="3" />
+    </TemplateBase>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateContent&gt;&lt;/TemplateContent&gt;" Type="ExportExcelTemplate" Description="Excel导出配置TemplateContent标签模板">
+    <![CDATA[
+     <TemplateContent DataTableName="" ContentCount="2">
+      <TemplateColumn ColName="LEVELID" StartRow="7" StartColumn="1" />
+    </TemplateContent>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateImages&gt;&lt;/TemplateImages&gt;" Type="ExportExcelTemplate" Description="Excel导出配置TemplateContent标签模板">
+    <![CDATA[
+    <TemplateImages>
+      <TemplateImage StartRow="1" StartColoum="1" EndRow="2" EndColoum="4" ImageUrl="~/Example/Config/ExportTemplate/ExportLogo.png" />
+    </TemplateImages>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateColumn&gt;&lt;/TemplateColumn&gt;" Type="ExportExcelTemplate" Description="Excel导出配置TemplateColumn标签模板">
+    <![CDATA[
+      <TemplateColumn ColName="ENAME" StartRow="4" StartColumn="3" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateImage&gt;&lt;/TemplateImage&gt;" Type="ExportExcelTemplate" Description="Excel导出配置TemplateImage标签模板">
+    <![CDATA[
+     <TemplateImage StartRow="1" StartColoum="1" EndRow="2" EndColoum="4" ImageUrl="~/Example/Config/ExportTemplate/ExportLogo.png" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ExportWordlTemplate&gt;&lt;/ExportWordlTemplate&gt;" Type="ExportWordTemplate" Description="Word导出配置ExportWordlTemplate标签模板">
+    <![CDATA[
+      <ExportWordlTemplate TemplateName="TESTOFFICE07" TemplatePath="~/Example/Config/ExportTemplate/Test.docx">
+    <TemplateText KeyWord="ENAME"/>
+    <TemplateText KeyWord="ECODE"/>
+    <TemplateText KeyWord="EVERSION" />
+    <TemplateText KeyWord="CREATETIME"/>
+    <TemplateImage KeyWord="LOGO" Width="500" Height="100"/>
+    <TemplateTable TableName="ItemBom" StartRow="2" StartCol="1" >
+      <TemplateColumnText  KeyWord="ItemBom.LEVELID"  />
+      <TemplateColumnText  KeyWord="ItemBom.ECODE"  />
+      <TemplateColumnText  KeyWord="ItemBom.ENAME"  />
+      <TemplateColumnText  KeyWord="ItemBom.LPATH" />
+      <TemplateColumnText  KeyWord="ItemBom.TOTALQTY" />
+      <TemplateColumnText  KeyWord="ItemBom.EVERSION" />
+      <TemplateColumnText  KeyWord="ItemBom.CREATETIME" />
+    </TemplateTable>
+  </ExportWordlTemplate>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateText&gt;&lt;/TemplateText&gt;" Type="ExportWordTemplate" Description="Word导出配置TemplateText标签模板">
+    <![CDATA[
+    <TemplateText KeyWord="ENAME"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateTable&gt;&lt;/TemplateTable&gt;" Type="ExportWordTemplate" Description="Word导出配置TemplateTable标签模板">
+    <![CDATA[
+       <TemplateTable TableName="ItemBom" StartRow="2" StartCol="1" >
+      <TemplateColumnText  KeyWord="ItemBom.LEVELID"  />
+    </TemplateTable>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TemplateColumnText&gt;&lt;/TemplateColumnText&gt;" Type="ExportWordTemplate" Description="Word导出配置TemplateColumnText标签模板">
+    <![CDATA[
+      <TemplateColumnText  KeyWord="ItemBom.LEVELID"  />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;TaskField&gt;&lt;/TaskField&gt;" Type="ProjectImportExportTemplate" Description="Project导入导出配置TaskField标签模板">
+    <![CDATA[
+ <TaskField Name='ActualCost' Describe='实际花费'/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ResourceField&gt;&lt;/ResourceField&gt;" Type="ProjectImportExportTemplate" Description="Project导入导出配置ResourceField标签模板">
+    <![CDATA[
+   <ResourceField Name='ActualCost' Describe='实际花费'/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ResourceAssignmentField&gt;&lt;/ResourceAssignmentField&gt;" Type="ProjectImportExportTemplate" Description="Project导入导出配置ResourceAssignmentField标签模板">
+    <![CDATA[
+    <ResourceAssignmentField Name='ActualCost' Describe='实际花费'/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ReportType&gt;&lt;/ReportType&gt;" Type="ReportConfigTemplate" Description="报表类型标扩展签模板">
+    <![CDATA[
+      <ReportType SortID="01" Name="Report"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ReportData" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ComponentType&gt;&lt;/ComponentType&gt;" Type="ReportConfigTemplate" Description="报表控件类型扩展标签模板">
+    <![CDATA[
+   <ComponentType SortID="00" Name="AbsoluteLocation"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.AbsoluteLocationData"  ReportType="Report" Image="Platform/Image/Report/LayoutTable.png" BackgroundImage="Platform/Image/Report/BGLabel.bmp"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ReportDesigner&gt;&lt;/ReportDesigner&gt;" Type="ReportConfigTemplate" Description="报表设计逻辑扩展标签模板">
+    <![CDATA[
+   <ReportDesigner SortID="01" Name="Report"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.ReportDesigner" ReportType="Report"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ComponentDesigner&gt;&lt;/ComponentDesigner&gt;" Type="ReportConfigTemplate" Description="报表控件设计逻辑扩展标签模板">
+    <![CDATA[
+   <ComponentDesigner SortID="00" Name="AbsoluteLocation"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Designer.AbsoluteLocationComponent"  ReportType="Report"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ReportDisplay&gt;&lt;/ReportDisplay&gt;" Type="ReportConfigTemplate" Description="报表展示逻辑扩展标签模板">
+    <![CDATA[
+   <ReportDisplay SortID="01" Name="Report"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.ReportRunDisplay" ReportType="Report"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ComponentDisplay&gt;&lt;/ComponentDisplay&gt;" Type="ReportConfigTemplate" Description="报表控件展示逻辑扩展标签模板">
+    <![CDATA[
+   <ComponentDisplay SortID="00" Name="AbsoluteLocation"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Display.AbsoluteLocationDisplay"  ReportType="Report"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ReportExtentButton&gt;&lt;/ReportExtentButton&gt;" Type="ReportConfigTemplate" Description="报表工具栏按钮扩展标签模板">
+    <![CDATA[
+    <ReportExtentButton SortID="00" Name="SetDataSource" ReportType="Report"  Image="Platform/Image/Report/DataSourceSetting.png"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DataSourceType&gt;&lt;/DataSourceType&gt;" Type="ReportConfigTemplate" Description="报表数据类型源扩展标签模板">
+    <![CDATA[
+    <DataSourceType SortID="00" Name="View"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Data.ViewData"  ReportType="Report"/>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;DataSourceControl&gt;&lt;/DataSourceControl&gt;" Type="ReportConfigTemplate" Description="报表数据源逻辑扩展标签模板">
+    <![CDATA[
+     <DataSourceControl SortID="00" Name="View"  Assembly="Hoteam.InforCenter.Report.Designer.dll" Class="Hoteam.InforCenter.Report.Designer.Form.ViewDataSourceSetting"  ReportType="Report"/>
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;EntityType&gt;&lt;/EntityType&gt;" Type="DataModelConfigTemplate" Description="对象建模类型标签模板">
+    <![CDATA[
+    <EntityType Name="ENTITY" Extend="" LogicClass="EntityObject" IconPath="" Abstract="true" TableName="ENTITY" SplitValidateUnique="false" PolicyName="NULL" VersionFormat="Letter">
+      <InfoType Name="EID" Type="DefaultObjectValue" DataType="STRING100" Column="EID" PrimaryKeyOrder="1" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" Edit="" Show="" Validation="" Width="50" />
+    </EntityType>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;InfoType&gt;&lt;/InfoType&gt;" Type="DataModelConfigTemplate" Description="建模属性标签模板">
+    <![CDATA[
+      <InfoType Name="EID" Type="DefaultObjectValue" DataType="STRING100" Column="EID" PrimaryKeyOrder="1" DefaultValue="" Required="True" ValidateUnique="false" InheritRegulate="Innate" ExtendProperty1="" Edit="" Show="" Validation="" Width="50" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Index&gt;&lt;/Index&gt;" Type="DataModelConfigTemplate" Description="索引标签模板">
+    <![CDATA[
+    <Index Name="FLOW_CHARGE_INDEX" TableIndex="FLOW_CHARGE_INDEX" Unique="False">
+      <IndexInfo Name="FLOWADMINISTRATOR" Order="ASC" />
+    </Index>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;IndexInfo&gt;&lt;/IndexInfo&gt;" Type="DataModelConfigTemplate" Description="索引列标签模板">
+    <![CDATA[
+   <IndexInfo Name="FLOWADMINISTRATOR" Order="ASC" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;Table&gt;&lt;/Table&gt;" Type="SchemaConfigTemplate" Description="自动生成数据库表标签模板">
+    <![CDATA[
+    <Table Name="WORKFLOWACTORINFO" Extend="ENTITY" IsAbstract="false">
+      <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    </Table>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Column&gt;&lt;/Column&gt;" Type="SchemaConfigTemplate" Description="自动生成数据库列标签模板">
+    <![CDATA[
+      <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Index&gt;&lt;/Index&gt;" Type="SchemaConfigTemplate" Description="自动生成数据库索引标签模板">
+    <![CDATA[
+    <Index Name="FLOWACTOR_FLOWID_INDEX" Unique="false">
+      <Field Name="WORKFLOWID" Order="ASC" />
+    </Index>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;Field&gt;&lt;/Field&gt;" Type="SchemaConfigTemplate" Description="自动生成数据库索引列标签模板">
+    <![CDATA[
+    <Field Name="WORKFLOWID" Order="ASC" />
+    ]]>
+  </ConfigFileTemplate>
+
+  <ConfigFileTemplate Name ="&lt;ObjectView&gt;&lt;/ObjectView&gt;" Type="ViewConfigTemplate" Description="对象视图标签模板">
+<![CDATA[
+    <ObjectView Name="AUDITEDTASKVIEW" ObjectTypeName="WORKFLOWTASKINFO" OrderByString="CREATETIME DESC" FixedFilter="STATEID='COMPLETE' AND (TASKACTORID='[CURUSERID]' OR AGENTUSERID='[CURUSERID]') AND ISCOMMONMANGEMENT=1 " AsCommonQuery="true">
+      <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+      <ViewCondition Name="TaskName" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    </ObjectView>
+]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;EntityLinkView&gt;&lt;/EntityLinkView&gt;" Type="ViewConfigTemplate" Description="关系视图标签模板">
+    <![CDATA[
+    <EntityLinkView Name="GROUPTOUSERVIEW" ObjectTypeName="GROUPTOUSER" OrderByString="LSEQUENCE ASC" FixedFilter="" DeepSearch="false" SearchChild="true" FixedEntityFilter="">
+      <ViewColumn Name="LID" Width="0" Resizable="false" Sortable="false" />
+      <ViewCondition Name="UserName" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" />
+    </EntityLinkView>
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ViewColumn&gt;&lt;/ViewColumn&gt;" Type="ViewConfigTemplate" Description="视图列信息标签模板">
+    <![CDATA[
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    ]]>
+  </ConfigFileTemplate>
+  <ConfigFileTemplate Name ="&lt;ViewCondition&gt;&lt;/ViewCondition&gt;" Type="ViewConfigTemplate" Description="视图查询条件标签模板">
+    <![CDATA[
+    <ViewCondition Name="TaskName" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    ]]>
+  </ConfigFileTemplate>
+    <ConfigFileTemplate Name ="&lt;DbPartitionType&gt;&lt;/DbPartitionType&gt;" Type="DbPartitionTypeTemplate" Description="数据库表分区配置DbPartitionItemItem标签模板">
+    <![CDATA[
+	<DbPartitionType Name="DateTimeValuePartition">
+		  <DbSplitType Name="Day" Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.Extend.DateTimePartition.Day" IsHide="false" />
+		  <DbSplitType Name="Month"  Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.Extend.DateTimePartition.Month" IsHide="false" />
+		  <DbSplitType Name="Quater"  Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.Extend.DateTimePartition.Quater" IsHide="false" />
+		  <DbSplitType Name="Year"  Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.Extend.DateTimePartition.Year" IsHide="false" />
+	 </DbPartitionType>
+    ]]>
+  </ConfigFileTemplate>
+</root>
+
+
+

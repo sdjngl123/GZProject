@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="SelectedItemPluginSetting" IsCache="true">
+  <Settings Key="title" Value="SelectedItemPluginSetting.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_SelectedItemPluginSetting_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_SelectedItemPluginSetting_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_SelectedItemPluginSetting_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="LifeCyclePluginSetting_LayoutC" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LifeCyclePluginSetting_Layout"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LifeCyclePluginSetting_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="LifeCyclePluginSettingAddpluginLayout"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="5"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LifeCyclePluginSettingVLayout"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LifeCyclePluginSettingVLayout" ParentID="LifeCyclePluginSetting_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_1"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_2"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_3"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_4"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_5"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_6"/>
+      </Settings>
+      <Settings Key="item7" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_7"/>
+      </Settings>
+      <Settings Key="item8" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_8"/>
+      </Settings>
+      <Settings Key="item9" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_9"/>
+      </Settings>
+      <Settings Key="item10" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_10"/>
+      </Settings>
+      <Settings Key="item11" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_11"/>
+      </Settings>
+      <Settings Key="item12" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_12"/>
+      </Settings>
+      <Settings Key="item13" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_13"/>
+      </Settings>
+      <Settings Key="item14" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_14"/>
+      </Settings>
+      <Settings Key="item15" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_15"/>
+      </Settings>
+      <Settings Key="item16" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_16"/>
+      </Settings>
+      <Settings Key="item17" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_17"/>
+      </Settings>
+      <Settings Key="item18" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_18"/>
+      </Settings>
+      <Settings Key="item19" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_19"/>
+      </Settings>
+      <Settings Key="item20" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="PageContainer_20"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageContainer_1" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_2" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_3" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_4" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_5" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_6" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_7" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_8" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_9" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_10" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_11" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_12" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_13" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_14" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_15" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_16" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_17" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_18" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_19" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+    <PageControl ControlID="PageContainer_20" ParentID="LifeCyclePluginSettingVLayout" TypeName="PageContainer">
+    </PageControl>
+
+    <PageControl ControlID="LifeCyclePluginSettingAddpluginLayout" ParentID="LifeCyclePluginSetting_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LifeCyclePluginSettingAddpluginDropdown"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="LifeCyclePluginSettingAddpluginButton"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LifeCyclePluginSettingAddpluginDropdown" ParentID="LifeCyclePluginSettingAddpluginLayout" TypeName="DropDown" >
+    </PageControl>
+    <PageControl ControlID="LifeCyclePluginSettingAddpluginButton" ParentID="LifeCyclePluginSettingAddpluginLayout" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_SelectedItemPluginSetting_AddPlugin(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="" />
+      <Settings Key="iconClass" Value="p_add" />
+    </PageControl>
+  </PageControls>
+</root>

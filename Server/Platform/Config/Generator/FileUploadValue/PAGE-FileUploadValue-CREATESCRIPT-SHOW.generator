@@ -1,0 +1,13 @@
+﻿var o=pageEvent.o.GetControl('[INFONAME]_Value');
+var fileStr=data.[INFONAME];
+if(fileStr){
+	 var fileInformation = JSON.parse(fileStr);
+	 if (fileInformation ){
+			if(fileInformation[0]) {
+			file = fileInformation[0];
+			if(o.id!=''){
+			InforCenter_Platform_Object_SetFileUploadValue(o,file);
+			}
+		}
+	}
+}

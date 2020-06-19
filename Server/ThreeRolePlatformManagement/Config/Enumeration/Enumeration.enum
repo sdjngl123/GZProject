@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enumeration Name="UserSecurityLevel" IsReplace="false">
+    <EnumerationItem Name="1" />
+    <EnumerationItem Name="2" />
+    <EnumerationItem Name="3" />
+    <EnumerationItem Name="4" />
+  </Enumeration>
+  <Enumeration Name="SecurityLevel" IsReplace="false">
+    <EnumerationItem Name="1" />
+    <EnumerationItem Name="2" />
+    <EnumerationItem Name="3" />
+    <EnumerationItem Name="4" />
+  </Enumeration>
+  <Enumeration Name="ThreeRolePasswordPolicyCombin" IsReplace="false">
+    <EnumerationItem Name="Char" />
+    <EnumerationItem Name="CharNum" />
+    <EnumerationItem Name="CharNumSpecial" />
+  </Enumeration>
+  <Enumeration Name="ThreeRoleAllowWeek" IsReplace="false">
+    <EnumerationItem Name="Monday" />
+    <EnumerationItem Name="Tuesday" />
+    <EnumerationItem Name="Wednesday" />
+    <EnumerationItem Name="Thursday" />
+    <EnumerationItem Name="Friday" />
+    <EnumerationItem Name="Saturday" />
+    <EnumerationItem Name="Sunday" />
+  </Enumeration>
+  <Enumeration Name="ThreeRoleAllowTime" IsReplace="false">
+    <EnumerationItem Name="1" />
+    <EnumerationItem Name="2" />
+    <EnumerationItem Name="3" />
+    <EnumerationItem Name="4" />
+    <EnumerationItem Name="5" />
+    <EnumerationItem Name="6" />
+    <EnumerationItem Name="7" />
+    <EnumerationItem Name="8" />
+    <EnumerationItem Name="9" />
+    <EnumerationItem Name="10" />
+    <EnumerationItem Name="11" />
+    <EnumerationItem Name="12" />
+    <EnumerationItem Name="13" />
+    <EnumerationItem Name="14" />
+    <EnumerationItem Name="15" />
+    <EnumerationItem Name="16" />
+    <EnumerationItem Name="17" />
+    <EnumerationItem Name="18" />
+    <EnumerationItem Name="19" />
+    <EnumerationItem Name="20" />
+    <EnumerationItem Name="21" />
+    <EnumerationItem Name="22" />
+    <EnumerationItem Name="23" />
+    <EnumerationItem Name="24" />
+  </Enumeration>
+</root>

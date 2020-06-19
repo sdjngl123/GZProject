@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <!--集团权限-->
+  <Action Name="COMPANYSHOWDATA" IsDefaultAction="true" Order="002" UseBy="Company"/>
+</root>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="INTERNALMAIL-EDIT" IsWeb="true">
+    <Label Name="RECIVERHeader">
+      <LocalizedLabel LanguageRef="zhs">接收人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Receiver</LocalizedLabel>
+    </Label>
+    <Label Name="COPYTOUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">抄送人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cc</LocalizedLabel>
+    </Label>
+    <Label Name="SECRETUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">密送人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bcc</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件主题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message subject</LocalizedLabel>
+    </Label>
+    <Label Name="MTITLERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 500&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTHeader">
+      <LocalizedLabel LanguageRef="zhs">重要性</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">邮件正文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message body</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="INTERNALMAILHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑内部邮件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditInternal mail</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

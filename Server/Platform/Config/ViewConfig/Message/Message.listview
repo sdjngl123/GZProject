@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--消息管理-->
+  <WebListView Name="MESSAGEMANAGEMENTVIEW" View="MESSAGEMANAGEMENTVIEW" QueryID="" EntityFilter="" Filter="" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIconField="MSTATEICON"  AutoLoadData="true">
+  </WebListView>
+</root>

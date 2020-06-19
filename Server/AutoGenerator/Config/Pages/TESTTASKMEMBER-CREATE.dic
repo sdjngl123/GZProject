@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTTASKMEMBER-CREATE" IsWeb="true">
+    <Label Name="TESTUSERHeader">
+      <LocalizedLabel LanguageRef="zhs">试验参与人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestUser</LocalizedLabel>
+    </Label>
+    <Label Name="TESTROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">试验角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestRole</LocalizedLabel>
+    </Label>
+    <Label Name="TESTROLERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTTASKMEMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">新建试验任务人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewTESTTASKMEMBER</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

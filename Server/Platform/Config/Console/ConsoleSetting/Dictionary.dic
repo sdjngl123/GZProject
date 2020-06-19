@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Dictionary" IsWeb="false">
+    <Label Name="DicName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DicNameDescription">
+      <LocalizedLabel LanguageRef="zhs">多语言块名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="NameDescription">
+      <LocalizedLabel LanguageRef="zhs">多语言项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Create">
+      <LocalizedLabel LanguageRef="zhs">新建</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="Delete">
+      <LocalizedLabel LanguageRef="zhs">删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ZhsName">
+      <LocalizedLabel LanguageRef="zhs">简体中文</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chinese</LocalizedLabel>
+    </Label>
+    <Label Name="EnName">
+      <LocalizedLabel LanguageRef="zhs">English</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">English</LocalizedLabel>
+    </Label>
+    <Label Name="ZhsNameDescription">
+      <LocalizedLabel LanguageRef="zhs">应用于中文环境下的说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EnNameDescription">
+      <LocalizedLabel LanguageRef="zhs">应用于English环境下的说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsWeb">
+      <LocalizedLabel LanguageRef="zhs">前端</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsWebDescription">
+      <LocalizedLabel LanguageRef="zhs">前端</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

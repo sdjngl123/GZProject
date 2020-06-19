@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--试验单位-->
+	<ListManagement Name="TESTEXTORGList" MenuName="TESTEXTORGMenu" ListViewName="TESTEXTORGListView" HideViewFilterPage="false" SearchFields="UNIT;ECODE" IsBottomTab="false" />
+	<!--试验单位附件-->
+	<ListManagement Name="TESTATTACHList" MenuName="TESTATTACHMenu" ListViewName="TESTATTACHListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<!--试验资源-->
+	<ListManagement Name="TESTRESOURCEList" MenuName="TESTRESOURCEMenu" ListViewName="TESTOUTRESOURCEListView" HideViewFilterPage="false"  SearchFields="ENAME;ECODE"  IsBottomTab="false" />
+	<!--内部试验资源-->
+	<ListManagement Name="INNERTESTRESOURCEList" MenuName="INNERTESTRESOURCEMenu" ListViewName="INNERTESTRESOURCEListView" HideViewFilterPage="false"  SearchFields="ENAME;ECODE"  IsBottomTab="false" />
+	<!--试验地点-->
+	<ListManagement Name="TESTELOCATIONList" MenuName="TESTELOCATIONMenu" ListViewName="TESTELOCATIONListView" HideViewFilterPage="false" SearchFields="ENAME" IsBottomTab="false" />
+	<!--试验能力-->
+	<ListManagement Name="TESTCAPABILITYList" MenuName="TESTCAPABILITYMenu" ListViewName="TESTCAPABILITYListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<!--试验能力资源列表-->
+	<ListManagement Name="TESTABILITYRESOURCEList" MenuName="TESTABILITYRESOURCEMenu" ListViewName="TESTABILITYRESOURCEListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<!--试验能力知识列表-->
+	<ListManagement Name="TESTABILITYKNOWLEDGEList" MenuName="TESTABILITYKNOWLEDGEMenu" ListViewName="TESTABILITYKNOWLEDGEListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<!--试验能力项目列表-->
+	<ListManagement Name="TESTCAPABILITYPROJECTList" MenuName="TESTCAPABILITYPROJECTMenu" ListViewName="TESTCAPABILITYPROJECTListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<!--外部可用资源列表-->
+	<ListManagement Name="EXTERNALLYRESOURCEList" MenuName="EXTERNALLYRESOURCEMenu" ListViewName="EXTERNALLYRESOURCEListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="EXTERNALLYRESOURCEAllList" MenuName="" ListViewName="EXTERNALLYRESOURCEAllListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<!--试验知识-->
+	<ListManagement Name="TESTKNOWLEDGEList" MenuName="TESTKNOWLEDGEMenu" ListViewName="TESTKNOWLEDGEListView" QueryPageName="TESTKNOWLEDGEView-QUERY" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="TypeTESTKNOWLEDGEList" MenuName="TESTKNOWLEDGEMenu" ListViewName="TypeTESTKNOWLEDGEListView" QueryPageName="TESTKNOWLEDGEView-QUERY" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<!--试验能力关联的知识、资源关系列表-->
+	<ListManagement Name="TESTABILITIYTORESOUCEList" MenuName="TESTABILITIYTORESOUCEMenu" ListViewName="TESTABILITIYTORESOUCEListView" HideViewFilterPage="false" IsBottomTab="false" />
+	<ListManagement Name="TESTABILITYTOKNOWLEDGEList" MenuName="TESTABILITYTOKNOWLEDGEMenu" ListViewName="TESTABILITYTOKNOWLEDGEListView" HideViewFilterPage="false" IsBottomTab="false" />
+
+	<!--试验能力新建页面的资源、知识列表-->
+	<ListManagement Name="AddTestResourceList" MenuName="AddTestResourceListMenu" ListViewName="NewTESTRESOURCEListView" HideViewFilterPage="false"  SearchFields=""  IsBottomTab="false" />
+	<ListManagement Name="AddTestKnowledgeList" MenuName="AddTestKnowledgeListMenu" ListViewName="NewTESTKNOWLEDGEQueryListView" HideViewFilterPage="false"  SearchFields=""  IsBottomTab="false" />
+
+</root>

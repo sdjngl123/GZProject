@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Help" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">帮助中心</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Help Center</LocalizedLabel>
+    </Label>
+    <Label Name="Catalog">
+      <LocalizedLabel LanguageRef="zhs">目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Directory</LocalizedLabel>
+    </Label>
+    <Label Name="Search">
+      <LocalizedLabel LanguageRef="zhs">搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

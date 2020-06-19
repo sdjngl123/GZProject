@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Registered" IsWeb="true">
+    <Label Name="RegisteredLogo">
+      <LocalizedLabel LanguageRef="zhs">SmartPLM</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SmartPLM </LocalizedLabel>
+    </Label>
+    <Label Name="RegisteredTitle">
+      <LocalizedLabel LanguageRef="zhs"> 注册</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> Registered</LocalizedLabel>
+    </Label>
+    <Label Name="username">
+      <LocalizedLabel LanguageRef="zhs">手机号/邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Telphone/Eamil</LocalizedLabel>
+    </Label>
+    <Label Name="identifyingCode">
+      <LocalizedLabel LanguageRef="zhs">验证码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">identifying code</LocalizedLabel>
+    </Label>
+    <Label Name="GetIdentifyingCode">
+      <LocalizedLabel LanguageRef="zhs">获取验证码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">get identifying code</LocalizedLabel>
+    </Label>
+    <Label Name="Password">
+      <LocalizedLabel LanguageRef="zhs">密码(8-20位)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password(8-20)</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyName">
+      <LocalizedLabel LanguageRef="zhs">企业名称(非必填)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company Name(Non mandatory)</LocalizedLabel>
+    </Label>
+    <Label Name="Registered">
+      <LocalizedLabel LanguageRef="zhs">立即注册</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Registered</LocalizedLabel>
+    </Label>
+    <Label Name="NoNull">
+      <LocalizedLabel LanguageRef="zhs">请输入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter </LocalizedLabel>
+    </Label>
+    <Label Name="Length">
+      <LocalizedLabel LanguageRef="zhs">不能超过50位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">can't pass 50</LocalizedLabel>
+    </Label>
+    <Label Name="Dontrules">
+      <LocalizedLabel LanguageRef="zhs"> 不符合规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> does not conform to the rules</LocalizedLabel>
+    </Label>
+    <Label Name="SendSuccess">
+      <LocalizedLabel LanguageRef="zhs">发送成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send Success</LocalizedLabel>
+    </Label>
+    <Label Name="AfterSendAgain">
+      <LocalizedLabel LanguageRef="zhs">秒后再次发送</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"> seconds after sending again</LocalizedLabel>
+    </Label>
+    <Label Name="SendAgain">
+      <LocalizedLabel LanguageRef="zhs">再次发送</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">send again</LocalizedLabel>
+    </Label>
+    <Label Name="RegisteredSuccess">
+      <LocalizedLabel LanguageRef="zhs">注册成功,登陆跳转倒计时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Register success，you can login!</LocalizedLabel>
+    </Label>
+    <Label Name="RegisteredLogin">
+      <LocalizedLabel LanguageRef="zhs">登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log in</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

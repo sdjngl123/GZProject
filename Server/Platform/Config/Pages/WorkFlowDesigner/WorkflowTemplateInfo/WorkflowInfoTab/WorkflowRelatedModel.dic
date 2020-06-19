@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowRelatedModel" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relevant Model</LocalizedLabel>
+    </Label>
+    <Label Name="Model">
+      <LocalizedLabel LanguageRef="zhs">模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制选中行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy selected row</LocalizedLabel>
+    </Label>
+    <Label Name="None">
+      <LocalizedLabel LanguageRef="zhs">请设置相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please set the correlation model</LocalizedLabel>
+    </Label>
+    <Label Name="ResultSame">
+      <LocalizedLabel LanguageRef="zhs">选中的行与其他行设置的模型相同</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The selected row has the same model set by other rows</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

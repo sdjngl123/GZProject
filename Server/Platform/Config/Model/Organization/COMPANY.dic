@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="COMPANYModel" IsWeb="true">
+    <Label Name="COMPANYHeader">
+      <LocalizedLabel LanguageRef="zhs">公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYCaption">
+      <LocalizedLabel LanguageRef="zhs">公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSHeader">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="ADDRESSCaption">
+      <LocalizedLabel LanguageRef="zhs">地址</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Address</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTHeader">
+      <LocalizedLabel LanguageRef="zhs">详细描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTCaption">
+      <LocalizedLabel LanguageRef="zhs">详细描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed description</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">公司编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">公司编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company No.</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMUSERIDHeader">
+      <LocalizedLabel LanguageRef="zhs">子公司管理员ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SystemUserID</LocalizedLabel>
+    </Label>
+    <Label Name="SYSTEMUSERIDCaption">
+      <LocalizedLabel LanguageRef="zhs">子公司管理员ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SystemUserID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

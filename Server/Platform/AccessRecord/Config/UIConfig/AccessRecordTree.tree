@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeManagement Name="AccessRecordManagement" MenuName="AccessRecordTreeMenu" TreeViewName="" ShowTreeQuery="false" IsHiddenTabs="true"
+                  TreeChildDataService="" 
+                  TreeRootDataService="Hoteam.InforCenter.AccessRecordService.GetAccessRecordRootNode" 
+                  TreeAllDataService="" TreeQueryDataService=""
+                  PageLinksName="" IsLoadAllData="false">
+    <ObjectType Name="DAY" MenuName="" PageLinksName="AccessRecordLinks" />
+    <ObjectType Name="WEEK" MenuName="" PageLinksName="AccessRecordLinks" />
+    <ObjectType Name="MONTH" MenuName="" PageLinksName="AccessRecordLinks" />
+    <ObjectType Name="ALL" MenuName="" PageLinksName="AccessRecordLinks" />
+  </TreeManagement>
+</root>

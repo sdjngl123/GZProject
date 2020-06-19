@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LinkManage" IsWeb="true">
+    <Label Name="SaveSucess">
+      <LocalizedLabel LanguageRef="zhs">保存成功！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">save sucess!</LocalizedLabel>
+    </Label>
+    <Label Name="NoDataSave">
+      <LocalizedLabel LanguageRef="zhs">没有要保存的数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NoDataSave!</LocalizedLabel>
+    </Label>
+    <Label Name="NameAndPathIsNull">
+      <LocalizedLabel LanguageRef="zhs">名称和路径不能为空,请检查！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name And Path Is Null!</LocalizedLabel>
+    </Label>
+
+    <Label Name="NameIsRepeat">
+      <LocalizedLabel LanguageRef="zhs">名称{0}重复！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name Is Repeat!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Confirm" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">确认</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Confirm</LocalizedLabel>
+    </Label>
+    <Label Name="Error">
+      <LocalizedLabel LanguageRef="zhs">确认框模式错误</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Confirm box mode error</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

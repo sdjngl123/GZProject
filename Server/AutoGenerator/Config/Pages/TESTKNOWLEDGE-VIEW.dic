@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="TESTKNOWLEDGE-VIEW" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">知识类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARTMENTHeader">
+      <LocalizedLabel LanguageRef="zhs">归口单位</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Department</LocalizedLabel>
+    </Label>
+    <Label Name="TESTDOMAINHeader">
+      <LocalizedLabel LanguageRef="zhs">试验领域</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestDomain</LocalizedLabel>
+    </Label>
+    <Label Name="SECRETLEVELHeader">
+      <LocalizedLabel LanguageRef="zhs">密级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SecretLevel</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">发布日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PUBLISHDATE</LocalizedLabel>
+    </Label>
+    <Label Name="SOURCEHeader">
+      <LocalizedLabel LanguageRef="zhs">来源</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOURCE</LocalizedLabel>
+    </Label>
+    <Label Name="ATTACHTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">附件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ATTACHTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="FILEINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">附件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FILEINFO</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYKEYHeader">
+      <LocalizedLabel LanguageRef="zhs">关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">QUERYKEY</LocalizedLabel>
+    </Label>
+    <Label Name="STATEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">State</LocalizedLabel>
+    </Label>
+    <Label Name="EVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Version</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="TESTKNOWLEDGEHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览测试知识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BrowseTESTKNOWLEDGE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

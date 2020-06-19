@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <State Name="Start" ImagePath="~/Platform/Image/Console/GraphEditor/StartNode.png" Type="Workflow" />
+  <State Name="Stop" ImagePath="~/Platform/Image/Console/GraphEditor/EndNode.png" Type="Workflow" />
+  <State Name="Save" ImagePath="~/Platform/Image/Model/runobject.png" Type="Workflow" />
+</root>

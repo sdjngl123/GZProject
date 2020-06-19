@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<AppSet Key="EnableWebPageCache" Value="false" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_01" Value="CACHE MANIFEST" ToClient="true" Description="" />
+  <AppSet Key="WebPageCache_02" Value="Default.aspx" ToClient="true" Description="" />
+  <AppSet Key="WebPageCache_03" Value="MobileBase/Image/default.png" ToClient="true" Description="" />
+  <AppSet Key="WebPageCache_04" Value="MobileBase/Themes/images/ajax-loader.gif" ToClient="true" Description="" />
+  <AppSet Key="WebPageCache_05" Value="MobileBase/MobileBaseHandler.ashx?type=jsgroup&amp;group=base&amp;t=[WebAppVersion]" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_06" Value="MobileBase/MobileBaseHandler.ashx?type=cssgroup&amp;group=base&amp;t=[WebAppVersion]" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_07" Value="MobileBase/MobileBaseHandler.ashx?type=jsgroup&amp;group=Mobile&amp;t=[WebAppVersion]" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_08" Value="MobileBase/MobileBaseHandler.ashx?type=cssgroup&amp;group=Mobile&amp;t=[WebAppVersion]" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_09" Value="MobileBase/Js/echarts-all.js?t=[WebAppVersion]" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_10" Value="NETWORK:" ToClient="false" Description="" />
+  <AppSet Key="WebPageCache_11" Value="*" ToClient="false" Description="" />-->
+</root>

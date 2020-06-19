@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ListQuery Name="ObjTypeInfoColListQuery" ListViewName="" QueryPageName="" AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="Hoteam.InforCenter.WebStudioViewService.GetRowTitleColumnQuery" OnePageDataService="Hoteam.InforCenter.WebStudioViewService.GetRowDataColumnQuery" ReturnValueType="" ChangeTabLoadList="false" CommitJS="" ReturnGridData="true" IsMainConfig="false" />
+</root>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OBJECTPERMISSIONModel" IsWeb="true">
+    <Label Name="OBJECTPERMISSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTPERMISSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">对象授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object No.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTIDCaption">
+      <LocalizedLabel LanguageRef="zhs">授权对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization object number</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONEXPIREVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">截止有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deadline</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONEXPIREVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">截止有效期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deadline</LocalizedLabel>
+    </Label>
+    <Label Name="USEOBJECTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">使用对象ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The ID of the using Object </LocalizedLabel>
+    </Label>
+    <Label Name="USEOBJECTIDCaption">
+      <LocalizedLabel LanguageRef="zhs">使用该对象授权的对象ID或者对象标识ID，如流程中的对象权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Use the object ID or object identification ID granted by this object, such as object permissions in the process</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTPERMISSIONMODEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象授权方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization method</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTPERMISSIONMODECaption">
+      <LocalizedLabel LanguageRef="zhs">对象授权方式,如手动设置,流程中设置等</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization mode, such as manual setting, setting in flow, etc.</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTIDSHeader">
+      <LocalizedLabel LanguageRef="zhs">对象ID集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization object number</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTIDSCaption">
+      <LocalizedLabel LanguageRef="zhs">对象ID集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization object number</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

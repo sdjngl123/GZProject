@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="DATASETTYPE-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="FILEEXTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">文件后缀</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File suffix</LocalizedLabel>
+    </Label>
+    <Label Name="FILEEXTENTRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWTOOLHeader">
+      <LocalizedLabel LanguageRef="zhs">浏览器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Browser</LocalizedLabel>
+    </Label>
+    <Label Name="VIEWTOOLRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ICONRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DOWNFILTERHeader">
+      <LocalizedLabel LanguageRef="zhs">下载关联文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Download associated file</LocalizedLabel>
+    </Label>
+    <Label Name="DOWNFILTERRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="DATASETTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑图文档类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditFigure document type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

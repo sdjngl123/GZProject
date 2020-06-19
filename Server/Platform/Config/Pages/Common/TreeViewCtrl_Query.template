@@ -1,0 +1,24 @@
+﻿<div style="height:100%;width:100%;position:relative;background:#f5f5f5;border-bottom: 1px solid #e1e1e1;" id="treeviewQueryTemplate">
+    <div class="treeview-query-container">
+      <div class="treeview-query-search">
+        <div class="treeview-query-search-input">
+          <input type="text" class="form-control"/>
+          <span class="hoteam-search-placeholder"></span>
+          <div class="treeview-query-search-input-a">
+            <div class="treeview-query-split" style="right: 49px;"></div>
+            <div class="treeview-query-img" style="right: 25px;">
+              <span class="basesprite b-angle-down" style="margin-top:3px;"></span>
+            </div>
+            <div class="treeview-query-split"></div>
+            <div class="treeview-query-img">
+              <span class="basesprite b-gray-search" style="margin-top:3px;"></span>
+            </div>
+          </div>
+        </div>
+        <div class="treeview-query-more">
+          <span class="basesprite b-gray-prev" style="margin-top:4px;"></span>
+          <span class="basesprite b-gray-next" style="margin-top:4px;"></span>
+        </div>
+      </div>
+    </div>
+</div>

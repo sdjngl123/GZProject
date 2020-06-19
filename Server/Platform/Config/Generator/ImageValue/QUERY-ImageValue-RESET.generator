@@ -1,0 +1,7 @@
+﻿
+{
+var o = ctrlEvent.o.OtherControl('[FILTERNAME]_Value');
+if(o.id!=''){
+o.GetSrc('');
+}
+}

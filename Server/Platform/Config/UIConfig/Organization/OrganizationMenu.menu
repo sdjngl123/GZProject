@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="TreeOrganizeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="ImportOrganization" MultiMenu="false" ModuleName="Platform" LabelName="ImportOrganization.ImportOrganization" Image="p_import" ParentWebAtionName="Import" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="" SelectMode="NULL" Action="CREATE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_ImportOrganization" IsLoopExec="false" />
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Import" OperateLogClassify="ThreeRole">
+
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ImportOrganizationGroup" MultiMenu="false" ModuleName="Platform" LabelName="ImportOrganization.ImportOrganizationGroup" Image="p_import" ParentWebAtionName="Import" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="" SelectMode="NULL" Action="CREATE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_ImportOrganization" IsLoopExec="false">
+        <Para Name="ObjectType" Value="GROUP" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Import" OperateLogClassify="ThreeRole">
+
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ImportOrganizationRole" MultiMenu="false" ModuleName="Platform" LabelName="ImportOrganization.ImportOrganizationRole" Image="p_import" ParentWebAtionName="Import" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="" SelectMode="NULL" Action="CREATE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_ImportOrganization" IsLoopExec="false">
+        <Para Name="ObjectType" Value="ROLE" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Import" OperateLogClassify="ThreeRole">
+
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ImportOrganizationPerson" MultiMenu="false" ModuleName="Platform" LabelName="ImportOrganization.ImportOrganizationPerson" Image="p_import" ParentWebAtionName="Import" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="" SelectMode="NULL" Action="CREATE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_ImportOrganization" IsLoopExec="false">
+        <Para Name="ObjectType" Value="PERSON" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Import" OperateLogClassify="ThreeRole">
+
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="ImportOrganizationUser" MultiMenu="false" ModuleName="Platform" LabelName="ImportOrganization.ImportOrganizationUser" Image="p_import" ParentWebAtionName="Import" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="" SelectMode="NULL" Action="CREATE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_ImportOrganization" IsLoopExec="false">
+        <Para Name="ObjectType" Value="USER" />
+      </JSMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateType="Import" OperateLogClassify="ThreeRole">
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="DownloadOrganization" MultiMenu="false" ModuleName="Platform" LabelName="ImportOrganization.DownloadTemplate" Image="p_download" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="" SelectMode="NULL" Action="DOWNLOAD" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_DownloadOrganizationTemplate" IsLoopExec="false" />
+    </WebAction>
+    <WebAction Name="Import" MultiMenu="false" ModuleName="Platform" LabelName="Import" Image="p_import" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+  </MenuItem>
+  <MenuItem Name="TreeCompanyMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateGroup" MultiMenu="false" ModuleName="Platform" LabelName="CreateGroup" Image="p_add" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="GROUPINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="GroupGuide" />
+        <Para Name="ObjectType" Value="GROUPINFO" />
+        <Para Name="Title" Value="Organization.GroupGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PENAME" Value="[Tree_Current_Tag_ENAME]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="TreeGroupMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateGroup" MultiMenu="false" ModuleName="Platform" LabelName="CreateGroup" Image="p_add" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="CREATE" ActionType="GROUPINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="GroupGuide" />
+        <Para Name="ObjectType" Value="GROUPINFO" />
+        <Para Name="Title" Value="Organization.GroupGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PENAME" Value="[Tree_Current_Tag_ENAME]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="CreateRole" MultiMenu="false" ModuleName="Platform" LabelName="CreateRole" Image="p_add" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="ROLEINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="RoleGuide" />
+        <Para Name="ObjectType" Value="ROLEINFO" />
+        <Para Name="Title" Value="Organization.RoleGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+        <Para Name="PromptContent" Value="OrganizationCommon.RoleNameExist" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="RemoveGroup" MultiMenu="false" ModuleName="Platform" LabelName="RemoveGroup" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshParentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLinkCheck" IsLoopExec="false">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+        <Para Name="Text" Value="OrganizationCommon.GroupExistGroup" />
+        <Para Name="PEID" Value="[Tree_Parent_value1]" />
+        <Para Name="ENAME" Value="[Tree_Current_text]" />
+        <Para Name="GROUPID" Value="[Tree_Current_Tag_GROUPID]" />
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[Tree_Current_value2]" />
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="Platform" LabelName="MoveUp" Image="p_moveup" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_MoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="UP" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="Platform" LabelName="MoveDown" Image="p_movedown" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_MoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="DOWN" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveToOther" MultiMenu="false" ModuleName="Platform" LabelName="MoveToOther" Image="p_movesuperior" ParentWebAtionName="" RefreshType="UPDATEROOTSTRUCTURE" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_MoveToOther" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="TreeRoleMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateUser" MultiMenu="false" ModuleName="Platform" LabelName="CreateUser" Image="p_add" ParentWebAtionName="" CtrlType="Button" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="USERINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="UserGuide" />
+        <Para Name="ObjectType" Value="USERINFO" />
+        <Para Name="Title" Value="Organization.UserGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="RemoveRole" MultiMenu="false" ModuleName="Platform" LabelName="RemoveRole" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshParentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLinkCheck" IsLoopExec="false">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+        <Para Name="Text" Value="OrganizationCommon.RoleExistUser" />
+        <Para Name="PEID" Value="[Tree_Parent_value1]" />
+        <Para Name="ENAME" Value="[Tree_Current_text]" />
+        <Para Name="GROUPID" Value="[Tree_Current_Tag_GROUPID]" />
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[Tree_Current_value2]" />
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="Platform" LabelName="MoveUp" Image="p_moveup" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_MoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="UP" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="Platform" LabelName="MoveDown" Image="p_movedown" ParentWebAtionName="" RefreshType="UPDATEPARENTNODE" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Platform_Organization_MoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="DOWN" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="TreeUserMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Platform" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="RemoveUser" MultiMenu="false" ModuleName="Platform" LabelName="RemoveUser" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshParentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[Tree_Current_value1]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[Tree_Current_value2]" />
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="OrganizeCompanyMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateCompany" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="创建一个新对象" IsMainConfig="false">
+      <ActionChecker SelectID="" SelectMode="NULL" Action="CREATE" ActionType="COMPANY" SelectType="" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="CompanyGuide" />
+        <Para Name="ObjectType" Value="COMPANY" />
+        <Para Name="Title" Value="Organization.CompanyGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="" ParentPara="initData" />
+
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="EditCompany" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="编辑选中对象" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" SelectType="" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="RemoveGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Remove" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[List_LID]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLinkCheck" IsLoopExec="false">
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="DenyText" Value="OrganizationCommon.CompanyExistGroup" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" />
+        <Para Name="ENAME" Value="[List_ENAME]" />
+        <Para Name="GROUPID" Value="[List_GROUPID]" />
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_LID]" />
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="OrganizeGroupMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="NULL" Action="CREATE" ActionType="GROUPINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="GroupGuide" />
+        <Para Name="ObjectType" Value="GROUPINFO" />
+        <Para Name="Title" Value="Organization.GroupGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PENAME" Value="[Tree_Current_Tag_ENAME]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="EditGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="RemoveGroup" MultiMenu="false" ModuleName="Platform" LabelName="Common.Remove" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[List_LID]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLinkCheck" IsLoopExec="false">
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="Text" Value="OrganizationCommon.GroupExistGroup" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" />
+        <Para Name="ENAME" Value="[List_ENAME]" />
+        <Para Name="GROUPID" Value="[List_GROUPID]" />
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_LID]" />
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="WorkSpace" LabelName="MoveUp" Image="p_moveup" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4080" TemplateDescription=" " IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_Tag_EID]" SelectMode="SINGLE" Action="EDITSTRUCT" ActionType="AUTO" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="para" />
+        <Para Name="ObjectID" Value="[List_LID]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_Tag_EID]" ParentPara="para" />
+        <Para Name="IsUp" Value="true" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_Tag_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="MoveUp" OperateLogClassify="ThreeRole">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="WorkSpace" LabelName="MoveDown" Image="p_movedown" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4090" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_Tag_EID]" SelectMode="SINGLE" Action="EDITSTRUCT" ActionType="AUTO" SelectType="" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="para" />
+        <Para Name="ObjectID" Value="[List_LID]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_Tag_EID]" ParentPara="para" />
+        <Para Name="IsUp" Value="false" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_Tag_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="false" OperateType="MoveDown" OperateLogClassify="ThreeRole">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="OrganizeRoleMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateRole" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="ROLEINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="RoleGuide" />
+        <Para Name="ObjectType" Value="ROLEINFO" />
+        <Para Name="Title" Value="Organization.RoleGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+        <Para Name="PromptContent" Value="OrganizationCommon.RoleNameExist" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="EditRole" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="PromptContent" Value="OrganizationCommon.RoleNameExist" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="RemoveRole" MultiMenu="false" ModuleName="Platform" LabelName="Common.Remove" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[List_LID]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLinkCheck" IsLoopExec="false">
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="Text" Value="OrganizationCommon.RoleExistUser" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" />
+        <Para Name="ENAME" Value="[List_ENAME]" />
+        <Para Name="GROUPID" Value="[List_GROUPID]" />
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_LID]" />
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="WorkSpace" LabelName="MoveUp" Image="p_moveup" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4080" TemplateDescription=" " IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_Tag_EID]" SelectMode="SINGLE" Action="EDITSTRUCT" ActionType="AUTO" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="para" />
+        <Para Name="ObjectID" Value="[List_LID]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_Tag_EID]" ParentPara="para" />
+        <Para Name="IsUp" Value="true" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_Tag_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="MoveUp" OperateLogClassify="ThreeRole">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="WorkSpace" LabelName="MoveDown" Image="p_movedown" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="true" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4090" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_Tag_EID]" SelectMode="SINGLE" Action="EDITSTRUCT" ActionType="AUTO" SelectType="" />
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="" ActionType="" />
+      <BusinessMethod Name="InforCenter.Common.ObjectService.MoveObject" SelectID="[Tree_Current_Tag_EID]" IsWCFService="true">
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="para" />
+        <Para Name="ObjectID" Value="[List_LID]" ParentPara="para" />
+        <Para Name="PEID" Value="[Tree_Current_Tag_EID]" ParentPara="para" />
+        <Para Name="IsUp" Value="false" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger Name="WebMessageAndLogger" SelectID="[Tree_Current_Tag_EID]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="false" OperateType="MoveDown" OperateLogClassify="ThreeRole">
+        <Para Name="CEID" Value="[List_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="OrganizeUserMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CreateUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" CtrlType="Button" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" LoadMenuCtrlData="" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="NULL" Action="CREATE" ActionType="USERINFO" />
+      <WebMethod SelectID="" PageName="GuideManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="UserGuide" />
+        <Para Name="ObjectType" Value="USERINFO" />
+        <Para Name="Title" Value="Organization.UserGuid" />
+        <Para Name="Size" Value="850*550" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+        <Para Name="LinkTypeName" Value="ORGANIZE" ParentPara="addLink" />
+        <Para Name="PEID" Value="[Tree_Current_value1]" ParentPara="addLink" />
+        <Para Name="PGROUPID" Value="[Tree_Current_Tag_GROUPID]" ParentPara="addLink" />
+        <Para Name="GROUPID" Value="[Tree_Parent_value1]" ParentPara="initData" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="EditUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Edit" Image="p_edit" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="Size" Value="500*350" />
+      </WebMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+      <WebMessageAndLogger SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" OperateLogClassify="ThreeRole"/>
+    </WebAction>
+    <WebAction Name="RemoveUser" MultiMenu="false" ModuleName="Platform" LabelName="Common.Remove" Image="p_remove" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker Name="" SelectID="[List_LID]" SelectMode="MULTI" Action="REMOVE" ActionType="AUTO" SelectType="" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Organization_RemoveOrganizeLink" IsLoopExec="false">
+        <Para Name="SelectID" Value="[List_LID]" />
+        <Para Name="CEID" Value="[List_EID]" />
+        <Para Name="TreeGuid" Value="[TreeGuid]" />
+      </JSMethod>
+      <BusinessMethod Name="InforCenter.Common.CacheService.RefreshCache" IsWCFService="true">
+        <Para Name="CacheName" Value="Organization" ParentPara="para" />
+      </BusinessMethod>
+
+    </WebAction>
+  </MenuItem>
+</root>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListQuery Name="ReportObjectFileListQuery" ListViewName="ReportObjectFileListView"  QueryPageName="" PageLinksName=""
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="Hoteam.InforCenter.ReportService.GetReportFileTitle" OnePageDataService="Hoteam.InforCenter.ReportService.GetReportFileList" ReturnValueType="USERINFO" ActionName="Create"
+             KeyFilter="FileName" ReturnGridData="true">
+  </ListQuery>
+  
+</root>

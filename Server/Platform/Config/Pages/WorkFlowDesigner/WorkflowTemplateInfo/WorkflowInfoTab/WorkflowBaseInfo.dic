@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowBaseInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">模板类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template type</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowSettingExtend">
+      <LocalizedLabel LanguageRef="zhs">扩展设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended Settings</LocalizedLabel>
+    </Label>
+    <Label Name="Name">
+      <LocalizedLabel LanguageRef="zhs">模板名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">template name</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowManager">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="IsRun">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeActor">
+      <LocalizedLabel LanguageRef="zhs">修改执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify executor</LocalizedLabel>
+    </Label>
+    <Label Name="Manager">
+      <LocalizedLabel LanguageRef="zhs">管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Administrator</LocalizedLabel>
+    </Label>
+    <Label Name="Start">
+      <LocalizedLabel LanguageRef="zhs">发起人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Originator</LocalizedLabel>
+    </Label>
+    <Label Name="Actor">
+      <LocalizedLabel LanguageRef="zhs">执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executor</LocalizedLabel>
+    </Label>
+    <Label Name="Description">
+      <LocalizedLabel LanguageRef="zhs">模板描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Template description</LocalizedLabel>
+    </Label>
+    <Label Name="Model">
+      <LocalizedLabel LanguageRef="zhs">相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relevant Model</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeNodeActor">
+      <LocalizedLabel LanguageRef="zhs">更改执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change executor</LocalizedLabel>
+    </Label>
+    <Label Name="Node">
+      <LocalizedLabel LanguageRef="zhs">节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node</LocalizedLabel>
+    </Label>
+    <Label Name="AllowChange">
+      <LocalizedLabel LanguageRef="zhs">允许修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow Modification</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateNull">
+      <LocalizedLabel LanguageRef="zhs">验证为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify null</LocalizedLabel>
+    </Label>
+    <Label Name="AllocateNull">
+      <LocalizedLabel LanguageRef="zhs">验证手动指定为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify that manual assignment is null</LocalizedLabel>
+    </Label>
+    <Label Name="Organization">
+      <LocalizedLabel LanguageRef="zhs">相关组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Related organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeActorError">
+      <LocalizedLabel LanguageRef="zhs">如果更改执行人列表【允许修改】列或者【验证手动指定为空】列勾选，则修改执行人中【发起人】必须选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If you change the [Allow to modify] column of the executive's list or select the [Manual verification designated as null], then the [Promoter] in the modify executor must be selected</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

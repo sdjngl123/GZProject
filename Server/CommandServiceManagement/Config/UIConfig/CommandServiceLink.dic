@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="ConversionStatistics">
+      <LocalizedLabel LanguageRef="zhs">实时转换统计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConversionStatistics</LocalizedLabel>
+    </Label>
+    <Label Name="ConnectionStatus">
+      <LocalizedLabel LanguageRef="zhs">转换节点状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group attribute</LocalizedLabel>
+    </Label>
+    <Label Name="ConversionStatus">
+      <LocalizedLabel LanguageRef="zhs">转换状态列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ConversionStatus</LocalizedLabel>
+    </Label>
+    <Label Name="ServiceLog">
+      <LocalizedLabel LanguageRef="zhs">转换服务日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ServiceLog</LocalizedLabel>
+    </Label>
+    <Label Name="ProgramLog">
+      <LocalizedLabel LanguageRef="zhs">转换程序日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ProgramLog</LocalizedLabel>
+    </Label>
+    <Label Name="ConversionCountProgramLog">
+      <LocalizedLabel LanguageRef="zhs">转换程序日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ProgramLog</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

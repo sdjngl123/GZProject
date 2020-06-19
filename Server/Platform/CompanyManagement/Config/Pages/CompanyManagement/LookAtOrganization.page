@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="LookAtOrganization">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_CompanyManagement_LookAtOrganizationOnCreate(pageEvent);"/>
+  </PageHandlers>
+  <Settings Key="title" Value="LookAtOrganization.Title"/>
+  <PageControls>
+    <!--一层-->
+    <PageControl ControlID="TreeCommonQuery_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="6px 6px 0px 6px"/>
+      <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      <Settings Key="type" Value="vertical"/>
+
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeViewMainPage_Container"/>
+        <Settings Key="backgroundColor" Value="#fff"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Btn_Container"/>
+      </Settings>
+    </PageControl>
+    
+    <!--二层-->
+    <PageControl ControlID="TreeViewMainPage_Container" ParentID="TreeCommonQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeViewPageContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      
+    </PageControl>
+
+    <PageControl ControlID="TreeViewPageContainer" ParentID="TreeViewMainPage_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item0">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item6">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeListContainer"/>
+      </Settings>
+     <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+
+
+
+    <PageControl ControlID="TreeListContainer" ParentID="TreeCommonQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="TreeViewPage"/>
+      </Settings>     
+    </PageControl>
+    <PageControl ControlID="TreeViewPage" ParentID="TreeListContainer" TypeName="PageContainer">
+      <Settings Key="pageName" Value="TreeViewCtrl"/>
+    </PageControl>
+
+
+    <PageControl ControlID="Btn_Container" ParentID="TreeCommonQuery_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnClose"/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value=""/>
+        <Settings Key="backgroundColor" Value="#f5f5f5"/>
+      </Settings>
+    </PageControl>   
+    <PageControl ControlID="btnClose" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="LookAtOrganization.Close" />
+    </PageControl>
+  </PageControls>
+</root>

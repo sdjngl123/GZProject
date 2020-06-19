@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileConfirm"
+         JsFile ="~/MobileBase/Config/Page/MobileConfirm/MobileConfirm.js" 
+         LayoutFile="~/MobileBase/Config/Page/MobileConfirm/MobileConfirm.mlayout" 
+         DictionaryContent="MobileConfirm">
+      <PageHandler HandlerName ="OnCreate" Script="Hoteam_InforCenter_MobileConfirm_Init(pageEvent);"/>
+  </MPage>
+</root>

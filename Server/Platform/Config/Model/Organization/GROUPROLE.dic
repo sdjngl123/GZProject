@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="GROUPROLEModel" IsWeb="true">
+    <Label Name="GROUPROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">组角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group Role</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPROLECaption">
+      <LocalizedLabel LanguageRef="zhs">组角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group Role</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">组编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group No.</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">组编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group No.</LocalizedLabel>
+    </Label>
+    <Label Name="ROLEEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">角色编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role No.</LocalizedLabel>
+    </Label>
+    <Label Name="ROLEEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">角色编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role No.</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

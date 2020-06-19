@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Login" IsWeb="true">
+    <Label Name="LoginType">
+      <LocalizedLabel LanguageRef="zhs">登录类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoginType</LocalizedLabel>
+    </Label>
+    <Label Name="NeedValidateUserAndPassword">
+      <LocalizedLabel LanguageRef="zhs">验证成功，但还需在登录页输入用户名和密码进行登录验证！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Validate success</LocalizedLabel>
+    </Label>
+    <Label Name="ValidateSuccessNeedValidateNext">
+      <LocalizedLabel LanguageRef="zhs">验证成功，但还需要进行“[LoginType]”方式进行验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Validate success</LocalizedLabel>
+    </Label>
+    <Label Name="AccessTokenError">
+      <LocalizedLabel LanguageRef="zhs">AccessToken验证失败，不允许登录！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AccessTokenError</LocalizedLabel>
+    </Label>
+    <Label Name="IsFirstLoginChangePassword">
+      <LocalizedLabel LanguageRef="zhs">首次登录系统，需重置密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">First Login system，must change password</LocalizedLabel>
+    </Label>
+    <Label Name="ExprieChangePassword">
+      <LocalizedLabel LanguageRef="zhs">密码已经到期，需重置密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">password have expried，must change password</LocalizedLabel>
+    </Label>
+    <Label Name="IsNextLoginChangePassword">
+      <LocalizedLabel LanguageRef="zhs">已设置为强制下次登录修改密码，请重置密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IsNextLoginChangePassword</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordLengthError">
+      <LocalizedLabel LanguageRef="zhs">密码最短长度为[Length]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PasswordLengthError</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordCombinError">
+      <LocalizedLabel LanguageRef="zhs">密码组合为[Text]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PasswordCombinError</LocalizedLabel>
+    </Label>
+    <Label Name="IPAddressLimitError">
+      <LocalizedLabel LanguageRef="zhs">当前IP地址:[IPADDRESS]未在设置的范围内，不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IPAddressLimitError</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsManaulLock">
+      <LocalizedLabel LanguageRef="zhs">账号已经被管理员手动锁定，不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsManaulLock</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsExceptionLock">
+      <LocalizedLabel LanguageRef="zhs">账号由于异常登录已经被锁定，不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsExceptionLock</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsExceptionLockMinutes">
+      <LocalizedLabel LanguageRef="zhs">账号由于异常登录已经被锁定，不允许登录，锁定时间[LockTime]分钟</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsExceptionLock</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsNotValidity">
+      <LocalizedLabel LanguageRef="zhs">账号由于未在指定的有效期内（[StartDate]~[EndDate]），不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsNotValidity</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsNotValidityNoLimit">
+      <LocalizedLabel LanguageRef="zhs">不限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NoLimit</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsNotAllowWeek">
+      <LocalizedLabel LanguageRef="zhs">账号由于未在指定的星期内（[Week]允许登录），不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsNotAllowWeek</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsNotAllowTime">
+      <LocalizedLabel LanguageRef="zhs">账号由于未在指定的时间段内（[Days]允许登录），不允许登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsNotAllowTime</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsLock">
+      <LocalizedLabel LanguageRef="zhs">用户账号已经被手动锁定，不需要再次锁定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsLock</LocalizedLabel>
+    </Label>
+    <Label Name="UserIsUnLock">
+      <LocalizedLabel LanguageRef="zhs">用户账号已经解锁，不需要再次解锁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserIsUnLock</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordIsWrong">
+      <LocalizedLabel LanguageRef="zhs">输入的密码错误！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">password is wrong!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

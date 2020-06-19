@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Database Name="SQLSERVER" DatabaseType="SQLSERVER" ConnectionString="server=DESKTOP-V9O16GP;Trusted_Connection=false;database=gactt;uid=sa;pwd=sa123;MultipleActiveResultSets=true;Max Pool Size=1000;" Timeout="0" Enable="true" OnlyQuery="false" WebStudio="true" />
+</root>

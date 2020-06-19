@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="QueryStructureTreeMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="MoveUp" MultiMenu="false" ModuleName="QueryMachine" LabelName="MoveUp" Image="p_moveup" RefreshType="RefreshParentStruct" RefreshedSelect="true" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_Value1]" SelectMode="MULTI" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_InforCenter_QueryMachine_QueryStructureMoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="UP" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="MoveDown" MultiMenu="false" ModuleName="QueryMachine" LabelName="MoveDown" Image="p_movedown" RefreshType="RefreshParentStruct" RefreshedSelect="true" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_Value1]" SelectMode="MULTI" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_InforCenter_QueryMachine_QueryStructureMoveForTree" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TREEID]" />
+        <Para Name="MoveType" Value="DOWN" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+</root>

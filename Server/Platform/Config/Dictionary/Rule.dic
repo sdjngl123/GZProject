@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Rule" IsWeb="true">
+    <Label Name="Allow">
+      <LocalizedLabel LanguageRef="zhs">允许</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow</LocalizedLabel>
+    </Label>
+    <Label Name="Deny">
+      <LocalizedLabel LanguageRef="zhs">禁止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prohibition</LocalizedLabel>
+    </Label>
+    <Label Name="NotFound">
+      <LocalizedLabel LanguageRef="zhs">未设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not settings</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendToParent">
+      <LocalizedLabel LanguageRef="zhs">包含所有父级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Include all parent levels</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendToChildren">
+      <LocalizedLabel LanguageRef="zhs">包含所有子级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Include all child levels</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendToParentAndChildren">
+      <LocalizedLabel LanguageRef="zhs">包含父级和子级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Include parent and child levels</LocalizedLabel>
+    </Label>
+    <Label Name="NoPermission">
+      <LocalizedLabel LanguageRef="zhs">您没有[OBJECTTYPE]的[ACTION]权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You don't have the [ACTION] privileges granted to [OBJECTTYPE]!</LocalizedLabel>
+    </Label>
+    <Label Name="LinkNoPermission">
+      <LocalizedLabel LanguageRef="zhs">您对[PARENTOBJECT]没有[ACTION][CHILDOBJECT]的关系权限！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You don't have the [ACTION] [CHILDOBJECT]relationship permission to invoke [PARENTOBJECT].</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentType">
+      <LocalizedLabel LanguageRef="zhs">当前类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Current type</LocalizedLabel>
+    </Label>
+    <Label Name="Repetition">
+      <LocalizedLabel LanguageRef="zhs">当前授权类型对应的授权对象已经存在，请勿重复添加！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The authorization object corresponding to the current authorization type already exists. Do not repeat the addition!</LocalizedLabel>
+    </Label>
+    <Label Name="AuthorizeLog">
+      <LocalizedLabel LanguageRef="zhs">[USER] 进行了对象授权，操作后对象授权权限为 [PERMISSIONACTOR]：[PERMISSIONACTION]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[USER] has perfrmed the object authorization, and the authorization permission of the object after operation is [PERMISSIONACTOR]: [PERMISSIONACTION]</LocalizedLabel>
+    </Label>
+    <Label Name="MultiLevelAuthorizeLog">
+      <LocalizedLabel LanguageRef="zhs">[USER] 在对[OBJECTNAME]多级授权时对其进行了对象授权，操作后对象授权权限为 [PERMISSIONACTOR]：[PERMISSIONACTION]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the [USER] perfrmes the multi-level authorization, the object authorization has carried out r, and the authorization permission of the object after operation is: [PERMISSIONACTOR]: [PERMISSIONACTION]</LocalizedLabel>
+    </Label>
+    <Label Name="OtherCompanyData">
+      <LocalizedLabel LanguageRef="zhs">不能操作其他公司的数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data from other companies cannot be operated!</LocalizedLabel>
+    </Label>
+    <Label Name="HighSecurity">
+      <LocalizedLabel LanguageRef="zhs">不能操作高密级数据！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">the High Security Data cannot be operated!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

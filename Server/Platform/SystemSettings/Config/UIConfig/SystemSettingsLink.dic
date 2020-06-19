@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="SystemSettingsLink">
+      <LocalizedLabel LanguageRef="zhs">详细信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed Info</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSettingsLink">
+      <LocalizedLabel LanguageRef="zhs">详细信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed Info</LocalizedLabel>
+    </Label>
+    <Label Name="SystemSettingsNullLink">
+      <LocalizedLabel LanguageRef="zhs">详细信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed Info</LocalizedLabel>
+    </Label>
+    <Label Name="SystemSettingsTab">
+      <LocalizedLabel LanguageRef="zhs">公司设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System Settings</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSettingsTab">
+      <LocalizedLabel LanguageRef="zhs">个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personal settings</LocalizedLabel>
+    </Label>
+    <Label Name="SystemSettingsTab">
+      <LocalizedLabel LanguageRef="zhs">公司设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System Settings</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSettingsTab">
+      <LocalizedLabel LanguageRef="zhs">个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personal settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

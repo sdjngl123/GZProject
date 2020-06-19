@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="DeveloperControl" IsWeb="true">
+    <Label Name="ToolBox">
+      <LocalizedLabel LanguageRef="zhs">工具箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ToolBox</LocalizedLabel>
+    </Label>
+    <Label Name="Common">
+      <LocalizedLabel LanguageRef="zhs">公共</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common</LocalizedLabel>
+    </Label>
+    <Label Name="Container">
+      <LocalizedLabel LanguageRef="zhs">容器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Container</LocalizedLabel>
+    </Label>
+    <Label Name="Data">
+      <LocalizedLabel LanguageRef="zhs">数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data</LocalizedLabel>
+    </Label>
+    <Label Name="LayoutContainer">
+      <LocalizedLabel LanguageRef="zhs">布局容器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LayoutContainer</LocalizedLabel>
+    </Label>
+    <Label Name="HLabel">
+      <LocalizedLabel LanguageRef="zhs">文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HLabel</LocalizedLabel>
+    </Label>
+    <Label Name="HTextBox">
+      <LocalizedLabel LanguageRef="zhs">文本框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HTextBox</LocalizedLabel>
+    </Label>
+    <Label Name="HButton">
+      <LocalizedLabel LanguageRef="zhs">按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HButton</LocalizedLabel>
+    </Label>
+    <Label Name="HTextValue">
+      <LocalizedLabel LanguageRef="zhs">内容文本框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HTextValue</LocalizedLabel>
+    </Label>
+    <Label Name="HSpace">
+      <LocalizedLabel LanguageRef="zhs">间距</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HSpace</LocalizedLabel>
+    </Label>
+    <Label Name="HDateTime">
+      <LocalizedLabel LanguageRef="zhs">时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HDateTime</LocalizedLabel>
+    </Label>
+    <Label Name="HDropDown">
+      <LocalizedLabel LanguageRef="zhs">下拉列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HDropDown</LocalizedLabel>
+    </Label>
+    <Label Name="HCheckBox">
+      <LocalizedLabel LanguageRef="zhs">复选框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HCheckBox</LocalizedLabel>
+    </Label>
+    <Label Name="PageContainer">
+      <LocalizedLabel LanguageRef="zhs">页面容器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PageContainer</LocalizedLabel>
+    </Label>
+    <Label Name="HCheckboxPad">
+      <LocalizedLabel LanguageRef="zhs">复选框列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HCheckboxPad</LocalizedLabel>
+    </Label>
+    <Label Name="HDrag">
+      <LocalizedLabel LanguageRef="zhs">分隔条</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HDrag</LocalizedLabel>
+    </Label>
+    <Label Name="HGrid">
+      <LocalizedLabel LanguageRef="zhs">列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HGrid</LocalizedLabel>
+    </Label>
+    <Label Name="HTabs">
+      <LocalizedLabel LanguageRef="zhs">横向Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HTabs</LocalizedLabel>
+    </Label>
+    <Label Name="HTree">
+      <LocalizedLabel LanguageRef="zhs">树</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HTree</LocalizedLabel>
+    </Label>
+    <Label Name="HEditGrid">
+      <LocalizedLabel LanguageRef="zhs">编辑列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HEditGrid</LocalizedLabel>
+    </Label>
+    <Label Name="HEditTreeGrid">
+      <LocalizedLabel LanguageRef="zhs">编辑树列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HEditTreeGrid</LocalizedLabel>
+    </Label>
+    <Label Name="AutoCompleteCombox">
+      <LocalizedLabel LanguageRef="zhs">自动筛选下拉列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AutoCompleteCombox</LocalizedLabel>
+    </Label>
+    <Label Name="Image">
+      <LocalizedLabel LanguageRef="zhs">图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Image</LocalizedLabel>
+    </Label>
+    <Label Name="HRadioList">
+      <LocalizedLabel LanguageRef="zhs">单选列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HRadioList</LocalizedLabel>
+    </Label>
+    <Label Name="HMultiSelectDropDown">
+      <LocalizedLabel LanguageRef="zhs">复选框下拉列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HMultiSelectDropDown</LocalizedLabel>
+    </Label>
+    <Label Name="HBreadcrumbNavigation">
+      <LocalizedLabel LanguageRef="zhs">面包屑导航</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HBreadcrumbNavigation</LocalizedLabel>
+    </Label>
+    <Label Name="HCalendar">
+      <LocalizedLabel LanguageRef="zhs">日历</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HCalendar</LocalizedLabel>
+    </Label>
+    <Label Name="HColorPicker">
+      <LocalizedLabel LanguageRef="zhs">颜色选择器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HColorPicker</LocalizedLabel>
+    </Label>
+    <Label Name="HCustomerContainer">
+      <LocalizedLabel LanguageRef="zhs">Html模板容器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HCustomerContainer</LocalizedLabel>
+    </Label>
+    <Label Name="HDropSearch">
+      <LocalizedLabel LanguageRef="zhs">下拉搜索列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HDropSearch</LocalizedLabel>
+    </Label>
+    <Label Name="HtGantt">
+      <LocalizedLabel LanguageRef="zhs">甘特图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HtGantt</LocalizedLabel>
+    </Label>
+    <Label Name="HSearch">
+      <LocalizedLabel LanguageRef="zhs">搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HSearch</LocalizedLabel>
+    </Label>
+    <Label Name="HHtmlEdit">
+      <LocalizedLabel LanguageRef="zhs">页面内容编辑器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HHtmlEdit</LocalizedLabel>
+    </Label>
+    <Label Name="HIframe">
+      <LocalizedLabel LanguageRef="zhs">页面框架</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HIframe</LocalizedLabel>
+    </Label>
+    <Label Name="HEditButton">
+      <LocalizedLabel LanguageRef="zhs">编辑按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HEditButton</LocalizedLabel>
+    </Label>
+    <Label Name="HVerticalTabs">
+      <LocalizedLabel LanguageRef="zhs">纵向Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HVerticalTabs</LocalizedLabel>
+    </Label>
+    <Label Name="HSideTabs">
+      <LocalizedLabel LanguageRef="zhs">右侧Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HSideTabs</LocalizedLabel>
+    </Label>
+    <Label Name="HMenuList">
+      <LocalizedLabel LanguageRef="zhs">菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HMenuList</LocalizedLabel>
+    </Label>
+    <Label Name="HRightMenu">
+      <LocalizedLabel LanguageRef="zhs">右键菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">HRightMenu</LocalizedLabel>
+    </Label>
+    <Label Name="TabItem">
+      <LocalizedLabel LanguageRef="zhs">Tab页项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TabItem</LocalizedLabel>
+    </Label>
+    <Label Name="HMenuItem">
+      <LocalizedLabel LanguageRef="zhs">菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MenuItem</LocalizedLabel>
+    </Label>
+    <Label Name="HMenuItem">
+      <LocalizedLabel LanguageRef="zhs">菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MenuItem</LocalizedLabel>
+    </Label>
+    <Label Name="HForm">
+      <LocalizedLabel LanguageRef="zhs">设计器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form</LocalizedLabel>
+    </Label>
+    <Label Name="BaseFlowPanel">
+      <LocalizedLabel LanguageRef="zhs">底层布局控件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BaseFlowPanel</LocalizedLabel>
+    </Label>
+    <Label Name="CustomCategory">
+      <LocalizedLabel LanguageRef="zhs">自定义</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Custom</LocalizedLabel>
+    </Label>
+    <Label Name="SizeCategory">
+      <LocalizedLabel LanguageRef="zhs">尺寸</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Size</LocalizedLabel>
+    </Label>
+    <Label Name="ModelCategory">
+      <LocalizedLabel LanguageRef="zhs">模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="EventCategory">
+      <LocalizedLabel LanguageRef="zhs">事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Event</LocalizedLabel>
+    </Label>
+    <Label Name="LanguageCategory">
+      <LocalizedLabel LanguageRef="zhs">多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language</LocalizedLabel>
+    </Label>
+    <Label Name="DataCategory">
+      <LocalizedLabel LanguageRef="zhs">数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data</LocalizedLabel>
+    </Label>
+    <Label Name="LayoutCategory">
+      <LocalizedLabel LanguageRef="zhs">布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Layout</LocalizedLabel>
+    </Label>
+    <Label Name="WidthDes">
+      <LocalizedLabel LanguageRef="zhs">宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width</LocalizedLabel>
+    </Label>
+    <Label Name="HeightDes">
+      <LocalizedLabel LanguageRef="zhs">高度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Height</LocalizedLabel>
+    </Label>
+    <Label Name="LanguageDes">
+      <LocalizedLabel LanguageRef="zhs">多语言配置：[Content].[Label]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="LayoutDes">
+      <LocalizedLabel LanguageRef="zhs">布局方式:vertical垂直,horizontal横向</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ModelDes">
+      <LocalizedLabel LanguageRef="zhs">主模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ChildModelDes">
+      <LocalizedLabel LanguageRef="zhs">子模型名称，需要与主模型建立主外键关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CustomOnCreateDes">
+      <LocalizedLabel LanguageRef="zhs">是否使用自定义的OnCreate事件,值为True使用OnCreate属性的值,值为False自动创建OnCreate事件脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CustomOnGetDataFromPageDes">
+      <LocalizedLabel LanguageRef="zhs">是否使用自定义的OnGetDataFromPage事件,值为True使用OnGetDataFromPage属性的值,值为False自动创建OnGetDataFromPage事件脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnCreateDes">
+      <LocalizedLabel LanguageRef="zhs">页面创建完成执行的脚本,事件举例如：Page_OnCreate(pageEvent), 可通过 pageEvent.o 获取控件对象的相关方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnGetDataFromPageDes">
+      <LocalizedLabel LanguageRef="zhs">返回页面数据事件,事件举例如：Page_OnGetDataFromPage(pageEvent), 可通过 pageEvent.o 获取控件对象的相关方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SizeDes">
+      <LocalizedLabel LanguageRef="zhs">宽度和高度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="NameDes">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="SizeDes">
+      <LocalizedLabel LanguageRef="zhs">宽度和高度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width and Height</LocalizedLabel>
+    </Label>
+    <Label Name="CtrlSizeDes">
+      <LocalizedLabel LanguageRef="zhs">大小</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SizeTypeDes">
+      <LocalizedLabel LanguageRef="zhs">尺寸类型分为:像素、百分比</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="WrapDes">
+      <LocalizedLabel LanguageRef="zhs">是否自动换行，是为true,否为false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PositionDes">
+      <LocalizedLabel LanguageRef="zhs">标签文字对齐的位置,显示内容超出容器自动截断文字右侧部分</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SuffixDes">
+      <LocalizedLabel LanguageRef="zhs">后缀，多语言配置：[Content].[Label]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="FieldDes">
+      <LocalizedLabel LanguageRef="zhs">绑定的模型字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ColorDes">
+      <LocalizedLabel LanguageRef="zhs">颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="BgTextDes">
+      <LocalizedLabel LanguageRef="zhs">默认背景文字多语言标签,多语言配置文件：[Content].[Label],type属性为text时此属性启作用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DisabledDes">
+      <LocalizedLabel LanguageRef="zhs">是否禁用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="VisibleDes">
+      <LocalizedLabel LanguageRef="zhs">是否隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="RegexDes">
+      <LocalizedLabel LanguageRef="zhs">验证输入值的正则表达式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="RegextipIdDes">
+      <LocalizedLabel LanguageRef="zhs">正则验证错误的提示信息,多语言标签：[Content].[Label]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TextTypeDes">
+      <LocalizedLabel LanguageRef="zhs">显示样式：text单行文本，textarea多行文本，password密码框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnCreateDes">
+      <LocalizedLabel LanguageRef="zhs">控件创建完成执行的脚本,可通过 ctrlEvent.o 获取控件对象的相关方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnFocusoutDes">
+      <LocalizedLabel LanguageRef="zhs">当文本框失去焦点时执行脚本,可通过 ctrlEvent.o 获取控件对象的相关方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnClickDes">
+      <LocalizedLabel LanguageRef="zhs">点击时执行的脚本,可通过 ctrlEvent.o或者ctrlEvent 获取控件对象的相关方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DateTypeDes">
+      <LocalizedLabel LanguageRef="zhs">日期类型,datetime：日期时间,date ：日期,time ：时间,默认：datetime</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ItemDataDes">
+      <LocalizedLabel LanguageRef="zhs">数据项集合，以OnLoad函数加载的数据为最终展示数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DataSourceFieldDes">
+      <LocalizedLabel LanguageRef="zhs">下拉列表值绑定的模型及字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CustomOnloadDes">
+      <LocalizedLabel LanguageRef="zhs">是否使用自定义的OnLoad事件,值为true使用OnLoad属性的值,值为False根据DataSourceField绑定的模型属性自动创建OnLoad事件脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnChangeDes">
+      <LocalizedLabel LanguageRef="zhs">当下拉框选中项发生变化时执行脚本,事件举例如：DropDown_OnChange(ctrlEvent), 可通过 ctrlEvent.o 获取控件对象的相关方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DropDownOnLoadDes">
+      <LocalizedLabel LanguageRef="zhs">初始化下拉列表的选项值事件, 当CustomOnload为True使用自定义事件,如:DropDown_OnLoad(ctrlEvent),可通过 ctrlEvent.o 获取控件对象的相关方法; 当CustomOnload为False自动生成脚本代码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SelectedDes">
+      <LocalizedLabel LanguageRef="zhs">是否默认选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ValueDes">
+      <LocalizedLabel LanguageRef="zhs">实际值,唯一标识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDes">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IconDes">
+      <LocalizedLabel LanguageRef="zhs">图片路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ColNumDes">
+      <LocalizedLabel LanguageRef="zhs">列数，一行多少列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ChangeModeDes">
+      <LocalizedLabel LanguageRef="zhs">显示模态,2:二态,3:三态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DefaultCheckStateDes">
+      <LocalizedLabel LanguageRef="zhs">数据项Value如果没有值取当前设置的值，状态值[0：未选中,1：选中,2：不确定]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ResizableDes">
+      <LocalizedLabel LanguageRef="zhs">是否允许拖动，是为true,否为false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ClosableDes">
+      <LocalizedLabel LanguageRef="zhs">是否显示隐藏、展开按钮，是为true,否为false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DirectionDes">
+      <LocalizedLabel LanguageRef="zhs">收起方向，作用在于当点击收缩按钮时，决定收缩的方向,pre:向前一个容器方向收起,next:向后一个容器方向收起</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OpenStateTooltipIdDes">
+      <LocalizedLabel LanguageRef="zhs">容器展开状态时，按钮显示的提示内容,多语言配置标签,closable 值为 true 时才有效</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="CloseStateTooltipIdDes">
+      <LocalizedLabel LanguageRef="zhs">容器折叠状态时，按钮显示的提示内容,多语言配置标签,closable 值为 true 时才有效</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TypeDes">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="AutoLoadDataDes">
+      <LocalizedLabel LanguageRef="zhs">是否自动加载数据[调用OnLoadRows事件]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="MultiselectDes">
+      <LocalizedLabel LanguageRef="zhs">是否多选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnLoadRowsDes">
+      <LocalizedLabel LanguageRef="zhs">加载数据事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnColImageClickDes">
+      <LocalizedLabel LanguageRef="zhs">图片点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnColLinkClickDes">
+      <LocalizedLabel LanguageRef="zhs">链接列点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SortableDes">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ColTypeDes">
+      <LocalizedLabel LanguageRef="zhs">列显示类型：text文本框、hidden隐藏、link链接、image图片等</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowSwitchBarDes">
+      <LocalizedLabel LanguageRef="zhs">是否显示切换按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowMenuDes">
+      <LocalizedLabel LanguageRef="zhs">是否显示功能菜单:重新加载、关闭当前、关闭其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TitleTypeDes">
+      <LocalizedLabel LanguageRef="zhs">标题样式，标准:standard , 胶囊:capsule,简单胶囊:capsule sample</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="HasBorderDes">
+      <LocalizedLabel LanguageRef="zhs">是否有边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TabIdDes">
+      <LocalizedLabel LanguageRef="zhs">页签标识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowClosed">
+      <LocalizedLabel LanguageRef="zhs">是否显示关闭按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="PageParasDes">
+      <LocalizedLabel LanguageRef="zhs">参数设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsThirdStateDes">
+      <LocalizedLabel LanguageRef="zhs">是否三态显示,showCheck属性为true时启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IsRelevanceDes">
+      <LocalizedLabel LanguageRef="zhs">是否级联,showCheck属性为true时启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowCheckDes">
+      <LocalizedLabel LanguageRef="zhs">是否显示复选框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowIconDes">
+      <LocalizedLabel LanguageRef="zhs">是否显示图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="AsyncDes">
+      <LocalizedLabel LanguageRef="zhs">是否异步</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DefaultStateDes">
+      <LocalizedLabel LanguageRef="zhs">复选框默认显示状态-0取消/1选中/2不确定</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="SetRightMenuParaDes">
+      <LocalizedLabel LanguageRef="zhs">空值为节点类型加载取节点Value5的值，如果Value5为空取Value3的值；不为空应输入对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnExpandDes">
+      <LocalizedLabel LanguageRef="zhs">节点展开事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnBeforeExpandDes">
+      <LocalizedLabel LanguageRef="zhs">节点展开前事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnExpandLoadDes">
+      <LocalizedLabel LanguageRef="zhs">节点展开加载数据事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnNodeDblClickDes">
+      <LocalizedLabel LanguageRef="zhs">节点双击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnBeforeCheckClickDes">
+      <LocalizedLabel LanguageRef="zhs">节点选中前事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnCheckClickDes">
+      <LocalizedLabel LanguageRef="zhs">节点选中事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="IdDes">
+      <LocalizedLabel LanguageRef="zhs">主键列</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowPageBarDes">
+      <LocalizedLabel LanguageRef="zhs">是否显示页脚按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnBeforeEditDes">
+      <LocalizedLabel LanguageRef="zhs">控件编辑前事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnAfterEditDes">
+      <LocalizedLabel LanguageRef="zhs">控件编辑完成后事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnRowDblClickDes">
+      <LocalizedLabel LanguageRef="zhs">行双击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnRowClickDes">
+      <LocalizedLabel LanguageRef="zhs">行点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnLoadSuccessDes">
+      <LocalizedLabel LanguageRef="zhs">数据加载完成事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnSortDes">
+      <LocalizedLabel LanguageRef="zhs">排序事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnLoadMoreDes">
+      <LocalizedLabel LanguageRef="zhs">[加载更多]点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EditableDes">
+      <LocalizedLabel LanguageRef="zhs">列是否可以编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DatabindDes">
+      <LocalizedLabel LanguageRef="zhs">列加载数据源事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EventbindDes">
+      <LocalizedLabel LanguageRef="zhs">列绑定事件，事件名称为change、focusout等</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnOpenRowDes">
+      <LocalizedLabel LanguageRef="zhs">行打开事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnCheckboxClickDes">
+      <LocalizedLabel LanguageRef="zhs">复选框点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnTreeNodeImageClickDes">
+      <LocalizedLabel LanguageRef="zhs">节点图标点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="NodeOnClickDes">
+      <LocalizedLabel LanguageRef="zhs">节点点击事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TemplateNameDes">
+      <LocalizedLabel LanguageRef="zhs">模板文件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="HideTitleDes">
+      <LocalizedLabel LanguageRef="zhs">是否隐藏标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="DelayLoadPageDes">
+      <LocalizedLabel LanguageRef="zhs">是否延时加载：默认值true延时加载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ShowLineDes">
+      <LocalizedLabel LanguageRef="zhs">True有边线包围内部内容，False没有边线包围</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="HideFoldBtnDes">
+      <LocalizedLabel LanguageRef="zhs">True有边线包围内部内容，False没有边线包围</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnShowDes">
+      <LocalizedLabel LanguageRef="zhs">Tab页签显示事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="OnHideDes">
+      <LocalizedLabel LanguageRef="zhs">Tab页签隐藏事件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="TemplatePageDes">
+      <LocalizedLabel LanguageRef="zhs">模板文件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

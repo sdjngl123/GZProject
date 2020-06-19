@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SelectItemForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">选择项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select item</LocalizedLabel>
+    </Label>
+    <Label Name="Search">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="KeyWord">
+      <LocalizedLabel LanguageRef="zhs">关键字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Keyword</LocalizedLabel>
+    </Label>
+    <Label Name="Custom">
+      <LocalizedLabel LanguageRef="zhs">自定义</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User-defined</LocalizedLabel>
+    </Label>
+    <Label Name="CommonImage">
+      <LocalizedLabel LanguageRef="zhs">普通图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture</LocalizedLabel>
+    </Label>
+    <Label Name="Sprite">
+      <LocalizedLabel LanguageRef="zhs">雪碧图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sprite map</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

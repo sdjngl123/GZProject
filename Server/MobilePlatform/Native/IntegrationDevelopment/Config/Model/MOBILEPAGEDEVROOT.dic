@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGEDEVROOTModel" IsWeb="true">
+    <Label Name="MOBILEPAGEDEVROOTHeader">
+      <LocalizedLabel LanguageRef="zhs">页面开发根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevRoot</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVROOTCaption">
+      <LocalizedLabel LanguageRef="zhs">页面开发根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevRoot</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

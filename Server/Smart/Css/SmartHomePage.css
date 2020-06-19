@@ -1,0 +1,60 @@
+﻿.SmartHomePage_UserContainer
+{
+    float: right;
+    line-height: 44px;
+    padding: 0 20px;
+    cursor:pointer;
+}
+
+.SmartHomePage_Message
+{
+    float: right;
+    line-height: 44px;
+    padding:0 26px;
+    cursor:pointer;
+    position:relative;
+    font-size:12px;
+}
+.SmartHomePage_Message_Num
+{
+    position: absolute;
+    min-width: 16px;
+    height: 15px;
+    left: 48px;
+    top: 6px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 26px;
+    text-align: center;
+    display:none;
+}
+
+.SmartHomePage_User_ul
+{
+    position:absolute;
+    display:none;
+    border: 1px solid #cdcdcd;
+    border-radius:2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width:90px;
+    font-size:12px;
+    z-index:10000;
+}
+.SmartHomePage_User_ul li
+{
+    padding:8px 10px;  
+}
+.SmartHomePage_User_ul li a:hover
+{
+    text-decoration:underline;
+}
+.SmartHomePage_User_Arrow
+{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 7px solid rgba(0,0,0,0);
+    border-bottom-color: #f6f6f9;
+    left: 65px;
+    top: -14px;    
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="THREEROLELOGININFOModel" IsWeb="true">
+    <Label Name="THREEROLELOGININFOHeader">
+      <LocalizedLabel LanguageRef="zhs">保存验证的登录信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">保存验证的登录信息</LocalizedLabel>
+    </Label>
+    <Label Name="THREEROLELOGININFOCaption">
+      <LocalizedLabel LanguageRef="zhs">保存验证的登录信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">保存验证的登录信息</LocalizedLabel>
+    </Label>
+    <Label Name="LOGINGUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">登录Guid</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoginGuid</LocalizedLabel>
+    </Label>
+    <Label Name="LOGINGUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">登录Guid</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LoginGuid</LocalizedLabel>
+    </Label>
+    <Label Name="VALIDATEDLOGINTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">已经验证通过的登录类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ValidatedLoginType</LocalizedLabel>
+    </Label>
+    <Label Name="VALIDATEDLOGINTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">已经验证通过的登录类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ValidatedLoginType</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

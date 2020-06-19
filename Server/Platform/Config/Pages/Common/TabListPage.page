@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TabListPage" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TabListPage_LoadPage(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="TabListPage_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="padding" Value="0px 4px 0px 4px"/>
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+          <Settings Key="size" Value="30"/>
+          <Settings Key="childid" Value="MenuPageContainer"/>
+      </Settings>
+      <Settings Key="item3">
+         <Settings Key="size" Value="4"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ListViewPageContainer"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MenuPageContainer" ParentID="TabListPage_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="MenuCtrl"/>
+    </PageControl>
+    <PageControl ControlID="ListViewPageContainer" ParentID="TabListPage_Container" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ListViewCtrl"/>
+    </PageControl>
+  </PageControls>
+</root>

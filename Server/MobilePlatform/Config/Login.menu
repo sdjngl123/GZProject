@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="Logins" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="MobilePhoneLogin" MultiMenu="false" ModuleName="MobilePhone" LabelName="" Image="" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="MobilePadLogin" MultiMenu="false" ModuleName="MobilePad" LabelName="" Image="" ParentWebAtionName="" RefreshType="" RefreshedSelect="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+  </MenuItem>
+</root>

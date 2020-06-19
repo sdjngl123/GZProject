@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Filter Rule="InforCenter.Organization.ThreeRoleAuthPlatformService.GetLoginUser" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.GetLoginTypePageName" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.ValidateLoginData" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRoleAuthPlatform.ThreeRoleAuthPlatformService.CheckAccessToken" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.NeedChangePassword" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.Organization.OrganizationDataService.CheckPassword" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.GetUserNameAndPasswordPolicy" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.ValidatePassowrdCombin" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  <Filter Rule="InforCenter.ThreeRolePlatformManagement.ThreeRoleAuthPlatformService.SavePassword" Call="[ServiceAddr]/[2]/json/[3]" Authentication="false"/>
+  
+</root>

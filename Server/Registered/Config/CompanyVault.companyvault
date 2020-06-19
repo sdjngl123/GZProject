@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--MaxCount代表该文档柜可以最多分配给多少公司 -1代表不限制，-->
+  <CompanyVault Name="CompanyVaultTemplate1" Volumn="Default" InnerIP="10.0.81.105" InnerPort="8887" IP="10.0.81.105" Port="8887" MaxCount="2"/>
+  <!--<CompanyVault Name="CompanyVaultTemplate2" Volumn="Default" InnerIP="10.0.81.105" InnerPort="8887" IP="10.0.81.105" Port="8887" MaxCount="1"/>-->
+</root>

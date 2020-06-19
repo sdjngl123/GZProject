@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageLinkItems" IsWeb="true">
+    <Label Name="ActionRuleList">
+      <LocalizedLabel LanguageRef="zhs">规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleCondition">
+      <LocalizedLabel LanguageRef="zhs">规则条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Condition</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">操作权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action permissions</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">规则订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subscription rule</LocalizedLabel>
+    </Label>
+    <Label Name="LinkActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">操作权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action permissions</LocalizedLabel>
+    </Label>
+    <Label Name="CreateActionRulePermission">
+      <LocalizedLabel LanguageRef="zhs">操作权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action permissions</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessModelListPage">
+      <LocalizedLabel LanguageRef="zhs">业务模型列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business model list</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionRule">
+      <LocalizedLabel LanguageRef="zhs">参数设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Settings</LocalizedLabel>
+    </Label>
+    <Label Name="SearchPermission">
+      <LocalizedLabel LanguageRef="zhs">对象授权查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization query</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectPermissionDetail">
+      <LocalizedLabel LanguageRef="zhs">对象授权详情</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object authorization details</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

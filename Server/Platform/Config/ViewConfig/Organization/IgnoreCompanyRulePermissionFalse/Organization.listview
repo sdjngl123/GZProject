@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <WebListView Name="ROLESLISTVIEWIgnoreCompanyRulePermissionFalse" View="ROLEVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" 
+               IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageSize="550*350" DetailsPageUseObjectInspector="false" QueryID="" IsShowSearch="true" 
+               ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+ 
+  <WebListView Name="USERSLISTVIEWIgnoreCompanyRulePermissionFalse" View="USERVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" 
+               IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIconField="ICON" DetailsPageSize="550*250" DetailsPageUseObjectInspector="false" QueryID="" IsShowSearch="true" 
+               ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+  
+  <WebListView Name="GROUPSINFOVIEWIgnoreCompanyRulePermissionFalse" View="GROUPINFOVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true"
+              IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageSize="550*250" DetailsPageUseObjectInspector="false" QueryID="" IsShowSearch="true"
+              ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+  <WebListView Name="PERSONListViewIgnoreCompanyRulePermissionFalse" View="PERSONVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" 
+               IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsIcon="" DetailsPageSize="650*300" DetailsPageUseObjectInspector="false" QueryID="" IsShowSearch="true" 
+               ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="GROUPTREELISTVIEWIgnoreCompanyRulePermissionFalse" View="GROUPTREELISTVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="GROUPID='[Tree_Parent_value1]'" 
+               AllowCheckBox="true" AllowIconType="true" DetailsPageSize="550*250"  KeyField="LID" 
+               AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageUseObjectInspector="false" 
+               QueryID="[Tree_Current_value1]" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+  <WebListView Name="USERSTREELISTVIEWIgnoreCompanyRulePermissionFalse" View="USERSTREELISTVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="GROUPID='[Tree_Parent_value1]'" 
+               AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" 
+               DetailsIconField="ICON" DetailsPageSize="550*250" DetailsPageUseObjectInspector="false" QueryID="[Tree_Current_value1]" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" 
+               AutoLoadData="true" IsTemplate="false" IsMainConfig="false" KeyField="LID"  />
+  <WebListView Name="ROLESTREELISTVIEWIgnoreCompanyRulePermissionFalse" View="ROLESTREELISTVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="GROUPID='[Tree_Parent_value1]'" AllowCheckBox="true" AllowIconType="true" 
+               AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageSize="550*350" DetailsPageUseObjectInspector="false"
+               KeyField="LID"  QueryID="[Tree_Current_value1]" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+
+  <WebListView Name="ROLETOUSERLISTVIEWIgnoreCompanyRulePermissionFalse" View="ROLETOUSERVIEWIgnoreCompanyRulePermissionFalse" EntityFilter="" Filter="EID IN (SELECT CEID FROM ORGANIZE WHERE PEID='[SelectID]')" AllowCheckBox="true" AllowIconType="true"
+             AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" DetailsIcon="" DetailsPageUseObjectInspector="false" DetailsPageSize="550*350"
+            QueryID="" IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+</root>

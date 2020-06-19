@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="SystemSettings">
+      <LocalizedLabel LanguageRef="zhs">系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System settings</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSettings">
+      <LocalizedLabel LanguageRef="zhs">个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personal settings</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessRule">
+      <LocalizedLabel LanguageRef="zhs">业务规则</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rules</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

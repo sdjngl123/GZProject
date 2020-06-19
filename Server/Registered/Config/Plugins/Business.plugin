@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginItem Name="UpdateRegisteredInfo" Type="UDPNotify" Assembly="Hoteam.InforCenter.Registered.OrganizationDataService" Class="Hoteam.InforCenter.Registered.OrganizationDataService.Business.UpdateRegisteredUDFNotify" />
+</root>

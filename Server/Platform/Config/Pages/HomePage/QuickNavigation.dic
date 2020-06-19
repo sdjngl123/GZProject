@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QuickNavigation" IsWeb="true">
+    <Label Name="HomePage">
+      <LocalizedLabel LanguageRef="zhs"> 首页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home page</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveQuickNavigation">
+      <LocalizedLabel LanguageRef="zhs">删除收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete favourite</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

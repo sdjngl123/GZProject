@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="GlobalSearch">
+      <LocalizedLabel LanguageRef="zhs">全局查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Global query</LocalizedLabel>
+    </Label>
+    <Label Name="CommmonModules">
+      <LocalizedLabel LanguageRef="zhs">常用功能</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Common function</LocalizedLabel>
+    </Label>
+    <Label Name="SystemManagement">
+      <LocalizedLabel LanguageRef="zhs">系统管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System management</LocalizedLabel>
+    </Label>
+    <Label Name="OnlineUserList">
+      <LocalizedLabel LanguageRef="zhs">在线用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Online user</LocalizedLabel>
+    </Label>
+    <Label Name="Enumerations">
+      <LocalizedLabel LanguageRef="zhs">值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value list</LocalizedLabel>
+    </Label>
+    <Label Name="Organization">
+      <LocalizedLabel LanguageRef="zhs">组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="Organization1">
+      <LocalizedLabel LanguageRef="zhs">组织结构（新）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization Structure (New)</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRule">
+      <LocalizedLabel LanguageRef="zhs">规则权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule Permissions</LocalizedLabel>
+    </Label>
+    <Label Name="TypeManagerment">
+      <LocalizedLabel LanguageRef="zhs">类型管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type management</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogSearch">
+      <LocalizedLabel LanguageRef="zhs">日志管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log management</LocalizedLabel>
+    </Label>
+    <Label Name="MessageManagement">
+      <LocalizedLabel LanguageRef="zhs">邮件消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Mail message</LocalizedLabel>
+    </Label>
+    <Label Name="ModulePermission">
+      <LocalizedLabel LanguageRef="zhs">功能授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Function authorization</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowManagement">
+      <LocalizedLabel LanguageRef="zhs">流程管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Management</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowTempateManagerment">
+      <LocalizedLabel LanguageRef="zhs">流程设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process design</LocalizedLabel>
+    </Label>
+    <Label Name="MyFlowTask">
+      <LocalizedLabel LanguageRef="zhs">我的任务</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My task</LocalizedLabel>
+    </Label>
+    <Label Name="MyWorkflowSmartStatistics">
+      <LocalizedLabel LanguageRef="zhs">我的任务简单统计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My task simple statistics</LocalizedLabel>
+    </Label>
+    <Label Name="ActionRuleMessage">
+      <LocalizedLabel LanguageRef="zhs">规则订阅</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subscription rule</LocalizedLabel>
+    </Label>
+    <Label Name="AddModel">
+      <LocalizedLabel LanguageRef="zhs">添加模块</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add module</LocalizedLabel>
+    </Label>
+    <Label Name="LifeCycleMangement">
+      <LocalizedLabel LanguageRef="zhs">生命周期管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LifeCycleMangement</LocalizedLabel>
+    </Label>
+    <Label Name="ModelMangement">
+      <LocalizedLabel LanguageRef="zhs">业务建模</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelMangement</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionManagement">
+      <LocalizedLabel LanguageRef="zhs">权限管理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PermissionManagement</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

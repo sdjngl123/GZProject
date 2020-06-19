@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="FlowTaskActorSelect">
+  <Settings Key="title" Value="FlowTaskActorSelect.Title"/>
+  <Settings Key="height" Value="300"/>
+  <Settings Key="width" Value="400"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_FlowTaskActorSelect_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="TopContainer" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>      
+      <Settings Key="item1">
+        <Settings Key="size" Value="34%"/>
+        <Settings Key="childid" Value="SubContainer1"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="33%"/>
+        <Settings Key="childid" Value="SubContainer2"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="33%"/>
+        <Settings Key="childid" Value="SubContainer3"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="BtnContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="SubContainer1" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="Organzation_Label"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Organzation_Value"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="Organzation_Label" ParentID="SubContainer1" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="FlowTaskActorSelect.Organzation_Label" />
+    </PageControl>
+    <PageControl ControlID="Organzation_Value" ParentID="SubContainer1" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FlowTaskActorSelect_SelOrganization(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+    
+    <PageControl ControlID="SubContainer2" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="Admin_Label"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Admin_Value"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Admin_Label" ParentID="SubContainer2" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="FlowTaskActorSelect.Admin_Label" />
+    </PageControl>
+    <PageControl ControlID="Admin_Value" ParentID="SubContainer2" TypeName="CheckBox" >
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="checked" Value="true" />
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="FlowTaskActorSelect.Admin_Label" />
+    </PageControl>
+    
+    <PageControl ControlID="SubContainer3" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="80"/>
+        <Settings Key="childid" Value="Creator_Label"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Creator_Value"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Creator_Label" ParentID="SubContainer3" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="FlowTaskActorSelect.Creator_Label" />
+    </PageControl>
+    <PageControl ControlID="Creator_Value" ParentID="SubContainer3" TypeName="CheckBox" >
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="checked" Value="true" />
+      <Settings Key="position" Value="left" />
+      <Settings Key="textId" Value="FlowTaskActorSelect.Creator_Label" />
+    </PageControl>
+
+    <!-- 按钮容器-->
+    <PageControl ControlID="BtnContainer" ParentID="TopContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnOK"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="100"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="35%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnOK" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_FlowTaskActorSelect_Save(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.OK" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="Btn_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>
+

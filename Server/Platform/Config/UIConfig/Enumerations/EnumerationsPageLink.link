@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="EnumerationsLink">
+    <PageLink Name="EnumerationCategory"  PageName="EditListManagement">
+
+      <Para Name="ItemName" Value="EnumCategoryListManagement"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="EnumerationLink">
+    <PageLink Name="Enumeration"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="EnumListManagement"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="EnumerationItemLink">
+    <PageLink Name="EnumerationItem" PageName="EditListManagement">
+      <Para Name="ItemName" Value="EnumItemListManagement"/>
+    </PageLink>
+  </PageLinks>
+</root>

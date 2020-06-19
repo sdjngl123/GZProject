@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PATCHINSTALLModel" IsWeb="true">
+    <Label Name="PATCHINSTALLHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁安装信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Installation Information</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHINSTALLCaption">
+      <LocalizedLabel LanguageRef="zhs">补丁安装信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Installation Information</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHNUMHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁批次号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch batch number</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHNUMCaption">
+      <LocalizedLabel LanguageRef="zhs">补丁批次号，一同安装的补丁批次号相同</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch batch number, the batch number of patches installed are the same</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHIDHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch ID</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHIDCaption">
+      <LocalizedLabel LanguageRef="zhs">补丁ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch ID</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHHASHCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁哈希值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Hash Value</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHHASHCODECaption">
+      <LocalizedLabel LanguageRef="zhs">补丁哈希值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Hash Value</LocalizedLabel>
+    </Label>
+    <Label Name="FAILUREREASONHeader">
+      <LocalizedLabel LanguageRef="zhs">安装失败原因</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Installation Failure Reason</LocalizedLabel>
+    </Label>
+    <Label Name="FAILUREREASONCaption">
+      <LocalizedLabel LanguageRef="zhs">安装失败原因</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Installation Failure Reason</LocalizedLabel>
+    </Label>
+    <Label Name="ISRECOVERYPOINTHeader">
+      <LocalizedLabel LanguageRef="zhs">是否可以还原</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recover or not</LocalizedLabel>
+    </Label>
+    <Label Name="ISRECOVERYPOINTCaption">
+      <LocalizedLabel LanguageRef="zhs">是否可以还原</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recover or not</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHPATHHeader">
+      <LocalizedLabel LanguageRef="zhs">备份路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Backup Path</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHPATHCaption">
+      <LocalizedLabel LanguageRef="zhs">备份路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Backup Path</LocalizedLabel>
+    </Label>
+    <Label Name="APPNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component</LocalizedLabel>
+    </Label>
+    <Label Name="APPNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">组件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component</LocalizedLabel>
+    </Label>
+    <Label Name="APPCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">组件编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component Number</LocalizedLabel>
+    </Label>
+    <Label Name="APPCODECaption">
+      <LocalizedLabel LanguageRef="zhs">组件编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component Number</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Type</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">补丁类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Type</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHCATEGORYHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Category</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHCATEGORYCaption">
+      <LocalizedLabel LanguageRef="zhs">补丁类别</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Patch Category</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">发布时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Publishing time</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">发布时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Publishing time</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANCEHeader">
+      <LocalizedLabel LanguageRef="zhs">重要程度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="IMPORTANCECaption">
+      <LocalizedLabel LanguageRef="zhs">重要程度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Importance</LocalizedLabel>
+    </Label>
+    <Label Name="BUGCODEHeader">
+      <LocalizedLabel LanguageRef="zhs">缺陷编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Defect No.</LocalizedLabel>
+    </Label>
+    <Label Name="BUGCODECaption">
+      <LocalizedLabel LanguageRef="zhs">缺陷编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Defect No.</LocalizedLabel>
+    </Label>
+    <Label Name="ISINITPATCHHeader">
+      <LocalizedLabel LanguageRef="zhs">是否初始补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initial patch or not</LocalizedLabel>
+    </Label>
+    <Label Name="ISINITPATCHCaption">
+      <LocalizedLabel LanguageRef="zhs">是否初始补丁</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initial patch or not</LocalizedLabel>
+    </Label>
+    <Label Name="APPVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">组件版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component Version</LocalizedLabel>
+    </Label>
+    <Label Name="APPVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">组件版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Component Version</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHVERSIONHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATCHVERSION</LocalizedLabel>
+    </Label>
+    <Label Name="PATCHVERSIONCaption">
+      <LocalizedLabel LanguageRef="zhs">补丁版本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PATCHVERSION</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPLOADTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">补丁上传时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UploadTime</LocalizedLabel>
+    </Label>
+    <Label Name="UPLOADTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">补丁上传时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UploadTime</LocalizedLabel>
+    </Label>
+    <Label Name="INSTALLTIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">安装时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">INSTALLTIME</LocalizedLabel>
+    </Label>
+    <Label Name="INSTALLTIMECaption">
+      <LocalizedLabel LanguageRef="zhs">安装时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">INSTALLTIME</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

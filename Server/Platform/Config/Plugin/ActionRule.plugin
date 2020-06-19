@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<PluginItem Name="AOPActionExample" Type="AOPActionType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.AOP.AOPActionExample" />-->
+  <PluginItem Name="WorkflowClassifyAOP" Type="AOPActionType" Assembly="Hoteam.InforCenter.Workflow.WebDesigner" Class="Hoteam.InforCenter.Workflow.WebDesigner.Business.WorkflowClassifyDelete" />
+  <!--实体对象规则权限条件类型-->
+  <PluginItem Name="ObjectPermissionCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectPermissionCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="ObjectTypeCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectTypeCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="ObjectCodeCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectCodeCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="ObjectNameCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectNameCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="ObjectOwnerCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectOwnerCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="ObjectOwnGroupCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectOwnGroupCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="StateCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.StateCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="StageStateCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.StageStateCondition" Group="ActionRuleMessage;Entity"/>
+  <PluginItem Name="ObjectPropertyCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleConditions.ObjectPropertyCondition" Group="ActionRuleMessage;Entity"/>
+  
+  <!--关系对象规则条件-->
+  <PluginItem Name="LinkTypeCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleLinkConditions.LinkTypeCondition" Group="Link"/>
+  <PluginItem Name="ParentStageStateCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleLinkConditions.ParentStageStateCondition" Group="Link"/>
+  <PluginItem Name="ParentPropertyCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleLinkConditions.ParentPropertyCondition" Group="Link"/>
+  <PluginItem Name="LinkPropertyCondition" Type="ActionRuleCondition" Assembly="Hoteam.InforCenter.Rule.Extend" Class="Hoteam.InforCenter.Rule.Extend.ActionRuleLinkConditions.LinkPropertyCondition" Group="Link"/>
+
+  <!--根节点导入初始数据-->
+  <PluginItem Name="CommonRootRepaleData" Type="ImportInitRootData" Assembly="Hoteam.InforCenter.Common.ImportInitData" Class="Hoteam.InforCenter.Common.ImportInitData.CommonInit.CommonRootRepaleData" />
+  
+
+  <!-- 授权类型-->
+  <!--<PluginItem Name="PermissionToUser" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToUser" Group="Common"/>
+  <PluginItem Name="PermissionToRole" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToRole" Group="Common"/>
+  <PluginItem Name="PermissionToGroup" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToGroup" Group="Common"/>
+  <PluginItem Name="PermissionToGroupRole" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToGroupRole" Group="Common"/>
+  <PluginItem Name="PermissionToAllUser" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToAllUser" Group="Common"/>
+  
+  <PluginItem Name="PermissionToCreator" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToCreator" Group="Entity"/>
+  <PluginItem Name="PermissionToOwner" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToOwner" Group="Entity"/>
+  <PluginItem Name="PermissionToOwnGroup" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToOwnGroup" Group="Entity"/>
+
+  <PluginItem Name="PermissionToLinkCreator" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToLinkCreator" Group="Link"/>
+  <PluginItem Name="PermissionToLinkOwner" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToLinkOwner" Group="Link"/>
+  <PluginItem Name="PermissionToLinkOwnGroup" Type="PermissionType" Assembly="Hoteam.InforCenter.Rule.Business" Class="Hoteam.InforCenter.Rule.Business.RulePermission.PermissionType.PermissionToLinkOwnGroup" Group="Link"/>-->
+</root>

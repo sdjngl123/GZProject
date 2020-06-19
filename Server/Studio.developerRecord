@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeveloperRecordFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeveloperRecord Them="Coffee" FilePath="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Studio.developerRecord">
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\A1.templatepage" Order="141" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\A2.page" Order="247" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\PageConfig1.page" Order="285" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\TRAININGCOURSE-VIEW.page" Order="297" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\USERINFO-VIEW.page" Order="368" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\USERVIEW-QUERY.page" Order="372" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\WORKFLOWINFO-SINGLEVIEW.page" Order="373" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\USERINFO-SINGLEVIEW.page" Order="374" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\CommonImport.page" Order="379" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\Confirm.page" Order="380" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ControlContainer.page" Order="381" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\CopyObject.page" Order="382" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ListViewCtrl.page" Order="389" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\MenuCtrl.page" Order="392" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\MutilLangInput.page" Order="393" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\NoPermission.page" Order="394" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ObjectInspector.page" Order="395" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ObjectProperty.page" Order="396" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ObjectSingleProperty.page" Order="397" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\OnlineUserList.page" Order="404" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ReportDisplay.page" Order="405" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\RightMenuCtrl.page" Order="406" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\SideTabsCtrl.page" Order="407" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\SmartListCommonQuery.page" Order="408" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\SmartListViewCtrl.page" Order="409" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\SmartManagement.page" Order="410" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\SmartTabsCtrl.page" Order="411" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\SmartViewObject.page" Order="412" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TabListPage.page" Order="413" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TabManagement.page" Order="414" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TabsCtrl.page" Order="415" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ToolbarCtrl.page" Order="416" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TreeCommonQuery.page" Order="417" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TreeListCommonQuery.page" Order="418" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TreeListQueryCtrl.page" Order="419" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TreeListViewCtrl.page" Order="420" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TreeManagement.page" Order="421" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\TreeViewCtrl.page" Order="422" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\VerticalTabManagement.page" Order="423" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\VerticalTabsCtrl.page" Order="424" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\ViewOnLinePage.page" Order="425" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\Common\WebViewCommonQuery.page" Order="426" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\HomePage\AgentSetting.page" Order="427" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Platform\Config\Pages\HomePage\ClassicHomePage.page" Order="430" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\UIConfig\testList.list" Order="451" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\Config\Apps.database" Order="452" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\UIConfig\testMenu.menu" Order="453" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\UIConfig\TestNav.nav" Order="454" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\ACTIONRULE-CREATE.page" Order="465" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\COMPANY-CREATE.page" Order="466" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\USERINFO-CREATE.page" Order="467" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\AutoGenerator\Config\Pages\USERINFO-EDIT.page" Order="468" />
+    <AccessRecord Path="D:\ICPEnterpriseV8.1\升级库\ICP-Studio2.1\维护库\ICP-Studio2.1.1\Source\Server\TestStudio\Config\Pages\A1.page" Order="471" />
+  </DeveloperRecord>
+</DeveloperRecordFile>

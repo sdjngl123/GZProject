@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PageGenerator" IsWeb="true">
+    <Label Name="Prompt">
+      <LocalizedLabel LanguageRef="zhs">即将自动生成所有的页面配置，上次结果将被覆盖！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All page configurations will be automatically generated and the last result will be overwritten!</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorComplete">
+      <LocalizedLabel LanguageRef="zhs">生成完毕！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{0}Generation is completed!</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorFalied">
+      <LocalizedLabel LanguageRef="zhs">生成失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{0}Generation is falied!</LocalizedLabel>
+    </Label>
+
+    <Label Name="GeneratorOneComplete">
+      <LocalizedLabel LanguageRef="zhs">{0} ==>生成完毕！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{0}Generation is completed!</LocalizedLabel>
+    </Label>
+    <Label Name="GeneratorOneFalied">
+      <LocalizedLabel LanguageRef="zhs">{0} ==>生成失败！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{0}Generation is falied!</LocalizedLabel>
+    </Label>
+
+    <Label Name="NullPrompt">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!</LocalizedLabel>
+    </Label>
+    <Label Name="ContextIsNull">
+      <LocalizedLabel LanguageRef="zhs">  Context:[ContextName],Label:[LabelName]  不存在！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Context: [ContextName], Label: [LabelName] do not exist!</LocalizedLabel>
+    </Label>
+    <Label Name="SelectModelOrView">
+      <LocalizedLabel LanguageRef="zhs">请先选择文件夹、模型或视图！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Model Or View!</LocalizedLabel>
+    </Label>
+    <Label Name="NoFileToGenerator">
+      <LocalizedLabel LanguageRef="zhs">当前没有要生成页面的模型和视图！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No File To Generator!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

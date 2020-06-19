@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="GROUPINFOVIEWIgnoreCompanyRulePermissionFalse-QUERY" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group name</LocalizedLabel>
+    </Label>
+    <Label />
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label />
+  </Context>
+</DictionarySerializer>

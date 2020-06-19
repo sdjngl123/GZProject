@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FlowTemplateMenu" IsWeb="true">
+    <Label Name="SaveAs">
+      <LocalizedLabel LanguageRef="zhs">另存为</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save As</LocalizedLabel>
+    </Label>
+    <Label Name="MoveTo">
+      <LocalizedLabel LanguageRef="zhs">移动到</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move to</LocalizedLabel>
+    </Label>
+    <Label Name="SetRun">
+      <LocalizedLabel LanguageRef="zhs">启用/禁用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable/disable</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

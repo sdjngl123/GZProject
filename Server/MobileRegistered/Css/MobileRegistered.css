@@ -1,0 +1,238 @@
+﻿/*登陆*/
+#btnLogin {
+  background-color: #1998FA;
+  color: #fff;
+}
+
+/*注册*/
+@media screen and (max-width:599px)
+{
+    .mobile-registered-page
+    {
+        font-size:0.87em;   
+    }
+    .mobile-registered-content
+    {
+        width:85%;
+        margin:auto;
+        font-size:0.87em;
+        margin-top:1.875em;
+    }
+    .mobile-re-n
+    {
+        height: 2.5em;
+        text-align: center;
+        line-height: 2.5em;
+        font-size:1.25em;
+        font-weight: bold;
+    }
+    .mobile-re-back
+    {
+        font-size: 25px;
+        position: absolute;
+        top: 4px;
+        left: 10px;
+        color:#918d8d;
+    }
+    .mobile-re-login
+    {
+        display:none;
+    }
+    .mobile-forgetpassword-title
+    {
+        height: 2.4em;
+        font-size: 1.2em;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        line-height: 2.4em;
+        color: #1998FA;
+        font-weight:bold;
+        position:relative;
+    }
+    .mobile-forgetpassword-content
+    {
+        width: 85%;
+        margin: auto;
+        margin-top: 1.6em;
+    }
+    .mobile-forgetpassword-container
+    {
+        font-size:0.85em;
+    }
+    .mobile-forgetpassword-back-img
+    {
+        position: absolute;
+        top: -29px;
+        left: 10px;
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (min-width:599px)
+{
+    .mobile-registered-page
+    {
+        font-size:1em;
+    }
+    .mobile-registered-content
+    {
+        width:21.8em;
+        margin:auto;
+        font-size:1em;
+        margin-top:1.875em;
+    }
+    .mobile-re-n
+    {
+        height: 2.5em;
+        text-align: center;
+        line-height: 2.5em;
+        font-size: 1.75em;
+        font-weight:bold;
+    }
+    .mobile-re-back
+    {
+        display:none;    
+    }
+    .mobile-re-login
+    {
+        position: absolute;
+        top: 2.5em;
+        right: 3em;
+        font-weight:bold;
+        color:#000;
+    }
+    .mobile-forgetpassword-title
+    {
+        height: 2.4em;
+        font-size: 1.3em;
+        text-align: center;
+        width: 500px;
+        margin: auto;
+        line-height: 2.4em;
+        color: #1998FA;
+        font-weight:bold;
+    }
+    .mobile-forgetpassword-content
+    {
+        width: 380px;
+        margin: auto;
+        margin-top: 1.6em; 
+    }
+    .mobile-forgetpassword-container
+    {
+        font-size:1em;
+    }
+    .mobile-forgetpassword-back-img
+    {
+        position: absolute;
+        top: -36px;
+        left: 10px;
+        height: 23px;
+        width: 23px;    
+    }
+}
+.mobile-re-title
+{
+    margin:auto;
+}
+.mobile-re-line
+{
+    border-bottom:1px solid #ccc;
+    height:1px;
+    width:100%;
+}
+.mobile-re-c
+{
+    height:4.375em;
+    width:100%;
+}
+.mobile-re-input
+{
+    height:35px;
+    width:100%;
+    border:0.062em solid #ccc;
+    border-radius:0.25em;
+}
+.mobile-iden-btn
+{
+    width:7.5em;
+    float:right;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius: 0.25em;
+    font-size:12px;
+}
+.mobile-re-iden-c .ui-input-text
+{
+    width:98%;
+}
+.mobile-re-btn
+{
+    width:100%;
+    height:2.22em;
+    line-height:2.22em;
+    color:#fff;
+    background-color:#1998FA;
+    border-radius:0.222em;
+    text-align:center;
+    font-size:1.125em;
+    cursor:pointer;
+}
+.mobile-re-iden-c td
+{
+    border:none;
+    font-size:1em;
+    padding:0;
+}
+.mobile-re-error
+{
+    color:Red;    
+}
+.mobile-iden-btn-disa
+{
+    background-color:#eee;
+    border:0.063em solid #ccc;
+}
+.mobile-for-input-c {
+  height: 4em;
+}
+.mobile-for-input
+{
+    height:33px;    
+}
+.mobile-for-getcode
+{
+    width:7.5em;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+    border:0.083em solid #ccc;
+    border-radius: 0.25em;
+    font-size:12px;  
+}
+.mobile-for-in-input .ui-input-text
+{
+    width:98%;    
+}
+.mobile-for-btn
+{
+    background-color: #1998FA;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;    
+}
+.mobile-for-error
+{
+    color:Red;
+    font-size:12px; 
+}
+.mobile-for-ide-disa
+{
+    background-color:#eee;
+    border:0.063em solid #ccc;
+}

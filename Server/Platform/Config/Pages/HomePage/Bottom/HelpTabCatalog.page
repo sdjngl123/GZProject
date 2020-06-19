@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="HelpTabCatalog">
+  <PageControls>
+    <PageControl ControlID="HelpTabCatalogTree" ParentID="" TypeName="Tree">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Help_TreeNodeOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="showCheck" Value="false"/>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,24 @@
+﻿.MainFlat_A
+{
+    min-width:180px;    
+}
+.MainFlat_B
+{
+    min-width:180px;    
+}
+.MainFlat_C
+{
+    min-width:180px;    
+}
+.MainFlat_LayoutContainer
+{
+    min-width:880px;  
+}
+.MainFlat_Title_Img
+{
+    background:url(../platform/image/common/MainFlatTitle.png);
+    display:inline-block;
+    height:15px;
+    width:15px;
+    margin-bottom:-2px;
+}

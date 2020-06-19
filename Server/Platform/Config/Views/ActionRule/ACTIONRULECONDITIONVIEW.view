@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="ACTIONRULECONDITIONVIEW" ObjectTypeName="ACTIONRULECONDITION" OrderByString="SERIALNUMBER ASC" FixedFilter="" AsCommonQuery="true">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" />
+    <ViewColumn Name="OPERATOR" Width="80" Resizable="true" Sortable="false" />
+    <ViewColumn Name="CONDITIONVALUE" Width="-1" Resizable="true" Sortable="false" />
+  </ObjectView>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="GROUPINFO-CREATE" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="PARENTGROUPEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">父级组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent group</LocalizedLabel>
+    </Label>
+    <Label Name="PARENTGROUPEIDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度2000&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 2000&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">文档柜</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Document Cabinet</LocalizedLabel>
+    </Label>
+    <Label Name="VAULTINFORegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空！&lt;/br&gt;输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null!&lt;/br&gt;The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MANAGERHeader">
+      <LocalizedLabel LanguageRef="zhs">部门负责人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Manager</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTHeader">
+      <LocalizedLabel LanguageRef="zhs">详细描述</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Detailed description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 500&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="GROUPINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">新建组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewGroup</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ImageConfig Name="p_upload" Description="上传">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="0" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="0" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_download" Description="下载">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-32" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-32" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_newfolder" Description="新建文件夹">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-64" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-64" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_newprocess" Description="新建流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-96" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_newstarscome" Description="新建分类">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-128" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-128" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_new" Description="新建（通用）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-160" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-160" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_addobjects" Description="添加对象">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-192" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-192" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_paste" Description="粘贴">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-224" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_browse" Description="浏览">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-256" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-256" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_view" Description="查看">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-288" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-288" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_searchfor" Description="搜索">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-320" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-320" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_shareit" Description="分享">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-352" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_sharecancel" Description="取消分享">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-384" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-384" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_collect" Description="收藏">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-416" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-416" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_unfavorite" Description="取消收藏">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-448" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-448" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_remove" Description="移除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-480" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_release" Description="发布">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-512" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-512" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_sendmessage" Description="发送消息">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-544" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-544" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_supportwhat" Description="支持一下">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-576" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-576" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_cancelsupport" Description="取消支持">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="0" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-608" YPosition="-24" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_add" Description="添加">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="0" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="0" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_arrow_up" Description="箭头_向上">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-32" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-32" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_arrow_down" Description="箭头_向下">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-64" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-64" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_audittask" Description="审计任务">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-96" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_inquire" Description="查询">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-128" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-128" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_send" Description="发送">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-160" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-160" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_authorize" Description="授权">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-192" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-192" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_clear" Description="清除（橡皮擦）">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-224" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_copy" Description="复制">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-256" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-256" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_copynew" Description="新副本">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-288" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-288" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_cut" Description="剪切">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-320" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-320" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_delete" Description="删除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-352" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_edit" Description="编辑">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-384" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-384" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_editproperty" Description="编辑属性">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-416" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-416" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_exit" Description="退出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-448" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-448" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_export" Description="导出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-480" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_import" Description="导入">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-512" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-512" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_lock" Description="锁">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-544" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-544" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_movetop" Description="移至顶部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-576" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-576" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_movebottom" Description="移至底部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="-48" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-608" YPosition="-72" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_allbanned" Description="全部禁止">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="0" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="0" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_prohibit" Description="禁止">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-32" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-32" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_move" Description="移动">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-64" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-64" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_ignore" Description="忽略">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-96" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_start" Description="开始">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-128" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-128" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_complete" Description="完成">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-160" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-160" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_return" Description="退回">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-192" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-192" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_withdraw" Description="撤回">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-224" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_processreview" Description="流程评审">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-256" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-256" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_changeprocessresponsibility" Description="更改流程责任人">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-288" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-288" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_agent" Description="代理人">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-320" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-320" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_abandoned" Description="废弃">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-352" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_recovery" Description="恢复">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-384" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-384" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_transfer" Description="移交">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-416" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-416" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_host" Description="托管">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-448" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-448" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_changemandateholders" Description="更改任务执行人">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-480" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_run" Description="运行">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-512" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-512" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_rename" Description="重命名">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-544" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-544" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_markread" Description="标记已读">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-576" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-576" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_markallread" Description="全部标记已读">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="-96" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-608" YPosition="-124" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_moveup" Description="上移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="0" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="0" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_movedown" Description="下移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-32" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-32" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_moveleft" Description="左移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-64" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-64" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_moveright" Description="右移">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-96" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_movesuperior" Description="移至上级">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-128" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-128" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_reset" Description="重置">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-160" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-160" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_resume" Description="刷新">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-192" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-192" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_save" Description="保存">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-224" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-224" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_saveas" Description="另存为">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-256" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-256" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_startworkflow" Description="启动工作流">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-288" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-288" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_stop" Description="停止">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-320" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-320" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_suspend" Description="暂停">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-352" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_zoomin" Description="放大">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-384" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-384" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_zoomout" Description="缩小">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-416" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-416" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_creatuser" Description="创建角色">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-448" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-448" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_allowall" Description="全部允许">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-480" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_more" Description="更多">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-512" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-512" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_objectauthorization" Description="对象授权">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-544" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-544" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_messagesubscription" Description="消息订阅">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-576" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-576" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_deleteall" Description="全部删除">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-608" YPosition="-144" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-608" YPosition="-168" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_tasklist" Description="任务列表">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="0" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="0" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_angleright" Description="向左单箭头-减少">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-32" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-32" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_angledoubleright" Description="向左双箭头-减少全部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-64" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-64" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_angleleft" Description="向右单箭头-增加">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-96" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-96" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_angledoubleleft" Description="向右双箭头增加全部">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-128" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-128" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_onwork" Description="在职">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-160" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-160" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_offwork" Description="离职">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-192" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-192" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_quitworkflow" Description="终止流程">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-256" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-256" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_quitrelease" Description="取消发布">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-320" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-320" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_quitabandoned" Description="取消废弃">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-352" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-352" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_allexportlist" Description="全部导出">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-448" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-448" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_exportlist" Description="导出当前页">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-480" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-480" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_allprintlist" Description="全部打印">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-512" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-512" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+  <ImageConfig Name="p_printlist" Description="打印当前页">
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Default" Type="Sprite_24" XPosition="-544" YPosition="-192" Height="24" Width="24" />
+    <Sprite ImagePath="~/Platform/Image/Sprite/PlatformImage-southstreet-24px.png" Theme="southstreet" Status="Obvious" Type="Sprite_24" XPosition="-544" YPosition="-216" Height="24" Width="24" />
+  </ImageConfig>
+</root>

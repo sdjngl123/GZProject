@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+	<VerticalTabMangement Name="CreateTestCapabilityLinks" PageLinksName="CreateTestCapabilityLinks"  IsHideNavigation="false" />
+	<VerticalTabMangement Name="EditTestCapabilityLinks" PageLinksName="EditTestCapabilityLinks"  IsHideNavigation="false" />
+
+</root>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="HelpTabSearch">
+  <PageControls>
+    <!--整体-->
+    <PageControl ControlID="HelpTabSearch_Layout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="HelpTabSearchTitle"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HelpTabSearchList"/>
+      </Settings>
+    </PageControl>
+
+    <!--头-->
+    <PageControl ControlID="HelpTabSearchTitle" ParentID="HelpTabSearch_Layout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="90%"/>
+        <Settings Key="childid" Value="HelpTabSearchTitleTextbox"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="HelpTabSearchTitleButton"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="60"/>
+        <Settings Key="childid" Value="HelpTabSearchFullTextButton"/>
+      </Settings>
+    </PageControl>
+
+    <!--textbox-->
+    <PageControl ControlID="HelpTabSearchTitleTextbox" ParentID="HelpTabSearchTitle" TypeName="TextBox" >
+    </PageControl>
+    
+    <!--button-->
+    <PageControl ControlID="HelpTabSearchTitleButton" ParentID="HelpTabSearchTitle" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Help_TitleSearchClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="HelpTabSearch.SearchTitle" />
+    </PageControl>
+    <PageControl ControlID="HelpTabSearchFullTextButton" ParentID="HelpTabSearchTitle" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Help_SearchClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="HelpTabSearch.SearchFullText" />
+    </PageControl>
+
+    <!--列表-->
+    <PageControl ControlID="HelpTabSearchList" ParentID="HelpTabSearch_Layout" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="HelpTabSearchList"/>
+    </PageControl>
+    
+  </PageControls>
+</root>

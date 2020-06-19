@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="VTSDEMAND-CREATE" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">验证需求名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">指标代码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTSTANDARDHeader">
+      <LocalizedLabel LanguageRef="zhs">试验标准</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestSTANDARD</LocalizedLabel>
+    </Label>
+    <Label Name="TESTSTANDARDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TESTSAMPLESIZEHeader">
+      <LocalizedLabel LanguageRef="zhs">需验证样本量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TestSampleSize</LocalizedLabel>
+    </Label>
+    <Label Name="TESTSAMPLESIZERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="IMPLEMENTSTAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">实施阶段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">IMPLEMENTSTAGE</LocalizedLabel>
+    </Label>
+    <Label Name="IMPLEMENTSTAGERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="VERIFICATIONSHeader">
+      <LocalizedLabel LanguageRef="zhs">被验证次数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">VERIFICATIONS</LocalizedLabel>
+    </Label>
+    <Label Name="VERIFICATIONSRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="RECIVEDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">接收时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RECIVEDATE</LocalizedLabel>
+    </Label>
+    <Label Name="VTSDEMANDHeader">
+      <LocalizedLabel LanguageRef="zhs">新建VTS需求</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewVTSDEMAND</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

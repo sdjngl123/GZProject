@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <ListQuery Name="CompanyListSearchIgnoreCompanyID" ListViewName="COMPANYVIEWIgnoreCompanyIDView"  QueryPageName="COMPANYVIEWIgnoreCompanyID-QUERY" PageLinksName=""
+             AllowMultiSelect="true" AllowReturnEmptyValue="false" ListTitleDataService="" OnePageDataService="" ReturnValueType="COMPANY" ActionName="">
+  </ListQuery>
+</root>

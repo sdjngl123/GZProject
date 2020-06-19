@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ThreeRoleExceptionLock">
+  <Settings Key="title" Value="ThreeRoleExceptionLock.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleExceptionLock_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleExceptionLock_OnCheck(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleExceptionLock_OnGetData(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="IsEnable"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="CountTop"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="LockTime"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IsEnable" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="IsEnable_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IsEnable_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IsEnable_Label" ParentID="IsEnable" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleExceptionLock.IsEnable" />
+    </PageControl>   
+    <PageControl ControlID="IsEnable_Value" ParentID="IsEnable" TypeName="CheckBox" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_ThreeRolePlatformManagement_ThreeRoleExceptionLock_IsEnableOnClick(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="ThreeRoleExceptionLock.IsEnableValue" />
+    </PageControl>
+
+    <PageControl ControlID="CountTop" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="CountTop_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="CountTop_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="CountTop_Label" ParentID="CountTop" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleExceptionLock.CountTop" />
+    </PageControl>
+    <PageControl ControlID="CountTop_Value" ParentID="CountTop" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="^[1-9][0-9]{0,8}$" />
+      <Settings Key="regextipId" Value="ThreeRoleExceptionLock.CountTopRegex" />
+    </PageControl>
+
+    <PageControl ControlID="LockTime" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="140"/>
+        <Settings Key="childid" Value="LockTime_Label"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="LockTime_Value"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="LockTime_Label" ParentID="LockTime" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="ThreeRoleExceptionLock.LockTime" />
+    </PageControl>
+    <PageControl ControlID="LockTime_Value" ParentID="LockTime" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <!--<Settings Key="bgText" Value="ThreeRoleExceptionLock.Minute"/>-->
+      <Settings Key="regex" Value="^[1-9][0-9]{0,8}$" />
+      <Settings Key="regextipId" Value="ThreeRoleExceptionLock.LockTimeRegex" />
+    </PageControl>
+  </PageControls>
+</root>

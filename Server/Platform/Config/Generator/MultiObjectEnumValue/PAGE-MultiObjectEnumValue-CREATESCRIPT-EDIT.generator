@@ -1,0 +1,14 @@
+﻿{
+
+var functionName = 'InforCenter_[OBJTYPE]_[INFONAME]_MultiObjectEnumValuePageOnCreate';
+if ( typeof window[functionName] == 'function') {
+pageEvent.[OBJTYPE][INFONAME]Value = data.[INFONAME];
+HoteamUI.Common.ExeFunction(functionName, pageEvent);
+}else{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+InforCenter_Platform_Object_SetObjectEnumList(o,'[INFONAME]','[OBJTYPE]',false);
+o.SetSelectedByValue(data.[INFONAME]);
+}
+}
+}

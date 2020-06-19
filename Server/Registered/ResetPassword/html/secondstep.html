@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/resetpassword.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/resetpassword.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //为了防止进入下一步之后按后退键后，input中已经有值了，但是提示信息还在所以进行以下判断
+            if ($("#verNum").val()) {
+                $("#verNum").next().hide();
+            }
+            $("#username").val($(window.parent.document).find("#usercode").val());
+            $(".reset-password-placeholder").click(function () {
+                $(this).prev().click().focus();
+            });
+            $(".reset-password-input").on({
+                "focus": function () {
+                    $(this).next().hide();
+                    $(this).addClass("reset-password-input-focus");
+                },
+                "blur": function () {
+                    $(this).removeClass("reset-password-input-focus");
+                    regexCheck($(this).parent());
+                    if (!$(this).val()) {//如果有值
+                        $(this).next().show();
+                    }
+                }
+            });
+            //获取验证码
+            $("#getvernum").on("click", function () {
+                if ($(this).attr("send") == "yes") {//如果已经发送过一次，且还未过60秒
+                    return;
+                }
+                //发送验证码
+                var returnFlag = false;
+                var para = { RegisterEmail: $("#username").val() };
+                $.ajax({
+                    type: "post",
+                    url: "../../RegisteredService.asmx/GetPasswordValidateCode",
+                    data: JSON.stringify(para),
+                    dataType: "json",
+                    async: false,
+                    contentType: 'application/json',
+                    success: function (data) {
+                        if (data && data.Key) {
+                            returnFlag = false;
+                            return;
+                        }
+                        returnFlag = true;
+                    },
+                    error: function (err) {
+                        returnFlag = false;
+                        alert(err.responseText);
+                    }
+                });
+                if (returnFlag) {//如果返回发送成功
+                    $(this).html("已发送");
+                    $(this).attr("send", "yes");
+                    setTimeout(function () {
+                        var time = 60;
+                        var interval = setInterval(function () {
+                            time = time - 1;
+                            if (time > 0 && $("#getvernum").attr("send") != 'no') {
+                                $("#getvernum").html(time + "秒后再次发送");
+                            } else {
+                                clearInterval(interval);
+                                $("#getvernum").html("获取验证码").attr("send", "no");
+                            }
+                        }, 1000);
+                    }, 500);
+                }
+            });
+        })
+        function nextStep() {
+            if (!regexCheck($("body"))) {
+                return;
+            }
+            //调用ajax
+            var para = { Method: "CheckValidateCode", ValidateCode: $("#verNum").val() };
+            $.ajax({
+                type: "get",
+                url: "../IdentityVerification.aspx",
+                data: para,
+                dataType: "json",
+                success: function (data) {
+                    if (data && data.Key) {
+                        $("#verNum").nextAll(".reset-password-error").show().html(data.Value);
+                        return;
+                    }
+                    if (data && data.Success == "true") {
+                        $($(window.parent.document).find("iframe")[0]).attr("src", "html/thirdstep.html?token=" + data.Token);
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="step-img" style="background: url(../image/secondstep.png) no-repeat;">
+    </div>
+    <div class="step-img-title">
+        <span class="one-sp" style="color: #0097ff;">填写账户名</span><span class="second-sp"
+            style="color: #0097ff;">验证身份</span> <span class="third-sp">设置新密码</span><span class="four-sp">完成</span>
+    </div>
+    <div class="input-c">
+        <input id="username" type="text" class="reset-password-input" readonly />
+    </div>
+    <div class="input-c">
+        <input id="verNum" type="text" class="reset-password-input" style="width: 180px;"
+            required="required" />
+        <span class="reset-password-placeholder">验证码</span>
+        <div class="get-ver-num" id="getvernum">
+            获取验证码</div>
+        <span class="reset-password-error"></span>
+    </div>
+    <div class="next-btn" onclick="nextStep()">
+        下一步</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="SmsUrl" Value="http://service.winic.org:8009/sys_port/gateway/?" ToClient="true" />
+  <!--<AppSet Key="SmsId" Value="wanhumotor" ToClient="false" />
+	<AppSet Key="SmsPwd" Value="wanhumotor" ToClient="false" />-->
+  <!--蓝创-->
+  <AppSet Key="SmsId" Value="xxx" ToClient="false" />
+  <AppSet Key="SmsPwd" Value="xxx" ToClient="false" />
+  <!--阿里大鱼-->
+  <AppSet Key="SmsAppkey" Value="23282798" ToClient="false" />
+  <AppSet Key="SmsAppSecret" Value="4578617a8ffae135a316576bd825c59e" ToClient="false" />
+  <AppSet Key="SmsProduct" Value="SmartPDM" ToClient="false" />
+  <AppSet Key="SmsRegisterTemplateID" Value="SMS_3060205" ToClient="false" />
+  <AppSet Key="SmsResetPasswordTemplateID" Value="SMS_3050516" ToClient="false" />
+</root>

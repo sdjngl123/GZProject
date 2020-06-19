@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ModelActionEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">模型动作关联编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model action associatied edit window</LocalizedLabel>
+    </Label>
+    <Label Name="ModelType">
+      <LocalizedLabel LanguageRef="zhs">模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Model</LocalizedLabel>
+    </Label>
+    <Label Name="ModelTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">系统中所有实体对象的对象模型名称，用于关联动作，表明该对象可以存在哪些动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The object model name of all the physical objects in the system is used to associate actions, indicating which actions the object can exist</LocalizedLabel>
+    </Label>
+    <Label Name="Actions">
+      <LocalizedLabel LanguageRef="zhs">相关动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated Actions</LocalizedLabel>
+    </Label>
+    <Label Name="ActionsDescription">
+      <LocalizedLabel LanguageRef="zhs">与对象关联的动作，取值为动作列表下维护的动作,当对象与动作关联后，在规则权限中该对象的权限只显示维护的动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The action associated with the object is taken as the action maintained under the action list. When the object is associated with the action, the permission of the object in the rule authority displays only the maintenance action</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

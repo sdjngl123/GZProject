@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="License" IsWeb="true">
+    <Label Name="NoLicense">
+      <LocalizedLabel LanguageRef="zhs">找不到有效的License</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No valid License is found</LocalizedLabel>
+    </Label>
+    <Label Name="AboutToExpire">
+      <LocalizedLabel LanguageRef="zhs">授权即将到期 [STARTDATE]至[STOPDATE]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The authorization will expired [STARTDATE] to [STOPDATE]</LocalizedLabel>
+    </Label>
+    <Label Name="HasExpired">
+      <LocalizedLabel LanguageRef="zhs">授权已经到期[STARTDATE]至[STOPDATE]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The authorization has expired [STARTDATE] to [STOPDATE]</LocalizedLabel>
+    </Label>
+    <Label Name="TrialVersion">
+      <LocalizedLabel LanguageRef="zhs">您使用的是测试版[STARTDATE]至[STOPDATE]</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You are using a beta version [STARTDATE] to [STOPDATE]</LocalizedLabel>
+    </Label>
+    <Label Name="RefuseLogin">
+      <LocalizedLabel LanguageRef="zhs">不允许登录系统</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login system is not allowed</LocalizedLabel>
+    </Label>
+    <Label Name="RefuseAction">
+      <LocalizedLabel LanguageRef="zhs">不允许进行此项操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This operation is not allowed</LocalizedLabel>
+    </Label>
+    <Label Name="NotExistInCommandFile">
+      <LocalizedLabel LanguageRef="zhs">此菜单是不明菜单，禁止操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This menu is an unknown menu. Do not operate!</LocalizedLabel>
+    </Label>
+    <Label Name="NotExistModule">
+      <LocalizedLabel LanguageRef="zhs">此菜单所属的模块不存在或未授权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The module to which this menu belongs does not exist or is not authorized</LocalizedLabel>
+    </Label>
+    <Label Name="LimitOver">
+      <LocalizedLabel LanguageRef="zhs">使用人数已经达到授权限制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The number of users has reached the authorization restriction</LocalizedLabel>
+    </Label>
+    <Label Name="NoACL">
+      <LocalizedLabel LanguageRef="zhs">非授权设备，禁止登录！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No ACL ,Can't Login</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">PLM移动端登录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PLM Mobile Login</LocalizedLabel>
+    </Label>
+    <Label Name="UserName">
+      <LocalizedLabel LanguageRef="zhs">用户名：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User Name:</LocalizedLabel>
+    </Label>
+    <Label Name="PassWord">
+      <LocalizedLabel LanguageRef="zhs">密  码:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password:</LocalizedLabel>
+    </Label>
+    <Label Name="Login">
+      <LocalizedLabel LanguageRef="zhs">登  录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Login</LocalizedLabel>
+    </Label>
+    <Label Name="Theme">
+      <LocalizedLabel LanguageRef="zhs">主  题:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Theme:</LocalizedLabel>
+    </Label>
+    <Label Name="Language">
+      <LocalizedLabel LanguageRef="zhs">语  言:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Language:</LocalizedLabel>
+    </Label>
+    <Label Name="Orangize">
+      <LocalizedLabel LanguageRef="zhs">组  织:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Orangize:</LocalizedLabel>
+    </Label>
+    <Label Name="Role">
+      <LocalizedLabel LanguageRef="zhs">角  色:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role:</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseInputUserName">
+      <LocalizedLabel LanguageRef="zhs">请输入用户名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please Input User Name!</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseInputPassWord">
+      <LocalizedLabel LanguageRef="zhs">请输入密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please Input PassWord!</LocalizedLabel>
+    </Label>
+    <Label Name="OfflineDisableOperate">
+      <LocalizedLabel LanguageRef="zhs">离线状态下，禁止此操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OfflineDisableOperate</LocalizedLabel>
+    </Label>
+    <Label Name="NotCacheDataCannotDisplay">
+      <LocalizedLabel LanguageRef="zhs">没有离线数据，无法正常显示！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NotCacheDataCannotDisplay</LocalizedLabel>
+    </Label>
+    <Label Name="CallAjaxError">
+      <LocalizedLabel LanguageRef="zhs">网络异常，请稍后再试！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CallAjaxError!</LocalizedLabel>
+    </Label>
+    <Label Name="PasswordIsWrong">
+      <LocalizedLabel LanguageRef="zhs">用户密码错误！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User password error!</LocalizedLabel>
+    </Label>
+    <Label Name="AutoLoginInfoError">
+      <LocalizedLabel LanguageRef="zhs">自动登录信息已失效，请重新登录！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The automatic login information has failed. Please log in again!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasLogin">
+      <LocalizedLabel LanguageRef="zhs">当前用户已经登录！是否继续登录？继续登录将强制之前登录用户下线！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user has logged in! Do you want to continue logging in? If countine to login in, the previous login user will be forced to offline!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasLogin_AutoLogin">
+      <LocalizedLabel LanguageRef="zhs">自动登录失败！当前用户已经登录！是否继续登录？继续登录将强制之前登录用户下线！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic logon failed! The current user is already logged in! Do you want to continue logging in? If you countine to login in, the previous login user will be forced to offline!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasNotLogin">
+      <LocalizedLabel LanguageRef="zhs">您尚未登录或操作超时，请登录后再执行相应操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have not logged in or the operation have timed out. Please perform the corresponding operation again after login in!</LocalizedLabel>
+    </Label>
+    <Label Name="UserHasNotLoginDetail">
+      <LocalizedLabel LanguageRef="zhs">您尚未登录或操作超时，请登录后再执行相应操作！点击“确定”则返回登录页面！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have not logged in or the operation have timed out. Please perform the corresponding operation again after login in! Click “OK” to return to the login page!</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

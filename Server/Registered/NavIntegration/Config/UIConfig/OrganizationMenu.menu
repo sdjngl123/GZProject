@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <MenuItem Name="TreeCompanyMenu" Type="Button" Issplit="false" IsTemplate="false">
+
+    <WebAction Name="SetLocalAddress" MultiMenu="false" ModuleName="Platform" LabelName="TreeCompanyMenu.SetLocalAddress" Image="p_browse" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <WebMethod SelectID="[Tree_Current_value1]" PageName="SetLocalAddressPage" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ItemName" Value="GroupGuide" />
+      </WebMethod>
+
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[Tree_Current_value1]" />
+      </WebMessageAndLogger>
+
+    </WebAction>
+
+    <WebAction Name="SyncOrganization" MultiMenu="false" ModuleName="Platform" LabelName="TreeCompanyMenu.SyncOrganization" Image="p_browse" ParentWebAtionName="" RefreshType="RefreshCurrentStructAndTab" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <ActionChecker SelectID="[Tree_Current_value1]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+      <JSMethod Name="InforCenter_Registered_NavIntegration_SyncOrganization" SelectID="[Tree_Current_value1]">
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+</root>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="SEARCHALLTABLENAME">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT NAME FROM sysobjects WHERE XTYPE='U' ORDER BY NAME ASC
+      </CommandItem>
+    </DatabaseType>
+
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT TABLE_NAME FROM USER_TABLES ORDER BY TABLE_NAME ASC
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SEARCHALLTABLECONTENT">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM [TABLENAME] 
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SEARCHALLTABLECONTENTBYID">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM [TABLENAME] WHERE EID IN([EID])
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="SELECTXMLPERSISTENCETYPE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT DISTINCT XMLTYPE FROM XMLPERSISTENCE
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="SELECTXMLPERSISTENCEBYXMLTYPE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM XMLPERSISTENCE [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="IMPORTDATABASE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        INSERT INTO [TABLE] ([COLUMN]) VALUES([VALUE])
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="IMPORTDATABASEEXIST">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT [PMKEY] FROM [TABLE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="COVERTABLE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        DELETE FROM [TABLE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="CHECKTABLEDATA">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="true">
+        SELECT 1 FROM [TABLE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="COVERIMPORTXMLPERSISTENCE">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        DELETE FROM XMLPERSISTENCE [FILTER]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+  
+
+</root>

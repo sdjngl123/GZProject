@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Workflow" IsWeb="true">
+    <Label Name="AuditTaskErrorTitle">
+      <LocalizedLabel LanguageRef="zhs">任务评审提示！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task review tips!</LocalizedLabel>
+    </Label>
+    <Label Name="AuditTaskStateError">
+      <LocalizedLabel LanguageRef="zhs">任务不是待评审状态,请刷新界面并再次检查！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The task is not to be reviewed. Please refresh the interface and check again!</LocalizedLabel>
+    </Label>
+    <Label Name="FlowMessageTitle">
+      <LocalizedLabel LanguageRef="zhs">流程消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process message</LocalizedLabel>
+    </Label>
+    <Label Name="FlowStartMsgContent">
+      <LocalizedLabel LanguageRef="zhs">您启动了一个新的流程:[FLOWNAME],请注意跟踪处理！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have started a new process: [FLOWNAME], please note the trace processing!</LocalizedLabel>
+    </Label>
+    <Label Name="EnterTaskMsgContent">
+      <LocalizedLabel LanguageRef="zhs">您有一个新的流程任务:[TASKNAME],请及时处理！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have a new process task: [TASKNAME], please handle it in time!</LocalizedLabel>
+    </Label>
+    <Label Name="LevelTaskMsgContent">
+      <LocalizedLabel LanguageRef="zhs">[strUsers]完成了您的[TASKNAME]任务！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[strUsers] have completed your [TASKNAME] tasks!</LocalizedLabel>
+    </Label>
+    <Label Name="EnterPromoterContent">
+      <LocalizedLabel LanguageRef="zhs">您发起的流程【[WorkFlowName]】已发送到【[strUsers]】进行“[TaskName]”。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The process [[WorkFlowName]] you initiated has been sent to [[strUsers]] for "[TaskName]".</LocalizedLabel>
+    </Label>
+    <Label Name="LevelPromoterContent">
+      <LocalizedLabel LanguageRef="zhs">[strUsers]完成您发起流程【[WorkFlowName]】的“[TaskName]”。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[strUsers] has complete the [TaskName] of the process [[WorkFlowName]] initiated by you .</LocalizedLabel>
+    </Label>
+    <Label Name="FlowEndMsgContent">
+      <LocalizedLabel LanguageRef="zhs">您发起的流程已经结束:[FLOWNAME]！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The process that you initiated has ended: [FLOWNAME]！</LocalizedLabel>
+    </Label>
+    <Label Name="MainObjectNull">
+      <LocalizedLabel LanguageRef="zhs">主目标附件不允许为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The main target attachment is not allowed to be null!</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowList">
+      <LocalizedLabel LanguageRef="zhs">流程列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process list</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTimerSendMessage">
+      <LocalizedLabel LanguageRef="zhs">您有流程【[WorkflowName]】的【[TaskName]】需要处理,计划结束时间为[TaskTime]！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have the [[TaskName]] of the process [[WorkflowName]] to deal with, the scheduled end time is [TaskTime]!</LocalizedLabel>
+    </Label>
+    <Label Name="FlowTimerSendMessageTitle">
+      <LocalizedLabel LanguageRef="zhs">流程任务定时提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process task timing alerts</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowRun">
+      <LocalizedLabel LanguageRef="zhs">运行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Run</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowComplete">
+      <LocalizedLabel LanguageRef="zhs">完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Complete</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowStop">
+      <LocalizedLabel LanguageRef="zhs">停止</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Stop</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowSuspend">
+      <LocalizedLabel LanguageRef="zhs">暂停</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pause</LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowStart">
+      <LocalizedLabel LanguageRef="zhs">发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiate process </LocalizedLabel>
+    </Label>
+    <Label Name="WorkFlowResponsible">
+      <LocalizedLabel LanguageRef="zhs">负责流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Responsible for process</LocalizedLabel>
+    </Label>
+    <Label Name="TaskList">
+      <LocalizedLabel LanguageRef="zhs">流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process</LocalizedLabel>
+    </Label>
+    <Label Name="MyTask">
+      <LocalizedLabel LanguageRef="zhs">我的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My process</LocalizedLabel>
+    </Label>
+    <Label Name="MyCreateWorkFLow">
+      <LocalizedLabel LanguageRef="zhs">发起的流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Initiated process</LocalizedLabel>
+    </Label>
+    <Label Name="DepositTask">
+      <LocalizedLabel LanguageRef="zhs">托管流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hosting process</LocalizedLabel>
+    </Label>
+    <Label Name="DeliveryTask">
+      <LocalizedLabel LanguageRef="zhs">转交流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer process</LocalizedLabel>
+    </Label>
+    <Label Name="AuditedTask">
+      <LocalizedLabel LanguageRef="zhs">已评审流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Processes reviewed</LocalizedLabel>
+    </Label>
+    <Label Name="UnComplateWorkflow">
+      <LocalizedLabel LanguageRef="zhs">未完成流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process not completed</LocalizedLabel>
+    </Label>
+    <Label Name="NotSelectResult">
+      <LocalizedLabel LanguageRef="zhs">没有选择审批结果。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No approval results were selected.</LocalizedLabel>
+    </Label>
+    <Label Name="NotSelectTaskItem">
+      <LocalizedLabel LanguageRef="zhs">没有选择要提交的任务对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No task object selected to be submitted</LocalizedLabel>
+    </Label>
+    <Label Name="AuditTaskSuccessful">
+      <LocalizedLabel LanguageRef="zhs">评审任务成功。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Review task successfully</LocalizedLabel>
+    </Label>
+    <Label Name="AgainNotAllowedDeliveryTask">
+      <LocalizedLabel LanguageRef="zhs">不允许再次转交任务。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The task is not allowed to be retransmitted again.</LocalizedLabel>
+    </Label>
+    <Label Name="CanNotDeliverySelf">
+      <LocalizedLabel LanguageRef="zhs">不允许转交给自己</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to hand over to yourself.</LocalizedLabel>
+    </Label>
+    <Label Name="DeliveryMessageTitle">
+      <LocalizedLabel LanguageRef="zhs">转交流程消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer process message</LocalizedLabel>
+    </Label>
+    <Label Name="DeliveryMessageMsg">
+      <LocalizedLabel LanguageRef="zhs">“[USER]”将流程任务转交给您，流程任务名称为：【[TASKNAME]】</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">"[USER]"tranfers the process task to you, the process task name is: [[TASKNAME]]</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyWithdrawTaskOfRunningWorkflow">
+      <LocalizedLabel LanguageRef="zhs">流程已进行到后续节点或者已结束，不允许撤回。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The process has proceeded to a subsequent node or has ended and is not allowed to be withdrawn.</LocalizedLabel>
+    </Label>
+    <Label Name="AutoTaskCanNotRollback">
+      <LocalizedLabel LanguageRef="zhs">自动提交的流程任务不能撤回</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic commit process task cannot be withdrawn</LocalizedLabel>
+    </Label>
+    <Label Name="AssistTaskRollbackDeny">
+      <LocalizedLabel LanguageRef="zhs">协助任务 [TaskName] 不能撤回</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssistTask [TaskName]  can't rollback</LocalizedLabel>
+    </Label>
+    <Label Name="WithdrawTaskSuccessfully">
+      <LocalizedLabel LanguageRef="zhs">成功撤回任务。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The tasktask was succeeded withdrawn.</LocalizedLabel>
+    </Label>
+    <Label Name="NotAllowedToExecuteTheWithdrawalOperation">
+      <LocalizedLabel LanguageRef="zhs">任务已评审不允许执行撤回操作。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The task has been reviewed, the revocation operation is not allowed to be performed.</LocalizedLabel>
+    </Label>
+    <Label Name="NodeActorIsNotEmpty">
+      <LocalizedLabel LanguageRef="zhs">[NodeText]节点执行人不能为空。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The executor of the [NodeText] node cannot be null.</LocalizedLabel>
+    </Label>
+    <Label Name="NodeMustManuallyChangeActor">
+      <LocalizedLabel LanguageRef="zhs">[NodeText]节点必须手动指定执行人。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The executor of the [NodeText] node must be specified manually.</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowClassifyCanNotmovetoself">
+      <LocalizedLabel LanguageRef="zhs">不能移动到当前分类下</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cannot move to the current classification</LocalizedLabel>
+    </Label>
+    <Label Name="UserType">
+      <LocalizedLabel LanguageRef="zhs">用户类型：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User type:</LocalizedLabel>
+    </Label>
+    <Label Name="MessageType">
+      <LocalizedLabel LanguageRef="zhs">发送方式：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transmit mode:</LocalizedLabel>
+    </Label>
+    <Label Name="DirectoryNotExist">
+      <LocalizedLabel LanguageRef="zhs">对象对应的图标目录不存在,请联系管理员配置！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The icon directory corresponding to the object does not exist, please contact the administrator for configuration!</LocalizedLabel>
+    </Label>
+    <Label Name="NotFindLine">
+      <LocalizedLabel LanguageRef="zhs">未找到与评审结果匹配的流程路线，请选择其他评审结果或者修改流程模板！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">未找到与评审结果匹配的流程路线，请选择其他评审结果或者修改流程模板！</LocalizedLabel>
+    </Label>
+    <Label Name="chkAllowFlow">
+      <LocalizedLabel LanguageRef="zhs">允许发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow to initiate the process</LocalizedLabel>
+    </Label>
+    <Label Name="typeCheck">
+      <LocalizedLabel LanguageRef="zhs">系统不支持对类型：[#]发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System does not support to the type: [#] initiate the process</LocalizedLabel>
+    </Label>
+    <Label Name="stateCheck">
+      <LocalizedLabel LanguageRef="zhs">对象[#]当前生命周期不允许发起流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object [#] The current life cycle of the object is not allowed to initiate the process</LocalizedLabel>
+    </Label>
+    <Label Name="objnotmatch">
+      <LocalizedLabel LanguageRef="zhs">对象[#]的类型和状态与当前流程模板设置要求不匹配</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[#] The type and state of the object does not match the current process template setting requirements</LocalizedLabel>
+    </Label>
+
+    <Label Name="NoneResult">
+      <LocalizedLabel LanguageRef="zhs">流程通知中选中的行没有设置结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There’s no result set for the line selected in the process notification</LocalizedLabel>
+    </Label>
+    <Label Name="ResultSame">
+      <LocalizedLabel LanguageRef="zhs">流程通知中选中的行与其他行设置的结果相同</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The lines selected in the process notification are the same as the results of the other line settings</LocalizedLabel>
+    </Label>
+    <Label Name="StartWorkflow">
+      <LocalizedLabel LanguageRef="zhs">指派执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assign Executor</LocalizedLabel>
+    </Label>
+    <Label Name="Accessory">
+      <LocalizedLabel LanguageRef="zhs">流程附件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Attachment</LocalizedLabel>
+    </Label>
+    <Label Name="StartWorkflowTitle">
+      <LocalizedLabel LanguageRef="zhs">新建流程</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Process</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowInform">
+      <LocalizedLabel LanguageRef="zhs">流程通知</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Notification</LocalizedLabel>
+    </Label>
+    
+    <Label Name="NodeNotExistActor">
+      <LocalizedLabel LanguageRef="zhs">“[Node]”节点不存在实际的执行人，请检查后再执行此操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">“[Node]”Node Not Exist Actor</LocalizedLabel>
+    </Label>
+    <Label Name="AssistTaskInfoTitle">
+      <LocalizedLabel LanguageRef="zhs">协助评审提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Assit AuditInfo</LocalizedLabel>
+    </Label>
+    <Label Name="AssistTaskInfo">
+      <LocalizedLabel LanguageRef="zhs">流程任务“[TaskName]” 需要您协助评审，请及时处理！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FlowTask "[TaskName]" Need Assit Audit,Please Check!</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateIsNotLastVersion">
+      <LocalizedLabel LanguageRef="zhs">选中的流程模板不是最新的流程模板，请刷新后重试！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">选中的流程模板不是最新的流程模板，请刷新后重试！</LocalizedLabel>
+    </Label>
+    <Label Name="SetAssistTaskUserInfo">
+      <LocalizedLabel LanguageRef="zhs">所选协审用户 [USERNAME] 是当前流程任务节点审核人！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Current user [USERNAME] Must not be task auditor！</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/resetpassword.css"/>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".reset-password-login").on("click", function () {
+                $.ajax({
+                    type: "get",
+                    url: "../GetLoginUrl.aspx",
+                    dataType: "text",
+                    success: function (data) {
+                        window.top.location.href = "http://" + data + "/default.aspx";
+                    }
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="step-img" style="background:url(../image/fourstep.png) no-repeat;"></div>
+    <div class="step-img-title">
+        <span class="one-sp" style="color:#0097ff;">填写账户名</span><span class="second-sp" style="color:#0097ff;">验证身份</span>
+        <span class="third-sp" style="color:#0097ff;">设置新密码</span><span class="four-sp" style="color:#0097ff;">完成</span>
+    </div>
+    <div class="reset-password-succuss-c">
+        <img src="../image/success.png" class="reset-password-succuss-img"/>
+        <div style="display:inline-block;">您已经成功设置密码,请使用新密码<span class="reset-password-login">登录</span><span>!</span></div>
+    </div>
+</body>
+</html>

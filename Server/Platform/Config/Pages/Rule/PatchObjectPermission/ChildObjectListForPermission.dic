@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ChildObjectListForPermission" IsWeb="true">
+    <Label Name="ChildObjectTitle">
+      <LocalizedLabel LanguageRef="zhs">下级对象列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate object list</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUID">
+      <LocalizedLabel LanguageRef="zhs">创建人：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Creator:</LocalizedLabel>
+    </Label>
+    <Label Name="OWNUID">
+      <LocalizedLabel LanguageRef="zhs">所有者：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Owner:</LocalizedLabel>
+    </Label>
+    <Label Name="RowEmpty">
+      <LocalizedLabel LanguageRef="zhs">下级对象不能为空！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Subordinate object cannot be null!</LocalizedLabel>
+    </Label>
+    <Label Name="WaitLabel">
+      <LocalizedLabel LanguageRef="zhs">正在加载请稍候</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please wait while loading</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

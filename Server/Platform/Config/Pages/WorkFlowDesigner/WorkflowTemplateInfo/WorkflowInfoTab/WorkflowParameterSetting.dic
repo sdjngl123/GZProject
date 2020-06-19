@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowParameterSetting" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">参数设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Settings</LocalizedLabel>
+    </Label>
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="Copy">
+      <LocalizedLabel LanguageRef="zhs">复制选中行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy selected row</LocalizedLabel>
+    </Label>
+    <Label Name="ParaName">
+      <LocalizedLabel LanguageRef="zhs">参数名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Name</LocalizedLabel>
+    </Label>
+    <Label Name="ParaValue">
+      <LocalizedLabel LanguageRef="zhs">参数值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Value</LocalizedLabel>
+    </Label>
+    <Label Name="ParaNameRegex">
+      <LocalizedLabel LanguageRef="zhs">只能输入字母，最大长度50</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only numbers can be entered with the maximum length of 50</LocalizedLabel>
+    </Label>
+    <Label Name="ParaValueRegex">
+      <LocalizedLabel LanguageRef="zhs">只能输入数字，（0-99999999）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only numbers can be entered, (0-99999999)</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

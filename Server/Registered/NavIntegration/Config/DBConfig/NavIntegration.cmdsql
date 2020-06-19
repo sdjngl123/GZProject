@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="DeleteLocalSoftwareOrgainzation">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from USERINFO
+        Delete from PERSON
+        Delete from ROLEINFO
+        Delete from GROUPINFO
+        Delete from COMPANY
+        Delete from ORGANIZE
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from USERINFO
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from PERSON
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from ROLEINFO
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from GROUPINFO
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from COMPANY
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        Delete from ORGANIZE
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+</root>

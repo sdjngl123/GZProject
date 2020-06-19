@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+  <ServiceItem
+    ServiceName="WebStudioViewService"
+    ServiceAssembly="Hoteam.InforCenter.WebStudio.View.Service.dll"
+    ServiceClass="Hoteam.InforCenter.WebStudio.View.Service.WebStuidoViewService"
+    ContractAssembly="Hoteam.InforCenter.WebStudio.View.Service.dll"
+    ContractClass="Hoteam.InforCenter.WebStudio.View.Service.IWebStuidoViewService"/>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MODELLLISTVIEWINFOView" IsWeb="true">
+    <Label Name="MODELLLISTVIEWINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">模型列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELLLISTVIEWINFO</LocalizedLabel>
+    </Label>
+    <Label Name="MODELLLISTVIEWINFOCaption">
+      <LocalizedLabel LanguageRef="zhs">模型列表查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELLLISTVIEWINFO</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENAME</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENAME</LocalizedLabel>
+    </Label>
+    <Label Name="ENENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">英文名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENENAME</LocalizedLabel>
+    </Label>
+    <Label Name="ENENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">英文名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ENENAME</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OPERATION</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OPERATION</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="MODELLLISTVIEWINFOCondition" IsWeb="true" />
+</DictionarySerializer>

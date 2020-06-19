@@ -1,0 +1,15 @@
+﻿{
+	var todo='save-[INFONAME]';
+	var c = pageEvent.o.GetControl('[INFONAME]_Value_Image');
+	debugger;
+	if(c.id!=''){
+	if(c.Check() == false) bCheck = false;
+	var imageValue=c.GetValue();
+	if(imageValue){
+	data.[INFONAME] = imageValue;
+	}
+	else{
+		data.[INFONAME]='';
+	}
+	}
+}

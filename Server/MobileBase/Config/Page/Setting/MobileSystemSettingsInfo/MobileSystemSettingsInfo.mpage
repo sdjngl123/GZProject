@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MPage Name="MobileSystemSettingsInfo"
+         JsFile ="~/MobileBase/Config/Page/Setting/MobileSystemSettingsInfo/MobileSystemSettingsInfo.js" 
+         LayoutFile="~/MobileBase/Config/Page/Setting/MobileSystemSettingsInfo/MobileSystemSettingsInfo.mlayout" 
+         DictionaryContent="MobileSystemSettingsInfo">
+      <PageHandler HandlerName ="OnCreate" Script="HMUI_Mobile_MobileSystemSettingsInfo_PageInit(pageEvent);"/>
+  </MPage>
+</root>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WindowsHotKey" IsWeb="true">
+    <Label Name="CTRL+C">
+      <LocalizedLabel LanguageRef="zhs">复制</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+C</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+A">
+      <LocalizedLabel LanguageRef="zhs">全选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+A</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+V">
+      <LocalizedLabel LanguageRef="zhs">粘贴</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+V</LocalizedLabel>
+    </Label>
+    <Label Name="SHIFT+DELETE">
+      <LocalizedLabel LanguageRef="zhs">永久删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Shift+Delete</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+Z">
+      <LocalizedLabel LanguageRef="zhs">撤销上一步</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+Z</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+ESC">
+      <LocalizedLabel LanguageRef="zhs">显示开始菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+Esc</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+F1">
+      <LocalizedLabel LanguageRef="zhs">显示windows帮助</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+F1</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+U">
+      <LocalizedLabel LanguageRef="zhs">打开工具管理器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+U</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+D">
+      <LocalizedLabel LanguageRef="zhs">返回桌面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+D</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+F">
+      <LocalizedLabel LanguageRef="zhs">查找</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CTRL+F</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+F">
+      <LocalizedLabel LanguageRef="zhs">文件检索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+F</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+E">
+      <LocalizedLabel LanguageRef="zhs">打开资源管理器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+E</LocalizedLabel>
+    </Label>
+    <Label Name="ALT+TAB">
+      <LocalizedLabel LanguageRef="zhs">自由切换界面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Alt+Tab</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+L">
+      <LocalizedLabel LanguageRef="zhs">切换用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+L</LocalizedLabel>
+    </Label>
+    <Label Name="WIN+M">
+      <LocalizedLabel LanguageRef="zhs">最小化所有窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WIN+M</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+B">
+      <LocalizedLabel LanguageRef="zhs">所选内容字体加粗</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CTRL+B</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+I">
+      <LocalizedLabel LanguageRef="zhs">所选内容字体变为斜体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CTRL+I</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+]">
+      <LocalizedLabel LanguageRef="zhs">逐磅增大字号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+]</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+[">
+      <LocalizedLabel LanguageRef="zhs">逐磅减小字号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+[</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+L">
+      <LocalizedLabel LanguageRef="zhs">左对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+L</LocalizedLabel>
+    </Label>
+    <Label Name="CTRL+R">
+      <LocalizedLabel LanguageRef="zhs">右对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ctrl+R</LocalizedLabel>
+    </Label>
+
+  </Context>
+</DictionarySerializer>

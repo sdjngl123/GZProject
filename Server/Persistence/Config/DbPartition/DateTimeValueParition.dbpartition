@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<DbPartitionType Name="DateTimeValuePartition">
+	  <DbSplitType Name="Day" Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.DateTimePartition.PartitionDay" IsHide="false" />
+	  <DbSplitType Name="Month"  Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.DateTimePartition.PartitionMonth" IsHide="false" />
+	  <DbSplitType Name="Quater"  Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.DateTimePartition.PartitionQuater" IsHide="false" />
+	  <DbSplitType Name="Year"  Assembly="Hoteam.InforCenter.Persistence.DbPartition" Class="Hoteam.InforCenter.Persistence.DbPartition.DateTimePartition.PartitionYear" IsHide="false" />
+ </DbPartitionType>
+</root>

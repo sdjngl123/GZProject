@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--权限数据-->
+  <ClientTimerInfo Assembly="Hoteam.InforCenter.ModulePermission.Business.dll" ClassName="Hoteam.InforCenter.ModulePermission.Business.ModulePermissionUtility" FilterFunction="Hoteam_Paltform_ModulePermission_Check" CallBackFunction="Hoteam_Paltform_ModulePermission_CallBack"/>
+  <!--个人设置-->
+  <ClientTimerInfo Assembly="Hoteam.InforCenter.SystemSettings.Business.dll" ClassName="Hoteam.InforCenter.SystemSettings.Business.SystemSettingsUtility" FilterFunction="Hoteam_Paltform_SystemSettings_Check" CallBackFunction="Hoteam_Paltform_SystemSettings_CallBack"/>
+  <!--定时消息-->
+  <!--<ClientTimerInfo Assembly="Hoteam.InforCenter.Common.Communication.dll" ClassName="Hoteam.InforCenter.Common.Communication.Service.CommunicationService"
+                   IISAssembly="Hoteam.InforCenter.ModulePermission.Business.dll" IISClassName="Hoteam.InforCenter.ModulePermission.Business.ModulePermissionUtility"
+                   FilterFunction="Hoteam_Paltform_InstantMessage_Check" CallBackFunction="Hoteam_Paltform_InstantMessage_CallBack"/>-->
+</root>

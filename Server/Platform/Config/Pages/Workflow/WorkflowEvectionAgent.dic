@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowEvectionAgent" IsWeb="true">
+    <Label Name="AGENTSTARTDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">开始时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start time</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">代理人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agent</LocalizedLabel>
+    </Label>
+    <Label Name="SaveBtn">
+      <LocalizedLabel LanguageRef="zhs">保存代理设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save proxy settings</LocalizedLabel>
+    </Label>
+    <Label Name="CancelBtn">
+      <LocalizedLabel LanguageRef="zhs">取消代理设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel the proxy settings</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTSTARTDATETIMERegex">
+      <LocalizedLabel LanguageRef="zhs">开始时间不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The start time is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTIDRegex">
+      <LocalizedLabel LanguageRef="zhs">不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="AGENTENDDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">结束时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End time</LocalizedLabel>
+    </Label>
+    <Label Name="SaveSuccess">
+      <LocalizedLabel LanguageRef="zhs">设置成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set successfully</LocalizedLabel>
+    </Label>
+    <Label Name="CancelSuccess">
+      <LocalizedLabel LanguageRef="zhs">取消成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Cancel successfully</LocalizedLabel>
+    </Label>
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">代理设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Proxy settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

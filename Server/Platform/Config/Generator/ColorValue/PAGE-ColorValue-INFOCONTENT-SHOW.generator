@@ -1,0 +1,4 @@
+﻿<PageControl ControlID="[INFONAME]_Value" ParentID="[PARENTID]" TypeName="ColorPicker" >
+  <Settings Key="editable" Value="false" />
+  <Settings Key="position" Value="left"/>
+</PageControl>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="DataClear" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">数据清理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Data Clear</LocalizedLabel>
+    </Label>
+    <Label Name="DataClearCondition">
+      <LocalizedLabel LanguageRef="zhs">条件列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition List</LocalizedLabel>
+    </Label>
+    <Label Name="DataClearSqlList">
+      <LocalizedLabel LanguageRef="zhs">任务列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task List</LocalizedLabel>
+    </Label>
+    <Label Name="UTCTime">
+      <LocalizedLabel LanguageRef="zhs">UTC时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UTC Time</LocalizedLabel>
+    </Label>
+    <Label Name="Clear">
+      <LocalizedLabel LanguageRef="zhs">执行清理</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear</LocalizedLabel>
+    </Label>
+    <Label Name="ClearFinish">
+      <LocalizedLabel LanguageRef="zhs">清理完成</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Clear Completed</LocalizedLabel>
+    </Label>
+    <Label Name="StartExec">
+      <LocalizedLabel LanguageRef="zhs"> 开始执行 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Execution</LocalizedLabel>
+    </Label>
+    <Label Name="ExecResult">
+      <LocalizedLabel LanguageRef="zhs">执行结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute Results</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

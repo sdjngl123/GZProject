@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ShowReportPage">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_ReportMangement_ShowReportPage_OnCreate(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ReportView_Iframe" ParentID="" TypeName="Iframe" >
+    </PageControl>
+  </PageControls>
+</root>
+

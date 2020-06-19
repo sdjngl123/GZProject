@@ -1,0 +1,13 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+InforCenter_Registered_RelationCompanyValueGenerator_SetRelationCompanyValue(o,'[INFONAME]','[OBJTYPE]',true);
+var p = {};
+p.InfoName = '[INFONAME]';
+p.ObjType = '[OBJTYPE]';
+
+o.SetSelectedByValue(data.[INFONAME]);
+
+
+}
+}

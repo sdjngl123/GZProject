@@ -1,0 +1,8 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <AppSet Key="WORKFLOWTEMPLATE_ImgPath" Value="Platform/Image/Workflow" ToClient="false"  />
+  <AppSet Key="WorklowTemplate_BackFlag" Value="退回;驳回;拒绝;否决;反对;不同意;不通过;不允许;不接受;重新审核;发回重审" ToClient="false" Description="流程退回标记，指定哪些评审结果是流程退回" />
+  <AppSet Key="WorklowTemplate_BackFlagColor" Value="#FA7986" ToClient="false" Description="流程退回树节点颜色" />
+  
+</root>

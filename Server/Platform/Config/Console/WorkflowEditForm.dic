@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkflowEditForm" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">流程编辑</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process Editing</LocalizedLabel>
+    </Label>
+    <Label Name="NewWorkflowTemplate">
+      <LocalizedLabel LanguageRef="zhs">新建流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Process template</LocalizedLabel>
+    </Label>
+    <Label Name="SaveAsWorkflowTemplate">
+      <LocalizedLabel LanguageRef="zhs">另存为流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save As Process template</LocalizedLabel>
+    </Label>
+    <Label Name="WorkflowTemplateType">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="gbxSelectItemProperty">
+      <LocalizedLabel LanguageRef="zhs">选中项信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select item information</LocalizedLabel>
+    </Label>
+    <Label Name="tabBaseFlowProperty">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="tabSetParameters">
+      <LocalizedLabel LanguageRef="zhs">参数设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Settings</LocalizedLabel>
+    </Label>
+    <Label Name="tabBaseNodeProperty">
+      <LocalizedLabel LanguageRef="zhs">基本信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic information</LocalizedLabel>
+    </Label>
+    <Label Name="tabSetExtend">
+      <LocalizedLabel LanguageRef="zhs">扩展设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extended Settings</LocalizedLabel>
+    </Label>
+    <Label Name="tabSetPlugin">
+      <LocalizedLabel LanguageRef="zhs">插件设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in Settings</LocalizedLabel>
+    </Label>
+    <Label Name="gbxWorkflowProperty">
+      <LocalizedLabel LanguageRef="zhs">流程信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process information</LocalizedLabel>
+    </Label>
+    <Label Name="tabResult">
+      <LocalizedLabel LanguageRef="zhs">评审结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Review Result</LocalizedLabel>
+    </Label>
+    <Label Name="tabTaskActor">
+      <LocalizedLabel LanguageRef="zhs">任务执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task executor</LocalizedLabel>
+    </Label>
+    <Label Name="NameNotNull">
+      <LocalizedLabel LanguageRef="zhs">名称不能为空，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name cannot be null. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="NameIsExist">
+      <LocalizedLabel LanguageRef="zhs">名称已存在，请输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name already exists. Please enter!</LocalizedLabel>
+    </Label>
+    <Label Name="OnlySelectAllow">
+      <LocalizedLabel LanguageRef="zhs">只允许选择一个。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only one is allowed.</LocalizedLabel>
+    </Label>
+    <Label Name="IsRun">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="labFlowAdministrator">
+      <LocalizedLabel LanguageRef="zhs">流程管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process administrator</LocalizedLabel>
+    </Label>
+    <Label Name="labRelatedModel">
+      <LocalizedLabel LanguageRef="zhs">相关模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relevant Model</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeUser">
+      <LocalizedLabel LanguageRef="zhs">修改执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modify executor</LocalizedLabel>
+    </Label>
+    <Label Name="AdminChange">
+      <LocalizedLabel LanguageRef="zhs">管理员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Administrator</LocalizedLabel>
+    </Label>
+    <Label Name="CreatorChange">
+      <LocalizedLabel LanguageRef="zhs">发起人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Originator</LocalizedLabel>
+    </Label>
+    <Label Name="ActorChange">
+      <LocalizedLabel LanguageRef="zhs">执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Executor</LocalizedLabel>
+    </Label>
+    <Label Name="ResultName">
+      <LocalizedLabel LanguageRef="zhs">结果名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result Name</LocalizedLabel>
+    </Label>
+    <Label Name="ParameterName">
+      <LocalizedLabel LanguageRef="zhs">参数名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Name</LocalizedLabel>
+    </Label>
+    <Label Name="ParameterValue">
+      <LocalizedLabel LanguageRef="zhs">参数值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter Value</LocalizedLabel>
+    </Label>
+    <Label Name="labNodeText">
+      <LocalizedLabel LanguageRef="zhs">显示文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Text</LocalizedLabel>
+    </Label>
+    <Label Name="labNodeImage">
+      <LocalizedLabel LanguageRef="zhs">节点图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node Picture</LocalizedLabel>
+    </Label>
+    <Label Name="labLifeCircleState">
+      <LocalizedLabel LanguageRef="zhs">生命周期状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Lifecycle state</LocalizedLabel>
+    </Label>
+    <Label Name="labGroup">
+      <LocalizedLabel LanguageRef="zhs">组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="labRole">
+      <LocalizedLabel LanguageRef="zhs">角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role</LocalizedLabel>
+    </Label>
+    <Label Name="labUser">
+      <LocalizedLabel LanguageRef="zhs">用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User</LocalizedLabel>
+    </Label>
+    <Label Name="labGroupRole">
+      <LocalizedLabel LanguageRef="zhs">组角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group Role</LocalizedLabel>
+    </Label>
+    <Label Name="labNodeFlag">
+      <LocalizedLabel LanguageRef="zhs">节点标识</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node Identification</LocalizedLabel>
+    </Label>
+    <Label Name="labShowOrder">
+      <LocalizedLabel LanguageRef="zhs">显示顺序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Display Order</LocalizedLabel>
+    </Label>
+    <Label Name="labTaskType">
+      <LocalizedLabel LanguageRef="zhs">任务类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Task type</LocalizedLabel>
+    </Label>
+    <Label Name="labChangeNodeActor">
+      <LocalizedLabel LanguageRef="zhs">更改节点执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change Node Executor</LocalizedLabel>
+    </Label>
+    <Label Name="labAllow">
+      <LocalizedLabel LanguageRef="zhs">允许</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow</LocalizedLabel>
+    </Label>
+    <Label Name="labAuditActors">
+      <LocalizedLabel LanguageRef="zhs">默认执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default executor</LocalizedLabel>
+    </Label>
+    <Label Name="labEffectivityTime">
+      <LocalizedLabel LanguageRef="zhs">有效时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Effective Time</LocalizedLabel>
+    </Label>
+    <Label Name="labAdjectiveRemindTime">
+      <LocalizedLabel LanguageRef="zhs">提前提醒时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Early Warning Time</LocalizedLabel>
+    </Label>
+    <Label Name="labDay">
+      <LocalizedLabel LanguageRef="zhs">天</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Day</LocalizedLabel>
+    </Label>
+    <Label Name="labHour">
+      <LocalizedLabel LanguageRef="zhs">小时</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hour</LocalizedLabel>
+    </Label>
+    <Label Name="labMinute">
+      <LocalizedLabel LanguageRef="zhs">分</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Minute</LocalizedLabel>
+    </Label>
+    <Label Name="labCondition">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="NodeName">
+      <LocalizedLabel LanguageRef="zhs">节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node</LocalizedLabel>
+    </Label>
+    <Label Name="IsAllowChange">
+      <LocalizedLabel LanguageRef="zhs">允许修改</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Allow Modification</LocalizedLabel>
+    </Label>
+    <Label Name="IsValidateNull">
+      <LocalizedLabel LanguageRef="zhs">验证为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify null</LocalizedLabel>
+    </Label>
+    <Label Name="IsValidateCustomNull">
+      <LocalizedLabel LanguageRef="zhs">验证手动指定为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verify that manual assignment is null</LocalizedLabel>
+    </Label>
+    <Label Name="IsIgnoreDefaultActor">
+      <LocalizedLabel LanguageRef="zhs">忽略节点执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ignore Node Executor</LocalizedLabel>
+    </Label>
+    <Label Name="Yes">
+      <LocalizedLabel LanguageRef="zhs">是</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Yes</LocalizedLabel>
+    </Label>
+    <Label Name="NameNullErr">
+      <LocalizedLabel LanguageRef="zhs">工作流名称不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Workflow name is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="colName">
+      <LocalizedLabel LanguageRef="zhs">插件名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Plug-in Name</LocalizedLabel>
+    </Label>
+    <Label Name="colParameter">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter</LocalizedLabel>
+    </Label>
+    <Label Name="colBeforeExec">
+      <LocalizedLabel LanguageRef="zhs">前序执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pre-sequence execution</LocalizedLabel>
+    </Label>
+    <Label Name="ParenthesisNumberOfInconsistencies">
+      <LocalizedLabel LanguageRef="zhs">左右括号数量不一致。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The number of left and right brackets is inconsistent.</LocalizedLabel>
+    </Label>
+    <Label Name="EmptyCondition">
+      <LocalizedLabel LanguageRef="zhs">条件为空。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The condition is null.</LocalizedLabel>
+    </Label>
+    <Label Name="CheckCondition">
+      <LocalizedLabel LanguageRef="zhs">检查</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check</LocalizedLabel>
+    </Label>
+    <Label Name="CheckByConditions">
+      <LocalizedLabel LanguageRef="zhs">条件检查通过。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition check passed.</LocalizedLabel>
+    </Label>
+    <Label Name="LeftParenthesisTextboxError">
+      <LocalizedLabel LanguageRef="zhs">左括号文本框中填写了右括号。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The right bracket is filled in the left bracket text box.</LocalizedLabel>
+    </Label>
+    <Label Name="RightParenthesisTextboxError">
+      <LocalizedLabel LanguageRef="zhs">右括号文本框中填写了左括号。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The left bracket is filled in the right bracket text box.</LocalizedLabel>
+    </Label>
+    <Label Name="NotExistConditions">
+      <LocalizedLabel LanguageRef="zhs">不存在需要检查的条件。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is no condition to be checked.</LocalizedLabel>
+    </Label>
+    <Label Name="WhetherToSave">
+      <LocalizedLabel LanguageRef="zhs">该流程模板已经被使用，是否继续保存？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The process template has been used. Do you want to continue saving?</LocalizedLabel>
+    </Label>
+    <Label Name="UsingWhetherTodelete">
+      <LocalizedLabel LanguageRef="zhs">删除的流程模板包括[[alltemplate]],其中[[usetemplate]]流程模板已经被使用，是否继续删除？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted process template includes the [[alltemplate]], among which [[usetemplate]] workflow template is already in use. Do you want to continue Deleting?</LocalizedLabel>
+    </Label>
+    <Label Name="WhetherTodelete">
+      <LocalizedLabel LanguageRef="zhs">删除的流程模板包括[[alltemplate]]，是否继续删除？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The deleted process template includes [[alltemplate]]. Do you want to continue Deleting?</LocalizedLabel>
+    </Label>
+    <Label Name="Agree">
+      <LocalizedLabel LanguageRef="zhs">同意</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Agree</LocalizedLabel>
+    </Label>
+    <Label Name="Return">
+      <LocalizedLabel LanguageRef="zhs">退回</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGELISTITEMModel" IsWeb="true">
+    <Label Name="MOBILEPAGELISTITEMHeader">
+      <LocalizedLabel LanguageRef="zhs">列表项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageListItem</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGELISTITEMCaption">
+      <LocalizedLabel LanguageRef="zhs">列表项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageListItem</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectState</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">对象状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ObjectState</LocalizedLabel>
+    </Label>
+    <Label Name="SINGLEBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">列表按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleButton</LocalizedLabel>
+    </Label>
+    <Label Name="SINGLEBUTTONCaption">
+      <LocalizedLabel LanguageRef="zhs">列表按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SingleButton</LocalizedLabel>
+    </Label>
+    <Label Name="SLIDEBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">侧滑按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SlideButton</LocalizedLabel>
+    </Label>
+    <Label Name="SLIDEBUTTONCaption">
+      <LocalizedLabel LanguageRef="zhs">侧滑按钮</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SlideButton</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDHeader">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDCaption">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="LISTCONTENTHeader">
+      <LocalizedLabel LanguageRef="zhs">列表内容点击</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LISTCONTENT</LocalizedLabel>
+    </Label>
+    <Label Name="LISTCONTENTCaption">
+      <LocalizedLabel LanguageRef="zhs">列表内容点击</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">LISTCONTENT</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

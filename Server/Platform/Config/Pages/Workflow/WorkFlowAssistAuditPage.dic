@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WorkFlowAssistAuditPage" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">协助评审人员明细</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WorkFlowAssistAuditPage</LocalizedLabel>
+    </Label>
+    <Label Name="UserInfo">
+      <LocalizedLabel LanguageRef="zhs">用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserInfo</LocalizedLabel>
+    </Label>
+    <Label Name="Result">
+      <LocalizedLabel LanguageRef="zhs">结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Result</LocalizedLabel>
+    </Label>
+    <Label Name="OpinionDateTime">
+      <LocalizedLabel LanguageRef="zhs">评审时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OpinionDateTime</LocalizedLabel>
+    </Label>
+    <Label Name="Opinion">
+      <LocalizedLabel LanguageRef="zhs">意见</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Opinion</LocalizedLabel>
+    </Label>
+    
+
+  </Context>
+</DictionarySerializer>

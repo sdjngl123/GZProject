@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="THREEROLEAUTHINFO" Extend="ENTITY" LogicClass="EntityObject" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="THREEROLEAUTHINFO" SplitValidateUnique="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="USERID" Type="DefaultObjectValue" DataType="STRING100" Column="USERID" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="AUTH" Type="DefaultObjectValue" DataType="STRING100" Column="AUTH" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="AUTHTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="AUTHTYPE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="SETTINGMODE" Type="DefaultObjectValue" DataType="STRING100" Column="SETTINGMODE" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="AUTHDATA" Type="DefaultObjectValue" DataType="TEXT" Column="AUTHDATA" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+  </EntityType>
+</root>

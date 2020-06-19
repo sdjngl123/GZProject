@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWNODEModel" IsWeb="true">
+    <Label Name="WORKFLOWNODEHeader">
+      <LocalizedLabel LanguageRef="zhs">流程节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process node</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWNODECaption">
+      <LocalizedLabel LanguageRef="zhs">流程节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process node</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICHeader">
+      <LocalizedLabel LanguageRef="zhs">多语言label</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multilingual label</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICCaption">
+      <LocalizedLabel LanguageRef="zhs">多语言label</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multilingual label</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node type</LocalizedLabel>
+    </Label>
+    <Label Name="NODETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">节点类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node type</LocalizedLabel>
+    </Label>
+    <Label Name="NODEFLAGHeader">
+      <LocalizedLabel LanguageRef="zhs">节点标记</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node tag</LocalizedLabel>
+    </Label>
+    <Label Name="NODEFLAGCaption">
+      <LocalizedLabel LanguageRef="zhs">节点标记</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Node tag</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWCHILDCOUNTHeader">
+      <LocalizedLabel LanguageRef="zhs">显示下级对象数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ShowChildCount</LocalizedLabel>
+    </Label>
+    <Label Name="SHOWCHILDCOUNTCaption">
+      <LocalizedLabel LanguageRef="zhs">显示下级对象数量</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ShowChildCount</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

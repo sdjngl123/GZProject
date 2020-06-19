@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="VTSDEMANDView" ObjectTypeName="VTSDEMAND" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATEUID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="CREATETIME" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECOMPANYID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="SERIALNUMBER" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="TESTSTANDARD" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="TESTSAMPLESIZE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="IMPLEMENTSTAGE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="VERIFICATIONS" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="RECIVEDATE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+  </ObjectView>
+</root>

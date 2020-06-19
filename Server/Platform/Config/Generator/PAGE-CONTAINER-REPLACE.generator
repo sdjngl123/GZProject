@@ -1,0 +1,5 @@
+﻿<PageControl ControlID="[CONTROLID]" ParentID="[PARENTID]" TypeName="LayoutContainer">
+  <Settings Key="type" Value="[HORIZONTAL]"/>
+  [INFOLAYOUT]
+</PageControl>
+[INFOCONTENT]

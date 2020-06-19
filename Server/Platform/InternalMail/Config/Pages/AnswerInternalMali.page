@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="AnswerInternalMali">
+  <Settings Key="height" Value="600"/>
+  <Settings Key="width" Value="1000"/>
+  <Settings Key="title" Value="AnswerInternalMali.INTERNALMAILHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_AnswerInternalMail_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_CreateInternalMail_OnGetDataFromPage(pageEvent);"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_INTERNALMAIL_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="padding" Value="10px 0 0 0"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-1"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-2"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-3"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-4"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="R-5"/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="145"/>
+        <Settings Key="childid" Value="R-6"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="150"/>
+        <Settings Key="childid" Value="R-7"/>
+      </Settings>
+      <Settings Key="item10" Value="">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item8" Value="">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item9" Value="">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="R-9"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVER" ParentID="R-1" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="RECIVER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RECIVER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="RECIVER_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RECIVER_Label" ParentID="RECIVER" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.RECIVERHeader" />
+    </PageControl>
+    <PageControl ControlID="RECIVER_Label_FieldFlag" ParentID="RECIVER" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="RECIVER_Value" ParentID="RECIVER" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+    <PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="COPYTOUSER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER" ParentID="R-2" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="COPYTOUSER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="COPYTOUSER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER_Label" ParentID="COPYTOUSER" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.COPYTOUSERHeader" />
+    </PageControl>
+    <PageControl ControlID="COPYTOUSER_Value" ParentID="COPYTOUSER" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+    <PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SECRETUSER"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SECRETUSER" ParentID="R-3" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="SECRETUSER_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="SECRETUSER_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SECRETUSER_Label" ParentID="SECRETUSER" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.SECRETUSERHeader" />
+    </PageControl>
+    <PageControl ControlID="SECRETUSER_Value" ParentID="SECRETUSER" TypeName="TextValue" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_Object_OnEditMutliUserValue(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="type" Value="text"/>
+    </PageControl>
+    <PageControl ControlID="R-4" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILTITLE"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE" ParentID="R-4" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="MAILTITLE_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILTITLE_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value="MAILTITLE_Label_FieldFlag"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Label" ParentID="MAILTITLE" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.MAILTITLEHeader" />
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Label_FieldFlag" ParentID="MAILTITLE" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="MAILTITLE_Value" ParentID="MAILTITLE" TypeName="TextBox" >
+      <Settings Key="type" Value="text"/>
+      <Settings Key="regex" Value="[^(\s*)] AND ^([\s\S]{0,500})?$" />
+      <Settings Key="regextipId" Value="INTERNALMAIL-CREATE.MAILTITLERegex" />
+    </PageControl>
+    <PageControl ControlID="R-5" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IMPORTANT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT" ParentID="R-5" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="IMPORTANT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="IMPORTANT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="IMPORTANT_Label" ParentID="IMPORTANT" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.IMPORTANTHeader" />
+    </PageControl>
+    <PageControl ControlID="IMPORTANT_Value" ParentID="IMPORTANT" TypeName="RadioList" >
+      <Settings Key="position" Value="horizontal" />
+      <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="INTERNALMAIL-CREATE.IMPORTANTRegex" />
+    </PageControl>
+    <PageControl ControlID="R-6" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENT"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT" ParentID="R-6" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="MAILCONTENT_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="MAILCONTENT_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Label" ParentID="MAILCONTENT" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.MAILCONTENTHeader" />
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Label_FieldFlag" ParentID="MAILCONTENT" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="Platform.RequiredFlag" />
+      <Settings Key="color" Value="red" />
+    </PageControl>
+    <PageControl ControlID="MAILCONTENT_Value" ParentID="MAILCONTENT" TypeName="TextBox" >
+      <Settings Key="type" Value="textarea"/>
+      <Settings Key="regex" Value="^([\s\S]{0,2000})?$" />
+      <Settings Key="regextipId" Value="INTERNALMAIL-CREATE.MAILCONTENTRegex" />
+    </PageControl>
+
+    <PageControl ControlID="R-7" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PLUGIN"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PLUGIN" ParentID="R-7" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="PLUGIN_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PluginContainer"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PLUGIN_Label" ParentID="PLUGIN" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.PLUGINHeader" />
+    </PageControl>
+    <PageControl ControlID="PluginContainer" ParentID="PLUGIN" TypeName="LayoutContainer" >
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectListGridContainer"/>
+      </Settings>
+      <Settings Key="item6" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="40"/>
+        <Settings Key="childid" Value="ObjectButtonContainer"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ObjectListGridContainer" ParentID="PluginContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="149"/>
+        <Settings Key="childid" Value="ObjectListGrid"/>
+      </Settings>
+      <Settings Key="item5" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="ObjectListGrid" ParentID="ObjectListGridContainer" TypeName="Grid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+        <PageHandler HandlerName ="OnLoadRows" Script="InforCenter_Platform_StartWorkflow_GridData(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="true" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="INTERNALMAIL-CREATE.EID" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="0" />
+        <Settings Key="name" Value="EID" />
+        <Settings Key="resizable" Value="false" />
+        <Settings Key="colType" Value="hidden" />
+      </Settings>
+      <Settings Key="item0" >
+        <Settings Key="textId" Value="Platform.Img" />
+        <Settings Key="name" Value="IMGICONTYPE" />
+        <Settings Key="colType" Value="image" />
+        <!--<Settings Key="width" Value="80%" />-->
+        <Settings Key="sortable" Value="false" />
+        <Settings Key="resizable" Value="false" />
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="INTERNALMAIL-CREATE.OBJECTTYPE" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="OBJECTTYPE" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="text" />
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="INTERNALMAIL-CREATE.OBJECTNAME" />
+        <Settings Key="editable" Value="false" />
+        <Settings Key="width" Value="-1" />
+        <Settings Key="name" Value="ENAME" />
+        <Settings Key="resizable" Value="true" />
+        <Settings Key="colType" Value="text" />
+      </Settings>
+      <Settings Key="showPageBar" Value="false" />
+    </PageControl>
+    <PageControl ControlID="ObjectButtonContainer" ParentID="PluginContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="btnPaste"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="btnRemove"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="btnPaste" ParentID="ObjectButtonContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InternalMail_AddPluginGridData(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="iconClass" Value="p_paste" />
+    </PageControl>
+    <PageControl ControlID="btnRemove" ParentID="ObjectButtonContainer" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InternalMail_RemovePluginGridData(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="iconClass" Value="p_remove" />
+      <Settings Key="title" Value="Common.Remove" />
+    </PageControl>
+
+
+    <PageControl ControlID="R-9" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnSend"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item4" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnSave"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="20%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+      <Settings Key="item6" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="btnCancel"/>
+      </Settings>
+      <Settings Key="item7" Value="">
+        <Settings Key="size" Value="30%"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="btnSend" ParentID="R-9" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InternalMail_Send(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.Send" />
+    </PageControl>
+    <PageControl ControlID="btnSave" ParentID="R-9" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_InternalMail_Save(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="INTERNALMAIL-CREATE.Save" />
+    </PageControl>
+    <PageControl ControlID="btnCancel" ParentID="R-9" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="HoteamUI.UIManager.Return(ctrlEvent.o.ContainerID(), null);"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Cancel" />
+    </PageControl>
+  </PageControls>
+</root>

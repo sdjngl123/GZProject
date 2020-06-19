@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="GridPrintPage" IsCache="true"> 
+  <PageHandlers>
+      <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_GridPrint_OnCreate(pageEvent);"/>
+    </PageHandlers>
+  <PageControls>
+   
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ReportCtrl"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ReportCtrl" ParentID="Top_Container" TypeName="Report">
+      <!--<Settings Key="size" Value="1000"/>-->
+    </PageControl>
+  </PageControls>
+</root>

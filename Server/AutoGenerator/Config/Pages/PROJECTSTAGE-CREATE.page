@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="PROJECTSTAGE-CREATE">
+  <Settings Key="height" Value="88"/>
+  <Settings Key="width" Value="156"/>
+  <Settings Key="title" Value="PROJECTSTAGE-CREATE.PROJECTSTAGEHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('PROJECTSTAGE',para);{
+	var c = pageEvent.o.GetControl('ENAME_Value');
+	if(c.id!=''){
+		c.SetText(data.ENAME);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('STARTDATE_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.STARTDATE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('STOPDATE_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.STOPDATE);
+	}
+}
+{
+	var c = pageEvent.o.GetControl('SOPDATE_Value');
+	if(c.id!=''){
+		c.SetDateTimeByTicks(data.SOPDATE);
+	}
+}
+ var functionName = 'InforCenter_PROJECTSTAGE_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'PROJECTSTAGE'};{
+var c = pageEvent.o.GetControl('ENAME_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.ENAME = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('STARTDATE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.STARTDATE = c.GetTicksByDateTime();
+}
+}{
+var c = pageEvent.o.GetControl('STOPDATE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.STOPDATE = c.GetTicksByDateTime();
+}
+}{
+var c = pageEvent.o.GetControl('SOPDATE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.SOPDATE = c.GetTicksByDateTime();
+}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_PROJECTSTAGE_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="ENAME"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="STARTDATE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ENAME_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ENAME_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="ENAME_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ENAME_Label" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="PROJECTSTAGE-CREATE.ENAMEHeader" />
+</PageControl><PageControl ControlID="ENAME_Label_FieldFlag" ParentID="ENAME" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="ENAME_Value" ParentID="ENAME" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='PROJECTSTAGE';ctrlEvent.infoName='ENAME';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,200})?$" />
+  <Settings Key="regextipId" Value="PROJECTSTAGE-CREATE.ENAMERegex" />
+</PageControl><PageControl ControlID="STARTDATE" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="STARTDATE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="STARTDATE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="STARTDATE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STARTDATE_Label" ParentID="STARTDATE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="PROJECTSTAGE-CREATE.STARTDATEHeader" />
+</PageControl><PageControl ControlID="STARTDATE_Label_FieldFlag" ParentID="STARTDATE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="STARTDATE_Value" ParentID="STARTDATE" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='PROJECTSTAGE';ctrlEvent.infoName='STARTDATE';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+  <Settings Key="regextipId" Value="PROJECTSTAGE-CREATE.STARTDATERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="STOPDATE"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="50%"/>
+  <Settings Key="childid" Value="SOPDATE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STOPDATE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="STOPDATE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="STOPDATE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="STOPDATE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="STOPDATE_Label" ParentID="STOPDATE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="PROJECTSTAGE-CREATE.STOPDATEHeader" />
+</PageControl><PageControl ControlID="STOPDATE_Label_FieldFlag" ParentID="STOPDATE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="STOPDATE_Value" ParentID="STOPDATE" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='PROJECTSTAGE';ctrlEvent.infoName='STOPDATE';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$" />
+  <Settings Key="regextipId" Value="PROJECTSTAGE-CREATE.STOPDATERegex" />
+</PageControl><PageControl ControlID="SOPDATE" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item6" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SOPDATE_Label"/>
+</Settings><Settings Key="item7" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SOPDATE_Value"/>
+</Settings><Settings Key="item5" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SOPDATE_Label" ParentID="SOPDATE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="PROJECTSTAGE-CREATE.SOPDATEHeader" />
+</PageControl><PageControl ControlID="SOPDATE_Value" ParentID="SOPDATE" TypeName="DateTime" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='PROJECTSTAGE';ctrlEvent.infoName='SOPDATE';InforCenter_Platform_GenerateScript_DateValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="date"/>
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>  
+  </PageControls>
+</root>

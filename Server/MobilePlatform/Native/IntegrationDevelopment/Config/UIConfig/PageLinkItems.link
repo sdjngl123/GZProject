@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="MobilePageDevelopmentTreeLinks" IsTemplate="false" HideTitle="false">
+    <PageLink Name="LoopPlayLink" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="false" IsDelayLoadPage="false" IsTemplate="false">
+      <Para Name="ItemName" Value="LoopPlayManagement" />
+    </PageLink>
+    <PageLink Name="FunButton" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="false" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="FuncButtonManagement" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="MobileListPageDevelopmentLinks" IsTemplate="false" HideTitle="false">
+
+    <PageLink Name="Tab" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePageTabManagement" />
+    </PageLink>
+    <PageLink Name="MenuItem" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePageListItemList" />
+    </PageLink>
+    <PageLink Name="FilterCondition" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePageFilterManagement" />
+    </PageLink>
+    <PageLink Name="OrderPara" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePageOrderManagement" />
+    </PageLink>
+    <PageLink Name="AdvancedQuery" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePageAdvancedQueryManagement" />
+    </PageLink>
+    <PageLink Name="PropertyTab" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePagePropertyTabManagement" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="MobileNavDevelopmentLinks" IsTemplate="false" HideTitle="false">
+    <PageLink Name="MobileNav" PageName="ListManagement" IsSelected="false" CheckContentPermission="true" ActiveRefresh="false" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="MobilePageNavManagement" />
+    </PageLink>
+  </PageLinks>
+</root>

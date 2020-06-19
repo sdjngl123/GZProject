@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LifeCircleState" IsWeb="true">
+    <Label Name="INDESIGNHeader">
+      <LocalizedLabel LanguageRef="zhs">设计状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Design state</LocalizedLabel>
+    </Label>
+    <Label Name="INDESIGNCaption">
+      <LocalizedLabel LanguageRef="zhs">设计状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Design state</LocalizedLabel>
+    </Label>
+    <Label Name="INWORKFLOWHeader">
+      <LocalizedLabel LanguageRef="zhs">流程中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In process</LocalizedLabel>
+    </Label>
+    <Label Name="INWORKFLOWCaption">
+      <LocalizedLabel LanguageRef="zhs">流程中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In process</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHEDHeader">
+      <LocalizedLabel LanguageRef="zhs">已发布</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Published</LocalizedLabel>
+    </Label>
+    <Label Name="PUBLISHEDCaption">
+      <LocalizedLabel LanguageRef="zhs">已发布</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Published</LocalizedLabel>
+    </Label>
+    <Label Name="ABANDONEDHeader">
+      <LocalizedLabel LanguageRef="zhs">已废弃</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deprecated</LocalizedLabel>
+    </Label>
+    <Label Name="ABANDONEDCaption">
+      <LocalizedLabel LanguageRef="zhs">已废弃</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Deprecated</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

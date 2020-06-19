@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGEBUTTON-EDIT" IsWeb="true">
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="TITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="TITLERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONITEMTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">按钮类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ButtonItemType</LocalizedLabel>
+    </Label>
+    <Label Name="BUTTONITEMTYPERegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="BACKGROUNDCOLORHeader">
+      <LocalizedLabel LanguageRef="zhs">背景颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">BackgroundColor</LocalizedLabel>
+    </Label>
+    <Label Name="BACKGROUNDCOLORRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="URLHeader">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="URLRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="ICONHeader">
+      <LocalizedLabel LanguageRef="zhs">图标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Icon</LocalizedLabel>
+    </Label>
+    <Label Name="ICONRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEBUTTONHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditMobilePageButton</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

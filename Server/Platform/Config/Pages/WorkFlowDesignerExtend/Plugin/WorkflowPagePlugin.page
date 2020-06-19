@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowPagePlugin" IsCache="true">
+  <Settings Key="height" Value="200"/>
+  <Settings Key="title" Value="WorkflowPagePlugin.Title"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_WorkflowPagePlugin_OnCreate(pageEvent);"/>
+    <PageHandler HandlerName ="OnGetData" Script="InforCenter_Platform_WorkflowPagePlugin_OnGetData(pageEvent);"/>
+    <PageHandler HandlerName ="OnCheck" Script="InforCenter_Platform_WorkflowPagePlugin_OnCheck(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="PageNameContainer"/>
+      </Settings>
+      <Settings Key="item5" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ParameterContainer"/>
+      </Settings>
+    </PageControl>
+
+    <PageControl ControlID="PageNameContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="PageName_Label"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PageName_Value"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PageName_Label" ParentID="PageNameContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowPagePlugin.PageName" />
+    </PageControl>
+    <PageControl ControlID="PageName_Value" ParentID="PageNameContainer" TypeName="DropDown" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnChange" Script="InforCenter_Platform_WorkflowPagePlugin_PageNameOnChange(ctrlEvent);"/>
+      </PageHandlers> 
+      <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+      <Settings Key="regextipId" Value="WorkflowPagePlugin.PageNameIsNull" />
+    </PageControl>
+    <PageControl ControlID="ParameterContainer" ParentID="Info_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="90"/>
+        <Settings Key="childid" Value="PagePara_LabelC"/>
+      </Settings>
+      <Settings Key="item3" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PagePara_ValueC"/>
+      </Settings>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="20"/>
+        <Settings Key="childid" Value=""/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PagePara_LabelC" ParentID="ParameterContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="PagePara_Label"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PagePara_Label" ParentID="ParameterContainer" TypeName="Label" >
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="WorkflowPagePlugin.PagePara" />
+    </PageControl>
+    <PageControl ControlID="PagePara_ValueC" ParentID="ParameterContainer" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" Value="">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="PagePara_Value"/>
+      </Settings>
+      <Settings Key="item2" Value="">
+        <Settings Key="size" Value="14"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PagePara_Value" ParentID="ParameterContainer" TypeName="EditGrid">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script=""/>
+      </PageHandlers>
+      <Settings Key="multiselect" Value="false" />
+      <Settings Key="item1" >
+        <Settings Key="textId" Value="WorkflowPagePlugin.ParameterName" />
+        <Settings Key="name" Value="ParameterName" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="regex" Value="^([A-Za-z]{1,50}?)$" />
+        <Settings Key="regexTitleId" Value="WorkflowPagePlugin.ParaNameRegex" />
+      </Settings>
+
+      <Settings Key="item2" >
+        <Settings Key="textId" Value="WorkflowPagePlugin.ParameterValue" />
+        <Settings Key="name" Value="ParameterValue" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="text" />
+        <Settings Key="regex" Value="^([\s\S]{0,50})?$" />
+        <Settings Key="regexTitleId" Value="Validation.String50" />
+      </Settings>
+      
+      <Settings Key="item3" >
+        <Settings Key="textId" Value="WorkflowPagePlugin.ParameterDescription" />
+        <Settings Key="name" Value="ParameterDescription" />
+        <Settings Key="editable" Value="true" />
+        <Settings Key="colType" Value="text" />
+      </Settings>
+    </PageControl>
+  </PageControls>
+</root>

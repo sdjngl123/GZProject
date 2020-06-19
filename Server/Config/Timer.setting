@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="TimerLang" Value="zhs" ToClient="false" Description="执行定时操作时,虚拟用户采用的语言" />
+  <AppSet Key="TimerLoginID" Value="TimerLoginID" ToClient="false" Description="执行定时操作时,虚拟用户采用的登录ID" />
+  <AppSet Key="TimerUserID" Value="USERINFO_System" ToClient="false" Description="执行定时操作时,虚拟用户采用用户ID" />
+  <AppSet Key="TimerUserGroup" Value="GROUPINFO_System" ToClient="false" Description="执行定时操作时,虚拟用户采用的组ID" />
+  <AppSet Key="TimerConnect" Value="SQLSERVER" ToClient="false" Description="执行定时操作时,虚拟用户采用的对应的数据库连接,可多个,中间以分号分隔" />
+  <AppSet Key="TimerTimeZone" Value="+08:00" ToClient="false" Description="执行定时操作时,虚拟用户采用的时区,时区格式示例:+08:00" />
+  <AppSet Key="TimerLoginIP" Value="127.0.0.1" ToClient="false" Description="执行定时操作时,虚拟用户采用的登录IP" />
+</root>

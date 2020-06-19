@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="TreeViewCtrl" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">树管理页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tree management page</LocalizedLabel>
+    </Label>
+    <Label Name="More">
+      <LocalizedLabel LanguageRef="zhs">更多</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">More</LocalizedLabel>
+    </Label>
+    <Label Name="Query">
+      <LocalizedLabel LanguageRef="zhs">查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query</LocalizedLabel>
+    </Label>
+    <Label Name="Next">
+      <LocalizedLabel LanguageRef="zhs">下一个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Next</LocalizedLabel>
+    </Label>
+    <Label Name="Previous">
+      <LocalizedLabel LanguageRef="zhs">上一个</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Previous</LocalizedLabel>
+    </Label>
+    <Label Name="Convert">
+      <LocalizedLabel LanguageRef="zhs">切换模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Switch mode</LocalizedLabel>
+    </Label>
+    <Label Name="ExpandCollapse">
+      <LocalizedLabel LanguageRef="zhs">展开/折叠</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Expand/collapse</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

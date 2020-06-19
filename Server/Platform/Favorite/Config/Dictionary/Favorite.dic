@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Favorite" IsWeb="true">
+    <Label Name="Favorite">
+      <LocalizedLabel LanguageRef="zhs">收藏夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites</LocalizedLabel>
+    </Label>
+    <Label Name="TopInfo">
+      <LocalizedLabel LanguageRef="zhs">已经是最顶层了！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It's the top layer!</LocalizedLabel>
+    </Label>
+    <Label Name="BottomInfo">
+      <LocalizedLabel LanguageRef="zhs">已经是最底层了！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It's the bottom layer!</LocalizedLabel>
+    </Label>
+    <Label Name="FavoriteExist">
+      <LocalizedLabel LanguageRef="zhs">请勿重复收藏！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do not repeat the collection!</LocalizedLabel>
+    </Label>
+    <Label Name="SomeFavoritet">
+      <LocalizedLabel LanguageRef="zhs">部分对象收藏成功，其余对象已经被收藏！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Some of the objects have been collected succeeded and the remaining objects have been collected!</LocalizedLabel>
+    </Label>
+    <Label Name="MoveNonFavoritet">
+      <LocalizedLabel LanguageRef="zhs">对象在目标文件夹已存在！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object already exists in the target folder!</LocalizedLabel>
+    </Label>
+    <Label Name="MoveSomeFavoritet">
+      <LocalizedLabel LanguageRef="zhs">{0}个对象移动成功，其余对象已经被移动！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{0} object moved succeeded and the remaining objects have been moved!</LocalizedLabel>
+    </Label>
+    <Label Name="CheckLoopInfo">
+      <LocalizedLabel LanguageRef="zhs">此操作会造成环状结构，禁止移动！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This operation will cause the ring structure. Movement is prohibited!</LocalizedLabel>
+    </Label>
+    <Label Name="CancelFavoriteInfo">
+      <LocalizedLabel LanguageRef="zhs">收藏夹/分类不能执行取消收藏操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favorites/classification cannot perform the cancel collection operation!</LocalizedLabel>
+    </Label>
+    <Label Name="FavoriteSuccess">
+      <LocalizedLabel LanguageRef="zhs">收藏成功</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Collection succeeded</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

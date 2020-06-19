@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="NotSurpportValueCondition">
+  <PageHandlers>
+  </PageHandlers>
+  <PageControls>
+    <!-- 页面容器-->
+    <PageControl ControlID="ConditionValue_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="34"/>
+        <Settings Key="childid" Value="ObjectOwnGroupValue_Container"/>
+      </Settings>
+    </PageControl>
+    
+    <!-- 对象属性值容器-->
+    <PageControl ControlID="ObjectOwnGroupValue_Container" ParentID="ConditionValue_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ObjectOwnGroupValueLabel"/>
+      </Settings>
+    </PageControl>
+
+    <!-- 对象属性值控件-->
+    <PageControl ControlID="ObjectOwnGroupValueLabel" ParentID="ObjectOwnGroupValue_Container" TypeName="Label">
+      <PageHandlers>
+      </PageHandlers>
+      <Settings Key="position" Value="right"/>
+      <Settings Key="textId" Value="NotSurpportValueCondition.ObjectOwnGroupName" />
+    </PageControl>
+  </PageControls>
+</root>

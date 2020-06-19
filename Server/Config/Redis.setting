@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="WriteServerList" Value="192.168.1.96:6379" ToClient="false" Description="可写的Redis链接地址" />
+  <AppSet Key="ReadServerList" Value="192.168.1.96:6379" ToClient="false" Description="可读的Redis链接地址" />
+  <AppSet Key="MaxWritePoolSize" Value="60" ToClient="false" Description="最大写链接数" />
+  <AppSet Key="MaxReadPoolSize" Value="60" ToClient="false" Description="最大写链接数" />
+  <AppSet Key="AutoStart" Value="true" ToClient="false" Description="自动重启" />
+  <AppSet Key="LocalCacheTime" Value="180" ToClient="false" Description="本地缓存到期时间，单位:秒" />
+  <AppSet Key="RecordeLog" Value="false" ToClient="false" Description="是否记录日志,该设置仅用于排查redis运行时出现的问题,如redis工作正常,请关闭该项" />
+  <AppSet Key="DataCacheToRedis" Value="false" ToClient="false" Description="是否将数据缓存到Redis" />
+</root>

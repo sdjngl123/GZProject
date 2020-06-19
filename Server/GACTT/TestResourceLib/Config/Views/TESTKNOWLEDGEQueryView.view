@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ObjectView Name="TESTKNOWLEDGEQueryView" ObjectTypeName="TESTKNOWLEDGE" QueryPageTemplete="QUERY-PAGE-TOP" TextAlign="right" OrderByString="CREATETIME DESC" MaxQueryColumn="0" AsCommonQuery="false" IgnoreCompanyRulePermission="false" IgnoreCompanyID="false">
+    <ViewColumn Name="EID" Width="0" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="TYPE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewColumn Name="ECODE" Width="-1" Resizable="true" Sortable="true" TextAlign="" ShowMode="" InfoFormat="" ShowFormat="" Frozen="false" ExcludeCustomQuery="false" RowSpan="false" BackgroundColor="" IsCustom="false" ReturnDBValue="false" />
+    <ViewCondition Name="ENAME" ObjectTypeName="TESTKNOWLEDGE" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    <ViewCondition Name="ECODE" ObjectTypeName="TESTKNOWLEDGE" AndOrFlag="AND" InfoName="ECODE" Operation="LIKE" Required="false" />
+    <ViewCondition Name="SOURCE" ObjectTypeName="TESTKNOWLEDGE" AndOrFlag="AND" InfoName="SOURCE" Operation="=" Required="false" />
+    <ViewCondition Name="TYPE" ObjectTypeName="TESTKNOWLEDGE" AndOrFlag="AND" InfoName="TYPE" Operation="=" Required="false" />
+  </ObjectView>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--系统管理-->
+  <NavigationItem Name="SystemManagement" IsAddCustom="true" IsHidden="false" Order="100">
+    <PageName />
+    <Image>p_system_management</Image>
+    
+    <NavigationItem Name="ApplyCompanyManager" IsAddCustom="true" IsHidden="false" Order="060">
+      <PageName>ListManagement</PageName>
+      <Image>p_audittask</Image>
+      <Para Name="ItemName" Value="ApplyCompanyManagerList" />
+    </NavigationItem>
+    <!--<NavigationItem Name="AuditCompanyManager" IsAddCustom="true" IsHidden="false" Order="060">
+      <PageName>TabManagement</PageName>
+      <Image>p_audittask</Image>
+      <Para Name="ItemName" Value="AuditCompanyManagerLinks" />
+    </NavigationItem>-->
+  </NavigationItem>
+  
+</root>

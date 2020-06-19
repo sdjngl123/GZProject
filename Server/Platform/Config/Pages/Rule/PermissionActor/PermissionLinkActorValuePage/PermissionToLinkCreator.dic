@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PermissionToLinkCreator" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">关系创建者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship creator</LocalizedLabel>
+    </Label>
+    <Label Name="PermissionToLinkCreatorLabel">
+      <LocalizedLabel LanguageRef="zhs">授权给关系创建者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized to relationship creator</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

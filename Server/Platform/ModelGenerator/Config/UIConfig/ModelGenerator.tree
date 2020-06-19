@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="ModelTree" MenuName="ModelHeadMenu" PageLinksName=""
+                TreeViewName="" ShowTreeQuery="false"
+                TreeChildDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetModelTreeChildNode" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetModelTreeRootData">
+    <ObjectType Name="ROOTMODEL" MenuName="RootModelMenu" PageLinksName="RootModelLink" />
+    <!--<ObjectType Name="BASEMODEL" MenuName="ModelMenu" PageLinksName="ModelLink" />-->
+    <!--<ObjectType Name="MODEL" MenuName="ModelMenu" PageLinksName="ModelLink" />-->
+    <ObjectType Name="WEBMODEL" MenuName="WebModelMenu" PageLinksName="ModelLink" />
+  </TreeManagement>
+
+  <TreeManagement Name="CustormFormTree" MenuName="CustormFormTreeMenu" PageLinksName=""
+              TreeViewName="" ShowTreeQuery="false"
+              TreeChildDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetCustormFormTreeChildNode" TreeQueryDataService=""
+              TreeAllDataService="" TreeRootDataService="HoteamSoft.InforCenter.ModelGeneratorService.GetCustormFormTreeNode">
+    <ObjectType Name="CUSTORMFORM" MenuName="FormRootNodeMenu" PageLinksName="ClassifyNodeLinks" />
+    <ObjectType Name="CLASSIFYNODE" MenuName="FormClassifyNodeMenu" PageLinksName="ClassifyNodeLinks" />
+    <ObjectType Name="WEBOBJTYPENODE" MenuName="WebObjectNodeMenu" PageLinksName="WebObjTypeNodeLinks" />
+  </TreeManagement>
+</root>

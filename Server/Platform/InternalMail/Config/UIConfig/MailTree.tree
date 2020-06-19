@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeManagement Name="MailManagement" MenuName="" TreeViewName="MailTreeView" ShowTreeQuery="false" IsHiddenTabs="true"
+                  TreeChildDataService="" TreeRootDataService="" TreeAllDataService="" TreeQueryDataService=""  
+                  PageLinksName="" IsLoadAllData="false">
+    <ObjectType Name="RECIVE" MenuName="RefreshMenu" PageLinksName="ReciveInternalMailLinks" />
+    <ObjectType Name="RECIVECURRENTWEEK" MenuName="" PageLinksName="ReciveInternalMailLinks" />
+    <ObjectType Name="RECIVEPRETHREEWEEK" MenuName="" PageLinksName="ReciveInternalMailLinks" />
+    <ObjectType Name="RECIVEEARLIER" MenuName="" PageLinksName="ReciveInternalMailLinks" />
+    <ObjectType Name="DRAFTS" MenuName="DraftsTreeMenu" PageLinksName="DraftsMailLinks" />
+    <ObjectType Name="SEND" MenuName="RefreshMenu" PageLinksName="SendInternalMailLinks" />
+    <ObjectType Name="SENDCURRENTWEEK" MenuName="" PageLinksName="SendInternalMailLinks" />
+    <ObjectType Name="SENDPRETHREEWEEK" MenuName="" PageLinksName="SendInternalMailLinks" />
+    <ObjectType Name="SENDEARLIER" MenuName="" PageLinksName="SendInternalMailLinks" />
+    <ObjectType Name="DUSTBIN" MenuName="DustbinTreeMenu" PageLinksName="DustbinMailLinks" />
+    <ObjectType Name="SYSTEM" MenuName="SystemTreeMenu" PageLinksName="SystemMailLinks" />
+  </TreeManagement>
+</root>

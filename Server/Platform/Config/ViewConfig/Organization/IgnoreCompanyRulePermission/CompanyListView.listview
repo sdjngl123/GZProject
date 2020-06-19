@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebListView Name="COMPANYListView" View="COMPANYVIEW" EntityFilter="" Filter="" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="false" 
+               IsAllExporting="false" IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsIcon="" DetailsPageSize="550*250" DetailsPageUseObjectInspector="false" QueryID="" 
+               IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+  <WebListView Name="CompanyTreeListView" View="COMPANYTREELISTVIEW" EntityFilter="" Filter="CETYPE=N'COMPANY'" AllowCheckBox="true" AllowIconType="true" AllowObjectType="false" IsSelectExporting="false" 
+               IsAllExporting="false" IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsIcon="" DetailsPageSize="550*250" DetailsPageUseObjectInspector="false" QueryID="[Tree_Current_value1]" 
+               IsShowSearch="true" ShowPaging="true" IsLayoutSave="true" IsColumnSetting="true" AutoLoadData="true" IsTemplate="false" IsMainConfig="false" />
+</root>

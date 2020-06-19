@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="WebViewModelCoverExist" Value="false" ToClient="true" Description="前端视图接口创建视图时是否需要重新生成视图（对象视图）" />
+</root>

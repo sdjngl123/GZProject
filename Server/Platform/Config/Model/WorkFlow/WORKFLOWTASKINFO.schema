@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Table Name="WORKFLOWTASKINFO" Extend="ENTITY" IsAbstract="false" IsMainConfig="false">
+    <Column Name="EID" Extend="EID" DataType="STRING100" Required="true" DefaultValue="" PrimaryKeyOrder="1" InheritRegulate="Innate" />
+    <Column Name="ENAME" Extend="ENAME" DataType="STRING200" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ECODE" Extend="ECODE" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="STATEID" Extend="STATEID" DataType="STRING20" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="STAGESTATEID" Extend="STAGESTATEID" DataType="STRING20" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EVERSION" Extend="EVERSION" DataType="INT" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EMINORVERSION" Extend="EMINORVERSION" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="EUID" Extend="EUID" DataType="STRING100" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTINSERT" Extend="ELASTINSERT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ELASTFINALSTATE" Extend="ELASTFINALSTATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="CREATEUID" Extend="CREATEUID" DataType="STRING50" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="CREATETIME" Extend="CREATETIME" DataType="LONG" Required="true" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="UPDATEUID" Extend="UPDATEUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="UPDATETIME" Extend="UPDATETIME" DataType="LONG" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNUID" Extend="OWNUID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="OWNGID" Extend="OWNGID" DataType="STRING50" Required="false" DefaultValue="" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ESTATION" Extend="ESTATION" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ICON" Extend="ICON" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="ECOMPANYID" Extend="ECOMPANYID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="SERIALNUMBER" Extend="SERIALNUMBER" DataType="INT" Required="false" PrimaryKeyOrder="0" InheritRegulate="Inherit" />
+    <Column Name="WORKFLOWID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="WORKFLOWNAME" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="FLOWTEMPLATE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="FLOWNODEID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TASKFLAG" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TASKUID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TASKACTORID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="AGENTUSERID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="AGENTSTARTDATETIME" DataType="LONG" Required="false" DefaultValue="0" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="AGENTENDDATETIME" DataType="LONG" Required="false" DefaultValue="0" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="COMPLETEUSER" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="COMPLETETIME" DataType="LONG" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TASKRESULT" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TASKOPINION" DataType="STRING200" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ISCOMMONMANGEMENT" DataType="BOOL" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PREVIOUSNODEID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PLANNEDENDDATE" DataType="LONG" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ADJECTIVEREMINDTIME" DataType="LONG" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="PREVIOUSTASKUID" DataType="STRING50" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="TEMPLATETYPE" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Column Name="ASSISTTASKID" DataType="STRING100" Required="false" PrimaryKeyOrder="0" InheritRegulate="Show" />
+    <Index Name="FLOWTASK_FLOWID_INDEX" Unique="false">
+      <Field Name="WORKFLOWID" Order="ASC" />
+    </Index>
+    <Index Name="FLOWTASK_ACTORID_INDEX" Unique="false">
+      <Field Name="TASKACTORID" Order="ASC" />
+      <Field Name="STATEID" Order="DESC" />
+      <Field Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <Field Name="AGENTUSERID" Order="ASC" />
+      <Field Name="CREATETIME" Order="DESC" />
+    </Index>
+    <Index Name="FLOWTASK_AGENTID_INDEX" Unique="false">
+      <Field Name="AGENTUSERID" Order="ASC" />
+      <Field Name="STATEID" Order="DESC" />
+      <Field Name="ISCOMMONMANGEMENT" Order="ASC" />
+      <Field Name="CREATETIME" Order="DESC" />
+    </Index>
+  </Table>
+</root>

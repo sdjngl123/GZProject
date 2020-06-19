@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ACTIONRULECONDITIONVIEWView" IsWeb="true">
+    <Label Name="ACTIONRULECONDITIONVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限条件视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission condition view</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULECONDITIONVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">规则权限条件视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission condition view</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">条件ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition ID</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">条件ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition ID</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORHeader">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="OPERATORCaption">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="CONDITIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

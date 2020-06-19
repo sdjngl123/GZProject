@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PROJECTMEMBERModel" IsWeb="true">
+    <Label Name="PROJECTMEMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">项目成员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTMEMBER</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTMEMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">项目成员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTMEMBER</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">姓名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">员工编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">员工编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">项目ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTID</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTROLEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTROLE</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARMENTHeader">
+      <LocalizedLabel LanguageRef="zhs">所属部门</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DEPARMENT</LocalizedLabel>
+    </Label>
+    <Label Name="ROOMHeader">
+      <LocalizedLabel LanguageRef="zhs">所在科室</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ROOM</LocalizedLabel>
+    </Label>
+    <Label Name="ROOMCaption">
+      <LocalizedLabel LanguageRef="zhs">所在科室</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ROOM</LocalizedLabel>
+    </Label>
+    <Label Name="DEPARMENTCaption">
+      <LocalizedLabel LanguageRef="zhs">所属部门</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DEPARMENT</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTROLECaption">
+      <LocalizedLabel LanguageRef="zhs">项目角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTROLE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

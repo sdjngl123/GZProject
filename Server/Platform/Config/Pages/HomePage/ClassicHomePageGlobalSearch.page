@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ClassicHomePageGlobalSearch" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="GlobalSearchContainer" ParentID="" TypeName="CustomerContainer">
+      <Settings Key="templateName" Value="ClassicHomePageGlobalSearch"/>
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_TreeViewCtrl_QueryInit(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+  </PageControls>
+</root>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OrganizationGuide" IsWeb="true">
+    <Label Name="Select">
+      <LocalizedLabel LanguageRef="zhs">选择添加模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select add mode</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyCreateTitle">
+      <LocalizedLabel LanguageRef="zhs">添加公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add company</LocalizedLabel>
+    </Label>
+    <Label Name="SelectExistCompany">
+      <LocalizedLabel LanguageRef="zhs">添加已有公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add existing company</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCompany">
+      <LocalizedLabel LanguageRef="zhs">新建公司并添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New company and add</LocalizedLabel>
+    </Label>
+    <Label Name="GroupCreateTitle">
+      <LocalizedLabel LanguageRef="zhs">添加组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add group</LocalizedLabel>
+    </Label>
+    <Label Name="SelectExistGroup">
+      <LocalizedLabel LanguageRef="zhs">复制已有组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy existing group</LocalizedLabel>
+    </Label>
+    <Label Name="CreateGroup">
+      <LocalizedLabel LanguageRef="zhs">新建组并添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New group and add</LocalizedLabel>
+    </Label>
+    <Label Name="RoleCreateTitle">
+      <LocalizedLabel LanguageRef="zhs">添加角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add role</LocalizedLabel>
+    </Label>
+    <Label Name="SelectExistRole">
+      <LocalizedLabel LanguageRef="zhs">添加已有角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add existing role</LocalizedLabel>
+    </Label>
+    <Label Name="CreateRole">
+      <LocalizedLabel LanguageRef="zhs">新建角色并添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New role and add</LocalizedLabel>
+    </Label>
+    <Label Name="UserCreateTitle">
+      <LocalizedLabel LanguageRef="zhs">添加用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add user</LocalizedLabel>
+    </Label>
+    <Label Name="SelectExistUser">
+      <LocalizedLabel LanguageRef="zhs">添加已有用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add existing user</LocalizedLabel>
+    </Label>
+    <Label Name="CreateUser">
+      <LocalizedLabel LanguageRef="zhs">新建用户并添加</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New user and add</LocalizedLabel>
+    </Label>
+    <Label Name="PersonCreateTitle">
+      <LocalizedLabel LanguageRef="zhs">新建人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create person</LocalizedLabel>
+    </Label>
+    <Label Name="UserCreateTitle">
+      <LocalizedLabel LanguageRef="zhs">新建用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New user</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

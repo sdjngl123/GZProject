@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="QUERYROLEHISTORYModel" IsWeb="true">
+    <Label Name="QUERYROLEHISTORYHeader">
+      <LocalizedLabel LanguageRef="zhs">查询规则历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query rule history</LocalizedLabel>
+    </Label>
+    <Label Name="QUERYROLEHISTORYCaption">
+      <LocalizedLabel LanguageRef="zhs">查询规则历史</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query rule history</LocalizedLabel>
+    </Label>
+    <Label Name="BASEQUERYROLEIDHeader">
+      <LocalizedLabel LanguageRef="zhs">原始查询规则ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Original query rule ID</LocalizedLabel>
+    </Label>
+    <Label Name="BASEQUERYROLEIDCaption">
+      <LocalizedLabel LanguageRef="zhs">原始查询规则ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Original query rule ID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Guide_ListManagement_ReplaceKey" IsWeb="true">
+    <Label Name="AddQuickNavObject">
+      <LocalizedLabel LanguageRef="zhs">保存到收藏夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save to favorite</LocalizedLabel>
+    </Label>
+    <Label Name="AddQuickNavJS">
+      <LocalizedLabel LanguageRef="zhs">收藏一段脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Favourite - Script</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeItemOwnUser">
+      <LocalizedLabel LanguageRef="zhs">更改拥有者</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change the owner</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeItemOwnGroup">
+      <LocalizedLabel LanguageRef="zhs">更改拥有组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Change the ownship group</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

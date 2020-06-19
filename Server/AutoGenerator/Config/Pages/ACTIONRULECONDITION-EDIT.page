@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ACTIONRULECONDITION-EDIT">
+  <Settings Key="height" Value="122"/>
+  <Settings Key="width" Value="216"/>
+  <Settings Key="title" Value="ACTIONRULECONDITION-EDIT.ACTIONRULECONDITIONHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectData(para.ObjectID,para);{
+	var c = pageEvent.o.GetControl('SERIALNUMBER_Value');
+	if(c.id!=''){
+		c.SetText(data.SERIALNUMBER);
+	}
+}
+{
+var o = pageEvent.o.GetControl('OPERATOR_Value');
+if(o.id!=''){
+
+o.SetSelectedByValue(data.OPERATOR);
+}
+}{
+	var c = pageEvent.o.GetControl('CONDITIONVALUE_Value');
+	if(c.id!=''){
+		c.SetValue(data.CONDITIONVALUE);
+		c.SetText(data.CONDITIONVALUE_DisplayValue);
+	}
+}
+  var functionName = 'InforCenter_ACTIONRULECONDITION_EditPage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var para = pageEvent.o.GetPara();var data = {ObjectID:para.ObjectID};{
+var c = pageEvent.o.GetControl('SERIALNUMBER_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.SERIALNUMBER = c.GetText().trim();
+}
+}{
+var c = pageEvent.o.GetControl('OPERATOR_Value');
+if(c.Check() == false) bCheck = false;
+data.OPERATOR = c.GetSelectedValue();
+}{
+	var c = pageEvent.o.GetControl('CONDITIONVALUE_Value');
+	if(c.id!=''){
+		if(c.Check() == false) bCheck = false;
+		data.CONDITIONVALUE = c.GetValue();
+	}
+};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_ACTIONRULECONDITION_EditPage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>   
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SERIALNUMBER"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SERIALNUMBER" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="SERIALNUMBER_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="SERIALNUMBER_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="SERIALNUMBER_Label" ParentID="SERIALNUMBER" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="ACTIONRULECONDITION-EDIT.SERIALNUMBERHeader" />
+</PageControl><PageControl ControlID="SERIALNUMBER_Value" ParentID="SERIALNUMBER" TypeName="TextBox" >
+    <PageHandlers>
+    <PageHandler HandlerName ="OnFocusout" Script="ctrlEvent.objectType='ACTIONRULECONDITION';ctrlEvent.infoName='SERIALNUMBER';InforCenter_Platform_GenerateScript_DefaultObjectValueOnChange(ctrlEvent);"/>
+  </PageHandlers>
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^[1-9][0-9]{0,8}$" />
+  <Settings Key="regextipId" Value="ACTIONRULECONDITION-EDIT.SERIALNUMBERRegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="OPERATOR"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="OPERATOR" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="OPERATOR_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="OPERATOR_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="OPERATOR_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="OPERATOR_Label" ParentID="OPERATOR" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="ACTIONRULECONDITION-EDIT.OPERATORHeader" />
+</PageControl><PageControl ControlID="OPERATOR_Label_FieldFlag" ParentID="OPERATOR" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="OPERATOR_Value" ParentID="OPERATOR" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='ACTIONRULECONDITION';ctrlEvent.infoName='OPERATOR';InforCenter_Platform_GenerateScript_EnumValueOnChange(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                 ctrlEvent.objectType = 'ACTIONRULECONDITION';
+                 ctrlEvent.infoType = 'OPERATOR';
+                 var functionName = 'InforCenter_' + ctrlEvent.objectType + '_' + ctrlEvent.infoType.replace('.','_') + '_EnumValue';
+                 if ( typeof window[functionName] == 'function') {
+                      HoteamUI.Common.ExeFunction(functionName, ctrlEvent);
+                 }else{
+                      var o = ctrlEvent.o;
+                      if(o.id!=''){
+                          InforCenter_Platform_Object_SetEnumList(o,'OPERATOR','ACTIONRULECONDITION',false);
+                          }
+                 }
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="ACTIONRULECONDITION-EDIT.OPERATORRegex" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CONDITIONVALUE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CONDITIONVALUE" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="CONDITIONVALUE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="CONDITIONVALUE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value="CONDITIONVALUE_Label_FieldFlag"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="CONDITIONVALUE_Label" ParentID="CONDITIONVALUE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="ACTIONRULECONDITION-EDIT.CONDITIONVALUEHeader" />
+</PageControl><PageControl ControlID="CONDITIONVALUE_Label_FieldFlag" ParentID="CONDITIONVALUE" TypeName="Label" >
+  <Settings Key="position" Value="left"/>
+  <Settings Key="textId" Value="Platform.RequiredFlag" />
+  <Settings Key="color" Value="red" />
+</PageControl><PageControl ControlID="CONDITIONVALUE_Value" ParentID="CONDITIONVALUE" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ActionRuleCondition_ShowConditionValuePage(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnFocus" Script=""/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^\s*(\S+\s*)+$ AND ^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="ACTIONRULECONDITION-EDIT.CONDITIONVALUERegex" />
+</PageControl>
+  </PageControls>
+</root>

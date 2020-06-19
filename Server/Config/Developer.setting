@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="WindowsHotKey" Value="CTRL+C;CTRL+A;CTRL+V;SHIFT+DELETE;CTRL+Z;CTRL+ESC;WIN+F1;WIN+U;WIN+D;CTRL+F;WIN+F;WIN+E;ALT+TAB;WIN+L;WIN+M;CTRL+B;CTRL+I;CTRL+];CTRL+[;CTRL+L;CTRL+R" ToClient="false" Description="windows系统快捷键" />
+  <AppSet Key="DefaultCompanyID" Value="COMPANY_155f6a331e804b69a6fc47e6273699fc" ToClient="false" Description="默认企业id" />
+
+
+  
+</root>

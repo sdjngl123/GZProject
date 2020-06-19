@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectView Name="DATASETTYPEVIEW" ObjectTypeName="DATASETTYPE" OrderByString="CREATETIME DESC">
+    <ViewColumn Name="EID" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="ENAME" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="FILEEXTENT" Width="-1" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="VIEWTOOL" Width="200" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="ICON" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="ISINTEGRATECAD" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="DOWNFILTER" Width="0" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="CREATEUID" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="CREATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="UPDATEUID" Width="80" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewColumn Name="UPDATETIME" Width="130" Resizable="false" Sortable="false" Frozen="false" RowSpan="false" BackgroundColor="" />
+    <ViewCondition Name="ENAME" AndOrFlag="AND" InfoName="ENAME" Operation="LIKE" Required="false" />
+    <ViewCondition Name="FILEEXTENT" AndOrFlag="AND" InfoName="FILEEXTENT" Operation="LIKE" Required="false" />
+  </ObjectView>
+</root>

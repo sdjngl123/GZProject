@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SystemSetting" IsWeb="true">
+    <Label Name="Bool">
+      <LocalizedLabel LanguageRef="zhs">Bool</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bool</LocalizedLabel>
+    </Label>
+    <Label Name="String">
+      <LocalizedLabel LanguageRef="zhs">String</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">String</LocalizedLabel>
+    </Label>
+    <Label Name="DropDownList">
+      <LocalizedLabel LanguageRef="zhs">单选下拉框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Radio drop-down box</LocalizedLabel>
+    </Label>
+    <Label Name="MultiItemShowType">
+      <LocalizedLabel LanguageRef="zhs">多选下拉框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-selection drop-down box</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectValue">
+      <LocalizedLabel LanguageRef="zhs">对象选择</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object selection</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

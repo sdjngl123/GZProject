@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<JSFile FileName ="~/GACTT/Common/Js/EditMultiObjectTab.js" group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/FileManage.js" group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/Upload.js"  group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/plupload.full.min.js"  group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/jquery.plupload.queue/jquery.plupload.queue.js"  group="GACTT"/>
+	<CssFile FileName ="~/GACTT/Common/Js/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css" group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/zh_CN.js"  group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/plupload.dev.js"  group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/pdfobject.js"  group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/pdfobject.min.js"  group="GACTT"/>
+	<JSFile FileName ="~/GACTT/Common/Js/plupload/jquery.media.js"  group="GACTT"/>
+</root>

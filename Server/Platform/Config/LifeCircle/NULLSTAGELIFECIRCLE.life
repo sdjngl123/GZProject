@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LifeCircle Name="NULLSTAGELIFECIRCLE" InitState="NULLSTATE" Type="Stage">
+    <State Name="StartNode" CenterX="200" CenterY="50" />
+    <State Name="EndNode" CenterX="208" CenterY="398" />
+    <State Name="NULLSTATE" CenterX="219" CenterY="201" />
+    <Line ID="LINE8cff6390832e4c7da87c34c5abc410f7" StartNodeID="StartNode" StartX="241" StartY="63" EndNodeID="NULLSTATE" EndX="216" EndY="193" DisplayType="0" FirstLength="0" />
+    <Line ID="LINEfa56aceb1e144e01813b9d125c4e1c41" StartNodeID="NULLSTATE" StartX="206" StartY="198" EndNodeID="EndNode" EndX="197" EndY="401" DisplayType="0" FirstLength="0" />
+  </LifeCircle>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="FORMDATAModel" IsWeb="true">
+    <Label Name="FORMDATAHeader">
+      <LocalizedLabel LanguageRef="zhs">设计表单类型信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMDATA</LocalizedLabel>
+    </Label>
+    <Label Name="FORMDATACaption">
+      <LocalizedLabel LanguageRef="zhs">设计表单类型信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMDATA</LocalizedLabel>
+    </Label>
+    <Label Name="TYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TYPECaption">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">TYPE</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="MODELTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="MODELTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">模型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MODELTYPE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

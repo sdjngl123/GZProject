@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListManagementEdit" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">列表管理编辑窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List management edit window</LocalizedLabel>
+    </Label>
+    <Label Name="ListManagementName">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu name</LocalizedLabel>
+    </Label>
+    <Label Name="RightMenuName">
+      <LocalizedLabel LanguageRef="zhs">右键菜单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right-click menu name</LocalizedLabel>
+    </Label>
+    <Label Name="ListTitleDataService">
+      <LocalizedLabel LanguageRef="zhs">列表标题WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List title WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageDataService">
+      <LocalizedLabel LanguageRef="zhs">列表数据WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List data WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewName">
+      <LocalizedLabel LanguageRef="zhs">列表视图配置项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View Configuration Item Name</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageName">
+      <LocalizedLabel LanguageRef="zhs">查询页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Name</LocalizedLabel>
+    </Label>
+
+    <Label Name="ViewFilterPagePosition">
+      <LocalizedLabel LanguageRef="zhs">查询页面布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Position</LocalizedLabel>
+    </Label>
+    <Label Name="ViewFilterPagePositionDescription">
+      <LocalizedLabel LanguageRef="zhs">查询页面布局，支持在列表上方或者右侧展示查询页面。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Page Position,can be top or right</LocalizedLabel>
+    </Label>
+    <Label Name="PositionTop">
+      <LocalizedLabel LanguageRef="zhs">顶部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Top</LocalizedLabel>
+    </Label>
+    <Label Name="PositionRight">
+      <LocalizedLabel LanguageRef="zhs">右侧</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right</LocalizedLabel>
+    </Label>
+    
+    <Label Name="AllPageDataService">
+      <LocalizedLabel LanguageRef="zhs">全部列表数据的WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WCF interface for all list data</LocalizedLabel>
+    </Label>
+    <Label Name="InitParaJSMethod">
+      <LocalizedLabel LanguageRef="zhs">初始化参数信息的JS方法名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">JS method name of initialization parameter information</LocalizedLabel>
+    </Label>
+    <Label Name="HideViewFilterPage">
+      <LocalizedLabel LanguageRef="zhs">隐藏查询页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide Query Page</LocalizedLabel>
+    </Label>
+    <Label Name="ListManagementNameDescription">
+      <LocalizedLabel LanguageRef="zhs">列表管理项名称，在需要调用列表管理页面时用此名称关联调用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List management item name, called with this name when the list management page needs to be called</LocalizedLabel>
+    </Label>
+    <Label Name="LObjTypeName">
+      <LocalizedLabel LanguageRef="zhs">类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="LObjTypeNameDescription">
+      <LocalizedLabel LanguageRef="zhs">列表管理关联类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List Management Association Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuNameDescription">
+      <LocalizedLabel LanguageRef="zhs">填写系统中存在的菜单组的名称（.menu菜单组配置项的名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Fill in the name of the menu group that exists in the system.(Name of the menu menu group configuration item)</LocalizedLabel>
+    </Label>
+    <Label Name="RightMenuNameDescription">
+      <LocalizedLabel LanguageRef="zhs">如果配置，在列表中点击右键会显示右键菜单。在没有给具体的对象类型配置右键菜单时，将会使用此默认的右键菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If configured, right-click the list to display the right-click menu. this default right-click menu is used when a right-click menu is not configured for a specific object type</LocalizedLabel>
+    </Label>
+    <Label Name="ListViewNameDescription">
+      <LocalizedLabel LanguageRef="zhs">列表视图配置项名称（.listview中配置项的名称）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List View CI Name (. Name of CI in listview)</LocalizedLabel>
+    </Label>
+    <Label Name="QueryPageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">用于列表查询的页面名称（.page页面），当列表使用视图查询数据时，可以填写根据视图生成的查询页面（如EITEMVIEW-QUERY），如果使用自定义WCF接口查询数据，可以使自定义查询页面 （如WorkflowTemplateQuery）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the page used for the list query. page), when the list uses view query data, you can fill out the query page generated from the view (such as EITEMVIEW-QUERY), and if you use the custom WCF interface query data, you can make the custom query page (such as Workfl) owTemplateQuery)</LocalizedLabel>
+    </Label>
+    <Label Name="AllPageDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">全部列表数据的WCF接口，只用在全部打印和全部导出接口，WCF接口参数固定为OnePageGridDataPara类型，返回值为GridObject类型。如果不配置此接口，则会使用通用页面的默认接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The WCF interface of all list data is only used in all print and all export interfaces, WCF interface parameters are fixed to OnePageGridDataPara type, and the return value is the GridObject type. if this interface is not configured, the default interface for the generic page is used</LocalizedLabel>
+    </Label>
+    <Label Name="InitParaJSMethodDescription">
+      <LocalizedLabel LanguageRef="zhs">可通过JS方法修改列表管理页面的参数。系统会执行此处指定的JS方法名并传入页面参数信息（如InforCenter_DevelopmentTasks_TaskStateStatisticsViewFilter_Init，页面参数会自动传入不需要填写），在方法体中可以修改初始化参数的相关信息。该方法的返回值也是页面参数。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You can modify the parameters of the list management page by using the JS method. The system will execute the JS method name specified here and pass in the page parameter information (such as InforCenter_DevelopmentTasks_TaskStateStatisticsViewFilter_Init, the page parameters will be automatically passed into the need to fill in), in the method body can modify the initialization parameters of the relevant information. The return value of this method is also a page parameter.</LocalizedLabel>
+    </Label>
+    <Label Name="HideViewFilterPageDescription">
+      <LocalizedLabel LanguageRef="zhs">当列表管理页面打开时是否默认显示查询页面，设为true将不显示查询页面（但是可以点击页面的展开折叠按钮显示查询页面，如果没有配置查询页面，则不会显示）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">If the query page is displayed by default when the list management page opens, set to true will not display the query page (but you can click the expanded collapse button on the page to display the query page, and if no query page is configured, it will not be displayed)</LocalizedLabel>
+    </Label>
+    <Label Name="CreateListManageMent">
+      <LocalizedLabel LanguageRef="zhs">新建列表管理项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New List Management</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteListManage">
+      <LocalizedLabel LanguageRef="zhs">删除列表管理项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete List Management</LocalizedLabel>
+    </Label>
+    <Label Name="ListTitleDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">获取列表标题的WCF接口，主要用于获取自定义的列表标题，如InforCenter.Workflow.WorkflowTemplateService.GetWorkflowTemplateTitleData，自定义WCF接口的参数固定为GridRowTitlePara，返回值为GridTitleData类型。如果配置此接口，则不会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The WCF interface for obtaining the title of the list is used primarily to get a custom list title, such as InforCenter. Workflow. WorkflowTemplateService. GetWorkflowTemplateTitleData, the custom WCF interface is fixed to GridRowTitlePara and the return value is the GridTitleData type. If you configure this interface, the default interface for the generic page is not used.</LocalizedLabel>
+    </Label>
+    <Label Name="OnePageDataServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">获取分页列表数据的WCF接口，主要用于获取自定义的列表数据，如InforCenter.Workflow.WorkflowTemplateService.GetOnePageGridData，自定义WCF接口的参数固定为OnePageGridDataPara，返回值为GridObject类型。如果配置此接口，则不会使用通用页面的默认接口。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The WCF interface for getting the paged list data is used primarily to get custom list data, such as InforCenter. Workflow. WorkflowTemplateService. GetOnePageGridData, the custom WCF interface is fixed to OnePageGridDataPara and the return value is the GridObject type. If you configure this interface, the default interface for the generic page is not used.</LocalizedLabel>
+    </Label>
+    <Label Name="CopyAndAddListManageMent">
+      <LocalizedLabel LanguageRef="zhs">复制新增列表管理项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy New List Management</LocalizedLabel>
+    </Label>
+    <Label Name="CreateLObjType">
+      <LocalizedLabel LanguageRef="zhs">新建列表管理关联菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New List Management Association Menu</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteLObjType">
+      <LocalizedLabel LanguageRef="zhs">删除列表管理关联菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete List Management Association Menu</LocalizedLabel>
+    </Label>
+    <Label Name="ListManagementNameRepeat">
+      <LocalizedLabel LanguageRef="zhs">列表管理配置名称重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate list management configuration name</LocalizedLabel>
+    </Label>
+    <Label Name="root">
+      <LocalizedLabel LanguageRef="zhs">根目录</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Root Directory</LocalizedLabel>
+    </Label>
+    <Label Name="BaseConfiguration">
+      <LocalizedLabel LanguageRef="zhs">基本配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Basic Configuration</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectType">
+      <LocalizedLabel LanguageRef="zhs">关联对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Associated objects</LocalizedLabel>
+    </Label>
+    <Label Name="RightMenuName">
+      <LocalizedLabel LanguageRef="zhs">右键菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right-click Menu</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">对象类型名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object Type Name</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeMenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单的名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Name</LocalizedLabel>
+    </Label>
+    <Label Name="SearchFields">
+      <LocalizedLabel LanguageRef="zhs">查询字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Query Field</LocalizedLabel>
+    </Label>
+    <Label Name="SearchFieldsDescription">
+      <LocalizedLabel LanguageRef="zhs">可以配置多个，中间使用“；”分割。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You can configure more than one, intermediate use “;” split.</LocalizedLabel>
+    </Label>
+    <Label Name="SideTabWidth">
+      <LocalizedLabel LanguageRef="zhs">侧标签宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Side Label Width</LocalizedLabel>
+    </Label>
+    <Label Name="SideTabWidthDescription">
+      <LocalizedLabel LanguageRef="zhs">侧标签的宽度</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width of Side Label</LocalizedLabel>
+    </Label>
+    <Label Name="IsBottomTab">
+      <LocalizedLabel LanguageRef="zhs">是否在底部显示Tab</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bottom display tab</LocalizedLabel>
+    </Label>
+    <Label Name="IsBottomTabDescription">
+      <LocalizedLabel LanguageRef="zhs">tab页面位置，true在底部，false在右侧侧标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width of Side Label</LocalizedLabel>
+    </Label>
+    <Label Name="RowHeightAuto">
+      <LocalizedLabel LanguageRef="zhs">行高是否自适应</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">RowHeightAuto</LocalizedLabel>
+    </Label>
+    <Label Name="RowHeightAutoDescription">
+      <LocalizedLabel LanguageRef="zhs">行高是否自适应，true是按照内容进行自适应，false是固定高度显示，默认false</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Width of Side Label</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultPageLinksName">
+      <LocalizedLabel LanguageRef="zhs">默认Tab页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Default Tab Page</LocalizedLabel>
+    </Label>
+    <Label Name="DefaultPageLinksNameDescription">
+      <LocalizedLabel LanguageRef="zhs">默认Tab页面。针对整个列表的对应的Tab页面。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The default is tab page. The corresponding Tab page for the entire list.</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksName">
+      <LocalizedLabel LanguageRef="zhs">Tab页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Page</LocalizedLabel>
+    </Label>
+    <Label Name="PageLinksNameDescription">
+      <LocalizedLabel LanguageRef="zhs">Tab页面。对象配置专门的Tab页面。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab page. The object is configured with a special tab page.</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tab Page</LocalizedLabel>
+    </Label>
+    <Label Name="HiddenDescription">
+      <LocalizedLabel LanguageRef="zhs">是否不显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

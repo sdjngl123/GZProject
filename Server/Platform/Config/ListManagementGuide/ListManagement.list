@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListManagement Name="Guide_ListManagement_ReplaceKey" MenuName="Guide_ListManagement_ReplaceKeyMenu" ListRightMenuName="Guide_ListManagement_ReplaceKeyRightMenu" ListViewName="Guide_ListManagement_ReplaceKeyListView" QueryPageName="Guide_ListManagement_ReplaceKeyView-Query" ListTitleDataService="" OnePageDataService="" AllPageDataService="" HideViewFilterPage="true" > </ListManagement>
+</root>

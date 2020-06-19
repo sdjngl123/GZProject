@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItems" IsWeb="true">
+    <Label Name="DeleteEnumerationCategory">
+      <LocalizedLabel LanguageRef="zhs">删除分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete classification</LocalizedLabel>
+    </Label>
+    <Label Name="EditEnumerationCategory">
+      <LocalizedLabel LanguageRef="zhs">编辑分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit classification</LocalizedLabel>
+    </Label>
+    <Label Name="CreateEnumerationCategory">
+      <LocalizedLabel LanguageRef="zhs">新建分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New classification</LocalizedLabel>
+    </Label>
+    <Label Name="CreateEnumeration">
+      <LocalizedLabel LanguageRef="zhs">新建值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New value list</LocalizedLabel>
+    </Label>
+    <Label Name="EditEnumeration">
+      <LocalizedLabel LanguageRef="zhs">编辑值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit value list</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteEnumeration">
+      <LocalizedLabel LanguageRef="zhs">删除值列表</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete value list</LocalizedLabel>
+    </Label>
+    <Label Name="CreateEnumerationItem">
+      <LocalizedLabel LanguageRef="zhs">新建值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New value</LocalizedLabel>
+    </Label>
+    <Label Name="EditEnumerationItem">
+      <LocalizedLabel LanguageRef="zhs">编辑值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Edit value</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteEnumerationItem">
+      <LocalizedLabel LanguageRef="zhs">删除值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete value</LocalizedLabel>
+    </Label>
+    <Label Name="UpEnumerationItem">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="DownEnumerationItem">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeEnumerationType">
+      <LocalizedLabel LanguageRef="zhs">切换值列表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Switch value list type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

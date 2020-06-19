@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppSet Key="Monitor_Enable" Value="false" ToClient="false" Description="链路监控是否开启" />
+  <AppSet Key="Monitor_TraceData" Value="false" ToClient="false" Description="是否监控请求和响应数据" />
+  <AppSet Key="MQ.ProducersConnectString" Value="127.0.0.1:9093" ToClient="false" Description="是否监控请求和响应数据"/>
+  <AppSet Key="MQ.ZooKeeperConnectString" Value="127.0.0.1:2181" ToClient="false" Description="是否监控请求和响应数据"/>
+</root>

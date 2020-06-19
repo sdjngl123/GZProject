@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="LayoutContainer" IsWeb="true">
+    <Label Name="Show">
+      <LocalizedLabel LanguageRef="zhs">展开</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Spread</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">收起</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Pack up</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Accordion" IsWeb="true">
+    <Label Name="AddQuickMenu">
+      <LocalizedLabel LanguageRef="zhs">加入收藏夹</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add to my favorites</LocalizedLabel>
+    </Label>
+    <Label Name="NavigationMenu">
+      <LocalizedLabel LanguageRef="zhs">导航菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Navigation menu</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Tabs" IsWeb="true">
+    <Label Name="RemoveSelected">
+      <LocalizedLabel LanguageRef="zhs">关闭当前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Close current</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveOther">
+      <LocalizedLabel LanguageRef="zhs">关闭其他</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Close others</LocalizedLabel>
+    </Label>
+    <Label Name="Refresh">
+      <LocalizedLabel LanguageRef="zhs">重新加载</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reload</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Grid" IsWeb="true">
+    <Label Name="RecordText">
+      <LocalizedLabel LanguageRef="zhs">{0}-{1} 共{2}条 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{0}-{1} of {2}</LocalizedLabel>
+    </Label>
+    <Label Name="RecordCount">
+      <LocalizedLabel LanguageRef="zhs"> 共{2}条 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">{2} Items</LocalizedLabel>
+    </Label>
+    <Label Name="Home">
+      <LocalizedLabel LanguageRef="zhs">首页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Home </LocalizedLabel>
+    </Label>
+    <Label Name="End">
+      <LocalizedLabel LanguageRef="zhs">尾页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Tail page</LocalizedLabel>
+    </Label>
+    <Label Name="Prev">
+      <LocalizedLabel LanguageRef="zhs">上一页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page up</LocalizedLabel>
+    </Label>
+    <Label Name="Next">
+      <LocalizedLabel LanguageRef="zhs">下一页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page down</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnSetting">
+      <LocalizedLabel LanguageRef="zhs">列设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column settings</LocalizedLabel>
+    </Label>
+    <Label Name="Hidden">
+      <LocalizedLabel LanguageRef="zhs">隐藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Hide</LocalizedLabel>
+    </Label>
+    <Label Name="Frozen">
+      <LocalizedLabel LanguageRef="zhs">冻结</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Blocked</LocalizedLabel>
+    </Label>
+    <Label Name="CancelSearch">
+      <LocalizedLabel LanguageRef="zhs">重置查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Reset query</LocalizedLabel>
+    </Label>
+    <Label Name="SaveLayout">
+      <LocalizedLabel LanguageRef="zhs">保存布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Save layout</LocalizedLabel>
+    </Label>
+    <Label Name="LoadMore">
+      <LocalizedLabel LanguageRef="zhs">加载更多...</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Load more…</LocalizedLabel>
+    </Label>
+    <Label Name="NoMore">
+      <LocalizedLabel LanguageRef="zhs">没有更多了...</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No more…</LocalizedLabel>
+    </Label>
+    <Label Name="BeyondPageNumber">
+      <LocalizedLabel LanguageRef="zhs">最后一页是 xxx，超出页码范围</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The last page is xxx that out of page range</LocalizedLabel>
+    </Label>
+    <Label Name="Go">
+      <LocalizedLabel LanguageRef="zhs">跳转</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Jump to</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="EditGrid" IsWeb="true">
+    <Label Name="NumberRegexTitle">
+      <LocalizedLabel LanguageRef="zhs">必须是数字</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Must be number</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TextValue" IsWeb="true">
+    <Label Name="Clear">
+      <LocalizedLabel LanguageRef="zhs">清空信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">null information</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Search" IsWeb="true">
+    <Label Name="SearchFile">
+      <LocalizedLabel LanguageRef="zhs">搜索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search</LocalizedLabel>
+    </Label>
+    <Label Name="SearchBtn">
+      <LocalizedLabel LanguageRef="zhs">搜 索</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Search</LocalizedLabel>
+    </Label>
+    <Label Name="InputCharError">
+      <LocalizedLabel LanguageRef="zhs">您输入查询的内容过长，请重新输入。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The contents of your entered is too long. Please enter again.</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Suspension" IsWeb="true">
+    <Label Name="more">
+      <LocalizedLabel LanguageRef="zhs">更多</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">More</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="BreadcrumbNavigation" IsWeb="true">
+    <Label Name="AllFile">
+      <LocalizedLabel LanguageRef="zhs">全部文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All files</LocalizedLabel>
+    </Label>
+    <Label Name="Back">
+      <LocalizedLabel LanguageRef="zhs">返回上级</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Return to the higher level</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="LocalSearch" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">本地查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Local query</LocalizedLabel>
+    </Label>
+    <Label Name="Equal">
+      <LocalizedLabel LanguageRef="zhs">等于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Equal to</LocalizedLabel>
+    </Label>
+    <Label Name="NotEqual">
+      <LocalizedLabel LanguageRef="zhs">不等于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Not equal to</LocalizedLabel>
+    </Label>
+    <Label Name="LeftContain">
+      <LocalizedLabel LanguageRef="zhs">左包含</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Left contains</LocalizedLabel>
+    </Label>
+    <Label Name="RightContain">
+      <LocalizedLabel LanguageRef="zhs">右包含</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right contains</LocalizedLabel>
+    </Label>
+    <Label Name="Contain">
+      <LocalizedLabel LanguageRef="zhs">包含</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Contains</LocalizedLabel>
+    </Label>
+    <Label Name="GreaterThan">
+      <LocalizedLabel LanguageRef="zhs">大于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Greater than</LocalizedLabel>
+    </Label>
+    <Label Name="GreaterEqualThan">
+      <LocalizedLabel LanguageRef="zhs">大于等于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Greater than or equal to</LocalizedLabel>
+    </Label>
+    <Label Name="LessThan">
+      <LocalizedLabel LanguageRef="zhs">小于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Less than</LocalizedLabel>
+    </Label>
+    <Label Name="LessEqualThan">
+      <LocalizedLabel LanguageRef="zhs">小于等于</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Less than or equal to</LocalizedLabel>
+    </Label>
+    <Label Name="And">
+      <LocalizedLabel LanguageRef="zhs">和</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">And</LocalizedLabel>
+    </Label>
+    <Label Name="Or">
+      <LocalizedLabel LanguageRef="zhs">或</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Or</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Image" IsWeb="true">
+    <Label Name="PreviousImage">
+      <LocalizedLabel LanguageRef="zhs">上一张图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Last picture</LocalizedLabel>
+    </Label>
+    <Label Name="NextImage">
+      <LocalizedLabel LanguageRef="zhs">下一张图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Next picture</LocalizedLabel>
+    </Label>
+    <Label Name="Preview">
+      <LocalizedLabel LanguageRef="zhs">预览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Preview</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Menu" IsWeb="true">
+    <Label Name="More">
+      <LocalizedLabel LanguageRef="zhs">更多</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">More</LocalizedLabel>
+    </Label>
+    <Label Name="Menu">
+      <LocalizedLabel LanguageRef="zhs">菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="UploadPreview" IsWeb="true">
+    <Label Name="ChooseFile">
+      <LocalizedLabel LanguageRef="zhs">选择文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ChooseFile</LocalizedLabel>
+    </Label>
+    <Label Name="Upload">
+      <LocalizedLabel LanguageRef="zhs">开始上传</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

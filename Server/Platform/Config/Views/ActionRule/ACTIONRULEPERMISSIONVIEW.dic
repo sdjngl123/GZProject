@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ACTIONRULEPERMISSIONVIEWView" IsWeb="true">
+    <Label Name="ACTIONRULEPERMISSIONVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs">规则权限视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission view</LocalizedLabel>
+    </Label>
+    <Label Name="ACTIONRULEPERMISSIONVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs">规则权限视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Rule permission view</LocalizedLabel>
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">权限编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Permission No.</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">权限编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Permission No.</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERHeader">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="SERIALNUMBERCaption">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTORVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">授权对象</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorized Objects</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUEHeader">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+    <Label Name="PERMISSIONACTIONVALUECaption">
+      <LocalizedLabel LanguageRef="zhs">授权操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authorization Actions</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

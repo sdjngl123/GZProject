@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <service name="InforCenterService" title="业务服务" path="~/Hoteam.InforCenter.Service.Console.exe" desc="" timeOut="200"></service>
+  <service name="InforCenterTimer" title="定时服务" path="~/Hoteam.InforCenter.Service.TimerConsole.exe" desc="" timeOut="200"></service>
+</root>

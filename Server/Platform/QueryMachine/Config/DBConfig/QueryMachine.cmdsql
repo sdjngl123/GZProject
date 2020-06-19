@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="GetQueryMachineQueryData">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select * from (select A.*,row_number() over([ORDERBY]) AS IDX from (
+        [SQLstring]
+        ) A  ) B WHERE IDX [GT] [STARTROW] AND IDX [LE] [STARTROW] + [ROWNUM] ORDER BY IDX
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true" IsQuery="true">
+        select Count(1) from (
+        [SQLstring]
+        ) A
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="GetQueryMachineHistoryData">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select EID,ENAME,QUERYROLES,BASEQUERYID,CREATETIME,IDX from (
+        select EID, ENAME,QUERYROLES,BASEQUERYID ,CREATETIME,row_number() over( order by CREATETIME DESC) AS IDX
+        from QUERYMACHINEHISTORY where CREATEUID='[CREATEUID]'
+        )A
+        where IDX [GT] [STARTNO] and IDX [LE] [ENDNO] ORDER BY IDX
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsCount="true" IsQuery="true">
+        select Count(1) from QUERYMACHINEHISTORY where  CREATEUID='[CREATEUID]'
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+
+  <Command Name="DeleteQueryHistory">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from QUERYMACHINEHISTORY where 1=1 [ROOTWHERE]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from QUERYMACHINEPOMHISTORY where 1=1 [CHILDWHERE]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from QUERYPOMLINKHISTORY  where 1=1 [CHILDWHERE]
+      </CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false">
+        delete from QUERYROLEHISTORY where 1=1 [CHILDWHERE]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

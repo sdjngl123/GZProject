@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="EnumerationGrid" IsWeb="true">
+    <Label Name="ENAMEExistError">
+      <LocalizedLabel LanguageRef="zhs">名称存在重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate name exists</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEORECODEExistError">
+      <LocalizedLabel LanguageRef="zhs">名称或值存在重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate name or value exists</LocalizedLabel>
+    </Label>
+    <Label Name="SystemLovCannotDeleteError">
+      <LocalizedLabel LanguageRef="zhs">系统值列表不允许编辑或删除</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The system value list does not allow editing or deletion</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

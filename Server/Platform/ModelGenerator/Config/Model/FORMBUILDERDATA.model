@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="FORMBUILDERDATA" Extend="ENTITY" LogicClass="FormbuilderData" IconPath="Base\Image\Entity.gif" Abstract="false" TableName="FORMBUILDERDATA" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="MASTERTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="MASTERTYPE" PrimaryKeyOrder="0" Required="True" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="SLAVETYPE" Type="DefaultObjectValue" DataType="STRING500" Column="SLAVETYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="DESIGNERDATA" Type="DefaultObjectValue" DataType="TEXT" Column="DESIGNERDATA" PrimaryKeyOrder="0" Required="True" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="CONTROLDATA" Type="DefaultObjectValue" DataType="TEXT" Column="CONTROLDATA" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="TEMPORARYDATA" Type="DefaultObjectValue" DataType="TEXT" Column="TEMPORARYDATA" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="PERMISSIONDATA" Type="DefaultObjectValue" DataType="TEXT" Column="PERMISSIONDATA" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="MODELDATAID" Type="DefaultObjectValue" DataType="STRING100" Column="MODELDATAID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="TYPEID" Type="DefaultObjectValue" DataType="STRING100" Column="TYPEID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Name="ASSISTANTGID" Type="DefaultObjectValue" DataType="STRING2000" Column="ASSISTANTGID" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" />
+    <InfoType Extend="EVERSION" Type="VersionValue" Edit="" Show="View" Sequence="110" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" />
+    <InfoType Extend="UPDATEUID" Type="SingleUserValue" Edit="" Show="View" Sequence="150" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" OverrideLevel="Must" ExtendProperty1="" />
+    <InfoType Extend="UPDATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="160" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" ValidateUnique="false" Validation="" InheritRegulate="Show" OverrideLevel="Must" ExtendProperty1="" IsBussinessField="false" />
+  </EntityType>
+</root>

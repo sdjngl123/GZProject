@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <CssFile FileName ="~/MobileRegistered/css/MobileRegistered.css" group="mobileregistered" IsMobile="true"/>
+</root>

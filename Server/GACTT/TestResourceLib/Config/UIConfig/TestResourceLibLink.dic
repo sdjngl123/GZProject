@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Context Name="PageLinkItems" IsWeb="true">
+		<Label Name="InnerCapability">
+			<LocalizedLabel LanguageRef="zhs">内部试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">InnerCapability</LocalizedLabel>
+		</Label>
+		<Label Name="OutCapability">
+			<LocalizedLabel LanguageRef="zhs">外部试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">OutCapability</LocalizedLabel>
+		</Label>
+		<Label Name="Capability">
+			<LocalizedLabel LanguageRef="zhs">试验能力</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Capability</LocalizedLabel>
+		</Label>
+		<Label Name="Knowledge">
+			<LocalizedLabel LanguageRef="zhs">试验知识</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Knowledge</LocalizedLabel>
+		</Label>
+		<Label Name="Resource">
+			<LocalizedLabel LanguageRef="zhs">试验资源</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">Resource</LocalizedLabel>
+		</Label>
+		<Label Name="TestProject">
+			<LocalizedLabel LanguageRef="zhs">试验项目</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TestProject</LocalizedLabel>
+		</Label>
+		<Label Name="AllKnowledgeLink">
+			<LocalizedLabel LanguageRef="zhs">知识文档</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">AllKnowledgeLink</LocalizedLabel>
+		</Label>
+		<Label Name="TypeKnowledgeLink">
+			<LocalizedLabel LanguageRef="zhs">知识文档</LocalizedLabel>
+			<LocalizedLabel LanguageRef="en">TypeKnowledgeLink</LocalizedLabel>
+		</Label>
+ 
+	</Context>
+</DictionarySerializer>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MenuItem Name="ModelViewTreeMenu" Type="Button" Issplit="false" IsTemplate="false" TemplateDescription="">
+    <WebAction Name="CreateView" MultiMenu="false" ModuleName="WebStudio" LabelName="Common.Create" Image="p_add" ParentWebAtionName="" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" TemplateDescription="" IsMainConfig="false">
+      <WebMethod Name="newWebMethod1" SelectID="[Tree_Current_value1]" PageName="ModelViewCreate" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="TreeID" Value="[TreeID]" />
+      </WebMethod>
+      <WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true">
+        <Para Name="CEID" Value="[ReturnValue_EID]" />
+      </WebMessageAndLogger>
+    </WebAction>
+  </MenuItem>
+  <MenuItem Name="ModelViewTreeHeadMenu" Type="Image" Issplit="false" IsTemplate="false">
+    <WebAction Name="RefreshView" MultiMenu="false" ModuleName="WebStudio" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false" />
+    <WebAction Name="CreateView" MultiMenu="false" ModuleName="WebStudio" LabelName="Common.Create" Image="p_add" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <WebMethod Name="newWebMethod1" SelectID="[Tree_Current_value1]" PageName="ModelViewCreate" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="TreeID" Value="[TreeID]" />
+      </WebMethod>
+    </WebAction>
+    <WebAction Name="DeleteView" MultiMenu="false" ModuleName="WebStudio" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshParentStruct" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_ModelListViewInfo_ModelViewCreate_Delete" IsLoopExec="false">
+        <Para Name="TreeID" Value="[TreeID]" />
+        <Para Name="ViewName" Value="[Tree_Current_Value1]" />
+        <Para Name="ModelName" Value="[Tree_Current_Tag_ModelName]" />
+      </JSMethod>
+    </WebAction>
+  </MenuItem>
+</root>

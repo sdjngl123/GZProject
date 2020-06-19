@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="PROJECTSTAGEModel" IsWeb="true">
+    <Label Name="PROJECTSTAGEHeader">
+      <LocalizedLabel LanguageRef="zhs">项目阶段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTSTAGE</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTSTAGECaption">
+      <LocalizedLabel LanguageRef="zhs">项目阶段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTSTAGE</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTIDHeader">
+      <LocalizedLabel LanguageRef="zhs">PROJECTID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTID</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="STARTDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STARTDATE</LocalizedLabel>
+    </Label>
+    <Label Name="STOPDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="SOPDATEHeader">
+      <LocalizedLabel LanguageRef="zhs">SOP日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="STARTDATECaption">
+      <LocalizedLabel LanguageRef="zhs">开始日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STARTDATE</LocalizedLabel>
+    </Label>
+    <Label Name="STOPDATECaption">
+      <LocalizedLabel LanguageRef="zhs">结束日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">STOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="SOPDATECaption">
+      <LocalizedLabel LanguageRef="zhs">SOP日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SOPDATE</LocalizedLabel>
+    </Label>
+    <Label Name="ECODEHeader">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="ECODECaption">
+      <LocalizedLabel LanguageRef="zhs">编号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">No.</LocalizedLabel>
+    </Label>
+    <Label Name="PROJECTIDCaption">
+      <LocalizedLabel LanguageRef="zhs">PROJECTID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PROJECTID</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

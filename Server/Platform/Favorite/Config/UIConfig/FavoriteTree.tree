@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeManagement Name="FavoriteManagement" MenuName="FavoriteTreeMenu" TreeViewName="FavoriteTreeView" ShowTreeQuery="false" IsHiddenTabs="true"
+                  TreeChildDataService="" TreeRootDataService="" TreeAllDataService="" TreeQueryDataService=""
+                  PageLinksName="" IsLoadAllData="false">
+    <ObjectType Name="FAVORITE" MenuName="" PageLinksName="FavoriteLinks" />
+    <ObjectType Name="FAVORITEFOLDER" MenuName="" PageLinksName="FavoriteLinks" />
+  </TreeManagement>
+</root>

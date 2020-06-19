@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Command Name="CREATEFSMANAGEROOT">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false"> IF (EXISTS(SELECT * FROM sysobjects WHERE ID= OBJECT_ID(N'FSMANAGEROOT'))) DROP VIEW FSMANAGEROOT</CommandItem>
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false" DBObject="FSMANAGEROOT"> CREATE VIEW FSMANAGEROOT AS  SELECT REPLACE(EID,'COMPANY','FSMANAGEROOT') EID, 'FSMANAGEROOTModel.FSMANAGEROOTHeader' ENAME,'634938753390000000' CREATETIME,'USERINFO_System' CREATEUID,'USERINFO_System' UPDATEUID,'634938753390000000' UPDATETIME,EID ECOMPANYID FROM COMPANY</CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="false" IsCount="false" DBObject="FSMANAGEROOT"> CREATE OR REPLACE VIEW FSMANAGEROOT AS SELECT REPLACE(EID,'COMPANY','FSMANAGEROOT') EID, 'FSMANAGEROOTModel.FSMANAGEROOTHeader' ENAME,'634938753390000000' CREATETIME,'USERINFO_System' CREATEUID,'USERINFO_System' UPDATEUID,'634938753390000000' UPDATETIME,EID ECOMPANYID FROM COMPANY</CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SetAboutModel" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">设置关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SetAboutModel</LocalizedLabel>
+    </Label>
+    <Label Name="AboutModel">
+      <LocalizedLabel LanguageRef="zhs">关联模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AboutModel</LocalizedLabel>
+    </Label>
+    
+  </Context>
+</DictionarySerializer>

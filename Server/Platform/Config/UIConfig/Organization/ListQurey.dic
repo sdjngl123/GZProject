@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ListCommonQuery" IsWeb="true">
+    <Label Name="ROLEVIEW-QUERY">
+      <LocalizedLabel LanguageRef="zhs">角色查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role query</LocalizedLabel>
+    </Label>
+    <Label Name="MultiRoleListSearch">
+      <LocalizedLabel LanguageRef="zhs">角色查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role query</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYVIEWIgnoreCompanyID-QUERY">
+      <LocalizedLabel LanguageRef="zhs">公司查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company query</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyListSearchIgnoreCompanyID">
+      <LocalizedLabel LanguageRef="zhs">公司查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company query</LocalizedLabel>
+    </Label>
+    <Label Name="MultiGroupListQuery">
+      <LocalizedLabel LanguageRef="zhs">组查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group query</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

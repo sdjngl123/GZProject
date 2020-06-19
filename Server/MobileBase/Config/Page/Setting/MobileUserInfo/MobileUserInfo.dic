@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MobileUserInfo" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">用户设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User settings</LocalizedLabel>
+    </Label>
+    <Label Name="OldPassword">
+      <LocalizedLabel LanguageRef="zhs">旧密码：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OldPassword</LocalizedLabel>
+    </Label>
+    <Label Name="NewPassword">
+      <LocalizedLabel LanguageRef="zhs">新密码：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">NewPassword</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseInputOldPassWord">
+      <LocalizedLabel LanguageRef="zhs">请输入旧密码:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PleaseInputOldPassWord:</LocalizedLabel>
+    </Label>
+    <Label Name="PleaseInputNewPassWord">
+      <LocalizedLabel LanguageRef="zhs">请输入新密码:</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PleaseInputNewPassWord</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

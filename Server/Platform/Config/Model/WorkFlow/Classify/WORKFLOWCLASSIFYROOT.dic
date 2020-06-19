@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WORKFLOWCLASSIFYROOTModel" IsWeb="true">
+    <Label Name="WORKFLOWCLASSIFYROOTHeader">
+      <LocalizedLabel LanguageRef="zhs">流程分类根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process classification root node</LocalizedLabel>
+    </Label>
+    <Label Name="WORKFLOWCLASSIFYROOTCaption">
+      <LocalizedLabel LanguageRef="zhs">流程分类根节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Process classification root node</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

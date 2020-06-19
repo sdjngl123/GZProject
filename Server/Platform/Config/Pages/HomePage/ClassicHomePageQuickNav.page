@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ClassicHomePageQuickNav" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ClassicHomePageQuickNav_QuickOnCreate(pageEvent)"></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="ClassicHomePage_QuickNavLayout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="QuickNavTemplate"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="0"/>
+        <Settings Key="childid" Value="RightMenu_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="QuickNavTemplate" ParentID="ClassicHomePage_QuickNavLayout" TypeName="CustomerContainer">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ClassicHomePageQuickNav_LoadNavigationItems(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="templateName" Value="QuickNavigation"/>
+    </PageControl>
+    <PageControl ControlID="RightMenu_Container" ParentID="ClassicHomePage_QuickNavLayout" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="RightMenu"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="RightMenu" ParentID="RightMenu_Container" TypeName="RightMenu">
+    </PageControl>
+  </PageControls>
+</root>

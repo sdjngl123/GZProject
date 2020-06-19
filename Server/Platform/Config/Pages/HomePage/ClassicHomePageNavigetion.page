@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ClassicHomePageNavigation" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="ClassicHomePageNavigation_Accordion" ParentID="" TypeName="Accordion">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ClassicHomePageNavigation_LoadNavigationItems(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ClassicHomePageNavigation_NavigationOnClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="LastIconOnClick" Script="InforCenter_Platform_Navigation_AddQuickNavigation(ctrlEvent);"/>
+      </PageHandlers>
+    </PageControl>
+
+   
+
+  </PageControls>
+</root>

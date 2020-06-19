@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SearchObjectPermission" IsWeb="true">
+    <Label Name="User">
+      <LocalizedLabel LanguageRef="zhs">用户：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User:</LocalizedLabel>
+    </Label>
+    <Label Name="Group">
+      <LocalizedLabel LanguageRef="zhs">组：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group:</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

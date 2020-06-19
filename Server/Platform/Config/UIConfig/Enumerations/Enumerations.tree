@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="Enumerations" MenuName="" PageLinksName=""
+                TreeViewName="EnumerationsTreeView" ShowTreeQuery="false"
+                TreeChildDataService="" TreeQueryDataService=""
+                TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="ENUMERATIONS" MenuName="TreeEnumerationsMenu" PageLinksName="EnumerationsLink" />
+    <ObjectType Name="ENUMERATIONCATEGORY" MenuName="TreeEnumerationCategoryMenu" PageLinksName="EnumerationLink" />
+    <ObjectType Name="ENUMERATION" MenuName="TreeEnumerationMenu" PageLinksName="EnumerationItemLink" />
+  </TreeManagement>
+</root>

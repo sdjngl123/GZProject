@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FORMCLASSIFYTOOBJTYPEModel" IsWeb="true">
+    <Label Name="FORMCLASSIFYTOOBJTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">表单分类关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMCLASSIFYTOOBJTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="FORMCLASSIFYTOOBJTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">表单分类关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FORMCLASSIFYTOOBJTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CLASSIFYID</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSIFYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">分类ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">CLASSIFYID</LocalizedLabel>
+    </Label>
+    <Label Name="FORMOBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">表单对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="FORMOBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">表单对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FormObjectType</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

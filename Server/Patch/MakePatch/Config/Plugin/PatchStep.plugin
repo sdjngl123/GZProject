@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PluginItem Name="ApplicationCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.ApplicationCtrl" />
+  <PluginItem Name="TfsApplicationCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+            Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.TfsApplicationCtrl" />
+  
+  <PluginItem Name="CreateWindowsServiceCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch" 
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.CreateWindowsServiceCtrl" />
+  <PluginItem Name="PauseWindowsServiceCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.PauseWindowsServiceCtrl" />
+  <PluginItem Name="StartWindowsServiceCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.StartWindowsServiceCtrl" />
+  <PluginItem Name="CloseWindowsServiceCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.CloseWindowsServiceCtrl" />
+  <PluginItem Name="AutoGeneratorCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.AutoGeneratorCtrl" />
+  <PluginItem Name="FileReplaceCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.FileReplaceCtrl" />
+  <PluginItem Name="RestartIISCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+              Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.RestartIISCtrl" />
+  <PluginItem Name="StopIISCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+            Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.StopIISCtrl" />
+  <PluginItem Name="UpdateConfigFileCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+            Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.UpdateConfigFileCtrl" />
+  <PluginItem Name="UpdateDatabaseSchemaCtrl" Type="PatchStepCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+          Class="Hoteam.InforCenter.Patch.MakePatch.StepCtrl.UpdateDatabaseSchemaCtrl" />
+
+
+  <PluginItem Name="PatchBasicInfoCtrl" Type="PatchInfoCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+        Class="Hoteam.InforCenter.Patch.MakePatch.PatchBasicInfoCtrl" />
+  <PluginItem Name="PatchLinkInfoCtrl" Type="PatchInfoCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+        Class="Hoteam.InforCenter.Patch.MakePatch.PatchLinkInfoCtrl" />
+  <PluginItem Name="PatchApplicationInfoCtrl" Type="PatchInfoCtrl" Assembly="Hoteam.InforCenter.Patch.MakePatch"
+        Class="Hoteam.InforCenter.Patch.MakePatch.PatchApplicationInfoCtrl" />
+</root>

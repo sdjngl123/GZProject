@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MOBILEPAGEPROPERTYTABCONFIGModel" IsWeb="true">
+    <Label Name="MOBILEPAGEPROPERTYTABCONFIGHeader">
+      <LocalizedLabel LanguageRef="zhs">配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEPAGEPROPERTYTABCONFIG</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEPROPERTYTABCONFIGCaption">
+      <LocalizedLabel LanguageRef="zhs">配置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MOBILEPAGEPROPERTYTABCONFIG</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCEHeader">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="SEQUENCECaption">
+      <LocalizedLabel LanguageRef="zhs">序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sequence</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDHeader">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="MOBILEPAGEDEVIDCaption">
+      <LocalizedLabel LanguageRef="zhs">页面ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">MobilePageDevID</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlType</LocalizedLabel>
+    </Label>
+    <Label Name="CONTROLTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ControlType</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OBJECTTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="OBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OBJECTTYPE</LocalizedLabel>
+    </Label>
+    <Label Name="TITLEHeader">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="TITLECaption">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="ECOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">企业ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enterprise ID</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">修改时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modification time</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="UPDATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">修改人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Modified by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="ENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Name</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">类名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassName</LocalizedLabel>
+    </Label>
+    <Label Name="CLASSNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">类名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ClassName</LocalizedLabel>
+    </Label>
+    <Label Name="ASSEMBLYNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssemblyName</LocalizedLabel>
+    </Label>
+    <Label Name="ASSEMBLYNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">程序集名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AssemblyName</LocalizedLabel>
+    </Label>
+    <Label Name="URLHeader">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="URLCaption">
+      <LocalizedLabel LanguageRef="zhs">Url</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Url</LocalizedLabel>
+    </Label>
+    <Label Name="URLPARAHeader">
+      <LocalizedLabel LanguageRef="zhs">URL参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">URLPara</LocalizedLabel>
+    </Label>
+    <Label Name="URLPARACaption">
+      <LocalizedLabel LanguageRef="zhs">URL参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">URLPara</LocalizedLabel>
+    </Label>
+    <Label Name="INFOTYPESHeader">
+      <LocalizedLabel LanguageRef="zhs">显示字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoTypes</LocalizedLabel>
+    </Label>
+    <Label Name="INFOTYPESCaption">
+      <LocalizedLabel LanguageRef="zhs">显示字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">InfoTypes</LocalizedLabel>
+    </Label>
+    <Label Name="PAGETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">页面模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PAGETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="PAGETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">页面模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PAGETYPE</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCETYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">数据源类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSourceType</LocalizedLabel>
+    </Label>
+    <Label Name="DATASOURCETYPECaption">
+      <LocalizedLabel LanguageRef="zhs">数据源类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DataSourceType</LocalizedLabel>
+    </Label>
+    <Label Name="STRINGFILTERHeader">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StringFilter</LocalizedLabel>
+    </Label>
+    <Label Name="STRINGFILTERCaption">
+      <LocalizedLabel LanguageRef="zhs">过滤条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">StringFilter</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTOBJECTTYPEHeader">
+      <LocalizedLabel LanguageRef="zhs">结果对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ResultObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="RESULTOBJECTTYPECaption">
+      <LocalizedLabel LanguageRef="zhs">结果对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ResultObjectType</LocalizedLabel>
+    </Label>
+    <Label Name="PAGENAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">调用页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PAGENAME</LocalizedLabel>
+    </Label>
+    <Label Name="PAGENAMECaption">
+      <LocalizedLabel LanguageRef="zhs">调用页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">PAGENAME</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLEHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="ENABLECaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

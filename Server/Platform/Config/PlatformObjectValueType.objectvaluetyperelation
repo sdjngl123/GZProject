@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!--可编辑列表与模型处理类型的关系name-多语言主键；UseType-使用类型（分组）；DefaultDataType-对应默认数据类型;
+      CommonType-通用处理类型（对应页面控件类型）;DateTimeType-如果是DateTime格式，指定是date还是datetime -->
+  <ObjectValueTypeRelation Name="ActionRuleConditionValue" PluginName ="ActionRuleConditionValue" EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ActionRuleCondition_ShowConditionValuePageOnEditGrid(ctrlEvent);" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="AllObjectTypeListValue" PluginName ="AllObjectTypeListValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType=""
+                         EditGridColDataBind=""
+                         QueryMachineDataBind="" ServiceUri="InforCenter.Platform.ObjectService.GetObjectTypeList">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="BoolValue" PluginName ="BoolValue"  EditGridColType="checkbox" UseType="" CommonType="CheckBox" DateTimeType=""   DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="DateTimeValue" PluginName ="DateTimeValue"  EditGridColType="datetime" UseType="" CommonType="DateTime" DateTimeType="datetime"  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="DateValue" PluginName ="DateValue"  EditGridColType="date" UseType="" CommonType="DateTime" DateTimeType="date"  DefaultDataType="LONG" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="DefaultObjectValue" PluginName ="DefaultObjectValue"  EditGridColType="text" CommonType="TextBox" DateTimeType=""  UseType="" DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="EnumValue" PluginName ="EnumValue"  WorkflowConditionPluginName="EnumValueConditionPlugin"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetEnumerationItemFromObj"
+                           EditGridColDataBind=""
+                           QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="ExhaustionLovListValue" PluginName ="ExhaustionLovListValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType=""
+                       EditGridColDataBind=""
+                       QueryMachineDataBind="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetLovListItemFromObj">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ExhaustionObjectEnumValue" PluginName ="ExhaustionObjectEnumValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType=""
+                       EditGridColDataBind=""
+                       QueryMachineDataBind="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetOjbectEnumerationItem">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="FileUploadValue" PluginName ="FileUploadValue"  EditGridColType="textValue" UseType="" CommonType="" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="FlowTemplateValue" PluginName ="FlowTemplateValue"  EditGridColType="" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="InforCenter_Platform_FlowTemplateValue_OnEditGridColDataBind(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ImageUploadValue" PluginName ="ImageUploadValue"  EditGridColType="image" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ImageUploadBase64Value" PluginName ="ImageUploadBase64Value"  EditGridColType="image" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="CustomFormImageUploadValue" PluginName ="CustomFormImageUploadValue"  EditGridColType="image" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ImageUploadHttpValue" PluginName ="ImageUploadHttpValue"  EditGridColType="image" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ImageValue" PluginName ="ImageValue"  EditGridColType="image" UseType="" CommonType="Image" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="LanuageSelValue" PluginName ="LanuageSelValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType=""
+                     EditGridColDataBind=""
+                     QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="LovListValue" PluginName ="LovListValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetLovListItemFromObj"
+                           EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_EditGridColDataBindScript_LovListValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_QueryMachineDataBind_LovListValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="MultiLovListValue" PluginName ="MultiLovListValue"  EditGridColType="multiselectdropdown" UseType="" CommonType="MultiSelectDropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetLovListItemFromObj"
+                         EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_EditGridColDataBindScript_LovListValue(objInfo);}"
+                         QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_QueryMachineDataBind_LovListValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="MultiObjectEnumValue" PluginName ="MultiObjectEnumValue"  EditGridColType="multiselectdropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetOjbectEnumerationItem"
+                         EditGridColDataBind=""
+                         QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="LovValue" PluginName ="LovValue"  EditGridColType="dropdown" UseType="" DefaultDataType="" CommonType="DropDown" DateTimeType="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetLov"
+                            EditGridColDataBind="{var objInfo = {};InforCenter_Platform_EditGridColDataBindScript_LovValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};InforCenter_Platform_QueryMachineDataBind_LovValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="MajorMinorVersionValue" PluginName ="MajorMinorVersionValue"  EditGridColType="dropdown" CommonType="DropDown" DateTimeType=""  UseType="" DefaultDataType="" ServiceUri="InforCenter.InforCenter.QueryMachineService.GetMajorVersionFormatValues"
+                          EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_EditGridColDataBindScript_MajorMinorVersionValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_QueryMachineDataBind_MajorMinorVersionValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="MessageActionValue" PluginName ="MessageActionValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="MinorVersionValue" PluginName ="MinorVersionValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.InforCenter.QueryMachineService.GetMinorVersionFormatValues"
+                         EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_EditGridColDataBindScript_MinorVersionValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_QueryMachineDataBind_MinorVersionValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="MultiEnumValue" PluginName ="MultiEnumValue" WorkflowConditionPluginName="MultiEnumValueConditionPlugin" EditGridColType="multiselectdropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Enumeration.EnumerationService.GetEnumerationItemFromObj"
+                   EditGridColDataBind=""
+                   QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="MultiGroupValue" PluginName ="MultiGroupValue" WorkflowConditionPluginName="MultiGroupValueConditionPlugin"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditGridMutliGroupValue(ctrlEvent)" QueryMachineDataBind="InforCenter_Platform_QueryMachine_OnBindingMutliGroupValue(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="MultiInfoTypeValue" PluginName ="MultiInfoTypeValue"  EditGridColType="multiselectdropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Platform.ObjectService.GetInfoTypeList"
+                 EditGridColDataBind=""
+                 QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="MultiRoleValue" PluginName ="MultiRoleValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditGridMutliRoleValue(ctrlEvent)" QueryMachineDataBind="InforCenter_Platform_QueryMachine_OnBindingMutliRoleValue(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="MultiUserValue" PluginName ="MultiUserValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditGridMutliUserValue(ctrlEvent)" QueryMachineDataBind="InforCenter_Platform_QueryMachine_OnBindingMutliUserValue(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ObjectEnumValue" PluginName ="ObjectEnumValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType=""
+                             EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_EditGridColDataBindScript_ObjectEnumValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_QueryMachineDataBind_ObjectEnumValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ObjectIDValue" PluginName ="ObjectIDValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_ExecInfoDataSource(ctrlEvent)" QueryMachineDataBind=" InforCenter_Platform_QueryMachineDataBind_ObjectIDValue(ctrlEvent)">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="PassWordValue" PluginName ="PassWordValue"  EditGridColType="text" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="PermissionActionValue" PluginName ="PermissionActionValue"  EditGridColType="textValue" CommonType="TextValue" DateTimeType=""  UseType="" DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="PermissionActorValue" PluginName ="PermissionActorValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ActionRulePermission_ShowPermissionActorValueOnEditGrid(ctrlEvent);" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="SingleGroupValue" PluginName ="SingleGroupValue" WorkflowConditionPluginName="SingleGroupValueConditionPlugin" EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditGridSingleGroupValue(ctrlEvent)" QueryMachineDataBind="InforCenter_Platform_Object_OnBindSingleGroupValue(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="SingleRoleValue" PluginName ="SingleRoleValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditGridSingleRoleValue(ctrlEvent)" QueryMachineDataBind="InforCenter_Platform_Object_OnBindSingleRoleValue(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="SingleUserValue" PluginName ="SingleUserValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditSingleUserValue(ctrlEvent);" QueryMachineDataBind="InforCenter_Platform_Object_OnBindSingleUserValue(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="SingleUserAutoComboxValue" PluginName ="SingleUserAutoComboxValue"  EditGridColType="autocompletecombox" UseType="" CommonType="AutoCompleteCombox" DateTimeType=""  DefaultDataType=""
+                           EditGridColDataBind="if(!ctrlEvent){var ctrlEvent = {}; }InforCenter_Platform_ObjectEditGrid_OnEditSingleUserAutoComboxValue(ctrlEvent,'[OBJTYPE]','[INFONAME]');"
+            QueryMachineDataBind="if(!ctrlEvent){var ctrlEvent = {}; }InforCenter_Platform_ObjectEditGrid_OnEditSingleUserAutoComboxValue(ctrlEvent,'[OBJTYPE]','[INFONAME]');">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="SingleRoleAutoComboxValue" PluginName ="SingleRoleAutoComboxValue"  EditGridColType="autocompletecombox" UseType="" CommonType="AutoCompleteCombox" DateTimeType=""  DefaultDataType=""
+                           EditGridColDataBind="if(!ctrlEvent){var ctrlEvent = {}; }InforCenter_Platform_ObjectEditGrid_OnEditSingleRoleAutoComboxValue(ctrlEvent,'[OBJTYPE]','[INFONAME]');"
+    QueryMachineDataBind="if(!ctrlEvent){var ctrlEvent = {}; }InforCenter_Platform_ObjectEditGrid_OnEditSingleRoleAutoComboxValue(ctrlEvent,'[OBJTYPE]','[INFONAME]');">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="SingleGroupAutoComboxValue" PluginName ="SingleGroupAutoComboxValue" WorkflowConditionPluginName="SingleGroupValueConditionPlugin" EditGridColType="autocompletecombox" UseType="" CommonType="AutoCompleteCombox" DateTimeType=""  DefaultDataType=""
+                           EditGridColDataBind="if(!ctrlEvent){var ctrlEvent = {}; }InforCenter_Platform_ObjectEditGrid_OnEditSingleGroupAutoComboxValue(ctrlEvent,'[OBJTYPE]','[INFONAME]');"
+    QueryMachineDataBind="if(!ctrlEvent){var ctrlEvent = {}; }InforCenter_Platform_ObjectEditGrid_OnEditSingleGroupAutoComboxValue(ctrlEvent,'[OBJTYPE]','[INFONAME]');">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="SubDataModelValue" PluginName ="SubDataModelValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="Hoteam.InforCenter.ObjectService.GetSubDataModelList"
+                           EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_EditGridColDataBindScript_SubDataModelValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_QueryMachineDataBind_SubDataModelValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="UnionDataModelValue" PluginName ="UnionDataModelValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="Hoteam.InforCenter.ObjectService.GetUnionDataModelList"
+                         EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_EditGridColDataBindScript_UnionDataModelValue(objInfo);}"
+                         QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_QueryMachineDataBind_UnionDataModelValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="LinkChildDataModelValue" PluginName ="LinkChildDataModelValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Platform.ObjectService.GetLinkChildDataModelList"
+                          EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_EditGridColDataBindScript_LinkChildDataModelValue(objInfo);}"
+                          QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_QueryMachineDataBind_LinkChildDataModelValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="TextBoxIDSValue" PluginName ="TextBoxIDSValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="TextValueIDSValue" PluginName ="TextValueIDSValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="TimeValue" PluginName ="TimeValue"  EditGridColType="time" UseType="" DefaultDataType="" CommonType="DateTime" DateTimeType="time"  EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="VersionValue" PluginName ="VersionValue"  EditGridColType="dropdown" UseType=""  CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.InforCenter.QueryMachineService.GetMajorVersionFormatValues"
+                         EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_EditGridColDataBindScript_MajorMinorVersionValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]';InforCenter_Platform_QueryMachineDataBind_MajorMinorVersionValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="StateValue" PluginName ="StateValue"  EditGridColType="dropdown" UseType=""  CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="Hoteam.InforCenter.ObjectService.GetStateList"
+                           EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_EditGridColDataBindScript_StateValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';objInfo.infoName='[INFONAME]'; InforCenter_Platform_QueryMachineDataBind_StateValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="CodeValue" PluginName ="CodeValue"  EditGridColType="text" CommonType="TextBox" DateTimeType=""  UseType="" DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ObjectTypeListValue" PluginName ="ObjectTypeListValue"  EditGridColType="dropdown" UseType=""  CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="Hoteam.InforCenter.ObjectService.GetObjectTypeList"
+                           EditGridColDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';InforCenter_Platform_EditGridColDataBindScript_ObjectTypeListValue(objInfo);}"
+                           QueryMachineDataBind="{var objInfo = {};objInfo.objectType='[OBJTYPE]';InforCenter_Platform_QueryMachineDataBind_ObjectTypeListValue(objInfo);}">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="CompanyValue" PluginName ="CompanyValue"  EditGridColType="text" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="WorkflowTemplateTypeValue" PluginName ="WorkflowTemplateTypeValue"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="MultiUserValueIgnoreCompany" PluginName ="MultiUserValueIgnoreCompany"  EditGridColType="textValue" UseType="" CommonType="TextValue" DateTimeType=""  DefaultDataType="" EditGridColDataBind="InforCenter_Platform_ObjectEditGrid_OnEditGridMultiUserValueIgnoreCompany(ctrlEvent)" QueryMachineDataBind="InforCenter_Platform_QueryMachine_OnBindingMultiUserValueIgnoreCompany(ctrlEvent);">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="DescriptionValue" PluginName ="DescriptionValue"  EditGridColType="text" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="ColorValue" PluginName ="ColorValue"  EditGridColType="colorpicker" UseType="" CommonType="ColorPicker" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+
+  <ObjectValueTypeRelation Name="VaultValue" PluginName ="VaultValue"  EditGridColType="dropdown" UseType="" CommonType="DropDown" DateTimeType=""  DefaultDataType="" ServiceUri="InforCenter.Platform.FileManageService.GetVaultList"
+                           EditGridColDataBind=""
+                           QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+
+  <ObjectValueTypeRelation Name="BatchUploadFileValue" PluginName ="BatchUploadFileValue"  EditGridColType="text" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" ServiceUri=""
+                           EditGridColDataBind=""
+                           QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+  <ObjectValueTypeRelation Name="CheckBoxListValue" PluginName ="CheckBoxListValue"  EditGridColType="text" UseType="" CommonType="TextBox" DateTimeType=""  DefaultDataType="" EditGridColDataBind="" QueryMachineDataBind="">
+    <EditGridColEventBind Name="" Value=""/>
+  </ObjectValueTypeRelation>
+</root>

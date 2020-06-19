@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="NavigationItems" IsWeb="true">
+    <Label Name="AccessRecord">
+      <LocalizedLabel LanguageRef="zhs">最近访问</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Recent access</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="RegisteredModulePermission" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">添加模块权限</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AddMouldPermission</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="Import" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">导入文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Import file</LocalizedLabel>
+    </Label>
+    <Label Name="FileUpLoadCtrl">
+      <LocalizedLabel LanguageRef="zhs">文件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">File</LocalizedLabel>
+    </Label>
+    <Label Name="FileUpLoadTip">
+      <LocalizedLabel LanguageRef="zhs">提示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Prompt</LocalizedLabel>
+    </Label>
+    <Label Name="FileUpLoadError">
+      <LocalizedLabel LanguageRef="zhs">上传文件失败</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Upload file failed</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MenuItemEditForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">菜单配置窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu configuration window</LocalizedLabel>
+    </Label>
+    <Label Name="MenuName">
+      <LocalizedLabel LanguageRef="zhs">菜单组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu group name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuNameDescription">
+      <LocalizedLabel LanguageRef="zhs">表示一组菜单，在需要使用菜单的地方用该名称引用该菜单组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It indicates a set of menus where the menu group is referenced by the name</LocalizedLabel>
+    </Label>
+    <Label Name="ParaForm">
+      <LocalizedLabel LanguageRef="zhs">设置参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set parameters</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleName">
+      <LocalizedLabel LanguageRef="zhs">模块名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module Name</LocalizedLabel>
+    </Label>
+    <Label Name="Type">
+      <LocalizedLabel LanguageRef="zhs">菜单类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeDescription">
+      <LocalizedLabel LanguageRef="zhs">菜单类型：single-只显示一组菜单；Button-图片和文本；Image-图片</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu type: single-only a set of menus; Button-picture and text; Image-picture</LocalizedLabel>
+    </Label>
+    <Label Name="Issplit">
+      <LocalizedLabel LanguageRef="zhs">是否分割</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to split it or not</LocalizedLabel>
+    </Label>
+    <Label Name="IssplitDescription">
+      <LocalizedLabel LanguageRef="zhs">菜单按钮是否分割显示</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to split display the menu button</LocalizedLabel>
+    </Label>
+    <Label Name="MultiMenu">
+      <LocalizedLabel LanguageRef="zhs">通用菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">General Menu Item</LocalizedLabel>
+    </Label>
+    <Label Name="MultiMenuDescription">
+      <LocalizedLabel LanguageRef="zhs">此配置项，主要用于通用菜单，适用于多选时使用，但是支持对象类型的菜单项Name必须一致，方便合并显示。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This configuration item is mainly used for general-purpose menus and it is applicable to multi-selection, but the menu item Name that supports object type must be consistent and easy to merge display.</LocalizedLabel>
+    </Label>
+    <Label Name="ModuleNameDescription">
+      <LocalizedLabel LanguageRef="zhs">表明该菜单用于哪一个模块，用于License授权验证。基础层的应该选择Base，属于平台功能的应当选择Platform，自定义的模块应选择相应的模块名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It indicates which module the menu is used for License Authorization verification. Base layer should select Base, Platform function should be selected, and the custom module should select the corresponding module name</LocalizedLabel>
+    </Label>
+    <Label Name="Image">
+      <LocalizedLabel LanguageRef="zhs">图片路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture Path</LocalizedLabel>
+    </Label>
+    <Label Name="ImageDescription">
+      <LocalizedLabel LanguageRef="zhs">按钮图片路径，如：~/Platform/Image/Common/delete.png，系统会将“~”替换为系统路径</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Button picture path such as: ~/Platform/Image/Common/delete. Png. The system will replace the "~" with the system path</LocalizedLabel>
+    </Label>
+    <Label Name="MenuSize">
+      <LocalizedLabel LanguageRef="zhs">菜单大小</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Size</LocalizedLabel>
+    </Label>
+    <Label Name="MenuSizeDescription">
+      <LocalizedLabel LanguageRef="zhs">此属性对MenuToolbar控件有效，主要按钮显示大小。分为：Big--大；Small--小，默认小。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">This attribute is valid for the MenuToolbar control and the primary button displays the size. It is divided into: Big--big; Small--small, the default is small.</LocalizedLabel>
+    </Label>
+    <Label Name="ParentWebAtionName">
+      <LocalizedLabel LanguageRef="zhs">父级菜单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent Menu Name</LocalizedLabel>
+    </Label>
+    <Label Name="ParentWebAtionNameDescription">
+      <LocalizedLabel LanguageRef="zhs">会以下拉菜单的方式在父级菜单下显示，如果不进行配置时，则为顶级菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is displayed in the drop-down menu under the parent menu, and if it is not configured, it is the top-level menu</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshType">
+      <LocalizedLabel LanguageRef="zhs">刷新方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh mode</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">在执行完操作后列表或树结构刷新方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">List or tree refresh mode after completion of operations</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshedSelect">
+      <LocalizedLabel LanguageRef="zhs">刷新后再次选中</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check again after refresh</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshedSelectDescription">
+      <LocalizedLabel LanguageRef="zhs">刷新后再次选中，默认刷新不选中。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Check again after the refresh, and the default refresh is not selected.</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshJS">
+      <LocalizedLabel LanguageRef="zhs">刷新脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Refresh Script</LocalizedLabel>
+    </Label>
+    <Label Name="RefreshJSDescription">
+      <LocalizedLabel LanguageRef="zhs">配置此属性时，刷新方式将失效。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When you configure this attribute, the refresh mode will fail.</LocalizedLabel>
+    </Label>
+    <Label Name="Action">
+      <LocalizedLabel LanguageRef="zhs">验证动作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Verification Action</LocalizedLabel>
+    </Label>
+    <Label Name="ActionDescription">
+      <LocalizedLabel LanguageRef="zhs">需要验证的动作，需要和ActionType属性配合使用，可为空，为空时不验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action that needs to be verified required to be used with ActionType attribute can be null, it does not validate when null</LocalizedLabel>
+    </Label>
+    <Label Name="ActionType">
+      <LocalizedLabel LanguageRef="zhs">验证类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Authentication Type</LocalizedLabel>
+    </Label>
+    <Label Name="ActionTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">验证动作所依据的对象类型，取值为自动验证（AUTO）时，自动判断对象类型，否则按指定的类型进行判断，可为空，为空时不验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When the object type according to the verification action is selected as automatic verification (AUTO), the object type is automatically judged, otherwise the judgment will be made according to the specified type, which can be null and does not validate when null</LocalizedLabel>
+    </Label>
+    <Label Name="ActionCheckerSelectID">
+      <LocalizedLabel LanguageRef="zhs">选中项ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Item ID</LocalizedLabel>
+    </Label>
+    <Label Name="ActionCheckerSelectIDDescription">
+      <LocalizedLabel LanguageRef="zhs">选中项的ID属性，可选值是列表中对象的ID（如[List_EID]）或者树节点对象的ID（如[Tree_Current_Value1]）。对象动作验证，指定类型验证及选择方式都需要选中项ID，在新建操作或者其他不需要验证操作时可不填写，如果允许多选，ID之间以分号分隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the ID attribute of the item selected, the optional value is the ID of the object in the list (such as [List_EID]) or the ID of the tree node object (such as [Tree_Current_Value1]). Object action verification specifies the type of verification and selection methods need to select the item ID, in the new operation or other do not need to verify the operation may not fill in, if allowed multiple choice, ID is separated by semicolons</LocalizedLabel>
+    </Label>
+    <Label Name="WebMethodSelectID">
+      <LocalizedLabel LanguageRef="zhs">选中项ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Item ID</LocalizedLabel>
+    </Label>
+    <Label Name="WebMethodSelectIDDescription">
+      <LocalizedLabel LanguageRef="zhs">选中项的ID属性，可选值是列表中对象的ID（如[List_EID]）或者树节点对象的ID（如[Tree_Current_Value1]）。获取的选中项ID会与参数列表一同以页面参数的方式传到页面中，对应方法中如果在ActionChecker中选择方式是多选（MULTI），ID之间以分号分隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the ID attribute of the item selected, the optional value is the ID of the object in the list (such as [List_EID]) or the ID of the tree node object (eg [Tree_Current_Value1]). The selected item ID will be sent to the page in the same way as the parameter list. If the way in the ActionChecker is multi-select (MULTI), the ID is separated by semicolons.</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessMethodSelectID">
+      <LocalizedLabel LanguageRef="zhs">选中项ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Item ID</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessMethodSelectIDDescription">
+      <LocalizedLabel LanguageRef="zhs">选中项的ID属性，可选值是列表中对象的ID（如[List_EID]）或者树节点对象的ID（如[Tree_Current_Value1]）。针对业务对象的方法，通过选中项ID获取对象，通过对象调用方法；针对WCF服务方法，会赋值给参数类中SelectID属性（如果不存在则不赋值），如果在ActionChecker中选择方式是多选（MULTI），ID之间以分号分隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the ID attribute of the item selected, the optional value is the ID of the object in the list (such as [List_EID]) or the ID of the tree node object (such as [Tree_Current_Value1]). For the method of the business object, by selecting the item ID, the object is called by the object; for the WCF service method, the SelectID attribute (if not assigned) is assigned to the parameter class. If the method is selected in the ActionChecker, MULTI), it is separated by semicolons.</LocalizedLabel>
+    </Label>
+    <Label Name="JSMethodSelectID">
+      <LocalizedLabel LanguageRef="zhs">选中项ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Item ID</LocalizedLabel>
+    </Label>
+    <Label Name="JSMethodSelectIDDescription">
+      <LocalizedLabel LanguageRef="zhs">选中项的ID属性，可选值是列表中对象的ID（如[List_EID]）或者树节点对象的ID（如[Tree_Current_Value1]）。获取的选中项ID会与参数列表一同传到js方法第一个参数中，如果在ActionChecker中选择方式是多选（MULTI），ID之间以分号分隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the ID attribute of the item selected, the optional value is the ID of the object in the list (such as [List_EID]) or the ID of the tree node object (such as [Tree_Current_Value1]). The selected item ID will be sent to the first parameter of the js method along with the parameter list. If the way in the ActionChecker is multi-select (MULTI), the ID is separated by a semicolon.</LocalizedLabel>
+    </Label>
+    <Label Name="WebMessageAndLoggerSelectID">
+      <LocalizedLabel LanguageRef="zhs">选中项ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select Item ID</LocalizedLabel>
+    </Label>
+    <Label Name="WebMessageAndLoggerSelectIDDescription">
+      <LocalizedLabel LanguageRef="zhs">选中项的ID属性，可选值是列表中对象的ID（如[List_EID]）或者树节点对象的ID（如[Tree_Current_Value1]），发送消息时根据ID实例化对象，根据对象发送订阅消息，日志记录时，根据选中项ID实例化对象，根据对象信息替换模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">For the ID attribute of the item selected, and the optional value is the ID of the object in the list (such as [List_EID]) or the ID of the tree node object (such as [Tree_Current_Value1]), the object is instantiated according to the ID when sending a message, and the object is sent according to the object when a subscription message and a log record are recorded, an object is instantiated according to the selected item ID, and the template is replaced according to the object information</LocalizedLabel>
+    </Label>
+    <Label Name="WebMessageAndLoggerParaList">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter</LocalizedLabel>
+    </Label>
+    <Label Name="WebMessageAndLoggerParaListDescription">
+      <LocalizedLabel LanguageRef="zhs">现系统中只能添加CEID一个参数，用于实例化对象并获取对象名称替换日志模板中[ChildObjectName]，可选值为对象ID（包含可替换参数如[List_EID]，[Tree_Current_Value1]，[ReturnValue_EID]等）,弹出框中，第一列代表参数名称，第二列代表参数值，第三列代表参数组成的数组的名称（数组名称相同的的会组成一个数组），第四列代表该参数会在哪一个父级参数下面（第三列、第四列没有的可不写）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only the CEID parameter can be added to the current system, which is used for instantiating the object and obtaining the object name substitution log template [ChildObjectName]. The optional value is the object ID (including optional parameters such as [List_EID]). The first column represents the parameter name, the second column represents the parameter value, and the third column represents the name of the array consisting of the parameters (the array name is the same Group), the fourth column represents which parent parameter the parameter will be under (third column, fourth column does not have to write)</LocalizedLabel>
+    </Label>
+    <Label Name="SelectType">
+      <LocalizedLabel LanguageRef="zhs">指定类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Specify Type</LocalizedLabel>
+    </Label>
+    <Label Name="SelectTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">对象是否为指定的类型，值为对象类型，当选中项为指定的对象类型时，才会执行该方法。可为空，为空时不判断类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The method is performed only if the object is of the specified type, the value is the object type, and when the selected item is the specified object type. It can be null and does not validate when null</LocalizedLabel>
+    </Label>
+    <Label Name="SelectMode">
+      <LocalizedLabel LanguageRef="zhs">选择方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Selection Mode</LocalizedLabel>
+    </Label>
+    <Label Name="SelectModeDescription">
+      <LocalizedLabel LanguageRef="zhs">选择方式，针对列表和树的选择模式，NULL 代表不需要选中树或者列表的某项，SINGLE代表只能选择一项，MULTI代表可以选择多项，如果为MULTI,选中项属性的值用';'分隔</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">In the selection mode, for the selection mode of the list and the tree, NULL representes there is no need to select an item of the tree or list, SINGLE representes that it can only select one item, and MULTI representes that it can select more than one items, if it is MULTI, the value of the selected item attribute is separated by';</LocalizedLabel>
+    </Label>
+    <Label Name="PageName">
+      <LocalizedLabel LanguageRef="zhs">页面名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Name</LocalizedLabel>
+    </Label>
+    <Label Name="PageNameDescription">
+      <LocalizedLabel LanguageRef="zhs">要调用的页面的名称,(扩展名为.page的页面)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The name of the page to call, (extension name. page of page)</LocalizedLabel>
+    </Label>
+    <Label Name="IsPopup">
+      <LocalizedLabel LanguageRef="zhs">是否弹出页面</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to pop up pages</LocalizedLabel>
+    </Label>
+    <Label Name="IsPopupDescription">
+      <LocalizedLabel LanguageRef="zhs">该页面是否弹出，true代表弹出页面，false代表加载到主框架下的标签页</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to pop up pages, true represents the pop up page, and false represents the label page that loaded under the main frame</LocalizedLabel>
+    </Label>
+    <Label Name="IsLoopExec">
+      <LocalizedLabel LanguageRef="zhs">是否循环执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to cycle the execution</LocalizedLabel>
+    </Label>
+    <Label Name="IsLoopExecDescription">
+      <LocalizedLabel LanguageRef="zhs">打开此项，在新建页面时，但点击保存并添加按钮，会自动执行此项动作，打开新建页面。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">When you open this item to create a new page, click Save and Add a button to automatically perform this action to open the new page.</LocalizedLabel>
+    </Label>
+    <Label Name="IsModal">
+      <LocalizedLabel LanguageRef="zhs">是否模态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is the modality available or not</LocalizedLabel>
+    </Label>
+    <Label Name="IsModalDescription">
+      <LocalizedLabel LanguageRef="zhs">是否模态，true代表为模态，只能操作当前弹出的窗口，false为非模态，可以操作其他窗口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it modality, true represents modality which can only operate the current pop-up window, false is non-modal that other windows can be operated</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessName">
+      <LocalizedLabel LanguageRef="zhs">业务方法名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Method Name</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessNameDescription">
+      <LocalizedLabel LanguageRef="zhs">可以是业务对象的方法名或者是WCF地址，当是否是WCF接口选择true时，业务方法名称WCF地址，如：InforCenter.Common.ObjectService.AddLinkObject，如果选择false时，代表业务对象的方法，如Create</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It can be the business object method name or WCF address, when the WCF interface is true, the business method name WCF address, such as: InforCenter. Common. ObjectService. AddLinkObject, if you choose false, on behalf of the business object method, such as Create</LocalizedLabel>
+    </Label>
+    <Label Name="IsWCFService">
+      <LocalizedLabel LanguageRef="zhs">是否是WCF接口</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is it a WCF interface</LocalizedLabel>
+    </Label>
+    <Label Name="IsWCFServiceDescription">
+      <LocalizedLabel LanguageRef="zhs">是否是WCF接口，如果值为true，代表该方法是业务服务方法，需要访问WCF，false，代表该方法为实体对象的方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Is a WCF interface, if the value is true, represents that the method is a business service method, requires access to WCF, false, a method that represents the method as an entity object</LocalizedLabel>
+    </Label>
+    <Label Name="JSMethodName">
+      <LocalizedLabel LanguageRef="zhs">JS名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">JS Name</LocalizedLabel>
+    </Label>
+    <Label Name="JSMethodNameDescription">
+      <LocalizedLabel LanguageRef="zhs">Js方法的名称，如：InforCenter_Platform_ObjectPermission_MoveUp，名称不需要带参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Js method name, such as: InforCenter_Platform_ObjectPermission_MoveUp, the name does not need to bring parameters</LocalizedLabel>
+    </Label>
+    <Label Name="PromptLabel">
+      <LocalizedLabel LanguageRef="zhs">消息多语言标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message Multi-language Label</LocalizedLabel>
+    </Label>
+    <Label Name="PromptLabelDescription">
+      <LocalizedLabel LanguageRef="zhs">消息多语言标签，可以是Context.Label（如WorkFlow.StartWorkflowSuccess）格式或Label格式（如WebActionConfirm），在只写Label名称时，Context的名称默认为“Platform”。在提示文本中可以进行替换[ACTION]（动作名称），[OBJECTCOUNT]（对象个数）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message Multilingual tab, it can be either Context.Label (such as WorkFlow.StartWorkflowSuccess) format or Label format (such as WebActionConfirm) format. When only writing a Label name, the name of the Context defaults to "Platform". In the prompt text, you can replace [ACTION] (the action name), [OBJECTCOUNT] (number of objects).</LocalizedLabel>
+    </Label>
+    <Label Name="PromptType">
+      <LocalizedLabel LanguageRef="zhs">消息类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message Type</LocalizedLabel>
+    </Label>
+    <Label Name="PromptTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">消息类型，NORMAL：普通提示（对话框中只有确定按钮）CONFIRM：询问提示（对话框中确定和取消按钮，点击确定继续执行，点击取消不执行）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message type, NORMAL: normal prompt (there is only OK button in dialog box) CONFIRM: ask prompt (there is OK and cancel button in dialog box, click OK to continue, and click Cancel for unexecute)</LocalizedLabel>
+    </Label>
+    <Label Name="OperateType">
+      <LocalizedLabel LanguageRef="zhs">日志类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log Type</LocalizedLabel>
+    </Label>
+    <Label Name="OperateTypeDescription">
+      <LocalizedLabel LanguageRef="zhs">日志类型，在控制台枚举模块，在OperateLogType枚举中，扩展新的日志类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log type, in the console enumerateeration module, in the OperateLogType enumerateeration, expand the new log type</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogClassify">
+      <LocalizedLabel LanguageRef="zhs">日志分类</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">OperateLogClassify</LocalizedLabel>
+    </Label>
+    <Label Name="OperateLogClassifyDescription">
+      <LocalizedLabel LanguageRef="zhs">日志分类，标识日志是三员日志还是普通日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log classify, Threerole log or normal log</LocalizedLabel>
+    </Label>
+    <Label Name="WriteLogger">
+      <LocalizedLabel LanguageRef="zhs">是否记录日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to record the log or not</LocalizedLabel>
+    </Label>
+    <Label Name="WriteLoggerDescription">
+      <LocalizedLabel LanguageRef="zhs">是否记录日志，true，代表记录日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Record a log or not, true representes a log record</LocalizedLabel>
+    </Label>
+    <Label Name="SendMessage">
+      <LocalizedLabel LanguageRef="zhs">是否发送消息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Do you want to send a message</LocalizedLabel>
+    </Label>
+    <Label Name="SendMessageDescription">
+      <LocalizedLabel LanguageRef="zhs">是否发送消息，true,代表发送订阅消息，只有在设置规则权限时配置发送订阅消息才有效</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether a message is sent, true represents sending a subscription message, and it is only valid if the send subscription message is configured when the rule permissions are set</LocalizedLabel>
+    </Label>
+    <Label Name="Order">
+      <LocalizedLabel LanguageRef="zhs">排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort No.</LocalizedLabel>
+    </Label>
+    <Label Name="OrderDescription">
+      <LocalizedLabel LanguageRef="zhs">以字母格式进行排序，建议需要为100，200，300，为其他模块预留排序号</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort by letter format, and it is recommended that 100, 200, 300 be reserved for other modules</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateLabel">
+      <LocalizedLabel LanguageRef="zhs">记录日志模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Log Record template</LocalizedLabel>
+    </Label>
+    <Label Name="TemplateLabelDescription">
+      <LocalizedLabel LanguageRef="zhs">记录日志的模板，多语言,在只配置Label名称时，Context的名称默认为“MenuItems”。
+可以对模板内容进行参数替换,可替换的参数为[ActionName](动作名称)，[UserName]（用户名称），[ObjectType]（对象类型），[ObjectName]（对象ENAME属性），[ChildObjectName]（树结构的下级对象的ENAME属性）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Record the log template, multi-language, the name of the Context defaults to "MenuItems" when only the Label name is configured.
+You can replace the parameters of the template, and the replacement parameters are [ActionName], [UserName], [ObjectType], [ObjectName], [ChildObjectName] The ENAME attribute of the subordinate object of the tree structure)</LocalizedLabel>
+    </Label>
+    <Label Name="para">
+      <LocalizedLabel LanguageRef="zhs">参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter</LocalizedLabel>
+    </Label>
+    <Label Name="paraDescription">
+      <LocalizedLabel LanguageRef="zhs">
+参数列表，向业务方法（BusinessMethod）,弹出页面方法（WebMethod）,JS方法（JSMethod）等方法中传入的参数
+可以在参数值中使用替换参数：[List_属性名称]列表中获取选中属性（如[List_EID],[List_ENAME]等），
+[ReturnValue_属性名称]上一个操作的返回对象的属性，
+[Tree_节点_值]针对树的属性值（节点可选值为“Current，Parent，Root”,代表当前节点，父级节点，根节点，值的可选值为value1，value2,value3,value4,value5，可以代表树节点的5个属性，如果是通用页面分别代表EID，LID,对象类型，树视图的层号，节点类型）
+[Tree_节点_Tag_视图字段] （视图字段为根据树视图查询的列信息，如[Tree_Current_Tag_ENAME],代表当前节点的ENAME信息）
+[ListID]列表控件ID，
+[TreeID]树控件ID，
+[页面参数名称]传入当前页面的参数值
+弹出框中，第一列代表参数名称，第二列代表参数值，第三列代表参数组成的数组的名称（数组名称相同的的会组成一个数组），第四列代表该参数会在哪一个父级参数下面（第三列、第四列没有的可不写）
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter List, Business Method（BusinessMethod）, WebMethod（WebMethod）, JS Method (JSMethod), etc.
+You can use the replacement parameter in the parameter value: get the selected attribute from the List of Attribute Name lists (e. g., List_EIDs, Indexes List_ENAME), etc.),
+[ReturnValue_attribute name] is the attribute of the previous object operation,
+
+[Tree_node_Value] regards to the optional value for the tree (the optional value for the node is "Current, Parent, Root", which represents the current node, parent node, root node, and the value of the value is value1, value2, value3, value4 , value5, can represent the five attributes of the tree node, if it is a generic page on behalf of EID, LID, object type, tree view layer number, node type)
+The Tree_Node_Tag_View field appears (the view field is column information that is queried according to the tree view, such as Spanning Tree_Current_Tag_ENAME), which represents the ENAME information of the current node)
+ListListID List Control ID,
+[TreeID] Tree Control ID,
+The parameter name of the page parameter is passed in to the parameter value of the current page
+In the pop-up box, the first column represents the parameter name, the second column represents the parameter value, the third column represents the name of the array of the parameters (an array of which the array name is the same), the fourth column represents which parent parameter the parameter is under (third column, and the fourth column does not have to write)</LocalizedLabel>
+    </Label>
+    <Label Name="LabelName">
+      <LocalizedLabel LanguageRef="zhs">菜单对应多语言标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-language label corresponding to menu</LocalizedLabel>
+    </Label>
+    <Label Name="LabelNameDescription">
+      <LocalizedLabel LanguageRef="zhs">支持“Context.Lable”（如Common.Create）格式和“Label”格式(如（StartWorkflow）。
+如果是直接填写Label名称，则Context默认为“MenuItems”。如果是Context.Label格式，则该菜单多语言不会保存。
+建议通用的操作（如新建，编辑，删除等）选择Context.Lable格式，其他操作选择Label格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It supports "Context.Lable" (such as Common.Create) format and "Label" format (eg StartWorkflow).
+If the name is directly filled in Label, the Context default is "MenuItems". If it is in the Context.Label format, the menu multilingual is not saved.
+It is recommended that general operations (such as new, edit, delete, etc.) select Context. Lable format, other operations select Label format</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItemName">
+      <LocalizedLabel LanguageRef="zhs">菜单项名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Item Name</LocalizedLabel>
+    </Label>
+    <Label Name="MenuItemNameDescription">
+      <LocalizedLabel LanguageRef="zhs">菜单项名称，标识菜单内的每一个操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu item names identify each operation within the menu</LocalizedLabel>
+    </Label>
+    <Label Name="Language">
+      <LocalizedLabel LanguageRef="zhs">菜单名称显示多语言</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu Name Display Multi-language</LocalizedLabel>
+    </Label>
+    <Label Name="ActionChecker">
+      <LocalizedLabel LanguageRef="zhs">动作检查</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Action Check</LocalizedLabel>
+    </Label>
+    <Label Name="WebMethod">
+      <LocalizedLabel LanguageRef="zhs">页面调用方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Page Calling Method</LocalizedLabel>
+    </Label>
+    <Label Name="BusinessMethod">
+      <LocalizedLabel LanguageRef="zhs">业务对象方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Business Object Method</LocalizedLabel>
+    </Label>
+    <Label Name="WebMessage">
+      <LocalizedLabel LanguageRef="zhs">消息提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Message Reminder</LocalizedLabel>
+    </Label>
+    <Label Name="WebMessageAndLogger">
+      <LocalizedLabel LanguageRef="zhs">发送消息记录日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Send Message Log</LocalizedLabel>
+    </Label>
+    <Label Name="JSMethod">
+      <LocalizedLabel LanguageRef="zhs">JS方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">JS Method</LocalizedLabel>
+    </Label>
+    <Label Name="Value">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="CreateMenuGroup">
+      <LocalizedLabel LanguageRef="zhs">创建菜单组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Menu Group</LocalizedLabel>
+    </Label>
+    <Label Name="CreateMenuItem">
+      <LocalizedLabel LanguageRef="zhs">创建菜单项</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New Menu Item</LocalizedLabel>
+    </Label>
+    <Label Name="CreateChildItem">
+      <LocalizedLabel LanguageRef="zhs">创建子菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New sub-menu</LocalizedLabel>
+    </Label>
+    <Label Name="CreateActionChecker">
+      <LocalizedLabel LanguageRef="zhs">创建动作检查</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New action check</LocalizedLabel>
+    </Label>
+    <Label Name="CreateWebMethod">
+      <LocalizedLabel LanguageRef="zhs">创建页面调用方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New page call method</LocalizedLabel>
+    </Label>
+    <Label Name="CreateBusMethod">
+      <LocalizedLabel LanguageRef="zhs">创建业务对象方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New business object method</LocalizedLabel>
+    </Label>
+    <Label Name="CreateWebMessage">
+      <LocalizedLabel LanguageRef="zhs">创建消息提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New message alert</LocalizedLabel>
+    </Label>
+    <Label Name="CreateMsgAndLog">
+      <LocalizedLabel LanguageRef="zhs">创建发送消息记录日志</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New send message log</LocalizedLabel>
+    </Label>
+    <Label Name="CreateJsMethod">
+      <LocalizedLabel LanguageRef="zhs">创建JS方法</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New JS method</LocalizedLabel>
+    </Label>
+    <Label Name="MenuGroup">
+      <LocalizedLabel LanguageRef="zhs">菜单组信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu group information</LocalizedLabel>
+    </Label>
+    <Label Name="MenuCtrlType">
+      <LocalizedLabel LanguageRef="zhs">菜单类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu type</LocalizedLabel>
+    </Label>
+    <Label Name="MenuCtrlTypeeDescription">
+      <LocalizedLabel LanguageRef="zhs">菜单控件类型，表示菜单的功能以何种控件展现，如果不选择，默认为Button</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Menu control type indicates which control presentation of the function of the menu, if not selected, the default is Button</LocalizedLabel>
+    </Label>
+    <Label Name="OnLoadScript">
+      <LocalizedLabel LanguageRef="zhs">加载数据脚本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Load data script</LocalizedLabel>
+    </Label>
+    <Label Name="OnLoadScriptDescription">
+      <LocalizedLabel LanguageRef="zhs">与菜单类型配合使用，只有菜单类型选择的控件需要加载数据时有效（如DropDownList）。该方法为需要加载数据的控件提供数据加载方法（JS方法）。可以在JSMethod等方法中通过[DropDownListValue]参数得到下拉框的值，例子如下：
+&lt;WebAction Name=“SelectItem” ModuleName=“Example” LabelName=“SelectItem” Image=“p_add” CtrlType=“DropDownList” LoadMenuCtrlData=“OnLoadSelectItem(ctrlEvent)” RefreshType=“UPDATELIST”&gt;
+  &lt;JSMethod Name=“InforCenter_Example_ItemManagement_SelectItem_OnChange“&gt;
+    &lt;Para Name=“DropDownListValue” Value=“[DropDownListValue]” /&gt;
+    &lt;Para Name=“ListID” Value=“[ListID]” /&gt;
+   &lt;/JSMethod&gt;
+&lt;/WebAction&gt;
+      </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is used in conjunction with the menu type, that only the controls selected by the menu type are valid when the data needs to be loaded (such as DropDownList). This method provides a data loading method (JS method) for controls that need to load data. You can in JSMethod and other methods through the [DropDownListValue] parameter to get the value of the drop-down box, examples are as follows:</LocalizedLabel>
+    </Label>
+    <Label Name="MULTI">
+      <LocalizedLabel LanguageRef="zhs">多选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Multi-selection</LocalizedLabel>
+    </Label>
+    <Label Name="NULL">
+      <LocalizedLabel LanguageRef="zhs">不验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Don't verify</LocalizedLabel>
+    </Label>
+    <Label Name="SINGLE">
+      <LocalizedLabel LanguageRef="zhs">单选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Radio</LocalizedLabel>
+    </Label>
+    <Label Name="AUTO">
+      <LocalizedLabel LanguageRef="zhs">自动验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Automatic verification</LocalizedLabel>
+    </Label>
+    <Label Name="ParentPara">
+      <LocalizedLabel LanguageRef="zhs">父级参数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parent parameter</LocalizedLabel>
+    </Label>
+    <Label Name="ArrayName">
+      <LocalizedLabel LanguageRef="zhs">参数数组名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Parameter array name</LocalizedLabel>
+    </Label>
+    <Label Name="CopyNew">
+      <LocalizedLabel LanguageRef="zhs">复制新增</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Copy and add</LocalizedLabel>
+    </Label>
+    <Label Name="Up">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="Down">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="WebActionNameEmpty">
+      <LocalizedLabel LanguageRef="zhs">WebAction名称丢失</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">WebAction name is missing</LocalizedLabel>
+    </Label>
+    <Label Name="MenuSelectTypeInfoTitle">
+      <LocalizedLabel LanguageRef="zhs">指定类型信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Specify type information</LocalizedLabel>
+    </Label>
+    <Label Name="InfoTypeCol">
+      <LocalizedLabel LanguageRef="zhs">列信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column information</LocalizedLabel>
+    </Label>
+    <Label Name="OperatorCol">
+      <LocalizedLabel LanguageRef="zhs">操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Operation</LocalizedLabel>
+    </Label>
+    <Label Name="ValueCol">
+      <LocalizedLabel LanguageRef="zhs">值</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Value</LocalizedLabel>
+    </Label>
+    <Label Name="RealtionCol">
+      <LocalizedLabel LanguageRef="zhs">关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Relationship</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTypeNode">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

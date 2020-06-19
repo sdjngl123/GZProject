@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <PageLinks Name="ActionRuleListPageLink">
+    <PageLink Name="ActionRuleList"  PageName="TabListPage">
+      <Para Name="ListViewName" Value="ACTIONRULELISTVIEW"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="ActionRulePageLink">
+    <PageLink Name="ActionRuleCondition"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="ActionRuleConditionList"/>      
+    </PageLink>
+    <PageLink Name="ActionRulePermission"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="ActionRulePermissionList"/>
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="LinkActionRulePageLink">
+    <PageLink Name="ActionRuleCondition"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="ActionRuleConditionList"/>
+    </PageLink>
+    <PageLink Name="LinkActionRulePermission"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="LinkActionRulePermissionList"/>
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CreateActionRulePageLink">
+    <PageLink Name="CreateActionRulePermission"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="CreateActionRulePermissionList"/>
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CreateActionRuleRootPageLink">
+    <PageLink Name="BusinessModelListPage"  PageName="ListManagement">
+      <Para Name="ItemName" Value="ActionRuleBusinessModelList"/>
+    </PageLink>
+  </PageLinks>
+
+
+  <PageLinks Name="ActionRuleMessagePageLink">
+    <PageLink Name="ActionRuleCondition"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="ActionRuleConditionList"/>
+    </PageLink>
+    <PageLink Name="ActionRuleMessage"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="ActionRuleMessageList"/>
+    </PageLink>
+  </PageLinks>
+  
+  <PageLinks Name="LinkActionRuleMessagePageLink">
+    <PageLink Name="ActionRuleCondition"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="ActionRuleConditionList"/>
+    </PageLink>
+   <PageLink Name="ActionRuleMessage"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="LinkActionRuleMessageList"/>
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="CreateActionRuleMessagePageLink">
+    <PageLink Name="ActionRuleMessage"  PageName="EditListManagement">
+      <Para Name="ItemName" Value="CreateActionRuleMessageList"/>
+    </PageLink>
+  </PageLinks>
+
+  <!--对象授权和流程对象权限-->
+  <PageLinks Name="ObjectPermissionRulePageLinks">
+    <PageLink Name="ObjectPermissionRule"  PageName="ActionRuleParameter">
+      
+    </PageLink>
+  </PageLinks>
+
+ <!--权限查询-->
+  <PageLinks Name="SearchPermissionPageLinks">
+    <PageLink Name="SearchPermission"  PageName="SearchObjectPermission" IsDelayLoadPage="false">
+      <Para Name="Height" Value="130"/>
+    </PageLink>
+    <PageLink Name="ObjectPermissionDetail"  PageName="ObjectPermissionDetail" IsDelayLoadPage="false">
+     
+    </PageLink>
+  </PageLinks>
+</root>

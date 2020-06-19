@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="aaa" IsWeb="true">
+    <Label Name="HButton1">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="HButton2">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="duoxuan">
+      <LocalizedLabel LanguageRef="zhs">多选</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">多选</LocalizedLabel>
+    </Label>
+    <Label Name="HCheckBox2">
+      <LocalizedLabel LanguageRef="zhs">aaa</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">aaa</LocalizedLabel>
+    </Label>
+    <Label Name="HCheckBox3">
+      <LocalizedLabel LanguageRef="zhs">bbb</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">bbb</LocalizedLabel>
+    </Label>
+    <Label Name="BaseFlowPanel">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="HDropDown1">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="HLabel1">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="HLabel2147483646">
+      <LocalizedLabel LanguageRef="zhs">描述我和我的祖国一刻也不能分割</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">描述我和我的祖国一刻也不能分割</LocalizedLabel>
+    </Label>
+    <Label Name="cteater">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">创建人</LocalizedLabel>
+    </Label>
+    <Label Name="creatime">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">创建时间</LocalizedLabel>
+    </Label>
+    <Label Name="onlytime">
+      <LocalizedLabel LanguageRef="zhs">时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">时间</LocalizedLabel>
+    </Label>
+    <Label Name="onlyyear">
+      <LocalizedLabel LanguageRef="zhs">年月</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">年月</LocalizedLabel>
+    </Label>
+    <Label Name="order">
+      <LocalizedLabel LanguageRef="zhs">负责人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">负责人</LocalizedLabel>
+    </Label>
+    <Label Name="type">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">类型</LocalizedLabel>
+    </Label>
+    <Label Name="linkcontend">
+      <LocalizedLabel LanguageRef="zhs">相关</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">相关</LocalizedLabel>
+    </Label>
+    <Label Name="HCheckBox1">
+      <LocalizedLabel LanguageRef="zhs">相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关相关</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">相关</LocalizedLabel>
+    </Label>
+    <Label Name="passw">
+      <LocalizedLabel LanguageRef="zhs">密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">密码</LocalizedLabel>
+    </Label>
+    <Label Name="HButton3">
+      <LocalizedLabel LanguageRef="zhs">保存</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">保存</LocalizedLabel>
+    </Label>
+    <Label Name="aaa">
+      <LocalizedLabel LanguageRef="zhs"></LocalizedLabel>
+      <LocalizedLabel LanguageRef="en"></LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

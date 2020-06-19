@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="PropertyGridDictionary" IsWeb="false">
+    <Label Name="CompleteName">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="CompleteCaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="StartUpName">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="StartUpCaption">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaModeName">
+      <LocalizedLabel LanguageRef="zhs">套打模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set-up Mode</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaModeHeader">
+      <LocalizedLabel LanguageRef="zhs">套打模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set-up Mode</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaModeCaption">
+      <LocalizedLabel LanguageRef="zhs">套打模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set-up Mode</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaSuportName">
+      <LocalizedLabel LanguageRef="zhs">支持套打</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support Set-up</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaSuportHeader">
+      <LocalizedLabel LanguageRef="zhs">支持套打</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support Set-up</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaSuportCaption">
+      <LocalizedLabel LanguageRef="zhs">支持套打</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Support Set-up</LocalizedLabel>
+    </Label>
+    <Label Name="ColorfulPrintName">
+      <LocalizedLabel LanguageRef="zhs">彩色打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Color Printing</LocalizedLabel>
+    </Label>
+    <Label Name="ColorfulPrintHeader">
+      <LocalizedLabel LanguageRef="zhs">彩色打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Color Printing</LocalizedLabel>
+    </Label>
+    <Label Name="ColorfulPrintCaption">
+      <LocalizedLabel LanguageRef="zhs">彩色打印</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Color Printing</LocalizedLabel>
+    </Label>
+    <Label Name="TypeName">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeHeader">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Type</LocalizedLabel>
+    </Label>
+    <Label Name="TypeCaption">
+      <LocalizedLabel LanguageRef="zhs">控件类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Type</LocalizedLabel>
+    </Label>
+    <Label Name="DesignCategory">
+      <LocalizedLabel LanguageRef="zhs">设计</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Design</LocalizedLabel>
+    </Label>
+    <Label Name="LayoutCategory">
+      <LocalizedLabel LanguageRef="zhs">布局</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Layout</LocalizedLabel>
+    </Label>
+    <Label Name="AppearanceCategory">
+      <LocalizedLabel LanguageRef="zhs">外观</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Appearance</LocalizedLabel>
+    </Label>
+    <Label Name="TypeCategory">
+      <LocalizedLabel LanguageRef="zhs">类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Type</LocalizedLabel>
+    </Label>
+    <Label Name="UsedByTypeName">
+      <LocalizedLabel LanguageRef="zhs">使用类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Usage Type</LocalizedLabel>
+    </Label>
+    <Label Name="UsedByTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">使用类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Usage Type</LocalizedLabel>
+    </Label>
+    <Label Name="UsedByTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">使用类型包括：创建、编辑、浏览</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Usage types include: Create, Edit, Browse</LocalizedLabel>
+    </Label>
+    <Label Name="StartUpName">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="StartUpHeader">
+      <LocalizedLabel LanguageRef="zhs">启用</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable</LocalizedLabel>
+    </Label>
+    <Label Name="StartUpCaption">
+      <LocalizedLabel LanguageRef="zhs">true：可以使用此模板；false:不可以使用此模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">True: This template can be used; false: This template cannot be used</LocalizedLabel>
+    </Label>
+    <Label Name="FormObjectTypeName">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="FormObjectTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">对象类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object type</LocalizedLabel>
+    </Label>
+    <Label Name="FormObjectTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">表单对应的对象模型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object model corresponding to form</LocalizedLabel>
+    </Label>
+    <Label Name="ReportNameName">
+      <LocalizedLabel LanguageRef="zhs">表单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form Name</LocalizedLabel>
+    </Label>
+    <Label Name="ReportNameHeader">
+      <LocalizedLabel LanguageRef="zhs">表单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form Name</LocalizedLabel>
+    </Label>
+    <Label Name="ReportNameCaption">
+      <LocalizedLabel LanguageRef="zhs">表单名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Form Name</LocalizedLabel>
+    </Label>
+    <Label Name="FieldName">
+      <LocalizedLabel LanguageRef="zhs">字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field</LocalizedLabel>
+    </Label>
+    <Label Name="FieldHeader">
+      <LocalizedLabel LanguageRef="zhs">字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Field</LocalizedLabel>
+    </Label>
+    <Label Name="FieldCaption">
+      <LocalizedLabel LanguageRef="zhs">控件对应对象模型中字段</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control corresponds to field in object model</LocalizedLabel>
+    </Label>
+    <Label Name="XlocationName">
+      <LocalizedLabel LanguageRef="zhs">横坐标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Abscissa</LocalizedLabel>
+    </Label>
+    <Label Name="XlocationHeader">
+      <LocalizedLabel LanguageRef="zhs">横坐标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Abscissa</LocalizedLabel>
+    </Label>
+    <Label Name="XlocationCaption">
+      <LocalizedLabel LanguageRef="zhs">横坐标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Abscissa</LocalizedLabel>
+    </Label>
+    <Label Name="YlocationName">
+      <LocalizedLabel LanguageRef="zhs">纵坐标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ordinate</LocalizedLabel>
+    </Label>
+    <Label Name="YlocationHeader">
+      <LocalizedLabel LanguageRef="zhs">纵坐标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ordinate</LocalizedLabel>
+    </Label>
+    <Label Name="YlocationCaption">
+      <LocalizedLabel LanguageRef="zhs">纵坐标</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Ordinate</LocalizedLabel>
+    </Label>
+    <Label Name="WidthName">
+      <LocalizedLabel LanguageRef="zhs">宽</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Wide</LocalizedLabel>
+    </Label>
+    <Label Name="WidthHeader">
+      <LocalizedLabel LanguageRef="zhs">宽</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Wide</LocalizedLabel>
+    </Label>
+    <Label Name="WidthCaption">
+      <LocalizedLabel LanguageRef="zhs">宽</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Wide</LocalizedLabel>
+    </Label>
+    <Label Name="HeightName">
+      <LocalizedLabel LanguageRef="zhs">高</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">High</LocalizedLabel>
+    </Label>
+    <Label Name="HeightHeader">
+      <LocalizedLabel LanguageRef="zhs">高</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">High</LocalizedLabel>
+    </Label>
+    <Label Name="HeightCaption">
+      <LocalizedLabel LanguageRef="zhs">高</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">High</LocalizedLabel>
+    </Label>
+    <Label Name="ReadOnlyName">
+      <LocalizedLabel LanguageRef="zhs">只读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Read-only</LocalizedLabel>
+    </Label>
+    <Label Name="ReadOnlyHeader">
+      <LocalizedLabel LanguageRef="zhs">只读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Read-only</LocalizedLabel>
+    </Label>
+    <Label Name="ReadOnlyCaption">
+      <LocalizedLabel LanguageRef="zhs">只读</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Read-only</LocalizedLabel>
+    </Label>
+    <Label Name="RowDataListName">
+      <LocalizedLabel LanguageRef="zhs">行集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Row Sets</LocalizedLabel>
+    </Label>
+    <Label Name="RowDataListHeader">
+      <LocalizedLabel LanguageRef="zhs">行集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Row Sets</LocalizedLabel>
+    </Label>
+    <Label Name="RowDataListCaption">
+      <LocalizedLabel LanguageRef="zhs">行集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Row Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnDataListName">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnDataListHeader">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnDataListCaption">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ViewColumnListName">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ViewColumnListHeader">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ViewColumnListCaption">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="z_indexName">
+      <LocalizedLabel LanguageRef="zhs">层索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Layer index</LocalizedLabel>
+    </Label>
+    <Label Name="z_indexHeader">
+      <LocalizedLabel LanguageRef="zhs">层索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Layer index</LocalizedLabel>
+    </Label>
+    <Label Name="z_indexCaption">
+      <LocalizedLabel LanguageRef="zhs">层索引</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Layer index</LocalizedLabel>
+    </Label>
+    <Label Name="TableNameName">
+      <LocalizedLabel LanguageRef="zhs">表名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Table Name</LocalizedLabel>
+    </Label>
+    <Label Name="TableNameHeader">
+      <LocalizedLabel LanguageRef="zhs">表名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Table Name</LocalizedLabel>
+    </Label>
+    <Label Name="TableNameCaption">
+      <LocalizedLabel LanguageRef="zhs">表名</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Table Name</LocalizedLabel>
+    </Label>
+    <Label Name="ConditionsName">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="ConditionsHeader">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="ConditionsCaption">
+      <LocalizedLabel LanguageRef="zhs">条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+    <Label Name="ExpressionName">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="ExpressionHeader">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="ExpressionCaption">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnsName">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnsHeader">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnsCaption">
+      <LocalizedLabel LanguageRef="zhs">列集合</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Sets</LocalizedLabel>
+    </Label>
+    <Label Name="RowCountName">
+      <LocalizedLabel LanguageRef="zhs">行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of rows</LocalizedLabel>
+    </Label>
+    <Label Name="RowCountHeader">
+      <LocalizedLabel LanguageRef="zhs">行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of rows</LocalizedLabel>
+    </Label>
+    <Label Name="RowCountCaption">
+      <LocalizedLabel LanguageRef="zhs">行数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of rows</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnCountName">
+      <LocalizedLabel LanguageRef="zhs">列数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of columns</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnCountHeader">
+      <LocalizedLabel LanguageRef="zhs">列数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of columns</LocalizedLabel>
+    </Label>
+    <Label Name="ColumnCountCaption">
+      <LocalizedLabel LanguageRef="zhs">列数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Number of columns</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTypeName">
+      <LocalizedLabel LanguageRef="zhs">图表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chart Type</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTypeHeader">
+      <LocalizedLabel LanguageRef="zhs">图表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chart Type</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTypeCaption">
+      <LocalizedLabel LanguageRef="zhs">图表类型</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chart Type</LocalizedLabel>
+    </Label>
+    <Label Name="ExpressionName">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="ExpressionHeader">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="ExpressionCaption">
+      <LocalizedLabel LanguageRef="zhs">公式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Formula</LocalizedLabel>
+    </Label>
+    <Label Name="LabelTextName">
+      <LocalizedLabel LanguageRef="zhs">文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text</LocalizedLabel>
+    </Label>
+    <Label Name="LabelTextHeader">
+      <LocalizedLabel LanguageRef="zhs">文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text</LocalizedLabel>
+    </Label>
+    <Label Name="LabelTextCaption">
+      <LocalizedLabel LanguageRef="zhs">文本</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendDirectionName">
+      <LocalizedLabel LanguageRef="zhs">扩展方向</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extension Direction</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendDirectionHeader">
+      <LocalizedLabel LanguageRef="zhs">扩展方向</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extension Direction</LocalizedLabel>
+    </Label>
+    <Label Name="ExtendDirectionCaption">
+      <LocalizedLabel LanguageRef="zhs">扩展方向</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Extension Direction</LocalizedLabel>
+    </Label>
+    <Label Name="DistinctName">
+      <LocalizedLabel LanguageRef="zhs">过滤重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Filter Duplicate</LocalizedLabel>
+    </Label>
+    <Label Name="DistinctHeader">
+      <LocalizedLabel LanguageRef="zhs">过滤重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Filter Duplicate</LocalizedLabel>
+    </Label>
+    <Label Name="DistinctCaption">
+      <LocalizedLabel LanguageRef="zhs">过滤重复</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Filter Duplicate</LocalizedLabel>
+    </Label>
+    <Label Name="SortName">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+    <Label Name="SortHeader">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+    <Label Name="SortCaption">
+      <LocalizedLabel LanguageRef="zhs">排序</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Sort</LocalizedLabel>
+    </Label>
+    <Label Name="XDataName">
+      <LocalizedLabel LanguageRef="zhs">横轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="XDataHeader">
+      <LocalizedLabel LanguageRef="zhs">横轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="XDataCaption">
+      <LocalizedLabel LanguageRef="zhs">横轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="YDataName">
+      <LocalizedLabel LanguageRef="zhs">纵轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Longitudinal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="YDataHeader">
+      <LocalizedLabel LanguageRef="zhs">纵轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Longitudinal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="YDataCaption">
+      <LocalizedLabel LanguageRef="zhs">纵轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Longitudinal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="YDataName">
+      <LocalizedLabel LanguageRef="zhs">纵轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Longitudinal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="YDataHeader">
+      <LocalizedLabel LanguageRef="zhs">纵轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Longitudinal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="YDataCaption">
+      <LocalizedLabel LanguageRef="zhs">纵轴数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Longitudinal Axis Data</LocalizedLabel>
+    </Label>
+    <Label Name="DrawBottomBorderName">
+      <LocalizedLabel LanguageRef="zhs">下边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bottom Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawBottomBorderHeader">
+      <LocalizedLabel LanguageRef="zhs">下边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bottom Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawBottomBorderCaption">
+      <LocalizedLabel LanguageRef="zhs">下边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Bottom Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawLeftBorderName">
+      <LocalizedLabel LanguageRef="zhs">左边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Left Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawLeftBorderHeader">
+      <LocalizedLabel LanguageRef="zhs">左边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Left Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawLeftBorderCaption">
+      <LocalizedLabel LanguageRef="zhs">左边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Left Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawRightBorderName">
+      <LocalizedLabel LanguageRef="zhs">右边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right Box</LocalizedLabel>
+    </Label>
+    <Label Name="DrawRightBorderHeader">
+      <LocalizedLabel LanguageRef="zhs">右边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right Box</LocalizedLabel>
+    </Label>
+    <Label Name="DrawRightBorderCaption">
+      <LocalizedLabel LanguageRef="zhs">右边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Right Box</LocalizedLabel>
+    </Label>
+    <Label Name="DrawTopBorderName">
+      <LocalizedLabel LanguageRef="zhs">上边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Top Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawTopBorderHeader">
+      <LocalizedLabel LanguageRef="zhs">上边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Top Border</LocalizedLabel>
+    </Label>
+    <Label Name="DrawTopBorderCaption">
+      <LocalizedLabel LanguageRef="zhs">上边框</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Top Border</LocalizedLabel>
+    </Label>
+    <Label Name="BorderColorName">
+      <LocalizedLabel LanguageRef="zhs">边框颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Border Color</LocalizedLabel>
+    </Label>
+    <Label Name="BorderColorHeader">
+      <LocalizedLabel LanguageRef="zhs">边框颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Border Color</LocalizedLabel>
+    </Label>
+    <Label Name="BorderColorCaption">
+      <LocalizedLabel LanguageRef="zhs">边框颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Border Color</LocalizedLabel>
+    </Label>
+    <Label Name="BackColorName">
+      <LocalizedLabel LanguageRef="zhs">控件颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Color</LocalizedLabel>
+    </Label>
+    <Label Name="BackColorHeader">
+      <LocalizedLabel LanguageRef="zhs">控件颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Color</LocalizedLabel>
+    </Label>
+    <Label Name="BackColorCaption">
+      <LocalizedLabel LanguageRef="zhs">控件颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Control Color</LocalizedLabel>
+    </Label>
+    <Label Name="FontsName">
+      <LocalizedLabel LanguageRef="zhs">字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Font</LocalizedLabel>
+    </Label>
+    <Label Name="FontsHeader">
+      <LocalizedLabel LanguageRef="zhs">字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Font</LocalizedLabel>
+    </Label>
+    <Label Name="FontsCaption">
+      <LocalizedLabel LanguageRef="zhs">字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Font</LocalizedLabel>
+    </Label>
+    <Label Name="ForeColorName">
+      <LocalizedLabel LanguageRef="zhs">字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="ForeColorHeader">
+      <LocalizedLabel LanguageRef="zhs">字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="ForeColorCaption">
+      <LocalizedLabel LanguageRef="zhs">字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="FormatName">
+      <LocalizedLabel LanguageRef="zhs">格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Format</LocalizedLabel>
+    </Label>
+    <Label Name="FormatHeader">
+      <LocalizedLabel LanguageRef="zhs">格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Format</LocalizedLabel>
+    </Label>
+    <Label Name="FormatCaption">
+      <LocalizedLabel LanguageRef="zhs">格式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Format</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalSpaceName">
+      <LocalizedLabel LanguageRef="zhs">水平间隙</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Clearance</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalSpaceHeader">
+      <LocalizedLabel LanguageRef="zhs">水平间隙</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Clearance</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalSpaceCaption">
+      <LocalizedLabel LanguageRef="zhs">水平间隙</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Clearance</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalSpaceName">
+      <LocalizedLabel LanguageRef="zhs">垂直间隙</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Clearance</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalSpaceHeader">
+      <LocalizedLabel LanguageRef="zhs">垂直间隙</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Clearance</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalSpaceCaption">
+      <LocalizedLabel LanguageRef="zhs">垂直间隙</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Clearance</LocalizedLabel>
+    </Label>
+    <Label Name="ImageNameName">
+      <LocalizedLabel LanguageRef="zhs">图片名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture Name</LocalizedLabel>
+    </Label>
+    <Label Name="ImageNameHeader">
+      <LocalizedLabel LanguageRef="zhs">图片名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture Name</LocalizedLabel>
+    </Label>
+    <Label Name="ImageNameCaption">
+      <LocalizedLabel LanguageRef="zhs">图片名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Picture Name</LocalizedLabel>
+    </Label>
+    <Label Name="BeforePrepareName">
+      <LocalizedLabel LanguageRef="zhs">准备前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Before Preparation</LocalizedLabel>
+    </Label>
+    <Label Name="BeforePrepareHeader">
+      <LocalizedLabel LanguageRef="zhs">准备前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Before Preparation</LocalizedLabel>
+    </Label>
+    <Label Name="BeforePrepareCaption">
+      <LocalizedLabel LanguageRef="zhs">准备前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Before Preparation</LocalizedLabel>
+    </Label>
+    <Label Name="AfterPrepareName">
+      <LocalizedLabel LanguageRef="zhs">准备后</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">After Preparation</LocalizedLabel>
+    </Label>
+    <Label Name="AfterPrepareHeader">
+      <LocalizedLabel LanguageRef="zhs">准备后</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">After Preparation</LocalizedLabel>
+    </Label>
+    <Label Name="AfterPrepareCaption">
+      <LocalizedLabel LanguageRef="zhs">准备后</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">After Preparation</LocalizedLabel>
+    </Label>
+    <Label Name="BeforeRenderName">
+      <LocalizedLabel LanguageRef="zhs">绘制前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Before Painting</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaMode">
+      <LocalizedLabel LanguageRef="zhs">套打模式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set-up Mode</LocalizedLabel>
+    </Label>
+    <Label Name="TaoDaSuport">
+      <LocalizedLabel LanguageRef="zhs">套打支持</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Set up Support</LocalizedLabel>
+    </Label>
+    <Label Name="BeforeRenderHeader">
+      <LocalizedLabel LanguageRef="zhs">绘制前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Before Painting</LocalizedLabel>
+    </Label>
+    <Label Name="BeforeRenderCaption">
+      <LocalizedLabel LanguageRef="zhs">绘制前</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Before Painting</LocalizedLabel>
+    </Label>
+    <Label Name="AfterRenderName">
+      <LocalizedLabel LanguageRef="zhs">绘制后</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">After Drawing</LocalizedLabel>
+    </Label>
+    <Label Name="AfterRenderHeader">
+      <LocalizedLabel LanguageRef="zhs">绘制后</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">After Drawing</LocalizedLabel>
+    </Label>
+    <Label Name="AfterRenderCaption">
+      <LocalizedLabel LanguageRef="zhs">绘制后</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">After Drawing</LocalizedLabel>
+    </Label>
+    <Label Name="GroupLabelName">
+      <LocalizedLabel LanguageRef="zhs">分组标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Packet Label</LocalizedLabel>
+    </Label>
+    <Label Name="GroupLabelHeader">
+      <LocalizedLabel LanguageRef="zhs">分组标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Packet Label</LocalizedLabel>
+    </Label>
+    <Label Name="GroupLabelCaption">
+      <LocalizedLabel LanguageRef="zhs">分组标签</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Packet Label</LocalizedLabel>
+    </Label>
+    <Label Name="IsAutoMergeName">
+      <LocalizedLabel LanguageRef="zhs">自动合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Auto-Merge</LocalizedLabel>
+    </Label>
+    <Label Name="IsAutoMergeHeader">
+      <LocalizedLabel LanguageRef="zhs">自动合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Auto-Merge</LocalizedLabel>
+    </Label>
+    <Label Name="IsAutoMergeCaption">
+      <LocalizedLabel LanguageRef="zhs">自动合并</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Auto-Merge</LocalizedLabel>
+    </Label>
+    <Label Name="MergeGroupName">
+      <LocalizedLabel LanguageRef="zhs">合并分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Merge Grouping</LocalizedLabel>
+    </Label>
+    <Label Name="MergeGroupHeader">
+      <LocalizedLabel LanguageRef="zhs">合并分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Merge Grouping</LocalizedLabel>
+    </Label>
+    <Label Name="MergeGroupCaption">
+      <LocalizedLabel LanguageRef="zhs">合并分组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Merge Grouping</LocalizedLabel>
+    </Label>
+    <Label Name="HeadTextName">
+      <LocalizedLabel LanguageRef="zhs">列标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Title</LocalizedLabel>
+    </Label>
+    <Label Name="HeadTextHeader">
+      <LocalizedLabel LanguageRef="zhs">列标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Title</LocalizedLabel>
+    </Label>
+    <Label Name="HeadTextCaption">
+      <LocalizedLabel LanguageRef="zhs">列标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Title</LocalizedLabel>
+    </Label>
+    <Label Name="RowHeightName">
+      <LocalizedLabel LanguageRef="zhs">行高</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line Height</LocalizedLabel>
+    </Label>
+    <Label Name="RowHeightHeader">
+      <LocalizedLabel LanguageRef="zhs">行高</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line Height</LocalizedLabel>
+    </Label>
+    <Label Name="RowHeightCaption">
+      <LocalizedLabel LanguageRef="zhs">行高</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line Height</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalAlignName">
+      <LocalizedLabel LanguageRef="zhs">水平对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalAlignHeader">
+      <LocalizedLabel LanguageRef="zhs">水平对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HorizontalAlignCaption">
+      <LocalizedLabel LanguageRef="zhs">水平对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalAlignName">
+      <LocalizedLabel LanguageRef="zhs">垂直对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalAlignHeader">
+      <LocalizedLabel LanguageRef="zhs">垂直对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="VerticalAlignCaption">
+      <LocalizedLabel LanguageRef="zhs">垂直对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="LegendName">
+      <LocalizedLabel LanguageRef="zhs">图例标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Legend title</LocalizedLabel>
+    </Label>
+    <Label Name="LegendHeader">
+      <LocalizedLabel LanguageRef="zhs">图例标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Legend title</LocalizedLabel>
+    </Label>
+    <Label Name="LegendCaption">
+      <LocalizedLabel LanguageRef="zhs">图例标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Legend title</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleName">
+      <LocalizedLabel LanguageRef="zhs">图表标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chart Title</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleHeader">
+      <LocalizedLabel LanguageRef="zhs">图表标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chart Title</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleCaption">
+      <LocalizedLabel LanguageRef="zhs">图表标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Chart Title</LocalizedLabel>
+    </Label>
+    <Label Name="XTitleName">
+      <LocalizedLabel LanguageRef="zhs">横轴标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Axis Title</LocalizedLabel>
+    </Label>
+    <Label Name="XTitleHeader">
+      <LocalizedLabel LanguageRef="zhs">横轴标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Axis Title</LocalizedLabel>
+    </Label>
+    <Label Name="XTitleCaption">
+      <LocalizedLabel LanguageRef="zhs">横轴标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal Axis Title</LocalizedLabel>
+    </Label>
+    <Label Name="YTitleName">
+      <LocalizedLabel LanguageRef="zhs">纵轴标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Axis Title</LocalizedLabel>
+    </Label>
+    <Label Name="YTitleHeader">
+      <LocalizedLabel LanguageRef="zhs">纵轴标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Axis Title</LocalizedLabel>
+    </Label>
+    <Label Name="YTitleCaption">
+      <LocalizedLabel LanguageRef="zhs">纵轴标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Vertical Axis Title</LocalizedLabel>
+    </Label>
+    <Label Name="GroupCompareName">
+      <LocalizedLabel LanguageRef="zhs">分组数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Packet Data</LocalizedLabel>
+    </Label>
+    <Label Name="GroupCompareHeader">
+      <LocalizedLabel LanguageRef="zhs">分组数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Packet Data</LocalizedLabel>
+    </Label>
+    <Label Name="GroupCompareCaption">
+      <LocalizedLabel LanguageRef="zhs">分组数据</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Packet Data</LocalizedLabel>
+    </Label>
+    <Label Name="TextAlignName">
+      <LocalizedLabel LanguageRef="zhs">文本对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="TextAlignHeader">
+      <LocalizedLabel LanguageRef="zhs">文本对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="TextAlignCaption">
+      <LocalizedLabel LanguageRef="zhs">文本对齐</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeadTextAlignName">
+      <LocalizedLabel LanguageRef="zhs">列标题对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeadTextAlignHeader">
+      <LocalizedLabel LanguageRef="zhs">列标题对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeadTextAlignCaption">
+      <LocalizedLabel LanguageRef="zhs">列标题对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeadContentAlignName">
+      <LocalizedLabel LanguageRef="zhs">列内容对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeadContentAlignHeader">
+      <LocalizedLabel LanguageRef="zhs">列内容对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeadContentAlignCaption">
+      <LocalizedLabel LanguageRef="zhs">列内容对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="HeaderBackColorName">
+      <LocalizedLabel LanguageRef="zhs">列标题背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Background Color</LocalizedLabel>
+    </Label>
+    <Label Name="HeaderBackColorHeader">
+      <LocalizedLabel LanguageRef="zhs">列标题背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Background Color</LocalizedLabel>
+    </Label>
+    <Label Name="HeaderBackColorCaption">
+      <LocalizedLabel LanguageRef="zhs">列标题背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Background Color</LocalizedLabel>
+    </Label>
+    <Label Name="HeadFontsName">
+      <LocalizedLabel LanguageRef="zhs">列标题字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Font</LocalizedLabel>
+    </Label>
+    <Label Name="HeadFontsHeader">
+      <LocalizedLabel LanguageRef="zhs">列标题字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Font</LocalizedLabel>
+    </Label>
+    <Label Name="HeadFontsCaption">
+      <LocalizedLabel LanguageRef="zhs">列标题字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Font</LocalizedLabel>
+    </Label>
+    <Label Name="HeadForeColorName">
+      <LocalizedLabel LanguageRef="zhs">列标题字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="HeadForeColorHeader">
+      <LocalizedLabel LanguageRef="zhs">列标题字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="HeadForeColorCaption">
+      <LocalizedLabel LanguageRef="zhs">列标题字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Header Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="ContentTextAlignName">
+      <LocalizedLabel LanguageRef="zhs">列内容对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="ContentTextAlignHeader">
+      <LocalizedLabel LanguageRef="zhs">列内容对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="ContentTextAlignCaption">
+      <LocalizedLabel LanguageRef="zhs">列内容对齐方式</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Alignment</LocalizedLabel>
+    </Label>
+    <Label Name="ContentFontsName">
+      <LocalizedLabel LanguageRef="zhs">列内容字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Font</LocalizedLabel>
+    </Label>
+    <Label Name="ContentFontsHeader">
+      <LocalizedLabel LanguageRef="zhs">列内容字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Font</LocalizedLabel>
+    </Label>
+    <Label Name="ContentFontsCaption">
+      <LocalizedLabel LanguageRef="zhs">列内容字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Font</LocalizedLabel>
+    </Label>
+    <Label Name="ContentForeColorName">
+      <LocalizedLabel LanguageRef="zhs">列内容字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="ContentForeColorHeader">
+      <LocalizedLabel LanguageRef="zhs">列内容字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="ContentForeColorCaption">
+      <LocalizedLabel LanguageRef="zhs">列内容字体颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Column Content Font Color</LocalizedLabel>
+    </Label>
+    <Label Name="RowBackColorName">
+      <LocalizedLabel LanguageRef="zhs">行背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line Background Color</LocalizedLabel>
+    </Label>
+    <Label Name="RowBackColorHeader">
+      <LocalizedLabel LanguageRef="zhs">行背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line Background Color</LocalizedLabel>
+    </Label>
+    <Label Name="RowBackColorCaption">
+      <LocalizedLabel LanguageRef="zhs">行背景色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line Background Color</LocalizedLabel>
+    </Label>
+    <Label Name="HeaderName">
+      <LocalizedLabel LanguageRef="zhs">标题</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title</LocalizedLabel>
+    </Label>
+    <Label Name="CaptionName">
+      <LocalizedLabel LanguageRef="zhs">说明</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="UnevenRowColorName">
+      <LocalizedLabel LanguageRef="zhs">奇数行颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Odd Row Colors</LocalizedLabel>
+    </Label>
+    <Label Name="UnevenRowColorHeader">
+      <LocalizedLabel LanguageRef="zhs">奇数行颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Odd Row Colors</LocalizedLabel>
+    </Label>
+    <Label Name="UnevenRowColorCaption">
+      <LocalizedLabel LanguageRef="zhs">奇数行颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Odd Row Colors</LocalizedLabel>
+    </Label>
+    <Label Name="EvenRowColorName">
+      <LocalizedLabel LanguageRef="zhs">偶数行颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Even Row Colors</LocalizedLabel>
+    </Label>
+    <Label Name="EvenRowColorHeader">
+      <LocalizedLabel LanguageRef="zhs">偶数行颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Even Row Colors</LocalizedLabel>
+    </Label>
+    <Label Name="EvenRowColorCaption">
+      <LocalizedLabel LanguageRef="zhs">偶数行颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Even Row Colors</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleFontsName">
+      <LocalizedLabel LanguageRef="zhs">标题字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Font</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleFontsHeader">
+      <LocalizedLabel LanguageRef="zhs">标题字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Font</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleFontsCaption">
+      <LocalizedLabel LanguageRef="zhs">标题字体</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Font</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleColorName">
+      <LocalizedLabel LanguageRef="zhs">标题颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Color</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleColorHeader">
+      <LocalizedLabel LanguageRef="zhs">标题颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Color</LocalizedLabel>
+    </Label>
+    <Label Name="ChartTitleColorCaption">
+      <LocalizedLabel LanguageRef="zhs">标题颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Title Color</LocalizedLabel>
+    </Label>
+    <Label Name="ShowHorLineName">
+      <LocalizedLabel LanguageRef="zhs">是否显示横线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the horizontal line is displayed or not</LocalizedLabel>
+    </Label>
+    <Label Name="ShowHorLineHeader">
+      <LocalizedLabel LanguageRef="zhs">是否显示横线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the horizontal line is displayed or not</LocalizedLabel>
+    </Label>
+    <Label Name="ShowHorLineCaption">
+      <LocalizedLabel LanguageRef="zhs">是否显示横线（折线、柱状图）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the horizontal line (polyline, bar chart) is displayed or not</LocalizedLabel>
+    </Label>
+    <Label Name="ShowVerLineName">
+      <LocalizedLabel LanguageRef="zhs">是否显示纵线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the vertical line is displayed or not</LocalizedLabel>
+    </Label>
+    <Label Name="ShowVerLineHeader">
+      <LocalizedLabel LanguageRef="zhs">是否显示纵线</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the vertical line is displayed or not</LocalizedLabel>
+    </Label>
+    <Label Name="ShowVerLineCaption">
+      <LocalizedLabel LanguageRef="zhs">是否显示纵线（折线、柱状图）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Whether the longitudinal line (polyline, bar chart) is displayed or not</LocalizedLabel>
+    </Label>
+    <Label Name="LineColorName">
+      <LocalizedLabel LanguageRef="zhs">横线和纵线颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal and longitudinal lines colors</LocalizedLabel>
+    </Label>
+    <Label Name="LineColorHeader">
+      <LocalizedLabel LanguageRef="zhs">横线和纵线颜色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal and longitudinal lines colors</LocalizedLabel>
+    </Label>
+    <Label Name="LineColorCaption">
+      <LocalizedLabel LanguageRef="zhs">横线和纵线颜色（折线、柱状图）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Horizontal and longitudinal lines colors (polylines, histograms)</LocalizedLabel>
+    </Label>
+    <Label Name="LineWeightName">
+      <LocalizedLabel LanguageRef="zhs">横线和纵线的线宽</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line width of the horizontal and longitudinal lines</LocalizedLabel>
+    </Label>
+    <Label Name="LineWeightHeader">
+      <LocalizedLabel LanguageRef="zhs">横线和纵线的线宽</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line width of the horizontal and longitudinal lines</LocalizedLabel>
+    </Label>
+    <Label Name="LineWeightCaption">
+      <LocalizedLabel LanguageRef="zhs">横线和纵线的线宽（折线、柱状图）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Line width (polylines, histograms) of horizontal and longitudinal lines</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

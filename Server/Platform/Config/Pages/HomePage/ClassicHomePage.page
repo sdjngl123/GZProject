@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ClassicHomePage" IsCache="true">
+  <PageControls>
+    <PageControl ControlID="ClassicHomePage_VLayout" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="38"/>
+        <Settings Key="childid" Value="ClassicHomePage_Top"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ClassicHomePage_HLayout"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="22"/>
+        <Settings Key="childid" Value="ClassicHomePage_Bottom"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_HLayout" ParentID="ClassicHomePage_VLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="150"/>
+        <Settings Key="childid" Value="ClassicHomePage_Navigation_Container"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item3" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="HomePage_Content"/>
+      </Settings>
+      <Settings Key="item4" >
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_Navigation_Container" ParentID="ClassicHomePage_HLayout" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="ClassicHomePage_Navigation_Toggle"/>
+      </Settings>
+      <Settings Key="item2" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="ClassicHomePage_Navigation"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_Navigation_Toggle" ParentID="ClassicHomePage_Navigation_Container" TypeName="AccordionToggle">
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_Navigation" ParentID="ClassicHomePage_Navigation_Container" TypeName="Accordion">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ClassicHomePageNavigation_LoadNavigationItems(ctrlEvent);"/>
+        <PageHandler HandlerName ="OnClick" Script="InforCenter_Platform_ClassicHomePageNavigation_NavigationOnClick(ctrlEvent);"/>
+        <PageHandler HandlerName ="RemoveOnClick" Script="InforCenter_Platform_ClassicHomePageNavigation_NavigationRemoveOnClick(ctrlEvent);"/>
+        <!--<PageHandler HandlerName ="LastIconOnClick" Script="InforCenter_Platform_Navigation_AddQuickNavigation(ctrlEvent);"/>-->
+      </PageHandlers>
+      <Settings Key="hiddenCollection" Value="true"/>
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_Top" ParentID="ClassicHomePage_VLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ClassicHomePageTop"/>
+    </PageControl>
+    <PageControl ControlID="ClassicHomePage_Bottom" ParentID="ClassicHomePage_VLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="ClassicHomePageBottom"/>
+    </PageControl>
+    <PageControl ControlID="HomePage_Content" ParentID="ClassicHomePage_HLayout" TypeName="PageContainer">
+      <Settings Key="pageName" Value="HomePageContents"/>
+    </PageControl>
+  </PageControls>
+</root>

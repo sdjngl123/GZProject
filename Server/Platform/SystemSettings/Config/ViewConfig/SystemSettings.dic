@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebTreeViews" IsWeb="true">
+    <Label Name="ChildNode">
+      <LocalizedLabel LanguageRef="zhs">模块树节点</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Module tree node</LocalizedLabel>
+    </Label>
+    <Label Name="SystemSettings">
+      <LocalizedLabel LanguageRef="zhs">系统设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">System settings</LocalizedLabel>
+    </Label>
+    <Label Name="PersonalSettings">
+      <LocalizedLabel LanguageRef="zhs">个人设置</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Personal settings</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

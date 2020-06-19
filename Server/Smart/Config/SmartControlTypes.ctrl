@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <ControlType TypeName="SmartAccordion" OperateFun="HoteamUI.Control.OSmartAccordion"></ControlType>
+    
+    <ControlType TypeName="SmartGrid" OperateFun="HoteamUI.Control.OSmartGrid"></ControlType>
+    <ControlType TypeName="Suspension" OperateFun="HoteamUI.Control.OSuspension"></ControlType>
+    <ControlType TypeName="BreadcrumbNavigation" OperateFun="HoteamUI.Control.OBreadcrumbNavigation"></ControlType>
+</root>

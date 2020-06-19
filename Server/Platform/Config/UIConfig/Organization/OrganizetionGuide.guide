@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <Guide Name="CompanyGuide" SaveJS="InforCenter_Platform_Organization_CreateSave" ShowNav="true" >
+    <Page Name="OrganizationSelect" InitJS="" AllowFinish="false"  PageTitleDic="OrganizationGuide.Select" SaveJS="InforCenter_Platform_Organization_SelectSave">
+      <Para Name="OnCreate" Value="InforCenter_Platform_CompanySelect_OnCreate" />
+      <Para Name="SelectType" Value="Company" />
+    </Page>
+    <Page Name="OrganizationCreate" Reload="true" InitJS="InforCenter_Platform_OrganizationGuidTwo_OnCreate" SaveJS="InforCenter_Platform_Organization_LastPageSave" AllowFinish="true"
+          PageTitleDic="OrganizationGuide.CompanyCreateTitle">
+      <Para Name="PageName" Value="COMPANY-CREATE" />
+      <Para Name="SelectType" Value="Company" />
+    </Page>
+  </Guide>
+  <Guide Name="GroupGuide" SaveJS="InforCenter_Platform_Organization_CreateSave" ShowNav="true" >
+    <Page Name="OrganizationSelect" InitJS="" AllowFinish="false"  PageTitleDic="OrganizationGuide.Select" SaveJS="InforCenter_Platform_Organization_SelectSave">
+      <Para Name="OnCreate" Value="InforCenter_Platform_GroupSelect_OnCreate" />
+      <Para Name="SelectType" Value="Group" />
+    </Page>
+    <Page Name="OrganizationCreate" Reload="true" InitJS="InforCenter_Platform_OrganizationGuidTwo_OnCreate" SaveJS="InforCenter_Platform_Organization_LastPageSave" AllowFinish="true"
+          PageTitleDic="OrganizationGuide.GroupCreateTitle">
+      <Para Name="PageName" Value="GROUPINFO-CREATE" />
+      <Para Name="SelectType" Value="Group" />
+    </Page>
+  </Guide>
+  <Guide Name="RoleGuide" SaveJS="InforCenter_Platform_Organization_CreateSave" ShowNav="true" >
+    <Page Name="OrganizationSelect" InitJS="" AllowFinish="false"  PageTitleDic="OrganizationGuide.Select" SaveJS="InforCenter_Platform_Organization_SelectSave">
+      <Para Name="OnCreate" Value="InforCenter_Platform_RoleSelect_OnCreate" />
+      <Para Name="SelectType" Value="Role" />
+    </Page>
+    <Page Name="OrganizationCreate" Reload="true" InitJS="InforCenter_Platform_OrganizationGuidTwo_OnCreate" SaveJS="InforCenter_Platform_Organization_LastPageSave" AllowFinish="true"
+          PageTitleDic="OrganizationGuide.RoleCreateTitle">
+      <Para Name="PageName" Value="ROLEINFO-CREATE" />
+      <Para Name="SelectType" Value="Role" />
+    </Page>
+  </Guide>
+  <Guide Name="UserGuide" SaveJS="InforCenter_Platform_Organization_CreateSave" ShowNav="true" >
+    <Page Name="OrganizationSelect" InitJS="" AllowFinish="false"  PageTitleDic="OrganizationGuide.Select" SaveJS="InforCenter_Platform_Organization_SelectSave">
+      <Para Name="OnCreate" Value="InforCenter_Platform_UserSelect_OnCreate" />
+      <Para Name="SelectType" Value="User" />
+    </Page>
+    <Page Name="OrganizationCreate" Reload="true" InitJS="InforCenter_Platform_OrganizationGuidTwo_OnCreate" SaveJS="InforCenter_Platform_Organization_LastPageSave" AllowFinish="true"
+          PageTitleDic="OrganizationGuide.UserCreateTitle">
+      <Para Name="PageName" Value="USERINFO-CREATE" />
+      <Para Name="SelectType" Value="User" />
+    </Page>
+  </Guide>
+
+
+
+  <Guide Name="PersonGuide" SaveJS="InforCenter_Platform_PersonGuid_CreateSave" ShowNav="true" >
+    <Page Name="PERSON-CREATE" Reload="true" InitJS="InforCenter_Platform_PersonGuid_LoadPage" SaveJS="InforCenter_Platform_PersonGuid_Save" AllowFinish="true"
+      PageTitleDic="OrganizationGuide.PersonCreateTitle">
+      <Para Name="SelectType" Value="Person" />
+    </Page>
+    <Page Name="USERINFO-CREATE" Reload="true"  InitJS="InforCenter_Platform_PersonGuid_LoadPage" PageTitleDic="OrganizationGuide.UserCreateTitle" SaveJS="InforCenter_Platform_PersonGuid_Save">
+      <Para Name="SelectType" Value="User" />
+    </Page>
+  </Guide>
+</root>

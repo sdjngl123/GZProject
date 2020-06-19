@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <MenuItem Name="RegisterdManagerListMenu">
+    <WebAction Name="SelectAuditState" MultiMenu="false" ModuleName="Task" LabelName="" CtrlType="DropDownList" RefreshType="RefreshList" RefreshedSelect="false" LoadMenuCtrlData="InforCenter_Platform_MenuSelect_OnLoad" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_MenuSelect_OnChange" IsLoopExec="false">
+        <Para Name="DropDownListValue" Value="[DropDownListValue]" />
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <DropDownData CustomService="">
+        <Item Name="RegisterdManagerListMenu.All" Value=" 1=1 " IsSelect="true" IsCutom="false" />
+        <Item Name="RegisterdManagerListMenu.Unaudited" Value=" AUDITSTATE='Unaudited' " IsSelect="false" IsCutom="false" />
+        <Item Name="RegisterdManagerListMenu.AuditedPass" Value=" AUDITSTATE='AuditedPass' " IsSelect="false" IsCutom="false" />
+        <!--<Item Name="RegisterdManagerListMenu.AuditedUnPass" Value=" AUDITSTATE='AuditedUnPass' " IsSelect="false" IsCutom="false" />-->
+
+      </DropDownData>
+    </WebAction>
+
+    <!--<WebAction Name="AuditPass" ModuleName="Registered" LabelName="RegisterdManagerListMenu.AuditPass" Image="p_allowall" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_Registered_AuditPass" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListGrid" Value="[ListID]" />
+        <Para Name="AuditResult" Value="AuditedPass" />
+        <Para Name="IncludeExtend" Value="true" />
+      </JSMethod>
+    </WebAction>-->
+    <WebAction Name="AuditPass" ModuleName="Registered" LabelName="RegisterdManagerListMenu.AuditPass" Image="p_allowall" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_Registered_AuditPass" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListGrid" Value="[ListID]" />
+        <Para Name="AuditResult" Value="AuditedPass" />
+        <Para Name="IsRootCompany" Value="1" />
+        <Para Name="IncludeExtend" Value="true" />
+      </JSMethod>
+    </WebAction>
+    <WebAction Name="AuditNoPass" ModuleName="Registered" LabelName="RegisterdManagerListMenu.AuditNoPass" Image="p_allbanned" ParentWebAtionName="" RefreshType="UPDATELIST">
+      <ActionChecker Action="EDIT" ActionType="AUTO" SelectID="[List_EID]" SelectMode="SINGLE" />
+      <JSMethod Name="InforCenter_Platform_Registered_AuditUnPassCheck" SelectID="[List_EID]" IsLoopExec="false">
+      </JSMethod>
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <JSMethod Name="InforCenter_Platform_Registered_AuditPass" SelectID="[List_EID]" IsLoopExec="false">
+        <Para Name="ListGrid" Value="[ListID]" />
+        <Para Name="AuditResult" Value="AuditedUnPass" />
+      </JSMethod>
+      <WebMessageAndLogger SendMessage="false" WriteLogger="true"  SelectID="[List_EID]" TemplateLabel="MessageAndLoggerDescription.Common"/>
+    </WebAction>
+    <!--<WebAction Name="Delete" ModuleName="Registered" LabelName="Common.Delete" Image="p_delete" ParentWebAtionName=""  RefreshType="UPDATELIST">
+      <ActionChecker Action="DELETE" ActionType="AUTO"  SelectID="[List_EID]" SelectMode="MULTI" />
+      <JSMethod Name="InforCenter_Platform_Registered_CheckDeleteRegisterUser" SelectID="[List_EID]" IsLoopExec="false">
+      </JSMethod>
+      <WebMethod PageName="DeleteObject" IsPopup="true" Order="1"  SelectID="[List_EID]">
+        <Para Name="PageMode" Value="DeleteObject" />
+      </WebMethod>
+    </WebAction>-->
+
+  </MenuItem >
+
+
+
+</root>

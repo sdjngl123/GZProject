@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="WebStudioView" IsWeb="true">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">模型视图</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ModelView</LocalizedLabel>
+    </Label>
+    <Label Name="Condition">
+      <LocalizedLabel LanguageRef="zhs">查询条件</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Condition</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

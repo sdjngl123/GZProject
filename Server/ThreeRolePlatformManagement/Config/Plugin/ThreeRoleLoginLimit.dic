@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ThreeRoleLoginLimit" IsWeb="true">
+    <Label Name="UserNameAndPassword">
+      <LocalizedLabel LanguageRef="zhs">用户名/密码</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">UserNameAndPassword</LocalizedLabel>
+    </Label>
+    <Label Name="DomainValidate">
+      <LocalizedLabel LanguageRef="zhs">域用户验证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DomainValidate</LocalizedLabel>
+    </Label>
+    <Label Name="DigitalCertificate">
+      <LocalizedLabel LanguageRef="zhs">数字证书认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">DigitalCertificate</LocalizedLabel>
+    </Label>
+    <Label Name="AuthenticationCenter">
+      <LocalizedLabel LanguageRef="zhs">认证中心认证</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AuthenticationCenter</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,54 @@
+﻿.hoteam-formbuilder-option-table p{
+			font-size:12px;
+			height:18px;
+			line-height: 18px;
+			padding:0;
+			margin:0;
+		}
+		.hoteam-formbuilder-option-table{
+			width:96%;
+			margin-left:2%;
+		}
+		.hoteam-formbuilder-option-table td{
+			border-bottom:1px solid #e7e7e7;
+			padding:15px 0 20px 0;
+		}
+		.hoteam-formbuilder-option-color-blue{
+			color:#079bfd;
+		}
+		.hoteam-formbuilder-option-color-gray{
+			color:#a19996;
+		}
+		.hoteam-formbuilder-option-fl{
+			float:left;
+		}
+		.hoteam-formbuilder-option-cl:after{
+			content: ".";display: block;height: 0;clear: both;visibility: hidden;zoom: 1;
+		}
+		.hoteam-formbuilder-option-portrait{
+			width:28px;
+			height:24px;
+			margin:6px 9px 0 0;
+			border:1px solid #f00;
+		}
+		.hoteam-formbuilder-option-portrait img{
+			width:100%;
+			height:100%;
+		}
+		.hoteam-formbuilder-option-table .hoteam-formbuilder-option-resaveName{
+			margin-top:5px;
+		}
+		.hoteam-formbuilder-option-title{
+			position:relative;
+			border-bottom:1px solid #d6d6d6;
+		}
+		.hoteam-formbuilder-option-title p{
+			display:inline-block;
+			border-bottom:2px solid #079bfd;
+			padding:0;
+			margin:0;
+			font-size:14px;
+		}
+.hoteam-formbuilder-option-parentContainer {
+    padding:10px;
+}

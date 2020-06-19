@@ -1,0 +1,4 @@
+﻿<Settings Key="item[ITEMORDER]" Value="">
+  <Settings Key="size" Value="[ITEMSIZE]"/>
+  <Settings Key="childid" Value="[CHILDID]"/>[MAXWIDTH]
+</Settings>

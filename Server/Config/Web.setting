@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<AppSet Key="DefaultTheme" Value="cupertino" ToClient="true" Description="系统默认皮肤，可选项cupertino（蓝色基调），smoothness（灰色基调），southstreet（绿色基调）" />
+	<AppSet Key="DefaultHomePageMode" Value="ClassicHomePage" ToClient="true" Description="系统默认的主页模式ClassicHomePage（经典模式），DesktopHomePage（桌面模式），OriginalityHomePage（创意模式）" />
+	<AppSet Key="DefaultTimeZone" Value="+08:00" ToClient="true" Description="系统默认的时区，可选值示例：+08:00" />
+	<AppSet Key="DefaultMainFlat" Value="MainFlatFlow" ToClient="true" Description="系统首页" />
+	<AppSet Key="DefaultMainFlatPara" Value="{}" ToClient="true" Description="系统首页参数" />
+	<AppSet Key="GridPrintMaxRowsNum" Value="2000" ToClient="false" Description="通用列表控件打印功能可以打印的最大行数，超出的部分进行截断并且进行提示，行数越多，运行越慢，建议值为2000" />
+	<AppSet Key="WaitPageText" Value="Loading...." ToClient="false" Description="系统页面初始化时的等待提示文本" />
+	<AppSet Key="CallServiceMaxTime" Value="120" ToClient="false" Description="Web服务调用业务服务的最大时间，单位是秒，超过后记录开发日志" />
+	<AppSet Key="UITraceDefaultLevel" Value="Info" ToClient="true" Description="JS脚本输出日志等级，可选值为 Debug,Info,Warn,Error,Fatal,日志输出到浏览器调试控制台" />
+	<AppSet Key="DefaultIcon" Value="~/base/image/smalllogo.png" ToClient="true" Description="系统默认图标，一般用于弹出窗口等需要显示系统小图标的场景" />
+	<AppSet Key="LoginPage" Value="Login" ToClient="true" Description="系统默认登陆页" />
+	<AppSet Key="DisableTheme" Value="false" ToClient="true" Description="登陆页是否有主题项选择" />
+	<AppSet Key="DisableDataBase" Value="false" ToClient="true" Description="登陆页是否有数据库选择" />
+	<AppSet Key="LoginPage" Value="Login" ToClient="true" Description="系统默认登陆页" />
+	<AppSet Key="MobileLoginPage" Value="MobileLogin" ToClient="true" Description="移动系统默认登陆页" />
+	<AppSet Key="ServiceAddr" Value="http://localhost:8888" ToClient="false" Description="默认业务服务器的地址" />
+	<AppSet Key="DefaultOnlineUser" Value="stand-alone" ToClient="false" Description="stand-alone：单机;distributed:分布式" />
+	<AppSet Key="AllowMultiLogin" Value="true" ToClient="false" Description="是否允许同一账号同时多次登录，可选项：true,false" />
+	<AppSet Key="TimeInterval" Value="300" ToClient="false" Description="每隔指定时间进行一次检测和超时用户的清理，单位秒，此属性只是用于指定循环检查的时间间隔，超时时间由另外的变量指定，单位为秒" />
+	<AppSet Key="CheckOperateTimeSpan" Value="86400" ToClient="false" Description="指定操作超时时间，当指定时间内没有任何操作时认为用户已掉线，单位为秒" />
+	<AppSet Key="CheckConnectionTimeSpan" Value="3600" ToClient="false" Description="客户端连接超时时间，当指定时间内客户端不主动连接服务器（通过循环消息检测）认为用户已掉线，单位为秒，一般应大于InstantMessageInterval" />
+	<AppSet Key="CheckConnectionTimeSpanCAD" Value="120" ToClient="false" Description="CAD客户端连接超时时间，当指定时间内客户端不主动连接服务器（通过循环消息检测）认为用户已掉线，单位为秒，一般应大于InstantMessageInterval" />
+	<AppSet Key="EnableInstantMessage" Value="true" ToClient="true" Description="循环检测是否有新消息，并在客户端进行提示" />
+	<AppSet Key="InstantMessageInterval" Value="60" ToClient="true" Description="客户端循环访问服务器检查新消息的时间间隔，单位为秒" />
+	<!--<AppSet Key="OfficeProductCaption" Value="重庆万虎机电有限责任公司" ToClient="true" Description="office在线编辑控件初始化需要的产品名" />-->
+	<AppSet Key="OfficeProductKey" Value="1296913C792848EFEC2C6F2A490A46A6BA98A17D" ToClient="true" Description="office在线编辑控件初始化需要的序列号" />
+	<AppSet Key="WorkflowImageSize" Value="100" ToClient="true" Description="流程设计器选择节点图片时，可显示的图片大小限制，超过该值的图片不再显示，单位为KB" />
+	<!--组织结构导入下载地址-->
+	<AppSet Key="DownloadOrganizationTemplateUrl" Value="~/Platform/DownloadFile/OrganizationTemplate.rar" ToClient="true" />
+	<!--由于在base层无法调用枚举，在此处配置-->
+	<AppSet Key="ThemeList" Value="cupertino|smoothness|southstreet" ToClient="false" Description="系统皮肤列表，可选项cupertino（蓝色基调），smoothness（灰色基调），southstreet（绿色基调）" />
+	<AppSet Key="ImageStatus" Value="Default|Obvious|Disable" ToClient="false" Description="图标状态，可选值Default（默认的），Obvious（高亮，明显的），Disable（不可用）" />
+	<AppSet Key="ViewObjectPageIsVerticalTabs" Value="true" ToClient="true" Description="在查看对象详细信息页面是否使用纵向Tab页，为true则使用纵向，否则使用默认横向" />
+	<AppSet Key="ModulePermissionCommonPage" Value="CustomPage;ListManagement;TabManagement;TreeManagement;VerticalTabManagement;EditListManagement" ToClient="false" Description="模块授权反射调用的通用页面解析类，名称和页面名称一致，在*.plugin中配置后，在此处将plugin的Name添加进来，以;分隔" />
+	<AppSet Key="HerizontalPadding" Value="20" ToClient="false" Description="Page的Padding值，为了和外层的分组对齐" />
+	<AppSet Key="DATASETTYPE_ImgPath" Value="Platform/Image/Document" ToClient="false"  />
+	<AppSet Key="AccessRecordAllDataRange" Value="100" ToClient="false" Description="访问记录全部节点显示数据的天数范围"  />
+	<AppSet Key="QRExpireUnit" Value="1" ToClient="false" Description="二维码过期期限，单位：分钟" />
+	<AppSet Key="ImageCssSplitLen" Value="5" ToClient="true" Description="雪碧图CSS文件分片" />
+	<AppSet Key="Base64DisplayImage" Value="default:~/Platform/Image/Common/nopic200.png;dwg:~/Platform/Image/Common/cad.png;" ToClient="true" Description="Base64文件上传控件非图片文件的展示图片路径" />
+	<AppSet Key="OnlyObjectInspector" Value="true" ToClient="true" Description="是否采用对象单对象查看器tab页" />
+	<AppSet Key="SQLKeyWord" Value="ADD;EXCEPT;PERCENT;ALL;EXEC;PLAN;ALTER;EXECUTE;PRECISION;AND;EXISTS;PRIMARY;ANY;EXIT;PRINT;AS;FETCH;PROC;ASC;FILE;PROCEDURE;AUTHORIZATION;FILLFACTOR;PUBLIC;BACKUP;FOR;RAISERROR;BEGIN;FOREIGN;READ;BETWEEN;FREETEXT;READTEXT;BREAK;FREETEXTTABLE;RECONFIGURE;BROWSE;FROM;REFERENCES;BULK;FULL;REPLICATION;BY;FUNCTION;RESTORE;CASCADE;GOTO;RESTRICT;CASE;GRANT;RETURN;CHECK;GROUP;REVOKE;CHECKPOINT;HAVING;RIGHT;CLOSE;HOLDLOCK;ROLLBACK;CLUSTERED;IDENTITY;ROWCOUNT;COALESCE;IDENTITY_INSERT;ROWGUIDCOL;COLLATE;IDENTITYCOL;RULE;COLUMN;IF;SAVE;COMMIT;IN;SCHEMA;COMPUTE;INDEX;SELECT;CONSTRAINT;INNER;SESSION_USER;CONTAINS;INSERT;SET;CONTAINSTABLE;INTERSECT;SETUSER;CONTINUE;INTO;SHUTDOWN;CONVERT;IS;SOME;CREATE;JOIN;STATISTICS;CROSS;KEY;SYSTEM_USER;CURRENT;KILL;TABLE;CURRENT_DATE;LEFT;TEXTSIZE;CURRENT_TIME;LIKE;THEN;CURRENT_TIMESTAMP;LINENO;TO;CURRENT_USER;LOAD;TOP;CURSOR;NATIONAL;TRAN;DATABASE;NOCHECK;TRANSACTION;DBCC;NONCLUSTERED;TRIGGER;DEALLOCATE;NOT;TRUNCATE;DECLARE;NULL;TSEQUAL;DEFAULT;NULLIF;UNION;DELETE;OF;UNIQUE;DENY;OFF;UPDATE;DESC;OFFSETS;UPDATETEXT;DISK;ON;USE;DISTINCT;OPEN;USER;DISTRIBUTED;OPENDATASOURCE;VALUES;DOUBLE;OPENQUERY;VARYING;DROP;OPENROWSET;VIEW;DUMMY;OPENXML;WAITFOR;DUMP;OPTION;WHEN;ELSE;OR;WHERE;END;ORDER;WHILE;ERRLVL;OUTER;WITH;ESCAPE;OVER;WRITETEXT" ToClient="true" Description="SQL关键字" />
+
+	<AppSet Key="DefaultBusinessRoute" Value="DefaultRoute" ToClient="false" Description="默认的业务路由设置，在扩展名为.businessroute配置的文件中的名称，如果未设置或者不存在取默认的路由,可选值LoadBalanceRoute、DefaultRoute" />
+	<AppSet Key="BusinessRouteListenPort" Value="9000" ToClient="false" Description="使用负载均衡路由时 监听的端口号，通过该端口号进行服务发现" />
+	<AppSet Key="BusinessRouteMaxTimespan" Value="30" ToClient="false" Description="使用负载均衡路由时 最大的时间间隔 当大于该值时，代表已经离线，需要从地址列表中移除，单位秒" />
+	<AppSet Key="BusinessRoutePollTimespan" Value="5000" ToClient="false" Description="使用负载均衡路由时 多长时间轮询一次，单位毫秒" />
+	<AppSet Key="LoadBalanceHandleType" Value="DivideEqual" ToClient="false" Description="使用负载均衡路由提供方式，可选值：ConsistentHashing（一致哈希）、DivideEqual（请求平分）" />
+	<AppSet Key="EnableCodeValueShowSmartMode" Value="true" ToClient="false" Description="码值加载精简模式" />
+
+	<AppSet Key="MailWindowCloseInterval" Value="20" ToClient="true" Description="内部邮件提示框的停留时间(秒)" />
+	<AppSet Key="UploadFileExtend" Value="txt,dwg,doc,docx,xls,xlsx,ppt,pptx,pdf,svl,gif,png,jpg,jpeg,bmp,svg,dwf,rar,zip,7z,avi,mp4,rm,rmvb,mkv,exe,wmv,dll,xml,mpp,log,flv" ToClient="true" Description="上传文件后缀名扩展" />
+</root>

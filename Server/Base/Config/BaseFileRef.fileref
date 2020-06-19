@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JSFile FileName="~/Base/Js/jquery.js" IsLang="false" IsMobile="false" group="jquery" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/jquery-ui.js" IsLang="false" IsMobile="false" group="jquery" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/bootstrap.min.js" IsLang="false" IsMobile="false" group="jquery" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/jquery.cookie.js" IsLang="false" IsMobile="false" group="jquery" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/jquery-mousewheel.js" IsLang="false" IsMobile="false" group="base" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/json2.js" IsLang="false" IsMobile="false" group="jquery" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/BasePage.js" IsLang="false" IsMobile="false" group="base" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/H5BasePage.js" IsLang="false" IsMobile="false" group="base" type="H5" />
+  <JSFile FileName="~/Base/Js/JSDes.js" IsLang="false" IsMobile="false" group="base" />
+  <JSFile FileName="~/Base/Js/ZeroClipboard.min.js" IsLang="false" IsMobile="false" group="base" />
+  <JSFile FileName="~/Base/Js/raphael.js" IsLang="false" IsMobile="false" group="base" />
+  <JSFile FileName="~/Base/Js/lodash-4.17.5.js" IsLang="false" IsMobile="false" group="base" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/moment.js" IsLang="false" IsMobile="false" group="base" />
+  <JSFile FileName="~/Base/Ctrls/LayoutContainer/LayoutContainer.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/ToolTip/jquery.poshytip.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/ToolTip/ToopTip.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/TextBox/TextBox.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/Button/Button.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/RadioList/RadioList.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/Label/Label.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/CheckBox/CheckBox.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/DropDown/DropDown.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/DateTime/bootstrap-hoteamsoft-datetimepicker/js/bootstrap-datetimepicker.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/DateTime/bootstrap-hoteamsoft-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/DateTime/DateTime.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/Tree/jquery.ztree.all-3.2.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Tree/Tree.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Dialog/Dialog.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/PageContainer/PageContainer.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/CustomerContainer/CustomerContainer.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/TextValue/TextValue.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/EditGrid/htgrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/EditGrid/EditGrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/FilterGrid/jquery.hqGrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/FilterGrid/FilterGrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/ResourceLoadDiagram/ResourceLoadDiagram.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Accordion/Accordion.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/StandardAccordion/StandardAccordion.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Tabs/Tabs.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Menu/Menu.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/PageGrid/PageGrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/BreadcrumbNavigation/BreadcrumbNavigation.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/BOMTreeGrid/BOMTreeGrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/MenuToolbar/MenuToolbar.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/MenuToolbar/jquery.menubar/js/jquery.menubar.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/CheckboxPad/CheckboxPad.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/CirculationOpinion/CirculationOpinion.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/FinanceNavigation/FinanceNavigation.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/RightMenu/RightMenu.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/MultiSelectDropDown/bootstrap-select.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/MultiSelectDropDown/MultiSelectDropDown.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/Image/Image.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/HtmlEdit/kindeditor-all-min.js" IsLang="false" IsMobile="false" />
+  <JSFile FileName="~/Base/Ctrls/HtmlEdit/Kindeditor.language.js" IsLang="false" IsMobile="false" />
+  <JSFile FileName="~/Base/Ctrls/HtmlEdit/HtmlEdit.js" IsLang="false" IsMobile="false" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/Iframe/Iframe.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/AutoCompleteCombox/bootstrap-suggest.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/AutoCompleteCombox/AutoCompleteCombox.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Noty/noty/packaged/jquery.noty.packaged.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Noty/Noty.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Sideslip/Sideslip.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/BaseHandler.ashx?type=pagehandler[IISStartTime]" IsLang="false" IsMobile="false" />
+  <JSFile FileName="~/Base/Ctrls/EditTreeGrid/EditTreeGrid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/DropSearch/DropSearch.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/VerticalTabs/VerticalTabs.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Search/Search.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/SideTabs/SideTabs.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/EditButton/EditButton.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/ColorPicker/ColorPicker.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/ColorPicker/colpick.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Grid/Grid.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/HtGantt/gantt.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/HtGantt/HtGantt.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/PageBoard/jquery.board/jquery.board.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/PageBoard/PageBoard.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Calendar/fullcalendar/moment.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Calendar/fullcalendar/fullcalendar.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Calendar/fullcalendar/locale-all.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Calendar/fullcalendar/scheduler.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/Calendar/Calendar.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/GanttTimeline/GanttTimeline.js" IsLang="false" IsMobile="false" group="ctrl" />
+  <JSFile FileName="~/Base/Ctrls/FormBuilder/formbuilder/lib/dragula/dragula.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/FormBuilder/formbuilder/FormBuilder.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Ctrls/FormBuilder/FormBuilder.js" IsLang="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <JSFile FileName="~/Base/Js/PageDesign.js" IsLang="false" IsMobile="false" group="base" type="PC,H5" />
+
+  <CssFile FileName="~/Base/Ctrls/FilterGrid/jquery.hqGrid.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Tabs/Tabs.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/MenuToolbar/jquery.menubar/css/jquery.menubar.css" IsTheme="false" IsMobile="false" />
+  <CssFile FileName="~/Base/Ctrls/CirculationOpinion/CirculationOpinion.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/FinanceNavigation/font/iconfont.css" IsTheme="false" IsMobile="false" />
+  <CssFile FileName="~/Base/Ctrls/FinanceNavigation/FinanceNavigation.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Css/BasePage.css" IsTheme="false" IsMobile="false" />
+  <CssFile FileName="~/Base/Css/[THEME]/images/baseCtrl.css" IsTheme="true" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Css/bootstrap/css/bootstrap.min.css" IsTheme="false" IsMobile="false" type="PC,H5" />
+  <CssFile FileName="~/Base/Ctrls/DateTime/bootstrap-hoteamsoft-datetimepicker/css/bootstrap-datetimepicker.min.css" IsTheme="false" IsMobile="false" type="PC,H5" />
+  <CssFile FileName="~/Base/Ctrls/Tree/zTreeStyle.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Grid/Grid.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/EditGrid/EditGrid.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/EditTreeGrid/EditTreeGrid.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/EditGrid/htGrid.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/ColorPicker/colpick.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/ToolTip/tip-yellow/tip-yellow.css" IsTheme="false" IsMobile="false" />
+  <CssFile FileName="~/Base/Ctrls/CheckboxPad/CheckboxPad.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Ctrls.css" IsTheme="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <CssFile FileName="~/Base/Ctrls/Accordion/Accordion-Standard.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Accordion/Accordion-Slide.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/HtGantt/HtGantt.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/PageBoard/jquery.board/jquery.board.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Calendar/fullcalendar/fullcalendar.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Calendar/fullcalendar/scheduler.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/Calendar/Calendar.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/GanttTimeline/GanttTimeline.css" IsTheme="false" IsMobile="false" group="ctrl" />
+  <CssFile FileName="~/Base/Ctrls/FormBuilder/formbuilder/lib/dragula/dragula.css" IsTheme="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <CssFile FileName="~/Base/Ctrls/FormBuilder/formbuilder/FormBuilder.css" IsTheme="false" IsMobile="false" group="ctrl" type="PC,H5" />
+  <CssFile FileName="~/Base/Ctrls/FormBuilder/FormBuilder.css" IsTheme="false" IsMobile="false" type="PC,H5" />
+
+</root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageLinks Name="ModelLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="ModelListViewInfoTabItem" PageName="TreeManagement" IsSelected="true" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="ModelViewTree" />
+    </PageLink>
+  </PageLinks>
+  <!--<PageLinks Name="ModelViewLink" HideTitle="false" IsTemplate="false">
+    <PageLink Name="ModelViewTreeItem" PageName="TreeManagement" IsSelected="true" IsHidden="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="ModelViewTree" />
+    </PageLink>
+  </PageLinks>-->
+  <PageLinks Name="ModelViewInfoLink" HideTitle="true" IsTemplate="false">
+    <PageLink Name="ModelViewInfoItem" PageName="ModelListViewInfo" IsSelected="true" IsHidden="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" >
+      <Para Name="MidEditList" Value="ModelListViewInfoEditList" />
+      <Para Name="RightEditList" Value="SetModelInfoTypeEditList" />
+    </PageLink>
+  </PageLinks>
+  <PageLinks Name="ModelViewConditionLink" HideTitle="true" IsTemplate="false">
+    <PageLink Name="ModelViewConditionItem" PageName="ModelListViewInfo" IsSelected="true" IsHidden="false" CheckContentPermission="false" ActiveRefresh="true" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false" >
+      <Para Name="MidEditList" Value="ModelListViewConditionEditList" />
+      <Para Name="RightEditList" Value="SetModelInfoConditionEditList" />
+    </PageLink>
+  </PageLinks>
+</root>

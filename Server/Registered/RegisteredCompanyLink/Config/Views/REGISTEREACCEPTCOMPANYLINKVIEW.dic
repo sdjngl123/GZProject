@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="REGISTEREACCEPTCOMPANYLINKVIEWView" IsWeb="true">
+    <Label Name="REGISTEREACCEPTCOMPANYLINKVIEWHeader">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="REGISTEREACCEPTCOMPANYLINKVIEWCaption">
+      <LocalizedLabel LanguageRef="zhs" />
+      <LocalizedLabel LanguageRef="en" />
+    </Label>
+    <Label Name="EIDHeader">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="EIDCaption">
+      <LocalizedLabel LanguageRef="zhs">标识符</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Identifier</LocalizedLabel>
+    </Label>
+    <Label Name="APPLIEDCOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">申请公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AppliedCompany</LocalizedLabel>
+    </Label>
+    <Label Name="APPLIEDCOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">申请公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AppliedCompany</LocalizedLabel>
+    </Label>
+    <Label Name="ACCEPTCOMPANYIDHeader">
+      <LocalizedLabel LanguageRef="zhs">接受公司ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AcceptCompanyID</LocalizedLabel>
+    </Label>
+    <Label Name="ACCEPTCOMPANYIDCaption">
+      <LocalizedLabel LanguageRef="zhs">接受公司ID</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AcceptCompanyID</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATEUIDCaption">
+      <LocalizedLabel LanguageRef="zhs">创建人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Created by</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMEHeader">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="CREATETIMECaption">
+      <LocalizedLabel LanguageRef="zhs">创建时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Create time</LocalizedLabel>
+    </Label>
+    <Label Name="ACCEPTSTATEHeader">
+      <LocalizedLabel LanguageRef="zhs">接受状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AcceptState</LocalizedLabel>
+    </Label>
+    <Label Name="ACCEPTSTATECaption">
+      <LocalizedLabel LanguageRef="zhs">接受状态</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">AcceptState</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONHeader">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="DESCRIPTIONCaption">
+      <LocalizedLabel LanguageRef="zhs">备注</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Description</LocalizedLabel>
+    </Label>
+    <Label Name="APPLIEDCOMPANYNAMEHeader">
+      <LocalizedLabel LanguageRef="zhs">申请公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">APPLIEDCOMPANYNAME</LocalizedLabel>
+    </Label>
+    <Label Name="APPLIEDCOMPANYNAMECaption">
+      <LocalizedLabel LanguageRef="zhs">申请公司名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">APPLIEDCOMPANYNAME</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="REGISTEREACCEPTCOMPANYLINKVIEWCondition" IsWeb="true" />
+</DictionarySerializer>

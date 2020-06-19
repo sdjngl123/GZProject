@@ -1,0 +1,5 @@
+<?xmlversion = "1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TimerInfo Call="InforCenter.Common.OrganizationDataService.CancelAgentSendMessage" IntervalSecond="60"  ElapsedType="0"/>
+ 
+</root>

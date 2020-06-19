@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="Validation" IsWeb="true">
+    <Label Name="String80">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度80</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 80</LocalizedLabel>
+    </Label>
+    <Label Name="String180">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度180</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 180</LocalizedLabel>
+    </Label>
+    <Label Name="String20">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度20</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 20</LocalizedLabel>
+    </Label>
+    <Label Name="String50">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度50</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 50</LocalizedLabel>
+    </Label>
+    <Label Name="String100">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100</LocalizedLabel>
+    </Label>
+    <Label Name="String200">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度200</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 200</LocalizedLabel>
+    </Label>
+    <Label Name="String500">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度500</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 500</LocalizedLabel>
+    </Label>
+    <Label Name="String1000">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度1000</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 1000</LocalizedLabel>
+    </Label>
+    <Label Name="String2000">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度2000</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 2000</LocalizedLabel>
+    </Label>
+    <Label Name="Integer">
+      <LocalizedLabel LanguageRef="zhs">请输入正整数（1-999999999）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter positive integer (1-999999999)</LocalizedLabel>
+    </Label>
+    <Label Name="LongInteger">
+      <LocalizedLabel LanguageRef="zhs">请输入长整数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter long integer</LocalizedLabel>
+    </Label>
+    <Label Name="Float">
+      <LocalizedLabel LanguageRef="zhs">请输入浮点数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter floating point number</LocalizedLabel>
+    </Label>
+    <Label Name="Double">
+      <LocalizedLabel LanguageRef="zhs">请输入双精度浮点数</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter double precision floating point number</LocalizedLabel>
+    </Label>
+    <Label Name="Numeric">
+      <LocalizedLabel LanguageRef="zhs">Numeric</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Numeric</LocalizedLabel>
+    </Label>
+    <Label Name="Date">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的日期</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct date</LocalizedLabel>
+    </Label>
+    <Label Name="DateTime">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的日期时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct date time</LocalizedLabel>
+    </Label>
+    <Label Name="Time">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的时间</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct time</LocalizedLabel>
+    </Label>
+    <Label Name="Phone">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的电话</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct phone</LocalizedLabel>
+    </Label>
+    <Label Name="EMail">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的电子邮箱</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct e-mail</LocalizedLabel>
+    </Label>
+    <Label Name="ZipCode">
+      <LocalizedLabel LanguageRef="zhs">请输入正确的邮政编码（6位数）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter the correct postal code (6 digits)</LocalizedLabel>
+    </Label>
+    <Label Name="NotEmpty">
+      <LocalizedLabel LanguageRef="zhs">不允许为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not allowed to be null</LocalizedLabel>
+    </Label>
+    <Label Name="Code">
+      <LocalizedLabel LanguageRef="zhs">请输入数字、字母和下划线（最长100位）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter number, letter, and underscore (up to 100 bits)</LocalizedLabel>
+    </Label>
+    <Label Name="Char100">
+      <LocalizedLabel LanguageRef="zhs">请输入字母（最长100位）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter letter (up to 100 bits)</LocalizedLabel>
+    </Label>
+    <Label Name="Float10_5">
+      <LocalizedLabel LanguageRef="zhs">请输入数字（最长10位整数，4位小数）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter a number (up to 10 digits, 4 decimal places)</LocalizedLabel>
+    </Label>
+    <Label Name="NewPassWord">
+      <LocalizedLabel LanguageRef="zhs">密码(6-20位,不支持空格)</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Password (6-20 bits, spaces are not supported)</LocalizedLabel>
+    </Label>
+    <Label Name="NonNegatFloat10_5">
+      <LocalizedLabel LanguageRef="zhs">请输入非负数字（最长10位整数，4位小数）</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Please enter a non-negative number (up to 10 digits, 4 decimal places)</LocalizedLabel>
+    </Label>
+    <Label Name="ISREQUIRE">
+      <LocalizedLabel LanguageRef="zhs">不能为空</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ISREQUIRE</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PageLinks Name="FSMANAGEROOTLINKLinks" HideTitle="true" IsTemplate="false">
+    <PageLink Name="FSMANAGEROOTLINKLinksList" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="FSMANAGEROOTLINKList" />
+    </PageLink>
+    <FilePath>H:\源码\Studio2.0\Source(3)\Source\Server\FSManagement\Config\UIConfig\FSMANAGEROOTLINKLinks.link</FilePath>
+  </PageLinks>
+
+  <PageLinks Name="FSNODETYPELinks" HideTitle="true" IsTemplate="false">
+    <PageLink Name="FileServiceLogLink" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="FileServiceLogList" />
+    </PageLink>
+  </PageLinks>
+
+  <PageLinks Name="FileServerNodeLinks" HideTitle="true" IsTemplate="false">
+    <PageLink Name="FileServerNodeLink" PageName="ListManagement" IsSelected="false" IsHidden="false" CheckContentPermission="false" ActiveRefresh="false" IsShowLine="true" IsDelayLoadPage="true" IsTemplate="false">
+      <Para Name="ItemName" Value="FileServerNodeList" />
+    </PageLink>
+  </PageLinks>
+  
+
+</root>

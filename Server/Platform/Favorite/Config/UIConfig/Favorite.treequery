@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeQuery Name="FavoriteFolderQuery" TreeViewName="FavoriteTreeView" ShowTreeQuery="true" DropSearch="false" SelectControl="Tree" TreeChildDataService="Hoteam.InforCenter.FavoriteService.GetFavoriteChildNodeForMove" TreeRootDataService="Hoteam.InforCenter.FavoriteService.GetFavoriteRootNodeForMove" ListAllDataService="Hoteam.InforCenter.FavoriteService.GetFavoriteSelectList" DropSearchChangeService="Hoteam.InforCenter.FavoriteService.GetFavoriteSelectList" LoadAndSelectType="SingleLevel_SingleSelect" AllowReturnEmptyValue="true" ReturnValueType="FAVORITEFOLDER;FAVORITE" />
+  <TreeQuery Name="FavoriteQuery" TreeViewName="FavoriteTreeView" ShowTreeQuery="true" DropSearch="false" SelectControl="Tree" ListAllDataService="Hoteam.InforCenter.FavoriteService.GetFavoriteSelectList" DropSearchChangeService="Hoteam.InforCenter.FavoriteService.GetFavoriteSelectList" LoadAndSelectType="SingleLevel_SingleSelect" AllowReturnEmptyValue="true" ReturnValueType="FAVORITEFOLDER;FAVORITE" />
+</root>

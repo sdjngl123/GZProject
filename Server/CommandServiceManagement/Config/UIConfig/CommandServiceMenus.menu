@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <MenuItem Name="CommandServiceStatusMenu" Type="Button" Issplit="false" IsTemplate="false">
+    <WebAction Name="CommandServiceStatusDropdown" MultiMenu="false" ModuleName="Task" LabelName="" CtrlType="DropDownList" RefreshType="RefreshList" RefreshedSelect="false" LoadMenuCtrlData="InforCenter_Platform_MenuSelect_OnLoad" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" IsMainConfig="false">
+      <JSMethod Name="InforCenter_Platform_MenuSelect_OnChange" IsLoopExec="false">
+        <Para Name="DropDownListValue" Value="[DropDownListValue]" />
+        <Para Name="ListID" Value="[ListID]" />
+      </JSMethod>
+      <DropDownData CustomService="">
+        <Item Name="CommandServiceStatusMenu.All" Value=" 1=1 " IsSelect="true" IsCutom="false" />
+        <Item Name="CommandServiceStatusMenu.Undistributed" Value=" CONVERSIONSTATE='Undistributed' " IsSelect="false" IsCutom="false" />
+        <Item Name="CommandServiceStatusMenu.Queuing" Value=" CONVERSIONSTATE='Queuing' " IsSelect="false" IsCutom="false" />
+        <Item Name="CommandServiceStatusMenu.Converting" Value=" CONVERSIONSTATE='Converting' " IsSelect="false" IsCutom="false" />
+        <Item Name="CommandServiceStatusMenu.ConvertSuccess" Value=" CONVERSIONSTATE='ConvertSuccess' " IsSelect="false" IsCutom="false" />
+        <Item Name="CommandServiceStatusMenu.ConvertFailure" Value=" CONVERSIONSTATE='ConvertFailure' " IsSelect="false" IsCutom="false" />
+      </DropDownData>
+    </WebAction>
+    <WebAction Name="Refresh" MultiMenu="false" ModuleName="Task" LabelName="Common.Refresh" Image="p_resume" ParentWebAtionName="" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="001" IsMainConfig="false" />
+    <WebAction Name="ReConversion" MultiMenu="false" ModuleName="Task" LabelName="CommandServiceStatusMenu.ReConversion" Image="p_reset" MenuSize="" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="001" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" ActionType="AUTO" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="Hoteam.InforCenter.CommandServiceManagementService.ReConversion" SelectID="" IsWCFService="true">
+        <Para Name="CommandID" Value="[List_EID]" />
+        <Para Name="CommandState" Value="[List_CONVERSIONSTATE]" />
+      </BusinessMethod>
+
+    </WebAction>
+    <WebAction Name="SearchLog" MultiMenu="false" ModuleName="Task" LabelName="CommandServiceStatusMenu.SearchLog" Image="p_inquire" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="002" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" ActionType="AUTO" />
+      <WebMethod SelectID="[List_EID]" PageName="CommandServiceLogView" IsPopup="true" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+        <Para Name="ObjectID" Value="[List_EID]" />
+        <Para Name="CommandID" Value="[List_EID]" />
+      </WebMethod>
+
+    </WebAction>
+    <WebAction Name="DeleteCommand" MultiMenu="false" ModuleName="Task" LabelName="CommandServiceStatusMenu.DeleteCommand" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="002" IsMainConfig="false">
+      <ActionChecker SelectID="[List_EID]" SelectMode="MULTI" ActionType="AUTO" />
+      <WebMessage PromptLabel="WebActionConfirm" PromptType="CONFIRM" />
+      <BusinessMethod Name="Hoteam.InforCenter.CommandServiceManagementService.DeleteCommandInfo" SelectID="" IsWCFService="true">
+        <Para Name="CommandID" Value="[List_EID]" />
+        <Para Name="CommandState" Value="[List_CONVERSIONSTATE]" />
+      </BusinessMethod>
+    </WebAction>
+  </MenuItem>
+
+</root>

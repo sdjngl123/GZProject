@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <!-- 规则权限-->
+  <WebListView Name="COMPANYRULELISTVIEW" View="COMPANYRULEVIEW" QueryID="" EntityFilter="" Filter="PEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+  </WebListView>
+
+
+  <WebListView Name="COMPANYRULECONDITIONLISTVIEW" View="COMPANYRULECONDITIONVIEW" ShowPaging="false" QueryID="" EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="" >
+    <!--<EditWebListColumnType ViewColumnName="SERIALNUMBER" IsEdit="true" CheckJS=""/>-->
+    <EditWebListColumnType ViewColumnName="OPERATOR" IsEdit="true" CheckJS=""/>
+    <EditWebListColumnType ViewColumnName="CONDITIONVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+  <WebListView Name="COMPANYRULEPERMISSIONLISTVIEW" View="COMPANYRULEPERMISSIONVIEW" ShowPaging="false" QueryID="" EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="PERMISSIONACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+
+  <WebListView Name="COMPANYRULEOBJECTLISTVIEW" View="COMPANYRULEOBJECTVIEW" QueryID="" ShowPaging="false"  EntityFilter="" Filter="COMPANYRULEID='[Tree_Current_value1]'" AllowCheckBox="true"
+ AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+ IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="OBJECTTYPE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+
+
+  <WebListView Name="CREATECOMPANYRULEPERMISSIONLISTVIEW" View="COMPANYRULEPERMISSIONVIEW" ShowPaging="false"  QueryID="" EntityFilter="" Filter="ACTIONRULEID='[Tree_Current_value2]'" AllowCheckBox="true"
+AllowIconType="true" IsSelectExporting="true"  IsAllExporting="true"
+IsSelectPrinting="true" IsAllPrinting="true" DetailsIcon="">
+    <EditWebListColumnType ViewColumnName="PERMISSIONACTORVALUE" IsEdit="true" CheckJS=""/>
+  </WebListView>
+
+</root>

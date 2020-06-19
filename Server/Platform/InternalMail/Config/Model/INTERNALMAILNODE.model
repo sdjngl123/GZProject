@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="INTERNALMAILNODE" Extend="ENTITY" LogicClass="EntityObject" IconPath="Platform\Image\Model\p_unread_mail.png" Abstract="true" TableName="INTERNALMAILNODE" SplitValidateUnique="false" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" IsMainConfig="false" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" FromWeb="false" StopUse="false">
+    <InfoType Name="TEXTDIC" Type="DefaultObjectValue" DataType="STRING100" Column="TEXTDIC" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="NODETYPE" Type="DefaultObjectValue" DataType="STRING100" Column="NODETYPE" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="NODEFLAG" Type="DefaultObjectValue" DataType="STRING100" Column="NODEFLAG" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Show" />
+    <InfoType Name="ICON" Extend="ICON" Type="DefaultObjectValue" DataType="STRING200" Column="ICON" Sequence="200" Width="50" PrimaryKeyOrder="0" Required="False" ValidateUnique="false" InheritRegulate="Inherit" />
+  </EntityType>
+</root>

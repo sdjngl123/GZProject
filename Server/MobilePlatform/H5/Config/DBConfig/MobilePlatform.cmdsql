@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  
+  <Command Name="GETIISMESSAGESTATISTICSLIST">
+    <DatabaseType Name="SQLSERVER">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select
+        a.MTITLE TITLE,
+        a.MCONTENT CONTENT,
+        a.CREATETIME,
+        a.MTO,
+        t.num NUM
+        from
+        (select
+        m.MTITLE,
+        m.MCONTENT,
+        m.CREATETIME,
+        m.MTO,
+        row_number() over (partition by m.MTO order by M.CREATETIME desc) as group_index from INSTANTMESSAGE m) a
+        left join (select COUNT(EID) as num,MTO from INSTANTMESSAGE WHERE  MSTATE = 'Unread'  Group by MTO ) t on a.MTO = t.MTO
+        where
+        a.group_index = 1
+        
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        select
+        a.MTITLE TITLE,
+        a.MCONTENT CONTENT,
+        a.CREATETIME,
+        b.ENAME NAME,
+        t.num NUM
+        from
+        (select
+
+        m.MTITLE,
+        m.MCONTENT,
+        m.CREATETIME,
+        m.MTO,
+        row_number() over (partition by m.MTO order by M.CREATETIME desc) as group_index from INSTANTMESSAGE m) a
+        left join (select COUNT(EID) as num,MTO from INSTANTMESSAGE WHERE  MSTATE = 'Unread'  Group by MTO ) t on a.MTO = t.MTO
+        left join USERINFO b on a.MTO = b.EID
+        where
+        a.group_index = 1
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  
+
+</root>

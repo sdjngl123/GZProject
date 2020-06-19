@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="MultiGroupValueCondition" IsWeb="true">
+    <Label Name="ObjectOwnGroupName">
+      <LocalizedLabel LanguageRef="zhs">用户组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group</LocalizedLabel>
+    </Label>
+    <Label Name="MULTIGROUPRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度2000&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is 2000&lt;/br&gt;</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Context Name="FLOWBINDINFO-EDIT" IsWeb="true">
+    <Label Name="FLOWTEMPLATEUIDHeader">
+      <LocalizedLabel LanguageRef="zhs">流程模板</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">FLOWTEMPLATE</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWTEMPLATEUIDRegex">
+      <LocalizedLabel LanguageRef="zhs">输入最大长度100&lt;/br&gt;</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The maximum input length is100&lt;/br&gt;</LocalizedLabel>
+    </Label>
+    <Label Name="FLOWBINDINFOHeader">
+      <LocalizedLabel LanguageRef="zhs">编辑流程发起绑定对象信息</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">EditFLOWBINDINFO</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

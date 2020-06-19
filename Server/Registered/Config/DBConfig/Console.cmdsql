@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="GetAllMasterCompanyInfo">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT * FROM COMPANY WHERE DATABASEINFO IS NOT NULL OR DATABASEINFO = ''
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

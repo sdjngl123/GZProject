@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="ORGANIZATIONModel" IsWeb="true">
+    <Label Name="ORGANIZATIONHeader">
+      <LocalizedLabel LanguageRef="zhs">组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="ORGANIZATIONCaption">
+      <LocalizedLabel LanguageRef="zhs">组织结构</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Organization structure</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICHeader">
+      <LocalizedLabel LanguageRef="zhs">文本多语言名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text multilingualname</LocalizedLabel>
+    </Label>
+    <Label Name="TEXTDICCaption">
+      <LocalizedLabel LanguageRef="zhs">文本多语言名称</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Text multilingualname</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

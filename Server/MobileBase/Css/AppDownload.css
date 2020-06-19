@@ -1,0 +1,147 @@
+﻿html
+{
+    height: 100%;
+    background: url(../Image/appdownload/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.container
+{
+    font-family: 华文楷体;
+    max-width: 90%;
+    line-height: 1.5em;
+    margin: auto;
+    width:20em;
+}
+
+.describe
+{
+    width: 20em;
+}
+
+
+.describe > span
+{
+    vertical-align: middle;
+}
+
+.icon-other
+{
+    background: url(../Image/appdownload/other.png) no-repeat center center;
+    background-size: 100%;
+    height: 1.6em;
+    width: 1.6em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-browse
+{
+    background: url(../Image/appdownload/browse.png) no-repeat center center;
+    background-size: 100%;
+    color: #ffffff;
+    padding: .5em 0.5em .5em 2em;
+    font-size: .8em;
+}
+
+.btns
+{
+    width:20em;
+    margin:auto;
+}
+
+.btns > a
+{
+    display: block;
+    color: #ffffff;
+    height: 3em;
+    line-height: 3em;
+    text-decoration:none;
+}
+
+.icon-ios
+{
+    background: url(../Image/appdownload/download-ios.jpg) no-repeat left center;
+    background-size: 100%;
+    width: 30%;
+    padding-left: 15%;
+    float: left;
+}
+
+.icon-android
+{
+    background: url(../Image/appdownload/download-anroid.jpg) no-repeat left center;
+    background-size: 100%;
+    width: 35%;
+    padding-left: 10%;
+    float: right;
+}
+
+@media screen and (max-width: 320px)
+{
+    html
+    {
+        font-size: .9em;
+    }
+}
+
+
+@media screen and (min-width: 500px)
+{
+    html
+    {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    html
+    {
+        font-size: 1.1em;
+        
+    }
+    
+   /* .describe
+    {
+        width:100%;
+    }
+    
+    .describe>div
+    {
+        display:inline-block;
+    }
+*/
+}
+
+@media screen and (min-width: 768px)
+{
+    html
+    {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    html
+    {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1600px)
+{
+    html
+    {
+        font-size: 3.5em;
+    }
+}
+
+
+@media screen and (min-width: 2000px)
+{
+    html
+    {
+    }
+}

@@ -1,0 +1,5 @@
+E:\广汽试验\Source\Server\GACTT\GACProject\Bin\Hoteam.InforCenter.GACProject.Parameter.dll
+E:\广汽试验\Source\Server\GACTT\GACProject\Bin\Hoteam.InforCenter.GACProject.Parameter.pdb
+E:\广汽试验\Source\GACTT\GACProject\Hoteam.InforCenter.GACProject.Parameter\obj\Debug\Hoteam.InforCenter.GACProject.Parameter.csproj.CoreCompileInputs.cache
+E:\广汽试验\Source\GACTT\GACProject\Hoteam.InforCenter.GACProject.Parameter\obj\Debug\Hoteam.InforCenter.GACProject.Parameter.dll
+E:\广汽试验\Source\GACTT\GACProject\Hoteam.InforCenter.GACProject.Parameter\obj\Debug\Hoteam.InforCenter.GACProject.Parameter.pdb

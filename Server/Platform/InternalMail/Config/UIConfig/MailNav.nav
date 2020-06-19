@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NavigationItem Name="CommmonModules" IsAddCustom="true" IsHidden="false" Order="001">
+    <Image>n_work_navigation</Image>
+    <NavigationItem Name="InternalMail" IsAddCustom="true" IsHidden="false" Order="200">
+      <PageName>TreeManagement</PageName>
+      <Image>p_email_management</Image>
+      <Para Name="ItemName" Value="MailManagement" />
+    </NavigationItem>
+  </NavigationItem>
+</root>

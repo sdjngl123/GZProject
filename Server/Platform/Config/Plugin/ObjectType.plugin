@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 对象类型-->
+  <PluginItem Name="EntityObject" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.EntityObject" />
+  <PluginItem Name="LinkObject" Type="ObjectType" Assembly="Hoteam.InforCenter.Common.ObjectFactory" Class="Hoteam.InforCenter.Common.ObjectFactory.Factory.LinkObject" />
+  <PluginItem Name="Person" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.Person" />
+  <PluginItem Name="User" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.User" />
+  <PluginItem Name="Role" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.Role" />
+  <PluginItem Name="Group" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.Group" />
+  <PluginItem Name="Company" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.Company" />
+  <PluginItem Name="Organize" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.Organize" />
+  <PluginItem Name="GroupRole" Type="ObjectType" Assembly="Hoteam.InforCenter.Organization.DataLayer" Class="Hoteam.InforCenter.Organization.DataLayer.GroupRole" />
+  <PluginItem Name="Enumeration" Type="ObjectType" Assembly="Hoteam.InforCenter.Enumeration.Business" Class="Hoteam.InforCenter.Enumeration.Business.Enumeration" />
+  <PluginItem Name="EnumerationItem" Type="ObjectType" Assembly="Hoteam.InforCenter.Enumeration.Business" Class="Hoteam.InforCenter.Enumeration.Business.EnumerationItem" />
+  <PluginItem Name="EnumerationCategory" Type="ObjectType" Assembly="Hoteam.InforCenter.Enumeration.Business" Class="Hoteam.InforCenter.Enumeration.Business.EnumerationCategory" />
+  <PluginItem Name="ActionRuleRoot" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ActionRuleRoot" />
+  <PluginItem Name="ActionRule" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ActionRule" />
+  <PluginItem Name="ActionRuleCondition" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ActionRuleCondition" />
+  <PluginItem Name="ActionRulePermission" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ActionRulePermission" />
+  <PluginItem Name="ActionRuleMessage" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ActionRuleMessage" />
+  <PluginItem Name="ObjectPermission" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ObjectPermission" />
+  <PluginItem Name="ObjectMessage" Type="ObjectType" Assembly="Hoteam.InforCenter.Rule.Model" Class="Hoteam.InforCenter.Rule.Model.ObjectMessage" />
+  <PluginItem Name="DataSetType" Type="ObjectType" Assembly="Hoteam.InforCenter.DataSetType.Business" Class="Hoteam.InforCenter.DataSetType.Business.DataSetType" />
+  <PluginItem Name="LifeCycle" Type="ObjectType" Assembly="Hoteam.InforCenter.LifeCycle.WebDesigner" Class="Hoteam.InforCenter.LifeCycle.WebDesigner.Object.LifeCycleObject" />
+
+</root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityType Name="WORKFLOWATTACHINFO" Extend="ENTITY" LogicClass="WorkflowAttach" IconPath="Platform/Image/Model/p_proe_block_diagrams.png" Abstract="false" TableName="WORKFLOWATTACHINFO" SplitValidateUnique="false" IsShowWeb="false" IsMainConfig="false" GeneratePageType="View" IsGenerateViceTable="false" PreLoadedIntoBuffer="false" IsViceTable="false" IsBusinessModel="true" PolicyName="NULL" StagePolicyName="NULL" VersionFormat="Letter" MinorVersionFormat="Number" VersionInterval="." IsAllowStartWorkfolw="false" ModelGroups="AdvanceQuery" FromWeb="false" StopUse="false" PersistenceType="NOSQL">
+    <Index Name="FLOWATTACH_FLOWID_INDEX" TableIndex="FLOWATTACH_FLOWID_INDEX" Unique="False">
+      <IndexInfo Name="WORKFLOWID" Order="ASC" />
+    </Index>
+    <Index Name="FLOWATTACH_OBJECTEID_INDEX" TableIndex="FLOWATTACH_OBJECTEID_INDEX" Unique="False">
+      <IndexInfo Name="OBJECTEID" Order="ASC" />
+    </Index>
+    <InfoType Name="WORKFLOWID" Type="DefaultObjectValue" DataType="STRING100" Column="WORKFLOWID" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="ATTACHTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="ATTACHTYPE" Width="50" PrimaryKeyOrder="0" DefaultValue="Attach" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJECTEID" Type="DefaultObjectValue" DataType="STRING100" Column="OBJECTEID" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJECTTYPE" Type="DefaultObjectValue" DataType="STRING100" Column="OBJECTTYPE" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="OBJECTINITSTATE" Type="DefaultObjectValue" DataType="STRING100" Column="OBJECTINITSTATE" Width="50" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="INITSTAGESTATEID" Type="DefaultObjectValue" DataType="STRING100" Column="INITSTAGESTATEID" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="WHETHERORNOTAUDIT" Type="DefaultObjectValue" DataType="BOOL" Column="WHETHERORNOTAUDIT" PrimaryKeyOrder="0" DefaultValue="1" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" IsSecurity="false" />
+    <InfoType Name="ATTACHORDER" Type="DefaultObjectValue" DataType="INT" Column="ATTACHORDER" PrimaryKeyOrder="0" Required="False" WebRequired="false" ValidateUnique="false" InheritRegulate="Show" OverrideLevel="Must" IsSecurity="false" />
+    <InfoType Extend="ENAME" Type="DefaultObjectValue" Edit="Create Edit" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="ECODE" Type="DefaultObjectValue" Edit="Create Null" Show="Create Edit View" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="False" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Show" ExtendProperty1="" IsSecurity="false" />
+    <InfoType Extend="CREATETIME" Type="DateTimeValue" Edit="" Show="View" Sequence="140" Width="50" PrimaryKeyOrder="0" DefaultValue="" Required="True" WebRequired="false" ValidateUnique="false" Validation="" InheritRegulate="Innate" ExtendProperty1="" IsSecurity="false" />
+  </EntityType>
+</root>

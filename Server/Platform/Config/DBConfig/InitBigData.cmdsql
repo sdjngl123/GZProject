@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" >
+  <Command Name="InsertBigData">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL">
+        INSERT INTO [TABLENAME]([SRCCOLUMNS]) SELECT [COLUMNS] FROM [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="InsertTopBigData">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL">
+        INSERT INTO [TABLENAME]([SRCCOLUMNS]) SELECT TOP [MaxCount] [COLUMNS] FROM [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+    <DatabaseType Name="ORACLE">
+      <CommandItem CmdType="SQL">
+        INSERT INTO [TABLENAME]([SRCCOLUMNS]) SELECT [COLUMNS] FROM [TABLENAME] WHERE ROWNUM [GT] 0 AND ROWNUM [LE] [MaxCount]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+  <Command Name="GetBigDataTableCount">
+    <DatabaseType Name="">
+      <CommandItem CmdType="SQL" IsQuery="true">
+        SELECT COUNT(1) FROM [TABLENAME]
+      </CommandItem>
+    </DatabaseType>
+  </Command>
+</root>

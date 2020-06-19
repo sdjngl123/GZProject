@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--新建帐套初始数据-->
+<root>  
+  <AccountBookInitData Name ="Organization" TableName="USERINFO;ROLEINFO;GROUPINFO;COMPANY;PERSON;ORGANIZE" Description="组织结构" IsNecessary="true"/>
+  <AccountBookInitData Name ="Action" TableName="ACTIONRULE;ACTIONRULECONDITION" Description="规则权限" IsNecessary="true"/>
+  <AccountBookInitData Name ="Workflow" TableName="WORKFLOWCLASSIFY;WORKFLOWTEMPLATE" Description="流程模板"/>
+  <AccountBookInitData Name ="Company" TableName="COMPANYRULE;COMPANYRULECONDITION;COMPANYRULEOBJECT;COMPANYRULEPERMISSION" Description="集团权限"/>
+  <AccountBookInitData Name ="ModulePermission" TableName="MODULEPERMISSION" Description="功能授权"/>
+</root >

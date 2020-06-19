@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OriginalityHomePageNavigation" IsWeb="true">
+    <Label Name="AllMenu">
+      <LocalizedLabel LanguageRef="zhs">所有菜单</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">All menus</LocalizedLabel>
+    </Label>
+    <Label Name="AddQuickNavText">
+      <LocalizedLabel LanguageRef="zhs">添加收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Add favorite</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteQuickNavText">
+      <LocalizedLabel LanguageRef="zhs">移除收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove favourite</LocalizedLabel>
+    </Label>
+    <Label Name="QuickNavName">
+      <LocalizedLabel LanguageRef="zhs">我的收藏</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">My favorite</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

@@ -1,0 +1,10 @@
+﻿{
+var o = pageEvent.o.GetControl('[INFONAME]_Value');
+if(o.id!=''){
+var objtype='[OBJTYPE]';
+if(para.DataObjectType)
+objtype=para.DataObjectType;
+InforCenter_Platform_Object_SetInfoTypeList(o,objtype,false);
+o.SetSelectedByValue(data.[INFONAME]);
+}
+}

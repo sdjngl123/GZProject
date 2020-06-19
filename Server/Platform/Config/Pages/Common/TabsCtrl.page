@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TabsCtrl" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnQuery" Script="InforCenter_Platform_TabsCtrl_OnQuery(pageEvent);"/>
+    <PageHandler HandlerName ="OnNodeChange" Script="InforCenter_Platform_TabsCtrl_OnNodeChange(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Tabs_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Tabs"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Tabs" ParentID="Tabs_Container" TypeName="Tabs">
+      <PageHandlers>
+        <PageHandler HandlerName ="OnBeforeToggle" Script="InforCenter_Platform_TabsCtrl_OnTabChange(ctrlEvent);"/>
+      </PageHandlers>
+      <Settings Key="showClosed" Value="false" />
+      <Settings Key="hasBorder" Value="true" />    
+    </PageControl>
+  </PageControls>
+</root>

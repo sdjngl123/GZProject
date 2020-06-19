@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <TreeManagement Name="OrganisizeIgnoreCompanyRulePermissionFalse" MenuName="" PageLinksName=""
+              TreeViewName="OrganisizeTreeViewIgnoreCompanyRulePermissionFalse" ShowTreeQuery="true"
+             TreeChildDataService="" TreeQueryDataService="InforCenter.Organization.OrganizationDataService.GetTreeQueryData"
+                TreeAllDataService="" TreeRootDataService="">
+    <ObjectType Name="GROUPS" MenuName="TreeOrganizeMenu" PageLinksName="OrganizeGroupsPageLinkIgnoreCompanyRulePermissionFalse" />
+    <ObjectType Name="COMPANY" MenuName="TreeCompanyMenu" PageLinksName="CompanyTreePageLinkIgnoreCompanyRulePermissionFalse" />
+    <ObjectType Name="GROUPINFO" MenuName="TreeGroupMenu" PageLinksName="GroupsTreePageLinkIgnoreCompanyRulePermissionFalse" />
+    <ObjectType Name="ROLEINFO" MenuName="TreeRoleMenu" PageLinksName="RolesTreePageLinkIgnoreCompanyRulePermissionFalse" />
+    <ObjectType Name="USERINFO" MenuName="TreeUserMenu" PageLinksName="UserTreePageLinkIgnoreCompanyRulePermissionFalse" />
+  </TreeManagement>
+</root>

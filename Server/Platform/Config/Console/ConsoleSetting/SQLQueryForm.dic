@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="SQLQueryForm" IsWeb="false">
+    <Label Name="Title">
+      <LocalizedLabel LanguageRef="zhs">SQL查询分析器</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">SQLQueryAnalyzer</LocalizedLabel>
+    </Label>
+    <Label Name="Exec">
+      <LocalizedLabel LanguageRef="zhs">执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute</LocalizedLabel>
+    </Label>
+    <Label Name="EndExec">
+      <LocalizedLabel LanguageRef="zhs">结束执行</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">End Execution</LocalizedLabel>
+    </Label>
+    <Label Name="ExecFail">
+      <LocalizedLabel LanguageRef="zhs">执行失败：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Exce failed：</LocalizedLabel>
+    </Label>
+    <Label Name="ExecSucceed">
+      <LocalizedLabel LanguageRef="zhs">执行成功：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">ExecSucceed：</LocalizedLabel>
+    </Label>
+    <Label Name="StartExec">
+      <LocalizedLabel LanguageRef="zhs"> 开始执行 </LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Start Execution</LocalizedLabel>
+    </Label>
+    <Label Name="ExecResult">
+      <LocalizedLabel LanguageRef="zhs">执行结果</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Execute Results</LocalizedLabel>
+    </Label>
+    <Label Name="ElapsedTime">
+      <LocalizedLabel LanguageRef="zhs">耗时：</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Time Consuming:</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

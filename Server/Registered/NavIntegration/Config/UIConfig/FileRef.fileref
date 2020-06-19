@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root >
+  <JSFile FileName ="~/Registered/NavIntegration/Js/SetLocalAddressPage.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/NavIntegration/Js/NavIntegration.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/NavIntegration/Js/IntegrationIframePage.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/NavIntegration/Js/IntegrationPage.js"  group="Registered"/>
+  <JSFile FileName ="~/Registered/NavIntegration/Js/SyncOrganization.js"  group="Registered"/>
+  
+</root>

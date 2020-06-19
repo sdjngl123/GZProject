@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="TESTPLANTASKATTACH-CREATE">
+  <Settings Key="height" Value="122"/>
+  <Settings Key="width" Value="216"/>
+  <Settings Key="title" Value="TESTPLANTASKATTACH-CREATE.TESTPLANTASKATTACHHeader"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="var para = pageEvent.o.GetPara();var data = InforCenter_Platform_Object_GetObjectInitData('TESTPLANTASKATTACH',para);
+{
+var o =pageEvent.o.GetControl('FILEINFO_Value');
+if(o.id!=''){
+o.SetValue(data.FILEINFO);
+o.SetText(data.FILEINFO_DisplayValue);
+}
+}{
+	var c = pageEvent.o.GetControl('ISMUST_Value');
+	if(c.id!=''){
+		c.SetChecked(data.ISMUST);
+	}
+	var d = pageEvent.o.GetControl('ISMUST_Label');
+	if(d.id!=''){
+		d.SetText('');
+	}
+}
+{
+var o = pageEvent.o.GetControl('TYPE_Value');
+if(o.id!=''){
+o.SetSelectedByValue(data.TYPE);
+}
+} var functionName = 'InforCenter_TESTPLANTASKATTACH_CreatePage_OnCreate'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') return window[functionName](pageEvent,data);"/>
+    <PageHandler HandlerName ="OnGetDataFromPage" Script="InforCenter_Platform_Object_Data = null;var bCheck = true;var data = {ObjectType:'TESTPLANTASKATTACH'};{
+var c = pageEvent.o.GetControl('FILEINFO_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.FILEINFO = c.GetValue();
+}
+}{
+var c = pageEvent.o.GetControl('ISMUST_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+if(c.IsChecked()==true){
+	data.ISMUST = true;
+}else{
+	data.ISMUST = false;
+}
+}
+}{
+var c = pageEvent.o.GetControl('TYPE_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+data.TYPE = c.GetSelectedValue();
+}};if(bCheck)InforCenter_Platform_Object_Data = data;"/>
+    <PageHandler HandlerName ="OnSaveCheck" Script="InforCenter_Platform_Object_SaveCheck = true;var functionName = 'InforCenter_TESTPLANTASKATTACH_CreatePage_OnOK'; if (window[functionName] &amp;&amp;typeof window[functionName] == 'function') InforCenter_Platform_Object_SaveCheck=window[functionName](pageEvent);"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>  
+    <PageControl ControlID="Info_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <!--<Settings Key="padding" Value="10px 0"/>-->
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="34"/>
+  <Settings Key="childid" Value="R-3"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FILEINFO"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FILEINFO" ParentID="R-1" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="FILEINFO_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="FILEINFO_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="FILEINFO_Label" ParentID="FILEINFO" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTPLANTASKATTACH-CREATE.FILEINFOHeader" />
+</PageControl><PageControl ControlID="FILEINFO_Value" ParentID="FILEINFO" TypeName="TextValue" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnClick" Script="InforCenter_GAC_PLUpload_Click(ctrlEvent,'TESTPLANTASKATTACH','FILEINFO');"/>
+    <PageHandler HandlerName ="OnFocus" Script="InforCenter_GAC_PLUpload_Click(ctrlEvent,'TESTPLANTASKATTACH','FILEINFO');"/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^([\s\S]{0,500})?$" />
+  <Settings Key="regextipId" Value="TESTPLANTASKATTACH-CREATE.FILEINFORegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ISMUST"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ISMUST" ParentID="R-2" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="ISMUST_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="ISMUST_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="ISMUST_Label" ParentID="ISMUST" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTPLANTASKATTACH-CREATE.ISMUSTHeader" />
+</PageControl><PageControl ControlID="ISMUST_Value" ParentID="ISMUST" TypeName="CheckBox" >
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+  <Settings Key="textId" Value="TESTPLANTASKATTACH-CREATE.ISMUSTHeader" />
+</PageControl><PageControl ControlID="R-3" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TYPE"/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TYPE" ParentID="R-3" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item2" Value="">
+  <Settings Key="size" Value=""/>
+  <Settings Key="childid" Value="TYPE_Label"/>
+</Settings><Settings Key="item3" Value="">
+  <Settings Key="size" Value="100%"/>
+  <Settings Key="childid" Value="TYPE_Value"/>
+</Settings><Settings Key="item1" Value="">
+  <Settings Key="size" Value="20"/>
+  <Settings Key="childid" Value=""/>
+</Settings>
+</PageControl>
+<PageControl ControlID="TYPE_Label" ParentID="TYPE" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="TESTPLANTASKATTACH-CREATE.TYPEHeader" />
+</PageControl><PageControl ControlID="TYPE_Value" ParentID="TYPE" TypeName="DropDown" >
+  <PageHandlers>
+    <PageHandler HandlerName ="OnChange" Script="ctrlEvent.objectType='TESTPLANTASKATTACH';ctrlEvent.infoName='TYPE';InforCenter_Platform_GenerateScript_LovListValue(ctrlEvent);"/>
+    <PageHandler HandlerName ="OnLoad" Script="
+                       var o = ctrlEvent.o;
+        InforCenter_Platform_Object_SetLovList(o,'TYPE','TESTPLANTASKATTACH',true);
+                 "/>
+  </PageHandlers>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="TESTPLANTASKATTACH-CREATE.TYPERegex" />
+</PageControl>  
+  </PageControls>
+</root>

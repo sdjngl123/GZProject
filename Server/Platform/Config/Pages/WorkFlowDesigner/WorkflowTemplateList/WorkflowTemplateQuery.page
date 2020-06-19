@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="WorkflowTemplateQuery" IsCache="true">
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="{
+var o = pageEvent.o.GetControl('STATE_Value');
+InforCenter_Platform_Object_SetEnumListbyName(o,'WorkFlowTemplateState');
+}"/>
+    <PageHandler HandlerName ="OnSetInfoDataSource" Script="var data =pageEvent.data;  "></PageHandler>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="Query_Container"/>
+      </Settings>
+      <Settings Key="item2">
+        <Settings Key="size" Value="5"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Info_Container"/>
+      </Settings>
+ 
+    </PageControl>
+    <PageControl ControlID="Info_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" Value="">
+  <Settings Key="size" Value="40"/>
+  <Settings Key="childid" Value="R-1"/>
+</Settings><Settings Key="item2" Value="">
+  <Settings Key="size" Value="40"/>
+  <Settings Key="childid" Value="R-2"/>
+</Settings>
+    </PageControl>
+    <PageControl ControlID="R-1" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="NAMELIKE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="NAMELIKE_Value"/>
+  </Settings>
+</PageControl>
+<PageControl ControlID="NAMELIKE_Label" ParentID="R-1" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="WorkflowTemplateQuery.NAMELIKEHeader" />
+</PageControl>
+
+<PageControl ControlID="NAMELIKE_Value" ParentID="R-1" TypeName="TextBox" >
+  <Settings Key="type" Value="text"/>
+  <Settings Key="regex" Value="^([\s\S]{0,100})?$" />
+  <Settings Key="regextipId" Value="WorkflowTemplateQuery.NAMELIKERegex" />
+</PageControl><PageControl ControlID="R-2" ParentID="Info_Container" TypeName="LayoutContainer">
+  <Settings Key="type" Value="horizontal"/>
+  <Settings Key="item1" Value="">
+    <Settings Key="size" Value="80"/>
+    <Settings Key="childid" Value="STATE_Label"/>
+  </Settings>
+  <Settings Key="item2" Value="">
+    <Settings Key="size" Value="100%"/>
+    <Settings Key="childid" Value="STATE_Value"/>
+  </Settings>
+</PageControl>
+<PageControl ControlID="STATE_Label" ParentID="R-2" TypeName="Label" >
+  <Settings Key="position" Value="right"/>
+  <Settings Key="textId" Value="WorkflowTemplateQuery.STATEHeader" />
+</PageControl>
+
+<PageControl ControlID="STATE_Value" ParentID="R-2" TypeName="DropDown" >
+  <Settings Key="regex" Value="" />
+  <Settings Key="regextipId" Value="" />
+</PageControl>
+    <PageControl ControlID="Query_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="50"/>
+        <Settings Key="childid" Value="SubQuery_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="SubQuery_Container" ParentID="Query_Container" TypeName="LayoutContainer">
+    <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+    <Settings Key="item2">
+      <Settings Key="size" Value="50%"/>
+      <Settings Key="childid" Value="btnQuery"/>
+    </Settings>
+    <Settings Key="item3">
+      <Settings Key="size" Value="5"/>
+    </Settings>
+    <Settings Key="item4">
+      <Settings Key="size" Value="50%"/>
+      <Settings Key="childid" Value="btnReset"/>
+    </Settings>
+      <Settings Key="item5">
+        <Settings Key="size" Value="10"/>
+      </Settings>
+  </PageControl>
+    <PageControl ControlID="btnQuery" ParentID="Query_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="var bCheck=true;var FilterString ='';var EntityFilterString =''; {
+var c = ctrlEvent.o.OtherControl('NAMELIKE_Value');
+var value = c.GetText();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+	FilterString += 'AND '+'TemplateName LIKE \'%'+value+'\' ';
+	if(c.Check() == false) bCheck = false;	
+}
+}{
+var c = ctrlEvent.o.OtherControl('STATE_Value');
+var value = c.GetSelectedValue();
+if(HoteamUI.Common.IsNullOrEmpty(value)==false)
+{
+FilterString += 'AND '+'IsRun = \''+value+'\' ';
+	if(c.Check() == false) bCheck = false;	
+}
+};if(bCheck){FilterString = FilterString.substring(4);EntityFilterString = EntityFilterString.substring(4); HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:FilterString,EntityFilterString:EntityFilterString,ButtonType:'Query'});}"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Query" />
+    </PageControl>
+    <PageControl ControlID="btnReset" ParentID="Query_Container" TypeName="Button" >
+      <PageHandlers>
+        <PageHandler HandlerName ="OnClick" Script="ctrlEvent.o.OtherControl('NAMELIKE_Value').SetText('');ctrlEvent.o.OtherControl('STATE_Value').SetSelectedByValue('');;HoteamUI.Page.FireParentPageEvent(ctrlEvent.o.ContainerID(),'OnQuery',{FilterString:'',EntityFilterString:'',ButtonType:'Reset'});"/>
+      </PageHandlers>
+      <Settings Key="textId" Value="Common.Reset" />
+    </PageControl>
+  </PageControls>
+</root>

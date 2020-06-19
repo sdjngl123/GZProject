@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DictionarySerializer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Context Name="OrganizationCommon" IsWeb="true">
+    <Label Name="DataBaseNotExist">
+      <LocalizedLabel LanguageRef="zhs">数据库不存在相应数据，可能已经删除！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The database does not exist and may have been deleted!</LocalizedLabel>
+    </Label>
+    <Label Name="AlreadyMoveToTop">
+      <LocalizedLabel LanguageRef="zhs">已到达顶部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Arrive at top</LocalizedLabel>
+    </Label>
+    <Label Name="AlreadyMoveToBottom">
+      <LocalizedLabel LanguageRef="zhs">已到达底部</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Arrive at bottom</LocalizedLabel>
+    </Label>
+    <Label Name="OrganizationNotChange">
+      <LocalizedLabel LanguageRef="zhs">组织结构未改变，不需要执行移入操作</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It is not necessary to perform the move-in operation as the organization structure has not changed.</LocalizedLabel>
+    </Label>
+    <Label Name="DimissionUsreNotLogin">
+      <LocalizedLabel LanguageRef="zhs">当前用户是非活动状态，无法登录系统，请联系管理员。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user is inactive and cannot log in to the system. Please contact the administrator.</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyIncumbentSetDimission">
+      <LocalizedLabel LanguageRef="zhs">当前用户已经是非活动状态。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user is already inactive.</LocalizedLabel>
+    </Label>
+    <Label Name="SetAgencyNodtSetDimission">
+      <LocalizedLabel LanguageRef="zhs">当前用户设置[UserName]出差代理，不允许设置非活动用户。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user [UserName] sets the business travel agent and is not allowed to set inactive user.</LocalizedLabel>
+    </Label>
+    <Label Name="SetAgencyByOtherNodtSetDimission">
+      <LocalizedLabel LanguageRef="zhs">当前用户被[UserName]设置出差代理，不允许设置非活动用户。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user [UserName] is set for business travel agent and is not allowed to set inactive user.</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentUserNodtSetDimission">
+      <LocalizedLabel LanguageRef="zhs">当前用户不允许设置禁用活动。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user is not allowed to set disable activity.</LocalizedLabel>
+    </Label>
+    <Label Name="OnlyDimissionSetIncumbent">
+      <LocalizedLabel LanguageRef="zhs">当前用户已经是活动状态。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The current user is already active.</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveRoleConfirm">
+      <LocalizedLabel LanguageRef="zhs">您确定移除选中角色？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to remove the selected role?</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveUserConfirm">
+      <LocalizedLabel LanguageRef="zhs">您确定移除选中用户，确定将移除关联关系？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to remove the selected user and decide to remove the associated relationship?</LocalizedLabel>
+    </Label>
+    <Label Name="AddUserPrompt">
+      <LocalizedLabel LanguageRef="zhs">您已经执行了[Message]操作！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You have already performed the [Message] operation!</LocalizedLabel>
+    </Label>
+    <Label Name="PersonDeleteCheck">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 被用户引用，请先删除用户!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ObjectName] has been referenced by the user. Please delete the user first!</LocalizedLabel>
+    </Label>
+    <Label Name="StartUserTransferOwnership">
+      <LocalizedLabel LanguageRef="zhs">开始转交用户所有权，稍后会以消息方式进行反馈转交结果。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The transfer of user ownership begins, which will later be fed back in a message mode.</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentGroupExistSubGroup">
+      <LocalizedLabel LanguageRef="zhs">[GroupName] 已经存在。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[GroupName] already exists.</LocalizedLabel>
+    </Label>
+    <Label Name="GroupExistSubGroup">
+      <LocalizedLabel LanguageRef="zhs">已经在 [GroupName] 下存在。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">It already exists under [GroupName].</LocalizedLabel>
+    </Label>
+    <Label Name="CurrentUserExistCompany">
+      <LocalizedLabel LanguageRef="zhs">[UserName] 已经在其他公司，不允许添加。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[UserName] is already in another company and is not allowed to be added.</LocalizedLabel>
+    </Label>
+    <Label Name="ExistLoopOrganization">
+      <LocalizedLabel LanguageRef="zhs">[GroupName] 存在环组织。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is ring organization in [GroupName].</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTransferOwnershipSucceed">
+      <LocalizedLabel LanguageRef="zhs">对象转交所有权成功。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object transfer ownership succeed.</LocalizedLabel>
+    </Label>
+    <Label Name="ObjectTransferOwnershipFail">
+      <LocalizedLabel LanguageRef="zhs">对象转交所有权失败。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Object transfer ownership failed.</LocalizedLabel>
+    </Label>
+    <Label Name="StartUserTransferOwnership">
+      <LocalizedLabel LanguageRef="zhs">开始转交用户所有权，稍后会以消息方式进行反馈转交结果。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The transfer of user ownership begins, which will later be fed back in a message mode.</LocalizedLabel>
+    </Label>
+    <Label Name="OnlySelectUserTransferOwnership">
+      <LocalizedLabel LanguageRef="zhs">只允许选择用户进行转交权限。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Only users can be selected to transfer.</LocalizedLabel>
+    </Label>
+    <Label Name="NoTransferOwnershipMessage">
+      <LocalizedLabel LanguageRef="zhs">您没有 [NAME] 的所有权，无法转让给其他用户！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You don't have the ownership of [NAME] and cannot transfer it to other users!</LocalizedLabel>
+    </Label>
+    <Label Name="TransferOwnershipFromUserMessage">
+      <LocalizedLabel LanguageRef="zhs">[Name] 的所有权成功转交给 [ToUserID]。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The ownership of [Name] has been succeeded transferred to [ToUserID].</LocalizedLabel>
+    </Label>
+    <Label Name="TransferOwnershipToUserMessage">
+      <LocalizedLabel LanguageRef="zhs">[FromUserID] 将 [Name] 的所有权转交给您。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[FromUserID] transfer the ownership of [Name] to you.</LocalizedLabel>
+    </Label>
+    <Label Name="RecallOwnershipTiltle">
+      <LocalizedLabel LanguageRef="zhs">收回所有权提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Call back ownership reminders</LocalizedLabel>
+    </Label>
+    <Label Name="RecallOwnership">
+      <LocalizedLabel LanguageRef="zhs">收回所有权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Retrieve ownership</LocalizedLabel>
+    </Label>
+    <Label Name="RecallOwnershipFromUserMessage">
+      <LocalizedLabel LanguageRef="zhs">[Name] 的所有权成功从 [FromUser] 收回。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The ownership of [Name] was succeeded called back from the [FromUser].</LocalizedLabel>
+    </Label>
+    <Label Name="RecallOwnershipToUserMessage">
+      <LocalizedLabel LanguageRef="zhs">[Name] 的所有权被 [ToUser] 收回！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The ownership of [Name] is called back by [ToUser]!</LocalizedLabel>
+    </Label>
+    <Label Name="NotNeedRecall">
+      <LocalizedLabel LanguageRef="zhs">[Name] 不需要收回所有权！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[Name] do not need to call back the ownership!</LocalizedLabel>
+    </Label>
+    <Label Name="NotRightRecall">
+      <LocalizedLabel LanguageRef="zhs">您不是 [Name] 的创建人，无法收回！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">You're not the creator of [Name] and cannot call back it!</LocalizedLabel>
+    </Label>
+    <Label Name="TransferOwnershipTiltle">
+      <LocalizedLabel LanguageRef="zhs">转交所有权提醒</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer ownership reminder</LocalizedLabel>
+    </Label>
+    <Label Name="TransferOwnerSame">
+      <LocalizedLabel LanguageRef="zhs">转交用户和被转交用户不能是同一人。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The transfer user and the transmitted user cannot be the same person.</LocalizedLabel>
+    </Label>
+    <Label Name="TransferOwnerSame">
+      <LocalizedLabel LanguageRef="zhs">转交用户和被转交用户不能是同一人。</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">The transfer user and the transmitted user cannot be the same person.</LocalizedLabel>
+    </Label>
+    <Label Name="RoleExistReference">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 被其他组引用，请先移除关系再删除!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ObjectName] is referenced by another group. Please remove the relationship before deleting it!</LocalizedLabel>
+    </Label>
+    <Label Name="UserExistReference">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 被其他角色引用，请先移除关系再删除!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ObjectName] is referenced by another role. Please remove the relationship before deleting it!</LocalizedLabel>
+    </Label>
+    <Label Name="GroupExistReference">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 在组织结构中存在，请先移除关系再删除!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ObjectName] exists in the organization structure. Please remove the relationship before deleting it!</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyExistReference">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 在组织结构中存在，请先移除关系再删除!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ObjectName] exists in the organization structure. Please remove the relationship before deleting it!</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyExistGroup">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 存在组，请先移除组!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Group exists in [ObjectName]. Please remove the group first!</LocalizedLabel>
+    </Label>
+    <Label Name="RoleExistUser">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 存在用户，请先移用户!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">User exists in [ObjectName]. Please remove the user first!</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveFail">
+      <LocalizedLabel LanguageRef="zhs">移除失败!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Removal failed!</LocalizedLabel>
+    </Label>
+    <Label Name="GroupExistGroup">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 存在下级组或角色，请先移除下级组或角色!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">There is a subordinate group or role in [ObjectName]. Please remove the subordinate group or role first!</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveConfirm">
+      <LocalizedLabel LanguageRef="zhs">您确认要执行移除操作吗？</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Are you sure to perform the removal operation?</LocalizedLabel>
+    </Label>
+    <Label Name="IsUsingNotDelete">
+      <LocalizedLabel LanguageRef="zhs">[ObjectName] 已经使用，产生了业务数据，不能执行删除操作!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">[ObjectName] is already in use and business data has been generated. Delete operation cannot be performed!</LocalizedLabel>
+    </Label>
+    <Label Name="SetDimissionPrompt">
+      <LocalizedLabel LanguageRef="zhs">设置非活动用户成功，该用户在组织结构中关系已经清除!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Setting the inactive user succeed. The user relationship in the organization structure has been cleared!</LocalizedLabel>
+    </Label>
+    <Label Name="SetIncumbentPrompt">
+      <LocalizedLabel LanguageRef="zhs">设置活动用户成功，请在组织结构中，维护该用户的组和角色!</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Setting the inactive user succeed. Please maintain the user's group and role in the organization structure!</LocalizedLabel>
+    </Label>
+    <Label Name="RoleNameExist">
+      <LocalizedLabel LanguageRef="zhs">名称存在重复，请重新输入！</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Duplicate name exists, please enter again!</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="ListCommonQuery" IsWeb="true">
+    <Label Name="ROLEVIEW-QUERY">
+      <LocalizedLabel LanguageRef="zhs">角色查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Role query</LocalizedLabel>
+    </Label>
+    <Label Name="COMPANYVIEWIgnoreCompanyID-QUERY">
+      <LocalizedLabel LanguageRef="zhs">公司查询</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Company query</LocalizedLabel>
+    </Label>
+    <Label Name="UserListSearch">
+      <LocalizedLabel LanguageRef="zhs">选择用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select user</LocalizedLabel>
+    </Label>
+    <Label Name="RoleListSearch">
+      <LocalizedLabel LanguageRef="zhs">选择角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select role</LocalizedLabel>
+    </Label>
+    <Label Name="SingleRoleListSearch">
+      <LocalizedLabel LanguageRef="zhs">选择角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select role</LocalizedLabel>
+    </Label>
+    <Label Name="SingleUserTreeListQuery">
+      <LocalizedLabel LanguageRef="zhs">选择用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select user</LocalizedLabel>
+    </Label>
+    <Label Name="MultiUserTreeListQuery">
+      <LocalizedLabel LanguageRef="zhs">选择用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select user</LocalizedLabel>
+    </Label>
+    <Label Name="SingleGroupTreeListQuery">
+      <LocalizedLabel LanguageRef="zhs">选择组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group</LocalizedLabel>
+    </Label>
+    <Label Name="SingleGroupListQuery">
+      <LocalizedLabel LanguageRef="zhs">选择组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group</LocalizedLabel>
+    </Label>
+    <Label Name="MultiGroupTreeListQuery">
+      <LocalizedLabel LanguageRef="zhs">选择组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group</LocalizedLabel>
+    </Label>
+    <Label Name="MultiGroupListQuery">
+      <LocalizedLabel LanguageRef="zhs">选择组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group</LocalizedLabel>
+    </Label>
+    <Label Name="MultiRoleListSearch">
+      <LocalizedLabel LanguageRef="zhs">选择角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select role</LocalizedLabel>
+    </Label>
+    <Label Name="CompanyListSearch">
+      <LocalizedLabel LanguageRef="zhs">选择公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select company</LocalizedLabel>
+    </Label>
+    <Label Name="SinglePersonSearch">
+      <LocalizedLabel LanguageRef="zhs">选择人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select person</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="TreeCommonQuery" IsWeb="true">
+    <Label Name="CompanyGroupToGroup">
+      <LocalizedLabel LanguageRef="zhs">选择公司、组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select company, group</LocalizedLabel>
+    </Label>
+    <Label Name="GroupToGroup">
+      <LocalizedLabel LanguageRef="zhs">选择组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group</LocalizedLabel>
+    </Label>
+    <Label Name="GroupToRoleToUser">
+      <LocalizedLabel LanguageRef="zhs">选择用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select user</LocalizedLabel>
+    </Label>
+    <Label Name="GroupToRole">
+      <LocalizedLabel LanguageRef="zhs">选择组角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group role</LocalizedLabel>
+    </Label>
+    <Label Name="RolesToRole">
+      <LocalizedLabel LanguageRef="zhs">选择角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select role</LocalizedLabel>
+    </Label>
+    <Label Name="GroupToRoleToUserAndRole">
+      <LocalizedLabel LanguageRef="zhs">选择组、角色、人员</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select group, role, person</LocalizedLabel>
+    </Label>
+    <Label Name="Company">
+      <LocalizedLabel LanguageRef="zhs">选择公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select company</LocalizedLabel>
+    </Label>
+    <Label Name="GroupToGroupForMoveToOther">
+      <LocalizedLabel LanguageRef="zhs">选择公司、组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select company, group</LocalizedLabel>
+    </Label>
+    <Label Name="UserTransferOwnership">
+      <LocalizedLabel LanguageRef="zhs">选择用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select user</LocalizedLabel>
+    </Label>
+    <Label Name="ChangeTaskActor">
+      <LocalizedLabel LanguageRef="zhs">选择执行人</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Select executive</LocalizedLabel>
+    </Label>
+  </Context>
+  <Context Name="Organization" IsWeb="true">
+    <Label Name="MoveUp">
+      <LocalizedLabel LanguageRef="zhs">上移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move up</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveLink">
+      <LocalizedLabel LanguageRef="zhs">移除关系</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove relationship</LocalizedLabel>
+    </Label>
+    <Label Name="MoveDown">
+      <LocalizedLabel LanguageRef="zhs">下移</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move down</LocalizedLabel>
+    </Label>
+    <Label Name="MoveToOther">
+      <LocalizedLabel LanguageRef="zhs">移入</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Move in</LocalizedLabel>
+    </Label>
+    <Label Name="CreateCompany">
+      <LocalizedLabel LanguageRef="zhs">新建公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New company</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteCompany">
+      <LocalizedLabel LanguageRef="zhs">删除公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete company</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveCompany">
+      <LocalizedLabel LanguageRef="zhs">移除公司</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove company</LocalizedLabel>
+    </Label>
+    <Label Name="CreateGroup">
+      <LocalizedLabel LanguageRef="zhs">新建组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New group</LocalizedLabel>
+    </Label>
+    <Label Name="DeleteGroup">
+      <LocalizedLabel LanguageRef="zhs">删除组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Delete group</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveGroup">
+      <LocalizedLabel LanguageRef="zhs">移除组</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove group</LocalizedLabel>
+    </Label>
+    <Label Name="CreateRole">
+      <LocalizedLabel LanguageRef="zhs">新建角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New role</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveRole">
+      <LocalizedLabel LanguageRef="zhs">移除角色</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove role</LocalizedLabel>
+    </Label>
+    <Label Name="CreateUser">
+      <LocalizedLabel LanguageRef="zhs">新建用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">New user</LocalizedLabel>
+    </Label>
+    <Label Name="RemoveUser">
+      <LocalizedLabel LanguageRef="zhs">移除用户</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Remove user</LocalizedLabel>
+    </Label>
+    <Label Name="SetDimission">
+      <LocalizedLabel LanguageRef="zhs">禁用活动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Disable activity</LocalizedLabel>
+    </Label>
+    <Label Name="SetIncumbent">
+      <LocalizedLabel LanguageRef="zhs">启用活动</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Enable activity</LocalizedLabel>
+    </Label>
+    <Label Name="TransferOwnership">
+      <LocalizedLabel LanguageRef="zhs">转交所有权</LocalizedLabel>
+      <LocalizedLabel LanguageRef="en">Transfer ownership</LocalizedLabel>
+    </Label>
+  </Context>
+</DictionarySerializer>

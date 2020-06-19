@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ModelListViewInfo">
+  <!--<Settings Key="title" Value="ModelListViewInfo.ModelInfoTypePage"/>-->
+  <Settings Key="height" Value="400"/>
+  <Settings Key="width" Value="655"/>
+  <PageHandlers>
+    <PageHandler HandlerName ="OnCreate" Script="InforCenter_Platform_ModelListViewInfo_PageInit(pageEvent);"/>
+  </PageHandlers>
+  <PageControls>
+    <PageControl ControlID="Top_Container" ParentID="" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1" >
+        <Settings Key="size" Value="100%"/>
+        <Settings Key="childid" Value="Content_Container"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="Content_Container" ParentID="Top_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="horizontal"/>
+      <Settings Key="item2">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="LeftContainer"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="50%"/>
+        <Settings Key="childid" Value="RightContainer"/>
+      </Settings>
+    </PageControl>
+    
+    <PageControl ControlID="LeftContainer" ParentID="Content_Container" TypeName="PageContainer">
+    </PageControl>
+    
+    <PageControl ControlID="RightContainer" ParentID="Content_Container" TypeName="LayoutContainer">
+      <Settings Key="type" Value="vertical"/>
+      <Settings Key="item1">
+        <Settings Key="size" Value="30"/>
+        <Settings Key="childid" Value="PropertyTitle_Label"/>
+      </Settings>
+      <!--<Settings Key="item3">
+        <Settings Key="size" Value="10"/>
+        <Settings Key="visible" Value="false"/>
+      </Settings>-->
+      <Settings Key="item2">
+        <Settings Key="size" Value="90%"/>
+        <Settings Key="childid" Value="PropertyPage"/>
+      </Settings>
+      <Settings Key="item3">
+        <Settings Key="size" Value="1"/>
+        <Settings Key="type" Value="drag"/>
+        <Settings Key="resizable" Value="false"/>
+        <Settings Key="closable" Value="false"/>
+      </Settings>
+      <Settings Key="item4">
+        <Settings Key="size" Value="10%"/>
+        <Settings Key="childid" Value="PropertyExplain"/>
+      </Settings>
+    </PageControl>
+    <PageControl ControlID="PropertyTitle_Label" ParentID="RightContainer" TypeName="Label" >
+      <Settings Key="position" Value="left"/>
+      <Settings Key="textId" Value="ModelListViewInfo.PropertyTitle" />
+    </PageControl>
+    <PageControl ControlID="PropertyPage" ParentID="RightContainer" TypeName="PageContainer">
+    </PageControl>
+    <!--属性解释-->
+    <PageControl ControlID="PropertyExplain" ParentID="RightContainer" TypeName="Label">
+    </PageControl>
+  </PageControls>
+</root>
+

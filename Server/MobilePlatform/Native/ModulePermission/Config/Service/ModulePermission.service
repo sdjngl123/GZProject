@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0">
+    <ServiceItem ServiceName="MobilePermissionService" 
+                 ServiceAssembly="Hoteam.InforCenter.MobilePermission.Service.dll"
+                 ServiceClass="Hoteam.InforCenter.MobilePermission.Service.MobilePermissionService" 
+                 ContractAssembly="Hoteam.InforCenter.MobilePermission.Service.dll" 
+                 ContractClass="Hoteam.InforCenter.MobilePermission.Service.IMobilePermissionService"/>  
+</root>

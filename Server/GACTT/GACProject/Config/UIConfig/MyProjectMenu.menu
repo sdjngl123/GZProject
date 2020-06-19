@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MenuItem Name="MyProjectListMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreatePROJECT" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="PMSPROJECT" />
+			</WebMethod>
+			<WebMessageAndLogger SelectID="[ReturnValue_EID]" TemplateLabel="MessageAndLoggerDescription.Common" WriteLogger="true" SendMessage="true" perateType="Create"  />
+		</WebAction>
+	</MenuItem>
+	<MenuItem Name="ParticProjectListMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+	</MenuItem>
+
+	<MenuItem Name="PMSPROJECTMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreatePMSPROJECT" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="PMSPROJECT" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="ProjectStage" MultiMenu="false" ModuleName="GACProject" LabelName="MyProjectMenu.ProjectStage" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="PROJECTSTAGEList" />
+			</WebMethod>
+		</WebAction>
+		<WebAction Name="ProjectMember" MultiMenu="false" ModuleName="GACProject" LabelName="MyProjectMenu.ProjectMember" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="ListManagement" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ItemName" Value="PROJECTMEMBERList" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<MenuItem Name="PROJECTMEMBERMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreatePROJECTMEMBER" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="PROJECTMEMBER" />
+				<Para Name="PROJECTID" Value="[SelectID]" ParentPara="initData" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+	<MenuItem Name="PROJECTSTAGEMenu" Issplit="false" IsTemplate="false">
+		<WebAction Name="Refresh" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Refresh" Image="p_resume" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="1" IsMainConfig="false" />
+		<WebAction Name="CreatePROJECTSTAGE" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Create" Image="p_add" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="2" IsMainConfig="false">
+			<ActionChecker SelectMode="NULL" Action="CREATE" ActionType="AUTO" />
+			<WebMethod PageName="CreateObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="ObjectType" Value="PROJECTSTAGE" />
+				<Para Name="PROJECTID" Value="[SelectID]" ParentPara="initData" />
+			</WebMethod>
+			<WebMessageAndLogger TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="true" SendMessage="true" OperateType="Create" />
+		</WebAction>
+		<WebAction Name="Edit" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Edit" Image="p_edit" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="3" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="SINGLE" Action="EDIT" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="EditObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true" />
+			<WebMessageAndLogger SelectID="[Tree_Current_value1]" TemplateLabel="MessageAndLoggerDescription.UpdateStruct" WriteLogger="false" SendMessage="false">
+				<Para Name="CEID" Value="[List_EID]" />
+			</WebMessageAndLogger>
+		</WebAction>
+		<WebAction Name="Delete" MultiMenu="false" ModuleName="GACProject" LabelName="Common.Delete" Image="p_delete" RefreshType="RefreshList" RefreshedSelect="false" DropDownItemIsHideCustom="false" IsHidden="false" IsTemplate="false" Order="4" IsMainConfig="false">
+			<ActionChecker SelectID="[List_EID]" SelectMode="MULTI" Action="DELETE" ActionType="AUTO" />
+			<WebMethod SelectID="[List_EID]" PageName="DeleteObject" IsPopup="true" IsLoopExec="false" MinWindow="false" MaxWindow="false" IsSideSlip="false" IsModal="true">
+				<Para Name="PageMode" Value="DeleteObject" />
+			</WebMethod>
+		</WebAction>
+	</MenuItem>
+
+
+</root>

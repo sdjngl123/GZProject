@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebListView Name="ENUMERATIONITEMLIST" View="ENUMERATIONITEMVIEW" EntityFilter="" Filter="PEID='[Tree_Current_value1]'" AllowCheckBox="true"  ShowPaging="false"  AllowIconType="false" AllowObjectType="false" IsSelectExporting="false" IsAllExporting="false" IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsIcon="" QueryID="" IsShowSearch="false" IsLayoutSave="false" IsColumnSetting="false" AutoLoadData="true" IsTemplate="false" IsMainConfig="false">
+    <EditWebListColumnType ViewColumnName="ENAME" IsEdit="true" CheckJS="InforCenter_Platform_EnumerationItem_Check"/>
+    <EditWebListColumnType ViewColumnName="ECODE" IsEdit="true" CheckJS="InforCenter_Platform_EnumerationItem_Check"/>
+    <EditWebListColumnType ViewColumnName="DESCRIPTION" IsEdit="true" />
+    <EditWebListColumnType ViewColumnName="SEQUENCE" IsEdit="false" />
+    <!--<EditWebListColumnType ViewColumnName="LOVTYPE" IsEdit="false" NonEditShowValue="true"/>-->
+    <EditWebListColumnType ViewColumnName="CREATEUID" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="CREATETIME" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="UPDATEUID" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="UPDATETIME" IsEdit="false" NonEditShowValue="true"/>
+  </WebListView>
+  <WebListView Name="ENUMERATIONLIST" View="ENUMERATIONVIEW" EntityFilter="" Filter="PEID='[Tree_Current_value1]'"  ShowPaging="false"  AllowCheckBox="true" AllowIconType="false" AllowObjectType="false" IsSelectExporting="true" IsAllExporting="true" IsSelectPrinting="true" IsShowTitle="false" IsAllPrinting="true" QueryID="" IsShowSearch="false" IsLayoutSave="false" IsColumnSetting="false" AutoLoadData="true" IsTemplate="false" IsMainConfig="false">
+    <EditWebListColumnType ViewColumnName="ENAME" IsEdit="true"  CheckJS="InforCenter_Platform_Enumeration_Check" />
+    <EditWebListColumnType ViewColumnName="DESCRIPTION" IsEdit="true" />
+    <EditWebListColumnType ViewColumnName="SHOWMODE" IsEdit="true" />
+    <EditWebListColumnType ViewColumnName="LOVTYPE" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="CREATEUID" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="CREATETIME" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="UPDATEUID" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="UPDATETIME" IsEdit="false" NonEditShowValue="true"/>
+    <!--操作条件-->
+    <!--<EditOperatorColumnType OperatorColName="Delete" OperatorColDic="Common.Create" OperatorColType="dropdown" OperatorColJSDataSource="InforCenter_Platform_Enumeration_Chenge" />-->
+  </WebListView>
+  <WebListView Name="ENUMERATIONCATEGORYLIST" View="ENUMERATIONCATEGORYVIEW" EntityFilter="" Filter="" AllowCheckBox="true" ShowPaging="false"  AllowIconType="false" AllowObjectType="false" IsSelectExporting="false" IsAllExporting="false" IsSelectPrinting="false" IsShowTitle="false" IsAllPrinting="false" DetailsIcon="" QueryID="" IsShowSearch="false" IsLayoutSave="false" IsColumnSetting="false" AutoLoadData="true" IsTemplate="false" IsMainConfig="false">
+    <EditWebListColumnType ViewColumnName="ENAME" IsEdit="true" CheckJS="InforCenter_Platform_EnumerationCateGory_Check"/>
+    <EditWebListColumnType ViewColumnName="DESCRIPTION" IsEdit="true" />
+    <EditWebListColumnType ViewColumnName="CREATEUID" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="CREATETIME" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="UPDATEUID" IsEdit="false" NonEditShowValue="true"/>
+    <EditWebListColumnType ViewColumnName="UPDATETIME" IsEdit="false" NonEditShowValue="true"/>
+  </WebListView>
+</root>

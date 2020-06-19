@@ -1,0 +1,20 @@
+﻿{
+var c = pageEvent.o.GetControl('[INFONAME]_Value');
+if(c.id!=''){
+if(c.Check() == false) bCheck = false;
+
+var p = {};
+p.InfoName = '[INFONAME]';
+p.ObjType = '[OBJTYPE]';
+
+if(c.GetSelectedValue()&amp;&amp;c.IsInOption()==false)
+{
+	var infoName = pageEvent.o.GetControl('[INFONAME]_Label').GetText();
+	var msg = HoteamUI.Language.Lang('Platform.DorpdownIsnotInOption').replace('[ColText]',infoName);
+	HoteamUI.UIManager.MsgBox(msg);
+	bCheck = false;
+}
+
+data.[INFONAME] = c.GetSelectedValue();
+
+}}
